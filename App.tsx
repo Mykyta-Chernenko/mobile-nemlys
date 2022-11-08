@@ -1,5 +1,6 @@
-import { StatusBar } from "expo-status-bar";
 import React from "react";
+import 'react-native-url-polyfill/auto'
+import { StatusBar } from "expo-status-bar";
 import { ThemeProvider } from "react-native-rapi-ui";
 import Navigation from "./src/navigation";
 import { AuthProvider } from "./src/provider/AuthProvider";

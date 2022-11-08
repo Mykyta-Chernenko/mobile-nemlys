@@ -10,15 +10,18 @@ import {
 import { supabase } from "../../initSupabase";
 import { AuthStackParamList } from "../../types/navigation";
 import { NativeStackScreenProps } from "@react-navigation/native-stack";
-
+import { Divider,  Button } from "@rneui/base";
+import { Icon } from '@rneui/themed';
 import {
   Layout,
   Text,
   TextInput,
-  Button,
   useTheme,
   themeColor,
 } from "react-native-rapi-ui";
+import GoogleIcon from "../../icons/google";
+import { GoogleOAuth } from "../../components/auth/GoogleOAuth";
+
 
 export default function ({
   navigation,
@@ -30,7 +33,7 @@ export default function ({
 
   async function login() {
     setLoading(true);
-    const { user, error } = await supabase.auth.signIn({
+    const { data:{user, session}, error } = await supabase.auth.signInWithPassword({
       email: email,
       password: password,
     });
@@ -110,7 +113,7 @@ export default function ({
               onChangeText={(text) => setPassword(text)}
             />
             <Button
-              text={loading ? "Loading" : "Continue"}
+              title={loading ? "Loading" : "Continue"}
               onPress={() => {
                 login();
               }}
@@ -119,7 +122,7 @@ export default function ({
               }}
               disabled={loading}
             />
-
+            <GoogleOAuth/>
             <View
               style={{
                 flexDirection: "row",

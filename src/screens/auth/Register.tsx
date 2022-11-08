@@ -20,6 +20,7 @@ import {
   useTheme,
   themeColor,
 } from "react-native-rapi-ui";
+import { EMAIL_CONFIRMED_PATH } from "./EmailConfirmed";
 
 export default function ({
   navigation,
@@ -30,25 +31,21 @@ export default function ({
   const [loading, setLoading] = useState<boolean>(false);
   const passwordRef = useRef<HTMLInputElement>(null);
   const buttonRef = useRef<HTMLButtonElement>(null);
-  console.log(Linking.createURL('/'))
   async function register() {
     setLoading(true);
-    const returnUrl = makeRedirectUri({ useProxy: true });
-    console.log(returnUrl);
-    console.log('test')
+    const returnUrl = Linking.createURL(EMAIL_CONFIRMED_PATH)
     const data = await supabase.auth.signUp({
       email: email,
       password: password,
       options: {emailRedirectTo:returnUrl}
     });
+    setLoading(false);
     console.log(data)
     if (!data.error && data?.data.user?.confirmation_sent_at) {
-      setLoading(false);
-      alert("Check your email for the login link!");
+      alert("Check your email for the email confirmation link!");
     }
     else {
-      setLoading(false);
-      alert(data.error?.message);
+      alert(data.error?.message ?? "Some unexpected error happened, try again");
     }
   }
   return (
