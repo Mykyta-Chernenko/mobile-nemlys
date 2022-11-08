@@ -10,8 +10,7 @@ import {
 import { supabase } from "../../initSupabase";
 import { AuthStackParamList } from "../../types/navigation";
 import { NativeStackScreenProps } from "@react-navigation/native-stack";
-import { Divider,  Button } from "@rneui/base";
-import { Icon } from '@rneui/themed';
+import { Button } from "@rneui/base";
 import {
   Layout,
   Text,
@@ -19,10 +18,10 @@ import {
   useTheme,
   themeColor,
 } from "react-native-rapi-ui";
-import GoogleIcon from "../../icons/google";
 import { GoogleOAuth } from "../../components/auth/GoogleOAuth";
+import * as WebBrowser from 'expo-web-browser'
 
-
+WebBrowser.maybeCompleteAuthSession();
 export default function ({
   navigation,
 }: NativeStackScreenProps<AuthStackParamList, "Login">) {
