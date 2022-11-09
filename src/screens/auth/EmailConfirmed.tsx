@@ -1,26 +1,11 @@
-import React, { useEffect, useRef, useState } from "react";
-import { StatusBar } from "expo-status-bar";
-import { startAsync, makeRedirectUri } from "expo-auth-session";
+import React, { useEffect, useState } from "react";
 import {
-  ScrollView,
-  TouchableOpacity,
   View,
-  KeyboardAvoidingView,
-  Image,
 } from "react-native";
-import * as Linking from 'expo-linking';
 import { supabase } from "../../initSupabase";
 import { AuthStackParamList } from "../../types/navigation";
 import { NativeStackScreenProps } from "@react-navigation/native-stack";
-import {
-  Layout,
-  Text,
-  TextInput,
-  Button,
-  useTheme,
-  themeColor,
-} from "react-native-rapi-ui";
-
+import { Text } from '@rneui/themed';
 export const EMAIL_CONFIRMED_PATH = 'email-confirmed'
 export default function ({
   navigation,
@@ -37,13 +22,6 @@ export default function ({
     getSession()
   }, [supabase])
   return (
-    <Layout>
-      <ScrollView
-        contentContainerStyle={{
-          flexGrow: 1,
-        }}
-      >
-
         <View
           style={{
             flexDirection: "row",
@@ -53,8 +31,6 @@ export default function ({
           }}
         >
             <Text
-              size="md"
-              fontWeight="bold"
               style={{
                 marginLeft: 5,
               }}
@@ -62,7 +38,5 @@ export default function ({
               {loading?"Loading": "Email is confirmed"}
             </Text>
         </View>
-      </ScrollView>
-    </Layout>
   );
 }

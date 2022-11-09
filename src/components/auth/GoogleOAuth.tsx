@@ -7,7 +7,7 @@ import { supabase } from "../../initSupabase";
 import { EMAIL_CONFIRMED_PATH } from "../../screens/auth/EmailConfirmed";
 import * as Linking from 'expo-linking';
 import { Provider } from "@supabase/supabase-js";
-
+import FontAwesome from '@expo/vector-icons/FontAwesome';
 export const GoogleOAuth = () => {
 const onPress = async () => {
   const returnUrl = Linking.createURL(EMAIL_CONFIRMED_PATH)
@@ -58,6 +58,7 @@ return (
         }}>
     <Button type="outline" onPress={onPress}>
       <GoogleIcon height='20' width='20'/>
+      
       <Text style={{marginLeft:5}}>Google</Text>
     </Button>
   </View>

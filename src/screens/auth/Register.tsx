@@ -50,7 +50,6 @@ export default function ({
   }
   return (
     <KeyboardAvoidingView behavior="height" enabled style={{ flex: 1 }}>
-      <Layout>
         <ScrollView
           contentContainerStyle={{
             flexGrow: 1,
@@ -97,7 +96,7 @@ export default function ({
               placeholder="Enter your email"
               value={email}
               autoCapitalize="none"
-              autoCompleteType="email"
+              autoComplete="email"
               autoCorrect={false}
               keyboardType="email-address"
               returnKeyType="next"
@@ -111,7 +110,7 @@ export default function ({
               placeholder="Enter your password"
               value={password}
               autoCapitalize="none"
-              autoCompleteType="off"
+              autoComplete="off"
               autoCorrect={false}
               secureTextEntry={true}
               returnKeyType="next"
@@ -181,7 +180,6 @@ export default function ({
             </View>
           </View>
         </ScrollView>
-      </Layout>
     </KeyboardAvoidingView>
   );
 }

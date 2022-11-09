@@ -6,18 +6,13 @@ import {
   View,
   KeyboardAvoidingView,
   Image,
+  TextInput,
 } from "react-native";
 import { supabase } from "../../initSupabase";
 import { AuthStackParamList } from "../../types/navigation";
 import { NativeStackScreenProps } from "@react-navigation/native-stack";
 import { Button } from "@rneui/base";
-import {
-  Layout,
-  Text,
-  TextInput,
-  useTheme,
-  themeColor,
-} from "react-native-rapi-ui";
+import { Input, Text } from "@rneui/themed";
 import { GoogleOAuth } from "../../components/auth/GoogleOAuth";
 import * as WebBrowser from 'expo-web-browser'
 
@@ -25,10 +20,10 @@ WebBrowser.maybeCompleteAuthSession();
 export default function ({
   navigation,
 }: NativeStackScreenProps<AuthStackParamList, "Login">) {
-  const { isDarkmode, setTheme } = useTheme();
   const [email, setEmail] = useState<string>("");
   const [password, setPassword] = useState<string>("");
   const [loading, setLoading] = useState<boolean>(false);
+  const passwordRef = React.useRef<TextInput>(null);
 
   async function login() {
     setLoading(true);
@@ -47,7 +42,6 @@ export default function ({
   }
   return (
     <KeyboardAvoidingView behavior="height" enabled style={{ flex: 1 }}>
-      <Layout>
         <ScrollView
           contentContainerStyle={{
             flexGrow: 1,
@@ -58,7 +52,6 @@ export default function ({
               flex: 1,
               justifyContent: "center",
               alignItems: "center",
-              backgroundColor: isDarkmode ? "#17171E" : themeColor.white100,
             }}
           >
             <Image
@@ -75,41 +68,45 @@ export default function ({
               flex: 3,
               paddingHorizontal: 20,
               paddingBottom: 20,
-              backgroundColor: isDarkmode ? themeColor.dark : themeColor.white,
+              backgroundColor: 'white'
             }}
           >
             <Text
-              fontWeight="bold"
               style={{
                 alignSelf: "center",
-                padding: 30,
+                marginVertical: 10,
+                fontWeight: "bold"
               }}
-              size="h3"
+              h4
             >
               Login
             </Text>
             <Text>Email</Text>
-            <TextInput
-              containerStyle={{ marginTop: 15 }}
+            <Input
+              containerStyle={{ marginTop: 10, paddingHorizontal:0 }}
+              inputStyle={{padding: 5}}
               placeholder="Enter your email"
               value={email}
               autoCapitalize="none"
-              autoCompleteType="off"
+              autoComplete="email"
               autoCorrect={false}
               keyboardType="email-address"
               onChangeText={(text) => setEmail(text)}
+              onSubmitEditing={()=> passwordRef.current?.focus()}
             />
 
             <Text style={{ marginTop: 15 }}>Password</Text>
-            <TextInput
-              containerStyle={{ marginTop: 15 }}
+            <Input
+              containerStyle={{ marginTop: 10, paddingHorizontal:0 }}
+              inputStyle={{padding: 5}}
               placeholder="Enter your password"
               value={password}
               autoCapitalize="none"
-              autoCompleteType="off"
+              autoComplete="off"
               autoCorrect={false}
               secureTextEntry={true}
               onChangeText={(text) => setPassword(text)}
+              ref={passwordRef}
             />
             <Button
               title={loading ? "Loading" : "Continue"}
@@ -130,17 +127,16 @@ export default function ({
                 justifyContent: "center",
               }}
             >
-              <Text size="md">Don't have an account?</Text>
+              <Text>Don't have an account?</Text>
               <TouchableOpacity
                 onPress={() => {
                   navigation.navigate("Register");
                 }}
               >
                 <Text
-                  size="md"
-                  fontWeight="bold"
                   style={{
                     marginLeft: 5,
+                    fontWeight: "bold"
                   }}
                 >
                   Register here
@@ -160,7 +156,7 @@ export default function ({
                   navigation.navigate("ForgetPassword");
                 }}
               >
-                <Text size="md" fontWeight="bold">
+                <Text style={{fontWeight:'bold'}}>
                   Forget password
                 </Text>
               </TouchableOpacity>
@@ -173,25 +169,9 @@ export default function ({
                 justifyContent: "center",
               }}
             >
-              <TouchableOpacity
-                onPress={() => {
-                  isDarkmode ? setTheme("light") : setTheme("dark");
-                }}
-              >
-                <Text
-                  size="md"
-                  fontWeight="bold"
-                  style={{
-                    marginLeft: 5,
-                  }}
-                >
-                  {isDarkmode ? "☀️ light theme" : "🌑 dark theme"}
-                </Text>
-              </TouchableOpacity>
             </View>
           </View>
         </ScrollView>
-      </Layout>
     </KeyboardAvoidingView>
   );
 }
