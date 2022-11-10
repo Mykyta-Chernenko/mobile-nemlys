@@ -1,19 +1,11 @@
-import React, { useState } from "react";
-import { StatusBar } from "expo-status-bar";
-import {
-  ScrollView,
-  TouchableOpacity,
-  View,
-  KeyboardAvoidingView,
-  Image,
-  TextInput,
-} from "react-native";
-import { supabase } from "../../initSupabase";
-import { AuthStackParamList } from "../../types/navigation";
-import { NativeStackScreenProps } from "@react-navigation/native-stack";
-import { Button } from "@rneui/base";
-import { Input, Text } from "@rneui/themed";
-import { GoogleOAuth } from "../../components/auth/GoogleOAuth";
+import React, {useRef, useState} from "react";
+import {Image, KeyboardAvoidingView, ScrollView, TouchableOpacity, View} from "react-native";
+import {supabase} from "../../initSupabase";
+import {AuthStackParamList} from "../../types/navigation";
+import {NativeStackScreenProps} from "@react-navigation/native-stack";
+import {Button} from "@rneui/base";
+import {Input, Text} from "@rneui/themed";
+import {GoogleOAuth} from "../../components/auth/GoogleOAuth";
 import * as WebBrowser from 'expo-web-browser'
 
 WebBrowser.maybeCompleteAuthSession();
@@ -23,7 +15,7 @@ export default function ({
   const [email, setEmail] = useState<string>("");
   const [password, setPassword] = useState<string>("");
   const [loading, setLoading] = useState<boolean>(false);
-  const passwordRef = React.useRef<TextInput>(null);
+  const passwordRef = useRef(null) as any;
 
   async function login() {
     setLoading(true);
@@ -91,11 +83,12 @@ export default function ({
               autoComplete="email"
               autoCorrect={false}
               keyboardType="email-address"
+              returnKeyType="next"
               onChangeText={(text) => setEmail(text)}
               onSubmitEditing={()=> passwordRef.current?.focus()}
             />
 
-            <Text style={{ marginTop: 15 }}>Password</Text>
+            <Text>Password</Text>
             <Input
               containerStyle={{ marginTop: 10, paddingHorizontal:0 }}
               inputStyle={{padding: 5}}
@@ -105,8 +98,10 @@ export default function ({
               autoComplete="off"
               autoCorrect={false}
               secureTextEntry={true}
+              returnKeyType="send"
               onChangeText={(text) => setPassword(text)}
               ref={passwordRef}
+              onSubmitEditing={()=> login()}
             />
             <Button
               title={loading ? "Loading" : "Continue"}
@@ -114,7 +109,7 @@ export default function ({
                 login();
               }}
               style={{
-                marginTop: 20,
+                marginTop: 10,
               }}
               disabled={loading}
             />

@@ -1,9 +1,7 @@
 import React from "react";
-import { themeColor, useTheme } from "react-native-rapi-ui";
-import { Icon } from "@expo/vector-icons";
+import { Ionicons } from "@expo/vector-icons";
 
 export default ({ icon, focused }: { icon: any; focused: boolean }) => {
-  const { isDarkmode } = useTheme();
   return (
     <Ionicons
       name={icon}
@@ -11,9 +9,7 @@ export default ({ icon, focused }: { icon: any; focused: boolean }) => {
       size={24}
       color={
         focused
-          ? isDarkmode
-            ? themeColor.white100
-            : themeColor.primary
+          ? 'white'
           : "rgb(143, 155, 179)"
       }
     />

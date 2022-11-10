@@ -5,6 +5,7 @@ import Login from "../screens/auth/Login";
 import Register from "../screens/auth/Register";
 import ForgetPassword from "../screens/auth/ForgetPassword";
 import EmailConfirmed from "../screens/auth/EmailConfirmed";
+import TypeNewPassword from "../screens/auth/TypeNewPassword";
 
 const AuthStack = createNativeStackNavigator();
 const Auth = () => {
@@ -17,6 +18,7 @@ const Auth = () => {
       <AuthStack.Screen name="Login" component={Login} />
       <AuthStack.Screen name="Register" component={Register} />
       <AuthStack.Screen name="EmailConfirmed" component={EmailConfirmed} />
+      <AuthStack.Screen name="TypeNewPassword" component={TypeNewPassword} />
       <AuthStack.Screen name="ForgetPassword" component={ForgetPassword} />
     </AuthStack.Navigator>
   );

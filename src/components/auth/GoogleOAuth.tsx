@@ -1,5 +1,5 @@
 import { Button, Divider, Text } from "@rneui/base";
-import { makeRedirectUri, startAsync } from "expo-auth-session";
+import {startAsync } from "expo-auth-session";
 import React from "react";
 import {  Platform, View } from "react-native";
 import GoogleIcon from "../../icons/google";
@@ -7,7 +7,6 @@ import { supabase } from "../../initSupabase";
 import { EMAIL_CONFIRMED_PATH } from "../../screens/auth/EmailConfirmed";
 import * as Linking from 'expo-linking';
 import { Provider } from "@supabase/supabase-js";
-import FontAwesome from '@expo/vector-icons/FontAwesome';
 export const GoogleOAuth = () => {
 const onPress = async () => {
   const returnUrl = Linking.createURL(EMAIL_CONFIRMED_PATH)
