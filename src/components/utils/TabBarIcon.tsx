@@ -1,5 +1,5 @@
-import React from "react";
-import { Ionicons } from "@expo/vector-icons";
+import React from 'react';
+import { Ionicons } from '@expo/vector-icons';
 
 export default ({ icon, focused }: { icon: any; focused: boolean }) => {
   return (
@@ -7,11 +7,7 @@ export default ({ icon, focused }: { icon: any; focused: boolean }) => {
       name={icon}
       style={{ marginBottom: -7 }}
       size={24}
-      color={
-        focused
-          ? 'white'
-          : "rgb(143, 155, 179)"
-      }
+      color={focused ? 'white' : 'rgb(143, 155, 179)'}
     />
   );
 };
