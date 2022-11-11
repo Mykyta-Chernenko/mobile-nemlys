@@ -1,12 +1,6 @@
-# Template bottom tabs with auth flow (Typescript)
+# Nemlys mobile 
 
-Typescript Template starter with React Navigation Bottom Tabs and Supabase auth using React Context
-
-# Preview
-
-![../media/authflow.png](../media/authflow.png)
-
-# Installation
+## Installation
 
 1. Install [node.js](https://nodejs.org/en/)
 2. Install Expo
@@ -28,33 +22,6 @@ Typescript Template starter with React Navigation Bottom Tabs and Supabase auth 
    expo start
    ```
 
-# Auth Flow
-
-### Supabase Setup
-
-- Set up a new Supabase.io project
-- Fill your supabase credentials to your config inside `./src/initSupabase.ts`
-- You can find your supabase credentials in your project -> settings -> API
-
-  ```jsx
-  // Better put your these secret keys in .env file
-  export const supabase = createClient(
-  	"supabaseUrl", "supabaseKey",
-  	{
-  		localStorage: AsyncStorage as any,
-  	}
-  );
-  ```
-
-and you good to go!
-
-### Prebuilt UI Screens
-
-There are 3 screens included inside `./src/screens/auth` and one more thing its included with the supabase auth function, so you don't need to create the function. The ilustrations I use [undraw](https://undraw.co/)
-
-- Login screen `./src/screens/auth/login.tsx`
-- Register screen `./src/screens/auth/register.tsx`
-- Forget password screen `./src/screens/auth/forget.tsx`
 
 ### React Navigation Auth Flow
 
@@ -81,16 +48,8 @@ export default () => {
 };
 ```
 
-# Rapi UI
-
-![../media/hero.png](../media/hero.png)
-
-These UI components are provided by [Rapi UI](https://rapi-ui.kikiding.space/).
-Check the [documentation](https://rapi-ui.kikiding.space/docs/) for usage and more components.
-
 # File Managements
 
-These are the folders and the functionality all in `src/`
 
 ```jsx
 /src/assets -> for media such as images, etc
@@ -101,6 +60,3 @@ These are the folders and the functionality all in `src/`
 /src/types -> for Types
 ```
 
-if you find these useful don't forget to give it a star ⭐ and share it to your friends ❤️
-
-Reach me on [twitter](https://twitter.com/kikiding/)
