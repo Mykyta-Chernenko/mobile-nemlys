@@ -14,6 +14,14 @@ module.exports = function (api) {
           verbose: false,
         },
       ],
+      [
+        "module-resolver",
+        {
+          alias: {
+            "@app": "./src",
+          },
+        },
+      ],
     ],
   };
 };

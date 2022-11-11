@@ -2,9 +2,9 @@ import { Button, Divider, Text } from "@rneui/base";
 import {startAsync } from "expo-auth-session";
 import React from "react";
 import {  Platform, View } from "react-native";
-import GoogleIcon from "../../icons/google";
-import { supabase } from "../../initSupabase";
-import { EMAIL_CONFIRMED_PATH } from "../../screens/auth/EmailConfirmed";
+import GoogleIcon from "@app/icons/google";
+import { supabase } from "@app/initSupabase";
+import { EMAIL_CONFIRMED_PATH } from "@app/screens/auth/EmailConfirmed";
 import * as Linking from 'expo-linking';
 import { Provider } from "@supabase/supabase-js";
 export const GoogleOAuth = () => {

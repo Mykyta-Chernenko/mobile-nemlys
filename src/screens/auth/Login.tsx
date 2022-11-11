@@ -1,11 +1,11 @@
 import React, {useRef, useState} from "react";
 import {Image, KeyboardAvoidingView, ScrollView, TouchableOpacity, View} from "react-native";
-import {supabase} from "../../initSupabase";
-import {AuthStackParamList} from "../../types/navigation";
+import {supabase} from "@app/initSupabase";
+import {AuthStackParamList} from "@app/types/navigation";
 import {NativeStackScreenProps} from "@react-navigation/native-stack";
 import {Button} from "@rneui/base";
 import {Input, Text} from "@rneui/themed";
-import {GoogleOAuth} from "../../components/auth/GoogleOAuth";
+import {GoogleOAuth} from "@app/components/auth/GoogleOAuth";
 import * as WebBrowser from 'expo-web-browser'
 
 WebBrowser.maybeCompleteAuthSession();
@@ -152,7 +152,7 @@ export default function ({
                 }}
               >
                 <Text style={{fontWeight:'bold'}}>
-                  Forget password
+                  Forgot password?
                 </Text>
               </TouchableOpacity>
             </View>

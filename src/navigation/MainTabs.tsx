@@ -1,10 +1,10 @@
 import React from "react";
 import {createBottomTabNavigator} from "@react-navigation/bottom-tabs";
 
-import TabBarText from "../components/utils/TabBarText";
-import TabBarIcon from "../components/utils/TabBarIcon";
+import TabBarText from "@app/components/utils/TabBarText";
+import TabBarIcon from "@app/components/utils/TabBarIcon";
 
-import Home from "../screens/Home";
+import Home from "@app/screens/Home";
 
 const Tabs = createBottomTabNavigator();
 const MainTabs = () => {

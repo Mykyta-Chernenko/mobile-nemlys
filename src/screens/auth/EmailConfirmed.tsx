@@ -2,8 +2,8 @@ import React, { useEffect, useState } from "react";
 import {
   View,
 } from "react-native";
-import { supabase } from "../../initSupabase";
-import { AuthStackParamList } from "../../types/navigation";
+import { supabase } from "@app/initSupabase";
+import { AuthStackParamList } from "@app/types/navigation";
 import { NativeStackScreenProps } from "@react-navigation/native-stack";
 import { Text } from '@rneui/themed';
 export const EMAIL_CONFIRMED_PATH = 'email-confirmed'

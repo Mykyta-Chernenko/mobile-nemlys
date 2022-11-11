@@ -1,7 +1,7 @@
 import React, {useState} from "react";
 import {Image, KeyboardAvoidingView, ScrollView, TouchableOpacity, View,} from "react-native";
-import {supabase} from "../../initSupabase";
-import {AuthStackParamList} from "../../types/navigation";
+import {supabase} from "@app/initSupabase";
+import {AuthStackParamList} from "@app/types/navigation";
 import {NativeStackScreenProps} from "@react-navigation/native-stack";
 import {Text, Input, Button} from "@rneui/themed"
 import {EMAIL_CONFIRMED_PATH} from "./EmailConfirmed";
@@ -69,7 +69,7 @@ export default function ({
                         }}
                         h4
                     >
-                        Forget password
+                        Reset password
                     </Text>
                     <Text>Email</Text>
                     <Input

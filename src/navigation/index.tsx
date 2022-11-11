@@ -1,12 +1,12 @@
 import React, {useContext} from 'react';
-import {AuthContext} from '../provider/AuthProvider';
+import {AuthContext} from '@app/provider/AuthProvider';
 import {NavigationContainer} from '@react-navigation/native';
 
 import Main from './MainStack';
 import Auth from './AuthStack';
-import Loading from '../screens/utils/Loading';
-import {EMAIL_CONFIRMED_PATH} from '../screens/auth/EmailConfirmed';
-import {TYPE_NEW_PASSWORD_PATH} from "../screens/auth/TypeNewPassword";
+import Loading from '@app/screens/utils/Loading';
+import {EMAIL_CONFIRMED_PATH} from '@app/screens/auth/EmailConfirmed';
+import {TYPE_NEW_PASSWORD_PATH} from "@app/screens/auth/TypeNewPassword";
 
 const linking = {
   prefixes: ['nemlys://', 'exp://192.168.0.9:19000/--/'],
