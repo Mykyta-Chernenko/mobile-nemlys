@@ -1,4 +1,5 @@
 module.exports = {
+  root: true,
   env: {
     es6: true,
     node: true,
@@ -11,19 +12,16 @@ module.exports = {
     'plugin:@typescript-eslint/eslint-recommended',
     'plugin:@typescript-eslint/recommended',
     'plugin:@typescript-eslint/recommended-requiring-type-checking',
-    'react', 
-    'react-hooks',
-     '@typescript-eslint', 
-     'prettier'
+    'prettier'
   ],
   parserOptions: {
     project: './tsconfig.json',
   },
-  plugins: ['react', 'react-hooks', '@typescript-eslint'],
+  plugins: ['react', 'react-hooks', '@typescript-eslint', 'prettier'],
   rules: {
     indent: ['error', 2, { SwitchCase: 1 }],
     quotes: ['error', 'single', { avoidEscape: true }],
-    'prettier/prettier': 'error',
+    "prettier/prettier": "error",
     'no-empty-function': 'off',
     '@typescript-eslint/no-empty-function': 'off',
     '@typescript-eslint/no-var-requires': 'off',
