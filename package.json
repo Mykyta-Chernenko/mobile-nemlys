@@ -60,10 +60,8 @@
   "private": true,
   "lint-staged": {
     "src/**/*.{ts,tsx}": [
-      "./node_modules/.bin/eslint --ext .tsx --ext .ts src/ --fix"
-    ],
-    "./src/**": [
-      "./node_modules/.bin/prettier --write src/"
+      "npx eslint --ext .tsx --ext .ts src/ --fix",
+      "npx prettier --write src/"
     ]
   }
 }
