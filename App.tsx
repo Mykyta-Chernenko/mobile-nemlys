@@ -10,7 +10,7 @@ export default function App() {
       <AuthProvider>
         <Navigation />
       </AuthProvider>
-      <StatusBar />
+      <StatusBar style="dark" />
     </>
   );
 }
