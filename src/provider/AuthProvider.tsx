@@ -1,5 +1,5 @@
 import React, { createContext, useEffect, useState } from 'react';
-import { supabase } from '@app/initSupabase';
+import { supabase } from '@app/api/initSupabase';
 import { Session } from '@supabase/supabase-js';
 import { Linking } from 'react-native';
 

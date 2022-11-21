@@ -1,11 +1,12 @@
 import React, { useState } from 'react';
 import { Image, KeyboardAvoidingView, ScrollView, TouchableOpacity, View } from 'react-native';
-import { supabase } from '@app/initSupabase';
+import { supabase } from '@app/api/initSupabase';
 import { AuthStackParamList } from '@app/types/navigation';
 import { NativeStackScreenProps } from '@react-navigation/native-stack';
 import { Text, Input, Button } from '@rneui/themed';
 import { EMAIL_CONFIRMED_PATH } from './EmailConfirmed';
 import * as Linking from 'expo-linking';
+import { i18n } from '@app/localization/i18n';
 
 export default function ({
   navigation,
@@ -20,7 +21,7 @@ export default function ({
     const { error } = await supabase.auth.resetPasswordForEmail(email, { redirectTo });
     if (!error) {
       setLoading(false);
-      alert('Check your email to reset your password!');
+      alert(i18n.t('forgot_password.email_sent'));
     }
     if (error) {
       setLoading(false);
@@ -40,6 +41,7 @@ export default function ({
             flex: 1,
             justifyContent: 'center',
             alignItems: 'center',
+            backgroundColor: 'white',
           }}
         >
           <Image
@@ -55,24 +57,22 @@ export default function ({
           style={{
             flex: 3,
             paddingHorizontal: 20,
-            paddingBottom: 20,
             backgroundColor: 'white',
           }}
         >
           <Text
             style={{
-              alignSelf: 'center',
-              marginVertical: 10,
+              alignSelf: 'flex-start',
+              marginBottom: 10,
               fontWeight: 'bold',
             }}
-            h4
+            h3
           >
-            Reset password
+            {i18n.t('forgot_password.title')}
           </Text>
-          <Text>Email</Text>
           <Input
             containerStyle={{ marginTop: 15 }}
-            placeholder="Enter your email"
+            placeholder={i18n.t('email_placeholder')}
             value={email}
             autoCapitalize="none"
             autoComplete="off"
@@ -81,7 +81,7 @@ export default function ({
             onChangeText={(text) => setEmail(text)}
           />
           <Button
-            title={loading ? 'Loading' : 'Send email'}
+            title={loading ? i18n.t('loading') : i18n.t('forgot_password.button.default')}
             onPress={() => {
               void forget();
             }}
@@ -96,7 +96,7 @@ export default function ({
               justifyContent: 'center',
             }}
           >
-            <Text>Already have an account?</Text>
+            <Text>{i18n.t('register.login.pretext')}</Text>
             <TouchableOpacity
               onPress={() => {
                 navigation.navigate('Login');
@@ -108,7 +108,7 @@ export default function ({
                   fontWeight: 'bold',
                 }}
               >
-                Login here
+                {i18n.t('register.login.link')}
               </Text>
             </TouchableOpacity>
           </View>

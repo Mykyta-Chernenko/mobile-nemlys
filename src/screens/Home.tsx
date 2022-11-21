@@ -2,7 +2,7 @@ import React from 'react';
 import { View } from 'react-native';
 import { MainStackParamList } from '@app/types/navigation';
 import { NativeStackScreenProps } from '@react-navigation/native-stack';
-import { supabase } from '@app/initSupabase';
+import { supabase } from '@app/api/initSupabase';
 import { Button } from '@rneui/themed';
 
 export default function ({ navigation }: NativeStackScreenProps<MainStackParamList, 'MainTabs'>) {

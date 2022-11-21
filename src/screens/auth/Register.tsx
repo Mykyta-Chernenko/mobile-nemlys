@@ -8,11 +8,13 @@ import {
   View,
 } from 'react-native';
 import * as Linking from 'expo-linking';
-import { supabase } from '@app/initSupabase';
+import { supabase } from '@app/api/initSupabase';
 import { AuthStackParamList } from '@app/types/navigation';
 import { NativeStackScreenProps } from '@react-navigation/native-stack';
 import { EMAIL_CONFIRMED_PATH } from './EmailConfirmed';
 import { Button, Input, Text } from '@rneui/themed';
+import { GoogleOAuth } from '@app/components/auth/GoogleOAuth';
+import { i18n } from '@app/localization/i18n';
 
 export default function ({ navigation }: NativeStackScreenProps<AuthStackParamList, 'Register'>) {
   const [email, setEmail] = useState<string>('');
@@ -32,9 +34,9 @@ export default function ({ navigation }: NativeStackScreenProps<AuthStackParamLi
     setLoading(false);
     console.log(data);
     if (!data.error && data?.data.user?.confirmation_sent_at) {
-      alert('Check your email for the email confirmation link!');
+      alert(i18n.t('register.check_email_for_confirmation'));
     } else {
-      alert(data.error?.message ?? 'Some unexpected error happened, try again');
+      alert(data.error?.message ?? i18n.t('register.unexpected_error'));
     }
   }
 
@@ -50,6 +52,7 @@ export default function ({ navigation }: NativeStackScreenProps<AuthStackParamLi
             flex: 1,
             justifyContent: 'center',
             alignItems: 'center',
+            backgroundColor: 'white',
           }}
         >
           <Image
@@ -71,18 +74,17 @@ export default function ({ navigation }: NativeStackScreenProps<AuthStackParamLi
         >
           <Text
             style={{
-              alignSelf: 'center',
-              marginVertical: 10,
+              alignSelf: 'flex-start',
+              marginBottom: 10,
               fontWeight: 'bold',
             }}
-            h4
+            h3
           >
-            Register
+            {i18n.t('register.title')}
           </Text>
-          <Text>Email</Text>
           <Input
             containerStyle={{ marginTop: 10, paddingHorizontal: 0 }}
-            placeholder="Enter your email"
+            placeholder={i18n.t('email_placeholder')}
             value={email}
             autoCapitalize="none"
             autoComplete="email"
@@ -92,28 +94,27 @@ export default function ({ navigation }: NativeStackScreenProps<AuthStackParamLi
             onSubmitEditing={() => passwordRef?.current?.focus()}
             onChangeText={(text) => setEmail(text)}
           />
-
-          <Text>Password</Text>
           <Input
-            containerStyle={{ marginTop: 10, paddingHorizontal: 0 }}
-            placeholder="Enter your password"
+            containerStyle={{ paddingHorizontal: 0 }}
+            placeholder={i18n.t('password_placeholder')}
             value={password}
             autoCapitalize="none"
             autoComplete="off"
             autoCorrect={false}
             secureTextEntry={true}
             returnKeyType="next"
-            // ref={passwordRef}
-            // onSubmitEditing={() => buttonRef?.current?.focus()}
+            ref={passwordRef}
+            onSubmitEditing={() => void register()}
             onChangeText={(text) => setPassword(text)}
           />
           <Button
-            title={loading ? 'Loading' : 'Create an account'}
+            title={loading ? i18n.t('loading') : i18n.t('register.button.default')}
             onPress={() => {
               void register();
             }}
             disabled={loading}
           />
+          <GoogleOAuth />
 
           <View
             style={{
@@ -123,7 +124,7 @@ export default function ({ navigation }: NativeStackScreenProps<AuthStackParamLi
               justifyContent: 'center',
             }}
           >
-            <Text>Already have an account?</Text>
+            <Text>{i18n.t('register.login.pretext')}</Text>
             <TouchableOpacity
               onPress={() => {
                 navigation.navigate('Login');
@@ -135,7 +136,7 @@ export default function ({ navigation }: NativeStackScreenProps<AuthStackParamLi
                   fontWeight: 'bold',
                 }}
               >
-                Login here
+                {i18n.t('register.login.link')}
               </Text>
             </TouchableOpacity>
           </View>

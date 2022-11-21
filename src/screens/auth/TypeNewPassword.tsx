@@ -1,9 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import { View } from 'react-native';
-import { supabase } from '@app/initSupabase';
+import { supabase } from '@app/api/initSupabase';
 import { AuthStackParamList } from '@app/types/navigation';
 import { NativeStackScreenProps } from '@react-navigation/native-stack';
 import { Text } from '@rneui/themed';
+import { i18n } from '@app/localization/i18n';
 
 export const TYPE_NEW_PASSWORD_PATH = 'type-new-password';
 export default function ({
@@ -34,7 +35,7 @@ export default function ({
           marginLeft: 5,
         }}
       >
-        {loading ? 'Loading' : 'Email is confirmed'}
+        {loading ? i18n.t('loading') : 'not loading'}
       </Text>
     </View>
   );

@@ -1,15 +1,16 @@
-import { Button, Divider, Text } from '@rneui/base';
+import { Button, Text } from '@rneui/themed';
 import { startAsync } from 'expo-auth-session';
 import React from 'react';
 import { Platform, View } from 'react-native';
 import GoogleIcon from '@app/icons/google';
-import { supabase } from '@app/initSupabase';
-import { EMAIL_CONFIRMED_PATH } from '@app/screens/auth/EmailConfirmed';
+import { supabase } from '@app/api/initSupabase';
 import * as Linking from 'expo-linking';
 import { Provider } from '@supabase/supabase-js';
+import { i18n } from '@app/localization/i18n';
+import { theme } from '@app/theme';
 export const GoogleOAuth = () => {
   const onPress = async () => {
-    const returnUrl = Linking.createURL(EMAIL_CONFIRMED_PATH);
+    const returnUrl = Linking.createURL('');
     const signInParms = {
       provider: 'google' as Provider,
       options: {
@@ -40,26 +41,27 @@ export const GoogleOAuth = () => {
   };
   return (
     <>
-      <Divider
-        style={{ margin: 10 }}
-        color="gray"
-        subHeader="Or continue with"
-        subHeaderStyle={{ textAlign: 'center' }}
-        width={1}
-        orientation="horizontal"
-      />
+      <Text
+        style={{
+          alignSelf: 'center',
+          color: theme.lightColors.grey3,
+          marginVertical: 15,
+        }}
+      >
+        {i18n.t('oauth.pretext')}
+      </Text>
+
       <View
         style={{
           flexDirection: 'row',
           alignItems: 'center',
-          marginTop: 5,
           justifyContent: 'center',
         }}
       >
         <Button type="outline" onPress={() => void onPress()}>
           <GoogleIcon height="20" width="20" />
 
-          <Text style={{ marginLeft: 5 }}>Google</Text>
+          <Text style={{ marginLeft: 5 }}>{i18n.t('oauth.button.google')}</Text>
         </Button>
       </View>
     </>

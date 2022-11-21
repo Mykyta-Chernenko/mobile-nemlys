@@ -1,13 +1,12 @@
 import React, { useRef, useState } from 'react';
 import { Image, KeyboardAvoidingView, ScrollView, TouchableOpacity, View } from 'react-native';
-import { supabase } from '@app/initSupabase';
+import { supabase } from '@app/api/initSupabase';
 import { AuthStackParamList } from '@app/types/navigation';
 import { NativeStackScreenProps } from '@react-navigation/native-stack';
-import { Button } from '@rneui/base';
-import { Input, Text } from '@rneui/themed';
+import { Button, Input, Text } from '@rneui/themed';
 import { GoogleOAuth } from '@app/components/auth/GoogleOAuth';
 import * as WebBrowser from 'expo-web-browser';
-
+import { i18n } from '@app/localization/i18n';
 WebBrowser.maybeCompleteAuthSession();
 export default function ({ navigation }: NativeStackScreenProps<AuthStackParamList, 'Login'>) {
   const [email, setEmail] = useState<string>('');
@@ -27,7 +26,7 @@ export default function ({ navigation }: NativeStackScreenProps<AuthStackParamLi
     });
     if (!error && !user) {
       setLoading(false);
-      alert('Check your email for the login link!');
+      alert(i18n.t('login.check_email_for_login_link'));
     }
     if (error) {
       setLoading(false);
@@ -46,6 +45,7 @@ export default function ({ navigation }: NativeStackScreenProps<AuthStackParamLi
             flex: 1,
             justifyContent: 'center',
             alignItems: 'center',
+            backgroundColor: 'white',
           }}
         >
           <Image
@@ -68,19 +68,18 @@ export default function ({ navigation }: NativeStackScreenProps<AuthStackParamLi
         >
           <Text
             style={{
-              alignSelf: 'center',
-              marginVertical: 10,
+              alignSelf: 'flex-start',
+              marginBottom: 10,
               fontWeight: 'bold',
             }}
-            h4
+            h3
           >
-            Login
+            {i18n.t('login.title')}
           </Text>
-          <Text>Email</Text>
           <Input
             containerStyle={{ marginTop: 10, paddingHorizontal: 0 }}
             inputStyle={{ padding: 5 }}
-            placeholder="Enter your email"
+            placeholder={i18n.t('email_placeholder')}
             value={email}
             autoCapitalize="none"
             autoComplete="email"
@@ -91,11 +90,10 @@ export default function ({ navigation }: NativeStackScreenProps<AuthStackParamLi
             onSubmitEditing={() => passwordRef.current?.focus()}
           />
 
-          <Text>Password</Text>
           <Input
-            containerStyle={{ marginTop: 10, paddingHorizontal: 0 }}
+            containerStyle={{ paddingHorizontal: 0 }}
             inputStyle={{ padding: 5 }}
-            placeholder="Enter your password"
+            placeholder={i18n.t('password_placeholder')}
             value={password}
             autoCapitalize="none"
             autoComplete="off"
@@ -107,12 +105,9 @@ export default function ({ navigation }: NativeStackScreenProps<AuthStackParamLi
             onSubmitEditing={() => void login()}
           />
           <Button
-            title={loading ? 'Loading' : 'Continue'}
+            title={loading ? i18n.t('loading') : i18n.t('login.button.default')}
             onPress={() => {
               void login();
-            }}
-            style={{
-              marginTop: 10,
             }}
             disabled={loading}
           />
@@ -125,10 +120,10 @@ export default function ({ navigation }: NativeStackScreenProps<AuthStackParamLi
               justifyContent: 'center',
             }}
           >
-            <Text>Don&apos;t have an account?</Text>
+            <Text>{i18n.t('login.register.pretext')}</Text>
             <TouchableOpacity
               onPress={() => {
-                navigation.navigate('Register');
+                navigation.navigate('Welcome');
               }}
             >
               <Text
@@ -137,7 +132,7 @@ export default function ({ navigation }: NativeStackScreenProps<AuthStackParamLi
                   fontWeight: 'bold',
                 }}
               >
-                Register here
+                {i18n.t('login.register.link')}
               </Text>
             </TouchableOpacity>
           </View>
@@ -154,7 +149,7 @@ export default function ({ navigation }: NativeStackScreenProps<AuthStackParamLi
                 navigation.navigate('ForgetPassword');
               }}
             >
-              <Text style={{ fontWeight: 'bold' }}>Forgot password?</Text>
+              <Text style={{ fontWeight: 'bold' }}> {i18n.t('login.forgot_password.link')}</Text>
             </TouchableOpacity>
           </View>
           <View

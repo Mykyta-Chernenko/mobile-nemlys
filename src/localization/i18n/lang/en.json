@@ -1,0 +1,65 @@
+{
+    "loading": "Loading",
+    "next": "next",
+    "name_placeholder": "Enter your name",
+    "email_placeholder": "Enter your email",
+    "password_placeholder": "Enter your password",
+    "welcome":{
+        "title":"Get to know your partner better",
+        "pretext":"Use Nemlys app to learn common ground and build meaningful communication",
+        "check_email_for_login_link": "The login link was sent to your email",
+        "button": {
+            "default": "Get started"
+        },
+        "login": {
+            "pretext":"Already have an account?",
+            "link":"Login here"
+        }
+    },
+    "pre_placement":{
+        "title":"Hey %{name}, \nlet's get started",
+        "pretext":"First, we want to ask you a few questions about your relationship to personalize the program"
+    },
+    "login":{
+        "title":"Login",
+        "check_email_for_login_link": "The login link was sent to your email",
+        "button": {
+            "default": "Continue "
+        },
+        "register": {
+            "pretext":"Don't have an account?",
+            "link":"Start here"
+        },
+        "forgot_password": {
+            "link": "Forgot password?"
+        }
+    },
+    "oauth": {
+        "pretext": "Or continue with",
+        "button": {
+            "google": "Google"
+        }
+    },
+    "register":{
+        "title":"Register",
+        "check_email_for_confirmation": "The confirmation link has been sent to your email",
+        "unexpected_error": "Unexpected error happened, try again",
+        "button": {
+            "default": "Create an account"
+        },
+        "login": {
+            "pretext":"Already have an account?",
+            "link":"Login here"
+        }
+    },
+    "email_confirmed":{
+        "content": "Email has been successfully confirmed, redirecting..."
+    },
+    "forgot_password":{
+        "title": "Reset password",
+        "email_sent": "Check your email to reset the password",
+        "button":{
+            "default":"Send email"
+        }
+    }
+}

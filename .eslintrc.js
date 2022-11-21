@@ -17,11 +17,12 @@ module.exports = {
   parserOptions: {
     project: './tsconfig.json',
   },
-  plugins: ['react', 'react-hooks', '@typescript-eslint', 'prettier'],
+  plugins: ['react', 'react-hooks', '@typescript-eslint', 'prettier', 'unused-imports'],
   rules: {
     indent: ['error', 2, { SwitchCase: 1 }],
     quotes: ['error', 'single', { avoidEscape: true }],
-    "prettier/prettier": "error",
+    'prettier/prettier': 'error',
+    'unused-imports/no-unused-imports': 'error',
     'no-empty-function': 'off',
     '@typescript-eslint/no-empty-function': 'off',
     '@typescript-eslint/no-var-requires': 'off',

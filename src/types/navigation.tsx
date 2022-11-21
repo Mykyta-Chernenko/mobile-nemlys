@@ -4,6 +4,12 @@ export type MainStackParamList = {
 };
 
 export type AuthStackParamList = {
+  Welcome: undefined;
+  PrePlacement: {
+    name: string;
+  };
+  Placement: undefined;
+  HowWeWork: undefined;
   Login: undefined;
   Register: undefined;
   ForgetPassword: undefined;
