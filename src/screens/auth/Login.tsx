@@ -7,12 +7,13 @@ import { Button, Input, Text } from '@rneui/themed';
 import { GoogleOAuth } from '@app/components/auth/GoogleOAuth';
 import * as WebBrowser from 'expo-web-browser';
 import { i18n } from '@app/localization/i18n';
+import { SupabaseUser } from '@app/types/api';
 WebBrowser.maybeCompleteAuthSession();
 export default function ({ navigation }: NativeStackScreenProps<AuthStackParamList, 'Login'>) {
   const [email, setEmail] = useState<string>('');
   const [password, setPassword] = useState<string>('');
   const [loading, setLoading] = useState<boolean>(false);
-  // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
+  // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment, @typescript-eslint/no-explicit-any
   const passwordRef = useRef(null) as any;
 
   async function login() {
@@ -33,6 +34,12 @@ export default function ({ navigation }: NativeStackScreenProps<AuthStackParamLi
       alert(error.message);
     }
   }
+  // eslint-disable-next-line @typescript-eslint/require-await
+  async function checkUserExists(user: SupabaseUser, exists: boolean): Promise<void> {
+    if (!exists) {
+      throw Error(`User with email ${user.email} does not exist in the system`);
+    }
+  }
   return (
     <KeyboardAvoidingView behavior="height" enabled style={{ flex: 1 }}>
       <ScrollView
@@ -42,10 +49,8 @@ export default function ({ navigation }: NativeStackScreenProps<AuthStackParamLi
       >
         <View
           style={{
-            flex: 1,
-            justifyContent: 'center',
-            alignItems: 'center',
-            backgroundColor: 'white',
+            margin: '5%',
+            height: 250,
           }}
         >
           <Image
@@ -111,7 +116,7 @@ export default function ({ navigation }: NativeStackScreenProps<AuthStackParamLi
             }}
             disabled={loading}
           />
-          <GoogleOAuth />
+          <GoogleOAuth preHandleUser={checkUserExists} postHandleUser={undefined} />
           <View
             style={{
               flexDirection: 'row',

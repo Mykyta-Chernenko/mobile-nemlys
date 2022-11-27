@@ -24,12 +24,12 @@ const linking = {
 
 export default () => {
   const auth = useContext(AuthContext);
-  const user = auth.user;
+  const signedIn = auth.isSignedIn;
   return (
     <NavigationContainer linking={linking}>
-      {user == null && <Loading />}
-      {user == false && <Auth />}
-      {user == true && <Main />}
+      {signedIn == null && <Loading />}
+      {signedIn == false && <Auth />}
+      {signedIn == true && <Main />}
     </NavigationContainer>
   );
 };

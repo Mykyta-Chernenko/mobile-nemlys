@@ -1,11 +1,12 @@
 {
   "loading": "Loading",
-  "next": "next",
+  "next": "Next",
+  "finish": "Finish",
   "name_placeholder": "Enter your name",
   "email_placeholder": "Enter your email",
   "password_placeholder": "Enter your password",
   "welcome": {
-    "title": "Get to know your partner better",
+    "title": "Get to know\nyour partner better",
     "pretext": "Use Nemlys app to learn common ground and build meaningful communication",
     "check_email_for_login_link": "The login link was sent to your email",
     "button": {
@@ -17,8 +18,18 @@
     }
   },
   "pre_placement": {
-    "title": "Hey %{name}, \nlet's get started",
+    "title": "Hey %{name} \nlet's get started",
     "pretext": "First, we want to ask you a few questions about your relationship to personalize the program"
+  },
+  "how_we_work":{
+    "title": "How it works?",
+    "content_1": "•  Now, we have prepared a personalized program for you",
+    "content_2": "•  For every date, we will provide you with a question to discuss and ‘action’ to take",
+    "content_3": "•  The questions and actions cover deep variety of topics and become deeper and harder as you go",
+    "content_4": "•  Some may be particularly hard to discuss and do while others may seem fairly easy. Be especially careful with the ones that seem hard as they are the most important ones to understand yourself and your partner",
+    "content_5": "•  After your date we send a question for the self-reflection. Also, we’ll ask a feedback to take the personalization further",
+    "content_6": "The programs requires effort but pays back well, soon, you will understand your partner much better, see whether you are good for each other and establish a better communication",
+    "accept_title": "I have read and understood the technique"
   },
   "login": {
     "title": "Login",

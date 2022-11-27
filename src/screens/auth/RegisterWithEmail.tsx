@@ -7,72 +7,38 @@ import {
   TouchableOpacity,
   View,
 } from 'react-native';
+import * as Linking from 'expo-linking';
+import { supabase } from '@app/api/initSupabase';
 import { AuthStackParamList } from '@app/types/navigation';
 import { NativeStackScreenProps } from '@react-navigation/native-stack';
+import { EMAIL_CONFIRMED_PATH } from './EmailConfirmed';
 import { Button, Input, Text } from '@rneui/themed';
-import { GoogleOAuth } from '@app/components/auth/GoogleOAuth';
 import { i18n } from '@app/localization/i18n';
-import { supabase } from '@app/api/initSupabase';
-import { APICouple, InsertAPICouple, InsertAPIUserProfile, SupabaseUser } from '@app/types/api';
-import { randomReadnableString } from '@app/utils/strings';
-import { PostgrestError } from '@supabase/supabase-js';
 
-export default function ({
-  route,
-  navigation,
-}: NativeStackScreenProps<AuthStackParamList, 'Register'>) {
+export default function ({ navigation }: NativeStackScreenProps<AuthStackParamList, 'Register'>) {
   const [email, setEmail] = useState<string>('');
   const [password, setPassword] = useState<string>('');
   const [loading, setLoading] = useState<boolean>(false);
-  // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment, @typescript-eslint/no-explicit-any
+  // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
   const passwordRef = useRef(null) as any;
 
   async function register() {
     setLoading(true);
+    const returnUrl = Linking.createURL(EMAIL_CONFIRMED_PATH);
     const data = await supabase.auth.signUp({
       email: email,
       password: password,
+      options: { emailRedirectTo: returnUrl },
     });
     setLoading(false);
+    console.log(data);
     if (!data.error && data?.data.user?.confirmation_sent_at) {
       alert(i18n.t('register.check_email_for_confirmation'));
     } else {
       alert(data.error?.message ?? i18n.t('register.unexpected_error'));
     }
   }
-  async function handleUserAfterSignUp(user: SupabaseUser, exists: boolean): Promise<void> {
-    if (exists) {
-      // TODO, maybe update user answers here
-      console.log(`User ${user.email} already exists, just sign in`);
-    } else {
-      const couple: InsertAPICouple = {
-        invitation_code: randomReadnableString(6),
-      };
-      const { data, error }: { data: APICouple; error: PostgrestError } = await supabase
-        .from('couple')
-        .insert(couple)
-        .select()
-        .single();
-      if (error) {
-        throw error;
-      }
-      const userProfile: InsertAPIUserProfile = {
-        couple_id: data.id,
-        user_id: user.id,
-        first_name: route.params.name,
-        onboarding_finished: true,
-      };
-      const { data: profileData, error: profileError } = await supabase
-        .from('user_profile')
-        .insert(userProfile)
-        .select()
-        .single();
-      if (profileError) {
-        throw profileError;
-      }
-      console.log(profileData);
-    }
-  }
+
   return (
     <KeyboardAvoidingView behavior="height" enabled style={{ flex: 1 }}>
       <ScrollView
@@ -147,7 +113,6 @@ export default function ({
             }}
             disabled={loading}
           />
-          <GoogleOAuth preHandleUser={undefined} postHandleUser={handleUserAfterSignUp} />
 
           <View
             style={{
