@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Image, ScrollView, TouchableOpacity, View } from 'react-native';
+import { Image, KeyboardAvoidingView, ScrollView, TouchableOpacity, View } from 'react-native';
 import { AuthStackParamList } from '@app/types/navigation';
 import { NativeStackScreenProps } from '@react-navigation/native-stack';
 import { Input, Text, useTheme } from '@rneui/themed';
@@ -11,88 +11,80 @@ export default function ({ navigation }: NativeStackScreenProps<AuthStackParamLi
   const [name, setName] = useState<string>('');
   const disabled = name.length === 0;
   return (
-    <ScrollView
-      contentContainerStyle={{
-        flexGrow: 1,
-        backgroundColor: 'white',
-        paddingVertical: 25,
-        paddingHorizontal: 15,
-      }}
-    >
-      <View
-        style={{
-          marginBottom: 20,
-          height: 250,
-        }}
-      >
-        <Image
-          resizeMode="contain"
-          style={{
-            height: '100%',
-            width: '100%',
-          }}
-          // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
-          source={require('../../../../assets/images/welcome.png')}
-        />
-      </View>
-      <View
-        style={{
+    <KeyboardAvoidingView behavior="padding" style={{ flexGrow: 1 }}>
+      <ScrollView
+        keyboardShouldPersistTaps="always"
+        contentContainerStyle={{
+          flexGrow: 1,
+          backgroundColor: 'white',
+          paddingVertical: 25,
           paddingHorizontal: 15,
-          marginBottom: 10,
         }}
       >
-        <Text
+        <View
           style={{
-            textAlign: 'center',
-            marginBottom: 10,
-            fontWeight: 'bold',
-          }}
-          h3
-        >
-          {i18n.t('welcome.title')}
-        </Text>
-        <Text
-          style={{
-            alignSelf: 'flex-start',
-            marginBottom: 10,
-            color: theme.colors.grey3,
+            marginBottom: 20,
+            height: 250,
           }}
         >
-          {i18n.t('welcome.pretext')}
-        </Text>
-        <Input
-          containerStyle={{ marginTop: 10, paddingHorizontal: 0 }}
-          inputStyle={{ padding: 5 }}
-          placeholder={i18n.t('name_placeholder')}
-          value={name}
-          autoCapitalize="none"
-          autoComplete="name"
-          autoCorrect={false}
-          keyboardType="default"
-          returnKeyType="done"
-          onChangeText={(text) => setName(text)}
-        />
+          <Image
+            resizeMode="contain"
+            style={{
+              height: '100%',
+              width: '100%',
+            }}
+            // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
+            source={require('../../../../assets/images/welcome.png')}
+          />
+        </View>
+        <View
+          style={{
+            paddingHorizontal: 15,
+            marginBottom: 10,
+          }}
+        >
+          <Text
+            style={{
+              textAlign: 'center',
+              marginBottom: 10,
+              fontWeight: 'bold',
+            }}
+            h3
+          >
+            {i18n.t('welcome.title')}
+          </Text>
+          <Text
+            style={{
+              alignSelf: 'flex-start',
+              marginBottom: 10,
+              color: theme.colors.grey3,
+            }}
+          >
+            {i18n.t('welcome.pretext')}
+          </Text>
+          <Input
+            containerStyle={{ marginTop: 10, paddingHorizontal: 0 }}
+            inputStyle={{ padding: 5 }}
+            placeholder={i18n.t('name_placeholder')}
+            value={name}
+            autoCapitalize="none"
+            autoComplete="name"
+            autoCorrect={false}
+            keyboardType="default"
+            returnKeyType="done"
+            onChangeText={(text) => setName(text)}
+          />
 
-        <PrimaryButton
-          title={i18n.t('welcome.button.default')}
-          onPress={() => {
-            // navigation.navigate('PrePlacement', {
-            //   name,
-            // });
-            // TODO
-            navigation.navigate('Register', {
-              name,
-              userAnswers: [
-                {
-                  question: { id: 1, slug: 'dating_length' },
-                  answer: { id: 1, slug: '1-4-weeks' },
-                },
-              ],
-            });
-          }}
-          disabled={disabled}
-        />
-        {/* <Text>{i18n.t('welcome.pre_join_text')}</Text>
+          <PrimaryButton
+            title={i18n.t('welcome.button.default')}
+            onPress={() => {
+              navigation.navigate('PrePlacement', {
+                name,
+              });
+            }}
+            disabled={disabled}
+          />
+          {/* <Text>{i18n.t('welcome.pre_join_text')}</Text>
           <Button
             title={i18n.t('welcome.join_button.default')}
             onPress={() => {
@@ -100,31 +92,32 @@ export default function ({ navigation }: NativeStackScreenProps<AuthStackParamLi
             }}
             disabled={disabled}
           /> */}
-        <View
-          style={{
-            flexDirection: 'row',
-            alignItems: 'center',
-            marginTop: 15,
-            justifyContent: 'center',
-          }}
-        >
-          <Text>{i18n.t('welcome.login.pretext')}</Text>
-          <TouchableOpacity
-            onPress={() => {
-              navigation.navigate('Login');
+          <View
+            style={{
+              flexDirection: 'row',
+              alignItems: 'center',
+              marginTop: 15,
+              justifyContent: 'center',
             }}
           >
-            <Text
-              style={{
-                marginLeft: 5,
-                fontWeight: 'bold',
+            <Text>{i18n.t('welcome.login.pretext')}</Text>
+            <TouchableOpacity
+              onPress={() => {
+                navigation.navigate('Login');
               }}
             >
-              {i18n.t('welcome.login.link')}
-            </Text>
-          </TouchableOpacity>
+              <Text
+                style={{
+                  marginLeft: 5,
+                  fontWeight: 'bold',
+                }}
+              >
+                {i18n.t('welcome.login.link')}
+              </Text>
+            </TouchableOpacity>
+          </View>
         </View>
-      </View>
-    </ScrollView>
+      </ScrollView>
+    </KeyboardAvoidingView>
   );
 }

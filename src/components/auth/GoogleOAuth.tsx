@@ -1,4 +1,4 @@
-import { Button, Text } from '@rneui/themed';
+import { Button, Text, useTheme } from '@rneui/themed';
 import { startAsync } from 'expo-auth-session';
 import React, { useContext } from 'react';
 import { Platform, View } from 'react-native';
@@ -7,16 +7,14 @@ import { supabase } from '@app/api/initSupabase';
 import * as Linking from 'expo-linking';
 import { Provider, SignInWithOAuthCredentials } from '@supabase/supabase-js';
 import { i18n } from '@app/localization/i18n';
-import { theme } from '@app/theme';
 import { SupabaseUser } from '@app/types/api';
 import { AuthContext, setSession } from '@app/provider/AuthProvider';
 export const GoogleOAuth = ({
-  preHandleUser,
-  postHandleUser,
+  handleUser: handleUser,
 }: {
-  preHandleUser: ((user: SupabaseUser, exists: boolean) => Promise<void>) | undefined;
-  postHandleUser: ((user: SupabaseUser, exists: boolean) => Promise<void>) | undefined;
+  handleUser: (user: SupabaseUser, exists: boolean) => Promise<void>;
 }) => {
+  const { theme } = useTheme();
   const auth = useContext(AuthContext);
   const onPress = async () => {
     const returnUrl = Linking.createURL('');
@@ -24,7 +22,6 @@ export const GoogleOAuth = ({
       provider: 'google' as Provider,
       options: {
         redirectTo: returnUrl,
-        queryParams: { allowNewUser: 'true' },
       },
     };
     if (Platform.OS == 'web') {
@@ -46,7 +43,8 @@ export const GoogleOAuth = ({
           const accessToken = response.params['access_token'];
           const refreshToken = response.params['refresh_token'];
           if (accessToken && refreshToken) {
-            const { data: user, error } = await supabase.auth.getUser(accessToken);
+            await setSession(accessToken, refreshToken);
+            const { data: user, error } = await supabase.auth.getUser();
             if (error) {
               throw error;
             } else {
@@ -58,10 +56,8 @@ export const GoogleOAuth = ({
               if (error) {
                 throw error;
               }
-              await preHandleUser?.(user.user, !!count);
-              await setSession(accessToken, refreshToken, auth.setIsSignedIn);
-              await postHandleUser?.(user.user, !!count);
-              await Linking.openURL(response.url);
+              await handleUser(user.user, !!count);
+              auth.setIsSignedIn(true);
             }
           } else {
             console.error(`Auth response had no access_token ${JSON.stringify(response)}`);
@@ -78,7 +74,7 @@ export const GoogleOAuth = ({
             ? `Error happened: ${e?.['message'] as string}`
             : 'Something unexpected happened, try again',
         );
-        throw e;
+        await supabase.auth.signOut();
       }
       window = oldWindow;
     }
@@ -88,7 +84,7 @@ export const GoogleOAuth = ({
       <Text
         style={{
           alignSelf: 'center',
-          color: theme.lightColors.grey3,
+          color: theme.colors.background,
           marginVertical: 15,
         }}
       >

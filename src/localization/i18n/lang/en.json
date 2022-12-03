@@ -1,10 +1,13 @@
 {
   "loading": "Loading",
+  "close": "Close",
+  "logout": "Logout",
   "next": "Next",
   "finish": "Finish",
   "name_placeholder": "Enter your name",
   "email_placeholder": "Enter your email",
   "password_placeholder": "Enter your password",
+  "password_again_placeholder": "Enter your password again",
   "welcome": {
     "title": "Get to know\nyour partner better",
     "pretext": "Use Nemlys app to learn common ground and build meaningful communication",
@@ -21,7 +24,7 @@
     "title": "Hey %{name} \nlet's get started",
     "pretext": "First, we want to ask you a few questions about your relationship to personalize the program"
   },
-  "how_we_work":{
+  "how_we_work": {
     "title": "How it works?",
     "content_1": "•  Now, we have prepared a personalized program for you",
     "content_2": "•  For every date, we will provide you with a question to discuss and ‘action’ to take",
@@ -52,15 +55,57 @@
     }
   },
   "register": {
-    "title": "Register",
+    "title": "Let's create your account",
+    "results": "Results",
     "check_email_for_confirmation": "The confirmation link has been sent to your email",
     "unexpected_error": "Unexpected error happened, try again",
-    "button": {
-      "default": "Create an account"
+    "passwords_are_not_the_same": "Passwords are not the same",
+    "register_button": {
+      "default": "Create"
+    },
+    "continue_with_email": {
+      "default": "Continue with email"
     },
     "login": {
       "pretext": "Already have an account?",
       "link": "Login here"
+    },
+    "questions": {
+        "dating_length":{
+          "title": "Going out for",
+          "answers": {
+            "1-4-weeks": "1-4 weeks",
+            "1-3-months": "1-3 months",
+            "3-12-months": "3-12 months",
+            "12-more-months": "12+ months"
+          }
+        },
+        "open":{
+          "title": "Level of openness",
+          "answers": {
+            "open-0": "Cannot open up yet",
+            "open-1": "Can discuss general topics",
+            "open-2": "Can discuss hard topics",
+            "open-3": "Can discuss everything",
+            "open-4": "Partner is more open for now",
+            "open-5": "I am more open for now"
+          }
+        },
+        "well_covered":{
+          "title": "Well-covered topics"
+        },
+        "to_cover":{
+          "title": "Topics to cover"
+        },
+        "topics":{
+          "relationship-image": "Relationship image",
+          "time": "Time",
+          "values": "Values",
+          "commitment": "Commitment",
+          "past": "Past",
+          "emotions": "Emotions",
+          "conflict": "Conflict"
+        }
     }
   },
   "email_confirmed": {

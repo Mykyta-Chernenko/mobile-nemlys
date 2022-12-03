@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react';
+import React, { useContext, useRef, useState } from 'react';
 import { Image, KeyboardAvoidingView, ScrollView, TouchableOpacity, View } from 'react-native';
 import { supabase } from '@app/api/initSupabase';
 import { AuthStackParamList } from '@app/types/navigation';
@@ -8,6 +8,7 @@ import { GoogleOAuth } from '@app/components/auth/GoogleOAuth';
 import * as WebBrowser from 'expo-web-browser';
 import { i18n } from '@app/localization/i18n';
 import { SupabaseUser } from '@app/types/api';
+import { AuthContext } from '@app/provider/AuthProvider';
 WebBrowser.maybeCompleteAuthSession();
 export default function ({ navigation }: NativeStackScreenProps<AuthStackParamList, 'Login'>) {
   const [email, setEmail] = useState<string>('');
@@ -15,7 +16,7 @@ export default function ({ navigation }: NativeStackScreenProps<AuthStackParamLi
   const [loading, setLoading] = useState<boolean>(false);
   // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment, @typescript-eslint/no-explicit-any
   const passwordRef = useRef(null) as any;
-
+  const auth = useContext(AuthContext);
   async function login() {
     setLoading(true);
     const {
@@ -25,13 +26,13 @@ export default function ({ navigation }: NativeStackScreenProps<AuthStackParamLi
       email: email,
       password: password,
     });
-    if (!error && !user) {
-      setLoading(false);
-      alert(i18n.t('login.check_email_for_login_link'));
-    }
+    setLoading(false);
     if (error) {
-      setLoading(false);
       alert(error.message);
+    } else if (!error && !user) {
+      alert(i18n.t('login.check_email_for_login_link'));
+    } else {
+      auth.setIsSignedIn(true);
     }
   }
   // eslint-disable-next-line @typescript-eslint/require-await
@@ -41,23 +42,27 @@ export default function ({ navigation }: NativeStackScreenProps<AuthStackParamLi
     }
   }
   return (
-    <KeyboardAvoidingView behavior="height" enabled style={{ flex: 1 }}>
+    <KeyboardAvoidingView behavior="padding" style={{ flexGrow: 1 }}>
       <ScrollView
+        keyboardShouldPersistTaps="always"
         contentContainerStyle={{
           flexGrow: 1,
+          backgroundColor: 'white',
+          paddingVertical: 25,
+          paddingHorizontal: 15,
         }}
       >
         <View
           style={{
-            margin: '5%',
+            marginBottom: 20,
             height: 250,
           }}
         >
           <Image
             resizeMode="contain"
             style={{
-              height: 220,
-              width: 220,
+              height: '100%',
+              width: '100%',
             }}
             // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
             source={require('../../../assets/images/login.png')}
@@ -65,15 +70,13 @@ export default function ({ navigation }: NativeStackScreenProps<AuthStackParamLi
         </View>
         <View
           style={{
-            flex: 3,
-            paddingHorizontal: 20,
-            paddingBottom: 20,
-            backgroundColor: 'white',
+            paddingHorizontal: 15,
+            marginBottom: 10,
           }}
         >
           <Text
             style={{
-              alignSelf: 'flex-start',
+              textAlign: 'center',
               marginBottom: 10,
               fontWeight: 'bold',
             }}
@@ -116,7 +119,7 @@ export default function ({ navigation }: NativeStackScreenProps<AuthStackParamLi
             }}
             disabled={loading}
           />
-          <GoogleOAuth preHandleUser={checkUserExists} postHandleUser={undefined} />
+          <GoogleOAuth handleUser={checkUserExists} />
           <View
             style={{
               flexDirection: 'row',
@@ -157,14 +160,6 @@ export default function ({ navigation }: NativeStackScreenProps<AuthStackParamLi
               <Text style={{ fontWeight: 'bold' }}> {i18n.t('login.forgot_password.link')}</Text>
             </TouchableOpacity>
           </View>
-          <View
-            style={{
-              flexDirection: 'row',
-              alignItems: 'center',
-              marginTop: 30,
-              justifyContent: 'center',
-            }}
-          ></View>
         </View>
       </ScrollView>
     </KeyboardAvoidingView>

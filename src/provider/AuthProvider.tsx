@@ -9,20 +9,16 @@ type ContextProps = {
 
 const AuthContext = createContext<Partial<ContextProps>>({});
 
+export async function setSession(accessToken: string, refreshToken: string) {
+  // bug-fix, Buffer is used in the underlying lib, but is not imported
+  global.Buffer = require('buffer').Buffer;
+  await supabase.auth.setSession({ access_token: accessToken, refresh_token: refreshToken });
+}
+
 interface Props {
   children: React.ReactNode;
 }
 
-export async function setSession(
-  accessToken: string,
-  refreshToken: string,
-  setIsSignedIn: ContextProps['setIsSignedIn'],
-) {
-  // bug-fix, Buffer is used in the underlying lib, but is not imported
-  global.Buffer = require('buffer').Buffer;
-  await supabase.auth.setSession({ access_token: accessToken, refresh_token: refreshToken });
-  setIsSignedIn(true);
-}
 const AuthProvider = (props: Props) => {
   // user null = loading
   const [isSignedIn, setIsSignedIn] = useState<null | boolean>(null);
@@ -34,7 +30,8 @@ const AuthProvider = (props: Props) => {
       const accessToken = urlObject.searchParams.get('access_token');
       const refreshToken = urlObject.searchParams.get('refresh_token');
       if (!refreshToken || !refreshToken) return;
-      await setSession(accessToken, refreshToken, setIsSignedIn);
+      await setSession(accessToken, refreshToken);
+      setIsSignedIn(true);
     };
     const listener = (event: { url: string }) => {
       void handleDeepLinking(event.url);
@@ -57,6 +54,7 @@ const AuthProvider = (props: Props) => {
 
   useEffect(() => {
     if (isSignedIn) {
+      console.log('Listen to supabasse events');
       const {
         data: { subscription: authListener },
       } = supabase.auth.onAuthStateChange((event, session) => {

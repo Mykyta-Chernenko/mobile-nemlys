@@ -1,7 +1,7 @@
 import { OnboardingQuestion, UserOnboardingAnswer } from './domain';
 
 export type MainStackParamList = {
-  MainTabs: undefined;
+  SetHomeScreen: undefined;
   SecondScreen: undefined;
 };
 
@@ -21,7 +21,6 @@ export type AuthStackParamList = {
   HowWeWork: PlacementParams;
   Login: undefined;
   Register: RegisterParams;
-  RegisterWithEmail: RegisterParams;
   ForgetPassword: undefined;
   EmailConfirmed: undefined;
   TypeNewPassword: undefined;

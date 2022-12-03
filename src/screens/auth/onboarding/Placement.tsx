@@ -178,7 +178,7 @@ export default function ({
               checkedIcon="dot-circle-o"
               uncheckedIcon="circle-o"
               checkedColor={theme.colors.primary}
-              checked={chosenValue.id === a.id}
+              checked={chosenValue?.id === a.id}
               onPress={() => setChosenValue(a)}
               key={a.id}
               containerStyle={{

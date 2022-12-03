@@ -1,7 +1,7 @@
 import React from 'react';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
-import MainTabs from './MainTabs';
+import SetHomeScreen from '@app/screens/sets/SetHomeScreen';
 
 const MainStack = createNativeStackNavigator();
 const Main = () => {
@@ -11,7 +11,7 @@ const Main = () => {
         headerShown: false,
       }}
     >
-      <MainStack.Screen name="MainTabs" component={MainTabs} />
+      <MainStack.Screen name="SetHomeScreen" component={SetHomeScreen} />
     </MainStack.Navigator>
   );
 };

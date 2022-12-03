@@ -33,3 +33,22 @@ export class APIUserProfile extends ApiEntry {
 }
 
 export type InsertAPIUserProfile = Omit<APIUserProfile, keyof ApiEntry>;
+
+export type InsertAPIUserOnboardingAnswer = {
+  user_id: string;
+  onboarding_answer_id: APIOnboardingAnswer['id'];
+};
+
+export class APIQuestion extends ApiEntry {
+  title: string;
+  details: string;
+  tips: string;
+  importance: string;
+}
+
+export class APIAction extends ApiEntry {
+  title: string;
+  details: string;
+  instruction: string;
+  importance: string;
+}

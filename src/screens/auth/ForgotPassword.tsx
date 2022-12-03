@@ -4,7 +4,6 @@ import { supabase } from '@app/api/initSupabase';
 import { AuthStackParamList } from '@app/types/navigation';
 import { NativeStackScreenProps } from '@react-navigation/native-stack';
 import { Text, Input, Button } from '@rneui/themed';
-import { EMAIL_CONFIRMED_PATH } from './EmailConfirmed';
 import * as Linking from 'expo-linking';
 import { i18n } from '@app/localization/i18n';
 
@@ -16,7 +15,8 @@ export default function ({
 
   async function forget() {
     setLoading(true);
-    const redirectTo = Linking.createURL(EMAIL_CONFIRMED_PATH);
+    // rethink the whole logic, because it does not mean the person will open the email from their phone
+    const redirectTo = Linking.createURL('');
     // TODO handle password input
     const { error } = await supabase.auth.resetPasswordForEmail(email, { redirectTo });
     if (!error) {
