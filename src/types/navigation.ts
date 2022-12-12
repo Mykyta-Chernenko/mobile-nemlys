@@ -1,9 +1,35 @@
+import { NativeStackScreenProps } from '@react-navigation/native-stack';
 import { OnboardingQuestion, UserOnboardingAnswer } from './domain';
 
-export type MainStackParamList = {
-  SetHomeScreen: undefined;
-  SecondScreen: undefined;
+export type SetItemPropsAction = {
+  type: 'action';
+  instruction: string;
 };
+export type SetItemPropsQuestion = {
+  type: 'question';
+  tips: string;
+};
+export type SetItemProps = {
+  image: string | undefined;
+  title: string;
+  details: string;
+  importance: string;
+  tags: string[];
+} & (SetItemPropsAction | SetItemPropsQuestion);
+
+export class SetReminderProps {
+  setId: number;
+  actionsIds: number[];
+  questionIds: number[];
+}
+
+export type MainStackParamList = {
+  SetHomeScreen: { refresh: boolean | undefined };
+  SetItemDetails: SetItemProps;
+  SetReminder: SetReminderProps;
+};
+
+export type ProfileScreenNavigationProp = NativeStackScreenProps<MainStackParamList>['navigation'];
 
 type PrePlacementParams = {
   name: string;

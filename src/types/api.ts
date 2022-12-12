@@ -1,3 +1,5 @@
+import { PostgrestError } from '@supabase/supabase-js';
+
 export { User as SupabaseUser } from '@supabase/supabase-js';
 
 export class ApiEntry {
@@ -27,6 +29,7 @@ export type InsertAPICouple = Omit<APICouple, keyof ApiEntry>;
 
 export class APIUserProfile extends ApiEntry {
   first_name: string;
+  expo_token: string | undefined;
   onboarding_finished: boolean;
   user_id: string;
   couple_id: number;
@@ -39,16 +42,44 @@ export type InsertAPIUserOnboardingAnswer = {
   onboarding_answer_id: APIOnboardingAnswer['id'];
 };
 
-export class APIQuestion extends ApiEntry {
+class APIQuestionTag {
+  slug: string;
   title: string;
+}
+class APIQUestionQuestionTag {
+  question_question_tag: APIQuestionTag | APIQuestionTag[];
+}
+export class APIQuestion extends ApiEntry {
+  slug: string;
+  title: string;
+  image: string | undefined;
   details: string;
   tips: string;
   importance: string;
+  question_tag: APIQUestionQuestionTag | APIQUestionQuestionTag[];
 }
 
 export class APIAction extends ApiEntry {
+  slug: string;
   title: string;
   details: string;
+  image: string | undefined;
   instruction: string;
   importance: string;
 }
+
+export class APISet extends ApiEntry {
+  level: number;
+}
+
+export class APICoupleSet extends ApiEntry {
+  set_id: APISet['id'];
+  couple_id: APICouple['id'];
+  order: number;
+  completed: boolean;
+  schedule_reminder: string | undefined;
+  meeting: string | undefined;
+}
+export type InsertAPICoupleSet = Omit<APICoupleSet, keyof ApiEntry>;
+
+export type SupabaseAnswer<T> = { data: T; error: PostgrestError };

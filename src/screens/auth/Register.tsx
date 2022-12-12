@@ -75,6 +75,7 @@ export default function ({
         user_id: user.id,
         first_name: route.params.name,
         onboarding_finished: true,
+        expo_token: undefined,
       };
       const { error: profileError } = await supabase.from('user_profile').insert(userProfile);
       if (profileError) {
@@ -170,14 +171,22 @@ export default function ({
             </View>
           ) : (
             <Button
-              style={{ marginVertical: '3%' }}
+              style={{ marginTop: '3%' }}
               title={loading ? i18n.t('loading') : i18n.t('register.continue_with_email.default')}
               onPress={() => {
                 setContinueWithEmail(true);
               }}
             />
           )}
-
+          <Text
+            style={{
+              marginTop: 20,
+              color: theme.colors.grey3,
+              textAlign: 'center',
+            }}
+          >
+            {i18n.t('or')}
+          </Text>
           <GoogleOAuth handleUser={handleUserAfterSignUp} />
 
           <View

@@ -85,7 +85,6 @@ export const GoogleOAuth = ({
         style={{
           alignSelf: 'center',
           color: theme.colors.background,
-          marginVertical: 15,
         }}
       >
         {i18n.t('oauth.pretext')}

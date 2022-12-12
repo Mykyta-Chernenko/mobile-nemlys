@@ -1,3 +1,5 @@
+import { APIAction, APIQuestion } from './api';
+
 export class OnboardingQuestion {
   id: number;
   slug: string;
@@ -17,3 +19,9 @@ export class UserOnboardingAnswer {
   question: Pick<OnboardingQuestion, 'id' | 'slug'>;
   answer: Pick<OnboardingAnswer, 'id' | 'slug'>;
 }
+
+export type Question = Omit<APIQuestion, 'question_tag'> & {
+  tags: string[];
+};
+
+export type Action = APIAction;

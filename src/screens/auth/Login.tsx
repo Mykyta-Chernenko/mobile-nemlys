@@ -3,7 +3,7 @@ import { Image, KeyboardAvoidingView, ScrollView, TouchableOpacity, View } from 
 import { supabase } from '@app/api/initSupabase';
 import { AuthStackParamList } from '@app/types/navigation';
 import { NativeStackScreenProps } from '@react-navigation/native-stack';
-import { Button, Input, Text } from '@rneui/themed';
+import { Button, Input, Text, useTheme } from '@rneui/themed';
 import { GoogleOAuth } from '@app/components/auth/GoogleOAuth';
 import * as WebBrowser from 'expo-web-browser';
 import { i18n } from '@app/localization/i18n';
@@ -11,6 +11,7 @@ import { SupabaseUser } from '@app/types/api';
 import { AuthContext } from '@app/provider/AuthProvider';
 WebBrowser.maybeCompleteAuthSession();
 export default function ({ navigation }: NativeStackScreenProps<AuthStackParamList, 'Login'>) {
+  const { theme } = useTheme();
   const [email, setEmail] = useState<string>('');
   const [password, setPassword] = useState<string>('');
   const [loading, setLoading] = useState<boolean>(false);
@@ -119,6 +120,15 @@ export default function ({ navigation }: NativeStackScreenProps<AuthStackParamLi
             }}
             disabled={loading}
           />
+          <Text
+            style={{
+              marginTop: 20,
+              color: theme.colors.grey3,
+              textAlign: 'center',
+            }}
+          >
+            {i18n.t('or')}
+          </Text>
           <GoogleOAuth handleUser={checkUserExists} />
           <View
             style={{

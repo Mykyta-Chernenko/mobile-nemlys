@@ -3,8 +3,9 @@ import { SafeAreaProvider } from 'react-native-safe-area-context';
 import { BottomSheet, Button, Header, Icon, useTheme } from '@rneui/themed';
 import { TouchableOpacity } from 'react-native';
 import { i18n } from '@app/localization/i18n';
-import { supabase } from '@app/api/initSupabase';
+import { AUTH_STORAGE_KEY, supabase } from '@app/api/initSupabase';
 import { SecondaryButton } from '../buttons/SecondaryButton';
+import AsyncStorage from '@react-native-async-storage/async-storage';
 
 interface Props {
   children: React.ReactNode;
@@ -13,22 +14,12 @@ interface Props {
 export const ViewWithMenu = (props: Props) => {
   const [showMenu, setShowMenu] = useState<boolean>(false);
   const { theme } = useTheme();
-  const list = [
-    {
-      title: i18n.t('logout'),
-      containerStyle: { backgroundColor: theme.colors.warning },
-      color: theme.colors.error,
-      type: 'solid',
-      onPress: () => void supabase.auth.signOut(),
-    },
-    {
-      title: i18n.t('close'),
-      color: theme.colors.black,
-      type: 'solid',
-      onPress: () => setShowMenu(false),
-    },
-  ];
 
+  const logout = async () => {
+    await supabase.auth.signOut();
+    // just to make sure in case something goes wrong
+    await AsyncStorage.removeItem(AUTH_STORAGE_KEY);
+  };
   return (
     <SafeAreaProvider style={{ flexGrow: 1 }}>
       <Header
@@ -46,7 +37,7 @@ export const ViewWithMenu = (props: Props) => {
         containerStyle={{ padding: '5%' }}
         backdropStyle={{ backgroundColor: 'rgba(255, 255, 255, 0.7)' }}
       >
-        <Button color="error" onPress={() => void supabase.auth.signOut()} style={{ margin: '1%' }}>
+        <Button color="error" onPress={() => void logout()} style={{ margin: '1%' }}>
           {i18n.t('logout')}
         </Button>
         <SecondaryButton

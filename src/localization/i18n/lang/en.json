@@ -1,6 +1,8 @@
 {
   "loading": "Loading",
+  "or": "Or",
   "close": "Close",
+  "save": "Save",
   "logout": "Logout",
   "next": "Next",
   "finish": "Finish",
@@ -116,6 +118,58 @@
     "email_sent": "Check your email to reset the password",
     "button": {
       "default": "Send email"
+    }
+  },
+  "set":{
+    "accept": "Accept challenge",
+    "reminder":{
+      "title": "Reminder",
+      "content": "Set when you will have the next date with your partner and you have enough time to discuss the set, and we will remind you about it before",
+      "no_date_yet_checkbox": "We don’t have a specific time yet",
+      "next_button": "Finish",
+      "notification_access": "*We will ask you for the notification access to remind you more effectively",
+      "notification_access_no_date": "*We will ask you for the notification access to remind you to set the date later"
+    },
+    "new": {
+      "title": "We prepared for you a set actionable things for the next date, click on the individual items to get more info",
+      "questions":{
+      "title": "To discuss with your partner"
+    },
+    "actions":{
+      "title": "To do with your partner"
+    }
+    },
+    "chosen": {
+      "title": "Set for the next date",
+      "click_tips": "Click on the action or question \nto get more details",
+      "date_is_not_set": "Not set",
+      "next_date_is": "Your meeting is on",
+      "questions": {
+        "title": "Discuss this with your partner"
+      },
+      "actions": {
+        "title": "Do this with your partner"
+      },
+      "button":{
+        "title":"We completed the set",
+        "disable_before_meeting_set": "* To unlock the button, set when your meeting will happen",
+        "disable_before_meeting_happened": "* The button will unlock after your date"
+      }, 
+      "button_disabled_tip_date_set": "We've done the set",
+      "button_disabled_tip_no_date_set": "The button wil be available after you set the date",
+      "change_meeting_date": {
+        "title":"When is your date?"
+      }
+      
+    },
+    "importance": {
+      "title": "Importance"
+    },
+    "tips": {
+      "title": "Tips"
+    },
+    "instruction": {
+      "title": "Instruction"
     }
   }
 }
