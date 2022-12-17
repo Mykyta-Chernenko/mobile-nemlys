@@ -1,6 +1,5 @@
-import { APIAction, APIQuestion } from '@app/types/api';
+import { APIAction, APIQuestion, SupabaseAnswer } from '@app/types/api';
 import { Action, Question } from '@app/types/domain';
-import { PostgrestError } from '@supabase/supabase-js';
 import { supabase } from '../initSupabase';
 
 export async function getQuestionsAndActionsForSet(
@@ -11,8 +10,8 @@ export async function getQuestionsAndActionsForSet(
     supabase.from('set_action').select('action_id').eq('set_id', setId),
   ]);
   const [{ data: questions, error: questionError }, { data: actions, error: actionError }]: [
-    { data: APIQuestion[]; error: PostgrestError },
-    { data: APIAction[]; error: PostgrestError },
+    SupabaseAnswer<APIQuestion[] | null>,
+    SupabaseAnswer<APIAction[] | null>,
   ] = await Promise.all([
     supabase
       .from('question')
@@ -21,14 +20,14 @@ export async function getQuestionsAndActionsForSet(
       )
       .in(
         'id',
-        questionIds.map((x) => x.question_id),
+        (questionIds ?? []).map((x) => x.question_id),
       ),
     supabase
       .from('action')
       .select('id, slug, title, image, details, importance, instruction, created_at, updated_at')
       .in(
         'id',
-        actionsIds.map((x) => x.action_id),
+        (actionsIds ?? []).map((x) => x.action_id),
       ),
   ]);
   if (questionError || actionError) {
@@ -36,14 +35,16 @@ export async function getQuestionsAndActionsForSet(
     return;
   }
   return {
-    questions: questions.map((q) => {
+    questions: (questions ?? []).map((q) => {
       const tags: string[] = [];
       const firstLevelTags = Array.isArray(q.question_tag) ? q.question_tag : [q.question_tag];
       firstLevelTags.map((tt) => {
-        if (Array.isArray(tt.question_question_tag)) {
-          tt.question_question_tag.map((ttt) => tags.push(ttt.title));
-        } else {
-          tags.push(tt.question_question_tag.title);
+        if (tt) {
+          if (Array.isArray(tt.question_question_tag)) {
+            tt.question_question_tag.map((ttt) => tags.push(ttt.title));
+          } else if (tt.question_question_tag) {
+            tags.push(tt.question_question_tag.title);
+          }
         }
       });
       return {
@@ -51,6 +52,6 @@ export async function getQuestionsAndActionsForSet(
         tags,
       };
     }),
-    actions: actions,
+    actions: actions ?? [],
   };
 }

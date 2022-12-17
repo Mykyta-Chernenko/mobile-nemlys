@@ -1,15 +1,19 @@
 {
   "loading": "Loading",
   "or": "Or",
+  "yes": "Yes",
+  "no": "No",
   "close": "Close",
   "save": "Save",
   "logout": "Logout",
   "next": "Next",
   "finish": "Finish",
+  "input_here": "Input here",
   "name_placeholder": "Enter your name",
   "email_placeholder": "Enter your email",
   "password_placeholder": "Enter your password",
   "password_again_placeholder": "Enter your password again",
+  "unexpected_error": "Unexpected error happened, try again",
   "welcome": {
     "title": "Get to know\nyour partner better",
     "pretext": "Use Nemlys app to learn common ground and build meaningful communication",
@@ -60,7 +64,6 @@
     "title": "Let's create your account",
     "results": "Results",
     "check_email_for_confirmation": "The confirmation link has been sent to your email",
-    "unexpected_error": "Unexpected error happened, try again",
     "passwords_are_not_the_same": "Passwords are not the same",
     "register_button": {
       "default": "Create"
@@ -120,9 +123,9 @@
       "default": "Send email"
     }
   },
-  "set":{
+  "set": {
     "accept": "Accept challenge",
-    "reminder":{
+    "reminder": {
       "title": "Reminder",
       "content": "Set when you will have the next date with your partner and you have enough time to discuss the set, and we will remind you about it before",
       "no_date_yet_checkbox": "We don’t have a specific time yet",
@@ -132,12 +135,13 @@
     },
     "new": {
       "title": "We prepared for you a set actionable things for the next date, click on the individual items to get more info",
-      "questions":{
-      "title": "To discuss with your partner"
-    },
-    "actions":{
-      "title": "To do with your partner"
-    }
+      "questions": {
+        "title": "To discuss with your partner"
+      },
+      "actions": {
+        "title": "To do with your partner"
+      },
+      "no_new_set": "Unfortunately, we don't have more sets at the moment, but we are on it, stay tunned"
     },
     "chosen": {
       "title": "Set for the next date",
@@ -150,17 +154,20 @@
       "actions": {
         "title": "Do this with your partner"
       },
-      "button":{
-        "title":"We completed the set",
+      "button": {
+        "title": "We completed the set",
         "disable_before_meeting_set": "* To unlock the button, set when your meeting will happen",
-        "disable_before_meeting_happened": "* The button will unlock after your date"
-      }, 
+        "disable_before_meeting_happened": "* The button will unlock after your date",
+        "set_created_too_recently": "* You accepted the set just recently, the button unlocks 30 mins after that"
+      },
       "button_disabled_tip_date_set": "We've done the set",
       "button_disabled_tip_no_date_set": "The button wil be available after you set the date",
       "change_meeting_date": {
-        "title":"When is your date?"
+        "title": "When is your date?"
+      },
+      "finish": {
+        "finish_title":  "Thanks, the feedback helped us to adapt the next set for you"
       }
-      
     },
     "importance": {
       "title": "Importance"

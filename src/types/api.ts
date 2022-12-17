@@ -1,6 +1,8 @@
 import { PostgrestError } from '@supabase/supabase-js';
 
 export { User as SupabaseUser } from '@supabase/supabase-js';
+export type SupabaseAnswer<T> = { data: T; error: null } | { data: null; error: PostgrestError };
+export type SupabaseEdgeAnswer<T> = { data: T; error: null } | { data: null; error: any };
 
 export class ApiEntry {
   id: number;
@@ -47,7 +49,7 @@ class APIQuestionTag {
   title: string;
 }
 class APIQUestionQuestionTag {
-  question_question_tag: APIQuestionTag | APIQuestionTag[];
+  question_question_tag: APIQuestionTag | APIQuestionTag[] | null;
 }
 export class APIQuestion extends ApiEntry {
   slug: string;
@@ -56,7 +58,7 @@ export class APIQuestion extends ApiEntry {
   details: string;
   tips: string;
   importance: string;
-  question_tag: APIQUestionQuestionTag | APIQUestionQuestionTag[];
+  question_tag: APIQUestionQuestionTag | APIQUestionQuestionTag[] | null;
 }
 
 export class APIAction extends ApiEntry {
@@ -65,6 +67,15 @@ export class APIAction extends ApiEntry {
   details: string;
   image: string | undefined;
   instruction: string;
+  importance: string;
+}
+
+export class APIReflection extends ApiEntry {
+  slug: string;
+  title: string;
+  image: string | undefined;
+  details: string;
+  tips: string;
   importance: string;
 }
 
@@ -82,4 +93,34 @@ export class APICoupleSet extends ApiEntry {
 }
 export type InsertAPICoupleSet = Omit<APICoupleSet, keyof ApiEntry>;
 
-export type SupabaseAnswer<T> = { data: T; error: PostgrestError };
+export class CoupleSetFeedback extends ApiEntry {
+  couple_set_id: APICoupleSet['id'];
+  user_id: string;
+}
+export type InsertCoupleSetFeedback = Omit<CoupleSetFeedback, keyof ApiEntry>;
+
+export class APIFeedbackQuestion extends ApiEntry {
+  title: string;
+  order: string;
+  type: 'text' | 'choice' | 'bool';
+}
+
+export class APIFeedbackChoice extends ApiEntry {
+  title: string;
+  order: string;
+  feedback_question_id: APIFeedbackQuestion['id'];
+}
+
+export class APICoupleSetFeedback extends ApiEntry {
+  couple_set_id: APICoupleSet['id'];
+  user_id: string;
+}
+
+export class APICoupleSetFeedbackAnswer {
+  type: 'text' | 'choice' | 'bool';
+  feedback_choice_id: APIFeedbackChoice['id'] | undefined;
+  bool_answer: boolean | undefined;
+  text_answer: string | undefined;
+  feedback_question_id: APIFeedbackQuestion['id'];
+  couple_set_feedback_id: APICoupleSetFeedback['id'];
+}

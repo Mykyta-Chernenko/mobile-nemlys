@@ -14,8 +14,11 @@ import ClockIcon from '@app/icons/clock';
 import { PrimaryButton } from '../buttons/PrimaryButtons';
 import DateTimePicker from '@react-native-community/datetimepicker';
 import { combineDateWithTime } from '@app/utils/time';
+import { MainNavigationProp } from '@app/types/navigation';
+import { useNavigation } from '@react-navigation/native';
 
 export default function () {
+  const navigation = useNavigation<MainNavigationProp>();
   const { theme } = useTheme();
   const [loading, setLoading] = useState(true);
   const [currentSet, setCurrentSet] = useState<APICoupleSet | undefined>(undefined);
@@ -26,25 +29,36 @@ export default function () {
     ? meetingDate.format('MMM Do, HH:mm')
     : i18n.t('set.chosen.date_is_not_set');
 
+  const [now, setNow] = useState<Date>(new Date());
   const meetingSet = currentSet?.meeting;
-  const meetingHappened = meetingSet && new Date(currentSet?.meeting) < new Date();
+  const meetingHappened = currentSet?.meeting && new Date(currentSet.meeting) < now;
+  const halfHour = 1000 * 60 * 30;
+  const setCreatedTooRecently =
+    currentSet?.created_at &&
+    new Date(new Date(currentSet.created_at).getTime() + halfHour) > new Date();
   const enableCompletedButton = meetingSet && meetingHappened;
 
   useEffect(() => {
+    const id = setInterval(() => setNow(new Date()), 1000);
+    return () => clearInterval(id);
+  });
+
+  useEffect(() => {
     async function getCurrentLevel() {
-      const { data, error }: SupabaseAnswer<APICoupleSet> = await supabase
+      const res: SupabaseAnswer<APICoupleSet | null> = await supabase
         .from('couple_set')
         .select(
           'id, created_at, updated_at, set_id,couple_id,order,completed,schedule_reminder,meeting',
         )
         .eq('completed', false)
         .maybeSingle();
-      if (error) {
-        alert(error.message);
+      if (res.error) {
+        alert(res.error.message);
+        return;
       }
-      if (data) {
-        setCurrentSet(data);
-        const questionsActions = await getQuestionsAndActionsForSet(data.set_id);
+      if (res.data) {
+        setCurrentSet(res.data);
+        const questionsActions = await getQuestionsAndActionsForSet(res.data.set_id);
         if (questionsActions) {
           setQuestions(questionsActions.questions);
           setActions(questionsActions.actions);
@@ -55,7 +69,6 @@ export default function () {
     void getCurrentLevel();
   }, [setLoading, setQuestions, setActions]);
 
-  const now = new Date();
   const defaultDate = (currentSet?.meeting && new Date(currentSet?.meeting)) || now;
   const [showChangeDate, setShowChangeDate] = useState(false);
   const [chosenDate, setChosenDate] = useState<Date>(defaultDate);
@@ -74,6 +87,7 @@ export default function () {
         .update({
           meeting: combineDateWithTime(chosenDate, chosenTime),
           schedule_reminder: undefined,
+          updated_at: new Date(),
         })
         .eq('id', currentSet.id)
         .select()
@@ -87,6 +101,14 @@ export default function () {
       setShowChangeDate(false);
       setLoading(false);
     }
+  };
+
+  const handleButton = () => {
+    if (!currentSet) return;
+    navigation.navigate('CompleteSetReflect', {
+      setId: currentSet.set_id,
+      coupleSetId: currentSet.id,
+    });
   };
   return (
     <ViewSetHomeScreen>
@@ -168,7 +190,7 @@ export default function () {
                     mode="date"
                     onChange={(event, value) => {
                       setChosenDateTouched(true);
-                      setChosenDate(value);
+                      setChosenDate(value || defaultDate);
                     }}
                     themeVariant={theme.mode}
                     style={{ marginRight: 5 }}
@@ -180,7 +202,7 @@ export default function () {
                     is24Hour={true}
                     onChange={(event, value) => {
                       setChosenTimeTouched(true);
-                      setChosenTime(value);
+                      setChosenTime(value || defaultDate);
                     }}
                     themeVariant={theme.mode}
                   />
@@ -208,7 +230,12 @@ export default function () {
                 {i18n.t('set.chosen.button.disable_before_meeting_happened')}
               </Text>
             )}
-            <PrimaryButton disabled={!enableCompletedButton}>
+            {meetingHappened && setCreatedTooRecently && (
+              <Text style={{ color: theme.colors.grey2, marginBottom: 5 }}>
+                {i18n.t('set.chosen.button.set_created_too_recently')}
+              </Text>
+            )}
+            <PrimaryButton disabled={!enableCompletedButton} onPress={handleButton}>
               {i18n.t('set.chosen.button.title')}
             </PrimaryButton>
           </View>

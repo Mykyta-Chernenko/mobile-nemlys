@@ -52,6 +52,7 @@ export default function ({
                     : [q.onboarding_answer]
                   ).map(
                     (a) =>
+                      a &&
                       ({
                         id: a.id,
                         slug: a.slug,

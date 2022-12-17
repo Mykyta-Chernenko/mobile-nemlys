@@ -2,12 +2,12 @@ import React from 'react';
 import { TouchableOpacity, View } from 'react-native';
 import ImageOrDefault from '../utils/ImageOrDefault';
 import { useTheme, Text } from '@rneui/themed';
-import { ProfileScreenNavigationProp, SetItemProps } from '@app/types/navigation';
+import { MainNavigationProp, SetItemProps } from '@app/types/navigation';
 import { useNavigation } from '@react-navigation/native';
 
 export default function (props: SetItemProps) {
   const { theme } = useTheme();
-  const navigation = useNavigation<ProfileScreenNavigationProp>();
+  const navigation = useNavigation<MainNavigationProp>();
   return (
     <TouchableOpacity onPress={() => navigation.navigate('SetItemDetails', props)}>
       <View

@@ -1,5 +1,10 @@
 import { NativeStackScreenProps } from '@react-navigation/native-stack';
-import { OnboardingQuestion, UserOnboardingAnswer } from './domain';
+import {
+  FeedbackQuestion,
+  OnboardingQuestion,
+  UserFeedbackAnswer,
+  UserOnboardingAnswer,
+} from './domain';
 
 export type SetItemPropsAction = {
   type: 'action';
@@ -23,19 +28,40 @@ export class SetReminderProps {
   questionIds: number[];
 }
 
+export class CompleteSetReflectProps {
+  setId: number;
+  coupleSetId: number;
+}
+
+export class CompleteSetQuestionProps {
+  setId: number;
+  coupleSetId: number;
+  questions: FeedbackQuestion[] | undefined;
+  questionIndex: number | undefined;
+  userAnswers: UserFeedbackAnswer[];
+}
+
+export class CompleteSetFinalProps {
+  coupleSetId: number;
+  userAnswers: UserFeedbackAnswer[];
+}
+
 export type MainStackParamList = {
-  SetHomeScreen: { refresh: boolean | undefined };
+  SetHomeScreen: { refresh: boolean };
   SetItemDetails: SetItemProps;
   SetReminder: SetReminderProps;
+  CompleteSetReflect: CompleteSetReflectProps;
+  CompleteSetQuestion: CompleteSetQuestionProps;
+  CompleteSetFinal: CompleteSetFinalProps;
 };
 
-export type ProfileScreenNavigationProp = NativeStackScreenProps<MainStackParamList>['navigation'];
+export type MainNavigationProp = NativeStackScreenProps<MainStackParamList>['navigation'];
 
 type PrePlacementParams = {
   name: string;
 };
 type PlacementParams = PrePlacementParams & {
-  questions: OnboardingQuestion[];
+  questions: OnboardingQuestion[] | undefined;
   questionIndex: number | undefined;
   userAnswers: UserOnboardingAnswer[];
 };

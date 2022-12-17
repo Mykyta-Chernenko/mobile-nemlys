@@ -12,7 +12,7 @@ const allImages = {
   [DEFAULT_IMAGE]: require('../../../assets/images/default_image.png'),
 };
 export default function ({ image, ...props }: { image: string | undefined } & ImageProps) {
-  const resultImage = allImages[image] || allImages[DEFAULT_IMAGE];
+  const resultImage = allImages[image || DEFAULT_IMAGE] || allImages[DEFAULT_IMAGE];
   return (
     <Image
       resizeMode="contain"

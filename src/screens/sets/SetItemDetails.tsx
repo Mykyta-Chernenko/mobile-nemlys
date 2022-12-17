@@ -28,7 +28,7 @@ export default function ({
       <View style={{ flexDirection: 'row', alignItems: 'center' }}>
         <GoBackButton
           onPress={() => {
-            navigation.navigate('SetHomeScreen');
+            navigation.navigate('SetHomeScreen', { refresh: false });
           }}
         ></GoBackButton>
       </View>

@@ -29,7 +29,7 @@ const AuthProvider = (props: Props) => {
       const urlObject = new URL(correctUrl);
       const accessToken = urlObject.searchParams.get('access_token');
       const refreshToken = urlObject.searchParams.get('refresh_token');
-      if (!refreshToken || !refreshToken) return;
+      if (!accessToken || !refreshToken) return;
       await setSession(accessToken, refreshToken);
       setIsSignedIn(true);
     };

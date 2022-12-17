@@ -33,13 +33,13 @@ export default function ({ navigation }: NativeStackScreenProps<AuthStackParamLi
     } else if (!error && !user) {
       alert(i18n.t('login.check_email_for_login_link'));
     } else {
-      auth.setIsSignedIn(true);
+      auth.setIsSignedIn?.(true);
     }
   }
   // eslint-disable-next-line @typescript-eslint/require-await
   async function checkUserExists(user: SupabaseUser, exists: boolean): Promise<void> {
     if (!exists) {
-      throw Error(`User with email ${user.email} does not exist in the system`);
+      throw Error(`User with email ${user?.email ?? ''} does not exist in the system`);
     }
   }
   return (

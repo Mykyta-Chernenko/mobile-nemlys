@@ -37,45 +37,48 @@ export const GoogleOAuth = ({
       window = undefined as any;
       const { data } = await supabase.auth.signInWithOAuth(signInParms);
       const authUrl = data.url;
-      const response = await startAsync({ authUrl, returnUrl });
-      try {
-        if (response.type == 'success') {
-          const accessToken = response.params['access_token'];
-          const refreshToken = response.params['refresh_token'];
-          if (accessToken && refreshToken) {
-            await setSession(accessToken, refreshToken);
-            const { data: user, error } = await supabase.auth.getUser();
-            if (error) {
-              throw error;
-            } else {
-              const userId = user.user.id;
-              const { error, count } = await supabase
-                .from('user_profile')
-                .select('*', { count: 'exact' })
-                .eq('user_id', userId);
+      if (authUrl) {
+        const response = await startAsync({ authUrl, returnUrl });
+        try {
+          if (response.type == 'success') {
+            const accessToken = response.params['access_token'];
+            const refreshToken = response.params['refresh_token'];
+            if (accessToken && refreshToken) {
+              await setSession(accessToken, refreshToken);
+              const { data: user, error } = await supabase.auth.getUser();
               if (error) {
                 throw error;
+              } else {
+                const userId = user.user.id;
+                const { error, count } = await supabase
+                  .from('user_profile')
+                  .select('*', { count: 'exact' })
+                  .eq('user_id', userId);
+                if (error) {
+                  throw error;
+                }
+                await handleUser(user.user, !!count);
+                auth.setIsSignedIn?.(true);
               }
-              await handleUser(user.user, !!count);
-              auth.setIsSignedIn(true);
+            } else {
+              console.error(`Auth response had no access_token ${JSON.stringify(response)}`);
+              throw new Error();
             }
+          } else if (response.type == 'error') {
+            throw response.error;
           } else {
-            console.error(`Auth response had no access_token ${JSON.stringify(response)}`);
             throw new Error();
           }
-        } else if (response.type == 'error') {
-          throw response.error;
-        } else {
-          throw new Error();
+        } catch (e: unknown) {
+          alert(
+            e?.['message']
+              ? `Error happened: ${e?.['message'] as string}`
+              : 'Something unexpected happened, try again',
+          );
+          await supabase.auth.signOut();
         }
-      } catch (e: unknown) {
-        alert(
-          e?.['message']
-            ? `Error happened: ${e?.['message'] as string}`
-            : 'Something unexpected happened, try again',
-        );
-        await supabase.auth.signOut();
       }
+
       window = oldWindow;
     }
   };

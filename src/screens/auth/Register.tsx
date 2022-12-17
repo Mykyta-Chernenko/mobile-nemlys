@@ -11,10 +11,10 @@ import {
   InsertAPICouple,
   InsertAPIUserOnboardingAnswer,
   InsertAPIUserProfile,
+  SupabaseAnswer,
   SupabaseUser,
 } from '@app/types/api';
 import { randomReadnableString } from '@app/utils/strings';
-import { PostgrestError } from '@supabase/supabase-js';
 import OnboardingResults from './OnboardingResults';
 import { AuthContext } from '@app/provider/AuthProvider';
 
@@ -44,10 +44,14 @@ export default function ({
       });
       setLoading(false);
       if (data.error) {
-        alert(data.error?.message ?? i18n.t('register.unexpected_error'));
+        alert(data.error?.message ?? i18n.t('unexpected_error'));
+        return;
+      } else if (!data.data.user) {
+        alert(i18n.t('unexpected_error'));
+        return;
       } else {
         await handleUserAfterSignUp(data.data.user, false);
-        auth.setIsSignedIn(true);
+        auth.setIsSignedIn?.(true);
       }
     } catch (e: unknown) {
       await supabase.auth.signOut();
@@ -57,12 +61,12 @@ export default function ({
   async function handleUserAfterSignUp(user: SupabaseUser, exists: boolean): Promise<void> {
     if (exists) {
       // TODO, maybe update user answers here
-      console.log(`User ${user.email} already exists, just signing in`);
+      console.log(`User ${user.email || 'with this email'} already exists, just signing in`);
     } else {
       const couple: InsertAPICouple = {
         invitation_code: randomReadnableString(6),
       };
-      const { data, error }: { data: APICouple; error: PostgrestError } = await supabase
+      const { data, error }: SupabaseAnswer<APICouple> = await supabase
         .from('couple')
         .insert(couple)
         .select()

@@ -10,10 +10,9 @@ import { ViewSetHomeScreen } from '@app/components/sets/ViewSetHomeScreen';
 import { PrimaryButton } from '@app/components/buttons/PrimaryButtons';
 import * as Notifications from 'expo-notifications';
 import { isDevice } from 'expo-device';
-import { APISet, APIUserProfile, InsertAPICoupleSet } from '@app/types/api';
+import { APISet, APIUserProfile, InsertAPICoupleSet, SupabaseAnswer } from '@app/types/api';
 import { supabase } from '@app/api/initSupabase';
 import { Loading } from '@app/components/utils/Loading';
-import { PostgrestError } from '@supabase/supabase-js';
 import { combineDateWithTime } from '@app/utils/time';
 
 export default function ({
@@ -69,7 +68,8 @@ export default function ({
   });
 
   const createSet = async () => {
-    const res: { data: APISet; error: PostgrestError } = await supabase
+    if (!profile) return;
+    const res: SupabaseAnswer<APISet> = await supabase
       .from('set')
       .select('id, level, created_at, updated_at')
       .eq('id', route.params.setId)
@@ -121,8 +121,8 @@ export default function ({
         if (token && token != profile?.expo_token) {
           const res = await supabase
             .from('user_profile')
-            .update({ expo_token: token })
-            .eq('id', profile.id);
+            .update({ expo_token: token, updated_at: new Date() })
+            .eq('id', profile?.id);
           if (res.error) {
             alert(JSON.stringify(res.error));
           }
@@ -185,7 +185,7 @@ export default function ({
             mode="date"
             onChange={(event, value) => {
               setChosenDateTouched(true);
-              setChosenDate(value);
+              setChosenDate(value || now);
             }}
             themeVariant={theme.mode}
             style={{ marginRight: 5 }}
@@ -197,7 +197,7 @@ export default function ({
             is24Hour={true}
             onChange={(event, value) => {
               setChosenTimeTouched(true);
-              setChosenTime(value);
+              setChosenTime(value || now);
             }}
             themeVariant={theme.mode}
           />

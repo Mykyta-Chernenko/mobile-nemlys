@@ -1,4 +1,4 @@
-import { APIAction, APIQuestion } from './api';
+import { APIAction, APIFeedbackChoice, APIFeedbackQuestion, APIQuestion } from './api';
 
 export class OnboardingQuestion {
   id: number;
@@ -25,3 +25,17 @@ export type Question = Omit<APIQuestion, 'question_tag'> & {
 };
 
 export type Action = APIAction;
+
+export class FeedbackQuestion extends APIFeedbackQuestion {
+  answers: FeedbackChoice[] | undefined;
+}
+
+export class FeedbackChoice extends APIFeedbackChoice {}
+
+export class UserFeedbackAnswer {
+  type: FeedbackQuestion['type'];
+  feedback_question_id: FeedbackQuestion['id'];
+  feedback_choice_id: FeedbackChoice['id'] | undefined;
+  text_answer: string | undefined;
+  bool_answer: boolean | undefined;
+}
