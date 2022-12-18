@@ -5,17 +5,21 @@ import { Action, Question } from '@app/types/domain';
 import { getQuestionsAndActionsForSet } from '@app/api/data/set';
 import { APICoupleSet, SupabaseAnswer } from '@app/types/api';
 import SetList from './SetList';
-import { TouchableOpacity, View } from 'react-native';
-import { Dialog, Text, useTheme } from '@rneui/themed';
+import { Platform, StyleProp, TouchableOpacity, View, ViewStyle } from 'react-native';
+import { Dialog, useTheme } from '@rneui/themed';
 import { Loading } from '../utils/Loading';
 import { i18n } from '@app/localization/i18n';
 import moment from 'moment';
 import ClockIcon from '@app/icons/clock';
 import { PrimaryButton } from '../buttons/PrimaryButtons';
-import DateTimePicker from '@react-native-community/datetimepicker';
-import { combineDateWithTime } from '@app/utils/time';
+import DateTimePicker, {
+  AndroidNativeProps,
+  DateTimePickerAndroid,
+  IOSNativeProps,
+} from '@react-native-community/datetimepicker';
 import { MainNavigationProp } from '@app/types/navigation';
 import { useNavigation } from '@react-navigation/native';
+import { FontText } from '../utils/FontText';
 
 export default function () {
   const navigation = useNavigation<MainNavigationProp>();
@@ -71,10 +75,40 @@ export default function () {
 
   const defaultDate = (currentSet?.meeting && new Date(currentSet?.meeting)) || now;
   const [showChangeDate, setShowChangeDate] = useState(false);
-  const [chosenDate, setChosenDate] = useState<Date>(defaultDate);
+  const [chosenDateTime, setChosenDateTime] = useState<Date>(defaultDate);
   const [chosenDateTouched, setChosenDateTouched] = useState<boolean>(false);
-  const [chosenTime, setChosenTime] = useState<Date>(defaultDate);
   const [chosenTimeTouched, setChosenTimeTouched] = useState<boolean>(false);
+  const dateTimePickerBaseProps: IOSNativeProps | AndroidNativeProps = {
+    value: chosenDateTime,
+    display: 'compact',
+    style: { marginRight: 5 },
+    themeVariant: theme.mode,
+  };
+  const datePickerProps: IOSNativeProps | AndroidNativeProps = {
+    ...dateTimePickerBaseProps,
+    testID: 'datePicker',
+    mode: 'date',
+    onChange: (event, value: Date) => {
+      setChosenDateTouched(true);
+      setChosenDateTime(value || now);
+    },
+  };
+  const timePickerProps: IOSNativeProps | AndroidNativeProps = {
+    ...dateTimePickerBaseProps,
+    testID: 'timePicker',
+    mode: 'time',
+    onChange: (event, value: Date) => {
+      setChosenTimeTouched(true);
+      setChosenDateTime(value || now);
+    },
+  };
+  const dateAndTimeLabelStyle: StyleProp<ViewStyle> = {
+    paddingVertical: 5,
+    paddingHorizontal: 7,
+    marginHorizontal: 3,
+    backgroundColor: theme.colors.grey5,
+    borderRadius: 7,
+  };
 
   const updateMeetingDate = async () => {
     if (!currentSet) {
@@ -85,7 +119,7 @@ export default function () {
       const res: SupabaseAnswer<APICoupleSet> = await supabase
         .from('couple_set')
         .update({
-          meeting: combineDateWithTime(chosenDate, chosenTime),
+          meeting: chosenDateTime,
           schedule_reminder: undefined,
           updated_at: new Date(),
         })
@@ -132,17 +166,16 @@ export default function () {
             }}
           >
             <View>
-              <Text style={{ color: theme.colors.white, fontSize: 18 }}>
+              <FontText style={{ color: theme.colors.white, fontSize: 18 }}>
                 {i18n.t('set.chosen.title')}
-              </Text>
-              <Text style={{ color: theme.colors.grey4, fontSize: 12 }}>
+              </FontText>
+              <FontText style={{ color: theme.colors.grey4, fontSize: 12 }}>
                 {i18n.t('set.chosen.click_tips')}
-              </Text>
+              </FontText>
             </View>
             <TouchableOpacity
               onPress={() => {
-                setChosenDate(defaultDate);
-                setChosenTime(defaultDate);
+                setChosenDateTime(defaultDate);
                 setChosenTimeTouched(false);
                 setChosenDateTouched(false);
                 setShowChangeDate(true);
@@ -159,15 +192,15 @@ export default function () {
                   }}
                 >
                   <View style={{ flexDirection: 'column', paddingRight: 20 }}>
-                    <Text style={{ color: theme.colors.grey2 }}>
+                    <FontText style={{ color: theme.colors.grey2 }}>
                       {i18n.t('set.chosen.next_date_is')}
-                    </Text>
-                    <Text>
+                    </FontText>
+                    <FontText>
                       {readableDate}
                       <View>
-                        <Text style={{ transform: [{ rotateZ: '90deg' }] }}>✎</Text>
+                        <FontText style={{ transform: [{ rotateZ: '90deg' }] }}>✎</FontText>
                       </View>
-                    </Text>
+                    </FontText>
                   </View>
                 </View>
                 <View style={{ flexDirection: 'row', position: 'absolute', right: 0, top: 20 }}>
@@ -184,28 +217,30 @@ export default function () {
                     marginTop: 10,
                   }}
                 >
-                  <DateTimePicker
-                    testID="datePicker"
-                    value={chosenDate}
-                    mode="date"
-                    onChange={(event, value) => {
-                      setChosenDateTouched(true);
-                      setChosenDate(value || defaultDate);
-                    }}
-                    themeVariant={theme.mode}
-                    style={{ marginRight: 5 }}
-                  />
-                  <DateTimePicker
-                    testID="timePicker"
-                    value={chosenTime}
-                    mode="time"
-                    is24Hour={true}
-                    onChange={(event, value) => {
-                      setChosenTimeTouched(true);
-                      setChosenTime(value || defaultDate);
-                    }}
-                    themeVariant={theme.mode}
-                  />
+                  {Platform.OS == 'ios' ? (
+                    <DateTimePicker {...datePickerProps} />
+                  ) : (
+                    <TouchableOpacity
+                      onPress={() => {
+                        DateTimePickerAndroid.open(datePickerProps as AndroidNativeProps);
+                      }}
+                      style={dateAndTimeLabelStyle}
+                    >
+                      <FontText>{moment(chosenDateTime).format('MMM Do')}</FontText>
+                    </TouchableOpacity>
+                  )}
+                  {Platform.OS == 'ios' ? (
+                    <DateTimePicker {...timePickerProps} />
+                  ) : (
+                    <TouchableOpacity
+                      onPress={() =>
+                        DateTimePickerAndroid.open(timePickerProps as AndroidNativeProps)
+                      }
+                      style={dateAndTimeLabelStyle}
+                    >
+                      <FontText>{moment(chosenDateTime).format('HH:mm')}</FontText>
+                    </TouchableOpacity>
+                  )}
                 </View>
                 <Dialog.Actions>
                   <Dialog.Button
@@ -221,19 +256,19 @@ export default function () {
           <SetList actions={actions} questions={questions} chosenSet={true}></SetList>
           <View style={{ marginTop: 10 }}>
             {!meetingSet && (
-              <Text style={{ color: theme.colors.grey2, marginBottom: 5 }}>
+              <FontText style={{ color: theme.colors.grey2, marginBottom: 5 }}>
                 {i18n.t('set.chosen.button.disable_before_meeting_set')}
-              </Text>
+              </FontText>
             )}
             {meetingSet && !meetingHappened && (
-              <Text style={{ color: theme.colors.grey2, marginBottom: 5 }}>
+              <FontText style={{ color: theme.colors.grey2, marginBottom: 5 }}>
                 {i18n.t('set.chosen.button.disable_before_meeting_happened')}
-              </Text>
+              </FontText>
             )}
             {meetingHappened && setCreatedTooRecently && (
-              <Text style={{ color: theme.colors.grey2, marginBottom: 5 }}>
+              <FontText style={{ color: theme.colors.grey2, marginBottom: 5 }}>
                 {i18n.t('set.chosen.button.set_created_too_recently')}
-              </Text>
+              </FontText>
             )}
             <PrimaryButton disabled={!enableCompletedButton} onPress={handleButton}>
               {i18n.t('set.chosen.button.title')}

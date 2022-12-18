@@ -1,10 +1,14 @@
 import React, { useEffect, useState } from 'react';
-import { useTheme, Text, CheckBox } from '@rneui/themed';
-import { Platform, View } from 'react-native';
+import { useTheme, CheckBox } from '@rneui/themed';
+import { Platform, StyleProp, TouchableOpacity, View, ViewStyle } from 'react-native';
 import { MainStackParamList } from '@app/types/navigation';
 import { GoBackButton } from '../../components/buttons/GoBackButton';
 import { i18n } from '@app/localization/i18n';
-import DateTimePicker from '@react-native-community/datetimepicker';
+import DateTimePicker, {
+  AndroidNativeProps,
+  DateTimePickerAndroid,
+  IOSNativeProps,
+} from '@react-native-community/datetimepicker';
 import { NativeStackScreenProps } from '@react-navigation/native-stack';
 import { ViewSetHomeScreen } from '@app/components/sets/ViewSetHomeScreen';
 import { PrimaryButton } from '@app/components/buttons/PrimaryButtons';
@@ -13,7 +17,8 @@ import { isDevice } from 'expo-device';
 import { APISet, APIUserProfile, InsertAPICoupleSet, SupabaseAnswer } from '@app/types/api';
 import { supabase } from '@app/api/initSupabase';
 import { Loading } from '@app/components/utils/Loading';
-import { combineDateWithTime } from '@app/utils/time';
+import moment from 'moment';
+import { FontText } from '@app/components/utils/FontText';
 
 export default function ({
   route,
@@ -28,12 +33,42 @@ export default function ({
   const [notificationStatus, setNotificationStatus] = useState<string | undefined>(undefined);
   const showNotificationText = notificationStatus && notificationStatus === 'undetermined';
   const now = new Date();
-  const [chosenDate, setChosenDate] = useState<Date>(now);
+  const [chosenDateTime, setChosenDateTime] = useState<Date>(now);
   const [chosenDateTouched, setChosenDateTouched] = useState<boolean>(false);
-  const [chosenTime, setChosenTime] = useState<Date>(now);
   const [chosenTimeTouched, setChosenTimeTouched] = useState<boolean>(false);
-  const dateTimeSet = chosenDateTouched && chosenTimeTouched;
-  const showNextButton = dateTimeSet || noDateYet;
+  const chosenDateTimeTouched = chosenDateTouched && chosenTimeTouched;
+  const dateTimePickerBaseProps: IOSNativeProps | AndroidNativeProps = {
+    value: chosenDateTime,
+    display: 'compact',
+    style: { marginRight: 5 },
+    themeVariant: theme.mode,
+  };
+  const datePickerProps: IOSNativeProps | AndroidNativeProps = {
+    ...dateTimePickerBaseProps,
+    testID: 'datePicker',
+    mode: 'date',
+    onChange: (event, value: Date) => {
+      setChosenDateTouched(true);
+      setChosenDateTime(value || now);
+    },
+  };
+  const timePickerProps: IOSNativeProps | AndroidNativeProps = {
+    ...dateTimePickerBaseProps,
+    testID: 'timePicker',
+    mode: 'time',
+    onChange: (event, value: Date) => {
+      setChosenTimeTouched(true);
+      setChosenDateTime(value || now);
+    },
+  };
+  const dateAndTimeLabelStyle: StyleProp<ViewStyle> = {
+    paddingVertical: 5,
+    paddingHorizontal: 7,
+    marginHorizontal: 3,
+    backgroundColor: theme.colors.grey5,
+    borderRadius: 7,
+  };
+  const showNextButton = chosenDateTimeTouched || noDateYet;
 
   useEffect(() => {
     const getProfile = async () => {
@@ -85,15 +120,15 @@ export default function ({
       order: res.data.level,
       couple_id: profile.couple_id,
       completed: false,
-      schedule_reminder: dateTimeSet ? undefined : tomorrow.toISOString(),
-      meeting: dateTimeSet ? combineDateWithTime(chosenDate, chosenTime).toISOString() : undefined,
+      schedule_reminder: chosenDateTimeTouched ? undefined : tomorrow.toISOString(),
+      meeting: chosenDateTimeTouched ? chosenDateTime.toISOString() : undefined,
     };
     const coupleSetRes = await supabase.from('couple_set').insert(newCoupleSet);
     if (coupleSetRes.error) {
       alert(JSON.stringify(coupleSetRes.error));
       return;
     }
-    navigation.navigate('SetHomeScreen', { refresh: true });
+    navigation.navigate('SetHomeScreen', { refreshTimeStamp: new Date().toISOString() });
   };
 
   const registerForPushNotificationsAsync = async () => {
@@ -161,17 +196,17 @@ export default function ({
             }}
           ></GoBackButton>
         </View>
-        <Text h4 style={{ textAlign: 'center' }}>
+        <FontText h4 style={{ textAlign: 'center' }}>
           {i18n.t('set.reminder.title')}
-        </Text>
-        <Text
+        </FontText>
+        <FontText
           style={{
             marginTop: 15,
             color: theme.colors.grey3,
           }}
         >
           {i18n.t('set.reminder.content')}
-        </Text>
+        </FontText>
         <View
           style={{
             flexDirection: 'row',
@@ -179,31 +214,31 @@ export default function ({
             marginTop: 10,
           }}
         >
-          <DateTimePicker
-            testID="datePicker"
-            value={chosenDate}
-            mode="date"
-            onChange={(event, value) => {
-              setChosenDateTouched(true);
-              setChosenDate(value || now);
-            }}
-            themeVariant={theme.mode}
-            style={{ marginRight: 5 }}
-          />
-          <DateTimePicker
-            testID="timePicker"
-            value={chosenTime}
-            mode="time"
-            is24Hour={true}
-            onChange={(event, value) => {
-              setChosenTimeTouched(true);
-              setChosenTime(value || now);
-            }}
-            themeVariant={theme.mode}
-          />
+          {Platform.OS == 'ios' ? (
+            <DateTimePicker {...datePickerProps} />
+          ) : (
+            <TouchableOpacity
+              onPress={() => {
+                DateTimePickerAndroid.open(datePickerProps as AndroidNativeProps);
+              }}
+              style={dateAndTimeLabelStyle}
+            >
+              <FontText>{moment(chosenDateTime).format('MMM Do')}</FontText>
+            </TouchableOpacity>
+          )}
+          {Platform.OS == 'ios' ? (
+            <DateTimePicker {...timePickerProps} />
+          ) : (
+            <TouchableOpacity
+              onPress={() => DateTimePickerAndroid.open(timePickerProps as AndroidNativeProps)}
+              style={dateAndTimeLabelStyle}
+            >
+              <FontText>{moment(chosenDateTime).format('HH:mm')}</FontText>
+            </TouchableOpacity>
+          )}
         </View>
-        {!dateTimeSet && (
-          <Text
+        {!chosenDateTimeTouched && (
+          <FontText
             style={{
               marginTop: 10,
               color: theme.colors.grey1,
@@ -211,9 +246,9 @@ export default function ({
             }}
           >
             {i18n.t('or')}
-          </Text>
+          </FontText>
         )}
-        {!dateTimeSet && (
+        {!chosenDateTimeTouched && (
           <CheckBox
             center
             size={26}
@@ -229,7 +264,7 @@ export default function ({
 
         {showNextButton && (
           <View>
-            <Text
+            <FontText
               style={{
                 marginTop: 20,
                 color: theme.colors.grey3,
@@ -239,7 +274,7 @@ export default function ({
                 (noDateYet
                   ? i18n.t('set.reminder.notification_access_no_date')
                   : i18n.t('set.reminder.notification_access'))}
-            </Text>
+            </FontText>
             {loading ? (
               <Loading></Loading>
             ) : (

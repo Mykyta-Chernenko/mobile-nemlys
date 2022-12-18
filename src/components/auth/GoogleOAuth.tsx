@@ -1,4 +1,4 @@
-import { Button, Text, useTheme } from '@rneui/themed';
+import { Button, useTheme } from '@rneui/themed';
 import { startAsync } from 'expo-auth-session';
 import React, { useContext } from 'react';
 import { Platform, View } from 'react-native';
@@ -9,6 +9,7 @@ import { Provider, SignInWithOAuthCredentials } from '@supabase/supabase-js';
 import { i18n } from '@app/localization/i18n';
 import { SupabaseUser } from '@app/types/api';
 import { AuthContext, setSession } from '@app/provider/AuthProvider';
+import { FontText } from '../utils/FontText';
 export const GoogleOAuth = ({
   handleUser: handleUser,
 }: {
@@ -84,14 +85,14 @@ export const GoogleOAuth = ({
   };
   return (
     <>
-      <Text
+      <FontText
         style={{
           alignSelf: 'center',
           color: theme.colors.background,
         }}
       >
         {i18n.t('oauth.pretext')}
-      </Text>
+      </FontText>
 
       <View
         style={{
@@ -103,7 +104,7 @@ export const GoogleOAuth = ({
         <Button type="outline" onPress={() => void onPress()}>
           <GoogleIcon height="20" width="20" />
 
-          <Text style={{ marginLeft: 5 }}>{i18n.t('oauth.button.google')}</Text>
+          <FontText style={{ marginLeft: 5 }}>{i18n.t('oauth.button.google')}</FontText>
         </Button>
       </View>
     </>

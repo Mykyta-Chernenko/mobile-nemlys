@@ -1,22 +1,23 @@
 import React from 'react';
-import { useTheme, Text } from '@rneui/themed';
+import { useTheme } from '@rneui/themed';
 import { View } from 'react-native';
 import { i18n } from '@app/localization/i18n';
 import ItemCard from './ItemCard';
 import { Question, Action } from '@app/types/domain';
+import { FontText } from '../utils/FontText';
 
 export default function (props: { questions: Question[]; actions: Action[]; chosenSet: boolean }) {
   const { theme } = useTheme();
 
   return (
     <>
-      <Text
+      <FontText
         h4
         style={{ color: theme.colors.white, marginBottom: '1%' }}
         h4Style={{ textAlign: 'center' }}
       >
         {props.chosenSet ? i18n.t('set.chosen.questions.title') : i18n.t('set.new.questions.title')}
-      </Text>
+      </FontText>
       <View>
         {props.questions.map((q) => (
           <ItemCard
@@ -31,13 +32,13 @@ export default function (props: { questions: Question[]; actions: Action[]; chos
           ></ItemCard>
         ))}
       </View>
-      <Text
+      <FontText
         h4
         style={{ color: theme.colors.white, marginTop: '1%' }}
         h4Style={{ textAlign: 'center' }}
       >
         {props.chosenSet ? i18n.t('set.chosen.actions.title') : i18n.t('set.new.actions.title')}
-      </Text>
+      </FontText>
       <View>
         {props.actions.map((q) => (
           <ItemCard

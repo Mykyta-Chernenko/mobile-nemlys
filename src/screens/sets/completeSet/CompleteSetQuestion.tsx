@@ -1,13 +1,43 @@
 import React, { useEffect, useState } from 'react';
-import { useTheme, CheckBox } from '@rneui/themed';
-import { MainStackParamList } from '@app/types/navigation';
+import { useTheme, CheckBox, Button } from '@rneui/themed';
+import {
+  CompleteSetQuestionProps,
+  MainNavigationProp,
+  MainStackParamList,
+} from '@app/types/navigation';
 import { i18n } from '@app/localization/i18n';
 import { NativeStackScreenProps } from '@react-navigation/native-stack';
 import { supabase } from '@app/api/initSupabase';
 import SurveyView from '@app/components/common/SurveyView';
-import { TextInput, View } from 'react-native';
-import { FeedbackChoice, FeedbackQuestion } from '@app/types/domain';
+import { Platform, TextInput, View } from 'react-native';
+import { FeedbackChoice, FeedbackQuestion, UserFeedbackAnswer } from '@app/types/domain';
+import { FontText } from '@app/components/utils/FontText';
 
+export const goBackToThePreviousQuestion = (
+  navigation: MainNavigationProp,
+  userAnswers: UserFeedbackAnswer[],
+  questionIndex: number | undefined,
+  params: CompleteSetQuestionProps,
+) => {
+  const index = questionIndex ?? 0;
+
+  const newIndex = index - 1;
+  const newUserAnswers = userAnswers.filter((i, ind) => {
+    return ind < newIndex;
+  });
+
+  if (index > 0) {
+    navigation.navigate('CompleteSetQuestion', {
+      ...params,
+      userAnswers: newUserAnswers,
+      questionIndex: newIndex,
+    });
+  } else {
+    navigation.navigate('CompleteSetReflect', {
+      ...params,
+    });
+  }
+};
 export default function ({
   route,
   navigation,
@@ -33,7 +63,7 @@ export default function ({
         if (route.params.questions) {
           setQuestions(route.params.questions);
         } else {
-          const { data, error, status } = await supabase
+          const { data, error } = await supabase
             .from('feedback_question')
             .select(
               `
@@ -85,19 +115,14 @@ export default function ({
     void getQuestions();
   }, [route.params.questions]);
   const handleBack = () => {
-    if (questionIndex === undefined || questionIndex === 0) {
-      navigation.navigate('CompleteSetReflect', {
-        ...route.params,
-      });
-    } else {
-      navigation.navigate('CompleteSetQuestion', {
-        ...route.params,
-        userAnswers: userAnswers.filter((i, ind) => ind <= questionIndex),
-        questionIndex: questionIndex - 1,
-      });
-    }
+    goBackToThePreviousQuestion(
+      navigation,
+      route.params.userAnswers,
+      route.params.questionIndex,
+      route.params,
+    );
   };
-  console.log(userAnswers);
+
   const handlePress = (
     choiceAnswer: FeedbackChoice | undefined,
     boolAnswer: boolean | undefined,
@@ -105,13 +130,16 @@ export default function ({
     if (currentQuestion) {
       const finalTextAnswer =
         currentQuestion.type === 'text' && textAnswer === undefined ? '' : textAnswer;
-      userAnswers.push({
-        type: currentQuestion.type,
-        feedback_question_id: currentQuestion.id,
-        feedback_choice_id: choiceAnswer?.id,
-        text_answer: finalTextAnswer,
-        bool_answer: boolAnswer,
-      });
+      const userAnswers = [
+        ...route.params.userAnswers,
+        {
+          type: currentQuestion.type,
+          feedback_question_id: currentQuestion.id,
+          feedback_choice_id: choiceAnswer?.id,
+          text_answer: finalTextAnswer,
+          bool_answer: boolAnswer,
+        },
+      ];
       if (isNextQuestion) {
         setBoolAnswer(undefined);
         setTextAnswer(undefined);
@@ -132,7 +160,7 @@ export default function ({
   if (currentQuestion?.type === 'text') {
     mainCointent = (
       <TextInput
-        multiline={true}
+        multiline={Platform.OS === 'ios'} // true is needed on IPhone so that the placeholder is at the top, but it breaks the return button for Adnroid
         placeholder={i18n.t('input_here')}
         style={{
           height: 200,
@@ -143,7 +171,9 @@ export default function ({
           padding: 10,
         }}
         onChangeText={setTextAnswer}
+        onSubmitEditing={() => handlePress(undefined, undefined)}
         returnKeyType="done"
+        returnKeyLabel="done"
       />
     );
   } else if (currentQuestion?.type === 'choice') {
@@ -157,27 +187,26 @@ export default function ({
         }}
       >
         {currentQuestion?.answers?.map((a) => (
-          <CheckBox
-            center
-            title={a.title}
-            checkedIcon="dot-circle-o"
-            uncheckedIcon="circle-o"
-            checkedColor={theme.colors.primary}
-            checked={choiceAnswer?.id === a.id}
-            onPress={() => {
-              setChoiceAnswer(a);
-              handlePress(a, undefined);
-            }}
+          <Button
+            onPress={() => handlePress(a, undefined)}
+            type="outline"
             key={a.id}
             containerStyle={{
-              justifyContent: 'flex-start',
-              marginVertical: 0,
-              paddingVertical: 5,
+              width: '100%',
+              padding: 5,
             }}
-            wrapperStyle={{
-              justifyContent: 'flex-start',
-            }}
-          />
+          >
+            <FontText
+              style={{
+                justifyContent: 'flex-start',
+                alignItems: 'flex-start',
+                textAlign: 'left',
+                width: '100%',
+              }}
+            >
+              {a.title}
+            </FontText>
+          </Button>
         ))}
       </View>
     );
@@ -225,7 +254,7 @@ export default function ({
       showButton={currentQuestion?.type == 'text'}
       onPress={() => handlePress(choiceAnswer, boolAnswer)}
       onBackPress={handleBack}
-      buttonText={i18n.t('finish')}
+      buttonText={i18n.t('skip')}
     >
       {mainCointent}
     </SurveyView>

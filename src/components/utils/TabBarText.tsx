@@ -1,8 +1,8 @@
 import React from 'react';
-import { Text } from '@rneui/themed';
+import { FontText } from './FontText';
 export default ({ title, focused }: { title: string; focused: boolean }) => {
   return (
-    <Text
+    <FontText
       style={{
         marginBottom: 5,
         color: focused ? 'white' : 'rgb(143, 155, 179)',
@@ -11,6 +11,6 @@ export default ({ title, focused }: { title: string; focused: boolean }) => {
       }}
     >
       {title}
-    </Text>
+    </FontText>
   );
 };

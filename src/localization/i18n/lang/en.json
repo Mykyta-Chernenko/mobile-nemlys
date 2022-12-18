@@ -7,6 +7,7 @@
   "save": "Save",
   "logout": "Logout",
   "next": "Next",
+  "skip": "Skip",
   "finish": "Finish",
   "input_here": "Input here",
   "name_placeholder": "Enter your name",
@@ -27,7 +28,7 @@
     }
   },
   "pre_placement": {
-    "title": "Hey %{name} \nlet's get started",
+    "title": "Hey %{name}, let's get started",
     "pretext": "First, we want to ask you a few questions about your relationship to personalize the program"
   },
   "how_we_work": {
@@ -166,7 +167,7 @@
         "title": "When is your date?"
       },
       "finish": {
-        "finish_title":  "Thanks, the feedback helped us to adapt the next set for you"
+        "finish_title": "Thanks, the feedback helped us to adapt the next set for you"
       }
     },
     "importance": {

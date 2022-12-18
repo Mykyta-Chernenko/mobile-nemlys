@@ -1,14 +1,11 @@
 import React, { useEffect, useState } from 'react';
-import { Image, ScrollView, View } from 'react-native';
 import { AuthStackParamList } from '@app/types/navigation';
 import { NativeStackScreenProps } from '@react-navigation/native-stack';
-import { CheckBox, Skeleton, Text, useTheme } from '@rneui/themed';
-import { i18n } from '@app/localization/i18n';
-import { GoBackButton } from '@app/components/buttons/GoBackButton';
-import { PrimaryButton } from '@app/components/buttons/PrimaryButtons';
-import { Progress } from '@app/components/utils/Progress';
+import { useTheme, Button } from '@rneui/themed';
 import { OnboardingAnswer, OnboardingQuestion } from '@app/types/domain';
 import { supabase } from '@app/api/initSupabase';
+import SurveyView from '@app/components/common/SurveyView';
+import { FontText } from '@app/components/utils/FontText';
 export default function ({
   route,
   navigation,
@@ -96,7 +93,7 @@ export default function ({
       });
     }
   };
-  const handleNextPress = () => {
+  const handleNextPress = (chosenValue) => {
     if (chosenValue) {
       userAnswers.push({ question: currentQuestion, answer: chosenValue });
       if (isNextQuestion) {
@@ -117,95 +114,37 @@ export default function ({
   const progressValue =
     0.1 + (questionIndex === undefined ? 0 : 0.7 * ((questionIndex + 1) / (questions.length ?? 1)));
   return (
-    <ScrollView
-      contentContainerStyle={{
-        flexGrow: 1,
-        backgroundColor: 'white',
-        paddingVertical: 25,
-        paddingHorizontal: 15,
-      }}
+    <SurveyView
+      loading={loading}
+      title={currentQuestion?.title || ''}
+      progress={progressValue}
+      showButton={false}
+      onPress={() => {}}
+      onBackPress={handlePressBack}
+      buttonText={''}
     >
-      <View
-        style={{
-          marginBottom: 20,
-          height: 250,
-        }}
-      >
-        <Image
-          resizeMode="contain"
-          style={{
-            height: '100%',
+      {currentQuestion?.answers.map((a) => (
+        <Button
+          onPress={() => handleNextPress(a)}
+          type="outline"
+          key={a.id}
+          containerStyle={{
             width: '100%',
+            padding: 5,
           }}
-          // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
-          source={require('../../../../assets/images/placement.png')}
-        />
-      </View>
-      <View
-        style={{
-          paddingHorizontal: 15,
-          marginBottom: 10,
-        }}
-      >
-        {loading ? (
-          <Skeleton animation="pulse" style={{ borderRadius: 20 }} />
-        ) : (
-          <Text
+        >
+          <FontText
             style={{
-              textAlign: 'center',
-              fontWeight: 'bold',
-              fontSize: 16,
+              justifyContent: 'flex-start',
+              alignItems: 'flex-start',
+              textAlign: 'left',
+              width: '100%',
             }}
           >
-            {currentQuestion?.title}
-          </Text>
-        )}
-      </View>
-      <View
-        style={{
-          flex: 5,
-          paddingLeft: 15,
-          flexGrow: 1,
-          flexDirection: 'column',
-        }}
-      >
-        {loading ? (
-          <Skeleton animation="pulse" style={{ width: '80%', height: '40%', borderRadius: 20 }} />
-        ) : (
-          currentQuestion?.answers.map((a) => (
-            <CheckBox
-              center
-              title={a.title}
-              checkedIcon="dot-circle-o"
-              uncheckedIcon="circle-o"
-              checkedColor={theme.colors.primary}
-              checked={chosenValue?.id === a.id}
-              onPress={() => setChosenValue(a)}
-              key={a.id}
-              containerStyle={{
-                justifyContent: 'flex-start',
-                marginVertical: 0,
-                paddingVertical: 5,
-              }}
-              wrapperStyle={{
-                justifyContent: 'flex-start',
-              }}
-            />
-          ))
-        )}
-      </View>
-      <View>
-        <Progress value={progressValue}></Progress>
-        <View style={{ flexDirection: 'row', paddingHorizontal: 10 }}>
-          <GoBackButton onPress={handlePressBack} containerStyle={{ flexGrow: 1 }}></GoBackButton>
-          <PrimaryButton
-            title={i18n.t('next')}
-            disabled={buttonDisabled}
-            onPress={handleNextPress}
-            containerStyle={{ flexGrow: 40, marginHorizontal: 10 }}
-          />
-        </View>
-      </View>
-    </ScrollView>
+            {a.title}
+          </FontText>
+        </Button>
+      ))}
+    </SurveyView>
   );
 }

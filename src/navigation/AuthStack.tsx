@@ -18,14 +18,26 @@ const Auth = () => {
         headerShown: false,
       }}
     >
-      <AuthStack.Screen name="Welcome" component={Welcome} />
-      <AuthStack.Screen name="PrePlacement" component={PrePlacement} />
-      <AuthStack.Screen name="Placement" component={Placement} />
-      <AuthStack.Screen name="HowWeWork" component={HowWeWork} />
-      <AuthStack.Screen name="Login" component={Login} />
-      <AuthStack.Screen name="Register" component={Register} />
-      <AuthStack.Screen name="TypeNewPassword" component={TypeNewPassword} />
-      <AuthStack.Screen name="ForgetPassword" component={ForgetPassword} />
+      <AuthStack.Screen options={{ animation: 'fade' }} name="Welcome" component={Welcome} />
+      <AuthStack.Screen
+        options={{ animation: 'fade' }}
+        name="PrePlacement"
+        component={PrePlacement}
+      />
+      <AuthStack.Screen options={{ animation: 'fade' }} name="Placement" component={Placement} />
+      <AuthStack.Screen options={{ animation: 'fade' }} name="HowWeWork" component={HowWeWork} />
+      <AuthStack.Screen options={{ animation: 'fade' }} name="Login" component={Login} />
+      <AuthStack.Screen options={{ animation: 'fade' }} name="Register" component={Register} />
+      <AuthStack.Screen
+        options={{ animation: 'fade' }}
+        name="TypeNewPassword"
+        component={TypeNewPassword}
+      />
+      <AuthStack.Screen
+        options={{ animation: 'fade' }}
+        name="ForgetPassword"
+        component={ForgetPassword}
+      />
     </AuthStack.Navigator>
   );
 };

@@ -3,8 +3,8 @@ import { View } from 'react-native';
 import { supabase } from '@app/api/initSupabase';
 import { AuthStackParamList } from '@app/types/navigation';
 import { NativeStackScreenProps } from '@react-navigation/native-stack';
-import { Text } from '@rneui/themed';
 import { i18n } from '@app/localization/i18n';
+import { FontText } from '@app/components/utils/FontText';
 
 export const TYPE_NEW_PASSWORD_PATH = 'type-new-password';
 export default function ({
@@ -30,13 +30,13 @@ export default function ({
         justifyContent: 'center',
       }}
     >
-      <Text
+      <FontText
         style={{
           marginLeft: 5,
         }}
       >
         {loading ? i18n.t('loading') : 'not loading'}
-      </Text>
+      </FontText>
     </View>
   );
 }

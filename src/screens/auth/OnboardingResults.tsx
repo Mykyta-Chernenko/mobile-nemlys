@@ -1,8 +1,9 @@
 import React from 'react';
 import { View } from 'react-native';
-import { Card, Icon, Text, useTheme } from '@rneui/themed';
+import { Card, Icon, useTheme } from '@rneui/themed';
 import { i18n } from '@app/localization/i18n';
 import { UserOnboardingAnswer } from '@app/types/domain';
+import { FontText } from '@app/components/utils/FontText';
 
 export default function (props: { userAnswers: UserOnboardingAnswer[] }) {
   const { theme } = useTheme();
@@ -70,8 +71,8 @@ export default function (props: { userAnswers: UserOnboardingAnswer[] }) {
             <View key={i} style={{ flexDirection: 'row', alignItems: 'center', margin: '2%' }}>
               <Icon name="beenhere" color={theme.colors.primary} />
               <View style={{ flexDirection: 'column', marginHorizontal: '2%' }}>
-                <Text style={{ fontSize: 16, color: theme.colors.grey2 }}>{r.title}</Text>
-                <Text style={{ fontWeight: 'bold' }}>{r.answer}</Text>
+                <FontText style={{ fontSize: 16, color: theme.colors.grey2 }}>{r.title}</FontText>
+                <FontText style={{ fontWeight: 'bold' }}>{r.answer}</FontText>
               </View>
             </View>
           );

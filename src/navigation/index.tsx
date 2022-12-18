@@ -6,7 +6,6 @@ import Main from './MainStack';
 import Auth from './AuthStack';
 import { TYPE_NEW_PASSWORD_PATH } from '@app/screens/auth/TypeNewPassword';
 import { Loading } from '@app/components/utils/Loading';
-
 const linking = {
   prefixes: ['nemlys://', 'exp://192.168.0.9:19000/--/'],
   config: {
@@ -21,6 +20,7 @@ const linking = {
 export default () => {
   const auth = useContext(AuthContext);
   const signedIn = auth.isSignedIn;
+
   return (
     <NavigationContainer linking={linking}>
       {signedIn == null && <Loading />}

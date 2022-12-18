@@ -3,9 +3,11 @@ import { Image, KeyboardAvoidingView, ScrollView, TouchableOpacity, View } from 
 import { supabase } from '@app/api/initSupabase';
 import { AuthStackParamList } from '@app/types/navigation';
 import { NativeStackScreenProps } from '@react-navigation/native-stack';
-import { Text, Input, Button } from '@rneui/themed';
+import { Input, Button } from '@rneui/themed';
 import * as Linking from 'expo-linking';
 import { i18n } from '@app/localization/i18n';
+import { KEYBOARD_BEHAVIOR } from '@app/utils/constants';
+import { FontText } from '@app/components/utils/FontText';
 
 export default function ({
   navigation,
@@ -30,8 +32,9 @@ export default function ({
   }
 
   return (
-    <KeyboardAvoidingView behavior="height" enabled style={{ flex: 1 }}>
+    <KeyboardAvoidingView behavior={KEYBOARD_BEHAVIOR} enabled style={{ flex: 1 }}>
       <ScrollView
+        keyboardShouldPersistTaps="always"
         contentContainerStyle={{
           flexGrow: 1,
         }}
@@ -60,7 +63,7 @@ export default function ({
             backgroundColor: 'white',
           }}
         >
-          <Text
+          <FontText
             style={{
               alignSelf: 'flex-start',
               marginBottom: 10,
@@ -69,7 +72,7 @@ export default function ({
             h3
           >
             {i18n.t('forgot_password.title')}
-          </Text>
+          </FontText>
           <Input
             containerStyle={{ marginTop: 15 }}
             placeholder={i18n.t('email_placeholder')}
@@ -96,20 +99,20 @@ export default function ({
               justifyContent: 'center',
             }}
           >
-            <Text>{i18n.t('register.login.pretext')}</Text>
+            <FontText>{i18n.t('register.login.pretext')}</FontText>
             <TouchableOpacity
               onPress={() => {
                 navigation.navigate('Login');
               }}
             >
-              <Text
+              <FontText
                 style={{
                   marginLeft: 5,
                   fontWeight: 'bold',
                 }}
               >
                 {i18n.t('register.login.link')}
-              </Text>
+              </FontText>
             </TouchableOpacity>
           </View>
         </View>

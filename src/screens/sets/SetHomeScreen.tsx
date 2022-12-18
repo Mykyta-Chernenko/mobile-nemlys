@@ -30,13 +30,10 @@ export default function ({
     setLoading(false);
   }
   useEffect(() => {
-    const focusHandler = navigation.addListener('focus', () => {
-      if (route.params?.refresh) {
-        void getCurrentLevel();
-      }
-    });
-    return focusHandler;
-  }, [route.params, navigation]);
+    if (route.params?.refreshTimeStamp) {
+      void getCurrentLevel();
+    }
+  }, [route.params]);
 
   useEffect(() => {
     void getCurrentLevel();

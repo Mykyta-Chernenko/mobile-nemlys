@@ -1,9 +1,10 @@
 import React from 'react';
 import { TouchableOpacity, View } from 'react-native';
 import ImageOrDefault from '../utils/ImageOrDefault';
-import { useTheme, Text } from '@rneui/themed';
+import { useTheme } from '@rneui/themed';
 import { MainNavigationProp, SetItemProps } from '@app/types/navigation';
 import { useNavigation } from '@react-navigation/native';
+import { FontText } from '../utils/FontText';
 
 export default function (props: SetItemProps) {
   const { theme } = useTheme();
@@ -37,7 +38,7 @@ export default function (props: SetItemProps) {
             justifyContent: 'space-between',
           }}
         >
-          <Text>{props.title}</Text>
+          <FontText>{props.title}</FontText>
           {props.tags && (
             <View style={{ flexDirection: 'row' }}>
               {props.tags.map((t, i) => (
@@ -50,7 +51,7 @@ export default function (props: SetItemProps) {
                     padding: 3,
                   }}
                 >
-                  <Text style={{ color: theme.colors.primary }}>{t}</Text>
+                  <FontText style={{ color: theme.colors.primary }}>{t}</FontText>
                 </View>
               ))}
             </View>

@@ -2,16 +2,18 @@ import React, { useState } from 'react';
 import { Image, KeyboardAvoidingView, ScrollView, TouchableOpacity, View } from 'react-native';
 import { AuthStackParamList } from '@app/types/navigation';
 import { NativeStackScreenProps } from '@react-navigation/native-stack';
-import { Input, Text, useTheme } from '@rneui/themed';
+import { Input, useTheme } from '@rneui/themed';
 import { i18n } from '@app/localization/i18n';
 import { PrimaryButton } from '@app/components/buttons/PrimaryButtons';
+import { KEYBOARD_BEHAVIOR } from '@app/utils/constants';
+import { FontText } from '@app/components/utils/FontText';
 
 export default function ({ navigation }: NativeStackScreenProps<AuthStackParamList, 'Welcome'>) {
   const { theme } = useTheme();
   const [name, setName] = useState<string>('');
   const disabled = name.length === 0;
   return (
-    <KeyboardAvoidingView behavior="padding" style={{ flexGrow: 1 }}>
+    <KeyboardAvoidingView behavior={KEYBOARD_BEHAVIOR} style={{ flexGrow: 1 }}>
       <ScrollView
         keyboardShouldPersistTaps="always"
         contentContainerStyle={{
@@ -24,7 +26,7 @@ export default function ({ navigation }: NativeStackScreenProps<AuthStackParamLi
         <View
           style={{
             marginBottom: 20,
-            height: 250,
+            height: 200,
           }}
         >
           <Image
@@ -43,7 +45,7 @@ export default function ({ navigation }: NativeStackScreenProps<AuthStackParamLi
             marginBottom: 10,
           }}
         >
-          <Text
+          <FontText
             style={{
               textAlign: 'center',
               marginBottom: 10,
@@ -52,8 +54,8 @@ export default function ({ navigation }: NativeStackScreenProps<AuthStackParamLi
             h3
           >
             {i18n.t('welcome.title')}
-          </Text>
-          <Text
+          </FontText>
+          <FontText
             style={{
               alignSelf: 'flex-start',
               marginBottom: 10,
@@ -61,7 +63,7 @@ export default function ({ navigation }: NativeStackScreenProps<AuthStackParamLi
             }}
           >
             {i18n.t('welcome.pretext')}
-          </Text>
+          </FontText>
           <Input
             containerStyle={{ marginTop: 10, paddingHorizontal: 0 }}
             inputStyle={{ padding: 5 }}
@@ -84,7 +86,7 @@ export default function ({ navigation }: NativeStackScreenProps<AuthStackParamLi
             }}
             disabled={disabled}
           />
-          {/* <Text>{i18n.t('welcome.pre_join_text')}</Text>
+          {/* <FontText>{i18n.t('welcome.pre_join_text')}</FontText>
           <Button
             title={i18n.t('welcome.join_button.default')}
             onPress={() => {
@@ -100,20 +102,20 @@ export default function ({ navigation }: NativeStackScreenProps<AuthStackParamLi
               justifyContent: 'center',
             }}
           >
-            <Text>{i18n.t('welcome.login.pretext')}</Text>
+            <FontText>{i18n.t('welcome.login.pretext')}</FontText>
             <TouchableOpacity
               onPress={() => {
                 navigation.navigate('Login');
               }}
             >
-              <Text
+              <FontText
                 style={{
                   marginLeft: 5,
                   fontWeight: 'bold',
                 }}
               >
                 {i18n.t('welcome.login.link')}
-              </Text>
+              </FontText>
             </TouchableOpacity>
           </View>
         </View>

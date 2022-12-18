@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { useTheme, Text } from '@rneui/themed';
+import { useTheme } from '@rneui/themed';
 import { supabase } from '@app/api/initSupabase';
 import { Loading } from '../utils/Loading';
 import { View } from 'react-native';
@@ -12,6 +12,7 @@ import { ViewSetHomeScreen } from './ViewSetHomeScreen';
 import { getQuestionsAndActionsForSet } from '@app/api/data/set';
 import SetList from './SetList';
 import { SupabaseEdgeAnswer } from '@app/types/api';
+import { FontText } from '../utils/FontText';
 
 export default function () {
   const { theme } = useTheme();
@@ -55,14 +56,14 @@ export default function () {
           }}
         >
           {noNewSet ? (
-            <Text h4 style={{ color: theme.colors.white, marginTop: '10%' }}>
+            <FontText h4 style={{ color: theme.colors.white, marginTop: '10%' }}>
               {i18n.t('set.new.no_new_set')}
-            </Text>
+            </FontText>
           ) : (
             <>
-              <Text style={{ color: theme.colors.white, marginBottom: '3%' }}>
+              <FontText style={{ color: theme.colors.white, marginBottom: '3%' }}>
                 {i18n.t('set.new.title')}
-              </Text>
+              </FontText>
               <SetList actions={actions} questions={questions} chosenSet={false}></SetList>
               {setId !== undefined && (
                 <View style={{ marginTop: '4%', width: '100%' }}>

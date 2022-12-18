@@ -3,12 +3,14 @@ import { Image, KeyboardAvoidingView, ScrollView, TouchableOpacity, View } from 
 import { supabase } from '@app/api/initSupabase';
 import { AuthStackParamList } from '@app/types/navigation';
 import { NativeStackScreenProps } from '@react-navigation/native-stack';
-import { Button, Input, Text, useTheme } from '@rneui/themed';
+import { Button, Input, useTheme } from '@rneui/themed';
 import { GoogleOAuth } from '@app/components/auth/GoogleOAuth';
 import * as WebBrowser from 'expo-web-browser';
 import { i18n } from '@app/localization/i18n';
 import { SupabaseUser } from '@app/types/api';
 import { AuthContext } from '@app/provider/AuthProvider';
+import { KEYBOARD_BEHAVIOR } from '@app/utils/constants';
+import { FontText } from '@app/components/utils/FontText';
 WebBrowser.maybeCompleteAuthSession();
 export default function ({ navigation }: NativeStackScreenProps<AuthStackParamList, 'Login'>) {
   const { theme } = useTheme();
@@ -43,7 +45,7 @@ export default function ({ navigation }: NativeStackScreenProps<AuthStackParamLi
     }
   }
   return (
-    <KeyboardAvoidingView behavior="padding" style={{ flexGrow: 1 }}>
+    <KeyboardAvoidingView behavior={KEYBOARD_BEHAVIOR} style={{ flexGrow: 1 }}>
       <ScrollView
         keyboardShouldPersistTaps="always"
         contentContainerStyle={{
@@ -56,7 +58,7 @@ export default function ({ navigation }: NativeStackScreenProps<AuthStackParamLi
         <View
           style={{
             marginBottom: 20,
-            height: 250,
+            height: 200,
           }}
         >
           <Image
@@ -75,7 +77,7 @@ export default function ({ navigation }: NativeStackScreenProps<AuthStackParamLi
             marginBottom: 10,
           }}
         >
-          <Text
+          <FontText
             style={{
               textAlign: 'center',
               marginBottom: 10,
@@ -84,7 +86,7 @@ export default function ({ navigation }: NativeStackScreenProps<AuthStackParamLi
             h3
           >
             {i18n.t('login.title')}
-          </Text>
+          </FontText>
           <Input
             containerStyle={{ marginTop: 10, paddingHorizontal: 0 }}
             inputStyle={{ padding: 5 }}
@@ -97,6 +99,7 @@ export default function ({ navigation }: NativeStackScreenProps<AuthStackParamLi
             returnKeyType="next"
             onChangeText={(text) => setEmail(text)}
             onSubmitEditing={() => passwordRef.current?.focus()}
+            // onPressOut={Keyboard.dismiss}
           />
 
           <Input
@@ -120,7 +123,7 @@ export default function ({ navigation }: NativeStackScreenProps<AuthStackParamLi
             }}
             disabled={loading}
           />
-          <Text
+          <FontText
             style={{
               marginTop: 20,
               color: theme.colors.grey3,
@@ -128,7 +131,7 @@ export default function ({ navigation }: NativeStackScreenProps<AuthStackParamLi
             }}
           >
             {i18n.t('or')}
-          </Text>
+          </FontText>
           <GoogleOAuth handleUser={checkUserExists} />
           <View
             style={{
@@ -138,20 +141,20 @@ export default function ({ navigation }: NativeStackScreenProps<AuthStackParamLi
               justifyContent: 'center',
             }}
           >
-            <Text>{i18n.t('login.register.pretext')}</Text>
+            <FontText>{i18n.t('login.register.pretext')}</FontText>
             <TouchableOpacity
               onPress={() => {
                 navigation.navigate('Welcome');
               }}
             >
-              <Text
+              <FontText
                 style={{
                   marginLeft: 5,
                   fontWeight: 'bold',
                 }}
               >
                 {i18n.t('login.register.link')}
-              </Text>
+              </FontText>
             </TouchableOpacity>
           </View>
           <View
@@ -167,7 +170,10 @@ export default function ({ navigation }: NativeStackScreenProps<AuthStackParamLi
                 navigation.navigate('ForgetPassword');
               }}
             >
-              <Text style={{ fontWeight: 'bold' }}> {i18n.t('login.forgot_password.link')}</Text>
+              <FontText style={{ fontWeight: 'bold' }}>
+                {' '}
+                {i18n.t('login.forgot_password.link')}
+              </FontText>
             </TouchableOpacity>
           </View>
         </View>

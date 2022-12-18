@@ -16,12 +16,36 @@ const Main = () => {
         headerShown: false,
       }}
     >
-      <MainStack.Screen name="SetHomeScreen" component={SetHomeScreen} />
-      <MainStack.Screen name="SetItemDetails" component={SetItemDetails} />
-      <MainStack.Screen name="SetReminder" component={SetReminder} />
-      <MainStack.Screen name="CompleteSetReflect" component={CompleteSetReflect} />
-      <MainStack.Screen name="CompleteSetQuestion" component={CompleteSetQuestion} />
-      <MainStack.Screen name="CompleteSetFinal" component={CompleteSetFinal} />
+      <MainStack.Screen
+        options={{ animation: 'simple_push' }}
+        name="SetHomeScreen"
+        component={SetHomeScreen}
+      />
+      <MainStack.Screen
+        options={{ animation: 'fade' }}
+        name="SetItemDetails"
+        component={SetItemDetails}
+      />
+      <MainStack.Screen
+        options={{ animation: 'fade' }}
+        name="SetReminder"
+        component={SetReminder}
+      />
+      <MainStack.Screen
+        options={{ animation: 'fade' }}
+        name="CompleteSetReflect"
+        component={CompleteSetReflect}
+      />
+      <MainStack.Screen
+        options={{ animation: 'fade' }}
+        name="CompleteSetQuestion"
+        component={CompleteSetQuestion}
+      />
+      <MainStack.Screen
+        options={{ animation: 'fade' }}
+        name="CompleteSetFinal"
+        component={CompleteSetFinal}
+      />
     </MainStack.Navigator>
   );
 };

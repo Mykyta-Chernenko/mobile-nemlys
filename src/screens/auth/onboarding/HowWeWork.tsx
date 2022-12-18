@@ -1,19 +1,18 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Image, ScrollView, View } from 'react-native';
 import { AuthStackParamList } from '@app/types/navigation';
 import { NativeStackScreenProps } from '@react-navigation/native-stack';
-import { CheckBox, Text, useTheme } from '@rneui/themed';
+import { useTheme } from '@rneui/themed';
 import { i18n } from '@app/localization/i18n';
 import { PrimaryButton } from '@app/components/buttons/PrimaryButtons';
 import { GoBackButton } from '@app/components/buttons/GoBackButton';
+import { FontText } from '@app/components/utils/FontText';
 
 export default function ({
   route,
   navigation,
 }: NativeStackScreenProps<AuthStackParamList, 'Placement'>) {
   const { theme } = useTheme();
-  const [accepted, setAccepted] = useState(false);
-  const disabled = !accepted;
   return (
     <ScrollView
       contentContainerStyle={{
@@ -26,7 +25,7 @@ export default function ({
       <View
         style={{
           marginBottom: 20,
-          height: 250,
+          height: 200,
         }}
       >
         <Image
@@ -44,7 +43,7 @@ export default function ({
           backgroundColor: 'white',
         }}
       >
-        <Text
+        <FontText
           style={{
             textAlign: 'center',
             marginBottom: 10,
@@ -53,10 +52,10 @@ export default function ({
           h3
         >
           {i18n.t('how_we_work.title')}
-        </Text>
+        </FontText>
         <View style={{ flexGrow: 1 }}>
           {['1', '2', '3', '4', '5', '6'].map((k) => (
-            <Text
+            <FontText
               style={{
                 alignSelf: 'flex-start',
                 color: theme.colors.grey2,
@@ -67,20 +66,9 @@ export default function ({
               key={k}
             >
               {i18n.t('how_we_work.content_' + k)}
-            </Text>
+            </FontText>
           ))}
         </View>
-        <CheckBox
-          center
-          size={26}
-          title={i18n.t('how_we_work.accept_title')}
-          checkedColor={theme.colors.primary}
-          checked={accepted}
-          onPress={() => setAccepted(!accepted)}
-          containerStyle={{
-            paddingHorizontal: 0,
-          }}
-        />
       </View>
       <View style={{ flexDirection: 'row', paddingHorizontal: 10, marginTop: 10 }}>
         <GoBackButton
@@ -94,7 +82,6 @@ export default function ({
           onPress={() => {
             navigation.navigate('Register', route.params);
           }}
-          disabled={disabled}
           containerStyle={{ flexGrow: 40, marginHorizontal: 10 }}
         />
       </View>

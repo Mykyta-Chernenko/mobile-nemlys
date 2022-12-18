@@ -2,7 +2,7 @@ import React, { useContext, useRef, useState } from 'react';
 import { KeyboardAvoidingView, ScrollView, TouchableOpacity, View } from 'react-native';
 import { AuthStackParamList } from '@app/types/navigation';
 import { NativeStackScreenProps } from '@react-navigation/native-stack';
-import { Button, Input, Text, useTheme } from '@rneui/themed';
+import { Button, Input, useTheme } from '@rneui/themed';
 import { GoogleOAuth } from '@app/components/auth/GoogleOAuth';
 import { i18n } from '@app/localization/i18n';
 import { supabase } from '@app/api/initSupabase';
@@ -17,6 +17,8 @@ import {
 import { randomReadnableString } from '@app/utils/strings';
 import OnboardingResults from './OnboardingResults';
 import { AuthContext } from '@app/provider/AuthProvider';
+import { KEYBOARD_BEHAVIOR } from '@app/utils/constants';
+import { FontText } from '@app/components/utils/FontText';
 
 export default function ({
   route,
@@ -100,7 +102,7 @@ export default function ({
     }
   }
   return (
-    <KeyboardAvoidingView behavior="padding" style={{ flexGrow: 1 }}>
+    <KeyboardAvoidingView behavior={KEYBOARD_BEHAVIOR} style={{ flexGrow: 1 }}>
       <ScrollView
         keyboardShouldPersistTaps="always"
         contentContainerStyle={{
@@ -112,7 +114,7 @@ export default function ({
       >
         <OnboardingResults userAnswers={route.params.userAnswers}></OnboardingResults>
         <View style={{ flexGrow: 1 }}>
-          <Text
+          <FontText
             style={{
               textAlign: 'center',
               fontWeight: 'bold',
@@ -120,7 +122,7 @@ export default function ({
             h3
           >
             {i18n.t('register.title')}
-          </Text>
+          </FontText>
           {continueWithEmail ? (
             <View>
               <Input
@@ -136,9 +138,9 @@ export default function ({
                 onChangeText={(text) => setEmail(text)}
               />
               {passwordsAreNotTheSame && (
-                <Text style={{ color: theme.colors.grey3 }}>
+                <FontText style={{ color: theme.colors.grey3 }}>
                   {i18n.t('register.passwords_are_not_the_same')}
-                </Text>
+                </FontText>
               )}
               <Input
                 containerStyle={{ paddingHorizontal: 0 }}
@@ -182,7 +184,7 @@ export default function ({
               }}
             />
           )}
-          <Text
+          <FontText
             style={{
               marginTop: 20,
               color: theme.colors.grey3,
@@ -190,7 +192,7 @@ export default function ({
             }}
           >
             {i18n.t('or')}
-          </Text>
+          </FontText>
           <GoogleOAuth handleUser={handleUserAfterSignUp} />
 
           <View
@@ -201,20 +203,20 @@ export default function ({
               justifyContent: 'center',
             }}
           >
-            <Text>{i18n.t('register.login.pretext')}</Text>
+            <FontText>{i18n.t('register.login.pretext')}</FontText>
             <TouchableOpacity
               onPress={() => {
                 navigation.navigate('Login');
               }}
             >
-              <Text
+              <FontText
                 style={{
                   marginLeft: 5,
                   fontWeight: 'bold',
                 }}
               >
                 {i18n.t('register.login.link')}
-              </Text>
+              </FontText>
             </TouchableOpacity>
           </View>
         </View>

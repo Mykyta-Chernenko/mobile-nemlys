@@ -33,21 +33,16 @@ export class CompleteSetReflectProps {
   coupleSetId: number;
 }
 
-export class CompleteSetQuestionProps {
-  setId: number;
-  coupleSetId: number;
+export class CompleteSetQuestionProps extends CompleteSetReflectProps {
   questions: FeedbackQuestion[] | undefined;
   questionIndex: number | undefined;
   userAnswers: UserFeedbackAnswer[];
 }
 
-export class CompleteSetFinalProps {
-  coupleSetId: number;
-  userAnswers: UserFeedbackAnswer[];
-}
+export class CompleteSetFinalProps extends CompleteSetQuestionProps {}
 
 export type MainStackParamList = {
-  SetHomeScreen: { refresh: boolean };
+  SetHomeScreen: { refreshTimeStamp: string | undefined };
   SetItemDetails: SetItemProps;
   SetReminder: SetReminderProps;
   CompleteSetReflect: CompleteSetReflectProps;

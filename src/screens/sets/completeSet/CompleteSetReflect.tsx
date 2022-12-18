@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import { useTheme, Text } from '@rneui/themed';
 import { MainStackParamList } from '@app/types/navigation';
 import { i18n } from '@app/localization/i18n';
 import { NativeStackScreenProps } from '@react-navigation/native-stack';
@@ -8,13 +7,12 @@ import { supabase } from '@app/api/initSupabase';
 import SurveyView from '@app/components/common/SurveyView';
 import { ContentBox } from '@app/components/utils/ContentBox';
 import { View } from 'react-native';
+import { FontText } from '@app/components/utils/FontText';
 
 export default function ({
   route,
   navigation,
 }: NativeStackScreenProps<MainStackParamList, 'CompleteSetReflect'>) {
-  const { theme } = useTheme();
-
   const [reflectionQuestion, setReflectionQuestion] = useState<APIReflection | undefined>(
     undefined,
   );
@@ -67,13 +65,13 @@ export default function ({
     >
       <View style={{ marginVertical: 10 }}>
         <ContentBox>
-          <Text style={{ fontWeight: 'bold' }}>{i18n.t('set.importance.title')}</Text>
-          <Text>{reflectionQuestion?.importance}</Text>
+          <FontText style={{ fontWeight: 'bold' }}>{i18n.t('set.importance.title')}</FontText>
+          <FontText>{reflectionQuestion?.importance}</FontText>
         </ContentBox>
 
         <ContentBox>
-          <Text style={{ fontWeight: 'bold' }}>{i18n.t('set.tips.title')}</Text>
-          <Text>{reflectionQuestion?.tips}</Text>
+          <FontText style={{ fontWeight: 'bold' }}>{i18n.t('set.tips.title')}</FontText>
+          <FontText>{reflectionQuestion?.tips}</FontText>
         </ContentBox>
       </View>
     </SurveyView>

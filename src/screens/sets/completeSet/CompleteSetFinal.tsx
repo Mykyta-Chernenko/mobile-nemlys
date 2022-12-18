@@ -1,5 +1,4 @@
 import React from 'react';
-import { Text } from '@rneui/themed';
 import { MainStackParamList } from '@app/types/navigation';
 import { i18n } from '@app/localization/i18n';
 import { NativeStackScreenProps } from '@react-navigation/native-stack';
@@ -11,6 +10,8 @@ import {
   InsertCoupleSetFeedback,
   SupabaseAnswer,
 } from '@app/types/api';
+import { goBackToThePreviousQuestion } from './CompleteSetQuestion';
+import { FontText } from '@app/components/utils/FontText';
 
 export default function ({
   route,
@@ -52,7 +53,7 @@ export default function ({
       alert(coupleSetReponse.error.message ?? i18n.t('unexpected_error'));
       return;
     }
-    navigation.navigate('SetHomeScreen', { refresh: true });
+    navigation.navigate('SetHomeScreen', { refreshTimeStamp: new Date().toISOString() });
   };
   return (
     <SurveyView
@@ -62,9 +63,16 @@ export default function ({
       progress={1}
       showButton={true}
       onPress={() => void handlePress()}
-      onBackPress={() => navigation.goBack()}
+      onBackPress={() =>
+        goBackToThePreviousQuestion(
+          navigation,
+          route.params.userAnswers,
+          route.params.userAnswers.length,
+          route.params,
+        )
+      }
     >
-      <Text h4>{i18n.t('set.chosen.finish.finish_title')}</Text>
+      <FontText h4>{i18n.t('set.chosen.finish.finish_title')}</FontText>
     </SurveyView>
   );
 }
