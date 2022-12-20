@@ -22,6 +22,8 @@
       "bundleIdentifier": "com.marakaci.nemlys"
     },
     "android": {
+      "package": "com.nemlys.app",
+      "googleServicesFile": "./google-services.json",
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#FFFFFF"
@@ -32,8 +34,11 @@
     },
     "extra": {
       "eas": {
-        "projectId": "074a320c-e3b1-497e-80e4-b9a877f1f977"
+        "projectId": "d6eafe0b-1185-4733-8f06-e86dddfbb49e"
       }
-    }
+    },
+    "plugins": [
+      "sentry-expo"
+    ]
   }
 }

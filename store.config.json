@@ -1,0 +1,46 @@
+{
+  "configVersion": 0,
+  "apple": {
+    "review": {
+      "firstName": "Mykyta",
+      "lastName": "Chernenko",
+      "email": "mykyta@chernenko.com",
+      "phone": "+47 904 89 007",
+      "demoUsername": "user@user.com",
+      "demoPassword": "useruser",
+      "demoRequired": true
+    },
+    "release": {
+        "automaticRelease": true
+    },
+    "info": {
+      "en-US": {
+        "title": "Awesome App",
+        "subtitle": "Your self-made awesome app",
+        "description": "The most awesome app you've ever seen",
+        "keywords": ["awesome", "app"],
+        "marketingUrl": "https://example.com/en/promo",
+        "supportUrl": "https://example.com/en/support",
+        "privacyPolicyUrl": "https://example.com/en/privacy"
+      }
+    },
+    "advisory": {
+      "alcoholTobaccoOrDrugUseOrReferences": "NONE",
+      "contests": "NONE",
+      "gamblingSimulated": "NONE",
+      "horrorOrFearThemes": "NONE",
+      "matureOrSuggestiveThemes": "NONE",
+      "medicalOrTreatmentInformation": "NONE",
+      "profanityOrCrudeHumor": "NONE",
+      "sexualContentGraphicAndNudity": "NONE",
+      "sexualContentOrNudity": "NONE",
+      "violenceCartoonOrFantasy": "NONE",
+      "violenceRealistic": "NONE",
+      "violenceRealisticProlongedGraphicOrSadistic": "NONE",
+      "gambling": false,
+      "unrestrictedWebAccess": false,
+      "kidsAgeBand": null,
+      "seventeenPlus": false
+    }
+  }
+}

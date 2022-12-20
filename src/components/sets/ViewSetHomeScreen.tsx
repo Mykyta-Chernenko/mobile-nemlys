@@ -32,7 +32,7 @@ export const ViewSetHomeScreen = (props: Props) => {
                 setRefeshing(false);
               }, 500);
             }}
-          ></RefreshControl>
+          />
         }
       >
         <View

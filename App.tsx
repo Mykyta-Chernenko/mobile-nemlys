@@ -9,6 +9,7 @@ import { i18n } from '@app/localization/i18n';
 import { ThemeProvider } from '@rneui/themed';
 import { theme } from '@app/theme';
 import FontWrapper from '@app/theme/FontWrapper';
+import * as Sentry from 'sentry-expo';
 
 export default function App() {
   return (
@@ -23,4 +24,9 @@ export default function App() {
   );
 }
 
+Sentry.init({
+  dsn: 'https://e3fb818e5bc14ba896e7b2f7bbd410b1@o4504363776344064.ingest.sentry.io/4504363782438912',
+  enableInExpoDevelopment: true,
+  debug: false,
+});
 i18n.locale = Localization.locale;
