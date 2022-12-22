@@ -8,8 +8,9 @@ import * as Linking from 'expo-linking';
 import { Provider, SignInWithOAuthCredentials } from '@supabase/supabase-js';
 import { i18n } from '@app/localization/i18n';
 import { SupabaseUser } from '@app/types/api';
-import { AuthContext, setSession } from '@app/provider/AuthProvider';
+import { AuthContext, handleAuthTokens } from '@app/provider/AuthProvider';
 import { FontText } from '../utils/FontText';
+import * as Sentry from 'sentry-expo';
 export const GoogleOAuth = ({
   handleUser: handleUser,
 }: {
@@ -39,44 +40,34 @@ export const GoogleOAuth = ({
       const { data } = await supabase.auth.signInWithOAuth(signInParms);
       const authUrl = data.url;
       if (authUrl) {
-        const response = await startAsync({ authUrl, returnUrl });
+        // WARN: on Android instead of getting the response back,
+        //  we get a dismissed event, but we get the access token and the refesh token in the URL,
+        //  so we use a URL listener from the AuthProvider to handle it
+        auth.setHandleUser?.(handleUser);
+        const response = await startAsync({ authUrl });
         try {
           if (response.type == 'success') {
             const accessToken = response.params['access_token'];
             const refreshToken = response.params['refresh_token'];
             if (accessToken && refreshToken) {
-              await setSession(accessToken, refreshToken);
-              const { data: user, error } = await supabase.auth.getUser();
-              if (error) {
-                throw error;
-              } else {
-                const userId = user.user.id;
-                const { error, count } = await supabase
-                  .from('user_profile')
-                  .select('*', { count: 'exact' })
-                  .eq('user_id', userId);
-                if (error) {
-                  throw error;
-                }
-                await handleUser(user.user, !!count);
-                auth.setIsSignedIn?.(true);
-              }
+              await handleAuthTokens(accessToken, refreshToken, handleUser, auth.setIsSignedIn!);
             } else {
               console.error(`Auth response had no access_token ${JSON.stringify(response)}`);
               throw new Error();
             }
           } else if (response.type == 'error') {
             throw response.error;
-          } else {
-            throw new Error();
           }
         } catch (e: unknown) {
+          Sentry.Native.captureException(e);
           alert(
             e?.['message']
               ? `Error happened: ${e?.['message'] as string}`
-              : 'Something unexpected happened, try again',
+              : i18n.t('unexpected_error'),
           );
           await supabase.auth.signOut();
+        } finally {
+          auth.setHandleUser?.(null);
         }
       }
 

@@ -26,7 +26,7 @@ export default function App() {
 
 Sentry.init({
   dsn: 'https://e3fb818e5bc14ba896e7b2f7bbd410b1@o4504363776344064.ingest.sentry.io/4504363782438912',
-  enableInExpoDevelopment: true,
-  debug: false,
+  enableInExpoDevelopment: false,
+  debug: true,
 });
 i18n.locale = Localization.locale;

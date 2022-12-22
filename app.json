@@ -39,6 +39,18 @@
     },
     "plugins": [
       "sentry-expo"
-    ]
+    ],
+    "hooks": {
+      "postPublish": [
+        {
+          "file": "sentry-expo/upload-sourcemaps",
+          "config": {
+            "organization": "nemlys",
+            "project": "nemlys",
+            "authToken": "0c404c02c48f4218865904370b10c0d5c07e5e66010b4de5a0dcf7c4bdb8f3ae"
+          }
+        }
+      ]
+    }
   }
 }

@@ -49,5 +49,5 @@ export default function (props: Props) {
       }
     })();
   }, [fontsLoaded]);
-  return <>{props.children}</>;
+  return <>{fontsLoaded && props.children}</>;
 }
