@@ -8,9 +8,10 @@ import * as Linking from 'expo-linking';
 import { Provider, SignInWithOAuthCredentials } from '@supabase/supabase-js';
 import { i18n } from '@app/localization/i18n';
 import { SupabaseUser } from '@app/types/api';
-import { AuthContext, handleAuthTokens } from '@app/provider/AuthProvider';
+import { AuthContext, globalHandleUser, handleAuthTokens } from '@app/provider/AuthProvider';
 import { FontText } from '../utils/FontText';
 import * as Sentry from 'sentry-expo';
+import { UNEXPECTED_ERROR } from '@app/utils/constants';
 export const GoogleOAuth = ({
   handleUser: handleUser,
 }: {
@@ -43,7 +44,7 @@ export const GoogleOAuth = ({
         // WARN: on Android instead of getting the response back,
         //  we get a dismissed event, but we get the access token and the refesh token in the URL,
         //  so we use a URL listener from the AuthProvider to handle it
-        auth.setHandleUser?.(handleUser);
+        globalHandleUser.value = handleUser;
         const response = await startAsync({ authUrl });
         try {
           if (response.type == 'success') {
@@ -63,11 +64,11 @@ export const GoogleOAuth = ({
           alert(
             e?.['message']
               ? `Error happened: ${e?.['message'] as string}`
-              : i18n.t('unexpected_error'),
+              : i18n.t(UNEXPECTED_ERROR),
           );
           await supabase.auth.signOut();
         } finally {
-          auth.setHandleUser?.(null);
+          globalHandleUser.value = null;
         }
       }
 

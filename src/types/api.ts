@@ -31,7 +31,8 @@ export type InsertAPICouple = Omit<APICouple, keyof ApiEntry>;
 
 export class APIUserProfile extends ApiEntry {
   first_name: string;
-  expo_token: string | undefined;
+  ios_expo_token: string | undefined;
+  android_expo_token: string | undefined;
   onboarding_finished: boolean;
   user_id: string;
   couple_id: number;
@@ -92,6 +93,12 @@ export class APICoupleSet extends ApiEntry {
   meeting: string | undefined;
 }
 export type InsertAPICoupleSet = Omit<APICoupleSet, keyof ApiEntry>;
+
+export class APINotification extends ApiEntry {
+  identifier: string;
+  expo_notification_id: string;
+}
+export type InsertAPINotification = Omit<APINotification, keyof ApiEntry>;
 
 export class CoupleSetFeedback extends ApiEntry {
   couple_set_id: APICoupleSet['id'];

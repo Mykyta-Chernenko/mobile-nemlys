@@ -4,12 +4,16 @@ import { Linking } from 'react-native';
 import { SupabaseUser } from '@app/types/api';
 import * as Sentry from 'sentry-expo';
 import { i18n } from '@app/localization/i18n';
+import { UNEXPECTED_ERROR } from '@app/utils/constants';
 
 export type HandleUser = (user: SupabaseUser, exists: boolean) => Promise<void>;
 type ContextProps = {
   isSignedIn: null | boolean;
   setIsSignedIn: (value: boolean) => void;
-  setHandleUser: (value: HandleUser | null) => void;
+};
+
+export const globalHandleUser: { value: HandleUser | null } = {
+  value: null,
 };
 
 const AuthContext = createContext<Partial<ContextProps>>({});
@@ -52,7 +56,6 @@ interface Props {
 const AuthProvider = (props: Props) => {
   // user null = loading
   const [isSignedIn, setIsSignedIn] = useState<boolean | null>(null);
-  const [handleUser, setHandleUser] = useState<HandleUser | null>(null);
   useEffect(() => {
     const handleDeepLinking = async (url: string | null): Promise<void> => {
       if (!url) return;
@@ -61,17 +64,16 @@ const AuthProvider = (props: Props) => {
       const accessToken = urlObject.searchParams.get('access_token');
       const refreshToken = urlObject.searchParams.get('refresh_token');
       if (!accessToken || !refreshToken) return;
-      Sentry.Native.captureMessage(url);
-      if (handleUser) {
+      if (globalHandleUser.value) {
         try {
-          await handleAuthTokens(accessToken, refreshToken, handleUser, setIsSignedIn);
-          setHandleUser(null);
+          await handleAuthTokens(accessToken, refreshToken, globalHandleUser.value, setIsSignedIn);
+          globalHandleUser.value = null;
         } catch (e: unknown) {
           Sentry.Native.captureException(e);
           alert(
             e?.['message']
               ? `Error happened: ${e?.['message'] as string}`
-              : i18n.t('unexpected_error'),
+              : i18n.t(UNEXPECTED_ERROR),
           );
           await supabase.auth.signOut();
         }
@@ -80,7 +82,6 @@ const AuthProvider = (props: Props) => {
         setIsSignedIn(true);
       }
     };
-    // # TODO maybe this is how it works
     const listener = (event: { url: string }) => {
       void handleDeepLinking(event.url);
     };
@@ -120,7 +121,6 @@ const AuthProvider = (props: Props) => {
       value={{
         isSignedIn,
         setIsSignedIn,
-        setHandleUser,
       }}
     >
       {props.children}

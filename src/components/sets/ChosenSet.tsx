@@ -20,6 +20,12 @@ import DateTimePicker, {
 import { MainNavigationProp } from '@app/types/navigation';
 import { useNavigation } from '@react-navigation/native';
 import { FontText } from '../utils/FontText';
+import { isDevice } from 'expo-device';
+import { getNotificationForMeeting } from '@app/utils/sets';
+import {
+  removeOldMeetingNotifications,
+  scheduleMeetingNotification,
+} from '@app/utils/notification';
 
 export default function () {
   const navigation = useNavigation<MainNavigationProp>();
@@ -131,9 +137,23 @@ export default function () {
         return;
       }
       setCurrentSet(res.data);
+      await scheduleNewReminder(res.data.id);
     } finally {
       setShowChangeDate(false);
       setLoading(false);
+    }
+  };
+
+  const scheduleNewReminder = async (coupleSetId: number) => {
+    if (isDevice) {
+      const { reminderTime, identifier, title } = getNotificationForMeeting(
+        chosenDateTime,
+        coupleSetId,
+      );
+      if (reminderTime && identifier && title) {
+        await removeOldMeetingNotifications(coupleSetId);
+        await scheduleMeetingNotification(title, reminderTime, identifier);
+      }
     }
   };
 

@@ -17,7 +17,7 @@ import {
 import { randomReadnableString } from '@app/utils/strings';
 import OnboardingResults from './OnboardingResults';
 import { AuthContext } from '@app/provider/AuthProvider';
-import { KEYBOARD_BEHAVIOR } from '@app/utils/constants';
+import { KEYBOARD_BEHAVIOR, UNEXPECTED_ERROR } from '@app/utils/constants';
 import { FontText } from '@app/components/utils/FontText';
 
 export default function ({
@@ -46,10 +46,10 @@ export default function ({
       });
       setLoading(false);
       if (data.error) {
-        alert(data.error?.message ?? i18n.t('unexpected_error'));
+        alert(data.error?.message ?? i18n.t(UNEXPECTED_ERROR));
         return;
       } else if (!data.data.user) {
-        alert(i18n.t('unexpected_error'));
+        alert(i18n.t(UNEXPECTED_ERROR));
         return;
       } else {
         await handleUserAfterSignUp(data.data.user, false);
@@ -81,7 +81,8 @@ export default function ({
         user_id: user.id,
         first_name: route.params.name,
         onboarding_finished: true,
-        expo_token: undefined,
+        ios_expo_token: undefined,
+        android_expo_token: undefined,
       };
       const { error: profileError } = await supabase.from('user_profile').insert(userProfile);
       if (profileError) {

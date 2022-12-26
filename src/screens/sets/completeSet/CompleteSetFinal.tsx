@@ -12,6 +12,7 @@ import {
 } from '@app/types/api';
 import { goBackToThePreviousQuestion } from './CompleteSetQuestion';
 import { FontText } from '@app/components/utils/FontText';
+import { UNEXPECTED_ERROR } from '@app/utils/constants';
 
 export default function ({
   route,
@@ -20,7 +21,7 @@ export default function ({
   const handlePress = async () => {
     const user = await supabase.auth.getUser();
     if (user.error) {
-      alert(user.error.message ?? i18n.t('unexpected_error'));
+      alert(user.error.message ?? i18n.t(UNEXPECTED_ERROR));
       return;
     }
     const feedback: InsertCoupleSetFeedback = {
@@ -33,7 +34,7 @@ export default function ({
       .select()
       .single();
     if (coupleSetFeedback.error) {
-      alert(coupleSetFeedback.error.message ?? i18n.t('unexpected_error'));
+      alert(coupleSetFeedback.error.message ?? i18n.t(UNEXPECTED_ERROR));
       return;
     }
     const answers: APICoupleSetFeedbackAnswer[] = route.params.userAnswers.map((a) => ({
@@ -42,7 +43,7 @@ export default function ({
     }));
     const answersResponse = await supabase.from('couple_set_feedback_answer').insert(answers);
     if (answersResponse.error) {
-      alert(answersResponse.error.message ?? i18n.t('unexpected_error'));
+      alert(answersResponse.error.message ?? i18n.t(UNEXPECTED_ERROR));
       return;
     }
     const coupleSetReponse = await supabase
@@ -50,7 +51,7 @@ export default function ({
       .update({ completed: true })
       .eq('id', route.params.coupleSetId);
     if (coupleSetReponse.error) {
-      alert(coupleSetReponse.error.message ?? i18n.t('unexpected_error'));
+      alert(coupleSetReponse.error.message ?? i18n.t(UNEXPECTED_ERROR));
       return;
     }
     navigation.navigate('SetHomeScreen', { refreshTimeStamp: new Date().toISOString() });

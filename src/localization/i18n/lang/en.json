@@ -15,6 +15,10 @@
   "password_placeholder": "Enter your password",
   "password_again_placeholder": "Enter your password again",
   "unexpected_error": "Unexpected error happened, try again",
+  "notifications":{
+    "date_soon": "Your date is soon, don't forget to do the set",
+    "schedule_date": "Please, schedule when you will have the date with your partner"
+  },
   "welcome": {
     "title": "Get to know\nyour partner better",
     "pretext": "Use Nemlys app to learn common ground and build meaningful communication",

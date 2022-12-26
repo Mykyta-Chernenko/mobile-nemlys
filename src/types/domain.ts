@@ -39,3 +39,8 @@ export class UserFeedbackAnswer {
   text_answer: string | undefined;
   bool_answer: boolean | undefined;
 }
+
+export enum NOTIFICATION_IDENTIFIERS {
+  SCHEDULE_DATE = 'schedule_date:couple_set_id:',
+  DATE_SOON = 'date_soon:couple_set_id:',
+}
