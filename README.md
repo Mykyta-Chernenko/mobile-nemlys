@@ -62,7 +62,6 @@ export default () => {
 
 
 ## Tips
-When you start developing from a new network, you need to add your local ip to 
+When you start developing from a new network for oauth to work, you need to add your local ip to 
 - https://app.supabase.com/project/rpqzwvkyzulmvvldkqse/auth/url-configuration (add your ip to the Redirect URLs, in the format 'exp://192.168.1.15:19000')
 - and src/navigation/index.tsx linking prefixes (if you want to have redirect emails)
-so that auth works (login)

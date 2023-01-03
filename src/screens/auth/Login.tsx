@@ -4,14 +4,16 @@ import { supabase } from '@app/api/initSupabase';
 import { AuthStackParamList } from '@app/types/navigation';
 import { NativeStackScreenProps } from '@react-navigation/native-stack';
 import { Button, Input, useTheme } from '@rneui/themed';
-import { GoogleOAuth } from '@app/components/auth/GoogleOAuth';
+import { OAuth } from '@app/components/auth/OAuth';
 import * as WebBrowser from 'expo-web-browser';
 import { i18n } from '@app/localization/i18n';
 import { SupabaseUser } from '@app/types/api';
 import { AuthContext } from '@app/provider/AuthProvider';
 import { KEYBOARD_BEHAVIOR } from '@app/utils/constants';
 import { FontText } from '@app/components/utils/FontText';
+import { logErrorsWithMessage, UserDoesNotExistError } from '@app/utils/errors';
 WebBrowser.maybeCompleteAuthSession();
+
 export default function ({ navigation }: NativeStackScreenProps<AuthStackParamList, 'Login'>) {
   const { theme } = useTheme();
   const [email, setEmail] = useState<string>('');
@@ -31,7 +33,7 @@ export default function ({ navigation }: NativeStackScreenProps<AuthStackParamLi
     });
     setLoading(false);
     if (error) {
-      alert(error.message);
+      logErrorsWithMessage(error, error.message);
     } else if (!error && !user) {
       alert(i18n.t('login.check_email_for_login_link'));
     } else {
@@ -41,7 +43,9 @@ export default function ({ navigation }: NativeStackScreenProps<AuthStackParamLi
   // eslint-disable-next-line @typescript-eslint/require-await
   async function checkUserExists(user: SupabaseUser, exists: boolean): Promise<void> {
     if (!exists) {
-      throw Error(`User with email ${user?.email ?? ''} does not exist in the system`);
+      throw new UserDoesNotExistError(
+        i18n.t('login.user_does_not_exist_error', { email: user?.email || '' }),
+      );
     }
   }
   return (
@@ -132,7 +136,7 @@ export default function ({ navigation }: NativeStackScreenProps<AuthStackParamLi
           >
             {i18n.t('or')}
           </FontText>
-          <GoogleOAuth handleUser={checkUserExists} />
+          <OAuth handleUser={checkUserExists} />
           <View
             style={{
               flexDirection: 'row',

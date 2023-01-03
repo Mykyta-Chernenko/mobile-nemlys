@@ -12,7 +12,7 @@ import SurveyView from '@app/components/common/SurveyView';
 import { Platform, TextInput, View } from 'react-native';
 import { FeedbackChoice, FeedbackQuestion, UserFeedbackAnswer } from '@app/types/domain';
 import { FontText } from '@app/components/utils/FontText';
-import { UNEXPECTED_ERROR } from '@app/utils/constants';
+import { logErrors } from '@app/utils/errors';
 
 export const goBackToThePreviousQuestion = (
   navigation: MainNavigationProp,
@@ -78,7 +78,7 @@ export default function ({
             .order('order', { foreignTable: 'feedback_choice', ascending: true });
 
           if (error) {
-            alert(error.message ?? i18n.t(UNEXPECTED_ERROR));
+            logErrors(error);
             return;
           }
 

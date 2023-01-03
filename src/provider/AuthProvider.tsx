@@ -2,9 +2,7 @@ import React, { createContext, useEffect, useState } from 'react';
 import { supabase } from '@app/api/initSupabase';
 import { Linking } from 'react-native';
 import { SupabaseUser } from '@app/types/api';
-import * as Sentry from 'sentry-expo';
-import { i18n } from '@app/localization/i18n';
-import { UNEXPECTED_ERROR } from '@app/utils/constants';
+import { logErrors } from '@app/utils/errors';
 
 export type HandleUser = (user: SupabaseUser, exists: boolean) => Promise<void>;
 type ContextProps = {
@@ -69,12 +67,7 @@ const AuthProvider = (props: Props) => {
           await handleAuthTokens(accessToken, refreshToken, globalHandleUser.value, setIsSignedIn);
           globalHandleUser.value = null;
         } catch (e: unknown) {
-          Sentry.Native.captureException(e);
-          alert(
-            e?.['message']
-              ? `Error happened: ${e?.['message'] as string}`
-              : i18n.t(UNEXPECTED_ERROR),
-          );
+          logErrors(e as Error);
           await supabase.auth.signOut();
         }
       } else {

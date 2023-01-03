@@ -8,7 +8,7 @@ import SurveyView from '@app/components/common/SurveyView';
 import { ContentBox } from '@app/components/utils/ContentBox';
 import { View } from 'react-native';
 import { FontText } from '@app/components/utils/FontText';
-import { UNEXPECTED_ERROR } from '@app/utils/constants';
+import { logErrors } from '@app/utils/errors';
 
 export default function ({
   route,
@@ -27,7 +27,7 @@ export default function ({
           .select('reflection_id')
           .eq('set_id', route.params.setId);
         if (res.error) {
-          alert(res.error.message || i18n.t(UNEXPECTED_ERROR));
+          logErrors(res.error);
           return;
         }
         const res2: SupabaseAnswer<APIReflection[]> = await supabase
@@ -38,7 +38,7 @@ export default function ({
             (res.data ?? []).map((x) => x.reflection_id),
           );
         if (res2.error) {
-          alert(res2.error.message || i18n.t(UNEXPECTED_ERROR));
+          logErrors(res2.error);
           return;
         }
         setReflectionQuestion(res2.data?.[0]);

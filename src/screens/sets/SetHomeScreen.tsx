@@ -6,6 +6,7 @@ import NewSet from '@app/components/sets/NewSet';
 import { Loading } from '@app/components/utils/Loading';
 import ChosenSet from '@app/components/sets/ChosenSet';
 import { ViewSetHomeScreen } from '@app/components/sets/ViewSetHomeScreen';
+import { logErrors } from '@app/utils/errors';
 
 export default function ({
   route,
@@ -21,7 +22,7 @@ export default function ({
       .eq('completed', false)
       .maybeSingle();
     if (currentLevel.error) {
-      alert(currentLevel.error);
+      logErrors(currentLevel.error);
     } else if (currentLevel.data) {
       setIsSetChosen(true);
     } else {

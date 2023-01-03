@@ -15,7 +15,7 @@
   "password_placeholder": "Enter your password",
   "password_again_placeholder": "Enter your password again",
   "unexpected_error": "Unexpected error happened, try again",
-  "notifications":{
+  "notifications": {
     "date_soon": "Your date is soon, don't forget to do the set",
     "schedule_date": "Please, schedule when you will have the date with your partner"
   },
@@ -46,6 +46,7 @@
     "accept_title": "I have read and understood the technique"
   },
   "login": {
+    "user_does_not_exist_error": "User with email %{email} does not exist in the system",
     "title": "Login",
     "check_email_for_login_link": "The login link was sent to your email",
     "button": {
@@ -62,7 +63,8 @@
   "oauth": {
     "pretext": "Or continue with",
     "button": {
-      "google": "Google"
+      "google": "Google",
+      "apple": "Apple"
     }
   },
   "register": {

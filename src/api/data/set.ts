@@ -1,5 +1,6 @@
 import { APIAction, APIQuestion, SupabaseAnswer } from '@app/types/api';
 import { Action, Question } from '@app/types/domain';
+import { logErrors } from '@app/utils/errors';
 import { supabase } from '../initSupabase';
 
 export async function getQuestionsAndActionsForSet(
@@ -31,7 +32,7 @@ export async function getQuestionsAndActionsForSet(
       ),
   ]);
   if (questionError || actionError) {
-    alert(questionError || actionError);
+    logErrors(questionError || actionError);
     return;
   }
   return {

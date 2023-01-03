@@ -3,7 +3,7 @@ import { KeyboardAvoidingView, ScrollView, TouchableOpacity, View } from 'react-
 import { AuthStackParamList } from '@app/types/navigation';
 import { NativeStackScreenProps } from '@react-navigation/native-stack';
 import { Button, Input, useTheme } from '@rneui/themed';
-import { GoogleOAuth } from '@app/components/auth/GoogleOAuth';
+import { OAuth } from '@app/components/auth/OAuth';
 import { i18n } from '@app/localization/i18n';
 import { supabase } from '@app/api/initSupabase';
 import {
@@ -17,8 +17,9 @@ import {
 import { randomReadnableString } from '@app/utils/strings';
 import OnboardingResults from './OnboardingResults';
 import { AuthContext } from '@app/provider/AuthProvider';
-import { KEYBOARD_BEHAVIOR, UNEXPECTED_ERROR } from '@app/utils/constants';
+import { KEYBOARD_BEHAVIOR } from '@app/utils/constants';
 import { FontText } from '@app/components/utils/FontText';
+import { logErrors, logErrorsWithMessage } from '@app/utils/errors';
 
 export default function ({
   route,
@@ -46,10 +47,10 @@ export default function ({
       });
       setLoading(false);
       if (data.error) {
-        alert(data.error?.message ?? i18n.t(UNEXPECTED_ERROR));
+        logErrorsWithMessage(data.error, data.error.message);
         return;
       } else if (!data.data.user) {
-        alert(i18n.t(UNEXPECTED_ERROR));
+        logErrors(new Error('Not user after signUp call'));
         return;
       } else {
         await handleUserAfterSignUp(data.data.user, false);
@@ -194,7 +195,7 @@ export default function ({
           >
             {i18n.t('or')}
           </FontText>
-          <GoogleOAuth handleUser={handleUserAfterSignUp} />
+          <OAuth handleUser={handleUserAfterSignUp} />
 
           <View
             style={{

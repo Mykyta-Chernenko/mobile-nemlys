@@ -1,8 +1,9 @@
-import { Button, useTheme } from '@rneui/themed';
+import { useTheme } from '@rneui/themed';
 import { startAsync } from 'expo-auth-session';
 import React, { useContext } from 'react';
 import { Platform, View } from 'react-native';
 import GoogleIcon from '@app/icons/google';
+import AppleIcon from '@app/icons/apple';
 import { supabase } from '@app/api/initSupabase';
 import * as Linking from 'expo-linking';
 import { Provider, SignInWithOAuthCredentials } from '@supabase/supabase-js';
@@ -10,19 +11,19 @@ import { i18n } from '@app/localization/i18n';
 import { SupabaseUser } from '@app/types/api';
 import { AuthContext, globalHandleUser, handleAuthTokens } from '@app/provider/AuthProvider';
 import { FontText } from '../utils/FontText';
-import * as Sentry from 'sentry-expo';
-import { UNEXPECTED_ERROR } from '@app/utils/constants';
-export const GoogleOAuth = ({
+import { logErrors, logErrorsWithMessage, UserDoesNotExistError } from '@app/utils/errors';
+import { SecondaryButton } from '../buttons/SecondaryButton';
+export const OAuth = ({
   handleUser: handleUser,
 }: {
   handleUser: (user: SupabaseUser, exists: boolean) => Promise<void>;
 }) => {
   const { theme } = useTheme();
   const auth = useContext(AuthContext);
-  const onPress = async () => {
+  const onPress = async (provider: Provider) => {
     const returnUrl = Linking.createURL('');
     const signInParms: SignInWithOAuthCredentials = {
-      provider: 'google' as Provider,
+      provider,
       options: {
         redirectTo: returnUrl,
       },
@@ -30,7 +31,7 @@ export const GoogleOAuth = ({
     if (Platform.OS == 'web') {
       const { data, error } = await supabase.auth.signInWithOAuth(signInParms);
       if (error) {
-        alert('Error happened: ' + error.message);
+        logErrors(error);
       } else {
         console.log(data.url);
       }
@@ -53,19 +54,17 @@ export const GoogleOAuth = ({
             if (accessToken && refreshToken) {
               await handleAuthTokens(accessToken, refreshToken, handleUser, auth.setIsSignedIn!);
             } else {
-              console.error(`Auth response had no access_token ${JSON.stringify(response)}`);
-              throw new Error();
+              throw new Error(`Auth response had no access_token ${JSON.stringify(response)}`);
             }
           } else if (response.type == 'error') {
             throw response.error;
           }
         } catch (e: unknown) {
-          Sentry.Native.captureException(e);
-          alert(
-            e?.['message']
-              ? `Error happened: ${e?.['message'] as string}`
-              : i18n.t(UNEXPECTED_ERROR),
-          );
+          if (e instanceof UserDoesNotExistError) {
+            logErrorsWithMessage(e, e.message);
+          } else {
+            logErrors(e);
+          }
           await supabase.auth.signOut();
         } finally {
           globalHandleUser.value = null;
@@ -93,11 +92,20 @@ export const GoogleOAuth = ({
           justifyContent: 'center',
         }}
       >
-        <Button type="outline" onPress={() => void onPress()}>
+        <SecondaryButton type="outline" onPress={() => void onPress('google')}>
           <GoogleIcon height="20" width="20" />
 
           <FontText style={{ marginLeft: 5 }}>{i18n.t('oauth.button.google')}</FontText>
-        </Button>
+        </SecondaryButton>
+        <SecondaryButton
+          type="outline"
+          onPress={() => void onPress('apple')}
+          style={{ marginLeft: 20 }}
+        >
+          <AppleIcon height="20" width="20" />
+
+          <FontText style={{ marginLeft: 5 }}>{i18n.t('oauth.button.apple')}</FontText>
+        </SecondaryButton>
       </View>
     </>
   );

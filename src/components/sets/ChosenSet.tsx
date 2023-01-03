@@ -26,6 +26,7 @@ import {
   removeOldMeetingNotifications,
   scheduleMeetingNotification,
 } from '@app/utils/notification';
+import { logErrors } from '@app/utils/errors';
 
 export default function () {
   const navigation = useNavigation<MainNavigationProp>();
@@ -42,11 +43,11 @@ export default function () {
   const [now, setNow] = useState<Date>(new Date());
   const meetingSet = currentSet?.meeting;
   const meetingHappened = currentSet?.meeting && new Date(currentSet.meeting) < now;
-  const halfHour = 1000 * 60 * 30;
+  const halfHour = __DEV__ ? 0 : 1000 * 60 * 30;
   const setCreatedTooRecently =
     currentSet?.created_at &&
     new Date(new Date(currentSet.created_at).getTime() + halfHour) > new Date();
-  const enableCompletedButton = meetingSet && meetingHappened;
+  const enableCompletedButton = meetingSet && meetingHappened && !setCreatedTooRecently;
 
   useEffect(() => {
     const id = setInterval(() => setNow(new Date()), 1000);
@@ -63,7 +64,7 @@ export default function () {
         .eq('completed', false)
         .maybeSingle();
       if (res.error) {
-        alert(res.error.message);
+        logErrors(res.error);
         return;
       }
       if (res.data) {
@@ -133,7 +134,7 @@ export default function () {
         .select()
         .single();
       if (res.error) {
-        alert(JSON.stringify(res));
+        logErrors(res.error);
         return;
       }
       setCurrentSet(res.data);

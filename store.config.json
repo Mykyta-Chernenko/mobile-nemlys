@@ -6,8 +6,8 @@
       "lastName": "Chernenko",
       "email": "mykyta@chernenko.com",
       "phone": "+47 904 89 007",
-      "demoUsername": "user@user.com",
-      "demoPassword": "useruser",
+      "demoUsername": "test@test.com",
+      "demoPassword": "testtest",
       "demoRequired": true
     },
     "release": {
@@ -15,13 +15,11 @@
     },
     "info": {
       "en-US": {
-        "title": "Awesome App",
-        "subtitle": "Your self-made awesome app",
-        "description": "The most awesome app you've ever seen",
-        "keywords": ["awesome", "app"],
-        "marketingUrl": "https://example.com/en/promo",
-        "supportUrl": "https://example.com/en/support",
-        "privacyPolicyUrl": "https://example.com/en/privacy"
+        "title": "Nemlys",
+        "subtitle": "Nemlys: mindful relationship",
+        "description": "Get to know your partner better. Our goal is to help you find common ground, and establish meaningful communication in your relationship.",
+        "keywords": ["relationship", "love", "mindfullness"],
+        "privacyPolicyUrl": "https://nemlys.com/policy"
       }
     },
     "advisory": {

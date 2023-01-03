@@ -6,6 +6,7 @@ import { OnboardingAnswer, OnboardingQuestion } from '@app/types/domain';
 import { supabase } from '@app/api/initSupabase';
 import SurveyView from '@app/components/common/SurveyView';
 import { FontText } from '@app/components/utils/FontText';
+import { logErrors } from '@app/utils/errors';
 export default function ({
   route,
   navigation,
@@ -63,7 +64,7 @@ export default function ({
           }
         }
       } catch (error) {
-        alert(error.message);
+        logErrors(error);
       } finally {
         setLoading(false);
       }

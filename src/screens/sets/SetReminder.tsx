@@ -28,6 +28,7 @@ import { FontText } from '@app/components/utils/FontText';
 import { NOTIFICATION_IDENTIFIERS } from '@app/types/domain';
 import { getNotificationForMeeting } from '@app/utils/sets';
 import { scheduleMeetingNotification } from '@app/utils/notification';
+import { logErrors } from '@app/utils/errors';
 
 export default function ({
   route,
@@ -45,7 +46,7 @@ export default function ({
   const [chosenDateTime, setChosenDateTime] = useState<Date>(now);
   const [chosenDateTouched, setChosenDateTouched] = useState<boolean>(false);
   const [chosenTimeTouched, setChosenTimeTouched] = useState<boolean>(false);
-  const chosenDateTimeTouched = chosenDateTouched && chosenTimeTouched;
+  const chosenDateTimeTouched = chosenDateTouched || chosenTimeTouched;
   const dateTimePickerBaseProps: IOSNativeProps | AndroidNativeProps = {
     value: chosenDateTime,
     display: 'compact',
@@ -84,7 +85,7 @@ export default function ({
     const getProfile = async () => {
       const { data: user, error: userError } = await supabase.auth.getUser();
       if (userError) {
-        alert(userError.message);
+        logErrors(userError);
         return;
       }
       const { data: profile, error: profileError } = await supabase
@@ -95,7 +96,7 @@ export default function ({
         .eq('user_id', user.user.id)
         .single();
       if (profileError) {
-        alert(profileError.message);
+        logErrors(profileError);
         return;
       }
       setProfile(profile);
@@ -120,7 +121,7 @@ export default function ({
       .eq('id', route.params.setId)
       .single();
     if (res.error) {
-      alert(JSON.stringify(res.error));
+      logErrors(res.error);
       return;
     }
 
@@ -138,7 +139,7 @@ export default function ({
       .select()
       .single();
     if (coupleSetRes.error) {
-      alert(JSON.stringify(coupleSetRes.error));
+      logErrors(coupleSetRes.error);
       return;
     }
     await scheduleReminder(coupleSetRes.data.id);
@@ -201,7 +202,7 @@ export default function ({
             .update({ [tokenField]: token, updated_at: new Date() })
             .eq('id', profile?.id);
           if (res.error) {
-            alert(JSON.stringify(res.error));
+            logErrors(res.error);
           }
         }
       } else {
