@@ -3,13 +3,13 @@
     "name": "Nemlys",
     "slug": "nemlys",
     "scheme": "nemlys",
-    "version": "1.2.0",
+    "version": "1.4.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "splash": {
       "image": "./assets/splash.png",
       "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+      "backgroundColor": "#6C63FF"
     },
     "updates": {
       "fallbackToCacheTimeout": 0
@@ -20,12 +20,12 @@
     "ios": {
       "supportsTablet": true,
       "bundleIdentifier": "com.marakaci.nemlys",
-      "buildNumber": "1.2.0"
+      "buildNumber": "1.4.0"
     },
     "android": {
       "package": "com.nemlys.app",
       "googleServicesFile": "./google-services.json",
-      "versionCode": "1.2.0"
+      "versionCode": 140
     },
     "web": {
       "favicon": "./assets/favicon.png"

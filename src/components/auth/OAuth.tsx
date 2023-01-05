@@ -87,12 +87,16 @@ export const OAuth = ({
 
       <View
         style={{
-          flexDirection: 'row',
+          flexDirection: 'column',
           alignItems: 'center',
           justifyContent: 'center',
         }}
       >
-        <SecondaryButton type="outline" onPress={() => void onPress('google')}>
+        <SecondaryButton
+          type="outline"
+          onPress={() => void onPress('google')}
+          style={{ width: 200 }}
+        >
           <GoogleIcon height="20" width="20" />
 
           <FontText style={{ marginLeft: 5 }}>{i18n.t('oauth.button.google')}</FontText>
@@ -100,7 +104,7 @@ export const OAuth = ({
         <SecondaryButton
           type="outline"
           onPress={() => void onPress('apple')}
-          style={{ marginLeft: 20 }}
+          style={{ marginTop: 10, width: 200 }}
         >
           <AppleIcon height="20" width="20" />
 

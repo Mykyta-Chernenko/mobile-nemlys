@@ -7,7 +7,7 @@
   "save": "Save",
   "logout": "Logout",
   "cancel": "Cancel",
-  "confirm": "Confirm", 
+  "confirm": "Confirm",
   "delete_account": "Delete account",
   "are_you_sure_you_want_to_delete_account": "Are you sure you want to delete your account?",
   "next": "Next",
@@ -67,8 +67,8 @@
   "oauth": {
     "pretext": "Or continue with",
     "button": {
-      "google": "Google",
-      "apple": "Apple"
+      "google": "Sign in with Google",
+      "apple": "Sign in with Apple"
     }
   },
   "register": {
