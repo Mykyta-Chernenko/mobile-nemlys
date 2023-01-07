@@ -7,6 +7,8 @@ import { AUTH_STORAGE_KEY, supabase } from '@app/api/initSupabase';
 import { SecondaryButton } from '../buttons/SecondaryButton';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import { logErrors } from '@app/utils/errors';
+import * as MailComposer from 'expo-mail-composer';
+import { SUPPORT_EMAIL } from '@app/utils/constants';
 
 interface Props {
   children: React.ReactNode;
@@ -15,6 +17,37 @@ interface Props {
 export const ViewWithMenu = (props: Props) => {
   const [showMenu, setShowMenu] = useState<boolean>(false);
   const { theme } = useTheme();
+
+  const sendEmail = async () => {
+    if (await MailComposer.isAvailableAsync()) {
+      await MailComposer.composeAsync({
+        subject: i18n.t('support_email_subject'),
+        recipients: [SUPPORT_EMAIL],
+      });
+    } else {
+      alert(i18n.t('cannot_send_email', { email: SUPPORT_EMAIL }));
+    }
+  };
+  const sendEmailAlert = () => {
+    Alert.alert(
+      i18n.t('send_your_feedback'),
+      undefined,
+      [
+        {
+          text: i18n.t('cancel'),
+          style: 'cancel',
+        },
+        {
+          text: i18n.t('send_email'),
+          onPress: () => void sendEmail(),
+          style: 'default',
+        },
+      ],
+      {
+        cancelable: true,
+      },
+    );
+  };
 
   const logout = async () => {
     await supabase.auth.signOut();
@@ -59,6 +92,11 @@ export const ViewWithMenu = (props: Props) => {
             <Icon name="menu" color="black" size={30} />
           </TouchableOpacity>
         }
+        rightComponent={
+          <TouchableOpacity onPress={() => void sendEmailAlert()} style={{ paddingHorizontal: 10 }}>
+            <Icon name="mail-outline" color="black" size={30} />
+          </TouchableOpacity>
+        }
       />
       <BottomSheet
         modalProps={{}}
@@ -78,8 +116,7 @@ export const ViewWithMenu = (props: Props) => {
         <Button
           color="warning"
           onPress={() => {
-            void logout();
-            void logout();
+            void logout().then(logout);
           }}
           style={{ margin: '1%' }}
         >

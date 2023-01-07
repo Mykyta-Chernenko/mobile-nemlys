@@ -75,42 +75,28 @@ export const OAuth = ({
     }
   };
   return (
-    <>
-      <FontText
-        style={{
-          alignSelf: 'center',
-          color: theme.colors.background,
-        }}
-      >
-        {i18n.t('oauth.pretext')}
-      </FontText>
-
-      <View
-        style={{
-          flexDirection: 'column',
-          alignItems: 'center',
-          justifyContent: 'center',
-        }}
-      >
-        <SecondaryButton
-          type="outline"
-          onPress={() => void onPress('google')}
-          style={{ width: 200 }}
-        >
+    <View
+      style={{
+        flexDirection: 'column',
+        alignItems: 'center',
+        justifyContent: 'center',
+        marginTop: 10,
+      }}
+    >
+      <View style={{ width: 200 }}>
+        <SecondaryButton type="outline" onPress={() => void onPress('google')}>
           <GoogleIcon height="20" width="20" />
 
           <FontText style={{ marginLeft: 5 }}>{i18n.t('oauth.button.google')}</FontText>
         </SecondaryButton>
-        <SecondaryButton
-          type="outline"
-          onPress={() => void onPress('apple')}
-          style={{ marginTop: 10, width: 200 }}
-        >
+      </View>
+      <View style={{ marginTop: 10, width: 200 }}>
+        <SecondaryButton type="outline" onPress={() => void onPress('apple')}>
           <AppleIcon height="20" width="20" />
 
           <FontText style={{ marginLeft: 5 }}>{i18n.t('oauth.button.apple')}</FontText>
         </SecondaryButton>
       </View>
-    </>
+    </View>
   );
 };
