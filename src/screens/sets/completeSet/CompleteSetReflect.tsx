@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import { MainStackParamList } from '@app/types/navigation';
 import { i18n } from '@app/localization/i18n';
 import { NativeStackScreenProps } from '@react-navigation/native-stack';
@@ -9,6 +9,8 @@ import { ContentBox } from '@app/components/utils/ContentBox';
 import { View } from 'react-native';
 import { FontText } from '@app/components/utils/FontText';
 import { logErrors } from '@app/utils/errors';
+import { AuthContext } from '@app/provider/AuthProvider';
+import { logEvent } from 'expo-firebase-analytics';
 
 export default function ({
   route,
@@ -18,6 +20,8 @@ export default function ({
     undefined,
   );
   const [loading, setLoading] = useState<boolean>(false);
+  const authContext = useContext(AuthContext);
+
   useEffect(() => {
     const getSetReflection = async () => {
       setLoading(true);
@@ -54,15 +58,29 @@ export default function ({
       title={reflectionQuestion?.details || ''}
       progress={0.1}
       showButton={true}
-      onPress={() =>
+      onPress={() => {
+        void logEvent('CompleteSetReflectGoNext', {
+          screen: 'CompleteSetReflect',
+          action: 'Go next button clicked',
+          setId: route.params.setId,
+          userId: authContext.userId,
+        });
         navigation.navigate('CompleteSetQuestion', {
           ...route.params,
           questionIndex: undefined,
           questions: undefined,
           userAnswers: [],
-        })
-      }
-      onBackPress={() => navigation.goBack()}
+        });
+      }}
+      onBackPress={() => {
+        void logEvent('CompleteSetReflectGoBack', {
+          screen: 'CompleteSetReflect',
+          action: 'Go back button clicked',
+          setId: route.params.setId,
+          userId: authContext.userId,
+        });
+        navigation.goBack();
+      }}
     >
       <View style={{ marginVertical: 10 }}>
         <ContentBox>

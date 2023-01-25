@@ -8,10 +8,11 @@ import { OAuth } from '@app/components/auth/OAuth';
 import * as WebBrowser from 'expo-web-browser';
 import { i18n } from '@app/localization/i18n';
 import { SupabaseUser } from '@app/types/api';
-import { AuthContext } from '@app/provider/AuthProvider';
+import { ANON_USER, AuthContext } from '@app/provider/AuthProvider';
 import { KEYBOARD_BEHAVIOR } from '@app/utils/constants';
 import { FontText } from '@app/components/utils/FontText';
 import { logErrorsWithMessage, UserDoesNotExistError } from '@app/utils/errors';
+import { logEvent } from 'expo-firebase-analytics';
 WebBrowser.maybeCompleteAuthSession();
 
 export default function ({ navigation }: NativeStackScreenProps<AuthStackParamList, 'Login'>) {
@@ -23,6 +24,11 @@ export default function ({ navigation }: NativeStackScreenProps<AuthStackParamLi
   const passwordRef = useRef(null) as any;
   const auth = useContext(AuthContext);
   async function login() {
+    void logEvent('LoginEmailTypeSubmitClicked', {
+      screen: 'Login',
+      action: 'Email type login, submit button clicked',
+      userId: ANON_USER,
+    });
     setLoading(true);
     const {
       data: { user },
@@ -148,6 +154,11 @@ export default function ({ navigation }: NativeStackScreenProps<AuthStackParamLi
             <FontText>{i18n.t('login.register.pretext')}</FontText>
             <TouchableOpacity
               onPress={() => {
+                void logEvent('LoginRegisterLinkClicked', {
+                  screen: 'Login',
+                  action: 'Register link clicked',
+                  userId: ANON_USER,
+                });
                 navigation.navigate('Welcome');
               }}
             >
@@ -171,6 +182,11 @@ export default function ({ navigation }: NativeStackScreenProps<AuthStackParamLi
           >
             <TouchableOpacity
               onPress={() => {
+                void logEvent('LoginForgetPasswordClicked', {
+                  screen: 'Login',
+                  action: 'Forget password clicked',
+                  userId: ANON_USER,
+                });
                 navigation.navigate('ForgetPassword');
               }}
             >

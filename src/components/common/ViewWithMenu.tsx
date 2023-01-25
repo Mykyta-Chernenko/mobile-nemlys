@@ -4,12 +4,11 @@ import { BottomSheet, Button, Header, Icon, useTheme } from '@rneui/themed';
 import { Alert, TouchableOpacity } from 'react-native';
 import { i18n } from '@app/localization/i18n';
 import { AUTH_STORAGE_KEY, supabase } from '@app/api/initSupabase';
-import { SecondaryButton } from '../buttons/SecondaryButton';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import { logErrors } from '@app/utils/errors';
 import * as MailComposer from 'expo-mail-composer';
 import { SUPPORT_EMAIL } from '@app/utils/constants';
-
+import * as Analytics from 'expo-firebase-analytics';
 interface Props {
   children: React.ReactNode;
 }
@@ -29,6 +28,10 @@ export const ViewWithMenu = (props: Props) => {
     }
   };
   const sendEmailAlert = () => {
+    void Analytics.logEvent('ViewWithMenuClickSendFeedback', {
+      screen: 'ViewWithMenu',
+      action: 'Clicked on send your feedback button',
+    });
     Alert.alert(
       i18n.t('send_your_feedback'),
       undefined,
@@ -50,11 +53,19 @@ export const ViewWithMenu = (props: Props) => {
   };
 
   const logout = async () => {
+    void Analytics.logEvent('ViewWithMenuLogout', {
+      screen: 'ViewWithMenu',
+      action: 'Clicked logout',
+    });
     await supabase.auth.signOut();
     // just to make sure in case something goes wrong
     await AsyncStorage.removeItem(AUTH_STORAGE_KEY);
   };
   const deleteAccount = async () => {
+    void Analytics.logEvent('ViewWithMenuClickSendFeedback', {
+      screen: 'ViewWithMenu',
+      action: 'Clicked delete account',
+    });
     const res = await supabase.rpc('delete_user');
     if (res.error) {
       logErrors(res.error);
@@ -105,14 +116,15 @@ export const ViewWithMenu = (props: Props) => {
         containerStyle={{ padding: '5%' }}
         backdropStyle={{ backgroundColor: 'rgba(255, 255, 255, 0.7)' }}
       >
-        <SecondaryButton
-          type="outline"
+        <Button
+          buttonStyle={{ borderColor: theme.colors.black }}
+          titleStyle={{ color: theme.colors.white }}
           color={theme.colors.black}
           onPress={() => setShowMenu(false)}
           style={{ margin: '1%', marginBottom: '5%' }}
         >
           {i18n.t('close')}
-        </SecondaryButton>
+        </Button>
         <Button
           color="warning"
           onPress={() => {

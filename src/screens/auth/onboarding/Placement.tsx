@@ -7,6 +7,8 @@ import { supabase } from '@app/api/initSupabase';
 import SurveyView from '@app/components/common/SurveyView';
 import { FontText } from '@app/components/utils/FontText';
 import { logErrors } from '@app/utils/errors';
+import { ANON_USER } from '@app/provider/AuthProvider';
+import { logEvent } from 'expo-firebase-analytics';
 export default function ({
   route,
   navigation,
@@ -78,10 +80,13 @@ export default function ({
   const userAnswers = route.params.userAnswers;
   const isNextQuestion = questionIndex + 1 < questions.length;
 
-  const [chosenValue, setChosenValue] = useState<OnboardingAnswer | undefined>(undefined);
-  const buttonDisabled = !chosenValue;
-
   const handlePressBack = () => {
+    void logEvent('PlacementBackClicked', {
+      screen: 'Placement',
+      action: 'Back is clicked',
+      userId: ANON_USER,
+      questionIndex: route.params.questionIndex,
+    });
     if (questionIndex === 0) {
       navigation.navigate('PrePlacement', {
         ...route.params,
@@ -95,6 +100,12 @@ export default function ({
     }
   };
   const handleNextPress = (chosenValue) => {
+    void logEvent('PlacementNextClicked', {
+      screen: 'Placement',
+      action: 'Next is clicked',
+      userId: ANON_USER,
+      questionIndex: route.params.questionIndex,
+    });
     if (chosenValue) {
       userAnswers.push({ question: currentQuestion, answer: chosenValue });
       if (isNextQuestion) {
@@ -104,8 +115,6 @@ export default function ({
           questionIndex: questionIndex + 1,
           userAnswers,
         });
-        // it does not get back to default when we move to the screen again
-        setChosenValue(undefined);
       } else {
         navigation.navigate('HowWeWork', { ...route.params, userAnswers });
       }

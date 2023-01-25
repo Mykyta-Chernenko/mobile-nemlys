@@ -5,8 +5,10 @@ import { SupabaseUser } from '@app/types/api';
 import { logErrors } from '@app/utils/errors';
 
 export type HandleUser = (user: SupabaseUser, exists: boolean) => Promise<void>;
+export const ANON_USER = 'anon';
 type ContextProps = {
   isSignedIn: null | boolean;
+  userId: string;
   setIsSignedIn: (value: boolean) => void;
 };
 
@@ -14,7 +16,7 @@ export const globalHandleUser: { value: HandleUser | null } = {
   value: null,
 };
 
-const AuthContext = createContext<Partial<ContextProps>>({});
+const AuthContext = createContext<Partial<ContextProps>>({ userId: ANON_USER });
 
 export async function setSession(accessToken: string, refreshToken: string) {
   // bug-fix, Buffer is used in the underlying lib, but is not imported
@@ -54,6 +56,7 @@ interface Props {
 const AuthProvider = (props: Props) => {
   // user null = loading
   const [isSignedIn, setIsSignedIn] = useState<boolean | null>(null);
+  const [userId, setUserId] = useState<string>(ANON_USER);
   useEffect(() => {
     const handleDeepLinking = async (url: string | null): Promise<void> => {
       if (!url) return;
@@ -102,6 +105,7 @@ const AuthProvider = (props: Props) => {
       } = supabase.auth.onAuthStateChange((event, session) => {
         console.log(`Supabase auth event: ${event}`);
         setIsSignedIn(!!session);
+        setUserId(session?.user.id || ANON_USER);
       });
       return () => {
         console.log('Unsubsribing fromm supabase onAuthStateChange events');
@@ -114,6 +118,7 @@ const AuthProvider = (props: Props) => {
       value={{
         isSignedIn,
         setIsSignedIn,
+        userId: userId,
       }}
     >
       {props.children}

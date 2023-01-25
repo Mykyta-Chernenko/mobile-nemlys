@@ -7,6 +7,8 @@ import { i18n } from '@app/localization/i18n';
 import { PrimaryButton } from '@app/components/buttons/PrimaryButtons';
 import { GoBackButton } from '@app/components/buttons/GoBackButton';
 import { FontText } from '@app/components/utils/FontText';
+import { logEvent } from 'expo-firebase-analytics';
+import { ANON_USER } from '@app/provider/AuthProvider';
 
 export default function ({
   route,
@@ -73,6 +75,12 @@ export default function ({
       <View style={{ flexDirection: 'row', paddingHorizontal: 10, marginTop: 10 }}>
         <GoBackButton
           onPress={() => {
+            void logEvent('HowWeWorkBackClicked', {
+              screen: 'HowWeWork',
+              action: 'Back is clicked',
+              userId: ANON_USER,
+              questionIndex: route.params.questionIndex,
+            });
             navigation.navigate('Placement', route.params);
           }}
           containerStyle={{ flexGrow: 1 }}
@@ -80,6 +88,12 @@ export default function ({
         <PrimaryButton
           title={i18n.t('finish')}
           onPress={() => {
+            void logEvent('HowWeWorkFinishClicked', {
+              screen: 'HowWeWork',
+              action: 'Finish is clicked',
+              userId: ANON_USER,
+              questionIndex: route.params.questionIndex,
+            });
             navigation.navigate('Register', route.params);
           }}
           containerStyle={{ flexGrow: 40, marginHorizontal: 10 }}

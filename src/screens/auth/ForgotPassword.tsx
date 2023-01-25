@@ -9,6 +9,8 @@ import { i18n } from '@app/localization/i18n';
 import { KEYBOARD_BEHAVIOR } from '@app/utils/constants';
 import { FontText } from '@app/components/utils/FontText';
 import { logErrorsWithMessage } from '@app/utils/errors';
+import { ANON_USER } from '@app/provider/AuthProvider';
+import { logEvent } from 'expo-firebase-analytics';
 
 export default function ({
   navigation,
@@ -17,6 +19,11 @@ export default function ({
   const [loading, setLoading] = useState<boolean>(false);
 
   async function forget() {
+    void logEvent('ForgotPasswordSubmitClicked', {
+      screen: 'ForgotPassword',
+      action: 'Submit button clicked',
+      userId: ANON_USER,
+    });
     setLoading(true);
     // rethink the whole logic, because it does not mean the person will open the email from their phone
     const redirectTo = Linking.createURL('');

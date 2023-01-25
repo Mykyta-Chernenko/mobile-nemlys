@@ -5,6 +5,8 @@ import { useTheme } from '@rneui/themed';
 import { i18n } from '@app/localization/i18n';
 import SurveyView from '@app/components/common/SurveyView';
 import { FontText } from '@app/components/utils/FontText';
+import { logEvent } from 'expo-firebase-analytics';
+import { ANON_USER } from '@app/provider/AuthProvider';
 export default function ({
   route,
   navigation,
@@ -12,8 +14,20 @@ export default function ({
   const { theme } = useTheme();
   const name = route.params.name;
   const progressValue = 0.1;
-  const handlePressBack = () => navigation.navigate('Welcome');
+  const handlePressBack = () => {
+    void logEvent('PrePlacementGoBackClicked', {
+      screen: 'PrePlacement',
+      action: 'go back is clicked',
+      userId: ANON_USER,
+    });
+    navigation.navigate('Welcome');
+  };
   const handlePressNext = () => {
+    void logEvent('PrePlacementNextClicked', {
+      screen: 'PrePlacement',
+      action: 'Next is clicked',
+      userId: ANON_USER,
+    });
     navigation.navigate('Placement', {
       name,
       questionIndex: undefined,

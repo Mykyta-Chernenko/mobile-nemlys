@@ -20,7 +20,8 @@
     "ios": {
       "supportsTablet": true,
       "bundleIdentifier": "com.marakaci.nemlys",
-      "buildNumber": "1.4.0"
+      "buildNumber": "1.4.0",
+      "googleServicesFile": "./GoogleService-Info.plist"
     },
     "android": {
       "package": "com.nemlys.app",
@@ -28,7 +29,13 @@
       "versionCode": 140
     },
     "web": {
-      "favicon": "./assets/favicon.png"
+      "favicon": "./assets/favicon.png",
+      "config": {
+        "firebase": {
+          "apiKey": "AIzaSyCaZEazf-TAdfmlKwQzLgFq-s0T_wxm5uI",
+          "measurementId": "G-ZKJ24DZT5T"
+        }
+      }
     },
     "extra": {
       "eas": {
@@ -36,7 +43,15 @@
       }
     },
     "plugins": [
-      "sentry-expo"
+      "sentry-expo",
+      [
+        "expo-build-properties",
+        {
+          "ios": {
+            "useFrameworks": "static"
+          }
+        }
+      ]
     ],
     "hooks": {
       "postPublish": [

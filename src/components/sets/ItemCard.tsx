@@ -1,16 +1,29 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { TouchableOpacity, View } from 'react-native';
 import ImageOrDefault from '../utils/ImageOrDefault';
 import { useTheme } from '@rneui/themed';
 import { MainNavigationProp, SetItemProps } from '@app/types/navigation';
 import { useNavigation } from '@react-navigation/native';
 import { FontText } from '../utils/FontText';
+import { logEvent } from 'expo-firebase-analytics';
+import { AuthContext } from '@app/provider/AuthProvider';
 
 export default function (props: SetItemProps) {
   const { theme } = useTheme();
   const navigation = useNavigation<MainNavigationProp>();
+  const authContext = useContext(AuthContext);
   return (
-    <TouchableOpacity onPress={() => navigation.navigate('SetItemDetails', props)}>
+    <TouchableOpacity
+      onPress={() => {
+        void logEvent('SetItemCardClickShowDetails', {
+          screen: 'SetItemCard',
+          action: 'Card clicked to show details',
+          title: props.title,
+          userId: authContext.userId,
+        });
+        navigation.navigate('SetItemDetails', props);
+      }}
+    >
       <View
         style={{
           flexGrow: 0,

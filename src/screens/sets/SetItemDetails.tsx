@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { ScrollView, View } from 'react-native';
 import { NativeStackScreenProps } from '@react-navigation/native-stack';
 import { MainStackParamList } from '@app/types/navigation';
@@ -8,6 +8,8 @@ import { i18n } from '@app/localization/i18n';
 import { ContentBox } from '@app/components/utils/ContentBox';
 import ImageOrDefault from '@app/components/utils/ImageOrDefault';
 import { FontText } from '@app/components/utils/FontText';
+import { logEvent } from 'expo-firebase-analytics';
+import { AuthContext } from '@app/provider/AuthProvider';
 
 export default function ({
   route,
@@ -15,6 +17,7 @@ export default function ({
 }: NativeStackScreenProps<MainStackParamList, 'SetItemDetails'>) {
   const insets = useSafeAreaInsets();
   const props = route.params;
+  const authContext = useContext(AuthContext);
   return (
     <ScrollView
       contentContainerStyle={{
@@ -28,6 +31,12 @@ export default function ({
       <View style={{ flexDirection: 'row', alignItems: 'center' }}>
         <GoBackButton
           onPress={() => {
+            void logEvent('SetItemDetailsGoBack', {
+              screen: 'SetItemDetails',
+              action: 'Go back button clicked',
+              itemTitle: props.title,
+              userId: authContext.userId,
+            });
             navigation.navigate('SetHomeScreen', { refreshTimeStamp: undefined });
           }}
         ></GoBackButton>

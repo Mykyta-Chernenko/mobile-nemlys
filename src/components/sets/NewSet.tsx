@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import { useTheme } from '@rneui/themed';
 import { supabase } from '@app/api/initSupabase';
 import { Loading } from '../utils/Loading';
@@ -13,6 +13,8 @@ import { getQuestionsAndActionsForSet } from '@app/api/data/set';
 import SetList from './SetList';
 import { SupabaseEdgeAnswer } from '@app/types/api';
 import { FontText } from '../utils/FontText';
+import { logEvent } from 'expo-firebase-analytics';
+import { AuthContext } from '@app/provider/AuthProvider';
 
 export default function () {
   const { theme } = useTheme();
@@ -23,6 +25,7 @@ export default function () {
   const [setId, setSetId] = useState<number | undefined>(undefined);
   const [questions, setQuestions] = useState<Question[]>([]);
   const [actions, setActions] = useState<Action[]>([]);
+  const authContext = useContext(AuthContext);
 
   useEffect(() => {
     async function getCurrentLevel() {
@@ -68,13 +71,18 @@ export default function () {
               {setId !== undefined && (
                 <View style={{ marginTop: '4%', width: '100%' }}>
                   <PrimaryButton
-                    onPress={() =>
+                    onPress={() => {
+                      void logEvent('NewSetAcceptSetClicked', {
+                        screen: 'NewSet',
+                        action: 'AcceptSetClicked',
+                        userId: authContext.userId,
+                      });
                       navigation.navigate('SetReminder', {
                         setId,
                         actionsIds: actions.map((a) => a.id),
                         questionIds: questions.map((q) => q.id),
-                      })
-                    }
+                      });
+                    }}
                   >
                     {i18n.t('set.accept')}
                   </PrimaryButton>

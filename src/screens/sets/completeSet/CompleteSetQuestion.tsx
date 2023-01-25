@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import { useTheme, CheckBox, Button } from '@rneui/themed';
 import {
   CompleteSetQuestionProps,
@@ -13,6 +13,8 @@ import { Platform, TextInput, View } from 'react-native';
 import { FeedbackChoice, FeedbackQuestion, UserFeedbackAnswer } from '@app/types/domain';
 import { FontText } from '@app/components/utils/FontText';
 import { logErrors } from '@app/utils/errors';
+import { AuthContext } from '@app/provider/AuthProvider';
+import { logEvent } from 'expo-firebase-analytics';
 
 export const goBackToThePreviousQuestion = (
   navigation: MainNavigationProp,
@@ -56,6 +58,7 @@ export default function ({
   const progressValue =
     0.1 +
     (questionIndex === undefined ? 0 : 0.7 * ((questionIndex + 1) / (questions?.length ?? 1)));
+  const authContext = useContext(AuthContext);
 
   useEffect(() => {
     const getQuestions = async () => {
@@ -116,6 +119,13 @@ export default function ({
     void getQuestions();
   }, [route.params.questions]);
   const handleBack = () => {
+    void logEvent('CompleteSetQuestionGoBack', {
+      screen: 'CompleteSetQuestion',
+      action: 'Go back button clicked',
+      setId: route.params.setId,
+      questionIndex: route.params.questionIndex,
+      userId: authContext.userId,
+    });
     goBackToThePreviousQuestion(
       navigation,
       route.params.userAnswers,
@@ -128,6 +138,13 @@ export default function ({
     choiceAnswer: FeedbackChoice | undefined,
     boolAnswer: boolean | undefined,
   ) => {
+    void logEvent('CompleteSetQuestionGoNext', {
+      screen: 'CompleteSetQuestion',
+      action: 'Go next button clicked',
+      setId: route.params.setId,
+      questionIndex: route.params.questionIndex,
+      userId: authContext.userId,
+    });
     if (currentQuestion) {
       const finalTextAnswer =
         currentQuestion.type === 'text' && textAnswer === undefined ? '' : textAnswer;
@@ -255,7 +272,7 @@ export default function ({
       showButton={currentQuestion?.type == 'text'}
       onPress={() => handlePress(choiceAnswer, boolAnswer)}
       onBackPress={handleBack}
-      buttonText={i18n.t('skip')}
+      buttonText={textAnswer ? i18n.t('next') : i18n.t('skip')}
     >
       {mainCointent}
     </SurveyView>

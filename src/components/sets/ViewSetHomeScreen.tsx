@@ -1,10 +1,12 @@
-import React, { useState } from 'react';
+import React, { useContext, useState } from 'react';
 import { RefreshControl, ScrollView, View } from 'react-native';
 import { Image } from '@rneui/themed';
 import { LinearGradient } from 'expo-linear-gradient';
 import { ViewWithMenu } from '../common/ViewWithMenu';
 import { useNavigation } from '@react-navigation/native';
 import { MainNavigationProp } from '@app/types/navigation';
+import { AuthContext } from '@app/provider/AuthProvider';
+import { logEvent } from 'expo-firebase-analytics';
 
 interface Props {
   children: React.ReactNode;
@@ -13,6 +15,8 @@ interface Props {
 export const ViewSetHomeScreen = (props: Props) => {
   const navigation = useNavigation<MainNavigationProp>();
   const [refreshing, setRefeshing] = useState(false);
+  const authContext = useContext(AuthContext);
+
   return (
     <ViewWithMenu>
       <ScrollView
@@ -26,6 +30,11 @@ export const ViewSetHomeScreen = (props: Props) => {
             onRefresh={() => {
               setRefeshing(true);
               setTimeout(() => {
+                void logEvent('SetHomeScreenRefreshed', {
+                  screen: 'SetHomeScreen',
+                  action: 'Home screen refresh pulled',
+                  userId: authContext.userId,
+                });
                 navigation.navigate('SetHomeScreen', {
                   refreshTimeStamp: new Date().toISOString(),
                 });

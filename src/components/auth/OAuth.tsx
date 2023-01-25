@@ -9,10 +9,16 @@ import * as Linking from 'expo-linking';
 import { Provider, SignInWithOAuthCredentials } from '@supabase/supabase-js';
 import { i18n } from '@app/localization/i18n';
 import { SupabaseUser } from '@app/types/api';
-import { AuthContext, globalHandleUser, handleAuthTokens } from '@app/provider/AuthProvider';
+import {
+  ANON_USER,
+  AuthContext,
+  globalHandleUser,
+  handleAuthTokens,
+} from '@app/provider/AuthProvider';
 import { FontText } from '../utils/FontText';
 import { logErrors, logErrorsWithMessage, UserDoesNotExistError } from '@app/utils/errors';
 import { SecondaryButton } from '../buttons/SecondaryButton';
+import { logEvent } from 'expo-firebase-analytics';
 export const OAuth = ({
   handleUser: handleUser,
 }: {
@@ -20,7 +26,14 @@ export const OAuth = ({
 }) => {
   const { theme } = useTheme();
   const auth = useContext(AuthContext);
+
   const onPress = async (provider: Provider) => {
+    void logEvent('OAuthInititated', {
+      screen: 'OAuth',
+      action: 'OAuth button clicked',
+      provider,
+      userId: ANON_USER,
+    });
     const returnUrl = Linking.createURL('');
     const signInParms: SignInWithOAuthCredentials = {
       provider,

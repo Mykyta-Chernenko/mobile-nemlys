@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import { useTheme, CheckBox } from '@rneui/themed';
 import { Platform, StyleProp, TouchableOpacity, View, ViewStyle } from 'react-native';
 import { MainStackParamList } from '@app/types/navigation';
@@ -29,6 +29,8 @@ import { NOTIFICATION_IDENTIFIERS } from '@app/types/domain';
 import { getNotificationForMeeting } from '@app/utils/sets';
 import { scheduleMeetingNotification } from '@app/utils/notification';
 import { logErrors } from '@app/utils/errors';
+import { logEvent } from 'expo-firebase-analytics';
+import { AuthContext } from '@app/provider/AuthProvider';
 
 export default function ({
   route,
@@ -40,6 +42,7 @@ export default function ({
   const [noDateYet, setNoDateYet] = useState<boolean>(false);
   const [loading, setLoading] = useState<boolean>(false);
   const GRANTED_NOTIFICATION_STATUS = 'granted';
+  const DENIED_NOTIFICATION_STATUS = 'denied';
   const [notificationStatus, setNotificationStatus] = useState<string | undefined>(undefined);
   const showNotificationText = notificationStatus && notificationStatus === 'undetermined';
   const now = new Date();
@@ -53,11 +56,18 @@ export default function ({
     style: { marginRight: 5 },
     themeVariant: theme.mode,
   };
+  const authContext = useContext(AuthContext);
   const datePickerProps: IOSNativeProps | AndroidNativeProps = {
     ...dateTimePickerBaseProps,
     testID: 'datePicker',
     mode: 'date',
     onChange: (event, value: Date) => {
+      void logEvent('SetReminderDatePickerChanged', {
+        screen: 'SetReminder',
+        action: 'Date Picker changed',
+        value: value,
+        userId: authContext.userId,
+      });
       setChosenDateTouched(true);
       setChosenDateTime(value || now);
     },
@@ -67,6 +77,12 @@ export default function ({
     testID: 'timePicker',
     mode: 'time',
     onChange: (event, value: Date) => {
+      void logEvent('SetReminderTimePickerChanged', {
+        screen: 'SetReminder',
+        action: 'Time Picker changed',
+        value: value,
+        userId: authContext.userId,
+      });
       setChosenTimeTouched(true);
       setChosenDateTime(value || now);
     },
@@ -184,25 +200,38 @@ export default function ({
           const { status } = await Notifications.requestPermissionsAsync();
           finalStatus = status;
         }
-        if (finalStatus !== GRANTED_NOTIFICATION_STATUS) {
-          return;
+        if (finalStatus === GRANTED_NOTIFICATION_STATUS || finalStatus != notificationStatus) {
+          void logEvent('SetReminderNotificationAccessProvided', {
+            screen: 'SetReminder',
+            action: 'User gave reminder notification access',
+            userId: authContext.userId,
+          });
+        } else if (finalStatus === DENIED_NOTIFICATION_STATUS) {
+          void logEvent('SetReminderNotificationAccessDeclined', {
+            screen: 'SetReminder',
+            action: 'User declined reminder notification access',
+            userId: authContext.userId,
+          });
         }
-        setLoading(true);
 
-        const token = (await Notifications.getExpoPushTokenAsync()).data;
-        let tokenField: string | null = null;
-        if (Platform.OS === 'ios') {
-          tokenField = 'ios_expo_token';
-        } else if (Platform.OS === 'android') {
-          tokenField = 'android_expo_token';
-        }
-        if (token && tokenField && token != profile?.[tokenField]) {
-          const res = await supabase
-            .from('user_profile')
-            .update({ [tokenField]: token, updated_at: new Date() })
-            .eq('id', profile?.id);
-          if (res.error) {
-            logErrors(res.error);
+        if (finalStatus === GRANTED_NOTIFICATION_STATUS) {
+          setLoading(true);
+
+          const token = (await Notifications.getExpoPushTokenAsync()).data;
+          let tokenField: string | null = null;
+          if (Platform.OS === 'ios') {
+            tokenField = 'ios_expo_token';
+          } else if (Platform.OS === 'android') {
+            tokenField = 'android_expo_token';
+          }
+          if (token && tokenField && token != profile?.[tokenField]) {
+            const res = await supabase
+              .from('user_profile')
+              .update({ [tokenField]: token, updated_at: new Date() })
+              .eq('id', profile?.id);
+            if (res.error) {
+              logErrors(res.error);
+            }
           }
         }
       } else {
@@ -214,6 +243,10 @@ export default function ({
     }
   };
   const handleSubmit = async () => {
+    void logEvent('SetReminderClickSubmit', {
+      screen: 'ViewWithMenu',
+      action: 'Clicked delete account',
+    });
     await registerForPushNotificationsAsync();
   };
 

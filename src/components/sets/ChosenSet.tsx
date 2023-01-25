@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import { supabase } from '@app/api/initSupabase';
 import { ViewSetHomeScreen } from './ViewSetHomeScreen';
 import { Action, Question } from '@app/types/domain';
@@ -27,6 +27,8 @@ import {
   scheduleMeetingNotification,
 } from '@app/utils/notification';
 import { logErrors } from '@app/utils/errors';
+import { AuthContext } from '@app/provider/AuthProvider';
+import { logEvent } from 'expo-firebase-analytics';
 
 export default function () {
   const navigation = useNavigation<MainNavigationProp>();
@@ -46,7 +48,7 @@ export default function () {
   const halfHour = __DEV__ ? 0 : 1000 * 60 * 30;
   const setCreatedTooRecently =
     currentSet?.created_at &&
-    new Date(new Date(currentSet.created_at).getTime() + halfHour) > new Date();
+    new Date(currentSet.created_at) > new Date(new Date(now).getTime() - halfHour);
   const enableCompletedButton = meetingSet && meetingHappened && !setCreatedTooRecently;
 
   useEffect(() => {
@@ -91,11 +93,19 @@ export default function () {
     style: { marginRight: 5 },
     themeVariant: theme.mode,
   };
+  const authContext = useContext(AuthContext);
+
   const datePickerProps: IOSNativeProps | AndroidNativeProps = {
     ...dateTimePickerBaseProps,
     testID: 'datePicker',
     mode: 'date',
     onChange: (event, value: Date) => {
+      void logEvent('ChosenSetReminderDateChanged', {
+        screen: 'ChosenSet',
+        action: 'Reminder date changed',
+        value: value,
+        userId: authContext.userId,
+      });
       setChosenDateTouched(true);
       setChosenDateTime(value || now);
     },
@@ -105,6 +115,12 @@ export default function () {
     testID: 'timePicker',
     mode: 'time',
     onChange: (event, value: Date) => {
+      void logEvent('ChosenSetReminderTimeChanged', {
+        screen: 'ChosenSet',
+        action: 'Reminder time changed',
+        value: value,
+        userId: authContext.userId,
+      });
       setChosenTimeTouched(true);
       setChosenDateTime(value || now);
     },
@@ -118,6 +134,11 @@ export default function () {
   };
 
   const updateMeetingDate = async () => {
+    void logEvent('ChosenSetUpdateMeetingDateClicked', {
+      screen: 'ChosenSet',
+      action: 'Update meeting date changed and submitted',
+      userId: authContext.userId,
+    });
     if (!currentSet) {
       return;
     }
@@ -160,6 +181,11 @@ export default function () {
 
   const handleButton = () => {
     if (!currentSet) return;
+    void logEvent('ChosenSetCompleteSetClicked', {
+      screen: 'ChosenSet',
+      action: 'Complete set clicked',
+      userId: authContext.userId,
+    });
     navigation.navigate('CompleteSetReflect', {
       setId: currentSet.set_id,
       coupleSetId: currentSet.id,

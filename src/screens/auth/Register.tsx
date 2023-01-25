@@ -1,4 +1,4 @@
-import React, { useContext, useRef, useState } from 'react';
+import React, { useContext, useEffect, useRef, useState } from 'react';
 import { KeyboardAvoidingView, ScrollView, TouchableOpacity, View } from 'react-native';
 import { AuthStackParamList } from '@app/types/navigation';
 import { NativeStackScreenProps } from '@react-navigation/native-stack';
@@ -16,10 +16,11 @@ import {
 } from '@app/types/api';
 import { randomReadnableString } from '@app/utils/strings';
 import OnboardingResults from './OnboardingResults';
-import { AuthContext } from '@app/provider/AuthProvider';
+import { ANON_USER, AuthContext } from '@app/provider/AuthProvider';
 import { KEYBOARD_BEHAVIOR } from '@app/utils/constants';
 import { FontText } from '@app/components/utils/FontText';
 import { logErrors, logErrorsWithMessage } from '@app/utils/errors';
+import { logEvent } from 'expo-firebase-analytics';
 
 export default function ({
   route,
@@ -38,7 +39,19 @@ export default function ({
   const passwordAgainRef = useRef(null) as any;
   const auth = useContext(AuthContext);
   const passwordsAreNotTheSame = password && passwordAgain && password != passwordAgain;
+  useEffect(() => {
+    void logEvent('RegisterScreenOpened', {
+      screen: 'Register',
+      action: 'opened',
+      userId: ANON_USER,
+    });
+  }, []);
   async function register() {
+    void logEvent('RegisterTypeEmailSubmitClicked', {
+      screen: 'Register',
+      action: 'Type email submit button clicked',
+      userId: ANON_USER,
+    });
     setLoading(true);
     try {
       const data = await supabase.auth.signUp({
@@ -208,6 +221,11 @@ export default function ({
             <FontText>{i18n.t('register.login.pretext')}</FontText>
             <TouchableOpacity
               onPress={() => {
+                void logEvent('RegisterGoToLogin', {
+                  screen: 'Register',
+                  action: 'Navigate to login',
+                  userId: auth.userId,
+                });
                 navigation.navigate('Login');
               }}
             >
