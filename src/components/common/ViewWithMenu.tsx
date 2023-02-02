@@ -105,7 +105,7 @@ export const ViewWithMenu = (props: Props) => {
         }
         rightComponent={
           <TouchableOpacity onPress={() => void sendEmailAlert()} style={{ paddingHorizontal: 10 }}>
-            <Icon name="mail-outline" color="black" size={30} />
+            <Icon name="thumbs-up-down-outline" type="material-community" color="black" size={40} />
           </TouchableOpacity>
         }
       />
