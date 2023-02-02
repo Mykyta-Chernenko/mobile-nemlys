@@ -12,4 +12,9 @@ export function logErrorsWithMessage(e: unknown, message: string | undefined) {
   alert(message || i18n.t(UNEXPECTED_ERROR));
 }
 
+export function logErrorsWithMessageWithoutAlert(e: unknown) {
+  if (!__DEV__) Native.captureException(e);
+  console.error(e);
+}
+
 export class UserDoesNotExistError extends Error {}

@@ -55,7 +55,9 @@ export const ViewSetHomeScreen = (props: Props) => {
               width: '100%',
               backgroundColor: 'rgba(81, 74, 191, 1)',
               position: 'absolute',
-              marginTop: 140,
+              borderTopLeftRadius: 0,
+              borderTopRightRadius: 0,
+              marginTop: 135,
             }}
           ></View>
           <Image
@@ -70,11 +72,9 @@ export const ViewSetHomeScreen = (props: Props) => {
           ></Image>
         </View>
         <LinearGradient
-          colors={['rgb(108, 99, 255)', 'rgb(223, 220, 238)']}
+          colors={['rgba(81, 74, 191, 1)', 'rgb(223, 220, 238)']}
           style={{
             flexGrow: 1,
-            borderTopLeftRadius: 15,
-            borderTopRightRadius: 15,
             zIndex: 1,
           }}
         >

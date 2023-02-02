@@ -24,8 +24,6 @@ export type SetItemProps = {
 
 export class SetReminderProps {
   setId: number;
-  actionsIds: number[];
-  questionIds: number[];
 }
 
 export class CompleteSetReflectProps {

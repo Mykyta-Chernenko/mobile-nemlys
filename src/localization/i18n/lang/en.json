@@ -8,6 +8,7 @@
   "logout": "Logout",
   "cancel": "Cancel",
   "confirm": "Confirm",
+  "remove": "Remove",
   "delete_account": "Delete account",
   "are_you_sure_you_want_to_delete_account": "Are you sure you want to delete your account?",
   "cannot_send_email": "Cannot send email from your device, feel free to reach out manually to %{email}",
@@ -139,17 +140,21 @@
     }
   },
   "set": {
-    "accept": "Accept challenge",
+    "accept": "Accept",
+    "more_details": "Click on the title to get more details",
+    "skip_alert": "Do you want to remove the card?",
+    "skip_alert_details": "You can only remove 3 cards in a deck",
     "reminder": {
       "title": "Reminder",
       "content": "Set when you will have the next date with your partner and you have enough time to discuss the set, and we will remind you about it before",
       "no_date_yet_checkbox": "We don’t have a specific time yet",
-      "next_button": "Finish",
+      "next_button": "Continue",
       "notification_access": "*We will ask you for the notification access to remind you more effectively",
       "notification_access_no_date": "*We will ask you for the notification access to remind you to set the date later"
     },
     "new": {
-      "title": "We prepared for you a set actionable things for the next date, click on the individual items to get more info",
+      "title": "Choose a card for the next date",
+      "unavailable_card_title": "Complete a card before to unlock",
       "questions": {
         "title": "To discuss with your partner"
       },

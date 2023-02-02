@@ -20,13 +20,13 @@
     "ios": {
       "supportsTablet": true,
       "bundleIdentifier": "com.marakaci.nemlys",
-      "buildNumber": "1.4.0",
+      "buildNumber": "1.5.0",
       "googleServicesFile": "./GoogleService-Info.plist"
     },
     "android": {
       "package": "com.nemlys.app",
       "googleServicesFile": "./google-services.json",
-      "versionCode": 140
+      "versionCode": 150
     },
     "web": {
       "favicon": "./assets/favicon.png",
