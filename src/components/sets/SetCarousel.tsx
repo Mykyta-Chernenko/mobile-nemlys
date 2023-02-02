@@ -25,6 +25,7 @@ import { logErrors } from '@app/utils/errors';
 import { BlurView } from 'expo-blur';
 import { GestureHandlerRootView } from 'react-native-gesture-handler';
 
+const AVAILABLE_CARD_SET_COUNT = 3;
 export default (props: { setsQuestionAction: SetQuestionAction[] }) => {
   const { theme } = useTheme();
   const [width, setWidth] = useState(10);
@@ -63,7 +64,10 @@ export default (props: { setsQuestionAction: SetQuestionAction[] }) => {
           autoPlay={false}
           onProgressChange={(_, absoluteProgress) => {
             progressValue.value = absoluteProgress;
-            if (Math.round(absoluteProgress) === props.setsQuestionAction.length - 1) {
+            if (
+              props.setsQuestionAction.length > AVAILABLE_CARD_SET_COUNT &&
+              Math.round(absoluteProgress) === props.setsQuestionAction.length - 1
+            ) {
               setIsUnavailableCardActive(true);
             } else {
               setIsUnavailableCardActive(false);
@@ -80,7 +84,9 @@ export default (props: { setsQuestionAction: SetQuestionAction[] }) => {
               <CardItem
                 {...{
                   ...props.setsQuestionAction[index],
-                  last: index === props.setsQuestionAction.length - 1,
+                  unavailable:
+                    props.setsQuestionAction.length > AVAILABLE_CARD_SET_COUNT &&
+                    index === props.setsQuestionAction.length - 1,
                 }}
               ></CardItem>
             </View>
@@ -124,7 +130,7 @@ const PaginationItem: React.FC<{
   const { theme } = useTheme();
 
   const { animValue, index, length, backgroundColor, isRotate } = props;
-  const isAvailable = index < length - 1;
+  const notAvailable = length > AVAILABLE_CARD_SET_COUNT && index === length - 1;
 
   const width = 10;
 
@@ -148,7 +154,7 @@ const PaginationItem: React.FC<{
   return (
     <View
       style={{
-        backgroundColor: isAvailable ? theme.colors.white : theme.colors.grey2,
+        backgroundColor: notAvailable ? theme.colors.grey2 : theme.colors.white,
         width,
         height: width,
         borderRadius: 50,
@@ -160,7 +166,7 @@ const PaginationItem: React.FC<{
         ],
       }}
     >
-      {isAvailable && (
+      {!notAvailable && (
         <Animated.View
           style={[
             {
@@ -176,10 +182,10 @@ const PaginationItem: React.FC<{
   );
 };
 
-const CardItem: React.FC<SetQuestionAction & { last: boolean }> = (props) => {
+const CardItem: React.FC<SetQuestionAction & { unavailable: boolean }> = (props) => {
   const { theme } = useTheme();
 
-  const { setId, action, question, last } = props;
+  const { setId, action, question, unavailable } = props;
   const authContext = useContext(AuthContext);
   const navigation = useNavigation<MainNavigationProp>();
   const androidBlurredStyle = {
@@ -234,8 +240,34 @@ const CardItem: React.FC<SetQuestionAction & { last: boolean }> = (props) => {
       },
     );
   };
-  const content = (
-    <>
+  return (
+    <View
+      style={{
+        justifyContent: 'space-between',
+        height: '100%',
+        width: '100%',
+        alignItems: 'center',
+        backgroundColor: theme.colors.white,
+        borderRadius: 20,
+        padding: 10,
+      }}
+    >
+      {unavailable && (
+        <BlurView
+          intensity={Platform.OS === 'ios' ? 20 : 100}
+          tint="light"
+          style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            bottom: 0,
+            right: 0,
+            zIndex: 1,
+            borderRadius: 20,
+            overflow: 'hidden',
+          }}
+        ></BlurView>
+      )}
       <View
         style={{
           height: '43%',
@@ -256,7 +288,7 @@ const CardItem: React.FC<SetQuestionAction & { last: boolean }> = (props) => {
           }}
           style={{ paddingHorizontal: 10 }}
         >
-          <FontText style={last ? blurredTextStyle : { textAlign: 'center' }}>
+          <FontText style={unavailable ? blurredTextStyle : { textAlign: 'center' }}>
             {question.title}
           </FontText>
         </TouchableOpacity>
@@ -290,7 +322,7 @@ const CardItem: React.FC<SetQuestionAction & { last: boolean }> = (props) => {
           }}
           style={{ paddingHorizontal: 10 }}
         >
-          <FontText style={last ? blurredTextStyle : { textAlign: 'center' }}>
+          <FontText style={unavailable ? blurredTextStyle : { textAlign: 'center' }}>
             {action.title}
           </FontText>
         </TouchableOpacity>
@@ -328,37 +360,6 @@ const CardItem: React.FC<SetQuestionAction & { last: boolean }> = (props) => {
           </PrimaryButton>
         </View>
       </View>
-    </>
-  );
-  return (
-    <View
-      style={{
-        justifyContent: 'space-between',
-        height: '100%',
-        width: '100%',
-        alignItems: 'center',
-        backgroundColor: theme.colors.white,
-        borderRadius: 20,
-        padding: 10,
-      }}
-    >
-      {last && (
-        <BlurView
-          intensity={Platform.OS === 'ios' ? 20 : 100}
-          tint="light"
-          style={{
-            position: 'absolute',
-            top: 0,
-            left: 0,
-            bottom: 0,
-            right: 0,
-            zIndex: 1,
-            borderRadius: 20,
-            overflow: 'hidden',
-          }}
-        ></BlurView>
-      )}
-      {content}
     </View>
   );
 };
