@@ -55,8 +55,6 @@ export const ViewSetHomeScreen = (props: Props) => {
               width: '100%',
               backgroundColor: 'rgba(81, 74, 191, 1)',
               position: 'absolute',
-              borderTopLeftRadius: 0,
-              borderTopRightRadius: 0,
               marginTop: 135,
             }}
           ></View>
