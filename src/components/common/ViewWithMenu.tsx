@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
 import { BottomSheet, Button, Header, Icon, useTheme } from '@rneui/themed';
-import { Alert, TouchableOpacity } from 'react-native';
+import { Alert, TouchableOpacity, View } from 'react-native';
 import { i18n } from '@app/localization/i18n';
 import { AUTH_STORAGE_KEY, supabase } from '@app/api/initSupabase';
 import AsyncStorage from '@react-native-async-storage/async-storage';
@@ -104,8 +104,13 @@ export const ViewWithMenu = (props: Props) => {
           </TouchableOpacity>
         }
         rightComponent={
-          <TouchableOpacity onPress={() => void sendEmailAlert()} style={{ paddingHorizontal: 10 }}>
-            <Icon name="thumbs-up-down-outline" type="material-community" color="black" size={40} />
+          <TouchableOpacity
+            onPress={() => void sendEmailAlert()}
+            style={{ paddingHorizontal: 10, flexDirection: 'row' }}
+          >
+            <Icon name="thumb-up-outline" type="material-community" color="black" size={20} />
+            <View style={{ width: 5 }}></View>
+            <Icon name="thumb-down-outline" type="material-community" color="black" size={20} />
           </TouchableOpacity>
         }
       />

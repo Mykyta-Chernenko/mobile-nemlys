@@ -11,9 +11,6 @@
       "resizeMode": "contain",
       "backgroundColor": "#6C63FF"
     },
-    "updates": {
-      "fallbackToCacheTimeout": 0
-    },
     "assetBundlePatterns": [
       "**/*"
     ],
@@ -64,6 +61,12 @@
           }
         }
       ]
+    },
+    "runtimeVersion": {
+      "policy": "sdkVersion"
+    },
+    "updates": {
+      "url": "https://u.expo.dev/d6eafe0b-1185-4733-8f06-e86dddfbb49e"
     }
   }
 }
