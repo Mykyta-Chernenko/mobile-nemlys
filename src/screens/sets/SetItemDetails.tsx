@@ -47,19 +47,21 @@ export default function ({
       <FontText h4 style={{ marginTop: '2%', textAlign: 'center' }}>
         {props.details}
       </FontText>
-      <ContentBox>
-        <FontText style={{ fontWeight: 'bold', fontFamily: 'NunitoSans_700Bold' }}>
-          {i18n.t('set.importance.title')}
-        </FontText>
-        <FontText style={{ fontFamily: 'NunitoSans_400Regular' }}>{props.importance}</FontText>
-      </ContentBox>
-      {props.type === 'question' && (
+      {props.importance && (
+        <ContentBox>
+          <FontText style={{ fontWeight: 'bold', fontFamily: 'NunitoSans_700Bold' }}>
+            {i18n.t('set.importance.title')}
+          </FontText>
+          <FontText style={{ fontFamily: 'NunitoSans_400Regular' }}>{props.importance}</FontText>
+        </ContentBox>
+      )}
+      {props.type === 'question' && props.tips && (
         <ContentBox>
           <FontText style={{ fontWeight: 'bold' }}>{i18n.t('set.tips.title')}</FontText>
           <FontText>{props.tips}</FontText>
         </ContentBox>
       )}
-      {props.type === 'action' && (
+      {props.type === 'action' && props.instruction && (
         <ContentBox>
           <FontText style={{ fontWeight: 'bold' }}>{i18n.t('set.instruction.title')}</FontText>
           <FontText>{props.instruction}</FontText>

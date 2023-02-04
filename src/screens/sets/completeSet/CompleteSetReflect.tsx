@@ -83,15 +83,19 @@ export default function ({
       }}
     >
       <View style={{ marginVertical: 10 }}>
-        <ContentBox>
-          <FontText style={{ fontWeight: 'bold' }}>{i18n.t('set.importance.title')}</FontText>
-          <FontText>{reflectionQuestion?.importance}</FontText>
-        </ContentBox>
+        {reflectionQuestion?.importance && (
+          <ContentBox>
+            <FontText style={{ fontWeight: 'bold' }}>{i18n.t('set.importance.title')}</FontText>
+            <FontText>{reflectionQuestion?.importance}</FontText>
+          </ContentBox>
+        )}
 
-        <ContentBox>
-          <FontText style={{ fontWeight: 'bold' }}>{i18n.t('set.tips.title')}</FontText>
-          <FontText>{reflectionQuestion?.tips}</FontText>
-        </ContentBox>
+        {reflectionQuestion?.tips && (
+          <ContentBox>
+            <FontText style={{ fontWeight: 'bold' }}>{i18n.t('set.tips.title')}</FontText>
+            <FontText>{reflectionQuestion?.tips}</FontText>
+          </ContentBox>
+        )}
       </View>
     </SurveyView>
   );

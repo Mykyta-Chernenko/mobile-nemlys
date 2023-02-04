@@ -59,7 +59,10 @@ export const OAuth = ({
         //  we get a dismissed event, but we get the access token and the refesh token in the URL,
         //  so we use a URL listener from the AuthProvider to handle it
         globalHandleUser.value = handleUser;
-        const response = await startAsync({ authUrl });
+        const response = await startAsync({
+          authUrl: authUrl,
+          projectNameForProxy: '@marakaci/nemlys',
+        });
         try {
           if (response.type == 'success') {
             const accessToken = response.params['access_token'];

@@ -47,7 +47,7 @@
   "how_we_work": {
     "title": "How it works?",
     "content_1": "•  Now, we have prepared a personalized program for you",
-    "content_2": "•  For every date, you will choose a card with a question to discuss and ‘action’ to take",
+    "content_2": "•  For every date, you will choose a card with a question to discuss with your partner and an ‘action’ to take",
     "content_3": "•  The questions and actions cover deep variety of topics and become deeper and harder as you go",
     "content_4": "•  Some may be particularly hard to discuss and do while others may seem fairly easy. Be especially careful with the ones that seem hard as they are the most important ones to understand yourself and your partner",
     "content_5": "•  After your date we send a question for the self-reflection. Also, we’ll ask a feedback to take the personalization further",
@@ -140,6 +140,7 @@
     }
   },
   "set": {
+    "out_of_completed": "%{completed}/%{outOf} cards completed",
     "accept": "Accept",
     "more_details": "Click on the title to get more details",
     "skip_alert": "Do you want to remove the card?",
