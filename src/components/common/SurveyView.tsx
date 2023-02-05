@@ -1,5 +1,5 @@
 import React from 'react';
-import { Image, KeyboardAvoidingView, ScrollView, View } from 'react-native';
+import { KeyboardAvoidingView, ScrollView, View } from 'react-native';
 import { i18n } from '@app/localization/i18n';
 import { GoBackButton } from '@app/components/buttons/GoBackButton';
 import { PrimaryButton } from '@app/components/buttons/PrimaryButtons';
@@ -7,6 +7,7 @@ import { Progress } from '@app/components/utils/Progress';
 import { Loading } from '../utils/Loading';
 import { KEYBOARD_BEHAVIOR } from '@app/utils/constants';
 import { FontText } from '../utils/FontText';
+import ImageOrDefault from '../utils/ImageOrDefault';
 export default function (props: {
   loading: boolean;
   title: string;
@@ -15,6 +16,7 @@ export default function (props: {
   buttonText?: string;
   onPress: (() => void) | undefined;
   onBackPress: () => void;
+  image?: string;
   children?: React.ReactNode;
 }) {
   return (
@@ -34,15 +36,7 @@ export default function (props: {
             height: 200,
           }}
         >
-          <Image
-            resizeMode="contain"
-            style={{
-              height: '100%',
-              width: '100%',
-            }}
-            // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
-            source={require('../../../assets/images/pre_placement.png')}
-          />
+          <ImageOrDefault image={props.image || 'pre_placement'}></ImageOrDefault>
         </View>
         {props.loading ? (
           <Loading></Loading>
