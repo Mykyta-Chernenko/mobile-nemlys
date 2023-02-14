@@ -10,6 +10,10 @@ import { ThemeProvider } from '@rneui/themed';
 import { theme } from '@app/theme';
 import FontWrapper from '@app/theme/FontWrapper';
 import * as Sentry from 'sentry-expo';
+import { Native } from 'sentry-expo';
+import { nativeBuildVersion } from 'expo-application';
+
+Native.captureMessage(nativeBuildVersion || 'no version');
 
 export default function App() {
   return (
