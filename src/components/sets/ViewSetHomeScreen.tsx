@@ -12,6 +12,7 @@ import { useTheme } from '@rneui/themed';
 import { logErrors } from '@app/utils/errors';
 import { supabase } from '@app/api/initSupabase';
 import { i18n } from '@app/localization/i18n';
+import { Native } from 'sentry-expo';
 
 interface Props {
   children: React.ReactNode;
@@ -27,6 +28,7 @@ export const ViewSetHomeScreen = (props: Props) => {
 
   useEffect(() => {
     const getQuestions = async () => {
+      Native.captureMessage('set home screen hit');
       try {
         const { data: user, error: userError } = await supabase.auth.getUser();
         if (userError) {
