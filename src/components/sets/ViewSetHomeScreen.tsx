@@ -28,7 +28,6 @@ export const ViewSetHomeScreen = (props: Props) => {
 
   useEffect(() => {
     const getQuestions = async () => {
-      Native.captureMessage('set home screen hit 4');
       try {
         const { data: user, error: userError } = await supabase.auth.getUser();
         if (userError) {
@@ -75,6 +74,7 @@ export const ViewSetHomeScreen = (props: Props) => {
           <RefreshControl
             refreshing={refreshing}
             onRefresh={() => {
+              Native.captureMessage('some other message');
               setRefeshing(true);
               setTimeout(() => {
                 void logEvent('SetHomeScreenRefreshed', {
