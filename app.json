@@ -3,7 +3,7 @@
     "name": "Nemlys",
     "slug": "nemlys",
     "scheme": "nemlys",
-    "version": "1.5.2",
+    "version": "1.5.3",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "splash": {
@@ -17,13 +17,13 @@
     "ios": {
       "supportsTablet": true,
       "bundleIdentifier": "com.marakaci.nemlys",
-      "buildNumber": "1.5.2",
+      "buildNumber": "1.5.3",
       "googleServicesFile": "./GoogleService-Info.plist"
     },
     "android": {
       "package": "com.nemlys.app",
       "googleServicesFile": "./google-services.json",
-      "versionCode": 152
+      "versionCode": 153
     },
     "web": {
       "favicon": "./assets/favicon.png",

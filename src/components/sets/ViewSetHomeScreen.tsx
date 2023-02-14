@@ -28,7 +28,7 @@ export const ViewSetHomeScreen = (props: Props) => {
 
   useEffect(() => {
     const getQuestions = async () => {
-      Native.captureMessage('set home screen hit');
+      Native.captureMessage('set home screen hit 2');
       try {
         const { data: user, error: userError } = await supabase.auth.getUser();
         if (userError) {
