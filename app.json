@@ -66,6 +66,8 @@
       "policy": "sdkVersion"
     },
     "updates": {
+      "checkAutomatically": "ON_LOAD",  
+      "fallbackToCacheTimeout": 2000,
       "url": "https://u.expo.dev/d6eafe0b-1185-4733-8f06-e86dddfbb49e"
     }
   }
