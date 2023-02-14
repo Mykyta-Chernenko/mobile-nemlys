@@ -25,7 +25,7 @@
   "password_again_placeholder": "Enter your password again",
   "unexpected_error": "Unexpected error happened, try again",
   "notifications": {
-    "date_soon": "Your date is soon, don't forget to do the set",
+    "date_soon": "Your date is soon, don't forget to about the questions",
     "schedule_date": "Please, schedule when you will have the date with your partner"
   },
   "welcome": {
@@ -147,7 +147,7 @@
     "skip_alert_details": "You can only remove 3 cards in a deck",
     "reminder": {
       "title": "Reminder",
-      "content": "Set when you will have the next date with your partner and you have enough time to discuss the set, and we will remind you about it before",
+      "content": "Set when you will have the next date with your partner and you have enough time to discuss the card, and we will remind you about it before",
       "no_date_yet_checkbox": "We don’t have a specific time yet",
       "next_button": "Continue",
       "notification_access": "*We will ask you for the notification access to remind you more effectively",
@@ -162,10 +162,10 @@
       "actions": {
         "title": "To do with your partner"
       },
-      "no_new_set": "Unfortunately, we don't have more sets at the moment, but we are on it, stay tunned"
+      "no_new_set": "Unfortunately, we don't have more cards at the moment, but we are on it, stay tunned"
     },
     "chosen": {
-      "title": "Set for the next date",
+      "title": "Card for the next date",
       "click_tips": "Click on the action or question \nto get more details",
       "date_is_not_set": "Not set",
       "next_date_is": "Your meeting is on",
@@ -176,10 +176,10 @@
         "title": "Do this with your partner"
       },
       "button": {
-        "title": "We completed the set",
+        "title": "We completed the card",
         "disable_before_meeting_set": "* To unlock the button, set when your meeting will happen",
         "disable_before_meeting_happened": "* The button will unlock after your date",
-        "set_created_too_recently": "* You accepted the set just recently, the button unlocks 30 mins after that"
+        "set_created_too_recently": "* You accepted the card just recently, the button will unlock in 10 minutes"
       },
       "button_disabled_tip_date_set": "We've done the set",
       "button_disabled_tip_no_date_set": "The button wil be available after you set the date",

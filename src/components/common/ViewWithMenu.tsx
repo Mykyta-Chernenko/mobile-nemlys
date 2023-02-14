@@ -1,13 +1,13 @@
 import React, { useState } from 'react';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
-import { BottomSheet, Button, Header, Icon, useTheme } from '@rneui/themed';
+import { Text, BottomSheet, Button, Header, Icon, useTheme } from '@rneui/themed';
 import { Alert, TouchableOpacity, View } from 'react-native';
 import { i18n } from '@app/localization/i18n';
 import { AUTH_STORAGE_KEY, supabase } from '@app/api/initSupabase';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import { logErrors } from '@app/utils/errors';
 import * as MailComposer from 'expo-mail-composer';
-import { SUPPORT_EMAIL } from '@app/utils/constants';
+import { IS_SUPABASE_DEV, SUPPORT_EMAIL } from '@app/utils/constants';
 import * as Analytics from 'expo-firebase-analytics';
 interface Props {
   children: React.ReactNode;
@@ -99,9 +99,12 @@ export const ViewWithMenu = (props: Props) => {
       <Header
         backgroundColor="white"
         leftComponent={
-          <TouchableOpacity onPress={() => setShowMenu(true)} style={{ paddingHorizontal: 10 }}>
-            <Icon name="menu" color="black" size={30} />
-          </TouchableOpacity>
+          <View style={{ flexDirection: 'row' }}>
+            <TouchableOpacity onPress={() => setShowMenu(true)} style={{ paddingHorizontal: 10 }}>
+              <Icon name="menu" color="black" size={30} />
+            </TouchableOpacity>
+            {IS_SUPABASE_DEV && <Text h4>Dev</Text>}
+          </View>
         }
         rightComponent={
           <TouchableOpacity

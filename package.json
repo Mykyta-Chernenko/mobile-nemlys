@@ -8,7 +8,8 @@
     "eject": "expo eject",
     "lint": "eslint --ext .tsx --ext .ts src/",
     "format": "prettier --check ./src",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "update_production": "source .env.production && eas update --channel production"
   },
   "dependencies": {
     "@expo-google-fonts/nunito-sans": "^0.2.2",

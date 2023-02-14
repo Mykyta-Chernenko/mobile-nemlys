@@ -45,7 +45,7 @@ export default function () {
   const [now, setNow] = useState<Date>(new Date());
   const meetingSet = currentSet?.meeting;
   const meetingHappened = currentSet?.meeting && new Date(currentSet.meeting) < now;
-  const halfHour = __DEV__ ? 0 : 1000 * 60 * 30;
+  const halfHour = __DEV__ ? 0 : 1000 * 60 * 10;
   const setCreatedTooRecently =
     currentSet?.created_at &&
     new Date(currentSet.created_at) > new Date(new Date(now).getTime() - halfHour);
