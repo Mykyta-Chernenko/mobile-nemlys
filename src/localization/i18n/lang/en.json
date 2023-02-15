@@ -142,7 +142,7 @@
   "set": {
     "out_of_completed": "%{completed}/%{outOf} cards completed",
     "accept": "Accept",
-    "more_details": "Click on the title to get more details",
+    "more_details": "Click on the title to get details",
     "skip_alert": "Do you want to remove the card?",
     "skip_alert_details": "You can only remove 3 cards in a deck",
     "reminder": {

@@ -13,7 +13,7 @@ import * as Sentry from 'sentry-expo';
 import { Native } from 'sentry-expo';
 import { nativeBuildVersion } from 'expo-application';
 
-Native.captureMessage(nativeBuildVersion || 'no version');
+!__DEV__ && Native.captureMessage(nativeBuildVersion || 'no version');
 
 export default function App() {
   return (

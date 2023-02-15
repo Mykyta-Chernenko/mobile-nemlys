@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { Alert, Platform, TouchableOpacity, View } from 'react-native';
-import { Divider, useTheme } from '@rneui/themed';
+import { useTheme } from '@rneui/themed';
 import Animated, {
   Extrapolate,
   interpolate,
@@ -270,9 +270,10 @@ const CardItem: React.FC<SetQuestionAction & { unavailable: boolean }> = (props)
       )}
       <View
         style={{
-          height: '43%',
+          height: '40%',
           width: '100%',
           justifyContent: 'space-between',
+          overflow: 'hidden',
         }}
       >
         <TouchableOpacity
@@ -295,14 +296,22 @@ const CardItem: React.FC<SetQuestionAction & { unavailable: boolean }> = (props)
         <View style={{ width: '100%', height: '60%' }}>
           <ImageOrDefault image={question.image} />
         </View>
-        <FontText style={{ textAlign: 'center', color: theme.colors.primary, fontSize: 11 }}>
+      </View>
+
+      <View style={{ flexDirection: 'row', alignItems: 'center', marginVertical: 3 }}>
+        <View
+          style={{ height: 2, backgroundColor: theme.colors.primary, flexGrow: 1, marginRight: 4 }}
+        ></View>
+        <FontText style={{ textAlign: 'center', color: theme.colors.primary, fontSize: 14 }}>
           {i18n.t('set.more_details')}
         </FontText>
+        <View
+          style={{ height: 2, backgroundColor: theme.colors.primary, flexGrow: 1, marginLeft: 4 }}
+        ></View>
       </View>
-      <Divider style={{ width: '100%' }} color={theme.colors.black} width={2} />
       <View
         style={{
-          height: '52%',
+          height: '55%',
           width: '100%',
           flexDirection: 'column',
           justifyContent: 'space-between',
@@ -326,10 +335,10 @@ const CardItem: React.FC<SetQuestionAction & { unavailable: boolean }> = (props)
             {action.title}
           </FontText>
         </TouchableOpacity>
-        <View style={{ width: '100%', height: '60%' }}>
+        <View style={{ width: '100%', height: '52%' }}>
           <ImageOrDefault image={action.image} />
         </View>
-        <View style={{ flexDirection: 'row' }}>
+        <View style={{ flexDirection: 'row', marginBottom: 3 }}>
           <SecondaryButton
             onPress={() => {
               void logEvent('NewSetSkipCardInitiated', {
