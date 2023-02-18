@@ -5,8 +5,8 @@ import { useTheme } from '@rneui/themed';
 import { i18n } from '@app/localization/i18n';
 import SurveyView from '@app/components/common/SurveyView';
 import { FontText } from '@app/components/utils/FontText';
-import { logEvent } from 'expo-firebase-analytics';
 import { ANON_USER } from '@app/provider/AuthProvider';
+import analytics from '@react-native-firebase/analytics';
 export default function ({
   route,
   navigation,
@@ -15,7 +15,7 @@ export default function ({
   const name = route.params.name;
   const progressValue = 0.1;
   const handlePressBack = () => {
-    void logEvent('PrePlacementGoBackClicked', {
+    void analytics().logEvent('PrePlacementGoBackClicked', {
       screen: 'PrePlacement',
       action: 'go back is clicked',
       userId: ANON_USER,
@@ -23,7 +23,7 @@ export default function ({
     navigation.navigate('Welcome');
   };
   const handlePressNext = () => {
-    void logEvent('PrePlacementNextClicked', {
+    void analytics().logEvent('PrePlacementNextClicked', {
       screen: 'PrePlacement',
       action: 'Next is clicked',
       userId: ANON_USER,

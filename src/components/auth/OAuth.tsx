@@ -18,7 +18,7 @@ import {
 import { FontText } from '../utils/FontText';
 import { logErrors, logErrorsWithMessage, UserDoesNotExistError } from '@app/utils/errors';
 import { SecondaryButton } from '../buttons/SecondaryButton';
-import { logEvent } from 'expo-firebase-analytics';
+import analytics from '@react-native-firebase/analytics';
 export const OAuth = ({
   handleUser: handleUser,
 }: {
@@ -28,7 +28,7 @@ export const OAuth = ({
   const auth = useContext(AuthContext);
 
   const onPress = async (provider: Provider) => {
-    void logEvent('OAuthInititated', {
+    void analytics().logEvent('OAuthInititated', {
       screen: 'OAuth',
       action: 'OAuth button clicked',
       provider,

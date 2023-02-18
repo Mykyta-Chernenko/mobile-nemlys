@@ -41,6 +41,7 @@
     },
     "plugins": [
       "sentry-expo",
+      "@react-native-firebase/app",
       [
         "expo-build-properties",
         {

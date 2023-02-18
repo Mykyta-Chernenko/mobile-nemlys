@@ -7,8 +7,8 @@ import { i18n } from '@app/localization/i18n';
 import { PrimaryButton } from '@app/components/buttons/PrimaryButtons';
 import { GoBackButton } from '@app/components/buttons/GoBackButton';
 import { FontText } from '@app/components/utils/FontText';
-import { logEvent } from 'expo-firebase-analytics';
 import { ANON_USER } from '@app/provider/AuthProvider';
+import analytics from '@react-native-firebase/analytics';
 
 export default function ({
   route,
@@ -75,7 +75,7 @@ export default function ({
       <View style={{ flexDirection: 'row', paddingHorizontal: 10, marginTop: 10 }}>
         <GoBackButton
           onPress={() => {
-            void logEvent('HowWeWorkBackClicked', {
+            void analytics().logEvent('HowWeWorkBackClicked', {
               screen: 'HowWeWork',
               action: 'Back is clicked',
               userId: ANON_USER,
@@ -88,7 +88,7 @@ export default function ({
         <PrimaryButton
           title={i18n.t('finish')}
           onPress={() => {
-            void logEvent('HowWeWorkFinishClicked', {
+            void analytics().logEvent('HowWeWorkFinishClicked', {
               screen: 'HowWeWork',
               action: 'Finish is clicked',
               userId: ANON_USER,

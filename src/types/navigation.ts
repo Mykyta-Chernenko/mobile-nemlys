@@ -9,18 +9,22 @@ import {
 export type SetItemPropsAction = {
   type: 'action';
   instruction: string;
+  importance: string;
 };
 export type SetItemPropsQuestion = {
   type: 'question';
+  importance: string;
   tips: string;
+};
+export type SetItemPropsAIQuestion = {
+  type: 'ai_question';
 };
 export type SetItemProps = {
   image: string | undefined;
   title: string;
   details: string;
-  importance: string;
   tags: string[];
-} & (SetItemPropsAction | SetItemPropsQuestion);
+} & (SetItemPropsAction | SetItemPropsQuestion | SetItemPropsAIQuestion);
 
 export class SetReminderProps {
   setId: number;

@@ -8,7 +8,7 @@ import AsyncStorage from '@react-native-async-storage/async-storage';
 import { logErrors } from '@app/utils/errors';
 import * as MailComposer from 'expo-mail-composer';
 import { IS_SUPABASE_DEV, SUPPORT_EMAIL } from '@app/utils/constants';
-import * as Analytics from 'expo-firebase-analytics';
+import analytics from '@react-native-firebase/analytics';
 interface Props {
   children: React.ReactNode;
 }
@@ -28,7 +28,7 @@ export const ViewWithMenu = (props: Props) => {
     }
   };
   const sendEmailAlert = () => {
-    void Analytics.logEvent('ViewWithMenuClickSendFeedback', {
+    void analytics().logEvent('ViewWithMenuClickSendFeedback', {
       screen: 'ViewWithMenu',
       action: 'Clicked on send your feedback button',
     });
@@ -53,7 +53,7 @@ export const ViewWithMenu = (props: Props) => {
   };
 
   const logout = async () => {
-    void Analytics.logEvent('ViewWithMenuLogout', {
+    void analytics().logEvent('ViewWithMenuLogout', {
       screen: 'ViewWithMenu',
       action: 'Clicked logout',
     });
@@ -62,7 +62,7 @@ export const ViewWithMenu = (props: Props) => {
     await AsyncStorage.removeItem(AUTH_STORAGE_KEY);
   };
   const deleteAccount = async () => {
-    void Analytics.logEvent('ViewWithMenuClickSendFeedback', {
+    void analytics().logEvent('ViewWithMenuClickSendFeedback', {
       screen: 'ViewWithMenu',
       action: 'Clicked delete account',
     });

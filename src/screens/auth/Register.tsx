@@ -20,8 +20,7 @@ import { ANON_USER, AuthContext } from '@app/provider/AuthProvider';
 import { KEYBOARD_BEHAVIOR } from '@app/utils/constants';
 import { FontText } from '@app/components/utils/FontText';
 import { logErrors, logErrorsWithMessage } from '@app/utils/errors';
-import { logEvent } from 'expo-firebase-analytics';
-
+import analytics from '@react-native-firebase/analytics';
 export default function ({
   route,
   navigation,
@@ -40,14 +39,14 @@ export default function ({
   const auth = useContext(AuthContext);
   const passwordsAreNotTheSame = password && passwordAgain && password != passwordAgain;
   useEffect(() => {
-    void logEvent('RegisterScreenOpened', {
+    void analytics().logEvent('RegisterScreenOpened', {
       screen: 'Register',
       action: 'opened',
       userId: ANON_USER,
     });
   }, []);
   async function register() {
-    void logEvent('RegisterTypeEmailSubmitClicked', {
+    void analytics().logEvent('RegisterTypeEmailSubmitClicked', {
       screen: 'Register',
       action: 'Type email submit button clicked',
       userId: ANON_USER,
@@ -106,6 +105,7 @@ export default function ({
       const answers: InsertAPIUserOnboardingAnswer[] = route.params.userAnswers.map((a) => ({
         user_id: user.id,
         onboarding_answer_id: a.answer.id,
+        onboarding_question_id: a.question.id,
       }));
 
       const { error: onboaringError } = await supabase
@@ -221,7 +221,7 @@ export default function ({
             <FontText>{i18n.t('register.login.pretext')}</FontText>
             <TouchableOpacity
               onPress={() => {
-                void logEvent('RegisterGoToLogin', {
+                void analytics().logEvent('RegisterGoToLogin', {
                   screen: 'Register',
                   action: 'Navigate to login',
                   userId: auth.userId,

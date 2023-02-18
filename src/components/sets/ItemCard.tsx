@@ -5,9 +5,8 @@ import { useTheme } from '@rneui/themed';
 import { MainNavigationProp, SetItemProps } from '@app/types/navigation';
 import { useNavigation } from '@react-navigation/native';
 import { FontText } from '../utils/FontText';
-import { logEvent } from 'expo-firebase-analytics';
 import { AuthContext } from '@app/provider/AuthProvider';
-
+import analytics from '@react-native-firebase/analytics';
 export default function (props: SetItemProps) {
   const { theme } = useTheme();
   const navigation = useNavigation<MainNavigationProp>();
@@ -15,7 +14,7 @@ export default function (props: SetItemProps) {
   return (
     <TouchableOpacity
       onPress={() => {
-        void logEvent('SetItemCardClickShowDetails', {
+        void analytics().logEvent('SetItemCardClickShowDetails', {
           screen: 'SetItemCard',
           action: 'Card clicked to show details',
           title: props.title,

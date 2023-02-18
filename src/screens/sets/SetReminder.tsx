@@ -29,9 +29,8 @@ import { NOTIFICATION_IDENTIFIERS } from '@app/types/domain';
 import { getNotificationForMeeting } from '@app/utils/sets';
 import { scheduleMeetingNotification } from '@app/utils/notification';
 import { logErrors } from '@app/utils/errors';
-import { logEvent } from 'expo-firebase-analytics';
 import { AuthContext } from '@app/provider/AuthProvider';
-
+import analytics from '@react-native-firebase/analytics';
 export default function ({
   route,
   navigation,
@@ -62,7 +61,7 @@ export default function ({
     testID: 'datePicker',
     mode: 'date',
     onChange: (event, value: Date) => {
-      void logEvent('SetReminderDatePickerChanged', {
+      void analytics().logEvent('SetReminderDatePickerChanged', {
         screen: 'SetReminder',
         action: 'Date Picker changed',
         value: value,
@@ -77,7 +76,7 @@ export default function ({
     testID: 'timePicker',
     mode: 'time',
     onChange: (event, value: Date) => {
-      void logEvent('SetReminderTimePickerChanged', {
+      void analytics().logEvent('SetReminderTimePickerChanged', {
         screen: 'SetReminder',
         action: 'Time Picker changed',
         value: value,
@@ -201,13 +200,13 @@ export default function ({
           finalStatus = status;
         }
         if (finalStatus === GRANTED_NOTIFICATION_STATUS || finalStatus != notificationStatus) {
-          void logEvent('SetReminderNotificationAccessProvided', {
+          void analytics().logEvent('SetReminderNotificationAccessProvided', {
             screen: 'SetReminder',
             action: 'User gave reminder notification access',
             userId: authContext.userId,
           });
         } else if (finalStatus === DENIED_NOTIFICATION_STATUS) {
-          void logEvent('SetReminderNotificationAccessDeclined', {
+          void analytics().logEvent('SetReminderNotificationAccessDeclined', {
             screen: 'SetReminder',
             action: 'User declined reminder notification access',
             userId: authContext.userId,
@@ -243,7 +242,7 @@ export default function ({
     }
   };
   const handleSubmit = async () => {
-    void logEvent('SetReminderClickSubmit', {
+    void analytics().logEvent('SetReminderClickSubmit', {
       screen: 'ViewWithMenu',
       action: 'Clicked delete account',
     });

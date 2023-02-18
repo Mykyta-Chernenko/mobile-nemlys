@@ -12,7 +12,6 @@ import { SetQuestionAction } from '@app/types/domain';
 import { useContext, useState } from 'react';
 import { FontText } from '../utils/FontText';
 import { PrimaryButton } from '../buttons/PrimaryButtons';
-import { logEvent } from 'expo-firebase-analytics';
 import { i18n } from '@app/localization/i18n';
 
 import { AuthContext } from '@app/provider/AuthProvider';
@@ -24,13 +23,22 @@ import { supabase } from '@app/api/initSupabase';
 import { logErrors } from '@app/utils/errors';
 import { BlurView } from 'expo-blur';
 import { GestureHandlerRootView } from 'react-native-gesture-handler';
-
-const AVAILABLE_CARD_SET_COUNT = 3;
+import AIIcon from '@app/icons/ai';
+import analytics from '@react-native-firebase/analytics';
 export default (props: { setsQuestionAction: SetQuestionAction[] }) => {
   const { theme } = useTheme();
   const [width, setWidth] = useState(10);
   const [isUnavailableCardActive, setIsUnavailableCardActive] = useState(false);
+  const [isAiCardActive, setIsAieCardActive] = useState(false);
 
+  let cardTitle = '';
+  if (isUnavailableCardActive) {
+    cardTitle = i18n.t('set.new.unavailable_card_title');
+  } else if (isAiCardActive) {
+    i18n.t('set.new.ai_title');
+  } else {
+    cardTitle = i18n.t('set.new.title');
+  }
   const progressValue = useSharedValue<number>(0);
   return (
     <View
@@ -52,9 +60,7 @@ export default (props: { setsQuestionAction: SetQuestionAction[] }) => {
           paddingTop: '1%',
         }}
       >
-        {isUnavailableCardActive
-          ? i18n.t('set.new.unavailable_card_title')
-          : i18n.t('set.new.title')}
+        {cardTitle}
       </FontText>
       <GestureHandlerRootView>
         <Carousel
@@ -64,13 +70,15 @@ export default (props: { setsQuestionAction: SetQuestionAction[] }) => {
           autoPlay={false}
           onProgressChange={(_, absoluteProgress) => {
             progressValue.value = absoluteProgress;
-            if (
-              props.setsQuestionAction.length > AVAILABLE_CARD_SET_COUNT &&
-              Math.round(absoluteProgress) === props.setsQuestionAction.length - 1
-            ) {
+            if (props.setsQuestionAction[Math.round(absoluteProgress)].type === 'unavailable') {
               setIsUnavailableCardActive(true);
             } else {
               setIsUnavailableCardActive(false);
+            }
+            if (props.setsQuestionAction[Math.round(absoluteProgress)].type === 'ai') {
+              setIsAieCardActive(true);
+            } else {
+              setIsAieCardActive(false);
             }
           }}
           mode="parallax"
@@ -81,14 +89,7 @@ export default (props: { setsQuestionAction: SetQuestionAction[] }) => {
           data={props.setsQuestionAction}
           renderItem={({ index }) => (
             <View style={{ paddingHorizontal: '10%' }}>
-              <CardItem
-                {...{
-                  ...props.setsQuestionAction[index],
-                  unavailable:
-                    props.setsQuestionAction.length > AVAILABLE_CARD_SET_COUNT &&
-                    index === props.setsQuestionAction.length - 1,
-                }}
-              ></CardItem>
+              <CardItem {...props.setsQuestionAction[index]}></CardItem>
             </View>
           )}
         />
@@ -108,6 +109,7 @@ export default (props: { setsQuestionAction: SetQuestionAction[] }) => {
               <PaginationItem
                 backgroundColor={theme.colors.primary}
                 animValue={progressValue}
+                setsQuestionAction={props.setsQuestionAction}
                 index={index}
                 key={index}
                 length={props.setsQuestionAction.length}
@@ -124,13 +126,15 @@ const PaginationItem: React.FC<{
   index: number;
   backgroundColor: string;
   length: number;
+  setsQuestionAction: SetQuestionAction[];
   animValue: Animated.SharedValue<number>;
   isRotate?: boolean;
 }> = (props) => {
   const { theme } = useTheme();
 
-  const { animValue, index, length, backgroundColor, isRotate } = props;
-  const notAvailable = length > AVAILABLE_CARD_SET_COUNT && index === length - 1;
+  const { animValue, index, length, backgroundColor, isRotate, setsQuestionAction } = props;
+
+  const unavailable = setsQuestionAction[index].type === 'unavailable';
 
   const width = 10;
 
@@ -154,7 +158,7 @@ const PaginationItem: React.FC<{
   return (
     <View
       style={{
-        backgroundColor: notAvailable ? theme.colors.grey2 : theme.colors.white,
+        backgroundColor: unavailable ? theme.colors.grey2 : theme.colors.white,
         width,
         height: width,
         borderRadius: 50,
@@ -166,7 +170,7 @@ const PaginationItem: React.FC<{
         ],
       }}
     >
-      {!notAvailable && (
+      {!unavailable && (
         <Animated.View
           style={[
             {
@@ -182,10 +186,12 @@ const PaginationItem: React.FC<{
   );
 };
 
-const CardItem: React.FC<SetQuestionAction & { unavailable: boolean }> = (props) => {
+const CardItem: React.FC<SetQuestionAction> = (props) => {
   const { theme } = useTheme();
 
-  const { setId, action, question, unavailable } = props;
+  const { setId, action, question, type } = props;
+  const unavailable = type === 'unavailable';
+  const ai = type === 'ai';
   const authContext = useContext(AuthContext);
   const navigation = useNavigation<MainNavigationProp>();
   const androidBlurredStyle = {
@@ -197,7 +203,7 @@ const CardItem: React.FC<SetQuestionAction & { unavailable: boolean }> = (props)
   };
   const blurredTextStyle = Platform.OS === 'android' ? androidBlurredStyle : {};
   const skipCard = async () => {
-    await logEvent('SetItemCardSkipCardConfirm', {
+    await analytics().logEvent('SetItemCardSkipCardConfirm', {
       screen: 'SetItemCard',
       action: 'Attempt to skip card was confirmed',
       setId: setId,
@@ -220,7 +226,7 @@ const CardItem: React.FC<SetQuestionAction & { unavailable: boolean }> = (props)
         {
           text: i18n.t('cancel'),
           onPress: () => {
-            void logEvent('SetItemCardSkipCardCancelled', {
+            void analytics().logEvent('SetItemCardSkipCardCancelled', {
               screen: 'SetItemCard',
               action: 'Attempt to skip card was cancelled',
               setId: setId,
@@ -252,6 +258,20 @@ const CardItem: React.FC<SetQuestionAction & { unavailable: boolean }> = (props)
         padding: 10,
       }}
     >
+      {ai && (
+        <View style={{ position: 'absolute', top: 5, right: 5 }}>
+          <View
+            style={{
+              borderRadius: 50,
+              borderWidth: 2,
+              borderColor: theme.colors.primary,
+              padding: 5,
+            }}
+          >
+            <AIIcon height={30} width={30} />
+          </View>
+        </View>
+      )}
       {unavailable && (
         <BlurView
           intensity={Platform.OS === 'ios' ? 20 : 100}
@@ -278,21 +298,26 @@ const CardItem: React.FC<SetQuestionAction & { unavailable: boolean }> = (props)
       >
         <TouchableOpacity
           onPress={() => {
-            void logEvent('SetItemCardClickShowDetails', {
+            void analytics().logEvent('SetItemCardClickShowDetails', {
               screen: 'SetItemCard',
               action: 'Question clicked to show details',
               setId: setId,
               title: question.title,
               userId: authContext.userId,
             });
-            navigation.navigate('SetItemDetails', { ...question, tags: [], type: 'question' });
+            navigation.navigate('SetItemDetails', {
+              ...question,
+              tags: [],
+              type: ai ? 'ai_question' : 'question',
+            });
           }}
-          style={{ paddingHorizontal: 10 }}
+          style={{ paddingHorizontal: 10, paddingRight: 30 }}
         >
           <FontText style={unavailable ? blurredTextStyle : { textAlign: 'center' }}>
             {question.title}
           </FontText>
         </TouchableOpacity>
+
         <View style={{ width: '100%', height: '60%' }}>
           <ImageOrDefault image={question.image} />
         </View>
@@ -320,7 +345,7 @@ const CardItem: React.FC<SetQuestionAction & { unavailable: boolean }> = (props)
       >
         <TouchableOpacity
           onPress={() => {
-            void logEvent('SetItemCardClickShowDetails', {
+            void analytics().logEvent('SetItemCardClickShowDetails', {
               screen: 'SetItemCard',
               action: 'Action clicked to show details',
               setId: setId,
@@ -341,7 +366,7 @@ const CardItem: React.FC<SetQuestionAction & { unavailable: boolean }> = (props)
         <View style={{ flexDirection: 'row', marginBottom: 3 }}>
           <SecondaryButton
             onPress={() => {
-              void logEvent('NewSetSkipCardInitiated', {
+              void analytics().logEvent('NewSetSkipCardInitiated', {
                 screen: 'NewSet',
                 action: 'SkipCard',
                 userId: authContext.userId,
@@ -355,7 +380,7 @@ const CardItem: React.FC<SetQuestionAction & { unavailable: boolean }> = (props)
           <View style={{ width: 15 }}></View>
           <PrimaryButton
             onPress={() => {
-              void logEvent('NewSetAcceptSetClicked', {
+              void analytics().logEvent('NewSetAcceptSetClicked', {
                 screen: 'NewSet',
                 action: 'AcceptSetClicked',
                 userId: authContext.userId,

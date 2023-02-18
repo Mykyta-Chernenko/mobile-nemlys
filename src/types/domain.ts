@@ -45,4 +45,10 @@ export enum NOTIFICATION_IDENTIFIERS {
   DATE_SOON = 'date_soon:couple_set_id:',
 }
 
-export type SetQuestionAction = { setId: number; question: Question; action: Action };
+export type SetQuestionAction = {
+  setId: number;
+  question: Question;
+  action: Action;
+  type: SetType;
+};
+export type SetType = 'normal' | 'unavailable' | 'ai';

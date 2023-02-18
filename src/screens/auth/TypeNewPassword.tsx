@@ -5,9 +5,8 @@ import { AuthStackParamList } from '@app/types/navigation';
 import { NativeStackScreenProps } from '@react-navigation/native-stack';
 import { i18n } from '@app/localization/i18n';
 import { FontText } from '@app/components/utils/FontText';
-import { logEvent } from 'expo-firebase-analytics';
 import { AuthContext } from '@app/provider/AuthProvider';
-
+import analytics from '@react-native-firebase/analytics';
 export const TYPE_NEW_PASSWORD_PATH = 'type-new-password';
 export default function ({
   navigation,
@@ -17,7 +16,7 @@ export default function ({
   const authContext = useContext(AuthContext);
 
   useEffect(() => {
-    void logEvent('TypeNewPasswordOpenScreen', {
+    void analytics().logEvent('TypeNewPasswordOpenScreen', {
       screen: 'TypeNewPassword',
       action: 'Screen opened',
       userId: authContext.userId,

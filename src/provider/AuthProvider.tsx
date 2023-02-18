@@ -8,7 +8,7 @@ export type HandleUser = (user: SupabaseUser, exists: boolean) => Promise<void>;
 export const ANON_USER = 'anon';
 type ContextProps = {
   isSignedIn: null | boolean;
-  userId: string;
+  userId: null | string;
   setIsSignedIn: (value: boolean) => void;
 };
 
@@ -16,7 +16,7 @@ export const globalHandleUser: { value: HandleUser | null } = {
   value: null,
 };
 
-const AuthContext = createContext<Partial<ContextProps>>({ userId: ANON_USER });
+const AuthContext = createContext<Partial<ContextProps>>({});
 
 export async function setSession(accessToken: string, refreshToken: string) {
   // bug-fix, Buffer is used in the underlying lib, but is not imported
@@ -56,7 +56,7 @@ interface Props {
 const AuthProvider = (props: Props) => {
   // user null = loading
   const [isSignedIn, setIsSignedIn] = useState<boolean | null>(null);
-  const [userId, setUserId] = useState<string>(ANON_USER);
+  const [userId, setUserId] = useState<string | null>(null);
   useEffect(() => {
     const handleDeepLinking = async (url: string | null): Promise<void> => {
       if (!url) return;
@@ -93,10 +93,10 @@ const AuthProvider = (props: Props) => {
         data: { session: initialSession },
       } = await supabase.auth.getSession();
       setIsSignedIn(!!initialSession);
+      setUserId(initialSession?.user.id || ANON_USER);
     };
     void getInitialSession();
   }, []);
-
   useEffect(() => {
     if (isSignedIn) {
       console.log('Listen to supabasse events');

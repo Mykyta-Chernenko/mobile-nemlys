@@ -4,7 +4,7 @@ import { supabase } from '@app/api/initSupabase';
 import { Loading } from '../utils/Loading';
 import { View } from 'react-native';
 import { i18n } from '@app/localization/i18n';
-import { SetQuestionAction } from '@app/types/domain';
+import { SetQuestionAction, SetType } from '@app/types/domain';
 import { useNavigation } from '@react-navigation/native';
 import { MainNavigationProp } from '@app/types/navigation';
 import { ViewSetHomeScreen } from './ViewSetHomeScreen';
@@ -25,15 +25,16 @@ export default function () {
 
   useEffect(() => {
     async function getCurrentLevel() {
-      const res: SupabaseEdgeAnswer<{ newSetsIds: number[] | null }> =
+      const res: SupabaseEdgeAnswer<{ sets: { id: number; type: SetType }[] | null }> =
         await supabase.functions.invoke('get-new-sets');
-      if (res?.data?.newSetsIds) {
+      if (res?.data?.sets) {
         const setsQuestionAction: SetQuestionAction[] = [];
-        for (const setId of res.data.newSetsIds) {
-          const questionsActions = await getQuestionsAndActionsForSet(setId);
+        for (const setId of res.data.sets) {
+          const questionsActions = await getQuestionsAndActionsForSet(setId.id);
           if (questionsActions?.actions && questionsActions.questions) {
             setsQuestionAction.push({
-              setId,
+              setId: setId.id,
+              type: setId.type,
               action: questionsActions?.actions[0],
               question: questionsActions?.questions[0],
             });

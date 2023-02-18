@@ -12,7 +12,7 @@ import { ANON_USER, AuthContext } from '@app/provider/AuthProvider';
 import { KEYBOARD_BEHAVIOR } from '@app/utils/constants';
 import { FontText } from '@app/components/utils/FontText';
 import { logErrorsWithMessage, UserDoesNotExistError } from '@app/utils/errors';
-import { logEvent } from 'expo-firebase-analytics';
+import analytics from '@react-native-firebase/analytics';
 WebBrowser.maybeCompleteAuthSession();
 
 export default function ({ navigation }: NativeStackScreenProps<AuthStackParamList, 'Login'>) {
@@ -24,7 +24,7 @@ export default function ({ navigation }: NativeStackScreenProps<AuthStackParamLi
   const passwordRef = useRef(null) as any;
   const auth = useContext(AuthContext);
   async function login() {
-    void logEvent('LoginEmailTypeSubmitClicked', {
+    void analytics().logEvent('LoginEmailTypeSubmitClicked', {
       screen: 'Login',
       action: 'Email type login, submit button clicked',
       userId: ANON_USER,
@@ -154,7 +154,7 @@ export default function ({ navigation }: NativeStackScreenProps<AuthStackParamLi
             <FontText>{i18n.t('login.register.pretext')}</FontText>
             <TouchableOpacity
               onPress={() => {
-                void logEvent('LoginRegisterLinkClicked', {
+                void analytics().logEvent('LoginRegisterLinkClicked', {
                   screen: 'Login',
                   action: 'Register link clicked',
                   userId: ANON_USER,
@@ -182,7 +182,7 @@ export default function ({ navigation }: NativeStackScreenProps<AuthStackParamLi
           >
             <TouchableOpacity
               onPress={() => {
-                void logEvent('LoginForgetPasswordClicked', {
+                void analytics().logEvent('LoginForgetPasswordClicked', {
                   screen: 'Login',
                   action: 'Forget password clicked',
                   userId: ANON_USER,

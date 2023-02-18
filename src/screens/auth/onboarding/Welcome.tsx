@@ -8,8 +8,7 @@ import { PrimaryButton } from '@app/components/buttons/PrimaryButtons';
 import { KEYBOARD_BEHAVIOR } from '@app/utils/constants';
 import { FontText } from '@app/components/utils/FontText';
 import { ANON_USER } from '@app/provider/AuthProvider';
-import { logEvent } from 'expo-firebase-analytics';
-
+import analytics from '@react-native-firebase/analytics';
 export default function ({ navigation }: NativeStackScreenProps<AuthStackParamList, 'Welcome'>) {
   const { theme } = useTheme();
   const [name, setName] = useState<string>('');
@@ -82,7 +81,7 @@ export default function ({ navigation }: NativeStackScreenProps<AuthStackParamLi
           <PrimaryButton
             title={i18n.t('welcome.button.default')}
             onPress={() => {
-              void logEvent('WelcomeOnboardingTestClicked', {
+              void analytics().logEvent('WelcomeOnboardingTestClicked', {
                 screen: 'Welcome',
                 action: 'Onboarding test link clicked',
                 userId: ANON_USER,
@@ -112,7 +111,7 @@ export default function ({ navigation }: NativeStackScreenProps<AuthStackParamLi
             <FontText>{i18n.t('welcome.login.pretext')}</FontText>
             <TouchableOpacity
               onPress={() => {
-                void logEvent('WelcomeLoginClicked', {
+                void analytics().logEvent('WelcomeLoginClicked', {
                   screen: 'Welcome',
                   action: 'Login link clicked',
                   userId: ANON_USER,

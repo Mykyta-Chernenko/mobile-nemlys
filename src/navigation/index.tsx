@@ -20,12 +20,15 @@ const linking = {
 export default () => {
   const auth = useContext(AuthContext);
   const signedIn = auth.isSignedIn;
+  const userId = auth.userId;
 
-  return (
-    <NavigationContainer linking={linking}>
-      {signedIn == null && <Loading />}
-      {signedIn == false && <Auth />}
-      {signedIn == true && <Main />}
-    </NavigationContainer>
-  );
+  let comp = <></>;
+  if (signedIn === null || userId === null) {
+    comp = <Loading></Loading>;
+  } else if (signedIn === false) {
+    comp = <Auth></Auth>;
+  } else {
+    comp = <Main></Main>;
+  }
+  return <NavigationContainer linking={linking}>{comp}</NavigationContainer>;
 };

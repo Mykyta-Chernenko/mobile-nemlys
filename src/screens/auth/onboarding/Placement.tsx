@@ -8,7 +8,7 @@ import SurveyView from '@app/components/common/SurveyView';
 import { FontText } from '@app/components/utils/FontText';
 import { logErrors } from '@app/utils/errors';
 import { ANON_USER } from '@app/provider/AuthProvider';
-import { logEvent } from 'expo-firebase-analytics';
+import analytics from '@react-native-firebase/analytics';
 export default function ({
   route,
   navigation,
@@ -81,7 +81,7 @@ export default function ({
   const isNextQuestion = questionIndex + 1 < questions.length;
 
   const handlePressBack = () => {
-    void logEvent('PlacementBackClicked', {
+    void analytics().logEvent('PlacementBackClicked', {
       screen: 'Placement',
       action: 'Back is clicked',
       userId: ANON_USER,
@@ -100,7 +100,7 @@ export default function ({
     }
   };
   const handleNextPress = (chosenValue) => {
-    void logEvent('PlacementNextClicked', {
+    void analytics().logEvent('PlacementNextClicked', {
       screen: 'Placement',
       action: 'Next is clicked',
       userId: ANON_USER,

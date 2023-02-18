@@ -28,8 +28,7 @@ import {
 } from '@app/utils/notification';
 import { logErrors } from '@app/utils/errors';
 import { AuthContext } from '@app/provider/AuthProvider';
-import { logEvent } from 'expo-firebase-analytics';
-
+import analytics from '@react-native-firebase/analytics';
 export default function () {
   const navigation = useNavigation<MainNavigationProp>();
   const { theme } = useTheme();
@@ -100,7 +99,7 @@ export default function () {
     testID: 'datePicker',
     mode: 'date',
     onChange: (event, value: Date) => {
-      void logEvent('ChosenSetReminderDateChanged', {
+      void analytics().logEvent('ChosenSetReminderDateChanged', {
         screen: 'ChosenSet',
         action: 'Reminder date changed',
         value: value,
@@ -115,7 +114,7 @@ export default function () {
     testID: 'timePicker',
     mode: 'time',
     onChange: (event, value: Date) => {
-      void logEvent('ChosenSetReminderTimeChanged', {
+      void analytics().logEvent('ChosenSetReminderTimeChanged', {
         screen: 'ChosenSet',
         action: 'Reminder time changed',
         value: value,
@@ -134,7 +133,7 @@ export default function () {
   };
 
   const updateMeetingDate = async () => {
-    void logEvent('ChosenSetUpdateMeetingDateClicked', {
+    void analytics().logEvent('ChosenSetUpdateMeetingDateClicked', {
       screen: 'ChosenSet',
       action: 'Update meeting date changed and submitted',
       userId: authContext.userId,
@@ -181,7 +180,7 @@ export default function () {
 
   const handleButton = () => {
     if (!currentSet) return;
-    void logEvent('ChosenSetCompleteSetClicked', {
+    void analytics().logEvent('ChosenSetCompleteSetClicked', {
       screen: 'ChosenSet',
       action: 'Complete set clicked',
       userId: authContext.userId,
