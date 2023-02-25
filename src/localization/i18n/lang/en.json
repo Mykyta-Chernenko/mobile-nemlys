@@ -148,7 +148,7 @@
     }
   },
   "set": {
-    "reflection":{
+    "reflection": {
       "title": "Question to relection on:"
     },
     "out_of_completed": "%{completed}/%{outOf} cards",
@@ -171,7 +171,7 @@
       "meeting_on": "You date was on:",
       "no_discussion_description": "You didn't write how your conversation went",
       "discussion_description_title": "How did your conversation go?",
-      "discuss_next": "What did you want to discuss next?",
+      "discuss_next": "What did you want to discuss next?"
     },
     "new": {
       "title": "Choose a card for the next date",
@@ -243,9 +243,9 @@
     "title": "Diary",
     "ai_motivation_title": "Keeping you diary significantly improves the ai card personalization",
     "add_button": "Add entry",
-    "new":{
+    "new": {
       "title": "Today's entry",
-      "type":{
+      "type": {
         "title": "How do you want to write?",
         "freewriting": "Freewriting",
         "questions": "Ask me questions"
@@ -261,8 +261,8 @@
       "freewriting": "What has happened in your relationship recently? Describe in at least few sentences"
     }
   },
-  "notification":{
-    "diary":{
+  "notification": {
+    "diary": {
       "title": "Write your diary",
       "body": "What has happened in your relationship recently?"
     }
