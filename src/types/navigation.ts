@@ -1,5 +1,6 @@
 import { NativeStackScreenProps } from '@react-navigation/native-stack';
 import {
+  CarouselCardsType,
   FeedbackQuestion,
   OnboardingQuestion,
   UserFeedbackAnswer,
@@ -19,12 +20,21 @@ export type SetItemPropsQuestion = {
 export type SetItemPropsAIQuestion = {
   type: 'ai_question';
 };
+export type SetItemPropsAIAction = {
+  type: 'ai_action';
+  instruction: string;
+};
 export type SetItemProps = {
+  deckType: CarouselCardsType;
   image: string | undefined;
   title: string;
   details: string;
   tags: string[];
-} & (SetItemPropsAction | SetItemPropsQuestion | SetItemPropsAIQuestion);
+} & (SetItemPropsAction | SetItemPropsQuestion | SetItemPropsAIQuestion | SetItemPropsAIAction);
+
+export type HistorySetCardDetailsProps = {
+  coupleSetId: number;
+};
 
 export class SetReminderProps {
   setId: number;
@@ -46,10 +56,16 @@ export class CompleteSetFinalProps extends CompleteSetQuestionProps {}
 export type MainStackParamList = {
   SetHomeScreen: { refreshTimeStamp: string | undefined };
   SetItemDetails: SetItemProps;
+  HistorySet: undefined;
+  HistorySetCardDetails: HistorySetCardDetailsProps;
   SetReminder: SetReminderProps;
   CompleteSetReflect: CompleteSetReflectProps;
   CompleteSetQuestion: CompleteSetQuestionProps;
   CompleteSetFinal: CompleteSetFinalProps;
+  Diary: { refreshTimeStamp: string | undefined };
+  DiaryEntry: { id: number };
+  DiaryNewEntry: undefined;
+  Settings: undefined;
 };
 
 export type MainNavigationProp = NativeStackScreenProps<MainStackParamList>['navigation'];

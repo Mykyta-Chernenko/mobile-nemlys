@@ -44,6 +44,7 @@ export default function ({ navigation }: NativeStackScreenProps<AuthStackParamLi
       alert(i18n.t('login.check_email_for_login_link'));
     } else {
       auth.setIsSignedIn?.(true);
+      auth.setUserId?.(user!.id);
     }
   }
   // eslint-disable-next-line @typescript-eslint/require-await

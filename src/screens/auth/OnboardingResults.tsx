@@ -8,7 +8,8 @@ import { FontText } from '@app/components/utils/FontText';
 export default function (props: { userAnswers: UserOnboardingAnswer[] }) {
   const { theme } = useTheme();
   type AnswerSlug = 'dating_length' | 'open' | 'well_covered' | 'to_cover';
-  const slugs: AnswerSlug[] = ['dating_length', 'open', 'well_covered', 'to_cover'];
+  // well_covered slug commented out
+  const slugs: AnswerSlug[] = ['dating_length', 'open', 'to_cover'];
   const getAnswersForQuestion = (slug: AnswerSlug) => {
     const answer = props.userAnswers.find((a) => a.question.slug == slug);
     return answer?.answer ?? { slug: 'uknknown_question' };
@@ -40,8 +41,8 @@ export default function (props: { userAnswers: UserOnboardingAnswer[] }) {
     const toCover: string[] = ['commitment', 'past', 'emotions', 'conflict'];
     questionSlugs.map((s) => {
       const answer = props.userAnswers.find((a) => a.question.slug === s);
-      if (!answer) return;
-      if (parseInt(answer.answer.slug.slice(-1)) > 7) {
+
+      if (answer && parseInt(answer.answer.slug.slice(-1)) > 7) {
         covered.push(s);
       } else {
         toCover.push(s);

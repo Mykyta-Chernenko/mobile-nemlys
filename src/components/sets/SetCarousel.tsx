@@ -8,16 +8,14 @@ import Animated, {
   useSharedValue,
 } from 'react-native-reanimated';
 import Carousel from 'react-native-reanimated-carousel';
-import { SetQuestionAction } from '@app/types/domain';
+import { CarouselCardsType, SetQuestionAction } from '@app/types/domain';
 import { useContext, useState } from 'react';
 import { FontText } from '../utils/FontText';
-import { PrimaryButton } from '../buttons/PrimaryButtons';
 import { i18n } from '@app/localization/i18n';
 
 import { AuthContext } from '@app/provider/AuthProvider';
 import { MainNavigationProp } from '@app/types/navigation';
 import { useNavigation } from '@react-navigation/native';
-import { SecondaryButton } from '../buttons/SecondaryButton';
 import ImageOrDefault from '../utils/ImageOrDefault';
 import { supabase } from '@app/api/initSupabase';
 import { logErrors } from '@app/utils/errors';
@@ -25,17 +23,27 @@ import { BlurView } from 'expo-blur';
 import { GestureHandlerRootView } from 'react-native-gesture-handler';
 import AIIcon from '@app/icons/ai';
 import analytics from '@react-native-firebase/analytics';
-export default (props: { setsQuestionAction: SetQuestionAction[] }) => {
+import { PrimaryButton } from '../buttons/PrimaryButtons';
+import { SecondaryButton } from '../buttons/SecondaryButton';
+import { HistorySetScreenName } from '@app/utils/constants';
+export default (props: {
+  setsQuestionAction: SetQuestionAction[];
+  deckType: CarouselCardsType;
+}) => {
   const { theme } = useTheme();
+  const { deckType } = props;
   const [width, setWidth] = useState(10);
   const [isUnavailableCardActive, setIsUnavailableCardActive] = useState(false);
   const [isAiCardActive, setIsAieCardActive] = useState(false);
+  const { setsQuestionAction: setsQuestionActionSorted } = props;
 
   let cardTitle = '';
-  if (isUnavailableCardActive) {
+  if (deckType === 'history') {
+    cardTitle = i18n.t('set.history.title');
+  } else if (isUnavailableCardActive) {
     cardTitle = i18n.t('set.new.unavailable_card_title');
   } else if (isAiCardActive) {
-    i18n.t('set.new.ai_title');
+    cardTitle = i18n.t('set.new.ai_title');
   } else {
     cardTitle = i18n.t('set.new.title');
   }
@@ -70,12 +78,12 @@ export default (props: { setsQuestionAction: SetQuestionAction[] }) => {
           autoPlay={false}
           onProgressChange={(_, absoluteProgress) => {
             progressValue.value = absoluteProgress;
-            if (props.setsQuestionAction[Math.round(absoluteProgress)].type === 'unavailable') {
+            if (setsQuestionActionSorted[Math.round(absoluteProgress)].type === 'unavailable') {
               setIsUnavailableCardActive(true);
             } else {
               setIsUnavailableCardActive(false);
             }
-            if (props.setsQuestionAction[Math.round(absoluteProgress)].type === 'ai') {
+            if (setsQuestionActionSorted[Math.round(absoluteProgress)].type === 'ai') {
               setIsAieCardActive(true);
             } else {
               setIsAieCardActive(false);
@@ -86,34 +94,34 @@ export default (props: { setsQuestionAction: SetQuestionAction[] }) => {
             parallaxScrollingScale: 0.95,
             parallaxScrollingOffset: width * 0.23,
           }}
-          data={props.setsQuestionAction}
+          data={setsQuestionActionSorted}
           renderItem={({ index }) => (
             <View style={{ paddingHorizontal: '10%' }}>
-              <CardItem {...props.setsQuestionAction[index]}></CardItem>
+              <CardItem {...{ ...setsQuestionActionSorted[index], deckType }}></CardItem>
             </View>
           )}
         />
       </GestureHandlerRootView>
-      {!!progressValue && (
+      {!!progressValue && setsQuestionActionSorted.length > 1 && (
         <View
           style={{
             flexDirection: 'row',
             justifyContent: 'space-between',
-            width: 60,
             marginTop: 5,
             alignSelf: 'center',
           }}
         >
-          {props.setsQuestionAction.map((x, index) => {
+          {setsQuestionActionSorted.map((x, index) => {
             return (
-              <PaginationItem
-                backgroundColor={theme.colors.primary}
-                animValue={progressValue}
-                setsQuestionAction={props.setsQuestionAction}
-                index={index}
-                key={index}
-                length={props.setsQuestionAction.length}
-              />
+              <View style={{ marginHorizontal: 2 }} key={index}>
+                <PaginationItem
+                  backgroundColor={theme.colors.primary}
+                  animValue={progressValue}
+                  setsQuestionAction={setsQuestionActionSorted}
+                  index={index}
+                  length={setsQuestionActionSorted.length}
+                />
+              </View>
             );
           })}
         </View>
@@ -186,10 +194,10 @@ const PaginationItem: React.FC<{
   );
 };
 
-const CardItem: React.FC<SetQuestionAction> = (props) => {
+const CardItem: React.FC<SetQuestionAction & { deckType: CarouselCardsType }> = (props) => {
   const { theme } = useTheme();
 
-  const { setId, action, question, type } = props;
+  const { setId, coupleSetId, action, question, type, deckType } = props;
   const unavailable = type === 'unavailable';
   const ai = type === 'ai';
   const authContext = useContext(AuthContext);
@@ -202,6 +210,9 @@ const CardItem: React.FC<SetQuestionAction> = (props) => {
     textShadowRadius: 10,
   };
   const blurredTextStyle = Platform.OS === 'android' ? androidBlurredStyle : {};
+  const normalTextStyle = ai
+    ? { textAlign: 'center', paddingHorizontal: 30, width: '100%' }
+    : { textAlign: 'center', width: '100%' };
   const skipCard = async () => {
     await analytics().logEvent('SetItemCardSkipCardConfirm', {
       screen: 'SetItemCard',
@@ -246,6 +257,37 @@ const CardItem: React.FC<SetQuestionAction> = (props) => {
       },
     );
   };
+  const onQuestionPress = () => {
+    void analytics().logEvent('SetItemCardClickShowDetails', {
+      screen: 'SetItemCard',
+      action: 'Question clicked to show details',
+      setId: setId,
+      title: question.title,
+      userId: authContext.userId,
+    });
+    navigation.navigate('SetItemDetails', {
+      ...question,
+      deckType,
+      tags: [],
+      type: ai ? 'ai_question' : 'question',
+    });
+  };
+  const onActionPress = () => {
+    void analytics().logEvent('SetItemCardClickShowDetails', {
+      screen: 'SetItemCard',
+      action: 'Action clicked to show details',
+      setId: setId,
+      title: action.title,
+      userId: authContext.userId,
+    });
+
+    navigation.navigate('SetItemDetails', {
+      ...action,
+      deckType,
+      tags: [],
+      type: ai ? 'ai_action' : 'action',
+    });
+  };
   return (
     <View
       style={{
@@ -258,20 +300,6 @@ const CardItem: React.FC<SetQuestionAction> = (props) => {
         padding: 10,
       }}
     >
-      {ai && (
-        <View style={{ position: 'absolute', top: 5, right: 5 }}>
-          <View
-            style={{
-              borderRadius: 50,
-              borderWidth: 2,
-              borderColor: theme.colors.primary,
-              padding: 5,
-            }}
-          >
-            <AIIcon height={30} width={30} />
-          </View>
-        </View>
-      )}
       {unavailable && (
         <BlurView
           intensity={Platform.OS === 'ios' ? 20 : 100}
@@ -288,6 +316,23 @@ const CardItem: React.FC<SetQuestionAction> = (props) => {
           }}
         ></BlurView>
       )}
+      {ai && (
+        <View
+          style={{
+            borderRadius: 50,
+            borderWidth: 2,
+            height: 35,
+            width: 35,
+            borderColor: theme.colors.primary,
+            padding: 5,
+            position: 'absolute',
+            right: 5,
+            top: 5,
+          }}
+        >
+          <AIIcon height={20} width={20} />
+        </View>
+      )}
       <View
         style={{
           height: '40%',
@@ -296,30 +341,16 @@ const CardItem: React.FC<SetQuestionAction> = (props) => {
           overflow: 'hidden',
         }}
       >
-        <TouchableOpacity
-          onPress={() => {
-            void analytics().logEvent('SetItemCardClickShowDetails', {
-              screen: 'SetItemCard',
-              action: 'Question clicked to show details',
-              setId: setId,
-              title: question.title,
-              userId: authContext.userId,
-            });
-            navigation.navigate('SetItemDetails', {
-              ...question,
-              tags: [],
-              type: ai ? 'ai_question' : 'question',
-            });
-          }}
-          style={{ paddingHorizontal: 10, paddingRight: 30 }}
-        >
-          <FontText style={unavailable ? blurredTextStyle : { textAlign: 'center' }}>
-            {question.title}
-          </FontText>
+        <TouchableOpacity onPress={onQuestionPress} style={{ width: '100%' }}>
+          <View style={{ flexDirection: 'row', width: '100%', paddingTop: 10 }}>
+            <FontText style={unavailable ? blurredTextStyle : normalTextStyle}>
+              {question.title}
+            </FontText>
+          </View>
         </TouchableOpacity>
 
         <View style={{ width: '100%', height: '60%' }}>
-          <ImageOrDefault image={question.image} />
+          <ImageOrDefault onPress={onQuestionPress} image={question.image} />
         </View>
       </View>
 
@@ -343,56 +374,66 @@ const CardItem: React.FC<SetQuestionAction> = (props) => {
           alignItems: 'center',
         }}
       >
-        <TouchableOpacity
-          onPress={() => {
-            void analytics().logEvent('SetItemCardClickShowDetails', {
-              screen: 'SetItemCard',
-              action: 'Action clicked to show details',
-              setId: setId,
-              title: action.title,
-              userId: authContext.userId,
-            });
-            navigation.navigate('SetItemDetails', { ...action, tags: [], type: 'action' });
-          }}
-          style={{ paddingHorizontal: 10 }}
-        >
+        <TouchableOpacity onPress={onActionPress} style={{ paddingHorizontal: 10, width: '100%' }}>
           <FontText style={unavailable ? blurredTextStyle : { textAlign: 'center' }}>
             {action.title}
           </FontText>
         </TouchableOpacity>
+
         <View style={{ width: '100%', height: '52%' }}>
-          <ImageOrDefault image={action.image} />
+          <ImageOrDefault onPress={onActionPress} image={action.image} />
         </View>
-        <View style={{ flexDirection: 'row', marginBottom: 3 }}>
-          <SecondaryButton
-            onPress={() => {
-              void analytics().logEvent('NewSetSkipCardInitiated', {
-                screen: 'NewSet',
-                action: 'SkipCard',
-                userId: authContext.userId,
-                setId: setId,
-              });
-              void skipCardAlert();
-            }}
-          >
-            {i18n.t('remove')}
-          </SecondaryButton>
-          <View style={{ width: 15 }}></View>
-          <PrimaryButton
-            onPress={() => {
-              void analytics().logEvent('NewSetAcceptSetClicked', {
-                screen: 'NewSet',
-                action: 'AcceptSetClicked',
-                userId: authContext.userId,
-              });
-              navigation.navigate('SetReminder', {
-                setId,
-              });
-            }}
-          >
-            {i18n.t('set.accept')}
-          </PrimaryButton>
-        </View>
+
+        {deckType == 'new' && (
+          <View style={{ flexDirection: 'row', marginBottom: 3 }}>
+            <SecondaryButton
+              onPress={() => {
+                void analytics().logEvent('NewSetSkipCardInitiated', {
+                  screen: 'NewSet',
+                  action: 'SkipCard',
+                  userId: authContext.userId,
+                  setId: setId,
+                });
+                void skipCardAlert();
+              }}
+            >
+              {i18n.t('remove')}
+            </SecondaryButton>
+            <View style={{ width: 15 }}></View>
+            <PrimaryButton
+              onPress={() => {
+                void analytics().logEvent('NewSetAcceptSetClicked', {
+                  screen: 'NewSet',
+                  action: 'AcceptSetClicked',
+                  userId: authContext.userId,
+                });
+                navigation.navigate('SetReminder', {
+                  setId,
+                });
+              }}
+            >
+              {i18n.t('set.accept')}
+            </PrimaryButton>
+          </View>
+        )}
+        {deckType == 'history' && (
+          <View style={{ flexDirection: 'row', marginBottom: 3 }}>
+            <PrimaryButton
+              onPress={() => {
+                void analytics().logEvent('HistorySetHowDidItGoClicked', {
+                  screen: HistorySetScreenName,
+                  action: 'HowDidItGoClicked',
+                  userId: authContext.userId,
+                });
+                navigation.navigate('HistorySetCardDetails', {
+                  coupleSetId: coupleSetId!,
+                });
+              }}
+            >
+              {i18n.t('set.history.card_button_title')}
+            </PrimaryButton>
+          </View>
+        )}
       </View>
     </View>
   );

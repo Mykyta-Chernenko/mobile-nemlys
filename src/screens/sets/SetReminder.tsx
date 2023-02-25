@@ -31,6 +31,11 @@ import { scheduleMeetingNotification } from '@app/utils/notification';
 import { logErrors } from '@app/utils/errors';
 import { AuthContext } from '@app/provider/AuthProvider';
 import analytics from '@react-native-firebase/analytics';
+import {
+  DENIED_NOTIFICATION_STATUS,
+  GRANTED_NOTIFICATION_STATUS,
+  UNDETERMINED_NOTIFICATION_STATUS,
+} from '@app/utils/constants';
 export default function ({
   route,
   navigation,
@@ -40,10 +45,9 @@ export default function ({
   const [profile, setProfile] = useState<APIUserProfile | undefined>(undefined);
   const [noDateYet, setNoDateYet] = useState<boolean>(false);
   const [loading, setLoading] = useState<boolean>(false);
-  const GRANTED_NOTIFICATION_STATUS = 'granted';
-  const DENIED_NOTIFICATION_STATUS = 'denied';
   const [notificationStatus, setNotificationStatus] = useState<string | undefined>(undefined);
-  const showNotificationText = notificationStatus && notificationStatus === 'undetermined';
+  const showNotificationText =
+    notificationStatus && notificationStatus === UNDETERMINED_NOTIFICATION_STATUS;
   const now = new Date();
   const [chosenDateTime, setChosenDateTime] = useState<Date>(now);
   const [chosenDateTouched, setChosenDateTouched] = useState<boolean>(false);

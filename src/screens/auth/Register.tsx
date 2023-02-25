@@ -67,6 +67,7 @@ export default function ({
       } else {
         await handleUserAfterSignUp(data.data.user, false);
         auth.setIsSignedIn?.(true);
+        auth.setUserId?.(data.data.user.id);
       }
     } catch (e: unknown) {
       await supabase.auth.signOut();

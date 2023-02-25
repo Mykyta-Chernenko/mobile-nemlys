@@ -59,6 +59,7 @@ export class APIQuestion extends ApiEntry {
   details: string;
   tips: string;
   importance: string;
+  ai_generated: string;
   question_tag: APIQUestionQuestionTag | APIQUestionQuestionTag[] | null;
 }
 
@@ -69,6 +70,7 @@ export class APIAction extends ApiEntry {
   image: string | undefined;
   instruction: string;
   importance: string;
+  ai_generated: string;
 }
 
 export class APIReflection extends ApiEntry {
@@ -130,4 +132,10 @@ export class APICoupleSetFeedbackAnswer {
   text_answer: string | undefined;
   feedback_question_id: APIFeedbackQuestion['id'];
   couple_set_feedback_id: APICoupleSetFeedback['id'];
+}
+
+export class APIDiary extends ApiEntry {
+  user_id: string;
+  date: string;
+  text: string;
 }

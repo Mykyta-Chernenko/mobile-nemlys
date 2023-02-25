@@ -21,8 +21,9 @@ export default function (props: { questions: Question[]; actions: Action[]; chos
       <View>
         {props.questions.map((q) => (
           <ItemCard
+            deckType="new"
             key={q.id}
-            type="question"
+            type={q.ai_generated ? 'ai_question' : 'question'}
             title={q.title}
             details={q.details}
             image={q.image}
@@ -42,8 +43,9 @@ export default function (props: { questions: Question[]; actions: Action[]; chos
       <View>
         {props.actions.map((q) => (
           <ItemCard
+            deckType="new"
             key={q.id}
-            type="action"
+            type={q.ai_generated ? 'ai_action' : 'action'}
             title={q.title}
             details={q.details}
             image={q.image}

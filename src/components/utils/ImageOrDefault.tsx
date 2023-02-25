@@ -28,6 +28,11 @@ const allImages = {
   active_support: require('../../../assets/images/active_support.png'),
   feeling_blue: require('../../../assets/images/feeling_blue.png'),
   candidate: require('../../../assets/images/candidate.png'),
+  articles: require('../../../assets/images/articles.png'),
+  love: require('../../../assets/images/a_whole_year.png'),
+  in_love: require('../../../assets/images/in_love.png'),
+  artificial_intelligence: require('../../../assets/images/artificial_intelligence.png'),
+  a_whole_year: require('../../../assets/images/a_whole_year.png'),
   [DEFAULT_IMAGE]: require('../../../assets/images/heartbroken.png'),
 };
 export default function ({ image, ...props }: { image: string | undefined } & ImageProps) {

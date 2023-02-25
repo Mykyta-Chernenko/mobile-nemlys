@@ -34,7 +34,7 @@ export default function ({
     if (route.params?.refreshTimeStamp) {
       void getCurrentLevel();
     }
-  }, [route.params]);
+  }, [route.params?.refreshTimeStamp]);
 
   useEffect(() => {
     void getCurrentLevel();

@@ -1,6 +1,6 @@
 import { APIAction, APIQuestion, SupabaseAnswer } from '@app/types/api';
-import { Action, Question } from '@app/types/domain';
-import { logErrors } from '@app/utils/errors';
+import { Action, Question, SetQuestionAction, CoupleSetWithType } from '@app/types/domain';
+import { logErrors, logErrorsWithMessageWithoutAlert } from '@app/utils/errors';
 import { supabase } from '../initSupabase';
 
 export async function getQuestionsAndActionsForSet(
@@ -17,7 +17,7 @@ export async function getQuestionsAndActionsForSet(
     supabase
       .from('question')
       .select(
-        'id, slug, title, image, details, tips, importance, created_at, updated_at, question_tag:question_question_tag (question_question_tag:tag_id(slug, title))',
+        'id, slug, title, image, details, tips, importance, ai_generated, created_at, updated_at,  question_tag:question_question_tag (question_question_tag:tag_id(slug, title))',
       )
       .in(
         'id',
@@ -25,7 +25,9 @@ export async function getQuestionsAndActionsForSet(
       ),
     supabase
       .from('action')
-      .select('id, slug, title, image, details, importance, instruction, created_at, updated_at')
+      .select(
+        'id, slug, title, image, details, importance, instruction, ai_generated, created_at, updated_at',
+      )
       .in(
         'id',
         (actionsIds ?? []).map((x) => x.action_id),
@@ -55,4 +57,29 @@ export async function getQuestionsAndActionsForSet(
     }),
     actions: actions ?? [],
   };
+}
+
+export async function addActionAndQuestionsToSet(
+  sets: CoupleSetWithType[],
+): Promise<SetQuestionAction[]> {
+  const setsQuestionAction: SetQuestionAction[] = [];
+  for (const set of sets) {
+    const questionsActions = await getQuestionsAndActionsForSet(set.setId);
+    if (questionsActions?.actions && questionsActions.questions) {
+      setsQuestionAction.push({
+        setId: set.setId,
+        coupleSetId: set.coupleSetId,
+        type: set.type,
+        action: questionsActions?.actions[0],
+        question: questionsActions?.questions[0],
+      });
+    } else {
+      logErrorsWithMessageWithoutAlert(
+        Error(
+          `set had no action or question ${JSON.stringify({ setId: set.setId, questionsActions })}`,
+        ),
+      );
+    }
+  }
+  return setsQuestionAction;
 }

@@ -43,12 +43,26 @@ export class UserFeedbackAnswer {
 export enum NOTIFICATION_IDENTIFIERS {
   SCHEDULE_DATE = 'schedule_date:couple_set_id:',
   DATE_SOON = 'date_soon:couple_set_id:',
+  DIARY = 'diary:user_id:',
 }
+
+export type SetWithType = {
+  id: number;
+  type: SetType;
+};
+
+export type CoupleSetWithType = {
+  setId: number;
+  coupleSetId: number | null;
+  type: SetType;
+};
 
 export type SetQuestionAction = {
   setId: number;
+  coupleSetId: number | null;
   question: Question;
   action: Action;
   type: SetType;
 };
 export type SetType = 'normal' | 'unavailable' | 'ai';
+export type CarouselCardsType = 'new' | 'history';

@@ -68,7 +68,13 @@ export const OAuth = ({
             const accessToken = response.params['access_token'];
             const refreshToken = response.params['refresh_token'];
             if (accessToken && refreshToken) {
-              await handleAuthTokens(accessToken, refreshToken, handleUser, auth.setIsSignedIn!);
+              await handleAuthTokens(
+                accessToken,
+                refreshToken,
+                handleUser,
+                auth.setIsSignedIn!,
+                auth.setUserId!,
+              );
             } else {
               throw new Error(`Auth response had no access_token ${JSON.stringify(response)}`);
             }

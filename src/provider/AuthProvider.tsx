@@ -10,6 +10,7 @@ type ContextProps = {
   isSignedIn: null | boolean;
   userId: null | string;
   setIsSignedIn: (value: boolean) => void;
+  setUserId: (value: string) => void;
 };
 
 export const globalHandleUser: { value: HandleUser | null } = {
@@ -30,6 +31,7 @@ export async function handleAuthTokens(
   refreshToken: string,
   handleUser: HandleUser,
   setIsSignedIn: (value: boolean) => void,
+  setUserId: (value: string) => void,
 ) {
   await setSession(accessToken, refreshToken);
   const { data: user, error } = await supabase.auth.getUser();
@@ -46,6 +48,7 @@ export async function handleAuthTokens(
     }
     await handleUser(user.user, !!count);
     setIsSignedIn(true);
+    setUserId(user.user.id);
   }
 }
 
@@ -65,17 +68,20 @@ const AuthProvider = (props: Props) => {
       const accessToken = urlObject.searchParams.get('access_token');
       const refreshToken = urlObject.searchParams.get('refresh_token');
       if (!accessToken || !refreshToken) return;
-      if (globalHandleUser.value) {
-        try {
-          await handleAuthTokens(accessToken, refreshToken, globalHandleUser.value, setIsSignedIn);
-          globalHandleUser.value = null;
-        } catch (e: unknown) {
-          logErrors(e as Error);
-          await supabase.auth.signOut();
-        }
-      } else {
-        await setSession(accessToken, refreshToken);
-        setIsSignedIn(true);
+      const defaultUserHandler = async (_user: SupabaseUser, _exists: boolean) => {};
+
+      try {
+        await handleAuthTokens(
+          accessToken,
+          refreshToken,
+          globalHandleUser.value || defaultUserHandler,
+          setIsSignedIn,
+          setUserId,
+        );
+        globalHandleUser.value = null;
+      } catch (e: unknown) {
+        logErrors(e as Error);
+        await supabase.auth.signOut();
       }
     };
     const listener = (event: { url: string }) => {
@@ -118,6 +124,7 @@ const AuthProvider = (props: Props) => {
       value={{
         isSignedIn,
         setIsSignedIn,
+        setUserId,
         userId: userId,
       }}
     >

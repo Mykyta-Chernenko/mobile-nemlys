@@ -9,12 +9,13 @@ import { i18n } from '@app/localization/i18n';
 import { NativeStackScreenProps } from '@react-navigation/native-stack';
 import { supabase } from '@app/api/initSupabase';
 import SurveyView from '@app/components/common/SurveyView';
-import { Platform, TextInput, View } from 'react-native';
+import { View } from 'react-native';
 import { FeedbackChoice, FeedbackQuestion, UserFeedbackAnswer } from '@app/types/domain';
 import { FontText } from '@app/components/utils/FontText';
 import { logErrors } from '@app/utils/errors';
 import { AuthContext } from '@app/provider/AuthProvider';
 import analytics from '@react-native-firebase/analytics';
+import StyledTextInput from '@app/components/utils/StyledTextInput';
 export const goBackToThePreviousQuestion = (
   navigation: MainNavigationProp,
   userAnswers: UserFeedbackAnswer[],
@@ -176,26 +177,17 @@ export default function ({
   let mainCointent = <View></View>;
   if (currentQuestion?.type === 'text') {
     mainCointent = (
-      <TextInput
-        multiline={Platform.OS === 'ios'} // true is needed on IPhone so that the placeholder is at the top, but it breaks the return button for Adnroid
-        placeholder={i18n.t('input_here')}
-        style={{
-          height: 200,
-          textAlignVertical: 'top',
-          borderColor: theme.colors.primary,
-          backgroundColor: 'white',
-          borderWidth: 1,
-          padding: 10,
-        }}
+      <StyledTextInput
+        key={currentQuestion.id}
         onChangeText={setTextAnswer}
-        onSubmitEditing={() => handlePress(undefined, undefined)}
-        returnKeyType="done"
-        returnKeyLabel="done"
+        returnKeyType="default"
+        returnKeyLabel="default"
       />
     );
   } else if (currentQuestion?.type === 'choice') {
     mainCointent = (
       <View
+        key={currentQuestion.id}
         style={{
           flex: 5,
           paddingLeft: 15,
@@ -230,6 +222,7 @@ export default function ({
   } else if (currentQuestion?.type === 'bool') {
     mainCointent = (
       <View
+        key={currentQuestion.id}
         style={{
           flex: 5,
           paddingLeft: 15,

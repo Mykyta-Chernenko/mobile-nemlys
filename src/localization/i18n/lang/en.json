@@ -7,16 +7,9 @@
   "no": "No",
   "close": "Close",
   "save": "Save",
-  "logout": "Logout",
   "cancel": "Cancel",
   "confirm": "Confirm",
   "remove": "Remove",
-  "delete_account": "Delete account",
-  "are_you_sure_you_want_to_delete_account": "Are you sure you want to delete your account?",
-  "cannot_send_email": "Cannot send email from your device, feel free to reach out manually to %{email}",
-  "support_email_subject": "App feedback",
-  "send_your_feedback": "If you want to tell us what you think about the app, submit a bug report or simply talk to us, you are very welcome to send us an email",
-  "send_email": "Send email",
   "next": "Next",
   "skip": "Skip",
   "finish": "Finish",
@@ -28,7 +21,17 @@
   "unexpected_error": "Unexpected error happened, try again",
   "join": "Join",
   "history": "History",
-  "diary": "Diary",
+  "cards": "Cards",
+  "settings": {
+    "logout": "Logout",
+    "feedback": "Give us feedback",
+    "delete_account": "Delete account",
+    "send_email": "Send email",
+    "are_you_sure_you_want_to_delete_account": "Are you sure you want to delete your account?",
+    "cannot_send_email": "Cannot send email from your device, feel free to reach out manually to %{email}",
+    "support_email_subject": "App feedback",
+    "send_your_feedback": "If you want to tell us what you think about the app, submit a bug report or simply talk to us, you are very welcome to send us an email"
+  },
   "notifications": {
     "date_soon": "Your date is soon, don't forget to about the questions",
     "schedule_date": "Please, schedule when you will have the date with your partner"
@@ -51,11 +54,11 @@
   },
   "how_we_work": {
     "title": "How it works?",
-    "content_1": "•  Now, we have prepared a personalized program for you",
-    "content_2": "•  For every date, you will choose a card with a question to discuss with your partner and an ‘action’ to take",
-    "content_3": "•  The questions and actions cover deep variety of topics and become deeper and harder as you go",
-    "content_4": "•  Some may be particularly hard to discuss and do while others may seem fairly easy. Be especially careful with the ones that seem hard as they are the most important ones to understand yourself and your partner",
-    "content_5": "•  After your date we send a question for the self-reflection. Also, we’ll ask a feedback to take the personalization further",
+    "content_1": "•  For every date, you will choose a card with a question to discuss and an ‘action’ to take with your partner",
+    "content_2": "•  The questions and actions cover deep variety of topics and become deeper and harder as you go",
+    "content_3": "•  Some may be particularly hard to discuss and do while others may seem fairly easy. Be especially careful with the ones that seem hard as they are the most important ones to understand yourself and your partner",
+    "content_4": "•  After your date we send a question for the self-reflection. Also, we’ll ask a feedback to take the personalization further",
+    "content_5": "•  Every week our AI will create a personalized card for your couple. Keeping the relationship diary, providing a detailed card feedback and having consistent activity makes the quality of the AI cards astonishing",
     "content_6": "The programs will serve you as a guide to build an honest and supportive relationship, soon, you will understand your partner much better, see whether you are good for each other and establish a better communication",
     "accept_title": "I have read and understood the technique"
   },
@@ -145,9 +148,12 @@
     }
   },
   "set": {
+    "reflection":{
+      "title": "Question to relection on:"
+    },
     "out_of_completed": "%{completed}/%{outOf} cards",
     "accept": "Accept",
-    "more_details": "Click on the title to get details",
+    "more_details": "Click on the card to get details ↑↓",
     "skip_alert": "Do you want to remove the card?",
     "skip_alert_details": "You can only remove 3 cards in a deck",
     "reminder": {
@@ -158,10 +164,19 @@
       "notification_access": "*We will ask you for the notification access to remind you more effectively",
       "notification_access_no_date": "*We will ask you for the notification access to remind you to set the date later"
     },
+    "history": {
+      "title": "Cards you have discussed",
+      "card_button_title": "How it went",
+      "no_sets_completed": "No cards completed yet",
+      "meeting_on": "You date was on:",
+      "no_discussion_description": "You didn't write how your conversation went",
+      "discussion_description_title": "How did your conversation go?",
+      "discuss_next": "What did you want to discuss next?",
+    },
     "new": {
       "title": "Choose a card for the next date",
       "ai_title": "Choose an AI card for the next date",
-      "unavailable_card_title": "Complete any card before to unlock",
+      "unavailable_card_title": "Complete any previous card to unlock",
       "questions": {
         "title": "To discuss with your partner"
       },
@@ -193,7 +208,9 @@
         "title": "When is your date?"
       },
       "finish": {
-        "finish_title": "Thanks, the feedback helped us to adapt the next set for you"
+        "finish_title": "Thanks, the feedback helped us to adapt the next set for you",
+        "diary": "To enable AI personalization, write more about your day in the relationship diary",
+        "diary_button": "Go to diary"
       }
     },
     "ai_generated": {
@@ -221,5 +238,33 @@
     "already_joined": "You are already on the waitlist",
     "joined_successfully": "Hoorah, you're on the waitlist",
     "we_will_get_back_to_you": "As soon as we launch the premium, we will reach you"
+  },
+  "diary": {
+    "title": "Diary",
+    "ai_motivation_title": "Keeping you diary significantly improves the ai card personalization",
+    "add_button": "Add entry",
+    "new":{
+      "title": "Today's entry",
+      "type":{
+        "title": "How do you want to write?",
+        "freewriting": "Freewriting",
+        "questions": "Ask me questions"
+      },
+      "questions": {
+        "feel": "How did I feel recently, and how did my partner contribute to my emotions?",
+        "feel_summary": "**My feelings recently:**",
+        "learnt": "What have I learnt about my partner or our relationship?",
+        "learnt_summary": "**Things I have learnt about my partner or relationship recently:**",
+        "challenges": "What challenges have we faced in our relationship, and how have we overcome them?",
+        "challenges_summary": "**Our challenges recently:**"
+      },
+      "freewriting": "What has happened in your relationship recently? Describe in at least few sentences"
+    }
+  },
+  "notification":{
+    "diary":{
+      "title": "Write your diary",
+      "body": "What has happened in your relationship recently?"
+    }
   }
 }

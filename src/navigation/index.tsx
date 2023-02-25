@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import { AuthContext } from '@app/provider/AuthProvider';
+import { ANON_USER, AuthContext } from '@app/provider/AuthProvider';
 import { NavigationContainer } from '@react-navigation/native';
 
 import Main from './MainStack';
@@ -25,10 +25,10 @@ export default () => {
   let comp = <></>;
   if (signedIn === null || userId === null) {
     comp = <Loading></Loading>;
-  } else if (signedIn === false) {
-    comp = <Auth></Auth>;
-  } else {
+  } else if (signedIn === true && userId !== ANON_USER) {
     comp = <Main></Main>;
+  } else {
+    comp = <Auth></Auth>;
   }
   return <NavigationContainer linking={linking}>{comp}</NavigationContainer>;
 };

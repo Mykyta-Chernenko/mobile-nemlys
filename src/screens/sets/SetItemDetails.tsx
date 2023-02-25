@@ -1,9 +1,8 @@
 import React, { useContext } from 'react';
-import { Alert, ScrollView, View } from 'react-native';
+import { Alert, SafeAreaView, ScrollView, View } from 'react-native';
 import { NativeStackScreenProps } from '@react-navigation/native-stack';
 import { MainStackParamList } from '@app/types/navigation';
 import { GoBackButton } from '@app/components/buttons/GoBackButton';
-import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { i18n } from '@app/localization/i18n';
 import { ContentBox } from '@app/components/utils/ContentBox';
 import ImageOrDefault from '@app/components/utils/ImageOrDefault';
@@ -17,24 +16,19 @@ export default function ({
   route,
   navigation,
 }: NativeStackScreenProps<MainStackParamList, 'SetItemDetails'>) {
-  const insets = useSafeAreaInsets();
   const props = route.params;
   const authContext = useContext(AuthContext);
 
   const join = async () => {
-    const { data: user, error } = await supabase.auth.getUser();
-
-    console.log(user, error);
-    const { data: userData, error: userError } = await supabase.auth.getUser();
-    if (userError) {
-      logErrors(userError);
+    const { error: waitlistCountError, count: waitlistCount } = await supabase
+      .from('waitlist')
+      .select('*', { count: 'exact' })
+      .eq('user_id', authContext.userId);
+    if (waitlistCountError) {
+      logErrors(waitlistCountError);
       return;
     }
-
-    if (
-      (await supabase.from('waitlist').select('*', { count: 'exact' }).eq('user_id', user.user?.id))
-        .count
-    ) {
+    if (waitlistCount) {
       Alert.alert(i18n.t('waitlist.already_joined'), undefined, [
         {
           text: i18n.t('ok'),
@@ -45,7 +39,7 @@ export default function ({
     }
 
     const { error: waitlistError } = await supabase.from('waitlist').insert({
-      user_id: user.user?.id,
+      user_id: authContext.userId,
     });
     if (waitlistError) {
       logErrors(waitlistError);
@@ -88,83 +82,88 @@ export default function ({
     );
   };
   return (
-    <ScrollView
-      contentContainerStyle={{
+    <SafeAreaView
+      style={{
         flexGrow: 1,
         backgroundColor: 'white',
-        flexDirection: 'column',
-        paddingTop: insets.top,
-        padding: 10,
       }}
     >
-      <View style={{ flexDirection: 'row', alignItems: 'center' }}>
-        <GoBackButton
-          onPress={() => {
-            void analytics().logEvent('SetItemDetailsGoBack', {
-              screen: 'SetItemDetails',
-              action: 'Go back button clicked',
-              itemTitle: props.title,
-              userId: authContext.userId,
-            });
-            navigation.navigate('SetHomeScreen', { refreshTimeStamp: undefined });
-          }}
-        ></GoBackButton>
-      </View>
-      <View style={{ height: 200 }}>
-        <ImageOrDefault image={props.image}></ImageOrDefault>
-      </View>
-      <FontText h4 style={{ marginTop: '2%', textAlign: 'center' }}>
-        {props.details}
-      </FontText>
-      <View>
-        {props.type === 'ai_question' && (
-          <>
-            <ContentBox>
-              <FontText style={{ fontWeight: 'bold', fontFamily: 'NunitoSans_700Bold' }}>
-                {i18n.t('set.ai_generated.title')}
-              </FontText>
-              <FontText style={{ fontFamily: 'NunitoSans_400Regular' }}>
-                {i18n.t('set.ai_generated.content')}
-              </FontText>
-            </ContentBox>
+      <ScrollView
+        contentContainerStyle={{
+          flexGrow: 1,
 
+          flexDirection: 'column',
+          padding: 10,
+          paddingTop: 0,
+        }}
+      >
+        <View style={{ flexDirection: 'row', alignItems: 'center' }}>
+          <GoBackButton
+            onPress={() => {
+              void analytics().logEvent('SetItemDetailsGoBack', {
+                screen: 'SetItemDetails',
+                action: 'Go back button clicked',
+                itemTitle: props.title,
+                userId: authContext.userId,
+              });
+              if (props.deckType === 'new') {
+                navigation.navigate('SetHomeScreen', { refreshTimeStamp: undefined });
+              } else if (props.deckType === 'history') {
+                navigation.navigate('HistorySet');
+              }
+            }}
+          ></GoBackButton>
+        </View>
+        <View style={{ height: 200 }}>
+          <ImageOrDefault image={props.image}></ImageOrDefault>
+        </View>
+        <FontText h4 style={{ marginTop: '2%', textAlign: 'center' }}>
+          {props.details}
+        </FontText>
+        <View>
+          {props.type === 'question' ||
+            (props.type === 'action' && props.importance && (
+              <ContentBox>
+                <FontText style={{ fontWeight: 'bold', fontFamily: 'NunitoSans_700Bold' }}>
+                  {i18n.t('set.importance.title')}
+                </FontText>
+                <FontText>{props.importance}</FontText>
+              </ContentBox>
+            ))}
+          {props.type === 'question' && props.tips && (
             <ContentBox>
-              <FontText style={{ fontWeight: 'bold', fontFamily: 'NunitoSans_700Bold' }}>
-                {i18n.t('set.ai_personalization.title')}
-              </FontText>
-              <FontText style={{ fontFamily: 'NunitoSans_400Regular' }}>
-                {i18n.t('set.ai_personalization.content')}
-              </FontText>
+              <FontText style={{ fontWeight: 'bold' }}>{i18n.t('set.tips.title')}</FontText>
+              <FontText>{props.tips}</FontText>
             </ContentBox>
-          </>
-        )}
+          )}
+          {(props.type === 'action' || props.type === 'ai_action') && props.instruction && (
+            <ContentBox>
+              <FontText style={{ fontWeight: 'bold' }}>{i18n.t('set.instruction.title')}</FontText>
+              <FontText>{props.instruction}</FontText>
+            </ContentBox>
+          )}
+          {(props.type === 'ai_question' || props.type === 'ai_action') && (
+            <>
+              <ContentBox>
+                <FontText style={{ fontWeight: 'bold', fontFamily: 'NunitoSans_700Bold' }}>
+                  {i18n.t('set.ai_generated.title')}
+                </FontText>
+                <FontText>{i18n.t('set.ai_generated.content')}</FontText>
+              </ContentBox>
 
-        {props.type !== 'ai_question' && props.importance && (
-          <ContentBox>
-            <FontText style={{ fontWeight: 'bold', fontFamily: 'NunitoSans_700Bold' }}>
-              {i18n.t('set.importance.title')}
-            </FontText>
-            <FontText style={{ fontFamily: 'NunitoSans_400Regular' }}>{props.importance}</FontText>
-          </ContentBox>
-        )}
-        {props.type === 'question' && props.tips && (
-          <ContentBox>
-            <FontText style={{ fontWeight: 'bold' }}>{i18n.t('set.tips.title')}</FontText>
-            <FontText>{props.tips}</FontText>
-          </ContentBox>
-        )}
-        {props.type === 'action' && props.instruction && (
-          <ContentBox>
-            <FontText style={{ fontWeight: 'bold' }}>{i18n.t('set.instruction.title')}</FontText>
-            <FontText>{props.instruction}</FontText>
-          </ContentBox>
-        )}
-        {props.type === 'ai_question' && (
-          <PrimaryButton onPress={() => joinWaitlist()}>
-            {i18n.t('set.get_more_ai_cards')}
-          </PrimaryButton>
-        )}
-      </View>
-    </ScrollView>
+              <ContentBox>
+                <FontText style={{ fontWeight: 'bold', fontFamily: 'NunitoSans_700Bold' }}>
+                  {i18n.t('set.ai_personalization.title')}
+                </FontText>
+                <FontText>{i18n.t('set.ai_personalization.content')}</FontText>
+              </ContentBox>
+              <PrimaryButton onPress={() => joinWaitlist()}>
+                {i18n.t('set.get_more_ai_cards')}
+              </PrimaryButton>
+            </>
+          )}
+        </View>
+      </ScrollView>
+    </SafeAreaView>
   );
 }

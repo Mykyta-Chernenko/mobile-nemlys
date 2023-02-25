@@ -54,7 +54,11 @@ export default function ({
   return (
     <SurveyView
       loading={loading}
-      title={reflectionQuestion?.details || ''}
+      title={
+        reflectionQuestion?.details
+          ? i18n.t('set.reflection.title') + '\n' + reflectionQuestion?.details
+          : ''
+      }
       progress={0.1}
       showButton={true}
       onPress={() => {

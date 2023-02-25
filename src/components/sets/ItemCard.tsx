@@ -57,13 +57,10 @@ export default function (props: SetItemProps) {
                 <View
                   key={i}
                   style={{
-                    borderRadius: 10,
-                    borderColor: theme.colors.primary,
-                    borderWidth: 1,
                     padding: 3,
                   }}
                 >
-                  <FontText style={{ color: theme.colors.primary }}>{t}</FontText>
+                  <FontText style={{ color: theme.colors.primary }}>{'#' + t}</FontText>
                 </View>
               ))}
             </View>

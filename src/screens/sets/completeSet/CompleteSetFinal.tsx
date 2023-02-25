@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import { MainStackParamList } from '@app/types/navigation';
 import { i18n } from '@app/localization/i18n';
 import { NativeStackScreenProps } from '@react-navigation/native-stack';
@@ -13,12 +13,35 @@ import {
 import { goBackToThePreviousQuestion } from './CompleteSetQuestion';
 import { FontText } from '@app/components/utils/FontText';
 import { logErrors } from '@app/utils/errors';
+import { AuthContext } from '@app/provider/AuthProvider';
+import { View } from 'react-native';
+import { PrimaryButton } from '@app/components/buttons/PrimaryButtons';
 
 export default function ({
   route,
   navigation,
 }: NativeStackScreenProps<MainStackParamList, 'CompleteSetFinal'>) {
-  const handlePress = async () => {
+  const [loading, setLoading] = useState(true);
+  const [hasDiaryEntries, setHasDiaryEntries] = useState<boolean>(false);
+  const authContext = useContext(AuthContext);
+
+  useEffect(() => {
+    async function getDiaryEntries() {
+      const res = await supabase
+        .from('diary')
+        .select('*', { count: 'exact' })
+        .eq('user_id', authContext.userId);
+      if (res.error) {
+        logErrors(res.error);
+        return;
+      }
+      setHasDiaryEntries(!!res.count);
+      setLoading(false);
+    }
+    void getDiaryEntries();
+  }, [authContext.userId, setLoading]);
+  const handlePressBase = async () => {
+    setLoading(true);
     const user = await supabase.auth.getUser();
     if (user.error) {
       logErrors(user.error);
@@ -54,11 +77,18 @@ export default function ({
       logErrors(coupleSetReponse.error);
       return;
     }
+  };
+  const handlePress = async () => {
+    await handlePressBase();
     navigation.navigate('SetHomeScreen', { refreshTimeStamp: new Date().toISOString() });
+  };
+  const diaryButtonPress = async () => {
+    await handlePressBase();
+    navigation.navigate('Diary', { refreshTimeStamp: new Date().toISOString() });
   };
   return (
     <SurveyView
-      loading={false}
+      loading={loading}
       title={''}
       buttonText={i18n.t('finish')}
       progress={1}
@@ -73,7 +103,22 @@ export default function ({
         )
       }
     >
-      <FontText h4>{i18n.t('set.chosen.finish.finish_title')}</FontText>
+      <View>
+        <FontText style={{ fontSize: 18 }}>{i18n.t('set.chosen.finish.finish_title')}</FontText>
+        {!hasDiaryEntries && (
+          <View style={{ marginTop: 50 }}>
+            <FontText style={{ fontSize: 20, width: '100%', textAlign: 'center' }}>
+              {i18n.t('set.chosen.finish.diary')}
+            </FontText>
+            <PrimaryButton
+              style={{ marginTop: 5, width: '50%', alignSelf: 'center' }}
+              onPress={() => void diaryButtonPress()}
+            >
+              {i18n.t('set.chosen.finish.diary_button')}
+            </PrimaryButton>
+          </View>
+        )}
+      </View>
     </SurveyView>
   );
 }
