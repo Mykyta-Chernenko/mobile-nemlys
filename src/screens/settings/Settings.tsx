@@ -5,8 +5,6 @@ import { i18n } from '@app/localization/i18n';
 import { AUTH_STORAGE_KEY, supabase } from '@app/api/initSupabase';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import { logErrors } from '@app/utils/errors';
-import * as MailComposer from 'expo-mail-composer';
-import { SUPPORT_EMAIL } from '@app/utils/constants';
 import analytics from '@react-native-firebase/analytics';
 import { NativeStackScreenProps } from '@react-navigation/native-stack';
 import { MainStackParamList } from '@app/types/navigation';
@@ -15,49 +13,14 @@ import { GoBackButton } from '@app/components/buttons/GoBackButton';
 import { AuthContext } from '@app/provider/AuthProvider';
 import { FontText } from '@app/components/utils/FontText';
 import { SafeAreaView } from 'react-native-safe-area-context';
+import Feedback from './Feedback';
 
 export default function ({ navigation }: NativeStackScreenProps<MainStackParamList, 'Settings'>) {
   const authContext = useContext(AuthContext);
 
-  const sendEmail = async () => {
-    if (await MailComposer.isAvailableAsync()) {
-      await MailComposer.composeAsync({
-        subject: i18n.t('settings.support_email_subject'),
-        recipients: [SUPPORT_EMAIL],
-      });
-    } else {
-      alert(i18n.t('settings.cannot_send_email', { email: SUPPORT_EMAIL }));
-    }
-  };
-  const sendEmailAlert = () => {
-    void analytics().logEvent('ViewWithMenuClickSendFeedback', {
-      screen: 'ViewWithMenu',
-      action: 'Clicked on send your feedback button',
-      userId: authContext.userId,
-    });
-    Alert.alert(
-      i18n.t('settings.send_your_feedback'),
-      undefined,
-      [
-        {
-          text: i18n.t('cancel'),
-          style: 'cancel',
-        },
-        {
-          text: i18n.t('settings.send_email'),
-          onPress: () => void sendEmail(),
-          style: 'default',
-        },
-      ],
-      {
-        cancelable: true,
-      },
-    );
-  };
-
   const logout = async () => {
     void analytics().logEvent('ViewWithMenuLogout', {
-      screen: 'ViewWithMenu',
+      screen: 'Settings',
       action: 'Clicked logout',
       userId: authContext.userId,
     });
@@ -67,7 +30,7 @@ export default function ({ navigation }: NativeStackScreenProps<MainStackParamLi
   };
   const deleteAccount = async () => {
     void analytics().logEvent('ViewWithMenuClickSendFeedback', {
-      screen: 'ViewWithMenu',
+      screen: 'Settings',
       action: 'Clicked delete account',
       userId: authContext.userId,
     });
@@ -137,23 +100,7 @@ export default function ({ navigation }: NativeStackScreenProps<MainStackParamLi
             source={require('../../../assets/images/settings.png')}
           ></Image>
         </View>
-        <TouchableOpacity
-          onPress={() => void sendEmailAlert()}
-          style={{
-            paddingHorizontal: 20,
-            flexDirection: 'row',
-            alignItems: 'center',
-          }}
-        >
-          <View style={{ flexDirection: 'row' }}>
-            <Icon name="thumb-up-outline" type="material-community" color="black" size={20} />
-            <View style={{ width: 5 }}></View>
-            <Icon name="thumb-down-outline" type="material-community" color="black" size={20} />
-          </View>
-          <FontText style={{ marginLeft: 15, fontSize: 18 }}>
-            {i18n.t('settings.feedback')}
-          </FontText>
-        </TouchableOpacity>
+        <Feedback></Feedback>
         <TouchableOpacity
           onPress={() => {
             void logout().then(logout);

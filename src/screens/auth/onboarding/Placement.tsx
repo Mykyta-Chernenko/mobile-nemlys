@@ -109,12 +109,15 @@ export default function ({
     if (chosenValue) {
       userAnswers.push({ question: currentQuestion, answer: chosenValue });
       if (isNextQuestion) {
-        navigation.navigate('Placement', {
-          ...route.params,
-          questions,
-          questionIndex: questionIndex + 1,
-          userAnswers,
-        });
+        // micro delay between answers
+        setTimeout(() => {
+          navigation.navigate('Placement', {
+            ...route.params,
+            questions,
+            questionIndex: questionIndex + 1,
+            userAnswers,
+          });
+        }, 200);
       } else {
         navigation.navigate('HowWeWork', { ...route.params, userAnswers });
       }

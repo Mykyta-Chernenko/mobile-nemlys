@@ -103,22 +103,22 @@ export const ViewSetHomeScreen = (props: Props) => {
     >
       <View
         style={{
-          height: 270,
+          height: 240,
         }}
       >
         <View
           style={{
-            height: 120,
+            height: 90,
             width: '100%',
             backgroundColor: backgroundColor,
             position: 'absolute',
-            marginTop: 190,
+            marginTop: 160,
           }}
         ></View>
         <Image
           resizeMode="contain"
           style={{
-            height: 200,
+            height: 170,
             width: '100%',
             marginTop: 20,
             justifyContent: 'flex-end',
@@ -129,7 +129,7 @@ export const ViewSetHomeScreen = (props: Props) => {
 
         <View
           style={{
-            marginTop: 170,
+            marginTop: 140,
             position: 'absolute',
             display: 'flex',
             flexDirection: 'column',
