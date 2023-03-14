@@ -16,6 +16,8 @@ const Auth = () => {
     <AuthStack.Navigator
       screenOptions={{
         headerShown: false,
+        // disable ios gesture back
+        gestureEnabled: false,
       }}
     >
       <AuthStack.Screen options={{ animation: 'fade' }} name="Welcome" component={Welcome} />

@@ -28,7 +28,7 @@ export const OAuth = ({
   const auth = useContext(AuthContext);
 
   const onPress = async (provider: Provider) => {
-    void analytics().logEvent('OAuthInititated', {
+    void analytics().logEvent('OAuthInititated' + provider, {
       screen: 'OAuth',
       action: 'OAuth button clicked',
       provider,

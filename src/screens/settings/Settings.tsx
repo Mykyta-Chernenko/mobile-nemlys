@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
 import { Icon } from '@rneui/themed';
-import { Alert, SafeAreaView, ScrollView, TouchableOpacity, View } from 'react-native';
+import { Alert, ScrollView, TouchableOpacity, View } from 'react-native';
 import { i18n } from '@app/localization/i18n';
 import { AUTH_STORAGE_KEY, supabase } from '@app/api/initSupabase';
 import AsyncStorage from '@react-native-async-storage/async-storage';
@@ -14,6 +14,7 @@ import { Image } from '@rneui/themed';
 import { GoBackButton } from '@app/components/buttons/GoBackButton';
 import { AuthContext } from '@app/provider/AuthProvider';
 import { FontText } from '@app/components/utils/FontText';
+import { SafeAreaView } from 'react-native-safe-area-context';
 
 export default function ({ navigation }: NativeStackScreenProps<MainStackParamList, 'Settings'>) {
   const authContext = useContext(AuthContext);
@@ -32,6 +33,7 @@ export default function ({ navigation }: NativeStackScreenProps<MainStackParamLi
     void analytics().logEvent('ViewWithMenuClickSendFeedback', {
       screen: 'ViewWithMenu',
       action: 'Clicked on send your feedback button',
+      userId: authContext.userId,
     });
     Alert.alert(
       i18n.t('settings.send_your_feedback'),
@@ -57,6 +59,7 @@ export default function ({ navigation }: NativeStackScreenProps<MainStackParamLi
     void analytics().logEvent('ViewWithMenuLogout', {
       screen: 'ViewWithMenu',
       action: 'Clicked logout',
+      userId: authContext.userId,
     });
     await supabase.auth.signOut();
     // just to make sure in case something goes wrong
@@ -66,6 +69,7 @@ export default function ({ navigation }: NativeStackScreenProps<MainStackParamLi
     void analytics().logEvent('ViewWithMenuClickSendFeedback', {
       screen: 'ViewWithMenu',
       action: 'Clicked delete account',
+      userId: authContext.userId,
     });
     const res = await supabase.rpc('delete_user');
     if (res.error) {

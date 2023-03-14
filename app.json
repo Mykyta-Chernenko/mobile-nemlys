@@ -26,13 +26,7 @@
       "versionCode": 200
     },
     "web": {
-      "favicon": "./assets/favicon.png",
-      "config": {
-        "firebase": {
-          "apiKey": "AIzaSyCaZEazf-TAdfmlKwQzLgFq-s0T_wxm5uI",
-          "measurementId": "G-ZKJ24DZT5T"
-        }
-      }
+      "favicon": "./assets/favicon.png"
     },
     "extra": {
       "eas": {

@@ -247,8 +247,9 @@ export default function ({
   };
   const handleSubmit = async () => {
     void analytics().logEvent('SetReminderClickSubmit', {
-      screen: 'ViewWithMenu',
-      action: 'Clicked delete account',
+      screen: 'SetReminder',
+      action: 'User accepted card on SetReminder screen',
+      userId: authContext.userId,
     });
     await registerForPushNotificationsAsync();
   };
@@ -271,6 +272,11 @@ export default function ({
         >
           <GoBackButton
             onPress={() => {
+              void analytics().logEvent('SetReminderGoBackPressed', {
+                screen: 'SetReminder',
+                action: 'Go back pressed',
+                userId: authContext.userId,
+              });
               navigation.goBack();
             }}
           ></GoBackButton>
@@ -334,7 +340,14 @@ export default function ({
             title={i18n.t('set.reminder.no_date_yet_checkbox')}
             checkedColor={theme.colors.primary}
             checked={noDateYet}
-            onPress={() => setNoDateYet(!noDateYet)}
+            onPress={() => {
+              void analytics().logEvent('SetReminderSetNoDateYet', {
+                screen: 'SetReminder',
+                action: 'SetNoDateYet',
+                userId: authContext.userId,
+              });
+              setNoDateYet(!noDateYet);
+            }}
             containerStyle={{
               paddingHorizontal: 0,
             }}
@@ -358,7 +371,7 @@ export default function ({
               <Loading></Loading>
             ) : (
               <PrimaryButton
-                style={{ marginTop: 5 }}
+                buttonStyle={{ marginTop: 5 }}
                 title={i18n.t('set.reminder.next_button')}
                 onPress={() => void handleSubmit()}
               ></PrimaryButton>

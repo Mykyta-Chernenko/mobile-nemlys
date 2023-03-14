@@ -1,5 +1,5 @@
 import React, { useContext, useEffect, useState } from 'react';
-import { SafeAreaView, ScrollView, View } from 'react-native';
+import { ScrollView, View } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
 import { MainNavigationProp } from '@app/types/navigation';
 import { AuthContext } from '@app/provider/AuthProvider';
@@ -8,6 +8,7 @@ import { logErrors } from '@app/utils/errors';
 import { supabase } from '@app/api/initSupabase';
 import moment from 'moment';
 import analytics from '@react-native-firebase/analytics';
+import { SafeAreaView } from 'react-native-safe-area-context';
 
 import { SupabaseAnswer } from '@app/types/api';
 import { Loading } from '../../components/utils/Loading';

@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import { Alert, SafeAreaView, ScrollView, View } from 'react-native';
+import { Alert, ScrollView, View } from 'react-native';
 import { NativeStackScreenProps } from '@react-navigation/native-stack';
 import { MainStackParamList } from '@app/types/navigation';
 import { GoBackButton } from '@app/components/buttons/GoBackButton';
@@ -11,6 +11,8 @@ import { PrimaryButton } from '@app/components/buttons/PrimaryButtons';
 import { supabase } from '@app/api/initSupabase';
 import { logErrors } from '@app/utils/errors';
 import { AuthContext } from '@app/provider/AuthProvider';
+import { SafeAreaView } from 'react-native-safe-area-context';
+
 import analytics from '@react-native-firebase/analytics';
 export default function ({
   route,
@@ -55,12 +57,18 @@ export default function ({
         },
       ],
     );
+    void analytics().logEvent('SetItemsDetailsJoinedWaitList', {
+      screen: 'SetItemsDetails',
+      action: 'Joined waitlist',
+      userId: authContext.userId,
+    });
     return;
   };
   const joinWaitlist = () => {
     void analytics().logEvent('SetItemsDetailsJoinWaitListInititated', {
       screen: 'SetItemsDetails',
-      action: 'Clicked on get more ai sets',
+      action: 'Clicked on join waitlist',
+      userId: authContext.userId,
     });
     Alert.alert(
       i18n.t('waitlist.title'),
@@ -121,15 +129,14 @@ export default function ({
           {props.details}
         </FontText>
         <View>
-          {props.type === 'question' ||
-            (props.type === 'action' && props.importance && (
-              <ContentBox>
-                <FontText style={{ fontWeight: 'bold', fontFamily: 'NunitoSans_700Bold' }}>
-                  {i18n.t('set.importance.title')}
-                </FontText>
-                <FontText>{props.importance}</FontText>
-              </ContentBox>
-            ))}
+          {(props.type === 'question' || props.type === 'action') && props.importance && (
+            <ContentBox>
+              <FontText style={{ fontWeight: 'bold', fontFamily: 'NunitoSans_700Bold' }}>
+                {i18n.t('set.importance.title')}
+              </FontText>
+              <FontText>{props.importance}</FontText>
+            </ContentBox>
+          )}
           {props.type === 'question' && props.tips && (
             <ContentBox>
               <FontText style={{ fontWeight: 'bold' }}>{i18n.t('set.tips.title')}</FontText>

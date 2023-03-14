@@ -145,24 +145,28 @@ export const ViewSetHomeScreen = (props: Props) => {
               borderRadius: 15,
             }}
           >
-            <View style={{ flexDirection: 'row', justifyContent: 'center', alignItems: 'center' }}>
-              <FontText style={{ color: theme.colors.white, marginRight: 7, fontSize: 16 }}>
-                {/* TODO change when partner appears */}
-                {name} {'& Partner'}
-              </FontText>
-              <TouchableOpacity
-                onPress={() => {
-                  void analytics().logEvent('NewSetSettingsNavigated', {
-                    screen: 'NewSet',
-                    action: 'SettingsNavigated',
-                    userId: authContext.userId,
-                  });
-                  navigation.navigate('Settings');
-                }}
+            {name !== null && (
+              <View
+                style={{ flexDirection: 'row', justifyContent: 'center', alignItems: 'center' }}
               >
-                <Icon name="settings" size={24} color={theme.colors.white}></Icon>
-              </TouchableOpacity>
-            </View>
+                <FontText style={{ color: theme.colors.white, marginRight: 7, fontSize: 16 }}>
+                  {/* TODO change when partner appears */}
+                  {`${name} & Partner`}
+                </FontText>
+                <TouchableOpacity
+                  onPress={() => {
+                    void analytics().logEvent('NewSetSettingsNavigated', {
+                      screen: 'NewSet',
+                      action: 'SettingsNavigated',
+                      userId: authContext.userId,
+                    });
+                    navigation.navigate('Settings');
+                  }}
+                >
+                  <Icon name="settings" size={24} color={theme.colors.white}></Icon>
+                </TouchableOpacity>
+              </View>
+            )}
             {setsCompleted !== null && setsCompleted > 0 && (
               <>
                 <View
@@ -265,8 +269,8 @@ export const ViewSetHomeScreen = (props: Props) => {
                       }}
                       titleStyle={{ fontSize: 14, color: theme.colors.white }}
                       onPress={() => {
-                        void analytics().logEvent('HistorySetHistorySetNavigated', {
-                          screen: 'HistoruSet',
+                        void analytics().logEvent('HistorySetNewSetNavigated', {
+                          screen: 'HistorySet',
                           action: 'NewSetNavigated',
                           userId: authContext.userId,
                         });

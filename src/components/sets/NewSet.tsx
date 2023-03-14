@@ -46,7 +46,7 @@ export default function () {
           res.data.sets.map((s) => ({ setId: s.id, type: s.type, coupleSetId: null })),
         );
         setSetsQuestionAction(setsQuestionAction);
-        void getAISet(setsQuestionAction, 0);
+        void getAISet(setsQuestionAction, 1);
       }
 
       setLoading(false);

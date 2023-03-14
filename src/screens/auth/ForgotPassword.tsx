@@ -8,7 +8,7 @@ import * as Linking from 'expo-linking';
 import { i18n } from '@app/localization/i18n';
 import { KEYBOARD_BEHAVIOR } from '@app/utils/constants';
 import { FontText } from '@app/components/utils/FontText';
-import { logErrorsWithMessage } from '@app/utils/errors';
+import { logErrorsWithMessageWithoutAlert } from '@app/utils/errors';
 import { ANON_USER } from '@app/provider/AuthProvider';
 import analytics from '@react-native-firebase/analytics';
 
@@ -35,7 +35,7 @@ export default function ({
     }
     if (error) {
       setLoading(false);
-      logErrorsWithMessage(error, error.message);
+      logErrorsWithMessageWithoutAlert(error);
     }
   }
 

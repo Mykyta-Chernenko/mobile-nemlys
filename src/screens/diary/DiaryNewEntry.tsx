@@ -2,7 +2,7 @@ import React, { useContext, useRef, useState } from 'react';
 import { useTheme } from '@rneui/themed';
 import { MainStackParamList } from '@app/types/navigation';
 import { NativeStackScreenProps } from '@react-navigation/native-stack';
-import { SafeAreaView, Switch, View } from 'react-native';
+import { Switch, View } from 'react-native';
 import { AuthContext } from '@app/provider/AuthProvider';
 import analytics from '@react-native-firebase/analytics';
 import StyledTextInput from '@app/components/utils/StyledTextInput';
@@ -17,6 +17,8 @@ import { Loading } from '../../components/utils/Loading';
 import moment from 'moment';
 import { TIMEZONE } from '@app/utils/constants';
 import { supabase } from '@app/api/initSupabase';
+import { SafeAreaView } from 'react-native-safe-area-context';
+
 export default function ({
   route,
   navigation,
@@ -185,6 +187,7 @@ export default function ({
                 <Switch
                   style={{ marginHorizontal: 10 }}
                   trackColor={{ false: theme.colors.grey0, true: theme.colors.primary }}
+                  thumbColor={theme.colors.white}
                   ios_backgroundColor={theme.colors.grey0}
                   onValueChange={toggleSwitch}
                   value={isQuestionsOn}
@@ -195,15 +198,14 @@ export default function ({
               </View>
             </View>
             <View>{mainCointent}</View>
-            <View>
-              <PrimaryButton
-                style={{ width: 120, alignSelf: 'center', marginTop: 20 }}
-                onPress={() => void saveDiaryEntry()}
-                disabled={!saveEnabled}
-              >
-                {i18n.t('save')}
-              </PrimaryButton>
-            </View>
+
+            <PrimaryButton
+              buttonStyle={{ marginTop: 20, width: 120, alignSelf: 'center' }}
+              onPress={() => void saveDiaryEntry()}
+              disabled={!saveEnabled}
+            >
+              {i18n.t('save')}
+            </PrimaryButton>
           </View>
         )}
       </KeyboardAwareScrollView>

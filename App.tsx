@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import 'react-native-url-polyfill/auto';
 import { StatusBar } from 'expo-status-bar';
 import Navigation from './src/navigation';
@@ -12,10 +12,17 @@ import FontWrapper from '@app/theme/FontWrapper';
 import * as Sentry from 'sentry-expo';
 import { Native } from 'sentry-expo';
 import { nativeBuildVersion } from 'expo-application';
-
+import { BackHandler } from 'react-native';
 !__DEV__ && Native.captureMessage(nativeBuildVersion || 'no version');
 
 export default function App() {
+  // disable android button back
+  useEffect(() => {
+    const backHandler = BackHandler.addEventListener('hardwareBackPress', () => {
+      return true;
+    });
+    return () => backHandler.remove();
+  }, []);
   return (
     <ThemeProvider theme={theme}>
       <FontWrapper>
@@ -32,5 +39,11 @@ Sentry.init({
   dsn: 'https://e3fb818e5bc14ba896e7b2f7bbd410b1@o4504363776344064.ingest.sentry.io/4504363782438912',
   enableInExpoDevelopment: false,
   debug: true,
+  integrations: [
+    new Sentry.Native.ReactNativeTracing({
+      tracingOrigins: [/supabase/],
+    }),
+  ],
+  tracesSampleRate: 0.1,
 });
 i18n.locale = Localization.locale;

@@ -21,6 +21,8 @@ const Main = () => {
     <MainStack.Navigator
       screenOptions={{
         headerShown: false,
+        // disable ios gesture back
+        gestureEnabled: false,
       }}
     >
       <MainStack.Screen

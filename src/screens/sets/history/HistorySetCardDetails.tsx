@@ -70,7 +70,6 @@ export default function ({
         .eq('couple_set_feedback_id', coupleSetFeedbackRes.data.id)
         .eq('feedback_question_id', feedbackConversationDetailsRes.data.id)
         .single();
-
       if (feedbackAnswerConversationDetailsRes?.error) {
         logErrors(feedbackAnswerConversationDetailsRes.error);
         return;
@@ -89,19 +88,19 @@ export default function ({
       }
       const feedbackAnswerNextDetailsRes: SupabaseAnswer<{
         text_answer: string;
-      }> = await supabase
+      } | null> = await supabase
         .from('couple_set_feedback_answer')
         .select('text_answer')
         .eq('couple_set_feedback_id', coupleSetFeedbackRes.data.id)
         .eq('feedback_question_id', feedbackNextnDetailsRes.data.id)
-        .single();
-
+        .maybeSingle();
       if (feedbackAnswerNextDetailsRes?.error) {
         logErrors(feedbackAnswerNextDetailsRes.error);
         return;
       }
-      setDiscussNext(feedbackAnswerNextDetailsRes.data.text_answer);
-
+      if (feedbackAnswerNextDetailsRes.data) {
+        setDiscussNext(feedbackAnswerNextDetailsRes.data.text_answer);
+      }
       setLoading(false);
     }
     void getCurrentLevel();

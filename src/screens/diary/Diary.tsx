@@ -1,12 +1,7 @@
 import React, { useContext, useEffect, useState } from 'react';
-import {
-  SafeAreaView,
-  ScrollView,
-  StyleProp,
-  TouchableOpacity,
-  View,
-  ViewStyle,
-} from 'react-native';
+import { ScrollView, StyleProp, TouchableOpacity, View, ViewStyle } from 'react-native';
+import { SafeAreaView } from 'react-native-safe-area-context';
+
 import { useNavigation } from '@react-navigation/native';
 import { MainNavigationProp } from '@app/types/navigation';
 import { AuthContext } from '@app/provider/AuthProvider';
@@ -187,7 +182,7 @@ export default function ({ route }) {
 
                   <PrimaryButton
                     size="sm"
-                    style={{ width: '40%', alignSelf: 'center', marginVertical: 20 }}
+                    buttonStyle={{ width: '40%', alignSelf: 'center', marginVertical: 20 }}
                     onPress={() => {
                       void analytics().logEvent('DiaryAddEntryClicked', {
                         screen: 'Diary',

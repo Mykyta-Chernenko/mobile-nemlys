@@ -193,7 +193,7 @@ export default function ({
             </View>
           ) : (
             <Button
-              style={{ marginTop: '3%' }}
+              buttonStyle={{ marginTop: '3%' }}
               title={loading ? i18n.t('loading') : i18n.t('register.continue_with_email.default')}
               onPress={() => {
                 setContinueWithEmail(true);

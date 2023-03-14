@@ -16,6 +16,7 @@ import { logErrors } from '@app/utils/errors';
 import { AuthContext } from '@app/provider/AuthProvider';
 import { View } from 'react-native';
 import { PrimaryButton } from '@app/components/buttons/PrimaryButtons';
+import analytics from '@react-native-firebase/analytics';
 
 export default function ({
   route,
@@ -42,6 +43,13 @@ export default function ({
   }, [authContext.userId, setLoading]);
   const handlePressBase = async () => {
     setLoading(true);
+    void analytics().logEvent('CompleteSetFinish', {
+      screen: 'CompleteSetFinish',
+      action: 'Finish button clicked',
+      setId: route.params.setId,
+      questionIndex: route.params.questionIndex,
+      userId: authContext.userId,
+    });
     const user = await supabase.auth.getUser();
     if (user.error) {
       logErrors(user.error);
@@ -80,10 +88,20 @@ export default function ({
   };
   const handlePress = async () => {
     await handlePressBase();
+    void analytics().logEvent('CompleteSetFinalNavigateHome', {
+      screen: 'CompleteSetFinal',
+      action: 'Navigate home clicked',
+      userId: authContext.userId,
+    });
     navigation.navigate('SetHomeScreen', { refreshTimeStamp: new Date().toISOString() });
   };
   const diaryButtonPress = async () => {
     await handlePressBase();
+    void analytics().logEvent('CompleteSetFinalNavigateDiary', {
+      screen: 'CompleteSetFinal',
+      action: 'Navigate diary clicked',
+      userId: authContext.userId,
+    });
     navigation.navigate('Diary', { refreshTimeStamp: new Date().toISOString() });
   };
   return (
@@ -111,7 +129,7 @@ export default function ({
               {i18n.t('set.chosen.finish.diary')}
             </FontText>
             <PrimaryButton
-              style={{ marginTop: 5, width: '50%', alignSelf: 'center' }}
+              buttonStyle={{ marginTop: 5, width: '50%', alignSelf: 'center' }}
               onPress={() => void diaryButtonPress()}
             >
               {i18n.t('set.chosen.finish.diary_button')}
