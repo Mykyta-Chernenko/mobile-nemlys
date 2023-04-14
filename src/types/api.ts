@@ -139,3 +139,9 @@ export class APIDiary extends ApiEntry {
   date: string;
   text: string;
 }
+
+export class APIConversation extends ApiEntry {
+  user_id: string;
+  text: string;
+  ai: string;
+}

@@ -23,9 +23,22 @@
   "join": "Join",
   "history": "History",
   "cards": "Cards",
+  "beta":{
+    "pre_beta_title": "beta",
+    "title": "Join our beta",
+    "content": "Our beta give you the access to the features that we haven't released to the public",
+    "become_beta_user": "Become beta user",
+    "joined_successfully": "Welcome to the beta 😈"
+  },
+  "conversations":{
+    "record": "Record",
+    "stop": "Stop",
+    "instruction": "You can record a conversation with your partner and our AI will analyze it and provide insights about the negative communication patterns it might encounter, and potential solutions"
+  },
   "settings": {
     "logout": "Logout",
     "feedback": "Give us feedback",
+    "conversations": "Conversations",
     "delete_account": "Delete account",
     "send_email": "Send email",
     "are_you_sure_you_want_to_delete_account": "Are you sure you want to delete your account?",

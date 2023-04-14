@@ -10,10 +10,7 @@ import { ThemeProvider } from '@rneui/themed';
 import { theme } from '@app/theme';
 import FontWrapper from '@app/theme/FontWrapper';
 import * as Sentry from 'sentry-expo';
-import { Native } from 'sentry-expo';
-import { nativeBuildVersion } from 'expo-application';
 import { BackHandler } from 'react-native';
-!__DEV__ && Native.captureMessage(nativeBuildVersion || 'no version');
 
 export default function App() {
   // disable android button back
@@ -23,6 +20,7 @@ export default function App() {
     });
     return () => backHandler.remove();
   }, []);
+
   return (
     <ThemeProvider theme={theme}>
       <FontWrapper>

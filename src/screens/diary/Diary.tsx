@@ -21,6 +21,21 @@ import { FontText } from '../../components/utils/FontText';
 import { PrimaryButton } from '../../components/buttons/PrimaryButtons';
 import StyledMarkdown from '../../components/utils/StyledMarkdown';
 import { NOTIFICATION_IDENTIFIERS } from '@app/types/domain';
+export const entryTitle = (theme, date: moment.Moment) => {
+  return (
+    <View style={{ flexDirection: 'row', alignItems: 'center', alignContent: 'center' }}>
+      <FontText style={{ color: theme.colors.primary, fontSize: 18, marginRight: 3 }}>
+        {date.format('DD')}
+      </FontText>
+      <FontText style={{ fontSize: 18, marginRight: 10 }}>
+        {date.format('MMM').toUpperCase()}
+      </FontText>
+      <FontText style={{ fontSize: 14, color: theme.colors.grey4 }}>
+        {date.format('YYYY, dddd')}
+      </FontText>
+    </View>
+  );
+};
 export default function ({ route }) {
   const [diaryEntires, setDiaryEntires] = useState<APIDiary[]>([]);
   const [loading, setLoading] = useState<boolean>(true);
@@ -71,21 +86,7 @@ export default function ({ route }) {
   useEffect(() => {
     void setupDiaryNotification();
   }, []);
-  const entryTitle = (date: moment.Moment) => {
-    return (
-      <View style={{ flexDirection: 'row', alignItems: 'center', alignContent: 'center' }}>
-        <FontText style={{ color: theme.colors.primary, fontSize: 18, marginRight: 3 }}>
-          {date.format('DD')}
-        </FontText>
-        <FontText style={{ fontSize: 18, marginRight: 10 }}>
-          {date.format('MMM').toUpperCase()}
-        </FontText>
-        <FontText style={{ fontSize: 14, color: theme.colors.grey4 }}>
-          {date.format('YYYY, dddd')}
-        </FontText>
-      </View>
-    );
-  };
+
   const navigateToEntry = (id: number) => {
     void analytics().logEvent('DiaryGoToDiaryEntry', {
       screen: 'Diary',
@@ -171,14 +172,14 @@ export default function ({ route }) {
             <View>
               {entryToday ? (
                 <TouchableOpacity onPress={() => navigateToEntry(entryToday.id)}>
-                  {entryTitle(moment().utcOffset(TIMEZONE))}
+                  {entryTitle(theme, moment().utcOffset(TIMEZONE))}
                   <View style={diaryEntryStyle}>
                     <StyledMarkdown>{entryToday.text}</StyledMarkdown>
                   </View>
                 </TouchableOpacity>
               ) : (
                 <>
-                  {entryTitle(moment().utcOffset(TIMEZONE))}
+                  {entryTitle(theme, moment().utcOffset(TIMEZONE))}
 
                   <PrimaryButton
                     size="sm"
@@ -203,7 +204,7 @@ export default function ({ route }) {
                 key={d.id}
                 style={{ marginTop: 15 }}
               >
-                {entryTitle(moment(d.date, 'YYYY-MM-DD').utcOffset(TIMEZONE))}
+                {entryTitle(theme, moment(d.date, 'YYYY-MM-DD').utcOffset(TIMEZONE))}
                 <View style={diaryEntryStyle}>
                   <StyledMarkdown>{d.text}</StyledMarkdown>
                 </View>

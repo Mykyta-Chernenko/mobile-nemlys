@@ -16,9 +16,8 @@ interface Props {
   children: React.ReactNode;
 }
 import { useRoute } from '@react-navigation/native';
-import { HistorySetScreenName } from '@app/utils/constants';
+import { HistorySetScreenName, IS_SUPABASE_DEV } from '@app/utils/constants';
 import { FontText } from '../utils/FontText';
-import * as Notifications from 'expo-notifications';
 const CARD_PER_SET = 10;
 export const ViewSetHomeScreen = (props: Props) => {
   const [name, setName] = useState<string | null>(null);
@@ -28,16 +27,6 @@ export const ViewSetHomeScreen = (props: Props) => {
   const { theme } = useTheme();
   const [setsCompleted, setSetsCompleted] = useState<number | null>(null);
   const route = useRoute();
-  React.useEffect(() => {
-    const subscription = Notifications.addNotificationResponseReceivedListener((response) => {
-      const screen = response.notification.request.content.data.screen;
-      if (screen) {
-        // eslint-disable-next-line @typescript-eslint/no-unsafe-argument
-        navigation.navigate(screen as any);
-      }
-    });
-    return () => subscription.remove();
-  }, []);
 
   const backgroundColor =
     route.name === HistorySetScreenName ? 'rgba(140, 132, 176, 1)' : 'rgba(100, 86, 171, 1)';
@@ -151,7 +140,7 @@ export const ViewSetHomeScreen = (props: Props) => {
               >
                 <FontText style={{ color: theme.colors.white, marginRight: 7, fontSize: 16 }}>
                   {/* TODO change when partner appears */}
-                  {`${name} & Partner`}
+                  {`${name} & Partner` + (IS_SUPABASE_DEV ? ' dev' : '')}
                 </FontText>
                 <TouchableOpacity
                   onPress={() => {

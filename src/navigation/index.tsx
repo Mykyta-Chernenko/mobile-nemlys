@@ -6,6 +6,7 @@ import Main from './MainStack';
 import Auth from './AuthStack';
 import { TYPE_NEW_PASSWORD_PATH } from '@app/screens/auth/TypeNewPassword';
 import { Loading } from '@app/components/utils/Loading';
+import NavigationWrapper from './NavigationWrapper';
 const linking = {
   prefixes: ['nemlys://', 'exp://192.168.0.9:19000/--/'],
   config: {
@@ -30,5 +31,9 @@ export default () => {
   } else {
     comp = <Auth></Auth>;
   }
-  return <NavigationContainer linking={linking}>{comp}</NavigationContainer>;
+  return (
+    <NavigationContainer linking={linking}>
+      <NavigationWrapper>{comp}</NavigationWrapper>
+    </NavigationContainer>
+  );
 };

@@ -39,6 +39,10 @@ export default function () {
     }
 
     async function getSets() {
+      const res1: SupabaseEdgeAnswer<{ question: string }> = await supabase.functions.invoke(
+        'generate-question',
+      );
+      console.log(res1);
       const res: SupabaseEdgeAnswer<{ sets: SetWithType[] | null }> =
         await supabase.functions.invoke('get-new-sets');
       if (res?.data?.sets) {

@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import { Icon } from '@rneui/themed';
 import { Alert, ScrollView, TouchableOpacity, View } from 'react-native';
 import { i18n } from '@app/localization/i18n';
@@ -14,9 +14,69 @@ import { AuthContext } from '@app/provider/AuthProvider';
 import { FontText } from '@app/components/utils/FontText';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import Feedback from './Feedback';
+import { Divider } from '@rneui/base';
 
 export default function ({ navigation }: NativeStackScreenProps<MainStackParamList, 'Settings'>) {
   const authContext = useContext(AuthContext);
+  const [isBetaUser, setIsBetaUser] = useState(false);
+  async function getIsBetaUser() {
+    const res = await supabase.from('beta_users').select('id', { count: 'exact' });
+    if (res.error) {
+      logErrors(res.error);
+      return;
+    }
+    if (res) setIsBetaUser((res?.count || 0) > 0);
+  }
+  useEffect(() => {
+    void getIsBetaUser();
+  }, []);
+  const join = async () => {
+    const { error: error } = await supabase.from('beta_users').insert({
+      user_id: authContext.userId,
+    });
+    if (error) {
+      logErrors(error);
+      return;
+    }
+    Alert.alert(i18n.t('beta.joined_successfully'), undefined, [
+      {
+        text: i18n.t('awesome'),
+        style: 'default',
+      },
+    ]);
+    void analytics().logEvent('SettingsJoinedBeta', {
+      screen: 'Settings',
+      action: 'Joined beta',
+      userId: authContext.userId,
+    });
+    void getIsBetaUser();
+    return;
+  };
+  const joinBeta = () => {
+    void analytics().logEvent('SettingsJoinBeta', {
+      screen: 'Settings',
+      action: 'Clicked on join beta',
+      userId: authContext.userId,
+    });
+    Alert.alert(
+      i18n.t('beta.title'),
+      i18n.t('beta.content'),
+      [
+        {
+          text: i18n.t('cancel'),
+          style: 'cancel',
+        },
+        {
+          text: i18n.t('join'),
+          onPress: () => void join(),
+          style: 'default',
+        },
+      ],
+      {
+        cancelable: true,
+      },
+    );
+  };
 
   const logout = async () => {
     void analytics().logEvent('ViewWithMenuLogout', {
@@ -135,6 +195,56 @@ export default function ({ navigation }: NativeStackScreenProps<MainStackParamLi
             {i18n.t('settings.delete_account')}
           </FontText>
         </TouchableOpacity>
+        {isBetaUser ? (
+          <>
+            <Divider style={{ marginTop: 10 }}></Divider>
+            <TouchableOpacity
+              onPress={() => {
+                void analytics().logEvent('ViewWithMenuConversationsNavigated', {
+                  screen: 'Settings',
+                  action: 'ConversationsNavigated',
+                  userId: authContext.userId,
+                });
+                navigation.navigate('Conversations');
+              }}
+              style={{
+                marginTop: 20,
+                paddingHorizontal: 20,
+                flexDirection: 'row',
+                alignItems: 'center',
+              }}
+            >
+              <View style={{ flexDirection: 'row', marginLeft: 15 }}>
+                <Icon name="account-voice" type="material-community"></Icon>
+              </View>
+              <FontText style={{ marginLeft: 22, fontSize: 18 }}>
+                {i18n.t('settings.conversations')}
+              </FontText>
+            </TouchableOpacity>
+          </>
+        ) : (
+          <>
+            <Divider style={{ marginTop: 10 }}></Divider>
+            <TouchableOpacity
+              onPress={() => {
+                void joinBeta();
+              }}
+              style={{
+                marginTop: 20,
+                paddingHorizontal: 20,
+                flexDirection: 'row',
+                alignItems: 'center',
+              }}
+            >
+              <View style={{ flexDirection: 'row', marginLeft: 12 }}>
+                <Icon name="rabbit" type="material-community"></Icon>
+              </View>
+              <FontText style={{ marginLeft: 24, fontSize: 18, fontWeight: '600' }}>
+                {i18n.t('beta.become_beta_user')}
+              </FontText>
+            </TouchableOpacity>
+          </>
+        )}
       </ScrollView>
     </SafeAreaView>
   );

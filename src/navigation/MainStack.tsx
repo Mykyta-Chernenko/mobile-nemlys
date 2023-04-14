@@ -14,6 +14,8 @@ import Settings from '@app/screens/settings/Settings';
 import DiaryNewEntry from '@app/screens/diary/DiaryNewEntry';
 import { HistorySetScreenName, SetHomeScrenName } from '@app/utils/constants';
 import DiaryEntry from '@app/screens/diary/DiaryEntry';
+import Conversations from '@app/screens/conversations/Conversations';
+import ConversationDetail from '@app/screens/conversations/ConversationDetail';
 
 const MainStack = createNativeStackNavigator();
 const Main = () => {
@@ -85,6 +87,16 @@ const Main = () => {
         options={{ animation: 'fade' }}
         name="Settings"
         component={Settings}
+      ></MainStack.Screen>
+      <MainStack.Screen
+        options={{ animation: 'fade' }}
+        name="Conversations"
+        component={Conversations}
+      ></MainStack.Screen>
+      <MainStack.Screen
+        options={{ animation: 'fade' }}
+        name="ConversationDetail"
+        component={ConversationDetail}
       ></MainStack.Screen>
     </MainStack.Navigator>
   );

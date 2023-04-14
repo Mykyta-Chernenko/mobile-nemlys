@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import React, { useContext, useState } from 'react';
 import { PrimaryButton } from '../buttons/PrimaryButtons';
 import { Audio } from 'expo-av';
 import * as FileSystem from 'expo-file-system';
@@ -8,13 +8,14 @@ import { Buffer } from 'buffer';
 import moment from 'moment';
 import { TIMEZONE } from '@app/utils/constants';
 import { supabase } from '@app/api/initSupabase';
-import { FontText } from '../utils/FontText';
+import { i18n } from '@app/localization/i18n';
+import { Loading } from '../utils/Loading';
 
-export default function () {
+export default function (props: { onCreatedRecording: () => void }) {
   const authContext = useContext(AuthContext);
 
-  const [recording, setRecording] = React.useState<undefined | Audio.Recording>();
-  const [text, setText] = React.useState<string>('');
+  const [recording, setRecording] = useState<undefined | Audio.Recording>();
+  const [loading, setLoading] = useState(false);
 
   async function startRecording() {
     try {
@@ -37,26 +38,12 @@ export default function () {
   }
 
   async function stopRecording() {
+    setLoading(true);
     console.log('Stopping recording..');
     setRecording(undefined);
+
     try {
       await recording?.stopAndUnloadAsync();
-    } catch (error: any) {
-      // On Android, calling stop before any data has been collected results in
-      // an E_AUDIO_NODATA error. This means no audio data has been written to
-      // the output file is invalid.
-      if (error.code === 'E_AUDIO_NODATA') {
-        console.log(
-          `Stop was called too quickly, no data has yet been received (${
-            (error as Error).message
-          })`,
-        );
-      } else {
-        console.log('STOP ERROR: ', error.code, error.name, error.message);
-      }
-      return;
-    }
-    try {
       await Audio.setAudioModeAsync({
         allowsRecordingIOS: false,
       });
@@ -85,20 +72,32 @@ export default function () {
         body: { uri: res.data?.path },
       });
       console.log('resTranscript', resTranscript);
-
-      setText(resTranscript.data.text as string);
-    } catch (e: unknown) {
-      logErrorsWithMessageWithoutAlert(e);
+      props.onCreatedRecording();
+    } catch (error: any) {
+      // On Android, calling stop before any data has been collected results in
+      // an E_AUDIO_NODATA error. This means no audio data has been written to
+      // the output file is invalid.
+      if (error.code === 'E_AUDIO_NODATA') {
+        console.log(
+          `Stop was called too quickly, no data has yet been received (${
+            (error as Error).message
+          })`,
+        );
+      } else {
+        logErrorsWithMessageWithoutAlert(error);
+      }
+    } finally {
+      setLoading(false);
     }
   }
 
-  return (
-    <>
-      <PrimaryButton
-        title={recording ? 'X' : '>'}
-        onPress={recording ? () => void stopRecording() : () => void startRecording()}
-      />
-      <FontText>{text}</FontText>
-    </>
+  return loading ? (
+    <Loading></Loading>
+  ) : (
+    <PrimaryButton
+      size="sm"
+      title={recording ? i18n.t('conversations.stop') : i18n.t('conversations.record')}
+      onPress={recording ? () => void stopRecording() : () => void startRecording()}
+    ></PrimaryButton>
   );
 }

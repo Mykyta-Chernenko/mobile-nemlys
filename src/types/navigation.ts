@@ -66,6 +66,8 @@ export type MainStackParamList = {
   DiaryEntry: { id: number };
   DiaryNewEntry: undefined;
   Settings: undefined;
+  Conversations: undefined;
+  ConversationDetail: { id: number };
 };
 
 export type MainNavigationProp = NativeStackScreenProps<MainStackParamList>['navigation'];
