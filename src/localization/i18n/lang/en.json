@@ -50,7 +50,7 @@
   "notifications": {
     "date_soon": "Your date is soon, don't forget to about the questions",
     "schedule_date": "Please, schedule when you will have the date with your partner",
-     "diary": {
+    "diary": {
       "title": "Write your diary",
       "body": "What has happened in your relationship recently?"
     }
@@ -74,7 +74,7 @@
     "second_text": "First, we want to ask you a few questions about your relationship to personalize the program",
     "ready": "I'm ready"
   },
-  "placement":{
+  "placement": {
     "relationship_state": {
       "title": "Tell us about your relationship",
       "free_form_question": "Describe your relationship in general, the main milestones you’ve faced, the biggest ups and downs you have gone through",
