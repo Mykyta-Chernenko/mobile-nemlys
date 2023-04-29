@@ -16,7 +16,7 @@ export const Loading = ({ light = false }: { light?: boolean }) => {
       <ActivityIndicator
         size="large"
         style={{ alignSelf: 'center' }}
-        color={light ? theme.colors.white : theme.colors.primary}
+        color={light ? theme.colors.white : theme.colors.black}
       />
     </View>
   );

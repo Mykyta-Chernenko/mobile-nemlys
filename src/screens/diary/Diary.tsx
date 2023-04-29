@@ -9,7 +9,6 @@ import { useTheme } from '@rneui/themed';
 import { logErrors } from '@app/utils/errors';
 import { supabase } from '@app/api/initSupabase';
 import moment from 'moment';
-import analytics from '@react-native-firebase/analytics';
 import * as Notifications from 'expo-notifications';
 
 import { APIDiary, APINotification, InsertAPINotification, SupabaseAnswer } from '@app/types/api';
@@ -21,6 +20,7 @@ import { FontText } from '../../components/utils/FontText';
 import { PrimaryButton } from '../../components/buttons/PrimaryButtons';
 import StyledMarkdown from '../../components/utils/StyledMarkdown';
 import { NOTIFICATION_IDENTIFIERS } from '@app/types/domain';
+import { localAnalytics } from '@app/utils/analytics';
 export const entryTitle = (theme, date: moment.Moment) => {
   return (
     <View style={{ flexDirection: 'row', alignItems: 'center', alignContent: 'center' }}>
@@ -88,7 +88,7 @@ export default function ({ route }) {
   }, []);
 
   const navigateToEntry = (id: number) => {
-    void analytics().logEvent('DiaryGoToDiaryEntry', {
+    void localAnalytics().logEvent('DiaryGoToDiaryEntry', {
       screen: 'Diary',
       action: 'Go to diary entry button clicked',
       userId: authContext.userId,
@@ -145,7 +145,7 @@ export default function ({ route }) {
           <View style={{ position: 'absolute', zIndex: 1 }}>
             <GoBackButton
               onPress={() => {
-                void analytics().logEvent('DiaryGoBack', {
+                void localAnalytics().logEvent('DiaryGoBack', {
                   screen: 'Diary',
                   action: 'Go back button clicked',
                   userId: authContext.userId,
@@ -185,7 +185,7 @@ export default function ({ route }) {
                     size="sm"
                     buttonStyle={{ width: '40%', alignSelf: 'center', marginVertical: 20 }}
                     onPress={() => {
-                      void analytics().logEvent('DiaryAddEntryClicked', {
+                      void localAnalytics().logEvent('DiaryAddEntryClicked', {
                         screen: 'Diary',
                         action: 'AddEntry clicked',
                         userId: authContext.userId,

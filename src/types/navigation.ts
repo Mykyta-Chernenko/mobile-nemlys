@@ -80,12 +80,18 @@ type PlacementParams = PrePlacementParams & {
   questionIndex: number | undefined;
   userAnswers: UserOnboardingAnswer[];
 };
-type RegisterParams = Omit<PlacementParams, 'questions' | 'questionIndex'>;
+
+type PlacementRelationshipStateParams = PlacementParams & {
+  relationshipStateAnswer: string;
+};
+
+type RegisterParams = Omit<PlacementRelationshipStateParams, 'questions' | 'questionIndex'>;
 export type AuthStackParamList = {
   Welcome: undefined;
   PrePlacement: PrePlacementParams;
   Placement: PlacementParams;
-  HowWeWork: PlacementParams;
+  PlacementRelationshipState: PlacementParams;
+  HowWeWork: PlacementRelationshipStateParams;
   Login: undefined;
   Register: RegisterParams;
   ForgetPassword: undefined;

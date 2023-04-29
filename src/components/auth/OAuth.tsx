@@ -18,7 +18,8 @@ import {
 import { FontText } from '../utils/FontText';
 import { logErrors, logErrorsWithMessage, UserDoesNotExistError } from '@app/utils/errors';
 import { SecondaryButton } from '../buttons/SecondaryButton';
-import analytics from '@react-native-firebase/analytics';
+import { localAnalytics } from '@app/utils/analytics';
+
 export const OAuth = ({
   handleUser: handleUser,
 }: {
@@ -28,7 +29,7 @@ export const OAuth = ({
   const auth = useContext(AuthContext);
 
   const onPress = async (provider: Provider) => {
-    void analytics().logEvent('OAuthInititated' + provider, {
+    void localAnalytics().logEvent('OAuthInititated' + provider, {
       screen: 'OAuth',
       action: 'OAuth button clicked',
       provider,

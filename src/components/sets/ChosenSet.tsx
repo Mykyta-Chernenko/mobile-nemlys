@@ -12,11 +12,11 @@ import { i18n } from '@app/localization/i18n';
 import moment from 'moment';
 import ClockIcon from '@app/icons/clock';
 import { PrimaryButton } from '../buttons/PrimaryButtons';
-import DateTimePicker, {
-  AndroidNativeProps,
-  DateTimePickerAndroid,
-  IOSNativeProps,
-} from '@react-native-community/datetimepicker';
+// import DateTimePicker, {
+//   AndroidNativeProps,
+//   DateTimePickerAndroid,
+//   IOSNativeProps,
+// } from '@react-native-community/datetimepicker';
 import { MainNavigationProp } from '@app/types/navigation';
 import { useNavigation } from '@react-navigation/native';
 import { FontText } from '../utils/FontText';
@@ -28,7 +28,8 @@ import {
 } from '@app/utils/notification';
 import { logErrors } from '@app/utils/errors';
 import { AuthContext } from '@app/provider/AuthProvider';
-import analytics from '@react-native-firebase/analytics';
+import { localAnalytics } from '@app/utils/analytics';
+
 export default function () {
   const navigation = useNavigation<MainNavigationProp>();
   const { theme } = useTheme();
@@ -99,7 +100,7 @@ export default function () {
     testID: 'datePicker',
     mode: 'date',
     onChange: (event, value: Date) => {
-      void analytics().logEvent('ChosenSetReminderDateChanged', {
+      void localAnalytics().logEvent('ChosenSetReminderDateChanged', {
         screen: 'ChosenSet',
         action: 'Reminder date changed',
         value: value,
@@ -114,7 +115,7 @@ export default function () {
     testID: 'timePicker',
     mode: 'time',
     onChange: (event, value: Date) => {
-      void analytics().logEvent('ChosenSetReminderTimeChanged', {
+      void localAnalytics().logEvent('ChosenSetReminderTimeChanged', {
         screen: 'ChosenSet',
         action: 'Reminder time changed',
         value: value,
@@ -133,7 +134,7 @@ export default function () {
   };
 
   const updateMeetingDate = async () => {
-    void analytics().logEvent('ChosenSetUpdateMeetingDateClicked', {
+    void localAnalytics().logEvent('ChosenSetUpdateMeetingDateClicked', {
       screen: 'ChosenSet',
       action: 'Update meeting date changed and submitted',
       userId: authContext.userId,
@@ -180,7 +181,7 @@ export default function () {
 
   const handleButton = () => {
     if (!currentSet) return;
-    void analytics().logEvent('ChosenSetCompleteSetClicked', {
+    void localAnalytics().logEvent('ChosenSetCompleteSetClicked', {
       screen: 'ChosenSet',
       action: 'Complete set clicked',
       userId: authContext.userId,
@@ -264,11 +265,13 @@ export default function () {
                   }}
                 >
                   {Platform.OS == 'ios' ? (
-                    <DateTimePicker {...datePickerProps} />
+                    <></>
                   ) : (
+                    // must be upper
+                    // <DateTimePicker {...datePickerProps} />
                     <TouchableOpacity
                       onPress={() => {
-                        DateTimePickerAndroid.open(datePickerProps as AndroidNativeProps);
+                        // DateTimePickerAndroid.open(datePickerProps as AndroidNativeProps);
                       }}
                       style={dateAndTimeLabelStyle}
                     >
@@ -276,12 +279,14 @@ export default function () {
                     </TouchableOpacity>
                   )}
                   {Platform.OS == 'ios' ? (
-                    <DateTimePicker {...timePickerProps} />
+                    <></>
                   ) : (
+                    // must be
+                    // <DateTimePicker {...timePickerProps} />
                     <TouchableOpacity
-                      onPress={() =>
-                        DateTimePickerAndroid.open(timePickerProps as AndroidNativeProps)
-                      }
+                      onPress={() => {
+                        // DateTimePickerAndroid.open(timePickerProps as AndroidNativeProps)
+                      }}
                       style={dateAndTimeLabelStyle}
                     >
                       <FontText>{moment(chosenDateTime).format('HH:mm')}</FontText>

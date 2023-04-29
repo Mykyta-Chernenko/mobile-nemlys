@@ -2,7 +2,6 @@ import React, { useContext, useState } from 'react';
 import { Dialog, Icon } from '@rneui/themed';
 import { TouchableOpacity, View } from 'react-native';
 import { i18n } from '@app/localization/i18n';
-import analytics from '@react-native-firebase/analytics';
 import { AuthContext } from '@app/provider/AuthProvider';
 import { FontText } from '@app/components/utils/FontText';
 import { PrimaryButton } from '@app/components/buttons/PrimaryButtons';
@@ -10,6 +9,7 @@ import { SecondaryButton } from '@app/components/buttons/SecondaryButton';
 import StyledTextInput from '@app/components/utils/StyledTextInput';
 import { supabase } from '@app/api/initSupabase';
 import { logErrorsWithMessageWithoutAlert } from '@app/utils/errors';
+import { localAnalytics } from '@app/utils/analytics';
 
 export default function () {
   const authContext = useContext(AuthContext);
@@ -17,7 +17,7 @@ export default function () {
   const [feedback, setFeedback] = useState<string>('');
 
   const openDialog = () => {
-    void analytics().logEvent('ViewWithMenuInitiateSendFeedback', {
+    void localAnalytics().logEvent('ViewWithMenuInitiateSendFeedback', {
       screen: 'Settings',
       action: 'Clicked on send your feedback button',
       userId: authContext.userId,
@@ -25,7 +25,7 @@ export default function () {
     setVisible(true);
   };
   const cancelDialog = () => {
-    void analytics().logEvent('ViewWithMenuClickCancelFeedback', {
+    void localAnalytics().logEvent('ViewWithMenuClickCancelFeedback', {
       screen: 'Settings',
       action: 'Clicked on cancel on feedback dialog',
       userId: authContext.userId,
@@ -34,7 +34,7 @@ export default function () {
     setVisible(false);
   };
   const sendFeedback = async () => {
-    void analytics().logEvent('ViewWithMenuSendFeedback', {
+    void localAnalytics().logEvent('ViewWithMenuSendFeedback', {
       screen: 'Settings',
       action: 'Clicked on send on feedback dialog',
       userId: authContext.userId,

@@ -7,7 +7,6 @@ import { useTheme } from '@rneui/themed';
 import { logErrors } from '@app/utils/errors';
 import { supabase } from '@app/api/initSupabase';
 import moment from 'moment';
-import analytics from '@react-native-firebase/analytics';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
 import { SupabaseAnswer } from '@app/types/api';
@@ -16,6 +15,7 @@ import { GoBackButton } from '../../components/buttons/GoBackButton';
 import { TIMEZONE } from '@app/utils/constants';
 import { FontText } from '../../components/utils/FontText';
 import StyledMarkdown from '../../components/utils/StyledMarkdown';
+import { localAnalytics } from '@app/utils/analytics';
 export default function ({ route }) {
   const diaryEntryId = route.params.id;
   const [diaryEntry, setDiaryEntry] = useState<{ text: string; date: string } | null>(null);
@@ -78,7 +78,7 @@ export default function ({ route }) {
           <View style={{ position: 'absolute', top: 0 }}>
             <GoBackButton
               onPress={() => {
-                void analytics().logEvent('DiaryGoBack', {
+                void localAnalytics().logEvent('DiaryGoBack', {
                   screen: 'Diary',
                   action: 'Go back button clicked',
                   userId: authContext.userId,

@@ -7,13 +7,13 @@ import { SafeAreaView } from 'react-native-safe-area-context';
 import { i18n } from '@app/localization/i18n';
 import { FontText } from '@app/components/utils/FontText';
 import { AuthContext } from '@app/provider/AuthProvider';
-import analytics from '@react-native-firebase/analytics';
 import { supabase } from '@app/api/initSupabase';
 import { Loading } from '@app/components/utils/Loading';
 import { SupabaseAnswer } from '@app/types/api';
 import { logErrors } from '@app/utils/errors';
 import moment from 'moment';
 import ImageOrDefault from '@app/components/utils/ImageOrDefault';
+import { localAnalytics } from '@app/utils/analytics';
 
 export default function ({
   route,
@@ -124,7 +124,7 @@ export default function ({
         <View style={{ flexDirection: 'row', alignItems: 'center' }}>
           <GoBackButton
             onPress={() => {
-              void analytics().logEvent('HistorySetCardDetailsGoBack', {
+              void localAnalytics().logEvent('HistorySetCardDetailsGoBack', {
                 screen: 'HustorySetItemDetails',
                 action: 'Go back button clicked',
                 userId: authContext.userId,

@@ -10,7 +10,7 @@ import { View } from 'react-native';
 import { FontText } from '@app/components/utils/FontText';
 import { logErrors } from '@app/utils/errors';
 import { AuthContext } from '@app/provider/AuthProvider';
-import analytics from '@react-native-firebase/analytics';
+import { localAnalytics } from '@app/utils/analytics';
 export default function ({
   route,
   navigation,
@@ -62,7 +62,7 @@ export default function ({
       progress={0.1}
       showButton={true}
       onPress={() => {
-        void analytics().logEvent('CompleteSetReflectGoNext', {
+        void localAnalytics().logEvent('CompleteSetReflectGoNext', {
           screen: 'CompleteSetReflect',
           action: 'Go next button clicked',
           setId: route.params.setId,
@@ -76,7 +76,7 @@ export default function ({
         });
       }}
       onBackPress={() => {
-        void analytics().logEvent('CompleteSetReflectGoBack', {
+        void localAnalytics().logEvent('CompleteSetReflectGoBack', {
           screen: 'CompleteSetReflect',
           action: 'Go back button clicked',
           setId: route.params.setId,

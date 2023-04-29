@@ -12,8 +12,8 @@ import { supabase } from '@app/api/initSupabase';
 import { logErrors } from '@app/utils/errors';
 import { AuthContext } from '@app/provider/AuthProvider';
 import { SafeAreaView } from 'react-native-safe-area-context';
+import { localAnalytics } from '@app/utils/analytics';
 
-import analytics from '@react-native-firebase/analytics';
 export default function ({
   route,
   navigation,
@@ -57,7 +57,7 @@ export default function ({
         },
       ],
     );
-    void analytics().logEvent('SetItemsDetailsJoinedWaitList', {
+    void localAnalytics().logEvent('SetItemsDetailsJoinedWaitList', {
       screen: 'SetItemsDetails',
       action: 'Joined waitlist',
       userId: authContext.userId,
@@ -65,7 +65,7 @@ export default function ({
     return;
   };
   const joinWaitlist = () => {
-    void analytics().logEvent('SetItemsDetailsJoinWaitListInititated', {
+    void localAnalytics().logEvent('SetItemsDetailsJoinWaitListInititated', {
       screen: 'SetItemsDetails',
       action: 'Clicked on join waitlist',
       userId: authContext.userId,
@@ -108,7 +108,7 @@ export default function ({
         <View style={{ flexDirection: 'row', alignItems: 'center' }}>
           <GoBackButton
             onPress={() => {
-              void analytics().logEvent('SetItemDetailsGoBack', {
+              void localAnalytics().logEvent('SetItemDetailsGoBack', {
                 screen: 'SetItemDetails',
                 action: 'Go back button clicked',
                 itemTitle: props.title,

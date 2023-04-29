@@ -11,6 +11,7 @@ import { theme } from '@app/theme';
 import FontWrapper from '@app/theme/FontWrapper';
 import * as Sentry from 'sentry-expo';
 import { BackHandler } from 'react-native';
+import SplashScreen from '@app/theme/SplashScreen';
 
 export default function App() {
   // disable android button back
@@ -24,10 +25,12 @@ export default function App() {
   return (
     <ThemeProvider theme={theme}>
       <FontWrapper>
-        <AuthProvider>
-          <Navigation />
-        </AuthProvider>
-        <StatusBar style="dark" />
+        <SplashScreen>
+          <AuthProvider>
+            <Navigation />
+          </AuthProvider>
+          <StatusBar style="dark" />
+        </SplashScreen>
       </FontWrapper>
     </ThemeProvider>
   );

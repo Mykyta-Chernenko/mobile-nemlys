@@ -10,7 +10,7 @@ import { KEYBOARD_BEHAVIOR } from '@app/utils/constants';
 import { FontText } from '@app/components/utils/FontText';
 import { logErrorsWithMessageWithoutAlert } from '@app/utils/errors';
 import { ANON_USER } from '@app/provider/AuthProvider';
-import analytics from '@react-native-firebase/analytics';
+import { localAnalytics } from '@app/utils/analytics';
 
 export default function ({
   navigation,
@@ -19,7 +19,7 @@ export default function ({
   const [loading, setLoading] = useState<boolean>(false);
 
   async function forget() {
-    void analytics().logEvent('ForgotPasswordSubmitClicked', {
+    void localAnalytics().logEvent('ForgotPasswordSubmitClicked', {
       screen: 'ForgotPassword',
       action: 'Submit button clicked',
       userId: ANON_USER,

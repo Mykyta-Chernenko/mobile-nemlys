@@ -3,7 +3,7 @@ import { Image, KeyboardAvoidingView, ScrollView, TouchableOpacity, View } from 
 import { supabase } from '@app/api/initSupabase';
 import { AuthStackParamList } from '@app/types/navigation';
 import { NativeStackScreenProps } from '@react-navigation/native-stack';
-import { Button, Input, useTheme } from '@rneui/themed';
+import { Input, useTheme } from '@rneui/themed';
 import { OAuth } from '@app/components/auth/OAuth';
 import * as WebBrowser from 'expo-web-browser';
 import { i18n } from '@app/localization/i18n';
@@ -12,7 +12,8 @@ import { ANON_USER, AuthContext } from '@app/provider/AuthProvider';
 import { KEYBOARD_BEHAVIOR } from '@app/utils/constants';
 import { FontText } from '@app/components/utils/FontText';
 import { logErrorsWithMessage, UserDoesNotExistError } from '@app/utils/errors';
-import analytics from '@react-native-firebase/analytics';
+import { localAnalytics } from '@app/utils/analytics';
+import { PrimaryButton } from '@app/components/buttons/PrimaryButtons';
 WebBrowser.maybeCompleteAuthSession();
 
 export default function ({ navigation }: NativeStackScreenProps<AuthStackParamList, 'Login'>) {
@@ -24,7 +25,7 @@ export default function ({ navigation }: NativeStackScreenProps<AuthStackParamLi
   const passwordRef = useRef(null) as any;
   const auth = useContext(AuthContext);
   async function login() {
-    void analytics().logEvent('LoginEmailTypeSubmitClicked', {
+    void localAnalytics().logEvent('LoginEmailTypeSubmitClicked', {
       screen: 'Login',
       action: 'Email type login, submit button clicked',
       userId: ANON_USER,
@@ -127,7 +128,7 @@ export default function ({ navigation }: NativeStackScreenProps<AuthStackParamLi
             ref={passwordRef}
             onSubmitEditing={() => void login()}
           />
-          <Button
+          <PrimaryButton
             title={loading ? i18n.t('loading') : i18n.t('login.button.default')}
             onPress={() => {
               void login();
@@ -155,7 +156,7 @@ export default function ({ navigation }: NativeStackScreenProps<AuthStackParamLi
             <FontText>{i18n.t('login.register.pretext')}</FontText>
             <TouchableOpacity
               onPress={() => {
-                void analytics().logEvent('LoginRegisterLinkClicked', {
+                void localAnalytics().logEvent('LoginRegisterLinkClicked', {
                   screen: 'Login',
                   action: 'Register link clicked',
                   userId: ANON_USER,
@@ -183,7 +184,7 @@ export default function ({ navigation }: NativeStackScreenProps<AuthStackParamLi
           >
             <TouchableOpacity
               onPress={() => {
-                void analytics().logEvent('LoginForgetPasswordClicked', {
+                void localAnalytics().logEvent('LoginForgetPasswordClicked', {
                   screen: 'Login',
                   action: 'Forget password clicked',
                   userId: ANON_USER,

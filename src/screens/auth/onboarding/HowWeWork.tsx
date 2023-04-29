@@ -8,12 +8,12 @@ import { PrimaryButton } from '@app/components/buttons/PrimaryButtons';
 import { GoBackButton } from '@app/components/buttons/GoBackButton';
 import { FontText } from '@app/components/utils/FontText';
 import { ANON_USER } from '@app/provider/AuthProvider';
-import analytics from '@react-native-firebase/analytics';
+import { localAnalytics } from '@app/utils/analytics';
 
 export default function ({
   route,
   navigation,
-}: NativeStackScreenProps<AuthStackParamList, 'Placement'>) {
+}: NativeStackScreenProps<AuthStackParamList, 'HowWeWork'>) {
   const { theme } = useTheme();
   return (
     <ScrollView
@@ -75,20 +75,20 @@ export default function ({
       <View style={{ flexDirection: 'row', paddingHorizontal: 10, marginTop: 10 }}>
         <GoBackButton
           onPress={() => {
-            void analytics().logEvent('HowWeWorkBackClicked', {
+            void localAnalytics().logEvent('HowWeWorkBackClicked', {
               screen: 'HowWeWork',
               action: 'Back is clicked',
               userId: ANON_USER,
               questionIndex: route.params.questionIndex,
             });
-            navigation.navigate('Placement', route.params);
+            navigation.navigate('PlacementRelationshipState', route.params);
           }}
           containerStyle={{ flexGrow: 1 }}
         ></GoBackButton>
         <PrimaryButton
           title={i18n.t('finish')}
           onPress={() => {
-            void analytics().logEvent('HowWeWorkFinishClicked', {
+            void localAnalytics().logEvent('HowWeWorkFinishClicked', {
               screen: 'HowWeWork',
               action: 'Finish is clicked',
               userId: ANON_USER,

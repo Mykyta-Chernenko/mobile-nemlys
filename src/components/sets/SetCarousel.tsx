@@ -22,10 +22,11 @@ import { logErrors } from '@app/utils/errors';
 import { BlurView } from 'expo-blur';
 import { GestureHandlerRootView } from 'react-native-gesture-handler';
 import AIIcon from '@app/icons/ai';
-import analytics from '@react-native-firebase/analytics';
+
 import { PrimaryButton } from '../buttons/PrimaryButtons';
 import { SecondaryButton } from '../buttons/SecondaryButton';
 import { HistorySetScreenName } from '@app/utils/constants';
+import { localAnalytics } from '@app/utils/analytics';
 export default (props: {
   setsQuestionAction: SetQuestionAction[];
   deckType: CarouselCardsType;
@@ -214,7 +215,7 @@ const CardItem: React.FC<SetQuestionAction & { deckType: CarouselCardsType }> = 
     ? { textAlign: 'center', paddingHorizontal: 30, width: '100%' }
     : { textAlign: 'center', width: '100%' };
   const skipCard = async () => {
-    await analytics().logEvent('SetItemCardSkipCardConfirm', {
+    await localAnalytics().logEvent('SetItemCardSkipCardConfirm', {
       screen: 'SetItemCard',
       action: 'Attempt to skip card was confirmed',
       setId: setId,
@@ -237,7 +238,7 @@ const CardItem: React.FC<SetQuestionAction & { deckType: CarouselCardsType }> = 
         {
           text: i18n.t('cancel'),
           onPress: () => {
-            void analytics().logEvent('SetItemCardSkipCardCancelled', {
+            void localAnalytics().logEvent('SetItemCardSkipCardCancelled', {
               screen: 'SetItemCard',
               action: 'Attempt to skip card was cancelled',
               setId: setId,
@@ -258,7 +259,7 @@ const CardItem: React.FC<SetQuestionAction & { deckType: CarouselCardsType }> = 
     );
   };
   const onQuestionPress = () => {
-    void analytics().logEvent('SetItemCardClickShowDetails', {
+    void localAnalytics().logEvent('SetItemCardClickShowDetails', {
       screen: 'SetItemCard',
       action: 'Question clicked to show details',
       setId: setId,
@@ -273,7 +274,7 @@ const CardItem: React.FC<SetQuestionAction & { deckType: CarouselCardsType }> = 
     });
   };
   const onActionPress = () => {
-    void analytics().logEvent('SetItemCardClickShowDetails', {
+    void localAnalytics().logEvent('SetItemCardClickShowDetails', {
       screen: 'SetItemCard',
       action: 'Action clicked to show details',
       setId: setId,
@@ -388,7 +389,7 @@ const CardItem: React.FC<SetQuestionAction & { deckType: CarouselCardsType }> = 
           <View style={{ flexDirection: 'row', marginBottom: 3 }}>
             <SecondaryButton
               onPress={() => {
-                void analytics().logEvent('NewSetSkipCardInitiated', {
+                void localAnalytics().logEvent('NewSetSkipCardInitiated', {
                   screen: 'NewSet',
                   action: 'SkipCard',
                   userId: authContext.userId,
@@ -402,7 +403,7 @@ const CardItem: React.FC<SetQuestionAction & { deckType: CarouselCardsType }> = 
             <View style={{ width: 15 }}></View>
             <PrimaryButton
               onPress={() => {
-                void analytics().logEvent('NewSetAcceptSetClicked', {
+                void localAnalytics().logEvent('NewSetAcceptSetClicked', {
                   screen: 'NewSet',
                   action: 'AcceptSetClicked',
                   userId: authContext.userId,
@@ -420,7 +421,7 @@ const CardItem: React.FC<SetQuestionAction & { deckType: CarouselCardsType }> = 
           <View style={{ flexDirection: 'row', marginBottom: 3 }}>
             <PrimaryButton
               onPress={() => {
-                void analytics().logEvent('HistorySetHowDidItGoClicked', {
+                void localAnalytics().logEvent('HistorySetHowDidItGoClicked', {
                   screen: HistorySetScreenName,
                   action: 'HowDidItGoClicked',
                   userId: authContext.userId,

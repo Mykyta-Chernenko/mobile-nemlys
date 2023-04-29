@@ -1,6 +1,5 @@
 import React, { useContext, useEffect, useState } from 'react';
 import { ScrollView, TouchableOpacity, View } from 'react-native';
-import analytics from '@react-native-firebase/analytics';
 import { NativeStackScreenProps } from '@react-navigation/native-stack';
 import { MainStackParamList } from '@app/types/navigation';
 import { Image, useTheme } from '@rneui/themed';
@@ -18,6 +17,7 @@ import moment from 'moment';
 import { entryTitle } from '../diary/Diary';
 import { Divider } from '@rneui/base';
 import { i18n } from '@app/localization/i18n';
+import { localAnalytics } from '@app/utils/analytics';
 
 export default function ({
   navigation,
@@ -46,7 +46,7 @@ export default function ({
     void getConversations();
   }, [authContext.userId, setConversations]);
   const navigateToConversation = (id: number) => {
-    void analytics().logEvent('ConversationGoToDetail', {
+    void localAnalytics().logEvent('ConversationGoToDetail', {
       screen: 'Converstions',
       action: 'Go to conversation detail button clicked',
       userId: authContext.userId,
@@ -66,7 +66,7 @@ export default function ({
         <View style={{ position: 'absolute', zIndex: 1, top: 10, left: 10 }}>
           <GoBackButton
             onPress={() => {
-              void analytics().logEvent('ConversationsGoBack', {
+              void localAnalytics().logEvent('ConversationsGoBack', {
                 screen: 'Conversations',
                 action: 'Go back button clicked',
                 userId: authContext.userId,

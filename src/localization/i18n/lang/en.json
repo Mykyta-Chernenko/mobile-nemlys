@@ -49,23 +49,42 @@
   },
   "notifications": {
     "date_soon": "Your date is soon, don't forget to about the questions",
-    "schedule_date": "Please, schedule when you will have the date with your partner"
+    "schedule_date": "Please, schedule when you will have the date with your partner",
+     "diary": {
+      "title": "Write your diary",
+      "body": "What has happened in your relationship recently?"
+    }
   },
   "welcome": {
-    "title": "Get to know\nyour partner better",
+    "title": "Get to know ",
+    "middle": "your partner",
+    "title2": " better",
     "pretext": "Use Nemlys app to learn common ground and build meaningful communication",
     "check_email_for_login_link": "The login link was sent to your email",
     "button": {
       "default": "Get started"
     },
     "login": {
-      "pretext": "Already have an account?",
-      "link": "Login here"
+      "link": "Sign in instead"
     }
   },
   "pre_placement": {
-    "title": "Hey %{name}, let's get started",
-    "pretext": "First, we want to ask you a few questions about your relationship to personalize the program"
+    "first_text_hey": "Hey, %{name}",
+    "first_text_start": "Let's get started",
+    "second_text": "First, we want to ask you a few questions about your relationship to personalize the program",
+    "ready": "I'm ready"
+  },
+  "placement":{
+    "relationship_state": {
+      "title": "Tell us about your relationship",
+      "free_form_question": "Describe your relationship in general, the main milestones you’ve faced, the biggest ups and downs you have gone through",
+      "guided": {
+        "1": "What are the biggest things that have happened in your relationship in the last couple of months?",
+        "2": "What are the biggest plans you have together?",
+        "3": "What do you like the most and the least about your relationship?",
+        "4": "Have you faced any challenges in the relationship?"
+      }
+    }
   },
   "how_we_work": {
     "title": "How it works?",
@@ -274,12 +293,6 @@
         "challenges_summary": "**Our challenges recently:**"
       },
       "freewriting": "What has happened in your relationship recently? Describe in at least few sentences"
-    }
-  },
-  "notification": {
-    "diary": {
-      "title": "Write your diary",
-      "body": "What has happened in your relationship recently?"
     }
   }
 }

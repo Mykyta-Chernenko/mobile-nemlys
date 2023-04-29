@@ -4,11 +4,11 @@ import { Platform, StyleProp, TouchableOpacity, View, ViewStyle } from 'react-na
 import { MainStackParamList } from '@app/types/navigation';
 import { GoBackButton } from '../../components/buttons/GoBackButton';
 import { i18n } from '@app/localization/i18n';
-import DateTimePicker, {
-  AndroidNativeProps,
-  DateTimePickerAndroid,
-  IOSNativeProps,
-} from '@react-native-community/datetimepicker';
+// import DateTimePicker, {
+//   AndroidNativeProps,
+//   DateTimePickerAndroid,
+//   IOSNativeProps,
+// } from '@react-native-community/datetimepicker';
 import { NativeStackScreenProps } from '@react-navigation/native-stack';
 import { ViewSetHomeScreen } from '@app/components/sets/ViewSetHomeScreen';
 import { PrimaryButton } from '@app/components/buttons/PrimaryButtons';
@@ -30,12 +30,12 @@ import { getNotificationForMeeting } from '@app/utils/sets';
 import { scheduleMeetingNotification } from '@app/utils/notification';
 import { logErrors } from '@app/utils/errors';
 import { AuthContext } from '@app/provider/AuthProvider';
-import analytics from '@react-native-firebase/analytics';
 import {
   DENIED_NOTIFICATION_STATUS,
   GRANTED_NOTIFICATION_STATUS,
   UNDETERMINED_NOTIFICATION_STATUS,
 } from '@app/utils/constants';
+import { localAnalytics } from '@app/utils/analytics';
 export default function ({
   route,
   navigation,
@@ -65,7 +65,7 @@ export default function ({
     testID: 'datePicker',
     mode: 'date',
     onChange: (event, value: Date) => {
-      void analytics().logEvent('SetReminderDatePickerChanged', {
+      void localAnalytics().logEvent('SetReminderDatePickerChanged', {
         screen: 'SetReminder',
         action: 'Date Picker changed',
         value: value,
@@ -80,7 +80,7 @@ export default function ({
     testID: 'timePicker',
     mode: 'time',
     onChange: (event, value: Date) => {
-      void analytics().logEvent('SetReminderTimePickerChanged', {
+      void localAnalytics().logEvent('SetReminderTimePickerChanged', {
         screen: 'SetReminder',
         action: 'Time Picker changed',
         value: value,
@@ -204,13 +204,13 @@ export default function ({
           finalStatus = status;
         }
         if (finalStatus === GRANTED_NOTIFICATION_STATUS || finalStatus != notificationStatus) {
-          void analytics().logEvent('SetReminderNotificationAccessProvided', {
+          void localAnalytics().logEvent('SetReminderNotificationAccessProvided', {
             screen: 'SetReminder',
             action: 'User gave reminder notification access',
             userId: authContext.userId,
           });
         } else if (finalStatus === DENIED_NOTIFICATION_STATUS) {
-          void analytics().logEvent('SetReminderNotificationAccessDeclined', {
+          void localAnalytics().logEvent('SetReminderNotificationAccessDeclined', {
             screen: 'SetReminder',
             action: 'User declined reminder notification access',
             userId: authContext.userId,
@@ -246,7 +246,7 @@ export default function ({
     }
   };
   const handleSubmit = async () => {
-    void analytics().logEvent('SetReminderClickSubmit', {
+    void localAnalytics().logEvent('SetReminderClickSubmit', {
       screen: 'SetReminder',
       action: 'User accepted card on SetReminder screen',
       userId: authContext.userId,
@@ -272,7 +272,7 @@ export default function ({
         >
           <GoBackButton
             onPress={() => {
-              void analytics().logEvent('SetReminderGoBackPressed', {
+              void localAnalytics().logEvent('SetReminderGoBackPressed', {
                 screen: 'SetReminder',
                 action: 'Go back pressed',
                 userId: authContext.userId,
@@ -300,11 +300,13 @@ export default function ({
           }}
         >
           {Platform.OS == 'ios' ? (
-            <DateTimePicker {...datePickerProps} />
+            <></>
           ) : (
+            // must be upper
+            // <DateTimePicker {...datePickerProps} />
             <TouchableOpacity
               onPress={() => {
-                DateTimePickerAndroid.open(datePickerProps as AndroidNativeProps);
+                // DateTimePickerAndroid.open(datePickerProps as AndroidNativeProps);
               }}
               style={dateAndTimeLabelStyle}
             >
@@ -312,10 +314,14 @@ export default function ({
             </TouchableOpacity>
           )}
           {Platform.OS == 'ios' ? (
-            <DateTimePicker {...timePickerProps} />
+            <></>
           ) : (
+            // must be upper
+            // <DateTimePicker {...timePickerProps} />
             <TouchableOpacity
-              onPress={() => DateTimePickerAndroid.open(timePickerProps as AndroidNativeProps)}
+              onPress={() => {
+                // DateTimePickerAndroid.open(timePickerProps as AndroidNativeProps);
+              }}
               style={dateAndTimeLabelStyle}
             >
               <FontText>{moment(chosenDateTime).format('HH:mm')}</FontText>
@@ -341,7 +347,7 @@ export default function ({
             checkedColor={theme.colors.primary}
             checked={noDateYet}
             onPress={() => {
-              void analytics().logEvent('SetReminderSetNoDateYet', {
+              void localAnalytics().logEvent('SetReminderSetNoDateYet', {
                 screen: 'SetReminder',
                 action: 'SetNoDateYet',
                 userId: authContext.userId,

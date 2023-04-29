@@ -6,9 +6,4 @@ export const theme = createTheme({
     secondary: 'rgba(108, 99, 255, 0.5)',
   },
   mode: 'light',
-  components: {
-    Button: {
-      radius: 'md',
-    },
-  },
 });

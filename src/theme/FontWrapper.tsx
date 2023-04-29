@@ -15,7 +15,7 @@ import {
   NunitoSans_900Black,
   NunitoSans_900Black_Italic,
 } from '@expo-google-fonts/nunito-sans';
-import React, { useEffect } from 'react';
+import React from 'react';
 
 interface Props {
   children: React.ReactNode;
@@ -42,12 +42,5 @@ export default function (props: Props) {
     NunitoSans_900Black,
     NunitoSans_900Black_Italic,
   });
-  useEffect(() => {
-    void (async () => {
-      if (fontsLoaded) {
-        await SplashScreen.hideAsync();
-      }
-    })();
-  }, [fontsLoaded]);
   return <>{fontsLoaded && props.children}</>;
 }

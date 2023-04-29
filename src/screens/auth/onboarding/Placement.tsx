@@ -8,7 +8,8 @@ import SurveyView from '@app/components/common/SurveyView';
 import { FontText } from '@app/components/utils/FontText';
 import { logErrors } from '@app/utils/errors';
 import { ANON_USER } from '@app/provider/AuthProvider';
-import analytics from '@react-native-firebase/analytics';
+import { localAnalytics } from '@app/utils/analytics';
+
 export default function ({
   route,
   navigation,
@@ -81,7 +82,7 @@ export default function ({
   const isNextQuestion = questionIndex + 1 < questions.length;
 
   const handlePressBack = () => {
-    void analytics().logEvent('PlacementBackClicked', {
+    void localAnalytics().logEvent('PlacementBackClicked', {
       screen: 'Placement',
       action: 'Back is clicked',
       userId: ANON_USER,
@@ -100,7 +101,7 @@ export default function ({
     }
   };
   const handleNextPress = (chosenValue) => {
-    void analytics().logEvent('PlacementNextClicked', {
+    void localAnalytics().logEvent('PlacementNextClicked', {
       screen: 'Placement',
       action: 'Next is clicked',
       userId: ANON_USER,
@@ -119,18 +120,19 @@ export default function ({
           });
         }, 200);
       } else {
-        navigation.navigate('HowWeWork', { ...route.params, userAnswers });
+        navigation.navigate('PlacementRelationshipState', { ...route.params, userAnswers });
       }
     }
   };
 
   const progressValue =
-    0.1 + (questionIndex === undefined ? 0 : 0.7 * ((questionIndex + 1) / (questions.length ?? 1)));
+    questionIndex === undefined ? 0 : (questionIndex + 1) / (questions.length ?? 1);
   return (
     <SurveyView
       loading={loading}
       title={currentQuestion?.title || ''}
       progress={progressValue}
+      progressText={`${questionIndex + 1}/${questions.length}`}
       showButton={false}
       onPress={() => {}}
       onBackPress={handlePressBack}
@@ -141,9 +143,16 @@ export default function ({
           onPress={() => handleNextPress(a)}
           type="outline"
           key={a.id}
+          buttonStyle={{
+            borderRadius: 16,
+            padding: 30,
+            borderColor: 'rgba(130, 79, 231, 0.2)',
+            borderWidth: 1,
+            opacity: 1,
+          }}
+          activeOpacity={0.5}
           containerStyle={{
-            width: '100%',
-            padding: 5,
+            marginVertical: 5,
           }}
         >
           <FontText
@@ -151,7 +160,9 @@ export default function ({
               justifyContent: 'flex-start',
               alignItems: 'flex-start',
               textAlign: 'left',
-              width: '100%',
+              flexGrow: 1,
+              marginHorizontal: 20,
+              fontSize: 16,
             }}
           >
             {a.title}

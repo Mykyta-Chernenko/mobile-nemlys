@@ -11,13 +11,14 @@ import { logErrors } from '@app/utils/errors';
 import { supabase } from '@app/api/initSupabase';
 import { i18n } from '@app/localization/i18n';
 import { PrimaryButton } from '../buttons/PrimaryButtons';
-import analytics from '@react-native-firebase/analytics';
+
 interface Props {
   children: React.ReactNode;
 }
 import { useRoute } from '@react-navigation/native';
 import { HistorySetScreenName, IS_SUPABASE_DEV } from '@app/utils/constants';
 import { FontText } from '../utils/FontText';
+import { localAnalytics } from '@app/utils/analytics';
 const CARD_PER_SET = 10;
 export const ViewSetHomeScreen = (props: Props) => {
   const [name, setName] = useState<string | null>(null);
@@ -76,7 +77,7 @@ export const ViewSetHomeScreen = (props: Props) => {
           onRefresh={() => {
             setRefeshing(true);
             setTimeout(() => {
-              void analytics().logEvent('SetHomeScreenRefreshed', {
+              void localAnalytics().logEvent('SetHomeScreenRefreshed', {
                 screen: 'SetHomeScreen',
                 action: 'Home screen refresh pulled',
                 userId: authContext.userId,
@@ -144,7 +145,7 @@ export const ViewSetHomeScreen = (props: Props) => {
                 </FontText>
                 <TouchableOpacity
                   onPress={() => {
-                    void analytics().logEvent('NewSetSettingsNavigated', {
+                    void localAnalytics().logEvent('NewSetSettingsNavigated', {
                       screen: 'NewSet',
                       action: 'SettingsNavigated',
                       userId: authContext.userId,
@@ -213,7 +214,7 @@ export const ViewSetHomeScreen = (props: Props) => {
                     }}
                     titleStyle={{ fontSize: 14, color: theme.colors.white }}
                     onPress={() => {
-                      void analytics().logEvent('NewSetDiaryNavigated', {
+                      void localAnalytics().logEvent('NewSetDiaryNavigated', {
                         screen: 'NewSet',
                         action: 'DiaryNavigated',
                         userId: authContext.userId,
@@ -235,7 +236,7 @@ export const ViewSetHomeScreen = (props: Props) => {
                       }}
                       titleStyle={{ fontSize: 14, color: theme.colors.white }}
                       onPress={() => {
-                        void analytics().logEvent('NewSetHistorySetNavigated', {
+                        void localAnalytics().logEvent('NewSetHistorySetNavigated', {
                           screen: 'NewSet',
                           action: 'HistorySetNavigated',
                           userId: authContext.userId,
@@ -258,7 +259,7 @@ export const ViewSetHomeScreen = (props: Props) => {
                       }}
                       titleStyle={{ fontSize: 14, color: theme.colors.white }}
                       onPress={() => {
-                        void analytics().logEvent('HistorySetNewSetNavigated', {
+                        void localAnalytics().logEvent('HistorySetNewSetNavigated', {
                           screen: 'HistorySet',
                           action: 'NewSetNavigated',
                           userId: authContext.userId,

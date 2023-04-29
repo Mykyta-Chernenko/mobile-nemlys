@@ -9,6 +9,7 @@ import Login from '@app/screens/auth/Login';
 import Register from '@app/screens/auth/Register';
 import ForgetPassword from '@app/screens/auth/ForgotPassword';
 import TypeNewPassword from '@app/screens/auth/TypeNewPassword';
+import PlacementRelationshipState from '@app/screens/auth/onboarding/PlacementRelationshipState';
 
 const AuthStack = createNativeStackNavigator();
 const Auth = () => {
@@ -27,6 +28,11 @@ const Auth = () => {
         component={PrePlacement}
       />
       <AuthStack.Screen options={{ animation: 'fade' }} name="Placement" component={Placement} />
+      <AuthStack.Screen
+        options={{ animation: 'fade' }}
+        name="PlacementRelationshipState"
+        component={PlacementRelationshipState}
+      />
       <AuthStack.Screen options={{ animation: 'fade' }} name="HowWeWork" component={HowWeWork} />
       <AuthStack.Screen options={{ animation: 'fade' }} name="Login" component={Login} />
       <AuthStack.Screen options={{ animation: 'fade' }} name="Register" component={Register} />

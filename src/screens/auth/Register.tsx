@@ -20,7 +20,7 @@ import { ANON_USER, AuthContext } from '@app/provider/AuthProvider';
 import { KEYBOARD_BEHAVIOR } from '@app/utils/constants';
 import { FontText } from '@app/components/utils/FontText';
 import { logErrors, logErrorsWithMessage } from '@app/utils/errors';
-import analytics from '@react-native-firebase/analytics';
+import { localAnalytics } from '@app/utils/analytics';
 export default function ({
   route,
   navigation,
@@ -39,14 +39,14 @@ export default function ({
   const auth = useContext(AuthContext);
   const passwordsAreNotTheSame = password && passwordAgain && password != passwordAgain;
   useEffect(() => {
-    void analytics().logEvent('RegisterScreenOpened', {
+    void localAnalytics().logEvent('RegisterScreenOpened', {
       screen: 'Register',
       action: 'opened',
       userId: ANON_USER,
     });
   }, []);
   async function register() {
-    void analytics().logEvent('RegisterTypeEmailSubmitClicked', {
+    void localAnalytics().logEvent('RegisterTypeEmailSubmitClicked', {
       screen: 'Register',
       action: 'Type email submit button clicked',
       userId: ANON_USER,
@@ -114,6 +114,18 @@ export default function ({
         .insert(answers);
       if (onboaringError) {
         throw onboaringError;
+      }
+
+      const relationshipStateAnswer = {
+        user_id: user.id,
+        answer: route.params.relationshipStateAnswer,
+      };
+
+      const { error: onboardingRelationshipStateError } = await supabase
+        .from('onboarding_relationship_state')
+        .insert(relationshipStateAnswer);
+      if (onboardingRelationshipStateError) {
+        throw onboardingRelationshipStateError;
       }
     }
   }
@@ -222,7 +234,7 @@ export default function ({
             <FontText>{i18n.t('register.login.pretext')}</FontText>
             <TouchableOpacity
               onPress={() => {
-                void analytics().logEvent('RegisterGoToLogin', {
+                void localAnalytics().logEvent('RegisterGoToLogin', {
                   screen: 'Register',
                   action: 'Navigate to login',
                   userId: auth.userId,

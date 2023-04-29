@@ -5,7 +5,6 @@ import { i18n } from '@app/localization/i18n';
 import { AUTH_STORAGE_KEY, supabase } from '@app/api/initSupabase';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import { logErrors } from '@app/utils/errors';
-import analytics from '@react-native-firebase/analytics';
 import { NativeStackScreenProps } from '@react-navigation/native-stack';
 import { MainStackParamList } from '@app/types/navigation';
 import { Image } from '@rneui/themed';
@@ -15,6 +14,7 @@ import { FontText } from '@app/components/utils/FontText';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import Feedback from './Feedback';
 import { Divider } from '@rneui/base';
+import { localAnalytics } from '@app/utils/analytics';
 
 export default function ({ navigation }: NativeStackScreenProps<MainStackParamList, 'Settings'>) {
   const authContext = useContext(AuthContext);
@@ -44,7 +44,7 @@ export default function ({ navigation }: NativeStackScreenProps<MainStackParamLi
         style: 'default',
       },
     ]);
-    void analytics().logEvent('SettingsJoinedBeta', {
+    void localAnalytics().logEvent('SettingsJoinedBeta', {
       screen: 'Settings',
       action: 'Joined beta',
       userId: authContext.userId,
@@ -53,7 +53,7 @@ export default function ({ navigation }: NativeStackScreenProps<MainStackParamLi
     return;
   };
   const joinBeta = () => {
-    void analytics().logEvent('SettingsJoinBeta', {
+    void localAnalytics().logEvent('SettingsJoinBeta', {
       screen: 'Settings',
       action: 'Clicked on join beta',
       userId: authContext.userId,
@@ -79,7 +79,7 @@ export default function ({ navigation }: NativeStackScreenProps<MainStackParamLi
   };
 
   const logout = async () => {
-    void analytics().logEvent('ViewWithMenuLogout', {
+    void localAnalytics().logEvent('ViewWithMenuLogout', {
       screen: 'Settings',
       action: 'Clicked logout',
       userId: authContext.userId,
@@ -89,7 +89,7 @@ export default function ({ navigation }: NativeStackScreenProps<MainStackParamLi
     await AsyncStorage.removeItem(AUTH_STORAGE_KEY);
   };
   const deleteAccount = async () => {
-    void analytics().logEvent('ViewWithMenuClickSendFeedback', {
+    void localAnalytics().logEvent('ViewWithMenuClickSendFeedback', {
       screen: 'Settings',
       action: 'Clicked delete account',
       userId: authContext.userId,
@@ -133,7 +133,7 @@ export default function ({ navigation }: NativeStackScreenProps<MainStackParamLi
         <View style={{ position: 'absolute', zIndex: 1, top: 10, left: 10 }}>
           <GoBackButton
             onPress={() => {
-              void analytics().logEvent('SettingsGoBack', {
+              void localAnalytics().logEvent('SettingsGoBack', {
                 screen: 'Settings',
                 action: 'Go back button clicked',
                 userId: authContext.userId,
@@ -200,7 +200,7 @@ export default function ({ navigation }: NativeStackScreenProps<MainStackParamLi
             <Divider style={{ marginTop: 10 }}></Divider>
             <TouchableOpacity
               onPress={() => {
-                void analytics().logEvent('ViewWithMenuConversationsNavigated', {
+                void localAnalytics().logEvent('ViewWithMenuConversationsNavigated', {
                   screen: 'Settings',
                   action: 'ConversationsNavigated',
                   userId: authContext.userId,

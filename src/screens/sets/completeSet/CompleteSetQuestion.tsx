@@ -14,8 +14,8 @@ import { FeedbackChoice, FeedbackQuestion, UserFeedbackAnswer } from '@app/types
 import { FontText } from '@app/components/utils/FontText';
 import { logErrors } from '@app/utils/errors';
 import { AuthContext } from '@app/provider/AuthProvider';
-import analytics from '@react-native-firebase/analytics';
 import StyledTextInput from '@app/components/utils/StyledTextInput';
+import { localAnalytics } from '@app/utils/analytics';
 export const goBackToThePreviousQuestion = (
   navigation: MainNavigationProp,
   userAnswers: UserFeedbackAnswer[],
@@ -119,7 +119,7 @@ export default function ({
     void getQuestions();
   }, [route.params.questions]);
   const handleBack = () => {
-    void analytics().logEvent('CompleteSetQuestionGoBack', {
+    void localAnalytics().logEvent('CompleteSetQuestionGoBack', {
       screen: 'CompleteSetQuestion',
       action: 'Go back button clicked',
       setId: route.params.setId,
@@ -138,7 +138,7 @@ export default function ({
     choiceAnswer: FeedbackChoice | undefined,
     boolAnswer: boolean | undefined,
   ) => {
-    void analytics().logEvent('CompleteSetQuestionGoNext', {
+    void localAnalytics().logEvent('CompleteSetQuestionGoNext', {
       screen: 'CompleteSetQuestion',
       action: 'Go next button clicked',
       setId: route.params.setId,
@@ -262,6 +262,7 @@ export default function ({
       title={currentQuestion?.title || ''}
       progress={progressValue}
       showButton={currentQuestion?.type == 'text'}
+      progressText="progressText"
       onPress={() => handlePress(choiceAnswer, boolAnswer)}
       onBackPress={handleBack}
       buttonText={textAnswer ? i18n.t('next') : i18n.t('skip')}

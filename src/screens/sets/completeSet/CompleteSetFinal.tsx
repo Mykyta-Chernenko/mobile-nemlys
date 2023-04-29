@@ -16,7 +16,7 @@ import { logErrors } from '@app/utils/errors';
 import { AuthContext } from '@app/provider/AuthProvider';
 import { View } from 'react-native';
 import { PrimaryButton } from '@app/components/buttons/PrimaryButtons';
-import analytics from '@react-native-firebase/analytics';
+import { localAnalytics } from '@app/utils/analytics';
 
 export default function ({
   route,
@@ -43,7 +43,7 @@ export default function ({
   }, [authContext.userId, setLoading]);
   const handlePressBase = async () => {
     setLoading(true);
-    void analytics().logEvent('CompleteSetFinish', {
+    void localAnalytics().logEvent('CompleteSetFinish', {
       screen: 'CompleteSetFinish',
       action: 'Finish button clicked',
       setId: route.params.setId,
@@ -88,7 +88,7 @@ export default function ({
   };
   const handlePress = async () => {
     await handlePressBase();
-    void analytics().logEvent('CompleteSetFinalNavigateHome', {
+    void localAnalytics().logEvent('CompleteSetFinalNavigateHome', {
       screen: 'CompleteSetFinal',
       action: 'Navigate home clicked',
       userId: authContext.userId,
@@ -97,7 +97,7 @@ export default function ({
   };
   const diaryButtonPress = async () => {
     await handlePressBase();
-    void analytics().logEvent('CompleteSetFinalNavigateDiary', {
+    void localAnalytics().logEvent('CompleteSetFinalNavigateDiary', {
       screen: 'CompleteSetFinal',
       action: 'Navigate diary clicked',
       userId: authContext.userId,
@@ -112,6 +112,7 @@ export default function ({
       progress={1}
       showButton={true}
       onPress={() => void handlePress()}
+      progressText={'progressText'}
       onBackPress={() =>
         goBackToThePreviousQuestion(
           navigation,

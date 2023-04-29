@@ -14,8 +14,8 @@ export const Progress = ({ value }: { value: number }) => {
       }}
       value={value}
       variant="determinate"
-      color={theme.colors.primary}
-      trackColor={theme.colors.greyOutline}
+      color={theme.colors.black}
+      trackColor={theme.colors.grey4}
       animation={false}
     />
   );

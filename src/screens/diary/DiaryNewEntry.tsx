@@ -4,7 +4,6 @@ import { MainStackParamList } from '@app/types/navigation';
 import { NativeStackScreenProps } from '@react-navigation/native-stack';
 import { Switch, View } from 'react-native';
 import { AuthContext } from '@app/provider/AuthProvider';
-import analytics from '@react-native-firebase/analytics';
 import StyledTextInput from '@app/components/utils/StyledTextInput';
 import { GoBackButton } from '../../components/buttons/GoBackButton';
 import { FontText } from '../../components/utils/FontText';
@@ -18,6 +17,7 @@ import moment from 'moment';
 import { TIMEZONE } from '@app/utils/constants';
 import { supabase } from '@app/api/initSupabase';
 import { SafeAreaView } from 'react-native-safe-area-context';
+import { localAnalytics } from '@app/utils/analytics';
 
 export default function ({
   route,
@@ -48,7 +48,7 @@ export default function ({
   const authContext = useContext(AuthContext);
 
   const handleBack = () => {
-    void analytics().logEvent('DiaryNewEntryGoBackClicked', {
+    void localAnalytics().logEvent('DiaryNewEntryGoBackClicked', {
       screen: 'DiaryNewEntry',
       action: 'Go back button clicked',
       userId: authContext.userId,
@@ -59,7 +59,7 @@ export default function ({
   const saveDiaryEntry = async () => {
     setIsLoading(true);
     try {
-      void analytics().logEvent('DiaryNewEntrySaveClicked', {
+      void localAnalytics().logEvent('DiaryNewEntrySaveClicked', {
         screen: 'DiaryNewEntry',
         action: 'Save button clicked',
         userId: authContext.userId,

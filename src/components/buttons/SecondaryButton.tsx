@@ -5,9 +5,9 @@ export const SecondaryButton = (props: ButtonProps) => {
   return (
     <Button
       type="outline"
-      buttonStyle={{ borderColor: theme.colors.black }}
+      buttonStyle={{ borderWidth: 0 }}
       titleStyle={{ color: theme.colors.black }}
-      disabledStyle={{ backgroundColor: theme.colors.grey5 }}
+      disabledStyle={{ borderWidth: 0 }}
       disabledTitleStyle={{ color: theme.colors.grey5 }}
       {...props}
     ></Button>

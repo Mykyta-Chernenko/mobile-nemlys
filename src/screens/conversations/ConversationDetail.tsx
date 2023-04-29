@@ -5,7 +5,6 @@ import { useTheme } from '@rneui/themed';
 import { logErrors } from '@app/utils/errors';
 import { supabase } from '@app/api/initSupabase';
 import moment from 'moment';
-import analytics from '@react-native-firebase/analytics';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
 import { SupabaseAnswer } from '@app/types/api';
@@ -17,6 +16,7 @@ import { Divider } from '@rneui/base';
 import { entryTitle } from '../diary/Diary';
 import { MainStackParamList } from '@app/types/navigation';
 import { NativeStackScreenProps } from '@react-navigation/native-stack';
+import { localAnalytics } from '@app/utils/analytics';
 export default function ({
   route,
   navigation,
@@ -68,7 +68,7 @@ export default function ({
           <View style={{ position: 'absolute', top: 0 }}>
             <GoBackButton
               onPress={() => {
-                void analytics().logEvent('ConversationDetailGoBack', {
+                void localAnalytics().logEvent('ConversationDetailGoBack', {
                   screen: 'ConversationDetail',
                   action: 'Go back button clicked',
                   userId: authContext.userId,
