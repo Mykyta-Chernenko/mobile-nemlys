@@ -37,7 +37,7 @@ export default function ({
             width: '100%',
           }}
           // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
-          source={require('../../../../assets/images/how_we_work.png')}
+          // source={require('../../../../assets/images/how_we_work.png')}
         />
       </View>
       <View

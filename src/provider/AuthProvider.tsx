@@ -3,6 +3,7 @@ import { supabase } from '@app/api/initSupabase';
 import { Linking } from 'react-native';
 import { SupabaseUser } from '@app/types/api';
 import { logErrors } from '@app/utils/errors';
+import { analyticsIdentifyUser } from '@app/utils/analytics';
 
 export type HandleUser = (user: SupabaseUser, exists: boolean) => Promise<void>;
 export const ANON_USER = 'anon';
@@ -59,7 +60,11 @@ interface Props {
 const AuthProvider = (props: Props) => {
   // user null = loading
   const [isSignedIn, setIsSignedIn] = useState<boolean | null>(null);
-  const [userId, setUserId] = useState<string | null>(null);
+  const [userId, setUserIdOriginal] = useState<string | undefined>(undefined);
+  const setUserId = (userId: string | undefined) => {
+    void analyticsIdentifyUser(userId);
+    setUserIdOriginal(userId);
+  };
   useEffect(() => {
     const handleDeepLinking = async (url: string | null): Promise<void> => {
       if (!url) return;

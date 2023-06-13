@@ -1,195 +1,150 @@
-import React, { useContext, useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { supabase } from '@app/api/initSupabase';
 import { ViewSetHomeScreen } from './ViewSetHomeScreen';
-import { Action, Question } from '@app/types/domain';
-import { getQuestionsAndActionsForSet } from '@app/api/data/set';
-import { APICoupleSet, SupabaseAnswer } from '@app/types/api';
-import SetList from './SetList';
-import { Platform, StyleProp, TouchableOpacity, View, ViewStyle } from 'react-native';
-import { Dialog, useTheme } from '@rneui/themed';
+import { APIDate, APIGeneratedQuestion, SupabaseAnswer } from '@app/types/api';
+import { View } from 'react-native';
+import { Icon, Slider, useTheme } from '@rneui/themed';
 import { Loading } from '../utils/Loading';
 import { i18n } from '@app/localization/i18n';
-import moment from 'moment';
-import ClockIcon from '@app/icons/clock';
-import { PrimaryButton } from '../buttons/PrimaryButtons';
-// import DateTimePicker, {
-//   AndroidNativeProps,
-//   DateTimePickerAndroid,
-//   IOSNativeProps,
-// } from '@react-native-community/datetimepicker';
 import { MainNavigationProp } from '@app/types/navigation';
 import { useNavigation } from '@react-navigation/native';
 import { FontText } from '../utils/FontText';
-import { isDevice } from 'expo-device';
-import { getNotificationForMeeting } from '@app/utils/sets';
-import {
-  removeOldMeetingNotifications,
-  scheduleMeetingNotification,
-} from '@app/utils/notification';
+
 import { logErrors } from '@app/utils/errors';
-import { AuthContext } from '@app/provider/AuthProvider';
-import { localAnalytics } from '@app/utils/analytics';
+import { PrimaryButton } from '../buttons/PrimaryButtons';
+import ChooseDateTopics from './ChooseDateTopics';
 
 export default function () {
   const navigation = useNavigation<MainNavigationProp>();
   const { theme } = useTheme();
   const [loading, setLoading] = useState(true);
-  const [currentSet, setCurrentSet] = useState<APICoupleSet | undefined>(undefined);
-  const [questions, setQuestions] = useState<Question[]>([]);
-  const [actions, setActions] = useState<Action[]>([]);
-  const meetingDate = currentSet?.meeting ? moment(currentSet.meeting) : undefined;
-  const readableDate = meetingDate
-    ? meetingDate.format('MMM Do, HH:mm')
-    : i18n.t('set.chosen.date_is_not_set');
 
-  const [now, setNow] = useState<Date>(new Date());
-  const meetingSet = currentSet?.meeting;
-  const meetingHappened = currentSet?.meeting && new Date(currentSet.meeting) < now;
-  const halfHour = __DEV__ ? 0 : 1000 * 60 * 10;
-  const setCreatedTooRecently =
-    currentSet?.created_at &&
-    new Date(currentSet.created_at) > new Date(new Date(now).getTime() - halfHour);
-  const enableCompletedButton = meetingSet && meetingHappened && !setCreatedTooRecently;
-
-  useEffect(() => {
-    const id = setInterval(() => setNow(new Date()), 1000);
-    return () => clearInterval(id);
-  });
-
-  useEffect(() => {
-    async function getCurrentLevel() {
-      const res: SupabaseAnswer<APICoupleSet | null> = await supabase
-        .from('couple_set')
-        .select(
-          'id, created_at, updated_at, set_id,couple_id,order,completed,schedule_reminder,meeting',
-        )
-        .eq('completed', false)
-        .maybeSingle();
-      if (res.error) {
-        logErrors(res.error);
-        return;
-      }
-      if (res.data) {
-        setCurrentSet(res.data);
-        const questionsActions = await getQuestionsAndActionsForSet(res.data.set_id);
-        if (questionsActions) {
-          setQuestions(questionsActions.questions);
-          setActions(questionsActions.actions);
-        }
-      }
-      setLoading(false);
-    }
-    void getCurrentLevel();
-  }, [setLoading, setQuestions, setActions]);
-
-  const defaultDate = (currentSet?.meeting && new Date(currentSet?.meeting)) || now;
-  const [showChangeDate, setShowChangeDate] = useState(false);
-  const [chosenDateTime, setChosenDateTime] = useState<Date>(defaultDate);
-  const [chosenDateTouched, setChosenDateTouched] = useState<boolean>(false);
-  const [chosenTimeTouched, setChosenTimeTouched] = useState<boolean>(false);
-  const dateTimePickerBaseProps: IOSNativeProps | AndroidNativeProps = {
-    value: chosenDateTime,
-    display: 'compact',
-    style: { marginRight: 5 },
-    themeVariant: theme.mode,
-  };
-  const authContext = useContext(AuthContext);
-
-  const datePickerProps: IOSNativeProps | AndroidNativeProps = {
-    ...dateTimePickerBaseProps,
-    testID: 'datePicker',
-    mode: 'date',
-    onChange: (event, value: Date) => {
-      void localAnalytics().logEvent('ChosenSetReminderDateChanged', {
-        screen: 'ChosenSet',
-        action: 'Reminder date changed',
-        value: value,
-        userId: authContext.userId,
-      });
-      setChosenDateTouched(true);
-      setChosenDateTime(value || now);
-    },
-  };
-  const timePickerProps: IOSNativeProps | AndroidNativeProps = {
-    ...dateTimePickerBaseProps,
-    testID: 'timePicker',
-    mode: 'time',
-    onChange: (event, value: Date) => {
-      void localAnalytics().logEvent('ChosenSetReminderTimeChanged', {
-        screen: 'ChosenSet',
-        action: 'Reminder time changed',
-        value: value,
-        userId: authContext.userId,
-      });
-      setChosenTimeTouched(true);
-      setChosenDateTime(value || now);
-    },
-  };
-  const dateAndTimeLabelStyle: StyleProp<ViewStyle> = {
-    paddingVertical: 5,
-    paddingHorizontal: 7,
-    marginHorizontal: 3,
-    backgroundColor: theme.colors.grey5,
-    borderRadius: 7,
-  };
-
-  const updateMeetingDate = async () => {
-    void localAnalytics().logEvent('ChosenSetUpdateMeetingDateClicked', {
-      screen: 'ChosenSet',
-      action: 'Update meeting date changed and submitted',
-      userId: authContext.userId,
-    });
-    if (!currentSet) {
+  const [currentQuestion, setCurrentQuestion] = useState<APIGeneratedQuestion | undefined>(
+    undefined,
+  );
+  const [currentDate, setCurrentDate] = useState<APIDate | undefined>(undefined);
+  const [showRating, setShowRating] = useState<boolean>(false);
+  const [rating, setRating] = useState<number | undefined>(0);
+  const [changingTopics, setChangingTopics] = useState<boolean>(false);
+  const dateFields = 'id, couple_id, active, topics, modes, created_at, updated_at';
+  async function getQuestion() {
+    setLoading(true);
+    const dateRes: SupabaseAnswer<APIDate> = await supabase
+      .from('date')
+      .select(dateFields)
+      .eq('active', true)
+      .single();
+    if (dateRes.error) {
+      logErrors(dateRes.error);
       return;
     }
-    try {
-      setLoading(true);
-      const res: SupabaseAnswer<APICoupleSet> = await supabase
-        .from('couple_set')
-        .update({
-          meeting: chosenDateTime,
-          schedule_reminder: undefined,
-          updated_at: new Date(),
-        })
-        .eq('id', currentSet.id)
-        .select()
-        .single();
+    setCurrentDate(dateRes.data);
+    const res: SupabaseAnswer<APIGeneratedQuestion | null> = await supabase
+      .from('generated_question')
+      .select('id, date_id, question ,finished, feedback_score, skipped, created_at, updated_at')
+      .eq('date_id', dateRes.data.id)
+      .eq('skipped', false)
+      .eq('finished', false)
+      .maybeSingle();
+    if (res.error) {
+      logErrors(res.error);
+      return;
+    }
+    if (res.data) {
+      setCurrentQuestion(res.data);
+    } else {
+      const res = await supabase.functions.invoke('generate-question', {
+        body: { date_id: dateRes.data.id },
+      });
       if (res.error) {
         logErrors(res.error);
         return;
       }
-      setCurrentSet(res.data);
-      await scheduleNewReminder(res.data.id);
-    } finally {
-      setShowChangeDate(false);
-      setLoading(false);
+      setCurrentQuestion(res.data as APIGeneratedQuestion);
+    }
+    setLoading(false);
+  }
+  useEffect(() => {
+    void getQuestion();
+  }, []);
+
+  const handleSkipButton = async () => {
+    if (currentQuestion) {
+      const questionReponse = await supabase
+        .from('generated_question')
+        .update({ skipped: true })
+        .eq('id', currentQuestion.id);
+      if (questionReponse.error) {
+        logErrors(questionReponse.error);
+        return;
+      }
+      setCurrentQuestion(undefined);
+      await getQuestion();
     }
   };
-
-  const scheduleNewReminder = async (coupleSetId: number) => {
-    if (isDevice) {
-      const { reminderTime, identifier, title } = getNotificationForMeeting(
-        chosenDateTime,
-        coupleSetId,
-      );
-      if (reminderTime && identifier && title) {
-        await removeOldMeetingNotifications(coupleSetId);
-        await scheduleMeetingNotification(title, reminderTime, identifier);
+  const handleNextQuestionButton = () => {
+    if (currentQuestion && !rating && !showRating) {
+      setShowRating(true);
+    }
+  };
+  const handleNextAfterRatingSet = async (rating: number) => {
+    if (currentQuestion && showRating && rating) {
+      const updateDict = { finished: true, feedback_score: rating };
+      const questionReponse = await supabase
+        .from('generated_question')
+        .update(updateDict)
+        .eq('id', currentQuestion.id);
+      if (questionReponse.error) {
+        logErrors(questionReponse.error);
+        return;
       }
     }
+    setCurrentQuestion(undefined);
+    setRating(undefined);
+    setShowRating(false);
+    await getQuestion();
+  };
+  const handleFinishDateButton = async () => {
+    if (!currentDate) return;
+    const dateReponse = await supabase
+      .from('date')
+      .update({ active: false })
+      .eq('id', currentDate.id);
+    if (dateReponse.error) {
+      logErrors(dateReponse.error);
+      return;
+    }
+    navigation.navigate('SetHomeScreen', { refreshTimeStamp: new Date().toISOString() });
+  };
+  const handleChangeTopicsButton = () => {
+    setChangingTopics(true);
   };
 
-  const handleButton = () => {
-    if (!currentSet) return;
-    void localAnalytics().logEvent('ChosenSetCompleteSetClicked', {
-      screen: 'ChosenSet',
-      action: 'Complete set clicked',
-      userId: authContext.userId,
-    });
-    navigation.navigate('CompleteSetReflect', {
-      setId: currentSet.set_id,
-      coupleSetId: currentSet.id,
-    });
+  const handleTopicsChanged = async (topics: string[], modes: string[]) => {
+    if (!currentDate || !currentQuestion) return;
+    setLoading(true);
+    const dateReponse = await supabase
+      .from('date')
+      .update({ topics: topics.join(','), modes: modes.join(',') })
+      .eq('id', currentDate.id)
+      .select(dateFields)
+      .single();
+    if (dateReponse.error) {
+      logErrors(dateReponse.error);
+      return;
+    }
+    const questionReponse = await supabase
+      .from('generated_question')
+      .delete()
+      .eq('id', currentQuestion.id);
+    if (questionReponse.error) {
+      logErrors(questionReponse.error);
+      return;
+    }
+    setCurrentDate(dateReponse.data);
+    await getQuestion();
+    setLoading(false);
+    setChangingTopics(false);
   };
   return (
     <ViewSetHomeScreen>
@@ -207,123 +162,88 @@ export default function () {
             style={{
               marginBottom: 25,
               marginTop: 10,
-              flexDirection: 'row',
-              justifyContent: 'space-between',
-              alignItems: 'center',
+              flexDirection: 'column',
             }}
           >
             <View>
               <FontText style={{ color: theme.colors.white, fontSize: 18 }}>
-                {i18n.t('set.chosen.title')}
+                {i18n.t('date.on_date.title')}
               </FontText>
-              <FontText style={{ color: theme.colors.grey4, fontSize: 12 }}>
-                {i18n.t('set.chosen.click_tips')}
+              <FontText style={{ color: theme.colors.white, fontSize: 18 }}>
+                topics: {currentDate?.topics}
+              </FontText>
+              <FontText style={{ color: theme.colors.white, fontSize: 18 }}>
+                modes: {currentDate?.modes}
               </FontText>
             </View>
-            <TouchableOpacity
-              onPress={() => {
-                setChosenDateTime(defaultDate);
-                setChosenTimeTouched(false);
-                setChosenDateTouched(false);
-                setShowChangeDate(true);
-              }}
-            >
-              <View style={{ flexDirection: 'row' }}>
+            {showRating ? (
+              <View>
+                <FontText h3>How good was the question?</FontText>
+                <Slider
+                  value={0}
+                  onValueChange={setRating}
+                  maximumValue={100}
+                  minimumValue={0}
+                  step={1}
+                  onSlidingComplete={(value) => void handleNextAfterRatingSet(value)}
+                  allowTouchTrack
+                  orientation="horizontal"
+                  animateTransitions={true}
+                  thumbStyle={{ height: 20, width: 16, backgroundColor: 'black' }}
+                  thumbProps={{
+                    children: (
+                      <Icon
+                        name="fire"
+                        type="font-awesome"
+                        size={20}
+                        reverse
+                        containerStyle={{ bottom: 20, right: 20 }}
+                        color="#f50"
+                      />
+                    ),
+                  }}
+                />
+              </View>
+            ) : changingTopics ? (
+              <ChooseDateTopics
+                topics={currentDate!.topics.split(',')}
+                modes={currentDate!.modes.split(',')}
+                onNextPress={(topics: string[], modes: string[]) =>
+                  void handleTopicsChanged(topics, modes)
+                }
+              ></ChooseDateTopics>
+            ) : (
+              <View>
                 <View
                   style={{
-                    backgroundColor: theme.colors.white,
-                    borderRadius: 10,
-                    paddingHorizontal: 7,
-                    paddingVertical: 5,
-                    flexDirection: 'row',
+                    borderRadius: 15,
+                    borderColor: theme.colors.black,
+                    borderWidth: 1,
+                    padding: 15,
                   }}
                 >
-                  <View style={{ flexDirection: 'column', paddingRight: 20 }}>
-                    <FontText style={{ color: theme.colors.grey2 }}>
-                      {i18n.t('set.chosen.next_date_is')}
-                    </FontText>
-                    <FontText>
-                      {readableDate}
-                      <View>
-                        <FontText style={{ transform: [{ rotateZ: '90deg' }] }}>✎</FontText>
-                      </View>
-                    </FontText>
-                  </View>
+                  <FontText>{i18n.t('date.on_date.question')}</FontText>
+                  <FontText h4> {currentQuestion?.question}</FontText>
                 </View>
-                <View style={{ flexDirection: 'row', position: 'absolute', right: 0, top: 20 }}>
-                  <ClockIcon height={30} width={30} />
+                <View style={{ flexDirection: 'column' }}>
+                  <PrimaryButton style={{ marginTop: 10 }} onPress={handleNextQuestionButton}>
+                    {i18n.t('date.on_date.next_question')}
+                  </PrimaryButton>
+                  <PrimaryButton style={{ marginTop: 10 }} onPress={() => void handleSkipButton()}>
+                    {i18n.t('date.on_date.skip_question')}
+                  </PrimaryButton>
+                  <PrimaryButton
+                    style={{ marginTop: 10 }}
+                    onPress={() => void handleFinishDateButton()}
+                  >
+                    {i18n.t('date.on_date.end_date')}
+                  </PrimaryButton>
+                  <PrimaryButton style={{ marginTop: 10 }} onPress={handleChangeTopicsButton}>
+                    {i18n.t('date.on_date.change_topics')}
+                  </PrimaryButton>
                 </View>
               </View>
-
-              <Dialog isVisible={showChangeDate} onBackdropPress={() => setShowChangeDate(false)}>
-                <Dialog.Title title={i18n.t('set.chosen.change_meeting_date.title')} />
-                <View
-                  style={{
-                    flexDirection: 'row',
-                    justifyContent: 'center',
-                    marginTop: 10,
-                  }}
-                >
-                  {Platform.OS == 'ios' ? (
-                    <></>
-                  ) : (
-                    // must be upper
-                    // <DateTimePicker {...datePickerProps} />
-                    <TouchableOpacity
-                      onPress={() => {
-                        // DateTimePickerAndroid.open(datePickerProps as AndroidNativeProps);
-                      }}
-                      style={dateAndTimeLabelStyle}
-                    >
-                      <FontText>{moment(chosenDateTime).format('MMM Do')}</FontText>
-                    </TouchableOpacity>
-                  )}
-                  {Platform.OS == 'ios' ? (
-                    <></>
-                  ) : (
-                    // must be
-                    // <DateTimePicker {...timePickerProps} />
-                    <TouchableOpacity
-                      onPress={() => {
-                        // DateTimePickerAndroid.open(timePickerProps as AndroidNativeProps)
-                      }}
-                      style={dateAndTimeLabelStyle}
-                    >
-                      <FontText>{moment(chosenDateTime).format('HH:mm')}</FontText>
-                    </TouchableOpacity>
-                  )}
-                </View>
-                <Dialog.Actions>
-                  <Dialog.Button
-                    title={i18n.t('save')}
-                    disabled={!chosenDateTouched && !chosenTimeTouched}
-                    onPress={() => void updateMeetingDate()}
-                  />
-                  <Dialog.Button title={i18n.t('close')} onPress={() => setShowChangeDate(false)} />
-                </Dialog.Actions>
-              </Dialog>
-            </TouchableOpacity>
-          </View>
-          <SetList actions={actions} questions={questions} chosenSet={true}></SetList>
-          <View style={{ marginTop: 10 }}>
-            {!meetingSet && (
-              <FontText style={{ color: theme.colors.grey2, marginBottom: 5 }}>
-                {i18n.t('set.chosen.button.disable_before_meeting_set')}
-              </FontText>
             )}
-            {meetingSet && !meetingHappened && (
-              <FontText style={{ color: theme.colors.grey2, marginBottom: 5 }}>
-                {i18n.t('set.chosen.button.disable_before_meeting_happened')}
-              </FontText>
-            )}
-            {meetingHappened && setCreatedTooRecently && (
-              <FontText style={{ color: theme.colors.grey2, marginBottom: 5 }}>
-                {i18n.t('set.chosen.button.set_created_too_recently')}
-              </FontText>
-            )}
-            <PrimaryButton disabled={!enableCompletedButton} onPress={handleButton}>
-              {i18n.t('set.chosen.button.title')}
-            </PrimaryButton>
           </View>
         </View>
       )}

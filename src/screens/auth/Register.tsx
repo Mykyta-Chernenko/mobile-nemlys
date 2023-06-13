@@ -9,7 +9,6 @@ import { supabase } from '@app/api/initSupabase';
 import {
   APICouple,
   InsertAPICouple,
-  InsertAPIUserOnboardingAnswer,
   InsertAPIUserProfile,
   SupabaseAnswer,
   SupabaseUser,
@@ -21,6 +20,35 @@ import { KEYBOARD_BEHAVIOR } from '@app/utils/constants';
 import { FontText } from '@app/components/utils/FontText';
 import { logErrors, logErrorsWithMessage } from '@app/utils/errors';
 import { localAnalytics } from '@app/utils/analytics';
+export async function handleUserAfterSignUp(user: SupabaseUser, exists: boolean): Promise<void> {
+  if (exists) {
+    console.log(`User ${user.email || 'with this email'} already exists, just signing in`);
+  } else {
+    const couple: InsertAPICouple = {
+      invitation_code: randomReadnableString(6),
+    };
+    const { data, error }: SupabaseAnswer<APICouple> = await supabase
+      .from('couple')
+      .insert(couple)
+      .select()
+      .single();
+    if (error) {
+      throw error;
+    }
+    const userProfile: InsertAPIUserProfile = {
+      couple_id: data.id,
+      user_id: user.id,
+      first_name: '',
+      onboarding_finished: false,
+      ios_expo_token: undefined,
+      android_expo_token: undefined,
+    };
+    const { error: profileError } = await supabase.from('user_profile').insert(userProfile);
+    if (profileError) {
+      throw profileError;
+    }
+  }
+}
 export default function ({
   route,
   navigation,
@@ -74,61 +102,7 @@ export default function ({
       throw e;
     }
   }
-  async function handleUserAfterSignUp(user: SupabaseUser, exists: boolean): Promise<void> {
-    if (exists) {
-      // TODO, maybe update user answers here
-      console.log(`User ${user.email || 'with this email'} already exists, just signing in`);
-    } else {
-      const couple: InsertAPICouple = {
-        invitation_code: randomReadnableString(6),
-      };
-      const { data, error }: SupabaseAnswer<APICouple> = await supabase
-        .from('couple')
-        .insert(couple)
-        .select()
-        .single();
-      if (error) {
-        throw error;
-      }
-      const userProfile: InsertAPIUserProfile = {
-        couple_id: data.id,
-        user_id: user.id,
-        first_name: route.params.name,
-        onboarding_finished: true,
-        ios_expo_token: undefined,
-        android_expo_token: undefined,
-      };
-      const { error: profileError } = await supabase.from('user_profile').insert(userProfile);
-      if (profileError) {
-        throw profileError;
-      }
 
-      const answers: InsertAPIUserOnboardingAnswer[] = route.params.userAnswers.map((a) => ({
-        user_id: user.id,
-        onboarding_answer_id: a.answer.id,
-        onboarding_question_id: a.question.id,
-      }));
-
-      const { error: onboaringError } = await supabase
-        .from('user_onboarding_answer')
-        .insert(answers);
-      if (onboaringError) {
-        throw onboaringError;
-      }
-
-      const relationshipStateAnswer = {
-        user_id: user.id,
-        answer: route.params.relationshipStateAnswer,
-      };
-
-      const { error: onboardingRelationshipStateError } = await supabase
-        .from('onboarding_relationship_state')
-        .insert(relationshipStateAnswer);
-      if (onboardingRelationshipStateError) {
-        throw onboardingRelationshipStateError;
-      }
-    }
-  }
   return (
     <KeyboardAvoidingView behavior={KEYBOARD_BEHAVIOR} style={{ flexGrow: 1 }}>
       <ScrollView

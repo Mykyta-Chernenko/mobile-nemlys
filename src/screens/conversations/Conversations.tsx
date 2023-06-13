@@ -88,7 +88,7 @@ export default function ({
               width: '100%',
             }}
             // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
-            source={require('../../../assets/images/audio_conversation.png')}
+            // source={require('../../../assets/images/audio_conversation.png')}
           ></Image>
         </View>
         {loading ? (

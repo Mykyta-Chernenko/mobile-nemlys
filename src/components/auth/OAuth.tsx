@@ -19,6 +19,7 @@ import { FontText } from '../utils/FontText';
 import { logErrors, logErrorsWithMessage, UserDoesNotExistError } from '@app/utils/errors';
 import { SecondaryButton } from '../buttons/SecondaryButton';
 import { localAnalytics } from '@app/utils/analytics';
+import { PrimaryButton } from '../buttons/PrimaryButtons';
 
 export const OAuth = ({
   handleUser: handleUser,
@@ -98,28 +99,49 @@ export const OAuth = ({
     }
   };
   return (
-    <View
-      style={{
-        flexDirection: 'column',
-        alignItems: 'center',
-        justifyContent: 'center',
-        marginTop: 10,
-      }}
-    >
-      <View style={{ width: 200 }}>
-        <SecondaryButton type="outline" onPress={() => void onPress('google')}>
-          <GoogleIcon height="20" width="20" />
+    <>
+      <PrimaryButton
+        onPress={() => void onPress('apple')}
+        buttonStyle={{
+          marginTop: 10,
+        }}
+      >
+        <View
+          style={{
+            justifyContent: 'center',
+            alignItems: 'center',
+            flexDirection: 'row',
+          }}
+        >
+          <AppleIcon
+            height="20"
+            width="20"
+            fill={theme.colors.grey0}
+            style={{ borderWidth: 0, borderColor: 'white' }}
+          />
 
-          <FontText style={{ marginLeft: 5 }}>{i18n.t('oauth.button.google')}</FontText>
-        </SecondaryButton>
-      </View>
-      <View style={{ marginTop: 10, width: 200 }}>
-        <SecondaryButton type="outline" onPress={() => void onPress('apple')}>
-          <AppleIcon height="20" width="20" />
-
-          <FontText style={{ marginLeft: 5 }}>{i18n.t('oauth.button.apple')}</FontText>
-        </SecondaryButton>
-      </View>
-    </View>
+          <FontText
+            style={{
+              marginLeft: 5,
+              color: theme.colors.grey0,
+              paddingTop: 7,
+              fontSize: 16,
+            }}
+          >
+            {i18n.t('oauth.button.apple')}
+          </FontText>
+        </View>
+      </PrimaryButton>
+      <SecondaryButton
+        onPress={() => void onPress('google')}
+        style={{ marginTop: 10 }}
+        buttonStyle={{ borderColor: theme.colors.grey3, borderWidth: 1 }}
+      >
+        <GoogleIcon height="20" width="20" />
+        <FontText style={{ marginLeft: 5, fontSize: 16, paddingTop: 3 }}>
+          {i18n.t('oauth.button.google')}
+        </FontText>
+      </SecondaryButton>
+    </>
   );
 };

@@ -61,7 +61,7 @@ export default function ({
               height: 220,
               width: 220,
             }}
-            source={require('../../../assets/images/forget.png')}
+            // source={require('../../../assets/images/forget.png')}
           />
         </View>
         <View

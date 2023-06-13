@@ -1,6 +1,7 @@
 {
   "awesome": "Awesome!",
   "loading": "Loading",
+  "continue": "Continue",
   "or": "Or",
   "ok": "Ok",
   "yes": "Yes",
@@ -23,6 +24,43 @@
   "join": "Join",
   "history": "History",
   "cards": "Cards",
+  "update": {
+    "title": "Update",
+    "outdated_title": "Your version is outdated",
+    "need_to_update": "You will need to update your app to the latest version to continue using the app."
+  },
+  "date": {
+    "start_date": "Start date",
+    "on_date": {
+      "title": "You are on a date!",
+      "question": "Your question",
+      "next_question": "Finish this question and get another one",
+      "skip_question": "Skip this question",
+      "change_topics": "Change topics",
+      "end_date": "End date"
+    },
+    "topic": {
+      "title": "choose topic",
+      "future": "Future",
+      "partner_attitude": "Partner attitude",
+      "commitment": "Commitment",
+      "past": "Past",
+      "relationship_image": "Relationship image",
+      "goals": "Goals",
+      "friends": "Friends",
+      "polyamory": "Polyamory",
+      "worldview": "Worldview",
+      "money": "Money"
+    },
+    "mod": {
+      "title": "choose mod",
+      "first_date": "First date",
+      "funny": "Funny",
+      "personal": "Personal",
+      "exploring": "Exploring",
+      "extra_hard": "Extra hard"
+    }
+  },
   "beta": {
     "pre_beta_title": "beta",
     "title": "Join our beta",
@@ -56,16 +94,9 @@
     }
   },
   "welcome": {
-    "title": "Get to know ",
-    "middle": "your partner",
-    "title2": " better",
-    "pretext": "Use Nemlys app to learn common ground and build meaningful communication",
-    "check_email_for_login_link": "The login link was sent to your email",
+    "title": "Get questions\n to discuss with\n your partner",
     "button": {
-      "default": "Get started"
-    },
-    "login": {
-      "link": "Sign in instead"
+      "default": "Continue"
     }
   },
   "pre_placement": {
@@ -98,10 +129,10 @@
   },
   "login": {
     "user_does_not_exist_error": "User with email %{email} does not exist in the system",
-    "title": "Login",
+    "title": "Sign in\nNemlys account",
     "check_email_for_login_link": "The login link was sent to your email",
     "button": {
-      "default": "Continue "
+      "default": "Continue with Email"
     },
     "register": {
       "pretext": "Don't have an account?",

@@ -1,14 +1,12 @@
 import React, { useContext, useEffect, useState } from 'react';
 import { RefreshControl, ScrollView, TouchableOpacity, View } from 'react-native';
-import { Icon, Image } from '@rneui/themed';
+import { Icon } from '@rneui/themed';
 import { LinearGradient } from 'expo-linear-gradient';
 import { useNavigation } from '@react-navigation/native';
 import { MainNavigationProp } from '@app/types/navigation';
 import { AuthContext } from '@app/provider/AuthProvider';
 import { LinearProgress } from '@rneui/themed/dist/LinearProgress';
 import { useTheme } from '@rneui/themed';
-import { logErrors } from '@app/utils/errors';
-import { supabase } from '@app/api/initSupabase';
 import { i18n } from '@app/localization/i18n';
 import { PrimaryButton } from '../buttons/PrimaryButtons';
 
@@ -19,6 +17,8 @@ import { useRoute } from '@react-navigation/native';
 import { HistorySetScreenName, IS_SUPABASE_DEV } from '@app/utils/constants';
 import { FontText } from '../utils/FontText';
 import { localAnalytics } from '@app/utils/analytics';
+import { supabase } from '@app/api/initSupabase';
+import { logErrors } from '@app/utils/errors';
 const CARD_PER_SET = 10;
 export const ViewSetHomeScreen = (props: Props) => {
   const [name, setName] = useState<string | null>(null);
@@ -69,7 +69,7 @@ export const ViewSetHomeScreen = (props: Props) => {
     <ScrollView
       contentContainerStyle={{
         flexGrow: 1,
-        backgroundColor: 'white',
+        backgroundColor: backgroundColor,
       }}
       refreshControl={
         <RefreshControl
@@ -98,34 +98,12 @@ export const ViewSetHomeScreen = (props: Props) => {
       >
         <View
           style={{
-            height: 90,
-            width: '100%',
-            backgroundColor: backgroundColor,
-            position: 'absolute',
-            marginTop: 160,
-          }}
-        ></View>
-        <Image
-          resizeMode="contain"
-          style={{
-            height: 170,
-            width: '100%',
-            marginTop: 20,
-            justifyContent: 'flex-end',
-          }}
-          // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
-          source={require('../../../assets/images/home.png')}
-        ></Image>
-
-        <View
-          style={{
-            marginTop: 140,
-            position: 'absolute',
             display: 'flex',
             flexDirection: 'column',
             alignContent: 'center',
             alignItems: 'center',
             width: '100%',
+            height: 250,
           }}
         >
           <View
@@ -133,6 +111,9 @@ export const ViewSetHomeScreen = (props: Props) => {
               paddingVertical: 5,
               width: 250,
               borderRadius: 15,
+              marginTop: 100,
+              height: 50,
+              backgroundColor: backgroundColor,
             }}
           >
             {name !== null && (
@@ -140,7 +121,6 @@ export const ViewSetHomeScreen = (props: Props) => {
                 style={{ flexDirection: 'row', justifyContent: 'center', alignItems: 'center' }}
               >
                 <FontText style={{ color: theme.colors.white, marginRight: 7, fontSize: 16 }}>
-                  {/* TODO change when partner appears */}
                   {`${name} & Partner` + (IS_SUPABASE_DEV ? ' dev' : '')}
                 </FontText>
                 <TouchableOpacity

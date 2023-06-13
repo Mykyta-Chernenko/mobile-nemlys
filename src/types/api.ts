@@ -145,3 +145,24 @@ export class APIConversation extends ApiEntry {
   text: string;
   ai: string;
 }
+
+export class APIDate extends ApiEntry {
+  couple_id: APICouple['id'];
+  topics: string;
+  modes: string;
+  active: boolean;
+}
+
+export type InsertAPIDate = Omit<APIDate, keyof ApiEntry>;
+
+export class APIGeneratedQuestion extends ApiEntry {
+  date_id: APIDate['id'];
+  question: string;
+  finished: boolean;
+  feedback_score?: number;
+  skipped: boolean;
+}
+
+export class APIAppSettings extends ApiEntry {
+  version: number;
+}

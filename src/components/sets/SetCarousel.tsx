@@ -215,7 +215,7 @@ const CardItem: React.FC<SetQuestionAction & { deckType: CarouselCardsType }> = 
     ? { textAlign: 'center', paddingHorizontal: 30, width: '100%' }
     : { textAlign: 'center', width: '100%' };
   const skipCard = async () => {
-    await localAnalytics().logEvent('SetItemCardSkipCardConfirm', {
+    void localAnalytics().logEvent('SetItemCardSkipCardConfirm', {
       screen: 'SetItemCard',
       action: 'Attempt to skip card was confirmed',
       setId: setId,

@@ -16,11 +16,7 @@ export default function ({
   const [isSetChosen, setIsSetChosen] = useState(false);
   async function getCurrentLevel() {
     setLoading(true);
-    const currentLevel = await supabase
-      .from('couple_set')
-      .select()
-      .eq('completed', false)
-      .maybeSingle();
+    const currentLevel = await supabase.from('date').select().eq('active', true).maybeSingle();
     if (currentLevel.error) {
       logErrors(currentLevel.error);
     } else if (currentLevel.data) {

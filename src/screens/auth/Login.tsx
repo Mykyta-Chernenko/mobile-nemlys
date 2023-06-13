@@ -1,23 +1,26 @@
 import React, { useContext, useRef, useState } from 'react';
-import { Image, KeyboardAvoidingView, ScrollView, TouchableOpacity, View } from 'react-native';
+import { Image, ImageBackground, ScrollView, TouchableOpacity, View } from 'react-native';
 import { supabase } from '@app/api/initSupabase';
 import { AuthStackParamList } from '@app/types/navigation';
 import { NativeStackScreenProps } from '@react-navigation/native-stack';
-import { Input, useTheme } from '@rneui/themed';
+import { Input, ThemeProvider, useTheme } from '@rneui/themed';
 import { OAuth } from '@app/components/auth/OAuth';
 import * as WebBrowser from 'expo-web-browser';
 import { i18n } from '@app/localization/i18n';
-import { SupabaseUser } from '@app/types/api';
 import { ANON_USER, AuthContext } from '@app/provider/AuthProvider';
-import { KEYBOARD_BEHAVIOR } from '@app/utils/constants';
 import { FontText } from '@app/components/utils/FontText';
-import { logErrorsWithMessage, UserDoesNotExistError } from '@app/utils/errors';
+import { logErrors, logErrorsWithMessage } from '@app/utils/errors';
 import { localAnalytics } from '@app/utils/analytics';
 import { PrimaryButton } from '@app/components/buttons/PrimaryButtons';
+import { GoBackButton } from '@app/components/buttons/GoBackButton';
+import { SafeAreaView } from 'react-native-safe-area-context';
+import { SecondaryButton } from '@app/components/buttons/SecondaryButton';
+import { handleUserAfterSignUp } from './Register';
 WebBrowser.maybeCompleteAuthSession();
 
 export default function ({ navigation }: NativeStackScreenProps<AuthStackParamList, 'Login'>) {
   const { theme } = useTheme();
+  const [isContinueWithEmail, setIsContinueWithEmail] = useState<boolean>(false);
   const [email, setEmail] = useState<string>('');
   const [password, setPassword] = useState<string>('');
   const [loading, setLoading] = useState<boolean>(false);
@@ -40,7 +43,27 @@ export default function ({ navigation }: NativeStackScreenProps<AuthStackParamLi
     });
     setLoading(false);
     if (error) {
-      logErrorsWithMessage(error, error.message);
+      const {
+        data: { user },
+        error: error2,
+      } = await supabase.auth.signUp({
+        email: email,
+        password: password,
+      });
+      if (error2) {
+        if (error2.message === 'User already registered') {
+          logErrorsWithMessage(error, error.message);
+        } else {
+          logErrorsWithMessage(error2, error2.message);
+        }
+      } else if (!user) {
+        logErrors(new Error('No user after signUp call'));
+        return;
+      } else {
+        await handleUserAfterSignUp(user, false);
+        auth.setIsSignedIn?.(true);
+        auth.setUserId?.(user.id);
+      }
     } else if (!error && !user) {
       alert(i18n.t('login.check_email_for_login_link'));
     } else {
@@ -48,158 +71,147 @@ export default function ({ navigation }: NativeStackScreenProps<AuthStackParamLi
       auth.setUserId?.(user!.id);
     }
   }
-  // eslint-disable-next-line @typescript-eslint/require-await
-  async function checkUserExists(user: SupabaseUser, exists: boolean): Promise<void> {
-    if (!exists) {
-      throw new UserDoesNotExistError(
-        i18n.t('login.user_does_not_exist_error', { email: user?.email || '' }),
-      );
-    }
-  }
-  return (
-    <KeyboardAvoidingView behavior={KEYBOARD_BEHAVIOR} style={{ flexGrow: 1 }}>
-      <ScrollView
-        keyboardShouldPersistTaps="always"
-        contentContainerStyle={{
-          flexGrow: 1,
-          backgroundColor: 'white',
-          paddingVertical: 25,
-          paddingHorizontal: 15,
-        }}
-      >
-        <View
-          style={{
-            marginBottom: 20,
-            height: 200,
-          }}
-        >
-          <Image
-            resizeMode="contain"
-            style={{
-              height: '100%',
-              width: '100%',
-            }}
-            // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
-            source={require('../../../assets/images/login.png')}
-          />
-        </View>
-        <View
-          style={{
-            paddingHorizontal: 15,
-            marginBottom: 10,
-          }}
-        >
-          <FontText
-            style={{
-              textAlign: 'center',
-              marginBottom: 10,
-              fontWeight: 'bold',
-            }}
-            h3
-          >
-            {i18n.t('login.title')}
-          </FontText>
-          <Input
-            containerStyle={{ marginTop: 10, paddingHorizontal: 0 }}
-            inputStyle={{ padding: 5 }}
-            placeholder={i18n.t('email_placeholder')}
-            value={email}
-            autoCapitalize="none"
-            autoComplete="email"
-            autoCorrect={false}
-            keyboardType="email-address"
-            returnKeyType="next"
-            onChangeText={(text) => setEmail(text)}
-            onSubmitEditing={() => passwordRef.current?.focus()}
-            // onPressOut={Keyboard.dismiss}
-          />
 
-          <Input
-            containerStyle={{ paddingHorizontal: 0 }}
-            inputStyle={{ padding: 5 }}
-            placeholder={i18n.t('password_placeholder')}
-            value={password}
-            autoCapitalize="none"
-            autoComplete="off"
-            autoCorrect={false}
-            secureTextEntry={true}
-            returnKeyType="send"
-            onChangeText={(text) => setPassword(text)}
-            ref={passwordRef}
-            onSubmitEditing={() => void login()}
-          />
-          <PrimaryButton
-            title={loading ? i18n.t('loading') : i18n.t('login.button.default')}
-            onPress={() => {
-              void login();
-            }}
-            disabled={loading}
-          />
-          <FontText
-            style={{
-              marginTop: 20,
-              color: theme.colors.grey3,
-              textAlign: 'center',
+  return (
+    <ThemeProvider theme={theme}>
+      <ImageBackground
+        style={{
+          flexGrow: 1,
+        }}
+        source={require('../../../assets/images/onboarding_background.png')}
+      >
+        <SafeAreaView style={{ flexGrow: 1 }}>
+          <ScrollView
+            contentContainerStyle={{
+              flexGrow: 1,
+              paddingHorizontal: 15,
             }}
           >
-            {i18n.t('or')}
-          </FontText>
-          <OAuth handleUser={checkUserExists} />
-          <View
-            style={{
-              flexDirection: 'row',
-              alignItems: 'center',
-              marginTop: 15,
-              justifyContent: 'center',
-            }}
-          >
-            <FontText>{i18n.t('login.register.pretext')}</FontText>
-            <TouchableOpacity
+            <GoBackButton
+              theme="white"
               onPress={() => {
-                void localAnalytics().logEvent('LoginRegisterLinkClicked', {
+                void localAnalytics().logEvent('LoginGoBack', {
                   screen: 'Login',
-                  action: 'Register link clicked',
+                  action: 'Login pressed go back button',
                   userId: ANON_USER,
                 });
                 navigation.navigate('Welcome');
               }}
-            >
-              <FontText
-                style={{
-                  marginLeft: 5,
-                  fontWeight: 'bold',
-                }}
-              >
-                {i18n.t('login.register.link')}
-              </FontText>
-            </TouchableOpacity>
-          </View>
-          <View
-            style={{
-              flexDirection: 'row',
-              alignItems: 'center',
-              marginTop: 10,
-              justifyContent: 'center',
-            }}
-          >
-            <TouchableOpacity
-              onPress={() => {
-                void localAnalytics().logEvent('LoginForgetPasswordClicked', {
-                  screen: 'Login',
-                  action: 'Forget password clicked',
-                  userId: ANON_USER,
-                });
-                navigation.navigate('ForgetPassword');
+            ></GoBackButton>
+            <View
+              style={{
+                marginTop: '30%',
+                marginBottom: '10%',
+                justifyContent: 'space-around',
+                flex: 1,
               }}
             >
-              <FontText style={{ fontWeight: 'bold' }}>
-                {' '}
-                {i18n.t('login.forgot_password.link')}
-              </FontText>
-            </TouchableOpacity>
-          </View>
-        </View>
-      </ScrollView>
-    </KeyboardAvoidingView>
+              <View
+                style={{
+                  marginBottom: '2%',
+                  justifyContent: 'center',
+                  alignItems: 'center',
+                }}
+              >
+                <Image
+                  resizeMode="contain"
+                  // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
+                  source={require('../../../assets/images/white_icon.png')}
+                />
+                <FontText
+                  style={{
+                    textAlign: 'center',
+                    marginTop: 10,
+                  }}
+                  h1
+                >
+                  {i18n.t('login.title')}
+                </FontText>
+              </View>
+              {!isContinueWithEmail ? (
+                <View
+                  style={{
+                    paddingHorizontal: 15,
+                    marginBottom: 10,
+                  }}
+                >
+                  <OAuth handleUser={handleUserAfterSignUp} />
+                  <SecondaryButton
+                    title={i18n.t('login.button.default')}
+                    buttonStyle={{
+                      marginTop: 10,
+                    }}
+                    onPress={() => {
+                      setIsContinueWithEmail(true);
+                    }}
+                  ></SecondaryButton>
+                </View>
+              ) : (
+                <View>
+                  <View>
+                    <Input
+                      placeholder={i18n.t('email_placeholder')}
+                      value={email}
+                      autoCapitalize="none"
+                      autoComplete="email"
+                      autoCorrect={false}
+                      keyboardType="email-address"
+                      returnKeyType="next"
+                      onChangeText={(text) => setEmail(text)}
+                      onSubmitEditing={() => passwordRef.current?.focus()}
+                    />
+                  </View>
+                  <View style={{ marginTop: 10 }}>
+                    <Input
+                      placeholder={i18n.t('password_placeholder')}
+                      value={password}
+                      autoCapitalize="none"
+                      autoComplete="off"
+                      autoCorrect={false}
+                      secureTextEntry={true}
+                      returnKeyType="send"
+                      onChangeText={(text) => setPassword(text)}
+                      ref={passwordRef}
+                      onSubmitEditing={() => void login()}
+                    />
+                  </View>
+
+                  <PrimaryButton
+                    style={{ marginTop: 20 }}
+                    title={loading ? i18n.t('loading') : i18n.t('continue')}
+                    onPress={() => {
+                      void login();
+                    }}
+                    disabled={!email || !password || loading}
+                  />
+                  <View
+                    style={{
+                      flexDirection: 'row',
+                      alignItems: 'center',
+                      marginTop: 20,
+                      justifyContent: 'center',
+                    }}
+                  >
+                    <TouchableOpacity
+                      onPress={() => {
+                        void localAnalytics().logEvent('LoginForgetPasswordClicked', {
+                          screen: 'Login',
+                          action: 'Forget password clicked',
+                          userId: ANON_USER,
+                        });
+                      }}
+                    >
+                      <FontText style={{ fontWeight: 'bold' }}>
+                        {i18n.t('login.forgot_password.link')}
+                      </FontText>
+                    </TouchableOpacity>
+                  </View>
+                </View>
+              )}
+            </View>
+          </ScrollView>
+        </SafeAreaView>
+      </ImageBackground>
+    </ThemeProvider>
   );
 }

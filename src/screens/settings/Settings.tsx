@@ -14,8 +14,18 @@ import { FontText } from '@app/components/utils/FontText';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import Feedback from './Feedback';
 import { Divider } from '@rneui/base';
-import { localAnalytics } from '@app/utils/analytics';
+import { analyticsForgetUser, localAnalytics } from '@app/utils/analytics';
 
+export const logout = async () => {
+  void localAnalytics().logEvent('ViewWithMenuLogout', {
+    screen: 'Settings',
+    action: 'Clicked logout',
+  });
+  await supabase.auth.signOut();
+  await analyticsForgetUser();
+  // just to make sure in case something goes wrong
+  await AsyncStorage.removeItem(AUTH_STORAGE_KEY);
+};
 export default function ({ navigation }: NativeStackScreenProps<MainStackParamList, 'Settings'>) {
   const authContext = useContext(AuthContext);
   const [isBetaUser, setIsBetaUser] = useState(false);
@@ -78,16 +88,6 @@ export default function ({ navigation }: NativeStackScreenProps<MainStackParamLi
     );
   };
 
-  const logout = async () => {
-    void localAnalytics().logEvent('ViewWithMenuLogout', {
-      screen: 'Settings',
-      action: 'Clicked logout',
-      userId: authContext.userId,
-    });
-    await supabase.auth.signOut();
-    // just to make sure in case something goes wrong
-    await AsyncStorage.removeItem(AUTH_STORAGE_KEY);
-  };
   const deleteAccount = async () => {
     void localAnalytics().logEvent('ViewWithMenuClickSendFeedback', {
       screen: 'Settings',

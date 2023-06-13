@@ -1,21 +1,25 @@
 import React from 'react';
 import { Button, ButtonProps, useTheme } from '@rneui/themed';
-export const PrimaryButton = (props: ButtonProps) => {
+export const PrimaryButton = ({ buttonStyle, ...props }: ButtonProps) => {
   const { theme } = useTheme();
   return (
     <Button
       {...props}
-      buttonStyle={{
-        borderRadius: 20,
-        height: 48,
-        backgroundColor: theme.colors.black,
-      }}
+      buttonStyle={[
+        {
+          borderRadius: 35,
+          height: 72,
+          backgroundColor: theme.colors.black,
+        },
+        buttonStyle,
+      ]}
       titleStyle={{
-        fontWeight: '700',
-        fontSize: 18,
+        fontWeight: '600',
+        fontSize: 16,
+        color: theme.colors.white,
       }}
-      disabledStyle={{ backgroundColor: theme.colors.grey1 }}
-      disabledTitleStyle={{ color: theme.colors.white }}
+      disabledStyle={{ backgroundColor: theme.colors.grey2 }}
+      disabledTitleStyle={{ color: theme.colors.grey3 }}
     ></Button>
   );
 };

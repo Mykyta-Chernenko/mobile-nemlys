@@ -60,14 +60,14 @@ export default function ({
     const getAnswer = () => {
       switch (type) {
         case 'audio':
-          return `question: ${freeFormQuestion}\nanswer:${audioAnswer}`;
+          return `question: "${freeFormQuestion}"\nanswer:"${audioAnswer}"`;
         case 'free-form':
-          return `question: ${freeFormQuestion}\nanswer:${freeFormAnswer}`;
+          return `question: "${freeFormQuestion}"\nanswer: "${freeFormAnswer}"`;
 
         case 'guided':
           return guidedAnswers
             .map((g, ind) => {
-              return `question: ${g[0]}\nanswer:${guidedQuestions[ind]}`;
+              return `question: "${g[0]}"\nanswer: "${guidedQuestions[ind]}"`;
             })
             .join('\n');
       }
