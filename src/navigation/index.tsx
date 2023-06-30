@@ -24,7 +24,7 @@ export default () => {
   const userId = auth.userId;
 
   let comp = <></>;
-  if (signedIn === null || userId === null) {
+  if (signedIn === null || !userId) {
     comp = <Loading></Loading>;
   } else if (signedIn === true && userId !== ANON_USER) {
     comp = <Main></Main>;

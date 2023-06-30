@@ -31,6 +31,7 @@ export type InsertAPICouple = Omit<APICouple, keyof ApiEntry>;
 
 export class APIUserProfile extends ApiEntry {
   first_name: string;
+  partner_first_name: string;
   ios_expo_token: string | undefined;
   android_expo_token: string | undefined;
   onboarding_finished: boolean;
@@ -148,8 +149,8 @@ export class APIConversation extends ApiEntry {
 
 export class APIDate extends ApiEntry {
   couple_id: APICouple['id'];
-  topics: string;
-  modes: string;
+  topic: string;
+  level: number;
   active: boolean;
 }
 

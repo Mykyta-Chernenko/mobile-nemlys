@@ -6,10 +6,11 @@ import { ANON_USER } from '@app/provider/AuthProvider';
 import { localAnalytics } from '@app/utils/analytics';
 import { View, Image, ImageBackground, Animated, Easing } from 'react-native';
 import { GoBackButton } from '@app/components/buttons/GoBackButton';
-import { useSafeAreaInsets, SafeAreaView } from 'react-native-safe-area-context';
+import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { FontText } from '@app/components/utils/FontText';
 import { i18n } from '@app/localization/i18n';
 import { PrimaryButton } from '@app/components/buttons/PrimaryButtons';
+import { SafeAreaView } from 'react-native-safe-area-context';
 
 export default function ({
   route,

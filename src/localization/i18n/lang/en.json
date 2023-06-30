@@ -24,6 +24,27 @@
   "join": "Join",
   "history": "History",
   "cards": "Cards",
+  "configure":"Configure",
+  "level":"Level",
+  "home":{
+    "you": "You",
+    "partner": "Partner",
+    "discussions": "discussions",
+    "card_questions": "3 questions",
+    "title_first":"Select topic\nto discuss\n",
+    "title_second":"together",
+    "start":"Get Started",
+    "menu":{
+      "discuss": "Discuss",
+      "diary": "Diary",
+      "premium": "Premium",
+      "story": "Story"
+    }
+  },
+  "story":{
+    "title": "Your Story",
+    "completed":"Completed"
+  },
   "update": {
     "title": "Update",
     "outdated_title": "Your version is outdated",
@@ -31,34 +52,66 @@
   },
   "date": {
     "start_date": "Start date",
-    "on_date": {
-      "title": "You are on a date!",
-      "question": "Your question",
-      "next_question": "Finish this question and get another one",
-      "skip_question": "Skip this question",
-      "change_topics": "Change topics",
-      "end_date": "End date"
+    "level_title_first": "Select ",
+    "level_title_second": "depth ",
+    "level_title_third": "of your questions",
+    "level": {
+      "light":"Light",
+      "normal":"Normal",
+      "deep":"Deep",
+      "existential":"Existetial"
     },
+    "topic_title_first": "Select 1 topic ",
+    "topic_title_second": "to discuss ",
+    "topic_title_third": "with partner",
     "topic": {
-      "title": "choose topic",
+      "title":"Select one topic",
+      "suprise":"Suprise us!",
+      "emotions": "Emotions",
+      "fun": "Fun",
+      "worldview": "Worldview",
+      "goals": "Goals",
       "future": "Future",
-      "partner_attitude": "Partner attitude",
+      "preferences": "Preferences",
+      "appearance": "Appearance",
+      "travel": "Travel",
+      "career": "Career",
+      "expectations": "Expecations",
+      "values": "Values",
+      "gifts": "Gifts",
+      "friends": "Friends",
+      "childhood": "Childhood",
       "commitment": "Commitment",
       "past": "Past",
-      "relationship_image": "Relationship image",
-      "goals": "Goals",
-      "friends": "Friends",
-      "polyamory": "Polyamory",
-      "worldview": "Worldview",
-      "money": "Money"
+      "ex": "Ex",
+      "fidelity": "Fidelity",
+      "trust": "Trust",
+      "money": "Money",
+      "conflict": "Conflict",
+      "social_circle": "Social circle",
+      "love_language": "Love language",
+      "mental_health": "Mental health",
+      "parents": "Parents",
+      "children": "Children",
+      "living_together": "Living together"
     },
-    "mod": {
-      "title": "choose mod",
-      "first_date": "First date",
-      "funny": "Funny",
-      "personal": "Personal",
-      "exploring": "Exploring",
-      "extra_hard": "Extra hard"
+    "generating_questions_first": "Generating questions to discuss ",
+    "generating_questions_second": "with partner",
+    "discuss": "Discuss together",
+    "feedback": {
+      "title_first":"So! How was ",
+      "title_second":"your discussion",
+      "title_third":"?",
+      "choice_4": "We get a few cool insights",
+      "choice_3": "It was good",
+      "choice_2": "Nothing new",
+      "choice_1": "It wasn’t helpful at all"
+    },
+    "new_level":{
+      "reached":"you reached",
+      "title_first":"Discussion",
+      "title_second":"completed",
+      "home": "Back home"
     }
   },
   "beta": {
@@ -94,10 +147,47 @@
     }
   },
   "welcome": {
-    "title": "Get questions\n to discuss with\n your partner",
+    "title_first": "Get questions to discuss with ",
+    "title_second": "your partner",
     "button": {
       "default": "Continue"
     }
+  },
+  "onboarding": {
+    "your_name_first": "Hey! What is\n",
+    "your_name_second": "your name",
+    "your_name_third": "?",
+    "partner_name_first": "What is your\n",
+    "partner_name_second": "partner name",
+    "partner_name_third": "?",
+    "relationship_story_explanation_first": "Help us generate ",
+    "relationship_story_explanation_second": "relevant AI questions ",
+    "relationship_story_explanation_third": "for your couple",
+    "relationship_story_explanation_description": "Your data is completely safe. We use it only for generating relevant questions.",
+    "relationship_story_first": "Share more details to get better questions",
+    "relationship_story_second": "unique story ",
+    "relationship_story_third": "of your relationship ",
+    "relationship_story": {
+      "answer_placeholder": "Write your answer",
+      "question0_first": "",
+      "question0_second": "Challenges ",
+      "question0_third": "you have faced so far:",
+      "question1_first": "Things that ",
+      "question1_second": "you like ",
+      "question1_third": "about your relationship:",
+      "question2_first": "",
+      "question2_second": "Most important ",
+      "question2_third": "things that happened recently:",
+      "question3_first": "",
+      "question3_second": "Biggest plans ",
+      "question3_third": "you have together:",
+      "skip_first": "If you skip, ",
+      "skip_second": "AI can't generate ",
+      "skip_third": "relevant questions for your couple",
+      "skip_back": "Back to story",
+      "skip_confirm": "Skip story"
+    }
+
   },
   "pre_placement": {
     "first_text_hey": "Hey, %{name}",

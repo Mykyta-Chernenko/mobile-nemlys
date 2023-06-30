@@ -10,7 +10,7 @@ import { FontText } from '../../components/utils/FontText';
 import { i18n } from '@app/localization/i18n';
 import { PrimaryButton } from '../../components/buttons/PrimaryButtons';
 import { KeyboardAwareScrollView } from 'react-native-keyboard-aware-scroll-view';
-import { TextInput } from 'react-native-gesture-handler';
+import { TextInput } from 'react-native';
 import { logErrors } from '@app/utils/errors';
 import { Loading } from '../../components/utils/Loading';
 import moment from 'moment';
@@ -130,7 +130,13 @@ export default function ({
             style={{ marginTop: 10 }}
             onChangeText={setChallenges}
             onSubmitEditing={() => {
-              scrollViewRef?.current?.scrollToEnd(true);
+              scrollViewRef?.current?.scrollToPosition(400, 400);
+            }}
+            onEndEditing={() => {
+              scrollViewRef?.current?.scrollToPosition(400, 400);
+            }}
+            onFocus={() => {
+              scrollViewRef?.current?.scrollToFocusedInput(scrollViewRef);
             }}
             ref={challengesRef}
           ></StyledTextInput>

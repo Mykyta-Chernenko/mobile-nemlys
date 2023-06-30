@@ -1,22 +1,40 @@
 import React from 'react';
-import { LinearProgress, useTheme } from '@rneui/themed';
+import { useTheme } from '@rneui/themed';
+import { View } from 'react-native';
 
-export const Progress = ({ value }: { value: number }) => {
-  const { theme } = useTheme();
+export const Progress = ({
+  current,
+  all,
+  theme = 'light',
+}: {
+  current: number;
+  all: number;
+  theme?: 'light' | 'dark';
+}) => {
+  const { theme: styleTheme } = useTheme();
+  let backgroundColor = styleTheme.colors.white;
+  switch (theme) {
+    case 'light':
+      backgroundColor = styleTheme.colors.white;
+      break;
+    case 'dark':
+      backgroundColor = styleTheme.colors.grey1;
+      break;
+  }
   return (
-    <LinearProgress
-      style={{
-        width: '50%',
-        marginHorizontal: '10%',
-        marginVertical: 20,
-        alignSelf: 'center',
-        borderRadius: 5,
-      }}
-      value={value}
-      variant="determinate"
-      color={theme.colors.black}
-      trackColor={theme.colors.grey4}
-      animation={false}
-    />
+    <View style={{ display: 'flex', flexDirection: 'row' }}>
+      {Array.from({ length: all }).map((_, index) => (
+        <View
+          key={index}
+          style={{
+            margin: 2,
+            borderRadius: 10,
+            height: 8,
+            width: 8,
+            backgroundColor: index === current - 1 ? styleTheme.colors.primary : backgroundColor,
+          }}
+        ></View>
+      ))}
+    </View>
   );
 };

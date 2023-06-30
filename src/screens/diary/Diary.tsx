@@ -30,7 +30,7 @@ export const entryTitle = (theme, date: moment.Moment) => {
       <FontText style={{ fontSize: 18, marginRight: 10 }}>
         {date.format('MMM').toUpperCase()}
       </FontText>
-      <FontText style={{ fontSize: 14, color: theme.colors.grey4 }}>
+      <FontText style={{ fontSize: 14, color: theme.colors.black }}>
         {date.format('YYYY, dddd')}
       </FontText>
     </View>

@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import * as SplashScreen from 'expo-splash-screen';
-import { Alert, BackHandler, Image, ImageBackground, Linking, Platform } from 'react-native';
+import { Alert, BackHandler, ImageBackground, Linking, Platform } from 'react-native';
 import { logErrors } from '@app/utils/errors';
 import { SupabaseAnswer } from '@app/types/api';
 import { supabase } from '@app/api/initSupabase';
-import { expo } from '../../app.json';
+import Constants from 'expo-constants';
 import { i18n } from '@app/localization/i18n';
 
 interface Props {
@@ -18,6 +18,7 @@ export default function (props: Props) {
     // so the splash is both hidden and rendered on the same tick, no white screen between
     setTimeout(() => void SplashScreen.hideAsync(), 100);
   });
+
   useEffect(() => {
     const f = async () => {
       const res: SupabaseAnswer<{ version }> = await supabase
@@ -29,7 +30,7 @@ export default function (props: Props) {
         setShow(false);
         return;
       }
-      if (res.data.version > parseInt(expo.version.replaceAll('.', ''), 10)) {
+      if (res.data.version > parseInt(Constants.expoConfig!.version!.replaceAll('.', ''), 10)) {
         Alert.alert(
           i18n.t('update.outdated_title'),
           i18n.t('update.need_to_update'),
@@ -65,16 +66,7 @@ export default function (props: Props) {
       }}
       // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
       source={require('../../assets/splash.png')}
-    >
-      <Image
-        style={{
-          height: 70,
-          width: 70,
-          borderRadius: 7,
-        }}
-        source={require('../../assets/icon.gif')}
-      ></Image>
-    </ImageBackground>
+    ></ImageBackground>
   ) : (
     <>{props.children}</>
   );

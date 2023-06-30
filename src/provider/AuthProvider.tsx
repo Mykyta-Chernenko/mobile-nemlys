@@ -130,7 +130,7 @@ const AuthProvider = (props: Props) => {
         isSignedIn,
         setIsSignedIn,
         setUserId,
-        userId: userId,
+        userId,
       }}
     >
       {props.children}

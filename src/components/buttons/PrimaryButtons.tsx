@@ -13,11 +13,14 @@ export const PrimaryButton = ({ buttonStyle, ...props }: ButtonProps) => {
         },
         buttonStyle,
       ]}
-      titleStyle={{
-        fontWeight: '600',
-        fontSize: 16,
-        color: theme.colors.white,
-      }}
+      titleStyle={[
+        {
+          fontWeight: '600',
+          fontSize: 16,
+          color: theme.colors.white,
+        },
+        props.titleStyle,
+      ]}
       disabledStyle={{ backgroundColor: theme.colors.grey2 }}
       disabledTitleStyle={{ color: theme.colors.grey3 }}
     ></Button>

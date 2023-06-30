@@ -7,7 +7,6 @@ import { i18n } from '@app/localization/i18n';
 import { SetQuestionAction } from '@app/types/domain';
 import { ViewSetHomeScreen } from './ViewSetHomeScreen';
 import { FontText } from '../utils/FontText';
-import SetCarousel from './SetCarousel';
 import { logErrors } from '@app/utils/errors';
 import { addActionAndQuestionsToSet } from '@app/api/data/set';
 
@@ -58,7 +57,8 @@ export default function () {
               {i18n.t('set.history.no_sets_completed')}
             </FontText>
           ) : (
-            <SetCarousel setsQuestionAction={setsQuestionAction} deckType="history"></SetCarousel>
+            <></>
+            // <SetCarousel setsQuestionAction={setsQuestionAction} deckType="history"></SetCarousel>
           )}
         </View>
       )}

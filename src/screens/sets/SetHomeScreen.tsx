@@ -4,7 +4,7 @@ import { NativeStackScreenProps } from '@react-navigation/native-stack';
 import { supabase } from '@app/api/initSupabase';
 import NewSet from '@app/components/sets/NewSet';
 import { Loading } from '@app/components/utils/Loading';
-import ChosenSet from '@app/components/sets/ChosenSet';
+
 import { ViewSetHomeScreen } from '@app/components/sets/ViewSetHomeScreen';
 import { logErrors } from '@app/utils/errors';
 
@@ -42,7 +42,7 @@ export default function ({
   );
   if (!loading) {
     if (isSetChosen) {
-      mainComponent = <ChosenSet />;
+      mainComponent = <></>;
     } else {
       mainComponent = <NewSet />;
     }

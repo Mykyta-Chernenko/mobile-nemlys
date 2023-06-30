@@ -2,7 +2,7 @@ import React from 'react';
 import { Dimensions } from 'react-native';
 import { Feather as Icon } from '@expo/vector-icons';
 import Animated, { useAnimatedStyle, interpolate, Extrapolate } from 'react-native-reanimated';
-import { TouchableOpacity } from 'react-native-gesture-handler';
+import { TouchableOpacity } from 'react-native';
 
 const size = 50;
 

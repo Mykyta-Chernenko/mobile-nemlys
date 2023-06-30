@@ -39,6 +39,7 @@ export async function handleUserAfterSignUp(user: SupabaseUser, exists: boolean)
       couple_id: data.id,
       user_id: user.id,
       first_name: '',
+      partner_first_name: '',
       onboarding_finished: false,
       ios_expo_token: undefined,
       android_expo_token: undefined,

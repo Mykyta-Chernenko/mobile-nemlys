@@ -134,8 +134,7 @@ export const OAuth = ({
       </PrimaryButton>
       <SecondaryButton
         onPress={() => void onPress('google')}
-        style={{ marginTop: 10 }}
-        buttonStyle={{ borderColor: theme.colors.grey3, borderWidth: 1 }}
+        buttonStyle={{ marginTop: 10, borderColor: theme.colors.grey3, borderWidth: 1 }}
       >
         <GoogleIcon height="20" width="20" />
         <FontText style={{ marginLeft: 5, fontSize: 16, paddingTop: 3 }}>

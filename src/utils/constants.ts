@@ -14,4 +14,5 @@ export const GRANTED_NOTIFICATION_STATUS = 'granted';
 export const DENIED_NOTIFICATION_STATUS = 'denied';
 export const UNDETERMINED_NOTIFICATION_STATUS = 'undetermined';
 export const HistorySetScreenName = 'HistorySet';
+export const HomeName = 'Home';
 export const SetHomeScrenName = 'SetHomeScreen';

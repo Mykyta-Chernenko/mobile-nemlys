@@ -6,7 +6,9 @@ import { localAnalytics } from '@app/utils/analytics';
 import { i18n } from '@app/localization/i18n';
 import { FontText } from '@app/components/utils/FontText';
 import { KEYBOARD_BEHAVIOR } from '@app/utils/constants';
-import { SafeAreaView, KeyboardAvoidingView, View, ScrollView } from 'react-native';
+import { KeyboardAvoidingView, View, ScrollView } from 'react-native';
+import { SafeAreaView } from 'react-native-safe-area-context';
+
 import { useTheme } from '@rneui/themed';
 import { PrimaryButton } from '@app/components/buttons/PrimaryButtons';
 import StyledTextInput from '@app/components/utils/StyledTextInput';

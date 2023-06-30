@@ -54,6 +54,16 @@ export class CompleteSetQuestionProps extends CompleteSetReflectProps {
 export class CompleteSetFinalProps extends CompleteSetQuestionProps {}
 
 export type MainStackParamList = {
+  YourName: undefined;
+  PartnerName: undefined;
+  RelationshipStoryExplanation: undefined;
+  RelationshipStory: undefined;
+  SkipRelationshipStory: undefined;
+  Home: { refreshTimeStamp: string | undefined };
+  Story: { refreshTimeStamp: string | undefined };
+  ConfigureDate: { refreshTimeStamp: string | undefined };
+  OnDate: { refreshTimeStamp: string | undefined };
+
   SetHomeScreen: { refreshTimeStamp: string | undefined };
   SetItemDetails: SetItemProps;
   HistorySet: undefined;

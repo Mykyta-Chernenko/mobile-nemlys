@@ -1,9 +1,16 @@
 import React, { useContext, useRef, useState } from 'react';
-import { Image, ImageBackground, ScrollView, TouchableOpacity, View } from 'react-native';
+import {
+  Image,
+  ImageBackground,
+  KeyboardAvoidingView,
+  ScrollView,
+  TouchableOpacity,
+  View,
+} from 'react-native';
 import { supabase } from '@app/api/initSupabase';
 import { AuthStackParamList } from '@app/types/navigation';
 import { NativeStackScreenProps } from '@react-navigation/native-stack';
-import { Input, ThemeProvider, useTheme } from '@rneui/themed';
+import { Input, useTheme } from '@rneui/themed';
 import { OAuth } from '@app/components/auth/OAuth';
 import * as WebBrowser from 'expo-web-browser';
 import { i18n } from '@app/localization/i18n';
@@ -16,6 +23,7 @@ import { GoBackButton } from '@app/components/buttons/GoBackButton';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { SecondaryButton } from '@app/components/buttons/SecondaryButton';
 import { handleUserAfterSignUp } from './Register';
+import { KEYBOARD_BEHAVIOR } from '@app/utils/constants';
 WebBrowser.maybeCompleteAuthSession();
 
 export default function ({ navigation }: NativeStackScreenProps<AuthStackParamList, 'Login'>) {
@@ -73,7 +81,7 @@ export default function ({ navigation }: NativeStackScreenProps<AuthStackParamLi
   }
 
   return (
-    <ThemeProvider theme={theme}>
+    <KeyboardAvoidingView behavior={KEYBOARD_BEHAVIOR} style={{ flexGrow: 1 }}>
       <ImageBackground
         style={{
           flexGrow: 1,
@@ -88,7 +96,7 @@ export default function ({ navigation }: NativeStackScreenProps<AuthStackParamLi
             }}
           >
             <GoBackButton
-              theme="white"
+              theme="light"
               onPress={() => {
                 void localAnalytics().logEvent('LoginGoBack', {
                   screen: 'Login',
@@ -142,6 +150,11 @@ export default function ({ navigation }: NativeStackScreenProps<AuthStackParamLi
                       marginTop: 10,
                     }}
                     onPress={() => {
+                      void localAnalytics().logEvent('LoginEmailTypeSelected', {
+                        screen: 'Login',
+                        action: 'Email type login selected',
+                        userId: ANON_USER,
+                      });
                       setIsContinueWithEmail(true);
                     }}
                   ></SecondaryButton>
@@ -177,7 +190,7 @@ export default function ({ navigation }: NativeStackScreenProps<AuthStackParamLi
                   </View>
 
                   <PrimaryButton
-                    style={{ marginTop: 20 }}
+                    buttonStyle={{ marginTop: 20 }}
                     title={loading ? i18n.t('loading') : i18n.t('continue')}
                     onPress={() => {
                       void login();
@@ -212,6 +225,6 @@ export default function ({ navigation }: NativeStackScreenProps<AuthStackParamLi
           </ScrollView>
         </SafeAreaView>
       </ImageBackground>
-    </ThemeProvider>
+    </KeyboardAvoidingView>
   );
 }
