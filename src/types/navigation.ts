@@ -64,14 +64,6 @@ export type MainStackParamList = {
   ConfigureDate: { refreshTimeStamp: string | undefined };
   OnDate: { refreshTimeStamp: string | undefined };
 
-  SetHomeScreen: { refreshTimeStamp: string | undefined };
-  SetItemDetails: SetItemProps;
-  HistorySet: undefined;
-  HistorySetCardDetails: HistorySetCardDetailsProps;
-  SetReminder: SetReminderProps;
-  CompleteSetReflect: CompleteSetReflectProps;
-  CompleteSetQuestion: CompleteSetQuestionProps;
-  CompleteSetFinal: CompleteSetFinalProps;
   Diary: { refreshTimeStamp: string | undefined };
   DiaryEntry: { id: number };
   DiaryNewEntry: undefined;

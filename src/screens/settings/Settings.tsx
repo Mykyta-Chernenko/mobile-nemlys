@@ -157,7 +157,7 @@ export default function ({ navigation }: NativeStackScreenProps<MainStackParamLi
               width: '100%',
             }}
             // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
-            source={require('../../../assets/images/settings.png')}
+            // source={require('../../../assets/images/settings.png')}
           ></Image>
         </View>
         <Feedback></Feedback>

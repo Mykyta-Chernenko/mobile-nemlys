@@ -14,7 +14,7 @@ import {
   SupabaseUser,
 } from '@app/types/api';
 import { randomReadnableString } from '@app/utils/strings';
-import OnboardingResults from './OnboardingResults';
+
 import { ANON_USER, AuthContext } from '@app/provider/AuthProvider';
 import { KEYBOARD_BEHAVIOR } from '@app/utils/constants';
 import { FontText } from '@app/components/utils/FontText';
@@ -115,7 +115,6 @@ export default function ({
           paddingHorizontal: 15,
         }}
       >
-        <OnboardingResults userAnswers={route.params.userAnswers}></OnboardingResults>
         <View style={{ flexGrow: 1 }}>
           <FontText
             style={{

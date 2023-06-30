@@ -34,3 +34,6 @@ When you start developing from a new network for oauth to work, you need to add 
 ## Deploy changes without store
 - export production envs
 - eas update --channel production  
+
+## deploy
+- compress assets `expo optimize` 

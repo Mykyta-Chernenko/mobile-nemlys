@@ -28,7 +28,7 @@ export default function ({ navigation }: NativeStackScreenProps<AuthStackParamLi
       }}
       source={require('../../../../assets/images/onboarding_background.png')}
     >
-      <ScrollView>
+      <ScrollView contentContainerStyle={{ flex: 1 }}>
         <Image
           style={{
             resizeMode: 'contain',
@@ -37,17 +37,22 @@ export default function ({ navigation }: NativeStackScreenProps<AuthStackParamLi
           // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
           source={require('../../../../assets/images/buddys.png')}
         />
-        <SafeAreaView style={{ flexGrow: 1, width: '100%' }}>
+        <SafeAreaView
+          style={{
+            flex: 1,
+            width: '100%',
+            justifyContent: 'flex-start',
+          }}
+        >
           <View
             style={{
-              paddingHorizontal: 15,
-              marginTop: -30,
-              marginBottom: '10%',
               flex: 1,
-              justifyContent: 'space-between',
+              paddingHorizontal: 15,
+              marginTop: '-25%',
+              justifyContent: 'space-around',
             }}
           >
-            <View style={{ marginTop: '-20%' }}>
+            <View>
               <FontText
                 style={{
                   textAlign: 'center',
@@ -62,7 +67,7 @@ export default function ({ navigation }: NativeStackScreenProps<AuthStackParamLi
             </View>
 
             <PrimaryButton
-              buttonStyle={{ marginTop: 15 }}
+              buttonStyle={{ marginTop: '6%' }}
               title={i18n.t('welcome.button.default')}
               onPress={() => {
                 void localAnalytics().logEvent('WelcomeNextClicked', {

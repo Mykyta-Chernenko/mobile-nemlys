@@ -16,9 +16,10 @@ import { i18n } from '@app/localization/i18n';
 import { Image } from 'react-native';
 import { localAnalytics } from '@app/utils/analytics';
 import { PrimaryButton } from '@app/components/buttons/PrimaryButtons';
-import Card from '../components/date/Card';
-import { logout } from './settings/Settings';
+import Card from '../../components/date/Card';
+import { logout } from '../settings/Settings';
 import { TouchableOpacity } from 'react-native';
+import { IS_SUPABASE_DEV } from '@app/utils/constants';
 
 export default function ({
   route,
@@ -125,7 +126,7 @@ export default function ({
                     paddingBottom: '3%',
                   }}
                 >
-                  <FontText h3 onPress={() => void logout()}>
+                  <FontText h3 onPress={() => IS_SUPABASE_DEV && void logout()}>
                     {firstName || i18n.t('home.you')}
                     {' & '}
                     {partnerName || i18n.t('home.partner')}
@@ -141,7 +142,7 @@ export default function ({
                 >
                   <Image
                     // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
-                    source={require('../../assets/images/buddies_corner.png')}
+                    source={require('../../../assets/images/buddies_corner.png')}
                     style={{
                       borderBottomRightRadius: 24,
                     }}

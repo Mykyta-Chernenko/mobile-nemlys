@@ -105,7 +105,7 @@ export default function ({
                     <Image
                       // resizeMode="stretch"
                       // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
-                      source={require('../../assets/images/story_header.png')}
+                      source={require('../../../assets/images/story_header.png')}
                       style={{
                         borderBottomRightRadius: 24,
                       }}
