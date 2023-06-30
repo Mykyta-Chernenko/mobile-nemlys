@@ -24,26 +24,26 @@
   "join": "Join",
   "history": "History",
   "cards": "Cards",
-  "configure":"Configure",
-  "level":"Level",
-  "home":{
+  "configure": "Configure",
+  "level": "Level",
+  "home": {
     "you": "You",
     "partner": "Partner",
     "discussions": "discussions",
     "card_questions": "3 questions",
-    "title_first":"Select topic\nto discuss\n",
-    "title_second":"together",
-    "start":"Get Started",
-    "menu":{
+    "title_first": "Select topic\nto discuss\n",
+    "title_second": "together",
+    "start": "Get Started",
+    "menu": {
       "discuss": "Discuss",
       "diary": "Diary",
       "premium": "Premium",
       "story": "Story"
     }
   },
-  "story":{
+  "story": {
     "title": "Your Story",
-    "completed":"Completed"
+    "completed": "Completed"
   },
   "update": {
     "title": "Update",
@@ -56,17 +56,17 @@
     "level_title_second": "depth ",
     "level_title_third": "of your questions",
     "level": {
-      "light":"Light",
-      "normal":"Normal",
-      "deep":"Deep",
-      "existential":"Existetial"
+      "light": "Light",
+      "normal": "Normal",
+      "deep": "Deep",
+      "existential": "Existetial"
     },
     "topic_title_first": "Select 1 topic ",
     "topic_title_second": "to discuss ",
     "topic_title_third": "with partner",
     "topic": {
-      "title":"Select one topic",
-      "suprise":"Suprise us!",
+      "title": "Select one topic",
+      "suprise": "Suprise us!",
       "emotions": "Emotions",
       "fun": "Fun",
       "worldview": "Worldview",
@@ -99,18 +99,18 @@
     "generating_questions_second": "with partner",
     "discuss": "Discuss together",
     "feedback": {
-      "title_first":"So! How was ",
-      "title_second":"your discussion",
-      "title_third":"?",
+      "title_first": "So! How was ",
+      "title_second": "your discussion",
+      "title_third": "?",
       "choice_4": "We get a few cool insights",
       "choice_3": "It was good",
       "choice_2": "Nothing new",
       "choice_1": "It wasn’t helpful at all"
     },
-    "new_level":{
-      "reached":"you reached",
-      "title_first":"Discussion",
-      "title_second":"completed",
+    "new_level": {
+      "reached": "you reached",
+      "title_first": "Discussion",
+      "title_second": "completed",
       "home": "Back home"
     }
   },
@@ -187,7 +187,6 @@
       "skip_back": "Back to story",
       "skip_confirm": "Skip story"
     }
-
   },
   "pre_placement": {
     "first_text_hey": "Hey, %{name}",
