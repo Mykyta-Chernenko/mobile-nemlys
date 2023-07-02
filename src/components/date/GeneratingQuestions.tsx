@@ -121,7 +121,7 @@ export default function (props: {
           source={require('../../../assets/images/generating_questions.png')}
         ></Animated.Image>
       </View>
-      <View style={{ marginTop: '10%' }}>
+      <View style={{ marginTop: '10%', marginBottom: '5%' }}>
         <FontText style={{ textAlign: 'center' }} h1>
           {i18n.t('date.generating_questions_first')}
           <FontText h1 style={{ color: theme.colors.error }}>

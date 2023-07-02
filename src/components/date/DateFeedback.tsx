@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import React, { useContext, useEffect } from 'react';
 import { ImageBackground, ScrollView, View } from 'react-native';
 import { localAnalytics } from '@app/utils/analytics';
 import { GoBackButton } from '@app/components/buttons/GoBackButton';
@@ -11,13 +11,19 @@ import Feedback2Icon from '@app/icons/feedback2';
 import Feedback1Icon from '@app/icons/feedback1';
 import { AuthContext } from '@app/provider/AuthProvider';
 import { TouchableOpacity } from 'react-native';
-import { useTheme } from '@rneui/themed';
+import { useTheme, useThemeMode } from '@rneui/themed';
 
 export default function (props: {
   onPressBack: () => void;
   onPressForward: (feedback: number) => void;
 }) {
   const { theme } = useTheme();
+
+  const { setMode } = useThemeMode();
+  useEffect(() => {
+    setMode('light');
+    return () => setMode('dark');
+  }, []);
 
   const authContext = useContext(AuthContext);
   const choices = [

@@ -1,6 +1,6 @@
-import React, { useContext } from 'react';
+import React, { useContext, useEffect } from 'react';
 import { View, Image } from 'react-native';
-import { useTheme } from '@rneui/themed';
+import { useTheme, useThemeMode } from '@rneui/themed';
 import { i18n } from '@app/localization/i18n';
 import { FontText } from '@app/components/utils/FontText';
 import { AuthContext } from '@app/provider/AuthProvider';
@@ -16,6 +16,13 @@ export default function ({
   navigation,
 }: NativeStackScreenProps<MainStackParamList, 'RelationshipStoryExplanation'>) {
   const { theme } = useTheme();
+
+  // to set the color of status bar
+  const { setMode } = useThemeMode();
+  useEffect(() => {
+    const unsubscribeFocus = navigation.addListener('focus', () => setMode('dark'));
+    return unsubscribeFocus;
+  }, [navigation]);
 
   const authContext = useContext(AuthContext);
 
@@ -55,7 +62,7 @@ export default function ({
               <Image
                 style={{
                   marginTop: '10%',
-                  width: '100%',
+                  width: '60%',
                   height: 200,
                 }}
                 resizeMode="contain"

@@ -8,33 +8,42 @@ export const FontText = ({ style, h1, h2, h3, h4, ...props }: TextProps) => {
   const windowWidth = Dimensions.get('window').width;
   const windowHeight = Dimensions.get('window').height;
   const fontBySize = {
-    small: {
+    s: {
       h1: 32,
       h2: 26,
       h3: 20,
       h4: 16,
       normal: 14,
     },
-    medium: {
+    m: {
       h1: 34,
       h2: 28,
       h3: 22,
       h4: 18,
       normal: 15,
     },
-    big: {
+    l: {
       h1: 40,
       h2: 32,
       h3: 24,
       h4: 20,
       normal: 16,
     },
+    xl: {
+      h1: 50,
+      h2: 40,
+      h3: 30,
+      h4: 26,
+      normal: 18,
+    },
   };
-  let screenType = 'small';
-  if (windowWidth * windowHeight > 350000) {
-    screenType = 'big';
+  let screenType = 's';
+  if (windowWidth * windowHeight > 550000) {
+    screenType = 'xl';
+  } else if (windowWidth * windowHeight > 350000) {
+    screenType = 'l';
   } else if (windowWidth * windowHeight > 290000) {
-    screenType = 'medium';
+    screenType = 'm';
   }
   const fontWeight = (style as TextStyle)?.fontWeight || '600';
   let fontFamily = REGULAR_FONT_FAMILY;

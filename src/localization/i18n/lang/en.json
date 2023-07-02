@@ -72,6 +72,7 @@
       "worldview": "Worldview",
       "goals": "Goals",
       "future": "Future",
+      "communication": "Communication",
       "preferences": "Preferences",
       "appearance": "Appearance",
       "travel": "Travel",
@@ -126,27 +127,7 @@
     "stop": "Stop",
     "instruction": "You can record a conversation with your partner and our AI will analyze it and provide insights about the negative communication patterns it might encounter, and potential solutions"
   },
-  "settings": {
-    "logout": "Logout",
-    "feedback": "Give us feedback",
-    "conversations": "Conversations",
-    "delete_account": "Delete account",
-    "send_email": "Send email",
-    "are_you_sure_you_want_to_delete_account": "Are you sure you want to delete your account?",
-    "cannot_send_email": "Cannot send email from your device, feel free to reach out manually to %{email}",
-    "support_email_subject": "App feedback",
-    "send_your_feedback": "If you want to tell us what you think about the app, submit a bug report or simply talk to us, you are very welcome to write it below",
-    "feedback_thanks": "Thanks for your feedback, we will read it soon :)"
-  },
-  "notifications": {
-    "date_soon": "Your date is soon, don't forget to about the questions",
-    "schedule_date": "Please, schedule when you will have the date with your partner",
-    "diary": {
-      "title": "Write your diary",
-      "body": "What has happened in your relationship recently?"
-    }
-  },
-  "welcome": {
+    "welcome": {
     "title_first": "Get questions to discuss with ",
     "title_second": "your partner",
     "button": {
@@ -188,34 +169,6 @@
       "skip_confirm": "Skip story"
     }
   },
-  "pre_placement": {
-    "first_text_hey": "Hey, %{name}",
-    "first_text_start": "Let's get started",
-    "second_text": "First, we want to ask you a few questions about your relationship to personalize the program",
-    "ready": "I'm ready"
-  },
-  "placement": {
-    "relationship_state": {
-      "title": "Tell us about your relationship",
-      "free_form_question": "Describe your relationship in general, the main milestones you’ve faced, the biggest ups and downs you have gone through",
-      "guided": {
-        "1": "What are the biggest things that have happened in your relationship in the last couple of months?",
-        "2": "What are the biggest plans you have together?",
-        "3": "What do you like the most and the least about your relationship?",
-        "4": "Have you faced any challenges in the relationship?"
-      }
-    }
-  },
-  "how_we_work": {
-    "title": "How it works?",
-    "content_1": "•  For every date, you will choose a card with a question to discuss and an ‘action’ to take with your partner",
-    "content_2": "•  The questions and actions cover deep variety of topics and become deeper and harder as you go",
-    "content_3": "•  Some may be particularly hard to discuss and do while others may seem fairly easy. Be especially careful with the ones that seem hard as they are the most important ones to understand yourself and your partner",
-    "content_4": "•  After your date we send a question for the self-reflection. Also, we’ll ask a feedback to take the personalization further",
-    "content_5": "•  Every week our AI will create a personalized card for your couple. Keeping the relationship diary, providing a detailed card feedback and having consistent activity makes the quality of the AI cards astonishing",
-    "content_6": "The programs will serve you as a guide to build an honest and supportive relationship, soon, you will understand your partner much better, see whether you are good for each other and establish a better communication",
-    "accept_title": "I have read and understood the technique"
-  },
   "login": {
     "user_does_not_exist_error": "User with email %{email} does not exist in the system",
     "title": "Sign in\nNemlys account",
@@ -236,6 +189,26 @@
     "button": {
       "google": "Sign in with Google",
       "apple": "Sign in with Apple"
+    }
+  },
+  "settings": {
+    "logout": "Logout",
+    "feedback": "Give us feedback",
+    "conversations": "Conversations",
+    "delete_account": "Delete account",
+    "send_email": "Send email",
+    "are_you_sure_you_want_to_delete_account": "Are you sure you want to delete your account?",
+    "cannot_send_email": "Cannot send email from your device, feel free to reach out manually to %{email}",
+    "support_email_subject": "App feedback",
+    "send_your_feedback": "If you want to tell us what you think about the app, submit a bug report or simply talk to us, you are very welcome to write it below",
+    "feedback_thanks": "Thanks for your feedback, we will read it soon :)"
+  },
+  "notifications": {
+    "date_soon": "Your date is soon, don't forget to about the questions",
+    "schedule_date": "Please, schedule when you will have the date with your partner",
+    "diary": {
+      "title": "Write your diary",
+      "body": "What has happened in your relationship recently?"
     }
   },
   "register": {
@@ -299,91 +272,6 @@
     "email_sent": "Check your email to reset the password",
     "button": {
       "default": "Send email"
-    }
-  },
-  "set": {
-    "reflection": {
-      "title": "Question to relection on:"
-    },
-    "out_of_completed": "%{completed}/%{outOf} cards",
-    "accept": "Accept",
-    "more_details": "Click on the card to get details ↑↓",
-    "skip_alert": "Do you want to remove the card?",
-    "skip_alert_details": "You can only remove 3 cards in a deck",
-    "reminder": {
-      "title": "Reminder",
-      "content": "Set when you will have the next date with your partner and you have enough time to discuss the card, and we will remind you about it before",
-      "no_date_yet_checkbox": "We don’t have a specific time yet",
-      "next_button": "Continue",
-      "notification_access": "*We will ask you for the notification access to remind you more effectively",
-      "notification_access_no_date": "*We will ask you for the notification access to remind you to set the date later"
-    },
-    "history": {
-      "title": "Cards you have discussed",
-      "card_button_title": "How it went",
-      "no_sets_completed": "No cards completed yet",
-      "meeting_on": "You date was on:",
-      "no_discussion_description": "You didn't write how your conversation went",
-      "discussion_description_title": "How did your conversation go?",
-      "discuss_next": "What did you want to discuss next?"
-    },
-    "new": {
-      "title": "Choose a card for the next date",
-      "ai_title": "Choose an AI card for the next date",
-      "unavailable_card_title": "Complete any previous card to unlock",
-      "questions": {
-        "title": "To discuss with your partner"
-      },
-      "actions": {
-        "title": "To do with your partner"
-      },
-      "no_new_set": "Unfortunately, we don't have more cards at the moment, but we are on it, stay tunned"
-    },
-    "chosen": {
-      "title": "Card for the next date",
-      "click_tips": "Click on the action or question \nto get more details",
-      "date_is_not_set": "Not set",
-      "next_date_is": "Your meeting is on",
-      "questions": {
-        "title": "Discuss this with your partner"
-      },
-      "actions": {
-        "title": "Do this with your partner"
-      },
-      "button": {
-        "title": "We completed the card",
-        "disable_before_meeting_set": "* To unlock the button, set when your meeting will happen",
-        "disable_before_meeting_happened": "* The button will unlock after your date",
-        "set_created_too_recently": "* You accepted the card just recently, the button will unlock in 10 minutes"
-      },
-      "button_disabled_tip_date_set": "We've done the set",
-      "button_disabled_tip_no_date_set": "The button wil be available after you set the date",
-      "change_meeting_date": {
-        "title": "When is your date?"
-      },
-      "finish": {
-        "finish_title": "Thanks, the feedback helped us to adapt the next set for you",
-        "diary": "To enable AI personalization, write more about your day in the relationship diary",
-        "diary_button": "Go to diary"
-      }
-    },
-    "ai_generated": {
-      "title": "Generated by Artificial Intelligence",
-      "content": "AI tailored this card for you based on the information about your relationship. You will get 1 such card every week"
-    },
-    "ai_personalization": {
-      "title": "Get deeper personalization",
-      "content": "The personalization will become better and more insightful if you write daily diary inside the app and provide a description of how your discussion went with the partner during the card feedback "
-    },
-    "get_more_ai_cards": "Get more AI cards",
-    "importance": {
-      "title": "Importance"
-    },
-    "tips": {
-      "title": "Tips"
-    },
-    "instruction": {
-      "title": "Instruction"
     }
   },
   "waitlist": {

@@ -67,7 +67,7 @@ export default function ({ navigation }: NativeStackScreenProps<AuthStackParamLi
             </View>
 
             <PrimaryButton
-              buttonStyle={{ marginTop: '6%' }}
+              buttonStyle={{ marginTop: '5%', marginBottom: '2%' }}
               title={i18n.t('welcome.button.default')}
               onPress={() => {
                 void localAnalytics().logEvent('WelcomeNextClicked', {

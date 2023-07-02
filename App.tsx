@@ -1,6 +1,5 @@
 import React, { useEffect } from 'react';
 import 'react-native-url-polyfill/auto';
-import { StatusBar } from 'expo-status-bar';
 import Navigation from './src/navigation';
 import { AuthProvider } from './src/provider/AuthProvider';
 
@@ -12,6 +11,7 @@ import FontWrapper from '@app/theme/FontWrapper';
 import * as Sentry from 'sentry-expo';
 import { BackHandler } from 'react-native';
 import SplashScreen from '@app/theme/SplashScreen';
+import ThemeStatusBar from '@app/theme/ThemeStatusBar';
 
 export default function App() {
   // disable android button back
@@ -29,7 +29,7 @@ export default function App() {
           <AuthProvider>
             <Navigation />
           </AuthProvider>
-          <StatusBar style="dark" />
+          <ThemeStatusBar></ThemeStatusBar>
         </SplashScreen>
       </FontWrapper>
     </ThemeProvider>

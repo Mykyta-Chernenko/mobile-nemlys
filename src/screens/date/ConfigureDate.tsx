@@ -1,10 +1,10 @@
 import React, { useContext, useEffect, useState } from 'react';
 
-import { useTheme } from '@rneui/themed';
+import { useTheme, useThemeMode } from '@rneui/themed';
 
 import { MainStackParamList } from '@app/types/navigation';
 import { NativeStackScreenProps } from '@react-navigation/native-stack';
-import { ImageBackground, ScrollView, View } from 'react-native';
+import { ImageBackground, View } from 'react-native';
 import { GoBackButton } from '@app/components/buttons/GoBackButton';
 import { Progress } from '@app/components/utils/Progress';
 import { APIDate, SupabaseAnswer } from '@app/types/api';
@@ -29,6 +29,12 @@ export default function ({
   const [chosenLevel, setChosenLevel] = useState<number>(1);
   const [dateId, setDateId] = useState<number | undefined>(undefined);
   const authContext = useContext(AuthContext);
+  // to set the color of status bar
+  const { setMode } = useThemeMode();
+  useEffect(() => {
+    const unsubscribeFocus = navigation.addListener('focus', () => setMode('light'));
+    return unsubscribeFocus;
+  }, [navigation]);
 
   const dateFields = 'id, couple_id, active, topic, level, created_at, updated_at';
   async function getDate() {
@@ -139,39 +145,32 @@ export default function ({
       source={require('../../../assets/images/onboarding_background.png')}
     >
       <SafeAreaView style={{ flexGrow: 1 }}>
-        <ScrollView
-          keyboardShouldPersistTaps="always"
-          contentContainerStyle={{
-            flexGrow: 1,
-          }}
-        >
-          <View style={{ flexGrow: 1, padding: 20 }}>
-            <View
-              style={{
-                flexDirection: 'row',
-                paddingHorizontal: 15,
-                alignItems: 'center',
-                justifyContent: 'center',
-                height: 32,
-                display: currentStep === 3 ? 'none' : 'flex',
-              }}
-            >
-              <GoBackButton
-                theme="light"
-                containerStyle={{ position: 'absolute', left: 0 }}
-                onPress={() => void goBack()}
-              ></GoBackButton>
-              <Progress current={currentStep} all={2}></Progress>
-            </View>
-            <View
-              style={{
-                flexGrow: 1,
-              }}
-            >
-              {activeComponent}
-            </View>
+        <View style={{ flexGrow: 1, padding: 20 }}>
+          <View
+            style={{
+              flexDirection: 'row',
+              paddingHorizontal: 15,
+              alignItems: 'center',
+              justifyContent: 'center',
+              height: 32,
+              display: currentStep === 3 ? 'none' : 'flex',
+            }}
+          >
+            <GoBackButton
+              theme="light"
+              containerStyle={{ position: 'absolute', left: 0 }}
+              onPress={() => void goBack()}
+            ></GoBackButton>
+            <Progress current={currentStep} all={2}></Progress>
           </View>
-        </ScrollView>
+          <View
+            style={{
+              flexGrow: 1,
+            }}
+          >
+            {activeComponent}
+          </View>
+        </View>
       </SafeAreaView>
     </ImageBackground>
   );

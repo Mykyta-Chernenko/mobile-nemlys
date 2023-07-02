@@ -1,10 +1,10 @@
-import React, { useContext, useEffect, useState } from 'react';
+import React, { useContext, useEffect, useRef, useState } from 'react';
 import { supabase } from '@app/api/initSupabase';
 
 import { APIDate, APIGeneratedQuestion, SupabaseAnswer } from '@app/types/api';
-import { useTheme } from '@rneui/themed';
+import { useTheme, useThemeMode } from '@rneui/themed';
 import { Image } from 'react-native';
-
+import Carousel from 'react-native-reanimated-carousel';
 import { logErrors } from '@app/utils/errors';
 
 import { MainStackParamList } from '@app/types/navigation';
@@ -22,24 +22,36 @@ import { AuthContext } from '@app/provider/AuthProvider';
 import NewLevel from '../../components/date/NewLevel';
 import Card from '@app/components/date/Card';
 import { Progress } from '@app/components/utils/Progress';
+import { GestureHandlerRootView } from 'react-native-gesture-handler';
 
 export default function ({
   route,
   navigation,
 }: NativeStackScreenProps<MainStackParamList, 'OnDate'>) {
+  const { setMode } = useThemeMode();
+  useEffect(() => {
+    const unsubscribeFocus = navigation.addListener('focus', () => setMode('dark'));
+    return unsubscribeFocus;
+  }, [navigation]);
+
+  const getCurrentUTCSeconds = () => {
+    return Math.round(new Date().getTime() / 1000);
+  };
   const authContext = useContext(AuthContext);
   const { theme } = useTheme();
   const [loading, setLoading] = useState(true);
   const padding = 20;
-
+  const [width, setWidth] = useState(1);
   const QUESTION_COUNT = 3;
   const [spentTimes, setSpentTimes] = useState<number[]>(new Array(QUESTION_COUNT));
   const [questions, setQuestions] = useState<APIGeneratedQuestion[]>([]);
   const [questionIndex, setQuestionIndex] = useState<number>(0);
+  const [startedDiscussionAt, setStartedDiscussionAt] = useState<number>(getCurrentUTCSeconds());
   const currentQuestion = questions[questionIndex];
   const [currentDate, setCurrentDate] = useState<APIDate | undefined>(undefined);
   const [showFeedback, setShowFeedback] = useState<boolean>(false);
   const [showNewLevel, setShowNewlevel] = useState<boolean>(false);
+  const carouselRef = useRef(null) as any;
   function restart() {
     setLoading(true);
     setSpentTimes(new Array(QUESTION_COUNT));
@@ -49,13 +61,6 @@ export default function ({
     setShowFeedback(false);
     setShowNewlevel(false);
   }
-  useEffect(() => {
-    const i = setInterval(() => {
-      spentTimes[questionIndex] = (spentTimes[questionIndex] ?? 0) + 1;
-      setSpentTimes(spentTimes);
-    }, 1000);
-    return () => clearInterval(i);
-  }, [questionIndex]);
 
   const dateFields = 'id, couple_id, active, topic, level, created_at, updated_at';
   async function getQuestion() {
@@ -114,8 +119,20 @@ export default function ({
       const q = questions[i];
       const updateDict = { feedback_score: feedback };
       if (spentTimes[i] > 60) {
+        void localAnalytics().logEvent('DateFinishedQuestion', {
+          screen: 'Date',
+          action: 'finished question',
+          questionIndex: i,
+          userId: authContext.userId,
+        });
         updateDict['finished'] = true;
       } else {
+        void localAnalytics().logEvent('DateSkippedQuestion', {
+          screen: 'Date',
+          action: 'skipped question',
+          questionIndex: i,
+          userId: authContext.userId,
+        });
         updateDict['skipped'] = true;
       }
       const questionReponse = await supabase
@@ -149,98 +166,114 @@ export default function ({
     void handleFinishDateButtonFinal(undefined);
     navigation.navigate('ConfigureDate', { refreshTimeStamp: new Date().toISOString() });
   };
-  const isFirstQuestion = questionIndex === 0;
-  const isLastQuestion = questionIndex === (questions?.length ?? 1) - 1;
-  let fontSize = 32;
-  if (currentQuestion?.question?.length > 190) {
-    fontSize = 16;
-  } else if (currentQuestion?.question.length > 60) {
-    fontSize = 28;
-  }
-  const LeftComponent = isFirstQuestion ? (
-    <View></View>
-  ) : (
-    <TouchableOpacity
-      style={{
-        borderRadius: 40,
-        backgroundColor: theme.colors.grey1,
-        alignItems: 'center',
-        justifyContent: 'center',
-        height: 72,
-        width: 72,
-      }}
-      onPress={() => {
-        void localAnalytics().logEvent('DateGetPreviousQuestion', {
-          screen: 'Date',
-          action: 'GetPreviousQuestion',
-          userId: authContext.userId,
-          questionIndex: questionIndex - 1,
-        });
-        setQuestionIndex(questionIndex - 1);
-      }}
-    >
-      <Image
-        resizeMode="contain"
-        style={{ height: 24, width: 24 }}
-        // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
-        source={require('../../../assets/images/arrow_left_black.png')}
-      />
-    </TouchableOpacity>
-  );
-  const RightComponent = isLastQuestion ? (
-    <TouchableOpacity
-      style={{
-        borderRadius: 40,
-        backgroundColor: theme.colors.black,
-        alignItems: 'center',
-        justifyContent: 'center',
-        height: 72,
-        width: 72,
-      }}
-      onPress={() => {
-        void localAnalytics().logEvent('DateFinishDateCheckMarkClicked', {
-          screen: 'Date',
-          action: 'FinishDateCheckmarkPressed',
-          userId: authContext.userId,
-        });
-        setShowFeedback(true);
-      }}
-    >
-      <Image
-        resizeMode="contain"
-        style={{ height: 24, width: 24 }}
-        // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
-        source={require('../../../assets/images/checkmark_white.png')}
-      />
-    </TouchableOpacity>
-  ) : (
-    <TouchableOpacity
-      style={{
-        borderRadius: 40,
-        backgroundColor: theme.colors.grey1,
-        alignItems: 'center',
-        justifyContent: 'center',
-        height: 72,
-        width: 72,
-      }}
-      onPress={() => {
-        void localAnalytics().logEvent('DateGetNextQuestion', {
-          screen: 'Date',
-          action: 'GetNextQuestion',
-          userId: authContext.userId,
-          questionIndex: questionIndex + 1,
-        });
-        setQuestionIndex(questionIndex + 1);
-      }}
-    >
-      <Image
-        resizeMode="contain"
-        style={{ height: 24, width: 24 }}
-        // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
-        source={require('../../../assets/images/arrow_right_black.png')}
-      />
-    </TouchableOpacity>
-  );
+
+  const getFontSize = (index) => {
+    if (questions[index]?.question?.length > 190) {
+      return { h4: true };
+    } else if (questions[index]?.question.length > 35) {
+      return { h2: true };
+    }
+    return { h1: true };
+  };
+  const recordTimeSpent = (index: number) => {
+    const newDiscussionAt = getCurrentUTCSeconds();
+    const alredySpent = spentTimes[index] ?? 0;
+    spentTimes[index] = alredySpent + newDiscussionAt - startedDiscussionAt;
+    setStartedDiscussionAt(newDiscussionAt);
+  };
+
+  const handleNewIndex = (index: number) => {
+    setQuestionIndex(index);
+    carouselRef?.current?.scrollTo({ index, animated: true });
+  };
+  const LeftComponent = (index: number) =>
+    index === 0 ? (
+      <View></View>
+    ) : (
+      <TouchableOpacity
+        style={{
+          borderRadius: 40,
+          backgroundColor: theme.colors.grey1,
+          alignItems: 'center',
+          justifyContent: 'center',
+          height: 72,
+          width: 72,
+        }}
+        onPress={() => {
+          const newIndex = questionIndex - 1;
+          void localAnalytics().logEvent('DateGetPreviousQuestion', {
+            screen: 'Date',
+            action: 'GetPreviousQuestion',
+            userId: authContext.userId,
+            questionIndex: newIndex,
+          });
+          handleNewIndex(newIndex);
+        }}
+      >
+        <Image
+          resizeMode="contain"
+          style={{ height: 24, width: 24 }}
+          // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
+          source={require('../../../assets/images/arrow_left_black.png')}
+        />
+      </TouchableOpacity>
+    );
+  const RightComponent = (index: number) =>
+    index === (questions?.length ?? 1) - 1 ? (
+      <TouchableOpacity
+        style={{
+          borderRadius: 40,
+          backgroundColor: theme.colors.black,
+          alignItems: 'center',
+          justifyContent: 'center',
+          height: 72,
+          width: 72,
+        }}
+        onPress={() => {
+          void localAnalytics().logEvent('DateFinishDateCheckMarkClicked', {
+            screen: 'Date',
+            action: 'FinishDateCheckmarkPressed',
+            userId: authContext.userId,
+          });
+          setShowFeedback(true);
+        }}
+      >
+        <Image
+          resizeMode="contain"
+          style={{ height: 24, width: 24 }}
+          // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
+          source={require('../../../assets/images/checkmark_white.png')}
+        />
+      </TouchableOpacity>
+    ) : (
+      <TouchableOpacity
+        style={{
+          borderRadius: 40,
+          backgroundColor: theme.colors.grey1,
+          alignItems: 'center',
+          justifyContent: 'center',
+          height: 72,
+          width: 72,
+        }}
+        onPress={() => {
+          const newIndex = questionIndex + 1;
+          void localAnalytics().logEvent('DateGetNextQuestion', {
+            screen: 'Date',
+            action: 'GetNextQuestion',
+            userId: authContext.userId,
+            questionIndex: newIndex,
+          });
+          handleNewIndex(newIndex);
+        }}
+      >
+        <Image
+          resizeMode="contain"
+          style={{ height: 24, width: 24 }}
+          // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
+          source={require('../../../assets/images/arrow_right_black.png')}
+        />
+      </TouchableOpacity>
+    );
 
   return loading || !currentQuestion ? (
     <Loading></Loading>
@@ -271,6 +304,10 @@ export default function ({
         flexGrow: 1,
         backgroundColor: theme.colors.black,
       }}
+      onLayout={(event) => {
+        const { width } = event.nativeEvent.layout;
+        setWidth(width - padding * 2);
+      }}
     >
       <SafeAreaView style={{ flexGrow: 1, alignItems: 'center' }}>
         <View
@@ -292,7 +329,7 @@ export default function ({
                 flexDirection: 'row',
                 backgroundColor: 'rgba(255,255,255,0.1)',
                 padding: 7,
-                paddingHorizontal: 20,
+                paddingHorizontal: padding,
                 borderRadius: 40,
                 alignItems: 'center',
               }}
@@ -323,30 +360,52 @@ export default function ({
             }}
           >
             <Card animated={false}>
-              <View
-                style={{
-                  flex: 1,
-                  flexDirection: 'column',
-                  justifyContent: 'space-between',
-                  alignItems: 'center',
-                  padding,
-                  paddingVertical: padding * 2,
-                  width: '100%',
-                }}
-              >
-                <Progress theme="dark" current={questionIndex + 1} all={QUESTION_COUNT}></Progress>
-                <FontText style={{ fontSize }}>{currentQuestion.question}</FontText>
-                <View
-                  style={{
-                    flexDirection: 'row',
-                    justifyContent: 'space-between',
-                    width: '100%',
+              <GestureHandlerRootView>
+                <Carousel
+                  ref={carouselRef}
+                  vertical={false}
+                  width={width}
+                  loop={false}
+                  autoPlay={false}
+                  onScrollEnd={(index: number) => {
+                    recordTimeSpent(questionIndex);
+                    setQuestionIndex(index);
                   }}
-                >
-                  {LeftComponent}
-                  {RightComponent}
-                </View>
-              </View>
+                  mode="parallax"
+                  modeConfig={{
+                    parallaxScrollingScale: 1,
+                    parallaxScrollingOffset: 0,
+                  }}
+                  data={questions}
+                  renderItem={({ index }: { index: number }) => {
+                    return (
+                      <View
+                        style={{
+                          flex: 1,
+                          flexDirection: 'column',
+                          justifyContent: 'space-between',
+                          alignItems: 'center',
+                          padding,
+                          paddingVertical: padding * 2,
+                        }}
+                      >
+                        <Progress theme="dark" current={index + 1} all={QUESTION_COUNT}></Progress>
+                        <FontText {...getFontSize(index)}>{questions[index].question}</FontText>
+                        <View
+                          style={{
+                            flexDirection: 'row',
+                            justifyContent: 'space-between',
+                            width: '100%',
+                          }}
+                        >
+                          {LeftComponent(index)}
+                          {RightComponent(index)}
+                        </View>
+                      </View>
+                    );
+                  }}
+                />
+              </GestureHandlerRootView>
             </Card>
           </View>
         </View>

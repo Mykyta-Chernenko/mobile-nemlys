@@ -164,7 +164,7 @@ export default function (props: { level?: number; onNextPress: (level: number) =
           />
         </View>
         <PrimaryButton
-          buttonStyle={{ marginTop: '10%' }}
+          buttonStyle={{ marginTop: '10%', marginBottom: '2%' }}
           onPress={() => {
             props.onNextPress(chosenLevel);
           }}

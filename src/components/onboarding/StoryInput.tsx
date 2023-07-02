@@ -5,12 +5,12 @@ import { i18n } from '@app/localization/i18n';
 import { FontText } from '@app/components/utils/FontText';
 import { AuthContext } from '@app/provider/AuthProvider';
 import StyledTextInput from '@app/components/utils/StyledTextInput';
-import { KeyboardAwareScrollView } from 'react-native-keyboard-aware-scroll-view';
 import { PrimaryButton } from '@app/components/buttons/PrimaryButtons';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { Loading } from '../utils/Loading';
 import { supabase } from '@app/api/initSupabase';
 import { logErrorsWithMessage } from '@app/utils/errors';
+import { ScrollView } from 'react-native-gesture-handler';
 
 export const StoryInput = (props: { onSave: () => void; title: string; buttonText: string }) => {
   const { theme } = useTheme();
@@ -18,7 +18,7 @@ export const StoryInput = (props: { onSave: () => void; title: string; buttonTex
   const authContext = useContext(AuthContext);
   const paddingHorizontal = 20;
   const [loading, setLoading] = useState<boolean>(false);
-
+  const [touched, setTouched] = useState(false);
   const [answer0, setAnswer0] = useState<string>('');
   const [answer1, setAnswer1] = useState<string>('');
   const [answer2, setAnswer2] = useState<string>('');
@@ -43,9 +43,6 @@ export const StoryInput = (props: { onSave: () => void; title: string; buttonTex
     2: [answer2, setAnswer2],
     3: [answer3, setAnswer3],
   };
-
-  const scrollViewRef = React.useRef<KeyboardAwareScrollView>(null);
-
   const questionLocalizationPrefix = 'onboarding.relationship_story.question';
 
   const getQuestionText = (index: number) => {
@@ -112,67 +109,82 @@ export const StoryInput = (props: { onSave: () => void; title: string; buttonTex
   return loading ? (
     <Loading></Loading>
   ) : (
-    <KeyboardAwareScrollView
-      keyboardShouldPersistTaps="always"
-      contentContainerStyle={{
-        flexGrow: 1,
+    <View
+      style={{
+        flex: 1,
         backgroundColor: theme.colors.grey1,
+        paddingHorizontal: paddingHorizontal,
       }}
-      automaticallyAdjustsScrollIndicatorInsets={true}
-      ref={scrollViewRef}
     >
-      <View style={{ flexGrow: 1, padding: paddingHorizontal }}>
-        {props.title && <FontText h1>{props.title}</FontText>}
-        <View
-          style={{
-            margin: -paddingHorizontal,
-            marginTop: paddingHorizontal,
-            paddingHorizontal: paddingHorizontal,
-            paddingBottom: insets.bottom,
-            flexGrow: 1,
-          }}
-        >
+      {props.title && (
+        <FontText h1 style={{ marginTop: '5%', marginBottom: '3%' }}>
+          {props.title}
+        </FontText>
+      )}
+      <ScrollView
+        contentContainerStyle={{
+          flexGrow: 1,
+        }}
+      >
+        <View style={{ flexGrow: 1, paddingHorizontal: paddingHorizontal }}>
           <View
             style={{
+              margin: -paddingHorizontal,
+              marginBottom: 10,
+              marginTop: 0,
+              paddingBottom: insets.bottom,
               flexGrow: 1,
             }}
           >
-            {Array.from({ length: 4 }).map((_, index) => (
-              <View
-                key={index}
-                style={{
-                  marginTop: '5%',
-                  padding: 20,
-                  backgroundColor: theme.colors.white,
-                  borderRadius: 16,
-                }}
-              >
-                <FontText
+            <View
+              style={{
+                flexGrow: 1,
+              }}
+            >
+              {Array.from({ length: 4 }).map((_, index) => (
+                <View
+                  key={index}
                   style={{
-                    textAlign: 'left',
+                    marginTop: '5%',
+                    padding: 20,
+                    backgroundColor: theme.colors.white,
+                    borderRadius: 16,
                   }}
-                  h3
                 >
-                  {getQuestionDisplayText(index)}
-                </FontText>
-                <StyledTextInput
-                  value={questionAnswers[index][0]}
-                  placeholder={i18n.t('onboarding.relationship_story.answer_placeholder')}
-                  style={{ marginTop: 5, padding: 0, borderWidth: 0 }}
-                  onChangeText={questionAnswers[index][1]}
-                  blurOnSubmit={true}
-                ></StyledTextInput>
-              </View>
-            ))}
+                  <FontText
+                    style={{
+                      textAlign: 'left',
+                    }}
+                    h3
+                  >
+                    {getQuestionDisplayText(index)}
+                  </FontText>
+                  <StyledTextInput
+                    value={questionAnswers[index][0]}
+                    placeholder={i18n.t('onboarding.relationship_story.answer_placeholder')}
+                    style={{ marginTop: 5, padding: 0, borderWidth: 0 }}
+                    onChangeText={(value) => {
+                      if (value !== questionAnswers[index][0]) {
+                        questionAnswers[index][1](value);
+                        setTouched(true);
+                      }
+                    }}
+                    blurOnSubmit={true}
+                  ></StyledTextInput>
+                </View>
+              ))}
+            </View>
           </View>
-          <PrimaryButton
-            buttonStyle={{ marginTop: '7%', marginBottom: '5%' }}
-            disabled={!(answer0 || answer1 || answer2 || answer3)}
-            title={props.buttonText}
-            onPress={() => void handlePress()}
-          />
         </View>
-      </View>
-    </KeyboardAwareScrollView>
+      </ScrollView>
+      {touched && (
+        <PrimaryButton
+          buttonStyle={{ marginVertical: '2%' }}
+          disabled={!(answer0 || answer1 || answer2 || answer3)}
+          title={props.buttonText}
+          onPress={() => void handlePress()}
+        />
+      )}
+    </View>
   );
 };

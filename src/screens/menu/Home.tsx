@@ -7,11 +7,10 @@ import { logErrors } from '@app/utils/errors';
 import { AuthContext } from '@app/provider/AuthProvider';
 import { APIUserProfile, SupabaseAnswer } from '@app/types/api';
 import { SafeAreaView, View } from 'react-native';
-import { useTheme } from '@rneui/themed';
+import { useTheme, useThemeMode } from '@rneui/themed';
 import { FontText } from '@app/components/utils/FontText';
 import QuestionTriangelSelected from '@app/icons/question_triangle_selected';
 import Story from '@app/icons/story';
-import DiaryLocked from '@app/icons/diary_locked';
 import { i18n } from '@app/localization/i18n';
 import { Image } from 'react-native';
 import { localAnalytics } from '@app/utils/analytics';
@@ -19,7 +18,6 @@ import { PrimaryButton } from '@app/components/buttons/PrimaryButtons';
 import Card from '../../components/date/Card';
 import { logout } from '../settings/Settings';
 import { TouchableOpacity } from 'react-native';
-import { IS_SUPABASE_DEV } from '@app/utils/constants';
 
 export default function ({
   route,
@@ -32,6 +30,13 @@ export default function ({
   const [dateCount, setDateCount] = useState(0);
   const padding = 20;
   const authContext = useContext(AuthContext);
+  // to set the color of status bar
+  const { setMode } = useThemeMode();
+  useEffect(() => {
+    const unsubscribeFocus = navigation.addListener('focus', () => setMode('light'));
+    return unsubscribeFocus;
+  }, [navigation]);
+
   async function getIsOnboarded() {
     setLoading(true);
     const data: SupabaseAnswer<APIUserProfile> = await supabase
@@ -126,7 +131,7 @@ export default function ({
                     paddingBottom: '3%',
                   }}
                 >
-                  <FontText h3 onPress={() => IS_SUPABASE_DEV && void logout()}>
+                  <FontText h3 onPress={() => void logout()}>
                     {firstName || i18n.t('home.you')}
                     {' & '}
                     {partnerName || i18n.t('home.partner')}
@@ -207,6 +212,7 @@ export default function ({
                 flexDirection: 'row',
                 justifyContent: 'space-around',
                 paddingTop: '5%',
+                paddingHorizontal: '20%',
               }}
             >
               <View
@@ -240,7 +246,7 @@ export default function ({
                   {i18n.t('home.menu.story')}
                 </FontText>
               </TouchableOpacity>
-              <View
+              {/* <View
                 style={{
                   flexDirection: 'column',
                   alignItems: 'center',
@@ -250,7 +256,7 @@ export default function ({
                 <FontText style={{ marginTop: 5, color: theme.colors.grey3 }}>
                   {i18n.t('home.menu.diary')}
                 </FontText>
-              </View>
+              </View> */}
             </View>
           </View>
         </View>

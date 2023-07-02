@@ -1,6 +1,6 @@
-import React, { useContext } from 'react';
+import React, { useContext, useEffect } from 'react';
 import { ImageBackground, KeyboardAvoidingView, TouchableOpacity, View } from 'react-native';
-import { useTheme } from '@rneui/themed';
+import { useTheme, useThemeMode } from '@rneui/themed';
 import { AuthContext } from '@app/provider/AuthProvider';
 import { MainStackParamList } from '@app/types/navigation';
 import { NativeStackScreenProps } from '@react-navigation/native-stack';
@@ -20,6 +20,12 @@ export default function ({
   const { theme } = useTheme();
   const authContext = useContext(AuthContext);
 
+  // to set the color of status bar
+  const { setMode } = useThemeMode();
+  useEffect(() => {
+    const unsubscribeFocus = navigation.addListener('focus', () => setMode('light'));
+    return unsubscribeFocus;
+  }, [navigation]);
   const handlePress = () => {
     void localAnalytics().logEvent('RelationshipStoryContinueCLicked', {
       screen: 'RelationshipStory',

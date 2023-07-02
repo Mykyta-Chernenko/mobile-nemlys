@@ -7,7 +7,6 @@ import { useTheme } from '@rneui/themed';
 import { FontText } from '@app/components/utils/FontText';
 import QuestionTriangel from '@app/icons/question_triangle';
 import StorySelected from '@app/icons/story_selected';
-import DiaryLocked from '@app/icons/diary_locked';
 import { i18n } from '@app/localization/i18n';
 import { Image } from 'react-native';
 import { StoryInput } from '@app/components/onboarding/StoryInput';
@@ -146,6 +145,7 @@ export default function ({
                   flexDirection: 'row',
                   justifyContent: 'space-around',
                   paddingTop: '5%',
+                  paddingHorizontal: '20%',
                 }}
               >
                 <TouchableOpacity
@@ -179,7 +179,7 @@ export default function ({
                   <StorySelected height={32} width={32}></StorySelected>
                   <FontText style={{ marginTop: 5 }}>{i18n.t('home.menu.story')}</FontText>
                 </View>
-                <View
+                {/* <View
                   style={{
                     flexDirection: 'column',
                     alignItems: 'center',
@@ -189,7 +189,7 @@ export default function ({
                   <FontText style={{ marginTop: 5, color: theme.colors.grey3 }}>
                     {i18n.t('home.menu.diary')}
                   </FontText>
-                </View>
+                </View> */}
               </View>
             </View>
           </View>

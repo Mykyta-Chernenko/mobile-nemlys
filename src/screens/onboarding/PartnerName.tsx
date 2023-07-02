@@ -1,6 +1,6 @@
-import React, { useContext, useState } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import { ImageBackground, KeyboardAvoidingView, ScrollView, View } from 'react-native';
-import { Input, useTheme } from '@rneui/themed';
+import { Input, useTheme, useThemeMode } from '@rneui/themed';
 import { i18n } from '@app/localization/i18n';
 import { PrimaryButton } from '@app/components/buttons/PrimaryButtons';
 import { FontText } from '@app/components/utils/FontText';
@@ -22,6 +22,13 @@ export default function ({
   const { theme } = useTheme();
   const [name, setName] = useState<string>('');
   const authContext = useContext(AuthContext);
+
+  // to set the color of status bar
+  const { setMode } = useThemeMode();
+  useEffect(() => {
+    const unsubscribeFocus = navigation.addListener('focus', () => setMode('light'));
+    return unsubscribeFocus;
+  }, [navigation]);
 
   const handlePress = async () => {
     const dateReponse = await supabase
