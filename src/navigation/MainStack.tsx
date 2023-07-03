@@ -14,6 +14,7 @@ import SkipRelationshipStory from '@app/components/onboarding/SkipRelationshipSt
 import RelationshipStoryExplanation from '@app/screens/onboarding/RelationshipStoryExplanation';
 import ConfigureDate from '@app/screens/date/ConfigureDate';
 import OnDate from '@app/screens/date/OnDate';
+import Profile from '@app/screens/menu/Profile';
 
 const MainStack = createNativeStackNavigator();
 const Main = () => {
@@ -34,6 +35,11 @@ const Main = () => {
         options={{ animation: 'slide_from_right' }}
         name={'Story'}
         component={Story}
+      />
+      <MainStack.Screen
+        options={{ animation: 'slide_from_right' }}
+        name={'Profile'}
+        component={Profile}
       />
       <MainStack.Screen
         options={{ animation: 'slide_from_right' }}

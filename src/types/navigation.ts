@@ -61,6 +61,7 @@ export type MainStackParamList = {
   SkipRelationshipStory: undefined;
   Home: { refreshTimeStamp: string | undefined };
   Story: { refreshTimeStamp: string | undefined };
+  Profile: { refreshTimeStamp: string | undefined };
   ConfigureDate: { refreshTimeStamp: string | undefined };
   OnDate: { refreshTimeStamp: string | undefined };
 

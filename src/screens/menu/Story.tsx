@@ -7,6 +7,7 @@ import { useTheme } from '@rneui/themed';
 import { FontText } from '@app/components/utils/FontText';
 import QuestionTriangel from '@app/icons/question_triangle';
 import StorySelected from '@app/icons/story_selected';
+import Profile from '@app/icons/profile';
 import { i18n } from '@app/localization/i18n';
 import { Image } from 'react-native';
 import { StoryInput } from '@app/components/onboarding/StoryInput';
@@ -145,7 +146,6 @@ export default function ({
                   flexDirection: 'row',
                   justifyContent: 'space-around',
                   paddingTop: '5%',
-                  paddingHorizontal: '20%',
                 }}
               >
                 <TouchableOpacity
@@ -154,8 +154,8 @@ export default function ({
                     alignItems: 'center',
                   }}
                   onPress={() => {
-                    void localAnalytics().logEvent('StoryHomeClicked', {
-                      screen: 'Story',
+                    void localAnalytics().logEvent('MenuHomeClicked', {
+                      screen: 'Menu',
                       action: 'HomeClicked',
                       userId: authContext.userId,
                     });
@@ -179,17 +179,27 @@ export default function ({
                   <StorySelected height={32} width={32}></StorySelected>
                   <FontText style={{ marginTop: 5 }}>{i18n.t('home.menu.story')}</FontText>
                 </View>
-                {/* <View
+                <TouchableOpacity
                   style={{
                     flexDirection: 'column',
                     alignItems: 'center',
                   }}
+                  onPress={() => {
+                    void localAnalytics().logEvent('MenuProfileClicked', {
+                      screen: 'Menu',
+                      action: 'ProfileClicked',
+                      userId: authContext.userId,
+                    });
+                    navigation.navigate('Profile', {
+                      refreshTimeStamp: new Date().toISOString(),
+                    });
+                  }}
                 >
-                  <DiaryLocked height={32} width={32}></DiaryLocked>
+                  <Profile height={32} width={32}></Profile>
                   <FontText style={{ marginTop: 5, color: theme.colors.grey3 }}>
-                    {i18n.t('home.menu.diary')}
+                    {i18n.t('home.menu.profile')}
                   </FontText>
-                </View> */}
+                </TouchableOpacity>
               </View>
             </View>
           </View>

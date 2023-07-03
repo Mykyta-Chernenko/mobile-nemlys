@@ -37,9 +37,13 @@
     "menu": {
       "discuss": "Discuss",
       "diary": "Diary",
+      "profile": "Profile",
       "premium": "Premium",
       "story": "Story"
     }
+  },
+  "profile":{
+    "title":"Profile"
   },
   "story": {
     "title": "Your Story",

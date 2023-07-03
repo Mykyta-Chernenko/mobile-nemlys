@@ -138,9 +138,9 @@ export default function ({ navigation }: NativeStackScreenProps<MainStackParamLi
                 action: 'Go back button clicked',
                 userId: authContext.userId,
               });
-              navigation.navigate('SetHomeScreen', {
-                refreshTimeStamp: new Date().toISOString(),
-              });
+              // navigation.navigate('SetHomeScreen', {
+              //   refreshTimeStamp: new Date().toISOString(),
+              // });
             }}
           ></GoBackButton>
         </View>

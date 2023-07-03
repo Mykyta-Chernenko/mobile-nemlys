@@ -63,23 +63,23 @@ export default function (props: { topic?: string; onNextPress: (topic: string) =
 
   return (
     <View style={{ flex: 1, marginTop: '5%' }}>
-      <FontText
-        style={{
-          textAlign: 'left',
-        }}
-        h1
-      >
-        {i18n.t('date.topic_title_first')}
-        <FontText style={{ color: theme.colors.primary }} h1>
-          {i18n.t('date.topic_title_second')}
-        </FontText>
-        {i18n.t('date.topic_title_third')}
-      </FontText>
       <ScrollView
         style={{
           flexGrow: 1,
         }}
       >
+        <FontText
+          style={{
+            textAlign: 'left',
+          }}
+          h1
+        >
+          {i18n.t('date.topic_title_first')}
+          <FontText style={{ color: theme.colors.primary }} h1>
+            {i18n.t('date.topic_title_second')}
+          </FontText>
+          {i18n.t('date.topic_title_third')}
+        </FontText>
         <View
           style={{ marginVertical: '5%', flexDirection: 'row', width: '100%', flexWrap: 'wrap' }}
         >
