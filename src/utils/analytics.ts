@@ -157,6 +157,7 @@ export class ExpoMixpanelAnalytics {
     data.properties.$screen_height = this.screenHeight;
     data.properties.$screen_width = this.screenWidth;
 
+    data.properties.userId = undefined;
     data.properties.ip = this.ip;
     data.properties.token = this.token;
     data.properties.user_agent = this.userAgent;

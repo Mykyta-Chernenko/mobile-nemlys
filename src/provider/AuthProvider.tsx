@@ -62,7 +62,7 @@ const AuthProvider = (props: Props) => {
   const [isSignedIn, setIsSignedIn] = useState<boolean | null>(null);
   const [userId, setUserIdOriginal] = useState<string | undefined>(undefined);
   const setUserId = (userId: string | undefined) => {
-    void analyticsIdentifyUser(userId);
+    void analyticsIdentifyUser(userId === ANON_USER ? undefined : userId);
     setUserIdOriginal(userId);
   };
   useEffect(() => {
