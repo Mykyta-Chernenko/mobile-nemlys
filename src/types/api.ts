@@ -22,6 +22,7 @@ export class APIUserProfile extends ApiEntry {
   ios_expo_token: string | undefined;
   android_expo_token: string | undefined;
   onboarding_finished: boolean;
+  showed_interview_request: boolean;
   user_id: string;
   couple_id: number;
 }

@@ -28,7 +28,7 @@ export default function ({
   const handlePress = async () => {
     const dateReponse = await supabase
       .from('user_profile')
-      .update({ first_name: name })
+      .update({ first_name: name, updated_at: new Date() })
       .eq('user_id', authContext.userId);
     if (dateReponse.error) {
       logErrorsWithMessage(dateReponse.error, dateReponse.error.message);
@@ -78,7 +78,7 @@ export default function ({
                     void logout();
                   }}
                 ></GoBackButton>
-                <Progress current={1} all={3}></Progress>
+                <Progress current={1} all={6}></Progress>
               </View>
               <View
                 style={{
@@ -109,7 +109,7 @@ export default function ({
                     autoFocus={true}
                     value={name}
                     autoCapitalize="none"
-                    autoComplete="name"
+                    autoComplete="name-given"
                     autoCorrect={false}
                     keyboardType="default"
                     returnKeyType="send"

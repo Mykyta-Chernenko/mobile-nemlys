@@ -38,7 +38,7 @@ export default function ({
     });
     const dateReponse = await supabase
       .from('user_profile')
-      .update({ onboarding_finished: true })
+      .update({ onboarding_finished: true, updated_at: new Date() })
       .eq('user_id', authContext.userId);
     if (dateReponse.error) {
       logErrorsWithMessage(dateReponse.error, dateReponse.error.message);

@@ -97,7 +97,11 @@ export const StoryInput = (props: { onSave: () => void; title: string; buttonTex
 
     const dateReponse = await supabase
       .from('user_profile')
-      .update({ relationship_story: JSON.stringify(story), onboarding_finished: true })
+      .update({
+        relationship_story: JSON.stringify(story),
+        onboarding_finished: true,
+        updated_at: new Date(),
+      })
       .eq('user_id', authContext.userId);
     if (dateReponse.error) {
       logErrorsWithMessage(dateReponse.error, dateReponse.error.message);
@@ -116,16 +120,16 @@ export const StoryInput = (props: { onSave: () => void; title: string; buttonTex
         paddingHorizontal: paddingHorizontal,
       }}
     >
-      {props.title && (
-        <FontText h1 style={{ marginTop: '5%', marginBottom: '3%' }}>
-          {props.title}
-        </FontText>
-      )}
       <ScrollView
         contentContainerStyle={{
           flexGrow: 1,
         }}
       >
+        {props.title && (
+          <FontText h1 style={{ marginTop: '5%', marginBottom: '3%' }}>
+            {props.title}
+          </FontText>
+        )}
         <View style={{ flexGrow: 1, paddingHorizontal: paddingHorizontal }}>
           <View
             style={{
@@ -179,7 +183,7 @@ export const StoryInput = (props: { onSave: () => void; title: string; buttonTex
       </ScrollView>
       {touched && (
         <PrimaryButton
-          buttonStyle={{ marginVertical: '2%' }}
+          buttonStyle={{ marginTop: '2%' }}
           disabled={!(answer0 || answer1 || answer2 || answer3)}
           title={props.buttonText}
           onPress={() => void handlePress()}

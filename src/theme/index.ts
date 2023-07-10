@@ -9,7 +9,7 @@ const colors = {
   grey4: 'rgba(26, 5, 47, 1)', // violet 900
   primary: 'rgba(182, 128, 241, 1)', // purple 400
   error: 'rgba(250, 65, 165, 1)', // pink 400
-  warning: 'rgba(255, 170, 78, 1)', // yellow 400
+  warning: 'rgba(253, 193, 128, 1)', // yellow 200
   success: 'rgba(115, 212, 39, 1)', // green 400
 };
 export const theme = createTheme({

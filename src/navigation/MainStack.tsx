@@ -9,6 +9,9 @@ import { HomeName } from '@app/utils/constants';
 import DiaryEntry from '@app/screens/diary/DiaryEntry';
 import YourName from '@app/screens/onboarding/YourName';
 import PartnerName from '@app/screens/onboarding/PartnerName';
+import Age from '@app/screens/onboarding/Age';
+import DatingLength from '@app/screens/onboarding/DatingLength';
+import Job from '@app/screens/onboarding/Job';
 import RelationshipStory from '@app/screens/onboarding/RelationshipStory';
 import SkipRelationshipStory from '@app/components/onboarding/SkipRelationshipStory';
 import RelationshipStoryExplanation from '@app/screens/onboarding/RelationshipStoryExplanation';
@@ -61,6 +64,14 @@ const Main = () => {
         name={'PartnerName'}
         component={PartnerName}
       />
+
+      <MainStack.Screen options={{ animation: 'slide_from_right' }} name={'Age'} component={Age} />
+      <MainStack.Screen
+        options={{ animation: 'slide_from_right' }}
+        name={'DatingLength'}
+        component={DatingLength}
+      />
+      <MainStack.Screen options={{ animation: 'slide_from_right' }} name={'Job'} component={Job} />
       <MainStack.Screen
         options={{ animation: 'slide_from_right' }}
         name={'RelationshipStory'}

@@ -109,6 +109,7 @@ export default function ({
               screen: 'ConfigureDate',
               action: 'LevelContinuePressed',
               userId: authContext.userId,
+              level,
             });
             setChosenLevel(level);
             setCurrentStep(3);

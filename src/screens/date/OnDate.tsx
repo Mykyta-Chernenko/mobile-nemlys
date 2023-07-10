@@ -147,7 +147,7 @@ export default function ({
 
     const dateReponse = await supabase
       .from('date')
-      .update({ active: false })
+      .update({ active: false, updated_at: new Date() })
       .eq('id', currentDate.id);
     if (dateReponse.error) {
       logErrors(dateReponse.error);

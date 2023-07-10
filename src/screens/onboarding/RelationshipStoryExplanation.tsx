@@ -53,23 +53,22 @@ export default function ({
                   action: 'Go back pressed',
                   userId: authContext.userId,
                 });
-                navigation.navigate('PartnerName');
+                navigation.navigate('DatingLength');
               }}
             ></GoBackButton>
           </View>
           <View style={{ flex: 1, justifyContent: 'space-between' }}>
-            <View style={{ alignItems: 'flex-start' }}>
+            <View></View>
+            <View>
               <Image
                 style={{
-                  marginTop: '10%',
-                  width: '60%',
+                  width: '70%',
                   height: 200,
+                  marginBottom: '10%',
                 }}
                 resizeMode="contain"
                 source={require('../../../assets/images/relationship_story_explanation.png')}
               ></Image>
-            </View>
-            <View>
               <FontText h1 style={{ color: theme.colors.white }}>
                 {i18n.t('onboarding.relationship_story_explanation_first')}
                 <FontText h1 style={{ color: theme.colors.warning }}>

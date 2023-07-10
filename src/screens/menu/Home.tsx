@@ -19,6 +19,7 @@ import { PrimaryButton } from '@app/components/buttons/PrimaryButtons';
 import Card from '../../components/date/Card';
 import { logout } from '../settings/Settings';
 import { TouchableOpacity } from 'react-native';
+import Interview from '@app/components/date/Interview';
 
 export default function ({
   route,
@@ -29,6 +30,7 @@ export default function ({
   const [firstName, setFirstName] = useState('');
   const [partnerName, setPartnerName] = useState('');
   const [dateCount, setDateCount] = useState(0);
+  const [showInterview, setShowInterview] = useState(false);
   const padding = 20;
   const authContext = useContext(AuthContext);
   // to set the color of status bar
@@ -40,10 +42,11 @@ export default function ({
 
   async function getIsOnboarded() {
     setLoading(true);
+    setShowInterview(false);
     const data: SupabaseAnswer<APIUserProfile> = await supabase
       .from('user_profile')
       .select(
-        'id, partner_first_name, partner_first_name, user_id, couple_id, first_name, ios_expo_token, android_expo_token, onboarding_finished, created_at, updated_at',
+        'id, partner_first_name, partner_first_name, user_id, couple_id, first_name, ios_expo_token, android_expo_token, onboarding_finished, showed_interview_request, created_at, updated_at',
       )
       .eq('user_id', authContext.userId)
       .single();
@@ -75,6 +78,8 @@ export default function ({
         setDateCount(count || 0);
         setFirstName(data.data.first_name);
         setPartnerName(data.data.partner_first_name);
+        setLoading(false);
+        setShowInterview((count || 0) > 1 && !data.data.showed_interview_request);
       }
     }
     setLoading(false);
@@ -99,6 +104,7 @@ export default function ({
         backgroundColor: theme.colors.white,
       }}
     >
+      <Interview show={showInterview} onClose={() => setShowInterview(false)}></Interview>
       <SafeAreaView style={{ flexGrow: 1 }}>
         <View style={{ flexGrow: 1, padding: padding }}>
           <View

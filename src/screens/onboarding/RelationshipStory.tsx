@@ -75,7 +75,7 @@ export default function ({
                   navigation.navigate('RelationshipStoryExplanation');
                 }}
               ></GoBackButton>
-              <Progress current={3} all={3}></Progress>
+              <Progress current={6} all={6}></Progress>
               <View
                 style={{
                   position: 'absolute',

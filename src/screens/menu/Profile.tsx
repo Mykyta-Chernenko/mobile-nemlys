@@ -47,7 +47,7 @@ export default function ({
   }, [route.params?.refreshTimeStamp]);
 
   const deleteAccount = async () => {
-    void localAnalytics().logEvent('ViewWithMenuClickSendFeedback', {
+    void localAnalytics().logEvent('ViewWithMenuClickDeleteAccount', {
       screen: 'Settings',
       action: 'Clicked delete account',
       userId: authContext.userId,

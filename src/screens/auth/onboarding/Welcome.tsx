@@ -10,6 +10,7 @@ import { localAnalytics } from '@app/utils/analytics';
 import { useTheme } from '@rneui/themed';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { ScrollView } from 'react-native-gesture-handler';
+import { isSmallDevice } from '@app/utils/size';
 
 export default function ({ navigation }: NativeStackScreenProps<AuthStackParamList, 'Welcome'>) {
   const { theme } = useTheme();
@@ -28,7 +29,7 @@ export default function ({ navigation }: NativeStackScreenProps<AuthStackParamLi
       }}
       source={require('../../../../assets/images/onboarding_background.png')}
     >
-      <ScrollView contentContainerStyle={{ flex: 1 }}>
+      <ScrollView contentContainerStyle={{ flex: 1, marginTop: isSmallDevice() ? -120 : 0 }}>
         <Image
           style={{
             resizeMode: 'contain',

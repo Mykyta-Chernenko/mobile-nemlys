@@ -33,7 +33,7 @@ export default function ({
   const handlePress = async () => {
     const dateReponse = await supabase
       .from('user_profile')
-      .update({ partner_first_name: name })
+      .update({ partner_first_name: name, updated_at: new Date() })
       .eq('user_id', authContext.userId);
     if (dateReponse.error) {
       logErrorsWithMessage(dateReponse.error, dateReponse.error.message);
@@ -44,7 +44,7 @@ export default function ({
       action: 'ContinueClicked',
       userId: authContext.userId,
     });
-    navigation.navigate('RelationshipStoryExplanation');
+    navigation.navigate('Age');
   };
   return (
     <KeyboardAvoidingView behavior={KEYBOARD_BEHAVIOR} style={{ flexGrow: 1 }}>
@@ -83,7 +83,7 @@ export default function ({
                     navigation.navigate('YourName');
                   }}
                 ></GoBackButton>
-                <Progress current={2} all={3}></Progress>
+                <Progress current={2} all={6}></Progress>
               </View>
               <View
                 style={{
@@ -114,7 +114,7 @@ export default function ({
                     autoFocus={true}
                     value={name}
                     autoCapitalize="none"
-                    autoComplete="name"
+                    autoComplete="name-given"
                     autoCorrect={false}
                     keyboardType="default"
                     returnKeyType="send"

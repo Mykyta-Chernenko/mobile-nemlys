@@ -56,6 +56,9 @@ export class CompleteSetFinalProps extends CompleteSetQuestionProps {}
 export type MainStackParamList = {
   YourName: undefined;
   PartnerName: undefined;
+  Age: undefined;
+  DatingLength: undefined;
+  Job: { length_slug: string };
   RelationshipStoryExplanation: undefined;
   RelationshipStory: undefined;
   SkipRelationshipStory: undefined;

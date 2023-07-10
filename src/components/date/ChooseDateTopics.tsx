@@ -26,10 +26,12 @@ export default function (props: { topic?: string; onNextPress: (topic: string) =
   });
   const authContext = useContext(AuthContext);
   const randomTopic = i18n.t('date.topic.suprise');
+  const intimacy = i18n.t('date.topic.intimacy');
   const allTopics = [
     i18n.t('date.topic.emotions'),
     i18n.t('date.topic.fun'),
     i18n.t('date.topic.worldview'),
+    intimacy,
     i18n.t('date.topic.goals'),
     i18n.t('date.topic.future'),
     i18n.t('date.topic.communication'),
@@ -105,6 +107,13 @@ export default function (props: { topic?: string; onNextPress: (topic: string) =
               userId: authContext.userId,
             });
             props.onNextPress(allTopics[Math.floor(Math.random() * allTopics.length)]);
+          } else if (pickedTopic === intimacy) {
+            void localAnalytics().logEvent('ChooseDateTopicsSpicyTopicChosen', {
+              screen: 'ChooseDateTopics',
+              action: 'SpicyTopicChosen',
+              userId: authContext.userId,
+            });
+            props.onNextPress('Intimacy');
           } else {
             void localAnalytics().logEvent('ChooseDateTopicsSpecificTopicChosen', {
               screen: 'ChooseDateTopics',

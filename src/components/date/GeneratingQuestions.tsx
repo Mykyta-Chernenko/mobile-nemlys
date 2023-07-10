@@ -47,7 +47,7 @@ export default function (props: {
       if (props.dateId) {
         const dateReponse = await supabase
           .from('date')
-          .update({ active: false })
+          .update({ active: false, updated_at: new Date() })
           .eq('id', props.dateId);
         if (dateReponse.error) {
           logErrors(dateReponse.error);
@@ -101,7 +101,6 @@ export default function (props: {
   return (
     <View
       style={{
-        marginTop: '5%',
         width: '100%',
         height: '100%',
         flexGrow: 1,
@@ -121,7 +120,7 @@ export default function (props: {
           source={require('../../../assets/images/generating_questions.png')}
         ></Animated.Image>
       </View>
-      <View style={{ marginTop: '10%', marginBottom: '5%' }}>
+      <View style={{ marginTop: '10%' }}>
         <FontText style={{ textAlign: 'center' }} h1>
           {i18n.t('date.generating_questions_first')}
           <FontText h1 style={{ color: theme.colors.error }}>

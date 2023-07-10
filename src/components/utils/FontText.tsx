@@ -9,11 +9,11 @@ export const FontText = ({ style, h1, h2, h3, h4, ...props }: TextProps) => {
   const windowHeight = Dimensions.get('window').height;
   const fontBySize = {
     s: {
-      h1: 32,
-      h2: 26,
-      h3: 20,
-      h4: 16,
-      normal: 14,
+      h1: 30,
+      h2: 24,
+      h3: 18,
+      h4: 14,
+      normal: 13,
     },
     m: {
       h1: 34,

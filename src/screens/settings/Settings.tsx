@@ -89,7 +89,7 @@ export default function ({ navigation }: NativeStackScreenProps<MainStackParamLi
   };
 
   const deleteAccount = async () => {
-    void localAnalytics().logEvent('ViewWithMenuClickSendFeedback', {
+    void localAnalytics().logEvent('ViewWithMenuClickDeleteAccount', {
       screen: 'Settings',
       action: 'Clicked delete account',
       userId: authContext.userId,

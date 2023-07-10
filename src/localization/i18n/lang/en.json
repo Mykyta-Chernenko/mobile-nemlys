@@ -54,6 +54,13 @@
     "outdated_title": "Your version is outdated",
     "need_to_update": "You will need to update your app to the latest version to continue using the app."
   },
+  "interview":{
+    "title_first": "Nemlys founders would like ",
+    "title_second": "to chat ",
+    "title_third": "with you",
+    "description": "We're seeking to understand what we can improve, so we would be glad to talk about your experince with Nemlys app.",
+    "button": "Schedule a call"
+  },
   "date": {
     "start_date": "Start date",
     "level_title_first": "Select ",
@@ -71,6 +78,7 @@
     "topic": {
       "title": "Select one topic",
       "suprise": "Suprise us!",
+      "intimacy": "Spicy",
       "emotions": "Emotions",
       "fun": "Fun",
       "worldview": "Worldview",
@@ -145,6 +153,38 @@
     "partner_name_first": "What is your\n",
     "partner_name_second": "partner name",
     "partner_name_third": "?",
+    "age":{
+      "title_first": "How old ",
+      "title_second": "",
+      "title_third": "are you?",
+      "choice_1": "below 18",
+      "choice_2": "18-24",
+      "choice_3": "25-34",
+      "choice_4": "35-44",
+      "choice_5": "44-55",
+      "choice_6": "above 55"
+    },
+    "length":{
+      "title_first": "",
+      "title_second": "How long ",
+      "title_third": "are you together",
+      "choice_1": "not started",
+      "choice_2": "1 - 4 weeks",
+      "choice_3": "1 - 12 months",
+      "choice_4": "1 - 5 years",
+      "choice_5": "5+ years",
+      "choice_6": "I'm single"
+    },
+    "job":{
+      "title_first": "What do you ",
+      "title_second": "",
+      "title_third": "want to get?",
+      "fun": "Fun and easy questions for date talks",
+      "match": "Understanding if we are a good match with partner",
+      "hard": "Questions that we find hard to bring up ourselves",
+      "issues": "Ways to resolve issues with partner",
+      "other": "Other"
+    },
     "relationship_story_explanation_first": "Help us generate ",
     "relationship_story_explanation_second": "relevant AI questions ",
     "relationship_story_explanation_third": "for your couple",
