@@ -26,10 +26,10 @@
   "cards": "Cards",
   "configure": "Configure",
   "level": "Level",
-  "new_reflection":{
-    "title":"Reflection unlocked!",
-    "description":"Reflect and write to get more personalised AI questions ",
-    "button":"Remind me later"
+  "new_reflection": {
+    "title": "Reflection unlocked!",
+    "description": "Reflect and write to get more personalised AI questions ",
+    "button": "Remind me later"
   },
   "home": {
     "you": "You",
@@ -39,7 +39,7 @@
     "title_first": "Select topic\nto discuss\n",
     "title_second": "together",
     "start": "Get Started",
-    "reflect_explanation":" Reflect to get better AI questions",
+    "reflect_explanation": " Reflect to get better AI questions",
     "menu": {
       "discuss": "Discuss",
       "diary": "Diary",
@@ -140,7 +140,7 @@
     "generating_questions_second": "with partner",
     "discuss": "Discuss together",
     "feedback": {
-      "with_partner":{
+      "with_partner": {
         "title_first": "So! How was ",
         "title_second": "your discussion",
         "title_third": "?",
@@ -149,7 +149,7 @@
         "choice_2": "Nothing new",
         "choice_1": "It wasn’t helpful at all"
       },
-      "alone":{
+      "alone": {
         "title_first": "So! What is ",
         "title_second": "your impression",
         "title_third": "?",
@@ -226,24 +226,23 @@
       "hard": "Questions that we find hard to bring up ourselves",
       "issues": "Ways to resolve issues with partner",
       "other": "Other",
-      "other_placeholder":" Write your answer..."
+      "other_placeholder": " Write your answer..."
     },
-    "reflection":{
-      "private":"private info",
+    "reflection": {
+      "private": "private info",
       "explanation": "We use AI, so the more you write the better questions you will get.",
       "short": "Too short",
       "good": "Good",
       "perfect": "Perfect",
-      "write_answer":"Write answer"
+      "write_answer": "Write answer"
     },
-  
-    "analyzing":{
-      "text_1":"Analyting\nyour writing",
-      "text_2":"Analyting\nyour answers",
-      "text_3":"Adapting app\nto your couple",
-      "text_4_first":"All done,\n",
-      "text_4_second":"start exploring\nthe app"
-  
+
+    "analyzing": {
+      "text_1": "Analyting\nyour writing",
+      "text_2": "Analyting\nyour answers",
+      "text_3": "Adapting app\nto your couple",
+      "text_4_first": "All done,\n",
+      "text_4_second": "start exploring\nthe app"
     },
 
     "discuss_way": {
