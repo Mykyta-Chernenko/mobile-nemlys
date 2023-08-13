@@ -7,6 +7,26 @@ export const SEMIBOLD_FONT_FAMILY = 'Epilogue-SemiBold';
 export const FontText = ({ style, h1, h2, h3, h4, ...props }: TextProps) => {
   const windowWidth = Dimensions.get('window').width;
   const windowHeight = Dimensions.get('window').height;
+
+  let screenType = 's';
+  if (windowWidth * windowHeight > 550000) {
+    screenType = 'xl';
+  } else if (windowWidth * windowHeight > 350000) {
+    screenType = 'l';
+  } else if (windowWidth * windowHeight > 290000) {
+    screenType = 'm';
+  }
+  const fontWeight = (style as TextStyle)?.fontWeight || '600';
+  let fontFamily = REGULAR_FONT_FAMILY;
+  switch (fontWeight) {
+    case '700':
+      fontFamily = BOLD_FONT_FAMILY;
+      break;
+    case '600':
+      fontFamily = SEMIBOLD_FONT_FAMILY;
+      break;
+  }
+
   const fontBySize = {
     s: {
       h1: 30,
@@ -37,24 +57,6 @@ export const FontText = ({ style, h1, h2, h3, h4, ...props }: TextProps) => {
       normal: 18,
     },
   };
-  let screenType = 's';
-  if (windowWidth * windowHeight > 550000) {
-    screenType = 'xl';
-  } else if (windowWidth * windowHeight > 350000) {
-    screenType = 'l';
-  } else if (windowWidth * windowHeight > 290000) {
-    screenType = 'm';
-  }
-  const fontWeight = (style as TextStyle)?.fontWeight || '600';
-  let fontFamily = REGULAR_FONT_FAMILY;
-  switch (fontWeight) {
-    case '700':
-      fontFamily = BOLD_FONT_FAMILY;
-      break;
-    case '600':
-      fontFamily = SEMIBOLD_FONT_FAMILY;
-      break;
-  }
   let fontSize = fontBySize[screenType].normal;
   if (h1) {
     fontSize = fontBySize[screenType].h1;

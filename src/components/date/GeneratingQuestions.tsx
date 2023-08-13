@@ -12,6 +12,7 @@ import { APIUserProfile, SupabaseAnswer } from '@app/types/api';
 
 export default function (props: {
   dateId?: number;
+  withPartner: boolean;
   topic: string;
   level: number;
   onLoaded: () => void;
@@ -58,7 +59,7 @@ export default function (props: {
       const data: SupabaseAnswer<APIUserProfile> = await supabase
         .from('user_profile')
         .select(
-          'id, partner_first_name, partner_first_name, user_id, couple_id, first_name, ios_expo_token, android_expo_token, onboarding_finished, created_at, updated_at',
+          'id, partner_first_name, partner_first_name, user_id, couple_id, first_name, ios_expo_token, android_expo_token, onboarding_finished, showed_interview_request, created_at, updated_at',
         )
         .eq('user_id', authContext.userId)
         .single();
@@ -73,6 +74,7 @@ export default function (props: {
           active: true,
           topic: props.topic,
           level: props.level,
+          with_partner: props.withPartner,
         })
         .select('id')
         .single();

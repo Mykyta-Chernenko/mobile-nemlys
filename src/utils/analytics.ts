@@ -37,6 +37,7 @@ export class ExpoMixpanelAnalytics {
     this.token = token;
     this.clientId = Constants.deviceName;
     this.osVersion = Platform.Version;
+    this.appVersion = Constants.expoConfig?.version;
     this.superProps;
     void this.identify();
     void Network.getIpAddressAsync().then((ip) => {

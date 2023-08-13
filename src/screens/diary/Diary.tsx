@@ -150,7 +150,7 @@ export default function ({ route }) {
                   action: 'Go back button clicked',
                   userId: authContext.userId,
                 });
-                navigation.navigate('SetHomeScreen', {
+                navigation.navigate('Home', {
                   refreshTimeStamp: new Date().toISOString(),
                 });
               }}

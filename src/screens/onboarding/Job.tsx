@@ -14,31 +14,23 @@ import { NativeStackScreenProps } from '@react-navigation/native-stack';
 import { localAnalytics } from '@app/utils/analytics';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import JobFunIcon from '@app/icons/job_fun';
-import JobMatchIcon from '@app/icons/job_match';
 import JobHardIcon from '@app/icons/job_hard';
 import JobIssuesIcon from '@app/icons/job_issues';
-import JobOtherIcon from '@app/icons/job_other';
+import StyledInput from '@app/components/utils/StyledInput';
 
 export default function ({ route, navigation }: NativeStackScreenProps<MainStackParamList, 'Job'>) {
   const { theme } = useTheme();
   const [chosen, setChosen] = useState<string | undefined>(undefined);
-  const choiceFresh = [
-    { icon: JobFunIcon, slug: 'fun', title: i18n.t('onboarding.job.fun') },
-    { icon: JobMatchIcon, slug: 'match', title: i18n.t('onboarding.job.match') },
-    { icon: JobHardIcon, slug: 'hard', title: i18n.t('onboarding.job.hard') },
-    { icon: JobOtherIcon, slug: 'other', title: i18n.t('onboarding.job.other') },
-  ];
-  const choiceNotFreh = [
+
+  const choices = [
     { icon: JobFunIcon, slug: 'fun', title: i18n.t('onboarding.job.fun') },
     { icon: JobHardIcon, slug: 'hard', title: i18n.t('onboarding.job.hard') },
     { icon: JobIssuesIcon, slug: 'issues', title: i18n.t('onboarding.job.issues') },
-    { icon: JobOtherIcon, slug: 'other', title: i18n.t('onboarding.job.other') },
   ];
-  const choices = ['1_5_years', '5_more_years'].includes(route.params.length_slug)
-    ? choiceNotFreh
-    : choiceFresh;
   const authContext = useContext(AuthContext);
+  const [other, setOther] = useState('');
 
+  const [inputActive, setInputActive] = useState(false);
   // to set the color of status bar
   const { setMode } = useThemeMode();
   useEffect(() => {
@@ -53,7 +45,7 @@ export default function ({ route, navigation }: NativeStackScreenProps<MainStack
       .match({ user_id: authContext.userId, question_slug: 'job' });
     const dateReponse = await supabase
       .from('onboarding_poll')
-      .insert({ user_id: authContext.userId, question_slug: 'job', answer_slug: chosen });
+      .insert({ user_id: authContext.userId, question_slug: 'job', answer_slug: chosen || other });
     if (dateReponse.error) {
       logErrorsWithMessage(dateReponse.error, dateReponse.error.message);
       return;
@@ -61,10 +53,10 @@ export default function ({ route, navigation }: NativeStackScreenProps<MainStack
     void localAnalytics().logEvent('JobContinueClicked', {
       screen: 'Job',
       action: 'ContinueClicked',
-      job: chosen,
+      job: chosen || other,
       userId: authContext.userId,
     });
-    navigation.navigate('RelationshipStoryExplanation');
+    navigation.navigate('DiscussWay');
   };
   return (
     <ImageBackground
@@ -93,10 +85,10 @@ export default function ({ route, navigation }: NativeStackScreenProps<MainStack
                   action: 'BackClicked',
                   userId: authContext.userId,
                 });
-                navigation.navigate('DatingLength');
+                navigation.navigate('PartnerName');
               }}
             ></GoBackButton>
-            <Progress current={5} all={6}></Progress>
+            <Progress current={3} all={5}></Progress>
           </View>
           <View
             style={{
@@ -123,38 +115,59 @@ export default function ({ route, navigation }: NativeStackScreenProps<MainStack
               {i18n.t('onboarding.job.title_third')}
             </FontText>
             <ScrollView style={{ marginTop: '5%', flex: 1 }}>
-              {choices.map((c, i) => (
-                <TouchableOpacity
-                  key={i}
-                  style={{
-                    marginTop: 10,
-                    borderRadius: 20,
-                    backgroundColor: theme.colors.white,
-                    borderColor: c.slug === chosen ? theme.colors.black : theme.colors.white,
-                    borderWidth: 1,
-                    padding: 20,
-                    flexDirection: 'row',
-                    alignItems: 'center',
+              {!inputActive &&
+                choices.map((c, i) => (
+                  <TouchableOpacity
+                    key={i}
+                    style={{
+                      marginTop: 10,
+                      borderRadius: 20,
+                      backgroundColor: theme.colors.white,
+                      borderColor: c.slug === chosen ? theme.colors.black : theme.colors.white,
+                      borderWidth: 1,
+                      padding: 20,
+                      flexDirection: 'row',
+                      alignItems: 'center',
+                    }}
+                    onPress={() => void setChosen(c.slug)}
+                  >
+                    <View style={{ marginRight: 10 }}>
+                      <c.icon></c.icon>
+                    </View>
+                    <View style={{ marginRight: '20%' }}>
+                      <FontText style={{ lineHeight: 20 }}>{c.title}</FontText>
+                    </View>
+                  </TouchableOpacity>
+                ))}
+              <View style={{ marginTop: '2%' }}>
+                <FontText>{i18n.t('onboarding.job.other')}</FontText>
+                <StyledInput
+                  containerStyle={{ marginTop: '2%', borderWidth: !chosen && other ? 1 : 0 }}
+                  placeholder={i18n.t('onboarding.job.other_placeholder')}
+                  value={other}
+                  autoCapitalize="sentences"
+                  autoCorrect={true}
+                  keyboardType="default"
+                  returnKeyType="send"
+                  onTouchStart={() => {
+                    void setChosen(undefined);
+                    setInputActive(true);
                   }}
-                  onPress={() => void setChosen(c.slug)}
-                >
-                  <View style={{ marginRight: 10 }}>
-                    <c.icon></c.icon>
-                  </View>
-                  <View style={{ marginRight: '20%' }}>
-                    <FontText style={{ lineHeight: 20 }}>{c.title}</FontText>
-                  </View>
-                </TouchableOpacity>
-              ))}
+                  onEndEditing={() => {
+                    setInputActive(false);
+                  }}
+                  onChangeText={setOther}
+                />
+              </View>
             </ScrollView>
           </View>
-        </View>
-        <View style={{ padding: 20 }}>
-          <PrimaryButton
-            disabled={!chosen}
-            title={i18n.t('continue')}
-            onPress={() => void handlePress()}
-          />
+          <View style={{ marginTop: '4%' }}>
+            <PrimaryButton
+              disabled={!(chosen || other)}
+              title={i18n.t('continue')}
+              onPress={() => void handlePress()}
+            />
+          </View>
         </View>
       </SafeAreaView>
     </ImageBackground>

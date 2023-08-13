@@ -29,14 +29,14 @@ export default function ({ show, onClose }: { show: boolean; onClose: () => void
         return;
       }
       setLink(res.data.interview_link);
+      void localAnalytics().logEvent('InterviewShowed', {
+        screen: 'Interview',
+        action: 'Showed',
+        userId: authContext.userId,
+      });
     };
-    void f();
-    void localAnalytics().logEvent('InterviewShowed', {
-      screen: 'Interview',
-      action: 'Showed',
-      userId: authContext.userId,
-    });
-  });
+    show && void f();
+  }, [show, authContext.userId]);
   const savedShowed = async (agreed: boolean) => {
     const newResponse = await supabase
       .from('user_profile')
@@ -82,55 +82,57 @@ export default function ({ show, onClose }: { show: boolean; onClose: () => void
             justifyContent: 'flex-end',
           }}
         >
-          <View
-            style={{
-              height: isSmallDevice() ? '70%' : '55%',
-              width: '100%',
-              backgroundColor: theme.colors.white,
-              borderRadius: 24,
-              flexDirection: 'column',
-              padding: 20,
-              justifyContent: 'space-between',
-            }}
-          >
-            <View style={{ flexDirection: 'row', justifyContent: 'flex-end' }}>
-              <CloseButton onPress={onClosePressed} theme="dark"></CloseButton>
-            </View>
-            <View style={{ flexDirection: 'row' }}>
-              {/* // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment */}
-              <Image
-                style={{ height: 56, width: 56 }}
-                source={require('../../../assets/images/mykyta.png')}
-              ></Image>
-              <Image
-                style={{ height: 56, width: 56 }}
-                source={require('../../../assets/images/mark.png')}
-              ></Image>
-              <Image
-                style={{ height: 56, width: 56 }}
-                source={require('../../../assets/images/lily.png')}
-              ></Image>
-            </View>
-            <View>
-              <FontText h1>
-                {i18n.t('interview.title_first')}
-                <FontText h1 style={{ color: theme.colors.primary }}>
-                  {i18n.t('interview.title_second')}
-                </FontText>
-                {i18n.t('interview.title_third')}
-              </FontText>
-              <View style={{ marginTop: '5%' }}>
-                <FontText style={{ color: theme.colors.grey3 }}>
-                  {i18n.t('interview.description')}
-                </FontText>
+          <TouchableWithoutFeedback style={{ flex: 1 }}>
+            <View
+              style={{
+                height: isSmallDevice() ? '70%' : '55%',
+                width: '100%',
+                backgroundColor: theme.colors.white,
+                borderRadius: 24,
+                flexDirection: 'column',
+                padding: 20,
+                justifyContent: 'space-between',
+              }}
+            >
+              <View style={{ flexDirection: 'row', justifyContent: 'flex-end' }}>
+                <CloseButton onPress={onClosePressed} theme="dark"></CloseButton>
               </View>
+              <View style={{ flexDirection: 'row' }}>
+                {/* // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment */}
+                <Image
+                  style={{ height: 56, width: 56 }}
+                  source={require('../../../assets/images/mykyta.png')}
+                ></Image>
+                <Image
+                  style={{ height: 56, width: 56 }}
+                  source={require('../../../assets/images/mark.png')}
+                ></Image>
+                <Image
+                  style={{ height: 56, width: 56 }}
+                  source={require('../../../assets/images/lily.png')}
+                ></Image>
+              </View>
+              <View>
+                <FontText h1>
+                  {i18n.t('interview.title_first')}
+                  <FontText h1 style={{ color: theme.colors.primary }}>
+                    {i18n.t('interview.title_second')}
+                  </FontText>
+                  {i18n.t('interview.title_third')}
+                </FontText>
+                <View style={{ marginTop: '5%' }}>
+                  <FontText style={{ color: theme.colors.grey3 }}>
+                    {i18n.t('interview.description')}
+                  </FontText>
+                </View>
+              </View>
+              <PrimaryButton
+                title={i18n.t('interview.button')}
+                disabled={!link}
+                onPress={onPress}
+              ></PrimaryButton>
             </View>
-            <PrimaryButton
-              title={i18n.t('interview.button')}
-              disabled={!link}
-              onPress={onPress}
-            ></PrimaryButton>
-          </View>
+          </TouchableWithoutFeedback>
         </View>
       </TouchableWithoutFeedback>
     </Modal>

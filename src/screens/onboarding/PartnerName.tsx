@@ -1,6 +1,6 @@
 import React, { useContext, useEffect, useState } from 'react';
 import { ImageBackground, KeyboardAvoidingView, ScrollView, View } from 'react-native';
-import { Input, useTheme, useThemeMode } from '@rneui/themed';
+import { useTheme, useThemeMode } from '@rneui/themed';
 import { i18n } from '@app/localization/i18n';
 import { PrimaryButton } from '@app/components/buttons/PrimaryButtons';
 import { FontText } from '@app/components/utils/FontText';
@@ -14,6 +14,7 @@ import { MainStackParamList } from '@app/types/navigation';
 import { NativeStackScreenProps } from '@react-navigation/native-stack';
 import { localAnalytics } from '@app/utils/analytics';
 import { SafeAreaView } from 'react-native-safe-area-context';
+import StyledInput from '@app/components/utils/StyledInput';
 
 export default function ({
   route,
@@ -44,7 +45,7 @@ export default function ({
       action: 'ContinueClicked',
       userId: authContext.userId,
     });
-    navigation.navigate('Age');
+    navigation.navigate('Job');
   };
   return (
     <KeyboardAvoidingView behavior={KEYBOARD_BEHAVIOR} style={{ flexGrow: 1 }}>
@@ -83,7 +84,7 @@ export default function ({
                     navigation.navigate('YourName');
                   }}
                 ></GoBackButton>
-                <Progress current={2} all={6}></Progress>
+                <Progress current={2} all={5}></Progress>
               </View>
               <View
                 style={{
@@ -110,10 +111,10 @@ export default function ({
                   {i18n.t('onboarding.partner_name_third')}
                 </FontText>
                 <View style={{ marginTop: '5%' }}>
-                  <Input
+                  <StyledInput
                     autoFocus={true}
                     value={name}
-                    autoCapitalize="none"
+                    autoCapitalize="words"
                     autoComplete="name-given"
                     autoCorrect={false}
                     keyboardType="default"

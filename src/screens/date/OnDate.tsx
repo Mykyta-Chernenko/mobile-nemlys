@@ -60,9 +60,15 @@ export default function ({
     setCurrentDate(undefined);
     setShowFeedback(false);
     setShowNewlevel(false);
+    void localAnalytics().logEvent('OnDateLoaded', {
+      screen: 'OnDate',
+      action: 'loaded',
+      userId: authContext.userId,
+    });
   }
+  const withPartner = currentDate?.with_partner ?? false;
 
-  const dateFields = 'id, couple_id, active, topic, level, created_at, updated_at';
+  const dateFields = 'id, couple_id, with_partner, active, topic, level, created_at, updated_at';
   async function getQuestion() {
     setLoading(true);
     const dateRes: SupabaseAnswer<APIDate> = await supabase
@@ -88,7 +94,7 @@ export default function ({
       return;
     }
 
-    if (res.data) {
+    if (res.data?.length) {
       setQuestions(res.data);
     } else {
       const res: SupabaseAnswer<APIGeneratedQuestion[] | null> = await supabase.functions.invoke(
@@ -101,23 +107,32 @@ export default function ({
         logErrors(res.error);
         return;
       }
-      setQuestions(res.data || []);
+
+      setQuestions(res.data ?? []);
     }
 
     setLoading(false);
   }
 
+  const isFirstMount = useRef(true);
+  useEffect(() => {
+    if (!isFirstMount.current && route.params?.refreshTimeStamp) {
+      restart();
+      void getQuestion();
+    }
+  }, [route.params?.refreshTimeStamp]);
   useEffect(() => {
     restart();
     void getQuestion();
-  }, [route.params]);
+    isFirstMount.current = false;
+  }, []);
 
   const handleFinishDateButtonFinal = async (feedback: number | undefined) => {
     if (!currentDate) return;
     setLoading(true);
     for (let i = 0; i < questions.length; i++) {
       const q = questions[i];
-      const updateDict = { feedback_score: feedback };
+      const updateDict = { feedback_score: feedback, seconds_spent: spentTimes[i] || 0 };
       if (spentTimes[i] > 60) {
         void localAnalytics().logEvent('DateFinishedQuestion', {
           screen: 'Date',
@@ -164,7 +179,10 @@ export default function ({
       userId: authContext.userId,
     });
     void handleFinishDateButtonFinal(undefined);
-    navigation.navigate('ConfigureDate', { refreshTimeStamp: new Date().toISOString() });
+    navigation.navigate('ConfigureDate', {
+      withPartner: route.params.withPartner,
+      refreshTimeStamp: new Date().toISOString(),
+    });
   };
 
   const getFontSize = (index) => {
@@ -279,6 +297,7 @@ export default function ({
     <Loading></Loading>
   ) : showFeedback ? (
     <DateFeedback
+      withPartner={withPartner}
       onPressBack={() => {
         void localAnalytics().logEvent('DateFeedbackGoBackPressed', {
           screen: 'DateFeedback',
@@ -286,18 +305,23 @@ export default function ({
           userId: authContext.userId,
         });
         setShowFeedback(false);
+        setTimeout(() => {
+          setQuestionIndex(2);
+          carouselRef?.current?.scrollTo({ index: 2, animated: false });
+        }, 0);
       }}
       onPressForward={(feedbackScore: number) => {
         void localAnalytics().logEvent('DateFeedbackChoicePressed', {
           screen: 'DateFeedback',
           action: 'DateFeedback choice pressed',
+          feedback: feedbackScore,
           userId: authContext.userId,
         });
         void handleFinishDateButtonFinal(feedbackScore);
       }}
     ></DateFeedback>
   ) : showNewLevel ? (
-    <NewLevel></NewLevel>
+    <NewLevel withPartner={withPartner}></NewLevel>
   ) : (
     <View
       style={{

@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import { ScrollView, View } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { FontText } from '@app/components/utils/FontText';
@@ -9,24 +9,36 @@ import { supabase } from '@app/api/initSupabase';
 import { useNavigation } from '@react-navigation/native';
 import { MainNavigationProp } from '@app/types/navigation';
 import { SecondaryButton } from '../buttons/SecondaryButton';
+import { PrimaryButton } from '../buttons/PrimaryButtons';
+import { localAnalytics } from '@app/utils/analytics';
+import { AuthContext } from '@app/provider/AuthProvider';
 
-export default function () {
+export default function ({ withPartner }: { withPartner: boolean }) {
   const { theme } = useTheme();
   const [dateCount, setDateCount] = useState(0);
 
   const navigation = useNavigation<MainNavigationProp>();
+  const authContext = useContext(AuthContext);
 
   useEffect(() => {
     const f = async () => {
       const { error, count } = await supabase
         .from('date')
         .select('*', { count: 'exact' })
-        .eq('active', false);
+        .eq('active', false)
+        .eq('with_partner', true);
       if (error) {
         logErrors(error);
         return;
       }
       setDateCount(count || 0);
+      if ((count || 0) == 1) {
+        void localAnalytics().logEvent('NewLevelFirstDateFinished', {
+          screen: 'NewLevel',
+          action: 'FirstDateFinished',
+          userId: authContext.userId,
+        });
+      }
     };
     void f();
   }, []);
@@ -62,25 +74,44 @@ export default function () {
                 {i18n.t('level')} {dateCount + 1}
               </FontText>
               <FontText style={{ color: theme.colors.white }}>
-                {i18n.t('date.new_level.reached')}
+                {withPartner ? i18n.t('date.new_level.reached') : i18n.t('date.new_level.have')}
               </FontText>
             </Image>
           </View>
           <View style={{ alignItems: 'center' }}>
             <FontText h1 style={{ color: theme.colors.white }}>
-              {i18n.t('date.new_level.title_first')}
+              {withPartner
+                ? i18n.t('date.new_level.title_first')
+                : i18n.t('date.new_level.alone_title_first')}
             </FontText>
             <FontText h1 style={{ color: theme.colors.primary }}>
               {i18n.t('date.new_level.title_second')}
             </FontText>
           </View>
-          <SecondaryButton
-            buttonStyle={{ width: '100%' }}
-            onPress={() => {
-              navigation.navigate('Home', { refreshTimeStamp: new Date().toISOString() });
-            }}
-            title={i18n.t('date.new_level.home')}
-          ></SecondaryButton>
+          <View>
+            <PrimaryButton
+              buttonStyle={{ width: '100%', backgroundColor: 'rgba(255,255,255,0.1)' }}
+              onPress={() => {
+                navigation.navigate('ConfigureDate', {
+                  withPartner,
+                  refreshTimeStamp: new Date().toISOString(),
+                });
+              }}
+              title={
+                withPartner
+                  ? i18n.t('date.new_level.one_more_discussion')
+                  : i18n.t('date.new_level.try_topic')
+              }
+            ></PrimaryButton>
+            <SecondaryButton
+              containerStyle={{ marginTop: 10 }}
+              buttonStyle={{ width: '100%' }}
+              onPress={() => {
+                navigation.navigate('Home', { refreshTimeStamp: new Date().toISOString() });
+              }}
+              title={i18n.t('date.new_level.home')}
+            ></SecondaryButton>
+          </View>
         </ScrollView>
       </SafeAreaView>
     </View>

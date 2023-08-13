@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useState } from 'react';
+import React, { useContext, useEffect, useRef, useState } from 'react';
 import { MainStackParamList } from '@app/types/navigation';
 import { NativeStackScreenProps } from '@react-navigation/native-stack';
 import { supabase } from '@app/api/initSupabase';
@@ -11,15 +11,18 @@ import { useTheme, useThemeMode } from '@rneui/themed';
 import { FontText } from '@app/components/utils/FontText';
 import QuestionTriangelSelected from '@app/icons/question_triangle_selected';
 import Story from '@app/icons/story';
+import StoryWithWarning from '@app/icons/story_with_warning';
+import BuddiesCorner from '@app/icons/buddies_corner';
 import Profile from '@app/icons/profile';
 import { i18n } from '@app/localization/i18n';
-import { Image } from 'react-native';
 import { localAnalytics } from '@app/utils/analytics';
 import { PrimaryButton } from '@app/components/buttons/PrimaryButtons';
 import Card from '../../components/date/Card';
 import { logout } from '../settings/Settings';
 import { TouchableOpacity } from 'react-native';
 import Interview from '@app/components/date/Interview';
+import NewReflection from '@app/components/date/NewReflection';
+import moment from 'moment';
 
 export default function ({
   route,
@@ -31,6 +34,8 @@ export default function ({
   const [partnerName, setPartnerName] = useState('');
   const [dateCount, setDateCount] = useState(0);
   const [showInterview, setShowInterview] = useState(false);
+  const [showNewReflection, setShowNewReflection] = useState(false);
+  const [showReflectionNotification, setShowReflectionNotification] = useState(false);
   const padding = 20;
   const authContext = useContext(AuthContext);
   // to set the color of status bar
@@ -43,6 +48,7 @@ export default function ({
   async function getIsOnboarded() {
     setLoading(true);
     setShowInterview(false);
+    setShowReflectionNotification(false);
     const data: SupabaseAnswer<APIUserProfile> = await supabase
       .from('user_profile')
       .select(
@@ -65,21 +71,74 @@ export default function ({
         return;
       }
       if (dateRes.data) {
-        navigation.navigate('OnDate', { refreshTimeStamp: new Date().toISOString() });
+        navigation.navigate('OnDate', {
+          withPartner: dateRes.data.with_partner,
+          refreshTimeStamp: new Date().toISOString(),
+        });
       } else {
+        void localAnalytics().logEvent('HomeLoaded', {
+          screen: 'Home',
+          action: 'Loaded',
+          userId: authContext.userId,
+        });
         const { error, count } = await supabase
           .from('date')
           .select('*', { count: 'exact' })
-          .eq('active', false);
+          .eq('active', false)
+          .eq('with_partner', true);
         if (error) {
           logErrors(error);
           return;
         }
-        setDateCount(count || 0);
+        const { error: errorDateYesterday, count: dateYesterdayCount } = await supabase
+          .from('date')
+          .select('*', { count: 'exact' })
+          .eq('active', false)
+          .lt('created_at', moment().startOf('day').toISOString())
+          .limit(1);
+        if (errorDateYesterday) {
+          logErrors(errorDateYesterday);
+          return;
+        }
+        const lastDate: SupabaseAnswer<{ created_at: string } | null> = await supabase
+          .from('date')
+          .select('created_at')
+          .eq('with_partner', true)
+          .limit(1)
+          .order('created_at', { ascending: false })
+          .maybeSingle();
+
+        const lastReflection: SupabaseAnswer<{ created_at: string } | null> = await supabase
+          .from('reflection_question_answer')
+          .select('created_at')
+          .limit(1)
+          .order('created_at', { ascending: false })
+          .maybeSingle();
+
+        if (
+          lastDate.data &&
+          lastReflection.data &&
+          moment(lastDate.data.created_at).isAfter(moment(lastReflection.data.created_at))
+        ) {
+          setShowReflectionNotification(true);
+        }
+        if (error) {
+          logErrors(error);
+          return;
+        }
+        const dateCount = count || 0;
+        const levelNewReflection = await supabase
+          .from('reflection_notification')
+          .select('*', { count: 'exact' })
+          .eq('level', dateCount + 1);
+
+        setDateCount(dateCount);
         setFirstName(data.data.first_name);
         setPartnerName(data.data.partner_first_name);
         setLoading(false);
-        setShowInterview((count || 0) > 1 && !data.data.showed_interview_request);
+        const showInterview = (dateYesterdayCount || 0) > 0 && !data.data.showed_interview_request;
+        setShowInterview(showInterview);
+        setShowNewReflection(dateCount > 0 && !showInterview && !levelNewReflection.count);
       }
     }
     setLoading(false);
@@ -90,11 +149,18 @@ export default function ({
       action: 'StartDateClicked',
       userId: authContext.userId,
     });
-    navigation.navigate('ConfigureDate', { refreshTimeStamp: new Date().toISOString() });
+    navigation.navigate('DateIsWithPartner');
   };
+  const isFirstMount = useRef(true);
+  useEffect(() => {
+    if (!isFirstMount.current && route.params?.refreshTimeStamp) {
+      void getIsOnboarded();
+    }
+  }, [route.params?.refreshTimeStamp]);
   useEffect(() => {
     void getIsOnboarded();
-  }, [route.params?.refreshTimeStamp]);
+    isFirstMount.current = false;
+  }, []);
 
   if (loading) return <Loading />;
   return (
@@ -104,7 +170,17 @@ export default function ({
         backgroundColor: theme.colors.white,
       }}
     >
-      <Interview show={showInterview} onClose={() => setShowInterview(false)}></Interview>
+      {showInterview && (
+        <Interview show={showInterview} onClose={() => setShowInterview(false)}></Interview>
+      )}
+      {showNewReflection && (
+        <NewReflection
+          navigation={navigation}
+          show={showNewReflection}
+          level={dateCount + 1}
+          onClose={() => setShowNewReflection(false)}
+        ></NewReflection>
+      )}
       <SafeAreaView style={{ flexGrow: 1 }}>
         <View style={{ flexGrow: 1, padding: padding }}>
           <View
@@ -152,13 +228,7 @@ export default function ({
                     justifyContent: 'flex-end',
                   }}
                 >
-                  <Image
-                    // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
-                    source={require('../../../assets/images/buddies_corner.png')}
-                    style={{
-                      borderBottomRightRadius: 24,
-                    }}
-                  />
+                  <BuddiesCorner />
                 </View>
               </View>
             </View>
@@ -203,11 +273,39 @@ export default function ({
               </Card>
             </View>
           </View>
+          {showReflectionNotification && (
+            <View
+              style={{
+                height: 60,
+                backgroundColor: theme.colors.grey1,
+                marginHorizontal: -20,
+                marginBottom: -20,
+              }}
+            >
+              <View
+                style={{
+                  flex: 1,
+                  borderTopLeftRadius: 16,
+                  borderTopRightRadius: 16,
+                  backgroundColor: theme.colors.warning,
+                  alignContent: 'center',
+                  justifyContent: 'center',
+                  marginBottom: 20,
+                }}
+              >
+                <FontText style={{ textAlign: 'center' }}>
+                  {i18n.t('home.reflect_explanation')}
+                </FontText>
+              </View>
+            </View>
+          )}
           <View
             style={{
-              backgroundColor: theme.colors.grey1,
+              backgroundColor: showReflectionNotification
+                ? theme.colors.warning
+                : theme.colors.grey1,
               marginHorizontal: -padding,
-              height: '10%',
+              height: 70,
             }}
           >
             <View
@@ -237,19 +335,23 @@ export default function ({
                   alignItems: 'center',
                 }}
                 onPress={() => {
-                  void localAnalytics().logEvent('MenuStoryClicked', {
+                  void localAnalytics().logEvent('MenuReflectClicked', {
                     screen: 'Menu',
-                    action: 'StoryClicked',
+                    action: 'ReflectClicked',
                     userId: authContext.userId,
                   });
-                  navigation.navigate('Story', {
+                  navigation.navigate('ReflectionHome', {
                     refreshTimeStamp: new Date().toISOString(),
                   });
                 }}
               >
-                <Story height={32} width={32}></Story>
+                {showReflectionNotification ? (
+                  <StoryWithWarning height={32} width={32}></StoryWithWarning>
+                ) : (
+                  <Story height={32} width={32}></Story>
+                )}
                 <FontText style={{ marginTop: 5, color: theme.colors.grey3 }}>
-                  {i18n.t('home.menu.story')}
+                  {i18n.t('home.menu.reflect')}
                 </FontText>
               </TouchableOpacity>
               <TouchableOpacity

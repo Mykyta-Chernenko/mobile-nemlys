@@ -51,6 +51,7 @@ export class APIDate extends ApiEntry {
   topic: string;
   level: number;
   active: boolean;
+  with_partner: boolean;
 }
 
 export type InsertAPIDate = Omit<APIDate, keyof ApiEntry>;
@@ -65,4 +66,18 @@ export class APIGeneratedQuestion extends ApiEntry {
 
 export class APIAppSettings extends ApiEntry {
   version: number;
+}
+
+export class APIReflectionQuestion extends ApiEntry {
+  slug: string;
+  reflection: string;
+  level: number;
+  active: boolean;
+}
+
+export class APIReflectionQuestionAnswer extends ApiEntry {
+  reflection_id: APIReflectionQuestion['id'];
+  user_id: string;
+  answer: string;
+  reflection_question: any;
 }

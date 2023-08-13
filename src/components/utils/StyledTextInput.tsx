@@ -2,7 +2,8 @@ import { i18n } from '@app/localization/i18n';
 import { useTheme } from '@rneui/themed';
 
 import React, { Ref, useRef } from 'react';
-import { Platform, TextInput, TextInputProps } from 'react-native';
+import { TextInput, TextInputProps } from 'react-native';
+import { REGULAR_FONT_FAMILY } from './FontText';
 
 const StyledTextInput = React.forwardRef((props: TextInputProps, ref?: Ref<any>) => {
   useRef();
@@ -10,16 +11,16 @@ const StyledTextInput = React.forwardRef((props: TextInputProps, ref?: Ref<any>)
   const { style, ...otherProps } = props;
   return (
     <TextInput
-      multiline={Platform.OS === 'ios'} // true is needed on IPhone so that the placeholder is at the top, but it breaks the return button for Adnroid
+      multiline={true}
       placeholder={i18n.t('input_here')}
       style={[
         {
-          height: 100,
           textAlignVertical: 'top',
-          borderColor: theme.colors.primary,
+          borderColor: theme.colors.black,
           backgroundColor: theme.colors.white,
           borderWidth: 1,
           padding: 10,
+          fontFamily: REGULAR_FONT_FAMILY,
         },
         style,
       ]}

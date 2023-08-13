@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useState } from 'react';
+import React, { useContext, useEffect, useRef, useState } from 'react';
 import { MainStackParamList } from '@app/types/navigation';
 import { NativeStackScreenProps } from '@react-navigation/native-stack';
 import { supabase } from '@app/api/initSupabase';
@@ -11,8 +11,8 @@ import { FontText } from '@app/components/utils/FontText';
 import QuestionTriangel from '@app/icons/question_triangle';
 import Story from '@app/icons/story';
 import ProfileSelected from '@app/icons/profile_selected';
+import ProfileBuddyCorner from '@app/icons/profile_buddy_corner';
 import { i18n } from '@app/localization/i18n';
-import { Image } from 'react-native';
 import { localAnalytics } from '@app/utils/analytics';
 import { logout } from '../settings/Settings';
 import { TouchableOpacity } from 'react-native';
@@ -33,7 +33,8 @@ export default function ({
     const { error, count } = await supabase
       .from('date')
       .select('*', { count: 'exact' })
-      .eq('active', false);
+      .eq('active', false)
+      .eq('with_partner', true);
     if (error) {
       logErrors(error);
       return;
@@ -42,12 +43,19 @@ export default function ({
     setLoading(false);
   }
 
+  const isFirstMount = useRef(true);
+  useEffect(() => {
+    if (!isFirstMount.current && route.params?.refreshTimeStamp) {
+      void getData();
+    }
+  }, [route.params?.refreshTimeStamp]);
   useEffect(() => {
     void getData();
-  }, [route.params?.refreshTimeStamp]);
+    isFirstMount.current = false;
+  }, []);
 
   const deleteAccount = async () => {
-    void localAnalytics().logEvent('ViewWithMenuClickDeleteAccount', {
+    void localAnalytics().logEvent('ProfileDeleteAccount', {
       screen: 'Settings',
       action: 'Clicked delete account',
       userId: authContext.userId,
@@ -133,13 +141,7 @@ export default function ({
                     justifyContent: 'flex-end',
                   }}
                 >
-                  <Image
-                    // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
-                    source={require('../../../assets/images/buddy_corner.png')}
-                    style={{
-                      borderBottomRightRadius: 24,
-                    }}
-                  />
+                  <ProfileBuddyCorner />
                 </View>
               </View>
             </View>
@@ -157,6 +159,10 @@ export default function ({
               <SecondaryButton
                 buttonStyle={{ marginTop: 10 }}
                 onPress={() => {
+                  void localAnalytics().logEvent('ProfileLogout', {
+                    screen: 'Profile',
+                    action: 'Clicked logout',
+                  });
                   void logout().then(logout);
                 }}
               >
@@ -218,19 +224,19 @@ export default function ({
                   alignItems: 'center',
                 }}
                 onPress={() => {
-                  void localAnalytics().logEvent('MenuStoryClicked', {
+                  void localAnalytics().logEvent('MenuReflectClicked', {
                     screen: 'Menu',
-                    action: 'StoryClicked',
+                    action: 'ReflectClicked',
                     userId: authContext.userId,
                   });
-                  navigation.navigate('Story', {
+                  navigation.navigate('ReflectionHome', {
                     refreshTimeStamp: new Date().toISOString(),
                   });
                 }}
               >
                 <Story height={32} width={32}></Story>
                 <FontText style={{ marginTop: 5, color: theme.colors.grey3 }}>
-                  {i18n.t('home.menu.story')}
+                  {i18n.t('home.menu.reflect')}
                 </FontText>
               </TouchableOpacity>
               <View

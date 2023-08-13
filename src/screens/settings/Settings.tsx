@@ -7,7 +7,6 @@ import AsyncStorage from '@react-native-async-storage/async-storage';
 import { logErrors } from '@app/utils/errors';
 import { NativeStackScreenProps } from '@react-navigation/native-stack';
 import { MainStackParamList } from '@app/types/navigation';
-import { Image } from '@rneui/themed';
 import { GoBackButton } from '@app/components/buttons/GoBackButton';
 import { AuthContext } from '@app/provider/AuthProvider';
 import { FontText } from '@app/components/utils/FontText';
@@ -17,10 +16,6 @@ import { Divider } from '@rneui/base';
 import { analyticsForgetUser, localAnalytics } from '@app/utils/analytics';
 
 export const logout = async () => {
-  void localAnalytics().logEvent('ViewWithMenuLogout', {
-    screen: 'Settings',
-    action: 'Clicked logout',
-  });
   await supabase.auth.signOut();
   await analyticsForgetUser();
   // just to make sure in case something goes wrong
@@ -149,17 +144,7 @@ export default function ({ navigation }: NativeStackScreenProps<MainStackParamLi
           style={{
             height: 200,
           }}
-        >
-          <Image
-            resizeMode="contain"
-            style={{
-              height: '100%',
-              width: '100%',
-            }}
-            // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
-            // source={require('../../../assets/images/settings.png')}
-          ></Image>
-        </View>
+        ></View>
         <Feedback></Feedback>
         <TouchableOpacity
           onPress={() => {

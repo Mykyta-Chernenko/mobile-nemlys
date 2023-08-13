@@ -17,20 +17,17 @@ import { SafeAreaView } from 'react-native-safe-area-context';
 export default function ({
   route,
   navigation,
-}: NativeStackScreenProps<MainStackParamList, 'DatingLength'>) {
+}: NativeStackScreenProps<MainStackParamList, 'DiscussWay'>) {
   const { theme } = useTheme();
   const [chosen, setChosen] = useState<string | undefined>(undefined);
   const choices = [
-    { slug: 'not_yet', title: i18n.t('onboarding.length.choice_1') },
-    { slug: '1_4_weeks', title: i18n.t('onboarding.length.choice_2') },
-    { slug: '1_12_months', title: i18n.t('onboarding.length.choice_3') },
-    { slug: '1_5_years', title: i18n.t('onboarding.length.choice_4') },
-    { slug: '5_more_years', title: i18n.t('onboarding.length.choice_5') },
-    { slug: 'single', title: i18n.t('onboarding.length.choice_6') },
+    { slug: 'face-to-face', title: i18n.t('onboarding.discuss_way.choice_1') },
+    { slug: 'online', title: i18n.t('onboarding.discuss_way.choice_2') },
+    { slug: 'discuss-later', title: i18n.t('onboarding.discuss_way.choice_3') },
+    { slug: 'do-not-know', title: i18n.t('onboarding.discuss_way.choice_4') },
   ];
   const authContext = useContext(AuthContext);
 
-  // to set the color of status bar
   const { setMode } = useThemeMode();
   useEffect(() => {
     const unsubscribeFocus = navigation.addListener('focus', () => setMode('light'));
@@ -41,25 +38,21 @@ export default function ({
     await supabase
       .from('onboarding_poll')
       .delete()
-      .match({ user_id: authContext.userId, question_slug: 'dating_length' });
+      .match({ user_id: authContext.userId, question_slug: 'discuss_way' });
     const dateReponse = await supabase
       .from('onboarding_poll')
-      .insert({ user_id: authContext.userId, question_slug: 'dating_length', answer_slug: chosen });
+      .insert({ user_id: authContext.userId, question_slug: 'discuss_way', answer_slug: chosen });
     if (dateReponse.error) {
       logErrorsWithMessage(dateReponse.error, dateReponse.error.message);
       return;
     }
-    void localAnalytics().logEvent('DatingLengthContinueClicked', {
-      screen: 'DatingLength',
+    void localAnalytics().logEvent('DiscussWayContinueClicked', {
+      screen: 'DiscussWay',
       action: 'ContinueClicked',
-      dating_length: chosen,
+      discuss_way: chosen,
       userId: authContext.userId,
     });
-    if (chosen === 'single') {
-      navigation.navigate('RelationshipStoryExplanation');
-    } else {
-      navigation.navigate('Job', { length_slug: chosen! });
-    }
+    navigation.navigate('OnboardingReflectionExplanation');
   };
   return (
     <ImageBackground
@@ -83,15 +76,15 @@ export default function ({
               theme="light"
               containerStyle={{ position: 'absolute', left: 0 }}
               onPress={() => {
-                void localAnalytics().logEvent('DatingLengthBackClicked', {
-                  screen: 'DatingLength',
+                void localAnalytics().logEvent('DiscussWayBackClicked', {
+                  screen: 'DiscussWay',
                   action: 'BackClicked',
                   userId: authContext.userId,
                 });
-                navigation.navigate('Age');
+                navigation.navigate('Job');
               }}
             ></GoBackButton>
-            <Progress current={4} all={6}></Progress>
+            <Progress current={4} all={5}></Progress>
           </View>
           <View
             style={{
@@ -111,11 +104,11 @@ export default function ({
               }}
               h1
             >
-              {i18n.t('onboarding.length.title_first')}
+              {i18n.t('onboarding.discuss_way.title_first')}
               <FontText style={{ color: theme.colors.primary }} h1>
-                {i18n.t('onboarding.length.title_second')}
+                {i18n.t('onboarding.discuss_way.title_second')}
               </FontText>
-              {i18n.t('onboarding.length.title_third')}
+              {i18n.t('onboarding.discuss_way.title_third')}
             </FontText>
             <ScrollView style={{ marginTop: '5%', flex: 1 }}>
               {choices.map((c, i) => (
@@ -139,13 +132,13 @@ export default function ({
               ))}
             </ScrollView>
           </View>
-        </View>
-        <View style={{ padding: 20 }}>
-          <PrimaryButton
-            disabled={!chosen}
-            title={i18n.t('continue')}
-            onPress={() => void handlePress()}
-          />
+          <View style={{ marginTop: '4%' }}>
+            <PrimaryButton
+              disabled={!chosen}
+              title={i18n.t('continue')}
+              onPress={() => void handlePress()}
+            />
+          </View>
         </View>
       </SafeAreaView>
     </ImageBackground>

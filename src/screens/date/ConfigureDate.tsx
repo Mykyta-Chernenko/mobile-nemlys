@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useState } from 'react';
+import React, { useContext, useEffect, useRef, useState } from 'react';
 
 import { useTheme, useThemeMode } from '@rneui/themed';
 
@@ -36,7 +36,7 @@ export default function ({
     return unsubscribeFocus;
   }, [navigation]);
 
-  const dateFields = 'id, couple_id, active, topic, level, created_at, updated_at';
+  const dateFields = 'id, couple_id, with_partner, active, topic, level, created_at, updated_at';
   async function getDate() {
     setLoading(true);
 
@@ -61,9 +61,17 @@ export default function ({
     setCurrentStep(1);
     setLoading(false);
   }
+
+  const isFirstMount = useRef(true);
+  useEffect(() => {
+    if (!isFirstMount.current && route.params?.refreshTimeStamp) {
+      void getDate();
+    }
+  }, [route.params?.refreshTimeStamp]);
   useEffect(() => {
     void getDate();
-  }, [route.params.refreshTimeStamp]);
+    isFirstMount.current = false;
+  }, []);
   const goBack = () => {
     if (currentStep === 1) {
       void localAnalytics().logEvent('ConfigureDateGoHome', {
@@ -92,6 +100,7 @@ export default function ({
             void localAnalytics().logEvent('ConfigureDateTopicChosen', {
               screen: 'ConfigureDate',
               action: 'TopicContinuePressed',
+              topic,
               userId: authContext.userId,
             });
             setChosenTopic(topic);
@@ -120,6 +129,7 @@ export default function ({
     case 3:
       activeComponent = (
         <GeneratingQuestions
+          withPartner={route.params.withPartner}
           dateId={dateId}
           topic={chosenTopic}
           level={chosenLevel}
@@ -129,7 +139,10 @@ export default function ({
               action: 'QuestionGenerated',
               userId: authContext.userId,
             });
-            navigation.navigate('OnDate', { refreshTimeStamp: new Date().toISOString() });
+            navigation.navigate('OnDate', {
+              withPartner: route.params.withPartner,
+              refreshTimeStamp: new Date().toISOString(),
+            });
           }}
         ></GeneratingQuestions>
       );

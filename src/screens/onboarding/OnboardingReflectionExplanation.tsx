@@ -14,7 +14,7 @@ import { SafeAreaView } from 'react-native-safe-area-context';
 export default function ({
   route,
   navigation,
-}: NativeStackScreenProps<MainStackParamList, 'RelationshipStoryExplanation'>) {
+}: NativeStackScreenProps<MainStackParamList, 'OnboardingReflectionExplanation'>) {
   const { theme } = useTheme();
 
   // to set the color of status bar
@@ -48,12 +48,12 @@ export default function ({
               theme="black"
               containerStyle={{ position: 'absolute', left: 0 }}
               onPress={() => {
-                void localAnalytics().logEvent('RelationshipStoryExplanationGoBackClicked', {
-                  screen: 'RelationshipStoryExplanation',
+                void localAnalytics().logEvent('OnboardingReflectionExplanationGoBackClicked', {
+                  screen: 'OnboardingReflectionExplanation',
                   action: 'Go back pressed',
                   userId: authContext.userId,
                 });
-                navigation.navigate('DatingLength');
+                navigation.navigate('DiscussWay');
               }}
             ></GoBackButton>
           </View>
@@ -71,7 +71,7 @@ export default function ({
               ></Image>
               <FontText h1 style={{ color: theme.colors.white }}>
                 {i18n.t('onboarding.relationship_story_explanation_first')}
-                <FontText h1 style={{ color: theme.colors.warning }}>
+                <FontText h1 style={{ color: theme.colors.primary }}>
                   {i18n.t('onboarding.relationship_story_explanation_second')}
                 </FontText>
                 {i18n.t('onboarding.relationship_story_explanation_third')}
@@ -82,12 +82,12 @@ export default function ({
             </View>
             <SecondaryButton
               onPress={() => {
-                void localAnalytics().logEvent('RelationshipStoryExplanationNextClicked', {
-                  screen: 'RelationshipStoryExplanation',
+                void localAnalytics().logEvent('OnboardingReflectionExplanationNextClicked', {
+                  screen: 'OnboardingReflectionExplanation',
                   action: 'next pressed',
                   userId: authContext.userId,
                 });
-                navigation.navigate('RelationshipStory');
+                navigation.navigate('OnboardingReflection');
               }}
               title={i18n.t('continue')}
             ></SecondaryButton>

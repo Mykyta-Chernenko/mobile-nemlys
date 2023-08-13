@@ -10,7 +10,7 @@ import {
 import { supabase } from '@app/api/initSupabase';
 import { AuthStackParamList } from '@app/types/navigation';
 import { NativeStackScreenProps } from '@react-navigation/native-stack';
-import { Input, useTheme } from '@rneui/themed';
+import { useTheme } from '@rneui/themed';
 import { OAuth } from '@app/components/auth/OAuth';
 import * as WebBrowser from 'expo-web-browser';
 import { i18n } from '@app/localization/i18n';
@@ -24,6 +24,7 @@ import { SafeAreaView } from 'react-native-safe-area-context';
 import { SecondaryButton } from '@app/components/buttons/SecondaryButton';
 import { handleUserAfterSignUp } from './Register';
 import { KEYBOARD_BEHAVIOR } from '@app/utils/constants';
+import StyledInput from '@app/components/utils/StyledInput';
 WebBrowser.maybeCompleteAuthSession();
 
 export default function ({ navigation }: NativeStackScreenProps<AuthStackParamList, 'Login'>) {
@@ -36,17 +37,12 @@ export default function ({ navigation }: NativeStackScreenProps<AuthStackParamLi
   const passwordRef = useRef(null) as any;
   const auth = useContext(AuthContext);
   async function login() {
-    void localAnalytics().logEvent('LoginEmailTypeSubmitClicked', {
-      screen: 'Login',
-      action: 'Email type login, submit button clicked',
-      userId: ANON_USER,
-    });
     setLoading(true);
     const {
       data: { user },
       error,
     } = await supabase.auth.signInWithPassword({
-      email: email,
+      email: email.trim(),
       password: password,
     });
     setLoading(false);
@@ -55,7 +51,7 @@ export default function ({ navigation }: NativeStackScreenProps<AuthStackParamLi
         data: { user },
         error: error2,
       } = await supabase.auth.signUp({
-        email: email,
+        email: email.trim(),
         password: password,
       });
       if (error2) {
@@ -68,7 +64,7 @@ export default function ({ navigation }: NativeStackScreenProps<AuthStackParamLi
         logErrors(new Error('No user after signUp call'));
         return;
       } else {
-        await handleUserAfterSignUp(user, false);
+        await handleUserAfterSignUp('email')(user, false);
         auth.setIsSignedIn?.(true);
         auth.setUserId?.(user.id);
       }
@@ -150,10 +146,11 @@ export default function ({ navigation }: NativeStackScreenProps<AuthStackParamLi
                       marginTop: 10,
                     }}
                     onPress={() => {
-                      void localAnalytics().logEvent('LoginEmailTypeSelected', {
+                      void localAnalytics().logEvent('LoginInitiated', {
                         screen: 'Login',
-                        action: 'Email type login selected',
+                        action: 'Initiated',
                         userId: ANON_USER,
+                        provider: 'email',
                       });
                       setIsContinueWithEmail(true);
                     }}
@@ -162,7 +159,7 @@ export default function ({ navigation }: NativeStackScreenProps<AuthStackParamLi
               ) : (
                 <View>
                   <View>
-                    <Input
+                    <StyledInput
                       placeholder={i18n.t('email_placeholder')}
                       value={email}
                       autoCapitalize="none"
@@ -175,7 +172,7 @@ export default function ({ navigation }: NativeStackScreenProps<AuthStackParamLi
                     />
                   </View>
                   <View style={{ marginTop: 10 }}>
-                    <Input
+                    <StyledInput
                       placeholder={i18n.t('password_placeholder')}
                       value={password}
                       autoCapitalize="none"
@@ -185,7 +182,7 @@ export default function ({ navigation }: NativeStackScreenProps<AuthStackParamLi
                       returnKeyType="send"
                       onChangeText={(text) => setPassword(text)}
                       ref={passwordRef}
-                      onSubmitEditing={() => void login()}
+                      onSubmitEditing={() => !loading && void login()}
                     />
                   </View>
 

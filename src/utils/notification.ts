@@ -4,7 +4,6 @@ import { NOTIFICATION_IDENTIFIERS } from '@app/types/domain';
 import * as Notifications from 'expo-notifications';
 import { logErrors } from './errors';
 
-// TODO send to the partner as well
 export async function scheduleMeetingNotification(
   title: string,
   reminderTime: Date,

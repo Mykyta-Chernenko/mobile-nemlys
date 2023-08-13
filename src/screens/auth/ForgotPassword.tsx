@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
-import { Image, KeyboardAvoidingView, ScrollView, TouchableOpacity, View } from 'react-native';
+import { KeyboardAvoidingView, ScrollView, TouchableOpacity, View } from 'react-native';
 import { supabase } from '@app/api/initSupabase';
 import { AuthStackParamList } from '@app/types/navigation';
 import { NativeStackScreenProps } from '@react-navigation/native-stack';
-import { Input, Button } from '@rneui/themed';
+import { Button } from '@rneui/themed';
 import * as Linking from 'expo-linking';
 import { i18n } from '@app/localization/i18n';
 import { KEYBOARD_BEHAVIOR } from '@app/utils/constants';
@@ -11,6 +11,7 @@ import { FontText } from '@app/components/utils/FontText';
 import { logErrorsWithMessageWithoutAlert } from '@app/utils/errors';
 import { ANON_USER } from '@app/provider/AuthProvider';
 import { localAnalytics } from '@app/utils/analytics';
+import StyledInput from '@app/components/utils/StyledInput';
 
 export default function ({
   navigation,
@@ -54,16 +55,7 @@ export default function ({
             alignItems: 'center',
             backgroundColor: 'white',
           }}
-        >
-          <Image
-            resizeMode="contain"
-            style={{
-              height: 220,
-              width: 220,
-            }}
-            // source={require('../../../assets/images/forget.png')}
-          />
-        </View>
+        ></View>
         <View
           style={{
             flex: 3,
@@ -81,7 +73,7 @@ export default function ({
           >
             {i18n.t('forgot_password.title')}
           </FontText>
-          <Input
+          <StyledInput
             containerStyle={{ marginTop: 15 }}
             placeholder={i18n.t('email_placeholder')}
             value={email}
@@ -89,7 +81,7 @@ export default function ({
             autoComplete="off"
             autoCorrect={false}
             keyboardType="email-address"
-            onChangeText={(text) => setEmail(text)}
+            onChangeText={(text: string) => setEmail(text)}
           />
           <Button
             title={loading ? i18n.t('loading') : i18n.t('forgot_password.button.default')}

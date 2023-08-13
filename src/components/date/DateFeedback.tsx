@@ -14,6 +14,7 @@ import { TouchableOpacity } from 'react-native';
 import { useTheme, useThemeMode } from '@rneui/themed';
 
 export default function (props: {
+  withPartner: boolean;
   onPressBack: () => void;
   onPressForward: (feedback: number) => void;
 }) {
@@ -26,12 +27,30 @@ export default function (props: {
   }, []);
 
   const authContext = useContext(AuthContext);
-  const choices = [
-    { value: 4, icon: Feedback4Icon, title: i18n.t('date.feedback.choice_4') },
-    { value: 3, icon: Feedback3Icon, title: i18n.t('date.feedback.choice_3') },
-    { value: 2, icon: Feedback2Icon, title: i18n.t('date.feedback.choice_2') },
-    { value: 1, icon: Feedback1Icon, title: i18n.t('date.feedback.choice_1') },
+  const choicesAlone = [
+    { value: 4, icon: Feedback4Icon, title: i18n.t('date.feedback.alone.choice_4') },
+    { value: 3, icon: Feedback3Icon, title: i18n.t('date.feedback.alone.choice_3') },
+    { value: 2, icon: Feedback2Icon, title: i18n.t('date.feedback.alone.choice_2') },
+    { value: 1, icon: Feedback1Icon, title: i18n.t('date.feedback.alone.choice_1') },
   ];
+  const choicesWithPartner = [
+    { value: 4, icon: Feedback4Icon, title: i18n.t('date.feedback.with_partner.choice_4') },
+    { value: 3, icon: Feedback3Icon, title: i18n.t('date.feedback.with_partner.choice_3') },
+    { value: 2, icon: Feedback2Icon, title: i18n.t('date.feedback.with_partner.choice_2') },
+    { value: 1, icon: Feedback1Icon, title: i18n.t('date.feedback.with_partner.choice_1') },
+  ];
+  const choices = props.withPartner ? choicesWithPartner : choicesAlone;
+
+  const titleFirst = props.withPartner
+    ? i18n.t('date.feedback.with_partner.title_first')
+    : i18n.t('date.feedback.alone.title_first');
+
+  const titleSecond = props.withPartner
+    ? i18n.t('date.feedback.with_partner.title_second')
+    : i18n.t('date.feedback.alone.title_second');
+  const titleThird = props.withPartner
+    ? i18n.t('date.feedback.with_partner.title_third')
+    : i18n.t('date.feedback.alone.title_third');
 
   return (
     <ImageBackground
@@ -65,11 +84,11 @@ export default function (props: {
               }}
             >
               <FontText h1 style={{ textAlign: 'center' }}>
-                {i18n.t('date.feedback.title_first')}
+                {titleFirst}
                 <FontText h1 style={{ color: theme.colors.primary }}>
-                  {i18n.t('date.feedback.title_second')}
+                  {titleSecond}
                 </FontText>
-                {i18n.t('date.feedback.title_third')}
+                {titleThird}
               </FontText>
             </View>
             <View style={{ marginBottom: '10%' }}>

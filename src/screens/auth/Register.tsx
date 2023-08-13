@@ -2,7 +2,7 @@ import React, { useContext, useEffect, useRef, useState } from 'react';
 import { KeyboardAvoidingView, ScrollView, TouchableOpacity, View } from 'react-native';
 import { AuthStackParamList } from '@app/types/navigation';
 import { NativeStackScreenProps } from '@react-navigation/native-stack';
-import { Button, Input, useTheme } from '@rneui/themed';
+import { Button, useTheme } from '@rneui/themed';
 import { OAuth } from '@app/components/auth/OAuth';
 import { i18n } from '@app/localization/i18n';
 import { supabase } from '@app/api/initSupabase';
@@ -20,35 +20,47 @@ import { KEYBOARD_BEHAVIOR } from '@app/utils/constants';
 import { FontText } from '@app/components/utils/FontText';
 import { logErrors, logErrorsWithMessage } from '@app/utils/errors';
 import { localAnalytics } from '@app/utils/analytics';
-export async function handleUserAfterSignUp(user: SupabaseUser, exists: boolean): Promise<void> {
-  if (exists) {
-    console.log(`User ${user.email || 'with this email'} already exists, just signing in`);
-  } else {
-    const couple: InsertAPICouple = {
-      invitation_code: randomReadnableString(6),
-    };
-    const { data, error }: SupabaseAnswer<APICouple> = await supabase
-      .from('couple')
-      .insert(couple)
-      .select()
-      .single();
-    if (error) {
-      throw error;
+import StyledInput from '@app/components/utils/StyledInput';
+export function handleUserAfterSignUp(
+  provider: string,
+): (user: SupabaseUser, exists: boolean) => Promise<void> {
+  return async (user: SupabaseUser, exists: boolean) => {
+    void localAnalytics().logEvent('LoginFinished', {
+      screen: 'Login',
+      action: 'Finished',
+      userId: user.id,
+      provider,
+    });
+    if (exists) {
+      console.log(`User ${user.email || 'with this email'} already exists, just signing in`);
+    } else {
+      const couple: InsertAPICouple = {
+        invitation_code: randomReadnableString(6),
+      };
+      const { data, error }: SupabaseAnswer<APICouple> = await supabase
+        .from('couple')
+        .insert(couple)
+        .select()
+        .single();
+      if (error) {
+        throw error;
+      }
+      const userProfile: InsertAPIUserProfile = {
+        couple_id: data.id,
+        user_id: user.id,
+        first_name: '',
+        partner_first_name: '',
+        onboarding_finished: false,
+        ios_expo_token: undefined,
+        android_expo_token: undefined,
+        showed_interview_request: false,
+      };
+      const { error: profileError } = await supabase.from('user_profile').insert(userProfile);
+      if (profileError) {
+        throw profileError;
+      }
     }
-    const userProfile: InsertAPIUserProfile = {
-      couple_id: data.id,
-      user_id: user.id,
-      first_name: '',
-      partner_first_name: '',
-      onboarding_finished: false,
-      ios_expo_token: undefined,
-      android_expo_token: undefined,
-    };
-    const { error: profileError } = await supabase.from('user_profile').insert(userProfile);
-    if (profileError) {
-      throw profileError;
-    }
-  }
+  };
 }
 export default function ({
   route,
@@ -94,7 +106,7 @@ export default function ({
         logErrors(new Error('Not user after signUp call'));
         return;
       } else {
-        await handleUserAfterSignUp(data.data.user, false);
+        await handleUserAfterSignUp('email')(data.data.user, false);
         auth.setIsSignedIn?.(true);
         auth.setUserId?.(data.data.user.id);
       }
@@ -127,7 +139,7 @@ export default function ({
           </FontText>
           {continueWithEmail ? (
             <View>
-              <Input
+              <StyledInput
                 containerStyle={{ marginTop: 10, paddingHorizontal: 0 }}
                 placeholder={i18n.t('email_placeholder')}
                 value={email}
@@ -144,7 +156,7 @@ export default function ({
                   {i18n.t('register.passwords_are_not_the_same')}
                 </FontText>
               )}
-              <Input
+              <StyledInput
                 containerStyle={{ paddingHorizontal: 0 }}
                 placeholder={i18n.t('password_placeholder')}
                 value={password}
@@ -157,7 +169,7 @@ export default function ({
                 onSubmitEditing={() => passwordAgainRef?.current?.focus()}
                 onChangeText={(text) => setPassword(text)}
               />
-              <Input
+              <StyledInput
                 containerStyle={{ paddingHorizontal: 0 }}
                 placeholder={i18n.t('password_again_placeholder')}
                 value={passwordAgain}

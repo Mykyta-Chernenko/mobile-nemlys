@@ -18,21 +18,21 @@ import { SafeAreaView } from 'react-native-safe-area-context';
 export default function ({
   route,
   navigation,
-}: NativeStackScreenProps<MainStackParamList, 'SkipRelationshipStory'>) {
+}: NativeStackScreenProps<MainStackParamList, 'SkipOnboardingReflection'>) {
   const { theme } = useTheme();
 
   const authContext = useContext(AuthContext);
   const handleGoBack = () => {
-    void localAnalytics().logEvent('SkipRelationshipStoryGoBackClicked', {
-      screen: 'SkipRelationshipStory',
+    void localAnalytics().logEvent('SkipOnboardingReflectionGoBackClicked', {
+      screen: 'SkipOnboardingReflection',
       action: 'Go back pressed',
       userId: authContext.userId,
     });
-    navigation.navigate('RelationshipStory');
+    navigation.navigate('OnboardingReflection');
   };
   const handleSkip = async () => {
-    void localAnalytics().logEvent('SkipRelationshipStoryConfirmSkipClicked', {
-      screen: 'SkipRelationshipStory',
+    void localAnalytics().logEvent('SkipOnboardingReflectionConfirmSkipClicked', {
+      screen: 'SkipOnboardingReflection',
       action: 'confirm skip pressed',
       userId: authContext.userId,
     });

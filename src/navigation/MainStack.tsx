@@ -3,21 +3,23 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
 import Diary from '@app/screens/diary/Diary';
 import Home from '@app/screens/menu/Home';
-import Story from '@app/screens/menu/Story';
 import DiaryNewEntry from '@app/screens/diary/DiaryNewEntry';
 import { HomeName } from '@app/utils/constants';
 import DiaryEntry from '@app/screens/diary/DiaryEntry';
 import YourName from '@app/screens/onboarding/YourName';
 import PartnerName from '@app/screens/onboarding/PartnerName';
-import Age from '@app/screens/onboarding/Age';
-import DatingLength from '@app/screens/onboarding/DatingLength';
 import Job from '@app/screens/onboarding/Job';
-import RelationshipStory from '@app/screens/onboarding/RelationshipStory';
-import SkipRelationshipStory from '@app/components/onboarding/SkipRelationshipStory';
-import RelationshipStoryExplanation from '@app/screens/onboarding/RelationshipStoryExplanation';
+import OnboardingReflection from '@app/screens/onboarding/OnboardingReflection';
+import OnboardingReflectionExplanation from '@app/screens/onboarding/OnboardingReflectionExplanation';
 import ConfigureDate from '@app/screens/date/ConfigureDate';
+import DateIsWithPartner from '@app/screens/date/DateIsWithPartner';
 import OnDate from '@app/screens/date/OnDate';
 import Profile from '@app/screens/menu/Profile';
+import DiscussWay from '@app/screens/onboarding/DiscussWay';
+import Analyzing from '@app/screens/onboarding/Analyzing';
+import ReflectionHome from '@app/screens/reflection/ReflectionHome';
+import WriteReflection from '@app/screens/reflection/WriteReflection';
+import FinishedWriting from '@app/screens/reflection/FinishedWriting';
 
 const MainStack = createNativeStackNavigator();
 const Main = () => {
@@ -36,13 +38,30 @@ const Main = () => {
       />
       <MainStack.Screen
         options={{ animation: 'slide_from_right' }}
-        name={'Story'}
-        component={Story}
+        name={'ReflectionHome'}
+        component={ReflectionHome}
       />
+      <MainStack.Screen
+        options={{ animation: 'slide_from_right' }}
+        name={'WriteReflection'}
+        component={WriteReflection}
+      />
+
+      <MainStack.Screen
+        options={{ animation: 'slide_from_right' }}
+        name={'FinishedWriting'}
+        component={FinishedWriting}
+      />
+
       <MainStack.Screen
         options={{ animation: 'slide_from_right' }}
         name={'Profile'}
         component={Profile}
+      />
+      <MainStack.Screen
+        options={{ animation: 'slide_from_right' }}
+        name={'DateIsWithPartner'}
+        component={DateIsWithPartner}
       />
       <MainStack.Screen
         options={{ animation: 'slide_from_right' }}
@@ -65,27 +84,27 @@ const Main = () => {
         component={PartnerName}
       />
 
-      <MainStack.Screen options={{ animation: 'slide_from_right' }} name={'Age'} component={Age} />
-      <MainStack.Screen
-        options={{ animation: 'slide_from_right' }}
-        name={'DatingLength'}
-        component={DatingLength}
-      />
       <MainStack.Screen options={{ animation: 'slide_from_right' }} name={'Job'} component={Job} />
       <MainStack.Screen
         options={{ animation: 'slide_from_right' }}
-        name={'RelationshipStory'}
-        component={RelationshipStory}
+        name={'DiscussWay'}
+        component={DiscussWay}
       />
       <MainStack.Screen
         options={{ animation: 'slide_from_right' }}
-        name={'RelationshipStoryExplanation'}
-        component={RelationshipStoryExplanation}
+        name={'OnboardingReflection'}
+        component={OnboardingReflection}
       />
       <MainStack.Screen
         options={{ animation: 'slide_from_right' }}
-        name={'SkipRelationshipStory'}
-        component={SkipRelationshipStory}
+        name={'OnboardingReflectionExplanation'}
+        component={OnboardingReflectionExplanation}
+      />
+
+      <MainStack.Screen
+        options={{ animation: 'slide_from_right' }}
+        name={'Analyzing'}
+        component={Analyzing}
       />
 
       <MainStack.Screen

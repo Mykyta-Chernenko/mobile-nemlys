@@ -24,13 +24,13 @@ import { PrimaryButton } from '../buttons/PrimaryButtons';
 export const OAuth = ({
   handleUser: handleUser,
 }: {
-  handleUser: (user: SupabaseUser, exists: boolean) => Promise<void>;
+  handleUser: (provider: string) => (user: SupabaseUser, exists: boolean) => Promise<void>;
 }) => {
   const { theme } = useTheme();
   const auth = useContext(AuthContext);
 
   const onPress = async (provider: Provider) => {
-    void localAnalytics().logEvent('OAuthInititated' + provider, {
+    void localAnalytics().logEvent('LoginInitiated', {
       screen: 'OAuth',
       action: 'OAuth button clicked',
       provider,
@@ -60,7 +60,7 @@ export const OAuth = ({
         // WARN: on Android instead of getting the response back,
         //  we get a dismissed event, but we get the access token and the refesh token in the URL,
         //  so we use a URL listener from the AuthProvider to handle it
-        globalHandleUser.value = handleUser;
+        globalHandleUser.value = handleUser(provider);
         const response = await startAsync({
           authUrl: authUrl,
           projectNameForProxy: '@marakaci/nemlys',
@@ -73,7 +73,7 @@ export const OAuth = ({
               await handleAuthTokens(
                 accessToken,
                 refreshToken,
-                handleUser,
+                handleUser(provider),
                 auth.setIsSignedIn!,
                 auth.setUserId!,
               );
