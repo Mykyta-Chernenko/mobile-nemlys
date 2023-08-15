@@ -162,7 +162,7 @@ export default function ({
     onClose();
   };
   const onClosePressed = () => {
-    void localAnalytics().logEvent('InterviewScheduleClosePressed', {
+    void localAnalytics().logEvent('NewReflectionClosePressed', {
       screen: 'Interview',
       action: 'ClosePressed',
       userId: authContext.userId,

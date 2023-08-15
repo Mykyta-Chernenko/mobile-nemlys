@@ -5,13 +5,10 @@ import { Animated, StyleProp, View, ViewStyle } from 'react-native';
 export default function ({ children }: { children: ReactNode }) {
   const { theme } = useTheme();
 
-  const padding = 20;
-
   const mainCardTransform = [{ rotate: '1deg' }];
   const cardStyle: StyleProp<ViewStyle> = {
     zIndex: 100,
     flex: 1,
-    marginHorizontal: padding,
     marginVertical: '10%',
     backgroundColor: theme.colors.black,
     borderRadius: 24,

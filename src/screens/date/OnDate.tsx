@@ -180,6 +180,7 @@ export default function ({
     });
     void handleFinishDateButtonFinal(undefined);
     navigation.navigate('ConfigureDate', {
+      lowPersonalization: route.params.lowPersonalization,
       withPartner: route.params.withPartner,
       refreshTimeStamp: new Date().toISOString(),
     });
@@ -321,7 +322,10 @@ export default function ({
       }}
     ></DateFeedback>
   ) : showNewLevel ? (
-    <NewLevel withPartner={withPartner}></NewLevel>
+    <NewLevel
+      lowPersonalization={route.params.lowPersonalization}
+      withPartner={withPartner}
+    ></NewLevel>
   ) : (
     <View
       style={{

@@ -95,6 +95,10 @@ export default function ({
     case 1:
       activeComponent = (
         <ChooseDateTopics
+          goToReflection={() =>
+            navigation.navigate('ReflectionHome', { refreshTimeStamp: new Date().toISOString() })
+          }
+          lowPersonalization={route.params.lowPersonalization}
           topic={chosenTopic}
           onNextPress={function (topic: string): void {
             void localAnalytics().logEvent('ConfigureDateTopicChosen', {
@@ -140,6 +144,7 @@ export default function ({
               userId: authContext.userId,
             });
             navigation.navigate('OnDate', {
+              lowPersonalization: route.params.lowPersonalization,
               withPartner: route.params.withPartner,
               refreshTimeStamp: new Date().toISOString(),
             });

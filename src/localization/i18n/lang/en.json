@@ -79,7 +79,7 @@
     "title_first": "Nemlys founders would like ",
     "title_second": "to chat ",
     "title_third": "with you",
-    "description": "We're seeking to understand what we can improve, so we would be glad to talk about your experince with Nemlys app.",
+    "description": "We're seeking to understand what we can improve, so we would be glad to talk about your experience with Nemlys app.",
     "button": "Schedule a call"
   },
   "date": {
@@ -91,8 +91,9 @@
       "light": "Light",
       "normal": "Normal",
       "deep": "Deep",
-      "existential": "Existetial"
+      "existential": "Existential"
     },
+    "low_quality_explanation": "You have low questions quality. Reflect to get better AI questions",
     "topic_title_first": "Select 1 topic ",
     "topic_title_second": "to discuss ",
     "topic_title_third": "with partner",
@@ -105,7 +106,7 @@
     },
     "topic": {
       "title": "Select one topic",
-      "suprise": "Suprise us!",
+      "surprise": "Surprise us!",
       "intimacy": "Spicy",
       "emotions": "Emotions",
       "fun": "Fun",
@@ -117,7 +118,7 @@
       "appearance": "Appearance",
       "travel": "Travel",
       "career": "Career",
-      "expectations": "Expecations",
+      "expectations": "Expectations",
       "values": "Values",
       "gifts": "Gifts",
       "friends": "Friends",
@@ -238,8 +239,8 @@
     },
 
     "analyzing": {
-      "text_1": "Analyting\nyour writing",
-      "text_2": "Analyting\nyour answers",
+      "text_1": "Analysing\nyour writing",
+      "text_2": "Analysing\nyour answers",
       "text_3": "Adapting app\nto your couple",
       "text_4_first": "All done,\n",
       "text_4_second": "start exploring\nthe app"

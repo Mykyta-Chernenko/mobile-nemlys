@@ -7,8 +7,16 @@ import { ScrollView } from 'react-native-gesture-handler';
 import { PrimaryButton } from '../buttons/PrimaryButtons';
 import { localAnalytics } from '@app/utils/analytics';
 import { AuthContext } from '@app/provider/AuthProvider';
+import Feedback1Icon from '@app/icons/feedback1';
 
-export default function (props: { topic?: string; onNextPress: (topic: string) => void }) {
+import SmallArrowRight from '@app/icons/small_arrow_right';
+
+export default function (props: {
+  lowPersonalization: boolean;
+  topic?: string;
+  onNextPress: (topic: string) => void;
+  goToReflection: () => void;
+}) {
   const { theme } = useTheme();
   const styles = StyleSheet.create({
     tag: {
@@ -25,7 +33,7 @@ export default function (props: { topic?: string; onNextPress: (topic: string) =
     },
   });
   const authContext = useContext(AuthContext);
-  const randomTopic = i18n.t('date.topic.suprise');
+  const randomTopic = i18n.t('date.topic.surprise');
   const intimacy = i18n.t('date.topic.intimacy');
   const allTopics = [
     i18n.t('date.topic.emotions'),
@@ -70,6 +78,35 @@ export default function (props: { topic?: string; onNextPress: (topic: string) =
           flexGrow: 1,
         }}
       >
+        <TouchableOpacity
+          onPress={() => {
+            void localAnalytics().logEvent('ConfigureDateGoToReflection', {
+              screen: 'ConfigureDate',
+              action: 'GoToReflection',
+              userId: authContext.userId,
+            });
+            props.goToReflection();
+          }}
+        >
+          <View
+            style={{
+              flexDirection: 'row',
+              alignItems: 'center',
+              justifyContent: 'space-between',
+              backgroundColor: theme.colors.white,
+              padding: 20,
+              borderRadius: 16,
+              marginBottom: '10%',
+              width: '100%',
+            }}
+          >
+            <Feedback1Icon height={32} width={32}></Feedback1Icon>
+            <View style={{ width: '75%' }}>
+              <FontText>{i18n.t('date.low_quality_explanation')}</FontText>
+            </View>
+            <SmallArrowRight height={24} width={24}></SmallArrowRight>
+          </View>
+        </TouchableOpacity>
         <FontText
           style={{
             textAlign: 'left',

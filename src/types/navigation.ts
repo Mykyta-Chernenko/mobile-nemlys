@@ -14,9 +14,17 @@ export type MainStackParamList = {
   WriteReflection: { reflectionId: number; question: string; answer: string | undefined };
   FinishedWriting: undefined;
   Profile: { refreshTimeStamp: string | undefined };
-  DateIsWithPartner: undefined;
-  ConfigureDate: { withPartner: boolean; refreshTimeStamp: string | undefined };
-  OnDate: { withPartner: boolean; refreshTimeStamp: string | undefined };
+  DateIsWithPartner: { lowPersonalization: boolean };
+  ConfigureDate: {
+    lowPersonalization: boolean;
+    withPartner: boolean;
+    refreshTimeStamp: string | undefined;
+  };
+  OnDate: {
+    lowPersonalization: boolean;
+    withPartner: boolean;
+    refreshTimeStamp: string | undefined;
+  };
 
   Diary: { refreshTimeStamp: string | undefined };
   DiaryEntry: { id: number };

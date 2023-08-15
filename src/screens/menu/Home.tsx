@@ -72,6 +72,7 @@ export default function ({
       }
       if (dateRes.data) {
         navigation.navigate('OnDate', {
+          lowPersonalization: false,
           withPartner: dateRes.data.with_partner,
           refreshTimeStamp: new Date().toISOString(),
         });
@@ -149,7 +150,9 @@ export default function ({
       action: 'StartDateClicked',
       userId: authContext.userId,
     });
-    navigation.navigate('DateIsWithPartner');
+    navigation.navigate('DateIsWithPartner', {
+      lowPersonalization: showReflectionNotification,
+    });
   };
   const isFirstMount = useRef(true);
   useEffect(() => {

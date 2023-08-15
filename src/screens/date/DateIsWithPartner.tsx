@@ -33,6 +33,7 @@ export default function ({
       userId: authContext.userId,
     });
     navigation.navigate('ConfigureDate', {
+      lowPersonalization: route.params.lowPersonalization,
       withPartner: true,
       refreshTimeStamp: new Date().toISOString(),
     });
@@ -46,6 +47,7 @@ export default function ({
       userId: authContext.userId,
     });
     navigation.navigate('ConfigureDate', {
+      lowPersonalization: route.params.lowPersonalization,
       withPartner: false,
       refreshTimeStamp: new Date().toISOString(),
     });

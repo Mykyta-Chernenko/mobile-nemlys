@@ -202,7 +202,7 @@ export default function ({
                   alignItems: 'center',
                 }}
                 onPress={() => {
-                  void localAnalytics().logEvent('MenuStoryClicked', {
+                  void localAnalytics().logEvent('MenuReflectClicked', {
                     screen: 'Menu',
                     action: 'HomeClicked',
                     userId: authContext.userId,
