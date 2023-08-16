@@ -1,4 +1,4 @@
-import React, { useContext, useState } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import { useTheme } from '@rneui/themed';
 import { View, StyleSheet, TouchableOpacity } from 'react-native';
 import { i18n } from '@app/localization/i18n';
@@ -10,14 +10,25 @@ import { AuthContext } from '@app/provider/AuthProvider';
 import Feedback1Icon from '@app/icons/feedback1';
 
 import SmallArrowRight from '@app/icons/small_arrow_right';
+import { getIsLowPersonalization } from '@app/api/reflection';
+import { Loading } from '../utils/Loading';
 
 export default function (props: {
-  lowPersonalization: boolean;
   topic?: string;
   onNextPress: (topic: string) => void;
   goToReflection: () => void;
 }) {
   const { theme } = useTheme();
+  const [loading, setLoading] = useState(false);
+  const [isLowPersonalization, setIsLowPersonalization] = useState(false);
+  useEffect(() => {
+    const getData = async () => {
+      setLoading(true);
+      setIsLowPersonalization(await getIsLowPersonalization());
+      setLoading(false);
+    };
+    void getData();
+  }, []);
   const styles = StyleSheet.create({
     tag: {
       borderRadius: 20,
@@ -71,42 +82,46 @@ export default function (props: {
 
   const isPressEnabled = !!pickedTopic;
 
-  return (
+  return loading ? (
+    <Loading></Loading>
+  ) : (
     <View style={{ flex: 1, marginTop: '5%' }}>
       <ScrollView
         style={{
           flexGrow: 1,
         }}
       >
-        <TouchableOpacity
-          onPress={() => {
-            void localAnalytics().logEvent('ConfigureDateGoToReflection', {
-              screen: 'ConfigureDate',
-              action: 'GoToReflection',
-              userId: authContext.userId,
-            });
-            props.goToReflection();
-          }}
-        >
-          <View
-            style={{
-              flexDirection: 'row',
-              alignItems: 'center',
-              justifyContent: 'space-between',
-              backgroundColor: theme.colors.white,
-              padding: 20,
-              borderRadius: 16,
-              marginBottom: '10%',
-              width: '100%',
+        {isLowPersonalization && (
+          <TouchableOpacity
+            onPress={() => {
+              void localAnalytics().logEvent('ConfigureDateGoToReflection', {
+                screen: 'ConfigureDate',
+                action: 'GoToReflection',
+                userId: authContext.userId,
+              });
+              props.goToReflection();
             }}
           >
-            <Feedback1Icon height={32} width={32}></Feedback1Icon>
-            <View style={{ width: '75%' }}>
-              <FontText>{i18n.t('date.low_quality_explanation')}</FontText>
+            <View
+              style={{
+                flexDirection: 'row',
+                alignItems: 'center',
+                justifyContent: 'space-between',
+                backgroundColor: theme.colors.white,
+                padding: 20,
+                borderRadius: 16,
+                marginBottom: '10%',
+                width: '100%',
+              }}
+            >
+              <Feedback1Icon height={32} width={32}></Feedback1Icon>
+              <View style={{ width: '75%' }}>
+                <FontText>{i18n.t('date.low_quality_explanation')}</FontText>
+              </View>
+              <SmallArrowRight height={24} width={24}></SmallArrowRight>
             </View>
-            <SmallArrowRight height={24} width={24}></SmallArrowRight>
-          </View>
-        </TouchableOpacity>
+          </TouchableOpacity>
+        )}
         <FontText
           style={{
             textAlign: 'left',

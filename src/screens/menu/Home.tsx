@@ -23,6 +23,7 @@ import { TouchableOpacity } from 'react-native';
 import Interview from '@app/components/date/Interview';
 import NewReflection from '@app/components/date/NewReflection';
 import moment from 'moment';
+import { getIsLowPersonalization } from '@app/api/reflection';
 
 export default function ({
   route,
@@ -72,7 +73,6 @@ export default function ({
       }
       if (dateRes.data) {
         navigation.navigate('OnDate', {
-          lowPersonalization: false,
           withPartner: dateRes.data.with_partner,
           refreshTimeStamp: new Date().toISOString(),
         });
@@ -101,32 +101,7 @@ export default function ({
           logErrors(errorDateYesterday);
           return;
         }
-        const lastDate: SupabaseAnswer<{ created_at: string } | null> = await supabase
-          .from('date')
-          .select('created_at')
-          .eq('with_partner', true)
-          .limit(1)
-          .order('created_at', { ascending: false })
-          .maybeSingle();
-
-        const lastReflection: SupabaseAnswer<{ created_at: string } | null> = await supabase
-          .from('reflection_question_answer')
-          .select('created_at')
-          .limit(1)
-          .order('created_at', { ascending: false })
-          .maybeSingle();
-
-        if (
-          lastDate.data &&
-          lastReflection.data &&
-          moment(lastDate.data.created_at).isAfter(moment(lastReflection.data.created_at))
-        ) {
-          setShowReflectionNotification(true);
-        }
-        if (error) {
-          logErrors(error);
-          return;
-        }
+        setShowReflectionNotification(await getIsLowPersonalization());
         const dateCount = count || 0;
         const levelNewReflection = await supabase
           .from('reflection_notification')
@@ -150,9 +125,7 @@ export default function ({
       action: 'StartDateClicked',
       userId: authContext.userId,
     });
-    navigation.navigate('DateIsWithPartner', {
-      lowPersonalization: showReflectionNotification,
-    });
+    navigation.navigate('DateIsWithPartner');
   };
   const isFirstMount = useRef(true);
   useEffect(() => {

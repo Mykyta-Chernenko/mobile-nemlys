@@ -13,13 +13,7 @@ import { PrimaryButton } from '../buttons/PrimaryButtons';
 import { localAnalytics } from '@app/utils/analytics';
 import { AuthContext } from '@app/provider/AuthProvider';
 
-export default function ({
-  withPartner,
-  lowPersonalization,
-}: {
-  lowPersonalization: boolean;
-  withPartner: boolean;
-}) {
+export default function ({ withPartner }: { withPartner: boolean }) {
   const { theme } = useTheme();
   const [dateCount, setDateCount] = useState(0);
 
@@ -99,7 +93,6 @@ export default function ({
               buttonStyle={{ width: '100%', backgroundColor: 'rgba(255,255,255,0.1)' }}
               onPress={() => {
                 navigation.navigate('ConfigureDate', {
-                  lowPersonalization,
                   withPartner,
                   refreshTimeStamp: new Date().toISOString(),
                 });
