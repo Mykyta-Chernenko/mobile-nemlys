@@ -38,6 +38,12 @@ export default function ({ withPartner }: { withPartner: boolean }) {
           action: 'FirstDateFinished',
           userId: authContext.userId,
         });
+      } else {
+        void localAnalytics().logEvent('NewLevelDateFinished', {
+          screen: 'NewLevel',
+          action: 'DateFinished',
+          userId: authContext.userId,
+        });
       }
     };
     void f();
@@ -92,6 +98,11 @@ export default function ({ withPartner }: { withPartner: boolean }) {
             <PrimaryButton
               buttonStyle={{ width: '100%', backgroundColor: 'rgba(255,255,255,0.1)' }}
               onPress={() => {
+                void localAnalytics().logEvent('NewLevelTryAnotherOne', {
+                  screen: 'NewLevel',
+                  action: 'TryAnotherOne',
+                  userId: authContext.userId,
+                });
                 navigation.navigate('ConfigureDate', {
                   withPartner,
                   refreshTimeStamp: new Date().toISOString(),
@@ -107,6 +118,11 @@ export default function ({ withPartner }: { withPartner: boolean }) {
               containerStyle={{ marginTop: 10 }}
               buttonStyle={{ width: '100%' }}
               onPress={() => {
+                void localAnalytics().logEvent('NewLevelGoHome', {
+                  screen: 'NewLevel',
+                  action: 'GoHome',
+                  userId: authContext.userId,
+                });
                 navigation.navigate('Home', { refreshTimeStamp: new Date().toISOString() });
               }}
               title={i18n.t('date.new_level.home')}

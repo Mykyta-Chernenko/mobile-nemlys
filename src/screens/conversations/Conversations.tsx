@@ -2,7 +2,7 @@ import React, { useContext, useEffect, useState } from 'react';
 import { ScrollView, TouchableOpacity, View } from 'react-native';
 import { NativeStackScreenProps } from '@react-navigation/native-stack';
 import { MainStackParamList } from '@app/types/navigation';
-import { Image, useTheme } from '@rneui/themed';
+import { useTheme } from '@rneui/themed';
 import { GoBackButton } from '@app/components/buttons/GoBackButton';
 import { AuthContext } from '@app/provider/AuthProvider';
 import { SafeAreaView } from 'react-native-safe-area-context';
@@ -81,7 +81,7 @@ export default function ({
             height: 200,
           }}
         >
-          <Image
+          {/* <Image
             resizeMode="contain"
             style={{
               height: '100%',
@@ -89,7 +89,7 @@ export default function ({
             }}
             // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
             // source={require('../../../assets/images/audio_conversation.png')}
-          ></Image>
+          ></Image> */}
         </View>
         {loading ? (
           <Loading />

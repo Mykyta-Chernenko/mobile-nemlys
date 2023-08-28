@@ -11,7 +11,7 @@ import { supabase } from '@app/api/initSupabase';
 import { i18n } from '@app/localization/i18n';
 import { Loading } from '../utils/Loading';
 
-export default function (props: { bucket: string; setText: (string) => void }) {
+export default function (props: { bucket: string; onRecorded: (url: string) => void }) {
   const authContext = useContext(AuthContext);
 
   const [recording, setRecording] = useState<undefined | Audio.Recording>();
@@ -61,13 +61,11 @@ export default function (props: { bucket: string; setText: (string) => void }) {
         Audio.RecordingOptionsPresets.HIGH_QUALITY.ios.extension;
 
       const res = await supabase.storage.from(props.bucket).upload(name, file);
-
-      const resTranscript = await supabase.functions.invoke('transcribe', {
-        body: { uri: res.data?.path, bucket: props.bucket },
-      });
-      if (resTranscript.data) {
-        props.setText(resTranscript.data.transcribe);
+      if (res.error) {
+        logErrorsWithMessageWithoutAlert(res.error);
       }
+
+      props.onRecorded(res.data?.path || '');
     } catch (error: any) {
       // On Android, calling stop before any data has been collected results in
       // an E_AUDIO_NODATA error. This means no audio data has been written to
