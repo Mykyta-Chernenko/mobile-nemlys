@@ -1,12 +1,12 @@
 import React, { useEffect, useState } from 'react';
 import * as SplashScreen from 'expo-splash-screen';
-import { Alert, BackHandler, ImageBackground, Linking, Platform } from 'react-native';
+import { Alert, BackHandler, ImageBackground, Linking } from 'react-native';
 import { logErrors } from '@app/utils/errors';
 import { SupabaseAnswer } from '@app/types/api';
 import { supabase } from '@app/api/initSupabase';
 import Constants from 'expo-constants';
 import { i18n } from '@app/localization/i18n';
-
+import * as StoreReview from 'expo-store-review';
 interface Props {
   children: React.ReactNode;
 }
@@ -39,13 +39,8 @@ export default function (props: Props) {
               text: i18n.t('update.title'),
               onPress: () => {
                 void BackHandler.exitApp();
-                if (Platform.OS === 'android') {
-                  void Linking.openURL(
-                    'https://play.google.com/store/apps/details?id=com.nemlys.app',
-                  );
-                } else if (Platform.OS === 'ios') {
-                  void Linking.openURL('itms-apps://apps.apple.com/id/app/nemlys/id1662262055');
-                }
+                const url = StoreReview.storeUrl();
+                void Linking.openURL(url!);
               },
             },
           ],

@@ -1,6 +1,6 @@
 import React, { useContext, useEffect, useRef, useState } from 'react';
 import { supabase } from '@app/api/initSupabase';
-
+import * as StoreReview from 'expo-store-review';
 import { APIDate, APIGeneratedQuestion, SupabaseAnswer } from '@app/types/api';
 import { useTheme, useThemeMode } from '@rneui/themed';
 import { Image } from 'react-native';
@@ -49,6 +49,7 @@ export default function ({
   const [startedDiscussionAt, setStartedDiscussionAt] = useState<number>(getCurrentUTCSeconds());
   const currentQuestion = questions[questionIndex];
   const [currentDate, setCurrentDate] = useState<APIDate | undefined>(undefined);
+  const [dateCount, setDateCount] = useState<number>(0);
   const [showFeedback, setShowFeedback] = useState<boolean>(false);
   const [showNewLevel, setShowNewlevel] = useState<boolean>(false);
   const carouselRef = useRef(null) as any;
@@ -69,8 +70,17 @@ export default function ({
   const withPartner = currentDate?.with_partner ?? false;
 
   const dateFields = 'id, couple_id, with_partner, active, topic, level, created_at, updated_at';
-  async function getQuestion() {
+  async function getData() {
     setLoading(true);
+    const dateCountRes = await supabase
+      .from('date')
+      .select('*', { count: 'exact' })
+      .eq('active', false);
+    if (dateCountRes.error) {
+      logErrors(dateCountRes.error);
+      return;
+    }
+    setDateCount(dateCountRes.count || 0);
     const dateRes: SupabaseAnswer<APIDate> = await supabase
       .from('date')
       .select(dateFields)
@@ -118,14 +128,32 @@ export default function ({
   useEffect(() => {
     if (!isFirstMount.current && route.params?.refreshTimeStamp) {
       restart();
-      void getQuestion();
+      void getData();
     }
   }, [route.params?.refreshTimeStamp]);
   useEffect(() => {
     restart();
-    void getQuestion();
+    void getData();
     isFirstMount.current = false;
   }, []);
+
+  // const onRecorded = (url: string) => {
+  //   const func = async (url: string) => {
+  //     const res: SupabaseAnswer<{ summary: string } | null> = await supabase.functions.invoke(
+  //       'save-conversation',
+  //       {
+  //         body: { questionId: currentQuestion.id, fileUrl: url },
+  //       },
+  //     );
+  //     if (res.error) {
+  //       logErrors(res.error);
+  //       return;
+  //     }
+  //     console.log(res.data);
+  //     alert(res.data?.summary || '');
+  //   };
+  //   void func(url);
+  // };
 
   const handleFinishDateButtonFinal = async (feedback: number | undefined) => {
     if (!currentDate) return;
@@ -157,6 +185,11 @@ export default function ({
       if (questionReponse.error) {
         logErrors(questionReponse.error);
         return;
+      }
+      if ((feedback || 0) > 2 && dateCount > 0) {
+        if (await StoreReview.hasAction()) {
+          await StoreReview.requestReview();
+        }
       }
     }
 
@@ -414,6 +447,10 @@ export default function ({
                         }}
                       >
                         <Progress theme="dark" current={index + 1} all={QUESTION_COUNT}></Progress>
+                        {/* <RecordingComponent
+                          bucket="conversation-recordings"
+                          onRecorded={onRecorded}
+                        ></RecordingComponent> */}
                         <FontText {...getFontSize(index)}>{questions[index].question}</FontText>
                         <View
                           style={{
