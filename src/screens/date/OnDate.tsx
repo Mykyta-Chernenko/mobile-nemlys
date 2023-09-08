@@ -32,7 +32,7 @@ export default function ({
   useEffect(() => {
     const unsubscribeFocus = navigation.addListener('focus', () => setMode('dark'));
     return unsubscribeFocus;
-  }, [navigation]);
+  }, [navigation, setMode]);
 
   const getCurrentUTCSeconds = () => {
     return Math.round(new Date().getTime() / 1000);
