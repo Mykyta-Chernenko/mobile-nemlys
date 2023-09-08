@@ -32,7 +32,7 @@ export default function ({ withPartner }: { withPartner: boolean }) {
         return;
       }
       setDateCount(count || 0);
-      if ((count || 0) == 1) {
+      if ((count || 0) === 1 && withPartner) {
         void localAnalytics().logEvent('NewLevelFirstDateFinished', {
           screen: 'NewLevel',
           action: 'FirstDateFinished',
@@ -47,7 +47,7 @@ export default function ({ withPartner }: { withPartner: boolean }) {
       }
     };
     void f();
-  }, []);
+  }, [authContext.userId, withPartner]);
   return (
     <View
       style={{

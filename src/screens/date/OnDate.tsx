@@ -3,7 +3,7 @@ import { supabase } from '@app/api/initSupabase';
 import * as StoreReview from 'expo-store-review';
 import { APIDate, APIGeneratedQuestion, SupabaseAnswer } from '@app/types/api';
 import { useTheme, useThemeMode } from '@rneui/themed';
-import { Image } from 'react-native';
+import { Image, Platform } from 'react-native';
 import Carousel from 'react-native-reanimated-carousel';
 import { logErrors } from '@app/utils/errors';
 
@@ -23,7 +23,7 @@ import NewLevel from '../../components/date/NewLevel';
 import Card from '@app/components/date/Card';
 import { Progress } from '@app/components/utils/Progress';
 import { GestureHandlerRootView } from 'react-native-gesture-handler';
-
+import * as ScreenCapture from 'expo-screen-capture';
 export default function ({
   route,
   navigation,
@@ -136,6 +136,20 @@ export default function ({
     void getData();
     isFirstMount.current = false;
   }, []);
+  // record if people take screenshots
+  useEffect(() => {
+    // we need media permission on android so skip it
+    if (Platform.OS === 'ios') {
+      const subscription = ScreenCapture.addScreenshotListener(() => {
+        void localAnalytics().logEvent('OnDateScreenshotTaken', {
+          screen: 'OnDate',
+          action: 'ScreenshotTaken',
+          userId: authContext.userId,
+        });
+      });
+      return () => subscription.remove();
+    }
+  }, [authContext.userId]);
 
   // const onRecorded = (url: string) => {
   //   const func = async (url: string) => {
@@ -186,9 +200,26 @@ export default function ({
         logErrors(questionReponse.error);
         return;
       }
-      if ((feedback || 0) > 2 && dateCount > 0) {
-        if (await StoreReview.hasAction()) {
-          await StoreReview.requestReview();
+    }
+    const userProfileData = await supabase
+      .from('user_profile')
+      .select('showed_rating')
+      .eq('user_id', authContext.userId)
+      .single();
+    if (userProfileData.error) {
+      logErrors(userProfileData.error);
+      return;
+    }
+    if ((feedback || 0) == 4 && (!userProfileData.data.showed_rating || dateCount % 5 === 0)) {
+      if (await StoreReview.hasAction()) {
+        await StoreReview.requestReview();
+        const updateProfile = await supabase
+          .from('user_profile')
+          .update({ showed_rating: true, updated_at: new Date() })
+          .eq('user_id', authContext.userId);
+        if (updateProfile.error) {
+          logErrors(updateProfile.error);
+          return;
         }
       }
     }
