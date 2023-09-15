@@ -1,4 +1,5 @@
 {
+  "nemlys": "Nemlys",
   "awesome": "Awesome!",
   "loading": "Loading",
   "continue": "Continue",
@@ -31,6 +32,14 @@
     "description": "Reflect and write to get more personalised AI questions ",
     "button": "Remind me later"
   },
+  "jobs":{
+      "issues":"Issues in our relationship",
+      "sex":"Intimacy & Sex",
+      "know":"Get to know each other",
+      "hard":"Dive deep questions",
+      "meaningful":"Meaningful conversation",
+      "fun":"Light & Fun topics"
+    },
   "home": {
     "you": "You",
     "partner": "Partner",
@@ -83,6 +92,31 @@
     "button": "Schedule a call"
   },
   "date": {
+    "notification": {
+      "challenge": "Challenge",
+      "title_1": "Deepen Intimacy\n",
+      "title_2": "Twice a Week:\n",
+      "title_3": "Are You ready",
+      "subtitle": "Connect regularly on a deeper level with your partner.",
+      "confirm": "Allow notification",
+      "decline": "Maybe later"
+    },
+    "stop_popup": {
+     "title_1": "Are you sure you want to ",
+      "title_2": "stop discussion",
+      "title_3": "?",
+      "subtitle": "We can’t save your progress then.",
+      "confirm": "Yes, stop discussion",
+      "cancel": "No, come back"
+    },
+    "recording_popup":{
+      "title_1": "Thank you! ",
+      "title_2": "We will add dialog analysing soon",
+      "button": "Cool, I'm waiting!"
+    },
+    "recording_text": "Do you want to analyse your dialogue to get better questions?",
+    "share": "Share",
+    "stop": "Stop",
     "start_date": "Start date",
     "level_title_first": "Select ",
     "level_title_second": "depth ",
@@ -94,12 +128,12 @@
       "existential": "Existential"
     },
     "low_quality_explanation": "You have low questions quality. Reflect to get better AI questions",
-    "topic_title_first": "Select 1 topic ",
-    "topic_title_second": "to discuss ",
-    "topic_title_third": "with partner",
+    "topic_title_first": "Select ",
+    "topic_title_second": "1 topic ",
+    "topic_title_third": "to discuss with partner",
     "with_partner": {
       "title_1": "You need your ",
-      "title_2": "partner in front of you",
+      "title_2": "partner beside you",
       "title_3": " to start discussing topics",
       "alone": "Try alone",
       "with_partner": "Start with partner"
@@ -166,9 +200,7 @@
       "title_first": "Discussion",
       "title_second": "completed",
       "alone_title_first": "Your App Exploration",
-      "home": "Back home",
-      "one_more_discussion": "Discuss one more topic",
-      "try_topic": "Try one more topic"
+      "home": "Back home"
     }
   },
   "beta": {

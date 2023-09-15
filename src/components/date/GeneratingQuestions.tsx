@@ -9,12 +9,14 @@ import { AuthContext } from '@app/provider/AuthProvider';
 import { supabase } from '@app/api/initSupabase';
 import { logErrors } from '@app/utils/errors';
 import { APIUserProfile, SupabaseAnswer } from '@app/types/api';
+import { JobSlug } from '@app/types/domain';
 
 export default function (props: {
-  dateId?: number;
   withPartner: boolean;
   topic: string;
+  job: JobSlug;
   level: number;
+  reflectionAnswerId: number | undefined;
   onLoaded: () => void;
 }) {
   const authContext = useContext(AuthContext);
@@ -45,17 +47,6 @@ export default function (props: {
   ).start();
   useEffect(() => {
     const func = async () => {
-      if (props.dateId) {
-        const dateReponse = await supabase
-          .from('date')
-          .update({ active: false, updated_at: new Date() })
-          .eq('id', props.dateId);
-        if (dateReponse.error) {
-          logErrors(dateReponse.error);
-          return;
-        }
-      }
-
       const data: SupabaseAnswer<APIUserProfile> = await supabase
         .from('user_profile')
         .select(
@@ -72,9 +63,11 @@ export default function (props: {
         .insert({
           couple_id: data.data.couple_id,
           active: true,
+          job: props.job,
           topic: props.topic,
           level: props.level,
           with_partner: props.withPartner,
+          reflection_answer_id: props.reflectionAnswerId,
         })
         .select('id')
         .single();

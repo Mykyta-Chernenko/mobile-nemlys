@@ -1,10 +1,10 @@
 import { useTheme } from '@rneui/themed';
 import React, { useContext, useEffect, useState } from 'react';
-import { Modal, Platform, TouchableWithoutFeedback, View } from 'react-native';
+import { Modal, TouchableWithoutFeedback, View } from 'react-native';
 import { CloseButton } from '../buttons/CloseButton';
 import { FontText } from '../utils/FontText';
 import { i18n } from '@app/localization/i18n';
-import { logErrors, logErrorsWithMessage } from '@app/utils/errors';
+import { logErrors } from '@app/utils/errors';
 import { supabase } from '@app/api/initSupabase';
 import { localAnalytics } from '@app/utils/analytics';
 import { AuthContext } from '@app/provider/AuthProvider';
@@ -15,9 +15,8 @@ import { PrimaryButton } from '../buttons/PrimaryButtons';
 import { NativeStackNavigationProp } from '@react-navigation/native-stack';
 import { MainStackParamList } from '@app/types/navigation';
 import * as Notifications from 'expo-notifications';
-import { isDevice } from 'expo-device';
-import { DENIED_NOTIFICATION_STATUS, GRANTED_NOTIFICATION_STATUS } from '@app/utils/constants';
 import { Loading } from '../utils/Loading';
+import { retrieveNotificationAccess } from '@app/utils/notification';
 export default function ({
   level,
   show,
@@ -78,77 +77,6 @@ export default function ({
     void getCurrentToken();
   }, []);
 
-  const registerForPushNotificationsAsync = async () => {
-    const profileResponse: SupabaseAnswer<{
-      id: number;
-      ios_expo_token: string | null;
-      android_expo_token: string | null;
-    }> = await supabase
-      .from('user_profile')
-      .select('id, ios_expo_token, android_expo_token')
-      .eq('user_id', authContext.userId)
-      .single();
-    if (profileResponse.error) {
-      logErrorsWithMessage(profileResponse.error, profileResponse.error.message);
-      return;
-    }
-    try {
-      if (Platform.OS === 'android') {
-        await Notifications.setNotificationChannelAsync('default', {
-          name: 'default',
-          importance: Notifications.AndroidImportance.MAX,
-          vibrationPattern: [0, 250, 250, 250],
-          lightColor: '#FF231F7C',
-        });
-      }
-
-      if (isDevice) {
-        let finalStatus = notificationStatus;
-        if (notificationStatus !== GRANTED_NOTIFICATION_STATUS) {
-          const { status } = await Notifications.requestPermissionsAsync();
-          finalStatus = status;
-        }
-        if (finalStatus === GRANTED_NOTIFICATION_STATUS || finalStatus != notificationStatus) {
-          void localAnalytics().logEvent('NewReflectionNotificationAccessProvided', {
-            screen: 'NewReflection',
-            action: 'User gave reminder notification access',
-            userId: authContext.userId,
-          });
-        } else if (finalStatus === DENIED_NOTIFICATION_STATUS) {
-          void localAnalytics().logEvent('NewReflectionNotificationAccessDeclined', {
-            screen: 'NewReflection',
-            action: 'User declined reminder notification access',
-            userId: authContext.userId,
-          });
-        }
-
-        if (finalStatus === GRANTED_NOTIFICATION_STATUS) {
-          setLoading(true);
-
-          const token = (await Notifications.getExpoPushTokenAsync()).data;
-          let tokenField: string | null = null;
-          if (Platform.OS === 'ios') {
-            tokenField = 'ios_expo_token';
-          } else if (Platform.OS === 'android') {
-            tokenField = 'android_expo_token';
-          }
-          if (token && tokenField && token != profileResponse.data?.[tokenField]) {
-            const res = await supabase
-              .from('user_profile')
-              .update({ [tokenField]: token, updated_at: new Date() })
-              .eq('id', profileResponse.data?.id);
-            if (res.error) {
-              logErrors(res.error);
-            }
-          }
-        }
-      } else {
-        alert('Must use physical device for Push Notifications');
-      }
-    } finally {
-      setLoading(false);
-    }
-  };
   const onPress = async () => {
     void localAnalytics().logEvent('NewReflectionRemindLaterPressed', {
       screen: 'NewRelfection',
@@ -157,7 +85,12 @@ export default function ({
       reflection: reflection,
       level: level,
     });
-    await registerForPushNotificationsAsync();
+    await retrieveNotificationAccess(
+      authContext.userId,
+      notificationStatus,
+      'NewReflection',
+      setLoading,
+    );
     void savedShowed();
     onClose();
   };

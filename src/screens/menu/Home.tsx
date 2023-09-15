@@ -12,18 +12,24 @@ import { FontText } from '@app/components/utils/FontText';
 import QuestionTriangelSelected from '@app/icons/question_triangle_selected';
 import Story from '@app/icons/story';
 import StoryWithWarning from '@app/icons/story_with_warning';
+import DateIssues from '@app/icons/date_issues';
+import DateSex from '@app/icons/date_sex';
+import DateKnow from '@app/icons/date_know';
+import DateHard from '@app/icons/date_hard';
+import DateMeaningful from '@app/icons/date_meaningful';
+import DateFun from '@app/icons/date_fun';
 import BuddiesCorner from '@app/icons/buddies_corner';
 import Profile from '@app/icons/profile';
 import { i18n } from '@app/localization/i18n';
 import { localAnalytics } from '@app/utils/analytics';
-import { PrimaryButton } from '@app/components/buttons/PrimaryButtons';
-import Card from '../../components/date/Card';
 import { logout } from '../settings/Settings';
 import { TouchableOpacity } from 'react-native';
 import Interview from '@app/components/date/Interview';
 import NewReflection from '@app/components/date/NewReflection';
 import moment from 'moment';
 import { getIsLowPersonalization } from '@app/api/reflection';
+import { ScrollView } from 'react-native-gesture-handler';
+import { JobSlug } from '@app/types/domain';
 
 export default function ({
   route,
@@ -45,6 +51,15 @@ export default function ({
     const unsubscribeFocus = navigation.addListener('focus', () => setMode('light'));
     return unsubscribeFocus;
   }, [navigation]);
+
+  const jobs: { slug: JobSlug; title: string; icon: (props: any) => JSX.Element }[] = [
+    { slug: 'issues', title: i18n.t('jobs.issues'), icon: DateIssues },
+    { slug: 'sex', title: i18n.t('jobs.sex'), icon: DateSex },
+    { slug: 'know', title: i18n.t('jobs.know'), icon: DateKnow },
+    { slug: 'hard', title: i18n.t('jobs.hard'), icon: DateHard },
+    { slug: 'meaningful', title: i18n.t('jobs.meaningful'), icon: DateMeaningful },
+    { slug: 'fun', title: i18n.t('jobs.fun'), icon: DateFun },
+  ];
 
   async function getIsOnboarded() {
     setLoading(true);
@@ -73,6 +88,7 @@ export default function ({
       }
       if (dateRes.data) {
         navigation.navigate('OnDate', {
+          job: dateRes.data.job || 'hard',
           withPartner: dateRes.data.with_partner,
           refreshTimeStamp: new Date().toISOString(),
         });
@@ -86,7 +102,7 @@ export default function ({
           .from('date')
           .select('*', { count: 'exact' })
           .eq('active', false)
-          .eq('with_partner', true);
+          .eq('stopped', false);
         if (error) {
           logErrors(error);
           return;
@@ -119,13 +135,14 @@ export default function ({
     }
     setLoading(false);
   }
-  const handleOnPress = () => {
+  const handleOnPress = (job: JobSlug) => {
     void localAnalytics().logEvent('HomeStartDateClicked', {
       screen: 'Home',
       action: 'StartDateClicked',
+      job,
       userId: authContext.userId,
     });
-    navigation.navigate('DateIsWithPartner');
+    navigation.navigate('DateIsWithPartner', { job });
   };
   const isFirstMount = useRef(true);
   useEffect(() => {
@@ -217,36 +234,33 @@ export default function ({
                 backgroundColor: theme.colors.grey1,
               }}
             >
-              <Card animated>
-                <View
-                  style={{
-                    paddingHorizontal: 12,
-                    paddingVertical: 5,
-                    backgroundColor: theme.colors.grey1,
-                    borderRadius: 40,
-                  }}
-                >
-                  <FontText>{i18n.t('home.card_questions')}</FontText>
-                </View>
-                <View style={{ marginVertical: '7%' }}>
-                  <FontText
-                    h1
+              <ScrollView
+                style={{ flex: 1, padding }}
+                contentContainerStyle={{
+                  flexDirection: 'row',
+                  flexWrap: 'wrap',
+                  justifyContent: 'space-between',
+                }}
+              >
+                {jobs.map((j) => (
+                  <TouchableOpacity
+                    key={j.slug}
                     style={{
-                      textAlign: 'center',
+                      borderRadius: 16,
+                      width: '49%',
+                      backgroundColor: theme.colors.white,
+                      padding: 24,
+                      flexDirection: 'column',
+                      justifyContent: 'space-between',
+                      marginBottom: '2.5%',
                     }}
+                    onPress={() => handleOnPress(j.slug)}
                   >
-                    {i18n.t('home.title_first')}
-                    <FontText style={{ color: theme.colors.primary }} h1>
-                      {i18n.t('home.title_second')}
-                    </FontText>
-                  </FontText>
-                </View>
-                <PrimaryButton
-                  buttonStyle={{ paddingHorizontal: '10%' }}
-                  onPress={() => void handleOnPress()}
-                  title={i18n.t('home.start')}
-                ></PrimaryButton>
-              </Card>
+                    <j.icon style={{ marginBottom: 20 }}></j.icon>
+                    <FontText>{j.title}</FontText>
+                  </TouchableOpacity>
+                ))}
+              </ScrollView>
             </View>
           </View>
           {showReflectionNotification && (

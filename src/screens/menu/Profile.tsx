@@ -34,7 +34,7 @@ export default function ({
       .from('date')
       .select('*', { count: 'exact' })
       .eq('active', false)
-      .eq('with_partner', true);
+      .eq('stopped', false);
     if (error) {
       logErrors(error);
       return;

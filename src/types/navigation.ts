@@ -1,9 +1,9 @@
 import { NativeStackScreenProps } from '@react-navigation/native-stack';
+import { JobSlug } from './domain';
 
 export type MainStackParamList = {
   YourName: undefined;
   PartnerName: undefined;
-  Job: undefined;
   DiscussWay: undefined;
   OnboardingReflectionExplanation: undefined;
   OnboardingReflection: undefined;
@@ -14,15 +14,19 @@ export type MainStackParamList = {
   WriteReflection: { reflectionId: number; question: string; answer: string | undefined };
   FinishedWriting: undefined;
   Profile: { refreshTimeStamp: string | undefined };
-  DateIsWithPartner: undefined;
+  DateIsWithPartner: { job: JobSlug };
   ConfigureDate: {
+    job: JobSlug;
     withPartner: boolean;
     refreshTimeStamp: string | undefined;
   };
   OnDate: {
+    job: JobSlug;
     withPartner: boolean;
     refreshTimeStamp: string | undefined;
   };
+  OnDateNewLevel: { withPartner: boolean };
+  OnDateNotification: { withPartner: boolean };
 
   Diary: { refreshTimeStamp: string | undefined };
   DiaryEntry: { id: number };

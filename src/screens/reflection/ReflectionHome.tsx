@@ -32,23 +32,6 @@ export default function ({
   route,
   navigation,
 }: NativeStackScreenProps<MainStackParamList, 'ReflectionHome'>) {
-  // const viewRef = useRef();
-  // const [showInstagramStory, setShowInstagramStory] = useState(false);
-
-  // const shareDummyImage = async () => {
-  //   try {
-  //     const capturedUri = await captureRef(viewRef, {
-  //       format: 'png',
-  //       quality: 1,
-  //     });
-
-  //     void Sharing.shareAsync('file://' + capturedUri, {
-  //       mimeType: 'image/jpeg',
-  //     });
-  //   } catch (err) {
-  //     logErrors(err);
-  //   }
-  // };
   const { theme } = useTheme();
 
   const [showExplanation, setShowExplanation] = useState(false);
@@ -74,7 +57,7 @@ export default function ({
       .from('date')
       .select('*', { count: 'exact' })
       .eq('active', false)
-      .eq('with_partner', true);
+      .eq('stopped', false);
     if (error) {
       logErrors(error);
       return;
@@ -274,10 +257,8 @@ export default function ({
               <FontText h3 style={{ marginTop: 20 }}>
                 {i18n.t('reflection.available', { number: reflectionsAvailable })}
               </FontText>
-              {/* <PrimaryButton title={'share'} onPress={() => void shareDummyImage()}></PrimaryButton> */}
 
               {reflectionsAvailable > 0 ? (
-                // <ViewShot style={{ height: 400 }} ref={viewRef}>
                 <View style={{ height: 400 }}>
                   <ReflectionCard>
                     <View

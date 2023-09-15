@@ -10,11 +10,13 @@ import { NativeStackScreenProps } from '@react-navigation/native-stack';
 import { PrimaryButton } from '@app/components/buttons/PrimaryButtons';
 import { localAnalytics } from '@app/utils/analytics';
 import { AuthContext } from '@app/provider/AuthProvider';
+import { GoBackButton } from '@app/components/buttons/GoBackButton';
 
 export default function ({
   route,
   navigation,
 }: NativeStackScreenProps<MainStackParamList, 'DateIsWithPartner'>) {
+  const { job } = route.params;
   const { theme } = useTheme();
 
   // to set the color of status bar
@@ -24,31 +26,25 @@ export default function ({
     return unsubscribeFocus;
   }, [navigation]);
   const authContext = useContext(AuthContext);
-
-  const handleWithPartner = () => {
+  const handleNext = (withPartner) => {
     localAnalytics().logEvent('DateStartIsWithPartner', {
       screen: 'Date',
       action: 'StartIsWithPartner',
-      withPartner: true,
+      withPartner,
       userId: authContext.userId,
     });
     navigation.navigate('ConfigureDate', {
-      withPartner: true,
+      job,
+      withPartner,
       refreshTimeStamp: new Date().toISOString(),
     });
   };
+  const handleWithPartner = () => {
+    handleNext(true);
+  };
 
   const handleAlone = () => {
-    localAnalytics().logEvent('DateStartIsWithPartner', {
-      screen: 'Date',
-      action: 'StartIsWithPartner',
-      withPartner: false,
-      userId: authContext.userId,
-    });
-    navigation.navigate('ConfigureDate', {
-      withPartner: false,
-      refreshTimeStamp: new Date().toISOString(),
-    });
+    handleNext(false);
   };
   return (
     <View
@@ -59,6 +55,28 @@ export default function ({
     >
       <SafeAreaView style={{ flexGrow: 1 }}>
         <View style={{ padding: 20, flex: 1, justifyContent: 'space-around' }}>
+          <View
+            style={{
+              flexDirection: 'row',
+              paddingHorizontal: 15,
+              alignItems: 'center',
+              justifyContent: 'center',
+              height: 32,
+            }}
+          >
+            <GoBackButton
+              theme="black"
+              containerStyle={{ position: 'absolute', left: 0 }}
+              onPress={() => {
+                void localAnalytics().logEvent('DateIsWithPartnerGoBack', {
+                  screen: 'DateIsWithPartner',
+                  action: 'Go back pressed',
+                  userId: authContext.userId,
+                });
+                navigation.navigate('Home', { refreshTimeStamp: new Date().toISOString() });
+              }}
+            ></GoBackButton>
+          </View>
           <View style={{ alignItems: 'center' }}>
             <Image
               style={{

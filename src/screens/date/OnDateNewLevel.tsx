@@ -6,27 +6,32 @@ import { i18n } from '@app/localization/i18n';
 import { Image, useTheme } from '@rneui/themed';
 import { logErrors } from '@app/utils/errors';
 import { supabase } from '@app/api/initSupabase';
-import { useNavigation } from '@react-navigation/native';
-import { MainNavigationProp } from '@app/types/navigation';
-import { SecondaryButton } from '../buttons/SecondaryButton';
-import { PrimaryButton } from '../buttons/PrimaryButtons';
+import { MainStackParamList } from '@app/types/navigation';
+import { SecondaryButton } from '../../components/buttons/SecondaryButton';
 import { localAnalytics } from '@app/utils/analytics';
 import { AuthContext } from '@app/provider/AuthProvider';
+import { Loading } from '../../components/utils/Loading';
+import { NativeStackScreenProps } from '@react-navigation/native-stack';
 
-export default function ({ withPartner }: { withPartner: boolean }) {
+export default function ({
+  route,
+  navigation,
+}: NativeStackScreenProps<MainStackParamList, 'OnDateNewLevel'>) {
+  const { withPartner } = route.params;
   const { theme } = useTheme();
   const [dateCount, setDateCount] = useState(0);
+  const [loading, setLoading] = useState(false);
 
-  const navigation = useNavigation<MainNavigationProp>();
   const authContext = useContext(AuthContext);
 
   useEffect(() => {
     const f = async () => {
+      setLoading(true);
       const { error, count } = await supabase
         .from('date')
         .select('*', { count: 'exact' })
         .eq('active', false)
-        .eq('with_partner', true);
+        .eq('stopped', false);
       if (error) {
         logErrors(error);
         return;
@@ -45,10 +50,26 @@ export default function ({ withPartner }: { withPartner: boolean }) {
           userId: authContext.userId,
         });
       }
+      setLoading(false);
     };
     void f();
   }, [authContext.userId, withPartner]);
-  return (
+
+  const handleHomePress = () => {
+    setLoading(true);
+
+    void localAnalytics().logEvent('NewLevelNextClicked', {
+      screen: 'NewLevel',
+      action: 'NextClicked',
+      userId: authContext.userId,
+    });
+
+    navigation.navigate('Home', { refreshTimeStamp: new Date().toISOString() });
+    setLoading(false);
+  };
+  return loading ? (
+    <Loading></Loading>
+  ) : (
     <View
       style={{
         flexGrow: 1,
@@ -95,36 +116,10 @@ export default function ({ withPartner }: { withPartner: boolean }) {
             </FontText>
           </View>
           <View>
-            <PrimaryButton
-              buttonStyle={{ width: '100%', backgroundColor: 'rgba(255,255,255,0.1)' }}
-              onPress={() => {
-                void localAnalytics().logEvent('NewLevelTryAnotherOne', {
-                  screen: 'NewLevel',
-                  action: 'TryAnotherOne',
-                  userId: authContext.userId,
-                });
-                navigation.navigate('ConfigureDate', {
-                  withPartner,
-                  refreshTimeStamp: new Date().toISOString(),
-                });
-              }}
-              title={
-                withPartner
-                  ? i18n.t('date.new_level.one_more_discussion')
-                  : i18n.t('date.new_level.try_topic')
-              }
-            ></PrimaryButton>
             <SecondaryButton
               containerStyle={{ marginTop: 10 }}
               buttonStyle={{ width: '100%' }}
-              onPress={() => {
-                void localAnalytics().logEvent('NewLevelGoHome', {
-                  screen: 'NewLevel',
-                  action: 'GoHome',
-                  userId: authContext.userId,
-                });
-                navigation.navigate('Home', { refreshTimeStamp: new Date().toISOString() });
-              }}
+              onPress={() => void handleHomePress()}
               title={i18n.t('date.new_level.home')}
             ></SecondaryButton>
           </View>

@@ -8,18 +8,19 @@ import { HomeName } from '@app/utils/constants';
 import DiaryEntry from '@app/screens/diary/DiaryEntry';
 import YourName from '@app/screens/onboarding/YourName';
 import PartnerName from '@app/screens/onboarding/PartnerName';
-import Job from '@app/screens/onboarding/Job';
 import OnboardingReflection from '@app/screens/onboarding/OnboardingReflection';
 import OnboardingReflectionExplanation from '@app/screens/onboarding/OnboardingReflectionExplanation';
 import ConfigureDate from '@app/screens/date/ConfigureDate';
 import DateIsWithPartner from '@app/screens/date/DateIsWithPartner';
 import OnDate from '@app/screens/date/OnDate';
+import OnDateNewLevel from '@app/screens/date/OnDateNewLevel';
 import Profile from '@app/screens/menu/Profile';
 import DiscussWay from '@app/screens/onboarding/DiscussWay';
 import Analyzing from '@app/screens/onboarding/Analyzing';
 import ReflectionHome from '@app/screens/reflection/ReflectionHome';
 import WriteReflection from '@app/screens/reflection/WriteReflection';
 import FinishedWriting from '@app/screens/reflection/FinishedWriting';
+import OnDateNotification from '@app/screens/date/OnDateNotification';
 
 const MainStack = createNativeStackNavigator();
 const Main = () => {
@@ -75,6 +76,16 @@ const Main = () => {
       />
       <MainStack.Screen
         options={{ animation: 'slide_from_right' }}
+        name={'OnDateNotification'}
+        component={OnDateNotification}
+      />
+      <MainStack.Screen
+        options={{ animation: 'slide_from_right' }}
+        name={'OnDateNewLevel'}
+        component={OnDateNewLevel}
+      />
+      <MainStack.Screen
+        options={{ animation: 'slide_from_right' }}
         name={'YourName'}
         component={YourName}
       />
@@ -84,7 +95,6 @@ const Main = () => {
         component={PartnerName}
       />
 
-      <MainStack.Screen options={{ animation: 'slide_from_right' }} name={'Job'} component={Job} />
       <MainStack.Screen
         options={{ animation: 'slide_from_right' }}
         name={'DiscussWay'}

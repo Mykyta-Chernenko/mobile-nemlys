@@ -81,10 +81,10 @@ export default function ({
                   action: 'BackClicked',
                   userId: authContext.userId,
                 });
-                navigation.navigate('Job');
+                navigation.navigate('PartnerName');
               }}
             ></GoBackButton>
-            <Progress current={4} all={5}></Progress>
+            <Progress current={3} all={4}></Progress>
           </View>
           <View
             style={{

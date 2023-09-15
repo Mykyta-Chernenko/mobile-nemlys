@@ -1,33 +1,35 @@
-import React, { useContext, useEffect, useRef, useState } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 
-import { useTheme, useThemeMode } from '@rneui/themed';
+import { useThemeMode } from '@rneui/themed';
 
 import { MainStackParamList } from '@app/types/navigation';
 import { NativeStackScreenProps } from '@react-navigation/native-stack';
 import { ImageBackground, View } from 'react-native';
 import { GoBackButton } from '@app/components/buttons/GoBackButton';
 import { Progress } from '@app/components/utils/Progress';
-import { APIDate, SupabaseAnswer } from '@app/types/api';
-import { supabase } from '@app/api/initSupabase';
-import { logErrors } from '@app/utils/errors';
-import { Loading } from '@app/components/utils/Loading';
 import ChooseDateTopics from '@app/components/date/ChooseDateTopics';
 import ChooseDateLevel from '@app/components/date/ChooseDateLevel';
 import GeneratingQuestions from '@app/components/date/GeneratingQuestions';
 import { AuthContext } from '@app/provider/AuthProvider';
 import { localAnalytics } from '@app/utils/analytics';
 import { SafeAreaView } from 'react-native-safe-area-context';
+import Reflection from '@app/components/reflection/Reflection';
+import { SupabaseAnswer } from '@app/types/api';
+import { logErrors } from '@app/utils/errors';
+import { supabase } from '@app/api/initSupabase';
+import { Loading } from '@app/components/utils/Loading';
 
 export default function ({
   route,
   navigation,
 }: NativeStackScreenProps<MainStackParamList, 'ConfigureDate'>) {
-  const { theme } = useTheme();
-  const [loading, setLoading] = useState<boolean>(false);
+  const job = route.params.job;
+  const isIssue = job === 'issues';
+  const hasLevels = job === 'issues' || job == 'sex' || job == 'know' || job == 'hard';
   const [currentStep, setCurrentStep] = useState(1);
   const [chosenTopic, setChosenTopic] = useState<string>('');
-  const [chosenLevel, setChosenLevel] = useState<number>(1);
-  const [dateId, setDateId] = useState<number | undefined>(undefined);
+  const [chosenLevel, setChosenLevel] = useState<number>(2);
+  const [reflectionAnswerId, setReflectionAnswerId] = useState<number | undefined>(undefined);
   const authContext = useContext(AuthContext);
   // to set the color of status bar
   const { setMode } = useThemeMode();
@@ -36,42 +38,29 @@ export default function ({
     return unsubscribeFocus;
   }, [navigation]);
 
-  const dateFields = 'id, couple_id, with_partner, active, topic, level, created_at, updated_at';
-  async function getDate() {
-    setLoading(true);
+  const [loading, setLoading] = useState(false);
+  const [reflectionId, setReflectionId] = useState(0);
+  const [reflection, setReflection] = useState('');
 
-    const dateRes: SupabaseAnswer<APIDate | null> = await supabase
-      .from('date')
-      .select(dateFields)
-      .eq('active', true)
-      .maybeSingle();
-    if (dateRes.error) {
-      logErrors(dateRes.error);
-      return;
-    }
-    if (dateRes.data) {
-      setDateId(dateRes.data.id);
-      setChosenTopic(dateRes.data.topic);
-      setChosenLevel(dateRes.data.level);
-    } else {
-      setDateId(undefined);
-      setChosenTopic('');
-      setChosenLevel(1);
-    }
-    setCurrentStep(1);
-    setLoading(false);
-  }
+  useEffect(() => {
+    const getData = async () => {
+      setLoading(true);
+      const data: SupabaseAnswer<{ id: number; reflection: string }> = await supabase
+        .from('reflection_question')
+        .select('id, reflection')
+        .eq('slug', 'discuss_issue')
+        .single();
+      if (data.error) {
+        logErrors(data.error);
+        return;
+      }
+      setReflection(data.data.reflection);
+      setReflectionId(data.data.id);
+      setLoading(false);
+    };
+    isIssue && void getData();
+  }, [isIssue]);
 
-  const isFirstMount = useRef(true);
-  useEffect(() => {
-    if (!isFirstMount.current && route.params?.refreshTimeStamp) {
-      void getDate();
-    }
-  }, [route.params?.refreshTimeStamp]);
-  useEffect(() => {
-    void getDate();
-    isFirstMount.current = false;
-  }, []);
   const goBack = () => {
     if (currentStep === 1) {
       void localAnalytics().logEvent('ConfigureDateGoHome', {
@@ -79,7 +68,7 @@ export default function ({
         action: 'GoHomePressed',
         userId: authContext.userId,
       });
-      navigation.navigate('Home', { refreshTimeStamp: new Date().toISOString() });
+      navigation.navigate('DateIsWithPartner', { job });
     } else {
       void localAnalytics().logEvent('ConfigureDateBackPressed', {
         screen: 'ConfigureDate',
@@ -98,6 +87,7 @@ export default function ({
           goToReflection={() =>
             navigation.navigate('ReflectionHome', { refreshTimeStamp: new Date().toISOString() })
           }
+          job={job}
           topic={chosenTopic}
           onNextPress={function (topic: string): void {
             void localAnalytics().logEvent('ConfigureDateTopicChosen', {
@@ -107,7 +97,11 @@ export default function ({
               userId: authContext.userId,
             });
             setChosenTopic(topic);
-            setCurrentStep(2);
+            if (hasLevels) {
+              setCurrentStep(2);
+            } else {
+              setCurrentStep(3);
+            }
           }}
         ></ChooseDateTopics>
       );
@@ -133,9 +127,10 @@ export default function ({
       activeComponent = (
         <GeneratingQuestions
           withPartner={route.params.withPartner}
-          dateId={dateId}
+          job={job}
           topic={chosenTopic}
           level={chosenLevel}
+          reflectionAnswerId={reflectionAnswerId}
           onLoaded={() => {
             void localAnalytics().logEvent('ConfigureDateQuestionGenerated', {
               screen: 'ConfigureDate',
@@ -143,6 +138,7 @@ export default function ({
               userId: authContext.userId,
             });
             navigation.navigate('OnDate', {
+              job,
               withPartner: route.params.withPartner,
               refreshTimeStamp: new Date().toISOString(),
             });
@@ -153,7 +149,22 @@ export default function ({
   }
 
   return loading ? (
-    <Loading light />
+    <Loading></Loading>
+  ) : currentStep === 1 && isIssue ? (
+    <Reflection
+      reflectionId={reflectionId}
+      onSave={(answerId) => {
+        void localAnalytics().logEvent('ConfigureDateIssueWritten', {
+          screen: 'ConfigureDate',
+          action: 'IssueWritten',
+          userId: authContext.userId,
+        });
+        setCurrentStep(2);
+        setReflectionAnswerId(answerId);
+      }}
+      question={reflection}
+      onBack={() => void goBack()}
+    ></Reflection>
   ) : (
     <ImageBackground
       style={{
@@ -178,7 +189,7 @@ export default function ({
               containerStyle={{ position: 'absolute', left: 0 }}
               onPress={() => void goBack()}
             ></GoBackButton>
-            <Progress current={currentStep} all={2}></Progress>
+            {hasLevels && <Progress current={currentStep} all={2}></Progress>}
           </View>
           <View
             style={{

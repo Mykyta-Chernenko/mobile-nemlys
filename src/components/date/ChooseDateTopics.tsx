@@ -12,23 +12,47 @@ import Feedback1Icon from '@app/icons/feedback1';
 import SmallArrowRight from '@app/icons/small_arrow_right';
 import { getIsLowPersonalization } from '@app/api/reflection';
 import { Loading } from '../utils/Loading';
+import { JobSlug } from '@app/types/domain';
+import { supabase } from '@app/api/initSupabase';
+import { SupabaseAnswer } from '@app/types/api';
+import { logErrors } from '@app/utils/errors';
 
 export default function (props: {
+  job: JobSlug;
   topic?: string;
   onNextPress: (topic: string) => void;
   goToReflection: () => void;
 }) {
+  const job = props.job;
+  const jobTitle = i18n.t(`jobs.${job}`);
   const { theme } = useTheme();
   const [loading, setLoading] = useState(false);
   const [isLowPersonalization, setIsLowPersonalization] = useState(false);
+  const getTopics = async (job: JobSlug): Promise<string[]> => {
+    const topics: SupabaseAnswer<{ topic: string }[]> = await supabase
+      .from('job_topics')
+      .select('topic')
+      .eq('job_slug', job)
+      .order('id');
+    if (topics.error) {
+      logErrors(topics.error);
+      return [];
+    }
+    return topics.data.map((t) => t.topic);
+  };
   useEffect(() => {
     const getData = async () => {
       setLoading(true);
-      setIsLowPersonalization(await getIsLowPersonalization());
+      const [lowPersonalization, topics] = await Promise.all([
+        getIsLowPersonalization(),
+        getTopics(job),
+      ]);
+      setIsLowPersonalization(lowPersonalization);
+      setAllTopics(topics);
       setLoading(false);
     };
     void getData();
-  }, []);
+  }, [job]);
   const styles = StyleSheet.create({
     tag: {
       borderRadius: 20,
@@ -45,38 +69,7 @@ export default function (props: {
   });
   const authContext = useContext(AuthContext);
   const randomTopic = i18n.t('date.topic.surprise');
-  const intimacy = i18n.t('date.topic.intimacy');
-  const allTopics = [
-    i18n.t('date.topic.emotions'),
-    i18n.t('date.topic.fun'),
-    i18n.t('date.topic.worldview'),
-    intimacy,
-    i18n.t('date.topic.goals'),
-    i18n.t('date.topic.future'),
-    i18n.t('date.topic.communication'),
-    i18n.t('date.topic.preferences'),
-    i18n.t('date.topic.appearance'),
-    i18n.t('date.topic.travel'),
-    i18n.t('date.topic.career'),
-    i18n.t('date.topic.expectations'),
-    i18n.t('date.topic.values'),
-    i18n.t('date.topic.gifts'),
-    i18n.t('date.topic.friends'),
-    i18n.t('date.topic.childhood'),
-    i18n.t('date.topic.commitment'),
-    i18n.t('date.topic.past'),
-    i18n.t('date.topic.ex'),
-    i18n.t('date.topic.fidelity'),
-    i18n.t('date.topic.trust'),
-    i18n.t('date.topic.money'),
-    i18n.t('date.topic.conflict'),
-    i18n.t('date.topic.social_circle'),
-    i18n.t('date.topic.love_language'),
-    i18n.t('date.topic.mental_health'),
-    i18n.t('date.topic.parents'),
-    i18n.t('date.topic.children'),
-    i18n.t('date.topic.living_together'),
-  ];
+  const [allTopics, setAllTopics] = useState<string[]>([]);
 
   const [pickedTopic, setPickedTopic] = useState<string>(props.topic || randomTopic);
 
@@ -122,6 +115,7 @@ export default function (props: {
             </View>
           </TouchableOpacity>
         )}
+        <FontText style={{ marginVertical: '5%', color: theme.colors.grey5 }}>{jobTitle}</FontText>
         <FontText
           style={{
             textAlign: 'left',
@@ -152,29 +146,17 @@ export default function (props: {
         }}
         disabled={!isPressEnabled}
         onPress={() => {
-          if (pickedTopic === randomTopic) {
-            void localAnalytics().logEvent('ChooseDateTopicsRandomTopicChosen', {
-              screen: 'ChooseDateTopics',
-              action: 'RandomTopicChosen',
-              userId: authContext.userId,
-            });
-            props.onNextPress(allTopics[Math.floor(Math.random() * allTopics.length)]);
-          } else if (pickedTopic === intimacy) {
-            void localAnalytics().logEvent('ChooseDateTopicsSpicyTopicChosen', {
-              screen: 'ChooseDateTopics',
-              action: 'SpicyTopicChosen',
-              userId: authContext.userId,
-            });
-            props.onNextPress('Intimacy');
-          } else {
-            void localAnalytics().logEvent('ChooseDateTopicsSpecificTopicChosen', {
-              screen: 'ChooseDateTopics',
-              action: 'SpecificTopicChosen',
-              topic: pickedTopic,
-              userId: authContext.userId,
-            });
-            props.onNextPress(pickedTopic);
-          }
+          const random = pickedTopic === randomTopic;
+          const topic = random ? 'General' : pickedTopic;
+
+          void localAnalytics().logEvent('ChooseDateTopicsChosen', {
+            screen: 'ChooseDateTopics',
+            action: 'Chosen',
+            random,
+            topic,
+            userId: authContext.userId,
+          });
+          props.onNextPress(topic);
         }}
       >
         {i18n.t('continue')}

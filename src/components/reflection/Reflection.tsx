@@ -20,6 +20,7 @@ import Wand from '../../icons/wand';
 import { logErrorsWithMessage } from '@app/utils/errors';
 import { supabase } from '@app/api/initSupabase';
 import { localAnalytics } from '@app/utils/analytics';
+import { SupabaseAnswer } from '@app/types/api';
 
 export default function ({
   reflectionId,
@@ -32,7 +33,7 @@ export default function ({
   question: string;
   answer?: string;
   onBack: () => void;
-  onSave: () => void;
+  onSave: (answerId: number) => void;
 }) {
   const insets = useSafeAreaInsets();
   const [inputHeight, setInputHeight] = useState(100);
@@ -84,7 +85,9 @@ export default function ({
       logErrorsWithMessage(error, error.message);
       return;
     }
+    let reflectionAnswerId = 0;
     if (data) {
+      reflectionAnswerId = data.id;
       const relfectionResponse = await supabase
         .from('reflection_question_answer')
         .update({ answer: resultAnswer, updated_at: new Date() })
@@ -96,19 +99,24 @@ export default function ({
         return;
       }
     } else {
-      const relfectionResponse = await supabase.from('reflection_question_answer').insert({
-        user_id: authContext.userId,
-        reflection_id: reflectionId,
-        answer: resultAnswer,
-      });
+      const relfectionResponse: SupabaseAnswer<{ id: number }> = await supabase
+        .from('reflection_question_answer')
+        .insert({
+          user_id: authContext.userId,
+          reflection_id: reflectionId,
+          answer: resultAnswer,
+        })
+        .select('id')
+        .single();
       if (relfectionResponse.error) {
         logErrorsWithMessage(relfectionResponse.error, relfectionResponse.error.message);
         return;
       }
+      reflectionAnswerId = relfectionResponse.data.id;
     }
     setTouched(false);
     setResultAnswer('');
-    onSave();
+    onSave(reflectionAnswerId);
   };
   return (
     <KeyboardAvoidingView behavior={KEYBOARD_BEHAVIOR} style={{ flexGrow: 1 }}>

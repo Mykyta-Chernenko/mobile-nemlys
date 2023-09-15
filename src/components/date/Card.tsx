@@ -19,7 +19,7 @@ export default function ({
       outputRange: ['-1deg', '1deg', '-1deg'],
     }) as unknown as string,
   };
-  const mainCardTransform = isAnimated ? [roratedTransform] : [{ rotate: '1deg' }];
+  const mainCardTransform = isAnimated ? [roratedTransform] : [{ rotate: '0deg' }];
   const cardStyle: StyleProp<ViewStyle> = {
     zIndex: 100,
     flex: 1,

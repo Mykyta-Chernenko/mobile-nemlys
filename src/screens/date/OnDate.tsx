@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useRef, useState } from 'react';
+import React, { Ref, useContext, useEffect, useRef, useState } from 'react';
 import { supabase } from '@app/api/initSupabase';
 import * as StoreReview from 'expo-store-review';
 import { APIDate, APIGeneratedQuestion, SupabaseAnswer } from '@app/types/api';
@@ -6,7 +6,7 @@ import { useTheme, useThemeMode } from '@rneui/themed';
 import { Image, Platform } from 'react-native';
 import Carousel from 'react-native-reanimated-carousel';
 import { logErrors } from '@app/utils/errors';
-
+import ViewShot, { captureRef } from 'react-native-view-shot';
 import { MainStackParamList } from '@app/types/navigation';
 import { NativeStackScreenProps } from '@react-navigation/native-stack';
 import { View } from 'react-native';
@@ -15,15 +15,18 @@ import { FontText } from '@app/components/utils/FontText';
 import { Loading } from '@app/components/utils/Loading';
 import { i18n } from '@app/localization/i18n';
 import { TouchableOpacity } from 'react-native';
-import Pencil from '@app/icons/pencil';
+import Share from '@app/icons/share';
+import Stop from '@app/icons/stop';
 import DateFeedback from '../../components/date/DateFeedback';
 import { localAnalytics } from '@app/utils/analytics';
 import { AuthContext } from '@app/provider/AuthProvider';
-import NewLevel from '../../components/date/NewLevel';
 import Card from '@app/components/date/Card';
 import { Progress } from '@app/components/utils/Progress';
 import { GestureHandlerRootView } from 'react-native-gesture-handler';
 import * as ScreenCapture from 'expo-screen-capture';
+import FakeRecordButton from '@app/components/date/FakeRecordButton';
+import OnDateStopPopup from '@app/components/date/OnDateStopPopup';
+import * as Sharing from 'expo-sharing';
 export default function ({
   route,
   navigation,
@@ -51,8 +54,8 @@ export default function ({
   const [currentDate, setCurrentDate] = useState<APIDate | undefined>(undefined);
   const [dateCount, setDateCount] = useState<number>(0);
   const [showFeedback, setShowFeedback] = useState<boolean>(false);
-  const [showNewLevel, setShowNewlevel] = useState<boolean>(false);
   const carouselRef = useRef(null) as any;
+  const [isSharing, setIsSharing] = useState(false);
   function restart() {
     setLoading(true);
     setSpentTimes(new Array(QUESTION_COUNT));
@@ -60,7 +63,7 @@ export default function ({
     setQuestionIndex(0);
     setCurrentDate(undefined);
     setShowFeedback(false);
-    setShowNewlevel(false);
+
     void localAnalytics().logEvent('OnDateLoaded', {
       screen: 'OnDate',
       action: 'loaded',
@@ -95,9 +98,7 @@ export default function ({
       .from('generated_question')
       .select('id, date_id, question ,finished, feedback_score, skipped, created_at, updated_at')
       .eq('date_id', dateRes.data.id)
-      .eq('skipped', false)
-      .eq('finished', false)
-      .order('created_at', { ascending: false })
+      .order('created_at', { ascending: true })
       .limit(QUESTION_COUNT);
     if (res.error) {
       logErrors(res.error);
@@ -117,7 +118,6 @@ export default function ({
         logErrors(res.error);
         return;
       }
-
       setQuestions(res.data ?? []);
     }
 
@@ -151,6 +151,23 @@ export default function ({
     }
   }, [authContext.userId]);
 
+  const viewRef: Ref<ViewShot> = useRef(null);
+
+  const shareScreen = async () => {
+    try {
+      const capturedUri = await captureRef(viewRef, {
+        format: 'png',
+        quality: 1,
+      });
+
+      await Sharing.shareAsync('file://' + capturedUri, {
+        mimeType: 'image/jpeg',
+      });
+    } catch (err) {
+      logErrors(err);
+    }
+  };
+
   // const onRecorded = (url: string) => {
   //   const func = async (url: string) => {
   //     const res: SupabaseAnswer<{ summary: string } | null> = await supabase.functions.invoke(
@@ -168,6 +185,8 @@ export default function ({
   //   };
   //   void func(url);
   // };
+
+  const [showStopPopup, setShowStopPopup] = useState(false);
 
   const handleFinishDateButtonFinal = async (feedback: number | undefined) => {
     if (!currentDate) return;
@@ -232,21 +251,95 @@ export default function ({
       logErrors(dateReponse.error);
       return;
     }
-    setLoading(false);
-    setShowFeedback(false);
-    setShowNewlevel(true);
+    const shouldShowNotificationBanner = await getShouldShowNotificationBanner();
+    void localAnalytics().logEvent('OnDateGoFinish', {
+      screen: 'Date',
+      action: 'GoToNotification',
+      userId: authContext.userId,
+      shouldShowNotificationBanner,
+    });
+    if (shouldShowNotificationBanner) {
+      navigation.navigate('OnDateNotification', { withPartner });
+    } else {
+      navigation.navigate('OnDateNewLevel', { withPartner });
+    }
   };
-  const handleChangeTopicsButton = () => {
-    void localAnalytics().logEvent('DateChangeTopicPressed', {
-      screen: 'DateChangeTopicPressed',
-      action: 'Date change topic pressed',
+  const getShouldShowNotificationBanner = async () => {
+    const profileResponse: SupabaseAnswer<{
+      id: number;
+      ios_expo_token: string | null;
+      android_expo_token: string | null;
+    }> = await supabase
+      .from('user_profile')
+      .select('id, ios_expo_token, android_expo_token')
+      .eq('user_id', authContext.userId)
+      .single();
+    if (profileResponse.error) {
+      logErrors(profileResponse.error);
+      return;
+    }
+    let hasToken = false;
+    if (Platform.OS === 'ios' && profileResponse.data.ios_expo_token) {
+      hasToken = true;
+    } else if (Platform.OS === 'android' && profileResponse.data.android_expo_token) {
+      hasToken = true;
+    }
+    return (
+      !hasToken &&
+      (dateCount === 0 ||
+        dateCount === 4 ||
+        dateCount === 9 ||
+        dateCount === 14 ||
+        dateCount === 34)
+    );
+  };
+
+  const handleStopInitiate = () => {
+    const lastQuestion = questionIndex === QUESTION_COUNT - 1;
+    void localAnalytics().logEvent('DateFinishDateStopClicked', {
+      screen: 'Date',
+      action: 'FinishDateStopClicked',
+      userId: authContext.userId,
+      lastQuestion,
+    });
+    if (lastQuestion) {
+      setShowFeedback(true);
+    } else {
+      setShowStopPopup(true);
+    }
+  };
+  const handleStopConfirm = async () => {
+    void localAnalytics().logEvent('DateFinishDateStopConfirm', {
+      screen: 'Date',
+      action: 'FinishDateStopConfirm',
       userId: authContext.userId,
     });
-    void handleFinishDateButtonFinal(undefined);
-    navigation.navigate('ConfigureDate', {
-      withPartner: route.params.withPartner,
+    await handleFinishDateButtonFinal(undefined);
+    navigation.navigate('Home', {
       refreshTimeStamp: new Date().toISOString(),
     });
+  };
+  const handleStopCancel = () => {
+    void localAnalytics().logEvent('DateFinishDateStopCancel', {
+      screen: 'Date',
+      action: 'FinishDateStopCancel',
+      userId: authContext.userId,
+    });
+    setShowStopPopup(false);
+  };
+
+  const handleSharePress = async () => {
+    void localAnalytics().logEvent('DateSharePressed', {
+      screen: 'Date',
+      action: 'SharePressed',
+      userId: authContext.userId,
+      questionIndex,
+    });
+    setIsSharing(true);
+    const loadTime = new Promise((resolve) => setTimeout(() => resolve(1), 100));
+    await loadTime;
+    await shareScreen();
+    setIsSharing(false);
   };
 
   const getFontSize = (index) => {
@@ -270,7 +363,7 @@ export default function ({
   };
   const LeftComponent = (index: number) =>
     index === 0 ? (
-      <View></View>
+      <View style={{ height: 72, width: 72 }}></View>
     ) : (
       <TouchableOpacity
         style={{
@@ -300,6 +393,7 @@ export default function ({
         />
       </TouchableOpacity>
     );
+
   const RightComponent = (index: number) =>
     index === (questions?.length ?? 1) - 1 ? (
       <TouchableOpacity
@@ -384,10 +478,9 @@ export default function ({
         void handleFinishDateButtonFinal(feedbackScore);
       }}
     ></DateFeedback>
-  ) : showNewLevel ? (
-    <NewLevel withPartner={withPartner}></NewLevel>
   ) : (
-    <View
+    <ViewShot
+      ref={viewRef}
       style={{
         flexGrow: 1,
         backgroundColor: theme.colors.black,
@@ -401,40 +494,105 @@ export default function ({
         <View
           style={{
             alignItems: 'center',
+            marginTop: '5%',
           }}
         >
           <FontText h3 style={{ color: theme.colors.white }}>
             {i18n.t('date.discuss')}
           </FontText>
-          <TouchableOpacity
-            onPress={() => void handleChangeTopicsButton()}
-            style={{
-              marginTop: 20,
-            }}
-          >
-            <View
-              style={{
-                flexDirection: 'row',
-                backgroundColor: 'rgba(255,255,255,0.1)',
-                padding: 7,
-                paddingHorizontal: padding,
-                borderRadius: 40,
-                alignItems: 'center',
-              }}
-            >
-              <Pencil></Pencil>
-              <View style={{ marginLeft: 10 }}>
-                <FontText style={{ color: theme.colors.white, fontSize: 18 }}>
-                  {currentDate?.topic ?? ''},{' '}
-                  {{
-                    1: i18n.t('date.level.light'),
-                    2: i18n.t('date.level.normal'),
-                    3: i18n.t('date.level.deep'),
-                  }[currentDate?.level || 1] ?? 'Light'}
-                </FontText>
+
+          <View style={{ flexDirection: 'row' }}>
+            {isSharing ? (
+              <View
+                style={{
+                  marginTop: 20,
+                  marginHorizontal: 5,
+                }}
+              >
+                <View
+                  style={{
+                    flexDirection: 'row',
+                    backgroundColor: 'rgba(255,255,255,0.1)',
+                    padding: 7,
+                    paddingHorizontal: 12,
+                    borderRadius: 40,
+                    alignItems: 'center',
+                  }}
+                >
+                  <View style={{ marginLeft: 10, padding: 2.5 }}>
+                    <FontText style={{ color: theme.colors.white, fontSize: 18 }}>
+                      {currentDate?.topic ?? ''},{' '}
+                      {{
+                        1: i18n.t('date.level.light'),
+                        2: i18n.t('date.level.normal'),
+                        3: i18n.t('date.level.deep'),
+                      }[currentDate?.level || 1] ?? 'Light'}
+                    </FontText>
+                  </View>
+                </View>
               </View>
-            </View>
-          </TouchableOpacity>
+            ) : (
+              <>
+                <TouchableOpacity
+                  onPress={() => void handleSharePress()}
+                  style={{
+                    marginTop: 20,
+                    marginHorizontal: 5,
+                  }}
+                >
+                  <View
+                    style={{
+                      flexDirection: 'row',
+                      backgroundColor: 'rgba(255,255,255,0.1)',
+                      padding: 7,
+                      paddingHorizontal: 12,
+                      borderRadius: 40,
+                      alignItems: 'center',
+                    }}
+                  >
+                    <Share color={theme.colors.grey2}></Share>
+                    <View style={{ marginLeft: 5 }}>
+                      <FontText style={{ color: theme.colors.grey2, fontSize: 18 }}>
+                        {i18n.t('date.share')}
+                      </FontText>
+                    </View>
+                  </View>
+                </TouchableOpacity>
+                {currentDate && showStopPopup && (
+                  <OnDateStopPopup
+                    dateId={currentDate.id}
+                    onClose={handleStopCancel}
+                    onConfirm={() => void handleStopConfirm()}
+                  ></OnDateStopPopup>
+                )}
+                <TouchableOpacity
+                  onPress={() => void handleStopInitiate()}
+                  style={{
+                    marginTop: 20,
+                    marginHorizontal: 5,
+                  }}
+                >
+                  <View
+                    style={{
+                      flexDirection: 'row',
+                      backgroundColor: 'rgba(255,255,255,0.1)',
+                      padding: 7,
+                      paddingHorizontal: 12,
+                      borderRadius: 40,
+                      alignItems: 'center',
+                    }}
+                  >
+                    <Stop color={theme.colors.grey2}></Stop>
+                    <View style={{ marginLeft: 5 }}>
+                      <FontText style={{ color: theme.colors.grey2, fontSize: 18 }}>
+                        {i18n.t('date.stop')}
+                      </FontText>
+                    </View>
+                  </View>
+                </TouchableOpacity>
+              </>
+            )}
+          </View>
         </View>
         <View
           style={{
@@ -478,10 +636,38 @@ export default function ({
                         }}
                       >
                         <Progress theme="dark" current={index + 1} all={QUESTION_COUNT}></Progress>
+
                         {/* <RecordingComponent
                           bucket="conversation-recordings"
                           onRecorded={onRecorded}
                         ></RecordingComponent> */}
+                        {isSharing && (
+                          <View
+                            style={{
+                              position: 'absolute',
+                              flexDirection: 'row',
+                              alignItems: 'center',
+                              justifyContent: 'center',
+                              opacity: 1,
+                              marginTop: 70,
+                            }}
+                          >
+                            <Image
+                              source={require('../../../assets/images/app_share_icon.png')}
+                              style={{ height: 32, width: 32 }}
+                            ></Image>
+                            <FontText
+                              style={{
+                                fontSize: 24,
+                                color: theme.colors.primary,
+                                marginTop: 5,
+                                marginLeft: 5,
+                              }}
+                            >
+                              {i18n.t('nemlys')}
+                            </FontText>
+                          </View>
+                        )}
                         <FontText {...getFontSize(index)}>{questions[index].question}</FontText>
                         <View
                           style={{
@@ -491,6 +677,12 @@ export default function ({
                           }}
                         >
                           {LeftComponent(index)}
+                          {withPartner && (
+                            <FakeRecordButton
+                              questionIndex={index}
+                              dateCount={dateCount}
+                            ></FakeRecordButton>
+                          )}
                           {RightComponent(index)}
                         </View>
                       </View>
@@ -502,6 +694,6 @@ export default function ({
           </View>
         </View>
       </SafeAreaView>
-    </View>
+    </ViewShot>
   );
 }

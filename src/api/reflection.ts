@@ -8,6 +8,7 @@ export const getIsLowPersonalization = async () => {
     .from('date')
     .select('created_at')
     .eq('with_partner', true)
+    .eq('stopped', false)
     .limit(1)
     .order('created_at', { ascending: false })
     .maybeSingle();
