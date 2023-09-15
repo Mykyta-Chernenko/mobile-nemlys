@@ -32,14 +32,14 @@
     "description": "Reflect and write to get more personalised AI questions ",
     "button": "Remind me later"
   },
-  "jobs":{
-      "issues":"Issues in our relationship",
-      "sex":"Intimacy & Sex",
-      "know":"Get to know each other",
-      "hard":"Dive deep questions",
-      "meaningful":"Meaningful conversation",
-      "fun":"Light & Fun topics"
-    },
+  "jobs": {
+    "issues": "Issues in our relationship",
+    "sex": "Intimacy & Sex",
+    "know": "Get to know each other",
+    "hard": "Dive deep questions",
+    "meaningful": "Meaningful conversation",
+    "fun": "Light & Fun topics"
+  },
   "home": {
     "you": "You",
     "partner": "Partner",
@@ -102,14 +102,14 @@
       "decline": "Maybe later"
     },
     "stop_popup": {
-     "title_1": "Are you sure you want to ",
+      "title_1": "Are you sure you want to ",
       "title_2": "stop discussion",
       "title_3": "?",
       "subtitle": "We can’t save your progress then.",
       "confirm": "Yes, stop discussion",
       "cancel": "No, come back"
     },
-    "recording_popup":{
+    "recording_popup": {
       "title_1": "Thank you! ",
       "title_2": "We will add dialog analysing soon",
       "button": "Cool, I'm waiting!"
