@@ -242,6 +242,9 @@ export default function ({
                   justifyContent: 'space-between',
                 }}
               >
+                <FontText h3 style={{ marginBottom: 15, width: '100%' }}>
+                  {i18n.t('date.discuss')}
+                </FontText>
                 {jobs.map((j) => (
                   <TouchableOpacity
                     key={j.slug}
