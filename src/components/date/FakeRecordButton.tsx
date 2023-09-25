@@ -2,7 +2,7 @@ import { useTheme } from '@rneui/themed';
 import React, { useContext, useEffect, useState } from 'react';
 import { View } from 'react-native';
 import Mic from '@app/icons/mic';
-import { TouchableOpacity } from 'react-native-gesture-handler';
+import { TouchableWithoutFeedback } from 'react-native-gesture-handler';
 import FakeRecordingButtonTolltip from './FakeRecordingButtonTolltip';
 import { i18n } from '@app/localization/i18n';
 import { supabase } from '@app/api/initSupabase';
@@ -112,7 +112,7 @@ export default function ({
           text={i18n.t('date.recording_text')}
         ></FakeRecordingButtonTolltip>
       )}
-      <TouchableOpacity containerStyle={{ display: 'flex' }} onPress={() => void handlePress()}>
+      <View>
         <BackgroundLayer
           zIndex={1}
           width={68}
@@ -140,20 +140,21 @@ export default function ({
           x={5}
           y={-5}
         />
-        <View
-          style={{
-            zIndex: 4,
-            backgroundColor: theme.colors.white,
-            borderRadius: 50,
-            height: 72,
-            width: 72,
-            justifyContent: 'center',
-            alignItems: 'center',
-          }}
-        >
-          <Mic></Mic>
-        </View>
-      </TouchableOpacity>
+        <TouchableWithoutFeedback containerStyle={{ zIndex: 4 }} onPress={() => void handlePress()}>
+          <View
+            style={{
+              backgroundColor: theme.colors.white,
+              borderRadius: 50,
+              height: 72,
+              width: 72,
+              justifyContent: 'center',
+              alignItems: 'center',
+            }}
+          >
+            <Mic></Mic>
+          </View>
+        </TouchableWithoutFeedback>
+      </View>
     </View>
   );
 }
