@@ -197,6 +197,13 @@ const realAnalytics = () => {
     },
   };
 };
-export const localAnalytics = IS_SUPABASE_DEV ? () => ({ logEvent: () => {} }) : realAnalytics;
+const devAnalytics = () => {
+  return {
+    logEvent: (message: string, properties: object) => {
+      console.log(message, properties);
+    },
+  };
+};
+export const localAnalytics = IS_SUPABASE_DEV ? devAnalytics : realAnalytics;
 export const analyticsIdentifyUser = (userId: string | undefined) => mixpanel.identify(userId);
 export const analyticsForgetUser = () => mixpanel.reset();

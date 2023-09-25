@@ -6,7 +6,9 @@ import Main from './MainStack';
 import Auth from './AuthStack';
 import { TYPE_NEW_PASSWORD_PATH } from '@app/screens/auth/TypeNewPassword';
 import { Loading } from '@app/components/utils/Loading';
+import { useBackHandler } from '@react-native-community/hooks';
 import NavigationWrapper from './NavigationWrapper';
+import { localAnalytics } from '@app/utils/analytics';
 const linking = {
   prefixes: ['nemlys://', 'exp://192.168.0.9:19000/--/'],
   config: {
@@ -22,6 +24,15 @@ export default () => {
   const auth = useContext(AuthContext);
   const signedIn = auth.isSignedIn;
   const userId = auth.userId;
+  // disable android button back
+  useBackHandler(() => {
+    void localAnalytics().logEvent('SystemPressBackClicked', {
+      screen: 'Any',
+      action: 'SystemPressBackClicked',
+      userId,
+    });
+    return true;
+  });
 
   let comp = <></>;
   if (signedIn === null || !userId) {

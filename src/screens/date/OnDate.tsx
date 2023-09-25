@@ -1,4 +1,4 @@
-import React, { Ref, useContext, useEffect, useRef, useState } from 'react';
+import React, { useContext, useEffect, useRef, useState } from 'react';
 import { supabase } from '@app/api/initSupabase';
 import * as StoreReview from 'expo-store-review';
 import { APIDate, APIGeneratedQuestion, SupabaseAnswer } from '@app/types/api';
@@ -6,7 +6,7 @@ import { useTheme, useThemeMode } from '@rneui/themed';
 import { Image, Platform } from 'react-native';
 import Carousel from 'react-native-reanimated-carousel';
 import { logErrors } from '@app/utils/errors';
-import ViewShot, { captureRef } from 'react-native-view-shot';
+import { captureScreen } from 'react-native-view-shot';
 import { MainStackParamList } from '@app/types/navigation';
 import { NativeStackScreenProps } from '@react-navigation/native-stack';
 import { View } from 'react-native';
@@ -69,6 +69,7 @@ export default function ({
       action: 'loaded',
       userId: authContext.userId,
     });
+    setLoading(false);
   }
   const withPartner = currentDate?.with_partner ?? false;
 
@@ -108,6 +109,11 @@ export default function ({
     if (res.data?.length) {
       setQuestions(res.data);
     } else {
+      void localAnalytics().logEvent('DateRegeneratingQuestions', {
+        screen: 'OnDate',
+        action: 'RegeneratingQuestions',
+        userId: authContext.userId,
+      });
       const res: SupabaseAnswer<APIGeneratedQuestion[] | null> = await supabase.functions.invoke(
         'generate-question',
         {
@@ -120,7 +126,11 @@ export default function ({
       }
       setQuestions(res.data ?? []);
     }
-
+    void localAnalytics().logEvent('OnDateGetDataCompleted', {
+      screen: 'OnDate',
+      action: 'GetDataCompleted',
+      userId: authContext.userId,
+    });
     setLoading(false);
   }
 
@@ -151,15 +161,19 @@ export default function ({
     }
   }, [authContext.userId]);
 
-  const viewRef: Ref<ViewShot> = useRef(null);
+  // const viewRef: Ref<ViewShot> = useRef(null);
 
   const shareScreen = async () => {
     try {
-      const capturedUri = await captureRef(viewRef, {
+      // const capturedUri = await captureRef(viewRef, {
+      //   format: 'png',
+      //   quality: 1,
+      // });
+
+      const capturedUri = await captureScreen({
         format: 'png',
         quality: 1,
       });
-
       await Sharing.shareAsync('file://' + capturedUri, {
         mimeType: 'image/jpeg',
       });
@@ -357,8 +371,31 @@ export default function ({
     setStartedDiscussionAt(newDiscussionAt);
   };
 
+  const recordGoToPreviousCard = (index: number, swipe = false) => {
+    void localAnalytics().logEvent('DateGetPreviousQuestion', {
+      screen: 'Date',
+      action: 'GetPreviousQuestion',
+      userId: authContext.userId,
+      questionIndex: index,
+      swipe,
+    });
+  };
+  const recordGoToNextCard = (index: number, swipe = false) => {
+    void localAnalytics().logEvent('DateGetNextQuestion', {
+      screen: 'Date',
+      action: 'GetNextQuestion',
+      userId: authContext.userId,
+      questionIndex: index,
+      swipe,
+    });
+  };
   const handleNewIndex = (index: number) => {
-    setQuestionIndex(index);
+    void localAnalytics().logEvent('DateNavigateQuestionsButton', {
+      screen: 'Date',
+      action: 'NavigateQuestionsButtonPressed',
+      userId: authContext.userId,
+      questionIndex: index,
+    });
     carouselRef?.current?.scrollTo({ index, animated: true });
   };
   const LeftComponent = (index: number) =>
@@ -376,12 +413,6 @@ export default function ({
         }}
         onPress={() => {
           const newIndex = questionIndex - 1;
-          void localAnalytics().logEvent('DateGetPreviousQuestion', {
-            screen: 'Date',
-            action: 'GetPreviousQuestion',
-            userId: authContext.userId,
-            questionIndex: newIndex,
-          });
           handleNewIndex(newIndex);
         }}
       >
@@ -433,12 +464,6 @@ export default function ({
         }}
         onPress={() => {
           const newIndex = questionIndex + 1;
-          void localAnalytics().logEvent('DateGetNextQuestion', {
-            screen: 'Date',
-            action: 'GetNextQuestion',
-            userId: authContext.userId,
-            questionIndex: newIndex,
-          });
           handleNewIndex(newIndex);
         }}
       >
@@ -479,8 +504,8 @@ export default function ({
       }}
     ></DateFeedback>
   ) : (
-    <ViewShot
-      ref={viewRef}
+    <View
+      // ref={viewRef}
       style={{
         flexGrow: 1,
         backgroundColor: theme.colors.black,
@@ -614,6 +639,11 @@ export default function ({
                   loop={false}
                   autoPlay={false}
                   onScrollEnd={(index: number) => {
+                    if (index > questionIndex) {
+                      recordGoToNextCard(index, true);
+                    } else {
+                      recordGoToPreviousCard(index, true);
+                    }
                     recordTimeSpent(questionIndex);
                     setQuestionIndex(index);
                   }}
@@ -694,6 +724,6 @@ export default function ({
           </View>
         </View>
       </SafeAreaView>
-    </ViewShot>
+    </View>
   );
 }

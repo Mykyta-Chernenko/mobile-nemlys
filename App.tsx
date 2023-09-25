@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import 'react-native-url-polyfill/auto';
 import Navigation from './src/navigation';
 import { AuthProvider } from './src/provider/AuthProvider';
@@ -9,19 +9,10 @@ import { ThemeProvider } from '@rneui/themed';
 import { theme } from '@app/theme';
 import FontWrapper from '@app/theme/FontWrapper';
 import * as Sentry from 'sentry-expo';
-import { BackHandler } from 'react-native';
 import SplashScreen from '@app/theme/SplashScreen';
 import ThemeStatusBar from '@app/theme/ThemeStatusBar';
 
 export default function App() {
-  // disable android button back
-  useEffect(() => {
-    const backHandler = BackHandler.addEventListener('hardwareBackPress', () => {
-      return true;
-    });
-    return () => backHandler.remove();
-  }, []);
-
   return (
     <ThemeProvider theme={theme}>
       <FontWrapper>
