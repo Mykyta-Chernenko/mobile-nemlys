@@ -59,6 +59,8 @@ export function handleUserAfterSignUp(
       if (profileError) {
         throw profileError;
       }
+      const loadTime = new Promise((resolve) => setTimeout(() => resolve(1), 200));
+      await loadTime;
     }
   };
 }
