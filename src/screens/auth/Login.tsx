@@ -25,6 +25,8 @@ import { SecondaryButton } from '@app/components/buttons/SecondaryButton';
 import { handleUserAfterSignUp } from './Register';
 import { KEYBOARD_BEHAVIOR } from '@app/utils/constants';
 import StyledInput from '@app/components/utils/StyledInput';
+
+import { Loading } from '@app/components/utils/Loading';
 WebBrowser.maybeCompleteAuthSession();
 
 export default function ({ navigation }: NativeStackScreenProps<AuthStackParamList, 'Login'>) {
@@ -45,7 +47,6 @@ export default function ({ navigation }: NativeStackScreenProps<AuthStackParamLi
       email: email.trim(),
       password: password,
     });
-    setLoading(false);
     if (error) {
       const {
         data: { user },
@@ -57,6 +58,8 @@ export default function ({ navigation }: NativeStackScreenProps<AuthStackParamLi
       if (error2) {
         if (error2.message === 'User already registered') {
           logErrorsWithMessage(error, error.message);
+        } else if (error2.message === 'Password should be at least 6 characters') {
+          alert(i18n.t('login.password_is_too_short'));
         } else {
           logErrorsWithMessage(error2, error2.message);
         }
@@ -74,6 +77,7 @@ export default function ({ navigation }: NativeStackScreenProps<AuthStackParamLi
       auth.setIsSignedIn?.(true);
       auth.setUserId?.(user!.id);
     }
+    setLoading(false);
   }
 
   return (
@@ -132,14 +136,17 @@ export default function ({ navigation }: NativeStackScreenProps<AuthStackParamLi
                   {i18n.t('login.title')}
                 </FontText>
               </View>
-              {!isContinueWithEmail ? (
+
+              {loading ? (
+                <Loading />
+              ) : !isContinueWithEmail ? (
                 <View
                   style={{
                     paddingHorizontal: 15,
                     marginBottom: 10,
                   }}
                 >
-                  <OAuth handleUser={handleUserAfterSignUp} />
+                  <OAuth setLoading={setLoading} handleUser={handleUserAfterSignUp} />
                   <SecondaryButton
                     title={i18n.t('login.button.default')}
                     buttonStyle={{
@@ -192,7 +199,7 @@ export default function ({ navigation }: NativeStackScreenProps<AuthStackParamLi
                     onPress={() => {
                       void login();
                     }}
-                    disabled={!email || !password || loading}
+                    disabled={!email || !password}
                   />
                   <View
                     style={{

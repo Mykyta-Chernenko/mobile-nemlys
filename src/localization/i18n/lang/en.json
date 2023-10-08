@@ -92,6 +92,7 @@
     "button": "Schedule a call"
   },
   "date": {
+    "generating_questions_error": "Sorry, our AI cannot generate these questions, try another category or topic",
     "notification": {
       "challenge": "Challenge",
       "title_1": "Deepen Intimacy\n",
@@ -316,6 +317,7 @@
     }
   },
   "login": {
+    "password_is_too_short": "Password must be at least 6 characters",
     "user_does_not_exist_error": "User with email %{email} does not exist in the system",
     "title": "Sign in\nNemlys account",
     "check_email_for_login_link": "The login link was sent to your email",

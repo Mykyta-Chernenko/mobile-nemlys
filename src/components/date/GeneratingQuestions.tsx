@@ -7,9 +7,11 @@ import { i18n } from '@app/localization/i18n';
 
 import { AuthContext } from '@app/provider/AuthProvider';
 import { supabase } from '@app/api/initSupabase';
-import { logErrors } from '@app/utils/errors';
+import { logErrors, logErrorsWithMessageWithoutAlert } from '@app/utils/errors';
 import { APIUserProfile, SupabaseAnswer } from '@app/types/api';
 import { JobSlug } from '@app/types/domain';
+import { useNavigation } from '@react-navigation/native';
+import { MainNavigationProp } from '@app/types/navigation';
 
 export default function (props: {
   withPartner: boolean;
@@ -21,6 +23,8 @@ export default function (props: {
 }) {
   const authContext = useContext(AuthContext);
   const { theme } = useTheme();
+  const navigation = useNavigation<MainNavigationProp>();
+
   const rotateValue = useRef(new Animated.Value(0)).current;
   const imageTransform = [
     {
@@ -50,7 +54,7 @@ export default function (props: {
       const data: SupabaseAnswer<APIUserProfile> = await supabase
         .from('user_profile')
         .select(
-          'id, partner_first_name, partner_first_name, user_id, couple_id, first_name, ios_expo_token, android_expo_token, onboarding_finished, showed_interview_request, created_at, updated_at',
+          'id, first_name, partner_first_name, user_id, couple_id, ios_expo_token, android_expo_token, onboarding_finished, showed_interview_request, created_at, updated_at',
         )
         .eq('user_id', authContext.userId)
         .single();
@@ -77,15 +81,32 @@ export default function (props: {
       }
       const dateId = dateReponse.data.id;
 
-      const request = supabase.functions.invoke('generate-question', {
-        body: { date_id: dateId },
-      });
+      for (let i = 0; i < 3; i++) {
+        const request = supabase.functions.invoke('generate-question', {
+          body: { date_id: dateId },
+        });
 
-      const loadTime = new Promise((resolve) => setTimeout(() => resolve(1), 3000));
-      const [res, _] = await Promise.all([request, loadTime]);
-      if (res.error) {
-        logErrors(res.error);
-        return;
+        const loadTime = new Promise((resolve) => setTimeout(() => resolve(1), 3000));
+        const [res, _] = await Promise.all([request, loadTime]);
+        if (!res.error) {
+          break;
+        }
+        if (res.error && i === 2) {
+          logErrorsWithMessageWithoutAlert(res.error);
+          alert(i18n.t('date.generating_questions_error'));
+          const dateReponse = await supabase
+            .from('date')
+            .update({
+              updated_at: new Date(),
+              active: false,
+            })
+            .eq('id', dateId);
+          if (dateReponse.error) {
+            logErrors(dateReponse.error);
+          }
+          navigation.navigate('Home', { refreshTimeStamp: new Date().toISOString() });
+          return;
+        }
       }
 
       props.onLoaded();

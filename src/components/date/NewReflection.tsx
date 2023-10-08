@@ -91,10 +91,13 @@ export default function ({
       'NewReflection',
       setLoading,
     );
+    setLoading(true);
     void savedShowed();
     onClose();
+    setLoading(false);
   };
   const onClosePressed = () => {
+    setLoading(true);
     void localAnalytics().logEvent('NewReflectionClosePressed', {
       screen: 'Interview',
       action: 'ClosePressed',
@@ -102,6 +105,7 @@ export default function ({
     });
     void savedShowed();
     onClose();
+    setLoading(false);
   };
   return (
     <Modal animationType="none" transparent={true} visible={show}>

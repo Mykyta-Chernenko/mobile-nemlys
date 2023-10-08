@@ -68,7 +68,7 @@ export default function ({
     const data: SupabaseAnswer<APIUserProfile> = await supabase
       .from('user_profile')
       .select(
-        'id, partner_first_name, partner_first_name, user_id, couple_id, first_name, ios_expo_token, android_expo_token, onboarding_finished, showed_interview_request, created_at, updated_at',
+        'id, first_name, partner_first_name, user_id, couple_id, ios_expo_token, android_expo_token, onboarding_finished, showed_interview_request, created_at, updated_at',
       )
       .eq('user_id', authContext.userId)
       .single();

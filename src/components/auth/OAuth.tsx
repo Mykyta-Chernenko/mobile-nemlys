@@ -22,80 +22,87 @@ import { localAnalytics } from '@app/utils/analytics';
 import { PrimaryButton } from '../buttons/PrimaryButtons';
 
 export const OAuth = ({
-  handleUser: handleUser,
+  handleUser,
+  setLoading,
 }: {
   handleUser: (provider: string) => (user: SupabaseUser, exists: boolean) => Promise<void>;
+  setLoading: (isLoadingL: boolean) => void;
 }) => {
   const { theme } = useTheme();
   const auth = useContext(AuthContext);
 
   const onPress = async (provider: Provider) => {
+    setLoading(true);
     void localAnalytics().logEvent('LoginInitiated', {
       screen: 'OAuth',
       action: 'OAuth button clicked',
       provider,
       userId: ANON_USER,
     });
-    const returnUrl = Linking.createURL('');
-    const signInParms: SignInWithOAuthCredentials = {
-      provider,
-      options: {
-        redirectTo: returnUrl,
-      },
-    };
-    if (Platform.OS == 'web') {
-      const { data, error } = await supabase.auth.signInWithOAuth(signInParms);
-      if (error) {
-        logErrors(error);
-      } else {
-        console.log(data.url);
-      }
-    } else {
-      // fixes a bug in supabase
-      const oldWindow = window;
-      window = undefined as any;
-      const { data } = await supabase.auth.signInWithOAuth(signInParms);
-      const authUrl = data.url;
-      if (authUrl) {
-        // WARN: on Android instead of getting the response back,
-        //  we get a dismissed event, but we get the access token and the refesh token in the URL,
-        //  so we use a URL listener from the AuthProvider to handle it
-        globalHandleUser.value = handleUser(provider);
-        const response = await startAsync({
-          authUrl: authUrl,
-          projectNameForProxy: '@marakaci/nemlys',
-        });
-        try {
-          if (response.type == 'success') {
-            const accessToken = response.params['access_token'];
-            const refreshToken = response.params['refresh_token'];
-            if (accessToken && refreshToken) {
-              await handleAuthTokens(
-                accessToken,
-                refreshToken,
-                handleUser(provider),
-                auth.setIsSignedIn!,
-                auth.setUserId!,
-              );
-            } else {
-              throw new Error(`Auth response had no access_token ${JSON.stringify(response)}`);
-            }
-          } else if (response.type == 'error') {
-            throw response.error;
-          }
-        } catch (e: unknown) {
-          if (e instanceof UserDoesNotExistError) {
-            logErrorsWithMessage(e, e.message);
-          } else {
-            logErrors(e);
-          }
-          await supabase.auth.signOut();
-        } finally {
-          globalHandleUser.value = null;
+    try {
+      const returnUrl = Linking.createURL('');
+      const signInParms: SignInWithOAuthCredentials = {
+        provider,
+        options: {
+          redirectTo: returnUrl,
+        },
+      };
+      if (Platform.OS == 'web') {
+        const { data, error } = await supabase.auth.signInWithOAuth(signInParms);
+        if (error) {
+          logErrors(error);
+        } else {
+          console.log(data.url);
         }
-      }
+      } else {
+        // fixes a bug in supabase
+        const oldWindow = window;
+        window = undefined as any;
+        const { data } = await supabase.auth.signInWithOAuth(signInParms);
+        const authUrl = data.url;
+        if (authUrl) {
+          // WARN: on Android instead of getting the response back,
+          //  we get a dismissed event, but we get the access token and the refesh token in the URL,
+          //  so we use a URL listener from the AuthProvider to handle it
+          globalHandleUser.value = handleUser(provider);
+          const response = await startAsync({
+            authUrl: authUrl,
+            projectNameForProxy: '@marakaci/nemlys',
+          });
+          try {
+            if (response.type == 'success') {
+              const accessToken = response.params['access_token'];
+              const refreshToken = response.params['refresh_token'];
+              if (accessToken && refreshToken) {
+                await handleAuthTokens(
+                  accessToken,
+                  refreshToken,
+                  handleUser(provider),
+                  auth.setIsSignedIn!,
+                  auth.setUserId!,
+                );
+              } else {
+                throw new Error(`Auth response had no access_token ${JSON.stringify(response)}`);
+              }
+            } else if (response.type == 'error') {
+              throw response.error;
+            }
+          } catch (e: unknown) {
+            if (e instanceof UserDoesNotExistError) {
+              logErrorsWithMessage(e, e.message);
+            } else {
+              logErrors(e);
+            }
+            await supabase.auth.signOut();
+          } finally {
+            globalHandleUser.value = null;
+          }
+        }
 
-      window = oldWindow;
+        window = oldWindow;
+      }
+    } finally {
+      setLoading(false);
     }
   };
   return (

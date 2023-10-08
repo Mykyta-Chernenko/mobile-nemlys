@@ -8,18 +8,21 @@ export function logErrors(e: unknown) {
 }
 
 export function logErrorsWithMessage(e: unknown, message: string | undefined) {
-  if (!__DEV__) Native.captureException(e instanceof Error ? e : new Error(JSON.stringify(e)));
-  console.error(e);
-  void localAnalytics().logEvent('ErrorEncountered', {
-    action: 'ErrorEncountered',
-    error: e?.toString(),
-  });
+  baseLogError(e);
   alert(message || i18n.t(UNEXPECTED_ERROR));
 }
 
 export function logErrorsWithMessageWithoutAlert(e: unknown) {
+  baseLogError(e);
+}
+
+function baseLogError(e: unknown) {
   if (!__DEV__) Native.captureException(e instanceof Error ? e : new Error(JSON.stringify(e)));
   console.error(e);
+  void localAnalytics().logEvent('ErrorEncountered', {
+    action: 'ErrorEncountered',
+    error: e instanceof Error ? e : new Error(JSON.stringify(e)),
+  });
 }
 
 export class UserDoesNotExistError extends Error {}

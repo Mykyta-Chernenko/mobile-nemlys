@@ -88,7 +88,7 @@ export const retrieveNotificationAccess = async (
           userId: userId,
         });
       } else if (finalStatus === DENIED_NOTIFICATION_STATUS) {
-        void localAnalytics().logEvent(`${screenName}}NotificationAccessDeclined`, {
+        void localAnalytics().logEvent(`${screenName}NotificationAccessDeclined`, {
           screen: screenName,
           action: 'User declined reminder notification access',
           userId: userId,
