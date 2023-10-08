@@ -66,7 +66,10 @@ export default function ({
       'OnDateNotification',
       setLoading,
     );
-    navigation.navigate('OnDateNewLevel', { withPartner });
+    navigation.navigate('OnDateNewLevel', {
+      withPartner,
+      refreshTimeStamp: new Date().toISOString(),
+    });
   };
   const handleDecline = () => {
     void saveShowedNotificaiton();
@@ -76,7 +79,10 @@ export default function ({
       userId: authContext.userId,
       confirm: false,
     });
-    navigation.navigate('OnDateNewLevel', { withPartner });
+    navigation.navigate('OnDateNewLevel', {
+      withPartner,
+      refreshTimeStamp: new Date().toISOString(),
+    });
   };
 
   return loading ? (

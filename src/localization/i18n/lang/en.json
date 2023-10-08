@@ -92,6 +92,10 @@
     "button": "Schedule a call"
   },
   "date": {
+    "reminder":{
+      "title": "Time to Connect with Partner",
+      "body": "Fun? Deep? Intimate? Choose and Discuss topics together"
+    },
     "generating_questions_error": "Sorry, our AI cannot generate these questions, try another category or topic",
     "notification": {
       "challenge": "Challenge",

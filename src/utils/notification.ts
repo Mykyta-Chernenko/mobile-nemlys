@@ -1,49 +1,65 @@
 import { supabase } from '@app/api/initSupabase';
 import { APINotification, InsertAPINotification, SupabaseAnswer } from '@app/types/api';
-import { NOTIFICATION_IDENTIFIERS } from '@app/types/domain';
 import * as Notifications from 'expo-notifications';
 import { logErrors, logErrorsWithMessage } from './errors';
 import { Platform } from 'react-native';
 import { isDevice } from 'expo-device';
 import { DENIED_NOTIFICATION_STATUS, GRANTED_NOTIFICATION_STATUS } from '@app/utils/constants';
 import { localAnalytics } from './analytics';
-export async function scheduleMeetingNotification(
+import { NotificationTriggerInput } from 'expo-notifications';
+export async function createNewNotification(
   title: string,
-  reminderTime: Date,
+  body: string,
+  trigger: NotificationTriggerInput,
   identifier: string,
+  screen: string,
 ) {
-  const notificationId = await Notifications.scheduleNotificationAsync({
-    content: {
-      title,
-    },
-    trigger: reminderTime,
-  });
-  const newNotification: InsertAPINotification = {
-    identifier,
-    expo_notification_id: notificationId,
-  };
-  const res = await supabase.from('notification').insert(newNotification);
-  if (res.error) {
-    logErrors(res.error);
+  const { status } = await Notifications.getPermissionsAsync();
+  if (status === GRANTED_NOTIFICATION_STATUS) {
+    const notificationId = await Notifications.scheduleNotificationAsync({
+      content: {
+        title,
+        body,
+        data: { screen },
+      },
+      trigger,
+    });
+    const newNotification: InsertAPINotification = {
+      identifier,
+      expo_notification_id: notificationId,
+    };
+    const res = await supabase.from('notification').insert(newNotification);
+
+    if (res.error) {
+      logErrors(res.error);
+    }
   }
 }
 
-export async function removeOldMeetingNotifications(coupleSetId: number) {
-  const identifiers = [
-    NOTIFICATION_IDENTIFIERS.DATE_SOON + coupleSetId.toString(),
-    NOTIFICATION_IDENTIFIERS.SCHEDULE_DATE + coupleSetId.toString(),
-  ];
-  const notifications: SupabaseAnswer<APINotification[]> = await supabase
+export async function removeOldNotification(identifier: string) {
+  const notification: SupabaseAnswer<APINotification[]> = await supabase
     .from('notification')
     .select('id, created_at, updated_at, identifier, expo_notification_id')
-    .in('identifier', identifiers);
-  if (notifications.error) {
-    logErrors(notifications.error);
+    .eq('identifier', identifier);
+  if (notification.error) {
+    logErrors(notification.error);
     return;
   }
-  for (const n of notifications.data) {
-    await Notifications.cancelScheduledNotificationAsync(n.expo_notification_id);
+  for (const d of notification.data) {
+    await Notifications.cancelScheduledNotificationAsync(d.expo_notification_id);
+    await supabase.from('notification').delete().eq('identifier', identifier);
   }
+}
+
+export async function recreateNotification(
+  identifier: string,
+  screen: string,
+  title: string,
+  body: string,
+  trigger: NotificationTriggerInput,
+) {
+  await removeOldNotification(identifier);
+  await createNewNotification(title, body, trigger, identifier, screen);
 }
 
 export const retrieveNotificationAccess = async (

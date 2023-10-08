@@ -25,7 +25,7 @@ export type MainStackParamList = {
     withPartner: boolean;
     refreshTimeStamp: string | undefined;
   };
-  OnDateNewLevel: { withPartner: boolean };
+  OnDateNewLevel: { withPartner: boolean; refreshTimeStamp: string | undefined };
   OnDateNotification: { withPartner: boolean };
 
   Diary: { refreshTimeStamp: string | undefined };

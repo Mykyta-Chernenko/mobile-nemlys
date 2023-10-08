@@ -275,7 +275,10 @@ export default function ({
     if (shouldShowNotificationBanner) {
       navigation.navigate('OnDateNotification', { withPartner });
     } else {
-      navigation.navigate('OnDateNewLevel', { withPartner });
+      navigation.navigate('OnDateNewLevel', {
+        withPartner,
+        refreshTimeStamp: new Date().toISOString(),
+      });
     }
   };
   const getShouldShowNotificationBanner = async () => {

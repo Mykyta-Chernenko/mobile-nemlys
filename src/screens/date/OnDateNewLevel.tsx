@@ -12,21 +12,38 @@ import { localAnalytics } from '@app/utils/analytics';
 import { AuthContext } from '@app/provider/AuthProvider';
 import { Loading } from '../../components/utils/Loading';
 import { NativeStackScreenProps } from '@react-navigation/native-stack';
+import { NOTIFICATION_IDENTIFIERS } from '@app/types/domain';
+import { recreateNotification } from '@app/utils/notification';
 
 export default function ({
   route,
   navigation,
 }: NativeStackScreenProps<MainStackParamList, 'OnDateNewLevel'>) {
-  const { withPartner } = route.params;
+  const { withPartner, refreshTimeStamp } = route.params;
   const { theme } = useTheme();
   const [dateCount, setDateCount] = useState(0);
   const [loading, setLoading] = useState(false);
 
   const authContext = useContext(AuthContext);
 
+  const setupDateNotification = async () => {
+    const identifier = NOTIFICATION_IDENTIFIERS.DATE + authContext.userId!;
+    await recreateNotification(
+      identifier,
+      'Home',
+      i18n.t('date.reminder.title'),
+      i18n.t('date.reminder.body'),
+      {
+        seconds: 60 * 60 * 24 * 3, // every 3 days
+        repeats: true,
+      },
+    );
+  };
+
   useEffect(() => {
     const f = async () => {
       setLoading(true);
+      void setupDateNotification();
       const { error, count } = await supabase
         .from('date')
         .select('*', { count: 'exact' })
@@ -50,10 +67,11 @@ export default function ({
           userId: authContext.userId,
         });
       }
+
       setLoading(false);
     };
     void f();
-  }, [authContext.userId, withPartner]);
+  }, [authContext.userId, withPartner, refreshTimeStamp]);
 
   const handleHomePress = () => {
     setLoading(true);
