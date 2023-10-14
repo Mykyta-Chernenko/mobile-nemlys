@@ -30,6 +30,7 @@ export default function (props: { onCreatedRecording: () => void }) {
       const { recording } = await Audio.Recording.createAsync(
         Audio.RecordingOptionsPresets.HIGH_QUALITY,
       );
+
       setRecording(recording);
       console.log('Recording started');
     } catch (err) {

@@ -1,10 +1,10 @@
 import React from 'react';
 import { TextProps } from '@rneui/themed';
-import { TextStyle, Text, Dimensions } from 'react-native';
+import { TextStyle, Dimensions, Animated } from 'react-native';
 export const REGULAR_FONT_FAMILY = 'Epilogue-Regular';
 export const BOLD_FONT_FAMILY = 'Epilogue-Bold';
 export const SEMIBOLD_FONT_FAMILY = 'Epilogue-SemiBold';
-export const FontText = ({ style, h1, h2, h3, h4, ...props }: TextProps) => {
+export const AnimatedFontText = ({ style, h1, h2, h3, h4, ...props }: TextProps) => {
   const windowWidth = Dimensions.get('window').width;
   const windowHeight = Dimensions.get('window').height;
 
@@ -16,7 +16,6 @@ export const FontText = ({ style, h1, h2, h3, h4, ...props }: TextProps) => {
   } else if (windowWidth * windowHeight > 290000) {
     screenType = 'm';
   }
-  screenType = 'l';
   const fontWeight = (style as TextStyle)?.fontWeight || '600';
   let fontFamily = REGULAR_FONT_FAMILY;
   switch (fontWeight) {
@@ -71,5 +70,10 @@ export const FontText = ({ style, h1, h2, h3, h4, ...props }: TextProps) => {
   if (h4) {
     fontSize = fontBySize[screenType].h4;
   }
-  return <Text style={[{ fontSize, fontWeight: '600', fontFamily }, style]} {...props}></Text>;
+  return (
+    <Animated.Text
+      style={[{ fontSize, fontWeight: '600', fontFamily }, style]}
+      {...props}
+    ></Animated.Text>
+  );
 };

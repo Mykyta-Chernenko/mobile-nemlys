@@ -3,7 +3,7 @@ import { supabase } from '@app/api/initSupabase';
 import { Linking } from 'react-native';
 import { SupabaseUser } from '@app/types/api';
 import { logErrors } from '@app/utils/errors';
-import { analyticsIdentifyUser } from '@app/utils/analytics';
+import { analyticsIdentifyUser, localAnalytics } from '@app/utils/analytics';
 
 export type HandleUser = (user: SupabaseUser, exists: boolean) => Promise<void>;
 export const ANON_USER = 'anon';
@@ -114,9 +114,12 @@ const AuthProvider = (props: Props) => {
       const {
         data: { subscription: authListener },
       } = supabase.auth.onAuthStateChange((event, session) => {
-        console.log(`Supabase auth event: ${event}`);
         setIsSignedIn(!!session);
         setUserId(session?.user.id || ANON_USER);
+        localAnalytics().logEvent('SupabaseAuthEvent', {
+          event,
+          userId: session?.user.id || userId || ANON_USER,
+        });
       });
       return () => {
         console.log('Unsubsribing fromm supabase onAuthStateChange events');

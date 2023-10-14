@@ -1,8 +1,6 @@
 import { useTheme } from '@rneui/themed';
 import React, { useContext, useEffect, useState } from 'react';
 import { View } from 'react-native';
-import Mic from '@app/icons/mic';
-import { TouchableWithoutFeedback } from 'react-native-gesture-handler';
 import FakeRecordingButtonTolltip from './FakeRecordingButtonTolltip';
 import { i18n } from '@app/localization/i18n';
 import { supabase } from '@app/api/initSupabase';
@@ -11,46 +9,8 @@ import { AuthContext } from '@app/provider/AuthProvider';
 import FakeRecordingButtonPopup from './FakeRecordingButtonPopup';
 import { localAnalytics } from '@app/utils/analytics';
 import { SupabaseAnswer } from '@app/types/api';
-const BackgroundLayer = ({
-  width,
-  height,
-  color,
-  rotate,
-  zIndex,
-  x,
-  y,
-}: {
-  width: number;
-  height: number;
-  color: string;
-  rotate: number;
-  zIndex: number;
-  x: number;
-  y: number;
-}) => (
-  <View
-    style={{
-      position: 'absolute',
-      width,
-      height,
-      justifyContent: 'center',
-      alignItems: 'center',
-      zIndex,
-      left: x,
-      top: y,
-    }}
-  >
-    <View
-      style={{
-        width,
-        height,
-        borderRadius: 50,
-        backgroundColor: color,
-        transform: [{ rotate: `${rotate}deg` }],
-      }}
-    ></View>
-  </View>
-);
+import { RecordingButton } from './RecordingButton';
+
 export default function ({
   dateCount,
   questionIndex,
@@ -112,49 +72,7 @@ export default function ({
           text={i18n.t('date.recording_text')}
         ></FakeRecordingButtonTolltip>
       )}
-      <View>
-        <BackgroundLayer
-          zIndex={1}
-          width={68}
-          height={87.44}
-          color={theme.colors.primary}
-          rotate={16.8357}
-          x={3}
-          y={-8.7}
-        />
-        <BackgroundLayer
-          zIndex={2}
-          width={72}
-          height={83.45}
-          color={theme.colors.warning}
-          rotate={60.5179}
-          x={3}
-          y={-5}
-        />
-        <BackgroundLayer
-          zIndex={3}
-          width={68}
-          height={83}
-          color={theme.colors.error}
-          rotate={110.934}
-          x={5}
-          y={-5}
-        />
-        <TouchableWithoutFeedback containerStyle={{ zIndex: 4 }} onPress={() => void handlePress()}>
-          <View
-            style={{
-              backgroundColor: theme.colors.white,
-              borderRadius: 50,
-              height: 72,
-              width: 72,
-              justifyContent: 'center',
-              alignItems: 'center',
-            }}
-          >
-            <Mic></Mic>
-          </View>
-        </TouchableWithoutFeedback>
-      </View>
+      <RecordingButton handlePress={() => void handlePress()}></RecordingButton>
     </View>
   );
 }

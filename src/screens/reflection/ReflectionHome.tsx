@@ -5,9 +5,6 @@ import { AuthContext } from '@app/provider/AuthProvider';
 import { ScrollView, View } from 'react-native';
 import { useTheme } from '@rneui/themed';
 import { FontText } from '@app/components/utils/FontText';
-import QuestionTriangel from '@app/icons/question_triangle';
-import StorySelected from '@app/icons/story_selected';
-import Profile from '@app/icons/profile';
 import { i18n } from '@app/localization/i18n';
 import { Image } from 'react-native';
 import { TouchableOpacity } from 'react-native';
@@ -28,6 +25,7 @@ import { PrimaryButton } from '@app/components/buttons/PrimaryButtons';
 import { shuffle } from '../../utils/array';
 import ReflectionExplanation from '@app/components/reflection/ReflectionExplanation';
 import { getDateFromString } from '@app/utils/date';
+import Menu from '@app/components/menu/Menu';
 export default function ({
   route,
   navigation,
@@ -475,70 +473,7 @@ export default function ({
               height: 70,
             }}
           >
-            <View
-              style={{
-                flex: 1,
-                backgroundColor: theme.colors.white,
-                borderTopLeftRadius: 24,
-                borderTopRightRadius: 24,
-                flexDirection: 'row',
-                justifyContent: 'space-around',
-                paddingTop: '5%',
-              }}
-            >
-              <TouchableOpacity
-                style={{
-                  flexDirection: 'column',
-                  alignItems: 'center',
-                }}
-                onPress={() => {
-                  void localAnalytics().logEvent('MenuHomeClicked', {
-                    screen: 'Menu',
-                    action: 'HomeClicked',
-                    userId: authContext.userId,
-                  });
-                  navigation.navigate('Home', {
-                    refreshTimeStamp: new Date().toISOString(),
-                  });
-                }}
-              >
-                <QuestionTriangel height={32} width={32}></QuestionTriangel>
-                <FontText style={{ marginTop: 5, color: theme.colors.grey3 }}>
-                  {i18n.t('home.menu.discuss')}
-                </FontText>
-              </TouchableOpacity>
-
-              <View
-                style={{
-                  flexDirection: 'column',
-                  alignItems: 'center',
-                }}
-              >
-                <StorySelected height={32} width={32}></StorySelected>
-                <FontText style={{ marginTop: 5 }}>{i18n.t('home.menu.reflect')}</FontText>
-              </View>
-              <TouchableOpacity
-                style={{
-                  flexDirection: 'column',
-                  alignItems: 'center',
-                }}
-                onPress={() => {
-                  void localAnalytics().logEvent('MenuProfileClicked', {
-                    screen: 'Menu',
-                    action: 'ProfileClicked',
-                    userId: authContext.userId,
-                  });
-                  navigation.navigate('Profile', {
-                    refreshTimeStamp: new Date().toISOString(),
-                  });
-                }}
-              >
-                <Profile height={32} width={32}></Profile>
-                <FontText style={{ marginTop: 5, color: theme.colors.grey3 }}>
-                  {i18n.t('home.menu.profile')}
-                </FontText>
-              </TouchableOpacity>
-            </View>
+            <Menu></Menu>
           </View>
         </View>
       </SafeAreaView>

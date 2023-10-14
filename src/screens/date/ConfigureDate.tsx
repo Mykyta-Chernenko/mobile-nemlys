@@ -63,9 +63,9 @@ export default function ({
 
   const goBack = () => {
     if (currentStep === 1) {
-      void localAnalytics().logEvent('ConfigureDateGoHome', {
+      void localAnalytics().logEvent('ConfigureDateGoBack', {
         screen: 'ConfigureDate',
-        action: 'GoHomePressed',
+        action: 'GoBackPressed',
         userId: authContext.userId,
       });
       navigation.navigate('DateIsWithPartner', { job });

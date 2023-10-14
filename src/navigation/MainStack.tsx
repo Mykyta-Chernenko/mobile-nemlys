@@ -21,6 +21,9 @@ import ReflectionHome from '@app/screens/reflection/ReflectionHome';
 import WriteReflection from '@app/screens/reflection/WriteReflection';
 import FinishedWriting from '@app/screens/reflection/FinishedWriting';
 import OnDateNotification from '@app/screens/date/OnDateNotification';
+import PremiumOffer from '@app/screens/premium/PremiumOffer';
+import PremiumSuccess from '@app/screens/premium/PremiumSuccess';
+import InterviewRequest from '@app/screens/utils/InterviewRequest';
 
 const MainStack = createNativeStackNavigator();
 const Main = () => {
@@ -78,6 +81,21 @@ const Main = () => {
         options={{ animation: 'slide_from_right' }}
         name={'OnDateNotification'}
         component={OnDateNotification}
+      />
+      <MainStack.Screen
+        options={{ animation: 'slide_from_right' }}
+        name={'PremiumOffer'}
+        component={PremiumOffer}
+      />
+      <MainStack.Screen
+        options={{ animation: 'slide_from_right' }}
+        name={'PremiumSuccess'}
+        component={PremiumSuccess}
+      />
+      <MainStack.Screen
+        options={{ animation: 'slide_from_right' }}
+        name={'InterviewRequest'}
+        component={InterviewRequest}
       />
       <MainStack.Screen
         options={{ animation: 'slide_from_right' }}

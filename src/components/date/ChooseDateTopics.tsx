@@ -1,9 +1,9 @@
 import React, { useContext, useEffect, useState } from 'react';
 import { useTheme } from '@rneui/themed';
-import { View, StyleSheet, TouchableOpacity } from 'react-native';
+import { View, StyleSheet, TouchableOpacity, ScrollView } from 'react-native';
 import { i18n } from '@app/localization/i18n';
 import { FontText } from '../utils/FontText';
-import { ScrollView } from 'react-native-gesture-handler';
+
 import { PrimaryButton } from '../buttons/PrimaryButtons';
 import { localAnalytics } from '@app/utils/analytics';
 import { AuthContext } from '@app/provider/AuthProvider';

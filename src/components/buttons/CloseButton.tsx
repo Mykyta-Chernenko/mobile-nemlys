@@ -17,10 +17,10 @@ export const CloseButton = ({
       backgroundColor = styleTheme.colors.grey1;
       break;
     case 'black':
-      backgroundColor = 'rgba(255, 255, 255, 0.1)';
+      backgroundColor = 'rgba(255,255,255,0.1)';
       break;
   }
-  const whiteSource = require('../../../assets/images/close_black.png');
+  const whiteSource = require('../../../assets/images/close_white.png');
   const blackSource = require('../../../assets/images/close_black.png');
   const source = theme === 'black' ? whiteSource : blackSource;
 

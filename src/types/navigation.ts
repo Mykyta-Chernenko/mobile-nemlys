@@ -9,7 +9,7 @@ export type MainStackParamList = {
   OnboardingReflection: undefined;
   Analyzing: undefined;
   SkipOnboardingReflection: undefined;
-  Home: { refreshTimeStamp: string | undefined };
+  Home: { refreshTimeStamp: string | undefined; showInterview?: boolean };
   ReflectionHome: { refreshTimeStamp: string | undefined };
   WriteReflection: { reflectionId: number; question: string; answer: string | undefined };
   FinishedWriting: undefined;
@@ -27,6 +27,12 @@ export type MainStackParamList = {
   };
   OnDateNewLevel: { withPartner: boolean; refreshTimeStamp: string | undefined };
   OnDateNotification: { withPartner: boolean };
+  PremiumOffer: { refreshTimeStamp: string | undefined };
+  PremiumSuccess: { state: 'premium_started' | 'trial_started' };
+
+  InterviewRequest: {
+    refreshTimeStamp: string | undefined;
+  };
 
   Diary: { refreshTimeStamp: string | undefined };
   DiaryEntry: { id: number };

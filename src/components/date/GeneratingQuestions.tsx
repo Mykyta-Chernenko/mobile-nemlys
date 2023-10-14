@@ -12,6 +12,7 @@ import { APIUserProfile, SupabaseAnswer } from '@app/types/api';
 import { JobSlug } from '@app/types/domain';
 import { useNavigation } from '@react-navigation/native';
 import { MainNavigationProp } from '@app/types/navigation';
+import { sleep } from '@app/utils/date';
 
 export default function (props: {
   withPartner: boolean;
@@ -79,15 +80,14 @@ export default function (props: {
         logErrors(dateReponse.error);
         return;
       }
-      const dateId = dateReponse.data.id;
 
+      const dateId = dateReponse.data.id;
       for (let i = 0; i < 3; i++) {
         const request = supabase.functions.invoke('generate-question', {
           body: { date_id: dateId },
         });
 
-        const loadTime = new Promise((resolve) => setTimeout(() => resolve(1), 3000));
-        const [res, _] = await Promise.all([request, loadTime]);
+        const [res, _] = await Promise.all([request, sleep(3000)]);
         if (!res.error) {
           break;
         }

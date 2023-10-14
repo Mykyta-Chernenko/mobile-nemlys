@@ -14,6 +14,7 @@ import { Loading } from '../../components/utils/Loading';
 import { NativeStackScreenProps } from '@react-navigation/native-stack';
 import { NOTIFICATION_IDENTIFIERS } from '@app/types/domain';
 import { recreateNotification } from '@app/utils/notification';
+import { getPremiumDetails } from '@app/api/premium';
 
 export default function ({
   route,
@@ -23,6 +24,7 @@ export default function ({
   const { theme } = useTheme();
   const [dateCount, setDateCount] = useState(0);
   const [loading, setLoading] = useState(false);
+  const [navigateToPremiumScreen, setNavigateToPremiumScreen] = useState(false);
 
   const authContext = useContext(AuthContext);
 
@@ -54,6 +56,36 @@ export default function ({
         return;
       }
       setDateCount(count || 0);
+      try {
+        const { premiumState, totalDateCount, introductionSetCounts, todayDateCount } =
+          await getPremiumDetails(authContext.userId!);
+
+        // the user has just finished the introduction sets, prompt trial first time
+        if (premiumState === 'free' && totalDateCount === introductionSetCounts) {
+          setNavigateToPremiumScreen(true);
+          void localAnalytics().logEvent('NewLevelNavigateToPremiumTrialFirst', {
+            screen: 'NewLevel',
+            action: 'NavigateToPremiumTrialFirst',
+            userId: authContext.userId,
+          });
+        }
+        // the user has just finished the daily sets, prompt trial every 3 days on average
+        else if (
+          premiumState === 'free' &&
+          todayDateCount >= todayDateCount &&
+          Math.random() < 1 / 3
+        ) {
+          void localAnalytics().logEvent('NewLevelNavigateToPremiumTrial', {
+            screen: 'NewLevel',
+            action: 'NavigateToPremiumTrial',
+            userId: authContext.userId,
+          });
+          setNavigateToPremiumScreen(true);
+        }
+      } catch (error) {
+        logErrors(error);
+      }
+
       if ((count || 0) === 1 && withPartner) {
         void localAnalytics().logEvent('NewLevelFirstDateFinished', {
           screen: 'NewLevel',
@@ -81,8 +113,11 @@ export default function ({
       action: 'NextClicked',
       userId: authContext.userId,
     });
-
-    navigation.navigate('Home', { refreshTimeStamp: new Date().toISOString() });
+    if (navigateToPremiumScreen) {
+      navigation.navigate('PremiumOffer', { refreshTimeStamp: new Date().toISOString() });
+    } else {
+      navigation.navigate('Home', { refreshTimeStamp: new Date().toISOString() });
+    }
     setLoading(false);
   };
   return loading ? (

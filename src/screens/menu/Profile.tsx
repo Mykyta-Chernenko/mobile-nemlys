@@ -8,15 +8,12 @@ import { AuthContext } from '@app/provider/AuthProvider';
 import { Alert, SafeAreaView, View } from 'react-native';
 import { useTheme } from '@rneui/themed';
 import { FontText } from '@app/components/utils/FontText';
-import QuestionTriangel from '@app/icons/question_triangle';
-import Story from '@app/icons/story';
-import ProfileSelected from '@app/icons/profile_selected';
 import ProfileBuddyCorner from '@app/icons/profile_buddy_corner';
 import { i18n } from '@app/localization/i18n';
 import { localAnalytics } from '@app/utils/analytics';
 import { logout } from '../settings/Settings';
-import { TouchableOpacity } from 'react-native';
 import { SecondaryButton } from '@app/components/buttons/SecondaryButton';
+import Menu from '@app/components/menu/Menu';
 
 export default function ({
   route,
@@ -182,73 +179,10 @@ export default function ({
             style={{
               backgroundColor: theme.colors.grey1,
               marginHorizontal: -padding,
-              height: '10%',
+              height: 70,
             }}
           >
-            <View
-              style={{
-                flex: 1,
-                backgroundColor: theme.colors.white,
-                borderTopLeftRadius: 24,
-                borderTopRightRadius: 24,
-                flexDirection: 'row',
-                justifyContent: 'space-around',
-                paddingTop: '5%',
-              }}
-            >
-              <TouchableOpacity
-                style={{
-                  flexDirection: 'column',
-                  alignItems: 'center',
-                }}
-                onPress={() => {
-                  void localAnalytics().logEvent('MenuReflectClicked', {
-                    screen: 'Menu',
-                    action: 'HomeClicked',
-                    userId: authContext.userId,
-                  });
-                  navigation.navigate('Home', {
-                    refreshTimeStamp: new Date().toISOString(),
-                  });
-                }}
-              >
-                <QuestionTriangel height={32} width={32}></QuestionTriangel>
-                <FontText style={{ marginTop: 5, color: theme.colors.grey3 }}>
-                  {i18n.t('home.menu.discuss')}
-                </FontText>
-              </TouchableOpacity>
-
-              <TouchableOpacity
-                style={{
-                  flexDirection: 'column',
-                  alignItems: 'center',
-                }}
-                onPress={() => {
-                  void localAnalytics().logEvent('MenuReflectClicked', {
-                    screen: 'Menu',
-                    action: 'ReflectClicked',
-                    userId: authContext.userId,
-                  });
-                  navigation.navigate('ReflectionHome', {
-                    refreshTimeStamp: new Date().toISOString(),
-                  });
-                }}
-              >
-                <Story height={32} width={32}></Story>
-                <FontText style={{ marginTop: 5, color: theme.colors.grey3 }}>
-                  {i18n.t('home.menu.reflect')}
-                </FontText>
-              </TouchableOpacity>
-              <View
-                style={{
-                  flexDirection: 'column',
-                  alignItems: 'center',
-                }}
-              >
-                <ProfileSelected height={32} width={32}></ProfileSelected>
-                <FontText style={{ marginTop: 5 }}>{i18n.t('home.menu.profile')}</FontText>
-              </View>
-            </View>
+            <Menu></Menu>
           </View>
         </View>
       </SafeAreaView>

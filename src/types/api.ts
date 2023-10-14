@@ -81,3 +81,13 @@ export class APIReflectionQuestionAnswer extends ApiEntry {
   answer: string;
   reflection_question: any;
 }
+
+export class APIUserPremium extends ApiEntry {
+  introduction_sets_count: number;
+  daily_sets_count: number;
+  is_trial: boolean;
+  trial_start?: string;
+  trial_finish?: string;
+  is_premium: boolean;
+  premium_start?: string;
+}

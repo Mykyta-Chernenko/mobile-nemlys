@@ -1,8 +1,7 @@
 import { useTheme } from '@rneui/themed';
 import React, { useRef, useEffect } from 'react';
-import { Text, Animated } from 'react-native';
+import { Text, Animated, TouchableWithoutFeedback } from 'react-native';
 import OrangeArrowDown from '@app/icons/orange_arrow_down';
-import { TouchableWithoutFeedback } from 'react-native-gesture-handler';
 
 const FakeRecordingButtonTolltip = ({ text, onPress }: { text: string; onPress: () => void }) => {
   const { theme } = useTheme();

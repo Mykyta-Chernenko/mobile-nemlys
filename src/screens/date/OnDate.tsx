@@ -27,6 +27,10 @@ import * as ScreenCapture from 'expo-screen-capture';
 import FakeRecordButton from '@app/components/date/FakeRecordButton';
 import OnDateStopPopup from '@app/components/date/OnDateStopPopup';
 import * as Sharing from 'expo-sharing';
+import { retrieveNotificationAccess } from '@app/utils/notification';
+import * as Notifications from 'expo-notifications';
+import { sleep } from '@app/utils/date';
+
 export default function ({
   route,
   navigation,
@@ -243,7 +247,11 @@ export default function ({
       logErrors(userProfileData.error);
       return;
     }
-    if ((feedback || 0) == 4 && (!userProfileData.data.showed_rating || dateCount % 5 === 0)) {
+    if (
+      dateCount > 0 &&
+      (feedback || 0) == 4 &&
+      (!userProfileData.data.showed_rating || dateCount % 5 === 0)
+    ) {
       if (await StoreReview.hasAction()) {
         await StoreReview.requestReview();
         const updateProfile = await supabase
@@ -281,6 +289,15 @@ export default function ({
       });
     }
   };
+
+  const [notificationStatus, setNotificationStatus] = useState<string | undefined>(undefined);
+  useEffect(() => {
+    const getCurrentToken = async () => {
+      const { status } = await Notifications.getPermissionsAsync();
+      setNotificationStatus(status);
+    };
+    void getCurrentToken();
+  }, []);
   const getShouldShowNotificationBanner = async () => {
     const profileResponse: SupabaseAnswer<{
       id: number;
@@ -298,12 +315,21 @@ export default function ({
     let hasToken = false;
     if (Platform.OS === 'ios' && profileResponse.data.ios_expo_token) {
       hasToken = true;
-    } else if (Platform.OS === 'android' && profileResponse.data.android_expo_token) {
+    } else if (Platform.OS === 'android') {
+      // get android notification token automatically if don't exit yet
+      if (!profileResponse.data.android_expo_token) {
+        await retrieveNotificationAccess(
+          authContext.userId,
+          notificationStatus,
+          'NewReflection',
+          setLoading,
+        );
+      }
       hasToken = true;
     }
     return (
       !hasToken &&
-      (dateCount === 0 ||
+      (dateCount === 1 ||
         dateCount === 4 ||
         dateCount === 9 ||
         dateCount === 14 ||
@@ -332,7 +358,8 @@ export default function ({
       userId: authContext.userId,
     });
     await handleFinishDateButtonFinal(undefined);
-    navigation.navigate('Home', {
+    navigation.navigate('OnDateNewLevel', {
+      withPartner,
       refreshTimeStamp: new Date().toISOString(),
     });
   };
@@ -353,8 +380,7 @@ export default function ({
       questionIndex,
     });
     setIsSharing(true);
-    const loadTime = new Promise((resolve) => setTimeout(() => resolve(1), 100));
-    await loadTime;
+    await sleep(100);
     await shareScreen();
     setIsSharing(false);
   };

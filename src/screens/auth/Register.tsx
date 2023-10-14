@@ -21,6 +21,7 @@ import { FontText } from '@app/components/utils/FontText';
 import { logErrors, logErrorsWithMessage } from '@app/utils/errors';
 import { localAnalytics } from '@app/utils/analytics';
 import StyledInput from '@app/components/utils/StyledInput';
+import { sleep } from '@app/utils/date';
 export function handleUserAfterSignUp(
   provider: string,
 ): (user: SupabaseUser, exists: boolean) => Promise<void> {
@@ -45,6 +46,7 @@ export function handleUserAfterSignUp(
       if (error) {
         throw error;
       }
+      console.log(data);
       const userProfile: InsertAPIUserProfile = {
         couple_id: data.id,
         user_id: user.id,
@@ -59,8 +61,8 @@ export function handleUserAfterSignUp(
       if (profileError) {
         throw profileError;
       }
-      const loadTime = new Promise((resolve) => setTimeout(() => resolve(1), 200));
-      await loadTime;
+      console.log('profile inserted');
+      await sleep(200);
     }
   };
 }
@@ -209,7 +211,7 @@ export default function ({
           >
             {i18n.t('or')}
           </FontText>
-          <OAuth handleUser={handleUserAfterSignUp} />
+          <OAuth handleUser={handleUserAfterSignUp} setLoading={setLoading} />
 
           <View
             style={{

@@ -5,11 +5,10 @@ import * as FileSystem from 'expo-file-system';
 import { logErrorsWithMessageWithoutAlert } from '@app/utils/errors';
 import { AuthContext } from '@app/provider/AuthProvider';
 import { Buffer } from 'buffer';
-import moment from 'moment';
-import { TIMEZONE } from '@app/utils/constants';
 import { supabase } from '@app/api/initSupabase';
 import { i18n } from '@app/localization/i18n';
 import { Loading } from '../utils/Loading';
+import { getNow } from '@app/utils/date';
 
 export default function (props: { bucket: string; onRecorded: (url: string) => void }) {
   const authContext = useContext(AuthContext);
@@ -53,7 +52,7 @@ export default function (props: { bucket: string; onRecorded: (url: string) => v
         'base64',
       );
 
-      const timestamp = moment().utcOffset(TIMEZONE).valueOf().toString();
+      const timestamp = getNow().valueOf().toString();
       const name =
         authContext.userId! +
         '/' +

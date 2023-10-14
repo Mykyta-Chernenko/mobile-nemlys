@@ -1,6 +1,6 @@
 import { useTheme } from '@rneui/themed';
 import { startAsync } from 'expo-auth-session';
-import React, { useContext } from 'react';
+import React, { useContext, useState } from 'react';
 import { Platform, View } from 'react-native';
 import GoogleIcon from '@app/icons/google';
 import AppleIcon from '@app/icons/apple';
@@ -29,10 +29,12 @@ export const OAuth = ({
   setLoading: (isLoadingL: boolean) => void;
 }) => {
   const { theme } = useTheme();
+  const [localloading, setLocalLoading] = useState(false);
   const auth = useContext(AuthContext);
 
   const onPress = async (provider: Provider) => {
     setLoading(true);
+    setLocalLoading(true);
     void localAnalytics().logEvent('LoginInitiated', {
       screen: 'OAuth',
       action: 'OAuth button clicked',
@@ -102,6 +104,7 @@ export const OAuth = ({
         window = oldWindow;
       }
     } finally {
+      setLocalLoading(false);
       setLoading(false);
     }
   };
@@ -112,6 +115,7 @@ export const OAuth = ({
         buttonStyle={{
           marginTop: 10,
         }}
+        disabled={localloading}
       >
         <View
           style={{
@@ -141,6 +145,7 @@ export const OAuth = ({
       </PrimaryButton>
       <SecondaryButton
         onPress={() => void onPress('google')}
+        disabled={localloading}
         buttonStyle={{ marginTop: 10, borderColor: theme.colors.grey3, borderWidth: 1 }}
       >
         <GoogleIcon height="20" width="20" />

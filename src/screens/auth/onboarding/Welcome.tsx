@@ -9,8 +9,8 @@ import { ANON_USER } from '@app/provider/AuthProvider';
 import { localAnalytics } from '@app/utils/analytics';
 import { useTheme } from '@rneui/themed';
 import { SafeAreaView } from 'react-native-safe-area-context';
-import { ScrollView } from 'react-native-gesture-handler';
 import { isSmallDevice } from '@app/utils/size';
+import { ScrollView } from 'react-native-gesture-handler';
 
 export default function ({ navigation }: NativeStackScreenProps<AuthStackParamList, 'Welcome'>) {
   const { theme } = useTheme();

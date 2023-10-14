@@ -26,7 +26,6 @@ import { handleUserAfterSignUp } from './Register';
 import { KEYBOARD_BEHAVIOR } from '@app/utils/constants';
 import StyledInput from '@app/components/utils/StyledInput';
 
-import { Loading } from '@app/components/utils/Loading';
 WebBrowser.maybeCompleteAuthSession();
 
 export default function ({ navigation }: NativeStackScreenProps<AuthStackParamList, 'Login'>) {
@@ -57,7 +56,7 @@ export default function ({ navigation }: NativeStackScreenProps<AuthStackParamLi
       });
       if (error2) {
         if (error2.message === 'User already registered') {
-          logErrorsWithMessage(error, error.message);
+          alert(i18n.t('login.invalid_username'));
         } else if (error2.message === 'Password should be at least 6 characters') {
           alert(i18n.t('login.password_is_too_short'));
         } else {
@@ -137,9 +136,7 @@ export default function ({ navigation }: NativeStackScreenProps<AuthStackParamLi
                 </FontText>
               </View>
 
-              {loading ? (
-                <Loading />
-              ) : !isContinueWithEmail ? (
+              {!isContinueWithEmail ? (
                 <View
                   style={{
                     paddingHorizontal: 15,
@@ -152,6 +149,7 @@ export default function ({ navigation }: NativeStackScreenProps<AuthStackParamLi
                     buttonStyle={{
                       marginTop: 10,
                     }}
+                    disabled={loading}
                     onPress={() => {
                       void localAnalytics().logEvent('LoginInitiated', {
                         screen: 'Login',
@@ -199,7 +197,7 @@ export default function ({ navigation }: NativeStackScreenProps<AuthStackParamLi
                     onPress={() => {
                       void login();
                     }}
-                    disabled={!email || !password}
+                    disabled={loading || !email || !password}
                   />
                   <View
                     style={{

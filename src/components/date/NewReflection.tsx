@@ -85,12 +85,14 @@ export default function ({
       reflection: reflection,
       level: level,
     });
+
     await retrieveNotificationAccess(
       authContext.userId,
       notificationStatus,
       'NewReflection',
       setLoading,
     );
+
     setLoading(true);
     void savedShowed();
     onClose();

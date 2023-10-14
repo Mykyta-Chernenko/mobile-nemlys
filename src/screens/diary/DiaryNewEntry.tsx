@@ -78,9 +78,6 @@ export default function ({
         inputType === 'freewriting'
           ? freewriting.trim()
           : (feelSummary + learntSummary + challengesSummary).trim();
-      // const res = await supabase.functions.invoke('save-diary-entry', {
-      //   body: { text: content, date: moment().utcOffset(TIMEZONE).format('YYYY-MM-DD') },
-      // });
       const res = await supabase.from('diary').insert({
         user_id: authContext.userId,
         text: content,

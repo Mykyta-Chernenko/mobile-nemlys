@@ -73,7 +73,7 @@ export default function ({
                   action: 'Go back pressed',
                   userId: authContext.userId,
                 });
-                navigation.navigate('Home', { refreshTimeStamp: new Date().toISOString() });
+                navigation.navigate('Home', { refreshTimeStamp: undefined });
               }}
             ></GoBackButton>
           </View>
