@@ -4,6 +4,8 @@ import { NativeStackScreenProps } from '@react-navigation/native-stack';
 import { localAnalytics } from '@app/utils/analytics';
 import Reflection from '@app/components/reflection/Reflection';
 import { AuthContext } from '@app/provider/AuthProvider';
+import { NOTIFICATION_IDENTIFIERS } from '@app/types/domain';
+import { removeOldNotification } from '@app/utils/notification';
 export default function ({
   route,
   navigation,
@@ -21,6 +23,10 @@ export default function ({
   };
   const onSave = () => {
     navigation.navigate('FinishedWriting');
+
+    void removeOldNotification(
+      NOTIFICATION_IDENTIFIERS.REFLECTION_AFTER_DATE + authContext.userId!,
+    );
   };
 
   return (

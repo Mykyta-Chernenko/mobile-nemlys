@@ -1,35 +1,16 @@
 import { useTheme } from '@rneui/themed';
-import React, { useContext } from 'react';
+import React from 'react';
 import { Modal, TouchableWithoutFeedback, View } from 'react-native';
 import { CloseButton } from '../buttons/CloseButton';
 import { FontText } from '../utils/FontText';
 import { i18n } from '@app/localization/i18n';
-import { localAnalytics } from '@app/utils/analytics';
 import { PrimaryButton } from '../buttons/PrimaryButtons';
-import { AuthContext } from '@app/provider/AuthProvider';
-export default function ({ onClose }: { onClose: () => void }) {
+export default function ({ onConfirm, onClose }: { onConfirm: () => void; onClose: () => void }) {
   const { theme } = useTheme();
-  const authContext = useContext(AuthContext);
 
-  const onPress = () => {
-    void localAnalytics().logEvent('OnDateRecordPopupWaiting', {
-      screen: 'OnDate',
-      action: 'RecordPopupWaiting',
-      userId: authContext.userId,
-    });
-    onClose();
-  };
-  const onClosePressed = () => {
-    void localAnalytics().logEvent('OnDateRecordPopupClose', {
-      screen: 'OnDate',
-      action: 'RecordPopupClose',
-      userId: authContext.userId,
-    });
-    onClose();
-  };
   return (
     <Modal animationType="none" transparent={true}>
-      <TouchableWithoutFeedback onPress={onClosePressed} style={{ flex: 1 }}>
+      <TouchableWithoutFeedback onPress={onClose} style={{ flex: 1 }}>
         <View
           style={{
             flex: 1,
@@ -51,20 +32,21 @@ export default function ({ onClose }: { onClose: () => void }) {
               }}
             >
               <View style={{ flexDirection: 'row', justifyContent: 'flex-end' }}>
-                <CloseButton onPress={onClosePressed} theme="dark"></CloseButton>
+                <CloseButton onPress={onClose} theme="dark"></CloseButton>
               </View>
               <View style={{ marginTop: 5 }}>
                 <FontText h1>
+                  {i18n.t('recording.delete.title_1')}
+
                   <FontText h1 style={{ color: theme.colors.error }}>
-                    {i18n.t('date.recording_popup.title_1')}
+                    {i18n.t('recording.delete.title_2')}
                   </FontText>
-                  {i18n.t('date.recording_popup.title_2')}
                 </FontText>
               </View>
 
               <PrimaryButton
-                title={i18n.t('date.recording_popup.button')}
-                onPress={() => void onPress()}
+                title={i18n.t('recording.delete.button')}
+                onPress={() => void onConfirm()}
                 style={{ marginBottom: 5 }}
               ></PrimaryButton>
             </View>

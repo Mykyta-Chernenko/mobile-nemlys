@@ -8,7 +8,7 @@ import { logErrors } from '@app/utils/errors';
 import { supabase } from '@app/api/initSupabase';
 import { localAnalytics } from '@app/utils/analytics';
 import { AuthContext } from '@app/provider/AuthProvider';
-import { SupabaseAnswer } from '@app/types/api';
+import { APIUserProfile, SupabaseAnswer } from '@app/types/api';
 import { SecondaryButton } from '../buttons/SecondaryButton';
 import ReflectionCard from '../reflection/ReflectionCard';
 import { PrimaryButton } from '../buttons/PrimaryButtons';
@@ -16,7 +16,8 @@ import { NativeStackNavigationProp } from '@react-navigation/native-stack';
 import { MainStackParamList } from '@app/types/navigation';
 import * as Notifications from 'expo-notifications';
 import { Loading } from '../utils/Loading';
-import { retrieveNotificationAccess } from '@app/utils/notification';
+import { NOTIFICATION_IDENTIFIERS } from '@app/types/domain';
+import { recreateNotification } from '@app/utils/notification';
 export default function ({
   level,
   show,
@@ -78,6 +79,8 @@ export default function ({
   }, []);
 
   const onPress = async () => {
+    setLoading(true);
+
     void localAnalytics().logEvent('NewReflectionRemindLaterPressed', {
       screen: 'NewRelfection',
       action: 'RemindLater',
@@ -86,14 +89,30 @@ export default function ({
       level: level,
     });
 
-    await retrieveNotificationAccess(
-      authContext.userId,
-      notificationStatus,
-      'NewReflection',
-      setLoading,
+    const data: SupabaseAnswer<APIUserProfile> = await supabase
+      .from('user_profile')
+      .select('*')
+      .eq('user_id', authContext.userId)
+      .single();
+    if (data.error) {
+      logErrors(data.error);
+      return;
+    }
+
+    const reflectionItendifier =
+      NOTIFICATION_IDENTIFIERS.REFLECTION_AFTER_DATE + authContext.userId!;
+    await recreateNotification(
+      authContext.userId!,
+      reflectionItendifier,
+      'ReflectionHome',
+      i18n.t('notification.reflection.title', { partnerName: data.data.partner_first_name }),
+      i18n.t('notification.reflection.body'),
+      {
+        seconds: 60 * 60 * 24, // in a day
+        repeats: false,
+      },
     );
 
-    setLoading(true);
     void savedShowed();
     onClose();
     setLoading(false);

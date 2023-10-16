@@ -11,11 +11,17 @@ export type PremiumDetails = {
   trialFinish?: moment.Moment;
   afterTrialPremiumOffered: boolean;
   premiumStart?: moment.Moment;
-  dailySetCounts: number;
-  introductionSetCounts: number;
+  dailyDatesLimit: number;
+  introductionDatesLimit: number;
   trialDaysLeft?: number;
   totalDateCount: number;
   todayDateCount: number;
+  freeRecordingMinutes: number;
+  premiumRecordingMinutes: number;
+};
+export type PremiumDetailsWithRecording = PremiumDetails & {
+  // amount of recording second left for a date
+  recordingSecondsLeft: number;
 };
 export async function getPremiumDetails(userId: string): Promise<PremiumDetails> {
   const [dateResponse, premiumDetailsResponse] = await Promise.all([
@@ -61,8 +67,8 @@ export async function getPremiumDetails(userId: string): Promise<PremiumDetails>
   } else {
     premiumState = 'free';
   }
-  const dailySetCounts = premiumDetails.daily_sets_count;
-  const introductionSetCounts = premiumDetails.introduction_sets_count;
+  const dailyDatesLimit = premiumDetails.daily_sets_count;
+  const introductionDatesLimit = premiumDetails.introduction_sets_count;
   const trialStart = premiumDetails.trial_start
     ? getDateFromString(premiumDetails.trial_start)
     : undefined;
@@ -81,18 +87,60 @@ export async function getPremiumDetails(userId: string): Promise<PremiumDetails>
   const todayDateCount = dateData
     .slice(premiumDetails.introduction_sets_count - 1)
     .filter((x) => getDateFromString(x.created_at).isSame(getNow(), 'day')).length;
-
+  const freeRecordingMinutes = premiumDetails.free_recording_minutes;
+  const premiumRecordingMinutes = premiumDetails.premium_recording_minutes;
   return {
     premiumState,
     trialStart,
     trialFinish,
     trialExpired,
     afterTrialPremiumOffered,
-    dailySetCounts,
-    introductionSetCounts,
+    dailyDatesLimit,
+    introductionDatesLimit,
     premiumStart,
     trialDaysLeft,
     totalDateCount,
     todayDateCount,
+    freeRecordingMinutes,
+    premiumRecordingMinutes,
+  };
+}
+
+export async function getPremiumDetailsWithRecording(
+  userId: string,
+): Promise<PremiumDetailsWithRecording> {
+  const details = await getPremiumDetails(userId);
+  const isPremium = details.premiumState === 'premium' || details.premiumState === 'trial';
+  let recordingSecondsLeft = isPremium
+    ? details.premiumRecordingMinutes * 60
+    : details.freeRecordingMinutes * 60;
+  // if not premium, we deduct the amount of seconds spent today
+  if (!isPremium) {
+    const todayStart = getNow().startOf('day');
+    const now = getNow();
+
+    const { data, error } = await supabase
+      .from('discussion_summary')
+      .select('seconds_spent')
+      .gte('created_at', todayStart.toISOString())
+      .lte('created_at', now.toISOString());
+    if (error) {
+      throw error;
+    }
+
+    const totalSecondsSpent = data
+      .map((x) => x.seconds_spent as number)
+      .reduce((accumulator, currentValue) => {
+        return accumulator + currentValue;
+      }, 0);
+    recordingSecondsLeft -= totalSecondsSpent;
+    if (recordingSecondsLeft < 10) {
+      recordingSecondsLeft = 0;
+    }
+  }
+
+  return {
+    ...details,
+    recordingSecondsLeft,
   };
 }

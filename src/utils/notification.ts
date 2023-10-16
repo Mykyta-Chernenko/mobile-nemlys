@@ -37,27 +37,40 @@ export async function createNewNotification(
 }
 
 export async function removeOldNotification(identifier: string) {
-  const notification: SupabaseAnswer<APINotification[]> = await supabase
-    .from('notification')
-    .select('id, created_at, updated_at, identifier, expo_notification_id')
-    .eq('identifier', identifier);
-  if (notification.error) {
-    logErrors(notification.error);
-    return;
-  }
-  for (const d of notification.data) {
-    await Notifications.cancelScheduledNotificationAsync(d.expo_notification_id);
-    await supabase.from('notification').delete().eq('identifier', identifier);
+  const { status } = await Notifications.getPermissionsAsync();
+  if (status === GRANTED_NOTIFICATION_STATUS) {
+    const notification: SupabaseAnswer<APINotification[]> = await supabase
+      .from('notification')
+      .select('id, created_at, updated_at, identifier, expo_notification_id')
+      .eq('identifier', identifier);
+    if (notification.error) {
+      logErrors(notification.error);
+      return;
+    }
+    for (const d of notification.data) {
+      await Notifications.cancelScheduledNotificationAsync(d.expo_notification_id);
+      await supabase.from('notification').delete().eq('identifier', identifier);
+    }
   }
 }
 
 export async function recreateNotification(
+  userId: string,
   identifier: string,
   screen: string,
   title: string,
   body: string,
   trigger: NotificationTriggerInput,
 ) {
+  void localAnalytics().logEvent('NotificationRecreated', {
+    screen: 'Notification',
+    action: 'Recreate',
+    userId,
+    identifier,
+    screenNotification: screen,
+    title,
+    body,
+  });
   await removeOldNotification(identifier);
   await createNewNotification(title, body, trigger, identifier, screen);
 }
@@ -67,7 +80,9 @@ export const retrieveNotificationAccess = async (
   notificationStatus: string | undefined,
   screenName: string,
   setLoading: (b: boolean) => void,
-) => {
+): Promise<string | undefined> => {
+  let finalStatus = notificationStatus;
+
   const profileResponse: SupabaseAnswer<{
     id: number;
     ios_expo_token: string | null;
@@ -79,7 +94,7 @@ export const retrieveNotificationAccess = async (
     .single();
   if (profileResponse.error) {
     logErrorsWithMessage(profileResponse.error, profileResponse.error.message);
-    return;
+    return finalStatus;
   }
   try {
     if (Platform.OS === 'android') {
@@ -92,7 +107,6 @@ export const retrieveNotificationAccess = async (
     }
 
     if (isDevice) {
-      let finalStatus = notificationStatus;
       if (notificationStatus !== GRANTED_NOTIFICATION_STATUS) {
         const { status } = await Notifications.requestPermissionsAsync();
         finalStatus = status;
@@ -137,4 +151,5 @@ export const retrieveNotificationAccess = async (
   } finally {
     setLoading(false);
   }
+  return finalStatus;
 };

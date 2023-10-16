@@ -54,9 +54,7 @@ export default function (props: {
     const func = async () => {
       const data: SupabaseAnswer<APIUserProfile> = await supabase
         .from('user_profile')
-        .select(
-          'id, first_name, partner_first_name, user_id, couple_id, ios_expo_token, android_expo_token, onboarding_finished, showed_interview_request, created_at, updated_at',
-        )
+        .select('*')
         .eq('user_id', authContext.userId)
         .single();
       if (data.error) {

@@ -35,11 +35,6 @@ export class APIDiary extends ApiEntry {
   text: string;
 }
 
-export class APIConversation extends ApiEntry {
-  user_id: string;
-  text: string;
-  ai: string;
-}
 export class APINotification extends ApiEntry {
   identifier: string;
   expo_notification_id: string;
@@ -90,4 +85,6 @@ export class APIUserPremium extends ApiEntry {
   trial_finish?: string;
   is_premium: boolean;
   premium_start?: string;
+  free_recording_minutes: number;
+  premium_recording_minutes: number;
 }

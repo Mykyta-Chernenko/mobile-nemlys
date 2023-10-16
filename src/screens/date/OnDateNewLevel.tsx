@@ -15,6 +15,7 @@ import { NativeStackScreenProps } from '@react-navigation/native-stack';
 import { NOTIFICATION_IDENTIFIERS } from '@app/types/domain';
 import { recreateNotification } from '@app/utils/notification';
 import { getPremiumDetails } from '@app/api/premium';
+import { APIUserProfile, SupabaseAnswer } from '@app/types/api';
 
 export default function ({
   route,
@@ -28,13 +29,14 @@ export default function ({
 
   const authContext = useContext(AuthContext);
 
-  const setupDateNotification = async () => {
-    const identifier = NOTIFICATION_IDENTIFIERS.DATE + authContext.userId!;
+  const setupDateNotification = async (firstName: string, partnerName: string) => {
+    const dateItendifier = NOTIFICATION_IDENTIFIERS.DATE + authContext.userId!;
     await recreateNotification(
-      identifier,
+      authContext.userId!,
+      dateItendifier,
       'Home',
-      i18n.t('date.reminder.title'),
-      i18n.t('date.reminder.body'),
+      i18n.t('notification.date.title', { firstName }),
+      i18n.t('notification.date.body', { partnerName }),
       {
         seconds: 60 * 60 * 24 * 3, // every 3 days
         repeats: true,
@@ -45,7 +47,16 @@ export default function ({
   useEffect(() => {
     const f = async () => {
       setLoading(true);
-      void setupDateNotification();
+      const data: SupabaseAnswer<APIUserProfile> = await supabase
+        .from('user_profile')
+        .select('*')
+        .eq('user_id', authContext.userId)
+        .single();
+      if (data.error) {
+        logErrors(data.error);
+        return;
+      }
+      void setupDateNotification(data.data.first_name, data.data.partner_first_name);
       const { error, count } = await supabase
         .from('date')
         .select('*', { count: 'exact' })
@@ -57,9 +68,13 @@ export default function ({
       }
       setDateCount(count || 0);
       try {
-        const { premiumState, totalDateCount, introductionSetCounts, todayDateCount } =
-          await getPremiumDetails(authContext.userId!);
-
+        const {
+          premiumState,
+          totalDateCount,
+          introductionDatesLimit: introductionSetCounts,
+          todayDateCount,
+          dailyDatesLimit,
+        } = await getPremiumDetails(authContext.userId!);
         // the user has just finished the introduction sets, prompt trial first time
         if (premiumState === 'free' && totalDateCount === introductionSetCounts) {
           setNavigateToPremiumScreen(true);
@@ -72,7 +87,7 @@ export default function ({
         // the user has just finished the daily sets, prompt trial every 3 days on average
         else if (
           premiumState === 'free' &&
-          todayDateCount >= todayDateCount &&
+          todayDateCount >= dailyDatesLimit &&
           Math.random() < 1 / 3
         ) {
           void localAnalytics().logEvent('NewLevelNavigateToPremiumTrial', {

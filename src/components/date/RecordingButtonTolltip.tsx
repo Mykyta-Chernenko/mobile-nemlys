@@ -1,11 +1,16 @@
-import { useTheme } from '@rneui/themed';
 import React, { useRef, useEffect } from 'react';
 import { Text, Animated, TouchableWithoutFeedback } from 'react-native';
 import OrangeArrowDown from '@app/icons/orange_arrow_down';
 
-const FakeRecordingButtonTolltip = ({ text, onPress }: { text: string; onPress: () => void }) => {
-  const { theme } = useTheme();
-
+const RecordingButtonTolltip = ({
+  color,
+  text,
+  onPress,
+}: {
+  color: string;
+  text: string;
+  onPress: () => void;
+}) => {
   const fadeAnim = useRef(new Animated.Value(0)).current;
   const translateY = useRef(new Animated.Value(-10)).current;
 
@@ -32,7 +37,7 @@ const FakeRecordingButtonTolltip = ({ text, onPress }: { text: string; onPress: 
           left: -58,
           bottom: 90,
           width: 186,
-          backgroundColor: theme.colors.warning,
+          backgroundColor: color,
           borderRadius: 20, // Half of height to get an ellipse shape
           justifyContent: 'center',
           alignItems: 'center',
@@ -50,9 +55,9 @@ const FakeRecordingButtonTolltip = ({ text, onPress }: { text: string; onPress: 
           {text}
         </Text>
       </TouchableWithoutFeedback>
-      <OrangeArrowDown style={{ bottom: -10 }}></OrangeArrowDown>
+      <OrangeArrowDown style={{ bottom: -10 }} fill={color}></OrangeArrowDown>
     </Animated.View>
   );
 };
 
-export default FakeRecordingButtonTolltip;
+export default RecordingButtonTolltip;

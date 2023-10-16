@@ -20,8 +20,11 @@ import PremiumKnow from '@app/icons/premium_know';
 import PremiumHard from '@app/icons/premium_hard';
 import PremiumMeaningful from '@app/icons/premium_meaningful';
 import PremiumFun from '@app/icons/premium_fun';
-import { sleep } from '@app/utils/date';
+import { getNow, sleep } from '@app/utils/date';
 import { AnimatedFontText } from '@app/components/utils/AnimatedFontText';
+import moment from 'moment';
+import { NOTIFICATION_IDENTIFIERS } from '@app/types/domain';
+import { recreateNotification } from '@app/utils/notification';
 export default function ({
   route,
   navigation,
@@ -60,7 +63,6 @@ export default function ({
     return () => setMode('light');
   }, []);
   const getData = async () => {
-    console.log('getting data');
     setLoading(true);
     setButtonDisabled(false);
     setSelectedPlan('Annual');
@@ -69,8 +71,8 @@ export default function ({
       const {
         premiumState,
         totalDateCount,
-        introductionSetCounts,
-        dailySetCounts,
+        introductionDatesLimit: introductionSetCounts,
+        dailyDatesLimit: dailySetCounts,
 
         todayDateCount,
         trialExpired,
@@ -134,6 +136,25 @@ export default function ({
     void getData();
     isFirstMount.current = false;
   }, []);
+  const scheduleNotification = async (trialFinish: string) => {
+    const finish = moment(trialFinish);
+    const now = getNow();
+    const secondsToTrialExpired = finish.diff(now, 'seconds');
+    if (secondsToTrialExpired > 0) {
+      const reflectionItendifier = NOTIFICATION_IDENTIFIERS.TRIAL_EXPIRED + authContext.userId!;
+      await recreateNotification(
+        authContext.userId!,
+        reflectionItendifier,
+        'PremiumOffer',
+        i18n.t('notification.trial_expired.title'),
+        i18n.t('notification.trial_expired.body'),
+        {
+          seconds: secondsToTrialExpired,
+          repeats: false,
+        },
+      );
+    }
+  };
   const handleButtonPress = async () => {
     setButtonDisabled(true);
 
@@ -157,6 +178,7 @@ export default function ({
           logErrors(res.error);
           return;
         }
+        await scheduleNotification(res.data.trial_finish as string);
         navigation.navigate('PremiumSuccess', { state: 'trial_started' });
       } else {
         void localAnalytics().logEvent('PremiumPremiumStarted', {
@@ -172,6 +194,7 @@ export default function ({
           logErrors(res.error);
           return;
         }
+        await scheduleNotification(res.data.trial_finish as string);
         navigation.navigate('PremiumSuccess', { state: 'premium_started' });
       }
       await sleep(200);

@@ -70,9 +70,7 @@ export default function ({
     setShowReflectionNotification(false);
     const data: SupabaseAnswer<APIUserProfile> = await supabase
       .from('user_profile')
-      .select(
-        'id, first_name, partner_first_name, user_id, couple_id, ios_expo_token, android_expo_token, onboarding_finished, showed_interview_request, created_at, updated_at',
-      )
+      .select('*')
       .eq('user_id', authContext.userId)
       .single();
     if (data.error) {
@@ -83,27 +81,30 @@ export default function ({
     if (!data.data.onboarding_finished) {
       navigation.navigate('YourName');
       return;
-    } else if (!data.data.showed_interview_request) {
-      const { error: errorDateYesterday, count: dateYesterdayCount } = await supabase
-        .from('date')
-        .select('*', { count: 'exact' })
-        .eq('active', false)
-        .lt('created_at', getNow().startOf('day').toISOString())
-        .limit(1);
-      if (errorDateYesterday) {
-        logErrors(errorDateYesterday);
-        return;
-      }
-      const showInterview = (dateYesterdayCount || 0) > 0;
-      if (showInterview) {
-        navigation.navigate('InterviewRequest', { refreshTimeStamp: new Date().toISOString() });
-      }
     } else {
+      if (!data.data.showed_interview_request) {
+        const { error: errorDateYesterday, count: dateYesterdayCount } = await supabase
+          .from('date')
+          .select('*', { count: 'exact' })
+          .eq('active', false)
+          .lt('created_at', getNow().startOf('day').toISOString())
+          .limit(1);
+        if (errorDateYesterday) {
+          logErrors(errorDateYesterday);
+          return;
+        }
+        const showInterview = (dateYesterdayCount || 0) > 0;
+        if (showInterview) {
+          navigation.navigate('InterviewRequest', { refreshTimeStamp: new Date().toISOString() });
+        }
+      }
       const dateRes = await supabase.from('date').select('*').eq('active', true).maybeSingle();
+
       if (dateRes.error) {
         logErrors(dateRes.error);
         return;
       }
+
       if (dateRes.data) {
         navigation.navigate('OnDate', {
           job: dateRes.data.job || 'hard',
@@ -144,13 +145,13 @@ export default function ({
     }
     setLoading(false);
   }
-  const handleOnPress = (job: JobSlug) => {};
+
   const isFirstMount = useRef(true);
   useEffect(() => {
-    if (!isFirstMount.current && route.params?.refreshTimeStamp) {
+    if (!isFirstMount.current && route?.params?.refreshTimeStamp) {
       void getIsOnboarded();
     }
-  }, [route.params?.refreshTimeStamp]);
+  }, [route?.params?.refreshTimeStamp]);
   useEffect(() => {
     void getIsOnboarded();
     isFirstMount.current = false;

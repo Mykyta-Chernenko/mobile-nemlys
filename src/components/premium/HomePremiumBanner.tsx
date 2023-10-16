@@ -23,14 +23,14 @@ const HomePremiumBanner = React.forwardRef<HomePremiumBannerRef, Props>((props, 
   const [loading, setLoading] = useState(false);
   const [premiumState, setPremiumState] = useState<PremiumState>('free');
   const [loadedData, setLoadedData] = useState(false);
-  const [introductionSetsCount, setIntroductionsSetsCount] = useState(0);
-  const [dailySetsCount, setDailySetsCount] = useState(0);
+  const [introductionDatesLimit, setIntroductionsDatesLimit] = useState(0);
+  const [dailyDatesLimit, setDailyDatesLimit] = useState(0);
   const [trialDaysLeft, setTrialDaysLeft] = useState(0);
   const [totalDateCount, setTotalDateCount] = useState(0);
   const [todayDateCount, setTodayDateCount] = useState(0);
   const [canStartDate, setCanStartDate] = useState(false);
-  const newDatesLeft = Math.max(introductionSetsCount - totalDateCount, 0);
-  const freeDatesLeft = Math.max(dailySetsCount - todayDateCount, 0);
+  const newDatesLeft = Math.max(introductionDatesLimit - totalDateCount, 0);
+  const freeDatesLeft = Math.max(dailyDatesLimit - todayDateCount, 0);
   const { theme } = useTheme();
   const authContext = useContext(AuthContext);
   const navigation = useNavigation<MainNavigationProp>();
@@ -63,8 +63,8 @@ const HomePremiumBanner = React.forwardRef<HomePremiumBannerRef, Props>((props, 
           return;
         }
         setPremiumState(premiumDetails.premiumState);
-        setDailySetsCount(premiumDetails.dailySetCounts);
-        setIntroductionsSetsCount(premiumDetails.introductionSetCounts);
+        setDailyDatesLimit(premiumDetails.dailyDatesLimit);
+        setIntroductionsDatesLimit(premiumDetails.introductionDatesLimit);
         setTrialDaysLeft(premiumDetails.trialDaysLeft || 0);
         setTotalDateCount(premiumDetails.totalDateCount);
         setTodayDateCount(premiumDetails.todayDateCount);
@@ -101,13 +101,13 @@ const HomePremiumBanner = React.forwardRef<HomePremiumBannerRef, Props>((props, 
   } else if (premiumState === 'new') {
     leftText = i18n.t('premium.banner.new');
     rightText = i18n.t('premium.banner.topics_left', {
-      total: introductionSetsCount,
+      total: introductionDatesLimit,
       left: newDatesLeft,
     });
   } else if (premiumState === 'free') {
     leftText = i18n.t('premium.banner.free');
     rightText = i18n.t('premium.banner.topics_left', {
-      total: dailySetsCount,
+      total: dailyDatesLimit,
       left: freeDatesLeft,
     });
   }

@@ -24,12 +24,16 @@ import Card from '@app/components/date/Card';
 import { Progress } from '@app/components/utils/Progress';
 import { GestureHandlerRootView } from 'react-native-gesture-handler';
 import * as ScreenCapture from 'expo-screen-capture';
-import FakeRecordButton from '@app/components/date/FakeRecordButton';
 import OnDateStopPopup from '@app/components/date/OnDateStopPopup';
 import * as Sharing from 'expo-sharing';
 import { retrieveNotificationAccess } from '@app/utils/notification';
 import * as Notifications from 'expo-notifications';
-import { sleep } from '@app/utils/date';
+import { getNow, sleep } from '@app/utils/date';
+import RecordButton from '@app/components/date/RecordButton';
+import { Audio } from 'expo-av';
+import * as FileSystem from 'expo-file-system';
+import { Buffer } from 'buffer';
+import { GRANTED_NOTIFICATION_STATUS } from '@app/utils/constants';
 
 export default function ({
   route,
@@ -60,6 +64,9 @@ export default function ({
   const [showFeedback, setShowFeedback] = useState<boolean>(false);
   const carouselRef = useRef(null) as any;
   const [isSharing, setIsSharing] = useState(false);
+  const [recordingUri, setRecordingUri] = useState<string | undefined>(undefined);
+  const [recordingSecondsSpent, setRecordingSecondsSpent] = useState<number>(0);
+
   function restart() {
     setLoading(true);
     setSpentTimes(new Array(QUESTION_COUNT));
@@ -80,6 +87,7 @@ export default function ({
   const dateFields = 'id, couple_id, with_partner, active, topic, level, created_at, updated_at';
   async function getData() {
     setLoading(true);
+
     const dateCountRes = await supabase
       .from('date')
       .select('*', { count: 'exact' })
@@ -94,6 +102,7 @@ export default function ({
       .select(dateFields)
       .eq('active', true)
       .single();
+
     if (dateRes.error) {
       logErrors(dateRes.error);
       return;
@@ -109,6 +118,39 @@ export default function ({
       logErrors(res.error);
       return;
     }
+
+    // res.data = [
+    //   {
+    //     id: 918,
+    //     date_id: dateRes.data.id,
+    //     question: 'question',
+    //     finished: false,
+    //     feedback_score: undefined,
+    //     skipped: false,
+    //     created_at: getNow().toISOString(),
+    //     updated_at: getNow().toISOString(),
+    //   },
+    //   {
+    //     id: 917,
+    //     date_id: dateRes.data.id,
+    //     question: 'question',
+    //     finished: false,
+    //     feedback_score: undefined,
+    //     skipped: false,
+    //     created_at: getNow().toISOString(),
+    //     updated_at: getNow().toISOString(),
+    //   },
+    //   {
+    //     id: 916,
+    //     date_id: dateRes.data.id,
+    //     question: 'question',
+    //     finished: false,
+    //     feedback_score: undefined,
+    //     skipped: false,
+    //     created_at: getNow().toISOString(),
+    //     updated_at: getNow().toISOString(),
+    //   },
+    // ];
 
     if (res.data?.length) {
       setQuestions(res.data);
@@ -165,15 +207,8 @@ export default function ({
     }
   }, [authContext.userId]);
 
-  // const viewRef: Ref<ViewShot> = useRef(null);
-
   const shareScreen = async () => {
     try {
-      // const capturedUri = await captureRef(viewRef, {
-      //   format: 'png',
-      //   quality: 1,
-      // });
-
       const capturedUri = await captureScreen({
         format: 'png',
         quality: 1,
@@ -186,29 +221,33 @@ export default function ({
     }
   };
 
-  // const onRecorded = (url: string) => {
-  //   const func = async (url: string) => {
-  //     const res: SupabaseAnswer<{ summary: string } | null> = await supabase.functions.invoke(
-  //       'save-conversation',
-  //       {
-  //         body: { questionId: currentQuestion.id, fileUrl: url },
-  //       },
-  //     );
-  //     if (res.error) {
-  //       logErrors(res.error);
-  //       return;
-  //     }
-  //     console.log(res.data);
-  //     alert(res.data?.summary || '');
-  //   };
-  //   void func(url);
-  // };
-
   const [showStopPopup, setShowStopPopup] = useState(false);
 
   const handleFinishDateButtonFinal = async (feedback: number | undefined) => {
     if (!currentDate) return;
     setLoading(true);
+    const [shouldShowNotificationBanner, _, __] = await Promise.all([
+      getShouldShowNotificationBanner(),
+      saveRecording(),
+      finishSaveDate(feedback),
+    ]);
+
+    void localAnalytics().logEvent('OnDateGoFinish', {
+      screen: 'Date',
+      action: 'GoToNotification',
+      userId: authContext.userId,
+      shouldShowNotificationBanner,
+    });
+    if (shouldShowNotificationBanner) {
+      navigation.navigate('OnDateNotification', { withPartner });
+    } else {
+      navigation.navigate('OnDateNewLevel', {
+        withPartner,
+        refreshTimeStamp: new Date().toISOString(),
+      });
+    }
+  };
+  const finishSaveDate = async (feedback: number | undefined) => {
     for (let i = 0; i < questions.length; i++) {
       const q = questions[i];
       const updateDict = { feedback_score: feedback, seconds_spent: spentTimes[i] || 0 };
@@ -268,25 +307,53 @@ export default function ({
     const dateReponse = await supabase
       .from('date')
       .update({ active: false, updated_at: new Date() })
-      .eq('id', currentDate.id);
+      .eq('id', currentDate!.id);
     if (dateReponse.error) {
       logErrors(dateReponse.error);
       return;
     }
-    const shouldShowNotificationBanner = await getShouldShowNotificationBanner();
-    void localAnalytics().logEvent('OnDateGoFinish', {
-      screen: 'Date',
-      action: 'GoToNotification',
-      userId: authContext.userId,
-      shouldShowNotificationBanner,
-    });
-    if (shouldShowNotificationBanner) {
-      navigation.navigate('OnDateNotification', { withPartner });
-    } else {
-      navigation.navigate('OnDateNewLevel', {
-        withPartner,
-        refreshTimeStamp: new Date().toISOString(),
-      });
+  };
+  const showRecording = withPartner && !loading;
+  const saveRecording = async () => {
+    if (currentDate && recordingUri) {
+      try {
+        const file = Buffer.from(
+          await FileSystem.readAsStringAsync(recordingUri, {
+            encoding: FileSystem.EncodingType.Base64,
+          }),
+          'base64',
+        );
+
+        const timestamp = getNow().valueOf().toString();
+        const name =
+          authContext.userId! +
+          '/' +
+          timestamp +
+          Audio.RecordingOptionsPresets.HIGH_QUALITY.ios.extension;
+        const bucket = 'conversation-recordings';
+        const res = await supabase.storage.from(bucket).upload(name, file);
+        if (res.error) {
+          logErrors(res.error);
+        }
+
+        void supabase.functions
+          .invoke('save-conversation', {
+            body: {
+              dateId: currentDate.id,
+              fileUrl: res.data?.path,
+              seconds_spent: recordingSecondsSpent,
+            },
+          })
+          .then(() => {
+            void localAnalytics().logEvent('OnDateRecordingSavedConversationSummary', {
+              screen: 'OnDateRecording',
+              action: 'SavedConversationSummary',
+              userId: authContext.userId,
+            });
+          });
+      } catch (e) {
+        logErrors(e);
+      }
     }
   };
 
@@ -312,19 +379,15 @@ export default function ({
       logErrors(profileResponse.error);
       return;
     }
-    let hasToken = false;
-    if (Platform.OS === 'ios' && profileResponse.data.ios_expo_token) {
-      hasToken = true;
-    } else if (Platform.OS === 'android') {
+    let hasToken = notificationStatus === GRANTED_NOTIFICATION_STATUS;
+    if (Platform.OS === 'android' && (!hasToken || !profileResponse.data.android_expo_token)) {
       // get android notification token automatically if don't exit yet
-      if (!profileResponse.data.android_expo_token) {
-        await retrieveNotificationAccess(
-          authContext.userId,
-          notificationStatus,
-          'NewReflection',
-          setLoading,
-        );
-      }
+      await retrieveNotificationAccess(
+        authContext.userId,
+        notificationStatus,
+        'NewReflection',
+        setLoading,
+      );
       hasToken = true;
     }
     return (
@@ -358,10 +421,6 @@ export default function ({
       userId: authContext.userId,
     });
     await handleFinishDateButtonFinal(undefined);
-    navigation.navigate('OnDateNewLevel', {
-      withPartner,
-      refreshTimeStamp: new Date().toISOString(),
-    });
   };
   const handleStopCancel = () => {
     void localAnalytics().logEvent('DateFinishDateStopCancel', {
@@ -380,7 +439,7 @@ export default function ({
       questionIndex,
     });
     setIsSharing(true);
-    await sleep(100);
+    await sleep(200);
     await shareScreen();
     setIsSharing(false);
   };
@@ -453,6 +512,14 @@ export default function ({
         />
       </TouchableOpacity>
     );
+
+  const Recording = showRecording && (
+    <RecordButton
+      dateCount={dateCount}
+      setRecordingUri={setRecordingUri}
+      setSecondsSpent={setRecordingSecondsSpent}
+    ></RecordButton>
+  );
 
   const RightComponent = (index: number) =>
     index === (questions?.length ?? 1) - 1 ? (
@@ -534,7 +601,6 @@ export default function ({
     ></DateFeedback>
   ) : (
     <View
-      // ref={viewRef}
       style={{
         flexGrow: 1,
         backgroundColor: theme.colors.black,
@@ -696,10 +762,6 @@ export default function ({
                       >
                         <Progress theme="dark" current={index + 1} all={QUESTION_COUNT}></Progress>
 
-                        {/* <RecordingComponent
-                          bucket="conversation-recordings"
-                          onRecorded={onRecorded}
-                        ></RecordingComponent> */}
                         {isSharing && (
                           <View
                             style={{
@@ -736,12 +798,6 @@ export default function ({
                           }}
                         >
                           {LeftComponent(index)}
-                          {withPartner && (
-                            <FakeRecordButton
-                              questionIndex={index}
-                              dateCount={dateCount}
-                            ></FakeRecordButton>
-                          )}
                           {RightComponent(index)}
                         </View>
                       </View>
@@ -749,6 +805,7 @@ export default function ({
                   }}
                 />
               </GestureHandlerRootView>
+              <View style={{ position: 'absolute', bottom: 35 }}>{Recording}</View>
             </Card>
           </View>
         </View>
