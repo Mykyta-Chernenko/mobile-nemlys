@@ -40,16 +40,16 @@
     "meaningful": "Meaningful conversation",
     "fun": "Light & Fun topics"
   },
-  "notification":{
+  "notification": {
     "date": {
       "title": "{{firstName}}, Time to Connect with Partner",
       "body": "Fun? Deep? Intimate? Choose and Discuss topics with {{partnerName}}"
     },
-     "reflection": {
+    "reflection": {
       "title": "Time to reflect on your relationship with {{partnerName}}",
       "body": "Choose a reflection and write your answer"
     },
-     "trial_expired": {
+    "trial_expired": {
       "title": "Keep the Premium Access Going",
       "body": "Discover two options to maintain full access"
     }
@@ -156,14 +156,14 @@
     "reason_3_title_3": "to get 2 months of Unlimited access",
     "button": "Schedule a call"
   },
-  "recording":{
-    "button":"Record",
+  "recording": {
+    "button": "Record",
     "delete": {
       "title_1": "Are you sure you want to ",
       "title_2": "delete recording?",
       "button": "Yes, delete"
     },
-     "permission": {
+    "permission": {
       "title_1": "Audio Analysis doesn't work without ",
       "title_2": "microphone permission",
       "button": "Open settings"
