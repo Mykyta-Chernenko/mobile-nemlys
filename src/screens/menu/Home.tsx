@@ -234,8 +234,9 @@ export default function ({
               }}
             >
               <ScrollView
-                style={{ flex: 1, padding }}
                 contentContainerStyle={{
+                  flexGrow: 1,
+                  padding,
                   flexDirection: 'row',
                   flexWrap: 'wrap',
                   justifyContent: 'space-between',

@@ -11,7 +11,7 @@ import { localAnalytics } from '@app/utils/analytics';
 import { SupabaseAnswer } from '@app/types/api';
 import RecordingButtonElement from './RecordingButtonElement';
 import { Audio } from 'expo-av';
-import { getNow } from '@app/utils/date';
+import { getNow, sleep } from '@app/utils/date';
 import { getPremiumDetailsWithRecording } from '@app/api/premium';
 import { useCurrentTime } from '@app/utils/hooks';
 import { Linking } from 'react-native';
@@ -19,6 +19,7 @@ import Constants from 'expo-constants';
 import * as IntentLauncher from 'expo-intent-launcher';
 import { useTheme } from '@rneui/themed';
 import { Loading } from '../utils/Loading';
+import RecordingButtonStopPopup from './RecordingButtonStopPopup';
 
 export interface Props {
   dateCount: number;
@@ -44,6 +45,7 @@ const RecordButton = (props: Props) => {
     : 0;
   const [audio, setAudio] = useState<undefined | Audio.Recording>();
   const [showPermissionPopup, setShowPermissionPopup] = useState(false);
+  const [showStopPopup, setShowStopPopup] = useState(false);
   const [showDeletePopup, setShowDeletePopup] = useState(false);
 
   const [showTooltip, setShowTooltip] = useState(true);
@@ -56,9 +58,10 @@ const RecordButton = (props: Props) => {
   const [canAskForPermission, setCanAskForPermission] = useState(true);
   const [wantsRecording, setWantsRecording] = useState(false);
   const [limitReached, setLimitReached] = useState(false);
+  const [interacted, setInteracted] = useState(false);
 
   let tooltipStatus: 'none' | 'wanted_recording' | 'feature_intro' | 'limit_reached' = 'none';
-  if (loading || (!recordPermissionsGranted && !canAskForPermission)) {
+  if (loading || interacted || (!recordPermissionsGranted && !canAskForPermission)) {
     tooltipStatus = 'none';
   } else if (limitReached) {
     tooltipStatus = 'limit_reached';
@@ -147,12 +150,17 @@ const RecordButton = (props: Props) => {
     }
   }, [recordState, recordingSeconds, maxRecordingSeconds]);
 
-  async function startRecording() {
+  async function startRecording(recentlyPermissionGranted = false) {
     try {
       await Audio.setAudioModeAsync({
         allowsRecordingIOS: true,
         playsInSilentModeIOS: true,
       });
+
+      // so that the activity turns back to the active one, a problem on IOS maybe on Android as well
+      if (recentlyPermissionGranted) {
+        await sleep(500);
+      }
 
       const { recording } = await Audio.Recording.createAsync(
         Audio.RecordingOptionsPresets.HIGH_QUALITY,
@@ -194,6 +202,7 @@ const RecordButton = (props: Props) => {
   }
 
   const handleRecordingPress = async () => {
+    setInteracted(true);
     switch (recordState) {
       case 'not_started':
         setLoading(true);
@@ -202,9 +211,8 @@ const RecordButton = (props: Props) => {
           action: 'RecordButtonPressed',
           userId: authContext.userId,
         });
-
         if ((await Audio.requestPermissionsAsync()).granted) {
-          await startRecording();
+          await startRecording(!recordPermissionsGranted);
         } else {
           setRecordPermissionGranted(false);
           setCanAskForPermission(false);
@@ -218,7 +226,7 @@ const RecordButton = (props: Props) => {
           action: 'RecordStopped',
           userId: authContext.userId,
         });
-        await stopRecording();
+        setShowStopPopup(true);
 
         break;
       case 'finished':
@@ -279,6 +287,23 @@ const RecordButton = (props: Props) => {
     });
     setShowDeletePopup(false);
   };
+  const handleStopConfirm = async () => {
+    void localAnalytics().logEvent('OnDateRecordingStopConfirm', {
+      screen: 'OnDate',
+      action: 'RecordingStopConfirm',
+      userId: authContext.userId,
+    });
+    setShowStopPopup(false);
+    await stopRecording();
+  };
+  const handleStopCancel = () => {
+    void localAnalytics().logEvent('OnDateRecordingStopCancel', {
+      screen: 'OnDate',
+      action: 'RecordingStopCancel',
+      userId: authContext.userId,
+    });
+    setShowStopPopup(false);
+  };
   const onTooltipPress = () => setShowTooltip(false);
   const getTooltip = () => {
     switch (tooltipStatus) {
@@ -321,6 +346,12 @@ const RecordButton = (props: Props) => {
           onClose={handlePermissionPopupClosed}
           onConfirm={() => void handlePermissionOpenSettings()}
         ></RecordingButtonPermissionPopup>
+      )}
+      {showStopPopup && (
+        <RecordingButtonStopPopup
+          onClose={handleStopCancel}
+          onConfirm={() => void handleStopConfirm()}
+        ></RecordingButtonStopPopup>
       )}
       {showDeletePopup && (
         <RecordingButtonDeletePopup

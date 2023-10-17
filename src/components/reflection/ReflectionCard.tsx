@@ -5,7 +5,7 @@ import { Animated, StyleProp, View, ViewStyle } from 'react-native';
 export default function ({ children }: { children: ReactNode }) {
   const { theme } = useTheme();
 
-  const mainCardTransform = [{ rotate: '1deg' }];
+  const mainCardTransform = [{ rotate: '0deg' }];
   const cardStyle: StyleProp<ViewStyle> = {
     zIndex: 100,
     flex: 1,

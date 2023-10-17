@@ -224,7 +224,6 @@ export default function ({
                 currentPremiumState === 'daily_limit') && (
                 <>{i18n.t('premium.offer.reached_limit')}</>
               )}
-
               {i18n.t('premium.offer.try_unlimited_1')}
             </>
           ) : (

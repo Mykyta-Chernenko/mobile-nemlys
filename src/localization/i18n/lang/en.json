@@ -158,9 +158,16 @@
   },
   "recording": {
     "button": "Record",
+    "stop": {
+      "title_1": "Are you sure? You ",
+      "title_2": "can't resume ",
+      "title_3": "recording after stopping it",
+      "button": "Yes, stop"
+    },
     "delete": {
       "title_1": "Are you sure you want to ",
-      "title_2": "delete recording?",
+      "title_2": "delete recording",
+      "title_3": "?",
       "button": "Yes, delete"
     },
     "permission": {
@@ -169,7 +176,7 @@
       "button": "Open settings"
     },
     "tooltip": {
-      "feature_intro": "Start Recording your discussion to use Audio Analysis",
+      "feature_intro": "Try Audio Analysis of your conversation, it will improve future questions",
       "wanted_recording": "We finally launched Audio Analysis. Try it out!",
       "limit_reached": "You've reached you daily Audio Analysis limit"
     }
@@ -184,7 +191,7 @@
       "challenge": "Challenge",
       "title_1": "Deepen Intimacy\n",
       "title_2": "Twice a Week:\n",
-      "title_3": "Are You ready",
+      "title_3": "Are You Ready?",
       "subtitle": "Connect regularly on a deeper level with your partner.",
       "confirm": "Allow notification",
       "decline": "Maybe later"

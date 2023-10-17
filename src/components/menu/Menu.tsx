@@ -19,6 +19,7 @@ import ProfileSelected from '@app/icons/profile_selected';
 import { logErrors } from '@app/utils/errors';
 import { getPremiumDetails } from '@app/api/premium';
 import { Loading } from '../utils/Loading';
+import { getNow } from '@app/utils/date';
 
 export default function ({ reflectionWarning }: { reflectionWarning?: boolean }) {
   const { theme } = useTheme();
@@ -37,7 +38,15 @@ export default function ({ reflectionWarning }: { reflectionWarning?: boolean })
       setLoading(true);
       try {
         const premiumDetails = await getPremiumDetails(authContext.userId!);
-        if (premiumDetails.premiumState !== 'new') {
+        const trialExpiresInlessThan7Days =
+          premiumDetails.premiumState === 'trial' &&
+          premiumDetails.trialFinish &&
+          premiumDetails.trialFinish.isBefore(getNow().add(7, 'days'));
+        if (
+          premiumDetails.premiumState === 'free' ||
+          premiumDetails.premiumState === 'premium' ||
+          trialExpiresInlessThan7Days
+        ) {
           setShowPremium(true);
         }
       } catch (e) {

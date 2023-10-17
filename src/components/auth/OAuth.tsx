@@ -21,6 +21,7 @@ import { SecondaryButton } from '../buttons/SecondaryButton';
 import { localAnalytics } from '@app/utils/analytics';
 import { PrimaryButton } from '../buttons/PrimaryButtons';
 
+// TODO use expo onyl in dev, use directl implementetion for prod to login
 export const OAuth = ({
   handleUser,
   setLoading,

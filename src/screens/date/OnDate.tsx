@@ -5,7 +5,7 @@ import { APIDate, APIGeneratedQuestion, SupabaseAnswer } from '@app/types/api';
 import { useTheme, useThemeMode } from '@rneui/themed';
 import { Image, Platform } from 'react-native';
 import Carousel from 'react-native-reanimated-carousel';
-import { logErrors } from '@app/utils/errors';
+import { logErrors, logErrorsWithMessageWithoutAlert } from '@app/utils/errors';
 import { captureScreen } from 'react-native-view-shot';
 import { MainStackParamList } from '@app/types/navigation';
 import { NativeStackScreenProps } from '@react-navigation/native-stack';
@@ -344,12 +344,16 @@ export default function ({
               seconds_spent: recordingSecondsSpent,
             },
           })
-          .then(() => {
-            void localAnalytics().logEvent('OnDateRecordingSavedConversationSummary', {
-              screen: 'OnDateRecording',
-              action: 'SavedConversationSummary',
-              userId: authContext.userId,
-            });
+          .then((result) => {
+            if (result.error) {
+              logErrorsWithMessageWithoutAlert(result.error);
+            } else {
+              void localAnalytics().logEvent('OnDateRecordingSavedConversationSummary', {
+                screen: 'OnDateRecording',
+                action: 'SavedConversationSummary',
+                userId: authContext.userId,
+              });
+            }
           });
       } catch (e) {
         logErrors(e);

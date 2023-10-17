@@ -174,12 +174,12 @@ export default function ({
             </Image>
           </View>
           <View style={{ alignItems: 'center' }}>
-            <FontText h1 style={{ color: theme.colors.white }}>
+            <FontText h1 style={{ color: theme.colors.white, textAlign: 'center' }}>
               {withPartner
                 ? i18n.t('date.new_level.title_first')
                 : i18n.t('date.new_level.alone_title_first')}
             </FontText>
-            <FontText h1 style={{ color: theme.colors.primary }}>
+            <FontText h1 style={{ color: theme.colors.primary, textAlign: 'center' }}>
               {i18n.t('date.new_level.title_second')}
             </FontText>
           </View>
