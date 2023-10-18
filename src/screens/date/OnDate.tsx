@@ -29,7 +29,7 @@ import * as Sharing from 'expo-sharing';
 import { retrieveNotificationAccess } from '@app/utils/notification';
 import * as Notifications from 'expo-notifications';
 import { getNow, sleep } from '@app/utils/date';
-import RecordButton from '@app/components/date/RecordButton';
+import RecordButton, { RecordButtonRef } from '@app/components/date/RecordButton';
 import { Audio } from 'expo-av';
 import * as FileSystem from 'expo-file-system';
 import { Buffer } from 'buffer';
@@ -225,10 +225,16 @@ export default function ({
 
   const handleFinishDateButtonFinal = async (feedback: number | undefined) => {
     if (!currentDate) return;
+    const recordingRes = await recordButtonRef.current?.stopRecording();
+
     setLoading(true);
+
     const [shouldShowNotificationBanner, _, __] = await Promise.all([
       getShouldShowNotificationBanner(),
-      saveRecording(),
+      saveRecording(
+        recordingRes?.uri || recordingUri,
+        recordingRes?.recordingSeconds || recordingSecondsSpent,
+      ),
       finishSaveDate(feedback),
     ]);
 
@@ -313,12 +319,20 @@ export default function ({
       return;
     }
   };
-  const showRecording = withPartner && !loading;
-  const saveRecording = async () => {
-    if (currentDate && recordingUri) {
+  const recordButtonRef = useRef<RecordButtonRef>(null);
+
+  const saveRecording = async (recordUri: string | undefined, secondsSpent: number) => {
+    void localAnalytics().logEvent('OnDateRecordingStartTrySavingSummary', {
+      screen: 'OnDateRecording',
+      action: 'SavedConversationSummary',
+      userId: authContext.userId,
+      currentDate,
+      recordingUri: recordUri,
+    });
+    if (currentDate && recordUri) {
       try {
         const file = Buffer.from(
-          await FileSystem.readAsStringAsync(recordingUri, {
+          await FileSystem.readAsStringAsync(recordUri, {
             encoding: FileSystem.EncodingType.Base64,
           }),
           'base64',
@@ -341,7 +355,7 @@ export default function ({
             body: {
               dateId: currentDate.id,
               fileUrl: res.data?.path,
-              seconds_spent: recordingSecondsSpent,
+              seconds_spent: secondsSpent,
             },
           })
           .then((result) => {
@@ -389,7 +403,7 @@ export default function ({
       await retrieveNotificationAccess(
         authContext.userId,
         notificationStatus,
-        'NewReflection',
+        'OnDate',
         setLoading,
       );
       hasToken = true;
@@ -404,7 +418,7 @@ export default function ({
     );
   };
 
-  const handleStopInitiate = () => {
+  const handleStopInitiate = async () => {
     const lastQuestion = questionIndex === QUESTION_COUNT - 1;
     void localAnalytics().logEvent('DateFinishDateStopClicked', {
       screen: 'Date',
@@ -413,7 +427,7 @@ export default function ({
       lastQuestion,
     });
     if (lastQuestion) {
-      setShowFeedback(true);
+      await goToFeedback();
     } else {
       setShowStopPopup(true);
     }
@@ -517,11 +531,17 @@ export default function ({
       </TouchableOpacity>
     );
 
+  const goToFeedback = async () => {
+    await recordButtonRef.current?.stopRecording();
+    setShowFeedback(true);
+  };
+  const showRecording = withPartner && !loading;
   const Recording = showRecording && (
     <RecordButton
       dateCount={dateCount}
       setRecordingUri={setRecordingUri}
       setSecondsSpent={setRecordingSecondsSpent}
+      ref={recordButtonRef}
     ></RecordButton>
   );
 
@@ -542,7 +562,7 @@ export default function ({
             action: 'FinishDateCheckmarkPressed',
             userId: authContext.userId,
           });
-          setShowFeedback(true);
+          void goToFeedback();
         }}
       >
         <Image

@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useRef, useState } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import { View, Platform } from 'react-native';
 import RecordingButtonTolltip from './RecordingButtonTolltip';
 import { i18n } from '@app/localization/i18n';
@@ -26,7 +26,13 @@ export interface Props {
   setRecordingUri: (uri: string | undefined) => void;
   setSecondsSpent: (number) => void;
 }
-const RecordButton = (props: Props) => {
+export interface RecordButtonRef {
+  stopRecording: () => Promise<{ uri: string; recordingSeconds: number } | undefined>;
+}
+const RecordButton = React.forwardRef<RecordButtonRef, Props>((props, ref) => {
+  React.useImperativeHandle(ref, () => ({
+    stopRecording,
+  }));
   const { theme } = useTheme();
 
   const { dateCount, setRecordingUri, setSecondsSpent } = props;
@@ -93,17 +99,6 @@ const RecordButton = (props: Props) => {
     };
     void f();
   }, []);
-  const cleanupRef = useRef<() => void>(() => {});
-  cleanupRef.current = () => {
-    if (recordState === 'in_progress') {
-      void localAnalytics().logEvent('OnDateRecordStoppingAutomatically', {
-        screen: 'OnDate',
-        action: 'RecordStoppingAutomatically',
-        userId: authContext.userId,
-      });
-      void handleRecordingPress();
-    }
-  };
 
   useEffect(() => {
     const f = async () => {
@@ -134,8 +129,6 @@ const RecordButton = (props: Props) => {
       setLoading(false);
     };
     void f();
-
-    return () => cleanupRef.current();
   }, []);
 
   useEffect(() => {
@@ -162,6 +155,9 @@ const RecordButton = (props: Props) => {
         await sleep(500);
       }
 
+      // will happen when we stop, but just to be sure, we stop anyway before we start if there is audio file
+      await audio?.stopAndUnloadAsync();
+
       const { recording } = await Audio.Recording.createAsync(
         Audio.RecordingOptionsPresets.HIGH_QUALITY,
       );
@@ -175,29 +171,38 @@ const RecordButton = (props: Props) => {
     }
   }
 
-  async function stopRecording() {
-    setRecordState('finished');
-    setFinishedRecording(getNow());
-    setAudio(undefined);
+  async function stopRecording(): Promise<{ recordingSeconds: number; uri: string } | undefined> {
+    void localAnalytics().logEvent('OnDateRecordingStopInitiated', {
+      screen: 'OnDate',
+      action: 'RecordingStopInitiated',
+      userId: authContext.userId,
+      recordState,
+    });
+    if (recordState === 'in_progress') {
+      setRecordState('finished');
+      setFinishedRecording(getNow());
+      setAudio(undefined);
 
-    try {
-      setSecondsSpent(recordingSeconds);
-      await audio?.stopAndUnloadAsync();
-      await Audio.setAudioModeAsync({
-        allowsRecordingIOS: false,
-      });
-      const uri = audio?.getURI();
-      if (!uri) return;
+      try {
+        setSecondsSpent(recordingSeconds);
+        await audio?.stopAndUnloadAsync();
+        await Audio.setAudioModeAsync({
+          allowsRecordingIOS: false,
+        });
+        const uri = audio?.getURI();
+        if (!uri) return;
 
-      setRecordingUri(uri);
-      void localAnalytics().logEvent('OnDateRecordSetRecordingUri', {
-        screen: 'OnDate',
-        action: 'RecordSetRecordingUri',
-        userId: authContext.userId,
-        uri,
-      });
-    } catch (error) {
-      logErrors(error);
+        setRecordingUri(uri);
+        void localAnalytics().logEvent('OnDateRecordSetRecordingUri', {
+          screen: 'OnDate',
+          action: 'RecordSetRecordingUri',
+          userId: authContext.userId,
+          uri,
+        });
+        return { uri, recordingSeconds };
+      } catch (error) {
+        logErrors(error);
+      }
     }
   }
 
@@ -367,6 +372,6 @@ const RecordButton = (props: Props) => {
       ></RecordingButtonElement>
     </View>
   );
-};
+});
 
 export default RecordButton;

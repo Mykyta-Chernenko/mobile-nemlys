@@ -79,7 +79,7 @@ export default function ({
     const { error, data } = await supabase
       .from('reflection_question_answer')
       .select('id')
-      .match({ user_id: authContext.userId, reflection_id: reflectionId })
+      .match({ user_id: authContext.userId, reflection_id: reflectionId, answer: resultAnswer })
       .maybeSingle();
     if (error) {
       logErrorsWithMessage(error, error.message);

@@ -9,6 +9,10 @@ import { SecondaryButton } from '../../components/buttons/SecondaryButton';
 import { NativeStackScreenProps } from '@react-navigation/native-stack';
 import { localAnalytics } from '@app/utils/analytics';
 import { AuthContext } from '@app/provider/AuthProvider';
+import * as Notifications from 'expo-notifications';
+import { sleep } from '@app/utils/date';
+import { retrieveNotificationAccess } from '@app/utils/notification';
+
 export default function ({
   route,
   navigation,
@@ -25,6 +29,15 @@ export default function ({
     const unsubscribeFocus = navigation.addListener('focus', () => setMode('dark'));
     return unsubscribeFocus;
   }, [navigation]);
+
+  useEffect(() => {
+    const getCurrentToken = async () => {
+      const { status } = await Notifications.getPermissionsAsync();
+      await sleep(2000);
+      await retrieveNotificationAccess(authContext.userId, status, 'PremiumSuccess', () => {});
+    };
+    void getCurrentToken();
+  }, []);
 
   return (
     <View

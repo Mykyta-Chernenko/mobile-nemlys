@@ -14,10 +14,11 @@ import ReflectionCard from '../reflection/ReflectionCard';
 import { PrimaryButton } from '../buttons/PrimaryButtons';
 import { NativeStackNavigationProp } from '@react-navigation/native-stack';
 import { MainStackParamList } from '@app/types/navigation';
-import * as Notifications from 'expo-notifications';
 import { Loading } from '../utils/Loading';
 import { NOTIFICATION_IDENTIFIERS } from '@app/types/domain';
-import { recreateNotification } from '@app/utils/notification';
+import { recreateNotification, retrieveNotificationAccess } from '@app/utils/notification';
+import * as Notifications from 'expo-notifications';
+
 export default function ({
   level,
   show,
@@ -69,14 +70,6 @@ export default function ({
       return;
     }
   };
-  const [notificationStatus, setNotificationStatus] = useState<string | undefined>(undefined);
-  useEffect(() => {
-    const getCurrentToken = async () => {
-      const { status } = await Notifications.getPermissionsAsync();
-      setNotificationStatus(status);
-    };
-    void getCurrentToken();
-  }, []);
 
   const onPress = async () => {
     setLoading(true);
@@ -99,6 +92,8 @@ export default function ({
       return;
     }
 
+    const { status } = await Notifications.getPermissionsAsync();
+    await retrieveNotificationAccess(authContext.userId, status, 'NewReflection', () => {});
     const reflectionItendifier =
       NOTIFICATION_IDENTIFIERS.REFLECTION_AFTER_DATE + authContext.userId!;
     await recreateNotification(
