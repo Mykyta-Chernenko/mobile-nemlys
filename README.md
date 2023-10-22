@@ -31,7 +31,12 @@ When you start developing from a new network for oauth to work, you need to add 
 - and src/navigation/index.tsx linking prefixes (if you want to have redirect emails)
 
 
-## Deploy changes without store
+## Deploy changes avoiding stores, it will require 2 launches to download the OTA update
 - export production envs
 - eas update --channel production  
 
+
+
+build with expo builds
+eas build --profile="development" --platform ios --local 
+npx expo start --dev-client

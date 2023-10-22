@@ -1,26 +1,21 @@
 import { useTheme } from '@rneui/themed';
-import { startAsync } from 'expo-auth-session';
 import React, { useContext, useState } from 'react';
-import { Platform, View } from 'react-native';
+import { View } from 'react-native';
 import GoogleIcon from '@app/icons/google';
 import AppleIcon from '@app/icons/apple';
-import { supabase } from '@app/api/initSupabase';
-import * as Linking from 'expo-linking';
-import { Provider, SignInWithOAuthCredentials } from '@supabase/supabase-js';
 import { i18n } from '@app/localization/i18n';
 import { SupabaseUser } from '@app/types/api';
-import {
-  ANON_USER,
-  AuthContext,
-  globalHandleUser,
-  handleAuthTokens,
-} from '@app/provider/AuthProvider';
+import { AuthContext } from '@app/provider/AuthProvider';
 import { FontText } from '../utils/FontText';
-import { logErrors, logErrorsWithMessage, UserDoesNotExistError } from '@app/utils/errors';
 import { SecondaryButton } from '../buttons/SecondaryButton';
-import { localAnalytics } from '@app/utils/analytics';
 import { PrimaryButton } from '../buttons/PrimaryButtons';
+import {
+  GoogleSignin,
+  GoogleSigninButton,
+  statusCodes,
+} from '@react-native-google-signin/google-signin';
 
+import { supabase } from '@app/api/initSupabase';
 // TODO use expo onyl in dev, use directl implementetion for prod to login
 export const OAuth = ({
   handleUser,
@@ -32,81 +27,37 @@ export const OAuth = ({
   const { theme } = useTheme();
   const [localloading, setLocalLoading] = useState(false);
   const auth = useContext(AuthContext);
+  GoogleSignin.configure({
+    scopes: ['openid', 'profile', 'email'],
+    webClientId: '657800157778-icettrm0tf6f5ultfljdkftmju32ur59.apps.googleusercontent.com',
+    // iosClientId: 'com.googleusercontent.apps.318892102836-d27hl77305a4e4qcgbmo5chtgc43kups',
+  });
 
-  const onPress = async (provider: Provider) => {
-    setLoading(true);
-    setLocalLoading(true);
-    void localAnalytics().logEvent('LoginInitiated', {
-      screen: 'OAuth',
-      action: 'OAuth button clicked',
-      provider,
-      userId: ANON_USER,
-    });
+  const handlePress = async () => {
     try {
-      const returnUrl = Linking.createURL('');
-      const signInParms: SignInWithOAuthCredentials = {
-        provider,
-        options: {
-          redirectTo: returnUrl,
-        },
-      };
-      if (Platform.OS == 'web') {
-        const { data, error } = await supabase.auth.signInWithOAuth(signInParms);
-        if (error) {
-          logErrors(error);
-        } else {
-          console.log(data.url);
-        }
+      // doesn't work because it's not possible to provide nonce to GoogleSignin
+      await GoogleSignin.hasPlayServices();
+      const a2 = await GoogleSignin.getTokens();
+      if (a2.idToken) {
+        const { data, error } = await supabase.auth.signInWithIdToken({
+          provider: 'google',
+          token: a2.idToken,
+        });
+        console.log(error, data);
       } else {
-        // fixes a bug in supabase
-        const oldWindow = window;
-        window = undefined as any;
-        const { data } = await supabase.auth.signInWithOAuth(signInParms);
-        const authUrl = data.url;
-        if (authUrl) {
-          // WARN: on Android instead of getting the response back,
-          //  we get a dismissed event, but we get the access token and the refesh token in the URL,
-          //  so we use a URL listener from the AuthProvider to handle it
-          globalHandleUser.value = handleUser(provider);
-          const response = await startAsync({
-            authUrl: authUrl,
-            projectNameForProxy: '@marakaci/nemlys',
-          });
-          try {
-            if (response.type == 'success') {
-              const accessToken = response.params['access_token'];
-              const refreshToken = response.params['refresh_token'];
-              if (accessToken && refreshToken) {
-                await handleAuthTokens(
-                  accessToken,
-                  refreshToken,
-                  handleUser(provider),
-                  auth.setIsSignedIn!,
-                  auth.setUserId!,
-                );
-              } else {
-                throw new Error(`Auth response had no access_token ${JSON.stringify(response)}`);
-              }
-            } else if (response.type == 'error') {
-              throw response.error;
-            }
-          } catch (e: unknown) {
-            if (e instanceof UserDoesNotExistError) {
-              logErrorsWithMessage(e, e.message);
-            } else {
-              logErrors(e);
-            }
-            await supabase.auth.signOut();
-          } finally {
-            globalHandleUser.value = null;
-          }
-        }
-
-        window = oldWindow;
+        throw new Error('no ID token present!');
       }
-    } finally {
-      setLocalLoading(false);
-      setLoading(false);
+    } catch (error: any) {
+      console.log(error);
+      if (error.code === statusCodes.SIGN_IN_CANCELLED) {
+        // user cancelled the login flow
+      } else if (error.code === statusCodes.IN_PROGRESS) {
+        // operation (e.g. sign in) is in progress already
+      } else if (error.code === statusCodes.PLAY_SERVICES_NOT_AVAILABLE) {
+        // play services not available or outdated
+      } else {
+        // some other error happened
+      }
     }
   };
   return (
@@ -154,6 +105,11 @@ export const OAuth = ({
           {i18n.t('oauth.button.google')}
         </FontText>
       </SecondaryButton>
+      <GoogleSigninButton
+        size={GoogleSigninButton.Size.Wide}
+        color={GoogleSigninButton.Color.Dark}
+        onPress={() => void handlePress()}
+      />
     </>
   );
 };
