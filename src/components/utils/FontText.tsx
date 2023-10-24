@@ -16,7 +16,6 @@ export const FontText = ({ style, h1, h2, h3, h4, ...props }: TextProps) => {
   } else if (windowWidth * windowHeight > 290000) {
     screenType = 'm';
   }
-  screenType = 'l';
   const fontWeight = (style as TextStyle)?.fontWeight || '600';
   let fontFamily = REGULAR_FONT_FAMILY;
   switch (fontWeight) {

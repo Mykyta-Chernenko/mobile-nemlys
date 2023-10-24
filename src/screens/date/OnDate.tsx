@@ -119,6 +119,7 @@ export default function ({
       return;
     }
 
+    // if doesn't want to generate questions and call api
     // res.data = [
     //   {
     //     id: 918,
@@ -328,6 +329,7 @@ export default function ({
       userId: authContext.userId,
       currentDate,
       recordingUri: recordUri,
+      secondsSpent,
     });
     if (currentDate && recordUri) {
       try {
@@ -398,8 +400,14 @@ export default function ({
       return;
     }
     let hasToken = notificationStatus === GRANTED_NOTIFICATION_STATUS;
-    if (Platform.OS === 'android' && (!hasToken || !profileResponse.data.android_expo_token)) {
-      // get android notification token automatically if don't exit yet
+    if (
+      Platform.OS === 'android' &&
+      // platformApiLevel &&
+      // we need to ask user to grant permission for android notification token above 33 explicitly
+      // platformApiLevel < 33 &&
+      (!hasToken || !profileResponse.data.android_expo_token)
+    ) {
+      // get android notification token automatically if don't exist yet
       await retrieveNotificationAccess(
         authContext.userId,
         notificationStatus,

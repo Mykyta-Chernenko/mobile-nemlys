@@ -87,7 +87,7 @@ export default function ({
               source={require('../../../assets/images/buddies_analyzing.png')}
             ></Image>
           </View>
-          <View style={{ height: '20%' }}>
+          <View style={{ minHeight: '20%' }}>
             <FontText h1 style={{ textAlign: 'center', color: theme.colors.white }}>
               {textElement}
             </FontText>

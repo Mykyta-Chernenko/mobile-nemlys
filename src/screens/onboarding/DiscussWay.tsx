@@ -89,7 +89,6 @@ export default function ({
           <View
             style={{
               flexGrow: 1,
-              marginTop: '10%',
             }}
           >
             <FontText

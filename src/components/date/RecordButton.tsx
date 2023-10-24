@@ -10,7 +10,7 @@ import RecordingButtonDeletePopup from './RecordingButtonDeletePopup';
 import { localAnalytics } from '@app/utils/analytics';
 import { SupabaseAnswer } from '@app/types/api';
 import RecordingButtonElement from './RecordingButtonElement';
-import { Audio } from 'expo-av';
+import { Audio, InterruptionModeAndroid, InterruptionModeIOS } from 'expo-av';
 import { getNow, sleep } from '@app/utils/date';
 import { getPremiumDetailsWithRecording } from '@app/api/premium';
 import { useCurrentTime } from '@app/utils/hooks';
@@ -20,7 +20,7 @@ import * as IntentLauncher from 'expo-intent-launcher';
 import { useTheme } from '@rneui/themed';
 import { Loading } from '../utils/Loading';
 import RecordingButtonStopPopup from './RecordingButtonStopPopup';
-
+import { activateKeepAwakeAsync, deactivateKeepAwake } from 'expo-keep-awake';
 export interface Props {
   dateCount: number;
   setRecordingUri: (uri: string | undefined) => void;
@@ -143,11 +143,20 @@ const RecordButton = React.forwardRef<RecordButtonRef, Props>((props, ref) => {
     }
   }, [recordState, recordingSeconds, maxRecordingSeconds]);
 
+  // TODO make record button move as the metering does
+  const _updateScreenForRecordingStatus = (status: Audio.RecordingStatus) => {};
+
   async function startRecording(recentlyPermissionGranted = false) {
     try {
+      void activateKeepAwakeAsync();
       await Audio.setAudioModeAsync({
         allowsRecordingIOS: true,
+        interruptionModeIOS: InterruptionModeIOS.DoNotMix,
         playsInSilentModeIOS: true,
+        shouldDuckAndroid: true,
+        interruptionModeAndroid: InterruptionModeAndroid.DoNotMix,
+        playThroughEarpieceAndroid: false,
+        staysActiveInBackground: true,
       });
 
       // so that the activity turns back to the active one, a problem on IOS maybe on Android as well
@@ -161,6 +170,7 @@ const RecordButton = React.forwardRef<RecordButtonRef, Props>((props, ref) => {
       const { recording } = await Audio.Recording.createAsync(
         Audio.RecordingOptionsPresets.HIGH_QUALITY,
       );
+      recording.setOnRecordingStatusUpdate(_updateScreenForRecordingStatus);
       setAudio(recording);
       setRecordState('in_progress');
       setFinishedRecording(undefined);
@@ -172,6 +182,7 @@ const RecordButton = React.forwardRef<RecordButtonRef, Props>((props, ref) => {
   }
 
   async function stopRecording(): Promise<{ recordingSeconds: number; uri: string } | undefined> {
+    void deactivateKeepAwake();
     void localAnalytics().logEvent('OnDateRecordingStopInitiated', {
       screen: 'OnDate',
       action: 'RecordingStopInitiated',
@@ -188,6 +199,12 @@ const RecordButton = React.forwardRef<RecordButtonRef, Props>((props, ref) => {
         await audio?.stopAndUnloadAsync();
         await Audio.setAudioModeAsync({
           allowsRecordingIOS: false,
+          interruptionModeIOS: InterruptionModeIOS.DoNotMix,
+          playsInSilentModeIOS: true,
+          shouldDuckAndroid: true,
+          interruptionModeAndroid: InterruptionModeAndroid.DoNotMix,
+          playThroughEarpieceAndroid: false,
+          staysActiveInBackground: true,
         });
         const uri = audio?.getURI();
         if (!uri) return;

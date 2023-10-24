@@ -78,6 +78,9 @@ export default function (props: {
         logErrors(dateReponse.error);
         return;
       }
+      // if doesn't want to generate questions and call api
+      // props.onLoaded();
+      // return;
 
       const dateId = dateReponse.data.id;
       for (let i = 0; i < 3; i++) {
