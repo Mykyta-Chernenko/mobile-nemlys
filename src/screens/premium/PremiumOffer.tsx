@@ -71,9 +71,8 @@ export default function ({
       const {
         premiumState,
         totalDateCount,
-        introductionDatesLimit: introductionSetCounts,
+        introductionDatesLimit,
         dailyDatesLimit: dailySetCounts,
-
         todayDateCount,
         trialExpired,
         trialStart,
@@ -102,9 +101,9 @@ export default function ({
         currentPremiumState = 'trial_expired';
       } else if (premiumState === 'trial') {
         currentPremiumState = 'trial';
-      } else if (totalDateCount === introductionSetCounts) {
+      } else if (introductionDatesLimit && totalDateCount === introductionDatesLimit) {
         currentPremiumState = 'introduction_limit';
-      } else if (totalDateCount < introductionSetCounts) {
+      } else if (totalDateCount < introductionDatesLimit) {
         currentPremiumState = 'introduction';
       } else if (todayDateCount >= dailySetCounts) {
         currentPremiumState = 'daily_limit';

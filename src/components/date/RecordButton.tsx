@@ -65,6 +65,7 @@ const RecordButton = React.forwardRef<RecordButtonRef, Props>((props, ref) => {
   const [wantsRecording, setWantsRecording] = useState(false);
   const [limitReached, setLimitReached] = useState(false);
   const [interacted, setInteracted] = useState(false);
+  const [volume, setVolume] = useState(0);
 
   let tooltipStatus: 'none' | 'wanted_recording' | 'feature_intro' | 'limit_reached' = 'none';
   if (loading || interacted || (!recordPermissionsGranted && !canAskForPermission)) {
@@ -87,6 +88,7 @@ const RecordButton = React.forwardRef<RecordButtonRef, Props>((props, ref) => {
     setFinishedRecording(undefined);
     setRecordingUri(undefined);
     setSecondsSpent(0);
+    setVolume(0);
   };
   useEffect(() => {
     const f = async () => {
@@ -143,9 +145,6 @@ const RecordButton = React.forwardRef<RecordButtonRef, Props>((props, ref) => {
     }
   }, [recordState, recordingSeconds, maxRecordingSeconds]);
 
-  // TODO make record button move as the metering does
-  const _updateScreenForRecordingStatus = (status: Audio.RecordingStatus) => {};
-
   async function startRecording(recentlyPermissionGranted = false) {
     try {
       void activateKeepAwakeAsync();
@@ -170,7 +169,6 @@ const RecordButton = React.forwardRef<RecordButtonRef, Props>((props, ref) => {
       const { recording } = await Audio.Recording.createAsync(
         Audio.RecordingOptionsPresets.HIGH_QUALITY,
       );
-      recording.setOnRecordingStatusUpdate(_updateScreenForRecordingStatus);
       setAudio(recording);
       setRecordState('in_progress');
       setFinishedRecording(undefined);

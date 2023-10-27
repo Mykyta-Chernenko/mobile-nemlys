@@ -71,12 +71,16 @@ export default function ({
         const {
           premiumState,
           totalDateCount,
-          introductionDatesLimit: introductionSetCounts,
+          introductionDatesLimit,
           todayDateCount,
           dailyDatesLimit,
         } = await getPremiumDetails(authContext.userId!);
         // the user has just finished the introduction sets, prompt trial first time
-        if (premiumState === 'free' && totalDateCount === introductionSetCounts) {
+        if (
+          introductionDatesLimit &&
+          premiumState === 'free' &&
+          totalDateCount === introductionDatesLimit
+        ) {
           setNavigateToPremiumScreen(true);
           void localAnalytics().logEvent('NewLevelNavigateToPremiumTrialFirst', {
             screen: 'NewLevel',

@@ -13,7 +13,8 @@ export default function (props: Props) {
 
   // get notification redirects
   React.useEffect(() => {
-    const subscription = Notifications.addNotificationResponseReceivedListener((response) => {
+    let isMounted = true;
+    const redirect = (response: Notifications.NotificationResponse) => {
       const screen = response?.notification?.request?.content?.data?.screen;
       void localAnalytics().logEvent('OpenedPushNotification', {
         screen: '',
@@ -26,8 +27,25 @@ export default function (props: Props) {
         // eslint-disable-next-line @typescript-eslint/no-unsafe-argument
         navigation.navigate(screen);
       }
+    };
+    const subscription = Notifications.addNotificationResponseReceivedListener((response) => {
+      redirect(response);
     });
-    return () => subscription.remove();
+    void Notifications.getLastNotificationResponseAsync().then((response) => {
+      if (!isMounted || !response) {
+        return;
+      }
+      void localAnalytics().logEvent('GothNotificationOnStart', {
+        screen: '',
+        action: 'GothNotificationOnStart',
+        userId: auth.userId,
+      });
+      redirect(response);
+    });
+    return () => {
+      isMounted = false;
+      subscription.remove();
+    };
   }, [navigation]);
 
   return <>{props.children}</>;

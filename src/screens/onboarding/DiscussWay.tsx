@@ -46,13 +46,24 @@ export default function ({
       logErrorsWithMessage(dateReponse.error, dateReponse.error.message);
       return;
     }
+    const profileResponse = await supabase
+      .from('user_profile')
+      .update({
+        onboarding_finished: true,
+        updated_at: new Date(),
+      })
+      .eq('user_id', authContext.userId);
+    if (profileResponse.error) {
+      logErrorsWithMessage(profileResponse.error, profileResponse.error?.message);
+      return;
+    }
     void localAnalytics().logEvent('DiscussWayContinueClicked', {
       screen: 'DiscussWay',
       action: 'ContinueClicked',
       discuss_way: chosen,
       userId: authContext.userId,
     });
-    navigation.navigate('OnboardingReflectionExplanation');
+    navigation.navigate('Analyzing');
   };
   return (
     <ImageBackground
@@ -84,7 +95,7 @@ export default function ({
                 navigation.navigate('PartnerName');
               }}
             ></GoBackButton>
-            <Progress current={3} all={4}></Progress>
+            <Progress current={3} all={3}></Progress>
           </View>
           <View
             style={{

@@ -13,7 +13,7 @@ import { SafeAreaView } from 'react-native-safe-area-context';
 export default function ({
   route,
   navigation,
-}: NativeStackScreenProps<MainStackParamList, 'OnboardingReflectionExplanation'>) {
+}: NativeStackScreenProps<MainStackParamList, 'Analyzing'>) {
   const { theme } = useTheme();
 
   // to set the color of status bar
@@ -31,11 +31,12 @@ export default function ({
       setTimeout(resolve, duration);
     });
   }
-  const [text, setText] = useState(1);
+  const [text, setText] = useState(2);
   useEffect(() => {
     const analyze = async () => {
-      await delay(1000);
-      setText(2);
+      // skip 1 step, no more reflection
+      // await delay(1000);
+      // setText(2);
       await delay(1000);
       setText(3);
       await delay(1000);
@@ -52,7 +53,6 @@ export default function ({
       break;
     case 2:
       textElement = <>{i18n.t('onboarding.analyzing.text_2')}</>;
-
       break;
     case 3:
       textElement = <>{i18n.t('onboarding.analyzing.text_3')}</>;

@@ -63,12 +63,15 @@ export async function getPremiumDetails(userId: string): Promise<PremiumDetails>
   ) {
     premiumState = 'trial';
   } else if (dateCount < premiumDetails.introduction_sets_count) {
-    premiumState = 'new';
+    // revert to state 'new' for having first 5 intro sets  without limit
+    premiumState = 'free';
   } else {
     premiumState = 'free';
   }
   const dailyDatesLimit = premiumDetails.daily_sets_count;
-  const introductionDatesLimit = premiumDetails.introduction_sets_count;
+  // revert for having first 5 intro sets without limit
+  // const introductionDatesLimit = premiumDetails.introduction_sets_count;
+  const introductionDatesLimit = 0;
   const trialStart = premiumDetails.trial_start
     ? getDateFromString(premiumDetails.trial_start)
     : undefined;
@@ -85,7 +88,8 @@ export async function getPremiumDetails(userId: string): Promise<PremiumDetails>
 
   const totalDateCount = dateCount;
   const todayDateCount = dateData
-    .slice(premiumDetails.introduction_sets_count - 1)
+    // revert for having first 5 intro sets without limit
+    // .slice(premiumDetails.introduction_sets_count - 1)
     .filter((x) => getDateFromString(x.created_at).isSame(getNow(), 'day')).length;
   const freeRecordingMinutes = premiumDetails.free_recording_minutes;
   const premiumRecordingMinutes = premiumDetails.premium_recording_minutes;

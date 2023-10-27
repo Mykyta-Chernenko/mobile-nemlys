@@ -87,7 +87,7 @@
       "title": "Premium",
       "enjoy_your_premium": "You already have premium, enjoy it!",
       "upgrade_trial": "You have {{trialDays}} Trial Access days left ",
-      "reached_limit": "You reached your limit. ",
+      "reached_limit": "You reached your daily limit. ",
       "try_unlimited_1": "Try with ",
       "try_unlimited_2": "unlimited access",
       "premium_title": "Get Full Premium for ",
@@ -360,8 +360,8 @@
     },
 
     "analyzing": {
-      "text_1": "Analysing\nyour writing",
-      "text_2": "Analysing\nyour answers",
+      "text_1": "Analyzing\nyour writing",
+      "text_2": "Analyzing\nyour answers",
       "text_3": "Adapting app\nto your couple",
       "text_4_first": "All done,\n",
       "text_4_second": "start exploring\nthe app"

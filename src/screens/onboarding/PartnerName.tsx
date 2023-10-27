@@ -84,7 +84,7 @@ export default function ({
                     navigation.navigate('YourName');
                   }}
                 ></GoBackButton>
-                <Progress current={2} all={4}></Progress>
+                <Progress current={2} all={3}></Progress>
               </View>
               <View
                 style={{
