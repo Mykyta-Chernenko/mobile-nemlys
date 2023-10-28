@@ -13,7 +13,7 @@ import { AuthContext } from '@app/provider/AuthProvider';
 import { Loading } from '../../components/utils/Loading';
 import { NativeStackScreenProps } from '@react-navigation/native-stack';
 import { NOTIFICATION_IDENTIFIERS } from '@app/types/domain';
-import { recreateNotification } from '@app/utils/notification';
+import { recreateNotifications } from '@app/utils/notification';
 import { getPremiumDetails } from '@app/api/premium';
 import { APIUserProfile, SupabaseAnswer } from '@app/types/api';
 
@@ -31,16 +31,36 @@ export default function ({
 
   const setupDateNotification = async (firstName: string, partnerName: string) => {
     const dateItendifier = NOTIFICATION_IDENTIFIERS.DATE + authContext.userId!;
-    await recreateNotification(
+    const day = 60 * 60 * 24;
+
+    await recreateNotifications(
       authContext.userId!,
       dateItendifier,
       'Home',
       i18n.t('notification.date.title', { firstName }),
       i18n.t('notification.date.body', { partnerName }),
-      {
-        seconds: 60 * 60 * 24 * 3, // every 3 days
-        repeats: true,
-      },
+      [
+        {
+          seconds: day * 3,
+          repeats: false,
+        },
+        {
+          seconds: day * 6,
+          repeats: false,
+        },
+        {
+          seconds: day * 12,
+          repeats: false,
+        },
+        {
+          seconds: day * 24,
+          repeats: false,
+        },
+        {
+          seconds: day * 48,
+          repeats: false,
+        },
+      ],
     );
   };
 

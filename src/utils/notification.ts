@@ -70,9 +70,33 @@ export async function recreateNotification(
     screenNotification: screen,
     title,
     body,
+    trigger,
   });
   await removeOldNotification(identifier);
   await createNewNotification(title, body, trigger, identifier, screen);
+}
+export async function recreateNotifications(
+  userId: string,
+  identifier: string,
+  screen: string,
+  title: string,
+  body: string,
+  triggers: NotificationTriggerInput[],
+) {
+  void localAnalytics().logEvent('NotificationRecreated', {
+    screen: 'Notification',
+    action: 'Recreate',
+    userId,
+    identifier,
+    screenNotification: screen,
+    title,
+    body,
+    triggers,
+  });
+  await removeOldNotification(identifier);
+  for (const trigger of triggers) {
+    await createNewNotification(title, body, trigger, identifier, screen);
+  }
 }
 
 export const retrieveNotificationAccess = async (

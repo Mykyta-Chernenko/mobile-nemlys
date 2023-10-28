@@ -217,7 +217,7 @@ export default function ({
                     buttonStyle={{ backgroundColor: theme.colors.grey1 }}
                     title={i18n.t('new_reflection.button')}
                     onPress={() => void onPress()}
-                    style={{ marginBottom: 5 }}
+                    style={{ marginBottom: 10 }}
                   ></SecondaryButton>
                 </>
               )}
