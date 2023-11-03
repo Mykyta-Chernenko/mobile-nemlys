@@ -85,6 +85,7 @@ export class APIUserPremium extends ApiEntry {
   trial_finish?: string;
   is_premium: boolean;
   premium_start?: string;
+  premium_finish?: string;
   free_recording_minutes: number;
   premium_recording_minutes: number;
 }

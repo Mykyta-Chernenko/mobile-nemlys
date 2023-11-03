@@ -76,7 +76,8 @@
   },
   "premium": {
     "banner": {
-      "premium": "",
+      "premium": "Unlimited access",
+      "premium_right": "∞",
       "trial": "Unlimited access",
       "days_left": "{{days}} days left",
       "new": "Topics to try",
@@ -112,8 +113,8 @@
         "button": "Cool, thanks"
       },
       "premium": {
-        "title_1": "We are working on Premium now, enjoy an extended ",
-        "title_2": "30-day trial for free!",
+        "title_1": "Your premium is successfuly activated, ",
+        "title_2": "Enjoy!",
         "button": "Cool, thanks"
       }
     }

@@ -54,7 +54,11 @@ export async function getPremiumDetails(userId: string): Promise<PremiumDetails>
     throw techDetailsError;
   }
   let premiumState: PremiumState = 'free';
-  if (premiumDetails.is_premium) {
+  if (
+    premiumDetails.is_premium &&
+    premiumDetails.premium_finish &&
+    getDateFromString(premiumDetails.premium_finish).isAfter(getNow())
+  ) {
     premiumState = 'premium';
   } else if (
     premiumDetails.is_trial &&

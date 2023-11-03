@@ -93,7 +93,7 @@ const HomePremiumBanner = React.forwardRef<HomePremiumBannerRef, Props>((props, 
   let leftText = '';
   let rightText = '';
   if (premiumState === 'premium') {
-    leftText = i18n.t('premium.banner.premium');
+    leftText = '';
     rightText = '';
   } else if (premiumState === 'trial') {
     leftText = i18n.t('premium.banner.trial');
@@ -111,7 +111,9 @@ const HomePremiumBanner = React.forwardRef<HomePremiumBannerRef, Props>((props, 
       left: freeDatesLeft,
     });
   }
-  return (
+  return !leftText && !rightText ? (
+    <></>
+  ) : (
     <View style={{ marginBottom: 30, width: '100%' }}>
       <View
         style={{
