@@ -7,6 +7,7 @@ import {
   TouchableWithoutFeedback,
   Platform,
   Modal,
+  Linking,
 } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { FontText, REGULAR_FONT_FAMILY } from '@app/components/utils/FontText';
@@ -34,6 +35,7 @@ import moment from 'moment';
 import { NOTIFICATION_IDENTIFIERS } from '@app/types/domain';
 import { recreateNotification } from '@app/utils/notification';
 import * as RNIap from 'react-native-iap';
+import { TouchableOpacity } from 'react-native-gesture-handler';
 export default function ({
   route,
   navigation,
@@ -41,6 +43,7 @@ export default function ({
   const { theme } = useTheme();
 
   const [loading, setLoading] = useState(false);
+  const [subscriptionLoading, setSubscriptionLoading] = useState(false);
   const [productLoading, setProductLoading] = useState(false);
   const [buttonDisabled, setButtonDisabled] = useState(false);
   type CurrentPremiumState =
@@ -192,7 +195,7 @@ export default function ({
         navigation.navigate('PremiumSuccess', { state: 'trial_started' });
       } else {
         try {
-          setProductLoading(true);
+          setSubscriptionLoading(true);
           void localAnalytics().logEvent('PremiumPremiumStartInitiated', {
             screen: 'Premium',
             action: 'PremiumStartInitiated',
@@ -222,7 +225,7 @@ export default function ({
           }
         } catch (error) {
           console.log(error);
-          setProductLoading(false);
+          setSubscriptionLoading(false);
         }
       }
       await sleep(200);
@@ -281,7 +284,7 @@ export default function ({
               }
             }
           } finally {
-            setProductLoading(false);
+            setSubscriptionLoading(false);
           }
         };
         purchaseUpdateSubscription = RNIap.purchaseUpdatedListener((purchase) => {
@@ -336,7 +339,7 @@ export default function ({
               // Handle other types of errors if necessary.
               break;
           }
-          setProductLoading(false);
+          setSubscriptionLoading(false);
         });
 
         let products;
@@ -473,7 +476,7 @@ export default function ({
     outputRange: [theme.colors.grey3, 'rgba(26, 5, 47, 0.6)'],
   }) as unknown as string;
 
-  return loading ? (
+  return loading || productLoading ? (
     <Loading></Loading>
   ) : (
     <View
@@ -482,7 +485,7 @@ export default function ({
         backgroundColor: theme.colors.black,
       }}
     >
-      {productLoading && (
+      {subscriptionLoading && (
         <Modal animationType="none" transparent={true}>
           <TouchableWithoutFeedback onPress={onClosePressed} style={{ flex: 1 }}>
             <View
@@ -725,11 +728,38 @@ export default function ({
                     </View>
                     <SecondaryButton
                       disabled={buttonDisabled}
-                      containerStyle={{ marginTop: 30 }}
+                      containerStyle={{ marginTop: '5%' }}
                       buttonStyle={{ width: '100%' }}
                       onPress={() => void handleButtonPress()}
                       title={i18n.t('premium.offer.subscribe')}
                     ></SecondaryButton>
+                    <View
+                      style={{
+                        marginTop: 10,
+                        flexDirection: 'row',
+                        justifyContent: 'center',
+                      }}
+                    >
+                      <TouchableOpacity
+                        onPress={() => {
+                          void Linking.openURL('https://nemlys.com/terms');
+                        }}
+                      >
+                        <FontText style={{ color: theme.colors.grey3, marginRight: 10 }}>
+                          {i18n.t('premium.offer.terms')}
+                        </FontText>
+                      </TouchableOpacity>
+                      <FontText style={{ color: theme.colors.grey5 }}>and</FontText>
+                      <TouchableOpacity
+                        onPress={() => {
+                          void Linking.openURL('https://nemlys.com/policy');
+                        }}
+                      >
+                        <FontText style={{ color: theme.colors.grey3, marginLeft: 10 }}>
+                          {i18n.t('premium.offer.privacy')}
+                        </FontText>
+                      </TouchableOpacity>
+                    </View>
                   </>
                 )}
               </View>
