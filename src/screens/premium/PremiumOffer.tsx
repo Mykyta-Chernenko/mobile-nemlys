@@ -735,7 +735,7 @@ export default function ({
                     ></SecondaryButton>
                     <View
                       style={{
-                        marginTop: 10,
+                        marginTop: 15,
                         flexDirection: 'row',
                         justifyContent: 'center',
                       }}
