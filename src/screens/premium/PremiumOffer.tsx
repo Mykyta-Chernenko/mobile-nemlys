@@ -80,6 +80,7 @@ export default function ({
     setButtonDisabled(false);
     setSelectedPlan('Annual');
     handleToggle('Annual');
+    let currentPremiumState: CurrentPremiumState = 'daily';
 
     try {
       const {
@@ -100,7 +101,6 @@ export default function ({
         setEligebleForTrial(false);
       }
 
-      let currentPremiumState: CurrentPremiumState = 'daily';
       if (premiumState === 'premium') {
         currentPremiumState = 'premium';
       } else if (trialExpired && !afterTrialPremiumOffered) {
