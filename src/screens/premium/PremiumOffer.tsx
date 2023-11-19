@@ -96,10 +96,13 @@ export default function ({
       } = await getPremiumDetails(authContext.userId!);
 
       setDailyTopics(dailySetCounts);
+
       // already has trial or premium
-      if (trialStart || premiumStart) {
-        setEligebleForTrial(false);
-      }
+      // if (trialStart || premiumStart) {
+      //   setEligebleForTrial(false);
+      // }
+      // no more in app trial, we have subscription trial
+      setEligebleForTrial(false);
 
       if (premiumState === 'premium') {
         currentPremiumState = 'premium';
