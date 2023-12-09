@@ -763,6 +763,17 @@ export default function ({
                         </FontText>
                       </TouchableOpacity>
                     </View>
+                    <View
+                      style={{
+                        marginTop: 12,
+                        flexDirection: 'row',
+                        justifyContent: 'center',
+                      }}
+                    >
+                      <FontText style={{ fontSize: 10, color: theme.colors.grey5 }}>
+                        {i18n.t('premium.offer.charged')}
+                      </FontText>
+                    </View>
                   </>
                 )}
               </View>

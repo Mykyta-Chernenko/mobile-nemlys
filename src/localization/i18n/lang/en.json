@@ -104,9 +104,10 @@
       "plan_monthly_price": "5$/month",
       "plan_yearly_title": "Annual",
       "plan_yearly_price": "49$/year",
-      "subscribe": "Start with free 7-day trial",
+      "subscribe": "Start with free 7-day trial*",
       "terms": "Terms of Service",
-      "privacy": "Privacy Policy"
+      "privacy": "Privacy Policy",
+      "charged": "* You will be charged when the trial is over unless you cancel the subscription"
     },
     "success": {
       "trial": {

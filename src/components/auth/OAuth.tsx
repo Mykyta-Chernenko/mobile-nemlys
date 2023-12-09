@@ -48,6 +48,7 @@ export const OAuth = ({
         provider,
         options: {
           redirectTo: returnUrl,
+          scopes: Platform.OS === 'ios' ? 'name email' : undefined,
         },
       };
       if (Platform.OS == 'web') {
@@ -62,7 +63,9 @@ export const OAuth = ({
         const oldWindow = window;
         window = undefined as any;
         const { data } = await supabase.auth.signInWithOAuth(signInParms);
+
         const authUrl = data.url;
+
         if (authUrl) {
           // WARN: on Android instead of getting the response back,
           //  we get a dismissed event, but we get the access token and the refesh token in the URL,
@@ -72,6 +75,7 @@ export const OAuth = ({
             authUrl: authUrl,
             projectNameForProxy: '@marakaci/nemlys',
           });
+          console.log(response);
           try {
             if (response.type == 'success') {
               const accessToken = response.params['access_token'];
