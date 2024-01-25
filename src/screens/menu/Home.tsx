@@ -98,17 +98,25 @@ export default function ({
           navigation.navigate('InterviewRequest', { refreshTimeStamp: new Date().toISOString() });
         }
       }
-      const dateRes = await supabase.from('date').select('*').eq('active', true).maybeSingle();
-
-      if (dateRes.error) {
-        logErrors(dateRes.error);
+      const activeDatesRes = await supabase
+        .from('date')
+        .select('*')
+        .eq('active', true)
+        .order('created_at', { ascending: false });
+      if (activeDatesRes.error) {
+        logErrors(activeDatesRes.error);
         return;
       }
-
-      if (dateRes.data) {
+      if (activeDatesRes.data) {
+        if (activeDatesRes.data.length > 1) {
+          for (const date of activeDatesRes.data.slice(1)) {
+            await supabase.from('date').update({ active: false }).eq('id', date.id);
+          }
+        }
+        const lastDate = activeDatesRes.data[0];
         navigation.navigate('OnDate', {
-          job: dateRes.data.job || 'hard',
-          withPartner: dateRes.data.with_partner,
+          job: lastDate.data.job || 'hard',
+          withPartner: lastDate.data.with_partner,
           refreshTimeStamp: new Date().toISOString(),
         });
       } else {
