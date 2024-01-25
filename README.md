@@ -35,3 +35,7 @@ When you start developing from a new network for oauth to work, you need to add 
 - export production envs
 - eas update --channel production  
 
+
+## important
+When you rotate a secret key in apple, you need to also generate new jwt out of this key for supabase
+https://supabase.com/docs/guides/auth/social-login/auth-apple

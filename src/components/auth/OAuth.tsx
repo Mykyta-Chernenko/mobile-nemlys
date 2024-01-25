@@ -48,10 +48,10 @@ export const OAuth = ({
         provider,
         options: {
           redirectTo: returnUrl,
-          scopes: Platform.OS === 'ios' ? 'name email' : undefined,
+          scopes: provider === 'apple' ? 'name email' : undefined,
         },
       };
-      if (Platform.OS == 'web') {
+      if (Platform.OS === 'web') {
         const { data, error } = await supabase.auth.signInWithOAuth(signInParms);
         if (error) {
           logErrors(error);
@@ -62,6 +62,7 @@ export const OAuth = ({
         // fixes a bug in supabase
         const oldWindow = window;
         window = undefined as any;
+        console.log(signInParms);
         const { data } = await supabase.auth.signInWithOAuth(signInParms);
 
         const authUrl = data.url;
