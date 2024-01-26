@@ -115,8 +115,8 @@ export default function ({
         }
         const lastDate = activeDatesRes.data[0];
         navigation.navigate('OnDate', {
-          job: lastDate.data.job || 'hard',
-          withPartner: lastDate.data.with_partner,
+          job: lastDate.job || 'hard',
+          withPartner: lastDate.with_partner,
           refreshTimeStamp: new Date().toISOString(),
         });
       } else {
