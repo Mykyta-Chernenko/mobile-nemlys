@@ -84,7 +84,8 @@ export default function ({
   }
   const withPartner = currentDate?.with_partner ?? false;
 
-  const dateFields = 'id, couple_id, with_partner, active, topic, level, created_at, updated_at';
+  const dateFields =
+    'id, couple_id, with_partner, active, topic, level, job, created_at, updated_at';
   async function getData() {
     setLoading(true);
 

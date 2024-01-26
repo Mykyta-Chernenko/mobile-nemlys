@@ -1,4 +1,5 @@
 import { PostgrestError } from '@supabase/supabase-js';
+import { JobSlug } from '@app/types/domain';
 
 export { User as SupabaseUser } from '@supabase/supabase-js';
 export type SupabaseAnswer<T> = { data: T; error: null } | { data: null; error: PostgrestError };
@@ -44,6 +45,7 @@ export type InsertAPINotification = Omit<APINotification, keyof ApiEntry>;
 export class APIDate extends ApiEntry {
   couple_id: APICouple['id'];
   topic: string;
+  job: JobSlug;
   level: number;
   active: boolean;
   with_partner: boolean;

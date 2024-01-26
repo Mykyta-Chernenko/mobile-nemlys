@@ -5,7 +5,7 @@ import { supabase } from '@app/api/initSupabase';
 import { Loading } from '@app/components/utils/Loading';
 import { logErrors } from '@app/utils/errors';
 import { AuthContext } from '@app/provider/AuthProvider';
-import { APIUserProfile, SupabaseAnswer } from '@app/types/api';
+import { APIDate, APIUserProfile, SupabaseAnswer } from '@app/types/api';
 import { SafeAreaView, ScrollView, View } from 'react-native';
 import { useTheme, useThemeMode } from '@rneui/themed';
 import { FontText } from '@app/components/utils/FontText';
@@ -98,16 +98,16 @@ export default function ({
           navigation.navigate('InterviewRequest', { refreshTimeStamp: new Date().toISOString() });
         }
       }
-      const activeDatesRes = await supabase
+      const activeDatesRes: SupabaseAnswer<APIDate[]> = await supabase
         .from('date')
         .select('*')
         .eq('active', true)
-        .order('created_at', { ascending: false });
+        .order('id', { ascending: false });
       if (activeDatesRes.error) {
         logErrors(activeDatesRes.error);
         return;
       }
-      if (activeDatesRes.data) {
+      if (activeDatesRes.data.length) {
         if (activeDatesRes.data.length > 1) {
           for (const date of activeDatesRes.data.slice(1)) {
             await supabase.from('date').update({ active: false }).eq('id', date.id);
