@@ -43,7 +43,11 @@ const HomePremiumBanner = React.forwardRef<HomePremiumBannerRef, Props>((props, 
       userId: authContext.userId,
     });
     if (canStartDate) {
-      navigation.navigate('DateIsWithPartner', { job });
+      navigation.navigate('ConfigureDate', {
+        job,
+        withPartner: true,
+        refreshTimeStamp: new Date().toISOString(),
+      });
     } else {
       navigation.navigate('PremiumOffer', { refreshTimeStamp: new Date().toISOString() });
     }

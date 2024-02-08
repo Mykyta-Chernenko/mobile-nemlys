@@ -68,7 +68,7 @@ export default function ({
         action: 'GoBackPressed',
         userId: authContext.userId,
       });
-      navigation.navigate('DateIsWithPartner', { job });
+      navigation.navigate('Home', { refreshTimeStamp: new Date().toISOString() });
     } else {
       void localAnalytics().logEvent('ConfigureDateBackPressed', {
         screen: 'ConfigureDate',

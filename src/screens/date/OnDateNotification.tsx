@@ -23,7 +23,6 @@ export default function ({
   route,
   navigation,
 }: NativeStackScreenProps<MainStackParamList, 'OnDateNotification'>) {
-  const { withPartner } = route.params;
   const [loading, setLoading] = useState(false);
   const { setMode } = useThemeMode();
   useEffect(() => {
@@ -66,8 +65,7 @@ export default function ({
       'OnDateNotification',
       setLoading,
     );
-    navigation.navigate('OnDateNewLevel', {
-      withPartner,
+    navigation.navigate('Home', {
       refreshTimeStamp: new Date().toISOString(),
     });
   };
@@ -79,8 +77,7 @@ export default function ({
       userId: authContext.userId,
       confirm: false,
     });
-    navigation.navigate('OnDateNewLevel', {
-      withPartner,
+    navigation.navigate('Home', {
       refreshTimeStamp: new Date().toISOString(),
     });
   };

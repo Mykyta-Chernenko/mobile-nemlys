@@ -300,7 +300,32 @@ export default function ({
               screen: 'PremiumOffer',
               action: 'CancelledSubscriptionAttempt',
               userId: authContext.userId,
+              error,
             });
+          } else if (error.code === 'E_SERVICE_ERROR') {
+            void localAnalytics().logEvent('PremiumOfferSubscriptionErrorPlayMarketNotLoggedIn', {
+              screen: 'PremiumOffer',
+              action: 'SubscriptionErrorPlayMarketNotLoggedIn',
+              userId: authContext.userId,
+              error,
+            });
+            alert(i18n.t('errors.play_market'));
+          } else if (error.code === ('PROMISE_BUY_ITEM' as RNIap.ErrorCode)) {
+            void localAnalytics().logEvent('PremiumOfferSubscriptionErrorProductNotLoaded', {
+              screen: 'PremiumOffer',
+              action: 'SubscriptionErrorProductNotLoaded',
+              userId: authContext.userId,
+              error,
+            });
+            alert(i18n.t('errors.play_market'));
+          } else if (error.code === 'E_UNKNOWN') {
+            void localAnalytics().logEvent('PremiumOfferSubscriptionErrorUnknownError', {
+              screen: 'PremiumOffer',
+              action: 'SubscriptionErrorUnknownError',
+              userId: authContext.userId,
+              error,
+            });
+            alert(i18n.t('errors.payment_error'));
           } else {
             void localAnalytics().logEvent('PremiumOfferSubscriptionAttemptError', {
               screen: 'PremiumOffer',
@@ -312,6 +337,8 @@ export default function ({
           }
 
           switch (error.code) {
+            case 'PROMISE_BUY_ITEM' as RNIap.ErrorCode:
+              break;
             case 'E_ALREADY_OWNED':
               console.log('You already own this item.');
               // Handle logic if the user already owns the item.
@@ -326,17 +353,6 @@ export default function ({
               console.log('Network error occurred. Please check your connection and try again.');
               // Handle logic if a network error occurs.
               break;
-
-            case 'E_USER_CANCELLED':
-              console.log('User cancelled the purchase.');
-              // Handle logic if the user cancels the purchase.
-              break;
-
-            case 'E_UNKNOWN':
-              console.log('An unknown error occurred.');
-              // Handle logic for all other unknown errors.
-              break;
-
             default:
               console.log('Other purchase error:', error.message);
               // Handle other types of errors if necessary.
@@ -362,7 +378,32 @@ export default function ({
           products,
         });
       } catch (err) {
-        logErrors(err);
+        try {
+          let products;
+          if (Platform.OS === 'ios') {
+            products = await RNIap.getProducts({
+              skus: [monthlySubscriptionId, yearlySubscriptionId],
+            });
+          } else {
+            products = await RNIap.getSubscriptions({
+              skus: [monthlySubscriptionId, yearlySubscriptionId],
+            });
+          }
+          void localAnalytics().logEvent('PremiumOfferStoreProductsLoadedRetry', {
+            screen: 'PremiumOffer',
+            action: 'StoreProductsLoadedRetry',
+            userId: authContext.userId,
+            products,
+          });
+        } catch (err) {
+          void localAnalytics().logEvent('PremiumOfferStoreProductsError', {
+            screen: 'PremiumOffer',
+            action: 'StoreProductsError',
+            userId: authContext.userId,
+            err,
+          });
+          logErrors(err);
+        }
       }
 
       setProductLoading(false);

@@ -15,6 +15,10 @@
    ```jsx
    npm install
    ```
+4. brew install direnv; 
+For zsh, add this to the end of ~/.zshrc:
+eval "$(direnv hook zsh)"
+npm install -g dotenv-cli
 
 5. Start the environtment
 

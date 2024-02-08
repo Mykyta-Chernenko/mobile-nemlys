@@ -31,11 +31,12 @@ module.exports = {
     '@typescript-eslint/no-unsafe-assignment': 'off',
     '@typescript-eslint/no-unsafe-member-access': 'off',
     'react/display-name': 'off',
-    'react/prop-types': 'off',
+    'react/prop-types': 'off'
   },
   settings: {
     react: {
       version: 'detect',
     },
   },
+
 };

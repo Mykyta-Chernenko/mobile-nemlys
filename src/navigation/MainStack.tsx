@@ -11,9 +11,7 @@ import PartnerName from '@app/screens/onboarding/PartnerName';
 import OnboardingReflection from '@app/screens/onboarding/OnboardingReflection';
 import OnboardingReflectionExplanation from '@app/screens/onboarding/OnboardingReflectionExplanation';
 import ConfigureDate from '@app/screens/date/ConfigureDate';
-import DateIsWithPartner from '@app/screens/date/DateIsWithPartner';
 import OnDate from '@app/screens/date/OnDate';
-import OnDateNewLevel from '@app/screens/date/OnDateNewLevel';
 import Profile from '@app/screens/menu/Profile';
 import DiscussWay from '@app/screens/onboarding/DiscussWay';
 import Analyzing from '@app/screens/onboarding/Analyzing';
@@ -64,11 +62,6 @@ const Main = () => {
       />
       <MainStack.Screen
         options={{ animation: 'slide_from_right' }}
-        name={'DateIsWithPartner'}
-        component={DateIsWithPartner}
-      />
-      <MainStack.Screen
-        options={{ animation: 'slide_from_right' }}
         name={'ConfigureDate'}
         component={ConfigureDate}
       />
@@ -96,11 +89,6 @@ const Main = () => {
         options={{ animation: 'slide_from_right' }}
         name={'InterviewRequest'}
         component={InterviewRequest}
-      />
-      <MainStack.Screen
-        options={{ animation: 'slide_from_right' }}
-        name={'OnDateNewLevel'}
-        component={OnDateNewLevel}
       />
       <MainStack.Screen
         options={{ animation: 'slide_from_right' }}

@@ -148,7 +148,7 @@ export default function ({
         setPartnerName(data.data.partner_first_name);
         setLoading(false);
 
-        setShowNewReflection(dateCount > 0 && !levelNewReflection.count);
+        setShowNewReflection((dateCount === 3 || dateCount === 8) && !levelNewReflection.count);
       }
     }
     setLoading(false);
@@ -220,7 +220,7 @@ export default function ({
                     {partnerName || i18n.t('home.partner')}
                   </FontText>
                   <FontText style={{ color: theme.colors.grey3, marginTop: '2%' }}>
-                    {dateCount + 1} {i18n.t('level')}
+                    {dateCount + 1} {i18n.t('home.discussed_questions')}
                   </FontText>
                 </View>
                 <View
@@ -284,37 +284,9 @@ export default function ({
               </ScrollView>
             </View>
           </View>
-          {showReflectionNotification && (
-            <View
-              style={{
-                height: 60,
-                backgroundColor: theme.colors.grey1,
-                marginHorizontal: -20,
-                marginBottom: -20,
-              }}
-            >
-              <View
-                style={{
-                  flex: 1,
-                  borderTopLeftRadius: 16,
-                  borderTopRightRadius: 16,
-                  backgroundColor: theme.colors.warning,
-                  alignContent: 'center',
-                  justifyContent: 'center',
-                  marginBottom: 20,
-                }}
-              >
-                <FontText style={{ textAlign: 'center' }}>
-                  {i18n.t('home.reflect_explanation')}
-                </FontText>
-              </View>
-            </View>
-          )}
           <View
             style={{
-              backgroundColor: showReflectionNotification
-                ? theme.colors.warning
-                : theme.colors.grey1,
+              backgroundColor: theme.colors.grey1,
               marginHorizontal: -padding,
               height: 70,
             }}

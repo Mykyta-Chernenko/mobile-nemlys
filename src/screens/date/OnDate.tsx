@@ -1,11 +1,11 @@
 import React, { useContext, useEffect, useRef, useState } from 'react';
 import { supabase } from '@app/api/initSupabase';
 import * as StoreReview from 'expo-store-review';
-import { APIDate, APIGeneratedQuestion, SupabaseAnswer } from '@app/types/api';
+import { APIDate, APIGeneratedQuestion, APIUserProfile, SupabaseAnswer } from '@app/types/api';
 import { useTheme, useThemeMode } from '@rneui/themed';
 import { Image, Platform } from 'react-native';
 import Carousel from 'react-native-reanimated-carousel';
-import { logErrors, logErrorsWithMessageWithoutAlert } from '@app/utils/errors';
+import { logErrors } from '@app/utils/errors';
 import { captureScreen } from 'react-native-view-shot';
 import { MainStackParamList } from '@app/types/navigation';
 import { NativeStackScreenProps } from '@react-navigation/native-stack';
@@ -26,14 +26,12 @@ import { GestureHandlerRootView } from 'react-native-gesture-handler';
 import * as ScreenCapture from 'expo-screen-capture';
 import OnDateStopPopup from '@app/components/date/OnDateStopPopup';
 import * as Sharing from 'expo-sharing';
-import { retrieveNotificationAccess } from '@app/utils/notification';
+import { recreateNotifications, retrieveNotificationAccess } from '@app/utils/notification';
 import * as Notifications from 'expo-notifications';
-import { getNow, sleep } from '@app/utils/date';
-import RecordButton, { RecordButtonRef } from '@app/components/date/RecordButton';
-import { Audio } from 'expo-av';
-import * as FileSystem from 'expo-file-system';
-import { Buffer } from 'buffer';
+import { sleep } from '@app/utils/date';
 import { GRANTED_NOTIFICATION_STATUS } from '@app/utils/constants';
+import { NOTIFICATION_IDENTIFIERS } from '@app/types/domain';
+import { getPremiumDetails } from '@app/api/premium';
 
 export default function ({
   route,
@@ -64,8 +62,6 @@ export default function ({
   const [showFeedback, setShowFeedback] = useState<boolean>(false);
   const carouselRef = useRef(null) as any;
   const [isSharing, setIsSharing] = useState(false);
-  const [recordingUri, setRecordingUri] = useState<string | undefined>(undefined);
-  const [recordingSecondsSpent, setRecordingSecondsSpent] = useState<number>(0);
 
   function restart() {
     setLoading(true);
@@ -203,6 +199,7 @@ export default function ({
           screen: 'OnDate',
           action: 'ScreenshotTaken',
           userId: authContext.userId,
+          currentQuestion,
         });
       });
       return () => subscription.remove();
@@ -227,16 +224,12 @@ export default function ({
 
   const handleFinishDateButtonFinal = async (feedback: number | undefined) => {
     if (!currentDate) return;
-    const recordingRes = await recordButtonRef.current?.stopRecording();
+    // const recordingRes = await recordButtonRef.current?.stopRecording();
 
     setLoading(true);
 
-    const [shouldShowNotificationBanner, _, __] = await Promise.all([
+    const [shouldShowNotificationBanner, _] = await Promise.all([
       getShouldShowNotificationBanner(),
-      saveRecording(
-        recordingRes?.uri || recordingUri,
-        recordingRes?.recordingSeconds || recordingSecondsSpent,
-      ),
       finishSaveDate(feedback),
     ]);
 
@@ -246,13 +239,97 @@ export default function ({
       userId: authContext.userId,
       shouldShowNotificationBanner,
     });
-    if (shouldShowNotificationBanner) {
-      navigation.navigate('OnDateNotification', { withPartner });
-    } else {
-      navigation.navigate('OnDateNewLevel', {
-        withPartner,
-        refreshTimeStamp: new Date().toISOString(),
-      });
+
+    const data: SupabaseAnswer<APIUserProfile> = await supabase
+      .from('user_profile')
+      .select('*')
+      .eq('user_id', authContext.userId)
+      .single();
+    if (data.error) {
+      logErrors(data.error);
+      return;
+    }
+    const setupDateNotification = async (firstName: string, partnerName: string) => {
+      const dateItendifier = NOTIFICATION_IDENTIFIERS.DATE + authContext.userId!;
+      const day = 60 * 60 * 24;
+
+      await recreateNotifications(
+        authContext.userId!,
+        dateItendifier,
+        'Home',
+        i18n.t('notification.date.title', { firstName }),
+        i18n.t('notification.date.body', { partnerName }),
+        [
+          {
+            seconds: day * 3,
+            repeats: false,
+          },
+          {
+            seconds: day * 6,
+            repeats: false,
+          },
+          {
+            seconds: day * 12,
+            repeats: false,
+          },
+          {
+            seconds: day * 24,
+            repeats: false,
+          },
+          {
+            seconds: day * 48,
+            repeats: false,
+          },
+        ],
+      );
+    };
+    void setupDateNotification(data.data.first_name, data.data.partner_first_name);
+    const { error, count } = await supabase
+      .from('date')
+      .select('*', { count: 'exact' })
+      .eq('active', false)
+      .eq('stopped', false);
+    if (error) {
+      logErrors(error);
+      return;
+    }
+
+    try {
+      const { premiumState, todayDateCount, dailyDatesLimit } = await getPremiumDetails(
+        authContext.userId!,
+      );
+
+      // the user has just finished the daily sets, prompt trial every 3 days on average
+      if (premiumState === 'free' && todayDateCount >= dailyDatesLimit && Math.random() < 1 / 3) {
+        void localAnalytics().logEvent('NewLevelNavigateToPremiumTrial', {
+          screen: 'NewLevel',
+          action: 'NavigateToPremiumTrial',
+          userId: authContext.userId,
+        });
+        navigation.navigate('PremiumOffer', { refreshTimeStamp: new Date().toISOString() });
+      } else if (shouldShowNotificationBanner) {
+        navigation.navigate('OnDateNotification', { withPartner });
+      } else {
+        if ((count || 0) === 1 && withPartner) {
+          void localAnalytics().logEvent('NewLevelFirstDateFinished', {
+            screen: 'NewLevel',
+            action: 'FirstDateFinished',
+            userId: authContext.userId,
+          });
+        } else {
+          void localAnalytics().logEvent('NewLevelDateFinished', {
+            screen: 'NewLevel',
+            action: 'DateFinished',
+            userId: authContext.userId,
+          });
+        }
+
+        navigation.navigate('Home', {
+          refreshTimeStamp: new Date().toISOString(),
+        });
+      }
+    } catch (error) {
+      logErrors(error);
     }
   };
   const finishSaveDate = async (feedback: number | undefined) => {
@@ -296,7 +373,7 @@ export default function ({
     }
     if (
       dateCount > 0 &&
-      (feedback || 0) == 4 &&
+      (feedback || 0) > 2 &&
       (!userProfileData.data.showed_rating || dateCount % 5 === 0)
     ) {
       if (await StoreReview.hasAction()) {
@@ -321,62 +398,62 @@ export default function ({
       return;
     }
   };
-  const recordButtonRef = useRef<RecordButtonRef>(null);
+  // const recordButtonRef = useRef<RecordButtonRef>(null);
 
-  const saveRecording = async (recordUri: string | undefined, secondsSpent: number) => {
-    void localAnalytics().logEvent('OnDateRecordingStartTrySavingSummary', {
-      screen: 'OnDateRecording',
-      action: 'SavedConversationSummary',
-      userId: authContext.userId,
-      currentDate,
-      recordingUri: recordUri,
-      secondsSpent,
-    });
-    if (currentDate && recordUri) {
-      try {
-        const file = Buffer.from(
-          await FileSystem.readAsStringAsync(recordUri, {
-            encoding: FileSystem.EncodingType.Base64,
-          }),
-          'base64',
-        );
+  // const saveRecording = async (recordUri: string | undefined, secondsSpent: number) => {
+  //   void localAnalytics().logEvent('OnDateRecordingStartTrySavingSummary', {
+  //     screen: 'OnDateRecording',
+  //     action: 'SavedConversationSummary',
+  //     userId: authContext.userId,
+  //     currentDate,
+  //     recordingUri: recordUri,
+  //     secondsSpent,
+  //   });
+  //   if (currentDate && recordUri) {
+  //     try {
+  //       const file = Buffer.from(
+  //         await FileSystem.readAsStringAsync(recordUri, {
+  //           encoding: FileSystem.EncodingType.Base64,
+  //         }),
+  //         'base64',
+  //       );
 
-        const timestamp = getNow().valueOf().toString();
-        const name =
-          authContext.userId! +
-          '/' +
-          timestamp +
-          Audio.RecordingOptionsPresets.HIGH_QUALITY.ios.extension;
-        const bucket = 'conversation-recordings';
-        const res = await supabase.storage.from(bucket).upload(name, file);
-        if (res.error) {
-          logErrors(res.error);
-        }
+  //       const timestamp = getNow().valueOf().toString();
+  //       const name =
+  //         authContext.userId! +
+  //         '/' +
+  //         timestamp +
+  //         Audio.RecordingOptionsPresets.HIGH_QUALITY.ios.extension;
+  //       const bucket = 'conversation-recordings';
+  //       const res = await supabase.storage.from(bucket).upload(name, file);
+  //       if (res.error) {
+  //         logErrors(res.error);
+  //       }
 
-        void supabase.functions
-          .invoke('save-conversation', {
-            body: {
-              dateId: currentDate.id,
-              fileUrl: res.data?.path,
-              seconds_spent: secondsSpent,
-            },
-          })
-          .then((result) => {
-            if (result.error) {
-              logErrorsWithMessageWithoutAlert(result.error);
-            } else {
-              void localAnalytics().logEvent('OnDateRecordingSavedConversationSummary', {
-                screen: 'OnDateRecording',
-                action: 'SavedConversationSummary',
-                userId: authContext.userId,
-              });
-            }
-          });
-      } catch (e) {
-        logErrors(e);
-      }
-    }
-  };
+  //       void supabase.functions
+  //         .invoke('save-conversation', {
+  //           body: {
+  //             dateId: currentDate.id,
+  //             fileUrl: res.data?.path,
+  //             seconds_spent: secondsSpent,
+  //           },
+  //         })
+  //         .then((result) => {
+  //           if (result.error) {
+  //             logErrorsWithMessageWithoutAlert(result.error);
+  //           } else {
+  //             void localAnalytics().logEvent('OnDateRecordingSavedConversationSummary', {
+  //               screen: 'OnDateRecording',
+  //               action: 'SavedConversationSummary',
+  //               userId: authContext.userId,
+  //             });
+  //           }
+  //         });
+  //     } catch (e) {
+  //       logErrors(e);
+  //     }
+  //   }
+  // };
 
   const [notificationStatus, setNotificationStatus] = useState<string | undefined>(undefined);
   useEffect(() => {
@@ -427,7 +504,7 @@ export default function ({
     );
   };
 
-  const handleStopInitiate = async () => {
+  const handleStopInitiate = () => {
     const lastQuestion = questionIndex === QUESTION_COUNT - 1;
     void localAnalytics().logEvent('DateFinishDateStopClicked', {
       screen: 'Date',
@@ -436,7 +513,7 @@ export default function ({
       lastQuestion,
     });
     if (lastQuestion) {
-      await goToFeedback();
+      goToFeedback();
     } else {
       setShowStopPopup(true);
     }
@@ -463,7 +540,7 @@ export default function ({
       screen: 'Date',
       action: 'SharePressed',
       userId: authContext.userId,
-      questionIndex,
+      currentQuestion,
     });
     setIsSharing(true);
     await sleep(200);
@@ -540,19 +617,10 @@ export default function ({
       </TouchableOpacity>
     );
 
-  const goToFeedback = async () => {
-    await recordButtonRef.current?.stopRecording();
+  const goToFeedback = () => {
+    // await recordButtonRef.current?.stopRecording();
     setShowFeedback(true);
   };
-  const showRecording = withPartner && !loading;
-  const Recording = showRecording && (
-    <RecordButton
-      dateCount={dateCount}
-      setRecordingUri={setRecordingUri}
-      setSecondsSpent={setRecordingSecondsSpent}
-      ref={recordButtonRef}
-    ></RecordButton>
-  );
 
   const RightComponent = (index: number) =>
     index === (questions?.length ?? 1) - 1 ? (
@@ -838,7 +906,6 @@ export default function ({
                   }}
                 />
               </GestureHandlerRootView>
-              <View style={{ position: 'absolute', bottom: 35 }}>{Recording}</View>
             </Card>
           </View>
         </View>

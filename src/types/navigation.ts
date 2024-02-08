@@ -14,7 +14,6 @@ export type MainStackParamList = {
   WriteReflection: { reflectionId: number; question: string; answer: string | undefined };
   FinishedWriting: undefined;
   Profile: { refreshTimeStamp: string | undefined };
-  DateIsWithPartner: { job: JobSlug };
   ConfigureDate: {
     job: JobSlug;
     withPartner: boolean;

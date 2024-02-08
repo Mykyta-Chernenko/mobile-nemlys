@@ -16,10 +16,7 @@ import StorySelected from '@app/icons/story_selected';
 import StoryWithWarning from '@app/icons/story_with_warning';
 import QuestionTriangelSelected from '@app/icons/question_triangle_selected';
 import ProfileSelected from '@app/icons/profile_selected';
-import { logErrors } from '@app/utils/errors';
-import { getPremiumDetails } from '@app/api/premium';
 import { Loading } from '../utils/Loading';
-import { getNow } from '@app/utils/date';
 
 export default function ({ reflectionWarning }: { reflectionWarning?: boolean }) {
   const { theme } = useTheme();
@@ -34,30 +31,8 @@ export default function ({ reflectionWarning }: { reflectionWarning?: boolean })
   const isProfileActive = route.name === 'Profile';
   const [showPremium, setShowPremium] = useState(false);
   useEffect(() => {
-    const getData = async () => {
-      setLoading(true);
-      try {
-        const premiumDetails = await getPremiumDetails(authContext.userId!);
-        const trialExpiresInlessThan7Days =
-          premiumDetails.premiumState === 'trial' &&
-          premiumDetails.trialFinish &&
-          premiumDetails.trialFinish.isBefore(getNow().add(7, 'days'));
-        if (
-          premiumDetails.premiumState === 'free' ||
-          premiumDetails.premiumState === 'premium' ||
-          trialExpiresInlessThan7Days
-        ) {
-          setShowPremium(true);
-        }
-      } catch (e) {
-        logErrors(e);
-        return;
-      } finally {
-        setLoading(false);
-      }
-    };
-
-    void getData();
+    setLoading(false);
+    setShowPremium(true);
   }, []);
   return (
     <View

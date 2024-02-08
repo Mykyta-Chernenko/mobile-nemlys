@@ -22,6 +22,10 @@
   "password_placeholder": "Enter your password",
   "password_again_placeholder": "Enter your password again",
   "unexpected_error": "Unexpected error happened, try again",
+  "errors": {
+    "play_market": "You are not logged in in your Play Market app, please, login there first, and then go back to Nemlys app to start the subscription",
+    "payment_error": "There has been an intermediate error with your phone's store. You can typically solve it by waiting a couple of minutes and trying to initiate the subscription again"
+  },
   "join": "Join",
   "history": "History",
   "cards": "Cards",
@@ -55,6 +59,7 @@
     }
   },
   "home": {
+    "discussed_questions": "discussed questions",
     "you": "You",
     "partner": "Partner",
     "discussions": "discussions",
