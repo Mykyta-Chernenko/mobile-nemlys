@@ -137,14 +137,6 @@ export default function ({
     navigation.navigate('WriteReflection', { reflectionId, question, answer });
   };
 
-  const getLevelText = (level: number, index: number) => {
-    if (level === 0) return i18n.t('reflection.level_0');
-    const introductionLevels = completedReflections.filter(
-      (x) => x.reflection_question.level === 0,
-    ).length;
-    const l = completedReflections.length - introductionLevels - index;
-    return i18n.t('reflection.level', { number: l });
-  };
   return loading ? (
     <Loading></Loading>
   ) : (
@@ -197,9 +189,7 @@ export default function ({
                   }}
                 >
                   <FontText h3>{i18n.t('reflection.title')}</FontText>
-                  <FontText style={{ color: theme.colors.grey3, marginTop: '2%' }}>
-                    {dateCount + 1} {i18n.t('level')}
-                  </FontText>
+                  <FontText style={{ color: theme.colors.grey3, marginTop: '2%' }}></FontText>
                 </View>
                 <View
                   style={{
@@ -457,9 +447,6 @@ export default function ({
                   <View style={{ flexDirection: 'row', justifyContent: 'space-between' }}>
                     <FontText style={{ color: theme.colors.grey5 }}>
                       {getDateFromString(r.created_at).format('DD MMM')}
-                    </FontText>
-                    <FontText style={{ color: theme.colors.grey5 }}>
-                      {getLevelText(r.reflection_question.level as number, i)}
                     </FontText>
                   </View>
                 </TouchableOpacity>

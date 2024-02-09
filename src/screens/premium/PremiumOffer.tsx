@@ -2,7 +2,6 @@ import React, { useContext, useEffect, useRef, useState } from 'react';
 import {
   ScrollView,
   View,
-  Image,
   Animated,
   TouchableWithoutFeedback,
   Platform,
@@ -585,22 +584,23 @@ export default function ({
             </View>
             <View style={{ height: 32, width: 32 }}></View>
           </View>
-          <View style={{ alignItems: 'center' }}>
-            <FontText
-              h1
-              style={{
-                color: theme.colors.white,
-                textAlign: 'center',
-              }}
-            >
-              {TitleComponent}
-            </FontText>
-          </View>
-          {currentPremiumState !== 'premium' ? (
-            <>
-              <View>
+          <View>
+            <View style={{ alignItems: 'center' }}>
+              <FontText
+                h1
+                style={{
+                  color: theme.colors.white,
+                  textAlign: 'center',
+                }}
+              >
+                {TitleComponent}
+              </FontText>
+            </View>
+            <View>
+              {currentPremiumState !== 'premium' && (
                 <View
                   style={{
+                    marginTop: 40,
                     borderRadius: 20,
                     backgroundColor: theme.colors.grey1,
                     padding: 20,
@@ -644,26 +644,11 @@ export default function ({
                     {i18n.t('premium.offer.unlimited_topics_explanation', { dailyTopics })}
                   </FontText>
                 </View>
-                <View
-                  style={{
-                    marginTop: 10,
-                    borderRadius: 20,
-                    backgroundColor: 'rgba(245, 233, 235, 0.1)',
-                    padding: 20,
-                  }}
-                >
-                  <Image
-                    style={{ height: 44, width: 44, marginBottom: 20 }}
-                    source={require('../../../assets/images/record_button.png')}
-                  ></Image>
-                  <FontText h4 style={{ color: theme.colors.grey1 }}>
-                    {i18n.t('premium.offer.unlimited_audio_title')}
-                  </FontText>
-                  <FontText style={{ color: theme.colors.grey3, marginTop: 5 }}>
-                    {i18n.t('premium.offer.unlimited_audio_explanation')}
-                  </FontText>
-                </View>
-              </View>
+              )}
+            </View>
+          </View>
+          {currentPremiumState !== 'premium' ? (
+            <>
               <View style={{ marginBottom: 10 }}>
                 {eligibleForTrial ? (
                   <>

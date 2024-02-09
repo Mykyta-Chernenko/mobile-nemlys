@@ -155,7 +155,11 @@ export default function ({
                   </View>
                   <View style={{ marginTop: 5 }}>
                     <FontText h1 style={{ textAlign: 'center' }}>
-                      {i18n.t('new_reflection.title')}
+                      {i18n.t('new_reflection.title_1')}
+                      <FontText h1 style={{ color: theme.colors.primary }}>
+                        {i18n.t('new_reflection.title_2')}
+                      </FontText>
+                      {i18n.t('new_reflection.title_3')}
                     </FontText>
                     <View style={{ marginTop: '2%' }}>
                       <FontText style={{ color: theme.colors.grey3, textAlign: 'center' }}>

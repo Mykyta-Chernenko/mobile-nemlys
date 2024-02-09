@@ -1,556 +1,555 @@
 {
-    "nemlys": "Nemlys",
-    "awesome": "¡Genial!",
-    "loading": "Cargando",
-    "continue": "Continuar",
-    "or": "O",
-    "ok": "Ok",
-    "yes": "Sí",
-    "no": "No",
-    "close": "Cerrar",
-    "save": "Guardar",
-    "cancel": "Cancelar",
-    "confirm": "Confirmar",
-    "submit": "Enviar",
-    "remove": "Eliminar",
-    "next": "Siguiente",
-    "skip": "Saltar",
-    "finish": "Finalizar",
-    "input_here": "Introducir aquí",
-    "name_placeholder": "Ingrese su nombre",
-    "email_placeholder": "Ingrese su correo",
-    "password_placeholder": "Ingrese su contraseña",
-    "password_again_placeholder": "Ingrese su contraseña de nuevo",
-    "unexpected_error": "Ocurrió un error inesperado, inténtelo de nuevo",
-    "errors": {
-      "play_market": "No has iniciado sesión en tu aplicación de Play Market, por favor, inicia sesión allí primero y luego vuelve a la aplicación de Nemlys para comenzar la suscripción",
-      "payment_error": "Ha habido un error intermedio con la tienda de tu teléfono. Típicamente puedes resolverlo esperando un par de minutos y tratando de iniciar la suscripción de nuevo"
-    },
-    "join": "Unirse",
-    "history": "Historial",
-    "cards": "Tarjetas",
-    "configure": "Configurar",
-    "level": "Nivel",
-    "new_reflection": {
-      "title": "¡Reflexión desbloqueada!",
-      "description": "Reflexiona y escribe para obtener preguntas más personalizadas de IA",
-      "button": "Recuérdame más tarde"
-    },
-    "jobs": {
-      "issues": "Problemas en nuestra relación",
-      "sex": "Intimidad y Sexo",
-      "know": "Conocerse el uno al otro",
-      "hard": "Preguntas profundas",
-      "meaningful": "Conversación significativa",
-      "fun": "Temas ligeros y divertidos"
-    },
-    "notification": {
-      "date": {
-        "title": "{{firstName}}, Tiempo para Conectar con tu Pareja",
-        "body": "¿Divertido? ¿Profundo? ¿Íntimo? Elige y Discute temas con {{partnerName}}"
-      },
-      "reflection": {
-        "title": "Tiempo de reflexionar sobre tu relación con {{partnerName}}",
-        "body": "Elige una reflexión y escribe tu respuesta"
-      },
-      "trial_expired": {
-        "title": "Mantén el Acceso Premium Activo",
-        "body": "Descubre dos opciones para mantener el acceso completo"
-      }
-    },
-    "home": {
-      "discussed_questions": "preguntas discutidas",
-      "you": "Tú",
-      "partner": "Pareja",
-      "discussions": "discusiones",
-      "card_questions": "3 preguntas",
-      "title_first": "Selecciona tema\npara discutir\n",
-      "title_second": "juntos",
-      "start": "Comenzar",
-      "reflect_explanation": "Reflexiona para obtener mejores preguntas de IA",
-      "menu": {
-        "discuss": "Discutir",
-        "diary": "Diario",
-        "profile": "Perfil",
-        "premium": "Premium",
-        "reflect": "Reflexionar"
-      }
-    },
-    "profile": {
-      "title": "Perfil"
-    },
-    "premium": {
-      "banner": {
-        "premium": "Acceso ilimitado",
-        "premium_right": "∞",
-        "trial": "Acceso ilimitado",
-        "days_left": "{{days}} días restantes",
-        "new": "Temas para probar",
-        "topics_left": "{{left}}/{{total}} restantes",
-        "free": "Temas diarios"
-      },
-      "offer": {
-        "title": "Premium",
-        "enjoy_your_premium": "Ya tienes premium, ¡disfrútalo!",
-        "upgrade_trial": "Te quedan {{trialDays}} días de Acceso de Prueba",
-        "reached_limit": "Alcanzaste tu límite diario.",
-        "try_unlimited_1": "Prueba con ",
-        "try_unlimited_2": "acceso ilimitado",
-        "premium_title": "Obtén el Acceso Completo de Premium por ",
-        "trial_expired": "Tu Acceso de Prueba Ilimitado ha terminado",
-        "unlimited_topics_title": "Obtén Temas Ilimitados",
-        "unlimited_topics_explanation": "Ahora tienes {{dailyTopics}} tema por día",
-        "unlimited_audio_title": "Obtén Análisis de Audio Ilimitado",
-        "unlimited_audio_explanation": "Ahora tienes 5 minutos por día",
-        "trial_button": "Prueba 7 días gratis",
-        "trial_no_card": "NO se requiere Tarjeta de Crédito",
-        "choose_plan": "Elige tu Plan",
-        "plan_monthly_title": "Mensual",
-        "plan_monthly_price": "5$/mes",
-        "plan_yearly_title": "Anual",
-        "plan_yearly_price": "49$/año",
-        "subscribe": "Comienza con prueba gratis de 7 días*",
-        "terms": "Términos de Servicio",
-        "privacy": "Política de Privacidad",
-        "charged": "* Se te cobrará al finalizar la prueba a menos que canceles la suscripción"
-      },
-      "success": {
-        "trial": {
-          "title_1": "¡Todo listo! Disfruta de tu ",
-          "title_2": "acceso ilimitado",
-          "button": "Genial, gracias"
-        },
-        "premium": {
-          "title_1": "Tu premium se activó con éxito, ",
-          "title_2": "¡Disfrútalo!",
-          "button": "Genial, gracias"
-        }
-      }
+  "nemlys": "Nemlys",
+  "awesome": "¡Genial!",
+  "loading": "Cargando",
+  "continue": "Continuar",
+  "or": "O",
+  "ok": "Ok",
+  "yes": "Sí",
+  "no": "No",
+  "close": "Cerrar",
+  "save": "Guardar",
+  "cancel": "Cancelar",
+  "confirm": "Confirmar",
+  "submit": "Enviar",
+  "remove": "Eliminar",
+  "next": "Siguiente",
+  "skip": "Saltar",
+  "finish": "Finalizar",
+  "input_here": "Introducir aquí",
+  "name_placeholder": "Ingrese su nombre",
+  "email_placeholder": "Ingrese su correo",
+  "password_placeholder": "Ingrese su contraseña",
+  "password_again_placeholder": "Ingrese su contraseña de nuevo",
+  "unexpected_error": "Ocurrió un error inesperado, inténtelo de nuevo",
+  "errors": {
+    "play_market": "No has iniciado sesión en tu aplicación de Play Market, por favor, inicia sesión allí primero y luego vuelve a la aplicación de Nemlys para comenzar la suscripción",
+    "payment_error": "Ha habido un error intermedio con la tienda de tu teléfono. Típicamente puedes resolverlo esperando un par de minutos y tratando de iniciar la suscripción de nuevo"
+  },
+  "join": "Unirse",
+  "history": "Historial",
+  "cards": "Tarjetas",
+  "configure": "Configurar",
+  "level": "Nivel",
+  "new_reflection": {
+    "title_1": "Prueba ",
+    "title_2": "Reflexiones ",
+    "title_3": "para obtener preguntas personalizadas",
+    "button": "Recuérdame más tarde"
+  },
+  "jobs": {
+    "issues": "Problemas en nuestra relación",
+    "sex": "Intimidad y Sexo",
+    "know": "Conocerse el uno al otro",
+    "hard": "Preguntas profundas",
+    "meaningful": "Conversación significativa",
+    "fun": "Temas ligeros y divertidos"
+  },
+  "notification": {
+    "date": {
+      "title": "{{firstName}}, Tiempo para Conectar con tu Pareja",
+      "body": "¿Divertido? ¿Profundo? ¿Íntimo? Elige y Discute temas con {{partnerName}}"
     },
     "reflection": {
-      "title": "Reflexiones",
-      "available": "{{number}} reflexiones disponibles",
-      "completed": "{{number}} Completadas",
-      "start": "Comenzar",
-      "explanation": {
-        "button": "Entendido",
-        "reason_1": "Más Reflexiones = Mayor Calidad de preguntas para tus discusiones",
-        "reason_2": "Usamos IA, así que cuanto más reflexiones y escribas mejor se pondrá la app",
-        "reason_3": "Tus datos están seguros. Los usamos solo para generar preguntas",
-        "title": "¿Por qué es importante reflexionar y escribir?"
-      },
-      "no_reflection": "Discute 1 tema para obtener tu nueva tarjeta de reflexión",
-      "finished_writing_title_1": "¡Listo!",
-      "finished_writing_title_2": " Eres muy buen escritor",
-      "finished_writing_button": "¡Genial, gracias!",
-      "level_0": "introducción",
-      "level": "nivel {{number}}"
+      "title": "Tiempo de reflexionar sobre tu relación con {{partnerName}}",
+      "body": "Elige una reflexión y escribe tu respuesta"
     },
-    "update": {
-      "title": "Actualización",
-      "outdated_title": "Tu versión está desactualizada",
-      "need_to_update": "Necesitarás actualizar tu app a la última versión para continuar usándola."
+    "trial_expired": {
+      "title": "Mantén el Acceso Premium Activo",
+      "body": "Descubre dos opciones para mantener el acceso completo"
+    }
+  },
+  "home": {
+    "discussed_questions": "preguntas discutidas",
+    "you": "Tú",
+    "partner": "Pareja",
+    "discussions": "discusiones",
+    "card_questions": "3 preguntas",
+    "title_first": "Selecciona tema\npara discutir\n",
+    "title_second": "juntos",
+    "start": "Comenzar",
+    "reflect_explanation": "Reflexiona para obtener mejores preguntas de IA",
+    "menu": {
+      "discuss": "Discutir",
+      "diary": "Diario",
+      "profile": "Perfil",
+      "premium": "Premium",
+      "reflect": "Reflexionar"
+    }
+  },
+  "profile": {
+    "title": "Perfil"
+  },
+  "premium": {
+    "banner": {
+      "premium": "Acceso ilimitado",
+      "premium_right": "∞",
+      "trial": "Acceso ilimitado",
+      "days_left": "{{days}} días restantes",
+      "new": "Temas para probar",
+      "topics_left": "{{left}}/{{total}} restantes",
+      "free": "Temas diarios"
     },
-    "interview": {
-      "title_first": "Habla con los cofundadores de Nemlys para ",
-      "title_second": "obtener 2 meses de Acceso Ilimitado",
-      "reason_1_title_1": "Programa una ",
-      "reason_1_title_2": "llamada de 30 minutos ",
-      "reason_1_title_3": "con los cofundadores de Nemlys",
-      "reason_2_title_1": "Comparte lo que ",
-      "reason_2_title_2": "te gusta y no te gusta ",
-      "reason_2_title_3": "de Nemlys",
-      "reason_3_title_1": "Obtén ",
-      "reason_3_title_2": "2 meses ",
-      "reason_3_title_3": "de Acceso Ilimitado después de la llamada",
-      "button": "Programa una llamada"
+    "offer": {
+      "title": "Premium",
+      "enjoy_your_premium": "Ya tienes premium, ¡disfrútalo!",
+      "upgrade_trial": "Te quedan {{trialDays}} días de Acceso de Prueba",
+      "reached_limit": "Alcanzaste tu límite diario.",
+      "try_unlimited_1": "Prueba con ",
+      "try_unlimited_2": "acceso ilimitado",
+      "premium_title": "Obtén el Acceso Completo de Premium por ",
+      "trial_expired": "Tu Acceso de Prueba Ilimitado ha terminado",
+      "unlimited_topics_title": "Obtén Temas Ilimitados",
+      "unlimited_topics_explanation": "Ahora tienes {{dailyTopics}} tema por día",
+      "trial_button": "Prueba 7 días gratis",
+      "trial_no_card": "NO se requiere Tarjeta de Crédito",
+      "choose_plan": "Elige tu Plan",
+      "plan_monthly_title": "Mensual",
+      "plan_monthly_price": "5$/mes",
+      "plan_yearly_title": "Anual",
+      "plan_yearly_price": "49$/año",
+      "subscribe": "Comienza con prueba gratis de 7 días*",
+      "terms": "Términos de Servicio",
+      "privacy": "Política de Privacidad",
+      "charged": "* Se te cobrará al finalizar la prueba a menos que canceles la suscripción"
     },
-    "recording": {
-      "button": "Grabar",
-      "stop": {
-        "title_1": "¿Estás seguro? No ",
-        "title_2": "podrás continuar ",
-        "title_3": "grabando después de parar",
-        "button": "Sí, parar"
+    "success": {
+      "trial": {
+        "title_1": "¡Todo listo! Disfruta de tu ",
+        "title_2": "acceso ilimitado",
+        "button": "Genial, gracias"
       },
-      "delete": {
-        "title_1": "¿Estás seguro de que quieres ",
-        "title_2": "eliminar la grabación",
-        "title_3": "?",
-        "button": "Sí, eliminar"
+      "premium": {
+        "title_1": "Tu premium se activó con éxito, ",
+        "title_2": "¡Disfrútalo!",
+        "button": "Genial, gracias"
+      }
+    }
+  },
+  "reflection": {
+    "title": "Reflexiones",
+    "available": "{{number}} nuevas reflexiones disponibles",
+    "completed": "{{number}} Completadas",
+    "start": "Comenzar",
+    "explanation": {
+      "button": "Entendido",
+      "reason_1": "Más Reflexiones = Mayor Calidad del tema 'Personalizado'",
+      "reason_2": "Usamos IA, así que cuanto más reflexiones y escribas mejor se pondrá la app",
+      "reason_3": "Tus datos están seguros. Los usamos solo para generar preguntas",
+      "title": "¿Por qué es importante reflexionar y escribir?"
+    },
+    "no_reflection": "Discute 1 tema para obtener tu nueva tarjeta de reflexión",
+    "finished_writing_title_1": "¡Listo!",
+    "finished_writing_title_2": " Eres muy buen escritor",
+    "finished_writing_button": "¡Genial, gracias!",
+    "level_0": "introducción",
+    "level": "nivel {{number}}"
+  },
+  "update": {
+    "title": "Actualización",
+    "outdated_title": "Tu versión está desactualizada",
+    "need_to_update": "Necesitarás actualizar tu app a la última versión para continuar usándola."
+  },
+  "interview": {
+    "title_first": "Habla con los cofundadores de Nemlys para ",
+    "title_second": "obtener 2 meses de Acceso Ilimitado",
+    "reason_1_title_1": "Programa una ",
+    "reason_1_title_2": "llamada de 30 minutos ",
+    "reason_1_title_3": "con los cofundadores de Nemlys",
+    "reason_2_title_1": "Comparte lo que ",
+    "reason_2_title_2": "te gusta y no te gusta ",
+    "reason_2_title_3": "de Nemlys",
+    "reason_3_title_1": "Obtén ",
+    "reason_3_title_2": "2 meses ",
+    "reason_3_title_3": "de Acceso Ilimitado después de la llamada",
+    "button": "Programa una llamada"
+  },
+  "recording": {
+    "button": "Grabar",
+    "stop": {
+      "title_1": "¿Estás seguro? No ",
+      "title_2": "podrás continuar ",
+      "title_3": "grabando después de parar",
+      "button": "Sí, parar"
+    },
+    "delete": {
+      "title_1": "¿Estás seguro de que quieres ",
+      "title_2": "eliminar la grabación",
+      "title_3": "?",
+      "button": "Sí, eliminar"
+    },
+    "permission": {
+      "title_1": "El Análisis de Audio no funciona sin ",
+      "title_2": "permiso del micrófono",
+      "button": "Abrir ajustes"
+    },
+    "tooltip": {
+      "feature_intro": "Prueba el Análisis de Audio de tus conversaciones, mejorará las preguntas futuras",
+      "wanted_recording": "Finalmente lanzamos Análisis de Audio. ¡Pruébalo!",
+      "limit_reached": "Has alcanzado tu límite diario de Análisis de Audio"
+    }
+  },
+  "date": {
+    "reminder": {
+      "title": "{{firstName}}, es hora de Conectar con tu Pareja",
+      "body": "¿Divertido? ¿Profundo? ¿Íntimo? Elige y discute temas con {{partnerName}}"
+    },
+    "generating_questions_error": "Lo sentimos, nuestro IA no puede generar estas preguntas, prueba otra categoría o tema",
+    "notification": {
+      "challenge": "Desafío",
+      "title_1": "Profundiza la Intimidad\n",
+      "title_2": "Dos veces a la Semana:\n",
+      "title_3": "¿Estás Listo?",
+      "subtitle": "Conéctate regularmente a un nivel más profundo con tu pareja.",
+      "confirm": "Permitir notificación",
+      "decline": "Quizás más tarde"
+    },
+    "stop_popup": {
+      "title_1": "¿Estás seguro de que quieres ",
+      "title_2": "detener la discusión",
+      "title_3": "?",
+      "subtitle": "Entonces no podemos guardar tu progreso.",
+      "confirm": "Sí, detener discusión",
+      "cancel": "No, volver"
+    },
+    "share": "Compartir",
+    "stop": "Detener cita",
+    "start_date": "Comenzar cita",
+    "level_title_first": "Selecciona ",
+    "level_title_second": "profundidad ",
+    "level_title_third": "de tus preguntas",
+    "level": {
+      "light": "Ligero",
+      "normal": "Normal",
+      "deep": "Profundo",
+      "existential": "Existencial"
+    },
+    "low_quality_explanation": "La calidad de las preguntas es baja. Reflexiona para obtener mejores preguntas de IA",
+    "topic_title_first": "Selecciona ",
+    "topic_title_second": "1 tema ",
+    "topic_title_third": "para discutir con tu pareja",
+    "with_partner": {
+      "title_1": "Necesitas a tu ",
+      "title_2": "pareja a tu lado",
+      "title_3": " para empezar a discutir temas",
+      "alone": "Intentar solo",
+      "with_partner": "Empezar con pareja"
+    },
+    "topic": {
+      "title": "Selecciona un tema",
+      "surprise": "Aleatorio",
+      "intimacy": "Picante",
+      "emotions": "Emociones",
+      "fun": "Diversión",
+      "worldview": "Visión del mundo",
+      "goals": "Metas",
+      "future": "Futuro",
+      "communication": "Comunicación",
+      "preferences": "Preferencias",
+      "appearance": "Apariencia",
+      "travel": "Viaje",
+      "career": "Carrera",
+      "expectations": "Expectativas",
+      "values": "Valores",
+      "gifts": "Regalos",
+      "friends": "Amigos",
+      "childhood": "Infancia",
+      "commitment": "Compromiso",
+      "past": "Pasado",
+      "ex": "Ex",
+      "fidelity": "Fidelidad",
+      "trust": "Confianza",
+      "money": "Dinero",
+      "conflict": "Conflicto",
+      "social_circle": "Círculo social",
+      "love_language": "Lenguaje del amor",
+      "mental_health": "Salud mental",
+      "parents": "Padres",
+      "children": "Hijos",
+      "living_together": "Viviendo juntos"
+    },
+    "generating_questions_first": "Generando preguntas para discutir ",
+    "generating_questions_second": "con pareja",
+    "discuss": "Discutir juntos",
+    "feedback": {
+      "with_partner": {
+        "title_first": "¡Así que! ¿Cómo fue ",
+        "title_second": "tu discusión",
+        "title_third": "?",
+        "choice_4": "Obtuvimos algunas ideas geniales",
+        "choice_3": "Fue buena",
+        "choice_2": "Nada nuevo",
+        "choice_1": "No fue útil"
       },
-      "permission": {
-        "title_1": "El Análisis de Audio no funciona sin ",
-        "title_2": "permiso del micrófono",
-        "button": "Abrir ajustes"
-      },
-      "tooltip": {
-        "feature_intro": "Prueba el Análisis de Audio de tus conversaciones, mejorará las preguntas futuras",
-        "wanted_recording": "Finalmente lanzamos Análisis de Audio. ¡Pruébalo!",
-        "limit_reached": "Has alcanzado tu límite diario de Análisis de Audio"
+      "alone": {
+        "title_second": "tu impresión",
+        "title_third": "?",
+        "choice_4": "Muchas preguntas interesantes",
+        "choice_3": "Buenas preguntas",
+        "choice_2": "Nada especial",
+        "choice_1": "No me gusta"
       }
     },
-    "date": {
-        "reminder": {
-          "title": "{{firstName}}, es hora de Conectar con tu Pareja",
-          "body": "¿Divertido? ¿Profundo? ¿Íntimo? Elige y discute temas con {{partnerName}}"
-        },
-        "generating_questions_error": "Lo sentimos, nuestro IA no puede generar estas preguntas, prueba otra categoría o tema",
-        "notification": {
-          "challenge": "Desafío",
-          "title_1": "Profundiza la Intimidad\n",
-          "title_2": "Dos veces a la Semana:\n",
-          "title_3": "¿Estás Listo?",
-          "subtitle": "Conéctate regularmente a un nivel más profundo con tu pareja.",
-          "confirm": "Permitir notificación",
-          "decline": "Quizás más tarde"
-        },
-        "stop_popup": {
-          "title_1": "¿Estás seguro de que quieres ",
-          "title_2": "detener la discusión",
-          "title_3": "?",
-          "subtitle": "Entonces no podemos guardar tu progreso.",
-          "confirm": "Sí, detener discusión",
-          "cancel": "No, volver"
-        },
-        "share": "Compartir",
-        "stop": "Detener cita",
-        "start_date": "Comenzar cita",
-        "level_title_first": "Selecciona ",
-        "level_title_second": "profundidad ",
-        "level_title_third": "de tus preguntas",
-        "level": {
-          "light": "Ligero",
-          "normal": "Normal",
-          "deep": "Profundo",
-          "existential": "Existencial"
-        },
-        "low_quality_explanation": "La calidad de las preguntas es baja. Reflexiona para obtener mejores preguntas de IA",
-        "topic_title_first": "Selecciona ",
-        "topic_title_second": "1 tema ",
-        "topic_title_third": "para discutir con tu pareja",
-        "with_partner": {
-          "title_1": "Necesitas a tu ",
-          "title_2": "pareja a tu lado",
-          "title_3": " para empezar a discutir temas",
-          "alone": "Intentar solo",
-          "with_partner": "Empezar con pareja"
-        },
-        "topic": {
-          "title": "Selecciona un tema",
-          "surprise": "¡Sorpréndenos!",
-          "intimacy": "Picante",
-          "emotions": "Emociones",
-          "fun": "Diversión",
-          "worldview": "Visión del mundo",
-          "goals": "Metas",
-          "future": "Futuro",
-          "communication": "Comunicación",
-          "preferences": "Preferencias",
-          "appearance": "Apariencia",
-          "travel": "Viaje",
-          "career": "Carrera",
-          "expectations": "Expectativas",
-          "values": "Valores",
-          "gifts": "Regalos",
-          "friends": "Amigos",
-          "childhood": "Infancia",
-          "commitment": "Compromiso",
-          "past": "Pasado",
-          "ex": "Ex",
-          "fidelity": "Fidelidad",
-          "trust": "Confianza",
-          "money": "Dinero",
-          "conflict": "Conflicto",
-          "social_circle": "Círculo social",
-          "love_language": "Lenguaje del amor",
-          "mental_health": "Salud mental",
-          "parents": "Padres",
-          "children": "Hijos",
-          "living_together": "Viviendo juntos"
-        },
-        "generating_questions_first": "Generando preguntas para discutir ",
-        "generating_questions_second": "con pareja",
-        "discuss": "Discutir juntos",
-        "feedback": {
-          "with_partner": {
-            "title_first": "¡Así que! ¿Cómo fue ",
-            "title_second": "tu discusión",
-            "title_third": "?",
-            "choice_4": "Obtuvimos algunas ideas geniales",
-            "choice_3": "Fue buena",
-            "choice_2": "Nada nuevo",
-            "choice_1": "No fue útil"
-          },
-          "alone": {
-            "title_second": "tu impresión",
-            "title_third": "?",
-            "choice_4": "Muchas preguntas interesantes",
-            "choice_3": "Buenas preguntas",
-            "choice_2": "Nada especial",
-            "choice_1": "No me gusta"
-          }
-        },
-        "new_level": {
-          "reached": "has alcanzado",
-          "have": "tienes",
-          "title_first": "Discusión",
-          "title_second": "completada",
-          "alone_title_first": "Tu Exploración de la App",
-          "home": "Volver a inicio"
-        }
-      },
-      "beta": {
-        "pre_beta_title": "beta",
-        "title": "Únete a nuestra beta",
-        "content": "Nuestra beta te da acceso a las funciones que no hemos lanzado al público",
-        "become_beta_user": "Conviértete en usuario beta",
-        "joined_successfully": "Bienvenido a la beta 😈"
-      },
-      "conversations": {
-        "record": "Grabar",
-        "stop": "Detener",
-        "instruction": "Puedes grabar una conversación con tu pareja y nuestra IA la analizará y proporcionará información sobre los patrones de comunicación negativos que pueda encontrar y posibles soluciones"
-      },
-      "welcome": {
-        "title_first": "Obtén preguntas para discutir con ",
-        "title_second": "tu pareja",
-        "button": {
-          "default": "Continuar"
-        }
-      },
-      "onboarding": {
-        "your_name_first": "¡Hola! ¿Cuál es\n",
-        "your_name_second": "tu nombre",
-        "your_name_third": "?",
-        "partner_name_first": "¿Cuál es el nombre\n",
-        "partner_name_second": "de tu pareja",
-        "partner_name_third": "?",
-        "age": {
-          "title_first": "¿Cuántos años ",
-          "title_second": "",
-          "title_third": "tienes?",
-          "choice_1": "menos de 18",
-          "choice_2": "18-24",
-          "choice_3": "25-34",
-          "choice_4": "35-44",
-          "choice_5": "44-55",
-          "choice_6": "más de 55"
-        },
-        "length": {
-          "title_first": "",
-          "title_second": "¿Cuánto tiempo ",
-          "title_third": "llevan juntos?",
-          "choice_1": "no hemos empezado",
-          "choice_2": "1 - 4 semanas",
-          "choice_3": "1 - 12 meses",
-          "choice_4": "1 - 5 años",
-          "choice_5": "más de 5 años",
-          "choice_6": "Estoy soltero/a"
-        },
-        "job": {
-          "title_first": "¿Qué quieres ",
-          "title_second": "",
-          "title_third": "obtener?",
-          "fun": "Preguntas divertidas y fáciles para charlas de citas",
-          "hard": "Preguntas difíciles de plantear por nosotros mismos",
-          "issues": "Maneras de resolver problemas con la pareja",
-          "other": "Otro",
-          "other_placeholder": " Escribe tu respuesta..."
-        },
-        "reflection": {
-          "private": "información privada",
-          "explanation": "Usamos IA, así que cuanto más escribes mejor serán las preguntas que obtendrás.",
-          "short": "Demasiado corto",
-          "good": "Bien",
-          "perfect": "Perfecto",
-          "write_answer": "Escribe respuesta"
-        },
-    
-        "analyzing": {
-          "text_1": "Analizando\ntu escritura",
-          "text_2": "Analizando\ntus respuestas",
-          "text_3": "Adaptando app\na tu pareja",
-          "text_4_first": "Todo listo,\n",
-          "text_4_second": "comienza a explorar\nla app"
-        },
-    
-        "discuss_way": {
-          "title_first": "¿Cómo te gustaría ",
-          "title_second": "discutir ",
-          "title_third": "las preguntas?",
-          "choice_1": "Enfrente de mi pareja",
-          "choice_2": "Con mi pareja en línea",
-          "choice_3": "Obtener preguntas y discutir después",
-          "choice_4": "No sé"
-        },
-        "relationship_story_explanation_first": "Reflexiona y escribe tus pensamientos para ",
-        "relationship_story_explanation_second": "obtener preguntas de IA personales",
-        "relationship_story_explanation_third": "",
-        "relationship_story_explanation_description": "Tus datos están completamente seguros. Los usamos solo para generar preguntas relevantes.",
-        "relationship_story_first": "Comparte más detalles para obtener mejores preguntas",
-        "relationship_story_second": "historia única ",
-        "relationship_story_third": "de tu relación ",
-        "relationship_story": {
-          "answer_placeholder": "Escribe tu respuesta",
-          "question0_first": "",
-          "question0_second": "Desafíos ",
-          "question0_third": "que han enfrentado hasta ahora:",
-          "question1_first": "Cosas que ",
-          "question1_second": "te gustan ",
-          "question1_third": "de tu relación:",
-          "question2_first": "",
-          "question2_second": "Cosas más importantes ",
-          "question2_third": "que han ocurrido recientemente:",
-          "question3_first": "",
-          "question3_second": "Planes más grandes ",
-          "question3_third": "que tienen juntos:",
-          "skip_first": "Si omites, ",
-          "skip_second": "la IA no puede generar ",
-          "skip_third": "preguntas relevantes para tu pareja",
-          "skip_back": "Volver a la historia",
-          "skip_confirm": "Omitir historia"
-        }
+    "new_level": {
+      "reached": "has alcanzado",
+      "have": "tienes",
+      "title_first": "Discusión",
+      "title_second": "completada",
+      "alone_title_first": "Tu Exploración de la App",
+      "home": "Volver a inicio"
+    }
+  },
+  "beta": {
+    "pre_beta_title": "beta",
+    "title": "Únete a nuestra beta",
+    "content": "Nuestra beta te da acceso a las funciones que no hemos lanzado al público",
+    "become_beta_user": "Conviértete en usuario beta",
+    "joined_successfully": "Bienvenido a la beta 😈"
+  },
+  "conversations": {
+    "record": "Grabar",
+    "stop": "Detener",
+    "instruction": "Puedes grabar una conversación con tu pareja y nuestra IA la analizará y proporcionará información sobre los patrones de comunicación negativos que pueda encontrar y posibles soluciones"
+  },
+  "welcome": {
+    "title_first": "Obtén preguntas para discutir con ",
+    "title_second": "tu pareja",
+    "button": {
+      "default": "Continuar"
+    }
+  },
+  "onboarding": {
+    "your_name_first": "¡Hola! ¿Cuál es\n",
+    "your_name_second": "tu nombre",
+    "your_name_third": "?",
+    "partner_name_first": "¿Cuál es el nombre\n",
+    "partner_name_second": "de tu pareja",
+    "partner_name_third": "?",
+    "age": {
+      "title_first": "¿Cuántos años ",
+      "title_second": "",
+      "title_third": "tienes?",
+      "choice_1": "menos de 18",
+      "choice_2": "18-24",
+      "choice_3": "25-34",
+      "choice_4": "35-44",
+      "choice_5": "44-55",
+      "choice_6": "más de 55"
     },
-        "login": {
-          "password_is_too_short": "La contraseña debe tener al menos 6 caracteres",
-          "invalid_username": "El correo o la contraseña son incorrectos",
-          "user_does_not_exist_error": "El usuario con el correo %{email} no existe en el sistema",
-          "title": "Iniciar sesión\nen la cuenta Nemlys",
-          "check_email_for_login_link": "El enlace de inicio de sesión se ha enviado a tu correo",
-          "button": {
-            "default": "Continuar con correo electrónico"
-          },
-          "register": {
-            "pretext": "¿No tienes una cuenta?",
-            "link": "Comenzar aquí"
-          },
-          "forgot_password": {
-            "link": "¿Olvidaste la contraseña?"
-          }
-        },
-        "oauth": {
-          "pretext": "O continuar con",
-          "button": {
-            "google": "Iniciar sesión con Google",
-            "apple": "Iniciar sesión con Apple"
-          }
-        },
-        "settings": {
-          "premium": "Premium",
-          "logout": "Cerrar sesión",
-          "feedback": "Danos tu opinión",
-          "conversations": "Conversaciones",
-          "delete_account": "Eliminar cuenta",
-          "send_email": "Enviar correo",
-          "are_you_sure_you_want_to_delete_account": "¿Estás seguro de que quieres eliminar tu cuenta?",
-          "cannot_send_email": "No se puede enviar correo desde tu dispositivo, siéntete libre de contactarnos manualmente a %{email}",
-          "support_email_subject": "Comentarios sobre la app",
-          "send_your_feedback": "Si quieres decirnos lo que piensas sobre la app, enviar un informe de errores o simplemente hablar con nosotros, eres bienvenido a escribirlo abajo",
-          "feedback_thanks": "Gracias por tus comentarios, los leeremos pronto :)"
-        },
-        "notifications": {
-          "date_soon": "Tu cita es pronto, no olvides las preguntas",
-          "schedule_date": "Por favor, programa cuándo tendrás la cita con tu pareja",
-          "diary": {
-            "title": "Escribe tu diario",
-            "body": "¿Qué ha pasado recientemente en tu relación?"
-          }
-        },
-        "register": {
-          "title": "Vamos a crear tu cuenta",
-          "results": "Resultados",
-          "check_email_for_confirmation": "El enlace de confirmación ha sido enviado a tu correo",
-          "passwords_are_not_the_same": "Las contraseñas no son iguales",
-          "register_button": {
-            "default": "Crear"
-          },
-          "continue_with_email": {
-            "default": "Continuar con correo electrónico"
-          },
-          "login": {
-            "pretext": "¿Ya tienes una cuenta?",
-            "link": "Inicia sesión aquí"
-          },
-          "questions": {
-            "dating_length": {
-              "title": "Saliendo por",
-              "answers": {
-                "1-4-weeks": "1-4 semanas",
-                "1-3-months": "1-3 meses",
-                "3-12-months": "3-12 meses",
-                "12-more-months": "12+ meses"
-              }
-            },
-            "open": {
-              "title": "Nivel de apertura",
-              "answers": {
-                "open-0": "Aún no puedo abrirme",
-                "open-1": "Puedo discutir temas generales",
-                "open-2": "Puedo discutir temas difíciles",
-                "open-3": "Puedo discutir de todo",
-                "open-4": "Mi pareja es más abierta por ahora",
-                "open-5": "Yo soy más abierto por ahora"
-              }
-            },
-            "well_covered": {
-              "title": "Temas bien cubiertos"
-            },
-            "to_cover": {
-              "title": "Temas por cubrir"
-            },
-            "topics": {
-              "relationship-image": "Imagen de la relación",
-              "time": "Tiempo",
-              "values": "Valores",
-              "commitment": "Compromiso",
-              "past": "Pasado",
-              "emotions": "Emociones",
-              "conflict": "Conflicto"
-            }
-          }
-        },
-        "email_confirmed": {
-          "content": "El correo ha sido confirmado con éxito, redirigiendo..."
-        },
-        "forgot_password": {
-          "title": "Restablecer contraseña",
-          "email_sent": "Revisa tu correo para restablecer la contraseña",
-          "button": {
-            "default": "Enviar correo"
-          }
-        },
-        "waitlist": {
-          "title": "Únete a nuestra lista de espera premium",
-          "content": "Como usuario premium, obtendrás una nueva tarjeta generada por IA después de cada tarjeta que completes",
-          "already_joined": "Ya estás en la lista de espera",
-          "joined_successfully": "Hurra, estás en la lista de espera",
-          "we_will_get_back_to_you": "En cuanto lancemos el premium, nos pondremos en contacto contigo"
-        },
-        "diary": {
-          "title": "Diario",
-          "ai_motivation_title": "Mantener tu diario mejora significativamente la personalización de la tarjeta de IA",
-          "add_button": "Añadir entrada",
-          "new": {
-            "title": "Entrada de hoy",
-            "type": {
-              "title": "¿Cómo quieres escribir?",
-              "freewriting": "Escritura libre",
-              "questions": "Hazme preguntas"
-            },
-            "questions": {
-              "feel": "¿Cómo me he sentido recientemente y cómo ha contribuido mi pareja a mis emociones?",
-              "feel_summary": "**Mis sentimientos recientemente:**",
-              "learnt": "¿Qué he aprendido sobre mi pareja o nuestra relación?",
-              "learnt_summary": "**Cosas que he aprendido sobre mi pareja o relación recientemente:**",
-              "challenges": "¿Qué desafíos hemos enfrentado en nuestra relación y cómo los hemos superado?",
-              "challenges_summary": "**Nuestros desafíos recientemente:**"
-            },
-            "freewriting": "¿Qué ha pasado recientemente en tu relación? Describe en al menos unas pocas frases"
-          }
+    "length": {
+      "title_first": "",
+      "title_second": "¿Cuánto tiempo ",
+      "title_third": "llevan juntos?",
+      "choice_1": "no hemos empezado",
+      "choice_2": "1 - 4 semanas",
+      "choice_3": "1 - 12 meses",
+      "choice_4": "1 - 5 años",
+      "choice_5": "más de 5 años",
+      "choice_6": "Estoy soltero/a"
+    },
+    "job": {
+      "title_first": "¿Qué quieres ",
+      "title_second": "",
+      "title_third": "obtener?",
+      "fun": "Preguntas divertidas y fáciles para charlas de citas",
+      "hard": "Preguntas difíciles de plantear por nosotros mismos",
+      "issues": "Maneras de resolver problemas con la pareja",
+      "other": "Otro",
+      "other_placeholder": " Escribe tu respuesta..."
+    },
+    "reflection": {
+      "private": "información privada",
+      "explanation": "Usamos IA, así que cuanto más escribes mejor serán las preguntas que obtendrás.",
+      "short": "Demasiado corto",
+      "good": "Bien",
+      "perfect": "Perfecto",
+      "write_answer": "Escribe respuesta"
+    },
+
+    "analyzing": {
+      "text_1": "Analizando\ntu escritura",
+      "text_2": "Analizando\ntus respuestas",
+      "text_3": "Adaptando app\na tu pareja",
+      "text_4_first": "Todo listo,\n",
+      "text_4_second": "comienza a explorar\nla app"
+    },
+
+    "discuss_way": {
+      "title_first": "¿Cómo te gustaría ",
+      "title_second": "discutir ",
+      "title_third": "las preguntas?",
+      "choice_1": "Enfrente de mi pareja",
+      "choice_2": "Con mi pareja en línea",
+      "choice_3": "Obtener preguntas y discutir después",
+      "choice_4": "No sé"
+    },
+    "relationship_story_explanation_first": "Reflexiona y escribe tus pensamientos para ",
+    "relationship_story_explanation_second": "obtener preguntas de IA personales",
+    "relationship_story_explanation_third": "",
+    "relationship_story_explanation_description": "Tus datos están completamente seguros. Los usamos solo para generar preguntas relevantes.",
+    "relationship_story_first": "Comparte más detalles para obtener mejores preguntas",
+    "relationship_story_second": "historia única ",
+    "relationship_story_third": "de tu relación ",
+    "relationship_story": {
+      "answer_placeholder": "Escribe tu respuesta",
+      "question0_first": "",
+      "question0_second": "Desafíos ",
+      "question0_third": "que han enfrentado hasta ahora:",
+      "question1_first": "Cosas que ",
+      "question1_second": "te gustan ",
+      "question1_third": "de tu relación:",
+      "question2_first": "",
+      "question2_second": "Cosas más importantes ",
+      "question2_third": "que han ocurrido recientemente:",
+      "question3_first": "",
+      "question3_second": "Planes más grandes ",
+      "question3_third": "que tienen juntos:",
+      "skip_first": "Si omites, ",
+      "skip_second": "la IA no puede generar ",
+      "skip_third": "preguntas relevantes para tu pareja",
+      "skip_back": "Volver a la historia",
+      "skip_confirm": "Omitir historia"
+    }
+  },
+  "login": {
+    "password_is_too_short": "La contraseña debe tener al menos 6 caracteres",
+    "invalid_username": "El correo o la contraseña son incorrectos",
+    "user_does_not_exist_error": "El usuario con el correo %{email} no existe en el sistema",
+    "title": "Iniciar sesión\nen la cuenta Nemlys",
+    "check_email_for_login_link": "El enlace de inicio de sesión se ha enviado a tu correo",
+    "button": {
+      "default": "Continuar con correo electrónico"
+    },
+    "register": {
+      "pretext": "¿No tienes una cuenta?",
+      "link": "Comenzar aquí"
+    },
+    "forgot_password": {
+      "link": "¿Olvidaste la contraseña?"
+    }
+  },
+  "oauth": {
+    "pretext": "O continuar con",
+    "button": {
+      "google": "Iniciar sesión con Google",
+      "apple": "Iniciar sesión con Apple"
+    }
+  },
+  "settings": {
+    "premium": "Premium",
+    "logout": "Cerrar sesión",
+    "feedback": "Danos tu opinión",
+    "conversations": "Conversaciones",
+    "delete_account": "Eliminar cuenta",
+    "send_email": "Enviar correo",
+    "are_you_sure_you_want_to_delete_account": "¿Estás seguro de que quieres eliminar tu cuenta?",
+    "cannot_send_email": "No se puede enviar correo desde tu dispositivo, siéntete libre de contactarnos manualmente a %{email}",
+    "support_email_subject": "Comentarios sobre la app",
+    "send_your_feedback": "Si quieres decirnos lo que piensas sobre la app, enviar un informe de errores o simplemente hablar con nosotros, eres bienvenido a escribirlo abajo",
+    "feedback_thanks": "Gracias por tus comentarios, los leeremos pronto :)"
+  },
+  "notifications": {
+    "date_soon": "Tu cita es pronto, no olvides las preguntas",
+    "schedule_date": "Por favor, programa cuándo tendrás la cita con tu pareja",
+    "diary": {
+      "title": "Escribe tu diario",
+      "body": "¿Qué ha pasado recientemente en tu relación?"
+    }
+  },
+  "register": {
+    "title": "Vamos a crear tu cuenta",
+    "results": "Resultados",
+    "check_email_for_confirmation": "El enlace de confirmación ha sido enviado a tu correo",
+    "passwords_are_not_the_same": "Las contraseñas no son iguales",
+    "register_button": {
+      "default": "Crear"
+    },
+    "continue_with_email": {
+      "default": "Continuar con correo electrónico"
+    },
+    "login": {
+      "pretext": "¿Ya tienes una cuenta?",
+      "link": "Inicia sesión aquí"
+    },
+    "questions": {
+      "dating_length": {
+        "title": "Saliendo por",
+        "answers": {
+          "1-4-weeks": "1-4 semanas",
+          "1-3-months": "1-3 meses",
+          "3-12-months": "3-12 meses",
+          "12-more-months": "12+ meses"
         }
+      },
+      "open": {
+        "title": "Nivel de apertura",
+        "answers": {
+          "open-0": "Aún no puedo abrirme",
+          "open-1": "Puedo discutir temas generales",
+          "open-2": "Puedo discutir temas difíciles",
+          "open-3": "Puedo discutir de todo",
+          "open-4": "Mi pareja es más abierta por ahora",
+          "open-5": "Yo soy más abierto por ahora"
+        }
+      },
+      "well_covered": {
+        "title": "Temas bien cubiertos"
+      },
+      "to_cover": {
+        "title": "Temas por cubrir"
+      },
+      "topics": {
+        "relationship-image": "Imagen de la relación",
+        "time": "Tiempo",
+        "values": "Valores",
+        "commitment": "Compromiso",
+        "past": "Pasado",
+        "emotions": "Emociones",
+        "conflict": "Conflicto"
+      }
+    }
+  },
+  "email_confirmed": {
+    "content": "El correo ha sido confirmado con éxito, redirigiendo..."
+  },
+  "forgot_password": {
+    "title": "Restablecer contraseña",
+    "email_sent": "Revisa tu correo para restablecer la contraseña",
+    "button": {
+      "default": "Enviar correo"
+    }
+  },
+  "waitlist": {
+    "title": "Únete a nuestra lista de espera premium",
+    "content": "Como usuario premium, obtendrás una nueva tarjeta generada por IA después de cada tarjeta que completes",
+    "already_joined": "Ya estás en la lista de espera",
+    "joined_successfully": "Hurra, estás en la lista de espera",
+    "we_will_get_back_to_you": "En cuanto lancemos el premium, nos pondremos en contacto contigo"
+  },
+  "diary": {
+    "title": "Diario",
+    "ai_motivation_title": "Mantener tu diario mejora significativamente la personalización de la tarjeta de IA",
+    "add_button": "Añadir entrada",
+    "new": {
+      "title": "Entrada de hoy",
+      "type": {
+        "title": "¿Cómo quieres escribir?",
+        "freewriting": "Escritura libre",
+        "questions": "Hazme preguntas"
+      },
+      "questions": {
+        "feel": "¿Cómo me he sentido recientemente y cómo ha contribuido mi pareja a mis emociones?",
+        "feel_summary": "**Mis sentimientos recientemente:**",
+        "learnt": "¿Qué he aprendido sobre mi pareja o nuestra relación?",
+        "learnt_summary": "**Cosas que he aprendido sobre mi pareja o relación recientemente:**",
+        "challenges": "¿Qué desafíos hemos enfrentado en nuestra relación y cómo los hemos superado?",
+        "challenges_summary": "**Nuestros desafíos recientemente:**"
+      },
+      "freewriting": "¿Qué ha pasado recientemente en tu relación? Describe en al menos unas pocas frases"
+    }
+  }
 }
-    
+
 
         
 

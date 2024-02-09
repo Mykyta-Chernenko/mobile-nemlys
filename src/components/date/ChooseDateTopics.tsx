@@ -7,10 +7,8 @@ import { FontText } from '../utils/FontText';
 import { PrimaryButton } from '../buttons/PrimaryButtons';
 import { localAnalytics } from '@app/utils/analytics';
 import { AuthContext } from '@app/provider/AuthProvider';
-import Feedback1Icon from '@app/icons/feedback1';
 
-import SmallArrowRight from '@app/icons/small_arrow_right';
-import { getIsLowPersonalization } from '@app/api/reflection';
+import { getCanPersonalTopics } from '@app/api/reflection';
 import { Loading } from '../utils/Loading';
 import { JobSlug } from '@app/types/domain';
 import { supabase } from '@app/api/initSupabase';
@@ -27,7 +25,6 @@ export default function (props: {
   const jobTitle = i18n.t(`jobs.${job}`);
   const { theme } = useTheme();
   const [loading, setLoading] = useState(false);
-  const [isLowPersonalization, setIsLowPersonalization] = useState(false);
   const getTopics = async (job: JobSlug): Promise<string[]> => {
     const topics: SupabaseAnswer<{ topic: string }[]> = await supabase
       .from('job_topics')
@@ -43,11 +40,11 @@ export default function (props: {
   useEffect(() => {
     const getData = async () => {
       setLoading(true);
-      const [lowPersonalization, topics] = await Promise.all([
-        getIsLowPersonalization(),
+      const [canGetPersonalTopics, topics] = await Promise.all([
+        getCanPersonalTopics(),
         getTopics(job),
       ]);
-      setIsLowPersonalization(lowPersonalization);
+      // setIsLowPersonalization(!canGetPersonalTopics);
       setAllTopics(topics);
       setLoading(false);
     };
@@ -84,37 +81,6 @@ export default function (props: {
           flexGrow: 1,
         }}
       >
-        {isLowPersonalization && (
-          <TouchableOpacity
-            onPress={() => {
-              void localAnalytics().logEvent('ConfigureDateGoToReflection', {
-                screen: 'ConfigureDate',
-                action: 'GoToReflection',
-                userId: authContext.userId,
-              });
-              props.goToReflection();
-            }}
-          >
-            <View
-              style={{
-                flexDirection: 'row',
-                alignItems: 'center',
-                justifyContent: 'space-between',
-                backgroundColor: theme.colors.white,
-                padding: 20,
-                borderRadius: 16,
-                marginBottom: '10%',
-                width: '100%',
-              }}
-            >
-              <Feedback1Icon height={32} width={32}></Feedback1Icon>
-              <View style={{ width: '75%' }}>
-                <FontText>{i18n.t('date.low_quality_explanation')}</FontText>
-              </View>
-              <SmallArrowRight height={24} width={24}></SmallArrowRight>
-            </View>
-          </TouchableOpacity>
-        )}
         <FontText style={{ marginVertical: '5%', color: theme.colors.grey5 }}>{jobTitle}</FontText>
         <FontText
           style={{

@@ -32,8 +32,9 @@
   "configure": "Configure",
   "level": "Level",
   "new_reflection": {
-    "title": "Reflection unlocked!",
-    "description": "Reflect and write to get more personalised AI questions ",
+    "title_1": "Try ",
+    "title_2": "Reflections ",
+    "title_3": "to get personalized questions",
     "button": "Remind me later"
   },
   "jobs": {
@@ -100,8 +101,6 @@
       "trial_expired": "You're out of your Trial Unlimited access",
       "unlimited_topics_title": "Get Unlimited Topics",
       "unlimited_topics_explanation": "Now you have {{dailyTopics}} topic per day",
-      "unlimited_audio_title": "Get Unlimited Audio Analysis",
-      "unlimited_audio_explanation": "Now you have 5 minutes per day",
       "trial_button": "Try 7 days for free",
       "trial_no_card": "NO Credit Card required",
       "choose_plan": "Choose Your Plan",
@@ -129,12 +128,12 @@
   },
   "reflection": {
     "title": "Reflections",
-    "available": "{{number}} reflections available",
+    "available": "{{number}} new reflections available",
     "completed": "{{number}} Completed",
     "start": "Start",
     "explanation": {
       "button": "Got you",
-      "reason_1": "More Reflections = Higher Quality of questions for your discussions",
+      "reason_1": "More Reflections = Higher Quality of 'Personalized' topic",
       "reason_2": "We use AI, so the more you reflect and write the better app will get",
       "reason_3": "Your data is safe. We use it only for generating questions",
       "title": "Why is it important to reflect and write?"
@@ -238,7 +237,7 @@
     },
     "topic": {
       "title": "Select one topic",
-      "surprise": "Surprise us!",
+      "surprise": "Random",
       "intimacy": "Spicy",
       "emotions": "Emotions",
       "fun": "Fun",

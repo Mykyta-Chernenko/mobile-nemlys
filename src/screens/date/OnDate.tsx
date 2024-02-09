@@ -32,6 +32,7 @@ import { sleep } from '@app/utils/date';
 import { GRANTED_NOTIFICATION_STATUS } from '@app/utils/constants';
 import { NOTIFICATION_IDENTIFIERS } from '@app/types/domain';
 import { getPremiumDetails } from '@app/api/premium';
+import { capitalize } from '@app/utils/strings';
 
 export default function ({
   route,
@@ -742,7 +743,7 @@ export default function ({
                 >
                   <View style={{ marginLeft: 10, padding: 2.5 }}>
                     <FontText style={{ color: theme.colors.white, fontSize: 18 }}>
-                      {currentDate?.topic ?? ''},{' '}
+                      {capitalize(currentDate?.job ?? '')}, {currentDate?.topic ?? ''},{' '}
                       {{
                         1: i18n.t('date.level.light'),
                         2: i18n.t('date.level.normal'),
