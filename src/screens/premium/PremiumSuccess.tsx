@@ -79,15 +79,9 @@ export default function ({
                 action: 'ButtonPressed',
                 userId: authContext.userId,
               });
-              if (isPremium) {
-                navigation.navigate('InterviewRequest', {
-                  refreshTimeStamp: new Date().toISOString(),
-                });
-              } else {
-                navigation.navigate('Home', {
-                  refreshTimeStamp: new Date().toISOString(),
-                });
-              }
+              navigation.navigate('Home', {
+                refreshTimeStamp: new Date().toISOString(),
+              });
             }}
             title={
               isPremium

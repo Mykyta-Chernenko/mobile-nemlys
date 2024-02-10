@@ -226,7 +226,6 @@ export default function ({
             });
           }
         } catch (error) {
-          console.log(error);
           setSubscriptionLoading(false);
         }
       }
@@ -280,7 +279,7 @@ export default function ({
                     throw res.error;
                   }
                 };
-                await retryAsync('managePremium', func);
+                await retryAsync('PremiumOfferManagePremiumFunc', func);
                 navigation.navigate('PremiumSuccess', { state: 'premium_started' });
               } catch (error) {
                 logErrors(error);
@@ -339,6 +338,8 @@ export default function ({
           switch (error.code) {
             case 'PROMISE_BUY_ITEM' as RNIap.ErrorCode:
               break;
+            case 'E_USER_CANCELLED':
+              break;
             case 'E_ALREADY_OWNED':
               console.log('You already own this item.');
               // Handle logic if the user already owns the item.
@@ -354,31 +355,14 @@ export default function ({
               // Handle logic if a network error occurs.
               break;
             default:
-              console.log('Other purchase error:', error.message);
+              console.log('Other purchase error:', error.code, error.message);
               // Handle other types of errors if necessary.
               break;
           }
           setSubscriptionLoading(false);
         });
 
-        let products;
-        if (Platform.OS === 'ios') {
-          products = await RNIap.getProducts({
-            skus: [monthlySubscriptionId, yearlySubscriptionId],
-          });
-        } else {
-          products = await RNIap.getSubscriptions({
-            skus: [monthlySubscriptionId, yearlySubscriptionId],
-          });
-        }
-        void localAnalytics().logEvent('PremiumOfferStoreProductsLoaded', {
-          screen: 'PremiumOffer',
-          action: 'StoreProductsLoaded',
-          userId: authContext.userId,
-          products,
-        });
-      } catch (err) {
-        try {
+        const func = async () => {
           let products;
           if (Platform.OS === 'ios') {
             products = await RNIap.getProducts({
@@ -389,21 +373,22 @@ export default function ({
               skus: [monthlySubscriptionId, yearlySubscriptionId],
             });
           }
-          void localAnalytics().logEvent('PremiumOfferStoreProductsLoadedRetry', {
+          void localAnalytics().logEvent('PremiumOfferStoreProductsLoaded', {
             screen: 'PremiumOffer',
-            action: 'StoreProductsLoadedRetry',
+            action: 'StoreProductsLoaded',
             userId: authContext.userId,
             products,
           });
-        } catch (err) {
-          void localAnalytics().logEvent('PremiumOfferStoreProductsError', {
-            screen: 'PremiumOffer',
-            action: 'StoreProductsError',
-            userId: authContext.userId,
-            err,
-          });
-          logErrors(err);
-        }
+        };
+        await retryAsync('PremiumOfferGetProducts', func);
+      } catch (err) {
+        void localAnalytics().logEvent('PremiumOfferStoreProductsError', {
+          screen: 'PremiumOffer',
+          action: 'StoreProductsError',
+          userId: authContext.userId,
+          err,
+        });
+        logErrors(err);
       }
 
       setProductLoading(false);
@@ -531,7 +516,7 @@ export default function ({
     >
       {subscriptionLoading && (
         <Modal animationType="none" transparent={true}>
-          <TouchableWithoutFeedback onPress={onClosePressed} style={{ flex: 1 }}>
+          <TouchableWithoutFeedback style={{ flex: 1 }}>
             <View
               style={{
                 flex: 1,
