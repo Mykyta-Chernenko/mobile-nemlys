@@ -12,7 +12,7 @@ import { SafeAreaView } from 'react-native-safe-area-context';
 import { FontText, REGULAR_FONT_FAMILY } from '@app/components/utils/FontText';
 import { i18n } from '@app/localization/i18n';
 import { useTheme, useThemeMode } from '@rneui/themed';
-import { logErrors } from '@app/utils/errors';
+import { logErrors, retryAsync } from '@app/utils/errors';
 import { supabase } from '@app/api/initSupabase';
 import { MainStackParamList } from '@app/types/navigation';
 import { SecondaryButton } from '../../components/buttons/SecondaryButton';
@@ -267,19 +267,20 @@ export default function ({
                 } else {
                   await RNIap.finishTransaction({ purchase: purchase, isConsumable: true });
                 }
-                const res = await supabase.functions.invoke('manage-premium', {
-                  body: {
-                    action: 'activate_premium',
-                    transactionReceipt: receipt,
-                    platform: Platform.OS,
-                    productId: purchase.productId,
-                  },
-                });
-                if (res.error) {
-                  logErrors(res.error);
-                  return;
-                }
-
+                const func = async () => {
+                  const res = await supabase.functions.invoke('manage-premium', {
+                    body: {
+                      action: 'activate_premium',
+                      transactionReceipt: receipt,
+                      platform: Platform.OS,
+                      productId: purchase.productId,
+                    },
+                  });
+                  if (res.error) {
+                    throw res.error;
+                  }
+                };
+                await retryAsync('managePremium', func);
                 navigation.navigate('PremiumSuccess', { state: 'premium_started' });
               } catch (error) {
                 logErrors(error);

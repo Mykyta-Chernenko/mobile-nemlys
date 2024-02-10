@@ -11,7 +11,6 @@ import { supabase } from '@app/api/initSupabase';
 import { AuthStackParamList } from '@app/types/navigation';
 import { NativeStackScreenProps } from '@react-navigation/native-stack';
 import { useTheme } from '@rneui/themed';
-import { OAuth } from '@app/components/auth/OAuth';
 import * as WebBrowser from 'expo-web-browser';
 import { i18n } from '@app/localization/i18n';
 import { ANON_USER, AuthContext } from '@app/provider/AuthProvider';
@@ -25,6 +24,7 @@ import { SecondaryButton } from '@app/components/buttons/SecondaryButton';
 import { handleUserAfterSignUp } from './Register';
 import { KEYBOARD_BEHAVIOR } from '@app/utils/constants';
 import StyledInput from '@app/components/utils/StyledInput';
+import { OAuth } from '@app/components/auth/OAuth';
 
 WebBrowser.maybeCompleteAuthSession();
 
@@ -66,7 +66,7 @@ export default function ({ navigation }: NativeStackScreenProps<AuthStackParamLi
         logErrors(new Error('No user after signUp call'));
         return;
       } else {
-        await handleUserAfterSignUp('email')(user, false);
+        await handleUserAfterSignUp('email')(user);
         auth.setIsSignedIn?.(true);
         auth.setUserId?.(user.id);
       }

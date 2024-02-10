@@ -220,7 +220,7 @@ export default function ({
                     {partnerName || i18n.t('home.partner')}
                   </FontText>
                   <FontText style={{ color: theme.colors.grey3, marginTop: '2%' }}>
-                    {dateCount + 1} {i18n.t('home.discussed_questions')}
+                    {dateCount} {i18n.t('home.discussed_questions')}
                   </FontText>
                 </View>
                 <View

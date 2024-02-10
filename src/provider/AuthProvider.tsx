@@ -1,11 +1,9 @@
 import React, { createContext, useEffect, useState } from 'react';
 import { supabase } from '@app/api/initSupabase';
-import { Linking } from 'react-native';
 import { SupabaseUser } from '@app/types/api';
-import { logErrors } from '@app/utils/errors';
 import { analyticsIdentifyUser, localAnalytics } from '@app/utils/analytics';
 
-export type HandleUser = (user: SupabaseUser, exists: boolean) => Promise<void>;
+export type HandleUser = (user: SupabaseUser) => Promise<void>;
 export const ANON_USER = 'anon';
 type ContextProps = {
   isSignedIn: null | boolean;
@@ -39,15 +37,7 @@ export async function handleAuthTokens(
   if (error) {
     throw error;
   } else {
-    const userId = user.user.id;
-    const { error, count } = await supabase
-      .from('user_profile')
-      .select('*', { count: 'exact' })
-      .eq('user_id', userId);
-    if (error) {
-      throw error;
-    }
-    await handleUser(user.user, !!count);
+    await handleUser(user.user);
     setIsSignedIn(true);
     setUserId(user.user.id);
   }
@@ -65,39 +55,7 @@ const AuthProvider = (props: Props) => {
     void analyticsIdentifyUser(userId === ANON_USER ? undefined : userId);
     setUserIdOriginal(userId);
   };
-  useEffect(() => {
-    const handleDeepLinking = async (url: string | null): Promise<void> => {
-      if (!url) return;
-      const correctUrl = url.includes('#') ? url.replace('#', '?') : url;
-      const urlObject = new URL(correctUrl);
-      const accessToken = urlObject.searchParams.get('access_token');
-      const refreshToken = urlObject.searchParams.get('refresh_token');
-      if (!accessToken || !refreshToken) return;
-      const defaultUserHandler = async (_user: SupabaseUser, _exists: boolean) => {};
 
-      try {
-        await handleAuthTokens(
-          accessToken,
-          refreshToken,
-          globalHandleUser.value || defaultUserHandler,
-          setIsSignedIn,
-          setUserId,
-        );
-        globalHandleUser.value = null;
-      } catch (e: unknown) {
-        logErrors(e as Error);
-        await supabase.auth.signOut();
-      }
-    };
-    const listener = (event: { url: string }) => {
-      void handleDeepLinking(event.url);
-    };
-    const subscription = Linking.addEventListener('url', listener);
-    void Linking.getInitialURL().then((url) => handleDeepLinking(url));
-    return () => {
-      subscription.remove();
-    };
-  }, []);
   useEffect(() => {
     const getInitialSession = async () => {
       const {

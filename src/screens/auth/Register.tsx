@@ -21,48 +21,72 @@ import { FontText } from '@app/components/utils/FontText';
 import { logErrors, logErrorsWithMessage } from '@app/utils/errors';
 import { localAnalytics } from '@app/utils/analytics';
 import StyledInput from '@app/components/utils/StyledInput';
-import { sleep } from '@app/utils/date';
-export function handleUserAfterSignUp(
-  provider: string,
-): (user: SupabaseUser, exists: boolean) => Promise<void> {
-  return async (user: SupabaseUser, exists: boolean) => {
-    void localAnalytics().logEvent('LoginFinished', {
-      screen: 'Login',
-      action: 'Finished',
-      userId: user.id,
-      provider,
-    });
-    if (exists) {
-      console.log(`User ${user.email || 'with this email'} already exists, just signing in`);
-    } else {
-      const couple: InsertAPICouple = {
-        invitation_code: randomReadnableString(6),
-      };
-      const { data, error }: SupabaseAnswer<APICouple> = await supabase
-        .from('couple')
-        .insert(couple)
-        .select()
-        .single();
+let handlingUser = false;
+export function handleUserAfterSignUp(provider: string): (user: SupabaseUser) => Promise<void> {
+  return async (user: SupabaseUser) => {
+    if (handlingUser) return;
+    handlingUser = true;
+    try {
+      void localAnalytics().logEvent('LoginFinished', {
+        screen: 'Login',
+        action: 'Finished',
+        userId: user.id,
+        provider,
+      });
+      const { error, count } = await supabase
+        .from('user_profile')
+        .select('*', { count: 'exact' })
+        .eq('user_id', user.id);
       if (error) {
         throw error;
       }
-      console.log(data);
-      const userProfile: InsertAPIUserProfile = {
-        couple_id: data.id,
-        user_id: user.id,
-        first_name: '',
-        partner_first_name: '',
-        onboarding_finished: false,
-        ios_expo_token: undefined,
-        android_expo_token: undefined,
-        showed_interview_request: false,
-      };
-      const { error: profileError } = await supabase.from('user_profile').insert(userProfile);
-      if (profileError) {
-        throw profileError;
+      if (count) {
+        console.log(`User ${user.email || 'with this email'} already exists, just signing in`);
+        void localAnalytics().logEvent('LoginAlreadyExists', {
+          screen: 'Login',
+          action: 'AlreadyExists',
+          userId: user.id,
+          provider,
+        });
+      } else {
+        const couple: InsertAPICouple = {
+          invitation_code: randomReadnableString(6),
+        };
+        const { data, error }: SupabaseAnswer<APICouple | null> = await supabase
+          .from('couple')
+          .insert(couple)
+          .select()
+          .single();
+        if (error) {
+          throw error;
+        }
+        if (!data) {
+          throw Error(`Insert couple no data back, ${JSON.stringify(data)}`);
+        }
+        console.log(data);
+        const userProfile: InsertAPIUserProfile = {
+          couple_id: data.id,
+          user_id: user.id,
+          first_name: '',
+          partner_first_name: '',
+          onboarding_finished: false,
+          ios_expo_token: undefined,
+          android_expo_token: undefined,
+          showed_interview_request: false,
+        };
+        const { error: profileError } = await supabase.from('user_profile').insert(userProfile);
+        if (profileError) {
+          throw profileError;
+        }
+        void localAnalytics().logEvent('LoginProfileInserted', {
+          screen: 'Login',
+          action: 'ProfileInserted',
+          userId: user.id,
+          provider,
+        });
       }
-      console.log('profile inserted');
-      await sleep(200);
+    } finally {
+      handlingUser = false;
     }
   };
 }
@@ -110,7 +134,7 @@ export default function ({
         logErrors(new Error('Not user after signUp call'));
         return;
       } else {
-        await handleUserAfterSignUp('email')(data.data.user, false);
+        await handleUserAfterSignUp('email')(data.data.user);
         auth.setIsSignedIn?.(true);
         auth.setUserId?.(data.data.user.id);
       }

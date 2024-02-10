@@ -35,6 +35,9 @@
         "SUPABASE_KEY": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImtlbnBibGVwY3l2a3dhdXNlcmdmIiwicm9sZSI6ImFub24iLCJpYXQiOjE2NzE0ODMzNDcsImV4cCI6MTk4NzA1OTM0N30.9OobulUYITgf9DLeBGx257j1GX1Fu77-dF75ND7f97s",
       },
       "channel": "production",
+      "ios": {
+        "image": "latest"
+      }
     }
   },
   "submit": {
