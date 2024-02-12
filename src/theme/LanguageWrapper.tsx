@@ -30,7 +30,7 @@ export default function (props: Props) {
 
         if (storedLanguage) {
           i18n.locale = storedLanguage;
-        } else if (!authContext.userId) {
+        } else if (!authContext.isSignedIn) {
           // If user not logged in, set device locale
           i18n.locale = Localization.locale;
         } else {
@@ -39,7 +39,7 @@ export default function (props: Props) {
             .from('user_technical_details')
             .select('language')
             .eq('user_id', authContext.userId)
-            .single();
+            .maybeSingle();
 
           if (error) {
             console.error(error.message);

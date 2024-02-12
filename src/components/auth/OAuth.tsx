@@ -60,8 +60,8 @@ export const OAuth = ({
       logErrors(e);
     } finally {
       window = oldWindow;
-      setLocalLoading(false);
-      setLoading(false);
+      setTimeout(() => setLocalLoading(false), 4000);
+      setTimeout(() => setLoading(false), 4000);
     }
   };
   useEffect(() => {

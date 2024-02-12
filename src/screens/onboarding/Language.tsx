@@ -39,7 +39,8 @@ export default function ({
     const languageData = await supabase
       .from('user_technical_details')
       .update({ language: language })
-      .eq('user_id', authContext.userId);
+      .eq('user_id', authContext.userId)
+      .single();
     if (languageData.error) {
       logErrorsWithMessage(languageData.error, languageData.error.message);
       return;
