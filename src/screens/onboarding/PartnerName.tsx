@@ -45,7 +45,7 @@ export default function ({
       action: 'ContinueClicked',
       userId: authContext.userId,
     });
-    navigation.navigate('DiscussWay');
+    navigation.navigate('Language', { goSettings: false });
   };
   return (
     <KeyboardAvoidingView behavior={KEYBOARD_BEHAVIOR} style={{ flexGrow: 1 }}>
@@ -84,7 +84,7 @@ export default function ({
                     navigation.navigate('YourName');
                   }}
                 ></GoBackButton>
-                <Progress current={2} all={3}></Progress>
+                <Progress current={2} all={4}></Progress>
               </View>
               <View
                 style={{

@@ -161,11 +161,6 @@ export default function ({
                       </FontText>
                       {i18n.t('new_reflection.title_3')}
                     </FontText>
-                    <View style={{ marginTop: '2%' }}>
-                      <FontText style={{ color: theme.colors.grey3, textAlign: 'center' }}>
-                        {i18n.t('new_reflection.description')}
-                      </FontText>
-                    </View>
                   </View>
                   <View style={{ height: 400, maxHeight: '70%' }}>
                     <ReflectionCard>

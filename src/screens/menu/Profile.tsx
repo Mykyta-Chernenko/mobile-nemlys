@@ -156,6 +156,18 @@ export default function ({
               <SecondaryButton
                 buttonStyle={{ marginTop: 10 }}
                 onPress={() => {
+                  void localAnalytics().logEvent('ProfileLanguage', {
+                    screen: 'Profile',
+                    action: 'Clicked language',
+                  });
+                  navigation.navigate('Language', { goSettings: true });
+                }}
+              >
+                {i18n.t('settings.language')}
+              </SecondaryButton>
+              <SecondaryButton
+                buttonStyle={{ marginTop: 10 }}
+                onPress={() => {
                   void localAnalytics().logEvent('ProfileLogout', {
                     screen: 'Profile',
                     action: 'Clicked logout',

@@ -373,7 +373,11 @@
       "text_4_first": "Todo listo,\n",
       "text_4_second": "comienza a explorar\nla app"
     },
-
+    "language": {
+      "title": "Seleccionar idioma de la aplicación",
+      "en": "Inglés",
+      "es": "Español"
+    },
     "discuss_way": {
       "title_first": "¿Cómo te gustaría ",
       "title_second": "discutir ",
@@ -437,6 +441,7 @@
   },
   "settings": {
     "premium": "Premium",
+    "language": "Idioma",
     "logout": "Cerrar sesión",
     "feedback": "Danos tu opinión",
     "conversations": "Conversaciones",

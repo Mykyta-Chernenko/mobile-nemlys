@@ -4,6 +4,7 @@ import { JobSlug } from './domain';
 export type MainStackParamList = {
   YourName: undefined;
   PartnerName: undefined;
+  Language: { goSettings?: boolean };
   DiscussWay: undefined;
   OnboardingReflectionExplanation: undefined;
   OnboardingReflection: undefined;

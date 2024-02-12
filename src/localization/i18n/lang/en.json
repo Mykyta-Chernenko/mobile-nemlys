@@ -374,7 +374,11 @@
       "text_4_first": "All done,\n",
       "text_4_second": "start exploring\nthe app"
     },
-
+    "language": {
+      "title": "Select App Language",
+      "en": "English",
+      "es": "Spanish"
+    },
     "discuss_way": {
       "title_first": "How would you like ",
       "title_second": "to discuss ",
@@ -438,6 +442,7 @@
   },
   "settings": {
     "premium": "Premium",
+    "language": "Language",
     "logout": "Logout",
     "feedback": "Give us feedback",
     "conversations": "Conversations",

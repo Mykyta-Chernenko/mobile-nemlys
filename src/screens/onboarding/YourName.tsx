@@ -88,7 +88,7 @@ export default function ({
                     void logout();
                   }}
                 ></GoBackButton>
-                <Progress current={1} all={3}></Progress>
+                <Progress current={1} all={4}></Progress>
               </View>
               <View
                 style={{

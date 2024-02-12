@@ -22,6 +22,7 @@ import OnDateNotification from '@app/screens/date/OnDateNotification';
 import PremiumOffer from '@app/screens/premium/PremiumOffer';
 import PremiumSuccess from '@app/screens/premium/PremiumSuccess';
 import InterviewRequest from '@app/screens/utils/InterviewRequest';
+import Language from '@app/screens/onboarding/Language';
 
 const MainStack = createNativeStackNavigator();
 const Main = () => {
@@ -100,7 +101,11 @@ const Main = () => {
         name={'PartnerName'}
         component={PartnerName}
       />
-
+      <MainStack.Screen
+        options={{ animation: 'slide_from_right' }}
+        name={'Language'}
+        component={Language}
+      />
       <MainStack.Screen
         options={{ animation: 'slide_from_right' }}
         name={'DiscussWay'}

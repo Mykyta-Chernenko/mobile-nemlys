@@ -2,9 +2,8 @@ import React from 'react';
 import 'react-native-url-polyfill/auto';
 import Navigation from './src/navigation';
 import { AuthProvider } from './src/provider/AuthProvider';
+import LanguageWrapper from './src/theme/LanguageWrapper';
 
-import * as Localization from 'expo-localization';
-import { i18n } from '@app/localization/i18n';
 import { ThemeProvider } from '@rneui/themed';
 import { theme } from '@app/theme';
 import FontWrapper from '@app/theme/FontWrapper';
@@ -18,7 +17,9 @@ export default function App() {
       <FontWrapper>
         <SplashScreen>
           <AuthProvider>
-            <Navigation />
+            <LanguageWrapper>
+              <Navigation />
+            </LanguageWrapper>
           </AuthProvider>
           <ThemeStatusBar></ThemeStatusBar>
         </SplashScreen>
@@ -38,4 +39,3 @@ Sentry.init({
   ],
   tracesSampleRate: 0.1,
 });
-i18n.locale = Localization.locale;

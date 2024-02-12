@@ -1,12 +1,10 @@
 import { I18n } from 'i18n-js';
 import * as en from './lang/en.json';
 import * as es from './lang/es.json';
-import * as nbNO from './lang/nb-NO.json';
 export const i18n = new I18n(
   {
     en,
     es,
-    ['nb-NO']: nbNO,
   },
   { defaultLocale: 'en' },
 );
@@ -39,3 +37,10 @@ spanishSpeakingLocales.forEach((locale) => {
 });
 
 i18n.enableFallback = true;
+
+export function getDefaultLanguage(locale: string) {
+  if (locale === 'en') return 'en';
+  if (spanishSpeakingLocales.includes(locale)) return 'es';
+  if (locale === 'es') return 'es';
+  return 'en';
+}

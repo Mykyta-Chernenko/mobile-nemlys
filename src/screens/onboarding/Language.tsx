@@ -1,7 +1,7 @@
 import React, { useContext, useEffect, useState } from 'react';
 import { ImageBackground, ScrollView, TouchableOpacity, View } from 'react-native';
 import { useTheme, useThemeMode } from '@rneui/themed';
-import { i18n } from '@app/localization/i18n';
+import { getDefaultLanguage, i18n } from '@app/localization/i18n';
 import { PrimaryButton } from '@app/components/buttons/PrimaryButtons';
 import { FontText } from '@app/components/utils/FontText';
 import { Progress } from '@app/components/utils/Progress';
@@ -13,19 +13,20 @@ import { MainStackParamList } from '@app/types/navigation';
 import { NativeStackScreenProps } from '@react-navigation/native-stack';
 import { localAnalytics } from '@app/utils/analytics';
 import { SafeAreaView } from 'react-native-safe-area-context';
+import { setAppLanguage } from '@app/theme/LanguageWrapper';
 
 export default function ({
   route,
   navigation,
-}: NativeStackScreenProps<MainStackParamList, 'DiscussWay'>) {
+}: NativeStackScreenProps<MainStackParamList, 'Language'>) {
+  const fromSettings = route.params?.goSettings;
   const { theme } = useTheme();
-  const [chosen, setChosen] = useState<string | undefined>(undefined);
-  const choices = [
-    { slug: 'face-to-face', title: i18n.t('onboarding.discuss_way.choice_1') },
-    { slug: 'online', title: i18n.t('onboarding.discuss_way.choice_2') },
-    { slug: 'discuss-later', title: i18n.t('onboarding.discuss_way.choice_3') },
-    { slug: 'do-not-know', title: i18n.t('onboarding.discuss_way.choice_4') },
-  ];
+  const LANGUAGES = ['en', 'es'];
+  const [language, setLanguage] = useState<string>(getDefaultLanguage(i18n.locale));
+  const choices = LANGUAGES.map((l) => ({
+    language: l,
+    title: i18n.t(`onboarding.language.${l}`),
+  }));
   const authContext = useContext(AuthContext);
 
   const { setMode } = useThemeMode();
@@ -35,35 +36,26 @@ export default function ({
   }, [navigation]);
 
   const handlePress = async () => {
-    await supabase
-      .from('onboarding_poll')
-      .delete()
-      .match({ user_id: authContext.userId, question_slug: 'discuss_way' });
-    const dateReponse = await supabase
-      .from('onboarding_poll')
-      .insert({ user_id: authContext.userId, question_slug: 'discuss_way', answer_slug: chosen });
-    if (dateReponse.error) {
-      logErrorsWithMessage(dateReponse.error, dateReponse.error.message);
-      return;
-    }
-    const profileResponse = await supabase
-      .from('user_profile')
-      .update({
-        onboarding_finished: true,
-        updated_at: new Date(),
-      })
+    const languageData = await supabase
+      .from('user_technical_details')
+      .update({ language: language })
       .eq('user_id', authContext.userId);
-    if (profileResponse.error) {
-      logErrorsWithMessage(profileResponse.error, profileResponse.error?.message);
+    if (languageData.error) {
+      logErrorsWithMessage(languageData.error, languageData.error.message);
       return;
     }
-    void localAnalytics().logEvent('DiscussWayContinueClicked', {
-      screen: 'DiscussWay',
+    await setAppLanguage(language);
+    void localAnalytics().logEvent('LanguageContinueClicked', {
+      screen: 'Language',
       action: 'ContinueClicked',
-      discuss_way: chosen,
+      language: language,
       userId: authContext.userId,
     });
-    navigation.navigate('Analyzing');
+    if (fromSettings) {
+      navigation.navigate('Profile', { refreshTimeStamp: new Date().toISOString() });
+    } else {
+      navigation.navigate('DiscussWay');
+    }
   };
   return (
     <ImageBackground
@@ -87,15 +79,19 @@ export default function ({
               theme="light"
               containerStyle={{ position: 'absolute', left: 0 }}
               onPress={() => {
-                void localAnalytics().logEvent('DiscussWayBackClicked', {
-                  screen: 'DiscussWay',
+                void localAnalytics().logEvent('LanguageBackClicked', {
+                  screen: 'Language',
                   action: 'BackClicked',
                   userId: authContext.userId,
                 });
-                navigation.navigate('Language', { goSettings: false });
+                if (fromSettings) {
+                  navigation.navigate('Profile', { refreshTimeStamp: new Date().toISOString() });
+                } else {
+                  navigation.navigate('PartnerName');
+                }
               }}
             ></GoBackButton>
-            <Progress current={4} all={4}></Progress>
+            {!fromSettings && <Progress current={3} all={4}></Progress>}
           </View>
           <View
             style={{
@@ -114,11 +110,7 @@ export default function ({
               }}
               h1
             >
-              {i18n.t('onboarding.discuss_way.title_first')}
-              <FontText style={{ color: theme.colors.primary }} h1>
-                {i18n.t('onboarding.discuss_way.title_second')}
-              </FontText>
-              {i18n.t('onboarding.discuss_way.title_third')}
+              {i18n.t('onboarding.language.title')}
             </FontText>
             <ScrollView style={{ marginTop: '5%', flex: 1 }}>
               {choices.map((c, i) => (
@@ -128,14 +120,14 @@ export default function ({
                     marginTop: 10,
                     borderRadius: 20,
                     backgroundColor: theme.colors.white,
-                    borderColor: c.slug === chosen ? theme.colors.black : theme.colors.white,
+                    borderColor: c.language === language ? theme.colors.black : theme.colors.white,
                     borderWidth: 1,
                     padding: 20,
                     flexDirection: 'row',
                     alignItems: 'center',
                     justifyContent: 'center',
                   }}
-                  onPress={() => void setChosen(c.slug)}
+                  onPress={() => void setLanguage(c.language)}
                 >
                   <FontText style={{ marginLeft: 10 }}>{c.title}</FontText>
                 </TouchableOpacity>
@@ -144,7 +136,7 @@ export default function ({
           </View>
           <View style={{ marginTop: '4%' }}>
             <PrimaryButton
-              disabled={!chosen}
+              disabled={!language}
               title={i18n.t('continue')}
               onPress={() => void handlePress()}
             />
