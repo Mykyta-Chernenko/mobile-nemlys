@@ -1,12 +1,13 @@
 import { supabase } from '@app/api/initSupabase';
 import { APINotification, InsertAPINotification, SupabaseAnswer } from '@app/types/api';
 import * as Notifications from 'expo-notifications';
-import { logErrors, logErrorsWithMessage } from './errors';
+import { logSupaErrors } from './errors';
 import { Platform } from 'react-native';
 import { isDevice } from 'expo-device';
 import { DENIED_NOTIFICATION_STATUS, GRANTED_NOTIFICATION_STATUS } from '@app/utils/constants';
 import { localAnalytics } from './analytics';
 import { NotificationTriggerInput } from 'expo-notifications';
+import { getNow } from './date';
 export async function createNewNotification(
   title: string,
   body: string,
@@ -31,7 +32,7 @@ export async function createNewNotification(
     const res = await supabase.from('notification').insert(newNotification);
 
     if (res.error) {
-      logErrors(res.error);
+      logSupaErrors(res.error);
     }
   }
 }
@@ -44,7 +45,7 @@ export async function removeOldNotification(identifier: string) {
       .select('id, created_at, updated_at, identifier, expo_notification_id')
       .eq('identifier', identifier);
     if (notification.error) {
-      logErrors(notification.error);
+      logSupaErrors(notification.error);
       return;
     }
     for (const d of notification.data) {
@@ -107,17 +108,13 @@ export const retrieveNotificationAccess = async (
 ): Promise<string | undefined> => {
   let finalStatus = notificationStatus;
 
-  const profileResponse: SupabaseAnswer<{
-    id: number;
-    ios_expo_token: string | null;
-    android_expo_token: string | null;
-  }> = await supabase
+  const profileResponse = await supabase
     .from('user_profile')
     .select('id, ios_expo_token, android_expo_token')
-    .eq('user_id', userId)
+    .eq('user_id', userId!)
     .single();
   if (profileResponse.error) {
-    logErrorsWithMessage(profileResponse.error, profileResponse.error.message);
+    logSupaErrors(profileResponse.error);
     return finalStatus;
   }
   try {
@@ -162,10 +159,10 @@ export const retrieveNotificationAccess = async (
         if (token && tokenField && token != profileResponse.data?.[tokenField]) {
           const res = await supabase
             .from('user_profile')
-            .update({ [tokenField]: token, updated_at: new Date() })
+            .update({ [tokenField]: token, updated_at: getNow().toISOString() })
             .eq('id', profileResponse.data?.id);
           if (res.error) {
-            logErrors(res.error);
+            logSupaErrors(res.error);
           }
         }
       }

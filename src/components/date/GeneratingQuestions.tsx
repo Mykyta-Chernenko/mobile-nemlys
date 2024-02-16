@@ -7,12 +7,11 @@ import { i18n } from '@app/localization/i18n';
 
 import { AuthContext } from '@app/provider/AuthProvider';
 import { supabase } from '@app/api/initSupabase';
-import { logErrors, logErrorsWithMessageWithoutAlert } from '@app/utils/errors';
-import { APIUserProfile, SupabaseAnswer } from '@app/types/api';
+import { logErrorsWithMessageWithoutAlert, logSupaErrors } from '@app/utils/errors';
 import { JobSlug } from '@app/types/domain';
 import { useNavigation } from '@react-navigation/native';
 import { MainNavigationProp } from '@app/types/navigation';
-import { sleep } from '@app/utils/date';
+import { getNow, sleep } from '@app/utils/date';
 
 export default function (props: {
   withPartner: boolean;
@@ -52,13 +51,13 @@ export default function (props: {
   ).start();
   useEffect(() => {
     const func = async () => {
-      const data: SupabaseAnswer<APIUserProfile> = await supabase
+      const data = await supabase
         .from('user_profile')
         .select('*')
-        .eq('user_id', authContext.userId)
+        .eq('user_id', authContext.userId!)
         .single();
       if (data.error) {
-        logErrors(data.error);
+        logSupaErrors(data.error);
         return;
       }
       const dateReponse = await supabase
@@ -75,7 +74,7 @@ export default function (props: {
         .select('id')
         .single();
       if (dateReponse.error) {
-        logErrors(dateReponse.error);
+        logSupaErrors(dateReponse.error);
         return;
       }
       // if doesn't want to generate questions and call api
@@ -98,12 +97,12 @@ export default function (props: {
           const dateReponse = await supabase
             .from('date')
             .update({
-              updated_at: new Date(),
+              updated_at: getNow().toISOString(),
               active: false,
             })
             .eq('id', dateId);
           if (dateReponse.error) {
-            logErrors(dateReponse.error);
+            logSupaErrors(dateReponse.error);
           }
           navigation.navigate('Home', { refreshTimeStamp: new Date().toISOString() });
           return;

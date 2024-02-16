@@ -1,8 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import * as SplashScreen from 'expo-splash-screen';
 import { Alert, BackHandler, ImageBackground, Linking } from 'react-native';
-import { logErrors } from '@app/utils/errors';
-import { SupabaseAnswer } from '@app/types/api';
+import { logSupaErrors } from '@app/utils/errors';
 import { supabase } from '@app/api/initSupabase';
 import Constants from 'expo-constants';
 import { i18n } from '@app/localization/i18n';
@@ -21,12 +20,9 @@ export default function (props: Props) {
 
   useEffect(() => {
     const f = async () => {
-      const res: SupabaseAnswer<{ version }> = await supabase
-        .from('app_settings')
-        .select('version')
-        .single();
+      const res = await supabase.from('app_settings').select('version').single();
       if (res.error) {
-        logErrors(res.error);
+        logSupaErrors(res.error);
         setShow(false);
         return;
       }

@@ -17,7 +17,6 @@
   "skip": "Skip",
   "finish": "Finish",
   "input_here": "Input here",
-  "name_placeholder": "Enter your name",
   "email_placeholder": "Enter your email",
   "password_placeholder": "Enter your password",
   "password_again_placeholder": "Enter your password again",
@@ -26,10 +25,6 @@
     "play_market": "You are not logged in in your Play Market app, please, login there first, and then go back to Nemlys app to start the subscription",
     "payment_error": "There has been an intermediate error with your phone's store. You can typically solve it by waiting a couple of minutes and trying to initiate the subscription again"
   },
-  "join": "Join",
-  "history": "History",
-  "cards": "Cards",
-  "configure": "Configure",
   "level": "Level",
   "new_reflection": {
     "title_1": "Try ",
@@ -63,22 +58,30 @@
     "discussed_questions": "discussed questions",
     "you": "You",
     "partner": "Partner",
-    "discussions": "discussions",
-    "card_questions": "3 questions",
-    "title_first": "Select topic\nto discuss\n",
-    "title_second": "together",
-    "start": "Get Started",
-    "reflect_explanation": " Reflect to get better AI questions",
     "menu": {
       "discuss": "Discuss",
-      "diary": "Diary",
       "profile": "Profile",
       "premium": "Premium",
       "reflect": "Reflect"
     }
   },
   "profile": {
-    "title": "Profile"
+    "title": "Profile",
+    "my_account": "My Account",
+    "settings": "Settings",
+    "about": "About Nemlys",
+    "your_name": "Your Name",
+    "partner_name": "Partner Name",
+    "language": "Language",
+    "subscription": "Manage subscription",
+    "rate": "Rate our app",
+    "share": "Share our app",
+    "feature_request": "Feature request",
+    "call": "Cal with founders",
+    "contact": "Contact us",
+    "logout": "Log out",
+    "delete_account": "Delete account",
+    "are_you_sure_you_want_to_delete_account": "Are you sure you want to delete your account?"
   },
   "premium": {
     "banner": {
@@ -92,7 +95,8 @@
     },
     "offer": {
       "title": "Premium",
-      "enjoy_your_premium": "You already have premium, enjoy it!",
+      "enjoy_your_premium": "Enjoy your premium!",
+      "manage": "Manage Subscription",
       "upgrade_trial": "You have {{trialDays}} Trial Access days left ",
       "reached_limit": "You reached your daily limit. ",
       "try_unlimited_1": "Try with ",
@@ -125,6 +129,8 @@
         "button": "Cool, thanks"
       }
     }
+
+    
   },
   "reflection": {
     "title": "Reflections",
@@ -221,20 +227,11 @@
     "level": {
       "light": "Light",
       "normal": "Normal",
-      "deep": "Deep",
-      "existential": "Existential"
+      "deep": "Deep"
     },
-    "low_quality_explanation": "You have low questions quality. Reflect to get better AI questions",
     "topic_title_first": "Select ",
     "topic_title_second": "1 topic ",
     "topic_title_third": "to discuss with partner",
-    "with_partner": {
-      "title_1": "You need your ",
-      "title_2": "partner beside you",
-      "title_3": " to start discussing topics",
-      "alone": "Try alone",
-      "with_partner": "Start with partner"
-    },
     "topic": {
       "title": "Select one topic",
       "surprise": "Random",
@@ -307,11 +304,6 @@
     "become_beta_user": "Become beta user",
     "joined_successfully": "Welcome to the beta 😈"
   },
-  "conversations": {
-    "record": "Record",
-    "stop": "Stop",
-    "instruction": "You can record a conversation with your partner and our AI will analyze it and provide insights about the negative communication patterns it might encounter, and potential solutions"
-  },
   "welcome": {
     "title_first": "Get questions to discuss with ",
     "title_second": "your partner",
@@ -326,28 +318,6 @@
     "partner_name_first": "What is your\n",
     "partner_name_second": "partner name",
     "partner_name_third": "?",
-    "age": {
-      "title_first": "How old ",
-      "title_second": "",
-      "title_third": "are you?",
-      "choice_1": "below 18",
-      "choice_2": "18-24",
-      "choice_3": "25-34",
-      "choice_4": "35-44",
-      "choice_5": "44-55",
-      "choice_6": "above 55"
-    },
-    "length": {
-      "title_first": "",
-      "title_second": "How long ",
-      "title_third": "are you together",
-      "choice_1": "not started",
-      "choice_2": "1 - 4 weeks",
-      "choice_3": "1 - 12 months",
-      "choice_4": "1 - 5 years",
-      "choice_5": "5+ years",
-      "choice_6": "I'm single"
-    },
     "job": {
       "title_first": "What do you ",
       "title_second": "",
@@ -387,171 +357,24 @@
       "choice_2": "With my partner online",
       "choice_3": "Get questions and discuss later",
       "choice_4": "I don't know"
-    },
-    "relationship_story_explanation_first": "Reflect and write your thoughts to ",
-    "relationship_story_explanation_second": "get personal AI questions",
-    "relationship_story_explanation_third": "",
-    "relationship_story_explanation_description": "Your data is completely safe. We use it only for generating relevant questions.",
-    "relationship_story_first": "Share more details to get better questions",
-    "relationship_story_second": "unique story ",
-    "relationship_story_third": "of your relationship ",
-    "relationship_story": {
-      "answer_placeholder": "Write your answer",
-      "question0_first": "",
-      "question0_second": "Challenges ",
-      "question0_third": "you have faced so far:",
-      "question1_first": "Things that ",
-      "question1_second": "you like ",
-      "question1_third": "about your relationship:",
-      "question2_first": "",
-      "question2_second": "Most important ",
-      "question2_third": "things that happened recently:",
-      "question3_first": "",
-      "question3_second": "Biggest plans ",
-      "question3_third": "you have together:",
-      "skip_first": "If you skip, ",
-      "skip_second": "AI can't generate ",
-      "skip_third": "relevant questions for your couple",
-      "skip_back": "Back to story",
-      "skip_confirm": "Skip story"
     }
   },
   "login": {
     "password_is_too_short": "Password must be at least 6 characters",
     "invalid_username": "The email or password is wrong",
-    "user_does_not_exist_error": "User with email %{email} does not exist in the system",
     "title": "Sign in\nNemlys account",
     "check_email_for_login_link": "The login link was sent to your email",
     "button": {
       "default": "Continue with Email"
-    },
-    "register": {
-      "pretext": "Don't have an account?",
-      "link": "Start here"
     },
     "forgot_password": {
       "link": "Forgot password?"
     }
   },
   "oauth": {
-    "pretext": "Or continue with",
     "button": {
       "google": "Sign in with Google",
       "apple": "Sign in with Apple"
-    }
-  },
-  "settings": {
-    "premium": "Premium",
-    "language": "Language",
-    "logout": "Logout",
-    "feedback": "Give us feedback",
-    "conversations": "Conversations",
-    "delete_account": "Delete account",
-    "send_email": "Send email",
-    "are_you_sure_you_want_to_delete_account": "Are you sure you want to delete your account?",
-    "cannot_send_email": "Cannot send email from your device, feel free to reach out manually to %{email}",
-    "support_email_subject": "App feedback",
-    "send_your_feedback": "If you want to tell us what you think about the app, submit a bug report or simply talk to us, you are very welcome to write it below",
-    "feedback_thanks": "Thanks for your feedback, we will read it soon :)"
-  },
-  "notifications": {
-    "date_soon": "Your date is soon, don't forget to about the questions",
-    "schedule_date": "Please, schedule when you will have the date with your partner",
-    "diary": {
-      "title": "Write your diary",
-      "body": "What has happened in your relationship recently?"
-    }
-  },
-  "register": {
-    "title": "Let's create your account",
-    "results": "Results",
-    "check_email_for_confirmation": "The confirmation link has been sent to your email",
-    "passwords_are_not_the_same": "Passwords are not the same",
-    "register_button": {
-      "default": "Create"
-    },
-    "continue_with_email": {
-      "default": "Continue with email"
-    },
-    "login": {
-      "pretext": "Already have an account?",
-      "link": "Login here"
-    },
-    "questions": {
-      "dating_length": {
-        "title": "Going out for",
-        "answers": {
-          "1-4-weeks": "1-4 weeks",
-          "1-3-months": "1-3 months",
-          "3-12-months": "3-12 months",
-          "12-more-months": "12+ months"
-        }
-      },
-      "open": {
-        "title": "Level of openness",
-        "answers": {
-          "open-0": "Cannot open up yet",
-          "open-1": "Can discuss general topics",
-          "open-2": "Can discuss hard topics",
-          "open-3": "Can discuss everything",
-          "open-4": "Partner is more open for now",
-          "open-5": "I am more open for now"
-        }
-      },
-      "well_covered": {
-        "title": "Well-covered topics"
-      },
-      "to_cover": {
-        "title": "Topics to cover"
-      },
-      "topics": {
-        "relationship-image": "Relationship image",
-        "time": "Time",
-        "values": "Values",
-        "commitment": "Commitment",
-        "past": "Past",
-        "emotions": "Emotions",
-        "conflict": "Conflict"
-      }
-    }
-  },
-  "email_confirmed": {
-    "content": "Email has been successfully confirmed, redirecting..."
-  },
-  "forgot_password": {
-    "title": "Reset password",
-    "email_sent": "Check your email to reset the password",
-    "button": {
-      "default": "Send email"
-    }
-  },
-  "waitlist": {
-    "title": "Join our premium waitlist",
-    "content": "As a premium user, you will get a new AI generated card after every card your complete",
-    "already_joined": "You are already on the waitlist",
-    "joined_successfully": "Hoorah, you're on the waitlist",
-    "we_will_get_back_to_you": "As soon as we launch the premium, we will reach you"
-  },
-  "diary": {
-    "title": "Diary",
-    "ai_motivation_title": "Keeping you diary significantly improves the ai card personalization",
-    "add_button": "Add entry",
-    "new": {
-      "title": "Today's entry",
-      "type": {
-        "title": "How do you want to write?",
-        "freewriting": "Freewriting",
-        "questions": "Ask me questions"
-      },
-      "questions": {
-        "feel": "How did I feel recently, and how did my partner contribute to my emotions?",
-        "feel_summary": "**My feelings recently:**",
-        "learnt": "What have I learnt about my partner or our relationship?",
-        "learnt_summary": "**Things I have learnt about my partner or relationship recently:**",
-        "challenges": "What challenges have we faced in our relationship, and how have we overcome them?",
-        "challenges_summary": "**Our challenges recently:**"
-      },
-      "freewriting": "What has happened in your relationship recently? Describe in at least few sentences"
     }
   }
 }

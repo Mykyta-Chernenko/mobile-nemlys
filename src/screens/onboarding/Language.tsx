@@ -8,18 +8,18 @@ import { Progress } from '@app/components/utils/Progress';
 import { GoBackButton } from '@app/components/buttons/GoBackButton';
 import { supabase } from '@app/api/initSupabase';
 import { AuthContext } from '@app/provider/AuthProvider';
-import { logErrorsWithMessage } from '@app/utils/errors';
 import { MainStackParamList } from '@app/types/navigation';
 import { NativeStackScreenProps } from '@react-navigation/native-stack';
 import { localAnalytics } from '@app/utils/analytics';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { setAppLanguage } from '@app/theme/LanguageWrapper';
+import { logSupaErrors } from '@app/utils/errors';
 
 export default function ({
   route,
   navigation,
 }: NativeStackScreenProps<MainStackParamList, 'Language'>) {
-  const fromSettings = route.params?.goSettings;
+  const fromSettings = route.params?.fromSettings;
   const { theme } = useTheme();
   const LANGUAGES = ['en', 'es'];
   const [language, setLanguage] = useState<string>(getDefaultLanguage(i18n.locale));
@@ -39,10 +39,10 @@ export default function ({
     const languageData = await supabase
       .from('user_technical_details')
       .update({ language: language })
-      .eq('user_id', authContext.userId)
+      .eq('user_id', authContext.userId!)
       .single();
     if (languageData.error) {
-      logErrorsWithMessage(languageData.error, languageData.error.message);
+      logSupaErrors(languageData.error);
       return;
     }
     await setAppLanguage(language);
@@ -88,7 +88,7 @@ export default function ({
                 if (fromSettings) {
                   navigation.navigate('Profile', { refreshTimeStamp: new Date().toISOString() });
                 } else {
-                  navigation.navigate('PartnerName');
+                  navigation.navigate('PartnerName', { fromSettings: false });
                 }
               }}
             ></GoBackButton>

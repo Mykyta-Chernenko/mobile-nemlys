@@ -18,7 +18,7 @@ import { randomReadnableString } from '@app/utils/strings';
 import { ANON_USER, AuthContext } from '@app/provider/AuthProvider';
 import { KEYBOARD_BEHAVIOR } from '@app/utils/constants';
 import { FontText } from '@app/components/utils/FontText';
-import { logErrors, logErrorsWithMessage } from '@app/utils/errors';
+import { logErrorsWithMessage, logErrorsWithMessageWithoutAlert } from '@app/utils/errors';
 import { localAnalytics } from '@app/utils/analytics';
 import StyledInput from '@app/components/utils/StyledInput';
 let handlingUser = false;
@@ -131,7 +131,7 @@ export default function ({
         logErrorsWithMessage(data.error, data.error.message);
         return;
       } else if (!data.data.user) {
-        logErrors(new Error('Not user after signUp call'));
+        logErrorsWithMessageWithoutAlert(new Error('No user after signUp call'));
         return;
       } else {
         await handleUserAfterSignUp('email')(data.data.user);

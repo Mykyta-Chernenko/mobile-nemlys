@@ -11,9 +11,9 @@ import { TouchableOpacity } from 'react-native';
 import { localAnalytics } from '@app/utils/analytics';
 import { supabase } from '@app/api/initSupabase';
 import { SafeAreaView } from 'react-native-safe-area-context';
-import { logErrors } from '@app/utils/errors';
+import { logSupaErrors } from '@app/utils/errors';
 import { Loading } from '@app/components/utils/Loading';
-import { APIReflectionQuestion, APIReflectionQuestionAnswer, SupabaseAnswer } from '@app/types/api';
+import { APIReflectionQuestion, APIReflectionQuestionAnswer } from '@app/types/api';
 import Wand from '@app/icons/wand';
 import SmallArrowRight from '@app/icons/small_arrow_right';
 import LockWhite from '@app/icons/lock_white';
@@ -57,33 +57,33 @@ export default function ({
       .eq('active', false)
       .eq('stopped', false);
     if (error) {
-      logErrors(error);
+      logSupaErrors(error);
       return;
     }
     setDateCount(count || 0);
 
-    const completedRes: SupabaseAnswer<APIReflectionQuestionAnswer[]> = await supabase
+    const completedRes = await supabase
       .from('reflection_question_answer')
       .select(
         'id,reflection_id,answer,user_id,created_at,updated_at, reflection_question(reflection, level)',
       )
-      .eq('user_id', authContext.userId)
+      .eq('user_id', authContext.userId!)
       .order('created_at', { ascending: false });
     if (completedRes.error) {
-      logErrors(completedRes.error);
+      logSupaErrors(completedRes.error);
       return;
     }
 
     setCompletedReflections(completedRes.data);
 
-    const availableReflections: SupabaseAnswer<APIReflectionQuestion[]> = await supabase
+    const availableReflections = await supabase
       .from('reflection_question')
       .select('id, slug, reflection, level, active, created_at,updated_at')
       .eq('active', true)
       .gt('level', 0)
       .not('id', 'in', `(${completedRes.data.map((x) => x.reflection_id).join(',')})`);
     if (availableReflections.error) {
-      logErrors(availableReflections.error);
+      logSupaErrors(availableReflections.error);
       return;
     }
     setReflecitons(shuffle(availableReflections.data));

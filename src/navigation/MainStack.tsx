@@ -1,11 +1,9 @@
 import React from 'react';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
-import Diary from '@app/screens/diary/Diary';
 import Home from '@app/screens/menu/Home';
-import DiaryNewEntry from '@app/screens/diary/DiaryNewEntry';
+
 import { HomeName } from '@app/utils/constants';
-import DiaryEntry from '@app/screens/diary/DiaryEntry';
 import YourName from '@app/screens/onboarding/YourName';
 import PartnerName from '@app/screens/onboarding/PartnerName';
 import OnboardingReflection from '@app/screens/onboarding/OnboardingReflection';
@@ -127,22 +125,6 @@ const Main = () => {
         name={'Analyzing'}
         component={Analyzing}
       />
-
-      <MainStack.Screen
-        options={{ animation: 'slide_from_right' }}
-        name="DiaryNewEntry"
-        component={DiaryNewEntry}
-      ></MainStack.Screen>
-      <MainStack.Screen
-        options={{ animation: 'slide_from_right' }}
-        name="Diary"
-        component={Diary}
-      ></MainStack.Screen>
-      <MainStack.Screen
-        options={{ animation: 'slide_from_right' }}
-        name="DiaryEntry"
-        component={DiaryEntry}
-      ></MainStack.Screen>
     </MainStack.Navigator>
   );
 };

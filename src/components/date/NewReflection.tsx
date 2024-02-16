@@ -4,11 +4,10 @@ import { Modal, TouchableWithoutFeedback, View } from 'react-native';
 import { CloseButton } from '../buttons/CloseButton';
 import { FontText } from '../utils/FontText';
 import { i18n } from '@app/localization/i18n';
-import { logErrors } from '@app/utils/errors';
+import { logSupaErrors } from '@app/utils/errors';
 import { supabase } from '@app/api/initSupabase';
 import { localAnalytics } from '@app/utils/analytics';
 import { AuthContext } from '@app/provider/AuthProvider';
-import { APIUserProfile, SupabaseAnswer } from '@app/types/api';
 import { SecondaryButton } from '../buttons/SecondaryButton';
 import ReflectionCard from '../reflection/ReflectionCard';
 import { PrimaryButton } from '../buttons/PrimaryButtons';
@@ -42,7 +41,7 @@ export default function ({
         action: 'Showed',
         userId: authContext.userId,
       });
-      const data: SupabaseAnswer<{ id: number; reflection: string }> = await supabase
+      const data = await supabase
         .from('reflection_question')
         .select('id,reflection')
         .lte('level', level)
@@ -51,7 +50,7 @@ export default function ({
         .single();
 
       if (data.error) {
-        logErrors(data.error);
+        logSupaErrors(data.error);
         return;
       }
       setReflection(data.data.reflection);
@@ -62,11 +61,11 @@ export default function ({
   const savedShowed = async () => {
     const newResponse = await supabase.from('reflection_notification').insert({
       level: level,
-      user_id: authContext.userId,
+      user_id: authContext.userId!,
     });
 
     if (newResponse.error) {
-      logErrors(newResponse.error);
+      logSupaErrors(newResponse.error);
       return;
     }
   };
@@ -82,13 +81,13 @@ export default function ({
       level: level,
     });
 
-    const data: SupabaseAnswer<APIUserProfile> = await supabase
+    const data = await supabase
       .from('user_profile')
       .select('*')
-      .eq('user_id', authContext.userId)
+      .eq('user_id', authContext.userId!)
       .single();
     if (data.error) {
-      logErrors(data.error);
+      logSupaErrors(data.error);
       return;
     }
 

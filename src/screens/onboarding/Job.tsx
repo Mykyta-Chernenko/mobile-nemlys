@@ -8,7 +8,7 @@ import { Progress } from '@app/components/utils/Progress';
 import { GoBackButton } from '@app/components/buttons/GoBackButton';
 import { supabase } from '@app/api/initSupabase';
 import { AuthContext } from '@app/provider/AuthProvider';
-import { logErrorsWithMessage } from '@app/utils/errors';
+import { logSupaErrors } from '@app/utils/errors';
 import { MainStackParamList } from '@app/types/navigation';
 import { NativeStackScreenProps } from '@react-navigation/native-stack';
 import { localAnalytics } from '@app/utils/analytics';
@@ -45,9 +45,9 @@ export default function ({ route, navigation }: NativeStackScreenProps<MainStack
       .match({ user_id: authContext.userId, question_slug: 'job' });
     const dateReponse = await supabase
       .from('onboarding_poll')
-      .insert({ user_id: authContext.userId, question_slug: 'job', answer_slug: chosen || other });
+      .insert({ user_id: authContext.userId!, question_slug: 'job', answer_slug: chosen || other });
     if (dateReponse.error) {
-      logErrorsWithMessage(dateReponse.error, dateReponse.error.message);
+      logSupaErrors(dateReponse.error);
       return;
     }
     void localAnalytics().logEvent('JobContinueClicked', {
@@ -85,7 +85,7 @@ export default function ({ route, navigation }: NativeStackScreenProps<MainStack
                   action: 'BackClicked',
                   userId: authContext.userId,
                 });
-                navigation.navigate('PartnerName');
+                navigation.navigate('PartnerName', { fromSettings: false });
               }}
             ></GoBackButton>
             <Progress current={3} all={5}></Progress>

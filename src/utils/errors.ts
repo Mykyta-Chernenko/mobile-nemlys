@@ -3,12 +3,13 @@ import { Native } from 'sentry-expo';
 import { UNEXPECTED_ERROR } from './constants';
 import { localAnalytics } from './analytics';
 import { capitalize } from './strings';
+import { PostgrestError } from '@supabase/supabase-js';
 
-export function logErrors(e: unknown) {
-  logErrorsWithMessage(e, undefined);
+export function logSupaErrors(e: PostgrestError) {
+  logErrorsWithMessage(e, `${e.code}:${e.message}:${e.details}:${e.hint}`);
 }
 
-export function logErrorsWithMessage(e: unknown, message: string | undefined) {
+export function logErrorsWithMessage(e: unknown, message: string | undefined = undefined) {
   baseLogError(e);
   alert(message || i18n.t(UNEXPECTED_ERROR));
 }

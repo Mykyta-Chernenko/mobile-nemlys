@@ -1,7 +1,7 @@
 import { useTheme } from '@rneui/themed';
 import React, { useContext, useEffect, useState } from 'react';
 import { View } from 'react-native';
-import { logErrors } from '@app/utils/errors';
+import { logErrorsWithMessage } from '@app/utils/errors';
 import { AuthContext } from '@app/provider/AuthProvider';
 
 import { localAnalytics } from '@app/utils/analytics';
@@ -73,7 +73,7 @@ const HomePremiumBanner = React.forwardRef<HomePremiumBannerRef, Props>((props, 
         setTotalDateCount(premiumDetails.totalDateCount);
         setTodayDateCount(premiumDetails.todayDateCount);
       } catch (e) {
-        logErrors(e);
+        logErrorsWithMessage(e, (e?.message as string) || '');
         return;
       }
 

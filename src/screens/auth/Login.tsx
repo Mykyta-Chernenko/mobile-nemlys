@@ -15,7 +15,7 @@ import * as WebBrowser from 'expo-web-browser';
 import { i18n } from '@app/localization/i18n';
 import { ANON_USER, AuthContext } from '@app/provider/AuthProvider';
 import { FontText } from '@app/components/utils/FontText';
-import { logErrors, logErrorsWithMessage } from '@app/utils/errors';
+import { logErrorsWithMessage } from '@app/utils/errors';
 import { localAnalytics } from '@app/utils/analytics';
 import { PrimaryButton } from '@app/components/buttons/PrimaryButtons';
 import { GoBackButton } from '@app/components/buttons/GoBackButton';
@@ -63,7 +63,7 @@ export default function ({ navigation }: NativeStackScreenProps<AuthStackParamLi
           logErrorsWithMessage(error2, error2.message);
         }
       } else if (!user) {
-        logErrors(new Error('No user after signUp call'));
+        logErrorsWithMessage(new Error('No user after signUp call'), undefined);
         return;
       } else {
         await handleUserAfterSignUp('email')(user);

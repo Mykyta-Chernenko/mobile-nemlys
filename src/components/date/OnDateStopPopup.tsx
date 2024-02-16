@@ -8,8 +8,9 @@ import { localAnalytics } from '@app/utils/analytics';
 import { PrimaryButton } from '../buttons/PrimaryButtons';
 import { AuthContext } from '@app/provider/AuthProvider';
 import { supabase } from '@app/api/initSupabase';
-import { logErrors } from '@app/utils/errors';
+import { logSupaErrors } from '@app/utils/errors';
 import { SecondaryButton } from '../buttons/SecondaryButton';
+import { getNow } from '@app/utils/date';
 export default function ({
   dateId,
   onClose,
@@ -30,10 +31,10 @@ export default function ({
     });
     const dateResult = await supabase
       .from('date')
-      .update({ active: false, stopped: true, updated_at: new Date() })
+      .update({ active: false, stopped: true, updated_at: getNow().toISOString() })
       .eq('id', dateId);
     if (dateResult.error) {
-      logErrors(dateResult.error);
+      logSupaErrors(dateResult.error);
       return;
     }
     onConfirm();

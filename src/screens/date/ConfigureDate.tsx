@@ -14,8 +14,7 @@ import { AuthContext } from '@app/provider/AuthProvider';
 import { localAnalytics } from '@app/utils/analytics';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import Reflection from '@app/components/reflection/Reflection';
-import { SupabaseAnswer } from '@app/types/api';
-import { logErrors } from '@app/utils/errors';
+import { logSupaErrors } from '@app/utils/errors';
 import { supabase } from '@app/api/initSupabase';
 import { Loading } from '@app/components/utils/Loading';
 
@@ -45,13 +44,13 @@ export default function ({
   useEffect(() => {
     const getData = async () => {
       setLoading(true);
-      const data: SupabaseAnswer<{ id: number; reflection: string }> = await supabase
+      const data = await supabase
         .from('reflection_question')
         .select('id, reflection')
         .eq('slug', 'discuss_issue')
         .single();
       if (data.error) {
-        logErrors(data.error);
+        logSupaErrors(data.error);
         return;
       }
       setReflection(data.data.reflection);

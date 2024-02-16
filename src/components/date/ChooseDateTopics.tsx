@@ -13,7 +13,7 @@ import { Loading } from '../utils/Loading';
 import { JobSlug } from '@app/types/domain';
 import { supabase } from '@app/api/initSupabase';
 import { SupabaseAnswer } from '@app/types/api';
-import { logErrors } from '@app/utils/errors';
+import { logSupaErrors } from '@app/utils/errors';
 
 export default function (props: {
   job: JobSlug;
@@ -32,7 +32,7 @@ export default function (props: {
       .eq('job_slug', job)
       .order('id');
     if (topics.error) {
-      logErrors(topics.error);
+      logSupaErrors(topics.error);
       return [];
     }
     return topics.data.map((t) => t.topic);

@@ -17,10 +17,10 @@ import { useNavigation } from '@react-navigation/native';
 import StyledTextInput from '../utils/StyledTextInput';
 import LockGrey from '../../icons/lock_grey';
 import Wand from '../../icons/wand';
-import { logErrorsWithMessage } from '@app/utils/errors';
+import { logSupaErrors } from '@app/utils/errors';
 import { supabase } from '@app/api/initSupabase';
 import { localAnalytics } from '@app/utils/analytics';
-import { SupabaseAnswer } from '@app/types/api';
+import { getNow } from '@app/utils/date';
 
 export default function ({
   reflectionId,
@@ -82,7 +82,7 @@ export default function ({
       .match({ user_id: authContext.userId, reflection_id: reflectionId, answer: resultAnswer })
       .maybeSingle();
     if (error) {
-      logErrorsWithMessage(error, error.message);
+      logSupaErrors(error);
       return;
     }
     let reflectionAnswerId = 0;
@@ -90,26 +90,26 @@ export default function ({
       reflectionAnswerId = data.id;
       const relfectionResponse = await supabase
         .from('reflection_question_answer')
-        .update({ answer: resultAnswer, updated_at: new Date() })
+        .update({ answer: resultAnswer, updated_at: getNow().toISOString() })
         .eq('id', data.id)
         .single();
 
       if (relfectionResponse.error) {
-        logErrorsWithMessage(relfectionResponse.error, relfectionResponse.error.message);
+        logSupaErrors(relfectionResponse.error);
         return;
       }
     } else {
-      const relfectionResponse: SupabaseAnswer<{ id: number }> = await supabase
+      const relfectionResponse = await supabase
         .from('reflection_question_answer')
         .insert({
-          user_id: authContext.userId,
+          user_id: authContext.userId!,
           reflection_id: reflectionId,
           answer: resultAnswer,
         })
         .select('id')
         .single();
       if (relfectionResponse.error) {
-        logErrorsWithMessage(relfectionResponse.error, relfectionResponse.error.message);
+        logSupaErrors(relfectionResponse.error);
         return;
       }
       reflectionAnswerId = relfectionResponse.data.id;

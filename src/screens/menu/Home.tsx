@@ -3,9 +3,8 @@ import { MainStackParamList } from '@app/types/navigation';
 import { NativeStackScreenProps } from '@react-navigation/native-stack';
 import { supabase } from '@app/api/initSupabase';
 import { Loading } from '@app/components/utils/Loading';
-import { logErrors } from '@app/utils/errors';
+import { logSupaErrors } from '@app/utils/errors';
 import { AuthContext } from '@app/provider/AuthProvider';
-import { APIDate, APIUserProfile, SupabaseAnswer } from '@app/types/api';
 import { SafeAreaView, ScrollView, View } from 'react-native';
 import { useTheme, useThemeMode } from '@rneui/themed';
 import { FontText } from '@app/components/utils/FontText';
@@ -18,7 +17,6 @@ import DateFun from '@app/icons/date_fun';
 import BuddiesCorner from '@app/icons/buddies_corner';
 import { i18n } from '@app/localization/i18n';
 import { localAnalytics } from '@app/utils/analytics';
-import { logout } from '../settings/Settings';
 import { TouchableOpacity } from 'react-native';
 import NewReflection from '@app/components/date/NewReflection';
 import { getIsLowPersonalization } from '@app/api/reflection';
@@ -26,6 +24,7 @@ import { JobSlug } from '@app/types/domain';
 import HomePremiumBanner, { HomePremiumBannerRef } from '@app/components/premium/HomePremiumBanner';
 import { getNow } from '@app/utils/date';
 import Menu from '@app/components/menu/Menu';
+import { logout } from './Profile';
 
 export default function ({
   route,
@@ -68,18 +67,18 @@ export default function ({
     setPremiumDataLoaded(undefined);
     setLoading(true);
     setShowReflectionNotification(false);
-    const data: SupabaseAnswer<APIUserProfile> = await supabase
+    const data = await supabase
       .from('user_profile')
       .select('*')
-      .eq('user_id', authContext.userId)
+      .eq('user_id', authContext.userId!)
       .single();
     if (data.error) {
-      logErrors(data.error);
+      logSupaErrors(data.error);
       void logout();
       return;
     }
     if (!data.data.onboarding_finished) {
-      navigation.navigate('YourName');
+      navigation.navigate('YourName', { fromSettings: false });
       return;
     } else {
       if (!data.data.showed_interview_request) {
@@ -90,7 +89,7 @@ export default function ({
           .lt('created_at', getNow().startOf('day').toISOString())
           .limit(1);
         if (errorDateYesterday) {
-          logErrors(errorDateYesterday);
+          logSupaErrors(errorDateYesterday);
           return;
         }
         const showInterview = (dateYesterdayCount || 0) > 0;
@@ -98,13 +97,13 @@ export default function ({
           navigation.navigate('InterviewRequest', { refreshTimeStamp: new Date().toISOString() });
         }
       }
-      const activeDatesRes: SupabaseAnswer<APIDate[]> = await supabase
+      const activeDatesRes = await supabase
         .from('date')
         .select('*')
         .eq('active', true)
         .order('id', { ascending: false });
       if (activeDatesRes.error) {
-        logErrors(activeDatesRes.error);
+        logSupaErrors(activeDatesRes.error);
         return;
       }
       if (activeDatesRes.data.length) {
@@ -116,7 +115,7 @@ export default function ({
         const lastDate = activeDatesRes.data[0];
         navigation.navigate('OnDate', {
           job: lastDate.job || 'hard',
-          withPartner: lastDate.with_partner,
+          withPartner: lastDate.with_partner!,
           refreshTimeStamp: new Date().toISOString(),
         });
       } else {
@@ -132,7 +131,7 @@ export default function ({
           .eq('active', false)
           .eq('stopped', false);
         if (error) {
-          logErrors(error);
+          logSupaErrors(error);
           return;
         }
 
@@ -145,7 +144,7 @@ export default function ({
 
         setDateCount(dateCount);
         setFirstName(data.data.first_name);
-        setPartnerName(data.data.partner_first_name);
+        setPartnerName(data.data.partner_first_name || '');
         setLoading(false);
 
         setShowNewReflection((dateCount === 3 || dateCount === 8) && !levelNewReflection.count);

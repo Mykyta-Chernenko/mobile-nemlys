@@ -6,9 +6,9 @@ import { NativeStackScreenProps } from '@react-navigation/native-stack';
 import { localAnalytics } from '@app/utils/analytics';
 import Reflection from '@app/components/reflection/Reflection';
 import { Loading } from '@app/components/utils/Loading';
-import { SupabaseAnswer } from '@app/types/api';
 import { supabase } from '@app/api/initSupabase';
-import { logErrors, logErrorsWithMessage } from '@app/utils/errors';
+import { logSupaErrors } from '@app/utils/errors';
+import { getNow } from '@app/utils/date';
 
 export default function ({
   route,
@@ -21,14 +21,14 @@ export default function ({
 
   useEffect(() => {
     const getData = async () => {
-      const data: SupabaseAnswer<{ id: number; reflection: string }> = await supabase
+      const data = await supabase
         .from('reflection_question')
         .select('id, reflection')
         .eq('level', 0)
         .eq('active', true)
         .single();
       if (data.error) {
-        logErrors(data.error);
+        logSupaErrors(data.error);
         return;
       }
       setReflection(data.data.reflection);
@@ -49,11 +49,11 @@ export default function ({
       .from('user_profile')
       .update({
         onboarding_finished: true,
-        updated_at: new Date(),
+        updated_at: getNow().toISOString(),
       })
-      .eq('user_id', authContext.userId);
+      .eq('user_id', authContext.userId!);
     if (profileResponse.error) {
-      logErrorsWithMessage(profileResponse.error, profileResponse.error?.message);
+      logSupaErrors(profileResponse.error);
       return;
     }
     void localAnalytics().logEvent('OnboardingReflectionContinueCLicked', {

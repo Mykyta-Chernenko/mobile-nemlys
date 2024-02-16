@@ -10,7 +10,7 @@ import { i18n } from '@app/localization/i18n';
 import { SupabaseUser } from '@app/types/api';
 import { ANON_USER, AuthContext, handleAuthTokens } from '@app/provider/AuthProvider';
 import { FontText } from '../utils/FontText';
-import { logErrors } from '@app/utils/errors';
+import { logErrorsWithMessage } from '@app/utils/errors';
 import { SecondaryButton } from '../buttons/SecondaryButton';
 import { localAnalytics } from '@app/utils/analytics';
 import { PrimaryButton } from '../buttons/PrimaryButtons';
@@ -57,7 +57,7 @@ export const OAuth = ({
         throw Error(`authUrl is not returned ${JSON.stringify(data)}`);
       }
     } catch (e) {
-      logErrors(e);
+      logErrorsWithMessage(e, (e?.message as string) || '');
     } finally {
       window = oldWindow;
       setTimeout(() => setLocalLoading(false), 4000);
@@ -83,7 +83,7 @@ export const OAuth = ({
           auth.setUserId!,
         );
       } catch (e) {
-        logErrors(e);
+        logErrorsWithMessage(e, (e?.message as string) || '');
         await supabase.auth.signOut();
       } finally {
         setLocalLoading(false);
@@ -152,7 +152,7 @@ export const OAuth = ({
         throw new Error(`No identityToken, credential: ${JSON.stringify(credential)}`);
       }
     } catch (e) {
-      logErrors(e);
+      logErrorsWithMessage(e, (e?.message as string) || '');
       await supabase.auth.signOut();
     } finally {
       setLocalLoading(false);

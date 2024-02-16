@@ -10,10 +10,10 @@ import { NativeStackScreenProps } from '@react-navigation/native-stack';
 import { localAnalytics } from '@app/utils/analytics';
 import { AuthContext } from '@app/provider/AuthProvider';
 import { CloseButton } from '@app/components/buttons/CloseButton';
-import { SupabaseAnswer } from '@app/types/api';
-import { logErrors } from '@app/utils/errors';
+import { logSupaErrors } from '@app/utils/errors';
 import { supabase } from '@app/api/initSupabase';
 import { ScrollView } from 'react-native-gesture-handler';
+import { getNow } from '@app/utils/date';
 export default function ({
   route,
   navigation,
@@ -30,15 +30,12 @@ export default function ({
   const authContext = useContext(AuthContext);
 
   const getData = async () => {
-    const res: SupabaseAnswer<{ interview_link: string }> = await supabase
-      .from('app_settings')
-      .select('interview_link')
-      .single();
+    const res = await supabase.from('app_settings').select('interview_link').single();
     if (res.error) {
-      logErrors(res.error);
+      logSupaErrors(res.error);
       return;
     }
-    setLink(res.data.interview_link);
+    setLink(res.data.interview_link!);
     void localAnalytics().logEvent('InterviewShowed', {
       screen: 'Interview',
       action: 'Showed',
@@ -55,18 +52,18 @@ export default function ({
     void getData();
     isFirstMount.current = false;
   }, []);
-  const savedShowed = async (agreed: boolean) => {
+  const saveAgreed = async (agreed: boolean) => {
     const newResponse = await supabase
       .from('user_profile')
       .update({
         showed_interview_request: true,
         agreed_on_interview: agreed,
-        updated_at: new Date(),
+        updated_at: getNow().toISOString(),
       })
-      .eq('user_id', authContext.userId);
+      .eq('user_id', authContext.userId!);
 
     if (newResponse.error) {
-      logErrors(newResponse.error);
+      logSupaErrors(newResponse.error);
       return;
     }
     navigation.navigate('Home', { refreshTimeStamp: new Date().toISOString() });
@@ -78,7 +75,7 @@ export default function ({
       userId: authContext.userId,
     });
     link && (await Linking.openURL(link));
-    void savedShowed(true);
+    void saveAgreed(true);
   };
   const onClosePressed = () => {
     void localAnalytics().logEvent('InterviewScheduleClosePressed', {
@@ -86,7 +83,7 @@ export default function ({
       action: 'ClosePressed',
       userId: authContext.userId,
     });
-    void savedShowed(false);
+    void saveAgreed(false);
   };
   return (
     <View

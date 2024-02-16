@@ -1,42 +1,45 @@
 import React, { useContext, useState } from 'react';
-import { Dialog, Icon } from '@rneui/themed';
-import { TouchableOpacity, View } from 'react-native';
+import { TouchableOpacity, View, Image, SafeAreaView } from 'react-native';
+import Modal from 'react-native-modal';
 import { i18n } from '@app/localization/i18n';
 import { AuthContext } from '@app/provider/AuthProvider';
 import { FontText } from '@app/components/utils/FontText';
 import { PrimaryButton } from '@app/components/buttons/PrimaryButtons';
-import { SecondaryButton } from '@app/components/buttons/SecondaryButton';
 import StyledTextInput from '@app/components/utils/StyledTextInput';
 import { supabase } from '@app/api/initSupabase';
 import { logErrorsWithMessageWithoutAlert } from '@app/utils/errors';
 import { localAnalytics } from '@app/utils/analytics';
+import { SettingsButton } from '../menu/SettingsButton';
+import { useTheme } from '@rneui/themed';
+import { ScrollView } from 'react-native-gesture-handler';
 
-export default function () {
+export default function ({ title }: { title: string }) {
   const authContext = useContext(AuthContext);
   const [visible, setVisible] = useState<boolean>(false);
   const [feedback, setFeedback] = useState<string>('');
+  const { theme } = useTheme();
 
   const openDialog = () => {
-    void localAnalytics().logEvent('ViewWithMenuInitiateSendFeedback', {
+    void localAnalytics().logEvent('SettingsSendFeedbackOpened', {
       screen: 'Settings',
-      action: 'Clicked on send your feedback button',
+      action: 'SendFeedbackOpened',
       userId: authContext.userId,
     });
     setVisible(true);
   };
   const cancelDialog = () => {
-    void localAnalytics().logEvent('ViewWithMenuClickCancelFeedback', {
+    void localAnalytics().logEvent('SettingsSendFeedbacCancel', {
       screen: 'Settings',
-      action: 'Clicked on cancel on feedback dialog',
+      action: 'SendFeedbacCancel',
       userId: authContext.userId,
     });
 
     setVisible(false);
   };
   const sendFeedback = async () => {
-    void localAnalytics().logEvent('ViewWithMenuSendFeedback', {
+    void localAnalytics().logEvent('SettingsSendFeedbacSubmit', {
       screen: 'Settings',
-      action: 'Clicked on send on feedback dialog',
+      action: 'SendFeedbacSubmit',
       userId: authContext.userId,
     });
 
@@ -45,51 +48,72 @@ export default function () {
     alert(i18n.t('settings.feedback_thanks'));
 
     const res = await supabase.from('feedback').insert({
-      user_id: authContext.userId,
+      user_id: authContext.userId!,
       text: feedback,
     });
     if (res.error) {
       logErrorsWithMessageWithoutAlert(res.error);
     }
+    setFeedback('');
   };
 
   return (
     <>
-      <TouchableOpacity
-        onPress={() => void openDialog()}
+      <SettingsButton title={title} action={() => openDialog()} data={null}></SettingsButton>
+      <Modal
+        avoidKeyboard
+        isVisible={visible}
         style={{
-          paddingHorizontal: 20,
-          flexDirection: 'row',
-          alignItems: 'center',
+          backgroundColor: theme.colors.white,
+          flex: 1,
+          display: 'flex',
         }}
       >
-        <View style={{ flexDirection: 'row' }}>
-          <Icon name="thumb-up-outline" type="material-community" color="black" size={20} />
-          <View style={{ width: 5 }}></View>
-          <Icon name="thumb-down-outline" type="material-community" color="black" size={20} />
-        </View>
-        <FontText style={{ marginLeft: 15, fontSize: 18 }}>{i18n.t('settings.feedback')}</FontText>
-      </TouchableOpacity>
-      <Dialog isVisible={visible} onBackdropPress={() => setVisible(false)}>
-        <Dialog.Title title={i18n.t('settings.feedback')} />
-        <FontText>{i18n.t('settings.send_your_feedback')}</FontText>
-        <StyledTextInput
-          autoFocus={true}
-          style={{ marginTop: 10 }}
-          onChangeText={setFeedback}
-        ></StyledTextInput>
-        <Dialog.Actions>
-          <View style={{ flexDirection: 'row', justifyContent: 'space-around', width: '100%' }}>
-            <SecondaryButton onPress={() => void cancelDialog()}>
-              {i18n.t('cancel')}
-            </SecondaryButton>
-
-            <PrimaryButton disabled={!feedback} onPress={() => void sendFeedback()}>
-              {i18n.t('submit')}
-            </PrimaryButton>
-          </View>
-        </Dialog.Actions>
-      </Dialog>
+        <SafeAreaView style={{ flexGrow: 1 }}>
+          <ScrollView
+            contentContainerStyle={{
+              flex: 1,
+              flexDirection: 'column',
+              justifyContent: 'space-between',
+            }}
+          >
+            <TouchableOpacity
+              style={{
+                borderRadius: 40,
+                backgroundColor: theme.colors.grey1,
+                alignItems: 'center',
+                justifyContent: 'center',
+                height: 72,
+                width: 72,
+              }}
+              onPress={cancelDialog}
+            >
+              <Image
+                resizeMode="contain"
+                style={{ height: 24, width: 24 }}
+                // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
+                source={require('../../../assets/images/arrow_left_black.png')}
+              />
+            </TouchableOpacity>
+            <View style={{ width: '100%' }}>
+              <FontText h1>{title}</FontText>
+              <StyledTextInput
+                style={{ marginVertical: 20, maxHeight: '50%' }}
+                onChangeText={setFeedback}
+              ></StyledTextInput>
+            </View>
+            <View style={{ flexDirection: 'row', justifyContent: 'space-around', width: '100%' }}>
+              <PrimaryButton
+                disabled={!feedback}
+                onPress={() => void sendFeedback()}
+                buttonStyle={{ width: '100%' }}
+              >
+                {i18n.t('submit')}
+              </PrimaryButton>
+            </View>
+          </ScrollView>
+        </SafeAreaView>
+      </Modal>
     </>
   );
 }

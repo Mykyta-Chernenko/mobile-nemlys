@@ -2,9 +2,9 @@ import { NativeStackScreenProps } from '@react-navigation/native-stack';
 import { JobSlug } from './domain';
 
 export type MainStackParamList = {
-  YourName: undefined;
-  PartnerName: undefined;
-  Language: { goSettings?: boolean };
+  YourName: { fromSettings: boolean };
+  PartnerName: { fromSettings: boolean };
+  Language: { fromSettings: boolean };
   DiscussWay: undefined;
   OnboardingReflectionExplanation: undefined;
   OnboardingReflection: undefined;

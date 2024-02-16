@@ -48,7 +48,7 @@ export class APIDate extends ApiEntry {
   job: JobSlug;
   level: number;
   active: boolean;
-  with_partner: boolean;
+  with_partner: boolean | null;
 }
 
 export type InsertAPIDate = Omit<APIDate, keyof ApiEntry>;
@@ -56,9 +56,9 @@ export type InsertAPIDate = Omit<APIDate, keyof ApiEntry>;
 export class APIGeneratedQuestion extends ApiEntry {
   date_id: APIDate['id'];
   question: string;
-  finished: boolean;
-  feedback_score?: number;
-  skipped: boolean;
+  finished: boolean | null;
+  feedback_score: number | null;
+  skipped: boolean | null;
 }
 
 export class APIAppSettings extends ApiEntry {
@@ -69,7 +69,7 @@ export class APIReflectionQuestion extends ApiEntry {
   slug: string;
   reflection: string;
   level: number;
-  active: boolean;
+  active: boolean | null;
 }
 
 export class APIReflectionQuestionAnswer extends ApiEntry {

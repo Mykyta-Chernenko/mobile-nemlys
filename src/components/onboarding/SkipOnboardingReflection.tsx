@@ -9,11 +9,12 @@ import { NativeStackScreenProps } from '@react-navigation/native-stack';
 import { localAnalytics } from '@app/utils/analytics';
 import { GoBackButton } from '@app/components/buttons/GoBackButton';
 import { PrimaryButton } from '../buttons/PrimaryButtons';
-import { logErrorsWithMessage } from '@app/utils/errors';
+import { logSupaErrors } from '@app/utils/errors';
 import { supabase } from '@app/api/initSupabase';
 import { SecondaryButton } from '../buttons/SecondaryButton';
 import { Image } from '@rneui/themed';
 import { SafeAreaView } from 'react-native-safe-area-context';
+import { getNow } from '@app/utils/date';
 
 export default function ({
   route,
@@ -38,10 +39,10 @@ export default function ({
     });
     const dateReponse = await supabase
       .from('user_profile')
-      .update({ onboarding_finished: true, updated_at: new Date() })
-      .eq('user_id', authContext.userId);
+      .update({ onboarding_finished: true, updated_at: getNow().toISOString() })
+      .eq('user_id', authContext.userId!);
     if (dateReponse.error) {
-      logErrorsWithMessage(dateReponse.error, dateReponse.error.message);
+      logSupaErrors(dateReponse.error);
       return;
     }
     navigation.navigate('Home', { refreshTimeStamp: new Date().toISOString() });

@@ -6,13 +6,13 @@ import {
   TouchableWithoutFeedback,
   Platform,
   Modal,
-  Linking,
 } from 'react-native';
+import * as Linking from 'expo-linking';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { FontText, REGULAR_FONT_FAMILY } from '@app/components/utils/FontText';
 import { i18n } from '@app/localization/i18n';
 import { useTheme, useThemeMode } from '@rneui/themed';
-import { logErrors, retryAsync } from '@app/utils/errors';
+import { logErrorsWithMessage, logSupaErrors, retryAsync } from '@app/utils/errors';
 import { supabase } from '@app/api/initSupabase';
 import { MainStackParamList } from '@app/types/navigation';
 import { SecondaryButton } from '../../components/buttons/SecondaryButton';
@@ -108,10 +108,10 @@ export default function ({
       } else if (trialExpired && !afterTrialPremiumOffered) {
         const updateProfile = await supabase
           .from('user_technical_details')
-          .update({ after_trial_premium_offered: true, updated_at: new Date() })
-          .eq('user_id', authContext.userId);
+          .update({ after_trial_premium_offered: true, updated_at: getNow().toISOString() })
+          .eq('user_id', authContext.userId!);
         if (updateProfile.error) {
-          logErrors(updateProfile.error);
+          logSupaErrors(updateProfile.error);
           return;
         }
         currentPremiumState = 'trial_expired';
@@ -127,8 +127,8 @@ export default function ({
         currentPremiumState = 'daily';
       }
       setCurrentPremiumState(currentPremiumState);
-    } catch (error) {
-      logErrors(error);
+    } catch (e) {
+      logErrorsWithMessage(e, (e?.message as string) || '');
       return;
     }
 
@@ -190,7 +190,7 @@ export default function ({
           body: { action: 'start_trial' },
         });
         if (res.error) {
-          logErrors(res.error);
+          logErrorsWithMessage(res.error, 'Manage premium function returned error');
           return;
         }
         await scheduleNotification(res.data.trial_finish as string);
@@ -281,8 +281,8 @@ export default function ({
                 };
                 await retryAsync('PremiumOfferManagePremiumFunc', func);
                 navigation.navigate('PremiumSuccess', { state: 'premium_started' });
-              } catch (error) {
-                logErrors(error);
+              } catch (e) {
+                logErrorsWithMessage(e, (e?.message as string) || '');
               }
             }
           } finally {
@@ -332,7 +332,7 @@ export default function ({
               userId: authContext.userId,
               error,
             });
-            logErrors(error);
+            logErrorsWithMessage(error, error?.message);
           }
 
           switch (error.code) {
@@ -388,7 +388,7 @@ export default function ({
           userId: authContext.userId,
           err,
         });
-        logErrors(err);
+        logErrorsWithMessage(err, (err?.message as string) || '');
       }
 
       setProductLoading(false);
@@ -459,6 +459,13 @@ export default function ({
       navigation.navigate('Home', {
         refreshTimeStamp: new Date().toISOString(),
       });
+    }
+  };
+  const managePremium = () => {
+    if (Platform.OS === 'ios') {
+      void Linking.openURL('https://apps.apple.com/account/subscriptions');
+    } else {
+      void Linking.openURL('https://play.google.com/store/account/subscriptions');
     }
   };
 
@@ -583,7 +590,11 @@ export default function ({
               </FontText>
             </View>
             <View>
-              {currentPremiumState !== 'premium' && (
+              {currentPremiumState === 'premium' ? (
+                <SecondaryButton buttonStyle={{ marginTop: 150 }} onPress={managePremium}>
+                  {i18n.t('premium.offer.manage')}
+                </SecondaryButton>
+              ) : (
                 <View
                   style={{
                     marginTop: 40,

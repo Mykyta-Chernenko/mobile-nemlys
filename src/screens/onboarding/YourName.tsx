@@ -9,18 +9,20 @@ import { GoBackButton } from '@app/components/buttons/GoBackButton';
 import { KEYBOARD_BEHAVIOR } from '@app/utils/constants';
 import { supabase } from '@app/api/initSupabase';
 import { AuthContext } from '@app/provider/AuthProvider';
-import { logErrorsWithMessage } from '@app/utils/errors';
+import { logSupaErrors } from '@app/utils/errors';
 import { NativeStackScreenProps } from '@react-navigation/native-stack';
 import { MainStackParamList } from '@app/types/navigation';
-import { logout } from '../settings/Settings';
 import { localAnalytics } from '@app/utils/analytics';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import StyledInput from '@app/components/utils/StyledInput';
+import { getNow } from '@app/utils/date';
+import { logout } from '../menu/Profile';
 
 export default function ({
   route,
   navigation,
 }: NativeStackScreenProps<MainStackParamList, 'YourName'>) {
+  const fromSettings = route.params?.fromSettings;
   const { theme } = useTheme();
 
   const [name, setName] = useState<string>('');
@@ -31,6 +33,17 @@ export default function ({
       const name: string = user['data']?.['user']?.['user_metadata']?.['name']?.split(' ')?.[0];
       if (name) {
         setName(name);
+      } else {
+        const { data, error } = await supabase
+          .from('user_profile')
+          .select('*')
+          .eq('user_id', authContext.userId!)
+          .single();
+        if (error) {
+          logSupaErrors(error);
+          return;
+        }
+        setName(data.first_name);
       }
     })();
   }, []);
@@ -38,10 +51,10 @@ export default function ({
   const handlePress = async () => {
     const dateReponse = await supabase
       .from('user_profile')
-      .update({ first_name: name, updated_at: new Date() })
-      .eq('user_id', authContext.userId);
+      .update({ first_name: name, updated_at: getNow().toISOString() })
+      .eq('user_id', authContext.userId!);
     if (dateReponse.error) {
-      logErrorsWithMessage(dateReponse.error, dateReponse.error.message);
+      logSupaErrors(dateReponse.error);
       return;
     }
     void localAnalytics().logEvent('YourNameContinueClicked', {
@@ -49,7 +62,11 @@ export default function ({
       action: 'ContinueClicked',
       userId: authContext.userId,
     });
-    navigation.navigate('PartnerName');
+    if (fromSettings) {
+      navigation.navigate('Profile', { refreshTimeStamp: new Date().toISOString() });
+    } else {
+      navigation.navigate('PartnerName', { fromSettings: false });
+    }
   };
   return (
     <KeyboardAvoidingView behavior={KEYBOARD_BEHAVIOR} style={{ flexGrow: 1 }}>
@@ -85,10 +102,16 @@ export default function ({
                       action: 'BackClicked',
                       userId: authContext.userId,
                     });
-                    void logout();
+                    if (fromSettings) {
+                      navigation.navigate('Profile', {
+                        refreshTimeStamp: new Date().toISOString(),
+                      });
+                    } else {
+                      void logout();
+                    }
                   }}
                 ></GoBackButton>
-                <Progress current={1} all={4}></Progress>
+                {!fromSettings && <Progress current={1} all={4}></Progress>}
               </View>
               <View
                 style={{

@@ -8,11 +8,12 @@ import { Progress } from '@app/components/utils/Progress';
 import { GoBackButton } from '@app/components/buttons/GoBackButton';
 import { supabase } from '@app/api/initSupabase';
 import { AuthContext } from '@app/provider/AuthProvider';
-import { logErrorsWithMessage } from '@app/utils/errors';
+import { logSupaErrors } from '@app/utils/errors';
 import { MainStackParamList } from '@app/types/navigation';
 import { NativeStackScreenProps } from '@react-navigation/native-stack';
 import { localAnalytics } from '@app/utils/analytics';
 import { SafeAreaView } from 'react-native-safe-area-context';
+import { getNow } from '@app/utils/date';
 
 export default function ({
   route,
@@ -35,26 +36,27 @@ export default function ({
   }, [navigation]);
 
   const handlePress = async () => {
+    if (!chosen) return;
     await supabase
       .from('onboarding_poll')
       .delete()
       .match({ user_id: authContext.userId, question_slug: 'discuss_way' });
     const dateReponse = await supabase
       .from('onboarding_poll')
-      .insert({ user_id: authContext.userId, question_slug: 'discuss_way', answer_slug: chosen });
+      .insert({ user_id: authContext.userId!, question_slug: 'discuss_way', answer_slug: chosen });
     if (dateReponse.error) {
-      logErrorsWithMessage(dateReponse.error, dateReponse.error.message);
+      logSupaErrors(dateReponse.error);
       return;
     }
     const profileResponse = await supabase
       .from('user_profile')
       .update({
         onboarding_finished: true,
-        updated_at: new Date(),
+        updated_at: getNow().toISOString(),
       })
-      .eq('user_id', authContext.userId);
+      .eq('user_id', authContext.userId!);
     if (profileResponse.error) {
-      logErrorsWithMessage(profileResponse.error, profileResponse.error?.message);
+      logSupaErrors(profileResponse.error);
       return;
     }
     void localAnalytics().logEvent('DiscussWayContinueClicked', {
@@ -92,7 +94,7 @@ export default function ({
                   action: 'BackClicked',
                   userId: authContext.userId,
                 });
-                navigation.navigate('Language', { goSettings: false });
+                navigation.navigate('Language', { fromSettings: false });
               }}
             ></GoBackButton>
             <Progress current={4} all={4}></Progress>

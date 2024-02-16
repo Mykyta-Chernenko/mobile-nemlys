@@ -12,12 +12,13 @@ import { i18n } from '@app/localization/i18n';
 import { SecondaryButton } from '@app/components/buttons/SecondaryButton';
 import { PrimaryButton } from '@app/components/buttons/PrimaryButtons';
 import { supabase } from '@app/api/initSupabase';
-import { logErrors } from '@app/utils/errors';
+import { logSupaErrors } from '@app/utils/errors';
 import { localAnalytics } from '@app/utils/analytics';
 import { Loading } from '@app/components/utils/Loading';
 import * as Notifications from 'expo-notifications';
 import { retrieveNotificationAccess } from '@app/utils/notification';
 import { Image } from 'react-native';
+import { getNow } from '@app/utils/date';
 
 export default function ({
   route,
@@ -44,10 +45,10 @@ export default function ({
   const saveShowedNotificaiton = async () => {
     const updateProfile = await supabase
       .from('user_technical_details')
-      .update({ showed_challenge_notification: true, updated_at: new Date() })
-      .eq('user_id', authContext.userId);
+      .update({ showed_challenge_notification: true, updated_at: getNow().toISOString() })
+      .eq('user_id', authContext.userId!);
     if (updateProfile.error) {
-      logErrors(updateProfile.error);
+      logSupaErrors(updateProfile.error);
       return;
     }
   };

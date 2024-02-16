@@ -1,11 +1,11 @@
 import React, { useContext, useEffect, useRef, useState } from 'react';
 import { supabase } from '@app/api/initSupabase';
 import * as StoreReview from 'expo-store-review';
-import { APIDate, APIGeneratedQuestion, APIUserProfile, SupabaseAnswer } from '@app/types/api';
+import { APIDate, APIGeneratedQuestion, SupabaseAnswer } from '@app/types/api';
 import { useTheme, useThemeMode } from '@rneui/themed';
 import { Image, Platform } from 'react-native';
 import Carousel from 'react-native-reanimated-carousel';
-import { logErrors } from '@app/utils/errors';
+import { logErrorsWithMessage, logSupaErrors } from '@app/utils/errors';
 import { captureScreen } from 'react-native-view-shot';
 import { MainStackParamList } from '@app/types/navigation';
 import { NativeStackScreenProps } from '@react-navigation/native-stack';
@@ -28,7 +28,7 @@ import OnDateStopPopup from '@app/components/date/OnDateStopPopup';
 import * as Sharing from 'expo-sharing';
 import { recreateNotifications, retrieveNotificationAccess } from '@app/utils/notification';
 import * as Notifications from 'expo-notifications';
-import { sleep } from '@app/utils/date';
+import { getNow, sleep } from '@app/utils/date';
 import { GRANTED_NOTIFICATION_STATUS } from '@app/utils/constants';
 import { NOTIFICATION_IDENTIFIERS } from '@app/types/domain';
 import { getPremiumDetails } from '@app/api/premium';
@@ -91,29 +91,25 @@ export default function ({
       .select('*', { count: 'exact' })
       .eq('active', false);
     if (dateCountRes.error) {
-      logErrors(dateCountRes.error);
+      logSupaErrors(dateCountRes.error);
       return;
     }
     setDateCount(dateCountRes.count || 0);
-    const dateRes: SupabaseAnswer<APIDate> = await supabase
-      .from('date')
-      .select(dateFields)
-      .eq('active', true)
-      .single();
+    const dateRes = await supabase.from('date').select(dateFields).eq('active', true).single();
 
     if (dateRes.error) {
-      logErrors(dateRes.error);
+      logSupaErrors(dateRes.error);
       return;
     }
     setCurrentDate(dateRes.data);
-    const res: SupabaseAnswer<APIGeneratedQuestion[] | null> = await supabase
+    const res = await supabase
       .from('generated_question')
       .select('id, date_id, question ,finished, feedback_score, skipped, created_at, updated_at')
       .eq('date_id', dateRes.data.id)
       .order('created_at', { ascending: true })
       .limit(QUESTION_COUNT);
     if (res.error) {
-      logErrors(res.error);
+      logSupaErrors(res.error);
       return;
     }
 
@@ -166,7 +162,7 @@ export default function ({
         },
       );
       if (res.error) {
-        logErrors(res.error);
+        logSupaErrors(res.error);
         return;
       }
       setQuestions(res.data ?? []);
@@ -216,8 +212,8 @@ export default function ({
       await Sharing.shareAsync('file://' + capturedUri, {
         mimeType: 'image/jpeg',
       });
-    } catch (err) {
-      logErrors(err);
+    } catch (e) {
+      logErrorsWithMessage(e, (e?.message as string) || '');
     }
   };
 
@@ -241,13 +237,13 @@ export default function ({
       shouldShowNotificationBanner,
     });
 
-    const data: SupabaseAnswer<APIUserProfile> = await supabase
+    const data = await supabase
       .from('user_profile')
       .select('*')
-      .eq('user_id', authContext.userId)
+      .eq('user_id', authContext.userId!)
       .single();
     if (data.error) {
-      logErrors(data.error);
+      logSupaErrors(data.error);
       return;
     }
     const setupDateNotification = async (firstName: string, partnerName: string) => {
@@ -284,14 +280,14 @@ export default function ({
         ],
       );
     };
-    void setupDateNotification(data.data.first_name, data.data.partner_first_name);
+    void setupDateNotification(data.data.first_name, data.data.partner_first_name || 'partner');
     const { error, count } = await supabase
       .from('date')
       .select('*', { count: 'exact' })
       .eq('active', false)
       .eq('stopped', false);
     if (error) {
-      logErrors(error);
+      logSupaErrors(error);
       return;
     }
 
@@ -329,8 +325,8 @@ export default function ({
           refreshTimeStamp: new Date().toISOString(),
         });
       }
-    } catch (error) {
-      logErrors(error);
+    } catch (e) {
+      logErrorsWithMessage(e, (e?.message as string) || '');
     }
   };
   const finishSaveDate = async (feedback: number | undefined) => {
@@ -359,21 +355,21 @@ export default function ({
         .update(updateDict)
         .eq('id', q.id);
       if (questionReponse.error) {
-        logErrors(questionReponse.error);
+        logSupaErrors(questionReponse.error);
         return;
       }
     }
     const userProfileData = await supabase
       .from('user_profile')
       .select('showed_rating')
-      .eq('user_id', authContext.userId)
+      .eq('user_id', authContext.userId!)
       .single();
     if (userProfileData.error) {
-      logErrors(userProfileData.error);
+      logSupaErrors(userProfileData.error);
       return;
     }
     if (
-      dateCount > 0 &&
+      dateCount > 1 &&
       (feedback || 0) > 2 &&
       (!userProfileData.data.showed_rating || dateCount % 5 === 0)
     ) {
@@ -381,10 +377,10 @@ export default function ({
         await StoreReview.requestReview();
         const updateProfile = await supabase
           .from('user_profile')
-          .update({ showed_rating: true, updated_at: new Date() })
-          .eq('user_id', authContext.userId);
+          .update({ showed_rating: true, updated_at: getNow().toISOString() })
+          .eq('user_id', authContext.userId!);
         if (updateProfile.error) {
-          logErrors(updateProfile.error);
+          logSupaErrors(updateProfile.error);
           return;
         }
       }
@@ -392,10 +388,10 @@ export default function ({
 
     const dateReponse = await supabase
       .from('date')
-      .update({ active: false, updated_at: new Date() })
+      .update({ active: false, updated_at: getNow().toISOString() })
       .eq('id', currentDate!.id);
     if (dateReponse.error) {
-      logErrors(dateReponse.error);
+      logSupaErrors(dateReponse.error);
       return;
     }
   };
@@ -428,7 +424,7 @@ export default function ({
   //       const bucket = 'conversation-recordings';
   //       const res = await supabase.storage.from(bucket).upload(name, file);
   //       if (res.error) {
-  //         logErrors(res.error);
+  //         logSupaErrors(res.error);
   //       }
 
   //       void supabase.functions
@@ -451,7 +447,7 @@ export default function ({
   //           }
   //         });
   //     } catch (e) {
-  //       logErrors(e);
+  //         logErrorsWithMessage(e, (e?.message as string) || '');
   //     }
   //   }
   // };
@@ -465,17 +461,13 @@ export default function ({
     void getCurrentToken();
   }, []);
   const getShouldShowNotificationBanner = async () => {
-    const profileResponse: SupabaseAnswer<{
-      id: number;
-      ios_expo_token: string | null;
-      android_expo_token: string | null;
-    }> = await supabase
+    const profileResponse = await supabase
       .from('user_profile')
       .select('id, ios_expo_token, android_expo_token')
-      .eq('user_id', authContext.userId)
+      .eq('user_id', authContext.userId!)
       .single();
     if (profileResponse.error) {
-      logErrors(profileResponse.error);
+      logSupaErrors(profileResponse.error);
       return;
     }
     let hasToken = notificationStatus === GRANTED_NOTIFICATION_STATUS;

@@ -3,12 +3,11 @@ import { View, Platform } from 'react-native';
 import RecordingButtonTolltip from './RecordingButtonTolltip';
 import { i18n } from '@app/localization/i18n';
 import { supabase } from '@app/api/initSupabase';
-import { logErrors, logErrorsWithMessage } from '@app/utils/errors';
+import { logErrorsWithMessage } from '@app/utils/errors';
 import { AuthContext } from '@app/provider/AuthProvider';
 import RecordingButtonPermissionPopup from './RecordingButtonPermissionPopup';
 import RecordingButtonDeletePopup from './RecordingButtonDeletePopup';
 import { localAnalytics } from '@app/utils/analytics';
-import { SupabaseAnswer } from '@app/types/api';
 import RecordingButtonElement from './RecordingButtonElement';
 import { Audio, InterruptionModeAndroid, InterruptionModeIOS } from 'expo-av';
 import { getNow, sleep } from '@app/utils/date';
@@ -105,12 +104,10 @@ const RecordButton = React.forwardRef<RecordButtonRef, Props>((props, ref) => {
   useEffect(() => {
     const f = async () => {
       setLoading(true);
-      const profileResponse: SupabaseAnswer<{
-        wants_recordings: boolean;
-      }> = await supabase
+      const profileResponse = await supabase
         .from('user_technical_details')
         .select('wants_recordings')
-        .eq('user_id', authContext.userId)
+        .eq('user_id', authContext.userId!)
         .single();
       if (profileResponse.error) {
         logErrorsWithMessage(profileResponse.error, profileResponse.error.message);
@@ -121,7 +118,7 @@ const RecordButton = React.forwardRef<RecordButtonRef, Props>((props, ref) => {
         const premium = await getPremiumDetailsWithRecording(authContext.userId!);
         setMaxRecordingSeconds(premium.recordingSecondsLeft);
       } catch (e) {
-        logErrors(e);
+        logErrorsWithMessage(e, (e?.message as string) || '');
       }
       void localAnalytics().logEvent('OnDateRecordingButtonLoaded', {
         screen: 'OnDate',
@@ -173,9 +170,9 @@ const RecordButton = React.forwardRef<RecordButtonRef, Props>((props, ref) => {
       setRecordState('in_progress');
       setFinishedRecording(undefined);
       setStartedRecording(getNow());
-    } catch (err: unknown) {
+    } catch (err) {
       (err as Error).message = 'Failed to start recording: ' + (err as Error)?.message;
-      logErrors(err);
+      logErrorsWithMessage(err, (err?.message as string) || '');
     }
   }
 
@@ -215,8 +212,8 @@ const RecordButton = React.forwardRef<RecordButtonRef, Props>((props, ref) => {
           uri,
         });
         return { uri, recordingSeconds };
-      } catch (error) {
-        logErrors(error);
+      } catch (e) {
+        logErrorsWithMessage(e, (e?.message as string) || '');
       }
     }
   }
