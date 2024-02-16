@@ -137,7 +137,7 @@ export async function getPremiumDetailsWithRecording(
     }
 
     const totalSecondsSpent = data
-      .map((x) => x.seconds_spent as number)
+      .map((x) => x.seconds_spent)
       .reduce((accumulator, currentValue) => {
         return accumulator + currentValue;
       }, 0);

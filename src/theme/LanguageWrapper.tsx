@@ -47,7 +47,7 @@ export default function (props: Props) {
           }
 
           if (data && data.language) {
-            await setAppLanguage(data.language as string);
+            await setAppLanguage(data.language);
           }
         }
       } catch (error) {
