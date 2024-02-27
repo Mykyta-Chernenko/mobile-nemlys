@@ -21,6 +21,7 @@ import PremiumOffer from '@app/screens/premium/PremiumOffer';
 import PremiumSuccess from '@app/screens/premium/PremiumSuccess';
 import InterviewRequest from '@app/screens/utils/InterviewRequest';
 import Language from '@app/screens/onboarding/Language';
+import InterviewText from '@app/screens/utils/InterviewText';
 
 const MainStack = createNativeStackNavigator();
 const Main = () => {
@@ -88,6 +89,11 @@ const Main = () => {
         options={{ animation: 'slide_from_right' }}
         name={'InterviewRequest'}
         component={InterviewRequest}
+      />
+      <MainStack.Screen
+        options={{ animation: 'slide_from_right' }}
+        name={'InterviewText'}
+        component={InterviewText}
       />
       <MainStack.Screen
         options={{ animation: 'slide_from_right' }}

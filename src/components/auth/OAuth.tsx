@@ -152,8 +152,13 @@ export const OAuth = ({
         throw new Error(`No identityToken, credential: ${JSON.stringify(credential)}`);
       }
     } catch (e) {
-      logErrorsWithMessage(e, (e?.message as string) || '');
-      await supabase.auth.signOut();
+      console.log(JSON.stringify(e));
+      if (e.code === 'ERR_REQUEST_CANCELED' || e.code === 'ERR_REQUEST_UNKNOWN') {
+        // cancelled login, proceed
+      } else {
+        logErrorsWithMessage(e, (e?.message as string) || '');
+        await supabase.auth.signOut();
+      }
     } finally {
       setLocalLoading(false);
       setLoading(false);

@@ -14,6 +14,8 @@ import { localAnalytics } from '@app/utils/analytics';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { setAppLanguage } from '@app/theme/LanguageWrapper';
 import { logSupaErrors } from '@app/utils/errors';
+import StyledInput from '@app/components/utils/StyledInput';
+import * as Localization from 'expo-localization';
 
 export default function ({
   route,
@@ -23,10 +25,12 @@ export default function ({
   const { theme } = useTheme();
   const LANGUAGES = ['en', 'es'];
   const [language, setLanguage] = useState<string>(getDefaultLanguage(i18n.locale));
+  const [requestedLanguage, setRequestedLanguage] = useState<string | undefined>(undefined);
   const choices = LANGUAGES.map((l) => ({
     language: l,
     title: i18n.t(`onboarding.language.${l}`),
   }));
+
   const authContext = useContext(AuthContext);
 
   const { setMode } = useThemeMode();
@@ -38,7 +42,7 @@ export default function ({
   const handlePress = async () => {
     const languageData = await supabase
       .from('user_technical_details')
-      .update({ language: language })
+      .update({ language, requested_language: requestedLanguage, user_locale: Localization.locale })
       .eq('user_id', authContext.userId!)
       .single();
     if (languageData.error) {
@@ -50,6 +54,7 @@ export default function ({
       screen: 'Language',
       action: 'ContinueClicked',
       language: language,
+      requestedLanguage: requestedLanguage,
       userId: authContext.userId,
     });
     if (fromSettings) {
@@ -92,7 +97,7 @@ export default function ({
                 }
               }}
             ></GoBackButton>
-            {!fromSettings && <Progress current={3} all={4}></Progress>}
+            {!fromSettings && <Progress current={3} all={5}></Progress>}
           </View>
           <View
             style={{
@@ -133,6 +138,16 @@ export default function ({
                   <FontText style={{ marginLeft: 10 }}>{c.title}</FontText>
                 </TouchableOpacity>
               ))}
+              <View style={{ marginTop: 40 }}>
+                <FontText h4>{i18n.t('onboarding.language.new_language')}</FontText>
+                <StyledInput
+                  containerStyle={{ marginTop: 10 }}
+                  placeholder={i18n.t('onboarding.language.write_language')}
+                  value={requestedLanguage}
+                  autoCorrect={true}
+                  onChangeText={(text) => setRequestedLanguage(text)}
+                ></StyledInput>
+              </View>
             </ScrollView>
           </View>
           <View style={{ marginTop: '4%' }}>

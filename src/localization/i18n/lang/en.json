@@ -29,7 +29,7 @@
   "new_reflection": {
     "title_1": "Try ",
     "title_2": "Reflections ",
-    "title_3": "to get personalized questions",
+    "title_3": "to better undsrtand your relationship.",
     "button": "Remind me later"
   },
   "jobs": {
@@ -55,7 +55,7 @@
     }
   },
   "home": {
-    "discussed_questions": "discussed questions",
+    "discussed_questions": "discussed topics",
     "you": "You",
     "partner": "Partner",
     "menu": {
@@ -77,8 +77,10 @@
     "rate": "Rate our app",
     "share": "Share our app",
     "feature_request": "Feature request",
-    "call": "Cal with founders",
+    "feature_request_placeholder": "Write what would you like to see in Nemlys app",
+    "call": "Call with founders",
     "contact": "Contact us",
+    "contact_placeholder": "Write what you want us to help you with",
     "logout": "Log out",
     "delete_account": "Delete account",
     "are_you_sure_you_want_to_delete_account": "Are you sure you want to delete your account?"
@@ -168,6 +170,21 @@
     "reason_3_title_3": "of Unlimited access after the call",
     "button": "Schedule a call"
   },
+  "interview_text": {
+    "title_first": "Write your feedback to get ",
+    "title_second": "1 month of Premium",
+    "reason_1_title_1": "",
+    "reason_1_title_2": "Write answers",
+    "reason_1_title_3": " to 3 questions what you like and dislike in Nemlys",
+    "reason_2_title_1": "Get ",
+    "reason_2_title_2": "1 month of premium",
+    "reason_2_title_3": "",
+    "reason_3_title_1": "Your answers ",
+    "reason_3_title_2": "help us decide",
+    "reason_3_title_3": " what to work on next",
+    "button": "Write to us",
+    "thank": "Amazing! We will reach you on your email: {{email}}"
+  },
   "recording": {
     "button": "Record",
     "stop": {
@@ -200,13 +217,10 @@
     },
     "generating_questions_error": "Sorry, our AI cannot generate these questions, try another category or topic",
     "notification": {
-      "challenge": "Challenge",
-      "title_1": "Deepen Intimacy\n",
-      "title_2": "Twice a Week:\n",
-      "title_3": "Are You Ready?",
-      "subtitle": "Connect regularly on a deeper level with your partner.",
-      "confirm": "Allow notification",
-      "decline": "Maybe later"
+      "title_1": "Get a reminder",
+      "title_2": " to discuss questions with your partner",
+      "title_3": "",
+      "confirm": "Allow notifications"
     },
     "stop_popup": {
       "title_1": "Are you sure you want to ",
@@ -265,13 +279,13 @@
     },
     "generating_questions_first": "Generating questions to discuss ",
     "generating_questions_second": "with partner",
-    "discuss": "Discuss together",
+    "discuss": "Discuss topics together",
     "feedback": {
       "with_partner": {
         "title_first": "So! How was ",
         "title_second": "your discussion",
         "title_third": "?",
-        "choice_4": "We get a few cool insights",
+        "choice_4": "We got a few cool insights",
         "choice_3": "It was good",
         "choice_2": "Nothing new",
         "choice_1": "It wasn’t helpful at all"
@@ -328,7 +342,7 @@
     },
     "reflection": {
       "private": "private info",
-      "explanation": "We use AI, so the more you write the better questions you will get.",
+      "explanation": "Reflect on your own to better understand your relationship.",
       "short": "Too short",
       "good": "Good",
       "perfect": "Perfect",
@@ -345,7 +359,9 @@
     "language": {
       "title": "Select App Language",
       "en": "English",
-      "es": "Spanish"
+      "es": "Spanish",
+      "new_language": "Request new language",
+      "write_language": "Write language..."
     },
     "discuss_way": {
       "title_first": "How would you like ",

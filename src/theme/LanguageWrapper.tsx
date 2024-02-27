@@ -38,7 +38,7 @@ export default function (props: Props) {
           const { data, error } = await supabase
             .from('user_technical_details')
             .select('language')
-            .eq('user_id', authContext.userId)
+            .eq('user_id', authContext.userId!)
             .maybeSingle();
 
           if (error) {

@@ -111,7 +111,7 @@ export default function ({
                     }
                   }}
                 ></GoBackButton>
-                {!fromSettings && <Progress current={1} all={4}></Progress>}
+                {!fromSettings && <Progress current={1} all={5}></Progress>}
               </View>
               <View
                 style={{

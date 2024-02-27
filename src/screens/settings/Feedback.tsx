@@ -13,7 +13,7 @@ import { SettingsButton } from '../menu/SettingsButton';
 import { useTheme } from '@rneui/themed';
 import { ScrollView } from 'react-native-gesture-handler';
 
-export default function ({ title }: { title: string }) {
+export default function ({ title, placeholder }: { title: string; placeholder: string }) {
   const authContext = useContext(AuthContext);
   const [visible, setVisible] = useState<boolean>(false);
   const [feedback, setFeedback] = useState<string>('');
@@ -100,6 +100,7 @@ export default function ({ title }: { title: string }) {
               <StyledTextInput
                 style={{ marginVertical: 20, maxHeight: '50%' }}
                 onChangeText={setFeedback}
+                placeholder={placeholder}
               ></StyledTextInput>
             </View>
             <View style={{ flexDirection: 'row', justifyContent: 'space-around', width: '100%' }}>

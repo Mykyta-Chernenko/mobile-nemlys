@@ -26,14 +26,14 @@ export type MainStackParamList = {
     refreshTimeStamp: string | undefined;
   };
   OnDateNewLevel: { withPartner: boolean; refreshTimeStamp: string | undefined };
-  OnDateNotification: { withPartner: boolean };
+  OnDateNotification: { withPartner: boolean; isOnboarding: boolean };
   PremiumOffer: { refreshTimeStamp: string | undefined };
   PremiumSuccess: { state: 'premium_started' | 'trial_started' };
 
   InterviewRequest: {
     refreshTimeStamp: string | undefined;
   };
-
+  InterviewText: undefined;
   Diary: { refreshTimeStamp: string | undefined };
   DiaryEntry: { id: number };
   DiaryNewEntry: undefined;

@@ -452,9 +452,7 @@ export default function ({
       currentPremiumState === 'trial_expired' ||
       (currentPremiumState !== 'premium' && currentPremiumState !== 'trial' && !eligibleForTrial);
     if (showInterview) {
-      navigation.navigate('InterviewRequest', {
-        refreshTimeStamp: new Date().toISOString(),
-      });
+      navigation.navigate('InterviewText');
     } else {
       navigation.navigate('Home', {
         refreshTimeStamp: new Date().toISOString(),

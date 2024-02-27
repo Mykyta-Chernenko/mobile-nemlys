@@ -65,7 +65,7 @@ export default function ({
       discuss_way: chosen,
       userId: authContext.userId,
     });
-    navigation.navigate('Analyzing');
+    navigation.navigate('OnDateNotification', { withPartner: true, isOnboarding: true });
   };
   return (
     <ImageBackground
@@ -97,7 +97,7 @@ export default function ({
                 navigation.navigate('Language', { fromSettings: false });
               }}
             ></GoBackButton>
-            <Progress current={4} all={4}></Progress>
+            <Progress current={4} all={5}></Progress>
           </View>
           <View
             style={{

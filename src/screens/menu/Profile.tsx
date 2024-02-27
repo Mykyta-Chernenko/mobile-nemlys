@@ -5,7 +5,15 @@ import { AUTH_STORAGE_KEY, supabase } from '@app/api/initSupabase';
 import { Loading } from '@app/components/utils/Loading';
 import { logSupaErrors } from '@app/utils/errors';
 import { AuthContext } from '@app/provider/AuthProvider';
-import { Alert, SafeAreaView, ScrollView, Share, TouchableOpacity, View } from 'react-native';
+import {
+  Alert,
+  Platform,
+  SafeAreaView,
+  ScrollView,
+  Share,
+  TouchableOpacity,
+  View,
+} from 'react-native';
 import { useTheme } from '@rneui/themed';
 import { FontText } from '@app/components/utils/FontText';
 import ProfileBuddyCorner from '@app/icons/profile_buddy_corner';
@@ -21,6 +29,7 @@ import AsyncStorage from '@react-native-async-storage/async-storage';
 import Feedback from '../settings/Feedback';
 import { SettingsButton } from './SettingsButton';
 import { PrimaryButton } from '@app/components/buttons/PrimaryButtons';
+import { getNow } from '@app/utils/date';
 
 export const logout = async () => {
   await supabase.auth.signOut();
@@ -138,6 +147,14 @@ export default function ({
     });
     if (await StoreReview.hasAction()) {
       await StoreReview.requestReview();
+      const updateProfile = await supabase
+        .from('user_profile')
+        .update({ showed_rating: true, updated_at: getNow().toISOString() })
+        .eq('user_id', authContext.userId!);
+      if (updateProfile.error) {
+        logSupaErrors(updateProfile.error);
+        return;
+      }
     }
   };
   const manageShare = async () => {
@@ -150,7 +167,7 @@ export default function ({
     await Share.share({
       title: 'Nemlys: relationship questions',
       message: `Nemlys: couples questions\nApple: ${iosLink}\nAndroid: ${androidLink}\n\nHave fun, deep conversations and personalized questions!\n\n\n`,
-      url: androidLink,
+      url: Platform.OS === 'android' ? androidLink : iosLink,
     });
   };
   const manageCall = () => {
@@ -297,13 +314,19 @@ export default function ({
                     title={i18n.t('profile.share')}
                     action={() => void manageShare()}
                   ></SettingsButton>
-                  <Feedback title={i18n.t('profile.feature_request')}></Feedback>
+                  <Feedback
+                    title={i18n.t('profile.feature_request')}
+                    placeholder={i18n.t('profile.feature_request_placeholder')}
+                  ></Feedback>
                   <SettingsButton
                     data={' '}
                     title={i18n.t('profile.call')}
                     action={() => void manageCall()}
                   ></SettingsButton>
-                  <Feedback title={i18n.t('profile.contact')}></Feedback>
+                  <Feedback
+                    title={i18n.t('profile.contact')}
+                    placeholder={i18n.t('profile.contact_placeholder')}
+                  ></Feedback>
                   <PrimaryButton
                     buttonStyle={{ marginTop: 40 }}
                     onPress={() => {

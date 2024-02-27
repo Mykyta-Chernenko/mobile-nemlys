@@ -398,7 +398,7 @@ export type Database = {
           couple_id: number;
           created_at?: string;
           id?: number;
-          job?: string;
+          job?: JobSlug;
           level: number;
           reflection_answer_id?: number | null;
           stopped?: boolean;
@@ -411,7 +411,7 @@ export type Database = {
           couple_id?: number;
           created_at?: string;
           id?: number;
-          job?: string;
+          job?: JobSlug;
           level?: number;
           reflection_answer_id?: number | null;
           stopped?: boolean;
@@ -756,7 +756,7 @@ export type Database = {
         Update: {
           created_at?: string;
           id?: number;
-          job?: string;
+          job?: JobSlug;
           level?: number;
           question?: string;
           topic?: string;
@@ -1532,6 +1532,7 @@ export type Database = {
           unsubscribe: boolean;
           updated_at: string;
           user_id: string;
+          user_locale: string | null;
           wants_recordings: boolean;
         };
         Insert: {
@@ -1544,6 +1545,7 @@ export type Database = {
           unsubscribe?: boolean;
           updated_at?: string;
           user_id: string;
+          user_locale?: string | null;
           wants_recordings?: boolean;
         };
         Update: {
@@ -1556,6 +1558,7 @@ export type Database = {
           unsubscribe?: boolean;
           updated_at?: string;
           user_id?: string;
+          user_locale?: string | null;
           wants_recordings?: boolean;
         };
         Relationships: [

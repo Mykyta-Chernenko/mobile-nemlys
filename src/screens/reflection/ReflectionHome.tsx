@@ -14,7 +14,7 @@ import { SafeAreaView } from 'react-native-safe-area-context';
 import { logSupaErrors } from '@app/utils/errors';
 import { Loading } from '@app/components/utils/Loading';
 import { APIReflectionQuestion, APIReflectionQuestionAnswer } from '@app/types/api';
-import Wand from '@app/icons/wand';
+import Bulb from '@app/icons/bulb';
 import SmallArrowRight from '@app/icons/small_arrow_right';
 import LockWhite from '@app/icons/lock_white';
 import ReflectionCorner from '@app/icons/reflection_corner';
@@ -23,7 +23,6 @@ import { GestureHandlerRootView } from 'react-native-gesture-handler';
 import Carousel from 'react-native-reanimated-carousel';
 import { PrimaryButton } from '@app/components/buttons/PrimaryButtons';
 import { shuffle } from '../../utils/array';
-import ReflectionExplanation from '@app/components/reflection/ReflectionExplanation';
 import { getDateFromString } from '@app/utils/date';
 import Menu from '@app/components/menu/Menu';
 export default function ({
@@ -32,7 +31,6 @@ export default function ({
 }: NativeStackScreenProps<MainStackParamList, 'ReflectionHome'>) {
   const { theme } = useTheme();
 
-  const [showExplanation, setShowExplanation] = useState(false);
   const [dateCount, setDateCount] = useState(0);
 
   const padding = 20;
@@ -89,7 +87,6 @@ export default function ({
     setReflecitons(shuffle(availableReflections.data));
 
     setLoading(false);
-    setShowExplanation(false);
     setReflectionindex(0);
 
     void localAnalytics().logEvent('ReflectionHomeLoaded', {
@@ -206,41 +203,22 @@ export default function ({
           >
             <View style={{ padding, flex: 1 }}>
               <View>
-                <TouchableOpacity
-                  onPress={() => {
-                    void localAnalytics().logEvent('ReflectionExplanationOpened', {
-                      screen: 'ReflectionExplanation',
-                      action: 'Opened',
-                      userId: authContext.userId,
-                    });
-                    setShowExplanation(true);
+                <View
+                  style={{
+                    flexDirection: 'row',
+                    alignItems: 'flex-start',
+                    justifyContent: 'flex-start',
+                    backgroundColor: theme.colors.white,
+                    padding: 20,
+                    paddingHorizontal: 20,
+                    borderRadius: 16,
                   }}
                 >
-                  <View
-                    style={{
-                      flexDirection: 'row',
-                      alignItems: 'center',
-                      justifyContent: 'center',
-                      alignContent: 'space-between',
-                      backgroundColor: theme.colors.white,
-                      padding: 20,
-                      paddingHorizontal: 30,
-                      borderRadius: 16,
-                    }}
-                  >
-                    <Wand></Wand>
-                    <View style={{ marginRight: 10, marginLeft: 5 }}>
-                      <FontText style={{ marginLeft: 5 }}>
-                        {i18n.t('onboarding.reflection.explanation')}
-                      </FontText>
-                    </View>
-                    <SmallArrowRight></SmallArrowRight>
+                  <Bulb></Bulb>
+                  <View style={{ marginLeft: 10 }}>
+                    <FontText>{i18n.t('onboarding.reflection.explanation')}</FontText>
                   </View>
-                </TouchableOpacity>
-                <ReflectionExplanation
-                  show={showExplanation}
-                  onClose={() => setShowExplanation(false)}
-                ></ReflectionExplanation>
+                </View>
               </View>
               <FontText h3 style={{ marginTop: 20 }}>
                 {i18n.t('reflection.available', { number: reflectionsAvailable })}

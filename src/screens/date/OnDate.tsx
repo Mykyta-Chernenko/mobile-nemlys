@@ -305,7 +305,7 @@ export default function ({
         });
         navigation.navigate('PremiumOffer', { refreshTimeStamp: new Date().toISOString() });
       } else if (shouldShowNotificationBanner) {
-        navigation.navigate('OnDateNotification', { withPartner });
+        navigation.navigate('OnDateNotification', { withPartner, isOnboarding: false });
       } else {
         if ((count || 0) === 1 && withPartner) {
           void localAnalytics().logEvent('NewLevelFirstDateFinished', {

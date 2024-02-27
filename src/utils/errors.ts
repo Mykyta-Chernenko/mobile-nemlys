@@ -9,9 +9,16 @@ export function logSupaErrors(e: PostgrestError) {
   logErrorsWithMessage(e, `${e.code}:${e.message}:${e.details}:${e.hint}`);
 }
 
-export function logErrorsWithMessage(e: unknown, message: string | undefined = undefined) {
+export function logErrorsWithMessage(e: any, message: string | undefined = undefined) {
+  if (message) {
+    if (e.message && typeof e.message === 'string') {
+      e.message += ' ' + message;
+    } else {
+      e.message = message;
+    }
+  }
   baseLogError(e);
-  alert(message || i18n.t(UNEXPECTED_ERROR));
+  alert(i18n.t(UNEXPECTED_ERROR));
 }
 
 export function logErrorsWithMessageWithoutAlert(e: unknown) {
@@ -23,7 +30,7 @@ function baseLogError(e: unknown) {
   console.error(e);
   void localAnalytics().logEvent('ErrorEncountered', {
     action: 'ErrorEncountered',
-    error: e instanceof Error ? e : new Error(JSON.stringify(e)),
+    error: e instanceof Error ? e.message || '' : JSON.stringify(e),
   });
 }
 

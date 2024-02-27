@@ -14,7 +14,7 @@ export default function ({
   const authContext = useContext(AuthContext);
 
   const goBack = () => {
-    localAnalytics().logEvent('ReflectionHome', {
+    localAnalytics().logEvent('WriteReflectionBack', {
       screen: 'WriteReflection',
       action: 'Back',
       userId: authContext.userId,

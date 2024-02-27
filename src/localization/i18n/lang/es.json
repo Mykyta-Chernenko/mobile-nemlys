@@ -29,7 +29,7 @@
   "new_reflection": {
     "title_1": "Prueba ",
     "title_2": "Reflexiones ",
-    "title_3": "para obtener preguntas personalizadas",
+    "title_3": "para entender mejor tu relación.",
     "button": "Recuérdame más tarde"
   },
   "jobs": {
@@ -55,7 +55,7 @@
     }
   },
   "home": {
-    "discussed_questions": "preguntas discutidas",
+    "discussed_questions": "temas discutidos",
     "you": "Tú",
     "partner": "Pareja",
     "menu": {
@@ -76,9 +76,10 @@
     "subscription": "Gestionar suscripción",
     "rate": "Valora nuestra app",
     "share": "Comparte nuestra app",
-    "feature_request": "Solicitud de funcionalidades",
+    "feature_request_placeholder": "Escribe qué te gustaría ver en la aplicación Nemlys",
     "call": "Llamada con los fundadores",
     "contact": "Contáctanos",
+    "contact_placeholder": "Escribe con qué quieres que te ayudemos",
     "logout": "Cerrar sesión",
     "delete_account": "Eliminar cuenta",
     "are_you_sure_you_want_to_delete_account": "¿Estás seguro de que quieres eliminar tu cuenta?"
@@ -168,6 +169,21 @@
     "reason_3_title_3": "de Acceso Ilimitado después de la llamada",
     "button": "Programa una llamada"
   },
+  "interview_text": {
+    "title_first": "Escribe tus comentarios para obtener ",
+    "title_second": "1 mes de Premium",
+    "reason_1_title_1": "",
+    "reason_1_title_2": "Escribe respuestas",
+    "reason_1_title_3": " a 3 preguntas sobre lo que te gusta y no te gusta de Nemlys",
+    "reason_2_title_1": "Obtén ",
+    "reason_2_title_2": "1 mes de premium",
+    "reason_2_title_3": "",
+    "reason_3_title_1": "Tus respuestas ",
+    "reason_3_title_2": "nos ayudan a decidir",
+    "reason_3_title_3": " en qué trabajar a continuación",
+    "button": "Escríbenos",
+    "thank": "Increíble! Nos pondremos en contacto contigo en tu correo electrónico: {{email}}"
+  },
   "recording": {
     "button": "Grabar",
     "stop": {
@@ -200,13 +216,10 @@
     },
     "generating_questions_error": "Lo sentimos, nuestro IA no puede generar estas preguntas, prueba otra categoría o tema",
     "notification": {
-      "challenge": "Desafío",
-      "title_1": "Profundiza la Intimidad\n",
-      "title_2": "Dos veces a la Semana:\n",
-      "title_3": "¿Estás Listo?",
-      "subtitle": "Conéctate regularmente a un nivel más profundo con tu pareja.",
-      "confirm": "Permitir notificación",
-      "decline": "Quizás más tarde"
+      "title_1": "Recibe un recordatorio",
+      "title_2": " para discutir preguntas con tu pareja",
+      "title_3": "",
+      "confirm": "Permitir notificaciones"
     },
     "stop_popup": {
       "title_1": "¿Estás seguro de que quieres ",
@@ -265,13 +278,13 @@
     },
     "generating_questions_first": "Generando preguntas para discutir ",
     "generating_questions_second": "con pareja",
-    "discuss": "Discutir juntos",
+    "discuss": "Discutir temas juntos",
     "feedback": {
       "with_partner": {
         "title_first": "¡Así que! ¿Cómo fue ",
         "title_second": "tu discusión",
         "title_third": "?",
-        "choice_4": "Obtuvimos algunas ideas geniales",
+        "choice_4": "Obtuvimos algunos datos interesantes",
         "choice_3": "Fue buena",
         "choice_2": "Nada nuevo",
         "choice_1": "No fue útil"
@@ -320,7 +333,7 @@
     },
     "reflection": {
       "private": "información privada",
-      "explanation": "Usamos IA, así que cuanto más escribes mejor serán las preguntas que obtendrás.",
+      "explanation": "Reflexiona por tu cuenta para entender mejor tu relación.",
       "short": "Demasiado corto",
       "good": "Bien",
       "perfect": "Perfecto",
@@ -337,7 +350,9 @@
     "language": {
       "title": "Seleccionar idioma de la aplicación",
       "en": "Inglés",
-      "es": "Español"
+      "es": "Español",
+      "new_language": "Solicitar nuevo idioma",
+      "write_language": "Escribir idioma..."
     },
     "discuss_way": {
       "title_first": "¿Cómo te gustaría ",

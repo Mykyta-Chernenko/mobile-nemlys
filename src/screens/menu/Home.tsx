@@ -94,7 +94,7 @@ export default function ({
         }
         const showInterview = (dateYesterdayCount || 0) > 0;
         if (showInterview) {
-          navigation.navigate('InterviewRequest', { refreshTimeStamp: new Date().toISOString() });
+          navigation.navigate('InterviewText');
         }
       }
       const activeDatesRes = await supabase

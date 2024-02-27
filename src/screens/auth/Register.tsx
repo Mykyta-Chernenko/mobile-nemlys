@@ -21,6 +21,8 @@ import { FontText } from '@app/components/utils/FontText';
 import { logErrorsWithMessage, logErrorsWithMessageWithoutAlert } from '@app/utils/errors';
 import { localAnalytics } from '@app/utils/analytics';
 import StyledInput from '@app/components/utils/StyledInput';
+import * as Localization from 'expo-localization';
+import { getNow } from '@app/utils/date';
 let handlingUser = false;
 export function handleUserAfterSignUp(provider: string): (user: SupabaseUser) => Promise<void> {
   return async (user: SupabaseUser) => {
@@ -78,6 +80,15 @@ export function handleUserAfterSignUp(provider: string): (user: SupabaseUser) =>
         if (profileError) {
           throw profileError;
         }
+
+        const { error: localeError } = await supabase
+          .from('user_technical_details')
+          .update({ user_locale: Localization.locale, updated_at: getNow().toISOString() })
+          .eq('user_id', user.id);
+        if (localeError) {
+          throw localeError;
+        }
+
         void localAnalytics().logEvent('LoginProfileInserted', {
           screen: 'Login',
           action: 'ProfileInserted',

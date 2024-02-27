@@ -4,27 +4,27 @@ import { useTheme, useThemeMode } from '@rneui/themed';
 import { MainStackParamList } from '@app/types/navigation';
 import { NativeStackScreenProps } from '@react-navigation/native-stack';
 
-import { ImageBackground, ScrollView, View } from 'react-native';
+import { ImageBackground, ScrollView, TouchableOpacity, View } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { FontText } from '@app/components/utils/FontText';
 import { AuthContext } from '@app/provider/AuthProvider';
 import { i18n } from '@app/localization/i18n';
-import { SecondaryButton } from '@app/components/buttons/SecondaryButton';
 import { PrimaryButton } from '@app/components/buttons/PrimaryButtons';
-import { supabase } from '@app/api/initSupabase';
-import { logSupaErrors } from '@app/utils/errors';
 import { localAnalytics } from '@app/utils/analytics';
 import { Loading } from '@app/components/utils/Loading';
 import * as Notifications from 'expo-notifications';
 import { retrieveNotificationAccess } from '@app/utils/notification';
 import { Image } from 'react-native';
-import { getNow } from '@app/utils/date';
+import { GoBackButton } from '@app/components/buttons/GoBackButton';
+import { Progress } from '@app/components/utils/Progress';
 
 export default function ({
   route,
   navigation,
 }: NativeStackScreenProps<MainStackParamList, 'OnDateNotification'>) {
   const [loading, setLoading] = useState(false);
+  const isOnboarding = route.params.isOnboarding;
+  const screenName = isOnboarding ? 'OnboardingNotification' : 'OnDateNotification';
   const { setMode } = useThemeMode();
   useEffect(() => {
     const unsubscribeFocus = navigation.addListener('focus', () => setMode('light'));
@@ -42,45 +42,53 @@ export default function ({
 
   const authContext = useContext(AuthContext);
   const { theme } = useTheme();
-  const saveShowedNotificaiton = async () => {
-    const updateProfile = await supabase
-      .from('user_technical_details')
-      .update({ showed_challenge_notification: true, updated_at: getNow().toISOString() })
-      .eq('user_id', authContext.userId!);
-    if (updateProfile.error) {
-      logSupaErrors(updateProfile.error);
-      return;
-    }
-  };
   const handleConfirm = async () => {
-    void saveShowedNotificaiton();
-    void localAnalytics().logEvent('OnDateNotificationShown', {
-      screen: 'OnDateNotification',
-      action: 'Shown',
+    void localAnalytics().logEvent(`${screenName}Continue`, {
+      screen: screenName,
+      action: 'Continue',
       userId: authContext.userId,
-      confirm: true,
     });
     await retrieveNotificationAccess(
       authContext.userId,
       notificationStatus,
-      'OnDateNotification',
+      screenName,
       setLoading,
     );
-    navigation.navigate('Home', {
-      refreshTimeStamp: new Date().toISOString(),
-    });
+    if (isOnboarding) {
+      navigation.navigate('Analyzing');
+    } else {
+      navigation.navigate('Home', {
+        refreshTimeStamp: new Date().toISOString(),
+      });
+    }
   };
-  const handleDecline = () => {
-    void saveShowedNotificaiton();
-    void localAnalytics().logEvent('OnDateNotificationShown', {
-      screen: 'OnDateNotification',
-      action: 'Shown',
+  const handleSkip = () => {
+    void localAnalytics().logEvent(`${screenName}Skip`, {
+      screen: screenName,
+      action: 'Skip',
       userId: authContext.userId,
-      confirm: false,
     });
-    navigation.navigate('Home', {
-      refreshTimeStamp: new Date().toISOString(),
+    if (isOnboarding) {
+      navigation.navigate('Analyzing');
+    } else {
+      navigation.navigate('Home', {
+        refreshTimeStamp: new Date().toISOString(),
+      });
+    }
+  };
+  const handleBack = () => {
+    void localAnalytics().logEvent(`${screenName}GoBack`, {
+      screen: screenName,
+      action: 'GoBack',
+      userId: authContext.userId,
     });
+    if (isOnboarding) {
+      navigation.navigate('DiscussWay');
+    } else {
+      navigation.navigate('Home', {
+        refreshTimeStamp: new Date().toISOString(),
+      });
+    }
   };
 
   return loading ? (
@@ -102,19 +110,35 @@ export default function ({
           <View style={{ flexGrow: 1, justifyContent: 'space-between' }}>
             <View
               style={{
-                justifyContent: 'center',
+                flexDirection: 'row',
+                paddingHorizontal: 15,
                 alignItems: 'center',
-                marginTop: 10,
+                justifyContent: 'center',
+                height: 40,
               }}
             >
+              {isOnboarding ? (
+                <GoBackButton
+                  theme="light"
+                  containerStyle={{ position: 'absolute', left: 0 }}
+                  onPress={handleBack}
+                ></GoBackButton>
+              ) : (
+                <></>
+              )}
+
+              {isOnboarding ? <Progress current={5} all={5}></Progress> : <></>}
               <View
                 style={{
-                  backgroundColor: theme.colors.white,
-                  padding: 10,
+                  position: 'absolute',
+                  right: 0,
                   borderRadius: 40,
+                  backgroundColor: theme.colors.white,
                 }}
               >
-                <FontText>{i18n.t('date.notification.challenge')}</FontText>
+                <TouchableOpacity style={{ padding: 10 }} onPress={() => void handleSkip()}>
+                  <FontText>{i18n.t('skip')}</FontText>
+                </TouchableOpacity>
               </View>
             </View>
             <View style={{ marginTop: 20 }}>
@@ -125,30 +149,22 @@ export default function ({
                 {i18n.t('date.notification.title_2')}
                 {i18n.t('date.notification.title_3')}
               </FontText>
-              <FontText style={{ textAlign: 'center', marginTop: 20 }}>
-                {i18n.t('date.notification.subtitle')}
-              </FontText>
+            </View>
+
+            <View style={{ flexDirection: 'row' }}>
+              <Image
+                resizeMode="contain"
+                style={{ width: '100%', aspectRatio: 1 }}
+                source={require('../../../assets/images/notification_example.png')}
+              ></Image>
             </View>
 
             <View style={{ marginBottom: 10 }}>
-              <View style={{ flexDirection: 'row' }}>
-                <Image
-                  resizeMode="contain"
-                  style={{ width: '100%', aspectRatio: 1.5 }}
-                  source={require('../../../assets/images/notification_example.png')}
-                ></Image>
-              </View>
               <PrimaryButton
                 buttonStyle={{ width: '100%' }}
                 onPress={() => void handleConfirm()}
                 title={i18n.t('date.notification.confirm')}
               ></PrimaryButton>
-              <SecondaryButton
-                containerStyle={{ marginTop: 10 }}
-                buttonStyle={{ width: '100%' }}
-                onPress={handleDecline}
-                title={i18n.t('date.notification.decline')}
-              ></SecondaryButton>
             </View>
           </View>
         </ScrollView>

@@ -42,10 +42,7 @@ export async function getPremiumDetails(userId: string): Promise<PremiumDetails>
   if (premiumDetailsError) {
     throw premiumDetailsError;
   }
-  const {
-    data: techDetails,
-    error: techDetailsError,
-  }: SupabaseAnswer<{ after_trial_premium_offered: boolean }> = await supabase
+  const { data: techDetails, error: techDetailsError } = await supabase
     .from('user_technical_details')
     .select('after_trial_premium_offered')
     .eq('user_id', userId)
