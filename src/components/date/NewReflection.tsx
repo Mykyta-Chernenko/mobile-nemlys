@@ -14,7 +14,11 @@ import { PrimaryButton } from '../buttons/PrimaryButtons';
 import { NativeStackNavigationProp } from '@react-navigation/native-stack';
 import { MainStackParamList } from '@app/types/navigation';
 import { Loading } from '../utils/Loading';
-import { NOTIFICATION_IDENTIFIERS } from '@app/types/domain';
+import {
+  NOTIFICATION_IDENTIFIERS,
+  NOTIFICATION_SUBTYPE,
+  NOTIFICATION_TYPE,
+} from '@app/types/domain';
 import { recreateNotification, retrieveNotificationAccess } from '@app/utils/notification';
 import * as Notifications from 'expo-notifications';
 
@@ -105,6 +109,8 @@ export default function ({
         seconds: 60 * 60 * 24, // in a day
         repeats: false,
       },
+      NOTIFICATION_TYPE.REMIND_REFLECTION,
+      NOTIFICATION_SUBTYPE.REMIND_REFLECTION_1,
     );
 
     void savedShowed();

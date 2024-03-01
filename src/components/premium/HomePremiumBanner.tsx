@@ -11,7 +11,8 @@ import { Loading } from '../utils/Loading';
 import { PremiumState, getPremiumDetails } from '@app/api/premium';
 import { useNavigation } from '@react-navigation/native';
 import { MainNavigationProp } from '@app/types/navigation';
-import { JobSlug } from '@app/types/domain';
+import { JobSlug, NOTIFICATION_IDENTIFIERS } from '@app/types/domain';
+import { removeOldNotification } from '@app/utils/notification';
 
 export interface HomePremiumBannerRef {
   startDateClick: (job: JobSlug) => void;
@@ -42,7 +43,10 @@ const HomePremiumBanner = React.forwardRef<HomePremiumBannerRef, Props>((props, 
       job,
       userId: authContext.userId,
     });
+
     if (canStartDate) {
+      // we schedule notification before the first date happens, so we clear it out here
+      void removeOldNotification(NOTIFICATION_IDENTIFIERS.PRE_DATE + authContext.userId!);
       navigation.navigate('ConfigureDate', {
         job,
         withPartner: true,

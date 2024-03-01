@@ -38,7 +38,7 @@ When you start developing from a new network for oauth to work, you need to add 
 ## Deploy changes without store
 - export production envs
 - eas update --channel production  
-
+Warning: semantic version can only be 1 digit in which section 3.10.10 is not right
 
 ## important
 When you rotate a secret key in apple, you need to also generate new jwt out of this key for supabase

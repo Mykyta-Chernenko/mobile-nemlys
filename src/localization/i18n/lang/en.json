@@ -41,17 +41,55 @@
     "fun": "Light & Fun topics"
   },
   "notification": {
-    "date": {
-      "title": "{{firstName}}, Time to Connect with Partner",
-      "body": "Fun? Deep? Intimate? Choose and Discuss topics with {{partnerName}}"
+    "pre_date": {
+      "pre_date_ready_for_a_date_29_02_2024": {
+        "title": "Ready for a date?",
+        "body": "We prepared dozens of personalised questions for you and your partner"
+      },
+      "pre_date_time_to_connect_29_02_2024": {
+        "title": "Time to Connect!",
+        "body": "Hit pause on your busy day and explore your partner through Nemlys"
+      },
+      "pre_date_lets_pla_game_29_02_2024": {
+        "title": "Let's Play a Game!",
+        "body": "Open Nemlys and engage in some relationship fun with today's interactive question"
+      }
+    },
+    "finish_date": {
+      "finish_date_oops_29_02_2024": {
+        "title": "Oops!",
+        "body": "Don't leave your date incomplete. Open Nemlys and dive back into the conversation"
+      },
+      "finish_date_dont_leave_love_hanging_29_02_2024": {
+        "title": "Don't leave love hanging...",
+        "body": "Open Nemlys to finish your relationship questions and discover the magic"
+      }
+    },
+    "after_date": {
+      "after_date_time_for_your_relationship_29_02_2024": {
+        "title": "Time for your relationship",
+        "body": "Get a positive effect on partnership by answering question together"
+      },
+      "after_date_morning_sunshine_29_02_2024": {
+        "title": "Morning, sunshine!",
+        "body": "Tap into Nemlys for your daily question that deepen the bond with your partner"
+      },
+      "after_date_guess_what_time_29_02_2024": {
+        "title": "Guess what time it is?",
+        "body": "Dive into your daily dose of curiosity. Strengthen connection with your special someone"
+      },
+      "after_date_feeling_curious_29_02_2024": {
+        "title": "Feeling curious?",
+        "body": "Embark on a journey of discovery with your partner through today's thought-provoking question"
+      },
+      "after_date_challenge_accepted_29_02_2024": {
+        "title": "Challenge accepted?",
+        "body": "Open Nemlys now and put your relationship knowledge to the test with today's fun-filled question!"
+      }
     },
     "reflection": {
       "title": "Time to reflect on your relationship with {{partnerName}}",
       "body": "Choose a reflection and write your answer"
-    },
-    "trial_expired": {
-      "title": "Keep the Premium Access Going",
-      "body": "Discover two options to maintain full access"
     }
   },
   "home": {

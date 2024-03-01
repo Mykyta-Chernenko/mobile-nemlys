@@ -26,14 +26,19 @@ import { GestureHandlerRootView } from 'react-native-gesture-handler';
 import * as ScreenCapture from 'expo-screen-capture';
 import OnDateStopPopup from '@app/components/date/OnDateStopPopup';
 import * as Sharing from 'expo-sharing';
-import { recreateNotifications, retrieveNotificationAccess } from '@app/utils/notification';
+import { recreateNotificationList, removeOldNotification } from '@app/utils/notification';
 import * as Notifications from 'expo-notifications';
-import { getNow, sleep } from '@app/utils/date';
+import { calculateEveningTimeAfterDays, getNow, sleep } from '@app/utils/date';
 import { GRANTED_NOTIFICATION_STATUS } from '@app/utils/constants';
-import { NOTIFICATION_IDENTIFIERS } from '@app/types/domain';
+import {
+  NOTIFICATION_IDENTIFIERS,
+  NOTIFICATION_SUBTYPE,
+  NOTIFICATION_TYPE,
+} from '@app/types/domain';
 import { getPremiumDetails } from '@app/api/premium';
 import { capitalize } from '@app/utils/strings';
-
+import { shuffle } from 'lodash';
+import _ from 'lodash';
 export default function ({
   route,
   navigation,
@@ -65,6 +70,7 @@ export default function ({
   const [isSharing, setIsSharing] = useState(false);
 
   function restart() {
+    void createFinishDateNotifications();
     setLoading(true);
     setSpentTimes(new Array(QUESTION_COUNT));
     setQuestions([]);
@@ -218,6 +224,120 @@ export default function ({
   };
 
   const [showStopPopup, setShowStopPopup] = useState(false);
+  const finishDateIdentifier = NOTIFICATION_IDENTIFIERS.FINISH_DATE + authContext.userId!;
+  async function createFinishDateNotifications() {
+    const notificationOrder = shuffle([
+      NOTIFICATION_SUBTYPE.FINISH_DATE_1,
+      NOTIFICATION_SUBTYPE.FINISH_DATE_2,
+    ]);
+    const trigerSeconds = [30 * 60, 4 * 60 * 60];
+    const notifications = (
+      _.zip(notificationOrder, trigerSeconds) as [NOTIFICATION_SUBTYPE, number][]
+    ).map(([subtype, seconds]) => ({
+      screen: 'Home',
+      title: i18n.t(`notification.finish_date.${subtype}.title`),
+      body: i18n.t(`notification.finish_date.${subtype}.body`),
+      trigger: {
+        seconds,
+        repeats: false,
+      },
+      subtype,
+    }));
+    await recreateNotificationList(
+      authContext.userId!,
+      finishDateIdentifier,
+      [
+        ...notifications,
+        {
+          screen: 'Home',
+          title: i18n.t(`notification.finish_date.${NOTIFICATION_SUBTYPE.FINISH_DATE_1}.title`),
+          body: i18n.t(`notification.finish_date.${NOTIFICATION_SUBTYPE.FINISH_DATE_1}.body`),
+          trigger: {
+            seconds: calculateEveningTimeAfterDays(1),
+            repeats: false,
+          },
+          subtype: NOTIFICATION_SUBTYPE.FINISH_DATE_1,
+        },
+        {
+          screen: 'Home',
+          title: i18n.t(`notification.finish_date.${NOTIFICATION_SUBTYPE.FINISH_DATE_2}.title`),
+          body: i18n.t(`notification.finish_date.${NOTIFICATION_SUBTYPE.FINISH_DATE_2}.body`),
+          trigger: {
+            seconds: calculateEveningTimeAfterDays(7),
+            repeats: false,
+          },
+          subtype: NOTIFICATION_SUBTYPE.FINISH_DATE_2,
+        },
+      ],
+      NOTIFICATION_TYPE.FINISH_DATE,
+      [
+        ...notificationOrder,
+        NOTIFICATION_SUBTYPE.FINISH_DATE_1,
+        NOTIFICATION_SUBTYPE.FINISH_DATE_2,
+      ].join(':'),
+    );
+  }
+  async function createAfterDateNotifications() {
+    const afterDateIdentifier = NOTIFICATION_IDENTIFIERS.DATE + authContext.userId!;
+    void removeOldNotification(finishDateIdentifier);
+    const notificationOrder = shuffle([
+      NOTIFICATION_SUBTYPE.AFTER_DATE_1,
+      NOTIFICATION_SUBTYPE.AFTER_DATE_2,
+      NOTIFICATION_SUBTYPE.AFTER_DATE_3,
+      NOTIFICATION_SUBTYPE.AFTER_DATE_4,
+      NOTIFICATION_SUBTYPE.AFTER_DATE_5,
+    ]);
+    const trigerSeconds = [...Array(10)].map((_, i) => calculateEveningTimeAfterDays(i + 1));
+    const notifications = (
+      _.zip([...notificationOrder, ...notificationOrder], trigerSeconds) as [
+        NOTIFICATION_SUBTYPE,
+        number,
+      ][]
+    ).map(([subtype, seconds]) => ({
+      screen: 'Home',
+      title: i18n.t(`notification.after_date.${subtype}.title`),
+      body: i18n.t(`notification.after_date.${subtype}.body`),
+      trigger: {
+        seconds,
+        repeats: false,
+      },
+      subtype,
+    }));
+    await recreateNotificationList(
+      authContext.userId!,
+      afterDateIdentifier,
+      [
+        ...notifications,
+        {
+          screen: 'Home',
+          title: i18n.t(`notification.after_date.${NOTIFICATION_SUBTYPE.AFTER_DATE_1}.title`),
+          body: i18n.t(`notification.after_date.${NOTIFICATION_SUBTYPE.AFTER_DATE_1}.body`),
+          trigger: {
+            seconds: calculateEveningTimeAfterDays(20),
+            repeats: false,
+          },
+          subtype: NOTIFICATION_SUBTYPE.AFTER_DATE_1,
+        },
+        {
+          screen: 'Home',
+          title: i18n.t(`notification.after_date.${NOTIFICATION_SUBTYPE.AFTER_DATE_1}.title`),
+          body: i18n.t(`notification.after_date.${NOTIFICATION_SUBTYPE.AFTER_DATE_1}.body`),
+          trigger: {
+            seconds: calculateEveningTimeAfterDays(40),
+            repeats: false,
+          },
+          subtype: NOTIFICATION_SUBTYPE.AFTER_DATE_1,
+        },
+      ],
+      NOTIFICATION_TYPE.AFTER_DATE,
+      [
+        ...notificationOrder,
+        ...notificationOrder,
+        NOTIFICATION_SUBTYPE.AFTER_DATE_1,
+        NOTIFICATION_SUBTYPE.AFTER_DATE_2,
+      ].join(':'),
+    );
+  }
 
   const handleFinishDateButtonFinal = async (feedback: number | undefined) => {
     if (!currentDate) return;
@@ -246,41 +366,8 @@ export default function ({
       logSupaErrors(data.error);
       return;
     }
-    const setupDateNotification = async (firstName: string, partnerName: string) => {
-      const dateItendifier = NOTIFICATION_IDENTIFIERS.DATE + authContext.userId!;
-      const day = 60 * 60 * 24;
 
-      await recreateNotifications(
-        authContext.userId!,
-        dateItendifier,
-        'Home',
-        i18n.t('notification.date.title', { firstName }),
-        i18n.t('notification.date.body', { partnerName }),
-        [
-          {
-            seconds: day * 3,
-            repeats: false,
-          },
-          {
-            seconds: day * 6,
-            repeats: false,
-          },
-          {
-            seconds: day * 12,
-            repeats: false,
-          },
-          {
-            seconds: day * 24,
-            repeats: false,
-          },
-          {
-            seconds: day * 48,
-            repeats: false,
-          },
-        ],
-      );
-    };
-    void setupDateNotification(data.data.first_name, data.data.partner_first_name || 'partner');
+    void createAfterDateNotifications();
     const { error, count } = await supabase
       .from('date')
       .select('*', { count: 'exact' })
@@ -470,23 +557,7 @@ export default function ({
       logSupaErrors(profileResponse.error);
       return;
     }
-    let hasToken = notificationStatus === GRANTED_NOTIFICATION_STATUS;
-    if (
-      Platform.OS === 'android' &&
-      // platformApiLevel &&
-      // we need to ask user to grant permission for android notification token above 33 explicitly
-      // platformApiLevel < 33 &&
-      (!hasToken || !profileResponse.data.android_expo_token)
-    ) {
-      // get android notification token automatically if don't exist yet
-      await retrieveNotificationAccess(
-        authContext.userId,
-        notificationStatus,
-        'OnDate',
-        setLoading,
-      );
-      hasToken = true;
-    }
+    const hasToken = notificationStatus === GRANTED_NOTIFICATION_STATUS;
     return (
       !hasToken &&
       (dateCount === 1 ||

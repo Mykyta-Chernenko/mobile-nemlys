@@ -16,16 +16,22 @@ export default function (props: Props) {
     let isMounted = true;
     const redirect = (response: Notifications.NotificationResponse) => {
       const screen = response?.notification?.request?.content?.data?.screen;
-      void localAnalytics().logEvent('OpenedPushNotification', {
-        screen: '',
-        action: 'OpenedPushNotification',
+      const type = response?.notification?.request?.content?.data?.type;
+      const subtype = response?.notification?.request?.content?.data?.subtype;
+      const band = response?.notification?.request?.content?.data?.band;
+      void localAnalytics().logEvent('PushNotificationOpened', {
+        screen: 'PushNotification',
+        action: 'Opened',
         title: response?.notification?.request?.content?.title,
         sceenProp: screen,
         userId: auth.userId,
+        type,
+        subtype,
+        band,
       });
       if (screen) {
         // eslint-disable-next-line @typescript-eslint/no-unsafe-argument
-        navigation.navigate(screen);
+        navigation.navigate(screen, { refreshTimeStamp: new Date().toISOString() });
       }
     };
     const subscription = Notifications.addNotificationResponseReceivedListener((response) => {
@@ -35,11 +41,6 @@ export default function (props: Props) {
       if (!isMounted || !response) {
         return;
       }
-      void localAnalytics().logEvent('GothNotificationOnStart', {
-        screen: '',
-        action: 'GothNotificationOnStart',
-        userId: auth.userId,
-      });
       redirect(response);
     });
     return () => {

@@ -766,25 +766,37 @@ export type Database = {
       };
       notification: {
         Row: {
+          band?: string;
           created_at: string;
           expo_notification_id: string;
           id: number;
           identifier: string;
+          subtype?: string;
+          type?: string;
           updated_at: string;
+          user_id?: string;
         };
         Insert: {
+          band?: string;
           created_at?: string;
           expo_notification_id: string;
           id?: number;
           identifier: string;
+          subtype?: string;
           updated_at?: string;
+          type: string;
+          user_id: string;
         };
         Update: {
+          band?: string;
           created_at?: string;
           expo_notification_id?: string;
           id?: number;
           identifier?: string;
+          subtype?: string;
           updated_at?: string;
+          type?: string;
+          user_id?: string;
         };
         Relationships: [];
       };

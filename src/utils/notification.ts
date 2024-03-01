@@ -1,5 +1,4 @@
 import { supabase } from '@app/api/initSupabase';
-import { APINotification, InsertAPINotification, SupabaseAnswer } from '@app/types/api';
 import * as Notifications from 'expo-notifications';
 import { logSupaErrors } from './errors';
 import { Platform } from 'react-native';
@@ -9,11 +8,15 @@ import { localAnalytics } from './analytics';
 import { NotificationTriggerInput } from 'expo-notifications';
 import { getNow } from './date';
 export async function createNewNotification(
+  userId: string,
   title: string,
   body: string,
   trigger: NotificationTriggerInput,
   identifier: string,
   screen: string,
+  type: string,
+  band: string | undefined = undefined,
+  subtype: string | undefined = undefined,
 ) {
   const { status } = await Notifications.getPermissionsAsync();
   if (status === GRANTED_NOTIFICATION_STATUS) {
@@ -21,13 +24,17 @@ export async function createNewNotification(
       content: {
         title,
         body,
-        data: { screen },
+        data: { screen, type, band, subtype },
       },
       trigger,
     });
-    const newNotification: InsertAPINotification = {
+    const newNotification = {
+      user_id: userId,
       identifier,
       expo_notification_id: notificationId,
+      type,
+      subtype,
+      band,
     };
     const res = await supabase.from('notification').insert(newNotification);
 
@@ -40,13 +47,40 @@ export async function createNewNotification(
 export async function removeOldNotification(identifier: string) {
   const { status } = await Notifications.getPermissionsAsync();
   if (status === GRANTED_NOTIFICATION_STATUS) {
-    const notification: SupabaseAnswer<APINotification[]> = await supabase
+    const notification = await supabase
       .from('notification')
-      .select('id, created_at, updated_at, identifier, expo_notification_id')
+      .select(
+        'id, created_at, updated_at, identifier, expo_notification_id, type, subtype, band, user_id',
+      )
       .eq('identifier', identifier);
     if (notification.error) {
       logSupaErrors(notification.error);
       return;
+    }
+    if (notification.data.length > 1) {
+      const type = notification.data[0].type;
+      const band = notification.data[0].band;
+      const userId = notification.data[0].user_id;
+      void localAnalytics().logEvent('PushNotificationBandRemoved', {
+        screen: 'PushNotification',
+        action: 'Removed',
+        userId,
+        identifier,
+        type,
+        band,
+      });
+    } else if (notification.data.length === 1) {
+      const type = notification.data[0].type;
+      const subtype = notification.data[0].subtype;
+      const userId = notification.data[0].user_id;
+      void localAnalytics().logEvent('PushNotificationRemoved', {
+        screen: 'PushNotification',
+        action: 'Removed',
+        userId,
+        identifier,
+        type,
+        subtype,
+      });
     }
     for (const d of notification.data) {
       await Notifications.cancelScheduledNotificationAsync(d.expo_notification_id);
@@ -62,41 +96,71 @@ export async function recreateNotification(
   title: string,
   body: string,
   trigger: NotificationTriggerInput,
+  type: string,
+  subtype: string,
 ) {
-  void localAnalytics().logEvent('NotificationRecreated', {
-    screen: 'Notification',
-    action: 'Recreate',
+  void localAnalytics().logEvent('PushNotificationCreated', {
+    screen: 'PushNotification',
+    action: 'Created',
     userId,
     identifier,
     screenNotification: screen,
     title,
     body,
     trigger,
+    type,
+    subtype,
   });
   await removeOldNotification(identifier);
-  await createNewNotification(title, body, trigger, identifier, screen);
-}
-export async function recreateNotifications(
-  userId: string,
-  identifier: string,
-  screen: string,
-  title: string,
-  body: string,
-  triggers: NotificationTriggerInput[],
-) {
-  void localAnalytics().logEvent('NotificationRecreated', {
-    screen: 'Notification',
-    action: 'Recreate',
+  await createNewNotification(
     userId,
-    identifier,
-    screenNotification: screen,
     title,
     body,
-    triggers,
-  });
-  await removeOldNotification(identifier);
-  for (const trigger of triggers) {
-    await createNewNotification(title, body, trigger, identifier, screen);
+    trigger,
+    identifier,
+    screen,
+    type,
+    undefined,
+    subtype,
+  );
+}
+export async function recreateNotificationList(
+  userId: string,
+  identifier: string,
+  notifications: {
+    screen: string;
+    title: string;
+    body: string;
+    trigger: NotificationTriggerInput;
+    subtype: string;
+  }[],
+  type: string,
+  band: string,
+) {
+  const { status } = await Notifications.getPermissionsAsync();
+  if (status === GRANTED_NOTIFICATION_STATUS) {
+    await removeOldNotification(identifier);
+    for (const n of notifications) {
+      await createNewNotification(
+        userId,
+        n.title,
+        n.body,
+        n.trigger,
+        identifier,
+        n.screen,
+        type,
+        band,
+        n.subtype,
+      );
+    }
+    void localAnalytics().logEvent('PushNotificationBandCreated', {
+      screen: 'PushNotification',
+      action: 'Created',
+      userId,
+      identifier,
+      type,
+      band,
+    });
   }
 }
 

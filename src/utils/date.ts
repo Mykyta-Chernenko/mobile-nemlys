@@ -7,6 +7,10 @@ export function getDateFromString(date: string): moment.Moment {
 export function getNow(): moment.Moment {
   return moment().utcOffset(TIMEZONE);
 }
+export function calculateEveningTimeAfterDays(daysOffset: number) {
+  const targetTime = getNow().add(daysOffset, 'days').set({ hour: 19, minute: 0, second: 0 });
+  return targetTime.diff(getNow(), 'seconds');
+}
 
 export function momentToDate(m: moment.Moment): Date {
   return new Date(m.valueOf() - m.utcOffset() * 60 * 1000);

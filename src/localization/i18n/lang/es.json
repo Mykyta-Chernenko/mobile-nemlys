@@ -41,17 +41,55 @@
     "fun": "Temas ligeros y divertidos"
   },
   "notification": {
-    "date": {
-      "title": "{{firstName}}, Tiempo para Conectar con tu Pareja",
-      "body": "¿Divertido? ¿Profundo? ¿Íntimo? Elige y Discute temas con {{partnerName}}"
+    "pre_date": {
+      "pre_date_ready_for_a_date_29_02_2024": {
+        "title": "¿Listo para una cita?",
+        "body": "Hemos preparado docenas de preguntas personalizadas para ti y tu pareja"
+      },
+      "pre_date_time_to_connect_29_02_2024": {
+        "title": "¡Hora de Conectar!",
+        "body": "Haz una pausa en tu día ajetreado y explora a tu pareja a través de Nemlys"
+      },
+      "pre_date_lets_pla_game_29_02_2024": {
+        "title": "¡Juguemos un Juego!",
+        "body": "Abre Nemlys y participa en algo de diversión en pareja con la pregunta interactiva de hoy"
+      }
+    },
+    "finish_date": {
+      "finish_date_oops_29_02_2024": {
+        "title": "¡Ups!",
+        "body": "No dejes tu cita incompleta. Abre Nemlys y sumérgete de nuevo en la conversación"
+      },
+      "finish_date_dont_leave_love_hanging_29_02_2024": {
+        "title": "No dejes el amor en el aire...",
+        "body": "Abre Nemlys para terminar tus preguntas de relación y descubrir la magia"
+      }
+    },
+    "after_date": {
+      "after_date_time_for_your_relationship_29_02_2024": {
+        "title": "Tiempo para tu relación",
+        "body": "Obtén un efecto positivo en la pareja respondiendo preguntas juntos"
+      },
+      "after_date_morning_sunshine_29_02_2024": {
+        "title": "¡Buenos días, rayo de sol!",
+        "body": "Accede a Nemlys para tu pregunta diaria que profundiza el vínculo con tu pareja"
+      },
+      "after_date_guess_what_time_29_02_2024": {
+        "title": "¿Adivina qué hora es?",
+        "body": "Sumérgete en tu dosis diaria de curiosidad. Fortalece la conexión con tu persona especial"
+      },
+      "after_date_feeling_curious_29_02_2024": {
+        "title": "¿Te sientes curioso?",
+        "body": "Embarca en un viaje de descubrimiento con tu pareja a través de la pregunta provocadora de hoy"
+      },
+      "after_date_challenge_accepted_29_02_2024": {
+        "title": "¿Desafío aceptado?",
+        "body": "Abre Nemlys ahora y pon a prueba tu conocimiento de la relación con la pregunta divertida de hoy"
+      }
     },
     "reflection": {
       "title": "Tiempo de reflexionar sobre tu relación con {{partnerName}}",
       "body": "Elige una reflexión y escribe tu respuesta"
-    },
-    "trial_expired": {
-      "title": "Mantén el Acceso Premium Activo",
-      "body": "Descubre dos opciones para mantener el acceso completo"
     }
   },
   "home": {

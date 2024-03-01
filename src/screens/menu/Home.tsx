@@ -20,12 +20,19 @@ import { localAnalytics } from '@app/utils/analytics';
 import { TouchableOpacity } from 'react-native';
 import NewReflection from '@app/components/date/NewReflection';
 import { getIsLowPersonalization } from '@app/api/reflection';
-import { JobSlug } from '@app/types/domain';
+import {
+  JobSlug,
+  NOTIFICATION_IDENTIFIERS,
+  NOTIFICATION_SUBTYPE,
+  NOTIFICATION_TYPE,
+} from '@app/types/domain';
 import HomePremiumBanner, { HomePremiumBannerRef } from '@app/components/premium/HomePremiumBanner';
-import { getNow } from '@app/utils/date';
+import { getNow, calculateEveningTimeAfterDays } from '@app/utils/date';
 import Menu from '@app/components/menu/Menu';
 import { logout } from './Profile';
-
+import { recreateNotificationList } from '@app/utils/notification';
+import { shuffle } from '@app/utils/array';
+import _ from 'lodash';
 export default function ({
   route,
   navigation,
@@ -62,6 +69,48 @@ export default function ({
     { slug: 'meaningful', title: i18n.t('jobs.meaningful'), icon: DateMeaningful },
     { slug: 'fun', title: i18n.t('jobs.fun'), icon: DateFun },
   ];
+
+  async function scheduleFirstDateNotification() {
+    const preDateIdentifier = NOTIFICATION_IDENTIFIERS.PRE_DATE + authContext.userId!;
+
+    const notificationOrder = shuffle([
+      NOTIFICATION_SUBTYPE.PRE_DATE_1,
+      NOTIFICATION_SUBTYPE.PRE_DATE_2,
+      NOTIFICATION_SUBTYPE.PRE_DATE_3,
+    ]);
+    const trigerSeconds = [10 * 60, 60 * 60, calculateEveningTimeAfterDays(1)];
+    const notifications = (
+      _.zip(notificationOrder, trigerSeconds) as [NOTIFICATION_SUBTYPE, number][]
+    ).map(([subtype, seconds]) => ({
+      screen: 'Home',
+      title: i18n.t(`notification.pre_date.${subtype}.title`),
+      body: i18n.t(`notification.pre_date.${subtype}.body`),
+      trigger: {
+        seconds,
+        repeats: false,
+      },
+      subtype,
+    }));
+    await recreateNotificationList(
+      authContext.userId!,
+      preDateIdentifier,
+      [
+        ...notifications,
+        {
+          screen: 'Home',
+          title: i18n.t(`notification.pre_date.${NOTIFICATION_SUBTYPE.PRE_DATE_1}.title`),
+          body: i18n.t(`notification.pre_date.${NOTIFICATION_SUBTYPE.PRE_DATE_1}.body`),
+          trigger: {
+            seconds: calculateEveningTimeAfterDays(7),
+            repeats: false,
+          },
+          subtype: NOTIFICATION_SUBTYPE.PRE_DATE_1,
+        },
+      ],
+      NOTIFICATION_TYPE.PRE_DATE,
+      [...notificationOrder, NOTIFICATION_SUBTYPE.PRE_DATE_1].join(':'),
+    );
+  }
 
   async function getIsOnboarded() {
     setPremiumDataLoaded(undefined);
@@ -148,6 +197,8 @@ export default function ({
         setLoading(false);
 
         setShowNewReflection((dateCount === 3 || dateCount === 8) && !levelNewReflection.count);
+
+        if (dateCount === 0) void scheduleFirstDateNotification();
       }
     }
     setLoading(false);

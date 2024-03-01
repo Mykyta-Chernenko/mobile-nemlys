@@ -30,9 +30,6 @@ import PremiumMeaningful from '@app/icons/premium_meaningful';
 import PremiumFun from '@app/icons/premium_fun';
 import { getNow, sleep } from '@app/utils/date';
 import { AnimatedFontText } from '@app/components/utils/AnimatedFontText';
-import moment from 'moment';
-import { NOTIFICATION_IDENTIFIERS } from '@app/types/domain';
-import { recreateNotification } from '@app/utils/notification';
 import * as RNIap from 'react-native-iap';
 import { TouchableOpacity } from 'react-native-gesture-handler';
 export default function ({
@@ -151,25 +148,7 @@ export default function ({
     void getData();
     isFirstMount.current = false;
   }, []);
-  const scheduleNotification = async (trialFinish: string) => {
-    const finish = moment(trialFinish);
-    const now = getNow();
-    const secondsToTrialExpired = finish.diff(now, 'seconds');
-    if (secondsToTrialExpired > 0) {
-      const reflectionItendifier = NOTIFICATION_IDENTIFIERS.TRIAL_EXPIRED + authContext.userId!;
-      await recreateNotification(
-        authContext.userId!,
-        reflectionItendifier,
-        'PremiumOffer',
-        i18n.t('notification.trial_expired.title'),
-        i18n.t('notification.trial_expired.body'),
-        {
-          seconds: secondsToTrialExpired,
-          repeats: false,
-        },
-      );
-    }
-  };
+
   const handleButtonPress = async () => {
     setButtonDisabled(true);
 
@@ -193,7 +172,6 @@ export default function ({
           logErrorsWithMessage(res.error, 'Manage premium function returned error');
           return;
         }
-        await scheduleNotification(res.data.trial_finish as string);
         navigation.navigate('PremiumSuccess', { state: 'trial_started' });
       } else {
         try {
