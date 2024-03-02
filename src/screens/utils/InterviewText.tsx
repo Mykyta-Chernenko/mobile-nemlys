@@ -36,6 +36,17 @@ export default function ({
     });
   }, []);
   const saveAgreed = async (agreed: boolean) => {
+    const r = await supabase
+      .from('user_profile')
+      .update({
+        showed_interview_request: true,
+        updated_at: getNow().toISOString(),
+      })
+      .eq('user_id', authContext.userId!);
+    if (r.error) {
+      logSupaErrors(r.error);
+      return;
+    }
     const newResponse = await supabase
       .from('user_technical_details')
       .update({

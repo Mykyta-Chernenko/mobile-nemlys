@@ -7,6 +7,7 @@ import { DENIED_NOTIFICATION_STATUS, GRANTED_NOTIFICATION_STATUS } from '@app/ut
 import { localAnalytics } from './analytics';
 import { NotificationTriggerInput } from 'expo-notifications';
 import { getNow } from './date';
+import { Mutex } from 'async-mutex';
 export async function createNewNotification(
   userId: string,
   title: string,
@@ -89,6 +90,8 @@ export async function removeOldNotification(identifier: string) {
   }
 }
 
+const recreateNotificationMutex = new Mutex();
+
 export async function recreateNotification(
   userId: string,
   identifier: string,
@@ -99,31 +102,37 @@ export async function recreateNotification(
   type: string,
   subtype: string,
 ) {
-  void localAnalytics().logEvent('PushNotificationCreated', {
-    screen: 'PushNotification',
-    action: 'Created',
-    userId,
-    identifier,
-    screenNotification: screen,
-    title,
-    body,
-    trigger,
-    type,
-    subtype,
-  });
-  await removeOldNotification(identifier);
-  await createNewNotification(
-    userId,
-    title,
-    body,
-    trigger,
-    identifier,
-    screen,
-    type,
-    undefined,
-    subtype,
-  );
+  const release = await recreateNotificationMutex.acquire();
+  try {
+    void localAnalytics().logEvent('PushNotificationCreated', {
+      screen: 'PushNotification',
+      action: 'Created',
+      userId,
+      identifier,
+      screenNotification: screen,
+      title,
+      body,
+      trigger,
+      type,
+      subtype,
+    });
+    await removeOldNotification(identifier);
+    await createNewNotification(
+      userId,
+      title,
+      body,
+      trigger,
+      identifier,
+      screen,
+      type,
+      undefined,
+      subtype,
+    );
+  } finally {
+    release();
+  }
 }
+const recreateNotificationListMutex = new Mutex();
 export async function recreateNotificationList(
   userId: string,
   identifier: string,
@@ -137,30 +146,35 @@ export async function recreateNotificationList(
   type: string,
   band: string,
 ) {
-  const { status } = await Notifications.getPermissionsAsync();
-  if (status === GRANTED_NOTIFICATION_STATUS) {
-    await removeOldNotification(identifier);
-    for (const n of notifications) {
-      await createNewNotification(
+  const release = await recreateNotificationListMutex.acquire();
+  try {
+    const { status } = await Notifications.getPermissionsAsync();
+    if (status === GRANTED_NOTIFICATION_STATUS) {
+      await removeOldNotification(identifier);
+      for (const n of notifications) {
+        await createNewNotification(
+          userId,
+          n.title,
+          n.body,
+          n.trigger,
+          identifier,
+          n.screen,
+          type,
+          band,
+          n.subtype,
+        );
+      }
+      void localAnalytics().logEvent('PushNotificationBandCreated', {
+        screen: 'PushNotification',
+        action: 'Created',
         userId,
-        n.title,
-        n.body,
-        n.trigger,
         identifier,
-        n.screen,
         type,
         band,
-        n.subtype,
-      );
+      });
     }
-    void localAnalytics().logEvent('PushNotificationBandCreated', {
-      screen: 'PushNotification',
-      action: 'Created',
-      userId,
-      identifier,
-      type,
-      band,
-    });
+  } finally {
+    release();
   }
 }
 

@@ -23,6 +23,7 @@
     "@rneui/base": "^4.0.0-rc.7",
     "@rneui/themed": "^4.0.0-rc.7",
     "@supabase/supabase-js": "^2.39.3",
+    "async-mutex": "^0.4.1",
     "expo": "~48.0.19",
     "expo-apple-authentication": "~6.0.1",
     "expo-application": "~5.1.1",

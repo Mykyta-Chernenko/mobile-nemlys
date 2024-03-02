@@ -23,11 +23,11 @@ import { localAnalytics } from '@app/utils/analytics';
 import StyledInput from '@app/components/utils/StyledInput';
 import * as Localization from 'expo-localization';
 import { getNow } from '@app/utils/date';
-let handlingUser = false;
+import { Mutex } from 'async-mutex';
 export function handleUserAfterSignUp(provider: string): (user: SupabaseUser) => Promise<void> {
+  const handleUserAfterMutex = new Mutex();
   return async (user: SupabaseUser) => {
-    if (handlingUser) return;
-    handlingUser = true;
+    const release = await handleUserAfterMutex.acquire();
     try {
       void localAnalytics().logEvent('LoginFinished', {
         screen: 'Login',
@@ -97,7 +97,7 @@ export function handleUserAfterSignUp(provider: string): (user: SupabaseUser) =>
         });
       }
     } finally {
-      handlingUser = false;
+      release();
     }
   };
 }

@@ -55,9 +55,9 @@ export default function ({ navigation }: NativeStackScreenProps<AuthStackParamLi
         password: password,
       });
       if (error2) {
-        if (error2.message === 'User already registered') {
+        if (error2.message.includes('User already registered')) {
           alert(i18n.t('login.invalid_username'));
-        } else if (error2.message === 'Password should be at least 6 characters') {
+        } else if (error2.message.includes('Password should be at least 6 characters')) {
           alert(i18n.t('login.password_is_too_short'));
         } else {
           logErrorsWithMessage(error2, error2.message);
