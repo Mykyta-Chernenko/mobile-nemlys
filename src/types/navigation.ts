@@ -33,7 +33,9 @@ export type MainStackParamList = {
   InterviewRequest: {
     refreshTimeStamp: string | undefined;
   };
-  InterviewText: undefined;
+  InterviewText: {
+    refreshTimeStamp: string | undefined;
+  };
   Diary: { refreshTimeStamp: string | undefined };
   DiaryEntry: { id: number };
   DiaryNewEntry: undefined;

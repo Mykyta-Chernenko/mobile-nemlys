@@ -143,7 +143,7 @@ export default function ({
         }
         const showInterview = (dateYesterdayCount || 0) > 0;
         if (showInterview) {
-          navigation.navigate('InterviewText');
+          navigation.navigate('InterviewText', { refreshTimeStamp: new Date().toISOString() });
         }
       }
       const activeDatesRes = await supabase

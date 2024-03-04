@@ -1546,6 +1546,8 @@ export type Database = {
           user_id: string;
           user_locale: string | null;
           wants_recordings: boolean;
+          showed_text_interview: boolean;
+          agreed_on_text_interview: boolean;
         };
         Insert: {
           after_trial_premium_offered?: boolean;
@@ -1559,6 +1561,8 @@ export type Database = {
           user_id: string;
           user_locale?: string | null;
           wants_recordings?: boolean;
+          showed_text_interview?: boolean;
+          agreed_on_text_interview?: boolean;
         };
         Update: {
           after_trial_premium_offered?: boolean;
@@ -1572,6 +1576,8 @@ export type Database = {
           user_id?: string;
           user_locale?: string | null;
           wants_recordings?: boolean;
+          showed_text_interview?: boolean;
+          agreed_on_text_interview?: boolean;
         };
         Relationships: [
           {

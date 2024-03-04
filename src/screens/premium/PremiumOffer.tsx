@@ -430,7 +430,7 @@ export default function ({
       currentPremiumState === 'trial_expired' ||
       (currentPremiumState !== 'premium' && currentPremiumState !== 'trial' && !eligibleForTrial);
     if (showInterview) {
-      navigation.navigate('InterviewText');
+      navigation.navigate('InterviewText', { refreshTimeStamp: new Date().toISOString() });
     } else {
       navigation.navigate('Home', {
         refreshTimeStamp: new Date().toISOString(),
@@ -489,7 +489,7 @@ export default function ({
   }) as unknown as string;
 
   return loading || productLoading ? (
-    <Loading></Loading>
+    <Loading light></Loading>
   ) : (
     <View
       style={{
