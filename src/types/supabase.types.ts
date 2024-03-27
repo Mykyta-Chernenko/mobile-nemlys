@@ -1545,6 +1545,7 @@ export type Database = {
           updated_at: string;
           user_id: string;
           user_locale: string | null;
+          user_timezone: string | null;
           wants_recordings: boolean;
           showed_text_interview: boolean;
           agreed_on_text_interview: boolean;
@@ -1560,6 +1561,7 @@ export type Database = {
           updated_at?: string;
           user_id: string;
           user_locale?: string | null;
+          user_timezone?: string | null;
           wants_recordings?: boolean;
           showed_text_interview?: boolean;
           agreed_on_text_interview?: boolean;
@@ -1575,6 +1577,7 @@ export type Database = {
           updated_at?: string;
           user_id?: string;
           user_locale?: string | null;
+          user_timezone?: string | null;
           wants_recordings?: boolean;
           showed_text_interview?: boolean;
           agreed_on_text_interview?: boolean;

@@ -33,6 +33,7 @@ import { logout } from './Profile';
 import { recreateNotificationList } from '@app/utils/notification';
 import { shuffle } from '@app/utils/array';
 import _ from 'lodash';
+import { TIMEZONE } from '@app/utils/constants';
 export default function ({
   route,
   navigation,
@@ -120,6 +121,7 @@ export default function ({
       .from('user_profile')
       .select('*')
       .eq('user_id', authContext.userId!)
+      .not('user_id', 'is', null)
       .single();
     if (data.error) {
       logSupaErrors(data.error);
@@ -199,6 +201,12 @@ export default function ({
         setShowNewReflection((dateCount === 3 || dateCount === 8) && !levelNewReflection.count);
 
         if (dateCount === 0) void scheduleFirstDateNotification();
+
+        // update user timezone
+        void supabase
+          .from('user_technical_details')
+          .update({ user_timezone: TIMEZONE })
+          .eq('user_id', authContext.userId!);
       }
     }
     setLoading(false);

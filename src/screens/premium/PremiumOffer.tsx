@@ -215,6 +215,8 @@ export default function ({
 
   const monthlySubscriptionId = 'nemlys.subscription.monthly';
   const yearlySubscriptionId = 'nemlys.subscription.yearly';
+  const [monthlyPrice, setMonthlyPrice] = useState('');
+  const [yearlyPrice, setYearlyPrice] = useState('');
 
   useEffect(() => {
     let purchaseUpdateSubscription;
@@ -339,15 +341,18 @@ export default function ({
           }
           setSubscriptionLoading(false);
         });
-
         const func = async () => {
-          let products;
-          if (Platform.OS === 'ios') {
-            products = await RNIap.getProducts({
-              skus: [monthlySubscriptionId, yearlySubscriptionId],
-            });
-          } else {
-            products = await RNIap.getSubscriptions({
+          const products = await RNIap.getProducts({
+            skus: [monthlySubscriptionId, yearlySubscriptionId],
+          });
+          const monthlyProduct = products.find((x) => x.productId === monthlySubscriptionId);
+          const yearlyProduct = products.find((x) => x.productId === yearlySubscriptionId);
+          setMonthlyPrice(monthlyProduct ? monthlyProduct.localizedPrice : '5$');
+          setYearlyPrice(yearlyProduct ? yearlyProduct.localizedPrice : '49$');
+          let subscriptions: RNIap.Subscription[] = [];
+          if (Platform.OS === 'android') {
+            // we need to get all subscription so that it works on android
+            subscriptions = await RNIap.getSubscriptions({
               skus: [monthlySubscriptionId, yearlySubscriptionId],
             });
           }
@@ -356,6 +361,7 @@ export default function ({
             action: 'StoreProductsLoaded',
             userId: authContext.userId,
             products,
+            subscriptions,
           });
         };
         await retryAsync('PremiumOfferGetProducts', func);
@@ -694,7 +700,7 @@ export default function ({
                           <AnimatedFontText
                             style={{ color: subTextColorAnnual, fontFamily: REGULAR_FONT_FAMILY }}
                           >
-                            {i18n.t('premium.offer.plan_yearly_price')}
+                            {i18n.t('premium.offer.plan_yearly_price', { price: yearlyPrice })}
                           </AnimatedFontText>
                         </View>
                       </TouchableWithoutFeedback>
@@ -723,7 +729,7 @@ export default function ({
                           <AnimatedFontText
                             style={{ color: subTextColorMonthly, fontFamily: REGULAR_FONT_FAMILY }}
                           >
-                            {i18n.t('premium.offer.plan_monthly_price')}
+                            {i18n.t('premium.offer.plan_monthly_price', { price: monthlyPrice })}
                           </AnimatedFontText>
                         </View>
                       </TouchableWithoutFeedback>
