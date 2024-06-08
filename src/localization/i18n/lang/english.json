@@ -29,7 +29,7 @@
   "new_reflection": {
     "title_1": "Try ",
     "title_2": "Reflections ",
-    "title_3": "to better undsrtand your relationship.",
+    "title_3": "to better understand your relationship.",
     "button": "Remind me later"
   },
   "jobs": {
@@ -347,13 +347,6 @@
       "home": "Back home"
     }
   },
-  "beta": {
-    "pre_beta_title": "beta",
-    "title": "Join our beta",
-    "content": "Our beta give you the access to the features that we haven't released to the public",
-    "become_beta_user": "Become beta user",
-    "joined_successfully": "Welcome to the beta 😈"
-  },
   "welcome": {
     "title_first": "Get questions to discuss with ",
     "title_second": "your partner",
@@ -386,7 +379,6 @@
       "perfect": "Perfect",
       "write_answer": "Write answer"
     },
-
     "analyzing": {
       "text_1": "Analyzing\nyour writing",
       "text_2": "Analyzing\nyour answers",
@@ -396,8 +388,6 @@
     },
     "language": {
       "title": "Select App Language",
-      "en": "English",
-      "es": "Spanish",
       "new_language": "Request new language",
       "write_language": "Write language..."
     },

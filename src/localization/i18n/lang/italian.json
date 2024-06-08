@@ -1,0 +1,422 @@
+{
+  "nemlys": "Nemlys",
+  "awesome": "Fantastico!",
+  "loading": "Caricamento",
+  "continue": "Continua",
+  "or": "O",
+  "ok": "Ok",
+  "yes": "Sì",
+  "no": "No",
+  "close": "Chiudi",
+  "save": "Salva",
+  "cancel": "Annulla",
+  "confirm": "Conferma",
+  "submit": "Invia",
+  "remove": "Rimuovi",
+  "next": "Avanti",
+  "skip": "Salta",
+  "finish": "Termina",
+  "input_here": "Inserisci qui",
+  "email_placeholder": "Inserisci la tua email",
+  "password_placeholder": "Inserisci la tua password",
+  "password_again_placeholder": "Inserisci di nuovo la tua password",
+  "unexpected_error": "Si è verificato un errore imprevisto, riprova",
+  "errors": {
+    "play_market": "Non sei loggato nella tua app Play Market, per favore, accedi lì prima e poi torna all'app Nemlys per iniziare l'abbonamento",
+    "payment_error": "C'è stato un errore intermedio con il negozio del tuo telefono. Puoi generalmente risolverlo aspettando qualche minuto e provando a iniziare di nuovo l'abbonamento"
+  },
+  "level": "Livello",
+  "new_reflection": {
+    "title_1": "Prova ",
+    "title_2": "Riflessioni ",
+    "title_3": "per comprendere meglio la tua relazione.",
+    "button": "Ricordamelo più tardi"
+  },
+  "jobs": {
+    "issues": "Problemi nella nostra relazione",
+    "sex": "Intimità & Sesso",
+    "know": "Conoscersi",
+    "hard": "Domande profonde",
+    "meaningful": "Conversazione significativa",
+    "fun": "Argomenti leggeri e divertenti"
+  },
+  "notification": {
+    "pre_date": {
+      "pre_date_ready_for_a_date_29_02_2024": {
+        "title": "Pronto per un appuntamento?",
+        "body": "Abbiamo preparato dozzine di domande personalizzate per te e il tuo partner"
+      },
+      "pre_date_time_to_connect_29_02_2024": {
+        "title": "È ora di connettersi!",
+        "body": "Fai una pausa nella tua giornata impegnata ed esplora il tuo partner attraverso Nemlys"
+      },
+      "pre_date_lets_pla_game_29_02_2024": {
+        "title": "Giochiamo!",
+        "body": "Apri Nemlys e divertiti con la domanda interattiva di oggi"
+      }
+    },
+    "finish_date": {
+      "finish_date_oops_29_02_2024": {
+        "title": "Ops!",
+        "body": "Non lasciare incompleto il tuo appuntamento. Apri Nemlys e torna alla conversazione"
+      },
+      "finish_date_dont_leave_love_hanging_29_02_2024": {
+        "title": "Non lasciare l'amore in sospeso...",
+        "body": "Apri Nemlys per completare le tue domande di relazione e scoprire la magia"
+      }
+    },
+    "after_date": {
+      "after_date_time_for_your_relationship_29_02_2024": {
+        "title": "È tempo per la tua relazione",
+        "body": "Ottieni un effetto positivo sul rapporto rispondendo insieme alle domande"
+      },
+      "after_date_morning_sunshine_29_02_2024": {
+        "title": "Buongiorno, sole!",
+        "body": "Accedi a Nemlys per la tua domanda quotidiana che approfondisce il legame con il tuo partner"
+      },
+      "after_date_guess_what_time_29_02_2024": {
+        "title": "Indovina che ora è?",
+        "body": "Immergiti nella tua dose quotidiana di curiosità. Rafforza il legame con la tua persona speciale"
+      },
+      "after_date_feeling_curious_29_02_2024": {
+        "title": "Sei curioso?",
+        "body": "Imbarcati in un viaggio di scoperta con il tuo partner attraverso la domanda stimolante di oggi"
+      },
+      "after_date_challenge_accepted_29_02_2024": {
+        "title": "Sfida accettata?",
+        "body": "Apri Nemlys ora e metti alla prova le tue conoscenze sulle relazioni con la domanda divertente di oggi!"
+      }
+    },
+    "reflection": {
+      "title": "È ora di riflettere sulla tua relazione con {{partnerName}}",
+      "body": "Scegli una riflessione e scrivi la tua risposta"
+    }
+  },
+  "home": {
+    "discussed_questions": "argomenti discussi",
+    "you": "Tu",
+    "partner": "Partner",
+    "menu": {
+      "discuss": "Discuti",
+      "profile": "Profilo",
+      "premium": "Premium",
+      "reflect": "Rifletti"
+    }
+  },
+  "profile": {
+    "title": "Profilo",
+    "my_account": "Il Mio Account",
+    "settings": "Impostazioni",
+    "about": "Informazioni su Nemlys",
+    "your_name": "Il Tuo Nome",
+    "partner_name": "Nome del Partner",
+    "language": "Lingua",
+    "subscription": "Gestisci abbonamento",
+    "rate": "Valuta la nostra app",
+    "share": "Condividi la nostra app",
+    "feature_request": "Richiesta di funzionalità",
+    "feature_request_placeholder": "Scrivi cosa vorresti vedere nell'app Nemlys",
+    "call": "Chiamata con i fondatori",
+    "contact": "Contattaci",
+    "contact_placeholder": "Scrivi cosa vuoi che ti aiutiamo a fare",
+    "logout": "Disconnetti",
+    "delete_account": "Elimina account",
+    "are_you_sure_you_want_to_delete_account": "Sei sicuro di voler eliminare il tuo account?"
+  },
+  "premium": {
+    "banner": {
+      "premium": "Accesso illimitato",
+      "premium_right": "∞",
+      "trial": "Accesso illimitato",
+      "days_left": "{{days}} giorni rimanenti",
+      "new": "Argomenti da provare",
+      "topics_left": "{{left}}/{{total}} rimanenti",
+      "free": "Argomenti giornalieri"
+    },
+    "offer": {
+      "title": "Premium",
+      "enjoy_your_premium": "Goditi il tuo premium!",
+      "manage": "Gestisci abbonamento",
+      "upgrade_trial": "Hai ancora {{trialDays}} giorni di accesso di prova",
+      "reached_limit": "Hai raggiunto il tuo limite giornaliero. ",
+      "try_unlimited_1": "Prova con ",
+      "try_unlimited_2": "accesso illimitato",
+      "premium_title": "Ottieni il Full Premium per ",
+      "trial_expired": "Il tuo accesso illimitato di prova è scaduto",
+      "unlimited_topics_title": "Ottieni Argomenti Illimitati",
+      "unlimited_topics_explanation": "Ora hai {{dailyTopics}} argomenti al giorno",
+      "trial_button": "Prova 7 giorni gratis",
+      "trial_no_card": "Nessuna carta di credito richiesta",
+      "choose_plan": "Scegli il tuo piano",
+      "plan_monthly_title": "Mensile",
+      "plan_monthly_price": "{{price}}/mese",
+      "plan_yearly_title": "Annuale",
+      "plan_yearly_price": "{{price}}/anno",
+      "subscribe": "Inizia con una prova gratuita di 7 giorni*",
+      "terms": "Termini di Servizio",
+      "privacy": "Informativa sulla Privacy",
+      "charged": "* Sarai addebitato quando la prova sarà terminata a meno che non annulli l'abbonamento"
+    },
+    "success": {
+      "trial": {
+        "title_1": "Tutto fatto! Goditi il tuo ",
+        "title_2": "accesso illimitato",
+        "button": "Fantastico, grazie"
+      },
+      "premium": {
+        "title_1": "Il tuo premium è stato attivato con successo, ",
+        "title_2": "Goditi!",
+        "button": "Fantastico, grazie"
+      }
+    }
+  },
+  "reflection": {
+    "title": "Riflessioni",
+    "available": "{{number}} nuove riflessioni disponibili",
+    "completed": "{{number}} Completate",
+    "start": "Inizia",
+    "explanation": {
+      "button": "Capito",
+      "reason_1": "Più Riflessioni = Maggiore Qualità di argomenti 'Personalizzati'",
+      "reason_2": "Utilizziamo l'IA, quindi più rifletti e scrivi meglio sarà l'app",
+      "reason_3": "I tuoi dati sono al sicuro. Li utilizziamo solo per generare domande",
+      "title": "Perché è importante riflettere e scrivere?"
+    },
+    "no_reflection": "Discuti un argomento per ottenere la tua nuova scheda di riflessione",
+    "finished_writing_title_1": "Fatto!",
+    "finished_writing_title_2": " Sei un ottimo scrittore",
+    "finished_writing_button": "Fantastico, grazie!",
+    "level_0": "introduzione",
+    "level": "livello {{number}}"
+  },
+  "update": {
+    "title": "Aggiornamento",
+    "outdated_title": "La tua versione è obsoleta",
+    "need_to_update": "Dovrai aggiornare la tua app all'ultima versione per continuare a usarla."
+  },
+  "interview": {
+    "title_first": "Parla con i cofondatori di Nemlys per ",
+    "title_second": "ottenere 2 mesi di accesso illimitato",
+    "reason_1_title_1": "Pianifica una ",
+    "reason_1_title_2": "chiamata di 30 minuti ",
+    "reason_1_title_3": "con i cofondatori di Nemlys",
+    "reason_2_title_1": "Condividi cosa ",
+    "reason_2_title_2": "ti piace e non ti piace ",
+    "reason_2_title_3": "di Nemlys",
+    "reason_3_title_1": "Ottieni ",
+    "reason_3_title_2": "2 mesi ",
+    "reason_3_title_3": "di accesso illimitato dopo la chiamata",
+    "button": "Pianifica una chiamata"
+  },
+  "interview_text": {
+    "title_first": "Scrivi il tuo feedback per ottenere ",
+    "title_second": "1 mese di Premium",
+    "reason_1_title_1": "",
+    "reason_1_title_2": "Scrivi risposte",
+    "reason_1_title_3": " a 3 domande su cosa ti piace e non ti piace di Nemlys",
+    "reason_2_title_1": "Ottieni ",
+    "reason_2_title_2": "1 mese di premium",
+    "reason_2_title_3": "",
+    "reason_3_title_1": "Le tue risposte ",
+    "reason_3_title_2": "ci aiutano a decidere",
+    "reason_3_title_3": " su cosa lavorare dopo",
+    "button": "Scrivici",
+    "thank": "Incredibile! Ti contatteremo via email: {{email}}"
+  },
+  "recording": {
+    "button": "Registra",
+    "stop": {
+      "title_1": "Sei sicuro? Non puoi ",
+      "title_2": "riprendere ",
+      "title_3": "la registrazione dopo averla fermata",
+      "button": "Sì, fermati"
+    },
+    "delete": {
+      "title_1": "Sei sicuro di voler ",
+      "title_2": "eliminare la registrazione",
+      "title_3": "?",
+      "button": "Sì, elimina"
+    },
+    "permission": {
+      "title_1": "L'analisi audio non funziona senza ",
+      "title_2": "permesso del microfono",
+      "button": "Apri impostazioni"
+    },
+    "tooltip": {
+      "feature_intro": "Prova l'analisi audio della tua conversazione, migliorerà le domande future",
+      "wanted_recording": "Abbiamo finalmente lanciato l'analisi audio. Provala!",
+      "limit_reached": "Hai raggiunto il limite giornaliero di analisi audio"
+    }
+  },
+  "date": {
+    "reminder": {
+      "title": "{{firstName}}, è ora di connettersi con il partner",
+      "body": "Divertente? Profondo? Intimo? Scegli e discuti gli argomenti insieme"
+    },
+    "generating_questions_error": "Spiacente, la nostra IA non può generare queste domande, prova un'altra categoria o argomento",
+    "notification": {
+      "title_1": "Ricevi un promemoria",
+      "title_2": " per discutere le domande con il tuo partner",
+      "title_3": "",
+      "confirm": "Consenti notifiche"
+    },
+    "stop_popup": {
+      "title_1": "Sei sicuro di voler ",
+      "title_2": "fermare la discussione",
+      "title_3": "?",
+      "subtitle": "Non possiamo salvare i tuoi progressi.",
+      "confirm": "Sì, ferma la discussione",
+      "cancel": "No, torna indietro"
+    },
+    "share": "Condividi",
+    "stop": "Ferma l'appuntamento",
+    "start_date": "Inizia l'appuntamento",
+    "level_title_first": "Seleziona ",
+    "level_title_second": "la profondità ",
+    "level_title_third": "delle tue domande",
+    "level": {
+      "light": "Leggero",
+      "normal": "Normale",
+      "deep": "Profondo"
+    },
+    "topic_title_first": "Seleziona ",
+    "topic_title_second": "1 argomento ",
+    "topic_title_third": "da discutere con il partner",
+    "topic": {
+      "title": "Seleziona un argomento",
+      "surprise": "Casuale",
+      "intimacy": "Piccante",
+      "emotions": "Emozioni",
+      "fun": "Divertimento",
+      "worldview": "Visione del mondo",
+      "goals": "Obiettivi",
+      "future": "Futuro",
+      "communication": "Comunicazione",
+      "preferences": "Preferenze",
+      "appearance": "Aspetto",
+      "travel": "Viaggio",
+      "career": "Carriera",
+      "expectations": "Aspettative",
+      "values": "Valori",
+      "gifts": "Regali",
+      "friends": "Amici",
+      "childhood": "Infanzia",
+      "commitment": "Impegno",
+      "past": "Passato",
+      "ex": "Ex",
+      "fidelity": "Fiducia",
+      "trust": "Fede",
+      "money": "Soldi",
+      "conflict": "Conflitto",
+      "social_circle": "Circolo sociale",
+      "love_language": "Linguaggio dell'amore",
+      "mental_health": "Salute mentale",
+      "parents": "Genitori",
+      "children": "Bambini",
+      "living_together": "Vivere insieme"
+    },
+    "generating_questions_first": "Generazione di domande da discutere ",
+    "generating_questions_second": "con il partner",
+    "discuss": "Discutere gli argomenti insieme",
+    "feedback": {
+      "with_partner": {
+        "title_first": "Allora! Com'è stata ",
+        "title_second": "la tua discussione",
+        "title_third": "?",
+        "choice_4": "Abbiamo avuto alcune idee interessanti",
+        "choice_3": "È stato bello",
+        "choice_2": "Niente di nuovo",
+        "choice_1": "Non è stato affatto utile"
+      },
+      "alone": {
+        "title_first": "Allora! Qual è ",
+        "title_second": "la tua impressione",
+        "title_third": "?",
+        "choice_4": "Molte domande interessanti",
+        "choice_3": "Buone domande",
+        "choice_2": "Niente di speciale",
+        "choice_1": "Non mi piace"
+      }
+    },
+    "new_level": {
+      "reached": "hai raggiunto",
+      "have": "hai",
+      "title_first": "Discussione",
+      "title_second": "completata",
+      "alone_title_first": "La tua esplorazione dell'app",
+      "home": "Torna a casa"
+    }
+  },
+  "welcome": {
+    "title_first": "Ricevi domande da discutere con ",
+    "title_second": "il tuo partner",
+    "button": {
+      "default": "Continua"
+    }
+  },
+  "onboarding": {
+    "your_name_first": "Ehi! Come ti chiami\n",
+    "your_name_second": "tu",
+    "your_name_third": "?",
+    "partner_name_first": "Come si chiama\n",
+    "partner_name_second": "il tuo partner",
+    "partner_name_third": "?",
+    "job": {
+      "title_first": "Cosa vuoi ",
+      "title_second": "",
+      "title_third": "ottenere?",
+      "fun": "Domande divertenti e facili per le discussioni in coppia",
+      "hard": "Domande che troviamo difficili da affrontare noi stessi",
+      "issues": "Modi per risolvere i problemi con il partner",
+      "other": "Altro",
+      "other_placeholder": " Scrivi la tua risposta..."
+    },
+    "reflection": {
+      "private": "informazioni private",
+      "explanation": "Rifletti da solo per comprendere meglio la tua relazione.",
+      "short": "Troppo breve",
+      "good": "Buono",
+      "perfect": "Perfetto",
+      "write_answer": "Scrivi la risposta"
+    },
+    "analyzing": {
+      "text_1": "Analisi\ndella tua scrittura",
+      "text_2": "Analisi\ndelle tue risposte",
+      "text_3": "Adattamento dell'app\nalla tua coppia",
+      "text_4_first": "Tutto fatto,\n",
+      "text_4_second": "inizia a esplorare\nl'app"
+    },
+    "language": {
+      "title": "Seleziona la lingua dell'app",
+      "new_language": "Richiedi una nuova lingua",
+      "write_language": "Scrivi la lingua..."
+    },
+    "discuss_way": {
+      "title_first": "Come vorresti ",
+      "title_second": "discutere ",
+      "title_third": "le domande?",
+      "choice_1": "Di fronte al mio partner",
+      "choice_2": "Con il mio partner online",
+      "choice_3": "Ricevi domande e discuti più tardi",
+      "choice_4": "Non lo so"
+    }
+  },
+  "login": {
+    "password_is_too_short": "La password deve essere di almeno 6 caratteri",
+    "invalid_username": "L'email o la password è sbagliata",
+    "title": "Accedi\nall'account Nemlys",
+    "check_email_for_login_link": "Il link di accesso è stato inviato alla tua email",
+    "button": {
+      "default": "Continua con l'email"
+    },
+    "forgot_password": {
+      "link": "Password dimenticata?"
+    }
+  },
+  "oauth": {
+    "button": {
+      "google": "Accedi con Google",
+      "apple": "Accedi con Apple"
+    }
+  }
+}

@@ -114,6 +114,7 @@
     "subscription": "Gestionar suscripción",
     "rate": "Valora nuestra app",
     "share": "Comparte nuestra app",
+    "feature_request": "Solicitud de funcionalidad",
     "feature_request_placeholder": "Escribe qué te gustaría ver en la aplicación Nemlys",
     "call": "Llamada con los fundadores",
     "contact": "Contáctanos",
@@ -328,6 +329,7 @@
         "choice_1": "No fue útil"
       },
       "alone": {
+        "title_first": "¡Así que! ¿Qué es ",
         "title_second": "tu impresión",
         "title_third": "?",
         "choice_4": "Muchas preguntas interesantes",
@@ -377,7 +379,6 @@
       "perfect": "Perfecto",
       "write_answer": "Escribe respuesta"
     },
-
     "analyzing": {
       "text_1": "Analizando\ntu escritura",
       "text_2": "Analizando\ntus respuestas",
@@ -387,8 +388,6 @@
     },
     "language": {
       "title": "Seleccionar idioma de la aplicación",
-      "en": "Inglés",
-      "es": "Español",
       "new_language": "Solicitar nuevo idioma",
       "write_language": "Escribir idioma..."
     },

@@ -63,7 +63,7 @@ export function handleUserAfterSignUp(provider: string): (user: SupabaseUser) =>
           throw error;
         }
         if (!data) {
-          throw Error(`Insert couple no data back, ${JSON.stringify(data)}`);
+          throw new Error(`Insert couple no data back, ${JSON.stringify(data)}`);
         }
         console.log(data);
         const userProfile: InsertAPIUserProfile = {

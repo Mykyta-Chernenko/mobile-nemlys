@@ -167,7 +167,7 @@ export default function ({
                       {i18n.t('new_reflection.title_3')}
                     </FontText>
                   </View>
-                  <View style={{ height: 400, maxHeight: '70%' }}>
+                  <View style={{ height: 400, maxHeight: '65%' }}>
                     <ReflectionCard>
                       <View
                         style={{
@@ -216,7 +216,6 @@ export default function ({
                       </View>
                     </ReflectionCard>
                   </View>
-
                   <SecondaryButton
                     buttonStyle={{ backgroundColor: theme.colors.grey1 }}
                     title={i18n.t('new_reflection.button')}

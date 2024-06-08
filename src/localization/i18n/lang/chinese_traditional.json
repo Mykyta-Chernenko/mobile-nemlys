@@ -1,0 +1,422 @@
+{
+  "nemlys": "Nemlys",
+  "awesome": "太棒了!",
+  "loading": "加載中",
+  "continue": "繼續",
+  "or": "或",
+  "ok": "好的",
+  "yes": "是",
+  "no": "否",
+  "close": "關閉",
+  "save": "保存",
+  "cancel": "取消",
+  "confirm": "確認",
+  "submit": "提交",
+  "remove": "移除",
+  "next": "下一步",
+  "skip": "跳過",
+  "finish": "完成",
+  "input_here": "在這裡輸入",
+  "email_placeholder": "輸入你的電子郵件",
+  "password_placeholder": "輸入你的密碼",
+  "password_again_placeholder": "再次輸入你的密碼",
+  "unexpected_error": "發生意外錯誤，請重試",
+  "errors": {
+    "play_market": "您未登錄Play Market應用，請先登錄，然後返回Nemlys應用啟動訂閱",
+    "payment_error": "您的手機商店發生了中間錯誤。通常等待幾分鐘然後再次嘗試啟動訂閱即可解決"
+  },
+  "level": "等級",
+  "new_reflection": {
+    "title_1": "嘗試",
+    "title_2": "反思",
+    "title_3": "以更好地理解您的關係。",
+    "button": "稍後提醒我"
+  },
+  "jobs": {
+    "issues": "我們關係中的問題",
+    "sex": "親密與性",
+    "know": "了解彼此",
+    "hard": "深入問題",
+    "meaningful": "有意義的對話",
+    "fun": "輕鬆有趣的話題"
+  },
+  "notification": {
+    "pre_date": {
+      "pre_date_ready_for_a_date_29_02_2024": {
+        "title": "準備好約會了嗎?",
+        "body": "我們為您和您的伴侶準備了數十個個性化問題"
+      },
+      "pre_date_time_to_connect_29_02_2024": {
+        "title": "是時候聯繫了!",
+        "body": "在忙碌的一天中按下暫停，通過Nemlys探索您的伴侶"
+      },
+      "pre_date_lets_pla_game_29_02_2024": {
+        "title": "來玩個遊戲吧!",
+        "body": "打開Nemlys，通過今天的互動問題享受一些關係的樂趣"
+      }
+    },
+    "finish_date": {
+      "finish_date_oops_29_02_2024": {
+        "title": "哎呀!",
+        "body": "不要讓你的約會不完整。打開Nemlys，重新進入對話"
+      },
+      "finish_date_dont_leave_love_hanging_29_02_2024": {
+        "title": "不要讓愛懸而未決...",
+        "body": "打開Nemlys完成您的關係問題，發現其中的魔力"
+      }
+    },
+    "after_date": {
+      "after_date_time_for_your_relationship_29_02_2024": {
+        "title": "為您的關係騰出時間",
+        "body": "通過共同回答問題對伴侶關係產生積極影響"
+      },
+      "after_date_morning_sunshine_29_02_2024": {
+        "title": "早安，陽光!",
+        "body": "登錄Nemlys，獲取您的每日問題，深化您與伴侶的紐帶"
+      },
+      "after_date_guess_what_time_29_02_2024": {
+        "title": "猜猜現在是什麼時間?",
+        "body": "潛入您的每日好奇心。加強與您的特別之人的聯繫"
+      },
+      "after_date_feeling_curious_29_02_2024": {
+        "title": "感覺好奇嗎?",
+        "body": "通過今天發人深省的問題，與您的伴侶一起踏上發現之旅"
+      },
+      "after_date_challenge_accepted_29_02_2024": {
+        "title": "接受挑戰?",
+        "body": "立即打開Nemlys，通過今天充滿樂趣的問題測試您的關係知識!"
+      }
+    },
+    "reflection": {
+      "title": "是時候反思您與{{partnerName}}的關係了",
+      "body": "選擇一個反思並寫下您的答案"
+    }
+  },
+  "home": {
+    "discussed_questions": "討論的話題",
+    "you": "你",
+    "partner": "伴侶",
+    "menu": {
+      "discuss": "討論",
+      "profile": "個人資料",
+      "premium": "高級",
+      "reflect": "反思"
+    }
+  },
+  "profile": {
+    "title": "個人資料",
+    "my_account": "我的帳戶",
+    "settings": "設置",
+    "about": "關於Nemlys",
+    "your_name": "你的名字",
+    "partner_name": "伴侶名字",
+    "language": "語言",
+    "subscription": "管理訂閱",
+    "rate": "評價我們的應用",
+    "share": "分享我們的應用",
+    "feature_request": "功能請求",
+    "feature_request_placeholder": "寫下您希望在Nemlys應用中看到的功能",
+    "call": "與創始人通話",
+    "contact": "聯繫我們",
+    "contact_placeholder": "寫下您希望我們幫助您的問題",
+    "logout": "登出",
+    "delete_account": "刪除帳戶",
+    "are_you_sure_you_want_to_delete_account": "您確定要刪除您的帳戶嗎?"
+  },
+  "premium": {
+    "banner": {
+      "premium": "無限訪問",
+      "premium_right": "∞",
+      "trial": "無限訪問",
+      "days_left": "剩餘{{days}}天",
+      "new": "要嘗試的話題",
+      "topics_left": "剩餘{{left}}/{{total}}",
+      "free": "每日話題"
+    },
+    "offer": {
+      "title": "高級",
+      "enjoy_your_premium": "享受您的高級版!",
+      "manage": "管理訂閱",
+      "upgrade_trial": "您還有{{trialDays}}天試用期 ",
+      "reached_limit": "您已達到每日限額。 ",
+      "try_unlimited_1": "嘗試使用",
+      "try_unlimited_2": "無限訪問",
+      "premium_title": "獲取完整的高級版，",
+      "trial_expired": "您的試用期已過",
+      "unlimited_topics_title": "獲取無限話題",
+      "unlimited_topics_explanation": "現在您每天有{{dailyTopics}}個話題",
+      "trial_button": "免費試用7天",
+      "trial_no_card": "不需要信用卡",
+      "choose_plan": "選擇您的計劃",
+      "plan_monthly_title": "每月",
+      "plan_monthly_price": "{{price}}/月",
+      "plan_yearly_title": "每年",
+      "plan_yearly_price": "{{price}}/年",
+      "subscribe": "從免費7天試用開始*",
+      "terms": "服務條款",
+      "privacy": "隱私政策",
+      "charged": "* 試用期結束後將收費，除非您取消訂閱"
+    },
+    "success": {
+      "trial": {
+        "title_1": "全部完成！享受您的",
+        "title_2": "無限訪問",
+        "button": "酷，謝謝"
+      },
+      "premium": {
+        "title_1": "您的高級版已成功激活，",
+        "title_2": "儘情享受!",
+        "button": "酷，謝謝"
+      }
+    }
+  },
+  "reflection": {
+    "title": "反思",
+    "available": "{{number}}個新反思可用",
+    "completed": "已完成{{number}}個",
+    "start": "開始",
+    "explanation": {
+      "button": "明白了",
+      "reason_1": "更多反思 = 更高質量的個性化話題",
+      "reason_2": "我們使用AI，因此您反思和寫得越多，應用程式就會越好",
+      "reason_3": "您的數據是安全的。我們僅用於生成問題",
+      "title": "為什麼反思和寫作很重要?"
+    },
+    "no_reflection": "討論1個話題以獲取新的反思卡",
+    "finished_writing_title_1": "完成了！",
+    "finished_writing_title_2": "您真是個好作家",
+    "finished_writing_button": "太好了，謝謝!",
+    "level_0": "介紹",
+    "level": "第{{number}}級"
+  },
+  "update": {
+    "title": "更新",
+    "outdated_title": "您的版本已過時",
+    "need_to_update": "您需要更新應用程式到最新版本才能繼續使用。"
+  },
+  "interview": {
+    "title_first": "與Nemlys創始人交談以",
+    "title_second": "獲得2個月的無限訪問",
+    "reason_1_title_1": "安排",
+    "reason_1_title_2": "30分鐘",
+    "reason_1_title_3": "與Nemlys創始人通話",
+    "reason_2_title_1": "分享您",
+    "reason_2_title_2": "喜歡和不喜歡",
+    "reason_2_title_3": "Nemlys的內容",
+    "reason_3_title_1": "獲得",
+    "reason_3_title_2": "2個月",
+    "reason_3_title_3": "的無限訪問",
+    "button": "安排通話"
+  },
+  "interview_text": {
+    "title_first": "寫下您的反饋以獲得",
+    "title_second": "1個月的高級版",
+    "reason_1_title_1": "",
+    "reason_1_title_2": "回答以下三個問題",
+    "reason_1_title_3": "你對Nemlys的喜歡和不喜歡",
+    "reason_2_title_1": "獲得",
+    "reason_2_title_2": "1個月的高級版",
+    "reason_2_title_3": "",
+    "reason_3_title_1": "您的答案",
+    "reason_3_title_2": "幫助我們決定",
+    "reason_3_title_3": "下一步要做什麼",
+    "button": "寫給我們",
+    "thank": "太棒了！我們會通過您的電子郵件與您聯繫：{{email}}"
+  },
+  "recording": {
+    "button": "錄音",
+    "stop": {
+      "title_1": "確定嗎？您",
+      "title_2": "不能繼續",
+      "title_3": "錄音了",
+      "button": "是的，停止"
+    },
+    "delete": {
+      "title_1": "確定要",
+      "title_2": "刪除錄音",
+      "title_3": "嗎？",
+      "button": "是的，刪除"
+    },
+    "permission": {
+      "title_1": "音頻分析無法工作",
+      "title_2": "沒有麥克風許可權",
+      "button": "打開設置"
+    },
+    "tooltip": {
+      "feature_intro": "嘗試對話的音頻分析，它將改善未來的問題",
+      "wanted_recording": "我們終於推出了音頻分析。試試吧!",
+      "limit_reached": "您已達到每日音頻分析限額"
+    }
+  },
+  "date": {
+    "reminder": {
+      "title": "{{firstName}}，是時候與伴侶聯繫了",
+      "body": "有趣嗎？深入嗎？親密嗎？選擇並一起討論話題"
+    },
+    "generating_questions_error": "抱歉，我們的AI無法生成這些問題，請嘗試其他類別或話題",
+    "notification": {
+      "title_1": "獲得提醒",
+      "title_2": "與伴侶討論問題",
+      "title_3": "",
+      "confirm": "允許通知"
+    },
+    "stop_popup": {
+      "title_1": "確定要",
+      "title_2": "停止討論",
+      "title_3": "嗎？",
+      "subtitle": "我們無法保存您的進度。",
+      "confirm": "是的，停止討論",
+      "cancel": "不，回來"
+    },
+    "share": "分享",
+    "stop": "停止約會",
+    "start_date": "開始約會",
+    "level_title_first": "選擇",
+    "level_title_second": "問題的深度",
+    "level_title_third": "",
+    "level": {
+      "light": "輕鬆",
+      "normal": "普通",
+      "deep": "深入"
+    },
+    "topic_title_first": "選擇",
+    "topic_title_second": "1個話題",
+    "topic_title_third": "與伴侶討論",
+    "topic": {
+      "title": "選擇一個話題",
+      "surprise": "隨機",
+      "intimacy": "親密",
+      "emotions": "情感",
+      "fun": "有趣",
+      "worldview": "世界觀",
+      "goals": "目標",
+      "future": "未來",
+      "communication": "溝通",
+      "preferences": "偏好",
+      "appearance": "外貌",
+      "travel": "旅行",
+      "career": "職業",
+      "expectations": "期望",
+      "values": "價值觀",
+      "gifts": "禮物",
+      "friends": "朋友",
+      "childhood": "童年",
+      "commitment": "承諾",
+      "past": "過去",
+      "ex": "前任",
+      "fidelity": "忠誠",
+      "trust": "信任",
+      "money": "金錢",
+      "conflict": "衝突",
+      "social_circle": "社交圈",
+      "love_language": "愛的語言",
+      "mental_health": "心理健康",
+      "parents": "父母",
+      "children": "孩子",
+      "living_together": "同居"
+    },
+    "generating_questions_first": "生成討論問題",
+    "generating_questions_second": "與伴侶一起",
+    "discuss": "一起討論話題",
+    "feedback": {
+      "with_partner": {
+        "title_first": "那麼！",
+        "title_second": "您的討論怎麼樣",
+        "title_third": "？",
+        "choice_4": "我們有幾個很酷的見解",
+        "choice_3": "很好",
+        "choice_2": "沒什麼新意",
+        "choice_1": "一點也不幫忙"
+      },
+      "alone": {
+        "title_first": "那麼！",
+        "title_second": "您的印象如何",
+        "title_third": "？",
+        "choice_4": "很多有趣的問題",
+        "choice_3": "好問題",
+        "choice_2": "沒什麼特別的",
+        "choice_1": "我不喜歡"
+      }
+    },
+    "new_level": {
+      "reached": "你達到了",
+      "have": "你有",
+      "title_first": "討論",
+      "title_second": "已完成",
+      "alone_title_first": "您的應用探索",
+      "home": "回到首頁"
+    }
+  },
+  "welcome": {
+    "title_first": "獲取討論問題與",
+    "title_second": "您的伴侶",
+    "button": {
+      "default": "繼續"
+    }
+  },
+  "onboarding": {
+    "your_name_first": "嗨！你的名字是\n",
+    "your_name_second": "什麼",
+    "your_name_third": "？",
+    "partner_name_first": "您的\n",
+    "partner_name_second": "伴侶名字是",
+    "partner_name_third": "？",
+    "job": {
+      "title_first": "你想要得到什麼",
+      "title_second": "",
+      "title_third": "？",
+      "fun": "適合約會談話的有趣而簡單的問題",
+      "hard": "我們自己難以提出的問題",
+      "issues": "解決與伴侶問題的方法",
+      "other": "其他",
+      "other_placeholder": "寫下你的答案..."
+    },
+    "reflection": {
+      "private": "私人信息",
+      "explanation": "獨自反思以更好地理解您的關係。",
+      "short": "太短",
+      "good": "好",
+      "perfect": "完美",
+      "write_answer": "寫答案"
+    },
+    "analyzing": {
+      "text_1": "正在分析\n你的寫作",
+      "text_2": "正在分析\n你的回答",
+      "text_3": "正在調整應用\n適應您的情侶",
+      "text_4_first": "全部完成，\n",
+      "text_4_second": "開始探索\n應用"
+    },
+    "language": {
+      "title": "選擇應用語言",
+      "new_language": "請求新語言",
+      "write_language": "寫下語言..."
+    },
+    "discuss_way": {
+      "title_first": "你想如何",
+      "title_second": "討論",
+      "title_third": "問題？",
+      "choice_1": "面對我的伴侶",
+      "choice_2": "在線與我的伴侶",
+      "choice_3": "獲取問題並稍後討論",
+      "choice_4": "我不知道"
+    }
+  },
+  "login": {
+    "password_is_too_short": "密碼至少需要6個字符",
+    "invalid_username": "電子郵件或密碼錯誤",
+    "title": "登錄\nNemlys帳戶",
+    "check_email_for_login_link": "登錄鏈接已發送到您的電子郵件",
+    "button": {
+      "default": "用電子郵件繼續"
+    },
+    "forgot_password": {
+      "link": "忘記密碼？"
+    }
+  },
+  "oauth": {
+    "button": {
+      "google": "用Google登錄",
+      "apple": "用Apple登錄"
+    }
+  }
+}

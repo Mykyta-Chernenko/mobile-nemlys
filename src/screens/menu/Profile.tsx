@@ -19,7 +19,7 @@ import { FontText } from '@app/components/utils/FontText';
 import ProfileBuddyCorner from '@app/icons/profile_buddy_corner';
 import StarRating from '@app/icons/star_rating';
 import TopRightArrow from '@app/icons/top_right_arrow';
-import { i18n } from '@app/localization/i18n';
+import { getFullLanguageByLocale, i18n } from '@app/localization/i18n';
 import { analyticsForgetUser, localAnalytics } from '@app/utils/analytics';
 
 import Menu from '@app/components/menu/Menu';
@@ -46,7 +46,7 @@ export default function ({
   const [loading, setLoading] = useState(true);
   const [name, setName] = useState('');
   const [partnerName, setPartnerName] = useState('');
-  const languageTitle = i18n.t(`onboarding.language.${i18n.locale}`);
+  const languageTitle = getFullLanguageByLocale(i18n.locale);
   const padding = 20;
   const authContext = useContext(AuthContext);
 

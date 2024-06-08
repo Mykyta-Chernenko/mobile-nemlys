@@ -1,0 +1,422 @@
+{
+  "nemlys": "Nemlys",
+  "awesome": "Geweldig!",
+  "loading": "Laden",
+  "continue": "Doorgaan",
+  "or": "Of",
+  "ok": "Oké",
+  "yes": "Ja",
+  "no": "Nee",
+  "close": "Sluiten",
+  "save": "Opslaan",
+  "cancel": "Annuleren",
+  "confirm": "Bevestigen",
+  "submit": "Indienen",
+  "remove": "Verwijderen",
+  "next": "Volgende",
+  "skip": "Overslaan",
+  "finish": "Voltooien",
+  "input_here": "Voer hier in",
+  "email_placeholder": "Voer uw e-mailadres in",
+  "password_placeholder": "Voer uw wachtwoord in",
+  "password_again_placeholder": "Voer uw wachtwoord opnieuw in",
+  "unexpected_error": "Er is een onverwachte fout opgetreden, probeer het opnieuw",
+  "errors": {
+    "play_market": "U bent niet ingelogd in uw Play Market-app, log daar eerst in, en ga dan terug naar de Nemlys-app om het abonnement te starten",
+    "payment_error": "Er is een tussentijdse fout opgetreden met de winkel van uw telefoon. Dit kan meestal worden opgelost door een paar minuten te wachten en dan opnieuw te proberen het abonnement te starten"
+  },
+  "level": "Niveau",
+  "new_reflection": {
+    "title_1": "Probeer ",
+    "title_2": "Reflecties ",
+    "title_3": "om uw relatie beter te begrijpen.",
+    "button": "Herinner mij later"
+  },
+  "jobs": {
+    "issues": "Problemen in onze relatie",
+    "sex": "Intimiteit & Seks",
+    "know": "Elkaar leren kennen",
+    "hard": "Diepgaande vragen",
+    "meaningful": "Betekenisvol gesprek",
+    "fun": "Lichte & Leuke onderwerpen"
+  },
+  "notification": {
+    "pre_date": {
+      "pre_date_ready_for_a_date_29_02_2024": {
+        "title": "Klaar voor een date?",
+        "body": "We hebben tientallen gepersonaliseerde vragen voorbereid voor u en uw partner"
+      },
+      "pre_date_time_to_connect_29_02_2024": {
+        "title": "Tijd om te verbinden!",
+        "body": "Druk even pauze op uw drukke dag en verken uw partner via Nemlys"
+      },
+      "pre_date_lets_pla_game_29_02_2024": {
+        "title": "Laten we een spel spelen!",
+        "body": "Open Nemlys en doe mee aan wat relatieplezier met de interactieve vraag van vandaag"
+      }
+    },
+    "finish_date": {
+      "finish_date_oops_29_02_2024": {
+        "title": "Oeps!",
+        "body": "Laat uw date niet onafgemaakt. Open Nemlys en duik terug in het gesprek"
+      },
+      "finish_date_dont_leave_love_hanging_29_02_2024": {
+        "title": "Laat de liefde niet hangen...",
+        "body": "Open Nemlys om uw relatievragen af te maken en ontdek de magie"
+      }
+    },
+    "after_date": {
+      "after_date_time_for_your_relationship_29_02_2024": {
+        "title": "Tijd voor uw relatie",
+        "body": "Krijg een positief effect op partnerschap door samen vragen te beantwoorden"
+      },
+      "after_date_morning_sunshine_29_02_2024": {
+        "title": "Goedemorgen, zonnestraal!",
+        "body": "Tune in op Nemlys voor uw dagelijkse vraag die de band met uw partner verdiept"
+      },
+      "after_date_guess_what_time_29_02_2024": {
+        "title": "Raad eens hoe laat het is?",
+        "body": "Duik in uw dagelijkse dosis nieuwsgierigheid. Versterk de verbinding met uw speciale iemand"
+      },
+      "after_date_feeling_curious_29_02_2024": {
+        "title": "Nieuwsgierig?",
+        "body": "Begin aan een ontdekkingsreis met uw partner door de prikkelende vraag van vandaag"
+      },
+      "after_date_challenge_accepted_29_02_2024": {
+        "title": "Uitdaging geaccepteerd?",
+        "body": "Open Nemlys nu en test uw relatiekennis met de leuke vraag van vandaag!"
+      }
+    },
+    "reflection": {
+      "title": "Tijd om na te denken over uw relatie met {{partnerName}}",
+      "body": "Kies een reflectie en schrijf uw antwoord"
+    }
+  },
+  "home": {
+    "discussed_questions": "besproken onderwerpen",
+    "you": "U",
+    "partner": "Partner",
+    "menu": {
+      "discuss": "Bespreken",
+      "profile": "Profiel",
+      "premium": "Premium",
+      "reflect": "Reflecteren"
+    }
+  },
+  "profile": {
+    "title": "Profiel",
+    "my_account": "Mijn Account",
+    "settings": "Instellingen",
+    "about": "Over Nemlys",
+    "your_name": "Uw Naam",
+    "partner_name": "Naam van partner",
+    "language": "Taal",
+    "subscription": "Beheer abonnement",
+    "rate": "Beoordeel onze app",
+    "share": "Deel onze app",
+    "feature_request": "Functieverzoek",
+    "feature_request_placeholder": "Schrijf wat u graag zou willen zien in de Nemlys-app",
+    "call": "Gesprek met oprichters",
+    "contact": "Contact opnemen",
+    "contact_placeholder": "Schrijf waarbij u wilt dat wij u helpen",
+    "logout": "Uitloggen",
+    "delete_account": "Account verwijderen",
+    "are_you_sure_you_want_to_delete_account": "Weet u zeker dat u uw account wilt verwijderen?"
+  },
+  "premium": {
+    "banner": {
+      "premium": "Onbeperkte toegang",
+      "premium_right": "∞",
+      "trial": "Onbeperkte toegang",
+      "days_left": "{{days}} dagen resterend",
+      "new": "Onderwerpen om te proberen",
+      "topics_left": "{{left}}/{{total}} resterend",
+      "free": "Dagelijkse onderwerpen"
+    },
+    "offer": {
+      "title": "Premium",
+      "enjoy_your_premium": "Geniet van uw premium!",
+      "manage": "Beheer abonnement",
+      "upgrade_trial": "U heeft nog {{trialDays}} proefdagen over ",
+      "reached_limit": "U heeft uw dagelijkse limiet bereikt. ",
+      "try_unlimited_1": "Probeer met ",
+      "try_unlimited_2": "onbeperkte toegang",
+      "premium_title": "Krijg volledige Premium voor ",
+      "trial_expired": "Uw proefperiode voor Onbeperkte toegang is verstreken",
+      "unlimited_topics_title": "Krijg onbeperkte onderwerpen",
+      "unlimited_topics_explanation": "U heeft nu {{dailyTopics}} onderwerp per dag",
+      "trial_button": "Probeer 7 dagen gratis",
+      "trial_no_card": "GEEN creditcard vereist",
+      "choose_plan": "Kies uw plan",
+      "plan_monthly_title": "Maandelijks",
+      "plan_monthly_price": "{{price}}/maand",
+      "plan_yearly_title": "Jaarlijks",
+      "plan_yearly_price": "{{price}}/jaar",
+      "subscribe": "Start met gratis 7-daagse proef*",
+      "terms": "Servicevoorwaarden",
+      "privacy": "Privacybeleid",
+      "charged": "* U wordt in rekening gebracht na afloop van de proefperiode tenzij u het abonnement annuleert"
+    },
+    "success": {
+      "trial": {
+        "title_1": "Klaar! Geniet van uw ",
+        "title_2": "onbeperkte toegang",
+        "button": "Cool, bedankt"
+      },
+      "premium": {
+        "title_1": "Uw premium is succesvol geactiveerd, ",
+        "title_2": "Geniet ervan!",
+        "button": "Cool, bedankt"
+      }
+    }
+  },
+  "reflection": {
+    "title": "Reflecties",
+    "available": "{{number}} nieuwe reflecties beschikbaar",
+    "completed": "{{number}} Voltooid",
+    "start": "Start",
+    "explanation": {
+      "button": "Begrepen",
+      "reason_1": "Meer Reflecties = Hogere Kwaliteit van 'Gepersonaliseerd' onderwerp",
+      "reason_2": "We gebruiken AI, dus hoe meer je reflecteert en schrijft, hoe beter de app wordt",
+      "reason_3": "Je gegevens zijn veilig. We gebruiken ze alleen voor het genereren van vragen",
+      "title": "Waarom is het belangrijk om te reflecteren en te schrijven?"
+    },
+    "no_reflection": "Bespreek 1 onderwerp om je nieuwe reflectiekaart te krijgen",
+    "finished_writing_title_1": "Klaar!",
+    "finished_writing_title_2": "Je bent zo'n goede schrijver",
+    "finished_writing_button": "Geweldig, bedankt!",
+    "level_0": "inleiding",
+    "level": "niveau {{number}}"
+  },
+  "update": {
+    "title": "Update",
+    "outdated_title": "Je versie is verouderd",
+    "need_to_update": "Je moet je app bijwerken naar de nieuwste versie om de app te blijven gebruiken."
+  },
+  "interview": {
+    "title_first": "Praat met de medeoprichters van Nemlys om ",
+    "title_second": "2 maanden onbeperkte toegang te krijgen",
+    "reason_1_title_1": "Plan een ",
+    "reason_1_title_2": "30 minuten ",
+    "reason_1_title_3": "gesprek met de medeoprichters van Nemlys",
+    "reason_2_title_1": "Deel wat je ",
+    "reason_2_title_2": "leuk en niet leuk vindt ",
+    "reason_2_title_3": "aan Nemlys",
+    "reason_3_title_1": "Krijg ",
+    "reason_3_title_2": "2 maanden ",
+    "reason_3_title_3": "onbeperkte toegang na het gesprek",
+    "button": "Plan een gesprek"
+  },
+  "interview_text": {
+    "title_first": "Schrijf je feedback om ",
+    "title_second": "1 maand Premium te krijgen",
+    "reason_1_title_1": "",
+    "reason_1_title_2": "Schrijf antwoorden",
+    "reason_1_title_3": " op 3 vragen over wat je leuk en niet leuk vindt aan Nemlys",
+    "reason_2_title_1": "Krijg ",
+    "reason_2_title_2": "1 maand premium",
+    "reason_2_title_3": "",
+    "reason_3_title_1": "Jouw antwoorden ",
+    "reason_3_title_2": "helpen ons beslissen",
+    "reason_3_title_3": " waar we aan moeten werken",
+    "button": "Schrijf naar ons",
+    "thank": "Geweldig! We zullen je bereiken op je e-mail: {{email}}"
+  },
+  "recording": {
+    "button": "Opnemen",
+    "stop": {
+      "title_1": "Weet je het zeker? Je ",
+      "title_2": "kunt niet doorgaan ",
+      "title_3": "met opnemen na het stoppen",
+      "button": "Ja, stop"
+    },
+    "delete": {
+      "title_1": "Weet je zeker dat je de opname wilt ",
+      "title_2": "verwijderen",
+      "title_3": "?",
+      "button": "Ja, verwijder"
+    },
+    "permission": {
+      "title_1": "Audioanalyse werkt niet zonder ",
+      "title_2": "microfoonpermissie",
+      "button": "Open instellingen"
+    },
+    "tooltip": {
+      "feature_intro": "Probeer Audioanalyse van je gesprek, het zal toekomstige vragen verbeteren",
+      "wanted_recording": "We hebben eindelijk Audioanalyse gelanceerd. Probeer het uit!",
+      "limit_reached": "Je hebt je dagelijkse limiet voor Audioanalyse bereikt"
+    }
+  },
+  "date": {
+    "reminder": {
+      "title": "{{firstName}}, Tijd om te verbinden met Partner",
+      "body": "Leuk? Diep? Intiem? Kies en bespreek onderwerpen samen"
+    },
+    "generating_questions_error": "Sorry, onze AI kan deze vragen niet genereren, probeer een andere categorie of onderwerp",
+    "notification": {
+      "title_1": "Krijg een herinnering",
+      "title_2": " om vragen te bespreken met je partner",
+      "title_3": "",
+      "confirm": "Sta meldingen toe"
+    },
+    "stop_popup": {
+      "title_1": "Weet je zeker dat je wilt ",
+      "title_2": "de discussie stoppen",
+      "title_3": "?",
+      "subtitle": "We kunnen je voortgang dan niet opslaan.",
+      "confirm": "Ja, stop de discussie",
+      "cancel": "Nee, ga terug"
+    },
+    "share": "Delen",
+    "stop": "Stop datum",
+    "start_date": "Begin datum",
+    "level_title_first": "Selecteer ",
+    "level_title_second": "diepte ",
+    "level_title_third": "van je vragen",
+    "level": {
+      "light": "Licht",
+      "normal": "Normaal",
+      "deep": "Diep"
+    },
+    "topic_title_first": "Selecteer ",
+    "topic_title_second": "1 onderwerp ",
+    "topic_title_third": "om te bespreken met partner",
+    "topic": {
+      "title": "Selecteer een onderwerp",
+      "surprise": "Willekeurig",
+      "intimacy": "Pikant",
+      "emotions": "Emoties",
+      "fun": "Plezier",
+      "worldview": "Wereldbeeld",
+      "goals": "Doelen",
+      "future": "Toekomst",
+      "communication": "Communicatie",
+      "preferences": "Voorkeuren",
+      "appearance": "Uiterlijk",
+      "travel": "Reizen",
+      "career": "Carrière",
+      "expectations": "Verwachtingen",
+      "values": "Waarden",
+      "gifts": "Cadeaus",
+      "friends": "Vrienden",
+      "childhood": "Kindertijd",
+      "commitment": "Toewijding",
+      "past": "Verleden",
+      "ex": "Ex",
+      "fidelity": "Trouw",
+      "trust": "Vertrouwen",
+      "money": "Geld",
+      "conflict": "Conflict",
+      "social_circle": "Sociale kring",
+      "love_language": "Liefdestaal",
+      "mental_health": "Geestelijke gezondheid",
+      "parents": "Ouders",
+      "children": "Kinderen",
+      "living_together": "Samenwonen"
+    },
+    "generating_questions_first": "Vragen genereren om te bespreken ",
+    "generating_questions_second": "met partner",
+    "discuss": "Besprek onderwerpen samen",
+    "feedback": {
+      "with_partner": {
+        "title_first": "Dus! Hoe was ",
+        "title_second": "je discussie",
+        "title_third": "?",
+        "choice_4": "We hebben een paar coole inzichten gekregen",
+        "choice_3": "Het was goed",
+        "choice_2": "Niets nieuws",
+        "choice_1": "Het was helemaal niet behulpzaam"
+      },
+      "alone": {
+        "title_first": "Dus! Wat is ",
+        "title_second": "jouw indruk",
+        "title_third": "?",
+        "choice_4": "Veel interessante vragen",
+        "choice_3": "Goede vragen",
+        "choice_2": "Niets bijzonders",
+        "choice_1": "Ik vind het niet leuk"
+      }
+    },
+    "new_level": {
+      "reached": "je hebt bereikt",
+      "have": "je hebt",
+      "title_first": "Discussie",
+      "title_second": "voltooid",
+      "alone_title_first": "Je App Verkenning",
+      "home": "Terug naar home"
+    }
+  },
+  "welcome": {
+    "title_first": "Krijg vragen om te bespreken met ",
+    "title_second": "je partner",
+    "button": {
+      "default": "Doorgaan"
+    }
+  },
+  "onboarding": {
+    "your_name_first": "Hé! Wat is\n",
+    "your_name_second": "jouw naam",
+    "your_name_third": "?",
+    "partner_name_first": "Wat is de naam van\n",
+    "partner_name_second": "je partner",
+    "partner_name_third": "?",
+    "job": {
+      "title_first": "Wat wil je ",
+      "title_second": "",
+      "title_third": "krijgen?",
+      "fun": "Leuke en makkelijke vragen voor date gesprekken",
+      "hard": "Vragen die we moeilijk zelf ter sprake brengen",
+      "issues": "Manieren om problemen met de partner op te lossen",
+      "other": "Anders",
+      "other_placeholder": "Schrijf je antwoord..."
+    },
+    "reflection": {
+      "private": "privé-informatie",
+      "explanation": "Reflecteer zelf om je relatie beter te begrijpen.",
+      "short": "Te kort",
+      "good": "Goed",
+      "perfect": "Perfect",
+      "write_answer": "Schrijf antwoord"
+    },
+    "analyzing": {
+      "text_1": "Analyseren\nvan je schrijven",
+      "text_2": "Analyseren\nvan je antwoorden",
+      "text_3": "Aanpassen app\naan jullie koppel",
+      "text_4_first": "Helemaal klaar,\n",
+      "text_4_second": "begin met het verkennen\nvan de app"
+    },
+    "language": {
+      "title": "Selecteer App Taal",
+      "new_language": "Vraag nieuwe taal aan",
+      "write_language": "Schrijf taal..."
+    },
+    "discuss_way": {
+      "title_first": "Hoe zou je ",
+      "title_second": "willen bespreken ",
+      "title_third": "vragen?",
+      "choice_1": "Voor mijn partner",
+      "choice_2": "Met mijn partner online",
+      "choice_3": "Vragen krijgen en later bespreken",
+      "choice_4": "Ik weet het niet"
+    }
+  },
+  "login": {
+    "password_is_too_short": "Wachtwoord moet minstens 6 tekens lang zijn",
+    "invalid_username": "De e-mail of het wachtwoord is onjuist",
+    "title": "Meld je aan\nNemlys account",
+    "check_email_for_login_link": "De inloglink is naar je e-mail gestuurd",
+    "button": {
+      "default": "Doorgaan met e-mail"
+    },
+    "forgot_password": {
+      "link": "Wachtwoord vergeten?"
+    }
+  },
+  "oauth": {
+    "button": {
+      "google": "Aanmelden met Google",
+      "apple": "Aanmelden met Apple"
+    }
+  }
+}

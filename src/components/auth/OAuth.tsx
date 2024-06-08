@@ -54,7 +54,7 @@ export const OAuth = ({
       if (authUrl) {
         await Linking.openURL(authUrl);
       } else {
-        throw Error(`authUrl is not returned ${JSON.stringify(data)}`);
+        throw new Error(`authUrl is not returned ${JSON.stringify(data)}`);
       }
     } catch (e) {
       logErrorsWithMessage(e, (e?.message as string) || '');

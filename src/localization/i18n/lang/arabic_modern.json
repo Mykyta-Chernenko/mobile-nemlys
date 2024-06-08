@@ -1,0 +1,422 @@
+{
+  "nemlys": "نيمليس",
+  "awesome": "رائع!",
+  "loading": "جار التحميل",
+  "continue": "متابعة",
+  "or": "أو",
+  "ok": "حسنًا",
+  "yes": "نعم",
+  "no": "لا",
+  "close": "إغلاق",
+  "save": "حفظ",
+  "cancel": "إلغاء",
+  "confirm": "تأكيد",
+  "submit": "إرسال",
+  "remove": "إزالة",
+  "next": "التالي",
+  "skip": "تخطي",
+  "finish": "إنهاء",
+  "input_here": "أدخل هنا",
+  "email_placeholder": "أدخل بريدك الإلكتروني",
+  "password_placeholder": "أدخل كلمة المرور",
+  "password_again_placeholder": "أدخل كلمة المرور مرة أخرى",
+  "unexpected_error": "حدث خطأ غير متوقع، حاول مرة أخرى",
+  "errors": {
+    "play_market": "لم تقم بتسجيل الدخول إلى تطبيق Play Market، يرجى تسجيل الدخول أولاً، ثم العودة إلى تطبيق نيمليس لبدء الاشتراك",
+    "payment_error": "حدث خطأ وسيط في متجر هاتفك. يمكنك عادةً حل ذلك عن طريق الانتظار لبضع دقائق ثم محاولة بدء الاشتراك مرة أخرى"
+  },
+  "level": "المستوى",
+  "new_reflection": {
+    "title_1": "جرب ",
+    "title_2": "التأملات ",
+    "title_3": "لفهم علاقتك بشكل أفضل.",
+    "button": "ذكرني لاحقًا"
+  },
+  "jobs": {
+    "issues": "مشاكل في علاقتنا",
+    "sex": "الحميمية والجنس",
+    "know": "التعرف على بعضنا البعض",
+    "hard": "أسئلة عميقة",
+    "meaningful": "محادثة ذات معنى",
+    "fun": "مواضيع خفيفة وممتعة"
+  },
+  "notification": {
+    "pre_date": {
+      "pre_date_ready_for_a_date_29_02_2024": {
+        "title": "جاهز لموعد؟",
+        "body": "قمنا بتحضير عشرات الأسئلة الشخصية لك ولشريكك"
+      },
+      "pre_date_time_to_connect_29_02_2024": {
+        "title": "حان وقت التواصل!",
+        "body": "اضغط على زر الإيقاف المؤقت ليومك المشغول واستكشف شريكك من خلال نيمليس"
+      },
+      "pre_date_lets_pla_game_29_02_2024": {
+        "title": "لنلعب لعبة!",
+        "body": "افتح نيمليس وشارك في بعض المرح في العلاقة مع السؤال التفاعلي اليوم"
+      }
+    },
+    "finish_date": {
+      "finish_date_oops_29_02_2024": {
+        "title": "عذرًا!",
+        "body": "لا تترك موعدك غير مكتمل. افتح نيمليس وعد إلى المحادثة"
+      },
+      "finish_date_dont_leave_love_hanging_29_02_2024": {
+        "title": "لا تترك الحب معلقًا...",
+        "body": "افتح نيمليس لإنهاء أسئلتك حول العلاقة واكتشف السحر"
+      }
+    },
+    "after_date": {
+      "after_date_time_for_your_relationship_29_02_2024": {
+        "title": "وقت لعلاقتك",
+        "body": "احصل على تأثير إيجابي على الشراكة من خلال الإجابة على الأسئلة معًا"
+      },
+      "after_date_morning_sunshine_29_02_2024": {
+        "title": "صباح الخير، أيها الشمس المشرقة!",
+        "body": "توجه إلى نيمليس لسؤالك اليومي الذي يعمق الروابط مع شريكك"
+      },
+      "after_date_guess_what_time_29_02_2024": {
+        "title": "خمن ما الوقت الآن؟",
+        "body": "اغمر نفسك بجرعة يومية من الفضول. عزز الاتصال بشخصك المميز"
+      },
+      "after_date_feeling_curious_29_02_2024": {
+        "title": "تشعر بالفضول؟",
+        "body": "ابدأ رحلة اكتشاف مع شريكك من خلال سؤال اليوم المحفز للتفكير"
+      },
+      "after_date_challenge_accepted_29_02_2024": {
+        "title": "تم قبول التحدي؟",
+        "body": "افتح نيمليس الآن وضع معرفتك بالعلاقة على المحك مع السؤال الممتع لليوم!"
+      }
+    },
+    "reflection": {
+      "title": "حان الوقت للتفكير في علاقتك مع {{partnerName}}",
+      "body": "اختر تأملًا واكتب إجابتك"
+    }
+  },
+  "home": {
+    "discussed_questions": "المواضيع التي تمت مناقشتها",
+    "you": "أنت",
+    "partner": "الشريك",
+    "menu": {
+      "discuss": "ناقش",
+      "profile": "الملف الشخصي",
+      "premium": "بريميوم",
+      "reflect": "تأمل"
+    }
+  },
+  "profile": {
+    "title": "الملف الشخصي",
+    "my_account": "حسابي",
+    "settings": "الإعدادات",
+    "about": "حول نيمليس",
+    "your_name": "اسمك",
+    "partner_name": "اسم الشريك",
+    "language": "اللغة",
+    "subscription": "إدارة الاشتراك",
+    "rate": "قيم تطبيقنا",
+    "share": "شارك تطبيقنا",
+    "feature_request": "طلب ميزة",
+    "feature_request_placeholder": "اكتب ما تريد رؤيته في تطبيق نيمليس",
+    "call": "اتصال مع المؤسسين",
+    "contact": "اتصل بنا",
+    "contact_placeholder": "اكتب ما تريد منا مساعدتك فيه",
+    "logout": "تسجيل الخروج",
+    "delete_account": "حذف الحساب",
+    "are_you_sure_you_want_to_delete_account": "هل أنت متأكد أنك تريد حذف حسابك؟"
+  },
+  "premium": {
+    "banner": {
+      "premium": "وصول غير محدود",
+      "premium_right": "∞",
+      "trial": "وصول غير محدود",
+      "days_left": "{{days}} أيام متبقية",
+      "new": "مواضيع للتجربة",
+      "topics_left": "{{left}}/{{total}} المتبقية",
+      "free": "المواضيع اليومية"
+    },
+    "offer": {
+      "title": "بريميوم",
+      "enjoy_your_premium": "استمتع ببريميوم الخاص بك!",
+      "manage": "إدارة الاشتراك",
+      "upgrade_trial": "لديك {{trialDays}} أيام من الوصول التجريبي المتبقي ",
+      "reached_limit": "لقد وصلت إلى الحد اليومي الخاص بك. ",
+      "try_unlimited_1": "جرب ",
+      "try_unlimited_2": "الوصول غير المحدود",
+      "premium_title": "احصل على بريميوم كامل ",
+      "trial_expired": "انتهت فترة الوصول التجريبي الخاص بك",
+      "unlimited_topics_title": "احصل على مواضيع غير محدودة",
+      "unlimited_topics_explanation": "لديك الآن {{dailyTopics}} موضوع يوميًا",
+      "trial_button": "جرب 7 أيام مجانًا",
+      "trial_no_card": "لا يتطلب بطاقة ائتمان",
+      "choose_plan": "اختر خطتك",
+      "plan_monthly_title": "شهريًا",
+      "plan_monthly_price": "{{price}}/شهر",
+      "plan_yearly_title": "سنويًا",
+      "plan_yearly_price": "{{price}}/سنة",
+      "subscribe": "ابدأ بتجربة مجانية لمدة 7 أيام*",
+      "terms": "شروط الخدمة",
+      "privacy": "سياسة الخصوصية",
+      "charged": "* سيتم تحصيل الرسوم عند انتهاء الفترة التجريبية ما لم تقم بإلغاء الاشتراك"
+    },
+    "success": {
+      "trial": {
+        "title_1": "كل شيء جاهز! استمتع ب",
+        "title_2": "الوصول غير المحدود الخاص بك",
+        "button": "رائع، شكرًا"
+      },
+      "premium": {
+        "title_1": "تم تفعيل بريميوم الخاص بك بنجاح، ",
+        "title_2": "استمتع!",
+        "button": "رائع، شكرًا"
+      }
+    }
+  },
+  "reflection": {
+    "title": "التأملات",
+    "available": "{{number}} تأملات جديدة متاحة",
+    "completed": "{{number}} مكتملة",
+    "start": "ابدأ",
+    "explanation": {
+      "button": "فهمت",
+      "reason_1": "المزيد من التأملات = جودة أعلى للموضوعات الشخصية",
+      "reason_2": "نحن نستخدم الذكاء الاصطناعي، لذا كلما زادت تأملاتك وكتابتك، كلما أصبح التطبيق أفضل",
+      "reason_3": "بياناتك آمنة. نستخدمها فقط لتوليد الأسئلة",
+      "title": "لماذا من المهم التأمل والكتابة؟"
+    },
+    "no_reflection": "ناقش موضوعًا واحدًا للحصول على بطاقة تأمل جديدة",
+    "finished_writing_title_1": "تم!",
+    "finished_writing_title_2": " أنت كاتب جيد جدًا",
+    "finished_writing_button": "رائع، شكرًا!",
+    "level_0": "مقدمة",
+    "level": "المستوى {{number}}"
+  },
+  "update": {
+    "title": "تحديث",
+    "outdated_title": "نسختك قديمة",
+    "need_to_update": "ستحتاج إلى تحديث تطبيقك إلى أحدث إصدار لمواصلة استخدام التطبيق."
+  },
+  "interview": {
+    "title_first": "تحدث مع مؤسسي نيمليس للحصول على ",
+    "title_second": "شهرين من الوصول غير المحدود",
+    "reason_1_title_1": "حدد موعدًا ",
+    "reason_1_title_2": "لمدة 30 دقيقة ",
+    "reason_1_title_3": "مع مؤسسي نيمليس",
+    "reason_2_title_1": "شارك ما ",
+    "reason_2_title_2": "تحبه وما لا تحبه ",
+    "reason_2_title_3": "في نيمليس",
+    "reason_3_title_1": "احصل على ",
+    "reason_3_title_2": "شهرين ",
+    "reason_3_title_3": "من الوصول غير المحدود بعد المكالمة",
+    "button": "حدد موعدًا للمكالمة"
+  },
+  "interview_text": {
+    "title_first": "اكتب ملاحظاتك للحصول على ",
+    "title_second": "شهر من بريميوم",
+    "reason_1_title_1": "",
+    "reason_1_title_2": "اكتب الإجابات",
+    "reason_1_title_3": "لـ3 أسئلة حول ما تحبه وما لا تحبه في نيمليس",
+    "reason_2_title_1": "احصل على ",
+    "reason_2_title_2": "شهر من بريميوم",
+    "reason_2_title_3": "",
+    "reason_3_title_1": "إجاباتك ",
+    "reason_3_title_2": "تساعدنا في اتخاذ قرار",
+    "reason_3_title_3": "ما الذي يجب العمل عليه بعد ذلك",
+    "button": "اكتب لنا",
+    "thank": "رائع! سنتواصل معك عبر بريدك الإلكتروني: {{email}}"
+  },
+  "recording": {
+    "button": "تسجيل",
+    "stop": {
+      "title_1": "هل أنت متأكد؟ لن تتمكن من ",
+      "title_2": "استئناف ",
+      "title_3": "التسجيل بعد التوقف",
+      "button": "نعم، توقف"
+    },
+    "delete": {
+      "title_1": "هل أنت متأكد من أنك تريد ",
+      "title_2": "حذف التسجيل",
+      "title_3": "؟",
+      "button": "نعم، احذف"
+    },
+    "permission": {
+      "title_1": "لا يعمل تحليل الصوت بدون ",
+      "title_2": "إذن الميكروفون",
+      "button": "افتح الإعدادات"
+    },
+    "tooltip": {
+      "feature_intro": "جرب تحليل الصوت لمحادثتك، سيحسن الأسئلة المستقبلية",
+      "wanted_recording": "أخيرًا أطلقنا تحليل الصوت. جربه الآن!",
+      "limit_reached": "لقد وصلت إلى حد تحليل الصوت اليومي الخاص بك"
+    }
+  },
+  "date": {
+    "reminder": {
+      "title": "{{firstName}}، حان الوقت للتواصل مع الشريك",
+      "body": "مرح؟ عميق؟ حميمي؟ اختر وناقش الموضوعات معًا"
+    },
+    "generating_questions_error": "عذرًا، لا يمكن لنظام الذكاء الاصطناعي لدينا توليد هذه الأسئلة، جرب فئة أخرى أو موضوعًا آخر",
+    "notification": {
+      "title_1": "احصل على تذكير",
+      "title_2": " لمناقشة الأسئلة مع شريكك",
+      "title_3": "",
+      "confirm": "السماح بالإشعارات"
+    },
+    "stop_popup": {
+      "title_1": "هل أنت متأكد من أنك تريد ",
+      "title_2": "إيقاف النقاش",
+      "title_3": "؟",
+      "subtitle": "لن نتمكن من حفظ تقدمك.",
+      "confirm": "نعم، أوقف النقاش",
+      "cancel": "لا، عد"
+    },
+    "share": "شارك",
+    "stop": "أوقف الموعد",
+    "start_date": "ابدأ الموعد",
+    "level_title_first": "حدد ",
+    "level_title_second": "عمق ",
+    "level_title_third": "أسئلتك",
+    "level": {
+      "light": "خفيف",
+      "normal": "عادي",
+      "deep": "عميق"
+    },
+    "topic_title_first": "حدد ",
+    "topic_title_second": "موضوعًا واحدًا ",
+    "topic_title_third": "لمناقشته مع الشريك",
+    "topic": {
+      "title": "اختر موضوعًا واحدًا",
+      "surprise": "عشوائي",
+      "intimacy": "حار",
+      "emotions": "العواطف",
+      "fun": "المرح",
+      "worldview": "وجهة نظر",
+      "goals": "الأهداف",
+      "future": "المستقبل",
+      "communication": "التواصل",
+      "preferences": "التفضيلات",
+      "appearance": "المظهر",
+      "travel": "السفر",
+      "career": "المهنة",
+      "expectations": "التوقعات",
+      "values": "القيم",
+      "gifts": "الهدايا",
+      "friends": "الأصدقاء",
+      "childhood": "الطفولة",
+      "commitment": "الالتزام",
+      "past": "الماضي",
+      "ex": "السابق",
+      "fidelity": "الوفاء",
+      "trust": "الثقة",
+      "money": "المال",
+      "conflict": "الصراع",
+      "social_circle": "الدائرة الاجتماعية",
+      "love_language": "لغة الحب",
+      "mental_health": "الصحة النفسية",
+      "parents": "الوالدين",
+      "children": "الأطفال",
+      "living_together": "العيش معًا"
+    },
+    "generating_questions_first": "جاري توليد الأسئلة لمناقشتها ",
+    "generating_questions_second": "مع الشريك",
+    "discuss": "ناقش المواضيع معًا",
+    "feedback": {
+      "with_partner": {
+        "title_first": "إذًا! كيف كانت ",
+        "title_second": "مناقشتك",
+        "title_third": "؟",
+        "choice_4": "حصلنا على بعض الأفكار الرائعة",
+        "choice_3": "كانت جيدة",
+        "choice_2": "لا شيء جديد",
+        "choice_1": "لم تكن مفيدة على الإطلاق"
+      },
+      "alone": {
+        "title_first": "إذًا! ما هو ",
+        "title_second": "انطباعك",
+        "title_third": "؟",
+        "choice_4": "الكثير من الأسئلة المثيرة للاهتمام",
+        "choice_3": "أسئلة جيدة",
+        "choice_2": "لا شيء مميز",
+        "choice_1": "لا أحبها"
+      }
+    },
+    "new_level": {
+      "reached": "لقد وصلت إلى",
+      "have": "لديك",
+      "title_first": "المناقشة",
+      "title_second": "مكتملة",
+      "alone_title_first": "استكشاف التطبيق الخاص بك",
+      "home": "العودة إلى الصفحة الرئيسية"
+    }
+  },
+  "welcome": {
+    "title_first": "احصل على أسئلة لمناقشتها مع ",
+    "title_second": "شريكك",
+    "button": {
+      "default": "متابعة"
+    }
+  },
+  "onboarding": {
+    "your_name_first": "مرحبًا! ما هو\n",
+    "your_name_second": "اسمك",
+    "your_name_third": "؟",
+    "partner_name_first": "ما هو\n",
+    "partner_name_second": "اسم شريكك",
+    "partner_name_third": "؟",
+    "job": {
+      "title_first": "ماذا تريد ",
+      "title_second": "",
+      "title_third": "تحقيقه؟",
+      "fun": "أسئلة ممتعة وسهلة لمحادثات المواعيد",
+      "hard": "أسئلة نجد صعوبة في طرحها بأنفسنا",
+      "issues": "طرق لحل المشكلات مع الشريك",
+      "other": "أخرى",
+      "other_placeholder": " اكتب إجابتك..."
+    },
+    "reflection": {
+      "private": "معلومات خاصة",
+      "explanation": "تأمل بنفسك لفهم علاقتك بشكل أفضل.",
+      "short": "قصير جدًا",
+      "good": "جيد",
+      "perfect": "مثالي",
+      "write_answer": "اكتب الإجابة"
+    },
+    "analyzing": {
+      "text_1": "جار تحليل\nكتابتك",
+      "text_2": "جار تحليل\nإجاباتك",
+      "text_3": "تكييف التطبيق\nليناسب زوجك",
+      "text_4_first": "كل شيء جاهز،\n",
+      "text_4_second": "ابدأ في استكشاف\nالتطبيق"
+    },
+    "language": {
+      "title": "اختر لغة التطبيق",
+      "new_language": "طلب لغة جديدة",
+      "write_language": "اكتب اللغة..."
+    },
+    "discuss_way": {
+      "title_first": "كيف تفضل ",
+      "title_second": "مناقشة ",
+      "title_third": "الأسئلة؟",
+      "choice_1": "أمام شريكي",
+      "choice_2": "مع شريكي عبر الإنترنت",
+      "choice_3": "احصل على الأسئلة وناقشها لاحقًا",
+      "choice_4": "لا أعلم"
+    }
+  },
+  "login": {
+    "password_is_too_short": "يجب أن تتكون كلمة المرور من 6 أحرف على الأقل",
+    "invalid_username": "البريد الإلكتروني أو كلمة المرور غير صحيحة",
+    "title": "تسجيل الدخول\nحساب نيمليس",
+    "check_email_for_login_link": "تم إرسال رابط تسجيل الدخول إلى بريدك الإلكتروني",
+    "button": {
+      "default": "متابعة باستخدام البريد الإلكتروني"
+    },
+    "forgot_password": {
+      "link": "نسيت كلمة المرور؟"
+    }
+  },
+  "oauth": {
+    "button": {
+      "google": "تسجيل الدخول باستخدام Google",
+      "apple": "تسجيل الدخول باستخدام Apple"
+    }
+  }
+}

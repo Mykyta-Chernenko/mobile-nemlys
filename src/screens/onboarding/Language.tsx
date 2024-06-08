@@ -7,7 +7,7 @@ import {
   View,
 } from 'react-native';
 import { useTheme, useThemeMode } from '@rneui/themed';
-import { getDefaultLanguage, i18n } from '@app/localization/i18n';
+import { getFullLanguageByLocale, i18n, LANGUAGES } from '@app/localization/i18n';
 import { PrimaryButton } from '@app/components/buttons/PrimaryButtons';
 import { FontText } from '@app/components/utils/FontText';
 import { Progress } from '@app/components/utils/Progress';
@@ -30,12 +30,11 @@ export default function ({
 }: NativeStackScreenProps<MainStackParamList, 'Language'>) {
   const fromSettings = route.params?.fromSettings;
   const { theme } = useTheme();
-  const LANGUAGES = ['en', 'es'];
-  const [language, setLanguage] = useState<string>(getDefaultLanguage(i18n.locale));
+  const [language, setLanguage] = useState<string>(i18n.locale);
   const [requestedLanguage, setRequestedLanguage] = useState<string | undefined>(undefined);
   const choices = LANGUAGES.map((l) => ({
     language: l,
-    title: i18n.t(`onboarding.language.${l}`),
+    title: getFullLanguageByLocale(l),
   }));
 
   const authContext = useContext(AuthContext);

@@ -1,0 +1,422 @@
+{
+  "nemlys": "Nemlys",
+  "awesome": "すごい!",
+  "loading": "読み込み中",
+  "continue": "続ける",
+  "or": "または",
+  "ok": "OK",
+  "yes": "はい",
+  "no": "いいえ",
+  "close": "閉じる",
+  "save": "保存",
+  "cancel": "キャンセル",
+  "confirm": "確認",
+  "submit": "送信",
+  "remove": "削除",
+  "next": "次へ",
+  "skip": "スキップ",
+  "finish": "完了",
+  "input_here": "ここに入力",
+  "email_placeholder": "メールアドレスを入力",
+  "password_placeholder": "パスワードを入力",
+  "password_again_placeholder": "パスワードを再入力",
+  "unexpected_error": "予期しないエラーが発生しました、再試行してください",
+  "errors": {
+    "play_market": "Play Marketアプリにログインしていません。まずログインし、その後Nemlysアプリに戻ってサブスクリプションを開始してください",
+    "payment_error": "お使いの電話のストアで中間エラーが発生しました。通常、数分待って再試行することで解決できます"
+  },
+  "level": "レベル",
+  "new_reflection": {
+    "title_1": "試してみて ",
+    "title_2": "リフレクション ",
+    "title_3": "であなたの関係をよりよく理解しましょう。",
+    "button": "後でリマインド"
+  },
+  "jobs": {
+    "issues": "私たちの関係の問題",
+    "sex": "親密さとセックス",
+    "know": "お互いを知る",
+    "hard": "深く掘り下げる質問",
+    "meaningful": "意味のある会話",
+    "fun": "軽くて楽しいトピック"
+  },
+  "notification": {
+    "pre_date": {
+      "pre_date_ready_for_a_date_29_02_2024": {
+        "title": "デートの準備はできましたか？",
+        "body": "あなたとパートナーのためにパーソナライズされた質問をたくさん準備しました"
+      },
+      "pre_date_time_to_connect_29_02_2024": {
+        "title": "つながる時間！",
+        "body": "忙しい一日に一時停止をかけて、Nemlysを通じてパートナーを探索しましょう"
+      },
+      "pre_date_lets_pla_game_29_02_2024": {
+        "title": "ゲームをしよう！",
+        "body": "Nemlysを開いて、今日のインタラクティブな質問で関係の楽しさを体験しましょう"
+      }
+    },
+    "finish_date": {
+      "finish_date_oops_29_02_2024": {
+        "title": "おっと！",
+        "body": "デートを未完のままにしないでください。Nemlysを開いて、会話に戻りましょう"
+      },
+      "finish_date_dont_leave_love_hanging_29_02_2024": {
+        "title": "愛を宙ぶらりんにしないで...",
+        "body": "Nemlysを開いて、関係の質問を終えて魔法を発見しましょう"
+      }
+    },
+    "after_date": {
+      "after_date_time_for_your_relationship_29_02_2024": {
+        "title": "あなたの関係の時間",
+        "body": "一緒に質問に答えてパートナーシップにプラスの効果を与えましょう"
+      },
+      "after_date_morning_sunshine_29_02_2024": {
+        "title": "おはよう、サンシャイン！",
+        "body": "Nemlysにアクセスして、パートナーとの絆を深める毎日の質問に答えましょう"
+      },
+      "after_date_guess_what_time_29_02_2024": {
+        "title": "何時だと思う？",
+        "body": "毎日の好奇心を刺激する時間です。あなたの特別な人とのつながりを強化しましょう"
+      },
+      "after_date_feeling_curious_29_02_2024": {
+        "title": "好奇心を感じますか？",
+        "body": "今日の刺激的な質問を通じて、パートナーと一緒に発見の旅に出ましょう"
+      },
+      "after_date_challenge_accepted_29_02_2024": {
+        "title": "チャレンジを受け入れますか？",
+        "body": "今すぐNemlysを開いて、今日の楽しい質問であなたの関係知識をテストしましょう！"
+      }
+    },
+    "reflection": {
+      "title": "{{partnerName}}との関係について反映する時間",
+      "body": "リフレクションを選択して、あなたの答えを書いてください"
+    }
+  },
+  "home": {
+    "discussed_questions": "議論されたトピック",
+    "you": "あなた",
+    "partner": "パートナー",
+    "menu": {
+      "discuss": "議論する",
+      "profile": "プロフィール",
+      "premium": "プレミアム",
+      "reflect": "リフレクト"
+    }
+  },
+  "profile": {
+    "title": "プロフィール",
+    "my_account": "マイアカウント",
+    "settings": "設定",
+    "about": "Nemlysについて",
+    "your_name": "あなたの名前",
+    "partner_name": "パートナーの名前",
+    "language": "言語",
+    "subscription": "サブスクリプション管理",
+    "rate": "アプリを評価",
+    "share": "アプリを共有",
+    "feature_request": "機能リクエスト",
+    "feature_request_placeholder": "Nemlysアプリで見たいものを書いてください",
+    "call": "創設者との通話",
+    "contact": "お問い合わせ",
+    "contact_placeholder": "お手伝いしたい内容を書いてください",
+    "logout": "ログアウト",
+    "delete_account": "アカウントを削除",
+    "are_you_sure_you_want_to_delete_account": "本当にアカウントを削除しますか？"
+  },
+  "premium": {
+    "banner": {
+      "premium": "無制限アクセス",
+      "premium_right": "∞",
+      "trial": "無制限アクセス",
+      "days_left": "残り{{days}}日",
+      "new": "試すべきトピック",
+      "topics_left": "残り{{left}}/{{total}}",
+      "free": "毎日のトピック"
+    },
+    "offer": {
+      "title": "プレミアム",
+      "enjoy_your_premium": "プレミアムを楽しんでください！",
+      "manage": "サブスクリプション管理",
+      "upgrade_trial": "残り{{trialDays}}日間の試用アクセス",
+      "reached_limit": "あなたは1日の制限に達しました。",
+      "try_unlimited_1": "無制限アクセスで",
+      "try_unlimited_2": "試してみる",
+      "premium_title": "フルプレミアムを取得する",
+      "trial_expired": "あなたの試用無制限アクセスは終了しました",
+      "unlimited_topics_title": "無制限のトピックを取得",
+      "unlimited_topics_explanation": "現在、1日{{dailyTopics}}トピックがあります",
+      "trial_button": "7日間無料で試してみる",
+      "trial_no_card": "クレジットカードは不要です",
+      "choose_plan": "プランを選択",
+      "plan_monthly_title": "月間",
+      "plan_monthly_price": "{{price}}/月",
+      "plan_yearly_title": "年間",
+      "plan_yearly_price": "{{price}}/年",
+      "subscribe": "7日間無料トライアルを開始する*",
+      "terms": "利用規約",
+      "privacy": "プライバシーポリシー",
+      "charged": "* 試用期間が終了すると課金されますが、サブスクリプションをキャンセルすることもできます"
+    },
+    "success": {
+      "trial": {
+        "title_1": "すべて完了！無制限アクセスをお楽しみください",
+        "title_2": "",
+        "button": "クール、ありがとう"
+      },
+      "premium": {
+        "title_1": "プレミアムが正常に有効化されました。",
+        "title_2": "お楽しみください！",
+        "button": "クール、ありがとう"
+      }
+    }
+  },
+  "reflection": {
+    "title": "リフレクション",
+    "available": "{{number}}件の新しいリフレクションが利用可能",
+    "completed": "{{number}}件完了",
+    "start": "開始",
+    "explanation": {
+      "button": "了解",
+      "reason_1": "リフレクションが多いほど「パーソナライズされた」トピックの質が向上します",
+      "reason_2": "私たちはAIを使用しているので、あなたがリフレクトして書くほど、アプリがより良くなります",
+      "reason_3": "あなたのデータは安全です。質問の生成にのみ使用されます",
+      "title": "リフレクトして書くことが重要な理由は？"
+    },
+    "no_reflection": "新しいリフレクションカードを取得するには、1つのトピックを議論してください",
+    "finished_writing_title_1": "完了！",
+    "finished_writing_title_2": "あなたは素晴らしい作家です",
+    "finished_writing_button": "素晴らしい、ありがとう！",
+    "level_0": "導入",
+    "level": "レベル{{number}}"
+  },
+  "update": {
+    "title": "アップデート",
+    "outdated_title": "あなたのバージョンは古くなっています",
+    "need_to_update": "アプリを最新バージョンに更新する必要があります。"
+  },
+  "interview": {
+    "title_first": "Nemlysの創設者との話をして",
+    "title_second": "2ヶ月間の無制限アクセスを取得",
+    "reason_1_title_1": "スケジュールする",
+    "reason_1_title_2": "30分",
+    "reason_1_title_3": "Nemlysの創設者との通話",
+    "reason_2_title_1": "あなたが",
+    "reason_2_title_2": "好きなことと嫌いなことを共有する",
+    "reason_2_title_3": "Nemlysについて",
+    "reason_3_title_1": "取得する",
+    "reason_3_title_2": "2ヶ月間の",
+    "reason_3_title_3": "無制限アクセス",
+    "button": "電話をスケジュールする"
+  },
+  "interview_text": {
+    "title_first": "フィードバックを書いて",
+    "title_second": "1ヶ月のプレミアムを取得",
+    "reason_1_title_1": "",
+    "reason_1_title_2": "3つの質問に対する回答を書く",
+    "reason_1_title_3": "Nemlysで好きなことと嫌いなこと",
+    "reason_2_title_1": "取得する",
+    "reason_2_title_2": "1ヶ月のプレミアム",
+    "reason_2_title_3": "",
+    "reason_3_title_1": "あなたの回答",
+    "reason_3_title_2": "決定にご協力ください",
+    "reason_3_title_3": "次に何に取り組むべきか",
+    "button": "私たちに書く",
+    "thank": "素晴らしい！あなたのメールで連絡します：{{email}}"
+  },
+  "recording": {
+    "button": "録音",
+    "stop": {
+      "title_1": "よろしいですか？",
+      "title_2": "停止した後は",
+      "title_3": "録音を再開できません",
+      "button": "はい、停止する"
+    },
+    "delete": {
+      "title_1": "本当に録音を",
+      "title_2": "削除しますか？",
+      "title_3": "",
+      "button": "はい、削除する"
+    },
+    "permission": {
+      "title_1": "オーディオ分析は",
+      "title_2": "マイクの許可がないと動作しません",
+      "button": "設定を開く"
+    },
+    "tooltip": {
+      "feature_intro": "会話のオーディオ分析を試してみてください。将来の質問が改善されます",
+      "wanted_recording": "ついにオーディオ分析が開始されました。試してみてください！",
+      "limit_reached": "あなたは1日のオーディオ分析の制限に達しました"
+    }
+  },
+  "date": {
+    "reminder": {
+      "title": "{{firstName}}、パートナーとつながる時間",
+      "body": "楽しい？深い？親密な？トピックを選んで一緒に議論しましょう"
+    },
+    "generating_questions_error": "申し訳ありませんが、AIはこれらの質問を生成できません。別のカテゴリまたはトピックを試してください",
+    "notification": {
+      "title_1": "リマインダーを取得する",
+      "title_2": "パートナーと質問を議論する",
+      "title_3": "",
+      "confirm": "通知を許可する"
+    },
+    "stop_popup": {
+      "title_1": "本当に議論を",
+      "title_2": "停止しますか？",
+      "title_3": "",
+      "subtitle": "その場合、進行状況を保存できません。",
+      "confirm": "はい、議論を停止する",
+      "cancel": "いいえ、戻る"
+    },
+    "share": "共有",
+    "stop": "デートを停止",
+    "start_date": "デートを開始",
+    "level_title_first": "深さを選択",
+    "level_title_second": "",
+    "level_title_third": "質問の",
+    "level": {
+      "light": "軽い",
+      "normal": "普通",
+      "deep": "深い"
+    },
+    "topic_title_first": "1つのトピックを選択",
+    "topic_title_second": "",
+    "topic_title_third": "パートナーと議論する",
+    "topic": {
+      "title": "1つのトピックを選択",
+      "surprise": "ランダム",
+      "intimacy": "スパイシー",
+      "emotions": "感情",
+      "fun": "楽しい",
+      "worldview": "世界観",
+      "goals": "目標",
+      "future": "未来",
+      "communication": "コミュニケーション",
+      "preferences": "好み",
+      "appearance": "外見",
+      "travel": "旅行",
+      "career": "キャリア",
+      "expectations": "期待",
+      "values": "価値観",
+      "gifts": "ギフト",
+      "friends": "友人",
+      "childhood": "子供時代",
+      "commitment": "約束",
+      "past": "過去",
+      "ex": "元パートナー",
+      "fidelity": "忠実",
+      "trust": "信頼",
+      "money": "お金",
+      "conflict": "対立",
+      "social_circle": "社会的サークル",
+      "love_language": "愛の言語",
+      "mental_health": "メンタルヘルス",
+      "parents": "親",
+      "children": "子供",
+      "living_together": "一緒に住む"
+    },
+    "generating_questions_first": "質問を生成しています",
+    "generating_questions_second": "パートナーと議論する",
+    "discuss": "一緒にトピックを議論する",
+    "feedback": {
+      "with_partner": {
+        "title_first": "では！あなたの議論はどうでしたか？",
+        "title_second": "",
+        "title_third": "",
+        "choice_4": "いくつかのクールな洞察を得ました",
+        "choice_3": "良かったです",
+        "choice_2": "何も新しいことはありませんでした",
+        "choice_1": "まったく役に立ちませんでした"
+      },
+      "alone": {
+        "title_first": "では！あなたの印象はどうですか？",
+        "title_second": "",
+        "title_third": "",
+        "choice_4": "多くの興味深い質問がありました",
+        "choice_3": "良い質問でした",
+        "choice_2": "特に何もありませんでした",
+        "choice_1": "気に入りませんでした"
+      }
+    },
+    "new_level": {
+      "reached": "あなたは到達しました",
+      "have": "あなたは持っています",
+      "title_first": "議論",
+      "title_second": "完了",
+      "alone_title_first": "あなたのアプリ探索",
+      "home": "ホームに戻る"
+    }
+  },
+  "welcome": {
+    "title_first": "パートナーと議論するための質問を取得",
+    "title_second": "",
+    "button": {
+      "default": "続ける"
+    }
+  },
+  "onboarding": {
+    "your_name_first": "こんにちは！あなたの名前は何ですか？",
+    "your_name_second": "",
+    "your_name_third": "",
+    "partner_name_first": "あなたのパートナーの名前は何ですか？",
+    "partner_name_second": "",
+    "partner_name_third": "",
+    "job": {
+      "title_first": "何を達成したいですか？",
+      "title_second": "",
+      "title_third": "",
+      "fun": "デートトークのための楽しく簡単な質問",
+      "hard": "自分たちで取り上げるのが難しい質問",
+      "issues": "パートナーとの問題を解決する方法",
+      "other": "その他",
+      "other_placeholder": "あなたの回答を記入してください..."
+    },
+    "reflection": {
+      "private": "プライベート情報",
+      "explanation": "自分自身を反映して関係をよりよく理解しましょう。",
+      "short": "短すぎる",
+      "good": "良い",
+      "perfect": "完璧",
+      "write_answer": "答えを書く"
+    },
+    "analyzing": {
+      "text_1": "あなたの書いたものを分析中",
+      "text_2": "あなたの答えを分析中",
+      "text_3": "カップルに合わせてアプリを適応中",
+      "text_4_first": "すべて完了、",
+      "text_4_second": "アプリを探索し始めましょう"
+    },
+    "language": {
+      "title": "アプリの言語を選択",
+      "new_language": "新しい言語をリクエスト",
+      "write_language": "言語を記入してください..."
+    },
+    "discuss_way": {
+      "title_first": "どのように質問を議論したいですか？",
+      "title_second": "",
+      "title_third": "",
+      "choice_1": "パートナーの前で",
+      "choice_2": "パートナーとオンラインで",
+      "choice_3": "質問を取得して後で議論する",
+      "choice_4": "わからない"
+    }
+  },
+  "login": {
+    "password_is_too_short": "パスワードは6文字以上でなければなりません",
+    "invalid_username": "メールアドレスまたはパスワードが間違っています",
+    "title": "Nemlysアカウントにサインイン",
+    "check_email_for_login_link": "ログインリンクがメールに送信されました",
+    "button": {
+      "default": "メールで続ける"
+    },
+    "forgot_password": {
+      "link": "パスワードを忘れましたか？"
+    }
+  },
+  "oauth": {
+    "button": {
+      "google": "Googleでサインイン",
+      "apple": "Appleでサインイン"
+    }
+  }
+}

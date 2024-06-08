@@ -1,45 +1,4 @@
-# Nemlys mobile 
-
-## Installation
-
-1. Install [node.js](https://nodejs.org/en/)
-2. Install Expo
-
-   ```jsx
-   npm install --global expo-cli
-   ```
-
-3. Download this repo
-4. Install deps on your template folder
-
-   ```jsx
-   npm install
-   ```
-4. brew install direnv; 
-For zsh, add this to the end of ~/.zshrc:
-eval "$(direnv hook zsh)"
-npm install -g dotenv-cli
-
-5. Start the environtment
-
-   ```jsx
-   expo start
-   ```
+https://accounts.google.com/o/oauth2/v2/auth/oauthchooseaccount?client_id=318892102836-igq1mbtfae5v7th2cjlddiu7gdgc33n7.apps.googleusercontent.com&redirect_to=nemlys%3A%2F%2F&redirect_uri=https%3A%2F%2Fkenpblepcyvkwausergf.supabase.co%2Fauth%2Fv1%2Fcallback&response_type=code&scope=email profile&state=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MTI5MzA3MzIsInNpdGVfdXJsIjoiaHR0cDovL2xvY2FsaG9zdDozMDAwIiwiaWQiOiIwMDAwMDAwMC0wMDAwLTAwMDAtMDAwMC0wMDAwMDAwMDAwMDAiLCJmdW5jdGlvbl9ob29rcyI6bnVsbCwicHJvdmlkZXIiOiJnb29nbGUiLCJyZWZlcnJlciI6Im5lbWx5czovLyIsImZsb3dfc3RhdGVfaWQiOiIifQ.yXrETQ0QVJ-d7fUYew6JF4PL4-vuyFH8yG2FkQhULTQ&service=lso&o2v=2&theme=mn&ddm=0&flowName=GeneralOAuthFlow
 
 
-
-
-## Tips
-When you start developing from a new network for oauth to work, you need to add your local ip to 
-- https://app.supabase.com/project/rpqzwvkyzulmvvldkqse/auth/url-configuration (add your ip to the Redirect URLs, in the format 'exp://192.168.1.15:19000')
-- and src/navigation/index.tsx linking prefixes (if you want to have redirect emails)
-
-
-## Deploy changes without store
-- export production envs
-- eas update --channel production  
-Warning: semantic version can only be 1 digit in which section 3.10.10 is not right
-
-## important
-When you rotate a secret key in apple, you need to also generate new jwt out of this key for supabase
-https://supabase.com/docs/guides/auth/social-login/auth-apple
+eas build --auto-submit
