@@ -1,20 +1,20 @@
 import { useTheme } from '@rneui/themed';
-import React, { useContext, useEffect, useState } from 'react';
+import React, { useContext, useState } from 'react';
 import { Platform, View } from 'react-native';
 import GoogleIcon from '@app/icons/google';
 import AppleIcon from '@app/icons/apple';
 import { supabase } from '@app/api/initSupabase';
-import * as Linking from 'expo-linking';
-import { SignInWithOAuthCredentials } from '@supabase/supabase-js';
 import { i18n } from '@app/localization/i18n';
 import { SupabaseUser } from '@app/types/api';
-import { ANON_USER, AuthContext, handleAuthTokens } from '@app/provider/AuthProvider';
+import { ANON_USER, AuthContext } from '@app/provider/AuthProvider';
 import { FontText } from '../utils/FontText';
 import { logErrorsWithMessage } from '@app/utils/errors';
 import { SecondaryButton } from '../buttons/SecondaryButton';
 import { localAnalytics } from '@app/utils/analytics';
 import { PrimaryButton } from '../buttons/PrimaryButtons';
 import * as AppleAuthentication from 'expo-apple-authentication';
+import { GoogleSignin, statusCodes } from '@react-native-google-signin/google-signin';
+import { IS_SUPABASE_DEV } from '@app/utils/constants';
 
 export const OAuth = ({
   handleUser,
@@ -26,79 +26,55 @@ export const OAuth = ({
   const { theme } = useTheme();
   const [localloading, setLocalLoading] = useState(false);
   const auth = useContext(AuthContext);
-
-  const googleAuth = async () => {
-    setLoading(true);
-    setLocalLoading(true);
-    void localAnalytics().logEvent('LoginInitiated', {
-      screen: 'OAuth',
-      action: 'OAuth button clicked',
-      provider: 'google',
-      userId: ANON_USER,
-    });
-    // fixes a bug in supabase
-    const oldWindow = window;
-    window = undefined as any;
-    try {
-      const returnUrl = Linking.createURL('');
-      const signInParms: SignInWithOAuthCredentials = {
-        provider: 'google',
-        options: {
-          redirectTo: returnUrl,
-        },
-      };
-
-      const { data } = await supabase.auth.signInWithOAuth(signInParms);
-      const authUrl = data?.url;
-
-      if (authUrl) {
-        await Linking.openURL(authUrl);
-      } else {
-        throw new Error(`authUrl is not returned ${JSON.stringify(data)}`);
-      }
-    } catch (e) {
-      logErrorsWithMessage(e, (e?.message as string) || '');
-    } finally {
-      window = oldWindow;
-      setTimeout(() => setLocalLoading(false), 4000);
-      setTimeout(() => setLoading(false), 4000);
-    }
+  const devConfig = {
+    webClientId: '146690585551-vj1sip8h25ois3oun3fv0m0rfg614it3.apps.googleusercontent.com',
+    iosClientId: '146690585551-kmmq76bsbhb4d9hljoups22889rvkklu.apps.googleusercontent.com',
   };
-  useEffect(() => {
-    const handleDeepLinkingTokenResponse = async (url: string | null): Promise<void> => {
-      setLocalLoading(true);
+  const prodConfig = {
+    webClientId: '318892102836-d27hl77305a4e4qcgbmo5chtgc43kups.apps.googleusercontent.com',
+    iosClientId: '318892102836-9ud8fcu170fqr5i56bcskeci051gc6ra.apps.googleusercontent.com',
+  };
+  const config = IS_SUPABASE_DEV ? devConfig : prodConfig;
+  GoogleSignin.configure(config);
+  const signIn = async () => {
+    try {
       setLoading(true);
-      try {
-        if (!url) return;
-        const correctUrl = url.includes('#') ? url.replace('#', '?') : url;
-        const urlObject = new URL(correctUrl);
-        const accessToken = urlObject.searchParams.get('access_token');
-        const refreshToken = urlObject.searchParams.get('refresh_token');
-        if (!accessToken || !refreshToken) return;
-        await handleAuthTokens(
-          accessToken,
-          refreshToken,
-          handleUser('google'),
-          auth.setIsSignedIn!,
-          auth.setUserId!,
+      setLocalLoading(true);
+      void localAnalytics().logEvent('LoginInitiated', {
+        screen: 'OAuth',
+        action: 'OAuth button clicked',
+        provider: 'google',
+        userId: ANON_USER,
+      });
+      await GoogleSignin.hasPlayServices();
+      const userInfo = await GoogleSignin.signIn();
+      const { data, error } = await supabase.auth.signInWithIdToken({
+        provider: 'google',
+        token: userInfo.idToken!,
+      });
+      if (error) {
+        throw new Error(
+          `Error google signing in, error: ${JSON.stringify(error)}, user: ${JSON.stringify(
+            userInfo,
+          )}, `,
         );
-      } catch (e) {
+      }
+      await handleUser('google')(data.user);
+      auth?.setIsSignedIn!(true);
+      auth?.setUserId!(data.user.id);
+    } catch (e) {
+      console.log(JSON.stringify(e));
+      if (e.code === statusCodes.SIGN_IN_CANCELLED) {
+        // cancelled login, proceed
+      } else {
         logErrorsWithMessage(e, (e?.message as string) || '');
         await supabase.auth.signOut();
-      } finally {
-        setLocalLoading(false);
-        setLoading(false);
       }
-    };
-    const listener = (event: { url: string }) => {
-      void handleDeepLinkingTokenResponse(event.url);
-    };
-    const subscription = Linking.addEventListener('url', listener);
-    void Linking.getInitialURL().then((url) => handleDeepLinkingTokenResponse(url));
-    return () => {
-      subscription.remove();
-    };
-  }, []);
+    } finally {
+      setLocalLoading(false);
+      setLoading(false);
+    }
+  };
   const appleAuth = async () => {
     setLoading(true);
     setLocalLoading(true);
@@ -123,31 +99,16 @@ export const OAuth = ({
           provider: 'apple',
           token: credential.identityToken,
         });
-        if (error) {
+        if (error || user === null) {
           throw new Error(
-            `Error apple signing in, user: ${JSON.stringify(user)}, error: ${JSON.stringify(
-              error,
-            )}`,
+            `Error apple signing in, error: ${JSON.stringify(error)}, user: ${
+              user !== null ? JSON.stringify(user) : ''
+            }`,
           );
         }
-
-        const session = await supabase.auth.getSession();
-
-        const accessToken = session?.data?.session?.access_token;
-        const refreshToken = session?.data?.session?.refresh_token;
-        if (accessToken && refreshToken) {
-          await handleAuthTokens(
-            accessToken,
-            refreshToken,
-            handleUser('apple'),
-            auth.setIsSignedIn!,
-            auth.setUserId!,
-          );
-        } else {
-          throw new Error(
-            `Auth session has no access token ${JSON.stringify(session?.data?.session || {})}`,
-          );
-        }
+        await handleUser('google')(user);
+        auth?.setIsSignedIn!(true);
+        auth?.setUserId!(user.id);
       } else {
         throw new Error(`No identityToken, credential: ${JSON.stringify(credential)}`);
       }
@@ -202,7 +163,7 @@ export const OAuth = ({
         </PrimaryButton>
       )}
       <SecondaryButton
-        onPress={() => void googleAuth()}
+        onPress={() => void signIn()}
         disabled={localloading}
         buttonStyle={{ marginTop: 10, borderColor: theme.colors.grey3, borderWidth: 1 }}
       >

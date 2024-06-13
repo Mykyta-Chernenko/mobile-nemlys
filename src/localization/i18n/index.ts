@@ -47,6 +47,7 @@ export const i18n = new I18n(
   },
   { defaultLocale: 'en' },
 );
+i18n.enableFallback = true;
 
 const spanishSpeakingLocales = [
   'es-AR', // Argentina

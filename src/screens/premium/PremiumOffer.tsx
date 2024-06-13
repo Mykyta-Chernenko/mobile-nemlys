@@ -15,10 +15,10 @@ import { useTheme, useThemeMode } from '@rneui/themed';
 import { logErrorsWithMessage, logSupaErrors, retryAsync } from '@app/utils/errors';
 import { supabase } from '@app/api/initSupabase';
 import { MainStackParamList } from '@app/types/navigation';
-import { SecondaryButton } from '../../components/buttons/SecondaryButton';
+import { SecondaryButton } from '@app/components/buttons/SecondaryButton';
 import { localAnalytics } from '@app/utils/analytics';
 import { AuthContext } from '@app/provider/AuthProvider';
-import { Loading } from '../../components/utils/Loading';
+import { Loading } from '@app/components/utils/Loading';
 import { NativeStackScreenProps } from '@react-navigation/native-stack';
 import { getPremiumDetails } from '@app/api/premium';
 import { CloseButton } from '@app/components/buttons/CloseButton';
@@ -31,7 +31,7 @@ import PremiumFun from '@app/icons/premium_fun';
 import { getNow, sleep } from '@app/utils/date';
 import { AnimatedFontText } from '@app/components/utils/AnimatedFontText';
 import * as RNIap from 'react-native-iap';
-import { TouchableOpacity } from 'react-native-gesture-handler';
+import { TouchableOpacity } from 'react-native';
 export default function ({
   route,
   navigation,

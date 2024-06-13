@@ -2,3 +2,12 @@ https://accounts.google.com/o/oauth2/v2/auth/oauthchooseaccount?client_id=318892
 
 
 eas build --auto-submit
+
+
+# dev
+to build a development build locally, use
+`npx expo run:ios` or `npx expo run:android`
+
+## auth
+for google sign in to work in dev, do not forget to add the sha-1 of the debug.keystore to
+https://console.firebase.google.com/u/0/project/nemlys-dev/settings/general/android:com.nemlys.app

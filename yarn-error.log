@@ -38,8 +38,6 @@ npm manifest:
       "lint": "eslint --ext .tsx --ext .ts src/",
       "format": "prettier --check ./src",
       "prepare": "husky install",
-      "i18n-unused": "i18n-unused display-unused",
-      "i18n-missed": "i18n-unused display-missed",
       "update_production": "SUPABASE_URL=https://kenpblepcyvkwausergf.supabase.co SUPABASE_KEY=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InJwcXp3dmt5enVsbXZ2bGRrcXNlIiwicm9sZSI6ImFub24iLCJpYXQiOjE2NjcxNjc5ODMsImV4cCI6MTk4Mjc0Mzk4M30.5YGQBVaGcTfljLUaviU_oKzdt-7BBKDIRN4dTlSYdxE eas update --channel production"
     },
     "dependencies": {

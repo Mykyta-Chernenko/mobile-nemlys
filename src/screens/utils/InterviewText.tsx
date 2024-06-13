@@ -5,14 +5,14 @@ import { FontText } from '@app/components/utils/FontText';
 import { i18n } from '@app/localization/i18n';
 import { useTheme, useThemeMode } from '@rneui/themed';
 import { MainStackParamList } from '@app/types/navigation';
-import { SecondaryButton } from '../../components/buttons/SecondaryButton';
+import { SecondaryButton } from '@app/components/buttons/SecondaryButton';
 import { NativeStackScreenProps } from '@react-navigation/native-stack';
 import { localAnalytics } from '@app/utils/analytics';
 import { AuthContext } from '@app/provider/AuthProvider';
 import { CloseButton } from '@app/components/buttons/CloseButton';
 import { logSupaErrors } from '@app/utils/errors';
 import { supabase } from '@app/api/initSupabase';
-import { ScrollView } from 'react-native-gesture-handler';
+import { ScrollView } from 'react-native';
 import { getNow } from '@app/utils/date';
 import { Loading } from '@app/components/utils/Loading';
 export default function ({

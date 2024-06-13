@@ -11,7 +11,7 @@ import { logErrorsWithMessageWithoutAlert } from '@app/utils/errors';
 import { localAnalytics } from '@app/utils/analytics';
 import { SettingsButton } from '../menu/SettingsButton';
 import { useTheme } from '@rneui/themed';
-import { ScrollView } from 'react-native-gesture-handler';
+import { ScrollView } from 'react-native';
 
 export default function ({ title, placeholder }: { title: string; placeholder: string }) {
   const authContext = useContext(AuthContext);

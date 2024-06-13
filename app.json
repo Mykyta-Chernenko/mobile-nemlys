@@ -3,7 +3,7 @@
     "name": "Nemlys",
     "slug": "nemlys",
     "scheme": "nemlys",
-    "version": "3.5.9",
+    "version": "3.6.2",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "splash": {
@@ -18,20 +18,27 @@
       "appStoreUrl": "itms-apps://apps.apple.com/id/app/nemlys/id1662262055",
       "supportsTablet": true,
       "bundleIdentifier": "com.marakaci.nemlys",
-      "buildNumber": "3.5.9",
-      "googleServicesFile": "./GoogleService-Info.plist",
+      "buildNumber": "3.6.2",
       "config": {
         "usesNonExemptEncryption": false
       },
       "infoPlist": {
-        "NSMicrophoneUsageDescription": "This app needs microphone access to record your conversations with your partner during dates. These recordings are used solely to personalize future questions and in-app content by extracting summary of your discussion. Recordings are not shared with third parties and are handled with the utmost care for your privacy."
+        "NSMicrophoneUsageDescription": "This app needs microphone access to record your conversations with your partner during dates. These recordings are used solely to personalize future questions and in-app content by extracting summary of your discussion. Recordings are not shared with third parties and are handled with the utmost care for your privacy.",
+        "CFBundleURLTypes": [
+          {
+            "CFBundleURLSchemes": ["com.googleusercontent.apps.318892102836-9ud8fcu170fqr5i56bcskeci051gc6ra"]
+          },
+          {
+            "CFBundleURLSchemes": ["com.googleusercontent.apps.146690585551-kmmq76bsbhb4d9hljoups22889rvkklu"]
+          }
+        ]
       }
     },
     "android": {
       "playStoreUrl": "https://play.google.com/store/apps/details?id=com.nemlys.app",
       "package": "com.nemlys.app",
       "googleServicesFile": "./google-services.json",
-      "versionCode": 359
+      "versionCode": 362
     },
     "web": {
       "favicon": "./assets/favicon.png"
@@ -51,9 +58,14 @@
           }
         }
       ],
+      [
+        "@react-native-google-signin/google-signin"
+      ],
       "expo-localization",
       "react-native-iap",
-      "expo-apple-authentication"
+      "expo-apple-authentication",
+      "expo-asset",
+      "expo-font"
     ],
     "hooks": {
       "postPublish": [

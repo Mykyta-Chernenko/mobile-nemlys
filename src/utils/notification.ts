@@ -8,6 +8,8 @@ import { localAnalytics } from './analytics';
 import { NotificationTriggerInput } from 'expo-notifications';
 import { getNow } from './date';
 import { Mutex } from 'async-mutex';
+import Constants from 'expo-constants';
+
 export async function createNewNotification(
   userId: string,
   title: string,
@@ -227,7 +229,11 @@ export const retrieveNotificationAccess = async (
       if (finalStatus === GRANTED_NOTIFICATION_STATUS) {
         setLoading(true);
 
-        const token = (await Notifications.getExpoPushTokenAsync()).data;
+        const token = (
+          await Notifications.getExpoPushTokenAsync({
+            projectId: Constants.expoConfig?.extra?.eas.projectId,
+          })
+        ).data;
         let tokenField: string | null = null;
         if (Platform.OS === 'ios') {
           tokenField = 'ios_expo_token';

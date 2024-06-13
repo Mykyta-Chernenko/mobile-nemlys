@@ -25,24 +25,6 @@ export async function setSession(accessToken: string, refreshToken: string) {
   await supabase.auth.setSession({ access_token: accessToken, refresh_token: refreshToken });
 }
 
-export async function handleAuthTokens(
-  accessToken: string,
-  refreshToken: string,
-  handleUser: HandleUser,
-  setIsSignedIn: (value: boolean) => void,
-  setUserId: (value: string) => void,
-) {
-  await setSession(accessToken, refreshToken);
-  const { data: user, error } = await supabase.auth.getUser();
-  if (error) {
-    throw error;
-  } else {
-    await handleUser(user.user);
-    setIsSignedIn(true);
-    setUserId(user.user.id);
-  }
-}
-
 interface Props {
   children: React.ReactNode;
 }

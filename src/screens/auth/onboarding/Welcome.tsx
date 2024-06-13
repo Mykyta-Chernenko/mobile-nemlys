@@ -10,7 +10,7 @@ import { localAnalytics } from '@app/utils/analytics';
 import { useTheme } from '@rneui/themed';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { isSmallDevice } from '@app/utils/size';
-import { ScrollView } from 'react-native-gesture-handler';
+import { ScrollView } from 'react-native';
 
 export default function ({ navigation }: NativeStackScreenProps<AuthStackParamList, 'Welcome'>) {
   const { theme } = useTheme();
