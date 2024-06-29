@@ -80,7 +80,7 @@
     "react-native-vector-icons": "^9.2.0",
     "react-native-view-shot": "3.8.0",
     "react-native-web": "~0.19.10",
-    "sentry-expo": "~4.2.0"
+    "@sentry/react-native": "~5.24.1"
   },
   "devDependencies": {
     "@babel/core": "^7.24.0",

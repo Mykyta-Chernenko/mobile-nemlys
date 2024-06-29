@@ -11,3 +11,9 @@ to build a development build locally, use
 ## auth
 for google sign in to work in dev, do not forget to add the sha-1 of the debug.keystore to
 https://console.firebase.google.com/u/0/project/nemlys-dev/settings/general/android:com.nemlys.app
+
+
+# apple sign in
+every half a year you need to rate secret key and create secret out of it, here is the instruction for the p8 file
+https://developer.apple.com/account/resources/authkeys/list
+https://supabase.com/docs/guides/auth/social-login/auth-apple?queryGroups=platform&platform=flutter

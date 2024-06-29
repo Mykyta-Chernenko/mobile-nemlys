@@ -61,6 +61,7 @@ export default function ({
   const [spentTimes, setSpentTimes] = useState<number[]>(new Array(QUESTION_COUNT));
   const [questions, setQuestions] = useState<APIGeneratedQuestion[]>([]);
   const [questionIndex, setQuestionIndex] = useState<number>(0);
+  const [scrollInProgress, setScrollInProgress] = useState<boolean>(false);
   const [startedDiscussionAt, setStartedDiscussionAt] = useState<number>(getCurrentUTCSeconds());
   const currentQuestion = questions[questionIndex];
   const [currentDate, setCurrentDate] = useState<APIDate | undefined>(undefined);
@@ -646,12 +647,22 @@ export default function ({
     });
   };
   const handleNewIndex = (index: number) => {
+    if (scrollInProgress) {
+      void localAnalytics().logEvent('DateNavigateScrollAlreadyInProgress', {
+        screen: 'Date',
+        action: 'NavigateScrollAlreadyInProgress',
+        userId: authContext.userId,
+        questionIndex: index,
+      });
+      return;
+    }
     void localAnalytics().logEvent('DateNavigateQuestionsButton', {
       screen: 'Date',
       action: 'NavigateQuestionsButtonPressed',
       userId: authContext.userId,
       questionIndex: index,
     });
+    setScrollInProgress(true);
     carouselRef?.current?.scrollTo({ index, animated: true });
   };
   const LeftComponent = (index: number) =>
@@ -899,6 +910,8 @@ export default function ({
                   loop={false}
                   autoPlay={false}
                   onScrollEnd={(index: number) => {
+                    setScrollInProgress(false);
+                    setQuestionIndex(index);
                     if (index > questionIndex) {
                       recordGoToNextCard(index, true);
                     } else {

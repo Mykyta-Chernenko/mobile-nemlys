@@ -7,11 +7,11 @@ import LanguageWrapper from './src/theme/LanguageWrapper';
 import { ThemeProvider } from '@rneui/themed';
 import { theme } from '@app/theme';
 import FontWrapper from '@app/theme/FontWrapper';
-import * as Sentry from 'sentry-expo';
+import * as Sentry from '@sentry/react-native';
 import SplashScreen from '@app/theme/SplashScreen';
 import ThemeStatusBar from '@app/theme/ThemeStatusBar';
 
-export default function App() {
+function App() {
   return (
     <ThemeProvider theme={theme}>
       <FontWrapper>
@@ -30,12 +30,15 @@ export default function App() {
 
 Sentry.init({
   dsn: 'https://e3fb818e5bc14ba896e7b2f7bbd410b1@o4504363776344064.ingest.sentry.io/4504363782438912',
-  enableInExpoDevelopment: false,
-  debug: true,
+  debug: false,
   integrations: [
-    new Sentry.Native.ReactNativeTracing({
+    new Sentry.ReactNativeTracing({
       tracingOrigins: [/supabase/],
     }),
   ],
   tracesSampleRate: 0.1,
+  attachScreenshot: true,
+  attachStacktrace: true,
 });
+
+export default Sentry.wrap(App);

@@ -1,5 +1,5 @@
 import { i18n } from '@app/localization/i18n';
-import { Native } from 'sentry-expo';
+import * as Sentry from '@sentry/react-native';
 import { UNEXPECTED_ERROR } from './constants';
 import { localAnalytics } from './analytics';
 import { capitalize } from './strings';
@@ -26,7 +26,7 @@ export function logErrorsWithMessageWithoutAlert(e: unknown) {
 }
 
 function baseLogError(e: unknown) {
-  if (!__DEV__) Native.captureException(e instanceof Error ? e : new Error(JSON.stringify(e)));
+  if (!__DEV__) Sentry.captureException(e instanceof Error ? e : new Error(JSON.stringify(e)));
   console.error(e);
   void localAnalytics().logEvent('ErrorEncountered', {
     action: 'ErrorEncountered',

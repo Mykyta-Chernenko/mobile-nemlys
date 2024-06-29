@@ -47,6 +47,7 @@ export const OAuth = ({
         userId: ANON_USER,
       });
       await GoogleSignin.hasPlayServices();
+      await GoogleSignin.signOut();
       const userInfo = await GoogleSignin.signIn();
       const { data, error } = await supabase.auth.signInWithIdToken({
         provider: 'google',
@@ -63,7 +64,6 @@ export const OAuth = ({
       auth?.setIsSignedIn!(true);
       auth?.setUserId!(data.user.id);
     } catch (e) {
-      console.log(JSON.stringify(e));
       if (e.code === statusCodes.SIGN_IN_CANCELLED) {
         // cancelled login, proceed
       } else {
