@@ -272,7 +272,7 @@ const RecordButton = React.forwardRef<RecordButtonRef, Props>((props, ref) => {
       await IntentLauncher.startActivityAsync(
         IntentLauncher.ActivityAction.APPLICATION_DETAILS_SETTINGS,
         {
-          data: 'package:' + pkg,
+          data: `package:${pkg as string}`,
         },
       );
     }

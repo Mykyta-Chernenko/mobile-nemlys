@@ -17,3 +17,10 @@ https://console.firebase.google.com/u/0/project/nemlys-dev/settings/general/andr
 every half a year you need to rate secret key and create secret out of it, here is the instruction for the p8 file
 https://developer.apple.com/account/resources/authkeys/list
 https://supabase.com/docs/guides/auth/social-login/auth-apple?queryGroups=platform&platform=flutter
+
+## translation guide
+when introduce new language translate
+language strings
+topics
+reflection questions
+introduce new ASO
