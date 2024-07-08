@@ -3,246 +3,287 @@
     "slug": "greatuful",
     "reflection": "আপনার সম্পর্কের জন্য আপনি কৃতজ্ঞ এমন ৩টি জিনিস লিখুন",
     "level": 2,
-    "language": "bn"
+    "language": "bn",
+    "active": true
   },
   {
     "slug": "felt_during_last_date",
     "reflection": "আপনার শেষ তারিখে আপনার সঙ্গীর প্রতি আপনি যা অনুভব করেছেন তা লিখুন",
     "level": 3,
-    "language": "bn"
+    "language": "bn",
+    "active": true
   },
   {
     "slug": "most_important_things_faced",
     "reflection": "যেসব গুরুত্বপূর্ণ বিষয়গুলি আপনি যুগল হিসাবে মোকাবিলা করেছেন এবং সেগুলি কীভাবে আপনার সম্পর্ককে আকৃতির করেছে তা লিখুন",
     "level": 4,
-    "language": "bn"
+    "language": "bn",
+    "active": true
   },
   {
     "slug": "changed_to_become_better",
     "reflection": "আপনারা উভয়ে একে অপরের জন্য আরও ভাল হওয়ার জন্য পরিবর্তিত ৫টি বিষয় লিখুন",
     "level": 5,
-    "language": "bn"
+    "language": "bn",
+    "active": true
   },
   {
     "slug": "enjoyed_recently",
     "reflection": "সম্প্রতি আপনার সম্পর্কের ৫টি বিষয় লিখুন যা আপনি উপভোগ করেছেন",
     "level": 6,
-    "language": "bn"
+    "language": "bn",
+    "active": true
   },
   {
     "slug": "recent_fascinating_event",
     "reflection": "আপনার সঙ্গীর সাথে একটি সাম্প্রতিক চমকপ্রদ ঘটনার কথা লিখুন",
     "level": 6,
-    "language": "bn"
+    "language": "bn",
+    "active": true
   },
   {
     "slug": "what_to_improve",
     "reflection": "আপনার সম্পর্কের কোন বিষয়গুলি আপনি উন্নত করতে চান তা লিখুন",
     "level": 7,
-    "language": "bn"
+    "language": "bn",
+    "active": true
   },
   {
     "slug": "made_trust",
     "reflection": "আপনার সঙ্গীর প্রতি বিশ্বাস জন্মানোর মুহূর্তের কথা লিখুন",
     "level": 8,
-    "language": "bn"
+    "language": "bn",
+    "active": true
   },
   {
     "slug": "difficult_to_share",
     "reflection": "আপনার সঙ্গীর সাথে যা শেয়ার করা বা যোগাযোগ করা কঠিন বলে মনে করেন তা লিখুন",
     "level": 9,
-    "language": "bn"
+    "language": "bn",
+    "active": true
   },
   {
     "slug": "learned_recently",
     "reflection": "সম্প্রতি আপনার সঙ্গীর সম্পর্কে আপনি যা শিখেছেন তা লিখুন",
     "level": 10,
-    "language": "bn"
+    "language": "bn",
+    "active": true
   },
   {
     "slug": "this_week_funniest_moment",
     "reflection": "এই সপ্তাহে আপনার সবচেয়ে মজার মুহূর্তটি বর্ণনা করুন",
     "level": 11,
-    "language": "bn"
+    "language": "bn",
+    "active": true
   },
   {
     "slug": "challenges_to_overcome",
     "reflection": "আপনার সম্পর্ককে নিখুঁত করতে আপনাকে যে চ্যালেঞ্জগুলি কাটিয়ে উঠতে হবে তা লিখুন",
     "level": 12,
-    "language": "bn"
+    "language": "bn",
+    "active": true
   },
   {
     "slug": "show_love_ways",
     "reflection": "আপনি এবং আপনার সঙ্গী কীভাবে একে অপরের প্রতি ভালবাসা প্রদর্শন করেন তা লিখুন",
     "level": 13,
-    "language": "bn"
+    "language": "bn",
+    "active": true
   },
   {
     "slug": "shared_goals_work",
     "reflection": "সম্প্রতি আপনি কীভাবে আপনার শেয়ার করা লক্ষ্যগুলিতে কাজ করেছেন তা লিখুন",
     "level": 14,
-    "language": "bn"
+    "language": "bn",
+    "active": true
   },
   {
     "slug": "physical_affection",
     "reflection": "আপনার সঙ্গীর প্রতি আপনার শারীরিক স্নেহ কীভাবে প্রকাশ করেন তা লিখুন",
     "level": 15,
-    "language": "bn"
+    "language": "bn",
+    "active": true
   },
   {
     "slug": "moment_of_support",
     "reflection": "সম্প্রতি আপনি যে একে অপরকে সমর্থন করেছেন তার একটি মুহূর্ত লিখুন",
     "level": 16,
-    "language": "bn"
+    "language": "bn",
+    "active": true
   },
   {
     "slug": "decisions",
     "reflection": "যুগল হিসেবে নেওয়া সবচেয়ে গুরুত্বপূর্ণ সিদ্ধান্তগুলির কথা লিখুন",
     "level": 17,
-    "language": "bn"
+    "language": "bn",
+    "active": true
   },
   {
     "slug": "exciting_plans",
     "reflection": "আপনারা একসাথে থাকা সবচেয়ে উত্তেজনাপূর্ণ পরিকল্পনার কথা লিখুন",
     "level": 18,
-    "language": "bn"
+    "language": "bn",
+    "active": true
   },
   {
     "slug": "jealously",
     "reflection": "আপনারা উভয়েই সবচেয়ে শক্তিশালী ঈর্ষা অনুভব করেছিলেন সেই মুহূর্তটির কথা লিখুন",
     "level": 19,
-    "language": "bn"
+    "language": "bn",
+    "active": true
   },
   {
     "slug": "disagreement",
     "reflection": "আপনারা কীভাবে শেষ মতবিরোধটি আরও ভালভাবে কাটিয়ে উঠতে পারতেন তা লিখুন",
     "level": 20,
-    "language": "bn"
+    "language": "bn",
+    "active": true
   },
   {
     "slug": "differences_and_similarities",
     "reflection": "আপনার মিল এবং অমিল কি কি?",
     "level": 0,
-    "language": "bn"
+    "language": "bn",
+    "active": true
   },
   {
     "slug": "achievement",
     "reflection": "যে ব্যক্তিগত অর্জনের জন্য আপনি গর্বিত কিন্তু প্রায়শই আলোচনা করেন না তার কথা লিখুন",
     "level": 21,
-    "language": "bn"
+    "language": "bn",
+    "active": true
   },
   {
     "slug": "changed_perspective",
     "reflection": "একটি জায়গার কথা লিখুন যা আপনি পরিদর্শন করেছেন যা আপনার জীবনের দৃষ্টিভঙ্গি পরিবর্তন করেছে",
     "level": 22,
-    "language": "bn"
+    "language": "bn",
+    "active": true
   },
   {
     "slug": "rethink_belief",
     "reflection": "একটি বই বা নিবন্ধ সম্পর্কে লিখুন যা আপনাকে দীর্ঘদিন ধরে ধারণ করা একটি বিশ্বাস পুনর্বিবেচনা করতে বাধ্য করেছে",
     "level": 23,
-    "language": "bn"
+    "language": "bn",
+    "active": true
   },
   {
     "slug": "felt_vulnerable",
     "reflection": "সম্প্রতি যখন আপনি সত্যিই দুর্বল বোধ করেছেন সেই সময়টি লিখুন, তা আপনার সঙ্গীর সাথে হোক বা অন্য কোথাও",
     "level": 24,
-    "language": "bn"
+    "language": "bn",
+    "active": true
   },
   {
     "slug": "unexpected_kindness",
     "reflection": "কেউ আপনাকে যে অপ্রত্যাশিত সদয় আচরণ দেখিয়েছিল তা লিখুন",
     "level": 25,
-    "language": "bn"
+    "language": "bn",
+    "active": true
   },
   {
     "slug": "historical_figure",
     "reflection": "যে ঐতিহাসিক ব্যক্তিত্ব বা ঘটনা আপনি গভীরভাবে মুগ্ধ হন এবং কেন তা লিখুন",
     "level": 26,
-    "language": "bn"
+    "language": "bn",
+    "active": true
   },
   {
     "slug": "challenge_alone",
     "reflection": "একটি চ্যালেঞ্জ সম্পর্কে লিখুন যা আপনি একা মোকাবিলা করেছিলেন এবং আপনি এটি কীভাবে পরিচালনা করেছিলেন",
     "level": 27,
-    "language": "bn"
+    "language": "bn",
+    "active": true
   },
   {
     "slug": "movie_moved",
     "reflection": "একটি শিল্পকর্ম (একটি পেইন্টিং, গান বা সিনেমা) সম্পর্কে লিখুন যা আপনাকে গভীরভাবে প্রভাবিত করেছে",
     "level": 28,
-    "language": "bn"
+    "language": "bn",
+    "active": true
   },
   {
     "slug": "childhhood_formes",
     "reflection": "একটি শৈশবের স্মৃতি সম্পর্কে লিখুন যা আজও আপনাকে আকৃতি দেয়",
     "level": 29,
-    "language": "bn"
+    "language": "bn",
+    "active": true
   },
   {
     "slug": "goal_achieved",
     "reflection": "একটি স্বপ্ন বা লক্ষ্য সম্পর্কে লিখুন যা অপ্রাপ্য বলে মনে হয় কিন্তু আপনি অর্জনের জন্য দৃঢ়প্রতিজ্ঞ",
     "level": 30,
-    "language": "bn"
+    "language": "bn",
+    "active": true
   },
   {
     "slug": "news_affected",
     "reflection": "একটি সাম্প্রতিক খবর বা ইভেন্ট সম্পর্কে লিখুন যা আপনাকে গভীরভাবে প্রভাবিত বা উদ্বিগ্ন করেছে",
     "level": 31,
-    "language": "bn"
+    "language": "bn",
+    "active": true
   },
   {
     "slug": "tradition_significance",
     "reflection": "একটি ঐতিহ্য বা সাংস্কৃতিক দিক যা আপনার জন্য গভীর তা লিখুন",
     "level": 32,
-    "language": "bn"
+    "language": "bn",
+    "active": true
   },
   {
     "slug": "dilemma_faced",
     "reflection": "একটি নৈতিক দৃষ্টিভঙ্গি সম্পর্কে লিখুন যা আপনি মোকাবেলা করেছেন এবং আপনি এটি কীভাবে সমাধান করেছেন (বা করেননি)",
     "level": 33,
-    "language": "bn"
+    "language": "bn",
+    "active": true
   },
   {
     "slug": "nature_experience",
     "reflection": "প্রকৃতির একটি অভিজ্ঞতা সম্পর্কে লিখুন যা আপনাকে সংযুক্ত বা বিস্ময়ে অনুভব করেছে",
     "level": 34,
-    "language": "bn"
+    "language": "bn",
+    "active": true
   },
   {
     "slug": "scientific_discovery",
     "reflection": "একটি বৈজ্ঞানিক আবিষ্কার বা ধারণা সম্পর্কে লিখুন যা আপনি উভয়ই বিভ্রান্তিকর এবং আকর্ষণীয় মনে করেন",
     "level": 35,
-    "language": "bn"
+    "language": "bn",
+    "active": true
   },
   {
     "slug": "comfort_zone",
     "reflection": "একটি অভিজ্ঞতা সম্পর্কে লিখুন যেখানে আপনি আপনার স্বাচ্ছন্দ্যের অঞ্চলের বাইরে ছিলেন এবং আপনি যা শিখেছেন",
     "level": 36,
-    "language": "bn"
+    "language": "bn",
+    "active": true
   },
   {
     "slug": "influencial_figure",
     "reflection": "আপনার জীবনের একজন পরামর্শদাতা বা প্রভাবশালী ব্যক্তিত্ব এবং তারা যে জ্ঞান ভাগ করেছেন তা লিখুন",
     "level": 37,
-    "language": "bn"
+    "language": "bn",
+    "active": true
   },
   {
     "slug": "social_norm",
     "reflection": "একটি মুহুর্ত সম্পর্কে লিখুন যখন আপনি একটি সামাজিক নিয়ম বা মূল্যবোধকে প্রশ্ন করেছিলেন",
     "level": 38,
-    "language": "bn"
+    "language": "bn",
+    "active": true
   },
   {
     "slug": "passionate_hobby",
     "reflection": "একটি শখ বা আগ্রহ সম্পর্কে লিখুন যা আপনি গভীরভাবে আবেগপ্রবণ কিন্তু প্রায়ই আলোচনা করার সুযোগ পান না",
     "level": 39,
-    "language": "bn"
+    "language": "bn",
+    "active": true
   },
   {
     "slug": "philosophical_question",
     "reflection": "একটি দার্শনিক প্রশ্ন বা ধারণা সম্পর্কে লিখুন যা আপনাকে রাতে জাগিয়ে রাখে",
     "level": 40,
-    "language": "bn"
+    "language": "bn",
+    "active": true
   }
 ]

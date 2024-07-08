@@ -3,246 +3,287 @@
     "slug": "greatuful",
     "reflection": "अपनी संबंध में 3 ऐसी चीजें लिखें जिनके लिए आप आभारी हैं",
     "level": 2,
-    "language": "hi"
+    "language": "hi",
+    "active": true
   },
   {
     "slug": "felt_during_last_date",
     "reflection": "अपने पिछले डेट के दौरान अपने साथी के प्रति अपनी भावनाओं को लिखें",
     "level": 3,
-    "language": "hi"
+    "language": "hi",
+    "active": true
   },
   {
     "slug": "most_important_things_faced",
     "reflection": "एक युगल के रूप में आपने जिन सबसे महत्वपूर्ण चीजों का सामना किया है, उन्हें लिखें और उन्होंने आपके संबंध को कैसे आकार दिया है",
     "level": 4,
-    "language": "hi"
+    "language": "hi",
+    "active": true
   },
   {
     "slug": "changed_to_become_better",
     "reflection": "आप दोनों ने एक-दूसरे के लिए बेहतर बनने के लिए 5 चीजें लिखें",
     "level": 5,
-    "language": "hi"
+    "language": "hi",
+    "active": true
   },
   {
     "slug": "enjoyed_recently",
     "reflection": "हाल ही में अपने संबंध के बारे में 5 ऐसी चीजें लिखें जो आपने आनंदित की हैं",
     "level": 6,
-    "language": "hi"
+    "language": "hi",
+    "active": true
   },
   {
     "slug": "recent_fascinating_event",
     "reflection": "अपने साथी के साथ हाल की एक रोचक घटना के बारे में लिखें",
     "level": 6,
-    "language": "hi"
+    "language": "hi",
+    "active": true
   },
   {
     "slug": "what_to_improve",
     "reflection": "अपने संबंध में आप क्या सुधार करना चाहेंगे, उसे लिखें",
     "level": 7,
-    "language": "hi"
+    "language": "hi",
+    "active": true
   },
   {
     "slug": "made_trust",
     "reflection": "एक ऐसे पल के बारे में लिखें जिसने आपको अपने साथी पर विश्वास करने के लिए प्रेरित किया",
     "level": 8,
-    "language": "hi"
+    "language": "hi",
+    "active": true
   },
   {
     "slug": "difficult_to_share",
     "reflection": "ऐसी चीजें लिखें जिन्हें अपने साथी के साथ साझा करना या संवाद करना आपको कठिन लगता है",
     "level": 9,
-    "language": "hi"
+    "language": "hi",
+    "active": true
   },
   {
     "slug": "learned_recently",
     "reflection": "अपने साथी के बारे में आपने हाल ही में क्या सीखा है, उसे लिखें",
     "level": 10,
-    "language": "hi"
+    "language": "hi",
+    "active": true
   },
   {
     "slug": "this_week_funniest_moment",
     "reflection": "इस सप्ताह आपके पास सबसे मजेदार क्षण का वर्णन करें",
     "level": 11,
-    "language": "hi"
+    "language": "hi",
+    "active": true
   },
   {
     "slug": "challenges_to_overcome",
     "reflection": "ऐसी चुनौतियों के बारे में लिखें जिन्हें आप एक परिपूर्ण बंधन बनने के लिए दूर करना चाहते हैं",
     "level": 12,
-    "language": "hi"
+    "language": "hi",
+    "active": true
   },
   {
     "slug": "show_love_ways",
     "reflection": "लिखें कि आप और आपका साथी एक-दूसरे को प्यार कैसे दिखाते हैं",
     "level": 13,
-    "language": "hi"
+    "language": "hi",
+    "active": true
   },
   {
     "slug": "shared_goals_work",
     "reflection": "अपने साझा लक्ष्यों पर हाल ही में आपने कैसे काम किया है, उसे लिखें",
     "level": 14,
-    "language": "hi"
+    "language": "hi",
+    "active": true
   },
   {
     "slug": "physical_affection",
     "reflection": "लिखें कि आप अपने साथी को अपनी शारीरिक स्नेह कैसे दिखाते हैं",
     "level": 15,
-    "language": "hi"
+    "language": "hi",
+    "active": true
   },
   {
     "slug": "moment_of_support",
     "reflection": "एक हाल के समर्थन के क्षण के बारे में लिखें जिसे आपने एक-दूसरे को दिया है",
     "level": 16,
-    "language": "hi"
+    "language": "hi",
+    "active": true
   },
   {
     "slug": "decisions",
     "reflection": "उन सबसे महत्वपूर्ण निर्णयों के बारे में लिखें जो आपने एक युगल के रूप में लिए हैं",
     "level": 17,
-    "language": "hi"
+    "language": "hi",
+    "active": true
   },
   {
     "slug": "exciting_plans",
     "reflection": "उन सबसे रोमांचक योजनाओं के बारे में लिखें जो आप दोनों ने एक साथ बनाई हैं",
     "level": 18,
-    "language": "hi"
+    "language": "hi",
+    "active": true
   },
   {
     "slug": "jealously",
     "reflection": "उस क्षण के बारे में लिखें जब आप दोनों ने सबसे अधिक ईर्ष्या महसूस की",
     "level": 19,
-    "language": "hi"
+    "language": "hi",
+    "active": true
   },
   {
     "slug": "disagreement",
     "reflection": "लिखें कि आप पिछले विवाद को बेहतर तरीके से कैसे सुलझा सकते थे",
     "level": 20,
-    "language": "hi"
+    "language": "hi",
+    "active": true
   },
   {
     "slug": "differences_and_similarities",
     "reflection": "आपकी समानताएं और भिन्नताएं क्या हैं?",
     "level": 0,
-    "language": "hi"
+    "language": "hi",
+    "active": true
   },
   {
     "slug": "achievement",
     "reflection": "एक व्यक्तिगत उपलब्धि के बारे में लिखें जिस पर आप गर्व महसूस करते हैं लेकिन अक्सर चर्चा नहीं करते",
     "level": 21,
-    "language": "hi"
+    "language": "hi",
+    "active": true
   },
   {
     "slug": "changed_perspective",
     "reflection": "उस जगह के बारे में लिखें जिसे आपने देखा और जिसने आपके जीवन की दृष्टिकोण को बदल दिया",
     "level": 22,
-    "language": "hi"
+    "language": "hi",
+    "active": true
   },
   {
     "slug": "rethink_belief",
     "reflection": "एक किताब या लेख के बारे में लिखें जिसने आपको लंबे समय से धारण की हुई मान्यता पर पुनर्विचार करने पर मजबूर कर दिया",
     "level": 23,
-    "language": "hi"
+    "language": "hi",
+    "active": true
   },
   {
     "slug": "felt_vulnerable",
     "reflection": "हाल ही में जब आपने सच में असुरक्षित महसूस किया था, चाहे अपने साथी के साथ हो या अन्यत्र, उसके बारे में लिखें",
     "level": 24,
-    "language": "hi"
+    "language": "hi",
+    "active": true
   },
   {
     "slug": "unexpected_kindness",
     "reflection": "उस अप्रत्याशित दया के बारे में लिखें जो किसी ने एक बार आपके प्रति दिखाई थी",
     "level": 25,
-    "language": "hi"
+    "language": "hi",
+    "active": true
   },
   {
     "slug": "historical_figure",
     "reflection": "एक ऐतिहासिक व्यक्ति या घटना के बारे में लिखें जो आपको गहरे रूप से आकर्षित करती है और क्यों",
     "level": 26,
-    "language": "hi"
+    "language": "hi",
+    "active": true
   },
   {
     "slug": "challenge_alone",
     "reflection": "एक चुनौती के बारे में लिखें जिसका आपने अकेले सामना किया और कैसे आपने उसे पार किया",
     "level": 27,
-    "language": "hi"
+    "language": "hi",
+    "active": true
   },
   {
     "slug": "movie_moved",
     "reflection": "एक कलाकृति (चित्रकला, गीत, या फिल्म) के बारे में लिखें जिसने आपको गहरे रूप से प्रभावित किया",
     "level": 28,
-    "language": "hi"
+    "language": "hi",
+    "active": true
   },
   {
     "slug": "childhhood_formes",
     "reflection": "एक बचपन की याद के बारे में लिखें जो आज भी आपको आकार देती है",
     "level": 29,
-    "language": "hi"
+    "language": "hi",
+    "active": true
   },
   {
     "slug": "goal_achieved",
     "reflection": "एक ऐसे सपने या लक्ष्य के बारे में लिखें जो असंभव लगता है लेकिन जिसे आप पूरा करने के लिए दृढ़ संकल्पित हैं",
     "level": 30,
-    "language": "hi"
+    "language": "hi",
+    "active": true
   },
   {
     "slug": "news_affected",
     "reflection": "हाल ही में एक समाचार कहानी या घटना के बारे में लिखें जिसने आपको गहरे रूप से प्रभावित किया या चिंतित किया",
     "level": 31,
-    "language": "hi"
+    "language": "hi",
+    "active": true
   },
   {
     "slug": "tradition_significance",
     "reflection": "एक परंपरा या सांस्कृतिक पहलू के बारे में लिखें जो आपके लिए गहरी महत्व रखता है",
     "level": 32,
-    "language": "hi"
+    "language": "hi",
+    "active": true
   },
   {
     "slug": "dilemma_faced",
     "reflection": "एक नैतिक दुविधा के बारे में लिखें जिसका आपने सामना किया और कैसे आपने उसे हल किया (या नहीं किया)",
     "level": 33,
-    "language": "hi"
+    "language": "hi",
+    "active": true
   },
   {
     "slug": "nature_experience",
     "reflection": "एक प्राकृतिक अनुभव के बारे में लिखें जिसने आपको जुड़ा हुआ या श्रद्धावान महसूस कराया",
     "level": 34,
-    "language": "hi"
+    "language": "hi",
+    "active": true
   },
   {
     "slug": "scientific_discovery",
     "reflection": "एक वैज्ञानिक खोज या अवधारणा के बारे में लिखें जो आपको दोनों ही उलझन और आकर्षक लगती है",
     "level": 35,
-    "language": "hi"
+    "language": "hi",
+    "active": true
   },
   {
     "slug": "comfort_zone",
     "reflection": "एक अनुभव के बारे में लिखें जब आप अपनी आराम क्षेत्र से बाहर थे और आपने क्या सीखा",
     "level": 36,
-    "language": "hi"
+    "language": "hi",
+    "active": true
   },
   {
     "slug": "influencial_figure",
     "reflection": "एक मार्गदर्शक या प्रभावशाली व्यक्ति के बारे में लिखें और उन्होंने आपको कौन सी बुद्धिमता साझा की",
     "level": 37,
-    "language": "hi"
+    "language": "hi",
+    "active": true
   },
   {
     "slug": "social_norm",
     "reflection": "एक क्षण के बारे में लिखें जब आपने एक सामाजिक मानदंड या मूल्य को प्रश्न किया",
     "level": 38,
-    "language": "hi"
+    "language": "hi",
+    "active": true
   },
   {
     "slug": "passionate_hobby",
     "reflection": "एक शौक या रुचि के बारे में लिखें जिसके लिए आप गहरे रूप से जुनूनी हैं लेकिन अक्सर उसके बारे में बात नहीं करते",
     "level": 39,
-    "language": "hi"
+    "language": "hi",
+    "active": true
   },
   {
     "slug": "philosophical_question",
     "reflection": "एक दार्शनिक प्रश्न या विचार के बारे में लिखें जो आपको रात में जागता रखता है",
     "level": 40,
-    "language": "hi"
+    "language": "hi",
+    "active": true
   }
 ]

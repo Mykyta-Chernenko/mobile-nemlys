@@ -3,246 +3,287 @@
     "slug": "greatuful",
     "reflection": "Schreibe 3 Dinge auf, für die du in deiner Beziehung dankbar bist",
     "level": 2,
-    "language": "de"
+    "language": "de",
+    "active": true
   },
   {
     "slug": "felt_during_last_date",
     "reflection": "Schreibe auf, was du während deines letzten Dates für deinen Partner empfunden hast",
     "level": 3,
-    "language": "de"
+    "language": "de",
+    "active": true
   },
   {
     "slug": "most_important_things_faced",
     "reflection": "Schreibe die wichtigsten Dinge auf, denen ihr als Paar begegnet seid und wie sie eure Beziehung geprägt haben",
     "level": 4,
-    "language": "de"
+    "language": "de",
+    "active": true
   },
   {
     "slug": "changed_to_become_better",
     "reflection": "Schreibe 5 Dinge auf, die ihr beide geändert habt, um besser füreinander zu werden",
     "level": 5,
-    "language": "de"
+    "language": "de",
+    "active": true
   },
   {
     "slug": "enjoyed_recently",
     "reflection": "Schreibe 5 Dinge auf, die du kürzlich an deiner Beziehung genossen hast",
     "level": 6,
-    "language": "de"
+    "language": "de",
+    "active": true
   },
   {
     "slug": "recent_fascinating_event",
     "reflection": "Schreibe über ein kürzliches faszinierendes Ereignis mit deinem Partner",
     "level": 6,
-    "language": "de"
+    "language": "de",
+    "active": true
   },
   {
     "slug": "what_to_improve",
     "reflection": "Schreibe auf, was du in deiner Beziehung verbessern möchtest",
     "level": 7,
-    "language": "de"
+    "language": "de",
+    "active": true
   },
   {
     "slug": "made_trust",
     "reflection": "Schreibe über einen Moment, der dich dazu brachte, deinem Partner zu vertrauen",
     "level": 8,
-    "language": "de"
+    "language": "de",
+    "active": true
   },
   {
     "slug": "difficult_to_share",
     "reflection": "Schreibe auf, was du schwierig findest, mit deinem Partner zu teilen oder zu kommunizieren",
     "level": 9,
-    "language": "de"
+    "language": "de",
+    "active": true
   },
   {
     "slug": "learned_recently",
     "reflection": "Schreibe auf, was du kürzlich über deinen Partner gelernt hast",
     "level": 10,
-    "language": "de"
+    "language": "de",
+    "active": true
   },
   {
     "slug": "this_week_funniest_moment",
     "reflection": "Beschreibe den lustigsten Moment, den du diese Woche hattest",
     "level": 11,
-    "language": "de"
+    "language": "de",
+    "active": true
   },
   {
     "slug": "challenges_to_overcome",
     "reflection": "Schreibe über Herausforderungen, die ihr überwinden müsst, um eine perfekte Bindung zu werden",
     "level": 12,
-    "language": "de"
+    "language": "de",
+    "active": true
   },
   {
     "slug": "show_love_ways",
     "reflection": "Schreibe auf, wie du und dein Partner euch gegenseitig Liebe zeigt",
     "level": 13,
-    "language": "de"
+    "language": "de",
+    "active": true
   },
   {
     "slug": "shared_goals_work",
     "reflection": "Schreibe auf, wie ihr kürzlich an euren gemeinsamen Zielen gearbeitet habt",
     "level": 14,
-    "language": "de"
+    "language": "de",
+    "active": true
   },
   {
     "slug": "physical_affection",
     "reflection": "Schreibe auf, wie du deinem Partner körperliche Zuneigung zeigst",
     "level": 15,
-    "language": "de"
+    "language": "de",
+    "active": true
   },
   {
     "slug": "moment_of_support",
     "reflection": "Schreibe über einen kürzlichen Moment der Unterstützung, den ihr euch gegenseitig gegeben habt",
     "level": 16,
-    "language": "de"
+    "language": "de",
+    "active": true
   },
   {
     "slug": "decisions",
     "reflection": "Schreibe über die wichtigsten Entscheidungen, die ihr als Paar getroffen habt",
     "level": 17,
-    "language": "de"
+    "language": "de",
+    "active": true
   },
   {
     "slug": "exciting_plans",
     "reflection": "Schreibe über die spannendsten Pläne, die ihr zusammen habt",
     "level": 18,
-    "language": "de"
+    "language": "de",
+    "active": true
   },
   {
     "slug": "jealously",
     "reflection": "Schreibe über den Moment, in dem ihr beide die stärkste Eifersucht empfunden habt",
     "level": 19,
-    "language": "de"
+    "language": "de",
+    "active": true
   },
   {
     "slug": "disagreement",
     "reflection": "Schreibe auf, wie ihr den letzten Streit besser hättet überwinden können",
     "level": 20,
-    "language": "de"
+    "language": "de",
+    "active": true
   },
   {
     "slug": "differences_and_similarities",
     "reflection": "Was sind eure Gemeinsamkeiten und Unterschiede?",
     "level": 0,
-    "language": "de"
+    "language": "de",
+    "active": true
   },
   {
     "slug": "achievement",
     "reflection": "Schreibe über eine persönliche Errungenschaft, auf die du stolz bist, aber die du nicht oft besprichst",
     "level": 21,
-    "language": "de"
+    "language": "de",
+    "active": true
   },
   {
     "slug": "changed_perspective",
     "reflection": "Schreibe über einen Ort, den du besucht hast und der deine Perspektive auf das Leben verändert hat",
     "level": 22,
-    "language": "de"
+    "language": "de",
+    "active": true
   },
   {
     "slug": "rethink_belief",
     "reflection": "Schreibe über ein Buch oder einen Artikel, der dich dazu gebracht hat, einen lang gehegten Glauben zu überdenken",
     "level": 23,
-    "language": "de"
+    "language": "de",
+    "active": true
   },
   {
     "slug": "felt_vulnerable",
     "reflection": "Schreibe über eine kürzliche Zeit, in der du dich wirklich verletzlich gefühlt hast, sei es mit deinem Partner oder anderswo",
     "level": 24,
-    "language": "de"
+    "language": "de",
+    "active": true
   },
   {
     "slug": "unexpected_kindness",
     "reflection": "Schreibe über eine unerwartete Freundlichkeit, die dir jemand einmal gezeigt hat",
     "level": 25,
-    "language": "de"
+    "language": "de",
+    "active": true
   },
   {
     "slug": "historical_figure",
     "reflection": "Schreibe über eine historische Figur oder ein Ereignis, das dich tief fasziniert und warum",
     "level": 26,
-    "language": "de"
+    "language": "de",
+    "active": true
   },
   {
     "slug": "challenge_alone",
     "reflection": "Schreibe über eine Herausforderung, der du alleine begegnet bist und wie du sie bewältigt hast",
     "level": 27,
-    "language": "de"
+    "language": "de",
+    "active": true
   },
   {
     "slug": "movie_moved",
     "reflection": "Schreibe über ein Kunstwerk (ein Gemälde, ein Lied oder einen Film), das dich tief bewegt hat",
     "level": 28,
-    "language": "de"
+    "language": "de",
+    "active": true
   },
   {
     "slug": "childhhood_formes",
     "reflection": "Schreibe über eine Kindheitserinnerung, die dich noch heute prägt",
     "level": 29,
-    "language": "de"
+    "language": "de",
+    "active": true
   },
   {
     "slug": "goal_achieved",
     "reflection": "Schreibe über einen Traum oder ein Ziel, das unerreichbar erscheint, das du aber entschlossen bist zu erreichen",
     "level": 30,
-    "language": "de"
+    "language": "de",
+    "active": true
   },
   {
     "slug": "news_affected",
     "reflection": "Schreibe über eine kürzliche Nachricht oder ein Ereignis, das dich tief berührt oder beunruhigt hat",
     "level": 31,
-    "language": "de"
+    "language": "de",
+    "active": true
   },
   {
     "slug": "tradition_significance",
     "reflection": "Schreibe über eine Tradition oder einen kulturellen Aspekt, der für dich von großer Bedeutung ist",
     "level": 32,
-    "language": "de"
+    "language": "de",
+    "active": true
   },
   {
     "slug": "dilemma_faced",
     "reflection": "Schreibe über ein ethisches Dilemma, dem du begegnet bist und wie du es gelöst hast (oder nicht)",
     "level": 33,
-    "language": "de"
+    "language": "de",
+    "active": true
   },
   {
     "slug": "nature_experience",
     "reflection": "Schreibe über ein Naturerlebnis, das dich verbunden oder ehrfürchtig fühlen ließ",
     "level": 34,
-    "language": "de"
+    "language": "de",
+    "active": true
   },
   {
     "slug": "scientific_discovery",
     "reflection": "Schreibe über eine wissenschaftliche Entdeckung oder ein Konzept, das du sowohl verwirrend als auch faszinierend findest",
     "level": 35,
-    "language": "de"
+    "language": "de",
+    "active": true
   },
   {
     "slug": "comfort_zone",
     "reflection": "Schreibe über eine Erfahrung, bei der du außerhalb deiner Komfortzone warst und was du gelernt hast",
     "level": 36,
-    "language": "de"
+    "language": "de",
+    "active": true
   },
   {
     "slug": "influencial_figure",
     "reflection": "Schreibe über einen Mentor oder eine einflussreiche Figur in deinem Leben und die Weisheit, die sie geteilt haben",
     "level": 37,
-    "language": "de"
+    "language": "de",
+    "active": true
   },
   {
     "slug": "social_norm",
     "reflection": "Schreibe über einen Moment, in dem du eine gesellschaftliche Norm oder einen Wert in Frage gestellt hast",
     "level": 38,
-    "language": "de"
+    "language": "de",
+    "active": true
   },
   {
     "slug": "passionate_hobby",
     "reflection": "Schreibe über ein Hobby oder Interesse, für das du tief leidenschaftlich bist, aber nicht oft darüber sprichst",
     "level": 39,
-    "language": "de"
+    "language": "de",
+    "active": true
   },
   {
     "slug": "philosophical_question",
     "reflection": "Schreibe über eine philosophische Frage oder Idee, die dich nachts wach hält",
     "level": 40,
-    "language": "de"
+    "language": "de",
+    "active": true
   }
 ]

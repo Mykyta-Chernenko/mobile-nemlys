@@ -6,9 +6,10 @@ def json_to_sql_insert(json_data):
     for item in json_data:
         slug = item.get('slug', '')
         language = item.get('language', '')
+        active = item.get('active', True)
         reflection = item.get('reflection', '').replace("'", "''")
         level = item.get('level', '')
-        values.append(f"('{slug}', '{reflection}', '{language}', '{level}')")
+        values.append(f"('{slug}', '{reflection}', '{language}', '{level}', {active})")
     return values
 
 def main():
@@ -22,7 +23,7 @@ def main():
                 language = data[0].get('language', 'unknown')
                 with open(f"{language}_topics.sql", 'w', encoding='utf-8') as sql_file:
                                 sql_file.write(f"delete from reflection_question where language='{language}';\n")
-                                sql_file.write("insert into reflection_question\n    (\"slug\", \"reflection\", \"language\", \"level\") \nvalues\n")
+                                sql_file.write("insert into reflection_question\n    (\"slug\", \"reflection\", \"language\", \"level\", \"active\") \nvalues\n")
                                 sql_file.write(",\n".join(values) + ";\n")
 
 if __name__ == "__main__":

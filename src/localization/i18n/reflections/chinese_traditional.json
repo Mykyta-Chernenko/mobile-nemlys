@@ -3,246 +3,287 @@
     "slug": "greatuful",
     "reflection": "寫下你在關係中感激的三件事",
     "level": 2,
-    "language": "zh_tw"
+    "language": "zh_tw",
+    "active": true
   },
   {
     "slug": "felt_during_last_date",
     "reflection": "寫下你在最近一次約會中對伴侶的感受",
     "level": 3,
-    "language": "zh_tw"
+    "language": "zh_tw",
+    "active": true
   },
   {
     "slug": "most_important_things_faced",
     "reflection": "寫下你們作為情侶面對的最重要的事情，以及這些事情如何塑造了你們的關係",
     "level": 4,
-    "language": "zh_tw"
+    "language": "zh_tw",
+    "active": true
   },
   {
     "slug": "changed_to_become_better",
     "reflection": "寫下你們彼此變得更好的五件改變",
     "level": 5,
-    "language": "zh_tw"
+    "language": "zh_tw",
+    "active": true
   },
   {
     "slug": "enjoyed_recently",
     "reflection": "寫下你最近對你們關係感到滿意的五件事",
     "level": 6,
-    "language": "zh_tw"
+    "language": "zh_tw",
+    "active": true
   },
   {
     "slug": "recent_fascinating_event",
     "reflection": "寫下你和伴侶最近發生的有趣事件",
     "level": 6,
-    "language": "zh_tw"
+    "language": "zh_tw",
+    "active": true
   },
   {
     "slug": "what_to_improve",
     "reflection": "寫下你希望在關係中改進的地方",
     "level": 7,
-    "language": "zh_tw"
+    "language": "zh_tw",
+    "active": true
   },
   {
     "slug": "made_trust",
     "reflection": "寫下一個讓你信任伴侶的時刻",
     "level": 8,
-    "language": "zh_tw"
+    "language": "zh_tw",
+    "active": true
   },
   {
     "slug": "difficult_to_share",
     "reflection": "寫下你覺得難以與伴侶分享或溝通的事情",
     "level": 9,
-    "language": "zh_tw"
+    "language": "zh_tw",
+    "active": true
   },
   {
     "slug": "learned_recently",
     "reflection": "寫下你最近學到的關於伴侶的事情",
     "level": 10,
-    "language": "zh_tw"
+    "language": "zh_tw",
+    "active": true
   },
   {
     "slug": "this_week_funniest_moment",
     "reflection": "描述你這週經歷的最有趣的時刻",
     "level": 11,
-    "language": "zh_tw"
+    "language": "zh_tw",
+    "active": true
   },
   {
     "slug": "challenges_to_overcome",
     "reflection": "寫下你們需要克服的挑戰，以便成為完美的伴侶",
     "level": 12,
-    "language": "zh_tw"
+    "language": "zh_tw",
+    "active": true
   },
   {
     "slug": "show_love_ways",
     "reflection": "寫下你和伴侶如何向對方表達愛意",
     "level": 13,
-    "language": "zh_tw"
+    "language": "zh_tw",
+    "active": true
   },
   {
     "slug": "shared_goals_work",
     "reflection": "寫下你們最近如何在共同目標上合作",
     "level": 14,
-    "language": "zh_tw"
+    "language": "zh_tw",
+    "active": true
   },
   {
     "slug": "physical_affection",
     "reflection": "寫下你如何向伴侶表達身體上的愛意",
     "level": 15,
-    "language": "zh_tw"
+    "language": "zh_tw",
+    "active": true
   },
   {
     "slug": "moment_of_support",
     "reflection": "寫下你們最近互相支持的一個時刻",
     "level": 16,
-    "language": "zh_tw"
+    "language": "zh_tw",
+    "active": true
   },
   {
     "slug": "decisions",
     "reflection": "寫下你們作為情侶做出的最重要的決定",
     "level": 17,
-    "language": "zh_tw"
+    "language": "zh_tw",
+    "active": true
   },
   {
     "slug": "exciting_plans",
     "reflection": "寫下你們最令人興奮的計劃",
     "level": 18,
-    "language": "zh_tw"
+    "language": "zh_tw",
+    "active": true
   },
   {
     "slug": "jealously",
     "reflection": "寫下你們雙方感到最強烈嫉妒的時刻",
     "level": 19,
-    "language": "zh_tw"
+    "language": "zh_tw",
+    "active": true
   },
   {
     "slug": "disagreement",
     "reflection": "寫下你們如何更好地克服上一次的分歧",
     "level": 20,
-    "language": "zh_tw"
+    "language": "zh_tw",
+    "active": true
   },
   {
     "slug": "differences_and_similarities",
     "reflection": "你們的相似之處和不同之處是什麼？",
     "level": 0,
-    "language": "zh_tw"
+    "language": "zh_tw",
+    "active": true
   },
   {
     "slug": "achievement",
     "reflection": "寫下一個你感到自豪但很少討論的個人成就",
     "level": 21,
-    "language": "zh_tw"
+    "language": "zh_tw",
+    "active": true
   },
   {
     "slug": "changed_perspective",
     "reflection": "寫下一個你參觀過的改變你生活觀念的地方",
     "level": 22,
-    "language": "zh_tw"
+    "language": "zh_tw",
+    "active": true
   },
   {
     "slug": "rethink_belief",
     "reflection": "寫下一本書或文章，它讓你重新思考一個長期持有的信念",
     "level": 23,
-    "language": "zh_tw"
+    "language": "zh_tw",
+    "active": true
   },
   {
     "slug": "felt_vulnerable",
     "reflection": "寫下最近你感到真正脆弱的時刻，不管是與你的伴侶還是在其他地方",
     "level": 24,
-    "language": "zh_tw"
+    "language": "zh_tw",
+    "active": true
   },
   {
     "slug": "unexpected_kindness",
     "reflection": "寫下一次別人向你展示的意外善意",
     "level": 25,
-    "language": "zh_tw"
+    "language": "zh_tw",
+    "active": true
   },
   {
     "slug": "historical_figure",
     "reflection": "寫下一個你覺得非常有趣的歷史人物或事件，以及為什麼",
     "level": 26,
-    "language": "zh_tw"
+    "language": "zh_tw",
+    "active": true
   },
   {
     "slug": "challenge_alone",
     "reflection": "寫下一次你獨自面對的挑戰以及你是如何應對的",
     "level": 27,
-    "language": "zh_tw"
+    "language": "zh_tw",
+    "active": true
   },
   {
     "slug": "movie_moved",
     "reflection": "寫下一部電影（或一幅畫、一首歌），它深深地打動了你",
     "level": 28,
-    "language": "zh_tw"
+    "language": "zh_tw",
+    "active": true
   },
   {
     "slug": "childhhood_formes",
     "reflection": "寫下一個至今仍在塑造你的童年記憶",
     "level": 29,
-    "language": "zh_tw"
+    "language": "zh_tw",
+    "active": true
   },
   {
     "slug": "goal_achieved",
     "reflection": "寫下一個看似遙不可及但你決心實現的夢想或目標",
     "level": 30,
-    "language": "zh_tw"
+    "language": "zh_tw",
+    "active": true
   },
   {
     "slug": "news_affected",
     "reflection": "寫下一條最近的新聞或事件，它深深地影響了你或讓你擔憂",
     "level": 31,
-    "language": "zh_tw"
+    "language": "zh_tw",
+    "active": true
   },
   {
     "slug": "tradition_significance",
     "reflection": "寫下一項對你有深遠意義的傳統或文化方面",
     "level": 32,
-    "language": "zh_tw"
+    "language": "zh_tw",
+    "active": true
   },
   {
     "slug": "dilemma_faced",
     "reflection": "寫下一次你面對的倫理困境以及你如何解決它（或未解決）",
     "level": 33,
-    "language": "zh_tw"
+    "language": "zh_tw",
+    "active": true
   },
   {
     "slug": "nature_experience",
     "reflection": "寫下一次讓你感到聯繫或敬畏的大自然體驗",
     "level": 34,
-    "language": "zh_tw"
+    "language": "zh_tw",
+    "active": true
   },
   {
     "slug": "scientific_discovery",
     "reflection": "寫下一項你覺得既令人困惑又引人入勝的科學發現或概念",
     "level": 35,
-    "language": "zh_tw"
+    "language": "zh_tw",
+    "active": true
   },
   {
     "slug": "comfort_zone",
     "reflection": "寫下一次你走出舒適區的經歷以及你學到的東西",
     "level": 36,
-    "language": "zh_tw"
+    "language": "zh_tw",
+    "active": true
   },
   {
     "slug": "influencial_figure",
     "reflection": "寫下一個對你生活有影響的導師或人物，以及他們分享的智慧",
     "level": 37,
-    "language": "zh_tw"
+    "language": "zh_tw",
+    "active": true
   },
   {
     "slug": "social_norm",
     "reflection": "寫下一次你質疑社會規範或價值觀的時刻",
     "level": 38,
-    "language": "zh_tw"
+    "language": "zh_tw",
+    "active": true
   },
   {
     "slug": "passionate_hobby",
     "reflection": "寫下一個你深感熱愛但很少有機會討論的愛好或興趣",
     "level": 39,
-    "language": "zh_tw"
+    "language": "zh_tw",
+    "active": true
   },
   {
     "slug": "philosophical_question",
     "reflection": "寫下一個讓你徹夜難眠思考的哲學問題或觀念",
     "level": 40,
-    "language": "zh_tw"
+    "language": "zh_tw",
+    "active": true
   }
 ]
