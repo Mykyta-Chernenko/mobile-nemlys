@@ -2,6 +2,7 @@ delete from reflection_question where language='zh_tw';
 insert into reflection_question
     ("slug", "reflection", "language", "level", "active") 
 values
+('discuss_issue', '你想討論的問題是什麼？', 'zh_tw', '0', False),
 ('greatuful', '寫下你在關係中感激的三件事', 'zh_tw', '2', True),
 ('felt_during_last_date', '寫下你在最近一次約會中對伴侶的感受', 'zh_tw', '3', True),
 ('most_important_things_faced', '寫下你們作為情侶面對的最重要的事情，以及這些事情如何塑造了你們的關係', 'zh_tw', '4', True),

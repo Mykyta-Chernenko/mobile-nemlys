@@ -19,12 +19,11 @@ import SmallArrowRight from '@app/icons/small_arrow_right';
 import LockWhite from '@app/icons/lock_white';
 import ReflectionCorner from '@app/icons/reflection_corner';
 import ReflectionCard from '@app/components/reflection/ReflectionCard';
-import { GestureHandlerRootView } from 'react-native-gesture-handler';
-import Carousel from 'react-native-reanimated-carousel';
 import { PrimaryButton } from '@app/components/buttons/PrimaryButtons';
-import { shuffle } from '../../utils/array';
+import { shuffle } from '@app/utils/array';
 import { getDateFromString } from '@app/utils/date';
 import Menu from '@app/components/menu/Menu';
+import SwiperFlatList from 'react-native-swiper-flatlist';
 export default function ({
   route,
   navigation,
@@ -39,10 +38,9 @@ export default function ({
   const [completedReflections, setCompletedReflections] = useState<APIReflectionQuestionAnswer[]>(
     [],
   );
-  const [reflectionIndex, setReflectionindex] = useState<number>(0);
   const [width, setWidth] = useState(1);
 
-  const [reflections, setReflecitons] = useState<APIReflectionQuestion[]>([]);
+  const [reflections, setReflections] = useState<APIReflectionQuestion[]>([]);
 
   const reflectionsAvailable = 3 + dateCount - completedReflections.length;
 
@@ -84,10 +82,14 @@ export default function ({
       logSupaErrors(availableReflections.error);
       return;
     }
-    setReflecitons(shuffle(availableReflections.data));
+    setReflections(
+      shuffle(availableReflections.data).map((x, index) => ({
+        ...x,
+        index,
+      })),
+    );
 
     setLoading(false);
-    setReflectionindex(0);
 
     void localAnalytics().logEvent('ReflectionHomeLoaded', {
       screen: 'ReflectionHome',
@@ -108,8 +110,7 @@ export default function ({
 
   const carouselRef = useRef(null) as any;
   const handleNewIndex = (index: number) => {
-    setReflectionindex(index);
-    carouselRef?.current?.scrollTo({ index, animated: true });
+    carouselRef?.current?.scrollToIndex({ index, animated: true });
   };
 
   const writeReflection = (reflectionId: number, question: string) => {
@@ -134,6 +135,14 @@ export default function ({
     navigation.navigate('WriteReflection', { reflectionId, question, answer });
   };
 
+  const getFontSize = (reflection) => {
+    if (reflection.length > 70) {
+      return { h4: true };
+    } else {
+      return { h3: true };
+    }
+  };
+
   return loading ? (
     <Loading></Loading>
   ) : (
@@ -144,7 +153,7 @@ export default function ({
       }}
       onLayout={(event) => {
         const { width } = event.nativeEvent.layout;
-        setWidth(width - padding * 2);
+        setWidth(width);
       }}
     >
       <SafeAreaView style={{ flexGrow: 1 }}>
@@ -225,154 +234,149 @@ export default function ({
               </FontText>
 
               {reflectionsAvailable > 0 ? (
-                <View style={{ height: 400 }}>
-                  <ReflectionCard>
-                    <View
-                      style={{
-                        flex: 1,
-                        flexDirection: 'column',
-                        justifyContent: 'space-between',
-                        alignItems: 'center',
-                        padding,
-                        paddingHorizontal: padding * 2,
-                      }}
-                    >
-                      <View
-                        style={{
-                          flexDirection: 'row',
-                          justifyContent: 'center',
-                        }}
-                      >
-                        <TouchableOpacity
-                          style={{
-                            borderRadius: 40,
-                            backgroundColor: 'rgba(255, 255, 255, 0.1)',
-                            alignItems: 'center',
-                            justifyContent: 'center',
-                            height: 40,
-                            width: 40,
-                            marginRight: 3,
-                          }}
-                          disabled={reflectionIndex === 0}
-                          onPress={() => {
-                            void localAnalytics().logEvent('ReflectionHomeGetPreviousReflection', {
-                              screen: 'ReflectionHome',
-                              action: 'GetPreviousRefleciton',
-                              userId: authContext.userId,
-                              currentReflection: reflections[reflectionIndex],
-                            });
-                            const newIndex =
-                              reflectionIndex - 1 >= 0
-                                ? reflectionIndex - 1
-                                : reflections.length - 1;
-
-                            handleNewIndex(newIndex);
-                          }}
-                        >
-                          <Image
-                            resizeMode="contain"
-                            style={{
-                              height: 24,
-                              width: 24,
-                              opacity: reflectionIndex === 0 ? 0.7 : 1,
-                            }}
-                            // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
-                            source={require('../../../assets/images/arrow_left_white.png')}
-                          />
-                        </TouchableOpacity>
-                        <TouchableOpacity
-                          style={{
-                            borderRadius: 40,
-                            backgroundColor: 'rgba(255, 255, 255, 0.1)',
-                            alignItems: 'center',
-                            justifyContent: 'center',
-                            height: 40,
-                            width: 40,
-                            marginLeft: 3,
-                          }}
-                          disabled={reflectionIndex === reflections.length - 1}
-                          onPress={() => {
-                            void localAnalytics().logEvent('ReflectionHomeGetNextReflection', {
-                              screen: 'ReflectionHome',
-                              action: 'GetNextRefleciton',
-                              userId: authContext.userId,
-                              currentReflection: reflections[reflectionIndex],
-                            });
-                            const newIndex =
-                              reflectionIndex + 1 <= reflections.length - 1
-                                ? reflectionIndex + 1
-                                : 0;
-
-                            handleNewIndex(newIndex);
-                          }}
-                        >
-                          <Image
-                            resizeMode="contain"
-                            style={{
-                              height: 24,
-                              width: 24,
-                              opacity: reflectionIndex === reflections.length - 1 ? 0.7 : 1,
-                            }}
-                            // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
-                            source={require('../../../assets/images/arrow_right_white.png')}
-                          />
-                        </TouchableOpacity>
-                      </View>
-                      <GestureHandlerRootView
-                        style={{
-                          flex: 1,
-                        }}
-                      >
-                        <Carousel
-                          ref={carouselRef}
-                          vertical={false}
-                          width={width}
-                          loop={false}
-                          autoPlay={false}
-                          onScrollEnd={(index: number) => {
-                            setReflectionindex(index);
-                          }}
-                          mode="parallax"
-                          modeConfig={{
-                            parallaxScrollingScale: 1,
-                            parallaxScrollingOffset: 0,
-                          }}
-                          data={reflections}
-                          renderItem={({ index }: { index: number }) => {
-                            return (
+                <View style={{ height: 400, marginHorizontal: -20 }}>
+                  <SwiperFlatList
+                    ref={carouselRef}
+                    index={0}
+                    data={reflections}
+                    renderItem={({ item }) => {
+                      return (
+                        <View style={{ margin: padding }}>
+                          <ReflectionCard>
+                            <View
+                              style={{
+                                flex: 1,
+                                width: width - 40,
+                                flexDirection: 'column',
+                                justifyContent: 'space-between',
+                                alignItems: 'center',
+                                padding,
+                                paddingHorizontal: padding * 2,
+                              }}
+                            >
                               <View
                                 style={{
-                                  paddingHorizontal: padding * 2,
+                                  flexDirection: 'row',
+                                  justifyContent: 'center',
+                                }}
+                              >
+                                <TouchableOpacity
+                                  style={{
+                                    borderRadius: 40,
+                                    backgroundColor: 'rgba(255, 255, 255, 0.1)',
+                                    alignItems: 'center',
+                                    justifyContent: 'center',
+                                    height: 40,
+                                    width: 40,
+                                    marginRight: 3,
+                                  }}
+                                  disabled={item.index === 0}
+                                  onPress={() => {
+                                    void localAnalytics().logEvent(
+                                      'ReflectionHomeGetPreviousReflection',
+                                      {
+                                        screen: 'ReflectionHome',
+                                        action: 'GetPreviousRefleciton',
+                                        userId: authContext.userId,
+                                        currentReflection: item.reflection,
+                                      },
+                                    );
+                                    const newIndex =
+                                      item.index - 1 >= 0 ? item.index - 1 : reflections.length - 1;
+
+                                    handleNewIndex(newIndex);
+                                  }}
+                                >
+                                  <Image
+                                    resizeMode="contain"
+                                    style={{
+                                      height: 24,
+                                      width: 24,
+                                      opacity: item.index === 0 ? 0.7 : 1,
+                                    }}
+                                    // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
+                                    source={require('../../../assets/images/arrow_left_white.png')}
+                                  />
+                                </TouchableOpacity>
+                                <TouchableOpacity
+                                  style={{
+                                    borderRadius: 40,
+                                    backgroundColor: 'rgba(255, 255, 255, 0.1)',
+                                    alignItems: 'center',
+                                    justifyContent: 'center',
+                                    height: 40,
+                                    width: 40,
+                                    marginLeft: 3,
+                                  }}
+                                  disabled={item.index === reflections.length - 1}
+                                  onPress={() => {
+                                    void localAnalytics().logEvent(
+                                      'ReflectionHomeGetNextReflection',
+                                      {
+                                        screen: 'ReflectionHome',
+                                        action: 'GetNextRefleciton',
+                                        userId: authContext.userId,
+                                        currentReflection: item.reflection,
+                                      },
+                                    );
+                                    const newIndex =
+                                      (item.index as number) + 1 <= reflections.length - 1
+                                        ? (item.index as number) + 1
+                                        : 0;
+
+                                    handleNewIndex(newIndex);
+                                  }}
+                                >
+                                  <Image
+                                    resizeMode="contain"
+                                    style={{
+                                      height: 24,
+                                      width: 24,
+                                      opacity: item.index === reflections.length - 1 ? 0.7 : 1,
+                                    }}
+                                    // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
+                                    source={require('../../../assets/images/arrow_right_white.png')}
+                                  />
+                                </TouchableOpacity>
+                              </View>
+
+                              <View
+                                style={{
+                                  // paddingHorizontal: padding * 2,
                                   justifyContent: 'center',
                                   alignItems: 'center',
 
                                   flex: 1,
                                 }}
                               >
-                                <FontText h3 style={{ color: theme.colors.white }}>
-                                  {reflections[index].reflection}
+                                <FontText
+                                  {...getFontSize((item as APIReflectionQuestion).reflection)}
+                                  style={{ color: theme.colors.white }}
+                                >
+                                  {(item as APIReflectionQuestion).reflection}
                                 </FontText>
                               </View>
-                            );
-                          }}
-                        />
-                      </GestureHandlerRootView>
-                      <PrimaryButton
-                        title={i18n.t('reflection.start')}
-                        buttonStyle={{
-                          backgroundColor: theme.colors.warning,
-                          paddingHorizontal: 60,
-                        }}
-                        onPress={() =>
-                          writeReflection(
-                            reflections[reflectionIndex].id,
-                            reflections[reflectionIndex].reflection,
-                          )
-                        }
-                        titleStyle={{ color: theme.colors.black }}
-                      ></PrimaryButton>
-                    </View>
-                  </ReflectionCard>
+
+                              <PrimaryButton
+                                title={i18n.t('reflection.start')}
+                                buttonStyle={{
+                                  backgroundColor: theme.colors.warning,
+                                  paddingHorizontal: 60,
+                                }}
+                                onPress={() =>
+                                  writeReflection(
+                                    (item as APIReflectionQuestion).id,
+                                    (item as APIReflectionQuestion).reflection,
+                                  )
+                                }
+                                titleStyle={{ color: theme.colors.black }}
+                              ></PrimaryButton>
+                            </View>
+                          </ReflectionCard>
+                        </View>
+                      );
+                    }}
+                  ></SwiperFlatList>
                 </View>
               ) : (
                 <TouchableOpacity

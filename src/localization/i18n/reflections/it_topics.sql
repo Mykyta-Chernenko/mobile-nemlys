@@ -2,6 +2,7 @@ delete from reflection_question where language='it';
 insert into reflection_question
     ("slug", "reflection", "language", "level", "active") 
 values
+('discuss_issue', 'Qual è il problema di cui vuoi discutere?', 'it', '0', False),
 ('greatuful', 'Scrivi 3 cose per cui sei grato nella tua relazione', 'it', '2', True),
 ('felt_during_last_date', 'Scrivi cosa hai provato verso il tuo partner durante l''ultimo appuntamento', 'it', '3', True),
 ('most_important_things_faced', 'Scrivi le cose più importanti che hai affrontato come coppia e come hanno plasmato la tua relazione', 'it', '4', True),

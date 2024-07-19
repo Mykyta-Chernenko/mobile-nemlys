@@ -6,7 +6,7 @@ eas build --auto-submit
 
 # dev
 to build a development build locally, use
-`npx expo run:ios` or `npx expo run:android`
+`npx expo run:ios --device` or `npx expo run:android --device`
 
 ## auth
 for google sign in to work in dev, do not forget to add the sha-1 of the debug.keystore to

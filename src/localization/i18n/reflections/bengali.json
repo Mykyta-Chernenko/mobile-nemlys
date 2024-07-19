@@ -1,5 +1,12 @@
 [
   {
+    "slug": "discuss_issue",
+    "reflection": "আপনি কোন বিষয়ে আলোচনা করতে চান?",
+    "level": 0,
+    "language": "bn",
+    "active": false
+  },
+  {
     "slug": "greatuful",
     "reflection": "আপনার সম্পর্কের জন্য আপনি কৃতজ্ঞ এমন ৩টি জিনিস লিখুন",
     "level": 2,

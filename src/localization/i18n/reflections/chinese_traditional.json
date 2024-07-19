@@ -1,5 +1,12 @@
 [
   {
+    "slug": "discuss_issue",
+    "reflection": "你想討論的問題是什麼？",
+    "level": 0,
+    "language": "zh_tw",
+    "active": false
+  },
+  {
     "slug": "greatuful",
     "reflection": "寫下你在關係中感激的三件事",
     "level": 2,

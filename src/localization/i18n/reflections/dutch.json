@@ -1,5 +1,12 @@
 [
   {
+    "slug": "discuss_issue",
+    "reflection": "Wat is het probleem dat je wilt bespreken?",
+    "level": 0,
+    "language": "nl",
+    "active": false
+  },
+  {
     "slug": "greatuful",
     "reflection": "Schrijf 3 dingen op waarvoor je dankbaar bent in je relatie",
     "level": 2,

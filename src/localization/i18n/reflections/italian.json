@@ -1,5 +1,12 @@
 [
   {
+    "slug": "discuss_issue",
+    "reflection": "Qual è il problema di cui vuoi discutere?",
+    "level": 0,
+    "language": "it",
+    "active": false
+  },
+  {
     "slug": "greatuful",
     "reflection": "Scrivi 3 cose per cui sei grato nella tua relazione",
     "level": 2,

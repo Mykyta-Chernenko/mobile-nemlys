@@ -2,6 +2,7 @@ delete from reflection_question where language='bn';
 insert into reflection_question
     ("slug", "reflection", "language", "level", "active") 
 values
+('discuss_issue', 'আপনি কোন বিষয়ে আলোচনা করতে চান?', 'bn', '0', False),
 ('greatuful', 'আপনার সম্পর্কের জন্য আপনি কৃতজ্ঞ এমন ৩টি জিনিস লিখুন', 'bn', '2', True),
 ('felt_during_last_date', 'আপনার শেষ তারিখে আপনার সঙ্গীর প্রতি আপনি যা অনুভব করেছেন তা লিখুন', 'bn', '3', True),
 ('most_important_things_faced', 'যেসব গুরুত্বপূর্ণ বিষয়গুলি আপনি যুগল হিসাবে মোকাবিলা করেছেন এবং সেগুলি কীভাবে আপনার সম্পর্ককে আকৃতির করেছে তা লিখুন', 'bn', '4', True),

@@ -2,6 +2,7 @@ delete from reflection_question where language='ja';
 insert into reflection_question
     ("slug", "reflection", "language", "level", "active") 
 values
+('discuss_issue', '話し合いたい問題は何ですか？', 'ja', '0', False),
 ('greatuful', 'あなたの関係で感謝している3つのことを書いてください', 'ja', '2', True),
 ('felt_during_last_date', '最後のデートでパートナーに対して感じたことを書いてください', 'ja', '3', True),
 ('most_important_things_faced', 'カップルとして直面した最も重要なことと、それがあなたの関係にどのように影響を与えたかを書いてください', 'ja', '4', True),

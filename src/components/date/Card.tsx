@@ -35,7 +35,7 @@ export default function ({
     Animated.loop(
       Animated.timing(mainCardValue, {
         toValue: 100,
-        duration: 3000,
+        duration: 30000,
         useNativeDriver: true,
       }),
     ).start();
@@ -90,7 +90,7 @@ export default function ({
       Animated.loop(
         Animated.timing(v.animatedValue, {
           toValue: 100,
-          duration: 3000,
+          duration: 30000,
           useNativeDriver: true,
         }),
       ).start();

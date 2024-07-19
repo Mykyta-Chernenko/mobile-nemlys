@@ -4,7 +4,6 @@ import * as StoreReview from 'expo-store-review';
 import { APIDate, APIGeneratedQuestion, SupabaseAnswer } from '@app/types/api';
 import { useTheme, useThemeMode } from '@rneui/themed';
 import { Image, Platform } from 'react-native';
-import Carousel from 'react-native-reanimated-carousel';
 import { logErrorsWithMessage, logSupaErrors } from '@app/utils/errors';
 import { captureScreen } from 'react-native-view-shot';
 import { MainStackParamList } from '@app/types/navigation';
@@ -20,9 +19,6 @@ import Stop from '@app/icons/stop';
 import DateFeedback from '../../components/date/DateFeedback';
 import { localAnalytics } from '@app/utils/analytics';
 import { AuthContext } from '@app/provider/AuthProvider';
-import Card from '@app/components/date/Card';
-import { Progress } from '@app/components/utils/Progress';
-import { GestureHandlerRootView } from 'react-native-gesture-handler';
 import * as ScreenCapture from 'expo-screen-capture';
 import OnDateStopPopup from '@app/components/date/OnDateStopPopup';
 import * as Sharing from 'expo-sharing';
@@ -39,6 +35,9 @@ import { getPremiumDetails } from '@app/api/premium';
 import { capitalize } from '@app/utils/strings';
 import { shuffle } from 'lodash';
 import _ from 'lodash';
+import { Progress } from '@app/components/utils/Progress';
+import { SwiperFlatList } from 'react-native-swiper-flatlist';
+import Card from '@app/components/date/Card';
 export default function ({
   route,
   navigation,
@@ -61,7 +60,6 @@ export default function ({
   const [spentTimes, setSpentTimes] = useState<number[]>(new Array(QUESTION_COUNT));
   const [questions, setQuestions] = useState<APIGeneratedQuestion[]>([]);
   const [questionIndex, setQuestionIndex] = useState<number>(0);
-  const [scrollInProgress, setScrollInProgress] = useState<boolean>(false);
   const [startedDiscussionAt, setStartedDiscussionAt] = useState<number>(getCurrentUTCSeconds());
   const currentQuestion = questions[questionIndex];
   const [currentDate, setCurrentDate] = useState<APIDate | undefined>(undefined);
@@ -119,13 +117,13 @@ export default function ({
       logSupaErrors(res.error);
       return;
     }
-
     // if doesn't want to generate questions and call api
+    // const res = { data: [] };
     // res.data = [
     //   {
     //     id: 918,
     //     date_id: dateRes.data.id,
-    //     question: 'question',
+    //     question: 'question 1',
     //     finished: false,
     //     feedback_score: undefined,
     //     skipped: false,
@@ -135,7 +133,7 @@ export default function ({
     //   {
     //     id: 917,
     //     date_id: dateRes.data.id,
-    //     question: 'question',
+    //     question: 'question 2',
     //     finished: false,
     //     feedback_score: undefined,
     //     skipped: false,
@@ -145,17 +143,17 @@ export default function ({
     //   {
     //     id: 916,
     //     date_id: dateRes.data.id,
-    //     question: 'question',
+    //     question: 'question 3',
     //     finished: false,
     //     feedback_score: undefined,
     //     skipped: false,
     //     created_at: getNow().toISOString(),
     //     updated_at: getNow().toISOString(),
-    //   },
+    //   }
     // ];
 
     if (res.data?.length) {
-      setQuestions(res.data);
+      setQuestions([...res.data.map((x, i) => ({ ...x, index: i }))]);
     } else {
       void localAnalytics().logEvent('DateRegeneratingQuestions', {
         screen: 'OnDate',
@@ -646,25 +644,32 @@ export default function ({
       swipe,
     });
   };
-  const handleNewIndex = (index: number) => {
-    if (scrollInProgress) {
-      void localAnalytics().logEvent('DateNavigateScrollAlreadyInProgress', {
-        screen: 'Date',
-        action: 'NavigateScrollAlreadyInProgress',
-        userId: authContext.userId,
-        questionIndex: index,
-      });
-      return;
-    }
+
+  const handleNewIndexButton = (index: number) => {
     void localAnalytics().logEvent('DateNavigateQuestionsButton', {
       screen: 'Date',
       action: 'NavigateQuestionsButtonPressed',
       userId: authContext.userId,
-      questionIndex: index,
+      questionNewIndex: index,
     });
-    setScrollInProgress(true);
-    carouselRef?.current?.scrollTo({ index, animated: true });
+    carouselRef?.current?.scrollToIndex({
+      index,
+      animated: true,
+    });
+    handleNewIndex(index, false);
   };
+  const handleNewIndex = (index: number, swipe: boolean) => {
+    if (index > questionIndex) {
+      recordGoToNextCard(questionIndex, swipe);
+    } else if (index < questionIndex) {
+      recordGoToPreviousCard(questionIndex, swipe);
+    } else {
+      return;
+    }
+    setQuestionIndex(index);
+    recordTimeSpent(questionIndex);
+  };
+
   const LeftComponent = (index: number) =>
     index === 0 ? (
       <View style={{ height: 72, width: 72 }}></View>
@@ -679,8 +684,7 @@ export default function ({
           width: 72,
         }}
         onPress={() => {
-          const newIndex = questionIndex - 1;
-          handleNewIndex(newIndex);
+          handleNewIndexButton(Math.max((carouselRef.current.getCurrentIndex() as number) - 1, 0));
         }}
       >
         <Image
@@ -735,8 +739,9 @@ export default function ({
           width: 72,
         }}
         onPress={() => {
-          const newIndex = questionIndex + 1;
-          handleNewIndex(newIndex);
+          handleNewIndexButton(
+            (Math.min(carouselRef.current.getCurrentIndex() as number) + 1, QUESTION_COUNT - 1),
+          );
         }}
       >
         <Image
@@ -762,7 +767,7 @@ export default function ({
         setShowFeedback(false);
         setTimeout(() => {
           setQuestionIndex(2);
-          carouselRef?.current?.scrollTo({ index: 2, animated: false });
+          carouselRef?.current?.scrollToIndex({ index: 2, animated: false });
         }, 0);
       }}
       onPressForward={(feedbackScore: number) => {
@@ -896,95 +901,77 @@ export default function ({
             width: '100%',
           }}
         >
-          <View
-            style={{
-              flexGrow: 1,
+          <SwiperFlatList
+            ref={carouselRef}
+            index={0}
+            data={questions}
+            // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+            // @ts-ignore
+            onMomentumScrollEnd={({ index }) => {
+              if (typeof index != 'number') return;
+              handleNewIndex(index, true);
             }}
-          >
-            <Card animated={false}>
-              <GestureHandlerRootView>
-                <Carousel
-                  ref={carouselRef}
-                  vertical={false}
-                  width={width}
-                  loop={false}
-                  autoPlay={false}
-                  onScrollEnd={(index: number) => {
-                    setScrollInProgress(false);
-                    setQuestionIndex(index);
-                    if (index > questionIndex) {
-                      recordGoToNextCard(index, true);
-                    } else {
-                      recordGoToPreviousCard(index, true);
-                    }
-                    recordTimeSpent(questionIndex);
-                    setQuestionIndex(index);
+            renderItem={({ item }) => (
+              <Card animated={false}>
+                <View
+                  style={{
+                    width: width,
+                    flex: 1,
+                    flexDirection: 'column',
+                    justifyContent: 'space-between',
+                    alignItems: 'center',
+                    padding,
+                    paddingVertical: padding * 2,
                   }}
-                  mode="parallax"
-                  modeConfig={{
-                    parallaxScrollingScale: 1,
-                    parallaxScrollingOffset: 0,
-                  }}
-                  data={questions}
-                  renderItem={({ index }: { index: number }) => {
-                    return (
-                      <View
+                >
+                  <Progress
+                    theme="dark"
+                    current={(item.index as number) + 1}
+                    all={QUESTION_COUNT}
+                  ></Progress>
+
+                  {isSharing && (
+                    <View
+                      style={{
+                        position: 'absolute',
+                        flexDirection: 'row',
+                        alignItems: 'center',
+                        justifyContent: 'center',
+                        opacity: 1,
+                        marginTop: 70,
+                      }}
+                    >
+                      <Image
+                        source={require('../../../assets/images/app_share_icon.png')}
+                        style={{ height: 32, width: 32 }}
+                      ></Image>
+                      <FontText
                         style={{
-                          flex: 1,
-                          flexDirection: 'column',
-                          justifyContent: 'space-between',
-                          alignItems: 'center',
-                          padding,
-                          paddingVertical: padding * 2,
+                          fontSize: 24,
+                          color: theme.colors.primary,
+                          marginTop: 5,
+                          marginLeft: 5,
                         }}
                       >
-                        <Progress theme="dark" current={index + 1} all={QUESTION_COUNT}></Progress>
-
-                        {isSharing && (
-                          <View
-                            style={{
-                              position: 'absolute',
-                              flexDirection: 'row',
-                              alignItems: 'center',
-                              justifyContent: 'center',
-                              opacity: 1,
-                              marginTop: 70,
-                            }}
-                          >
-                            <Image
-                              source={require('../../../assets/images/app_share_icon.png')}
-                              style={{ height: 32, width: 32 }}
-                            ></Image>
-                            <FontText
-                              style={{
-                                fontSize: 24,
-                                color: theme.colors.primary,
-                                marginTop: 5,
-                                marginLeft: 5,
-                              }}
-                            >
-                              {i18n.t('nemlys')}
-                            </FontText>
-                          </View>
-                        )}
-                        <FontText {...getFontSize(index)}>{questions[index].question}</FontText>
-                        <View
-                          style={{
-                            flexDirection: 'row',
-                            justifyContent: 'space-between',
-                            width: '100%',
-                          }}
-                        >
-                          {LeftComponent(index)}
-                          {RightComponent(index)}
-                        </View>
-                      </View>
-                    );
-                  }}
-                />
-              </GestureHandlerRootView>
-            </Card>
-          </View>
+                        {i18n.t('nemlys')}
+                      </FontText>
+                    </View>
+                  )}
+                  <FontText {...getFontSize(item.index)}>{item.question}</FontText>
+                  <View
+                    style={{
+                      flexDirection: 'row',
+                      justifyContent: 'space-between',
+                      width: '100%',
+                    }}
+                  >
+                    {LeftComponent(item.index as number)}
+                    {RightComponent(item.index as number)}
+                  </View>
+                </View>
+              </Card>
+            )}
+          />
         </View>
       </SafeAreaView>
     </View>

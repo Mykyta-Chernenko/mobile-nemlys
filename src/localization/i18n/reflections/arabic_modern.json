@@ -1,5 +1,12 @@
 [
   {
+    "slug": "discuss_issue",
+    "reflection": "ما هي المسألة التي تريد مناقشتها؟",
+    "level": 0,
+    "language": "ar",
+    "active": false
+  },
+  {
     "slug": "greatuful",
     "reflection": "اكتب 3 أشياء أنت ممتن لها في علاقتك",
     "level": 2,

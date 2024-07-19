@@ -1,5 +1,12 @@
 [
   {
+    "slug": "discuss_issue",
+    "reflection": "話し合いたい問題は何ですか？",
+    "level": 0,
+    "language": "ja",
+    "active": false
+  },
+  {
     "slug": "greatuful",
     "reflection": "あなたの関係で感謝している3つのことを書いてください",
     "level": 2,

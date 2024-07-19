@@ -22,9 +22,9 @@ module.exports = function (api) {
           },
         },
       ],
-      'react-native-reanimated/plugin',
       '@babel/plugin-proposal-optional-chaining',
       '@babel/plugin-proposal-nullish-coalescing-operator',
+      'react-native-reanimated/plugin',
     ],
   };
 };

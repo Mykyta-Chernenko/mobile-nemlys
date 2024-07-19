@@ -2,6 +2,7 @@ delete from reflection_question where language='ar';
 insert into reflection_question
     ("slug", "reflection", "language", "level", "active") 
 values
+('discuss_issue', 'ما هي المسألة التي تريد مناقشتها؟', 'ar', '0', False),
 ('greatuful', 'اكتب 3 أشياء أنت ممتن لها في علاقتك', 'ar', '2', True),
 ('felt_during_last_date', 'اكتب ما شعرت به تجاه شريكك خلال آخر موعد', 'ar', '3', True),
 ('most_important_things_faced', 'اكتب أهم الأمور التي واجهتها كزوجين، وكيف شكلت علاقتكما', 'ar', '4', True),

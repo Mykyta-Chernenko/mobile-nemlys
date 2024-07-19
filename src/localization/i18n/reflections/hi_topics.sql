@@ -2,6 +2,7 @@ delete from reflection_question where language='hi';
 insert into reflection_question
     ("slug", "reflection", "language", "level", "active") 
 values
+('discuss_issue', 'आप किस मुद्दे पर चर्चा करना चाहते हैं?', 'hi', '0', False),
 ('greatuful', 'अपनी संबंध में 3 ऐसी चीजें लिखें जिनके लिए आप आभारी हैं', 'hi', '2', True),
 ('felt_during_last_date', 'अपने पिछले डेट के दौरान अपने साथी के प्रति अपनी भावनाओं को लिखें', 'hi', '3', True),
 ('most_important_things_faced', 'एक युगल के रूप में आपने जिन सबसे महत्वपूर्ण चीजों का सामना किया है, उन्हें लिखें और उन्होंने आपके संबंध को कैसे आकार दिया है', 'hi', '4', True),

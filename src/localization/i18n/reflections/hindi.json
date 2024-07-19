@@ -1,5 +1,12 @@
 [
   {
+    "slug": "discuss_issue",
+    "reflection": "आप किस मुद्दे पर चर्चा करना चाहते हैं?",
+    "level": 0,
+    "language": "hi",
+    "active": false
+  },
+  {
     "slug": "greatuful",
     "reflection": "अपनी संबंध में 3 ऐसी चीजें लिखें जिनके लिए आप आभारी हैं",
     "level": 2,
