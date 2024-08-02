@@ -1,0 +1,421 @@
+{
+  "nemlys": "Nemlys",
+  "awesome": "Minunat!",
+  "loading": "Încărcare",
+  "continue": "Continuare",
+  "or": "Sau",
+  "ok": "Ok",
+  "yes": "Da",
+  "no": "Nu",
+  "close": "Închide",
+  "save": "Salvează",
+  "cancel": "Anulează",
+  "confirm": "Confirmă",
+  "submit": "Trimite",
+  "remove": "Șterge",
+  "next": "Următorul",
+  "skip": "Omitere",
+  "finish": "Finalizează",
+  "input_here": "Introduceți aici",
+  "email_placeholder": "Introduceți email-ul",
+  "password_placeholder": "Introduceți parola",
+  "password_again_placeholder": "Introduceți din nou parola",
+  "unexpected_error": "A apărut o eroare neașteptată, încercați din nou",
+  "errors": {
+    "play_market": "Nu sunteți conectat în aplicația Play Market, vă rugăm să vă conectați acolo mai întâi și apoi să reveniți la aplicația Nemlys pentru a începe abonamentul",
+    "payment_error": "A existat o eroare intermediară cu magazinul telefonului. De obicei, o puteți rezolva așteptând câteva minute și încercând din nou inițierea abonamentului"
+  },
+  "level": "Nivel",
+  "new_reflection": {
+    "title_1": "Încercați ",
+    "title_2": "Reflecții ",
+    "title_3": "pentru a înțelege mai bine relația voastră.",
+    "button": "Reamintește-mi mai târziu"
+  },
+  "jobs": {
+    "issues": "Probleme în relația noastră",
+    "sex": "Intimitate & Sex",
+    "know": "Cunoașteți-vă mai bine",
+    "hard": "Întrebări profunde",
+    "meaningful": "Conversații semnificative",
+    "fun": "Subiecte ușoare & amuzante"
+  },
+  "notification": {
+    "pre_date": {
+      "pre_date_ready_for_a_date_29_02_2024": {
+        "title": "Pregătit pentru o întâlnire?",
+        "body": "Am pregătit zeci de întrebări personalizate pentru tine și partenerul tău"
+      },
+      "pre_date_time_to_connect_29_02_2024": {
+        "title": "Timp de conectare!",
+        "body": "Fă o pauză în ziua ta ocupată și explorează-ți partenerul prin Nemlys"
+      },
+      "pre_date_lets_pla_game_29_02_2024": {
+        "title": "Să jucăm un joc!",
+        "body": "Deschide Nemlys și implică-te în distracția relației de astăzi cu întrebarea interactivă"
+      }
+    },
+    "finish_date": {
+      "finish_date_oops_29_02_2024": {
+        "title": "Ups!",
+        "body": "Nu lăsa întâlnirea neterminată. Deschide Nemlys și reia conversația"
+      },
+      "finish_date_dont_leave_love_hanging_29_02_2024": {
+        "title": "Nu lăsa dragostea să aștepte...",
+        "body": "Deschide Nemlys pentru a finaliza întrebările despre relație și a descoperi magia"
+      }
+    },
+    "after_date": {
+      "after_date_time_for_your_relationship_29_02_2024": {
+        "title": "Timp pentru relația voastră",
+        "body": "Obțineți un efect pozitiv asupra parteneriatului răspunzând împreună la întrebare"
+      },
+      "after_date_morning_sunshine_29_02_2024": {
+        "title": "Bună dimineața, soare!",
+        "body": "Accesează Nemlys pentru întrebarea ta zilnică care aprofundează legătura cu partenerul tău"
+      },
+      "after_date_guess_what_time_29_02_2024": {
+        "title": "Ghicește ce oră e?",
+        "body": "Scufundă-te în doza ta zilnică de curiozitate. Întărește legătura cu persoana ta specială"
+      },
+      "after_date_feeling_curious_29_02_2024": {
+        "title": "Te simți curios?",
+        "body": "Pornește într-o călătorie de descoperire alături de partenerul tău prin întrebarea provocatoare de astăzi"
+      },
+      "after_date_challenge_accepted_29_02_2024": {
+        "title": "Provocare acceptată?",
+        "body": "Deschide Nemlys acum și testează-ți cunoștințele despre relație cu întrebarea plină de distracție de astăzi!"
+      }
+    },
+    "reflection": {
+      "title": "Timp de reflecție asupra relației cu {{partnerName}}",
+      "body": "Alege o reflecție și scrie răspunsul tău"
+    }
+  },
+  "home": {
+    "discussed_questions": "subiecte discutate",
+    "you": "Tu",
+    "partner": "Partener",
+    "menu": {
+      "discuss": "Discută",
+      "profile": "Profil",
+      "premium": "Premium",
+      "reflect": "Reflectează"
+    }
+  },
+  "profile": {
+    "title": "Profil",
+    "my_account": "Contul meu",
+    "settings": "Setări",
+    "about": "Despre Nemlys",
+    "your_name": "Numele tău",
+    "partner_name": "Numele partenerului",
+    "language": "Limbă",
+    "subscription": "Gestionează abonamentul",
+    "rate": "Evaluează aplicația noastră",
+    "share": "Distribuie aplicația noastră",
+    "feature_request": "Solicitare funcție",
+    "feature_request_placeholder": "Scrie ce ai dori să vezi în aplicația Nemlys",
+    "call": "Apel cu fondatorii",
+    "contact": "Contactează-ne",
+    "contact_placeholder": "Scrie ce dorești să te ajutăm",
+    "logout": "Deconectare",
+    "delete_account": "Șterge contul",
+    "are_you_sure_you_want_to_delete_account": "Ești sigur că dorești să ștergi contul?"
+  },
+  "premium": {
+    "banner": {
+      "premium": "Acces nelimitat",
+      "premium_right": "∞",
+      "trial": "Acces nelimitat",
+      "days_left": "{{days}} zile rămase",
+      "new": "Subiecte de încercat",
+      "topics_left": "{{left}}/{{total}} rămase",
+      "free": "Subiecte zilnice"
+    },
+    "offer": {
+      "title": "Premium",
+      "enjoy_your_premium": "Bucurați-vă de premium!",
+      "manage": "Gestionează abonamentul",
+      "upgrade_trial": "Mai ai {{trialDays}} zile de acces Trial",
+      "reached_limit": "Ai atins limita zilnică. ",
+      "try_unlimited_1": "Încearcă cu ",
+      "try_unlimited_2": "acces nelimitat",
+      "premium_title": "Obțineți Full Premium pentru ",
+      "trial_expired": "Accesul tău Trial nelimitat a expirat",
+      "unlimited_topics_title": "Obțineți Subiecte Nelimitate",
+      "unlimited_topics_explanation": "Acum ai {{dailyTopics}} subiect pe zi",
+      "trial_button": "Încearcă 7 zile gratuit",
+      "trial_no_card": "NU este necesar card de credit",
+      "choose_plan": "Alegeți Planul Dvs.",
+      "plan_monthly_title": "Lunar",
+      "plan_monthly_price": "{{price}}/lună",
+      "plan_yearly_title": "Anual",
+      "plan_yearly_price": "{{price}}/an",
+      "subscribe": "Începe cu o perioadă de probă de 7 zile gratuit*",
+      "terms": "Termeni de Serviciu",
+      "privacy": "Politica de Confidențialitate",
+      "charged": "* Veți fi taxat atunci când perioada de probă se termină, dacă nu anulați abonamentul"
+    },
+    "success": {
+      "trial": {
+        "title_1": "Totul gata! Bucurați-vă de ",
+        "title_2": "acces nelimitat",
+        "button": "Super, mulțumesc"
+      },
+      "premium": {
+        "title_1": "Premium-ul tău a fost activat cu succes, ",
+        "title_2": "Bucurați-vă!",
+        "button": "Super, mulțumesc"
+      }
+    }
+  },
+  "reflection": {
+    "title": "Reflecții",
+    "available": "{{number}} noi reflecții disponibile",
+    "completed": "{{number}} Finalizate",
+    "start": "Începe",
+    "explanation": {
+      "button": "Am înțeles",
+      "reason_1": "Mai multe reflecții = Calitate mai înaltă a subiectului 'Personalizat'",
+      "reason_2": "Folosim AI, așa că cu cât reflectați și scrieți mai mult, cu atât aplicația va deveni mai bună",
+      "reason_3": "Datele tale sunt în siguranță. Le folosim doar pentru generarea întrebărilor",
+      "title": "De ce este important să reflectați și să scrieți?"
+    },
+    "no_reflection": "Discută 1 subiect pentru a obține noua ta carte de reflecție",
+    "finished_writing_title_1": "Gata!",
+    "finished_writing_title_2": " Ești un scriitor atât de bun",
+    "finished_writing_button": "Groazav, mulțumesc!",
+    "level_0": "introducere",
+    "level": "nivel {{number}}"
+  },
+  "update": {
+    "title": "Actualizare",
+    "outdated_title": "Versiunea ta este depășită",
+    "need_to_update": "Va trebui să actualizați aplicația la cea mai recentă versiune pentru a continua să o utilizați."
+  },
+  "interview": {
+    "title_first": "Discută cu fondatorii Nemlys pentru ",
+    "title_second": "a obține 2 luni de acces nelimitat",
+    "reason_1_title_1": "Programează un ",
+    "reason_1_title_2": "apel de 30 de minute ",
+    "reason_1_title_3": "cu fondatorii Nemlys",
+    "reason_2_title_1": "Împărtășește ce îți ",
+    "reason_2_title_2": "place și nu îți place ",
+    "reason_2_title_3": "despre Nemlys",
+    "reason_3_title_1": "Obține ",
+    "reason_3_title_2": "2 luni ",
+    "reason_3_title_3": "de acces nelimitat după apel",
+    "button": "Programează un apel"
+  },
+  "interview_text": {
+    "title_first": "Scrie feedback-ul tău pentru a obține ",
+    "title_second": "1 lună de Premium",
+    "reason_1_title_1": "",
+    "reason_1_title_2": "Scrie răspunsuri",
+    "reason_1_title_3": " la 3 întrebări despre ce îți place și nu îți place la Nemlys",
+    "reason_2_title_1": "Obține ",
+    "reason_2_title_2": "1 lună de premium",
+    "reason_2_title_3": "",
+    "reason_3_title_1": "Răspunsurile tale ",
+    "reason_3_title_2": "ne ajută să decidem",
+    "reason_3_title_3": " pe ce să lucrăm în continuare",
+    "button": "Scrie-ne",
+    "thank": "Minunat! Te vom contacta pe emailul tău: {{email}}"
+  },
+  "recording": {
+    "button": "Înregistrează",
+    "stop": {
+      "title_1": "Ești sigur? Nu vei ",
+      "title_2": "putea relua ",
+      "title_3": "înregistrarea după oprire",
+      "button": "Da, oprește"
+    },
+    "delete": {
+      "title_1": "Ești sigur că dorești să ",
+      "title_2": "ștergi înregistrarea",
+      "title_3": "?",
+      "button": "Da, șterge"
+    },
+    "permission": {
+      "title_1": "Analiza audio nu funcționează fără ",
+      "title_2": "permisiunea de la microfon",
+      "button": "Deschide setările"
+    },
+    "tooltip": {
+      "feature_intro": "Încearcă analiza audio a conversației tale, va îmbunătăți întrebările viitoare",
+      "wanted_recording": "Am lansat în sfârșit analiza audio. Încearc-o!",
+      "limit_reached": "Ai atins limita zilnică de analiză audio"
+    }
+  },
+  "date": {
+    "reminder": {
+      "title": "{{firstName}}, Timp de conectare cu partenerul",
+      "body": "Distractiv? Profund? Intim? Alegeți și discutați subiectele împreună"
+    },
+    "generating_questions_error": "Ne pare rău, AI-ul nostru nu poate genera aceste întrebări, încearcă altă categorie sau subiect",
+    "notification": {
+      "title_1": "Primește o reamintire",
+      "title_2": " pentru a discuta întrebările cu partenerul tău",
+      "title_3": "",
+      "confirm": "Permite notificările"
+    },
+    "stop_popup": {
+      "title_1": "Ești sigur că vrei să ",
+      "title_2": "oprești discuția",
+      "title_3": "?",
+      "subtitle": "Nu putem salva progresul tău.",
+      "confirm": "Da, oprește discuția",
+      "cancel": "Nu, revino"
+    },
+    "share": "Distribuie",
+    "stop": "Oprește întâlnirea",
+    "start_date": "Începe întâlnirea",
+    "level_title_first": "Selectează ",
+    "level_title_second": "adâncimea ",
+    "level_title_third": "întrebărilor tale",
+    "level": {
+      "light": "Ușor",
+      "normal": "Normal",
+      "deep": "Profund"
+    },
+    "topic_title_first": "Selectează ",
+    "topic_title_second": "1 subiect ",
+    "topic_title_third": "pentru a discuta cu partenerul",
+    "topic": {
+      "title": "Selectează un subiect",
+      "surprise": "Aleatoriu",
+      "intimacy": "Picant",
+      "emotions": "Emoții",
+      "fun": "Distracție",
+      "worldview": "Viziune asupra lumii",
+      "goals": "Obiective",
+      "future": "Viitor",
+      "communication": "Comunicare",
+      "preferences": "Preferințe",
+      "appearance": "Aspect",
+      "travel": "Călătorii",
+      "career": "Carieră",
+      "expectations": "Așteptări",
+      "values": "Valori",
+      "gifts": "Cadouri",
+      "friends": "Prieteni",
+      "childhood": "Copilărie",
+      "commitment": "Angajament",
+      "past": "Trecut",
+      "ex": "Fost",
+      "fidelity": "Fidelitate",
+      "trust": "Încredere",
+      "money": "Bani",
+      "conflict": "Conflict",
+      "social_circle": "Cerc social",
+      "love_language": "Limbajul iubirii",
+      "mental_health": "Sănătate mentală",
+      "parents": "Părinți",
+      "children": "Copii",
+      "living_together": "Locuind împreună"
+    },
+    "generating_questions_first": "Generăm întrebări pentru a discuta ",
+    "generating_questions_second": "cu partenerul",
+    "discuss": "Discutați subiectele împreună",
+    "feedback": {
+      "with_partner": {
+        "title_first": "Așadar! Cum a fost ",
+        "title_second": "discuția voastră",
+        "title_third": "?",
+        "choice_4": "Am avut câteva perspective interesante",
+        "choice_3": "A fost bine",
+        "choice_2": "Nimic nou",
+        "choice_1": "Nu a fost deloc util"
+      },
+      "alone": {
+        "title_first": "Așadar! Care este ",
+        "title_second": "impresia ta",
+        "title_third": "?",
+        "choice_4": "Multe întrebări interesante",
+        "choice_3": "Întrebări bune",
+        "choice_2": "Nimic special",
+        "choice_1": "Nu-mi place"
+      }
+    },
+    "new_level": {
+      "reached": "ai atins",
+      "have": "ai",
+      "title_first": "Discuție",
+      "title_second": "completată",
+      "alone_title_first": "Explorarea aplicației tale",
+      "home": "Înapoi acasă"
+    }
+  },
+  "welcome": {
+    "title_first": "Primește întrebări pentru a discuta cu ",
+    "title_second": "partenerul tău",
+    "button": {
+      "default": "Continuare"
+    }
+  },
+  "onboarding": {
+    "your_name_first": "Hei! Care este\n",
+    "your_name_second": "numele tău",
+    "your_name_third": "?",
+    "partner_name_first": "Care este\n",
+    "partner_name_second": "numele partenerului tău",
+    "partner_name_third": "?",
+    "job": {
+      "title_first": "Ce ",
+      "title_second": "dorești să obții?",
+      "fun": "Întrebări distractive și ușoare pentru întâlniri",
+      "hard": "Întrebări pe care ne este greu să le aducem în discuție",
+      "issues": "Modalități de a rezolva problemele cu partenerul",
+      "other": "Altceva",
+      "other_placeholder": " Scrie răspunsul tău..."
+    },
+    "reflection": {
+      "private": "informații private",
+      "explanation": "Reflectează pe cont propriu pentru a înțelege mai bine relația voastră.",
+      "short": "Prea scurt",
+      "good": "Bine",
+      "perfect": "Perfect",
+      "write_answer": "Scrie răspunsul"
+    },
+    "analyzing": {
+      "text_1": "Analizăm\nscrisul tău",
+      "text_2": "Analizăm\nrăspunsurile tale",
+      "text_3": "Adaptăm aplicația\nla cuplul tău",
+      "text_4_first": "Totul gata,\n",
+      "text_4_second": "începe să explorezi\naplicația"
+    },
+    "language": {
+      "title": "Selectează limba aplicației",
+      "new_language": "Solicită o limbă nouă",
+      "write_language": "Scrie limba..."
+    },
+    "discuss_way": {
+      "title_first": "Cum ai dori ",
+      "title_second": "să discuți ",
+      "title_third": "întrebările?",
+      "choice_1": "În fața partenerului meu",
+      "choice_2": "Cu partenerul meu online",
+      "choice_3": "Primește întrebări și discută mai târziu",
+      "choice_4": "Nu știu"
+    }
+  },
+  "login": {
+    "password_is_too_short": "Parola trebuie să aibă cel puțin 6 caractere",
+    "invalid_username": "Email-ul sau parola sunt greșite",
+    "title": "Conectează-te la\ncontul Nemlys",
+    "check_email_for_login_link": "Link-ul de conectare a fost trimis pe email-ul tău",
+    "button": {
+      "default": "Continuă cu Email-ul"
+    },
+    "forgot_password": {
+      "link": "Ai uitat parola?"
+    }
+  },
+  "oauth": {
+    "button": {
+      "google": "Conectează-te cu Google",
+      "apple": "Conectează-te cu Apple"
+    }
+  }
+}

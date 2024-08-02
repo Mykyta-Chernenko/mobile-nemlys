@@ -1,0 +1,422 @@
+{
+  "nemlys": "Nemlys",
+  "awesome": "Keren!",
+  "loading": "Memuat",
+  "continue": "Lanjutkan",
+  "or": "Atau",
+  "ok": "Ok",
+  "yes": "Ya",
+  "no": "Tidak",
+  "close": "Tutup",
+  "save": "Simpan",
+  "cancel": "Batal",
+  "confirm": "Konfirmasi",
+  "submit": "Kirim",
+  "remove": "Hapus",
+  "next": "Berikutnya",
+  "skip": "Lewati",
+  "finish": "Selesai",
+  "input_here": "Masukkan di sini",
+  "email_placeholder": "Masukkan email Anda",
+  "password_placeholder": "Masukkan kata sandi Anda",
+  "password_again_placeholder": "Masukkan kata sandi Anda lagi",
+  "unexpected_error": "Terjadi kesalahan yang tidak terduga, coba lagi",
+  "errors": {
+    "play_market": "Anda belum masuk ke aplikasi Play Market Anda, silakan masuk terlebih dahulu, lalu kembali ke aplikasi Nemlys untuk memulai langganan",
+    "payment_error": "Terjadi kesalahan sementara dengan toko ponsel Anda. Anda biasanya bisa menyelesaikannya dengan menunggu beberapa menit dan mencoba memulai langganan lagi"
+  },
+  "level": "Tingkat",
+  "new_reflection": {
+    "title_1": "Coba ",
+    "title_2": "Refleksi ",
+    "title_3": "untuk lebih memahami hubungan Anda.",
+    "button": "Ingatkan saya nanti"
+  },
+  "jobs": {
+    "issues": "Masalah dalam hubungan kami",
+    "sex": "Keintiman & Seks",
+    "know": "Saling mengenal",
+    "hard": "Pertanyaan mendalam",
+    "meaningful": "Percakapan yang bermakna",
+    "fun": "Topik ringan & menyenangkan"
+  },
+  "notification": {
+    "pre_date": {
+      "pre_date_ready_for_a_date_29_02_2024": {
+        "title": "Siap untuk kencan?",
+        "body": "Kami telah menyiapkan puluhan pertanyaan yang dipersonalisasi untuk Anda dan pasangan Anda"
+      },
+      "pre_date_time_to_connect_29_02_2024": {
+        "title": "Waktunya Terhubung!",
+        "body": "Berhenti sejenak dari hari sibuk Anda dan jelajahi pasangan Anda melalui Nemlys"
+      },
+      "pre_date_lets_pla_game_29_02_2024": {
+        "title": "Ayo Main Game!",
+        "body": "Buka Nemlys dan nikmati kesenangan hubungan dengan pertanyaan interaktif hari ini"
+      }
+    },
+    "finish_date": {
+      "finish_date_oops_29_02_2024": {
+        "title": "Ups!",
+        "body": "Jangan tinggalkan kencan Anda tidak lengkap. Buka Nemlys dan lanjutkan percakapan Anda"
+      },
+      "finish_date_dont_leave_love_hanging_29_02_2024": {
+        "title": "Jangan biarkan cinta tergantung...",
+        "body": "Buka Nemlys untuk menyelesaikan pertanyaan hubungan Anda dan temukan keajaibannya"
+      }
+    },
+    "after_date": {
+      "after_date_time_for_your_relationship_29_02_2024": {
+        "title": "Waktu untuk hubungan Anda",
+        "body": "Dapatkan efek positif pada hubungan dengan menjawab pertanyaan bersama"
+      },
+      "after_date_morning_sunshine_29_02_2024": {
+        "title": "Selamat pagi, cerah!",
+        "body": "Buka Nemlys untuk pertanyaan harian Anda yang memperdalam hubungan dengan pasangan Anda"
+      },
+      "after_date_guess_what_time_29_02_2024": {
+        "title": "Tebak sekarang jam berapa?",
+        "body": "Masuk ke dosis harian rasa ingin tahu Anda. Perkuat hubungan dengan seseorang yang spesial"
+      },
+      "after_date_feeling_curious_29_02_2024": {
+        "title": "Merasa penasaran?",
+        "body": "Mulailah perjalanan penemuan bersama pasangan Anda melalui pertanyaan yang memprovokasi pemikiran hari ini"
+      },
+      "after_date_challenge_accepted_29_02_2024": {
+        "title": "Tantangan diterima?",
+        "body": "Buka Nemlys sekarang dan uji pengetahuan hubungan Anda dengan pertanyaan yang menyenangkan hari ini!"
+      }
+    },
+    "reflection": {
+      "title": "Waktunya merefleksikan hubungan Anda dengan {{partnerName}}",
+      "body": "Pilih refleksi dan tulis jawaban Anda"
+    }
+  },
+  "home": {
+    "discussed_questions": "topik yang dibahas",
+    "you": "Anda",
+    "partner": "Pasangan",
+    "menu": {
+      "discuss": "Diskusikan",
+      "profile": "Profil",
+      "premium": "Premium",
+      "reflect": "Refleksi"
+    }
+  },
+  "profile": {
+    "title": "Profil",
+    "my_account": "Akun Saya",
+    "settings": "Pengaturan",
+    "about": "Tentang Nemlys",
+    "your_name": "Nama Anda",
+    "partner_name": "Nama Pasangan",
+    "language": "Bahasa",
+    "subscription": "Kelola langganan",
+    "rate": "Beri rating aplikasi kami",
+    "share": "Bagikan aplikasi kami",
+    "feature_request": "Permintaan fitur",
+    "feature_request_placeholder": "Tulis apa yang ingin Anda lihat di aplikasi Nemlys",
+    "call": "Panggilan dengan pendiri",
+    "contact": "Hubungi kami",
+    "contact_placeholder": "Tulis apa yang Anda butuhkan bantuan dari kami",
+    "logout": "Keluar",
+    "delete_account": "Hapus akun",
+    "are_you_sure_you_want_to_delete_account": "Apakah Anda yakin ingin menghapus akun Anda?"
+  },
+  "premium": {
+    "banner": {
+      "premium": "Akses tak terbatas",
+      "premium_right": "∞",
+      "trial": "Akses tak terbatas",
+      "days_left": "{{days}} hari tersisa",
+      "new": "Topik baru untuk dicoba",
+      "topics_left": "{{left}}/{{total}} tersisa",
+      "free": "Topik harian"
+    },
+    "offer": {
+      "title": "Premium",
+      "enjoy_your_premium": "Nikmati premium Anda!",
+      "manage": "Kelola Langganan",
+      "upgrade_trial": "Anda memiliki {{trialDays}} hari Akses Percobaan tersisa ",
+      "reached_limit": "Anda telah mencapai batas harian Anda. ",
+      "try_unlimited_1": "Coba dengan ",
+      "try_unlimited_2": "akses tak terbatas",
+      "premium_title": "Dapatkan Premium Lengkap untuk ",
+      "trial_expired": "Akses Tak Terbatas Percobaan Anda telah habis",
+      "unlimited_topics_title": "Dapatkan Topik Tak Terbatas",
+      "unlimited_topics_explanation": "Sekarang Anda memiliki {{dailyTopics}} topik per hari",
+      "trial_button": "Coba gratis selama 7 hari",
+      "trial_no_card": "TANPA Kartu Kredit diperlukan",
+      "choose_plan": "Pilih Rencana Anda",
+      "plan_monthly_title": "Bulanan",
+      "plan_monthly_price": "{{price}}/bulan",
+      "plan_yearly_title": "Tahunan",
+      "plan_yearly_price": "{{price}}/tahun",
+      "subscribe": "Mulai dengan uji coba gratis 7 hari*",
+      "terms": "Ketentuan Layanan",
+      "privacy": "Kebijakan Privasi",
+      "charged": "* Anda akan dikenakan biaya setelah uji coba selesai kecuali Anda membatalkan langganan"
+    },
+    "success": {
+      "trial": {
+        "title_1": "Selesai! Nikmati ",
+        "title_2": "akses tak terbatas Anda",
+        "button": "Keren, terima kasih"
+      },
+      "premium": {
+        "title_1": "Premium Anda telah berhasil diaktifkan, ",
+        "title_2": "Nikmati!",
+        "button": "Keren, terima kasih"
+      }
+    }
+  },
+  "reflection": {
+    "title": "Refleksi",
+    "available": "{{number}} refleksi baru tersedia",
+    "completed": "{{number}} Selesai",
+    "start": "Mulai",
+    "explanation": {
+      "button": "Mengerti",
+      "reason_1": "Lebih Banyak Refleksi = Kualitas Topik 'Dipersonalisasi' Lebih Tinggi",
+      "reason_2": "Kami menggunakan AI, jadi semakin banyak Anda merefleksikan dan menulis, semakin baik aplikasi ini",
+      "reason_3": "Data Anda aman. Kami hanya menggunakannya untuk menghasilkan pertanyaan",
+      "title": "Mengapa penting untuk merefleksikan dan menulis?"
+    },
+    "no_reflection": "Diskusikan 1 topik untuk mendapatkan kartu refleksi baru Anda",
+    "finished_writing_title_1": "Selesai!",
+    "finished_writing_title_2": " Anda penulis yang hebat",
+    "finished_writing_button": "Bagus, terima kasih!",
+    "level_0": "perkenalan",
+    "level": "tingkat {{number}}"
+  },
+  "update": {
+    "title": "Pembaruan",
+    "outdated_title": "Versi Anda sudah usang",
+    "need_to_update": "Anda perlu memperbarui aplikasi Anda ke versi terbaru untuk terus menggunakan aplikasi ini."
+  },
+  "interview": {
+    "title_first": "Bicaralah dengan pendiri Nemlys untuk ",
+    "title_second": "mendapatkan 2 bulan akses Tak Terbatas",
+    "reason_1_title_1": "Jadwalkan ",
+    "reason_1_title_2": "panggilan 30 menit ",
+    "reason_1_title_3": "dengan pendiri Nemlys",
+    "reason_2_title_1": "Bagikan apa yang Anda ",
+    "reason_2_title_2": "suka dan tidak suka ",
+    "reason_2_title_3": "tentang Nemlys",
+    "reason_3_title_1": "Dapatkan ",
+    "reason_3_title_2": "2 bulan ",
+    "reason_3_title_3": "akses Tak Terbatas setelah panggilan",
+    "button": "Jadwalkan panggilan"
+  },
+  "interview_text": {
+    "title_first": "Tulis umpan balik Anda untuk mendapatkan ",
+    "title_second": "1 bulan Premium",
+    "reason_1_title_1": "",
+    "reason_1_title_2": "Tulis jawaban",
+    "reason_1_title_3": " untuk 3 pertanyaan tentang apa yang Anda suka dan tidak suka di Nemlys",
+    "reason_2_title_1": "Dapatkan ",
+    "reason_2_title_2": "1 bulan premium",
+    "reason_2_title_3": "",
+    "reason_3_title_1": "Jawaban Anda ",
+    "reason_3_title_2": "membantu kami memutuskan",
+    "reason_3_title_3": " apa yang akan dikerjakan selanjutnya",
+    "button": "Tulis kepada kami",
+    "thank": "Luar biasa! Kami akan menghubungi Anda melalui email: {{email}}"
+  },
+  "recording": {
+    "button": "Rekam",
+    "stop": {
+      "title_1": "Apakah Anda yakin? Anda ",
+      "title_2": "tidak dapat melanjutkan ",
+      "title_3": "perekaman setelah menghentikannya",
+      "button": "Ya, hentikan"
+    },
+    "delete": {
+      "title_1": "Apakah Anda yakin ingin ",
+      "title_2": "menghapus rekaman",
+      "title_3": "?",
+      "button": "Ya, hapus"
+    },
+    "permission": {
+      "title_1": "Analisis Audio tidak berfungsi tanpa ",
+      "title_2": "izin mikrofon",
+      "button": "Buka pengaturan"
+    },
+    "tooltip": {
+      "feature_intro": "Coba Analisis Audio dari percakapan Anda, ini akan meningkatkan pertanyaan di masa depan",
+      "wanted_recording": "Kami akhirnya meluncurkan Analisis Audio. Coba sekarang!",
+      "limit_reached": "Anda telah mencapai batas harian Analisis Audio Anda"
+    }
+  },
+  "date": {
+    "reminder": {
+      "title": "{{firstName}}, Waktunya Terhubung dengan Pasangan",
+      "body": "Menyenangkan? Mendalam? Intim? Pilih dan Diskusikan topik bersama"
+    },
+    "generating_questions_error": "Maaf, AI kami tidak dapat menghasilkan pertanyaan ini, coba kategori atau topik lain",
+    "notification": {
+      "title_1": "Dapatkan pengingat",
+      "title_2": " untuk mendiskusikan pertanyaan dengan pasangan Anda",
+      "title_3": "",
+      "confirm": "Izinkan notifikasi"
+    },
+    "stop_popup": {
+      "title_1": "Apakah Anda yakin ingin ",
+      "title_2": "menghentikan diskusi",
+      "title_3": "?",
+      "subtitle": "Kami tidak dapat menyimpan kemajuan Anda.",
+      "confirm": "Ya, hentikan diskusi",
+      "cancel": "Tidak, kembali"
+    },
+    "share": "Bagikan",
+    "stop": "Hentikan kencan",
+    "start_date": "Mulai kencan",
+    "level_title_first": "Pilih ",
+    "level_title_second": "kedalaman ",
+    "level_title_third": "pertanyaan Anda",
+    "level": {
+      "light": "Ringan",
+      "normal": "Normal",
+      "deep": "Mendalam"
+    },
+    "topic_title_first": "Pilih ",
+    "topic_title_second": "1 topik ",
+    "topic_title_third": "untuk didiskusikan dengan pasangan",
+    "topic": {
+      "title": "Pilih satu topik",
+      "surprise": "Acak",
+      "intimacy": "Panas",
+      "emotions": "Emosi",
+      "fun": "Menyenangkan",
+      "worldview": "Pandangan dunia",
+      "goals": "Tujuan",
+      "future": "Masa depan",
+      "communication": "Komunikasi",
+      "preferences": "Preferensi",
+      "appearance": "Penampilan",
+      "travel": "Perjalanan",
+      "career": "Karier",
+      "expectations": "Harapan",
+      "values": "Nilai",
+      "gifts": "Hadiah",
+      "friends": "Teman",
+      "childhood": "Masa kecil",
+      "commitment": "Komitmen",
+      "past": "Masa lalu",
+      "ex": "Mantan",
+      "fidelity": "Kesetiaan",
+      "trust": "Kepercayaan",
+      "money": "Uang",
+      "conflict": "Konflik",
+      "social_circle": "Lingkaran sosial",
+      "love_language": "Bahasa cinta",
+      "mental_health": "Kesehatan mental",
+      "parents": "Orang tua",
+      "children": "Anak-anak",
+      "living_together": "Tinggal bersama"
+    },
+    "generating_questions_first": "Menghasilkan pertanyaan untuk didiskusikan ",
+    "generating_questions_second": "dengan pasangan",
+    "discuss": "Diskusikan topik bersama",
+    "feedback": {
+      "with_partner": {
+        "title_first": "Jadi! Bagaimana ",
+        "title_second": "diskusi Anda",
+        "title_third": "?",
+        "choice_4": "Kami mendapat beberapa wawasan keren",
+        "choice_3": "Bagus",
+        "choice_2": "Tidak ada yang baru",
+        "choice_1": "Tidak membantu sama sekali"
+      },
+      "alone": {
+        "title_first": "Jadi! Bagaimana ",
+        "title_second": "kesan Anda",
+        "title_third": "?",
+        "choice_4": "Banyak pertanyaan menarik",
+        "choice_3": "Pertanyaan bagus",
+        "choice_2": "Tidak ada yang istimewa",
+        "choice_1": "Saya tidak suka"
+      }
+    },
+    "new_level": {
+      "reached": "Anda mencapai",
+      "have": "Anda memiliki",
+      "title_first": "Diskusi",
+      "title_second": "selesai",
+      "alone_title_first": "Eksplorasi Aplikasi Anda",
+      "home": "Kembali ke beranda"
+    }
+  },
+  "welcome": {
+    "title_first": "Dapatkan pertanyaan untuk didiskusikan dengan ",
+    "title_second": "pasangan Anda",
+    "button": {
+      "default": "Lanjutkan"
+    }
+  },
+  "onboarding": {
+    "your_name_first": "Hai! Siapa\n",
+    "your_name_second": "nama Anda",
+    "your_name_third": "?",
+    "partner_name_first": "Siapa\n",
+    "partner_name_second": "nama pasangan Anda",
+    "partner_name_third": "?",
+    "job": {
+      "title_first": "Apa yang Anda ",
+      "title_second": "",
+      "title_third": "ingin dapatkan?",
+      "fun": "Pertanyaan menyenangkan dan mudah untuk percakapan kencan",
+      "hard": "Pertanyaan yang sulit kita ungkapkan sendiri",
+      "issues": "Cara menyelesaikan masalah dengan pasangan",
+      "other": "Lainnya",
+      "other_placeholder": " Tulis jawaban Anda..."
+    },
+    "reflection": {
+      "private": "info pribadi",
+      "explanation": "Refleksi sendiri untuk lebih memahami hubungan Anda.",
+      "short": "Terlalu pendek",
+      "good": "Bagus",
+      "perfect": "Sempurna",
+      "write_answer": "Tulis jawaban"
+    },
+    "analyzing": {
+      "text_1": "Menganalisis\npenulisan Anda",
+      "text_2": "Menganalisis\njawaban Anda",
+      "text_3": "Menyesuaikan aplikasi\nuntuk pasangan Anda",
+      "text_4_first": "Selesai,\n",
+      "text_4_second": "mulailah menjelajahi\naplikasi"
+    },
+    "language": {
+      "title": "Pilih Bahasa Aplikasi",
+      "new_language": "Minta bahasa baru",
+      "write_language": "Tulis bahasa..."
+    },
+    "discuss_way": {
+      "title_first": "Bagaimana Anda ingin ",
+      "title_second": "mendiskusikan ",
+      "title_third": "pertanyaan?",
+      "choice_1": "Di depan pasangan saya",
+      "choice_2": "Dengan pasangan saya secara online",
+      "choice_3": "Dapatkan pertanyaan dan diskusikan nanti",
+      "choice_4": "Saya tidak tahu"
+    }
+  },
+  "login": {
+    "password_is_too_short": "Kata sandi harus minimal 6 karakter",
+    "invalid_username": "Email atau kata sandi salah",
+    "title": "Masuk\nakun Nemlys",
+    "check_email_for_login_link": "Tautan login telah dikirim ke email Anda",
+    "button": {
+      "default": "Lanjutkan dengan Email"
+    },
+    "forgot_password": {
+      "link": "Lupa kata sandi?"
+    }
+  },
+  "oauth": {
+    "button": {
+      "google": "Masuk dengan Google",
+      "apple": "Masuk dengan Apple"
+    }
+  }
+}

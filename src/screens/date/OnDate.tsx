@@ -740,7 +740,7 @@ export default function ({
         }}
         onPress={() => {
           handleNewIndexButton(
-            (Math.min(carouselRef.current.getCurrentIndex() as number) + 1, QUESTION_COUNT - 1),
+            Math.min((carouselRef.current.getCurrentIndex() as number) + 1, QUESTION_COUNT - 1),
           );
         }}
       >

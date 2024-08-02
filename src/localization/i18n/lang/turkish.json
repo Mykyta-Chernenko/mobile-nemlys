@@ -1,0 +1,422 @@
+{
+  "nemlys": "Nemlys",
+  "awesome": "Harika!",
+  "loading": "Yükleniyor",
+  "continue": "Devam et",
+  "or": "Veya",
+  "ok": "Tamam",
+  "yes": "Evet",
+  "no": "Hayır",
+  "close": "Kapat",
+  "save": "Kaydet",
+  "cancel": "İptal",
+  "confirm": "Onayla",
+  "submit": "Gönder",
+  "remove": "Kaldır",
+  "next": "İleri",
+  "skip": "Geç",
+  "finish": "Bitir",
+  "input_here": "Buraya yazın",
+  "email_placeholder": "E-posta adresinizi girin",
+  "password_placeholder": "Şifrenizi girin",
+  "password_again_placeholder": "Şifrenizi tekrar girin",
+  "unexpected_error": "Beklenmeyen bir hata oluştu, tekrar deneyin",
+  "errors": {
+    "play_market": "Play Market uygulamanıza giriş yapmadınız, lütfen önce oraya giriş yapın ve ardından aboneliği başlatmak için Nemlys uygulamasına geri dönün",
+    "payment_error": "Telefonunuzun mağazasında geçici bir hata oluştu. Genellikle birkaç dakika bekleyip aboneliği yeniden başlatarak çözebilirsiniz"
+  },
+  "level": "Seviye",
+  "new_reflection": {
+    "title_1": "Deneyin ",
+    "title_2": "Refleksiyonlar ",
+    "title_3": "ilişkinizi daha iyi anlamak için.",
+    "button": "Daha sonra hatırlat"
+  },
+  "jobs": {
+    "issues": "İlişkimizdeki sorunlar",
+    "sex": "Mahremiyet & Cinsellik",
+    "know": "Birbirinizi tanıyın",
+    "hard": "Derin sorulara dalın",
+    "meaningful": "Anlamlı sohbetler",
+    "fun": "Hafif ve Eğlenceli konular"
+  },
+  "notification": {
+    "pre_date": {
+      "pre_date_ready_for_a_date_29_02_2024": {
+        "title": "Bir randevuya hazır mısınız?",
+        "body": "Sizin ve partneriniz için onlarca kişiselleştirilmiş soru hazırladık"
+      },
+      "pre_date_time_to_connect_29_02_2024": {
+        "title": "Bağlanma zamanı!",
+        "body": "Yoğun gününüzde duraklayın ve partnerinizi Nemlys ile keşfedin"
+      },
+      "pre_date_lets_pla_game_29_02_2024": {
+        "title": "Hadi bir oyun oynayalım!",
+        "body": "Bugünün interaktif sorusuyla ilişkide eğlenmek için Nemlys'i açın"
+      }
+    },
+    "finish_date": {
+      "finish_date_oops_29_02_2024": {
+        "title": "Oops!",
+        "body": "Randevunuzu yarım bırakmayın. Nemlys'i açın ve sohbete geri dönün"
+      },
+      "finish_date_dont_leave_love_hanging_29_02_2024": {
+        "title": "Aşkı askıda bırakmayın...",
+        "body": "İlişki sorularınızı bitirmek ve büyüyü keşfetmek için Nemlys'i açın"
+      }
+    },
+    "after_date": {
+      "after_date_time_for_your_relationship_29_02_2024": {
+        "title": "İlişkiniz için zaman",
+        "body": "Birlikte soruları yanıtlayarak ortaklığınıza olumlu bir etki yapın"
+      },
+      "after_date_morning_sunshine_29_02_2024": {
+        "title": "Günaydın, güneş!",
+        "body": "Partnerinizle bağınızı derinleştiren günlük sorunuz için Nemlys'e dokunun"
+      },
+      "after_date_guess_what_time_29_02_2024": {
+        "title": "Tahmin edin saat kaç?",
+        "body": "Günlük merak dozunuza dalın. Özel birinizle bağlantıyı güçlendirin"
+      },
+      "after_date_feeling_curious_29_02_2024": {
+        "title": "Meraklı mı hissediyorsunuz?",
+        "body": "Bugünün düşündürücü sorusu aracılığıyla partnerinizle bir keşif yolculuğuna çıkın"
+      },
+      "after_date_challenge_accepted_29_02_2024": {
+        "title": "Meydan okuma kabul edildi mi?",
+        "body": "Şimdi Nemlys'i açın ve bugünün eğlenceli sorusuyla ilişki bilginizi test edin!"
+      }
+    },
+    "reflection": {
+      "title": "{{partnerName}} ile ilişkinizi değerlendirme zamanı",
+      "body": "Bir refleksiyon seçin ve cevabınızı yazın"
+    }
+  },
+  "home": {
+    "discussed_questions": "tartışılan konular",
+    "you": "Sen",
+    "partner": "Partner",
+    "menu": {
+      "discuss": "Tartış",
+      "profile": "Profil",
+      "premium": "Premium",
+      "reflect": "Düşün"
+    }
+  },
+  "profile": {
+    "title": "Profil",
+    "my_account": "Hesabım",
+    "settings": "Ayarlar",
+    "about": "Nemlys Hakkında",
+    "your_name": "Adınız",
+    "partner_name": "Partnerinizin Adı",
+    "language": "Dil",
+    "subscription": "Aboneliği yönet",
+    "rate": "Uygulamamızı değerlendirin",
+    "share": "Uygulamamızı paylaşın",
+    "feature_request": "Özellik isteği",
+    "feature_request_placeholder": "Nemlys uygulamasında ne görmek istediğinizi yazın",
+    "call": "Kurucularla görüşme",
+    "contact": "Bize ulaşın",
+    "contact_placeholder": "Yardım istediğiniz konuyu yazın",
+    "logout": "Çıkış yap",
+    "delete_account": "Hesabı sil",
+    "are_you_sure_you_want_to_delete_account": "Hesabınızı silmek istediğinizden emin misiniz?"
+  },
+  "premium": {
+    "banner": {
+      "premium": "Sınırsız erişim",
+      "premium_right": "∞",
+      "trial": "Sınırsız erişim",
+      "days_left": "{{days}} gün kaldı",
+      "new": "Denenecek konular",
+      "topics_left": "{{left}}/{{total}} kaldı",
+      "free": "Günlük konular"
+    },
+    "offer": {
+      "title": "Premium",
+      "enjoy_your_premium": "Premium'unuzun keyfini çıkarın!",
+      "manage": "Aboneliği Yönet",
+      "upgrade_trial": "{{trialDays}} Gün Deneme Erişiminiz kaldı",
+      "reached_limit": "Günlük limitinize ulaştınız.",
+      "try_unlimited_1": "Deneyin ",
+      "try_unlimited_2": "sınırsız erişim ile",
+      "premium_title": "Tam Premium alın ",
+      "trial_expired": "Deneme Sınırsız erişiminiz sona erdi",
+      "unlimited_topics_title": "Sınırsız Konulara Erişin",
+      "unlimited_topics_explanation": "Şu anda günde {{dailyTopics}} konuya sahipsiniz",
+      "trial_button": "7 gün ücretsiz deneyin",
+      "trial_no_card": "Kredi Kartı gerekmez",
+      "choose_plan": "Planınızı Seçin",
+      "plan_monthly_title": "Aylık",
+      "plan_monthly_price": "{{price}}/ay",
+      "plan_yearly_title": "Yıllık",
+      "plan_yearly_price": "{{price}}/yıl",
+      "subscribe": "Ücretsiz 7 günlük denemeyi başlat*",
+      "terms": "Hizmet Şartları",
+      "privacy": "Gizlilik Politikası",
+      "charged": "* Deneme süresi sona erdiğinde, aboneliği iptal etmezseniz ücretlendirileceksiniz"
+    },
+    "success": {
+      "trial": {
+        "title_1": "Her şey tamam! Sınırsız erişiminizin ",
+        "title_2": "keyfini çıkarın",
+        "button": "Harika, teşekkürler"
+      },
+      "premium": {
+        "title_1": "Premium'unuz başarıyla etkinleştirildi, ",
+        "title_2": "Keyfini çıkarın!",
+        "button": "Harika, teşekkürler"
+      }
+    }
+  },
+  "reflection": {
+    "title": "Düşünceler",
+    "available": "{{number}} yeni düşünce mevcut",
+    "completed": "{{number}} Tamamlandı",
+    "start": "Başlat",
+    "explanation": {
+      "button": "Anladım",
+      "reason_1": "Daha Fazla Düşünce = 'Kişiselleştirilmiş' konunun Daha Yüksek Kalitesi",
+      "reason_2": "Yapay Zeka kullanıyoruz, bu yüzden ne kadar çok düşünür ve yazarsanız, uygulama o kadar iyi olur",
+      "reason_3": "Verileriniz güvende. Yalnızca soru üretmek için kullanıyoruz",
+      "title": "Neden düşünmek ve yazmak önemlidir?"
+    },
+    "no_reflection": "Yeni düşünce kartınızı almak için 1 konuyu tartışın",
+    "finished_writing_title_1": "Bitti!",
+    "finished_writing_title_2": " Çok iyi bir yazar oldunuz",
+    "finished_writing_button": "Harika, teşekkürler!",
+    "level_0": "giriş",
+    "level": "seviye {{number}}"
+  },
+  "update": {
+    "title": "Güncelleme",
+    "outdated_title": "Sürümünüz güncel değil",
+    "need_to_update": "Uygulamayı kullanmaya devam etmek için en son sürüme güncellemeniz gerekecek."
+  },
+  "interview": {
+    "title_first": "Nemlys kurucularıyla konuşarak ",
+    "title_second": "2 ay Sınırsız erişim kazanın",
+    "reason_1_title_1": "Bir görüşme ayarlayın ",
+    "reason_1_title_2": "30 dakikalık ",
+    "reason_1_title_3": "Nemlys kurucularıyla",
+    "reason_2_title_1": "Ne sevdiğinizi ve ",
+    "reason_2_title_2": "ne sevmediğinizi ",
+    "reason_2_title_3": "Nemlys hakkında paylaşın",
+    "reason_3_title_1": "Görüşmeden sonra ",
+    "reason_3_title_2": "2 ay ",
+    "reason_3_title_3": "Sınırsız erişim kazanın",
+    "button": "Bir görüşme ayarlayın"
+  },
+  "interview_text": {
+    "title_first": "Geri bildiriminizi yazın ve ",
+    "title_second": "1 ay Premium kazanın",
+    "reason_1_title_1": "",
+    "reason_1_title_2": "Cevapları yazın",
+    "reason_1_title_3": " Nemlys hakkında neyi sevip sevmediğinizi 3 soruya yanıt verin",
+    "reason_2_title_1": "1 ay premium kazanın",
+    "reason_2_title_2": "",
+    "reason_2_title_3": "",
+    "reason_3_title_1": "Cevaplarınız ",
+    "reason_3_title_2": "bize ne üzerinde çalışacağımıza karar vermemize yardımcı olur",
+    "reason_3_title_3": "",
+    "button": "Bize yazın",
+    "thank": "Harika! E-posta adresiniz üzerinden size ulaşacağız: {{email}}"
+  },
+  "recording": {
+    "button": "Kaydet",
+    "stop": {
+      "title_1": "Emin misiniz? Siz ",
+      "title_2": "durdurduktan sonra ",
+      "title_3": "kayda devam edemezsiniz",
+      "button": "Evet, durdur"
+    },
+    "delete": {
+      "title_1": "Kaydı silmek istediğinizden ",
+      "title_2": "emin misiniz",
+      "title_3": "?",
+      "button": "Evet, sil"
+    },
+    "permission": {
+      "title_1": "Ses Analizi mikrofon izni olmadan çalışmaz ",
+      "title_2": "",
+      "button": "Ayarları aç"
+    },
+    "tooltip": {
+      "feature_intro": "Konuşmanızı Ses Analizi ile deneyin, gelecekteki soruları iyileştirecektir",
+      "wanted_recording": "Sonunda Ses Analizini başlattık. Deneyin!",
+      "limit_reached": "Günlük Ses Analizi limitinize ulaştınız"
+    }
+  },
+  "date": {
+    "reminder": {
+      "title": "{{firstName}}, Partnerinizle Bağlantı Kurma Zamanı",
+      "body": "Eğlenceli mi? Derin mi? Samimi mi? Bir konuyu seçin ve birlikte tartışın"
+    },
+    "generating_questions_error": "Üzgünüz, yapay zekamız bu soruları oluşturamıyor, başka bir kategori veya konu deneyin",
+    "notification": {
+      "title_1": "Bir hatırlatma alın",
+      "title_2": " partnerinizle soruları tartışmak için",
+      "title_3": "",
+      "confirm": "Bildirimlere izin ver"
+    },
+    "stop_popup": {
+      "title_1": "Tartışmayı durdurmak istediğinizden ",
+      "title_2": "emin misiniz",
+      "title_3": "?",
+      "subtitle": "O zaman ilerlemenizi kaydedemeyiz.",
+      "confirm": "Evet, tartışmayı durdur",
+      "cancel": "Hayır, geri dön"
+    },
+    "share": "Paylaş",
+    "stop": "Randevuyu durdur",
+    "start_date": "Randevu başlat",
+    "level_title_first": "Seviyeyi seçin ",
+    "level_title_second": "derinliği ",
+    "level_title_third": "sorularınızın",
+    "level": {
+      "light": "Hafif",
+      "normal": "Normal",
+      "deep": "Derin"
+    },
+    "topic_title_first": "Bir konu seçin ",
+    "topic_title_second": "1 konu ",
+    "topic_title_third": "partnerinizle tartışmak için",
+    "topic": {
+      "title": "Bir konu seçin",
+      "surprise": "Rastgele",
+      "intimacy": "Baharatlı",
+      "emotions": "Duygular",
+      "fun": "Eğlence",
+      "worldview": "Dünya görüşü",
+      "goals": "Hedefler",
+      "future": "Gelecek",
+      "communication": "İletişim",
+      "preferences": "Tercihler",
+      "appearance": "Görünüm",
+      "travel": "Seyahat",
+      "career": "Kariyer",
+      "expectations": "Beklentiler",
+      "values": "Değerler",
+      "gifts": "Hediyeler",
+      "friends": "Arkadaşlar",
+      "childhood": "Çocukluk",
+      "commitment": "Bağlılık",
+      "past": "Geçmiş",
+      "ex": "Eski",
+      "fidelity": "Sadakat",
+      "trust": "Güven",
+      "money": "Para",
+      "conflict": "Çatışma",
+      "social_circle": "Sosyal çevre",
+      "love_language": "Sevgi dili",
+      "mental_health": "Zihinsel sağlık",
+      "parents": "Ebeveynler",
+      "children": "Çocuklar",
+      "living_together": "Birlikte yaşama"
+    },
+    "generating_questions_first": "Tartışmak için sorular oluşturuluyor ",
+    "generating_questions_second": "partnerinizle",
+    "discuss": "Konuları birlikte tartışın",
+    "feedback": {
+      "with_partner": {
+        "title_first": "Yani! Nasıl geçti ",
+        "title_second": "tartışmanız",
+        "title_third": "?",
+        "choice_4": "Birkaç güzel içgörü elde ettik",
+        "choice_3": "İyi geçti",
+        "choice_2": "Yeni bir şey yok",
+        "choice_1": "Hiç yardımcı olmadı"
+      },
+      "alone": {
+        "title_first": "Yani! Ne ",
+        "title_second": "düşünüyorsunuz",
+        "title_third": "?",
+        "choice_4": "Birçok ilginç soru",
+        "choice_3": "İyi sorular",
+        "choice_2": "Pek bir şey yok",
+        "choice_1": "Beğenmedim"
+      }
+    },
+    "new_level": {
+      "reached": "ulaştınız",
+      "have": "sahipsiniz",
+      "title_first": "Tartışma",
+      "title_second": "tamamlandı",
+      "alone_title_first": "Uygulamayı Keşfiniz",
+      "home": "Ana sayfaya dön"
+    }
+  },
+  "welcome": {
+    "title_first": "Partnerinizle tartışmak için sorular alın ",
+    "title_second": "",
+    "button": {
+      "default": "Devam et"
+    }
+  },
+  "onboarding": {
+    "your_name_first": "Merhaba! Adınız\n",
+    "your_name_second": "",
+    "your_name_third": "nedir?",
+    "partner_name_first": "Partnerinizin Adı\n",
+    "partner_name_second": "",
+    "partner_name_third": "nedir?",
+    "job": {
+      "title_first": "Ne elde etmek ",
+      "title_second": "istiyorsunuz?",
+      "title_third": "",
+      "fun": "Randevu sohbetleri için eğlenceli ve kolay sorular",
+      "hard": "Kendi başımıza gündeme getirmekte zorlandığımız sorular",
+      "issues": "Partnerle sorunları çözmenin yolları",
+      "other": "Diğer",
+      "other_placeholder": " Cevabınızı yazın..."
+    },
+    "reflection": {
+      "private": "özel bilgi",
+      "explanation": "Kendi başınıza düşünerek ilişkinizi daha iyi anlayın.",
+      "short": "Çok kısa",
+      "good": "İyi",
+      "perfect": "Mükemmel",
+      "write_answer": "Cevabı yazın"
+    },
+    "analyzing": {
+      "text_1": "Yazınızı analiz ediyoruz\n",
+      "text_2": "Cevaplarınızı analiz ediyoruz\n",
+      "text_3": "Uygulamayı çiftinize uyarlıyoruz\n",
+      "text_4_first": "Her şey tamam,\n",
+      "text_4_second": "uygulamayı keşfetmeye başlayın"
+    },
+    "language": {
+      "title": "Uygulama Dilini Seçin",
+      "new_language": "Yeni dil talep edin",
+      "write_language": "Dili yazın..."
+    },
+    "discuss_way": {
+      "title_first": "Soruları nasıl tartışmak istersiniz? ",
+      "title_second": "",
+      "title_third": "",
+      "choice_1": "Partnerimin önünde",
+      "choice_2": "Partnerimle çevrimiçi",
+      "choice_3": "Soruları alıp sonra tartışmak",
+      "choice_4": "Bilmiyorum"
+    }
+  },
+  "login": {
+    "password_is_too_short": "Şifre en az 6 karakter olmalıdır",
+    "invalid_username": "E-posta veya şifre yanlış",
+    "title": "Nemlys hesabınıza giriş yapın",
+    "check_email_for_login_link": "Giriş bağlantısı e-postanıza gönderildi",
+    "button": {
+      "default": "E-posta ile devam et"
+    },
+    "forgot_password": {
+      "link": "Şifrenizi mi unuttunuz?"
+    }
+  },
+  "oauth": {
+    "button": {
+      "google": "Google ile giriş yapın",
+      "apple": "Apple ile giriş yapın"
+    }
+  }
+}

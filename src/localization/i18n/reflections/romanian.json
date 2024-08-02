@@ -1,0 +1,296 @@
+[
+  {
+    "slug": "discuss_issue",
+    "reflection": "Care este problema pe care vrei să o discuți?",
+    "level": 0,
+    "language": "ro",
+    "active": false
+  },
+  {
+    "slug": "greatuful",
+    "reflection": "Scrie 3 lucruri pentru care ești recunoscător în relația ta",
+    "level": 2,
+    "language": "ro",
+    "active": true
+  },
+  {
+    "slug": "felt_during_last_date",
+    "reflection": "Scrie ce ai simțit față de partenerul tău în timpul ultimei întâlniri",
+    "level": 3,
+    "language": "ro",
+    "active": true
+  },
+  {
+    "slug": "most_important_things_faced",
+    "reflection": "Scrie despre cele mai importante lucruri cu care v-ați confruntat ca și cuplu și cum v-au modelat relația",
+    "level": 4,
+    "language": "ro",
+    "active": true
+  },
+  {
+    "slug": "changed_to_become_better",
+    "reflection": "Scrie 5 lucruri pe care le-ați schimbat pentru a deveni mai buni unul pentru celălalt",
+    "level": 5,
+    "language": "ro",
+    "active": true
+  },
+  {
+    "slug": "enjoyed_recently",
+    "reflection": "Scrie 5 lucruri care ți-au plăcut recent în relația ta",
+    "level": 6,
+    "language": "ro",
+    "active": true
+  },
+  {
+    "slug": "recent_fascinating_event",
+    "reflection": "Scrie despre un eveniment fascinant recent cu partenerul tău",
+    "level": 6,
+    "language": "ro",
+    "active": true
+  },
+  {
+    "slug": "what_to_improve",
+    "reflection": "Scrie ce ai dori să îmbunătățești în relația ta",
+    "level": 7,
+    "language": "ro",
+    "active": true
+  },
+  {
+    "slug": "made_trust",
+    "reflection": "Scrie despre un moment care te-a făcut să ai încredere în partenerul tău",
+    "level": 8,
+    "language": "ro",
+    "active": true
+  },
+  {
+    "slug": "difficult_to_share",
+    "reflection": "Scrie ce ți se pare dificil să împărtășești sau să comunici cu partenerul tău",
+    "level": 9,
+    "language": "ro",
+    "active": true
+  },
+  {
+    "slug": "learned_recently",
+    "reflection": "Scrie ce ai învățat recent despre partenerul tău",
+    "level": 10,
+    "language": "ro",
+    "active": true
+  },
+  {
+    "slug": "this_week_funniest_moment",
+    "reflection": "Descrie cel mai amuzant moment pe care l-ai avut săptămâna aceasta",
+    "level": 11,
+    "language": "ro",
+    "active": true
+  },
+  {
+    "slug": "challenges_to_overcome",
+    "reflection": "Scrie despre provocările pe care trebuie să le depășiți pentru a deveni un cuplu perfect",
+    "level": 12,
+    "language": "ro",
+    "active": true
+  },
+  {
+    "slug": "show_love_ways",
+    "reflection": "Scrie cum vă arătați dragostea unul față de celălalt",
+    "level": 13,
+    "language": "ro",
+    "active": true
+  },
+  {
+    "slug": "shared_goals_work",
+    "reflection": "Scrie cum ați lucrat la obiectivele voastre comune recent",
+    "level": 14,
+    "language": "ro",
+    "active": true
+  },
+  {
+    "slug": "physical_affection",
+    "reflection": "Scrie cum îți arăți afecțiunea fizică față de partenerul tău",
+    "level": 15,
+    "language": "ro",
+    "active": true
+  },
+  {
+    "slug": "moment_of_support",
+    "reflection": "Scrie despre un moment recent de sprijin pe care vi l-ați oferit unul altuia",
+    "level": 16,
+    "language": "ro",
+    "active": true
+  },
+  {
+    "slug": "decisions",
+    "reflection": "Scrie despre cele mai importante decizii pe care le-ați luat ca și cuplu",
+    "level": 17,
+    "language": "ro",
+    "active": true
+  },
+  {
+    "slug": "exciting_plans",
+    "reflection": "Scrie despre cele mai interesante planuri pe care le aveți împreună",
+    "level": 18,
+    "language": "ro",
+    "active": true
+  },
+  {
+    "slug": "jealously",
+    "reflection": "Scrie despre momentul în care ați simțit amândoi cea mai puternică gelozie",
+    "level": 19,
+    "language": "ro",
+    "active": true
+  },
+  {
+    "slug": "disagreement",
+    "reflection": "Scrie cum ați putea depăși mai bine ultima neînțelegere",
+    "level": 20,
+    "language": "ro",
+    "active": true
+  },
+  {
+    "slug": "differences_and_similarities",
+    "reflection": "Care sunt asemănările și diferențele voastre?",
+    "level": 0,
+    "language": "ro",
+    "active": true
+  },
+  {
+    "slug": "achievement",
+    "reflection": "Scrie despre o realizare personală de care ești mândru, dar despre care nu ai vorbit prea des",
+    "level": 21,
+    "language": "ro",
+    "active": true
+  },
+  {
+    "slug": "changed_perspective",
+    "reflection": "Scrie despre un loc pe care l-ai vizitat și care ți-a schimbat perspectiva asupra vieții",
+    "level": 22,
+    "language": "ro",
+    "active": true
+  },
+  {
+    "slug": "rethink_belief",
+    "reflection": "Scrie despre o carte sau un articol care te-a făcut să regândești o convingere de lungă durată",
+    "level": 23,
+    "language": "ro",
+    "active": true
+  },
+  {
+    "slug": "felt_vulnerable",
+    "reflection": "Scrie despre un moment recent în care te-ai simțit cu adevărat vulnerabil, fie cu partenerul tău, fie în altă parte",
+    "level": 24,
+    "language": "ro",
+    "active": true
+  },
+  {
+    "slug": "unexpected_kindness",
+    "reflection": "Scrie despre o bunătate neașteptată pe care cineva ți-a arătat-o",
+    "level": 25,
+    "language": "ro",
+    "active": true
+  },
+  {
+    "slug": "historical_figure",
+    "reflection": "Scrie despre o figură istorică sau un eveniment care te fascinează profund și de ce",
+    "level": 26,
+    "language": "ro",
+    "active": true
+  },
+  {
+    "slug": "challenge_alone",
+    "reflection": "Scrie despre o provocare cu care te-ai confruntat singur și cum ai gestionat-o",
+    "level": 27,
+    "language": "ro",
+    "active": true
+  },
+  {
+    "slug": "movie_moved",
+    "reflection": "Scrie despre o lucrare de artă (un tablou, o melodie sau un film) care te-a mișcat profund",
+    "level": 28,
+    "language": "ro",
+    "active": true
+  },
+  {
+    "slug": "childhhood_formes",
+    "reflection": "Scrie despre o amintire din copilărie care încă îți modelează cine ești astăzi",
+    "level": 29,
+    "language": "ro",
+    "active": true
+  },
+  {
+    "slug": "goal_achieved",
+    "reflection": "Scrie despre un vis sau un obiectiv care pare de neatins, dar pe care ești hotărât să îl atingi",
+    "level": 30,
+    "language": "ro",
+    "active": true
+  },
+  {
+    "slug": "news_affected",
+    "reflection": "Scrie despre o știre recentă sau un eveniment care te-a afectat sau te-a preocupat profund",
+    "level": 31,
+    "language": "ro",
+    "active": true
+  },
+  {
+    "slug": "tradition_significance",
+    "reflection": "Scrie despre o tradiție sau un aspect cultural care are o semnificație profundă pentru tine",
+    "level": 32,
+    "language": "ro",
+    "active": true
+  },
+  {
+    "slug": "dilemma_faced",
+    "reflection": "Scrie despre un dilema etică cu care te-ai confruntat și cum ai rezolvat-o (sau nu)",
+    "level": 33,
+    "language": "ro",
+    "active": true
+  },
+  {
+    "slug": "nature_experience",
+    "reflection": "Scrie despre o experiență în natură care te-a făcut să te simți conectat sau în extaz",
+    "level": 34,
+    "language": "ro",
+    "active": true
+  },
+  {
+    "slug": "scientific_discovery",
+    "reflection": "Scrie despre o descoperire sau un concept științific pe care îl găsești atât nedumeritor, cât și intrigant",
+    "level": 35,
+    "language": "ro",
+    "active": true
+  },
+  {
+    "slug": "comfort_zone",
+    "reflection": "Scrie despre o experiență în care ai ieșit din zona ta de confort și ce ai învățat",
+    "level": 36,
+    "language": "ro",
+    "active": true
+  },
+  {
+    "slug": "influencial_figure",
+    "reflection": "Scrie despre un mentor sau o figură influentă din viața ta și înțelepciunea pe care ți-au împărtășit-o",
+    "level": 37,
+    "language": "ro",
+    "active": true
+  },
+  {
+    "slug": "social_norm",
+    "reflection": "Scrie despre un moment în care ai pus la îndoială o normă sau o valoare socială",
+    "level": 38,
+    "language": "ro",
+    "active": true
+  },
+  {
+    "slug": "passionate_hobby",
+    "reflection": "Scrie despre un hobby sau un interes pentru care ești profund pasionat, dar despre care nu ai ocazia să discuți des",
+    "level": 39,
+    "language": "ro",
+    "active": true
+  },
+  {
+    "slug": "philosophical_question",
+    "reflection": "Scrie despre o întrebare sau idee filosofică care nu te lasă să dormi noaptea gândindu-te la ea",
+    "level": 40,
+    "language": "ro",
+    "active": true
+  }
+]

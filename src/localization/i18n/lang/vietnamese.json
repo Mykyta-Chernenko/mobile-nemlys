@@ -1,0 +1,422 @@
+{
+  "nemlys": "Nemlys",
+  "awesome": "Tuyệt vời!",
+  "loading": "Đang tải",
+  "continue": "Tiếp tục",
+  "or": "Hoặc",
+  "ok": "Ok",
+  "yes": "Có",
+  "no": "Không",
+  "close": "Đóng",
+  "save": "Lưu",
+  "cancel": "Hủy",
+  "confirm": "Xác nhận",
+  "submit": "Gửi",
+  "remove": "Xóa",
+  "next": "Tiếp theo",
+  "skip": "Bỏ qua",
+  "finish": "Hoàn thành",
+  "input_here": "Nhập ở đây",
+  "email_placeholder": "Nhập email của bạn",
+  "password_placeholder": "Nhập mật khẩu của bạn",
+  "password_again_placeholder": "Nhập lại mật khẩu của bạn",
+  "unexpected_error": "Đã xảy ra lỗi không mong muốn, vui lòng thử lại",
+  "errors": {
+    "play_market": "Bạn chưa đăng nhập vào ứng dụng Play Market của mình, vui lòng đăng nhập trước, sau đó quay lại ứng dụng Nemlys để bắt đầu đăng ký",
+    "payment_error": "Đã xảy ra lỗi trung gian với cửa hàng điện thoại của bạn. Bạn thường có thể giải quyết vấn đề này bằng cách chờ vài phút và thử khởi động lại đăng ký"
+  },
+  "level": "Cấp độ",
+  "new_reflection": {
+    "title_1": "Thử ",
+    "title_2": "Suy ngẫm ",
+    "title_3": "để hiểu rõ hơn về mối quan hệ của bạn.",
+    "button": "Nhắc tôi sau"
+  },
+  "jobs": {
+    "issues": "Vấn đề trong mối quan hệ của chúng tôi",
+    "sex": "Sự thân mật & Tình dục",
+    "know": "Tìm hiểu nhau",
+    "hard": "Câu hỏi sâu sắc",
+    "meaningful": "Cuộc trò chuyện ý nghĩa",
+    "fun": "Chủ đề nhẹ nhàng & Vui vẻ"
+  },
+  "notification": {
+    "pre_date": {
+      "pre_date_ready_for_a_date_29_02_2024": {
+        "title": "Sẵn sàng cho buổi hẹn hò?",
+        "body": "Chúng tôi đã chuẩn bị hàng chục câu hỏi cá nhân hóa cho bạn và đối tác của bạn"
+      },
+      "pre_date_time_to_connect_29_02_2024": {
+        "title": "Thời gian kết nối!",
+        "body": "Tạm dừng ngày bận rộn của bạn và khám phá đối tác của bạn qua Nemlys"
+      },
+      "pre_date_lets_pla_game_29_02_2024": {
+        "title": "Hãy chơi trò chơi!",
+        "body": "Mở Nemlys và tham gia vào một số câu hỏi tương tác ngày hôm nay với mối quan hệ của bạn"
+      }
+    },
+    "finish_date": {
+      "finish_date_oops_29_02_2024": {
+        "title": "Ôi!",
+        "body": "Đừng để buổi hẹn hò của bạn không hoàn thành. Mở Nemlys và quay lại cuộc trò chuyện"
+      },
+      "finish_date_dont_leave_love_hanging_29_02_2024": {
+        "title": "Đừng để tình yêu lơ lửng...",
+        "body": "Mở Nemlys để hoàn thành các câu hỏi về mối quan hệ của bạn và khám phá sự kỳ diệu"
+      }
+    },
+    "after_date": {
+      "after_date_time_for_your_relationship_29_02_2024": {
+        "title": "Thời gian cho mối quan hệ của bạn",
+        "body": "Tạo hiệu ứng tích cực cho quan hệ đối tác bằng cách trả lời câu hỏi cùng nhau"
+      },
+      "after_date_morning_sunshine_29_02_2024": {
+        "title": "Chào buổi sáng, ánh nắng!",
+        "body": "Chạm vào Nemlys để có câu hỏi hàng ngày của bạn để tăng cường mối quan hệ với đối tác của bạn"
+      },
+      "after_date_guess_what_time_29_02_2024": {
+        "title": "Đoán xem bây giờ là mấy giờ?",
+        "body": "Tham gia vào liều lượng tò mò hàng ngày của bạn. Tăng cường kết nối với người đặc biệt của bạn"
+      },
+      "after_date_feeling_curious_29_02_2024": {
+        "title": "Cảm thấy tò mò?",
+        "body": "Bắt đầu hành trình khám phá với đối tác của bạn qua câu hỏi kích thích tư duy ngày hôm nay"
+      },
+      "after_date_challenge_accepted_29_02_2024": {
+        "title": "Chấp nhận thử thách?",
+        "body": "Mở Nemlys ngay bây giờ và kiểm tra kiến thức về mối quan hệ của bạn với câu hỏi vui nhộn hôm nay!"
+      }
+    },
+    "reflection": {
+      "title": "Đã đến lúc suy ngẫm về mối quan hệ của bạn với {{partnerName}}",
+      "body": "Chọn một sự suy ngẫm và viết câu trả lời của bạn"
+    }
+  },
+  "home": {
+    "discussed_questions": "chủ đề đã thảo luận",
+    "you": "Bạn",
+    "partner": "Đối tác",
+    "menu": {
+      "discuss": "Thảo luận",
+      "profile": "Hồ sơ",
+      "premium": "Cao cấp",
+      "reflect": "Suy ngẫm"
+    }
+  },
+  "profile": {
+    "title": "Hồ sơ",
+    "my_account": "Tài khoản của tôi",
+    "settings": "Cài đặt",
+    "about": "Về Nemlys",
+    "your_name": "Tên của bạn",
+    "partner_name": "Tên đối tác",
+    "language": "Ngôn ngữ",
+    "subscription": "Quản lý đăng ký",
+    "rate": "Đánh giá ứng dụng của chúng tôi",
+    "share": "Chia sẻ ứng dụng của chúng tôi",
+    "feature_request": "Yêu cầu tính năng",
+    "feature_request_placeholder": "Viết những gì bạn muốn thấy trong ứng dụng Nemlys",
+    "call": "Cuộc gọi với người sáng lập",
+    "contact": "Liên hệ với chúng tôi",
+    "contact_placeholder": "Viết những gì bạn cần chúng tôi giúp bạn",
+    "logout": "Đăng xuất",
+    "delete_account": "Xóa tài khoản",
+    "are_you_sure_you_want_to_delete_account": "Bạn có chắc chắn muốn xóa tài khoản của mình không?"
+  },
+  "premium": {
+    "banner": {
+      "premium": "Truy cập không giới hạn",
+      "premium_right": "∞",
+      "trial": "Truy cập không giới hạn",
+      "days_left": "{{days}} ngày còn lại",
+      "new": "Chủ đề mới để thử",
+      "topics_left": "{{left}}/{{total}} còn lại",
+      "free": "Chủ đề hàng ngày"
+    },
+    "offer": {
+      "title": "Cao cấp",
+      "enjoy_your_premium": "Tận hưởng cao cấp của bạn!",
+      "manage": "Quản lý đăng ký",
+      "upgrade_trial": "Bạn còn {{trialDays}} ngày truy cập thử nghiệm",
+      "reached_limit": "Bạn đã đạt đến giới hạn hàng ngày của mình.",
+      "try_unlimited_1": "Thử với ",
+      "try_unlimited_2": "truy cập không giới hạn",
+      "premium_title": "Nhận cao cấp đầy đủ cho ",
+      "trial_expired": "Bạn đã hết truy cập không giới hạn thử nghiệm",
+      "unlimited_topics_title": "Nhận Chủ đề Không Giới hạn",
+      "unlimited_topics_explanation": "Bây giờ bạn có {{dailyTopics}} chủ đề mỗi ngày",
+      "trial_button": "Thử 7 ngày miễn phí",
+      "trial_no_card": "KHÔNG yêu cầu thẻ tín dụng",
+      "choose_plan": "Chọn kế hoạch của bạn",
+      "plan_monthly_title": "Hàng tháng",
+      "plan_monthly_price": "{{price}}/tháng",
+      "plan_yearly_title": "Hàng năm",
+      "plan_yearly_price": "{{price}}/năm",
+      "subscribe": "Bắt đầu với thử nghiệm miễn phí 7 ngày*",
+      "terms": "Điều khoản Dịch vụ",
+      "privacy": "Chính sách bảo mật",
+      "charged": "* Bạn sẽ bị tính phí khi thử nghiệm kết thúc trừ khi bạn hủy đăng ký"
+    },
+    "success": {
+      "trial": {
+        "title_1": "Hoàn tất! Tận hưởng ",
+        "title_2": "truy cập không giới hạn của bạn",
+        "button": "Tuyệt, cảm ơn"
+      },
+      "premium": {
+        "title_1": "Cao cấp của bạn đã được kích hoạt thành công, ",
+        "title_2": "Tận hưởng!",
+        "button": "Tuyệt, cảm ơn"
+      }
+    }
+  },
+  "reflection": {
+    "title": "Suy ngẫm",
+    "available": "{{number}} sự suy ngẫm mới có sẵn",
+    "completed": "{{number}} Đã hoàn thành",
+    "start": "Bắt đầu",
+    "explanation": {
+      "button": "Hiểu rồi",
+      "reason_1": "Nhiều suy ngẫm hơn = Chất lượng cao hơn của chủ đề 'Cá nhân hóa'",
+      "reason_2": "Chúng tôi sử dụng AI, vì vậy càng nhiều bạn suy ngẫm và viết, ứng dụng sẽ càng tốt",
+      "reason_3": "Dữ liệu của bạn an toàn. Chúng tôi chỉ sử dụng nó để tạo câu hỏi",
+      "title": "Tại sao quan trọng để suy ngẫm và viết?"
+    },
+    "no_reflection": "Thảo luận 1 chủ đề để nhận thẻ suy ngẫm mới của bạn",
+    "finished_writing_title_1": "Hoàn tất!",
+    "finished_writing_title_2": " Bạn là một nhà văn giỏi",
+    "finished_writing_button": "Tuyệt, cảm ơn!",
+    "level_0": "giới thiệu",
+    "level": "cấp độ {{number}}"
+  },
+  "update": {
+    "title": "Cập nhật",
+    "outdated_title": "Phiên bản của bạn đã lỗi thời",
+    "need_to_update": "Bạn sẽ cần cập nhật ứng dụng của mình lên phiên bản mới nhất để tiếp tục sử dụng ứng dụng."
+  },
+  "interview": {
+    "title_first": "Nói chuyện với người sáng lập Nemlys để ",
+    "title_second": "nhận 2 tháng truy cập Không giới hạn",
+    "reason_1_title_1": "Lên lịch ",
+    "reason_1_title_2": "cuộc gọi 30 phút ",
+    "reason_1_title_3": "với người sáng lập Nemlys",
+    "reason_2_title_1": "Chia sẻ những gì bạn ",
+    "reason_2_title_2": "thích và không thích ",
+    "reason_2_title_3": "về Nemlys",
+    "reason_3_title_1": "Nhận ",
+    "reason_3_title_2": "2 tháng ",
+    "reason_3_title_3": "truy cập Không giới hạn sau cuộc gọi",
+    "button": "Lên lịch cuộc gọi"
+  },
+  "interview_text": {
+    "title_first": "Viết phản hồi của bạn để nhận ",
+    "title_second": "1 tháng Cao cấp",
+    "reason_1_title_1": "",
+    "reason_1_title_2": "Viết câu trả lời",
+    "reason_1_title_3": " cho 3 câu hỏi về những gì bạn thích và không thích trong Nemlys",
+    "reason_2_title_1": "Nhận ",
+    "reason_2_title_2": "1 tháng cao cấp",
+    "reason_2_title_3": "",
+    "reason_3_title_1": "Câu trả lời của bạn ",
+    "reason_3_title_2": "giúp chúng tôi quyết định",
+    "reason_3_title_3": " những gì cần làm tiếp theo",
+    "button": "Viết cho chúng tôi",
+    "thank": "Tuyệt vời! Chúng tôi sẽ liên hệ với bạn qua email: {{email}}"
+  },
+  "recording": {
+    "button": "Ghi âm",
+    "stop": {
+      "title_1": "Bạn có chắc không? Bạn ",
+      "title_2": "không thể tiếp tục ",
+      "title_3": "ghi âm sau khi dừng lại",
+      "button": "Có, dừng lại"
+    },
+    "delete": {
+      "title_1": "Bạn có chắc chắn muốn ",
+      "title_2": "xóa ghi âm",
+      "title_3": "?",
+      "button": "Có, xóa"
+    },
+    "permission": {
+      "title_1": "Phân tích âm thanh không hoạt động nếu không có ",
+      "title_2": "quyền truy cập micro",
+      "button": "Mở cài đặt"
+    },
+    "tooltip": {
+      "feature_intro": "Thử phân tích âm thanh của cuộc trò chuyện của bạn, nó sẽ cải thiện các câu hỏi trong tương lai",
+      "wanted_recording": "Chúng tôi đã ra mắt phân tích âm thanh. Thử ngay!",
+      "limit_reached": "Bạn đã đạt đến giới hạn phân tích âm thanh hàng ngày của mình"
+    }
+  },
+  "date": {
+    "reminder": {
+      "title": "{{firstName}}, Thời gian kết nối với đối tác",
+      "body": "Vui? Sâu sắc? Thân mật? Chọn và thảo luận các chủ đề cùng nhau"
+    },
+    "generating_questions_error": "Xin lỗi, AI của chúng tôi không thể tạo ra những câu hỏi này, hãy thử một danh mục hoặc chủ đề khác",
+    "notification": {
+      "title_1": "Nhận lời nhắc",
+      "title_2": " để thảo luận câu hỏi với đối tác của bạn",
+      "title_3": "",
+      "confirm": "Cho phép thông báo"
+    },
+    "stop_popup": {
+      "title_1": "Bạn có chắc chắn muốn ",
+      "title_2": "dừng thảo luận",
+      "title_3": "?",
+      "subtitle": "Chúng tôi không thể lưu tiến trình của bạn.",
+      "confirm": "Có, dừng thảo luận",
+      "cancel": "Không, quay lại"
+    },
+    "share": "Chia sẻ",
+    "stop": "Dừng hẹn hò",
+    "start_date": "Bắt đầu hẹn hò",
+    "level_title_first": "Chọn ",
+    "level_title_second": "độ sâu ",
+    "level_title_third": "câu hỏi của bạn",
+    "level": {
+      "light": "Nhẹ nhàng",
+      "normal": "Bình thường",
+      "deep": "Sâu sắc"
+    },
+    "topic_title_first": "Chọn ",
+    "topic_title_second": "1 chủ đề ",
+    "topic_title_third": "để thảo luận với đối tác",
+    "topic": {
+      "title": "Chọn một chủ đề",
+      "surprise": "Ngẫu nhiên",
+      "intimacy": "Thân mật",
+      "emotions": "Cảm xúc",
+      "fun": "Vui vẻ",
+      "worldview": "Thế giới quan",
+      "goals": "Mục tiêu",
+      "future": "Tương lai",
+      "communication": "Giao tiếp",
+      "preferences": "Sở thích",
+      "appearance": "Ngoại hình",
+      "travel": "Du lịch",
+      "career": "Sự nghiệp",
+      "expectations": "Kỳ vọng",
+      "values": "Giá trị",
+      "gifts": "Quà tặng",
+      "friends": "Bạn bè",
+      "childhood": "Tuổi thơ",
+      "commitment": "Cam kết",
+      "past": "Quá khứ",
+      "ex": "Người yêu cũ",
+      "fidelity": "Lòng trung thành",
+      "trust": "Niềm tin",
+      "money": "Tiền bạc",
+      "conflict": "Xung đột",
+      "social_circle": "Vòng xã hội",
+      "love_language": "Ngôn ngữ tình yêu",
+      "mental_health": "Sức khỏe tinh thần",
+      "parents": "Cha mẹ",
+      "children": "Trẻ em",
+      "living_together": "Sống cùng nhau"
+    },
+    "generating_questions_first": "Tạo câu hỏi để thảo luận ",
+    "generating_questions_second": "với đối tác",
+    "discuss": "Thảo luận các chủ đề cùng nhau",
+    "feedback": {
+      "with_partner": {
+        "title_first": "Vậy! Làm thế nào ",
+        "title_second": "cuộc thảo luận của bạn",
+        "title_third": "?",
+        "choice_4": "Chúng tôi có vài ý kiến thú vị",
+        "choice_3": "Rất tốt",
+        "choice_2": "Không có gì mới",
+        "choice_1": "Không giúp ích gì cả"
+      },
+      "alone": {
+        "title_first": "Vậy! Ấn tượng của bạn ",
+        "title_second": "là gì",
+        "title_third": "?",
+        "choice_4": "Rất nhiều câu hỏi thú vị",
+        "choice_3": "Câu hỏi tốt",
+        "choice_2": "Không có gì đặc biệt",
+        "choice_1": "Tôi không thích nó"
+      }
+    },
+    "new_level": {
+      "reached": "bạn đã đạt đến",
+      "have": "bạn có",
+      "title_first": "Thảo luận",
+      "title_second": "hoàn thành",
+      "alone_title_first": "Khám phá ứng dụng của bạn",
+      "home": "Quay lại trang chủ"
+    }
+  },
+  "welcome": {
+    "title_first": "Nhận câu hỏi để thảo luận với ",
+    "title_second": "đối tác của bạn",
+    "button": {
+      "default": "Tiếp tục"
+    }
+  },
+  "onboarding": {
+    "your_name_first": "Chào! Tên của bạn\n",
+    "your_name_second": "là gì",
+    "your_name_third": "?",
+    "partner_name_first": "Tên của đối tác\n",
+    "partner_name_second": "là gì",
+    "partner_name_third": "?",
+    "job": {
+      "title_first": "Bạn muốn ",
+      "title_second": "",
+      "title_third": "nhận được gì?",
+      "fun": "Câu hỏi vui nhộn và dễ dàng cho các cuộc nói chuyện hẹn hò",
+      "hard": "Những câu hỏi mà chúng tôi khó tự mình đặt ra",
+      "issues": "Cách giải quyết vấn đề với đối tác",
+      "other": "Khác",
+      "other_placeholder": " Viết câu trả lời của bạn..."
+    },
+    "reflection": {
+      "private": "thông tin riêng tư",
+      "explanation": "Suy ngẫm một mình để hiểu rõ hơn về mối quan hệ của bạn.",
+      "short": "Quá ngắn",
+      "good": "Tốt",
+      "perfect": "Hoàn hảo",
+      "write_answer": "Viết câu trả lời"
+    },
+    "analyzing": {
+      "text_1": "Đang phân tích\nbài viết của bạn",
+      "text_2": "Đang phân tích\ncâu trả lời của bạn",
+      "text_3": "Đang điều chỉnh ứng dụng\ncho cặp đôi của bạn",
+      "text_4_first": "Hoàn tất,\n",
+      "text_4_second": "bắt đầu khám phá\nứng dụng"
+    },
+    "language": {
+      "title": "Chọn Ngôn ngữ Ứng dụng",
+      "new_language": "Yêu cầu ngôn ngữ mới",
+      "write_language": "Viết ngôn ngữ..."
+    },
+    "discuss_way": {
+      "title_first": "Bạn muốn thảo luận ",
+      "title_second": "câu hỏi ",
+      "title_third": "như thế nào?",
+      "choice_1": "Trước mặt đối tác của tôi",
+      "choice_2": "Với đối tác của tôi trực tuyến",
+      "choice_3": "Nhận câu hỏi và thảo luận sau",
+      "choice_4": "Tôi không biết"
+    }
+  },
+  "login": {
+    "password_is_too_short": "Mật khẩu phải dài ít nhất 6 ký tự",
+    "invalid_username": "Email hoặc mật khẩu sai",
+    "title": "Đăng nhập\ntài khoản Nemlys",
+    "check_email_for_login_link": "Liên kết đăng nhập đã được gửi đến email của bạn",
+    "button": {
+      "default": "Tiếp tục với Email"
+    },
+    "forgot_password": {
+      "link": "Quên mật khẩu?"
+    }
+  },
+  "oauth": {
+    "button": {
+      "google": "Đăng nhập với Google",
+      "apple": "Đăng nhập với Apple"
+    }
+  }
+}

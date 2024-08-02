@@ -1,0 +1,296 @@
+[
+  {
+    "slug": "discuss_issue",
+    "reflection": "Hangi konuyu tartışmak istiyorsunuz?",
+    "level": 0,
+    "language": "tr",
+    "active": false
+  },
+  {
+    "slug": "greatuful",
+    "reflection": "İlişkinizde minnettar olduğunuz 3 şeyi yazın",
+    "level": 2,
+    "language": "tr",
+    "active": true
+  },
+  {
+    "slug": "felt_during_last_date",
+    "reflection": "Son randevunuzda partnerinize karşı ne hissettiğinizi yazın",
+    "level": 3,
+    "language": "tr",
+    "active": true
+  },
+  {
+    "slug": "most_important_things_faced",
+    "reflection": "Çift olarak karşılaştığınız en önemli şeyleri ve bunların ilişkinizi nasıl şekillendirdiğini yazın",
+    "level": 4,
+    "language": "tr",
+    "active": true
+  },
+  {
+    "slug": "changed_to_become_better",
+    "reflection": "Birbiriniz için daha iyi hale gelmek adına değiştirdiğiniz 5 şeyi yazın",
+    "level": 5,
+    "language": "tr",
+    "active": true
+  },
+  {
+    "slug": "enjoyed_recently",
+    "reflection": "İlişkinizde son zamanlarda hoşlandığınız 5 şeyi yazın",
+    "level": 6,
+    "language": "tr",
+    "active": true
+  },
+  {
+    "slug": "recent_fascinating_event",
+    "reflection": "Partnerinizle yaşadığınız son dönemdeki ilginç bir olayı yazın",
+    "level": 6,
+    "language": "tr",
+    "active": true
+  },
+  {
+    "slug": "what_to_improve",
+    "reflection": "İlişkinizde neyi geliştirmek istediğinizi yazın",
+    "level": 7,
+    "language": "tr",
+    "active": true
+  },
+  {
+    "slug": "made_trust",
+    "reflection": "Partnerinize güvenmenizi sağlayan bir anı yazın",
+    "level": 8,
+    "language": "tr",
+    "active": true
+  },
+  {
+    "slug": "difficult_to_share",
+    "reflection": "Partnerinizle paylaşmakta veya iletişimde zorlandığınız şeyleri yazın",
+    "level": 9,
+    "language": "tr",
+    "active": true
+  },
+  {
+    "slug": "learned_recently",
+    "reflection": "Partneriniz hakkında son zamanlarda öğrendiğiniz şeyleri yazın",
+    "level": 10,
+    "language": "tr",
+    "active": true
+  },
+  {
+    "slug": "this_week_funniest_moment",
+    "reflection": "Bu hafta yaşadığınız en komik anı tanımlayın",
+    "level": 11,
+    "language": "tr",
+    "active": true
+  },
+  {
+    "slug": "challenges_to_overcome",
+    "reflection": "Mükemmel bir bağ kurmak için üstesinden gelmeniz gereken zorlukları yazın",
+    "level": 12,
+    "language": "tr",
+    "active": true
+  },
+  {
+    "slug": "show_love_ways",
+    "reflection": "Siz ve partnerinizin birbirinize sevgiyi nasıl gösterdiğinizi yazın",
+    "level": 13,
+    "language": "tr",
+    "active": true
+  },
+  {
+    "slug": "shared_goals_work",
+    "reflection": "Son zamanlarda paylaştığınız hedefler üzerinde nasıl çalıştığınızı yazın",
+    "level": 14,
+    "language": "tr",
+    "active": true
+  },
+  {
+    "slug": "physical_affection",
+    "reflection": "Partnerinize fiziksel sevginizi nasıl gösterdiğinizi yazın",
+    "level": 15,
+    "language": "tr",
+    "active": true
+  },
+  {
+    "slug": "moment_of_support",
+    "reflection": "Birbirinize verdiğiniz son dönemdeki destek anını yazın",
+    "level": 16,
+    "language": "tr",
+    "active": true
+  },
+  {
+    "slug": "decisions",
+    "reflection": "Çift olarak aldığınız en önemli kararları yazın",
+    "level": 17,
+    "language": "tr",
+    "active": true
+  },
+  {
+    "slug": "exciting_plans",
+    "reflection": "Birlikte sahip olduğunuz en heyecan verici planları yazın",
+    "level": 18,
+    "language": "tr",
+    "active": true
+  },
+  {
+    "slug": "jealously",
+    "reflection": "Her ikinizin de en güçlü kıskançlığı hissettiğiniz anı yazın",
+    "level": 19,
+    "language": "tr",
+    "active": true
+  },
+  {
+    "slug": "disagreement",
+    "reflection": "Son anlaşmazlığınızı nasıl daha iyi aşabileceğinizi yazın",
+    "level": 20,
+    "language": "tr",
+    "active": true
+  },
+  {
+    "slug": "differences_and_similarities",
+    "reflection": "Benzerlikleriniz ve farklılıklarınız nelerdir?",
+    "level": 0,
+    "language": "tr",
+    "active": true
+  },
+  {
+    "slug": "achievement",
+    "reflection": "Gurur duyduğunuz, ancak sık sık konuşmadığınız bir kişisel başarınızı yazın",
+    "level": 21,
+    "language": "tr",
+    "active": true
+  },
+  {
+    "slug": "changed_perspective",
+    "reflection": "Hayatınıza bakış açınızı değiştiren bir yeri yazın",
+    "level": 22,
+    "language": "tr",
+    "active": true
+  },
+  {
+    "slug": "rethink_belief",
+    "reflection": "Uzun süredir sahip olduğunuz bir inancı yeniden düşünmenizi sağlayan bir kitap veya makaleyi yazın",
+    "level": 23,
+    "language": "tr",
+    "active": true
+  },
+  {
+    "slug": "felt_vulnerable",
+    "reflection": "Son zamanlarda gerçekten savunmasız hissettiğiniz bir zamanı yazın, ister partnerinizle ister başka bir yerde",
+    "level": 24,
+    "language": "tr",
+    "active": true
+  },
+  {
+    "slug": "unexpected_kindness",
+    "reflection": "Birinin size gösterdiği beklenmedik bir iyiliği yazın",
+    "level": 25,
+    "language": "tr",
+    "active": true
+  },
+  {
+    "slug": "historical_figure",
+    "reflection": "Derinlemesine büyüleyici bulduğunuz bir tarihi figür veya olay hakkında yazın ve nedenini açıklayın",
+    "level": 26,
+    "language": "tr",
+    "active": true
+  },
+  {
+    "slug": "challenge_alone",
+    "reflection": "Tek başınıza karşılaştığınız bir zorluğu ve nasıl üstesinden geldiğinizi yazın",
+    "level": 27,
+    "language": "tr",
+    "active": true
+  },
+  {
+    "slug": "movie_moved",
+    "reflection": "Sizi derinden etkileyen bir sanat eseri (bir tablo, şarkı veya film) hakkında yazın",
+    "level": 28,
+    "language": "tr",
+    "active": true
+  },
+  {
+    "slug": "childhhood_formes",
+    "reflection": "Bugün kim olduğunuzu şekillendirmeye devam eden bir çocukluk anısını yazın",
+    "level": 29,
+    "language": "tr",
+    "active": true
+  },
+  {
+    "slug": "goal_achieved",
+    "reflection": "Ulaşılması zor görünen, ancak başarmaya kararlı olduğunuz bir hayal veya hedef hakkında yazın",
+    "level": 30,
+    "language": "tr",
+    "active": true
+  },
+  {
+    "slug": "news_affected",
+    "reflection": "Sizi derinden etkileyen veya endişelendiren son bir haber veya olay hakkında yazın",
+    "level": 31,
+    "language": "tr",
+    "active": true
+  },
+  {
+    "slug": "tradition_significance",
+    "reflection": "Sizin için derin bir anlam taşıyan bir gelenek veya kültürel unsur hakkında yazın",
+    "level": 32,
+    "language": "tr",
+    "active": true
+  },
+  {
+    "slug": "dilemma_faced",
+    "reflection": "Karşılaştığınız ve nasıl çözdüğünüz (veya çözmediğiniz) bir etik ikilemi yazın",
+    "level": 33,
+    "language": "tr",
+    "active": true
+  },
+  {
+    "slug": "nature_experience",
+    "reflection": "Kendinizi doğayla bağlantılı veya hayranlık dolu hissettiren bir doğa deneyimi hakkında yazın",
+    "level": 34,
+    "language": "tr",
+    "active": true
+  },
+  {
+    "slug": "scientific_discovery",
+    "reflection": "Hem kafa karıştırıcı hem de ilginç bulduğunuz bir bilimsel keşif veya kavram hakkında yazın",
+    "level": 35,
+    "language": "tr",
+    "active": true
+  },
+  {
+    "slug": "comfort_zone",
+    "reflection": "Rahatlık alanınızın dışına çıktığınız ve ne öğrendiğiniz bir deneyim hakkında yazın",
+    "level": 36,
+    "language": "tr",
+    "active": true
+  },
+  {
+    "slug": "influencial_figure",
+    "reflection": "Hayatınızdaki bir mentor veya etkili bir figür hakkında yazın ve onların sizinle paylaştığı bilgeliği anlatın",
+    "level": 37,
+    "language": "tr",
+    "active": true
+  },
+  {
+    "slug": "social_norm",
+    "reflection": "Bir toplumsal normu veya değeri sorguladığınız bir an hakkında yazın",
+    "level": 38,
+    "language": "tr",
+    "active": true
+  },
+  {
+    "slug": "passionate_hobby",
+    "reflection": "Derinlemesine tutkulu olduğunuz, ancak sık sık tartışma fırsatı bulamadığınız bir hobi veya ilgi alanı hakkında yazın",
+    "level": 39,
+    "language": "tr",
+    "active": true
+  },
+  {
+    "slug": "philosophical_question",
+    "reflection": "Gece boyunca uykusuz kalmanıza neden olan bir felsefi soru veya fikir hakkında yazın",
+    "level": 40,
+    "language": "tr",
+    "active": true
+  }
+]

@@ -1,0 +1,296 @@
+[
+  {
+    "slug": "discuss_issue",
+    "reflection": "Какую проблему вы хотите обсудить?",
+    "level": 0,
+    "language": "ru",
+    "active": false
+  },
+  {
+    "slug": "greatuful",
+    "reflection": "Напишите 3 вещи, за которые вы благодарны в ваших отношениях",
+    "level": 2,
+    "language": "ru",
+    "active": true
+  },
+  {
+    "slug": "felt_during_last_date",
+    "reflection": "Напишите, что вы чувствовали к своему партнеру во время последнего свидания",
+    "level": 3,
+    "language": "ru",
+    "active": true
+  },
+  {
+    "slug": "most_important_things_faced",
+    "reflection": "Напишите о самых важных вещах, с которыми вы столкнулись как пара, и как они повлияли на ваши отношения",
+    "level": 4,
+    "language": "ru",
+    "active": true
+  },
+  {
+    "slug": "changed_to_become_better",
+    "reflection": "Напишите 5 вещей, которые вы оба изменили, чтобы стать лучше друг для друга",
+    "level": 5,
+    "language": "ru",
+    "active": true
+  },
+  {
+    "slug": "enjoyed_recently",
+    "reflection": "Напишите 5 вещей, которые вам понравились в ваших отношениях недавно",
+    "level": 6,
+    "language": "ru",
+    "active": true
+  },
+  {
+    "slug": "recent_fascinating_event",
+    "reflection": "Напишите о недавнем увлекательном событии с вашим партнером",
+    "level": 6,
+    "language": "ru",
+    "active": true
+  },
+  {
+    "slug": "what_to_improve",
+    "reflection": "Напишите, что бы вы хотели улучшить в ваших отношениях",
+    "level": 7,
+    "language": "ru",
+    "active": true
+  },
+  {
+    "slug": "made_trust",
+    "reflection": "Напишите о моменте, который заставил вас доверять вашему партнеру",
+    "level": 8,
+    "language": "ru",
+    "active": true
+  },
+  {
+    "slug": "difficult_to_share",
+    "reflection": "Напишите, что вам трудно поделиться или обсудить с вашим партнером",
+    "level": 9,
+    "language": "ru",
+    "active": true
+  },
+  {
+    "slug": "learned_recently",
+    "reflection": "Напишите, что вы недавно узнали о вашем партнере",
+    "level": 10,
+    "language": "ru",
+    "active": true
+  },
+  {
+    "slug": "this_week_funniest_moment",
+    "reflection": "Опишите самый смешной момент, который у вас был на этой неделе",
+    "level": 11,
+    "language": "ru",
+    "active": true
+  },
+  {
+    "slug": "challenges_to_overcome",
+    "reflection": "Напишите о проблемах, которые вам нужно преодолеть, чтобы стать идеальной парой",
+    "level": 12,
+    "language": "ru",
+    "active": true
+  },
+  {
+    "slug": "show_love_ways",
+    "reflection": "Напишите, как вы и ваш партнер проявляете любовь друг к другу",
+    "level": 13,
+    "language": "ru",
+    "active": true
+  },
+  {
+    "slug": "shared_goals_work",
+    "reflection": "Напишите, как вы работали над общими целями недавно",
+    "level": 14,
+    "language": "ru",
+    "active": true
+  },
+  {
+    "slug": "physical_affection",
+    "reflection": "Напишите, как вы проявляете физическую привязанность к своему партнеру",
+    "level": 15,
+    "language": "ru",
+    "active": true
+  },
+  {
+    "slug": "moment_of_support",
+    "reflection": "Напишите о недавнем моменте поддержки, который вы оказали друг другу",
+    "level": 16,
+    "language": "ru",
+    "active": true
+  },
+  {
+    "slug": "decisions",
+    "reflection": "Напишите о самых важных решениях, которые вы приняли как пара",
+    "level": 17,
+    "language": "ru",
+    "active": true
+  },
+  {
+    "slug": "exciting_plans",
+    "reflection": "Напишите о самых захватывающих планах, которые у вас есть вместе",
+    "level": 18,
+    "language": "ru",
+    "active": true
+  },
+  {
+    "slug": "jealously",
+    "reflection": "Напишите о моменте, когда вы оба чувствовали самую сильную ревность",
+    "level": 19,
+    "language": "ru",
+    "active": true
+  },
+  {
+    "slug": "disagreement",
+    "reflection": "Напишите, как вы могли бы лучше преодолеть последнее разногласие",
+    "level": 20,
+    "language": "ru",
+    "active": true
+  },
+  {
+    "slug": "differences_and_similarities",
+    "reflection": "В чем ваши сходства и различия?",
+    "level": 0,
+    "language": "ru",
+    "active": true
+  },
+  {
+    "slug": "achievement",
+    "reflection": "Напишите о личном достижении, которым вы гордитесь, но о котором редко говорите",
+    "level": 21,
+    "language": "ru",
+    "active": true
+  },
+  {
+    "slug": "changed_perspective",
+    "reflection": "Напишите о месте, которое вы посетили, и которое изменило вашу точку зрения на жизнь",
+    "level": 22,
+    "language": "ru",
+    "active": true
+  },
+  {
+    "slug": "rethink_belief",
+    "reflection": "Напишите о книге или статье, которая заставила вас пересмотреть давнее убеждение",
+    "level": 23,
+    "language": "ru",
+    "active": true
+  },
+  {
+    "slug": "felt_vulnerable",
+    "reflection": "Напишите о недавнем моменте, когда вы чувствовали себя по-настоящему уязвимым, будь то с вашим партнером или в другом месте",
+    "level": 24,
+    "language": "ru",
+    "active": true
+  },
+  {
+    "slug": "unexpected_kindness",
+    "reflection": "Напишите о неожиданной доброте, которую вам кто-то проявил",
+    "level": 25,
+    "language": "ru",
+    "active": true
+  },
+  {
+    "slug": "historical_figure",
+    "reflection": "Напишите о исторической личности или событии, которое вас глубоко увлекает и почему",
+    "level": 26,
+    "language": "ru",
+    "active": true
+  },
+  {
+    "slug": "challenge_alone",
+    "reflection": "Напишите о вызове, с которым вы столкнулись в одиночку, и как вы с ним справились",
+    "level": 27,
+    "language": "ru",
+    "active": true
+  },
+  {
+    "slug": "movie_moved",
+    "reflection": "Напишите о произведении искусства (картине, песне или фильме), которое глубоко вас тронуло",
+    "level": 28,
+    "language": "ru",
+    "active": true
+  },
+  {
+    "slug": "childhhood_formes",
+    "reflection": "Напишите о воспоминании из детства, которое до сих пор формирует то, кем вы являетесь сегодня",
+    "level": 29,
+    "language": "ru",
+    "active": true
+  },
+  {
+    "slug": "goal_achieved",
+    "reflection": "Напишите о мечте или цели, которая кажется недостижимой, но которую вы решительно настроены достичь",
+    "level": 30,
+    "language": "ru",
+    "active": true
+  },
+  {
+    "slug": "news_affected",
+    "reflection": "Напишите о недавней новости или событии, которое глубоко вас затронуло или обеспокоило",
+    "level": 31,
+    "language": "ru",
+    "active": true
+  },
+  {
+    "slug": "tradition_significance",
+    "reflection": "Напишите о традиции или культурном аспекте, который имеет для вас глубокое значение",
+    "level": 32,
+    "language": "ru",
+    "active": true
+  },
+  {
+    "slug": "dilemma_faced",
+    "reflection": "Напишите о этической дилемме, с которой вы столкнулись, и как вы ее решили (или не решили)",
+    "level": 33,
+    "language": "ru",
+    "active": true
+  },
+  {
+    "slug": "nature_experience",
+    "reflection": "Напишите о природном опыте, который заставил вас почувствовать связь с природой или восхищение ею",
+    "level": 34,
+    "language": "ru",
+    "active": true
+  },
+  {
+    "slug": "scientific_discovery",
+    "reflection": "Напишите о научном открытии или концепции, которые вы считаете одновременно озадачивающими и увлекательными",
+    "level": 35,
+    "language": "ru",
+    "active": true
+  },
+  {
+    "slug": "comfort_zone",
+    "reflection": "Напишите о опыте, когда вы вышли из своей зоны комфорта, и чему вы научились",
+    "level": 36,
+    "language": "ru",
+    "active": true
+  },
+  {
+    "slug": "influencial_figure",
+    "reflection": "Напишите о наставнике или влиятельной фигуре в вашей жизни и мудрости, которой они с вами поделились",
+    "level": 37,
+    "language": "ru",
+    "active": true
+  },
+  {
+    "slug": "social_norm",
+    "reflection": "Напишите о моменте, когда вы поставили под сомнение социальную норму или ценность",
+    "level": 38,
+    "language": "ru",
+    "active": true
+  },
+  {
+    "slug": "passionate_hobby",
+    "reflection": "Напишите о хобби или интересе, которым вы глубоко увлечены, но о котором редко удается поговорить",
+    "level": 39,
+    "language": "ru",
+    "active": true
+  },
+  {
+    "slug": "philosophical_question",
+    "reflection": "Напишите о философском вопросе или идее, которые не дают вам уснуть по ночам, размышляя над ними",
+    "level": 40,
+    "language": "ru",
+    "active": true
+  }
+]

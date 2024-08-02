@@ -1,0 +1,296 @@
+[
+  {
+    "slug": "discuss_issue",
+    "reflection": "Apa masalah yang ingin Anda bahas?",
+    "level": 0,
+    "language": "id",
+    "active": false
+  },
+  {
+    "slug": "greatuful",
+    "reflection": "Tuliskan 3 hal yang Anda syukuri dalam hubungan Anda",
+    "level": 2,
+    "language": "id",
+    "active": true
+  },
+  {
+    "slug": "felt_during_last_date",
+    "reflection": "Tuliskan perasaan Anda terhadap pasangan Anda selama kencan terakhir",
+    "level": 3,
+    "language": "id",
+    "active": true
+  },
+  {
+    "slug": "most_important_things_faced",
+    "reflection": "Tuliskan hal-hal terpenting yang telah Anda hadapi sebagai pasangan, dan bagaimana hal tersebut membentuk hubungan Anda",
+    "level": 4,
+    "language": "id",
+    "active": true
+  },
+  {
+    "slug": "changed_to_become_better",
+    "reflection": "Tuliskan 5 hal yang Anda berdua ubah untuk menjadi lebih baik satu sama lain",
+    "level": 5,
+    "language": "id",
+    "active": true
+  },
+  {
+    "slug": "enjoyed_recently",
+    "reflection": "Tuliskan 5 hal yang Anda nikmati tentang hubungan Anda baru-baru ini",
+    "level": 6,
+    "language": "id",
+    "active": true
+  },
+  {
+    "slug": "recent_fascinating_event",
+    "reflection": "Tuliskan tentang peristiwa menarik baru-baru ini dengan pasangan Anda",
+    "level": 6,
+    "language": "id",
+    "active": true
+  },
+  {
+    "slug": "what_to_improve",
+    "reflection": "Tuliskan apa yang ingin Anda perbaiki dalam hubungan Anda",
+    "level": 7,
+    "language": "id",
+    "active": true
+  },
+  {
+    "slug": "made_trust",
+    "reflection": "Tuliskan tentang momen yang membuat Anda percaya pada pasangan Anda",
+    "level": 8,
+    "language": "id",
+    "active": true
+  },
+  {
+    "slug": "difficult_to_share",
+    "reflection": "Tuliskan apa yang sulit Anda bagikan atau komunikasikan kepada pasangan Anda",
+    "level": 9,
+    "language": "id",
+    "active": true
+  },
+  {
+    "slug": "learned_recently",
+    "reflection": "Tuliskan apa yang baru Anda pelajari tentang pasangan Anda",
+    "level": 10,
+    "language": "id",
+    "active": true
+  },
+  {
+    "slug": "this_week_funniest_moment",
+    "reflection": "Deskripsikan momen paling lucu yang Anda alami minggu ini",
+    "level": 11,
+    "language": "id",
+    "active": true
+  },
+  {
+    "slug": "challenges_to_overcome",
+    "reflection": "Tuliskan tantangan yang perlu Anda atasi untuk menjadi pasangan yang sempurna",
+    "level": 12,
+    "language": "id",
+    "active": true
+  },
+  {
+    "slug": "show_love_ways",
+    "reflection": "Tuliskan bagaimana Anda dan pasangan menunjukkan cinta satu sama lain",
+    "level": 13,
+    "language": "id",
+    "active": true
+  },
+  {
+    "slug": "shared_goals_work",
+    "reflection": "Tuliskan bagaimana Anda bekerja sama untuk mencapai tujuan bersama baru-baru ini",
+    "level": 14,
+    "language": "id",
+    "active": true
+  },
+  {
+    "slug": "physical_affection",
+    "reflection": "Tuliskan bagaimana Anda menunjukkan kasih sayang fisik kepada pasangan Anda",
+    "level": 15,
+    "language": "id",
+    "active": true
+  },
+  {
+    "slug": "moment_of_support",
+    "reflection": "Tuliskan tentang momen dukungan yang baru-baru ini Anda berikan satu sama lain",
+    "level": 16,
+    "language": "id",
+    "active": true
+  },
+  {
+    "slug": "decisions",
+    "reflection": "Tuliskan tentang keputusan terpenting yang Anda buat sebagai pasangan",
+    "level": 17,
+    "language": "id",
+    "active": true
+  },
+  {
+    "slug": "exciting_plans",
+    "reflection": "Tuliskan tentang rencana paling menarik yang Anda miliki bersama",
+    "level": 18,
+    "language": "id",
+    "active": true
+  },
+  {
+    "slug": "jealously",
+    "reflection": "Tuliskan tentang momen ketika Anda berdua merasakan kecemburuan yang kuat",
+    "level": 19,
+    "language": "id",
+    "active": true
+  },
+  {
+    "slug": "disagreement",
+    "reflection": "Tuliskan bagaimana Anda dapat mengatasi ketidaksepakatan terakhir dengan lebih baik",
+    "level": 20,
+    "language": "id",
+    "active": true
+  },
+  {
+    "slug": "differences_and_similarities",
+    "reflection": "Apa persamaan dan perbedaan Anda?",
+    "level": 0,
+    "language": "id",
+    "active": true
+  },
+  {
+    "slug": "achievement",
+    "reflection": "Tuliskan tentang pencapaian pribadi yang Anda banggakan tetapi jarang dibicarakan",
+    "level": 21,
+    "language": "id",
+    "active": true
+  },
+  {
+    "slug": "changed_perspective",
+    "reflection": "Tuliskan tentang tempat yang Anda kunjungi yang mengubah perspektif hidup Anda",
+    "level": 22,
+    "language": "id",
+    "active": true
+  },
+  {
+    "slug": "rethink_belief",
+    "reflection": "Tuliskan tentang buku atau artikel yang membuat Anda mempertimbangkan kembali keyakinan yang telah lama dipegang",
+    "level": 23,
+    "language": "id",
+    "active": true
+  },
+  {
+    "slug": "felt_vulnerable",
+    "reflection": "Tuliskan tentang waktu terakhir Anda merasa benar-benar rentan, baik dengan pasangan Anda atau di tempat lain",
+    "level": 24,
+    "language": "id",
+    "active": true
+  },
+  {
+    "slug": "unexpected_kindness",
+    "reflection": "Tuliskan tentang kebaikan tak terduga yang pernah ditunjukkan seseorang kepada Anda",
+    "level": 25,
+    "language": "id",
+    "active": true
+  },
+  {
+    "slug": "historical_figure",
+    "reflection": "Tuliskan tentang tokoh sejarah atau peristiwa yang Anda anggap sangat menarik dan mengapa",
+    "level": 26,
+    "language": "id",
+    "active": true
+  },
+  {
+    "slug": "challenge_alone",
+    "reflection": "Tuliskan tentang tantangan yang Anda hadapi sendirian dan bagaimana Anda menavigasinya",
+    "level": 27,
+    "language": "id",
+    "active": true
+  },
+  {
+    "slug": "movie_moved",
+    "reflection": "Tuliskan tentang karya seni (lukisan, lagu, atau film) yang sangat menggerakkan Anda",
+    "level": 28,
+    "language": "id",
+    "active": true
+  },
+  {
+    "slug": "childhhood_formes",
+    "reflection": "Tuliskan tentang kenangan masa kecil yang masih membentuk siapa diri Anda hari ini",
+    "level": 29,
+    "language": "id",
+    "active": true
+  },
+  {
+    "slug": "goal_achieved",
+    "reflection": "Tuliskan tentang mimpi atau tujuan yang tampaknya sulit dicapai tetapi Anda bertekad untuk mencapainya",
+    "level": 30,
+    "language": "id",
+    "active": true
+  },
+  {
+    "slug": "news_affected",
+    "reflection": "Tuliskan tentang berita atau peristiwa baru-baru ini yang sangat memengaruhi atau mengkhawatirkan Anda",
+    "level": 31,
+    "language": "id",
+    "active": true
+  },
+  {
+    "slug": "tradition_significance",
+    "reflection": "Tuliskan tentang tradisi atau aspek budaya yang memiliki makna mendalam bagi Anda",
+    "level": 32,
+    "language": "id",
+    "active": true
+  },
+  {
+    "slug": "dilemma_faced",
+    "reflection": "Tuliskan tentang dilema etis yang pernah Anda hadapi dan bagaimana Anda menyelesaikannya (atau tidak)",
+    "level": 33,
+    "language": "id",
+    "active": true
+  },
+  {
+    "slug": "nature_experience",
+    "reflection": "Tuliskan tentang pengalaman alam yang membuat Anda merasa terhubung atau takjub",
+    "level": 34,
+    "language": "id",
+    "active": true
+  },
+  {
+    "slug": "scientific_discovery",
+    "reflection": "Tuliskan tentang penemuan atau konsep ilmiah yang Anda anggap membingungkan dan menarik",
+    "level": 35,
+    "language": "id",
+    "active": true
+  },
+  {
+    "slug": "comfort_zone",
+    "reflection": "Tuliskan tentang pengalaman di mana Anda keluar dari zona nyaman Anda dan apa yang Anda pelajari",
+    "level": 36,
+    "language": "id",
+    "active": true
+  },
+  {
+    "slug": "influencial_figure",
+    "reflection": "Tuliskan tentang mentor atau tokoh berpengaruh dalam hidup Anda dan kebijaksanaan yang mereka bagikan",
+    "level": 37,
+    "language": "id",
+    "active": true
+  },
+  {
+    "slug": "social_norm",
+    "reflection": "Tuliskan tentang momen ketika Anda mempertanyakan norma atau nilai sosial",
+    "level": 38,
+    "language": "id",
+    "active": true
+  },
+  {
+    "slug": "passionate_hobby",
+    "reflection": "Tuliskan tentang hobi atau minat yang sangat Anda sukai tetapi jarang dibicarakan",
+    "level": 39,
+    "language": "id",
+    "active": true
+  },
+  {
+    "slug": "philosophical_question",
+    "reflection": "Tuliskan tentang pertanyaan atau ide filosofis yang membuat Anda terjaga di malam hari merenungkannya",
+    "level": 40,
+    "language": "id",
+    "active": true
+  }
+]

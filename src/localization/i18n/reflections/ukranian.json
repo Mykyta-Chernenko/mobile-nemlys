@@ -1,0 +1,296 @@
+[
+  {
+    "slug": "discuss_issue",
+    "reflection": "Яке питання ви хочете обговорити?",
+    "level": 0,
+    "language": "uk",
+    "active": false
+  },
+  {
+    "slug": "greatuful",
+    "reflection": "Напишіть 3 речі, за які ви вдячні у ваших стосунках",
+    "level": 2,
+    "language": "uk",
+    "active": true
+  },
+  {
+    "slug": "felt_during_last_date",
+    "reflection": "Напишіть, що ви відчували до свого партнера під час останнього побачення",
+    "level": 3,
+    "language": "uk",
+    "active": true
+  },
+  {
+    "slug": "most_important_things_faced",
+    "reflection": "Напишіть про найважливіші речі, з якими ви зіткнулися як пара, і як вони вплинули на ваші стосунки",
+    "level": 4,
+    "language": "uk",
+    "active": true
+  },
+  {
+    "slug": "changed_to_become_better",
+    "reflection": "Напишіть 5 речей, які ви обидва змінили, щоб стати кращими одне для одного",
+    "level": 5,
+    "language": "uk",
+    "active": true
+  },
+  {
+    "slug": "enjoyed_recently",
+    "reflection": "Напишіть 5 речей, які вам сподобалися у ваших стосунках останнім часом",
+    "level": 6,
+    "language": "uk",
+    "active": true
+  },
+  {
+    "slug": "recent_fascinating_event",
+    "reflection": "Напишіть про недавню захоплюючу подію з вашим партнером",
+    "level": 6,
+    "language": "uk",
+    "active": true
+  },
+  {
+    "slug": "what_to_improve",
+    "reflection": "Напишіть, що б ви хотіли покращити у ваших стосунках",
+    "level": 7,
+    "language": "uk",
+    "active": true
+  },
+  {
+    "slug": "made_trust",
+    "reflection": "Напишіть про момент, який змусив вас довіряти вашому партнеру",
+    "level": 8,
+    "language": "uk",
+    "active": true
+  },
+  {
+    "slug": "difficult_to_share",
+    "reflection": "Напишіть, що вам важко розповісти або спілкуватися зі своїм партнером",
+    "level": 9,
+    "language": "uk",
+    "active": true
+  },
+  {
+    "slug": "learned_recently",
+    "reflection": "Напишіть, що ви нещодавно дізналися про свого партнера",
+    "level": 10,
+    "language": "uk",
+    "active": true
+  },
+  {
+    "slug": "this_week_funniest_moment",
+    "reflection": "Опишіть найсмішніший момент, який у вас був цього тижня",
+    "level": 11,
+    "language": "uk",
+    "active": true
+  },
+  {
+    "slug": "challenges_to_overcome",
+    "reflection": "Напишіть про виклики, які вам потрібно подолати, щоб стати ідеальною парою",
+    "level": 12,
+    "language": "uk",
+    "active": true
+  },
+  {
+    "slug": "show_love_ways",
+    "reflection": "Напишіть, як ви та ваш партнер виражаєте любов один одному",
+    "level": 13,
+    "language": "uk",
+    "active": true
+  },
+  {
+    "slug": "shared_goals_work",
+    "reflection": "Напишіть, як ви нещодавно працювали над спільними цілями",
+    "level": 14,
+    "language": "uk",
+    "active": true
+  },
+  {
+    "slug": "physical_affection",
+    "reflection": "Напишіть, як ви виражаєте свою фізичну прив'язаність до свого партнера",
+    "level": 15,
+    "language": "uk",
+    "active": true
+  },
+  {
+    "slug": "moment_of_support",
+    "reflection": "Напишіть про недавній момент підтримки, яку ви надали один одному",
+    "level": 16,
+    "language": "uk",
+    "active": true
+  },
+  {
+    "slug": "decisions",
+    "reflection": "Напишіть про найважливіші рішення, які ви прийняли як пара",
+    "level": 17,
+    "language": "uk",
+    "active": true
+  },
+  {
+    "slug": "exciting_plans",
+    "reflection": "Напишіть про найцікавіші плани, які у вас є разом",
+    "level": 18,
+    "language": "uk",
+    "active": true
+  },
+  {
+    "slug": "jealously",
+    "reflection": "Напишіть про момент, коли ви обидва відчули найсильнішу ревнощі",
+    "level": 19,
+    "language": "uk",
+    "active": true
+  },
+  {
+    "slug": "disagreement",
+    "reflection": "Напишіть, як ви могли б краще подолати останню розбіжність",
+    "level": 20,
+    "language": "uk",
+    "active": true
+  },
+  {
+    "slug": "differences_and_similarities",
+    "reflection": "Які ваші подібності та відмінності?",
+    "level": 0,
+    "language": "uk",
+    "active": true
+  },
+  {
+    "slug": "achievement",
+    "reflection": "Напишіть про особисте досягнення, яким ви пишаєтесь, але про яке рідко говорите",
+    "level": 21,
+    "language": "uk",
+    "active": true
+  },
+  {
+    "slug": "changed_perspective",
+    "reflection": "Напишіть про місце, яке ви відвідали, і яке змінило вашу точку зору на життя",
+    "level": 22,
+    "language": "uk",
+    "active": true
+  },
+  {
+    "slug": "rethink_belief",
+    "reflection": "Напишіть про книгу або статтю, яка змусила вас переглянути давнє переконання",
+    "level": 23,
+    "language": "uk",
+    "active": true
+  },
+  {
+    "slug": "felt_vulnerable",
+    "reflection": "Напишіть про момент, коли ви останнім часом відчували себе справді вразливими, чи то зі своїм партнером, чи деінде",
+    "level": 24,
+    "language": "uk",
+    "active": true
+  },
+  {
+    "slug": "unexpected_kindness",
+    "reflection": "Напишіть про неочікувану доброту, яку вам хтось проявив",
+    "level": 25,
+    "language": "uk",
+    "active": true
+  },
+  {
+    "slug": "historical_figure",
+    "reflection": "Напишіть про історичну особу або подію, які вас глибоко захоплюють, і чому",
+    "level": 26,
+    "language": "uk",
+    "active": true
+  },
+  {
+    "slug": "challenge_alone",
+    "reflection": "Напишіть про виклик, з яким ви зіткнулися самостійно, і як ви його подолали",
+    "level": 27,
+    "language": "uk",
+    "active": true
+  },
+  {
+    "slug": "movie_moved",
+    "reflection": "Напишіть про твір мистецтва (картину, пісню або фільм), який глибоко вас вразив",
+    "level": 28,
+    "language": "uk",
+    "active": true
+  },
+  {
+    "slug": "childhhood_formes",
+    "reflection": "Напишіть про спогад з дитинства, який досі формує те, ким ви є сьогодні",
+    "level": 29,
+    "language": "uk",
+    "active": true
+  },
+  {
+    "slug": "goal_achieved",
+    "reflection": "Напишіть про мрію або мету, яка здається недосяжною, але яку ви рішуче налаштовані досягти",
+    "level": 30,
+    "language": "uk",
+    "active": true
+  },
+  {
+    "slug": "news_affected",
+    "reflection": "Напишіть про нещодавню новину або подію, яка глибоко вас торкнулася або занепокоїла",
+    "level": 31,
+    "language": "uk",
+    "active": true
+  },
+  {
+    "slug": "tradition_significance",
+    "reflection": "Напишіть про традицію або культурний аспект, які мають для вас глибоке значення",
+    "level": 32,
+    "language": "uk",
+    "active": true
+  },
+  {
+    "slug": "dilemma_faced",
+    "reflection": "Напишіть про етичну дилему, з якою ви зіткнулися, і як ви її вирішили (або не вирішили)",
+    "level": 33,
+    "language": "uk",
+    "active": true
+  },
+  {
+    "slug": "nature_experience",
+    "reflection": "Напишіть про досвід на природі, який змусив вас відчути зв'язок з природою або захоплення нею",
+    "level": 34,
+    "language": "uk",
+    "active": true
+  },
+  {
+    "slug": "scientific_discovery",
+    "reflection": "Напишіть про наукове відкриття або концепцію, які ви вважаєте одночасно збиваючими з пантелику і захоплюючими",
+    "level": 35,
+    "language": "uk",
+    "active": true
+  },
+  {
+    "slug": "comfort_zone",
+    "reflection": "Напишіть про досвід, коли ви вийшли зі своєї зони комфорту, і що ви дізналися",
+    "level": 36,
+    "language": "uk",
+    "active": true
+  },
+  {
+    "slug": "influencial_figure",
+    "reflection": "Напишіть про наставника або впливову особу у вашому житті та мудрість, якою вони з вами поділилися",
+    "level": 37,
+    "language": "uk",
+    "active": true
+  },
+  {
+    "slug": "social_norm",
+    "reflection": "Напишіть про момент, коли ви поставили під сумнів суспільну норму або цінність",
+    "level": 38,
+    "language": "uk",
+    "active": true
+  },
+  {
+    "slug": "passionate_hobby",
+    "reflection": "Напишіть про хобі або інтерес, яким ви глибоко захоплені, але про які рідко вдається поговорити",
+    "level": 39,
+    "language": "uk",
+    "active": true
+  },
+  {
+    "slug": "philosophical_question",
+    "reflection": "Напишіть про філософське питання або ідею, які не дають вам спати вночі, роздумуючи над ними",
+    "level": 40,
+    "language": "uk",
+    "active": true
+  }
+]

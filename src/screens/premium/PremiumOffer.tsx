@@ -757,7 +757,7 @@ export default function ({
                           {i18n.t('premium.offer.terms')}
                         </FontText>
                       </TouchableOpacity>
-                      <FontText style={{ color: theme.colors.grey5 }}>and</FontText>
+                      <FontText style={{ color: theme.colors.grey5 }}> </FontText>
                       <TouchableOpacity
                         onPress={() => {
                           void Linking.openURL('https://nemlys.com/policy');

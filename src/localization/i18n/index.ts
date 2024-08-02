@@ -12,6 +12,14 @@ import * as hindi from './lang/hindi.json';
 import * as japanese from './lang/japanese.json';
 import * as spanish from './lang/spanish.json';
 import * as portugese from './lang/portugese.json';
+import * as filipino from './lang/filipino.json';
+import * as indonesian from './lang/indonesian.json';
+import * as polish from './lang/polish.json';
+import * as romanian from './lang/romanian.json';
+import * as russian from './lang/russian.json';
+import * as turkish from './lang/turkish.json';
+import * as ukranian from './lang/ukranian.json';
+import * as vietnamese from './lang/vietnamese.json';
 
 export const LANGUAGES = [
   'en', // English
@@ -27,6 +35,14 @@ export const LANGUAGES = [
   'it', // Italian
   'ja', // Japanese
   'pt', // Portuguese
+  'fil', // Filipino
+  'id', // Indonesian
+  'pl', // Polish
+  'ro', // Romanian
+  'tr', // Turkish
+  'uk', // Ukrainian
+  'ru', // Russian
+  'vi', // Vietnamese
 ];
 
 export const i18n = new I18n(
@@ -44,6 +60,14 @@ export const i18n = new I18n(
     hi: hindi,
     ja: japanese,
     pt: portugese,
+    fil: filipino,
+    id: indonesian,
+    pl: polish,
+    ro: romanian,
+    tr: turkish,
+    uk: ukranian,
+    ru: russian,
+    vi: vietnamese,
   },
   { defaultLocale: 'en' },
 );
@@ -208,6 +232,54 @@ portugeseSpeakingLocales.forEach((locale) => {
   i18n.translations[locale] = i18n.translations['pt'];
 });
 
+const filipinoSpeakingLocales = ['fil-PH'];
+
+filipinoSpeakingLocales.forEach((locale) => {
+  i18n.translations[locale] = i18n.translations['fil'];
+});
+
+const indonesianSpeakingLocales = ['id-ID'];
+
+indonesianSpeakingLocales.forEach((locale) => {
+  i18n.translations[locale] = i18n.translations['id'];
+});
+
+const polishSpeakingLocales = ['pl-PL'];
+
+polishSpeakingLocales.forEach((locale) => {
+  i18n.translations[locale] = i18n.translations['pl'];
+});
+
+const romanianSpeakingLocales = ['ro-RO'];
+
+romanianSpeakingLocales.forEach((locale) => {
+  i18n.translations[locale] = i18n.translations['ro'];
+});
+
+const turkishSpeakingLocales = ['tr-TR'];
+
+turkishSpeakingLocales.forEach((locale) => {
+  i18n.translations[locale] = i18n.translations['tr'];
+});
+
+const ukranianSpeakingLocales = ['uk-UA'];
+
+ukranianSpeakingLocales.forEach((locale) => {
+  i18n.translations[locale] = i18n.translations['uk'];
+});
+
+const russianSpeakingLocales = ['ru-RU'];
+
+russianSpeakingLocales.forEach((locale) => {
+  i18n.translations[locale] = i18n.translations['ru'];
+});
+
+const vietnameseSpeakingLocales = ['vi-VN'];
+
+vietnameseSpeakingLocales.forEach((locale) => {
+  i18n.translations[locale] = i18n.translations['vi'];
+});
+
 export function getDefaultLanguage(locale: string) {
   if (locale.startsWith('en')) return 'en';
   if (locale.startsWith('es')) return 'es';
@@ -222,6 +294,14 @@ export function getDefaultLanguage(locale: string) {
   if (locale.startsWith('hi')) return 'hi';
   if (locale.startsWith('ja')) return 'ja';
   if (locale.startsWith('pt')) return 'pt';
+  if (locale.startsWith('fil')) return 'fil';
+  if (locale.startsWith('id')) return 'id';
+  if (locale.startsWith('pl')) return 'pl';
+  if (locale.startsWith('ro')) return 'ro';
+  if (locale.startsWith('ru')) return 'ru';
+  if (locale.startsWith('tr')) return 'tr';
+  if (locale.startsWith('uk')) return 'uk';
+  if (locale.startsWith('vi')) return 'vi';
   return 'en';
 }
 
@@ -238,5 +318,13 @@ export function getFullLanguageByLocale(locale: string) {
   if (locale.startsWith('hi')) return 'हिन्दी';
   if (locale.startsWith('ja')) return '日本語';
   if (locale.startsWith('pt')) return 'Português';
+  if (locale.startsWith('fil')) return 'Filipino';
+  if (locale.startsWith('id')) return 'Bahasa Indonesia';
+  if (locale.startsWith('pl')) return 'Polski';
+  if (locale.startsWith('ro')) return 'Română';
+  if (locale.startsWith('tr')) return 'Türkçe';
+  if (locale.startsWith('uk')) return 'Українська';
+  if (locale.startsWith('ru')) return 'Русский';
+  if (locale.startsWith('vi')) return 'Tiếng Việt';
   return 'English';
 }

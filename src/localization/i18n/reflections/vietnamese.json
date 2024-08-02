@@ -1,0 +1,296 @@
+[
+  {
+    "slug": "discuss_issue",
+    "reflection": "Vấn đề bạn muốn thảo luận là gì?",
+    "level": 0,
+    "language": "vi",
+    "active": false
+  },
+  {
+    "slug": "greatuful",
+    "reflection": "Viết 3 điều bạn biết ơn trong mối quan hệ của mình",
+    "level": 2,
+    "language": "vi",
+    "active": true
+  },
+  {
+    "slug": "felt_during_last_date",
+    "reflection": "Viết về cảm xúc của bạn đối với đối tác trong lần hẹn hò cuối cùng",
+    "level": 3,
+    "language": "vi",
+    "active": true
+  },
+  {
+    "slug": "most_important_things_faced",
+    "reflection": "Viết về những điều quan trọng nhất mà bạn đã đối mặt với tư cách là một cặp đôi và chúng đã hình thành mối quan hệ của bạn như thế nào",
+    "level": 4,
+    "language": "vi",
+    "active": true
+  },
+  {
+    "slug": "changed_to_become_better",
+    "reflection": "Viết 5 điều mà cả hai bạn đã thay đổi để trở nên tốt hơn cho nhau",
+    "level": 5,
+    "language": "vi",
+    "active": true
+  },
+  {
+    "slug": "enjoyed_recently",
+    "reflection": "Viết 5 điều bạn thích về mối quan hệ của mình gần đây",
+    "level": 6,
+    "language": "vi",
+    "active": true
+  },
+  {
+    "slug": "recent_fascinating_event",
+    "reflection": "Viết về một sự kiện thú vị gần đây với đối tác của bạn",
+    "level": 6,
+    "language": "vi",
+    "active": true
+  },
+  {
+    "slug": "what_to_improve",
+    "reflection": "Viết về những gì bạn muốn cải thiện trong mối quan hệ của mình",
+    "level": 7,
+    "language": "vi",
+    "active": true
+  },
+  {
+    "slug": "made_trust",
+    "reflection": "Viết về một khoảnh khắc khiến bạn tin tưởng đối tác của mình",
+    "level": 8,
+    "language": "vi",
+    "active": true
+  },
+  {
+    "slug": "difficult_to_share",
+    "reflection": "Viết về những điều bạn cảm thấy khó chia sẻ hoặc giao tiếp với đối tác của mình",
+    "level": 9,
+    "language": "vi",
+    "active": true
+  },
+  {
+    "slug": "learned_recently",
+    "reflection": "Viết về những gì bạn đã học được gần đây về đối tác của mình",
+    "level": 10,
+    "language": "vi",
+    "active": true
+  },
+  {
+    "slug": "this_week_funniest_moment",
+    "reflection": "Mô tả khoảnh khắc vui nhất bạn đã có trong tuần này",
+    "level": 11,
+    "language": "vi",
+    "active": true
+  },
+  {
+    "slug": "challenges_to_overcome",
+    "reflection": "Viết về những thử thách mà bạn cần vượt qua để trở thành một mối quan hệ hoàn hảo",
+    "level": 12,
+    "language": "vi",
+    "active": true
+  },
+  {
+    "slug": "show_love_ways",
+    "reflection": "Viết về cách bạn và đối tác thể hiện tình yêu với nhau",
+    "level": 13,
+    "language": "vi",
+    "active": true
+  },
+  {
+    "slug": "shared_goals_work",
+    "reflection": "Viết về cách bạn làm việc để đạt được các mục tiêu chung gần đây",
+    "level": 14,
+    "language": "vi",
+    "active": true
+  },
+  {
+    "slug": "physical_affection",
+    "reflection": "Viết về cách bạn thể hiện tình cảm thể chất với đối tác của mình",
+    "level": 15,
+    "language": "vi",
+    "active": true
+  },
+  {
+    "slug": "moment_of_support",
+    "reflection": "Viết về một khoảnh khắc gần đây của sự hỗ trợ mà bạn đã trao cho nhau",
+    "level": 16,
+    "language": "vi",
+    "active": true
+  },
+  {
+    "slug": "decisions",
+    "reflection": "Viết về những quyết định quan trọng nhất mà bạn đã đưa ra với tư cách là một cặp đôi",
+    "level": 17,
+    "language": "vi",
+    "active": true
+  },
+  {
+    "slug": "exciting_plans",
+    "reflection": "Viết về những kế hoạch thú vị nhất mà bạn có cùng nhau",
+    "level": 18,
+    "language": "vi",
+    "active": true
+  },
+  {
+    "slug": "jealously",
+    "reflection": "Viết về khoảnh khắc khi cả hai cảm thấy ghen tuông mạnh mẽ nhất",
+    "level": 19,
+    "language": "vi",
+    "active": true
+  },
+  {
+    "slug": "disagreement",
+    "reflection": "Viết về cách bạn có thể vượt qua sự bất đồng gần đây tốt hơn",
+    "level": 20,
+    "language": "vi",
+    "active": true
+  },
+  {
+    "slug": "differences_and_similarities",
+    "reflection": "Điểm tương đồng và khác biệt của bạn là gì?",
+    "level": 0,
+    "language": "vi",
+    "active": true
+  },
+  {
+    "slug": "achievement",
+    "reflection": "Viết về một thành tựu cá nhân mà bạn tự hào nhưng ít khi nói về nó",
+    "level": 21,
+    "language": "vi",
+    "active": true
+  },
+  {
+    "slug": "changed_perspective",
+    "reflection": "Viết về một nơi bạn đã đến thăm và thay đổi quan điểm của bạn về cuộc sống",
+    "level": 22,
+    "language": "vi",
+    "active": true
+  },
+  {
+    "slug": "rethink_belief",
+    "reflection": "Viết về một cuốn sách hoặc bài báo khiến bạn suy nghĩ lại về một niềm tin lâu dài",
+    "level": 23,
+    "language": "vi",
+    "active": true
+  },
+  {
+    "slug": "felt_vulnerable",
+    "reflection": "Viết về một lần gần đây bạn cảm thấy thực sự dễ tổn thương, dù là với đối tác của bạn hay ở nơi khác",
+    "level": 24,
+    "language": "vi",
+    "active": true
+  },
+  {
+    "slug": "unexpected_kindness",
+    "reflection": "Viết về một sự tử tế bất ngờ mà ai đó đã thể hiện với bạn",
+    "level": 25,
+    "language": "vi",
+    "active": true
+  },
+  {
+    "slug": "historical_figure",
+    "reflection": "Viết về một nhân vật hoặc sự kiện lịch sử mà bạn thấy thực sự hấp dẫn và lý do tại sao",
+    "level": 26,
+    "language": "vi",
+    "active": true
+  },
+  {
+    "slug": "challenge_alone",
+    "reflection": "Viết về một thử thách bạn đã đối mặt một mình và cách bạn vượt qua nó",
+    "level": 27,
+    "language": "vi",
+    "active": true
+  },
+  {
+    "slug": "movie_moved",
+    "reflection": "Viết về một tác phẩm nghệ thuật (bức tranh, bài hát hoặc bộ phim) đã thực sự làm bạn cảm động",
+    "level": 28,
+    "language": "vi",
+    "active": true
+  },
+  {
+    "slug": "childhhood_formes",
+    "reflection": "Viết về một ký ức thời thơ ấu vẫn định hình bạn là ai hôm nay",
+    "level": 29,
+    "language": "vi",
+    "active": true
+  },
+  {
+    "slug": "goal_achieved",
+    "reflection": "Viết về một giấc mơ hoặc mục tiêu dường như không thể đạt được nhưng bạn quyết tâm thực hiện",
+    "level": 30,
+    "language": "vi",
+    "active": true
+  },
+  {
+    "slug": "news_affected",
+    "reflection": "Viết về một câu chuyện tin tức gần đây hoặc sự kiện đã ảnh hưởng sâu sắc hoặc làm bạn lo lắng",
+    "level": 31,
+    "language": "vi",
+    "active": true
+  },
+  {
+    "slug": "tradition_significance",
+    "reflection": "Viết về một truyền thống hoặc khía cạnh văn hóa có ý nghĩa sâu sắc đối với bạn",
+    "level": 32,
+    "language": "vi",
+    "active": true
+  },
+  {
+    "slug": "dilemma_faced",
+    "reflection": "Viết về một tình huống tiến thoái lưỡng nan mà bạn đã đối mặt và cách bạn giải quyết nó (hoặc không giải quyết được)",
+    "level": 33,
+    "language": "vi",
+    "active": true
+  },
+  {
+    "slug": "nature_experience",
+    "reflection": "Viết về một trải nghiệm thiên nhiên khiến bạn cảm thấy kết nối hoặc ngưỡng mộ",
+    "level": 34,
+    "language": "vi",
+    "active": true
+  },
+  {
+    "slug": "scientific_discovery",
+    "reflection": "Viết về một khám phá hoặc khái niệm khoa học mà bạn thấy vừa khó hiểu vừa hấp dẫn",
+    "level": 35,
+    "language": "vi",
+    "active": true
+  },
+  {
+    "slug": "comfort_zone",
+    "reflection": "Viết về một trải nghiệm khi bạn ra khỏi vùng an toàn của mình và những gì bạn đã học được",
+    "level": 36,
+    "language": "vi",
+    "active": true
+  },
+  {
+    "slug": "influencial_figure",
+    "reflection": "Viết về một người cố vấn hoặc người có ảnh hưởng trong cuộc sống của bạn và những gì họ đã chia sẻ với bạn",
+    "level": 37,
+    "language": "vi",
+    "active": true
+  },
+  {
+    "slug": "social_norm",
+    "reflection": "Viết về một khoảnh khắc khi bạn đặt câu hỏi về một chuẩn mực hoặc giá trị xã hội",
+    "level": 38,
+    "language": "vi",
+    "active": true
+  },
+  {
+    "slug": "passionate_hobby",
+    "reflection": "Viết về một sở thích hoặc mối quan tâm mà bạn đam mê sâu sắc nhưng không thường xuyên được nói đến",
+    "level": 39,
+    "language": "vi",
+    "active": true
+  },
+  {
+    "slug": "philosophical_question",
+    "reflection": "Viết về một câu hỏi hoặc ý tưởng triết học khiến bạn suy nghĩ suốt đêm",
+    "level": 40,
+    "language": "vi",
+    "active": true
+  }
+]

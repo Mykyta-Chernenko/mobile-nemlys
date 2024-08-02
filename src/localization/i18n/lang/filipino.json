@@ -1,0 +1,422 @@
+{
+  "nemlys": "Nemlys",
+  "awesome": "Astig!",
+  "loading": "Naglo-load",
+  "continue": "Magpatuloy",
+  "or": "O",
+  "ok": "Ok",
+  "yes": "Oo",
+  "no": "Hindi",
+  "close": "Isara",
+  "save": "I-save",
+  "cancel": "Kanselahin",
+  "confirm": "Kumpirmahin",
+  "submit": "Ipasa",
+  "remove": "Tanggalin",
+  "next": "Susunod",
+  "skip": "Laktawan",
+  "finish": "Tapusin",
+  "input_here": "Ilagay dito",
+  "email_placeholder": "Ilagay ang iyong email",
+  "password_placeholder": "Ilagay ang iyong password",
+  "password_again_placeholder": "Ilagay muli ang iyong password",
+  "unexpected_error": "May nangyaring di inaasahang error, subukang muli",
+  "errors": {
+    "play_market": "Hindi ka naka-log in sa iyong Play Market app, mangyaring mag-login muna doon, at pagkatapos ay bumalik sa Nemlys app upang simulan ang subscription",
+    "payment_error": "Mayroong pansamantalang error sa tindahan ng iyong telepono. Karaniwang masosolusyunan ito sa pamamagitan ng paghihintay ng ilang minuto at subukang muli ang pag-subscribe"
+  },
+  "level": "Antas",
+  "new_reflection": {
+    "title_1": "Subukan ang ",
+    "title_2": "Pagmumuni-muni ",
+    "title_3": "upang mas maunawaan ang iyong relasyon.",
+    "button": "Paalalahanan ako mamaya"
+  },
+  "jobs": {
+    "issues": "Mga isyu sa aming relasyon",
+    "sex": "Pagiging malapit at Seks",
+    "know": "Pagkilala sa isa't isa",
+    "hard": "Mga malalim na tanong",
+    "meaningful": "Makabuluhang pag-uusap",
+    "fun": "Magaan at Masayang mga paksa"
+  },
+  "notification": {
+    "pre_date": {
+      "pre_date_ready_for_a_date_29_02_2024": {
+        "title": "Handa ka na ba para sa isang date?",
+        "body": "Naghanda kami ng dose-dosenang mga personalisadong tanong para sa iyo at sa iyong kapareha"
+      },
+      "pre_date_time_to_connect_29_02_2024": {
+        "title": "Panahon na para Kumonekta!",
+        "body": "Mag-pause sa iyong abalang araw at tuklasin ang iyong kapareha sa pamamagitan ng Nemlys"
+      },
+      "pre_date_lets_pla_game_29_02_2024": {
+        "title": "Maglaro tayo ng laro!",
+        "body": "Buksan ang Nemlys at makilahok sa masayang tanong para sa relasyon ngayon"
+      }
+    },
+    "finish_date": {
+      "finish_date_oops_29_02_2024": {
+        "title": "Naku!",
+        "body": "Huwag iwanang hindi tapos ang iyong date. Buksan ang Nemlys at balikan ang pag-uusap"
+      },
+      "finish_date_dont_leave_love_hanging_29_02_2024": {
+        "title": "Huwag pabayaan ang pag-ibig...",
+        "body": "Buksan ang Nemlys upang tapusin ang iyong mga tanong sa relasyon at tuklasin ang mahika"
+      }
+    },
+    "after_date": {
+      "after_date_time_for_your_relationship_29_02_2024": {
+        "title": "Panahon para sa iyong relasyon",
+        "body": "Makakuha ng positibong epekto sa pakikipagrelasyon sa pamamagitan ng pagsagot ng tanong nang magkasama"
+      },
+      "after_date_morning_sunshine_29_02_2024": {
+        "title": "Magandang umaga, liwanag ng araw!",
+        "body": "Mag-tap sa Nemlys para sa iyong pang-araw-araw na tanong na nagpapalalim ng ugnayan sa iyong kapareha"
+      },
+      "after_date_guess_what_time_29_02_2024": {
+        "title": "Hulaan mo kung anong oras na?",
+        "body": "Sabay-sabay tayo sa iyong pang-araw-araw na dosis ng pagkamausisa. Palakasin ang koneksyon sa iyong espesyal na tao"
+      },
+      "after_date_feeling_curious_29_02_2024": {
+        "title": "Naghahanap ng sagot?",
+        "body": "Simulan ang paglalakbay ng pagtuklas kasama ang iyong kapareha sa pamamagitan ng tanong na pumupukaw ng pag-iisip ngayong araw"
+      },
+      "after_date_challenge_accepted_29_02_2024": {
+        "title": "Handa ka na ba?",
+        "body": "Buksan ang Nemlys ngayon at subukan ang iyong kaalaman sa relasyon sa masayang tanong ngayong araw!"
+      }
+    },
+    "reflection": {
+      "title": "Panahon na para magmuni-muni tungkol sa iyong relasyon kay {{partnerName}}",
+      "body": "Pumili ng isang pagmumuni-muni at isulat ang iyong sagot"
+    }
+  },
+  "home": {
+    "discussed_questions": "mga paksa na napag-usapan",
+    "you": "Ikaw",
+    "partner": "Kapareha",
+    "menu": {
+      "discuss": "Talakayin",
+      "profile": "Profile",
+      "premium": "Premium",
+      "reflect": "Magmuni-muni"
+    }
+  },
+  "profile": {
+    "title": "Profile",
+    "my_account": "Aking Account",
+    "settings": "Mga Setting",
+    "about": "Tungkol sa Nemlys",
+    "your_name": "Pangalan mo",
+    "partner_name": "Pangalan ng Kapareha",
+    "language": "Wika",
+    "subscription": "Pamahalaan ang Subscription",
+    "rate": "I-rate ang aming app",
+    "share": "Ibahagi ang aming app",
+    "feature_request": "Hiling ng tampok",
+    "feature_request_placeholder": "Isulat ang gusto mong makita sa Nemlys app",
+    "call": "Tumawag sa mga nagtatag",
+    "contact": "Makipag-ugnayan sa amin",
+    "contact_placeholder": "Isulat ang gusto mong matulungan namin sa iyo",
+    "logout": "Mag-logout",
+    "delete_account": "Tanggalin ang account",
+    "are_you_sure_you_want_to_delete_account": "Sigurado ka bang gusto mong tanggalin ang iyong account?"
+  },
+  "premium": {
+    "banner": {
+      "premium": "Walang limitasyong access",
+      "premium_right": "∞",
+      "trial": "Walang limitasyong access",
+      "days_left": "{{days}} natitirang mga araw",
+      "new": "Mga bagong paksa upang subukan",
+      "topics_left": "{{left}}/{{total}} natitirang",
+      "free": "Pang-araw-araw na paksa"
+    },
+    "offer": {
+      "title": "Premium",
+      "enjoy_your_premium": "Tamasahin ang iyong premium!",
+      "manage": "Pamahalaan ang Subscription",
+      "upgrade_trial": "Mayroon kang {{trialDays}} na araw ng Trial Access natitira",
+      "reached_limit": "Naabot mo na ang iyong pang-araw-araw na limitasyon.",
+      "try_unlimited_1": "Subukan ang ",
+      "try_unlimited_2": "walang limitasyong access",
+      "premium_title": "Kunin ang Buong Premium para sa ",
+      "trial_expired": "Natapos na ang iyong Trial Unlimited access",
+      "unlimited_topics_title": "Kumuha ng Walang Limitasyong Mga Paksa",
+      "unlimited_topics_explanation": "Ngayon mayroon kang {{dailyTopics}} na paksa bawat araw",
+      "trial_button": "Subukan ng libre sa loob ng 7 araw",
+      "trial_no_card": "HINDI Kailangan ng Credit Card",
+      "choose_plan": "Pumili ng Iyong Plano",
+      "plan_monthly_title": "Buwanang",
+      "plan_monthly_price": "{{price}}/buwan",
+      "plan_yearly_title": "Taunan",
+      "plan_yearly_price": "{{price}}/taon",
+      "subscribe": "Simulan na may libreng 7-araw na pagsubok*",
+      "terms": "Mga Tuntunin ng Serbisyo",
+      "privacy": "Patakaran sa Privacy",
+      "charged": "* Ikaw ay sisingilin kapag natapos ang pagsubok maliban kung ikaw ay magkansela ng subscription"
+    },
+    "success": {
+      "trial": {
+        "title_1": "Tapos na! Tamasahin ang iyong ",
+        "title_2": "walang limitasyong access",
+        "button": "Astig, salamat"
+      },
+      "premium": {
+        "title_1": "Matagumpay na na-activate ang iyong premium, ",
+        "title_2": "Tamasahin!",
+        "button": "Astig, salamat"
+      }
+    }
+  },
+  "reflection": {
+    "title": "Pagmumuni-muni",
+    "available": "{{number}} bagong pagmumuni-muni ang magagamit",
+    "completed": "{{number}} Nakumpleto",
+    "start": "Simulan",
+    "explanation": {
+      "button": "Naintindihan",
+      "reason_1": "Mas Maraming Pagmumuni-muni = Mas Mataas na Kalidad ng 'Personalized' na paksa",
+      "reason_2": "Gumagamit kami ng AI, kaya't mas marami kang magmuni-muni at magsulat mas maganda ang magiging app",
+      "reason_3": "Ligtas ang iyong data. Ginagamit lang namin ito para sa pagbuo ng mga tanong",
+      "title": "Bakit mahalagang magmuni-muni at magsulat?"
+    },
+    "no_reflection": "Talakayin ang 1 paksa upang makuha ang iyong bagong card ng pagmumuni-muni",
+    "finished_writing_title_1": "Tapos na!",
+    "finished_writing_title_2": " Ikaw ay isang mahusay na manunulat",
+    "finished_writing_button": "Sige, salamat!",
+    "level_0": "panimula",
+    "level": "antas {{number}}"
+  },
+  "update": {
+    "title": "I-update",
+    "outdated_title": "Luma na ang iyong bersyon",
+    "need_to_update": "Kailangan mong i-update ang iyong app sa pinakabagong bersyon upang patuloy na magamit ang app."
+  },
+  "interview": {
+    "title_first": "Makipag-usap sa mga nagtatag ng Nemlys upang ",
+    "title_second": "makakuha ng 2 buwan ng Walang Limitasyong access",
+    "reason_1_title_1": "Mag-iskedyul ng ",
+    "reason_1_title_2": "30 minutong ",
+    "reason_1_title_3": "tawag sa mga nagtatag ng Nemlys",
+    "reason_2_title_1": "Ibahagi kung ano ang iyong ",
+    "reason_2_title_2": "nagustuhan at hindi nagustuhan ",
+    "reason_2_title_3": "tungkol sa Nemlys",
+    "reason_3_title_1": "Makakuha ng ",
+    "reason_3_title_2": "2 buwan ",
+    "reason_3_title_3": "ng Walang Limitasyong access pagkatapos ng tawag",
+    "button": "Mag-iskedyul ng tawag"
+  },
+  "interview_text": {
+    "title_first": "Isulat ang iyong feedback upang makakuha ng ",
+    "title_second": "1 buwan ng Premium",
+    "reason_1_title_1": "",
+    "reason_1_title_2": "Isulat ang mga sagot",
+    "reason_1_title_3": " sa 3 tanong kung ano ang iyong nagustuhan at hindi nagustuhan sa Nemlys",
+    "reason_2_title_1": "Makakuha ng ",
+    "reason_2_title_2": "1 buwan ng premium",
+    "reason_2_title_3": "",
+    "reason_3_title_1": "Ang iyong mga sagot ",
+    "reason_3_title_2": "tumutulong sa amin na magdesisyon",
+    "reason_3_title_3": " kung ano ang gagawin susunod",
+    "button": "Isulat sa amin",
+    "thank": "Kahanga-hanga! Makikipag-ugnayan kami sa iyo sa iyong email: {{email}}"
+  },
+  "recording": {
+    "button": "Mag-record",
+    "stop": {
+      "title_1": "Sigurado ka ba? Hindi mo ",
+      "title_2": "maipagpapatuloy ",
+      "title_3": "ang pag-record pagkatapos itong itigil",
+      "button": "Oo, itigil"
+    },
+    "delete": {
+      "title_1": "Sigurado ka bang gusto mong ",
+      "title_2": "tanggalin ang pag-record",
+      "title_3": "?",
+      "button": "Oo, tanggalin"
+    },
+    "permission": {
+      "title_1": "Hindi gumagana ang Audio Analysis nang walang ",
+      "title_2": "pahintulot sa mikropono",
+      "button": "Buksan ang mga setting"
+    },
+    "tooltip": {
+      "feature_intro": "Subukan ang Audio Analysis ng iyong pag-uusap, ito ay magpapabuti sa mga tanong sa hinaharap",
+      "wanted_recording": "Sa wakas inilunsad namin ang Audio Analysis. Subukan mo!",
+      "limit_reached": "Naabot mo na ang iyong pang-araw-araw na limitasyon ng Audio Analysis"
+    }
+  },
+  "date": {
+    "reminder": {
+      "title": "{{firstName}}, Panahon na para Kumonekta sa Kapareha",
+      "body": "Masaya? Malalim? Malapit? Pumili at Talakayin ang mga paksa nang magkasama"
+    },
+    "generating_questions_error": "Paumanhin, hindi magawa ng aming AI ang mga tanong na ito, subukan ang ibang kategorya o paksa",
+    "notification": {
+      "title_1": "Kumuha ng paalala",
+      "title_2": " upang talakayin ang mga tanong sa iyong kapareha",
+      "title_3": "",
+      "confirm": "Payagan ang mga abiso"
+    },
+    "stop_popup": {
+      "title_1": "Sigurado ka bang gusto mong ",
+      "title_2": "itigil ang talakayan",
+      "title_3": "?",
+      "subtitle": "Hindi namin mai-save ang iyong progreso.",
+      "confirm": "Oo, itigil ang talakayan",
+      "cancel": "Hindi, bumalik"
+    },
+    "share": "Ibahagi",
+    "stop": "Itigil ang date",
+    "start_date": "Simulan ang date",
+    "level_title_first": "Pumili ng ",
+    "level_title_second": "lalim ",
+    "level_title_third": "ng iyong mga tanong",
+    "level": {
+      "light": "Magaan",
+      "normal": "Normal",
+      "deep": "Malalim"
+    },
+    "topic_title_first": "Pumili ng ",
+    "topic_title_second": "1 paksa ",
+    "topic_title_third": "upang talakayin sa kapareha",
+    "topic": {
+      "title": "Pumili ng isang paksa",
+      "surprise": "Random",
+      "intimacy": "Mapang-akit",
+      "emotions": "Damdamin",
+      "fun": "Masaya",
+      "worldview": "Pananaw sa mundo",
+      "goals": "Mga layunin",
+      "future": "Hinaharap",
+      "communication": "Komunikasyon",
+      "preferences": "Mga kagustuhan",
+      "appearance": "Hitsura",
+      "travel": "Paglalakbay",
+      "career": "Karera",
+      "expectations": "Inaasahan",
+      "values": "Mga halaga",
+      "gifts": "Mga regalo",
+      "friends": "Mga kaibigan",
+      "childhood": "Pagkabata",
+      "commitment": "Pagsisikap",
+      "past": "Nakaraan",
+      "ex": "Dating kasintahan",
+      "fidelity": "Katapatan",
+      "trust": "Pagtitiwala",
+      "money": "Pera",
+      "conflict": "Konflikto",
+      "social_circle": "Bilog ng lipunan",
+      "love_language": "Wika ng Pag-ibig",
+      "mental_health": "Kalusugan ng isip",
+      "parents": "Mga magulang",
+      "children": "Mga anak",
+      "living_together": "Pamumuhay magkasama"
+    },
+    "generating_questions_first": "Gumagawa ng mga tanong upang talakayin ",
+    "generating_questions_second": "sa kapareha",
+    "discuss": "Talakayin ang mga paksa nang magkasama",
+    "feedback": {
+      "with_partner": {
+        "title_first": "Kaya! Paano ang ",
+        "title_second": "iyong talakayan",
+        "title_third": "?",
+        "choice_4": "May ilan kaming nakuhang mga cool na insight",
+        "choice_3": "Maganda ito",
+        "choice_2": "Walang bago",
+        "choice_1": "Hindi ito nakatulong"
+      },
+      "alone": {
+        "title_first": "Kaya! Ano ang ",
+        "title_second": "iyong impresyon",
+        "title_third": "?",
+        "choice_4": "Maraming mga kagiliw-giliw na tanong",
+        "choice_3": "Magagandang tanong",
+        "choice_2": "Walang espesyal",
+        "choice_1": "Hindi ko gusto"
+      }
+    },
+    "new_level": {
+      "reached": "naabot mo na",
+      "have": "meron ka na",
+      "title_first": "Tapus na ang Talakayan",
+      "title_second": "kompleto",
+      "alone_title_first": "Ang iyong App Exploration",
+      "home": "Balik sa bahay"
+    }
+  },
+  "welcome": {
+    "title_first": "Kumuha ng mga tanong upang talakayin kasama ",
+    "title_second": "ang iyong kapareha",
+    "button": {
+      "default": "Magpatuloy"
+    }
+  },
+  "onboarding": {
+    "your_name_first": "Hey! Ano ang\n",
+    "your_name_second": "iyong pangalan",
+    "your_name_third": "?",
+    "partner_name_first": "Ano ang\n",
+    "partner_name_second": "pangalan ng iyong kapareha",
+    "partner_name_third": "?",
+    "job": {
+      "title_first": "Ano ang ",
+      "title_second": "",
+      "title_third": "nais mong makuha?",
+      "fun": "Masaya at madaling mga tanong para sa mga pag-uusap sa date",
+      "hard": "Mga tanong na mahirap naming banggitin",
+      "issues": "Mga paraan upang malutas ang mga isyu sa kapareha",
+      "other": "Iba pa",
+      "other_placeholder": " Isulat ang iyong sagot..."
+    },
+    "reflection": {
+      "private": "pribadong impormasyon",
+      "explanation": "Magmuni-muni nang mag-isa upang mas maunawaan ang iyong relasyon.",
+      "short": "Masyadong maikli",
+      "good": "Maganda",
+      "perfect": "Perpekto",
+      "write_answer": "Isulat ang sagot"
+    },
+    "analyzing": {
+      "text_1": "Sinusuri\nang iyong pagsusulat",
+      "text_2": "Sinusuri\nang iyong mga sagot",
+      "text_3": "Inaangkop ang app\nsa iyong kapareha",
+      "text_4_first": "Tapos na,\n",
+      "text_4_second": "simulan ang pag-explore\nng app"
+    },
+    "language": {
+      "title": "Pumili ng Wika ng App",
+      "new_language": "Humiling ng bagong wika",
+      "write_language": "Isulat ang wika..."
+    },
+    "discuss_way": {
+      "title_first": "Paano mo gustong ",
+      "title_second": "talakayin ang ",
+      "title_third": "mga tanong?",
+      "choice_1": "Sa harap ng aking kapareha",
+      "choice_2": "Kasama ang aking kapareha online",
+      "choice_3": "Kumuha ng mga tanong at talakayin mamaya",
+      "choice_4": "Hindi ko alam"
+    }
+  },
+  "login": {
+    "password_is_too_short": "Dapat hindi bababa sa 6 na karakter ang password",
+    "invalid_username": "Mali ang email o password",
+    "title": "Mag-sign in\nNemlys account",
+    "check_email_for_login_link": "Ang link sa pag-login ay ipinadala sa iyong email",
+    "button": {
+      "default": "Magpatuloy sa Email"
+    },
+    "forgot_password": {
+      "link": "Nakalimutan ang password?"
+    }
+  },
+  "oauth": {
+    "button": {
+      "google": "Mag-sign in gamit ang Google",
+      "apple": "Mag-sign in gamit ang Apple"
+    }
+  }
+}
