@@ -262,7 +262,7 @@ turkishSpeakingLocales.forEach((locale) => {
   i18n.translations[locale] = i18n.translations['tr'];
 });
 
-const ukranianSpeakingLocales = ['uk-UA'];
+const ukranianSpeakingLocales = ['uk-UA', 'ru-UA'];
 
 ukranianSpeakingLocales.forEach((locale) => {
   i18n.translations[locale] = i18n.translations['uk'];
@@ -298,9 +298,9 @@ export function getDefaultLanguage(locale: string) {
   if (locale.startsWith('id')) return 'id';
   if (locale.startsWith('pl')) return 'pl';
   if (locale.startsWith('ro')) return 'ro';
+  if (locale.startsWith('uk') || ukranianSpeakingLocales.includes(locale)) return 'uk';
   if (locale.startsWith('ru')) return 'ru';
   if (locale.startsWith('tr')) return 'tr';
-  if (locale.startsWith('uk')) return 'uk';
   if (locale.startsWith('vi')) return 'vi';
   return 'en';
 }
