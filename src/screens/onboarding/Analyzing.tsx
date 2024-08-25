@@ -101,7 +101,10 @@ export default function ({
                 action: 'continue pressed',
                 userId: authContext.userId,
               });
-              navigation.navigate('Home', { refreshTimeStamp: new Date().toISOString() });
+              navigation.navigate('PremiumOffer', {
+                refreshTimeStamp: new Date().toISOString(),
+                isOnboarding: true,
+              });
             }}
             title={i18n.t('continue')}
           ></SecondaryButton>

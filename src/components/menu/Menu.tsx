@@ -157,6 +157,7 @@ export default function ({ reflectionWarning }: { reflectionWarning?: boolean })
                 });
                 navigation.navigate('PremiumOffer', {
                   refreshTimeStamp: new Date().toISOString(),
+                  isOnboarding: false,
                 });
               }}
             >

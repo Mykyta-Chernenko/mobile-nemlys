@@ -389,7 +389,10 @@ export default function ({
           action: 'NavigateToPremiumTrial',
           userId: authContext.userId,
         });
-        navigation.navigate('PremiumOffer', { refreshTimeStamp: new Date().toISOString() });
+        navigation.navigate('PremiumOffer', {
+          refreshTimeStamp: new Date().toISOString(),
+          isOnboarding: false,
+        });
       } else if (shouldShowNotificationBanner) {
         navigation.navigate('OnDateNotification', { withPartner, isOnboarding: false });
       } else {

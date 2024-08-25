@@ -27,7 +27,7 @@ export type MainStackParamList = {
   };
   OnDateNewLevel: { withPartner: boolean; refreshTimeStamp: string | undefined };
   OnDateNotification: { withPartner: boolean; isOnboarding: boolean };
-  PremiumOffer: { refreshTimeStamp: string | undefined };
+  PremiumOffer: { refreshTimeStamp: string | undefined; isOnboarding: boolean };
   PremiumSuccess: { state: 'premium_started' | 'trial_started' };
 
   InterviewRequest: {

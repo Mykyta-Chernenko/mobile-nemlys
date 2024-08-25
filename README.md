@@ -5,7 +5,7 @@ eas build --auto-submit
 
 
 # dev
-to build a development build locally, use
+to run a development build locally, use
 `npx expo run:ios --device` or `npx expo run:android --device`
 
 ## auth
