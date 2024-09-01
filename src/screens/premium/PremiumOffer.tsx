@@ -190,11 +190,18 @@ export default function ({
               sku: subscriptionPlan,
             });
           } else if (Platform.OS === 'android') {
+            const subscriptions = await RNIap.getSubscriptions({
+              skus: [subscriptionPlan],
+            });
+
+            const subscription = subscriptions?.[0] as RNIap.SubscriptionAndroid;
+            const offerToken = subscription?.subscriptionOfferDetails?.[0]?.offerToken ?? '';
+
             await RNIap.requestSubscription({
               subscriptionOffers: [
                 {
                   sku: subscriptionPlan,
-                  offerToken: '',
+                  offerToken: offerToken,
                 },
               ],
               // TODO handle update of the subscription
@@ -305,6 +312,8 @@ export default function ({
               error,
             });
             alert(i18n.t('errors.payment_error'));
+          } else if (error.code === 'E_ALREADY_OWNED') {
+            console.log('skip');
           } else {
             void localAnalytics().logEvent('PremiumOfferSubscriptionAttemptError', {
               screen: 'PremiumOffer',
@@ -345,16 +354,60 @@ export default function ({
           const products = await RNIap.getProducts({
             skus: [monthlySubscriptionId, yearlySubscriptionId],
           });
-          const monthlyProduct = products.find((x) => x.productId === monthlySubscriptionId);
-          const yearlyProduct = products.find((x) => x.productId === yearlySubscriptionId);
-          setMonthlyPrice(monthlyProduct ? monthlyProduct.localizedPrice : '5$');
-          setYearlyPrice(yearlyProduct ? yearlyProduct.localizedPrice : '49$');
           let subscriptions: RNIap.Subscription[] = [];
-          if (Platform.OS === 'android') {
+          if (Platform.OS === 'ios') {
+            const monthlyProduct = products.find((x) => x.productId === monthlySubscriptionId);
+            const yearlyProduct = products.find((x) => x.productId === yearlySubscriptionId);
+            setMonthlyPrice(monthlyProduct ? monthlyProduct.localizedPrice : '5$');
+            setYearlyPrice(yearlyProduct ? yearlyProduct.localizedPrice : '49$');
+          } else if (Platform.OS === 'android') {
             // we need to get all subscription so that it works on android
             subscriptions = await RNIap.getSubscriptions({
               skus: [monthlySubscriptionId, yearlySubscriptionId],
             });
+
+            const monthlySubscription = subscriptions.find(
+              (sub) => sub.productId === monthlySubscriptionId,
+            );
+            const yearlySubscription = subscriptions.find(
+              (sub) => sub.productId === yearlySubscriptionId,
+            );
+
+            if (monthlySubscription) {
+              const monthlyOfferDetails = monthlySubscription?.['subscriptionOfferDetails']?.[0];
+              const monthlyPricingPhases = monthlyOfferDetails?.['pricingPhases'];
+              const monthlyPricingPhaseList = monthlyPricingPhases?.['pricingPhaseList'];
+              const validMonthlyPricing = monthlyPricingPhaseList.find(
+                (phase) => phase?.['priceAmountMicros'] !== '0',
+              );
+
+              if (validMonthlyPricing) {
+                const monthlyFormattedPrice = validMonthlyPricing['formattedPrice'] as string;
+                setMonthlyPrice(monthlyFormattedPrice);
+              } else {
+                setMonthlyPrice('5$');
+              }
+            } else {
+              setMonthlyPrice('5$');
+            }
+
+            if (yearlySubscription) {
+              const yearlyOfferDetails = yearlySubscription?.['subscriptionOfferDetails']?.[0];
+              const yearlyPricingPhases = yearlyOfferDetails?.['pricingPhases'];
+              const yearlyPricingPhaseList = yearlyPricingPhases?.['pricingPhaseList'];
+              const validYearlyPricing = yearlyPricingPhaseList.find(
+                (phase) => phase['priceAmountMicros'] !== '0',
+              );
+
+              if (validYearlyPricing) {
+                const yearlyFormattedPrice = validYearlyPricing['formattedPrice'] as string;
+                setYearlyPrice(yearlyFormattedPrice);
+              } else {
+                setYearlyPrice('49$');
+              }
+            } else {
+              setYearlyPrice('49$');
+            }
           }
           void localAnalytics().logEvent('PremiumOfferStoreProductsLoaded', {
             screen: 'PremiumOffer',
@@ -373,6 +426,8 @@ export default function ({
           err,
         });
         logErrorsWithMessage(err, (err?.message as string) || '');
+        setMonthlyPrice('5$');
+        setYearlyPrice('49$');
       }
 
       setProductLoading(false);
