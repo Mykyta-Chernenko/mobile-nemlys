@@ -53,7 +53,10 @@ const HomePremiumBanner = React.forwardRef<HomePremiumBannerRef, Props>((props, 
         refreshTimeStamp: new Date().toISOString(),
       });
     } else {
-      navigation.navigate('PremiumOffer', { refreshTimeStamp: new Date().toISOString() });
+      navigation.navigate('PremiumOffer', {
+        refreshTimeStamp: new Date().toISOString(),
+        isOnboarding: false,
+      });
     }
   };
 
@@ -67,7 +70,10 @@ const HomePremiumBanner = React.forwardRef<HomePremiumBannerRef, Props>((props, 
       try {
         const premiumDetails = await getPremiumDetails(authContext.userId!);
         if (premiumDetails.trialExpired && !premiumDetails.afterTrialPremiumOffered) {
-          navigation.navigate('PremiumOffer', { refreshTimeStamp: new Date().toISOString() });
+          navigation.navigate('PremiumOffer', {
+            refreshTimeStamp: new Date().toISOString(),
+            isOnboarding: false,
+          });
           return;
         }
         setPremiumState(premiumDetails.premiumState);

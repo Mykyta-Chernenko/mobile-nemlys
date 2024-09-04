@@ -134,6 +134,7 @@ export default function ({
       action: 'Loaded',
       userId: authContext.userId,
       premiumState: currentPremiumState,
+      isOnboarding: route?.params?.isOnboarding,
     });
 
     setLoading(false);
@@ -488,8 +489,11 @@ export default function ({
       userId: authContext.userId,
     });
     const showInterview =
-      currentPremiumState === 'trial_expired' ||
-      (currentPremiumState !== 'premium' && currentPremiumState !== 'trial' && !eligibleForTrial);
+      !route?.params?.isOnboarding &&
+      (currentPremiumState === 'trial_expired' ||
+        (currentPremiumState !== 'premium' &&
+          currentPremiumState !== 'trial' &&
+          !eligibleForTrial));
     if (showInterview) {
       navigation.navigate('InterviewText', { refreshTimeStamp: new Date().toISOString() });
     } else {

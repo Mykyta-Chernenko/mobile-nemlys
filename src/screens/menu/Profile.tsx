@@ -138,7 +138,10 @@ export default function ({
       screen: 'Profile',
       action: 'SubscriptionClicked',
     });
-    void navigation.navigate('PremiumOffer', { refreshTimeStamp: new Date().toISOString() });
+    void navigation.navigate('PremiumOffer', {
+      refreshTimeStamp: new Date().toISOString(),
+      isOnboarding: false,
+    });
   };
   const manageReview = async () => {
     void localAnalytics().logEvent('ProfileRatingClicked', {

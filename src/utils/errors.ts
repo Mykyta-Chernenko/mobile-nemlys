@@ -24,10 +24,39 @@ export function logErrorsWithMessage(e: any, message: string | undefined = undef
 export function logErrorsWithMessageWithoutAlert(e: unknown) {
   baseLogError(e);
 }
+export const isNetworkError = (error: any): boolean => {
+  // Customize this function based on your specific needs and error structure
+  // This example assumes that network errors might have a specific message or code
+  if (error.message) {
+    // Example: Check for common network error messages
+    return (
+      error.message?.toLowerCase()?.includes('network') ||
+      error.message?.toLowerCase()?.includes('fetch') ||
+      error.message?.toLowerCase()?.includes('timeout') ||
+      error.message?.toLowerCase()?.includes('request')
+    );
+  }
+
+  // If error code is available
+  if (error.code) {
+    // Example: Check for specific error codes indicating network issues
+    return (
+      error.code === 'ENOTFOUND' || error.code === 'ECONNABORTED' || error.code === 'ECONNREFUSED'
+    );
+  }
+
+  // Default case: Assume it's not a network error
+  return false;
+};
 
 function baseLogError(e: unknown) {
-  if (!__DEV__) Sentry.captureException(e instanceof Error ? e : new Error(JSON.stringify(e)));
   console.error(e);
+  const finalError = e instanceof Error ? e : new Error(JSON.stringify(e));
+  // we don't need to care about network errors, these will always be there
+  if (isNetworkError(e)) {
+    return;
+  }
+  if (!__DEV__) Sentry.captureException(finalError);
   void localAnalytics().logEvent('ErrorEncountered', {
     action: 'ErrorEncountered',
     error: e instanceof Error ? e.message || '' : JSON.stringify(e),
