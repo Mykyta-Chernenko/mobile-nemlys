@@ -1,20 +1,13 @@
 {
-  "awesome": "太棒了!",
   "loading": "加載中",
   "continue": "繼續",
   "or": "或",
-  "ok": "好的",
-  "yes": "是",
-  "no": "否",
-  "close": "關閉",
   "save": "保存",
   "cancel": "取消",
   "confirm": "確認",
   "submit": "提交",
-  "remove": "移除",
   "next": "下一步",
   "skip": "跳過",
-  "finish": "完成",
   "input_here": "在這裡輸入",
   "email_placeholder": "輸入你的電子郵件",
   "password_placeholder": "輸入你的密碼",
@@ -97,8 +90,7 @@
     "menu": {
       "discuss": "討論",
       "profile": "個人資料",
-      "premium": "高級",
-      "reflect": "反思"
+      "premium": "高級"
     }
   },
   "profile": {
@@ -123,8 +115,6 @@
   },
   "premium": {
     "banner": {
-      "premium": "無限訪問",
-      "premium_right": "∞",
       "trial": "無限訪問",
       "days_left": "剩餘{{days}}天",
       "new": "要嘗試的話題",
@@ -135,7 +125,6 @@
       "title": "高級",
       "enjoy_your_premium": "享受您的高級版!",
       "manage": "管理訂閱",
-      "upgrade_trial": "您還有{{trialDays}}天試用期 ",
       "reached_limit": "您已達到每日限額。 ",
       "try_unlimited_1": "嘗試使用",
       "try_unlimited_2": "無限訪問",
@@ -148,10 +137,8 @@
       "plan_monthly_price": "{{price}}/月",
       "plan_yearly_title": "每年",
       "plan_yearly_price": "{{price}}/年",
-      "subscribe": "從免費7天試用開始*",
       "terms": "服務條款",
-      "privacy": "隱私政策",
-      "charged": "* 試用期結束後將收費，除非您取消訂閱"
+      "privacy": "隱私政策"
     },
     "success": {
       "trial": {
@@ -171,19 +158,10 @@
     "available": "{{number}}個新反思可用",
     "completed": "已完成{{number}}個",
     "start": "開始",
-    "explanation": {
-      "button": "明白了",
-      "reason_1": "更多反思 = 更高質量的個性化話題",
-      "reason_2": "我們使用AI，因此您反思和寫得越多，應用程式就會越好",
-      "reason_3": "您的數據是安全的。我們僅用於生成問題",
-      "title": "為什麼反思和寫作很重要?"
-    },
     "no_reflection": "討論1個話題以獲取新的反思卡",
     "finished_writing_title_1": "完成了！",
     "finished_writing_title_2": "您真是個好作家",
-    "finished_writing_button": "太好了，謝謝!",
-    "level_0": "介紹",
-    "level": "第{{number}}級"
+    "finished_writing_button": "太好了，謝謝!"
   },
   "update": {
     "title": "更新",
@@ -207,12 +185,10 @@
   "interview_text": {
     "title_first": "寫下您的反饋以獲得",
     "title_second": "1個月的高級版",
-    "reason_1_title_1": "",
     "reason_1_title_2": "回答以下三個問題",
     "reason_1_title_3": "你對Nemlys的喜歡和不喜歡",
     "reason_2_title_1": "獲得",
     "reason_2_title_2": "1個月的高級版",
-    "reason_2_title_3": "",
     "reason_3_title_1": "您的答案",
     "reason_3_title_2": "幫助我們決定",
     "reason_3_title_3": "下一步要做什麼",
@@ -245,15 +221,10 @@
     }
   },
   "date": {
-    "reminder": {
-      "title": "{{firstName}}，是時候與伴侶聯繫了",
-      "body": "有趣嗎？深入嗎？親密嗎？選擇並一起討論話題"
-    },
     "generating_questions_error": "抱歉，我們的AI無法生成這些問題，請嘗試其他類別或話題",
     "notification": {
       "title_1": "獲得提醒",
       "title_2": "與伴侶討論問題",
-      "title_3": "",
       "confirm": "允許通知"
     },
     "stop_popup": {
@@ -264,11 +235,8 @@
       "confirm": "是的，停止討論",
       "cancel": "不，回來"
     },
-    "stop": "停止約會",
-    "start_date": "開始約會",
     "level_title_first": "選擇",
     "level_title_second": "問題的深度",
-    "level_title_third": "",
     "level": {
       "light": "輕鬆",
       "normal": "普通",
@@ -278,37 +246,7 @@
     "topic_title_second": "1個話題",
     "topic_title_third": "與伴侶討論",
     "topic": {
-      "title": "選擇一個話題",
-      "surprise": "隨機",
-      "intimacy": "親密",
-      "emotions": "情感",
-      "fun": "有趣",
-      "worldview": "世界觀",
-      "goals": "目標",
-      "future": "未來",
-      "communication": "溝通",
-      "preferences": "偏好",
-      "appearance": "外貌",
-      "travel": "旅行",
-      "career": "職業",
-      "expectations": "期望",
-      "values": "價值觀",
-      "gifts": "禮物",
-      "friends": "朋友",
-      "childhood": "童年",
-      "commitment": "承諾",
-      "past": "過去",
-      "ex": "前任",
-      "fidelity": "忠誠",
-      "trust": "信任",
-      "money": "金錢",
-      "conflict": "衝突",
-      "social_circle": "社交圈",
-      "love_language": "愛的語言",
-      "mental_health": "心理健康",
-      "parents": "父母",
-      "children": "孩子",
-      "living_together": "同居"
+      "surprise": "隨機"
     },
     "generating_questions_first": "生成討論問題",
     "generating_questions_second": "與伴侶一起",
@@ -323,14 +261,6 @@
         "choice_2": "沒什麼新意",
         "choice_1": "一點也不幫忙"
       }
-    },
-    "new_level": {
-      "reached": "你達到了",
-      "have": "你有",
-      "title_first": "討論",
-      "title_second": "已完成",
-      "alone_title_first": "您的應用探索",
-      "home": "回到首頁"
     }
   },
   "welcome": {
@@ -349,7 +279,6 @@
     "partner_name_third": "？",
     "job": {
       "title_first": "你想要得到什麼",
-      "title_second": "",
       "title_third": "？",
       "fun": "適合約會談話的有趣而簡單的問題",
       "hard": "我們自己難以提出的問題",
@@ -440,7 +369,6 @@
   "done": "完成",
   "profile_notification": "通知",
   "home_menu_answer": "回答",
-  "answer_home_title": "回答",
   "answer_home_no_questions": "在線討論問題並在這裡查看你的回答",
   "question_home_answer": "回答",
   "question_home_unlock": "回答以解鎖",

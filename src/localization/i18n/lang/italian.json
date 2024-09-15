@@ -1,20 +1,13 @@
 {
-  "awesome": "Fantastico!",
   "loading": "Caricamento",
   "continue": "Continua",
   "or": "O",
-  "ok": "Ok",
-  "yes": "Sì",
-  "no": "No",
-  "close": "Chiudi",
   "save": "Salva",
   "cancel": "Annulla",
   "confirm": "Conferma",
   "submit": "Invia",
-  "remove": "Rimuovi",
   "next": "Avanti",
   "skip": "Salta",
-  "finish": "Termina",
   "input_here": "Inserisci qui",
   "email_placeholder": "Inserisci la tua email",
   "password_placeholder": "Inserisci la tua password",
@@ -97,8 +90,7 @@
     "menu": {
       "discuss": "Discuti",
       "profile": "Profilo",
-      "premium": "Premium",
-      "reflect": "Rifletti"
+      "premium": "Premium"
     }
   },
   "profile": {
@@ -123,8 +115,6 @@
   },
   "premium": {
     "banner": {
-      "premium": "Accesso illimitato",
-      "premium_right": "∞",
       "trial": "Accesso illimitato",
       "days_left": "{{days}} giorni rimanenti",
       "new": "Argomenti da provare",
@@ -135,7 +125,6 @@
       "title": "Premium",
       "enjoy_your_premium": "Goditi il tuo premium!",
       "manage": "Gestisci abbonamento",
-      "upgrade_trial": "Hai ancora {{trialDays}} giorni di accesso di prova",
       "reached_limit": "Hai raggiunto il tuo limite giornaliero. ",
       "try_unlimited_1": "Prova con ",
       "try_unlimited_2": "accesso illimitato",
@@ -148,10 +137,8 @@
       "plan_monthly_price": "{{price}}/mese",
       "plan_yearly_title": "Annuale",
       "plan_yearly_price": "{{price}}/anno",
-      "subscribe": "Inizia con una prova gratuita di 7 giorni*",
       "terms": "Termini di Servizio",
-      "privacy": "Informativa sulla Privacy",
-      "charged": "* Sarai addebitato quando la prova sarà terminata a meno che non annulli l'abbonamento"
+      "privacy": "Informativa sulla Privacy"
     },
     "success": {
       "trial": {
@@ -171,19 +158,10 @@
     "available": "{{number}} nuove riflessioni disponibili",
     "completed": "{{number}} Completate",
     "start": "Inizia",
-    "explanation": {
-      "button": "Capito",
-      "reason_1": "Più Riflessioni = Maggiore Qualità di argomenti 'Personalizzati'",
-      "reason_2": "Utilizziamo l'IA, quindi più rifletti e scrivi meglio sarà l'app",
-      "reason_3": "I tuoi dati sono al sicuro. Li utilizziamo solo per generare domande",
-      "title": "Perché è importante riflettere e scrivere?"
-    },
     "no_reflection": "Discuti un argomento per ottenere la tua nuova scheda di riflessione",
     "finished_writing_title_1": "Fatto!",
     "finished_writing_title_2": " Sei un ottimo scrittore",
-    "finished_writing_button": "Fantastico, grazie!",
-    "level_0": "introduzione",
-    "level": "livello {{number}}"
+    "finished_writing_button": "Fantastico, grazie!"
   },
   "update": {
     "title": "Aggiornamento",
@@ -207,12 +185,10 @@
   "interview_text": {
     "title_first": "Scrivi il tuo feedback per ottenere ",
     "title_second": "1 mese di Premium",
-    "reason_1_title_1": "",
     "reason_1_title_2": "Scrivi risposte",
     "reason_1_title_3": " a 3 domande su cosa ti piace e non ti piace di Nemlys",
     "reason_2_title_1": "Ottieni ",
     "reason_2_title_2": "1 mese di premium",
-    "reason_2_title_3": "",
     "reason_3_title_1": "Le tue risposte ",
     "reason_3_title_2": "ci aiutano a decidere",
     "reason_3_title_3": " su cosa lavorare dopo",
@@ -245,15 +221,10 @@
     }
   },
   "date": {
-    "reminder": {
-      "title": "{{firstName}}, è ora di connettersi con il partner",
-      "body": "Divertente? Profondo? Intimo? Scegli e discuti gli argomenti insieme"
-    },
     "generating_questions_error": "Spiacente, la nostra IA non può generare queste domande, prova un'altra categoria o argomento",
     "notification": {
       "title_1": "Ricevi un promemoria",
       "title_2": " per discutere le domande con il tuo partner",
-      "title_3": "",
       "confirm": "Consenti notifiche"
     },
     "stop_popup": {
@@ -264,8 +235,6 @@
       "confirm": "Sì, ferma la discussione",
       "cancel": "No, torna indietro"
     },
-    "stop": "Ferma l'appuntamento",
-    "start_date": "Inizia l'appuntamento",
     "level_title_first": "Seleziona ",
     "level_title_second": "la profondità ",
     "level_title_third": "delle tue domande",
@@ -278,37 +247,7 @@
     "topic_title_second": "1 argomento ",
     "topic_title_third": "da discutere con il partner",
     "topic": {
-      "title": "Seleziona un argomento",
-      "surprise": "Casuale",
-      "intimacy": "Piccante",
-      "emotions": "Emozioni",
-      "fun": "Divertimento",
-      "worldview": "Visione del mondo",
-      "goals": "Obiettivi",
-      "future": "Futuro",
-      "communication": "Comunicazione",
-      "preferences": "Preferenze",
-      "appearance": "Aspetto",
-      "travel": "Viaggio",
-      "career": "Carriera",
-      "expectations": "Aspettative",
-      "values": "Valori",
-      "gifts": "Regali",
-      "friends": "Amici",
-      "childhood": "Infanzia",
-      "commitment": "Impegno",
-      "past": "Passato",
-      "ex": "Ex",
-      "fidelity": "Fiducia",
-      "trust": "Fede",
-      "money": "Soldi",
-      "conflict": "Conflitto",
-      "social_circle": "Circolo sociale",
-      "love_language": "Linguaggio dell'amore",
-      "mental_health": "Salute mentale",
-      "parents": "Genitori",
-      "children": "Bambini",
-      "living_together": "Vivere insieme"
+      "surprise": "Casuale"
     },
     "generating_questions_first": "Generazione di domande da discutere ",
     "generating_questions_second": "con il partner",
@@ -323,14 +262,6 @@
         "choice_2": "Niente di nuovo",
         "choice_1": "Non è stato affatto utile"
       }
-    },
-    "new_level": {
-      "reached": "hai raggiunto",
-      "have": "hai",
-      "title_first": "Discussione",
-      "title_second": "completata",
-      "alone_title_first": "La tua esplorazione dell'app",
-      "home": "Torna a casa"
     }
   },
   "welcome": {
@@ -349,7 +280,6 @@
     "partner_name_third": "?",
     "job": {
       "title_first": "Cosa vuoi ",
-      "title_second": "",
       "title_third": "ottenere?",
       "fun": "Domande divertenti e facili per le discussioni in coppia",
       "hard": "Domande che troviamo difficili da affrontare noi stessi",
@@ -440,7 +370,6 @@
   "done": "Fatto",
   "profile_notification": "Notifiche",
   "home_menu_answer": "Risposte",
-  "answer_home_title": "Risposte",
   "answer_home_no_questions": "Discuti le domande online e controlla le tue risposte qui",
   "question_home_answer": "Rispondi",
   "question_home_unlock": "Rispondi per sbloccare",

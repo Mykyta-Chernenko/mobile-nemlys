@@ -1,20 +1,13 @@
 {
-  "awesome": "Minunat!",
   "loading": "Încărcare",
   "continue": "Continuare",
   "or": "Sau",
-  "ok": "Ok",
-  "yes": "Da",
-  "no": "Nu",
-  "close": "Închide",
   "save": "Salvează",
   "cancel": "Anulează",
   "confirm": "Confirmă",
   "submit": "Trimite",
-  "remove": "Șterge",
   "next": "Următorul",
   "skip": "Omitere",
-  "finish": "Finalizează",
   "input_here": "Introduceți aici",
   "email_placeholder": "Introduceți email-ul",
   "password_placeholder": "Introduceți parola",
@@ -97,8 +90,7 @@
     "menu": {
       "discuss": "Discută",
       "profile": "Profil",
-      "premium": "Premium",
-      "reflect": "Reflectează"
+      "premium": "Premium"
     }
   },
   "profile": {
@@ -123,8 +115,6 @@
   },
   "premium": {
     "banner": {
-      "premium": "Acces nelimitat",
-      "premium_right": "∞",
       "trial": "Acces nelimitat",
       "days_left": "{{days}} zile rămase",
       "new": "Subiecte de încercat",
@@ -135,7 +125,6 @@
       "title": "Premium",
       "enjoy_your_premium": "Bucurați-vă de premium!",
       "manage": "Gestionează abonamentul",
-      "upgrade_trial": "Mai ai {{trialDays}} zile de acces Trial",
       "reached_limit": "Ai atins limita zilnică. ",
       "try_unlimited_1": "Încearcă cu ",
       "try_unlimited_2": "acces nelimitat",
@@ -148,10 +137,8 @@
       "plan_monthly_price": "{{price}}/lună",
       "plan_yearly_title": "Anual",
       "plan_yearly_price": "{{price}}/an",
-      "subscribe": "Începe cu o perioadă de probă de 7 zile gratuit*",
       "terms": "Termeni de Serviciu",
-      "privacy": "Politica de Confidențialitate",
-      "charged": "* Veți fi taxat atunci când perioada de probă se termină, dacă nu anulați abonamentul"
+      "privacy": "Politica de Confidențialitate"
     },
     "success": {
       "trial": {
@@ -171,19 +158,10 @@
     "available": "{{number}} noi reflecții disponibile",
     "completed": "{{number}} Finalizate",
     "start": "Începe",
-    "explanation": {
-      "button": "Am înțeles",
-      "reason_1": "Mai multe reflecții = Calitate mai înaltă a subiectului 'Personalizat'",
-      "reason_2": "Folosim AI, așa că cu cât reflectați și scrieți mai mult, cu atât aplicația va deveni mai bună",
-      "reason_3": "Datele tale sunt în siguranță. Le folosim doar pentru generarea întrebărilor",
-      "title": "De ce este important să reflectați și să scrieți?"
-    },
     "no_reflection": "Discută 1 subiect pentru a obține noua ta carte de reflecție",
     "finished_writing_title_1": "Gata!",
     "finished_writing_title_2": " Ești un scriitor atât de bun",
-    "finished_writing_button": "Groazav, mulțumesc!",
-    "level_0": "introducere",
-    "level": "nivel {{number}}"
+    "finished_writing_button": "Groazav, mulțumesc!"
   },
   "update": {
     "title": "Actualizare",
@@ -207,12 +185,10 @@
   "interview_text": {
     "title_first": "Scrie feedback-ul tău pentru a obține ",
     "title_second": "1 lună de Premium",
-    "reason_1_title_1": "",
     "reason_1_title_2": "Scrie răspunsuri",
     "reason_1_title_3": " la 3 întrebări despre ce îți place și nu îți place la Nemlys",
     "reason_2_title_1": "Obține ",
     "reason_2_title_2": "1 lună de premium",
-    "reason_2_title_3": "",
     "reason_3_title_1": "Răspunsurile tale ",
     "reason_3_title_2": "ne ajută să decidem",
     "reason_3_title_3": " pe ce să lucrăm în continuare",
@@ -245,15 +221,10 @@
     }
   },
   "date": {
-    "reminder": {
-      "title": "{{firstName}}, Timp de conectare cu partenerul",
-      "body": "Distractiv? Profund? Intim? Alegeți și discutați subiectele împreună"
-    },
     "generating_questions_error": "Ne pare rău, AI-ul nostru nu poate genera aceste întrebări, încearcă altă categorie sau subiect",
     "notification": {
       "title_1": "Primește o reamintire",
       "title_2": " pentru a discuta întrebările cu partenerul tău",
-      "title_3": "",
       "confirm": "Permite notificările"
     },
     "stop_popup": {
@@ -264,8 +235,6 @@
       "confirm": "Da, oprește discuția",
       "cancel": "Nu, revino"
     },
-    "stop": "Oprește întâlnirea",
-    "start_date": "Începe întâlnirea",
     "level_title_first": "Selectează ",
     "level_title_second": "adâncimea ",
     "level_title_third": "întrebărilor tale",
@@ -278,37 +247,7 @@
     "topic_title_second": "1 subiect ",
     "topic_title_third": "pentru a discuta cu partenerul",
     "topic": {
-      "title": "Selectează un subiect",
-      "surprise": "Aleatoriu",
-      "intimacy": "Picant",
-      "emotions": "Emoții",
-      "fun": "Distracție",
-      "worldview": "Viziune asupra lumii",
-      "goals": "Obiective",
-      "future": "Viitor",
-      "communication": "Comunicare",
-      "preferences": "Preferințe",
-      "appearance": "Aspect",
-      "travel": "Călătorii",
-      "career": "Carieră",
-      "expectations": "Așteptări",
-      "values": "Valori",
-      "gifts": "Cadouri",
-      "friends": "Prieteni",
-      "childhood": "Copilărie",
-      "commitment": "Angajament",
-      "past": "Trecut",
-      "ex": "Fost",
-      "fidelity": "Fidelitate",
-      "trust": "Încredere",
-      "money": "Bani",
-      "conflict": "Conflict",
-      "social_circle": "Cerc social",
-      "love_language": "Limbajul iubirii",
-      "mental_health": "Sănătate mentală",
-      "parents": "Părinți",
-      "children": "Copii",
-      "living_together": "Locuind împreună"
+      "surprise": "Aleatoriu"
     },
     "generating_questions_first": "Generăm întrebări pentru a discuta ",
     "generating_questions_second": "cu partenerul",
@@ -323,14 +262,6 @@
         "choice_2": "Nimic nou",
         "choice_1": "Nu a fost deloc util"
       }
-    },
-    "new_level": {
-      "reached": "ai atins",
-      "have": "ai",
-      "title_first": "Discuție",
-      "title_second": "completată",
-      "alone_title_first": "Explorarea aplicației tale",
-      "home": "Înapoi acasă"
     }
   },
   "welcome": {
@@ -349,7 +280,6 @@
     "partner_name_third": "?",
     "job": {
       "title_first": "Ce ",
-      "title_second": "",
       "title_third": "dorești să obții?",
       "fun": "Întrebări distractive și ușoare pentru întâlniri",
       "hard": "Întrebări pe care ne este greu să le aducem în discuție",
@@ -440,7 +370,6 @@
   "done": "Finalizat",
   "profile_notification": "Notificări",
   "home_menu_answer": "Răspunsuri",
-  "answer_home_title": "Răspunsuri",
   "answer_home_no_questions": "Discută întrebări online și verifică răspunsurile tale aici",
   "question_home_answer": "Răspunde",
   "question_home_unlock": "Răspunde pentru a debloca",

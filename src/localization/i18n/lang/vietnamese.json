@@ -1,20 +1,13 @@
 {
-  "awesome": "Tuyệt vời!",
   "loading": "Đang tải",
   "continue": "Tiếp tục",
   "or": "Hoặc",
-  "ok": "Ok",
-  "yes": "Có",
-  "no": "Không",
-  "close": "Đóng",
   "save": "Lưu",
   "cancel": "Hủy",
   "confirm": "Xác nhận",
   "submit": "Gửi",
-  "remove": "Xóa",
   "next": "Tiếp theo",
   "skip": "Bỏ qua",
-  "finish": "Hoàn thành",
   "input_here": "Nhập ở đây",
   "email_placeholder": "Nhập email của bạn",
   "password_placeholder": "Nhập mật khẩu của bạn",
@@ -97,8 +90,7 @@
     "menu": {
       "discuss": "Thảo luận",
       "profile": "Hồ sơ",
-      "premium": "Cao cấp",
-      "reflect": "Suy ngẫm"
+      "premium": "Cao cấp"
     }
   },
   "profile": {
@@ -123,8 +115,6 @@
   },
   "premium": {
     "banner": {
-      "premium": "Truy cập không giới hạn",
-      "premium_right": "∞",
       "trial": "Truy cập không giới hạn",
       "days_left": "{{days}} ngày còn lại",
       "new": "Chủ đề mới để thử",
@@ -135,7 +125,6 @@
       "title": "Cao cấp",
       "enjoy_your_premium": "Tận hưởng cao cấp của bạn!",
       "manage": "Quản lý đăng ký",
-      "upgrade_trial": "Bạn còn {{trialDays}} ngày truy cập thử nghiệm",
       "reached_limit": "Bạn đã đạt đến giới hạn hàng ngày của mình.",
       "try_unlimited_1": "Thử với ",
       "try_unlimited_2": "truy cập không giới hạn",
@@ -148,10 +137,8 @@
       "plan_monthly_price": "{{price}}/tháng",
       "plan_yearly_title": "Hàng năm",
       "plan_yearly_price": "{{price}}/năm",
-      "subscribe": "Bắt đầu với thử nghiệm miễn phí 7 ngày*",
       "terms": "Điều khoản Dịch vụ",
-      "privacy": "Chính sách bảo mật",
-      "charged": "* Bạn sẽ bị tính phí khi thử nghiệm kết thúc trừ khi bạn hủy đăng ký"
+      "privacy": "Chính sách bảo mật"
     },
     "success": {
       "trial": {
@@ -171,19 +158,10 @@
     "available": "{{number}} sự suy ngẫm mới có sẵn",
     "completed": "{{number}} Đã hoàn thành",
     "start": "Bắt đầu",
-    "explanation": {
-      "button": "Hiểu rồi",
-      "reason_1": "Nhiều suy ngẫm hơn = Chất lượng cao hơn của chủ đề 'Cá nhân hóa'",
-      "reason_2": "Chúng tôi sử dụng AI, vì vậy càng nhiều bạn suy ngẫm và viết, ứng dụng sẽ càng tốt",
-      "reason_3": "Dữ liệu của bạn an toàn. Chúng tôi chỉ sử dụng nó để tạo câu hỏi",
-      "title": "Tại sao quan trọng để suy ngẫm và viết?"
-    },
     "no_reflection": "Thảo luận 1 chủ đề để nhận thẻ suy ngẫm mới của bạn",
     "finished_writing_title_1": "Hoàn tất!",
     "finished_writing_title_2": " Bạn là một nhà văn giỏi",
-    "finished_writing_button": "Tuyệt, cảm ơn!",
-    "level_0": "giới thiệu",
-    "level": "cấp độ {{number}}"
+    "finished_writing_button": "Tuyệt, cảm ơn!"
   },
   "update": {
     "title": "Cập nhật",
@@ -207,12 +185,10 @@
   "interview_text": {
     "title_first": "Viết phản hồi của bạn để nhận ",
     "title_second": "1 tháng Cao cấp",
-    "reason_1_title_1": "",
     "reason_1_title_2": "Viết câu trả lời",
     "reason_1_title_3": " cho 3 câu hỏi về những gì bạn thích và không thích trong Nemlys",
     "reason_2_title_1": "Nhận ",
     "reason_2_title_2": "1 tháng cao cấp",
-    "reason_2_title_3": "",
     "reason_3_title_1": "Câu trả lời của bạn ",
     "reason_3_title_2": "giúp chúng tôi quyết định",
     "reason_3_title_3": " những gì cần làm tiếp theo",
@@ -245,15 +221,10 @@
     }
   },
   "date": {
-    "reminder": {
-      "title": "{{firstName}}, Thời gian kết nối với đối tác",
-      "body": "Vui? Sâu sắc? Thân mật? Chọn và thảo luận các chủ đề cùng nhau"
-    },
     "generating_questions_error": "Xin lỗi, AI của chúng tôi không thể tạo ra những câu hỏi này, hãy thử một danh mục hoặc chủ đề khác",
     "notification": {
       "title_1": "Nhận lời nhắc",
       "title_2": " để thảo luận câu hỏi với đối tác của bạn",
-      "title_3": "",
       "confirm": "Cho phép thông báo"
     },
     "stop_popup": {
@@ -264,8 +235,6 @@
       "confirm": "Có, dừng thảo luận",
       "cancel": "Không, quay lại"
     },
-    "stop": "Dừng hẹn hò",
-    "start_date": "Bắt đầu hẹn hò",
     "level_title_first": "Chọn ",
     "level_title_second": "độ sâu ",
     "level_title_third": "câu hỏi của bạn",
@@ -278,37 +247,7 @@
     "topic_title_second": "1 chủ đề ",
     "topic_title_third": "để thảo luận với đối tác",
     "topic": {
-      "title": "Chọn một chủ đề",
-      "surprise": "Ngẫu nhiên",
-      "intimacy": "Thân mật",
-      "emotions": "Cảm xúc",
-      "fun": "Vui vẻ",
-      "worldview": "Thế giới quan",
-      "goals": "Mục tiêu",
-      "future": "Tương lai",
-      "communication": "Giao tiếp",
-      "preferences": "Sở thích",
-      "appearance": "Ngoại hình",
-      "travel": "Du lịch",
-      "career": "Sự nghiệp",
-      "expectations": "Kỳ vọng",
-      "values": "Giá trị",
-      "gifts": "Quà tặng",
-      "friends": "Bạn bè",
-      "childhood": "Tuổi thơ",
-      "commitment": "Cam kết",
-      "past": "Quá khứ",
-      "ex": "Người yêu cũ",
-      "fidelity": "Lòng trung thành",
-      "trust": "Niềm tin",
-      "money": "Tiền bạc",
-      "conflict": "Xung đột",
-      "social_circle": "Vòng xã hội",
-      "love_language": "Ngôn ngữ tình yêu",
-      "mental_health": "Sức khỏe tinh thần",
-      "parents": "Cha mẹ",
-      "children": "Trẻ em",
-      "living_together": "Sống cùng nhau"
+      "surprise": "Ngẫu nhiên"
     },
     "generating_questions_first": "Tạo câu hỏi để thảo luận ",
     "generating_questions_second": "với đối tác",
@@ -323,14 +262,6 @@
         "choice_2": "Không có gì mới",
         "choice_1": "Không giúp ích gì cả"
       }
-    },
-    "new_level": {
-      "reached": "bạn đã đạt đến",
-      "have": "bạn có",
-      "title_first": "Thảo luận",
-      "title_second": "hoàn thành",
-      "alone_title_first": "Khám phá ứng dụng của bạn",
-      "home": "Quay lại trang chủ"
     }
   },
   "welcome": {
@@ -349,7 +280,6 @@
     "partner_name_third": "?",
     "job": {
       "title_first": "Bạn muốn ",
-      "title_second": "",
       "title_third": "nhận được gì?",
       "fun": "Câu hỏi vui nhộn và dễ dàng cho các cuộc nói chuyện hẹn hò",
       "hard": "Những câu hỏi mà chúng tôi khó tự mình đặt ra",
@@ -440,7 +370,6 @@
   "done": "Xong",
   "profile_notification": "Thông báo",
   "home_menu_answer": "Câu trả lời",
-  "answer_home_title": "Câu trả lời",
   "answer_home_no_questions": "Thảo luận các câu hỏi trực tuyến và kiểm tra câu trả lời của bạn ở đây",
   "question_home_answer": "Trả lời",
   "question_home_unlock": "Trả lời để mở khóa",

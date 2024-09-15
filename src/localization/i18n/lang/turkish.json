@@ -1,20 +1,13 @@
 {
-  "awesome": "Harika!",
   "loading": "Yükleniyor",
   "continue": "Devam et",
   "or": "Veya",
-  "ok": "Tamam",
-  "yes": "Evet",
-  "no": "Hayır",
-  "close": "Kapat",
   "save": "Kaydet",
   "cancel": "İptal",
   "confirm": "Onayla",
   "submit": "Gönder",
-  "remove": "Kaldır",
   "next": "İleri",
   "skip": "Geç",
-  "finish": "Bitir",
   "input_here": "Buraya yazın",
   "email_placeholder": "E-posta adresinizi girin",
   "password_placeholder": "Şifrenizi girin",
@@ -97,8 +90,7 @@
     "menu": {
       "discuss": "Tartış",
       "profile": "Profil",
-      "premium": "Premium",
-      "reflect": "Düşün"
+      "premium": "Premium"
     }
   },
   "profile": {
@@ -123,8 +115,6 @@
   },
   "premium": {
     "banner": {
-      "premium": "Sınırsız erişim",
-      "premium_right": "∞",
       "trial": "Sınırsız erişim",
       "days_left": "{{days}} gün kaldı",
       "new": "Denenecek konular",
@@ -135,7 +125,6 @@
       "title": "Premium",
       "enjoy_your_premium": "Premium'unuzun keyfini çıkarın!",
       "manage": "Aboneliği Yönet",
-      "upgrade_trial": "{{trialDays}} Gün Deneme Erişiminiz kaldı",
       "reached_limit": "Günlük limitinize ulaştınız.",
       "try_unlimited_1": "Deneyin ",
       "try_unlimited_2": "sınırsız erişim ile",
@@ -148,10 +137,8 @@
       "plan_monthly_price": "{{price}}/ay",
       "plan_yearly_title": "Yıllık",
       "plan_yearly_price": "{{price}}/yıl",
-      "subscribe": "Ücretsiz 7 günlük denemeyi başlat*",
       "terms": "Hizmet Şartları",
-      "privacy": "Gizlilik Politikası",
-      "charged": "* Deneme süresi sona erdiğinde, aboneliği iptal etmezseniz ücretlendirileceksiniz"
+      "privacy": "Gizlilik Politikası"
     },
     "success": {
       "trial": {
@@ -171,19 +158,10 @@
     "available": "{{number}} yeni düşünce mevcut",
     "completed": "{{number}} Tamamlandı",
     "start": "Başlat",
-    "explanation": {
-      "button": "Anladım",
-      "reason_1": "Daha Fazla Düşünce = 'Kişiselleştirilmiş' konunun Daha Yüksek Kalitesi",
-      "reason_2": "Yapay Zeka kullanıyoruz, bu yüzden ne kadar çok düşünür ve yazarsanız, uygulama o kadar iyi olur",
-      "reason_3": "Verileriniz güvende. Yalnızca soru üretmek için kullanıyoruz",
-      "title": "Neden düşünmek ve yazmak önemlidir?"
-    },
     "no_reflection": "Yeni düşünce kartınızı almak için 1 konuyu tartışın",
     "finished_writing_title_1": "Bitti!",
     "finished_writing_title_2": " Çok iyi bir yazar oldunuz",
-    "finished_writing_button": "Harika, teşekkürler!",
-    "level_0": "giriş",
-    "level": "seviye {{number}}"
+    "finished_writing_button": "Harika, teşekkürler!"
   },
   "update": {
     "title": "Güncelleme",
@@ -207,15 +185,11 @@
   "interview_text": {
     "title_first": "Geri bildiriminizi yazın ve ",
     "title_second": "1 ay Premium kazanın",
-    "reason_1_title_1": "",
     "reason_1_title_2": "Cevapları yazın",
     "reason_1_title_3": " Nemlys hakkında neyi sevip sevmediğinizi 3 soruya yanıt verin",
     "reason_2_title_1": "1 ay premium kazanın",
-    "reason_2_title_2": "",
-    "reason_2_title_3": "",
     "reason_3_title_1": "Cevaplarınız ",
     "reason_3_title_2": "bize ne üzerinde çalışacağımıza karar vermemize yardımcı olur",
-    "reason_3_title_3": "",
     "button": "Bize yazın",
     "thank": "Harika! E-posta adresiniz üzerinden size ulaşacağız: {{email}}"
   },
@@ -235,7 +209,6 @@
     },
     "permission": {
       "title_1": "Ses Analizi mikrofon izni olmadan çalışmaz ",
-      "title_2": "",
       "button": "Ayarları aç"
     },
     "tooltip": {
@@ -245,15 +218,10 @@
     }
   },
   "date": {
-    "reminder": {
-      "title": "{{firstName}}, Partnerinizle Bağlantı Kurma Zamanı",
-      "body": "Eğlenceli mi? Derin mi? Samimi mi? Bir konuyu seçin ve birlikte tartışın"
-    },
     "generating_questions_error": "Üzgünüz, yapay zekamız bu soruları oluşturamıyor, başka bir kategori veya konu deneyin",
     "notification": {
       "title_1": "Bir hatırlatma alın",
       "title_2": " partnerinizle soruları tartışmak için",
-      "title_3": "",
       "confirm": "Bildirimlere izin ver"
     },
     "stop_popup": {
@@ -264,8 +232,6 @@
       "confirm": "Evet, tartışmayı durdur",
       "cancel": "Hayır, geri dön"
     },
-    "stop": "Randevuyu durdur",
-    "start_date": "Randevu başlat",
     "level_title_first": "Seviyeyi seçin ",
     "level_title_second": "derinliği ",
     "level_title_third": "sorularınızın",
@@ -278,37 +244,7 @@
     "topic_title_second": "1 konu ",
     "topic_title_third": "partnerinizle tartışmak için",
     "topic": {
-      "title": "Bir konu seçin",
-      "surprise": "Rastgele",
-      "intimacy": "Baharatlı",
-      "emotions": "Duygular",
-      "fun": "Eğlence",
-      "worldview": "Dünya görüşü",
-      "goals": "Hedefler",
-      "future": "Gelecek",
-      "communication": "İletişim",
-      "preferences": "Tercihler",
-      "appearance": "Görünüm",
-      "travel": "Seyahat",
-      "career": "Kariyer",
-      "expectations": "Beklentiler",
-      "values": "Değerler",
-      "gifts": "Hediyeler",
-      "friends": "Arkadaşlar",
-      "childhood": "Çocukluk",
-      "commitment": "Bağlılık",
-      "past": "Geçmiş",
-      "ex": "Eski",
-      "fidelity": "Sadakat",
-      "trust": "Güven",
-      "money": "Para",
-      "conflict": "Çatışma",
-      "social_circle": "Sosyal çevre",
-      "love_language": "Sevgi dili",
-      "mental_health": "Zihinsel sağlık",
-      "parents": "Ebeveynler",
-      "children": "Çocuklar",
-      "living_together": "Birlikte yaşama"
+      "surprise": "Rastgele"
     },
     "generating_questions_first": "Tartışmak için sorular oluşturuluyor ",
     "generating_questions_second": "partnerinizle",
@@ -323,34 +259,22 @@
         "choice_2": "Yeni bir şey yok",
         "choice_1": "Hiç yardımcı olmadı"
       }
-    },
-    "new_level": {
-      "reached": "ulaştınız",
-      "have": "sahipsiniz",
-      "title_first": "Tartışma",
-      "title_second": "tamamlandı",
-      "alone_title_first": "Uygulamayı Keşfiniz",
-      "home": "Ana sayfaya dön"
     }
   },
   "welcome": {
     "title_first": "Partnerinizle tartışmak için sorular alın ",
-    "title_second": "",
     "button": {
       "default": "Devam et"
     }
   },
   "onboarding": {
     "your_name_first": "Merhaba! Adınız\n",
-    "your_name_second": "",
     "your_name_third": "nedir?",
     "partner_name_first": "Partnerinizin Adı\n",
-    "partner_name_second": "",
     "partner_name_third": "nedir?",
     "job": {
       "title_first": "Ne elde etmek ",
       "title_second": "istiyorsunuz?",
-      "title_third": "",
       "fun": "Randevu sohbetleri için eğlenceli ve kolay sorular",
       "hard": "Kendi başımıza gündeme getirmekte zorlandığımız sorular",
       "issues": "Partnerle sorunları çözmenin yolları",
@@ -379,8 +303,6 @@
     },
     "discuss_way": {
       "title_first": "Soruları nasıl tartışmak istersiniz? ",
-      "title_second": "",
-      "title_third": "",
       "choice_1": "Partnerimin önünde",
       "choice_2": "Partnerimle çevrimiçi",
       "choice_3": "Soruları alıp sonra tartışmak",
@@ -440,7 +362,6 @@
   "done": "Tamam",
   "profile_notification": "Bildirimler",
   "home_menu_answer": "Cevaplar",
-  "answer_home_title": "Cevaplar",
   "answer_home_no_questions": "Soruları çevrimiçi tartışın ve cevaplarınızı burada kontrol edin",
   "question_home_answer": "Cevapla",
   "question_home_unlock": "Açmak için cevap ver",

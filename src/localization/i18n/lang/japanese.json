@@ -1,20 +1,13 @@
 {
-  "awesome": "すごい!",
   "loading": "読み込み中",
   "continue": "続ける",
   "or": "または",
-  "ok": "OK",
-  "yes": "はい",
-  "no": "いいえ",
-  "close": "閉じる",
   "save": "保存",
   "cancel": "キャンセル",
   "confirm": "確認",
   "submit": "送信",
-  "remove": "削除",
   "next": "次へ",
   "skip": "スキップ",
-  "finish": "完了",
   "input_here": "ここに入力",
   "email_placeholder": "メールアドレスを入力",
   "password_placeholder": "パスワードを入力",
@@ -97,8 +90,7 @@
     "menu": {
       "discuss": "議論する",
       "profile": "プロフィール",
-      "premium": "プレミアム",
-      "reflect": "リフレクト"
+      "premium": "プレミアム"
     }
   },
   "profile": {
@@ -123,8 +115,6 @@
   },
   "premium": {
     "banner": {
-      "premium": "無制限アクセス",
-      "premium_right": "∞",
       "trial": "無制限アクセス",
       "days_left": "残り{{days}}日",
       "new": "試すべきトピック",
@@ -135,7 +125,6 @@
       "title": "プレミアム",
       "enjoy_your_premium": "プレミアムを楽しんでください！",
       "manage": "サブスクリプション管理",
-      "upgrade_trial": "残り{{trialDays}}日間の試用アクセス",
       "reached_limit": "あなたは1日の制限に達しました。",
       "try_unlimited_1": "無制限アクセスで",
       "try_unlimited_2": "試してみる",
@@ -148,15 +137,12 @@
       "plan_monthly_price": "{{price}}/月",
       "plan_yearly_title": "年間",
       "plan_yearly_price": "{{price}}/年",
-      "subscribe": "7日間無料トライアルを開始する*",
       "terms": "利用規約",
-      "privacy": "プライバシーポリシー",
-      "charged": "* 試用期間が終了すると課金されますが、サブスクリプションをキャンセルすることもできます"
+      "privacy": "プライバシーポリシー"
     },
     "success": {
       "trial": {
         "title_1": "すべて完了！無制限アクセスをお楽しみください",
-        "title_2": "",
         "button": "クール、ありがとう"
       },
       "premium": {
@@ -171,19 +157,10 @@
     "available": "{{number}}件の新しいリフレクションが利用可能",
     "completed": "{{number}}件完了",
     "start": "開始",
-    "explanation": {
-      "button": "了解",
-      "reason_1": "リフレクションが多いほど「パーソナライズされた」トピックの質が向上します",
-      "reason_2": "私たちはAIを使用しているので、あなたがリフレクトして書くほど、アプリがより良くなります",
-      "reason_3": "あなたのデータは安全です。質問の生成にのみ使用されます",
-      "title": "リフレクトして書くことが重要な理由は？"
-    },
     "no_reflection": "新しいリフレクションカードを取得するには、1つのトピックを議論してください",
     "finished_writing_title_1": "完了！",
     "finished_writing_title_2": "あなたは素晴らしい作家です",
-    "finished_writing_button": "素晴らしい、ありがとう！",
-    "level_0": "導入",
-    "level": "レベル{{number}}"
+    "finished_writing_button": "素晴らしい、ありがとう！"
   },
   "update": {
     "title": "アップデート",
@@ -207,12 +184,10 @@
   "interview_text": {
     "title_first": "フィードバックを書いて",
     "title_second": "1ヶ月のプレミアムを取得",
-    "reason_1_title_1": "",
     "reason_1_title_2": "3つの質問に対する回答を書く",
     "reason_1_title_3": "Nemlysで好きなことと嫌いなこと",
     "reason_2_title_1": "取得する",
     "reason_2_title_2": "1ヶ月のプレミアム",
-    "reason_2_title_3": "",
     "reason_3_title_1": "あなたの回答",
     "reason_3_title_2": "決定にご協力ください",
     "reason_3_title_3": "次に何に取り組むべきか",
@@ -230,7 +205,6 @@
     "delete": {
       "title_1": "本当に録音を",
       "title_2": "削除しますか？",
-      "title_3": "",
       "button": "はい、削除する"
     },
     "permission": {
@@ -245,29 +219,20 @@
     }
   },
   "date": {
-    "reminder": {
-      "title": "{{firstName}}、パートナーとつながる時間",
-      "body": "楽しい？深い？親密な？トピックを選んで一緒に議論しましょう"
-    },
     "generating_questions_error": "申し訳ありませんが、AIはこれらの質問を生成できません。別のカテゴリまたはトピックを試してください",
     "notification": {
       "title_1": "リマインダーを取得する",
       "title_2": "パートナーと質問を議論する",
-      "title_3": "",
       "confirm": "通知を許可する"
     },
     "stop_popup": {
       "title_1": "本当に議論を",
       "title_2": "停止しますか？",
-      "title_3": "",
       "subtitle": "その場合、進行状況を保存できません。",
       "confirm": "はい、議論を停止する",
       "cancel": "いいえ、戻る"
     },
-    "stop": "デートを停止",
-    "start_date": "デートを開始",
     "level_title_first": "深さを選択",
-    "level_title_second": "",
     "level_title_third": "質問の",
     "level": {
       "light": "軽い",
@@ -275,40 +240,9 @@
       "deep": "深い"
     },
     "topic_title_first": "1つのトピックを選択",
-    "topic_title_second": "",
     "topic_title_third": "パートナーと議論する",
     "topic": {
-      "title": "1つのトピックを選択",
-      "surprise": "ランダム",
-      "intimacy": "スパイシー",
-      "emotions": "感情",
-      "fun": "楽しい",
-      "worldview": "世界観",
-      "goals": "目標",
-      "future": "未来",
-      "communication": "コミュニケーション",
-      "preferences": "好み",
-      "appearance": "外見",
-      "travel": "旅行",
-      "career": "キャリア",
-      "expectations": "期待",
-      "values": "価値観",
-      "gifts": "ギフト",
-      "friends": "友人",
-      "childhood": "子供時代",
-      "commitment": "約束",
-      "past": "過去",
-      "ex": "元パートナー",
-      "fidelity": "忠実",
-      "trust": "信頼",
-      "money": "お金",
-      "conflict": "対立",
-      "social_circle": "社会的サークル",
-      "love_language": "愛の言語",
-      "mental_health": "メンタルヘルス",
-      "parents": "親",
-      "children": "子供",
-      "living_together": "一緒に住む"
+      "surprise": "ランダム"
     },
     "generating_questions_first": "質問を生成しています",
     "generating_questions_second": "パートナーと議論する",
@@ -316,41 +250,24 @@
     "feedback": {
       "with_partner": {
         "title_first": "では！あなたの議論はどうでしたか？",
-        "title_second": "",
-        "title_third": "",
         "choice_4": "いくつかのクールな洞察を得ました",
         "choice_3": "良かったです",
         "choice_2": "何も新しいことはありませんでした",
         "choice_1": "まったく役に立ちませんでした"
       }
-    },
-    "new_level": {
-      "reached": "あなたは到達しました",
-      "have": "あなたは持っています",
-      "title_first": "議論",
-      "title_second": "完了",
-      "alone_title_first": "あなたのアプリ探索",
-      "home": "ホームに戻る"
     }
   },
   "welcome": {
     "title_first": "パートナーと議論するための質問を取得",
-    "title_second": "",
     "button": {
       "default": "続ける"
     }
   },
   "onboarding": {
     "your_name_first": "こんにちは！あなたの名前は何ですか？",
-    "your_name_second": "",
-    "your_name_third": "",
     "partner_name_first": "あなたのパートナーの名前は何ですか？",
-    "partner_name_second": "",
-    "partner_name_third": "",
     "job": {
       "title_first": "何を達成したいですか？",
-      "title_second": "",
-      "title_third": "",
       "fun": "デートトークのための楽しく簡単な質問",
       "hard": "自分たちで取り上げるのが難しい質問",
       "issues": "パートナーとの問題を解決する方法",
@@ -379,8 +296,6 @@
     },
     "discuss_way": {
       "title_first": "どのように質問を議論したいですか？",
-      "title_second": "",
-      "title_third": "",
       "choice_1": "パートナーの前で",
       "choice_2": "パートナーとオンラインで",
       "choice_3": "質問を取得して後で議論する",
@@ -440,7 +355,6 @@
   "done": "完了",
   "profile_notification": "通知",
   "home_menu_answer": "回答",
-  "answer_home_title": "回答",
   "answer_home_no_questions": "オンラインで質問を話し合い、ここで回答を確認してください",
   "question_home_answer": "回答する",
   "question_home_unlock": "回答してロックを解除",

@@ -1,20 +1,13 @@
 {
-  "awesome": "शानदार!",
   "loading": "लोड हो रहा है",
   "continue": "जारी रखें",
   "or": "या",
-  "ok": "ठीक है",
-  "yes": "हाँ",
-  "no": "नहीं",
-  "close": "बंद करें",
   "save": "सहेजें",
   "cancel": "रद्द करें",
   "confirm": "पुष्टि करें",
   "submit": "जमा करें",
-  "remove": "हटाएं",
   "next": "अगला",
   "skip": "छोड़ें",
-  "finish": "समाप्त करें",
   "input_here": "यहाँ इनपुट करें",
   "email_placeholder": "अपना ईमेल दर्ज करें",
   "password_placeholder": "अपना पासवर्ड दर्ज करें",
@@ -97,8 +90,7 @@
     "menu": {
       "discuss": "चर्चा करें",
       "profile": "प्रोफाइल",
-      "premium": "प्रीमियम",
-      "reflect": "प्रतिबिंबित करें"
+      "premium": "प्रीमियम"
     }
   },
   "profile": {
@@ -123,8 +115,6 @@
   },
   "premium": {
     "banner": {
-      "premium": "अनलिमिटेड एक्सेस",
-      "premium_right": "∞",
       "trial": "अनलिमिटेड एक्सेस",
       "days_left": "{{days}} दिन बचे हैं",
       "new": "आजमाने के लिए विषय",
@@ -135,7 +125,6 @@
       "title": "प्रीमियम",
       "enjoy_your_premium": "अपने प्रीमियम का आनंद लें!",
       "manage": "सदस्यता प्रबंधित करें",
-      "upgrade_trial": "आपके पास {{trialDays}} ट्रायल एक्सेस दिन बचे हैं ",
       "reached_limit": "आपने अपनी दैनिक सीमा को पूरा कर लिया है। ",
       "try_unlimited_1": "कोशिश करें ",
       "try_unlimited_2": "अनलिमिटेड एक्सेस के साथ",
@@ -148,10 +137,8 @@
       "plan_monthly_price": "{{price}}/महीना",
       "plan_yearly_title": "वार्षिक",
       "plan_yearly_price": "{{price}}/वर्ष",
-      "subscribe": "मुफ्त 7-दिवसीय ट्रायल के साथ प्रारंभ करें*",
       "terms": "सेवा की शर्तें",
-      "privacy": "गोपनीयता नीति",
-      "charged": "* परीक्षण समाप्त होने पर आपसे शुल्क लिया जाएगा जब तक कि आप सदस्यता रद्द नहीं करते"
+      "privacy": "गोपनीयता नीति"
     },
     "success": {
       "trial": {
@@ -171,19 +158,10 @@
     "available": "{{number}} नए प्रतिबिंब उपलब्ध हैं",
     "completed": "{{number}} पूरा हुआ",
     "start": "प्रारंभ करें",
-    "explanation": {
-      "button": "समझ गया",
-      "reason_1": "अधिक प्रतिबिंब = 'व्यक्तिगत' विषय की उच्च गुणवत्ता",
-      "reason_2": "हम AI का उपयोग करते हैं, इसलिए जितना अधिक आप प्रतिबिंबित करेंगे और लिखेंगे, ऐप उतना ही बेहतर हो जाएगा",
-      "reason_3": "आपका डेटा सुरक्षित है। हम इसे केवल प्रश्न उत्पन्न करने के लिए उपयोग करते हैं",
-      "title": "प्रतिबिंबित करना और लिखना क्यों महत्वपूर्ण है?"
-    },
     "no_reflection": "अपना नया प्रतिबिंब कार्ड प्राप्त करने के लिए 1 विषय पर चर्चा करें",
     "finished_writing_title_1": "समाप्त!",
     "finished_writing_title_2": " आप बहुत अच्छे लेखक हैं",
-    "finished_writing_button": "बहुत अच्छा, धन्यवाद!",
-    "level_0": "परिचय",
-    "level": "स्तर {{number}}"
+    "finished_writing_button": "बहुत अच्छा, धन्यवाद!"
   },
   "update": {
     "title": "अपडेट",
@@ -207,12 +185,10 @@
   "interview_text": {
     "title_first": "प्रतिक्रिया लिखें और प्राप्त करें ",
     "title_second": "1 महीने का प्रीमियम",
-    "reason_1_title_1": "",
     "reason_1_title_2": "उत्तर लिखें",
     "reason_1_title_3": "नेमलिस में आपको क्या पसंद है और क्या नापसंद है, इसके 3 प्रश्न",
     "reason_2_title_1": "प्राप्त करें ",
     "reason_2_title_2": "1 महीने का प्रीमियम",
-    "reason_2_title_3": "",
     "reason_3_title_1": "आपके जवाब ",
     "reason_3_title_2": "हमें निर्णय लेने में मदद करते हैं",
     "reason_3_title_3": "कि आगे क्या काम करना है",
@@ -245,15 +221,10 @@
     }
   },
   "date": {
-    "reminder": {
-      "title": "{{firstName}}, साथी के साथ जुड़ने का समय",
-      "body": "मजेदार? गहरा? अंतरंग? चुनें और साथ में विषयों पर चर्चा करें"
-    },
     "generating_questions_error": "क्षमा करें, हमारे AI इन प्रश्नों को उत्पन्न नहीं कर सकते, कृपया दूसरी श्रेणी या विषय आज़माएं",
     "notification": {
       "title_1": "एक रिमाइंडर प्राप्त करें",
       "title_2": " अपने साथी के साथ प्रश्नों पर चर्चा करने के लिए",
-      "title_3": "",
       "confirm": "सूचनाओं की अनुमति दें"
     },
     "stop_popup": {
@@ -264,11 +235,8 @@
       "confirm": "हाँ, चर्चा रोकें",
       "cancel": "नहीं, वापस जाएं"
     },
-    "stop": "डेट रोकें",
-    "start_date": "डेट शुरू करें",
     "level_title_first": "गहराई चुनें ",
     "level_title_second": "आपके प्रश्नों की",
-    "level_title_third": "",
     "level": {
       "light": "हल्का",
       "normal": "सामान्य",
@@ -278,40 +246,9 @@
     "topic_title_second": "चर्चा करने के लिए ",
     "topic_title_third": "साथी के साथ",
     "topic": {
-      "title": "1 विषय चुनें",
-      "surprise": "रैंडम",
-      "intimacy": "मसालेदार",
-      "emotions": "भावनाएँ",
-      "fun": "मज़ा",
-      "worldview": "विश्व दृष्टिकोण",
-      "goals": "लक्ष्य",
-      "future": "भविष्य",
-      "communication": "संचार",
-      "preferences": "प्राथमिकताएँ",
-      "appearance": "दिखावट",
-      "travel": "यात्रा",
-      "career": "कैरियर",
-      "expectations": "अपेक्षाएँ",
-      "values": "मूल्य",
-      "gifts": "उपहार",
-      "friends": "दोस्त",
-      "childhood": "बचपन",
-      "commitment": "प्रतिबद्धता",
-      "past": "अतीत",
-      "ex": "पूर्व",
-      "fidelity": "वफादारी",
-      "trust": "विश्वास",
-      "money": "पैसा",
-      "conflict": "संघर्ष",
-      "social_circle": "सामाजिक मंडल",
-      "love_language": "प्यार की भाषा",
-      "mental_health": "मानसिक स्वास्थ्य",
-      "parents": "माता-पिता",
-      "children": "बच्चे",
-      "living_together": "साथ रहना"
+      "surprise": "रैंडम"
     },
     "generating_questions_first": "साथी के साथ चर्चा करने के लिए प्रश्न उत्पन्न कर रहा है ",
-    "generating_questions_second": "",
     "discuss": "साथ में विषयों पर चर्चा करें",
     "feedback": {
       "with_partner": {
@@ -323,33 +260,21 @@
         "choice_2": "कुछ नया नहीं",
         "choice_1": "यह बिल्कुल मददगार नहीं था"
       }
-    },
-    "new_level": {
-      "reached": "आपने पहुँच गए हैं",
-      "have": "आपके पास",
-      "title_first": "चर्चा",
-      "title_second": "पूर्ण हो चुकी है",
-      "alone_title_first": "आपका ऐप अन्वेषण",
-      "home": "घर वापस"
     }
   },
   "welcome": {
     "title_first": "साथी के साथ चर्चा करने के लिए प्रश्न प्राप्त करें ",
-    "title_second": "",
     "button": {
       "default": "जारी रखें"
     }
   },
   "onboarding": {
     "your_name_first": "नमस्ते! आपका नाम क्या है\n",
-    "your_name_second": "",
     "your_name_third": "?",
     "partner_name_first": "आपके साथी का नाम क्या है\n",
-    "partner_name_second": "",
     "partner_name_third": "?",
     "job": {
       "title_first": "आप क्या चाहते हैं ",
-      "title_second": "",
       "title_third": "प्राप्त करना?",
       "fun": "डेट टॉक्स के लिए मजेदार और आसान प्रश्न",
       "hard": "प्रश्न जिन्हें हम स्वयं लाने में कठिनाई महसूस करते हैं",
@@ -440,7 +365,6 @@
   "done": "हो गया",
   "profile_notification": "सूचनाएं",
   "home_menu_answer": "उत्तर",
-  "answer_home_title": "उत्तर",
   "answer_home_no_questions": "ऑनलाइन प्रश्नों पर चर्चा करें और अपने उत्तर यहाँ देखें",
   "question_home_answer": "उत्तर दें",
   "question_home_unlock": "अनलॉक करने के लिए उत्तर दें",

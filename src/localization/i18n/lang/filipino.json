@@ -1,20 +1,13 @@
 {
-  "awesome": "Astig!",
   "loading": "Naglo-load",
   "continue": "Magpatuloy",
   "or": "O",
-  "ok": "Ok",
-  "yes": "Oo",
-  "no": "Hindi",
-  "close": "Isara",
   "save": "I-save",
   "cancel": "Kanselahin",
   "confirm": "Kumpirmahin",
   "submit": "Ipasa",
-  "remove": "Tanggalin",
   "next": "Susunod",
   "skip": "Laktawan",
-  "finish": "Tapusin",
   "input_here": "Ilagay dito",
   "email_placeholder": "Ilagay ang iyong email",
   "password_placeholder": "Ilagay ang iyong password",
@@ -97,8 +90,7 @@
     "menu": {
       "discuss": "Talakayin",
       "profile": "Profile",
-      "premium": "Premium",
-      "reflect": "Magmuni-muni"
+      "premium": "Premium"
     }
   },
   "profile": {
@@ -123,8 +115,6 @@
   },
   "premium": {
     "banner": {
-      "premium": "Walang limitasyong access",
-      "premium_right": "∞",
       "trial": "Walang limitasyong access",
       "days_left": "{{days}} natitirang mga araw",
       "new": "Mga bagong paksa upang subukan",
@@ -135,7 +125,6 @@
       "title": "Premium",
       "enjoy_your_premium": "Tamasahin ang iyong premium!",
       "manage": "Pamahalaan ang Subscription",
-      "upgrade_trial": "Mayroon kang {{trialDays}} na araw ng Trial Access natitira",
       "reached_limit": "Naabot mo na ang iyong pang-araw-araw na limitasyon.",
       "try_unlimited_1": "Subukan ang ",
       "try_unlimited_2": "walang limitasyong access",
@@ -148,10 +137,8 @@
       "plan_monthly_price": "{{price}}/buwan",
       "plan_yearly_title": "Taunan",
       "plan_yearly_price": "{{price}}/taon",
-      "subscribe": "Simulan na may libreng 7-araw na pagsubok*",
       "terms": "Mga Tuntunin ng Serbisyo",
-      "privacy": "Patakaran sa Privacy",
-      "charged": "* Ikaw ay sisingilin kapag natapos ang pagsubok maliban kung ikaw ay magkansela ng subscription"
+      "privacy": "Patakaran sa Privacy"
     },
     "success": {
       "trial": {
@@ -171,19 +158,10 @@
     "available": "{{number}} bagong pagmumuni-muni ang magagamit",
     "completed": "{{number}} Nakumpleto",
     "start": "Simulan",
-    "explanation": {
-      "button": "Naintindihan",
-      "reason_1": "Mas Maraming Pagmumuni-muni = Mas Mataas na Kalidad ng 'Personalized' na paksa",
-      "reason_2": "Gumagamit kami ng AI, kaya't mas marami kang magmuni-muni at magsulat mas maganda ang magiging app",
-      "reason_3": "Ligtas ang iyong data. Ginagamit lang namin ito para sa pagbuo ng mga tanong",
-      "title": "Bakit mahalagang magmuni-muni at magsulat?"
-    },
     "no_reflection": "Talakayin ang 1 paksa upang makuha ang iyong bagong card ng pagmumuni-muni",
     "finished_writing_title_1": "Tapos na!",
     "finished_writing_title_2": " Ikaw ay isang mahusay na manunulat",
-    "finished_writing_button": "Sige, salamat!",
-    "level_0": "panimula",
-    "level": "antas {{number}}"
+    "finished_writing_button": "Sige, salamat!"
   },
   "update": {
     "title": "I-update",
@@ -207,12 +185,10 @@
   "interview_text": {
     "title_first": "Isulat ang iyong feedback upang makakuha ng ",
     "title_second": "1 buwan ng Premium",
-    "reason_1_title_1": "",
     "reason_1_title_2": "Isulat ang mga sagot",
     "reason_1_title_3": " sa 3 tanong kung ano ang iyong nagustuhan at hindi nagustuhan sa Nemlys",
     "reason_2_title_1": "Makakuha ng ",
     "reason_2_title_2": "1 buwan ng premium",
-    "reason_2_title_3": "",
     "reason_3_title_1": "Ang iyong mga sagot ",
     "reason_3_title_2": "tumutulong sa amin na magdesisyon",
     "reason_3_title_3": " kung ano ang gagawin susunod",
@@ -245,15 +221,10 @@
     }
   },
   "date": {
-    "reminder": {
-      "title": "{{firstName}}, Panahon na para Kumonekta sa Kapareha",
-      "body": "Masaya? Malalim? Malapit? Pumili at Talakayin ang mga paksa nang magkasama"
-    },
     "generating_questions_error": "Paumanhin, hindi magawa ng aming AI ang mga tanong na ito, subukan ang ibang kategorya o paksa",
     "notification": {
       "title_1": "Kumuha ng paalala",
       "title_2": " upang talakayin ang mga tanong sa iyong kapareha",
-      "title_3": "",
       "confirm": "Payagan ang mga abiso"
     },
     "stop_popup": {
@@ -264,8 +235,6 @@
       "confirm": "Oo, itigil ang talakayan",
       "cancel": "Hindi, bumalik"
     },
-    "stop": "Itigil ang date",
-    "start_date": "Simulan ang date",
     "level_title_first": "Pumili ng ",
     "level_title_second": "lalim ",
     "level_title_third": "ng iyong mga tanong",
@@ -278,37 +247,7 @@
     "topic_title_second": "1 paksa ",
     "topic_title_third": "upang talakayin sa kapareha",
     "topic": {
-      "title": "Pumili ng isang paksa",
-      "surprise": "Random",
-      "intimacy": "Mapang-akit",
-      "emotions": "Damdamin",
-      "fun": "Masaya",
-      "worldview": "Pananaw sa mundo",
-      "goals": "Mga layunin",
-      "future": "Hinaharap",
-      "communication": "Komunikasyon",
-      "preferences": "Mga kagustuhan",
-      "appearance": "Hitsura",
-      "travel": "Paglalakbay",
-      "career": "Karera",
-      "expectations": "Inaasahan",
-      "values": "Mga halaga",
-      "gifts": "Mga regalo",
-      "friends": "Mga kaibigan",
-      "childhood": "Pagkabata",
-      "commitment": "Pagsisikap",
-      "past": "Nakaraan",
-      "ex": "Dating kasintahan",
-      "fidelity": "Katapatan",
-      "trust": "Pagtitiwala",
-      "money": "Pera",
-      "conflict": "Konflikto",
-      "social_circle": "Bilog ng lipunan",
-      "love_language": "Wika ng Pag-ibig",
-      "mental_health": "Kalusugan ng isip",
-      "parents": "Mga magulang",
-      "children": "Mga anak",
-      "living_together": "Pamumuhay magkasama"
+      "surprise": "Random"
     },
     "generating_questions_first": "Gumagawa ng mga tanong upang talakayin ",
     "generating_questions_second": "sa kapareha",
@@ -323,14 +262,6 @@
         "choice_2": "Walang bago",
         "choice_1": "Hindi ito nakatulong"
       }
-    },
-    "new_level": {
-      "reached": "naabot mo na",
-      "have": "meron ka na",
-      "title_first": "Tapus na ang Talakayan",
-      "title_second": "kompleto",
-      "alone_title_first": "Ang iyong App Exploration",
-      "home": "Balik sa bahay"
     }
   },
   "welcome": {
@@ -349,7 +280,6 @@
     "partner_name_third": "?",
     "job": {
       "title_first": "Ano ang ",
-      "title_second": "",
       "title_third": "nais mong makuha?",
       "fun": "Masaya at madaling mga tanong para sa mga pag-uusap sa date",
       "hard": "Mga tanong na mahirap naming banggitin",
@@ -440,7 +370,6 @@
   "done": "Tapos na",
   "profile_notification": "Mga Notification",
   "home_menu_answer": "Mga Sagot",
-  "answer_home_title": "Mga Sagot",
   "answer_home_no_questions": "Talakayin ang mga tanong online at tingnan ang iyong mga sagot dito",
   "question_home_answer": "Sagot",
   "question_home_unlock": "Sagot upang i-unlock",
