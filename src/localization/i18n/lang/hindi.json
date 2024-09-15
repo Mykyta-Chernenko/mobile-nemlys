@@ -1,5 +1,4 @@
 {
-  "nemlys": "Nemlys",
   "awesome": "शानदार!",
   "loading": "लोड हो रहा है",
   "continue": "जारी रखें",
@@ -93,7 +92,6 @@
     }
   },
   "home": {
-    "discussed_questions": "चर्चा किए गए विषय",
     "you": "आप",
     "partner": "साथी",
     "menu": {
@@ -143,8 +141,6 @@
       "try_unlimited_2": "अनलिमिटेड एक्सेस के साथ",
       "premium_title": "पूर्ण प्रीमियम प्राप्त करें ",
       "trial_expired": "आपका ट्रायल अनलिमिटेड एक्सेस समाप्त हो गया है",
-      "unlimited_topics_title": "अनलिमिटेड विषय प्राप्त करें",
-      "unlimited_topics_explanation": "अब आपके पास प्रति दिन {{dailyTopics}} विषय हैं",
       "trial_button": "7 दिन मुफ्त में आज़माएं",
       "trial_no_card": "कोई क्रेडिट कार्ड आवश्यक नहीं",
       "choose_plan": "अपनी योजना चुनें",
@@ -268,7 +264,6 @@
       "confirm": "हाँ, चर्चा रोकें",
       "cancel": "नहीं, वापस जाएं"
     },
-    "share": "साझा करें",
     "stop": "डेट रोकें",
     "start_date": "डेट शुरू करें",
     "level_title_first": "गहराई चुनें ",
@@ -327,15 +322,6 @@
         "choice_3": "यह अच्छा था",
         "choice_2": "कुछ नया नहीं",
         "choice_1": "यह बिल्कुल मददगार नहीं था"
-      },
-      "alone": {
-        "title_first": "तो! क्या है ",
-        "title_second": "आपका प्रभाव",
-        "title_third": "?",
-        "choice_4": "कई दिलचस्प प्रश्न",
-        "choice_3": "अच्छे प्रश्न",
-        "choice_2": "कुछ खास नहीं",
-        "choice_1": "मुझे यह पसंद नहीं है"
       }
     },
     "new_level": {
@@ -418,5 +404,54 @@
       "google": "Google के साथ साइन इन करें",
       "apple": "Apple के साथ साइन इन करें"
     }
-  }
+  },
+  "date_mode_choose_mode": "चर्चा का तरीका चुनें",
+  "date_mode_online_title": "ऑनलाइन",
+  "date_mode_online_description": "अपने उत्तर लिखित रूप में साझा करें",
+  "date_mode_in_person_title": "सामने-सामने",
+  "date_mode_in_person_description": "एक-दूसरे के सामने चर्चा करें",
+  "onboarding_invite_title_1": "निमंत्रण भेजें ",
+  "onboarding_invite_title_3": "\nNemlys में शामिल होने के लिए",
+  "onboarding_invite_description": "आपके पास प्रश्नों और इतिहास तक साझा पहुंच होगी",
+  "onboarding_invite_share_code": "अपना निमंत्रण कोड साझा करें",
+  "onboarding_invite_enter_pairing": "जोड़ने का कोड दर्ज करें",
+  "onboarding_invite_copy_success_message": "निमंत्रण पाठ क्लिपबोर्ड पर कॉपी किया गया",
+  "onboarding_invite_share_message": "नमस्ते {{partnerName}}, मैंने अभी Nemlys कपल ऐप इंस्टॉल किया है। यह ऐसे शानदार प्रश्न उत्पन्न करता है जिन पर हम चर्चा कर सकते हैं। आप इस कोड का उपयोग करके मेरे साथ शामिल हो सकते हैं जब आप साइन अप करें: {{inviteCode}}\n",
+  "onboarding_invite_input_title_1": "वह निमंत्रण कोड दर्ज करें जो ",
+  "onboarding_invite_input_title_3": " ने आपके साथ साझा किया",
+  "onboarding_invite_input_invite_code_placeholder": "5-अंकों का कोड दर्ज करें",
+  "onboarding_invite_input_invite_code_wrong": "गलत निमंत्रण कोड। कृपया फिर से प्रयास करें।",
+  "onboarding_invite_input_invite_code_full": "यह जोड़ी पहले से ही पूरी है। कृपया अपने साथी से जांचें।",
+  "onboarding_invite_input_invite_code_error": "एक त्रुटि हुई। कृपया बाद में फिर से प्रयास करें।",
+  "onboarding_invite_input_join_success_message": "आपने सफलतापूर्वक {{partnerName}} में शामिल हो गए हैं",
+  "onboarding_invite_input_join": "जोड़ी में शामिल हों",
+  "settings_invite_invite_partner": "साथी को आमंत्रित करें",
+  "settings_invite_join_partner": "आमंत्रण कोड दर्ज करें",
+  "settings_couple_language": "जोड़े की भाषा",
+  "couple_language_title": "अपने जोड़े की भाषा चुनें",
+  "couple_language_hint": "हम आपके प्रश्नों को उत्पन्न करने के लिए इस भाषा का उपयोग करेंगे",
+  "question_answer_hint": "{{partnerName}} आपका उत्तर देखेगा",
+  "question_answer_write": "अपना उत्तर लिखें...",
+  "question_answer_no_partner": "{{partnerName}} ने अभी तक ऐप में शामिल नहीं हुआ है",
+  "question_answer_remind_partner": "{{partnerName}} को उत्तर देने के लिए याद दिलाएं",
+  "question_answer_invite": "आमंत्रित करें",
+  "remind_no_notification": "{{partnerName}} ने सूचनाएं सक्षम नहीं की हैं",
+  "remind_success": "{{partnerName}} को याद दिला दिया गया है",
+  "done": "हो गया",
+  "profile_notification": "सूचनाएं",
+  "home_menu_answer": "उत्तर",
+  "answer_home_title": "उत्तर",
+  "answer_home_no_questions": "ऑनलाइन प्रश्नों पर चर्चा करें और अपने उत्तर यहाँ देखें",
+  "question_home_answer": "उत्तर दें",
+  "question_home_unlock": "अनलॉक करने के लिए उत्तर दें",
+  "question_home_replies_count": "{{count}} और उत्तर",
+  "load_more": "और लोड करें",
+  "on_date_regenerate": "फिर से उत्पन्न करें",
+  "on_date_answer": "उत्तर दें",
+  "date_discuss": "व्यक्तिगत रूप से चर्चा करें",
+  "date_answer": "ऑनलाइन उत्तर दें",
+  "discussed_questions": "चर्चा की गई प्रश्न",
+  "premium_two": "2 लोगों के लिए",
+  "premium_unlimited_topics_title": "असीमित प्रश्न प्राप्त करें",
+  "premium_unlimited_topics_explanation": "अब आपके पास {{dailyTopics}} प्रश्न प्रति दिन हैं"
 }

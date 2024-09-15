@@ -6,8 +6,8 @@ export const SecondaryButton = ({ buttonStyle, ...props }: ButtonProps) => {
     <Button
       buttonStyle={[
         {
-          borderRadius: 35,
-          height: 72,
+          borderRadius: 40,
+          height: 56,
           backgroundColor: theme.colors.white,
         },
         buttonStyle,

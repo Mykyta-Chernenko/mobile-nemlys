@@ -1,5 +1,4 @@
 {
-  "nemlys": "Nemlys",
   "awesome": "Minunat!",
   "loading": "Încărcare",
   "continue": "Continuare",
@@ -93,7 +92,6 @@
     }
   },
   "home": {
-    "discussed_questions": "subiecte discutate",
     "you": "Tu",
     "partner": "Partener",
     "menu": {
@@ -143,8 +141,6 @@
       "try_unlimited_2": "acces nelimitat",
       "premium_title": "Obțineți Full Premium pentru ",
       "trial_expired": "Accesul tău Trial nelimitat a expirat",
-      "unlimited_topics_title": "Obțineți Subiecte Nelimitate",
-      "unlimited_topics_explanation": "Acum ai {{dailyTopics}} subiect pe zi",
       "trial_button": "Încearcă 7 zile gratuit",
       "trial_no_card": "NU este necesar card de credit",
       "choose_plan": "Alegeți Planul Dvs.",
@@ -268,7 +264,6 @@
       "confirm": "Da, oprește discuția",
       "cancel": "Nu, revino"
     },
-    "share": "Distribuie",
     "stop": "Oprește întâlnirea",
     "start_date": "Începe întâlnirea",
     "level_title_first": "Selectează ",
@@ -327,15 +322,6 @@
         "choice_3": "A fost bine",
         "choice_2": "Nimic nou",
         "choice_1": "Nu a fost deloc util"
-      },
-      "alone": {
-        "title_first": "Așadar! Care este ",
-        "title_second": "impresia ta",
-        "title_third": "?",
-        "choice_4": "Multe întrebări interesante",
-        "choice_3": "Întrebări bune",
-        "choice_2": "Nimic special",
-        "choice_1": "Nu-mi place"
       }
     },
     "new_level": {
@@ -363,7 +349,8 @@
     "partner_name_third": "?",
     "job": {
       "title_first": "Ce ",
-      "title_second": "dorești să obții?",
+      "title_second": "",
+      "title_third": "dorești să obții?",
       "fun": "Întrebări distractive și ușoare pentru întâlniri",
       "hard": "Întrebări pe care ne este greu să le aducem în discuție",
       "issues": "Modalități de a rezolva problemele cu partenerul",
@@ -417,5 +404,54 @@
       "google": "Conectează-te cu Google",
       "apple": "Conectează-te cu Apple"
     }
-  }
+  },
+  "date_mode_choose_mode": "Alege modul de discuție",
+  "date_mode_online_title": "Online",
+  "date_mode_online_description": "Împărtășește-ți răspunsurile în scris",
+  "date_mode_in_person_title": "Față în față",
+  "date_mode_in_person_description": "Discută unul în fața celuilalt",
+  "onboarding_invite_title_1": "Invită ",
+  "onboarding_invite_title_3": "\nsă se alăture lui Nemlys",
+  "onboarding_invite_description": "Veți avea acces comun\na la întrebări și istoric",
+  "onboarding_invite_share_code": "Împărtășește codul tău de invitație",
+  "onboarding_invite_enter_pairing": "Introdu codul de asociere",
+  "onboarding_invite_copy_success_message": "Textul invitației a fost copiat în clipboard",
+  "onboarding_invite_share_message": "Bună {{partnerName}}, tocmai am instalat aplicația pentru cupluri Nemlys. Aceasta generează întrebări interesante pe care le putem discuta. Te poți alătura folosind acest cod când te înscrii: {{inviteCode}}\n",
+  "onboarding_invite_input_title_1": "Introdu codul de invitație pe care ",
+  "onboarding_invite_input_title_3": " ți l-a împărtășit",
+  "onboarding_invite_input_invite_code_placeholder": "Introdu codul de 5 cifre",
+  "onboarding_invite_input_invite_code_wrong": "Codul de invitație este incorect. Te rugăm să încerci din nou.",
+  "onboarding_invite_input_invite_code_full": "Acest cuplu este deja complet. Te rog să verifici cu partenerul tău.",
+  "onboarding_invite_input_invite_code_error": "A apărut o eroare. Te rugăm să încerci din nou mai târziu.",
+  "onboarding_invite_input_join_success_message": "Te-ai alăturat cu succes lui {{partnerName}}",
+  "onboarding_invite_input_join": "Alătură-te cuplului",
+  "settings_invite_invite_partner": "Invită partenerul",
+  "settings_invite_join_partner": "Introdu codul de invitație",
+  "settings_couple_language": "Limba cuplului",
+  "couple_language_title": "Selectează limba cuplului tău",
+  "couple_language_hint": "Vom folosi limba pentru a genera întrebările tale",
+  "question_answer_hint": "{{partnerName}} va vedea răspunsul tău",
+  "question_answer_write": "Scrie răspunsul tău...",
+  "question_answer_no_partner": "{{partnerName}} nu s-a alăturat încă aplicației",
+  "question_answer_remind_partner": "Amintește-i lui {{partnerName}} să răspundă",
+  "question_answer_invite": "Invită",
+  "remind_no_notification": "{{partnerName}} nu a activat notificările",
+  "remind_success": "{{partnerName}} a fost amintit",
+  "done": "Finalizat",
+  "profile_notification": "Notificări",
+  "home_menu_answer": "Răspunsuri",
+  "answer_home_title": "Răspunsuri",
+  "answer_home_no_questions": "Discută întrebări online și verifică răspunsurile tale aici",
+  "question_home_answer": "Răspunde",
+  "question_home_unlock": "Răspunde pentru a debloca",
+  "question_home_replies_count": "{{count}} răspunsuri în plus",
+  "load_more": "Încărcați mai mult",
+  "on_date_regenerate": "Regenerare",
+  "on_date_answer": "Răspundeți",
+  "date_discuss": "Discută față în față",
+  "date_answer": "Răspundeți online",
+  "discussed_questions": "întrebări discutate",
+  "premium_two": "Pentru 2 persoane",
+  "premium_unlimited_topics_title": "Obțineți Întrebări Nelimitate",
+  "premium_unlimited_topics_explanation": "Acum aveți {{dailyTopics}} întrebări pe zi"
 }

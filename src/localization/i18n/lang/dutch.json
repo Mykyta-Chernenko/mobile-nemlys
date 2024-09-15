@@ -1,5 +1,4 @@
 {
-  "nemlys": "Nemlys",
   "awesome": "Geweldig!",
   "loading": "Laden",
   "continue": "Doorgaan",
@@ -93,7 +92,6 @@
     }
   },
   "home": {
-    "discussed_questions": "besproken onderwerpen",
     "you": "U",
     "partner": "Partner",
     "menu": {
@@ -143,8 +141,6 @@
       "try_unlimited_2": "onbeperkte toegang",
       "premium_title": "Krijg volledige Premium voor ",
       "trial_expired": "Uw proefperiode voor Onbeperkte toegang is verstreken",
-      "unlimited_topics_title": "Krijg onbeperkte onderwerpen",
-      "unlimited_topics_explanation": "U heeft nu {{dailyTopics}} onderwerp per dag",
       "trial_button": "Probeer 7 dagen gratis",
       "trial_no_card": "GEEN creditcard vereist",
       "choose_plan": "Kies uw plan",
@@ -268,7 +264,6 @@
       "confirm": "Ja, stop de discussie",
       "cancel": "Nee, ga terug"
     },
-    "share": "Delen",
     "stop": "Stop datum",
     "start_date": "Begin datum",
     "level_title_first": "Selecteer ",
@@ -327,15 +322,6 @@
         "choice_3": "Het was goed",
         "choice_2": "Niets nieuws",
         "choice_1": "Het was helemaal niet behulpzaam"
-      },
-      "alone": {
-        "title_first": "Dus! Wat is ",
-        "title_second": "jouw indruk",
-        "title_third": "?",
-        "choice_4": "Veel interessante vragen",
-        "choice_3": "Goede vragen",
-        "choice_2": "Niets bijzonders",
-        "choice_1": "Ik vind het niet leuk"
       }
     },
     "new_level": {
@@ -418,5 +404,54 @@
       "google": "Aanmelden met Google",
       "apple": "Aanmelden met Apple"
     }
-  }
+  },
+  "date_mode_choose_mode": "Kies de discussie modus",
+  "date_mode_online_title": "Online",
+  "date_mode_online_description": "Deel je antwoorden schriftelijk",
+  "date_mode_in_person_title": "Persoonlijk",
+  "date_mode_in_person_description": "Bespreek het tegenover elkaar",
+  "onboarding_invite_title_1": "Nodig ",
+  "onboarding_invite_title_3": "\nuit om Nemlys te joinen",
+  "onboarding_invite_description": "Je krijgt gedeelde toegang\ntot vragen en geschiedenis",
+  "onboarding_invite_share_code": "Deel je uitnodigingscode",
+  "onboarding_invite_enter_pairing": "Voer de koppelcode in",
+  "onboarding_invite_copy_success_message": "Uitnodigingstekst gekopieerd naar klembord",
+  "onboarding_invite_share_message": "Hoi {{partnerName}}, ik heb zojuist de Nemlys koppelsapp geïnstalleerd. Het genereert leuke vragen die we kunnen bespreken. Je kunt me joinen door deze code te gebruiken wanneer je je aanmeldt: {{inviteCode}}\n",
+  "onboarding_invite_input_title_1": "Voer de uitnodigingscode in die ",
+  "onboarding_invite_input_title_3": " met je heeft gedeeld",
+  "onboarding_invite_input_invite_code_placeholder": "Voer 5-cijferige code in",
+  "onboarding_invite_input_invite_code_wrong": "Onjuiste uitnodigingscode. Probeer het opnieuw.",
+  "onboarding_invite_input_invite_code_full": "Dit koppel is al compleet. Controleer het met je partner.",
+  "onboarding_invite_input_invite_code_error": "Er is een fout opgetreden. Probeer het later opnieuw.",
+  "onboarding_invite_input_join_success_message": "Je bent succesvol bij {{partnerName}} gekomen",
+  "onboarding_invite_input_join": "Word lid van het koppel",
+  "settings_invite_invite_partner": "Nodig partner uit",
+  "settings_invite_join_partner": "Voer uitnodigingscode in",
+  "settings_couple_language": "Taal van het stel",
+  "couple_language_title": "Selecteer de taal van jullie stel",
+  "couple_language_hint": "We gebruiken de taal om jullie vragen te genereren",
+  "question_answer_hint": "{{partnerName}} zal jouw antwoord zien",
+  "question_answer_write": "Schrijf je antwoord...",
+  "question_answer_no_partner": "{{partnerName}} is nog niet bij de app gekomen",
+  "question_answer_remind_partner": "Herinner {{partnerName}} om te antwoorden",
+  "question_answer_invite": "Nodig uit",
+  "remind_no_notification": "{{partnerName}} heeft meldingen niet ingeschakeld",
+  "remind_success": "{{partnerName}} is herinnerd",
+  "done": "Klaar",
+  "profile_notification": "Meldingen",
+  "home_menu_answer": "Antwoorden",
+  "answer_home_title": "Antwoorden",
+  "answer_home_no_questions": "Bespreek vragen online en bekijk hier je antwoorden",
+  "question_home_answer": "Beantwoord",
+  "question_home_unlock": "Beantwoord om te ontgrendelen",
+  "question_home_replies_count": "{{count}} meer antwoorden",
+  "load_more": "Laad meer",
+  "on_date_regenerate": "Regenereren",
+  "on_date_answer": "Beantwoorden",
+  "date_discuss": "Persoonlijk bespreken",
+  "date_answer": "Online beantwoorden",
+  "discussed_questions": "besproken vragen",
+  "premium_two": "Voor 2 personen",
+  "premium_unlimited_topics_title": "Krijg Onbeperkte Vragen",
+  "premium_unlimited_topics_explanation": "Nu heb je {{dailyTopics}} vragen per dag"
 }

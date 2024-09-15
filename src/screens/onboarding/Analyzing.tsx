@@ -9,6 +9,9 @@ import { NativeStackScreenProps } from '@react-navigation/native-stack';
 import { SecondaryButton } from '@app/components/buttons/SecondaryButton';
 import { localAnalytics } from '@app/utils/analytics';
 import { SafeAreaView } from 'react-native-safe-area-context';
+import { getNow, sleep } from '@app/utils/date';
+import { supabase } from '@app/api/initSupabase';
+import { logSupaErrors } from '@app/utils/errors';
 
 export default function ({
   route,
@@ -26,20 +29,16 @@ export default function ({
 
   const authContext = useContext(AuthContext);
 
-  async function delay(duration: number) {
-    return new Promise((resolve) => {
-      setTimeout(resolve, duration);
-    });
-  }
   const [text, setText] = useState(2);
   useEffect(() => {
     const analyze = async () => {
       // skip 1 step, no more reflection
-      // await delay(1000);
+      // await sleep(1000);
       // setText(2);
-      await delay(1000);
+      void finishOnboarding();
+      await sleep(1000);
       setText(3);
-      await delay(1000);
+      await sleep(1000);
       setText(4);
       setShowButton(true);
     };
@@ -68,6 +67,19 @@ export default function ({
       );
       break;
   }
+  const finishOnboarding = async () => {
+    const profileResponse = await supabase
+      .from('user_profile')
+      .update({
+        onboarding_finished: true,
+        updated_at: getNow().toISOString(),
+      })
+      .eq('user_id', authContext.userId!);
+    if (profileResponse.error) {
+      logSupaErrors(profileResponse.error);
+      return;
+    }
+  };
   return (
     <View
       style={{

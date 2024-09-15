@@ -1,5 +1,4 @@
 {
-  "nemlys": "نيمليس",
   "awesome": "رائع!",
   "loading": "جار التحميل",
   "continue": "متابعة",
@@ -93,7 +92,6 @@
     }
   },
   "home": {
-    "discussed_questions": "المواضيع التي تمت مناقشتها",
     "you": "أنت",
     "partner": "الشريك",
     "menu": {
@@ -143,8 +141,6 @@
       "try_unlimited_2": "الوصول غير المحدود",
       "premium_title": "احصل على بريميوم كامل ",
       "trial_expired": "انتهت فترة الوصول التجريبي الخاص بك",
-      "unlimited_topics_title": "احصل على مواضيع غير محدودة",
-      "unlimited_topics_explanation": "لديك الآن {{dailyTopics}} موضوع يوميًا",
       "trial_button": "جرب 7 أيام مجانًا",
       "trial_no_card": "لا يتطلب بطاقة ائتمان",
       "choose_plan": "اختر خطتك",
@@ -268,7 +264,6 @@
       "confirm": "نعم، أوقف النقاش",
       "cancel": "لا، عد"
     },
-    "share": "شارك",
     "stop": "أوقف الموعد",
     "start_date": "ابدأ الموعد",
     "level_title_first": "حدد ",
@@ -327,15 +322,6 @@
         "choice_3": "كانت جيدة",
         "choice_2": "لا شيء جديد",
         "choice_1": "لم تكن مفيدة على الإطلاق"
-      },
-      "alone": {
-        "title_first": "إذًا! ما هو ",
-        "title_second": "انطباعك",
-        "title_third": "؟",
-        "choice_4": "الكثير من الأسئلة المثيرة للاهتمام",
-        "choice_3": "أسئلة جيدة",
-        "choice_2": "لا شيء مميز",
-        "choice_1": "لا أحبها"
       }
     },
     "new_level": {
@@ -418,5 +404,54 @@
       "google": "تسجيل الدخول باستخدام Google",
       "apple": "تسجيل الدخول باستخدام Apple"
     }
-  }
+  },
+  "date_mode_choose_mode": "اختر وضع المناقشة",
+  "date_mode_online_title": "عبر الإنترنت",
+  "date_mode_online_description": "شارك إجاباتك كتابةً",
+  "date_mode_in_person_title": "وجهًا لوجه",
+  "date_mode_in_person_description": "ناقشوا أمام بعضكم البعض",
+  "onboarding_invite_title_1": "دعوة ",
+  "onboarding_invite_title_3": "\nللانضمام إلى نيمليس",
+  "onboarding_invite_description": "ستكون لديك إمكانية الوصول المشترك\nإلى الأسئلة والتاريخ",
+  "onboarding_invite_share_code": "شارك رمز الدعوة الخاص بك",
+  "onboarding_invite_enter_pairing": "أدخل رمز الاقتران",
+  "onboarding_invite_copy_success_message": "تم نسخ نص الدعوة إلى الحافظة",
+  "onboarding_invite_share_message": "مرحبًا {{partnerName}}، لقد قمت للتو بتثبيت تطبيق نيمليس للأزواج. إنه يولد أسئلة رائعة يمكننا مناقشتها. يمكنك الانضمام إلي باستخدام هذا الرمز عند التسجيل: {{inviteCode}}\n",
+  "onboarding_invite_input_title_1": "أدخل رمز الدعوة الذي ",
+  "onboarding_invite_input_title_3": " شاركته معك",
+  "onboarding_invite_input_invite_code_placeholder": "أدخل رمز مكون من 5 أرقام",
+  "onboarding_invite_input_invite_code_wrong": "رمز الدعوة غير صحيح. يرجى المحاولة مرة أخرى.",
+  "onboarding_invite_input_invite_code_full": "هذا الزوج مكتمل بالفعل. يرجى التحقق مع شريكك.",
+  "onboarding_invite_input_invite_code_error": "حدث خطأ. يرجى المحاولة مرة أخرى لاحقًا.",
+  "onboarding_invite_input_join_success_message": "لقد انضممت بنجاح إلى {{partnerName}}",
+  "onboarding_invite_input_join": "انضم إلى الزوج",
+  "settings_invite_invite_partner": "دعوة الشريك",
+  "settings_invite_join_partner": "أدخل رمز الدعوة",
+  "settings_couple_language": "لغة الزوجين",
+  "couple_language_title": "اختر لغة زوجك",
+  "couple_language_hint": "سنستخدم اللغة لإنشاء أسئلتك",
+  "question_answer_hint": "{{partnerName}} سيرى إجابتك",
+  "question_answer_write": "اكتب إجابتك...",
+  "question_answer_no_partner": "{{partnerName}} لم ينضم إلى التطبيق بعد",
+  "question_answer_remind_partner": "ذكر {{partnerName}} بالإجابة",
+  "question_answer_invite": "دعوة",
+  "remind_no_notification": "{{partnerName}} لم يقم بتمكين الإشعارات",
+  "remind_success": "{{partnerName}} تم تذكيره",
+  "done": "تم",
+  "profile_notification": "الإشعارات",
+  "home_menu_answer": "الإجابات",
+  "answer_home_title": "الإجابات",
+  "answer_home_no_questions": "ناقش الأسئلة عبر الإنترنت وتحقق من إجاباتك هنا",
+  "question_home_answer": "إجابة",
+  "question_home_unlock": "أجب لفتح",
+  "question_home_replies_count": "{{count}} ردود أخرى",
+  "load_more": "تحميل المزيد",
+  "on_date_regenerate": "إعادة توليد",
+  "on_date_answer": "إجابة",
+  "date_discuss": "ناقش شخصيًا",
+  "date_answer": "أجب عبر الإنترنت",
+  "discussed_questions": "الأسئلة التي تم مناقشتها",
+  "premium_two": "لشخصين",
+  "premium_unlimited_topics_title": "احصل على أسئلة غير محدودة",
+  "premium_unlimited_topics_explanation": "الآن لديك {{dailyTopics}} أسئلة يوميًا"
 }

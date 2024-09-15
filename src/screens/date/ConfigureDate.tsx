@@ -9,7 +9,6 @@ import { GoBackButton } from '@app/components/buttons/GoBackButton';
 import { Progress } from '@app/components/utils/Progress';
 import ChooseDateTopics from '@app/components/date/ChooseDateTopics';
 import ChooseDateLevel from '@app/components/date/ChooseDateLevel';
-import GeneratingQuestions from '@app/components/date/GeneratingQuestions';
 import { AuthContext } from '@app/provider/AuthProvider';
 import { localAnalytics } from '@app/utils/analytics';
 import { SafeAreaView } from 'react-native-safe-area-context';
@@ -67,7 +66,7 @@ export default function ({
         action: 'GoBackPressed',
         userId: authContext.userId,
       });
-      navigation.navigate('Home', { refreshTimeStamp: new Date().toISOString() });
+      navigation.navigate('DateIsWithPartner', { job });
     } else {
       void localAnalytics().logEvent('ConfigureDateBackPressed', {
         screen: 'ConfigureDate',
@@ -78,6 +77,16 @@ export default function ({
       setCurrentStep(currentStep - 1);
     }
   };
+  function goToGenerating(topic: string, level: number) {
+    navigation.navigate('GeneratingQuestion', {
+      withPartner: route.params.withPartner,
+      job: job,
+      topic,
+      level,
+      reflectionAnswerId: reflectionAnswerId,
+      refreshTimeStamp: new Date().toISOString(),
+    });
+  }
   let activeComponent = <></>;
   switch (currentStep) {
     case 1:
@@ -99,7 +108,7 @@ export default function ({
             if (hasLevels) {
               setCurrentStep(2);
             } else {
-              setCurrentStep(3);
+              goToGenerating(topic, chosenLevel);
             }
           }}
         ></ChooseDateTopics>
@@ -117,32 +126,9 @@ export default function ({
               level,
             });
             setChosenLevel(level);
-            setCurrentStep(3);
+            goToGenerating(chosenTopic, level);
           }}
         ></ChooseDateLevel>
-      );
-      break;
-    case 3:
-      activeComponent = (
-        <GeneratingQuestions
-          withPartner={route.params.withPartner}
-          job={job}
-          topic={chosenTopic}
-          level={chosenLevel}
-          reflectionAnswerId={reflectionAnswerId}
-          onLoaded={() => {
-            void localAnalytics().logEvent('ConfigureDateQuestionGenerated', {
-              screen: 'ConfigureDate',
-              action: 'QuestionGenerated',
-              userId: authContext.userId,
-            });
-            navigation.navigate('OnDate', {
-              job,
-              withPartner: route.params.withPartner,
-              refreshTimeStamp: new Date().toISOString(),
-            });
-          }}
-        ></GeneratingQuestions>
       );
       break;
   }

@@ -5,6 +5,9 @@ export type MainStackParamList = {
   YourName: { fromSettings: boolean };
   PartnerName: { fromSettings: boolean };
   Language: { fromSettings: boolean };
+  CoupleLanguage: { fromSettings: boolean; language: string };
+  OnboardingInviteCode: { fromSettings: boolean };
+  OnboardingInviteCodeInput: { fromSettings: boolean };
   DiscussWay: undefined;
   OnboardingReflectionExplanation: undefined;
   OnboardingReflection: undefined;
@@ -15,20 +18,36 @@ export type MainStackParamList = {
   WriteReflection: { reflectionId: number; question: string; answer: string | undefined };
   FinishedWriting: undefined;
   Profile: { refreshTimeStamp: string | undefined };
+  DateIsWithPartner: { job: JobSlug };
   ConfigureDate: {
     job: JobSlug;
     withPartner: boolean;
     refreshTimeStamp: string | undefined;
   };
   OnDate: {
-    job: JobSlug;
-    withPartner: boolean;
+    id: number;
     refreshTimeStamp: string | undefined;
   };
   OnDateNewLevel: { withPartner: boolean; refreshTimeStamp: string | undefined };
   OnDateNotification: { withPartner: boolean; isOnboarding: boolean };
-  PremiumOffer: { refreshTimeStamp: string | undefined; isOnboarding: boolean };
+  GeneratingQuestion: {
+    withPartner: boolean;
+    topic: string;
+    job: JobSlug;
+    level: number;
+    reflectionAnswerId: number | undefined | null;
+    refreshTimeStamp: string | undefined;
+  };
+  PremiumOffer: {
+    refreshTimeStamp: string | undefined;
+    isOnboarding: boolean;
+    shouldGoBack?: boolean;
+  };
   PremiumSuccess: { state: 'premium_started' | 'trial_started' };
+  QuestionAnswer: { questionId: number; fromDate: boolean };
+  AnswerHome: {
+    refreshTimeStamp: string | undefined;
+  };
 
   InterviewRequest: {
     refreshTimeStamp: string | undefined;
@@ -40,6 +59,7 @@ export type MainStackParamList = {
   DiaryEntry: { id: number };
   DiaryNewEntry: undefined;
   Settings: undefined;
+  Job: undefined;
 };
 
 export type MainNavigationProp = NativeStackScreenProps<MainStackParamList>['navigation'];

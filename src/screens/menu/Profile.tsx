@@ -30,6 +30,7 @@ import Feedback from '../settings/Feedback';
 import { SettingsButton } from './SettingsButton';
 import { PrimaryButton } from '@app/components/buttons/PrimaryButtons';
 import { getNow } from '@app/utils/date';
+import AnswerNoPartnerWarning from '@app/components/answers/AnswerNoPartnerWarning';
 
 export const logout = async () => {
   await supabase.auth.signOut();
@@ -46,23 +47,44 @@ export default function ({
   const [loading, setLoading] = useState(true);
   const [name, setName] = useState('');
   const [partnerName, setPartnerName] = useState('');
+  const [coupleLanguage, setCoupleLanguage] = useState('');
+  const [hasPartner, setHasPartner] = useState(true);
   const languageTitle = getFullLanguageByLocale(i18n.locale);
   const padding = 20;
   const authContext = useContext(AuthContext);
 
   async function getData() {
     setLoading(true);
-    const data: SupabaseAnswer<APIUserProfile | null> = await supabase
+    const profileData: SupabaseAnswer<APIUserProfile | null> = await supabase
       .from('user_profile')
       .select('*')
       .eq('user_id', authContext.userId!)
       .single();
-    if (data.error) {
-      logSupaErrors(data.error);
+    if (profileData.error) {
+      logSupaErrors(profileData.error);
       return;
     }
-    setName(data?.data?.first_name || '');
-    setPartnerName(data?.data?.partner_first_name || '');
+
+    const coupleData = await supabase
+      .from('couple')
+      .select('*')
+      .eq('id', profileData.data!.couple_id)
+      .single();
+    if (coupleData.error) {
+      logSupaErrors(coupleData.error);
+      return;
+    }
+    const hasPartnerData = await supabase.rpc('has_partner');
+
+    if (hasPartnerData.error) {
+      logSupaErrors(hasPartnerData.error);
+      return;
+    }
+
+    setName(profileData?.data?.first_name || '');
+    setPartnerName(profileData?.data?.partner_first_name || '');
+    setCoupleLanguage(coupleData.data.language);
+    setHasPartner(hasPartnerData.data);
     setLoading(false);
   }
 
@@ -126,12 +148,42 @@ export default function ({
     });
     void navigation.navigate('PartnerName', { fromSettings: true });
   };
+
+  const handleInviteCode = () => {
+    void localAnalytics().logEvent('ProfileInviteCodeClicked', {
+      screen: 'Profile',
+      action: 'InviteCodeClicked',
+    });
+    void navigation.navigate('OnboardingInviteCode', { fromSettings: true });
+  };
+
+  const handleInviteCodeInput = () => {
+    void localAnalytics().logEvent('ProfileInviteCodeInputClicked', {
+      screen: 'Profile',
+      action: 'InviteCodeInputClicked',
+    });
+    void navigation.navigate('OnboardingInviteCodeInput', { fromSettings: true });
+  };
   const handleLanguage = () => {
     void localAnalytics().logEvent('ProfileLanguageClicked', {
       screen: 'Profile',
       action: 'LanguageClicked',
     });
     void navigation.navigate('Language', { fromSettings: true });
+  };
+  const handleCoupleLanguage = () => {
+    void localAnalytics().logEvent('ProfileCoupleLanguageClicked', {
+      screen: 'Profile',
+      action: 'CoupleLanguageClicked',
+    });
+    void navigation.navigate('CoupleLanguage', { fromSettings: true, language: coupleLanguage });
+  };
+  const handleNotification = () => {
+    void localAnalytics().logEvent('ProfileNotificationClicked', {
+      screen: 'Profile',
+      action: 'NotificationClicked',
+    });
+    navigation.navigate('OnDateNotification', { withPartner: true, isOnboarding: false });
   };
   const manageSubscription = () => {
     void localAnalytics().logEvent('ProfileSubscriptionClicked', {
@@ -252,6 +304,9 @@ export default function ({
                   padding,
                 }}
               >
+                {!hasPartner && (
+                  <AnswerNoPartnerWarning prefix={'Profile'} partnerName={partnerName} />
+                )}
                 <View style={{ marginTop: 10 }}>
                   <FontText h3>{i18n.t('profile.my_account')}</FontText>
                   <SettingsButton
@@ -264,13 +319,33 @@ export default function ({
                     title={i18n.t('profile.partner_name')}
                     action={() => void handlePartnerName()}
                   ></SettingsButton>
+                  <SettingsButton
+                    data={null}
+                    title={i18n.t('settings_invite_invite_partner', { partnerName })}
+                    action={() => void handleInviteCode()}
+                  ></SettingsButton>
+                  <SettingsButton
+                    data={null}
+                    title={i18n.t('settings_invite_join_partner', { partnerName })}
+                    action={() => void handleInviteCodeInput()}
+                  ></SettingsButton>
                 </View>
                 <View style={{ marginTop: 40 }}>
                   <FontText h3>{i18n.t('profile.settings')}</FontText>
                   <SettingsButton
+                    data={null}
+                    title={i18n.t('profile_notification')}
+                    action={() => void handleNotification()}
+                  ></SettingsButton>
+                  <SettingsButton
                     data={languageTitle}
                     title={i18n.t('profile.language')}
                     action={() => void handleLanguage()}
+                  ></SettingsButton>
+                  <SettingsButton
+                    data={getFullLanguageByLocale(coupleLanguage)}
+                    title={i18n.t('settings_couple_language')}
+                    action={() => void handleCoupleLanguage()}
                   ></SettingsButton>
                   <SettingsButton
                     data={null}
@@ -280,6 +355,10 @@ export default function ({
                 </View>
                 <View style={{ marginTop: 40 }}>
                   <FontText h3>{i18n.t('profile.about')}</FontText>
+                  <Feedback
+                    title={i18n.t('profile.contact')}
+                    placeholder={i18n.t('profile.contact_placeholder')}
+                  ></Feedback>
                   <TouchableOpacity
                     onPress={() => void manageReview()}
                     style={{
@@ -326,10 +405,6 @@ export default function ({
                     title={i18n.t('profile.call')}
                     action={() => void manageCall()}
                   ></SettingsButton>
-                  <Feedback
-                    title={i18n.t('profile.contact')}
-                    placeholder={i18n.t('profile.contact_placeholder')}
-                  ></Feedback>
                   <PrimaryButton
                     buttonStyle={{ marginTop: 40 }}
                     onPress={() => {

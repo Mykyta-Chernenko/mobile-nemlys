@@ -1,5 +1,4 @@
 {
-  "nemlys": "Nemlys",
   "awesome": "Keren!",
   "loading": "Memuat",
   "continue": "Lanjutkan",
@@ -93,7 +92,6 @@
     }
   },
   "home": {
-    "discussed_questions": "topik yang dibahas",
     "you": "Anda",
     "partner": "Pasangan",
     "menu": {
@@ -143,8 +141,6 @@
       "try_unlimited_2": "akses tak terbatas",
       "premium_title": "Dapatkan Premium Lengkap untuk ",
       "trial_expired": "Akses Tak Terbatas Percobaan Anda telah habis",
-      "unlimited_topics_title": "Dapatkan Topik Tak Terbatas",
-      "unlimited_topics_explanation": "Sekarang Anda memiliki {{dailyTopics}} topik per hari",
       "trial_button": "Coba gratis selama 7 hari",
       "trial_no_card": "TANPA Kartu Kredit diperlukan",
       "choose_plan": "Pilih Rencana Anda",
@@ -268,7 +264,6 @@
       "confirm": "Ya, hentikan diskusi",
       "cancel": "Tidak, kembali"
     },
-    "share": "Bagikan",
     "stop": "Hentikan kencan",
     "start_date": "Mulai kencan",
     "level_title_first": "Pilih ",
@@ -327,15 +322,6 @@
         "choice_3": "Bagus",
         "choice_2": "Tidak ada yang baru",
         "choice_1": "Tidak membantu sama sekali"
-      },
-      "alone": {
-        "title_first": "Jadi! Bagaimana ",
-        "title_second": "kesan Anda",
-        "title_third": "?",
-        "choice_4": "Banyak pertanyaan menarik",
-        "choice_3": "Pertanyaan bagus",
-        "choice_2": "Tidak ada yang istimewa",
-        "choice_1": "Saya tidak suka"
       }
     },
     "new_level": {
@@ -418,5 +404,54 @@
       "google": "Masuk dengan Google",
       "apple": "Masuk dengan Apple"
     }
-  }
+  },
+  "date_mode_choose_mode": "Pilih mode diskusi",
+  "date_mode_online_title": "Daring",
+  "date_mode_online_description": "Bagikan jawabanmu secara tertulis",
+  "date_mode_in_person_title": "Tatap muka",
+  "date_mode_in_person_description": "Diskusikan di depan satu sama lain",
+  "onboarding_invite_title_1": "Undang ",
+  "onboarding_invite_title_3": "\nuntuk bergabung dengan Nemlys",
+  "onboarding_invite_description": "Kamu akan memiliki akses bersama\nto pertanyaan dan riwayat",
+  "onboarding_invite_share_code": "Bagikan kode undanganmu",
+  "onboarding_invite_enter_pairing": "Masukkan kode pasangan",
+  "onboarding_invite_copy_success_message": "Teks undangan telah disalin ke clipboard",
+  "onboarding_invite_share_message": "Hai {{partnerName}}, aku baru saja menginstal aplikasi pasangan Nemlys. Ini menghasilkan pertanyaan menarik yang bisa kita diskusikan. Kamu bisa bergabung denganku dengan menggunakan kode ini saat mendaftar: {{inviteCode}}\n",
+  "onboarding_invite_input_title_1": "Masukkan kode undangan yang ",
+  "onboarding_invite_input_title_3": " dibagikan denganmu",
+  "onboarding_invite_input_invite_code_placeholder": "Masukkan kode 5-digit",
+  "onboarding_invite_input_invite_code_wrong": "Kode undangan salah. Silakan coba lagi.",
+  "onboarding_invite_input_invite_code_full": "Pasangan ini sudah lengkap. Silakan periksa dengan pasanganmu.",
+  "onboarding_invite_input_invite_code_error": "Terjadi kesalahan. Silakan coba lagi nanti.",
+  "onboarding_invite_input_join_success_message": "Kamu telah berhasil bergabung dengan {{partnerName}}",
+  "onboarding_invite_input_join": "Bergabung dengan pasangan",
+  "settings_invite_invite_partner": "Undang pasangan",
+  "settings_invite_join_partner": "Masukkan kode undangan",
+  "settings_couple_language": "Bahasa pasangan",
+  "couple_language_title": "Pilih bahasa pasangan Anda",
+  "couple_language_hint": "Kami akan menggunakan bahasa ini untuk menghasilkan pertanyaan Anda",
+  "question_answer_hint": "{{partnerName}} akan melihat jawaban Anda",
+  "question_answer_write": "Tulis jawaban Anda...",
+  "question_answer_no_partner": "{{partnerName}} belum bergabung dengan aplikasi",
+  "question_answer_remind_partner": "Ingatkan {{partnerName}} untuk menjawab",
+  "question_answer_invite": "Undang",
+  "remind_no_notification": "{{partnerName}} belum mengaktifkan notifikasi",
+  "remind_success": "{{partnerName}} telah diingatkan",
+  "done": "Selesai",
+  "profile_notification": "Notifikasi",
+  "home_menu_answer": "Jawaban",
+  "answer_home_title": "Jawaban",
+  "answer_home_no_questions": "Diskusikan pertanyaan secara online dan periksa jawaban Anda di sini",
+  "question_home_answer": "Jawab",
+  "question_home_unlock": "Jawab untuk membuka kunci",
+  "question_home_replies_count": "{{count}} balasan lagi",
+  "load_more": "Muat lebih banyak",
+  "on_date_regenerate": "Regenerasi",
+  "on_date_answer": "Jawab",
+  "date_discuss": "Diskusikan secara langsung",
+  "date_answer": "Jawab secara online",
+  "discussed_questions": "pertanyaan yang dibahas",
+  "premium_two": "Untuk 2 orang",
+  "premium_unlimited_topics_title": "Dapatkan Pertanyaan Tanpa Batas",
+  "premium_unlimited_topics_explanation": "Sekarang Anda memiliki {{dailyTopics}} pertanyaan per hari"
 }

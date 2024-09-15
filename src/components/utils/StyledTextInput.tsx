@@ -16,11 +16,15 @@ const StyledTextInput = React.forwardRef((props: TextInputProps, ref?: Ref<any>)
       style={[
         {
           textAlignVertical: 'top',
-          borderColor: theme.colors.black,
+          borderColor: '#DDDDDD',
           backgroundColor: theme.colors.white,
           borderWidth: 1,
           padding: 10,
+          borderRadius: 12,
           fontFamily: REGULAR_FONT_FAMILY,
+          flex: 1,
+          minHeight: 40,
+          paddingTop: 10,
         },
         style,
       ]}

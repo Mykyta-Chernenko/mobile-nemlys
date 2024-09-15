@@ -25,7 +25,12 @@ export type PremiumDetailsWithRecording = PremiumDetails & {
 };
 export async function getPremiumDetails(userId: string): Promise<PremiumDetails> {
   const [dateResponse, premiumDetailsResponse] = await Promise.all([
-    supabase.from('date').select('id, created_at').order('id').eq('active', false),
+    supabase
+      .from('date')
+      .select('id, created_at')
+      .order('created_at', { ascending: true })
+      .eq('active', false)
+      .eq('created_by', userId),
     supabase.from('user_premium').select('*').eq('user_id', userId).single(),
   ]);
 
@@ -88,6 +93,7 @@ export async function getPremiumDetails(userId: string): Promise<PremiumDetails>
     : undefined;
 
   const totalDateCount = dateCount;
+
   const todayDateCount = dateData
     // revert for having first 5 intro sets without limit
     // .slice(premiumDetails.introduction_sets_count - 1)

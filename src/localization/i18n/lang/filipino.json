@@ -1,5 +1,4 @@
 {
-  "nemlys": "Nemlys",
   "awesome": "Astig!",
   "loading": "Naglo-load",
   "continue": "Magpatuloy",
@@ -93,7 +92,6 @@
     }
   },
   "home": {
-    "discussed_questions": "mga paksa na napag-usapan",
     "you": "Ikaw",
     "partner": "Kapareha",
     "menu": {
@@ -143,8 +141,6 @@
       "try_unlimited_2": "walang limitasyong access",
       "premium_title": "Kunin ang Buong Premium para sa ",
       "trial_expired": "Natapos na ang iyong Trial Unlimited access",
-      "unlimited_topics_title": "Kumuha ng Walang Limitasyong Mga Paksa",
-      "unlimited_topics_explanation": "Ngayon mayroon kang {{dailyTopics}} na paksa bawat araw",
       "trial_button": "Subukan ng libre sa loob ng 7 araw",
       "trial_no_card": "HINDI Kailangan ng Credit Card",
       "choose_plan": "Pumili ng Iyong Plano",
@@ -268,7 +264,6 @@
       "confirm": "Oo, itigil ang talakayan",
       "cancel": "Hindi, bumalik"
     },
-    "share": "Ibahagi",
     "stop": "Itigil ang date",
     "start_date": "Simulan ang date",
     "level_title_first": "Pumili ng ",
@@ -327,15 +322,6 @@
         "choice_3": "Maganda ito",
         "choice_2": "Walang bago",
         "choice_1": "Hindi ito nakatulong"
-      },
-      "alone": {
-        "title_first": "Kaya! Ano ang ",
-        "title_second": "iyong impresyon",
-        "title_third": "?",
-        "choice_4": "Maraming mga kagiliw-giliw na tanong",
-        "choice_3": "Magagandang tanong",
-        "choice_2": "Walang espesyal",
-        "choice_1": "Hindi ko gusto"
       }
     },
     "new_level": {
@@ -418,5 +404,54 @@
       "google": "Mag-sign in gamit ang Google",
       "apple": "Mag-sign in gamit ang Apple"
     }
-  }
+  },
+  "date_mode_choose_mode": "Pumili ng paraan ng talakayan",
+  "date_mode_online_title": "Online",
+  "date_mode_online_description": "Ibahagi ang iyong mga sagot sa pamamagitan ng pagsusulat",
+  "date_mode_in_person_title": "Personal",
+  "date_mode_in_person_description": "Talakayin sa harap ng isa't isa",
+  "onboarding_invite_title_1": "Imbitahan ",
+  "onboarding_invite_title_3": "\nna sumali sa Nemlys",
+  "onboarding_invite_description": "Magkakaroon kayo ng shared access\na sa mga tanong at kasaysayan",
+  "onboarding_invite_share_code": "Ibahagi ang iyong imbitasyon na code",
+  "onboarding_invite_enter_pairing": "Ipasok ang pairing code",
+  "onboarding_invite_copy_success_message": "Naka-copy na ang imbitasyon sa clipboard",
+  "onboarding_invite_share_message": "Hi {{partnerName}}, kakainstall ko lang ng Nemlys couple app. Gumagawa ito ng mga cool na tanong na maaari nating talakayin. Maaari kang sumali sa akin gamit ang code na ito kapag nag-sign up ka: {{inviteCode}}\n",
+  "onboarding_invite_input_title_1": "Ipasok ang imbitasyon na code na ",
+  "onboarding_invite_input_title_3": " ibinahagi sa iyo",
+  "onboarding_invite_input_invite_code_placeholder": "Ipasok ang 5-digit na code",
+  "onboarding_invite_input_invite_code_wrong": "Maling imbitasyon na code. Pakisubukan muli.",
+  "onboarding_invite_input_invite_code_full": "Kumpleto na ang magkapareha na ito. Pakisuri sa iyong partner.",
+  "onboarding_invite_input_invite_code_error": "Nagkaroon ng error. Pakisubukan muli mamaya.",
+  "onboarding_invite_input_join_success_message": "Matagumpay kang sumali kay {{partnerName}}",
+  "onboarding_invite_input_join": "Sumali sa magkapareha",
+  "settings_invite_invite_partner": "Imbitahan ang kapareha",
+  "settings_invite_join_partner": "Ilagay ang code ng imbitasyon",
+  "settings_couple_language": "Wika ng magkapareha",
+  "couple_language_title": "Pumili ng wika ng inyong magkapareha",
+  "couple_language_hint": "Gagamitin namin ang wika upang bumuo ng inyong mga tanong",
+  "question_answer_hint": "Makikita ni {{partnerName}} ang iyong sagot",
+  "question_answer_write": "Isulat ang iyong sagot...",
+  "question_answer_no_partner": "Hindi pa sumali si {{partnerName}} sa app",
+  "question_answer_remind_partner": "Paalalahanan si {{partnerName}} na sumagot",
+  "question_answer_invite": "Imbitahan",
+  "remind_no_notification": "Hindi pinagana ni {{partnerName}} ang mga notification",
+  "remind_success": "Napaalalahanan si {{partnerName}}",
+  "done": "Tapos na",
+  "profile_notification": "Mga Notification",
+  "home_menu_answer": "Mga Sagot",
+  "answer_home_title": "Mga Sagot",
+  "answer_home_no_questions": "Talakayin ang mga tanong online at tingnan ang iyong mga sagot dito",
+  "question_home_answer": "Sagot",
+  "question_home_unlock": "Sagot upang i-unlock",
+  "question_home_replies_count": "{{count}} pang mga sagot",
+  "load_more": "Mag-load ng higit pa",
+  "on_date_regenerate": "Muling likhain",
+  "on_date_answer": "Sagot",
+  "date_discuss": "Talakayin nang personal",
+  "date_answer": "Sagot online",
+  "discussed_questions": "mga tinalakay na tanong",
+  "premium_two": "Para sa 2 tao",
+  "premium_unlimited_topics_title": "Kumuha ng Walang Hanggang Mga Tanong",
+  "premium_unlimited_topics_explanation": "Ngayon ay mayroon kang {{dailyTopics}} na tanong bawat araw"
 }

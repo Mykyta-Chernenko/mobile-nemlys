@@ -7,23 +7,18 @@ import { i18n } from '@app/localization/i18n';
 
 import { AuthContext } from '@app/provider/AuthProvider';
 import { supabase } from '@app/api/initSupabase';
-import { logErrorsWithMessageWithoutAlert, logSupaErrors } from '@app/utils/errors';
-import { JobSlug } from '@app/types/domain';
-import { useNavigation } from '@react-navigation/native';
-import { MainNavigationProp } from '@app/types/navigation';
-import { getNow, sleep } from '@app/utils/date';
+import { logSupaErrors } from '@app/utils/errors';
+import { MainStackParamList } from '@app/types/navigation';
+import { generateQuestions } from '@app/utils/generateQuestions';
+import { NativeStackScreenProps } from '@react-navigation/native-stack';
 
-export default function (props: {
-  withPartner: boolean;
-  topic: string;
-  job: JobSlug;
-  level: number;
-  reflectionAnswerId: number | undefined;
-  onLoaded: () => void;
-}) {
+export default function ({
+  route,
+  navigation,
+}: NativeStackScreenProps<MainStackParamList, 'GeneratingQuestion'>) {
+  const { withPartner, topic, job, level, reflectionAnswerId } = route.params;
   const authContext = useContext(AuthContext);
   const { theme } = useTheme();
-  const navigation = useNavigation<MainNavigationProp>();
 
   const rotateValue = useRef(new Animated.Value(0)).current;
   const imageTransform = [
@@ -60,59 +55,26 @@ export default function (props: {
         logSupaErrors(data.error);
         return;
       }
-      const dateReponse = await supabase
-        .from('date')
-        .insert({
-          couple_id: data.data.couple_id,
-          active: true,
-          job: props.job,
-          topic: props.topic,
-          level: props.level,
-          with_partner: props.withPartner,
-          reflection_answer_id: props.reflectionAnswerId,
-        })
-        .select('id')
-        .single();
-      if (dateReponse.error) {
-        logSupaErrors(dateReponse.error);
-        return;
-      }
-      // if doesn't want to generate questions and call api
+
+      // if don't want to generate questions and call api
       // props.onLoaded();
       // return;
-
-      const dateId = dateReponse.data.id;
-      for (let i = 0; i < 3; i++) {
-        const request = supabase.functions.invoke('generate-question', {
-          body: { date_id: dateId },
-        });
-
-        const [res, _] = await Promise.all([request, sleep(3000)]);
-        if (!res.error) {
-          break;
-        }
-        if (res.error && i === 2) {
-          logErrorsWithMessageWithoutAlert(res.error);
-          alert(i18n.t('date.generating_questions_error'));
-          const dateReponse = await supabase
-            .from('date')
-            .update({
-              updated_at: getNow().toISOString(),
-              active: false,
-            })
-            .eq('id', dateId);
-          if (dateReponse.error) {
-            logSupaErrors(dateReponse.error);
-          }
-          navigation.navigate('Home', { refreshTimeStamp: new Date().toISOString() });
-          return;
-        }
-      }
-
-      props.onLoaded();
+      void generateQuestions(
+        authContext.userId!,
+        data.data.couple_id,
+        job,
+        topic,
+        level,
+        withPartner,
+        reflectionAnswerId,
+        navigation,
+      );
     };
-    void func();
-  }, []);
+    if (route.params.refreshTimeStamp) {
+      console.log(route.params.refreshTimeStamp);
+      void func();
+    }
+  }, [route.params.refreshTimeStamp]);
 
   return (
     <View
@@ -123,6 +85,7 @@ export default function (props: {
         flexDirection: 'column',
         justifyContent: 'space-around',
         alignItems: 'center',
+        padding: 20,
       }}
     >
       <View style={{ width: '100%' }}>

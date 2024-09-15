@@ -1,5 +1,4 @@
 {
-  "nemlys": "Nemlys",
   "awesome": "দারুণ!",
   "loading": "লোড হচ্ছে",
   "continue": "চালিয়ে যান",
@@ -93,7 +92,6 @@
     }
   },
   "home": {
-    "discussed_questions": "আলোচিত বিষয়",
     "you": "আপনি",
     "partner": "সঙ্গী",
     "menu": {
@@ -143,8 +141,6 @@
       "try_unlimited_2": "असीमित पहुँच",
       "premium_title": "পূর্ণ প্রিমিয়াম পান",
       "trial_expired": "আপনার ট্রায়াল অসীম অ্যাক্সেস শেষ হয়ে গেছে",
-      "unlimited_topics_title": "অসীম বিষয় পান",
-      "unlimited_topics_explanation": "এখন আপনার কাছে প্রতিদিন {{dailyTopics}} বিষয় রয়েছে",
       "trial_button": "7 দিন বিনামূল্যে চেষ্টা করুন",
       "trial_no_card": "কোনও ক্রেডিট কার্ডের প্রয়োজন নেই",
       "choose_plan": "আপনার পরিকল্পনা চয়ন করুন",
@@ -268,7 +264,6 @@
       "confirm": "হ্যাঁ, আলোচনা বন্ধ করুন",
       "cancel": "না, ফিরে যান"
     },
-    "share": "শেয়ার করুন",
     "stop": "ডেট বন্ধ করুন",
     "start_date": "ডেট শুরু করুন",
     "level_title_first": "আপনার প্রশ্নের গভীরতা চয়ন করুন",
@@ -327,15 +322,6 @@
         "choice_3": "এটি ভাল ছিল",
         "choice_2": "কিছু নতুন নেই",
         "choice_1": "এটি একেবারেই সহায়ক ছিল না"
-      },
-      "alone": {
-        "title_first": "তাহলে! কী ",
-        "title_second": "আপনার প্রভাব",
-        "title_third": "?",
-        "choice_4": "অনেক আকর্ষণীয় প্রশ্ন",
-        "choice_3": "ভাল প্রশ্ন",
-        "choice_2": "কিছু বিশেষ নয়",
-        "choice_1": "আমার এটা পছন্দ নয়"
       }
     },
     "new_level": {
@@ -418,5 +404,54 @@
       "google": "Google দিয়ে সাইন ইন করুন",
       "apple": "Apple দিয়ে সাইন ইন করুন"
     }
-  }
+  },
+  "date_mode_choose_mode": "আলোচনার মোড নির্বাচন করুন",
+  "date_mode_online_title": "অনলাইন",
+  "date_mode_online_description": "লিখিতভাবে আপনার উত্তর শেয়ার করুন",
+  "date_mode_in_person_title": "সামনে",
+  "date_mode_in_person_description": "একসাথে আলোচনা করুন",
+  "onboarding_invite_title_1": "নিমন্ত্রণ দিন ",
+  "onboarding_invite_title_3": "\nনেমলিসে যোগ দিতে",
+  "onboarding_invite_description": "আপনার কাছে প্রশ্ন এবং ইতিহাসের শেয়ার করা অ্যাক্সেস থাকবে",
+  "onboarding_invite_share_code": "আপনার নিমন্ত্রণ কোড শেয়ার করুন",
+  "onboarding_invite_enter_pairing": "জোড়া কোড প্রবেশ করুন",
+  "onboarding_invite_copy_success_message": "নিমন্ত্রণ টেক্সট ক্লিপবোর্ডে কপি করা হয়েছে",
+  "onboarding_invite_share_message": "হাই {{partnerName}}, আমি সম্প্রতি নেমলিস কাপল অ্যাপটি ইনস্টল করেছি। এটি আমাদের আলোচনা করার জন্য চমৎকার প্রশ্ন তৈরি করে। আপনি সাইন আপ করার সময় এই কোডটি ব্যবহার করে আমার সাথে যোগ দিতে পারেন: {{inviteCode}}\n",
+  "onboarding_invite_input_title_1": "নিমন্ত্রণ কোড প্রবেশ করুন যা ",
+  "onboarding_invite_input_title_3": " আপনার সাথে শেয়ার করেছে",
+  "onboarding_invite_input_invite_code_placeholder": "5-অঙ্কের কোড প্রবেশ করুন",
+  "onboarding_invite_input_invite_code_wrong": "ভুল নিমন্ত্রণ কোড। দয়া করে আবার চেষ্টা করুন।",
+  "onboarding_invite_input_invite_code_full": "এই জুটি ইতিমধ্যে পূর্ণ। দয়া করে আপনার সঙ্গীর সাথে চেক করুন।",
+  "onboarding_invite_input_invite_code_error": "একটি ত্রুটি ঘটেছে। দয়া করে পরে আবার চেষ্টা করুন।",
+  "onboarding_invite_input_join_success_message": "আপনি সফলভাবে {{partnerName}} এর সাথে যোগ দিয়েছেন",
+  "onboarding_invite_input_join": "জুটিতে যোগ দিন",
+  "settings_invite_invite_partner": "সঙ্গীকে আমন্ত্রণ জানান",
+  "settings_invite_join_partner": "আমন্ত্রণ কোড প্রবেশ করুন",
+  "settings_couple_language": "দম্পতির ভাষা",
+  "couple_language_title": "আপনার দম্পতির ভাষা নির্বাচন করুন",
+  "couple_language_hint": "আমরা আপনার প্রশ্ন তৈরি করতে এই ভাষা ব্যবহার করব",
+  "question_answer_hint": "{{partnerName}} আপনার উত্তর দেখবে",
+  "question_answer_write": "আপনার উত্তর লিখুন...",
+  "question_answer_no_partner": "{{partnerName}} এখনও অ্যাপে যোগদান করেনি",
+  "question_answer_remind_partner": "{{partnerName}} কে উত্তর দেওয়ার জন্য মনে করিয়ে দিন",
+  "question_answer_invite": "আমন্ত্রণ জানান",
+  "remind_no_notification": "{{partnerName}} নোটিফিকেশন সক্রিয় করেনি",
+  "remind_success": "{{partnerName}} কে মনে করিয়ে দেওয়া হয়েছে",
+  "done": "সম্পন্ন",
+  "profile_notification": "নোটিফিকেশন",
+  "home_menu_answer": "উত্তর",
+  "answer_home_title": "উত্তর",
+  "answer_home_no_questions": "অনলাইনে প্রশ্ন আলোচনা করুন এবং এখানে আপনার উত্তরগুলি পরীক্ষা করুন",
+  "question_home_answer": "উত্তর দিন",
+  "question_home_unlock": "মুক্ত করতে উত্তর দিন",
+  "question_home_replies_count": "{{count}} টি আরও উত্তর",
+  "load_more": "আরও লোড করুন",
+  "on_date_regenerate": "পুনরায় তৈরি করুন",
+  "on_date_answer": "উত্তর দিন",
+  "date_discuss": "সাক্ষাতে আলোচনা করুন",
+  "date_answer": "অনলাইনে উত্তর দিন",
+  "discussed_questions": "আলোচনা করা প্রশ্ন",
+  "premium_two": "২ জনের জন্য",
+  "premium_unlimited_topics_title": "অসীম প্রশ্ন পান",
+  "premium_unlimited_topics_explanation": "এখন আপনার কাছে প্রতিদিন {{dailyTopics}} প্রশ্ন রয়েছে"
 }

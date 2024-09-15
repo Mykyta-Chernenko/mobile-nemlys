@@ -1,52 +1,63 @@
 import React, { useContext, useEffect, useRef, useState } from 'react';
 import { supabase } from '@app/api/initSupabase';
 import * as StoreReview from 'expo-store-review';
-import { APIDate, APIGeneratedQuestion, SupabaseAnswer } from '@app/types/api';
+import { APIDate, APIGeneratedQuestion } from '@app/types/api';
 import { useTheme, useThemeMode } from '@rneui/themed';
-import { Image, Platform } from 'react-native';
+import { RefreshControl, View } from 'react-native';
 import { logErrorsWithMessage, logSupaErrors } from '@app/utils/errors';
-import { captureScreen } from 'react-native-view-shot';
 import { MainStackParamList } from '@app/types/navigation';
 import { NativeStackScreenProps } from '@react-navigation/native-stack';
-import { View } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { FontText } from '@app/components/utils/FontText';
-import { Loading } from '@app/components/utils/Loading';
 import { i18n } from '@app/localization/i18n';
-import { TouchableOpacity } from 'react-native';
-import Share from '@app/icons/share';
-import Stop from '@app/icons/stop';
 import DateFeedback from '../../components/date/DateFeedback';
 import { localAnalytics } from '@app/utils/analytics';
 import { AuthContext } from '@app/provider/AuthProvider';
-import * as ScreenCapture from 'expo-screen-capture';
-import OnDateStopPopup from '@app/components/date/OnDateStopPopup';
-import * as Sharing from 'expo-sharing';
-import { recreateNotificationList, removeOldNotification } from '@app/utils/notification';
-import * as Notifications from 'expo-notifications';
-import { calculateEveningTimeAfterDays, getNow, sleep } from '@app/utils/date';
-import { GRANTED_NOTIFICATION_STATUS } from '@app/utils/constants';
 import {
-  NOTIFICATION_IDENTIFIERS,
-  NOTIFICATION_SUBTYPE,
-  NOTIFICATION_TYPE,
-} from '@app/types/domain';
-import { getPremiumDetails } from '@app/api/premium';
-import { capitalize } from '@app/utils/strings';
-import { shuffle } from 'lodash';
-import _ from 'lodash';
-import { Progress } from '@app/components/utils/Progress';
-import { SwiperFlatList } from 'react-native-swiper-flatlist';
+  createAfterDateNotifications,
+  createFinishDateNotifications,
+} from '@app/utils/notification';
+import * as Notifications from 'expo-notifications';
+import { getNow } from '@app/utils/date';
+import { GRANTED_NOTIFICATION_STATUS } from '@app/utils/constants';
+
+import { getPremiumDetails, PremiumState } from '@app/api/premium';
+import { getFontSize } from '@app/utils/strings';
 import Card from '@app/components/date/Card';
+import { ScrollView } from 'react-native';
+import { useIsFocused } from '@react-navigation/native';
+import { Loading } from '@app/components/utils/Loading';
+import { SecondaryButton } from '@app/components/buttons/SecondaryButton';
+import { jobs } from '@app/screens/menu/Home';
+import RegenerateIcon from '@app/icons/regenerate';
+import { PrimaryButton } from '@app/components/buttons/PrimaryButtons';
+import { useDatePolling } from '@app/api/getNewActiveDates';
+import { CloseButton } from '@app/components/buttons/CloseButton';
 export default function ({
   route,
   navigation,
 }: NativeStackScreenProps<MainStackParamList, 'OnDate'>) {
+  const { id, refreshTimeStamp } = route.params;
   const { setMode } = useThemeMode();
+
+  const isFirstMount = useRef(true);
   useEffect(() => {
-    const unsubscribeFocus = navigation.addListener('focus', () => setMode('dark'));
-    return unsubscribeFocus;
-  }, [navigation, setMode]);
+    if (!isFirstMount.current && route.params?.refreshTimeStamp) {
+      void onRefresh();
+    }
+  }, [refreshTimeStamp]);
+
+  useEffect(() => {
+    void onRefresh();
+    isFirstMount.current = false;
+  }, []);
+
+  const onRefresh = () => {
+    setMode('dark');
+    setLoading(true);
+    reset();
+    void getData().then(() => setLoading(false));
+  };
 
   const getCurrentUTCSeconds = () => {
     return Math.round(new Date().getTime() / 1000);
@@ -55,293 +66,172 @@ export default function ({
   const { theme } = useTheme();
   const [loading, setLoading] = useState(true);
   const padding = 20;
-  const [width, setWidth] = useState(1);
-  const QUESTION_COUNT = 3;
-  const [spentTimes, setSpentTimes] = useState<number[]>(new Array(QUESTION_COUNT));
+  const QUESTION_COUNT = 1;
   const [questions, setQuestions] = useState<APIGeneratedQuestion[]>([]);
-  const [questionIndex, setQuestionIndex] = useState<number>(0);
   const [startedDiscussionAt, setStartedDiscussionAt] = useState<number>(getCurrentUTCSeconds());
-  const currentQuestion = questions[questionIndex];
   const [currentDate, setCurrentDate] = useState<APIDate | undefined>(undefined);
   const [dateCount, setDateCount] = useState<number>(0);
   const [showFeedback, setShowFeedback] = useState<boolean>(false);
-  const carouselRef = useRef(null) as any;
-  const [isSharing, setIsSharing] = useState(false);
 
-  function restart() {
-    void createFinishDateNotifications();
-    setLoading(true);
-    setSpentTimes(new Array(QUESTION_COUNT));
+  const [premiumState, setPremiumState] = useState<PremiumState>('free');
+  const [dailyDatesLimit, setDailyDatesLimit] = useState(0);
+  const [todayDateCount, setTodayDateCount] = useState(0);
+  const [canStartDate, setCanStartDate] = useState(false);
+  const freeDatesLeft = Math.max(dailyDatesLimit - todayDateCount, 0);
+  const [hasPartner, setHasPartner] = useState(false);
+  const [coupleId, setCoupleId] = useState<null | number>(null);
+
+  function reset() {
+    void createFinishDateNotifications(authContext.userId!);
     setQuestions([]);
-    setQuestionIndex(0);
     setCurrentDate(undefined);
     setShowFeedback(false);
-
-    void localAnalytics().logEvent('OnDateLoaded', {
-      screen: 'OnDate',
-      action: 'loaded',
-      userId: authContext.userId,
-    });
-    setLoading(false);
+    setDateCount(0);
+    setStartedDiscussionAt(getCurrentUTCSeconds());
+    setPremiumState('free');
+    setDailyDatesLimit(0);
+    setTodayDateCount(0);
+    setCanStartDate(false);
+    setHasPartner(false);
   }
+
+  const isPremium = premiumState === 'premium' || premiumState === 'trial';
   const withPartner = currentDate?.with_partner ?? false;
 
-  const dateFields =
-    'id, couple_id, with_partner, active, topic, level, job, created_at, updated_at';
-  async function getData() {
-    setLoading(true);
+  const getData = async () => {
+    try {
+      const dateFields =
+        'id, couple_id, created_by, with_partner, active, topic, level, job, created_at, updated_at, reflection_answer_id';
 
-    const dateCountRes = await supabase
-      .from('date')
-      .select('*', { count: 'exact' })
-      .eq('active', false);
-    if (dateCountRes.error) {
-      logSupaErrors(dateCountRes.error);
-      return;
-    }
-    setDateCount(dateCountRes.count || 0);
-    const dateRes = await supabase.from('date').select(dateFields).eq('active', true).single();
+      const [dateCountRes, dateRes, premiumDetails, hasPartnerRes, userProfileRes] =
+        await Promise.all([
+          supabase
+            .from('date')
+            .select('*', { count: 'exact' })
+            .eq('active', false)
+            .eq('created_by', authContext.userId!),
 
-    if (dateRes.error) {
-      logSupaErrors(dateRes.error);
-      return;
-    }
-    setCurrentDate(dateRes.data);
-    const res = await supabase
-      .from('generated_question')
-      .select('id, date_id, question ,finished, feedback_score, skipped, created_at, updated_at')
-      .eq('date_id', dateRes.data.id)
-      .order('created_at', { ascending: true })
-      .limit(QUESTION_COUNT);
-    if (res.error) {
-      logSupaErrors(res.error);
-      return;
-    }
-    // if doesn't want to generate questions and call api
-    // const res = { data: [] };
-    // res.data = [
-    //   {
-    //     id: 918,
-    //     date_id: dateRes.data.id,
-    //     question: 'question 1',
-    //     finished: false,
-    //     feedback_score: undefined,
-    //     skipped: false,
-    //     created_at: getNow().toISOString(),
-    //     updated_at: getNow().toISOString(),
-    //   },
-    //   {
-    //     id: 917,
-    //     date_id: dateRes.data.id,
-    //     question: 'question 2',
-    //     finished: false,
-    //     feedback_score: undefined,
-    //     skipped: false,
-    //     created_at: getNow().toISOString(),
-    //     updated_at: getNow().toISOString(),
-    //   },
-    //   {
-    //     id: 916,
-    //     date_id: dateRes.data.id,
-    //     question: 'question 3',
-    //     finished: false,
-    //     feedback_score: undefined,
-    //     skipped: false,
-    //     created_at: getNow().toISOString(),
-    //     updated_at: getNow().toISOString(),
-    //   }
-    // ];
+          supabase.from('date').select(dateFields).eq('id', id).single(),
 
-    if (res.data?.length) {
-      setQuestions([...res.data.map((x, i) => ({ ...x, index: i }))]);
-    } else {
-      void localAnalytics().logEvent('DateRegeneratingQuestions', {
-        screen: 'OnDate',
-        action: 'RegeneratingQuestions',
-        userId: authContext.userId,
-      });
-      const res: SupabaseAnswer<APIGeneratedQuestion[] | null> = await supabase.functions.invoke(
-        'generate-question',
-        {
-          body: { date_id: dateRes.data.id },
-        },
-      );
-      if (res.error) {
-        logSupaErrors(res.error);
+          getPremiumDetails(authContext.userId!),
+
+          supabase.rpc('has_partner'),
+          supabase
+            .from('user_profile')
+            .select('couple_id')
+            .eq('user_id', authContext.userId!)
+            .single(),
+        ]);
+
+      if (dateCountRes.error) {
+        logSupaErrors(dateCountRes.error);
         return;
       }
-      setQuestions(res.data ?? []);
-    }
-    void localAnalytics().logEvent('OnDateGetDataCompleted', {
-      screen: 'OnDate',
-      action: 'GetDataCompleted',
-      userId: authContext.userId,
-    });
-    setLoading(false);
-  }
 
-  const isFirstMount = useRef(true);
-  useEffect(() => {
-    if (!isFirstMount.current && route.params?.refreshTimeStamp) {
-      restart();
-      void getData();
-    }
-  }, [route.params?.refreshTimeStamp]);
-  useEffect(() => {
-    restart();
-    void getData();
-    isFirstMount.current = false;
-  }, []);
-  // record if people take screenshots
-  useEffect(() => {
-    // we need media permission on android so skip it
-    if (Platform.OS === 'ios') {
-      const subscription = ScreenCapture.addScreenshotListener(() => {
-        void localAnalytics().logEvent('OnDateScreenshotTaken', {
+      if (dateRes.error || !dateRes.data.active) {
+        void localAnalytics().logEvent('DateIsNoLongerActiveGoHome', {
           screen: 'OnDate',
-          action: 'ScreenshotTaken',
+          action: 'IsNoLongerActiveGoHome',
           userId: authContext.userId,
-          currentQuestion,
         });
-      });
-      return () => subscription.remove();
-    }
-  }, [authContext.userId]);
+        navigation.navigate('Home', {
+          refreshTimeStamp: new Date().toISOString(),
+        });
+        return;
+      }
+      if (userProfileRes.error) {
+        logSupaErrors(userProfileRes.error);
+        return;
+      }
+      setCoupleId(userProfileRes.data.couple_id);
 
-  const shareScreen = async () => {
-    try {
-      const capturedUri = await captureScreen({
-        format: 'png',
-        quality: 1,
+      const questionsRes = await supabase
+        .from('generated_question')
+        .select(
+          `
+        id,
+        date_id,
+        question,
+        finished,
+        feedback_score,
+        skipped,
+        created_at,
+        updated_at
+        `,
+        )
+        .eq('date_id', dateRes.data.id)
+        .order('created_at', { ascending: true })
+        .limit(QUESTION_COUNT);
+
+      if (questionsRes.error) {
+        logSupaErrors(questionsRes.error);
+        return;
+      }
+
+      if (questionsRes.data?.length) {
+        setQuestions([...questionsRes.data.map((x, i) => ({ ...x, index: i }))]);
+      } else {
+        void localAnalytics().logEvent('OnDateHasNoQuestionsGoHome', {
+          screen: 'OnDate',
+          action: 'HasNoQuestionsGoHome',
+          userId: authContext.userId,
+        });
+        const dateUpdateRes = await supabase
+          .from('date')
+          .update({ active: false, updated_at: getNow().toISOString() })
+          .eq('id', dateRes.data.id);
+
+        if (dateUpdateRes.error) {
+          logSupaErrors(dateUpdateRes.error);
+          return;
+        }
+
+        navigation.navigate('Home', {
+          refreshTimeStamp: new Date().toISOString(),
+        });
+        return;
+      }
+
+      void localAnalytics().logEvent('OnDateGetDataCompleted', {
+        screen: 'OnDate',
+        action: 'GetDataCompleted',
+        userId: authContext.userId,
       });
-      await Sharing.shareAsync('file://' + capturedUri, {
-        mimeType: 'image/jpeg',
-      });
-    } catch (e) {
-      logErrorsWithMessage(e, (e?.message as string) || '');
+
+      if (hasPartnerRes.error) {
+        logSupaErrors(hasPartnerRes.error);
+        return;
+      }
+
+      setDateCount(dateCountRes.count || 0);
+      setCurrentDate(dateRes.data);
+      setHasPartner(hasPartnerRes.data);
+      setDailyDatesLimit(premiumDetails.dailyDatesLimit);
+      setTodayDateCount(
+        premiumDetails.todayDateCount + (dateRes.data?.created_by == authContext.userId ? 1 : 0),
+      );
+      setPremiumState(premiumDetails.premiumState);
+    } catch (error) {
+      logErrorsWithMessage(error, 'Error in getData on Date');
     }
   };
 
-  const [showStopPopup, setShowStopPopup] = useState(false);
-  const finishDateIdentifier = NOTIFICATION_IDENTIFIERS.FINISH_DATE + authContext.userId!;
-  async function createFinishDateNotifications() {
-    const notificationOrder = shuffle([
-      NOTIFICATION_SUBTYPE.FINISH_DATE_1,
-      NOTIFICATION_SUBTYPE.FINISH_DATE_2,
-    ]);
-    const trigerSeconds = [30 * 60, 4 * 60 * 60];
-    const notifications = (
-      _.zip(notificationOrder, trigerSeconds) as [NOTIFICATION_SUBTYPE, number][]
-    ).map(([subtype, seconds]) => ({
-      screen: 'Home',
-      title: i18n.t(`notification.finish_date.${subtype}.title`),
-      body: i18n.t(`notification.finish_date.${subtype}.body`),
-      trigger: {
-        seconds,
-        repeats: false,
-      },
-      subtype,
-    }));
-    await recreateNotificationList(
-      authContext.userId!,
-      finishDateIdentifier,
-      [
-        ...notifications,
-        {
-          screen: 'Home',
-          title: i18n.t(`notification.finish_date.${NOTIFICATION_SUBTYPE.FINISH_DATE_1}.title`),
-          body: i18n.t(`notification.finish_date.${NOTIFICATION_SUBTYPE.FINISH_DATE_1}.body`),
-          trigger: {
-            seconds: calculateEveningTimeAfterDays(1),
-            repeats: false,
-          },
-          subtype: NOTIFICATION_SUBTYPE.FINISH_DATE_1,
-        },
-        {
-          screen: 'Home',
-          title: i18n.t(`notification.finish_date.${NOTIFICATION_SUBTYPE.FINISH_DATE_2}.title`),
-          body: i18n.t(`notification.finish_date.${NOTIFICATION_SUBTYPE.FINISH_DATE_2}.body`),
-          trigger: {
-            seconds: calculateEveningTimeAfterDays(7),
-            repeats: false,
-          },
-          subtype: NOTIFICATION_SUBTYPE.FINISH_DATE_2,
-        },
-      ],
-      NOTIFICATION_TYPE.FINISH_DATE,
-      [
-        ...notificationOrder,
-        NOTIFICATION_SUBTYPE.FINISH_DATE_1,
-        NOTIFICATION_SUBTYPE.FINISH_DATE_2,
-      ].join(':'),
-    );
-  }
-  async function createAfterDateNotifications() {
-    const afterDateIdentifier = NOTIFICATION_IDENTIFIERS.DATE + authContext.userId!;
-    void removeOldNotification(finishDateIdentifier);
-    const notificationOrder = shuffle([
-      NOTIFICATION_SUBTYPE.AFTER_DATE_1,
-      NOTIFICATION_SUBTYPE.AFTER_DATE_2,
-      NOTIFICATION_SUBTYPE.AFTER_DATE_3,
-      NOTIFICATION_SUBTYPE.AFTER_DATE_4,
-      NOTIFICATION_SUBTYPE.AFTER_DATE_5,
-    ]);
-    const trigerSeconds = [...Array(10)].map((_, i) => calculateEveningTimeAfterDays(i + 1));
-    const notifications = (
-      _.zip([...notificationOrder, ...notificationOrder], trigerSeconds) as [
-        NOTIFICATION_SUBTYPE,
-        number,
-      ][]
-    ).map(([subtype, seconds]) => ({
-      screen: 'Home',
-      title: i18n.t(`notification.after_date.${subtype}.title`),
-      body: i18n.t(`notification.after_date.${subtype}.body`),
-      trigger: {
-        seconds,
-        repeats: false,
-      },
-      subtype,
-    }));
-    await recreateNotificationList(
-      authContext.userId!,
-      afterDateIdentifier,
-      [
-        ...notifications,
-        {
-          screen: 'Home',
-          title: i18n.t(`notification.after_date.${NOTIFICATION_SUBTYPE.AFTER_DATE_1}.title`),
-          body: i18n.t(`notification.after_date.${NOTIFICATION_SUBTYPE.AFTER_DATE_1}.body`),
-          trigger: {
-            seconds: calculateEveningTimeAfterDays(20),
-            repeats: false,
-          },
-          subtype: NOTIFICATION_SUBTYPE.AFTER_DATE_1,
-        },
-        {
-          screen: 'Home',
-          title: i18n.t(`notification.after_date.${NOTIFICATION_SUBTYPE.AFTER_DATE_1}.title`),
-          body: i18n.t(`notification.after_date.${NOTIFICATION_SUBTYPE.AFTER_DATE_1}.body`),
-          trigger: {
-            seconds: calculateEveningTimeAfterDays(40),
-            repeats: false,
-          },
-          subtype: NOTIFICATION_SUBTYPE.AFTER_DATE_1,
-        },
-      ],
-      NOTIFICATION_TYPE.AFTER_DATE,
-      [
-        ...notificationOrder,
-        ...notificationOrder,
-        NOTIFICATION_SUBTYPE.AFTER_DATE_1,
-        NOTIFICATION_SUBTYPE.AFTER_DATE_2,
-      ].join(':'),
-    );
-  }
-
+  useEffect(() => {
+    setCanStartDate(isPremium || freeDatesLeft > 0);
+  }, [isPremium, freeDatesLeft]);
+  const isFocused = useIsFocused() && !!currentDate && !!coupleId;
+  useDatePolling(
+    hasPartner,
+    currentDate?.id,
+    navigation,
+    authContext.userId!,
+    coupleId || 0,
+    isFocused,
+    currentDate?.created_at,
+  );
   const handleFinishDateButtonFinal = async (feedback: number | undefined) => {
     if (!currentDate) return;
-    // const recordingRes = await recordButtonRef.current?.stopRecording();
-
+    setShowFeedback(false);
     setLoading(true);
 
     const [shouldShowNotificationBanner, _] = await Promise.all([
@@ -366,16 +256,7 @@ export default function ({
       return;
     }
 
-    void createAfterDateNotifications();
-    const { error, count } = await supabase
-      .from('date')
-      .select('*', { count: 'exact' })
-      .eq('active', false)
-      .eq('stopped', false);
-    if (error) {
-      logSupaErrors(error);
-      return;
-    }
+    void createAfterDateNotifications(authContext.userId!);
 
     try {
       const { premiumState, todayDateCount, dailyDatesLimit } = await getPremiumDetails(
@@ -396,7 +277,7 @@ export default function ({
       } else if (shouldShowNotificationBanner) {
         navigation.navigate('OnDateNotification', { withPartner, isOnboarding: false });
       } else {
-        if ((count || 0) === 1 && withPartner) {
+        if ((dateCount || 0) === 0) {
           void localAnalytics().logEvent('NewLevelFirstDateFinished', {
             screen: 'NewLevel',
             action: 'FirstDateFinished',
@@ -421,8 +302,12 @@ export default function ({
   const finishSaveDate = async (feedback: number | undefined) => {
     for (let i = 0; i < questions.length; i++) {
       const q = questions[i];
-      const updateDict = { feedback_score: feedback, seconds_spent: spentTimes[i] || 0 };
-      if (spentTimes[i] > 60) {
+      const timeSpent = getCurrentUTCSeconds() - startedDiscussionAt;
+      const updateDict = {
+        feedback_score: feedback,
+        seconds_spent: timeSpent,
+      };
+      if (timeSpent > 60) {
         void localAnalytics().logEvent('DateFinishedQuestion', {
           screen: 'Date',
           action: 'finished question',
@@ -484,62 +369,54 @@ export default function ({
       return;
     }
   };
-  // const recordButtonRef = useRef<RecordButtonRef>(null);
 
-  // const saveRecording = async (recordUri: string | undefined, secondsSpent: number) => {
-  //   void localAnalytics().logEvent('OnDateRecordingStartTrySavingSummary', {
-  //     screen: 'OnDateRecording',
-  //     action: 'SavedConversationSummary',
-  //     userId: authContext.userId,
-  //     currentDate,
-  //     recordingUri: recordUri,
-  //     secondsSpent,
-  //   });
-  //   if (currentDate && recordUri) {
-  //     try {
-  //       const file = Buffer.from(
-  //         await FileSystem.readAsStringAsync(recordUri, {
-  //           encoding: FileSystem.EncodingType.Base64,
-  //         }),
-  //         'base64',
-  //       );
+  const regenerate = async () => {
+    void localAnalytics().logEvent('OnDateRegenerateClicked', {
+      screen: 'OnDate',
+      action: 'RegenerateClicked',
+      userId: authContext.userId,
+    });
 
-  //       const timestamp = getNow().valueOf().toString();
-  //       const name =
-  //         authContext.userId! +
-  //         '/' +
-  //         timestamp +
-  //         Audio.RecordingOptionsPresets.HIGH_QUALITY.ios.extension;
-  //       const bucket = 'conversation-recordings';
-  //       const res = await supabase.storage.from(bucket).upload(name, file);
-  //       if (res.error) {
-  //         logSupaErrors(res.error);
-  //       }
+    if (canStartDate) {
+      setLoading(true);
+      const dateRes = await supabase
+        .from('date')
+        .update({ active: false, updated_at: getNow().toISOString() })
+        .eq('id', id);
+      if (dateRes.error) {
+        logSupaErrors(dateRes.error);
+        return;
+      }
+      navigation.navigate('GeneratingQuestion', {
+        withPartner: !!currentDate!.with_partner,
+        topic: currentDate!.topic,
+        job: currentDate!.job,
+        level: currentDate!.level,
+        reflectionAnswerId: currentDate!.reflection_answer_id,
+        refreshTimeStamp: new Date().toISOString(),
+      });
+      setLoading(false);
+      return;
+    } else {
+      navigation.navigate('PremiumOffer', {
+        refreshTimeStamp: new Date().toISOString(),
+        isOnboarding: false,
+        shouldGoBack: true,
+      });
+    }
+  };
+  const answer = () => {
+    if (currentDate?.with_partner) return;
+    void localAnalytics().logEvent('OnDateAnswerClicked', {
+      screen: 'OnDate',
+      action: 'AnswerClicked',
+      userId: authContext.userId,
+    });
 
-  //       void supabase.functions
-  //         .invoke('save-conversation', {
-  //           body: {
-  //             dateId: currentDate.id,
-  //             fileUrl: res.data?.path,
-  //             seconds_spent: secondsSpent,
-  //           },
-  //         })
-  //         .then((result) => {
-  //           if (result.error) {
-  //             logErrorsWithMessageWithoutAlert(result.error);
-  //           } else {
-  //             void localAnalytics().logEvent('OnDateRecordingSavedConversationSummary', {
-  //               screen: 'OnDateRecording',
-  //               action: 'SavedConversationSummary',
-  //               userId: authContext.userId,
-  //             });
-  //           }
-  //         });
-  //     } catch (e) {
-  //         logErrorsWithMessage(e, (e?.message as string) || '');
-  //     }
-  //   }
-  // };
+    navigation.navigate('QuestionAnswer', { questionId: questions[0]?.id, fromDate: true });
+  };
+
+  const JobIcon = currentDate?.job ? jobs.find((job) => job.slug === currentDate?.job)?.icon : null;
 
   const [notificationStatus, setNotificationStatus] = useState<string | undefined>(undefined);
   useEffect(() => {
@@ -571,17 +448,15 @@ export default function ({
   };
 
   const handleStopInitiate = () => {
-    const lastQuestion = questionIndex === QUESTION_COUNT - 1;
-    void localAnalytics().logEvent('DateFinishDateStopClicked', {
+    void localAnalytics().logEvent('DateFinishDateCloseClicked', {
       screen: 'Date',
-      action: 'FinishDateStopClicked',
+      action: 'FinishDateCloseClicked',
       userId: authContext.userId,
-      lastQuestion,
     });
-    if (lastQuestion) {
+    if (withPartner && Math.random() < 1 / 5) {
       goToFeedback();
     } else {
-      setShowStopPopup(true);
+      void handleStopConfirm();
     }
   };
   const handleStopConfirm = async () => {
@@ -592,187 +467,14 @@ export default function ({
     });
     await handleFinishDateButtonFinal(undefined);
   };
-  const handleStopCancel = () => {
-    void localAnalytics().logEvent('DateFinishDateStopCancel', {
-      screen: 'Date',
-      action: 'FinishDateStopCancel',
-      userId: authContext.userId,
-    });
-    setShowStopPopup(false);
-  };
-
-  const handleSharePress = async () => {
-    void localAnalytics().logEvent('DateSharePressed', {
-      screen: 'Date',
-      action: 'SharePressed',
-      userId: authContext.userId,
-      currentQuestion,
-    });
-    setIsSharing(true);
-    await sleep(200);
-    await shareScreen();
-    setIsSharing(false);
-  };
-
-  const getFontSize = (index) => {
-    if (questions[index]?.question?.length > 190) {
-      return { h4: true };
-    } else if (questions[index]?.question.length > 35) {
-      return { h2: true };
-    }
-    return { h1: true };
-  };
-  const recordTimeSpent = (index: number) => {
-    const newDiscussionAt = getCurrentUTCSeconds();
-    const alredySpent = spentTimes[index] ?? 0;
-    spentTimes[index] = alredySpent + newDiscussionAt - startedDiscussionAt;
-    setStartedDiscussionAt(newDiscussionAt);
-  };
-
-  const recordGoToPreviousCard = (index: number, swipe = false) => {
-    void localAnalytics().logEvent('DateGetPreviousQuestion', {
-      screen: 'Date',
-      action: 'GetPreviousQuestion',
-      userId: authContext.userId,
-      questionIndex: index,
-      swipe,
-    });
-  };
-  const recordGoToNextCard = (index: number, swipe = false) => {
-    void localAnalytics().logEvent('DateGetNextQuestion', {
-      screen: 'Date',
-      action: 'GetNextQuestion',
-      userId: authContext.userId,
-      questionIndex: index,
-      swipe,
-    });
-  };
-
-  const handleNewIndexButton = (index: number) => {
-    void localAnalytics().logEvent('DateNavigateQuestionsButton', {
-      screen: 'Date',
-      action: 'NavigateQuestionsButtonPressed',
-      userId: authContext.userId,
-      questionNewIndex: index,
-    });
-    carouselRef?.current?.scrollToIndex({
-      index,
-      animated: true,
-    });
-    handleNewIndex(index, false);
-  };
-  const handleNewIndex = (index: number, swipe: boolean) => {
-    if (index > questionIndex) {
-      recordGoToNextCard(questionIndex, swipe);
-    } else if (index < questionIndex) {
-      recordGoToPreviousCard(questionIndex, swipe);
-    } else {
-      return;
-    }
-    setQuestionIndex(index);
-    recordTimeSpent(questionIndex);
-  };
-
-  const LeftComponent = (index: number) =>
-    index === 0 ? (
-      <View style={{ height: 72, width: 72 }}></View>
-    ) : (
-      <TouchableOpacity
-        style={{
-          borderRadius: 40,
-          backgroundColor: theme.colors.grey1,
-          alignItems: 'center',
-          justifyContent: 'center',
-          height: 72,
-          width: 72,
-        }}
-        onPress={() => {
-          handleNewIndexButton(Math.max((carouselRef.current.getCurrentIndex() as number) - 1, 0));
-        }}
-      >
-        <Image
-          resizeMode="contain"
-          style={{ height: 24, width: 24 }}
-          // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
-          source={require('../../../assets/images/arrow_left_black.png')}
-        />
-      </TouchableOpacity>
-    );
-
   const goToFeedback = () => {
-    // await recordButtonRef.current?.stopRecording();
     setShowFeedback(true);
   };
 
-  const RightComponent = (index: number) =>
-    index === (questions?.length ?? 1) - 1 ? (
-      <TouchableOpacity
-        style={{
-          borderRadius: 40,
-          backgroundColor: theme.colors.black,
-          alignItems: 'center',
-          justifyContent: 'center',
-          height: 72,
-          width: 72,
-        }}
-        onPress={() => {
-          void localAnalytics().logEvent('DateFinishDateCheckMarkClicked', {
-            screen: 'Date',
-            action: 'FinishDateCheckmarkPressed',
-            userId: authContext.userId,
-          });
-          void goToFeedback();
-        }}
-      >
-        <Image
-          resizeMode="contain"
-          style={{ height: 24, width: 24 }}
-          // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
-          source={require('../../../assets/images/checkmark_white.png')}
-        />
-      </TouchableOpacity>
-    ) : (
-      <TouchableOpacity
-        style={{
-          borderRadius: 40,
-          backgroundColor: theme.colors.grey1,
-          alignItems: 'center',
-          justifyContent: 'center',
-          height: 72,
-          width: 72,
-        }}
-        onPress={() => {
-          handleNewIndexButton(
-            Math.min((carouselRef.current.getCurrentIndex() as number) + 1, QUESTION_COUNT - 1),
-          );
-        }}
-      >
-        <Image
-          resizeMode="contain"
-          style={{ height: 24, width: 24 }}
-          // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
-          source={require('../../../assets/images/arrow_right_black.png')}
-        />
-      </TouchableOpacity>
-    );
-
-  return loading || !currentQuestion ? (
+  return loading ? (
     <Loading></Loading>
   ) : showFeedback ? (
     <DateFeedback
-      withPartner={withPartner}
-      onPressBack={() => {
-        void localAnalytics().logEvent('DateFeedbackGoBackPressed', {
-          screen: 'DateFeedback',
-          action: 'DateFeedback go back pressed',
-          userId: authContext.userId,
-        });
-        setShowFeedback(false);
-        setTimeout(() => {
-          setQuestionIndex(2);
-          carouselRef?.current?.scrollToIndex({ index: 2, animated: false });
-        }, 0);
-      }}
       onPressForward={(feedbackScore: number) => {
         void localAnalytics().logEvent('DateFeedbackChoicePressed', {
           screen: 'DateFeedback',
@@ -789,193 +491,130 @@ export default function ({
         flexGrow: 1,
         backgroundColor: theme.colors.black,
       }}
-      onLayout={(event) => {
-        const { width } = event.nativeEvent.layout;
-        setWidth(width - padding * 2);
-      }}
     >
       <SafeAreaView style={{ flexGrow: 1, alignItems: 'center' }}>
-        <View
-          style={{
-            alignItems: 'center',
-            marginTop: '5%',
+        <ScrollView
+          contentContainerStyle={{
+            flexGrow: 1,
           }}
+          refreshControl={<RefreshControl refreshing={loading} onRefresh={onRefresh} />}
         >
-          <FontText h3 style={{ color: theme.colors.white }}>
-            {i18n.t('date.discuss')}
-          </FontText>
-
-          <View style={{ flexDirection: 'row' }}>
-            {isSharing ? (
-              <View
-                style={{
-                  marginTop: 20,
-                  marginHorizontal: 5,
-                }}
-              >
-                <View
-                  style={{
-                    flexDirection: 'row',
-                    backgroundColor: 'rgba(255,255,255,0.1)',
-                    padding: 7,
-                    paddingHorizontal: 12,
-                    borderRadius: 40,
-                    alignItems: 'center',
-                  }}
-                >
-                  <View style={{ marginLeft: 10, padding: 2.5 }}>
-                    <FontText style={{ color: theme.colors.white, fontSize: 18 }}>
-                      {capitalize(currentDate?.job ?? '')}, {currentDate?.topic ?? ''},{' '}
+          <View
+            style={{
+              alignItems: 'center',
+              marginTop: '5%',
+            }}
+          >
+            <View
+              style={{
+                flexDirection: 'row',
+                justifyContent: 'space-between',
+                alignItems: 'flex-start',
+                paddingHorizontal: 20,
+                flexGrow: 1,
+                width: '100%',
+              }}
+            >
+              <View style={{ flexDirection: 'column', width: '100%' }}>
+                <FontText h3 style={{ color: theme.colors.white, textAlign: 'center' }}>
+                  {withPartner ? i18n.t('date_discuss') : i18n.t('date_answer')}
+                </FontText>
+                {JobIcon && (
+                  <View
+                    style={{
+                      flexDirection: 'row',
+                      alignItems: 'center',
+                      justifyContent: 'center',
+                      marginVertical: 8,
+                    }}
+                  >
+                    <JobIcon width={24} height={24} />
+                    <FontText style={{ color: '#87778D', marginLeft: 2, fontSize: 13 }}>
+                      {currentDate?.topic === 'General'
+                        ? i18n.t('date.topic.surprise')
+                        : currentDate?.topic?.slice(0, 25)}
+                      {currentDate?.topic && ', '}
                       {{
                         1: i18n.t('date.level.light'),
                         2: i18n.t('date.level.normal'),
                         3: i18n.t('date.level.deep'),
-                      }[currentDate?.level || 1] ?? 'Light'}
+                      }[currentDate?.level || 1] ?? i18n.t('date.level.normal')}
                     </FontText>
                   </View>
-                </View>
-              </View>
-            ) : (
-              <>
-                <TouchableOpacity
-                  onPress={() => void handleSharePress()}
-                  style={{
-                    marginTop: 20,
-                    marginHorizontal: 5,
-                  }}
-                >
-                  <View
-                    style={{
-                      flexDirection: 'row',
-                      backgroundColor: 'rgba(255,255,255,0.1)',
-                      padding: 7,
-                      paddingHorizontal: 12,
-                      borderRadius: 40,
-                      alignItems: 'center',
-                    }}
-                  >
-                    <Share color={theme.colors.grey2}></Share>
-                    <View style={{ marginLeft: 5 }}>
-                      <FontText style={{ color: theme.colors.grey2, fontSize: 18 }}>
-                        {i18n.t('date.share')}
-                      </FontText>
-                    </View>
-                  </View>
-                </TouchableOpacity>
-                {currentDate && showStopPopup && (
-                  <OnDateStopPopup
-                    dateId={currentDate.id}
-                    onClose={handleStopCancel}
-                    onConfirm={() => void handleStopConfirm()}
-                  ></OnDateStopPopup>
                 )}
-                <TouchableOpacity
-                  onPress={() => void handleStopInitiate()}
-                  style={{
-                    marginTop: 20,
-                    marginHorizontal: 5,
-                  }}
-                >
+              </View>
+              <View style={{ position: 'absolute', right: 10 }}>
+                <CloseButton onPress={handleStopInitiate} theme="black"></CloseButton>
+              </View>
+            </View>
+          </View>
+          <View
+            style={{
+              flexGrow: 1,
+              width: '100%',
+            }}
+          >
+            <Card animated={false}>
+              <View
+                style={{
+                  flex: 1,
+                  flexDirection: 'column',
+                  justifyContent: 'space-between',
+                  alignItems: 'center',
+                  padding,
+                  paddingVertical: padding * 2,
+                  width: '100%',
+                }}
+              >
+                {!isPremium ? (
                   <View
                     style={{
-                      flexDirection: 'row',
-                      backgroundColor: 'rgba(255,255,255,0.1)',
-                      padding: 7,
-                      paddingHorizontal: 12,
+                      backgroundColor: theme.colors.grey0,
+                      padding: 10,
+                      paddingHorizontal: 15,
                       borderRadius: 40,
-                      alignItems: 'center',
+                      marginBottom: 10,
                     }}
                   >
-                    <Stop color={theme.colors.grey2}></Stop>
-                    <View style={{ marginLeft: 5 }}>
-                      <FontText style={{ color: theme.colors.grey2, fontSize: 18 }}>
-                        {i18n.t('date.stop')}
-                      </FontText>
-                    </View>
+                    <FontText>
+                      {i18n.t('premium.banner.topics_left', {
+                        total: dailyDatesLimit,
+                        left: freeDatesLeft,
+                      })}
+                    </FontText>
                   </View>
-                </TouchableOpacity>
-              </>
-            )}
-          </View>
-        </View>
-        <View
-          style={{
-            flexGrow: 1,
-            width: '100%',
-          }}
-        >
-          <SwiperFlatList
-            ref={carouselRef}
-            index={0}
-            data={questions}
-            // eslint-disable-next-line @typescript-eslint/ban-ts-comment
-            // @ts-ignore
-            onMomentumScrollEnd={({ index }) => {
-              if (typeof index != 'number') return;
-              handleNewIndex(index, true);
-            }}
-            renderItem={({ item }) => (
-              <Card animated={false}>
+                ) : (
+                  <View></View>
+                )}
+                <FontText {...getFontSize(questions[0]?.question ?? '')}>
+                  {questions[0]?.question}
+                </FontText>
                 <View
                   style={{
-                    width: width,
-                    flex: 1,
-                    flexDirection: 'column',
-                    justifyContent: 'space-between',
-                    alignItems: 'center',
-                    padding,
-                    paddingVertical: padding * 2,
+                    marginTop: 10,
+                    marginHorizontal: -padding,
+                    width: '100%',
                   }}
                 >
-                  <Progress
-                    theme="dark"
-                    current={(item.index as number) + 1}
-                    all={QUESTION_COUNT}
-                  ></Progress>
-
-                  {isSharing && (
-                    <View
-                      style={{
-                        position: 'absolute',
-                        flexDirection: 'row',
-                        alignItems: 'center',
-                        justifyContent: 'center',
-                        opacity: 1,
-                        marginTop: 70,
-                      }}
-                    >
-                      <Image
-                        source={require('../../../assets/images/app_share_icon.png')}
-                        style={{ height: 32, width: 32 }}
-                      ></Image>
-                      <FontText
-                        style={{
-                          fontSize: 24,
-                          color: theme.colors.primary,
-                          marginTop: 5,
-                          marginLeft: 5,
-                        }}
-                      >
-                        {i18n.t('nemlys')}
-                      </FontText>
-                    </View>
-                  )}
-                  <FontText {...getFontSize(item.index)}>{item.question}</FontText>
-                  <View
-                    style={{
-                      flexDirection: 'row',
-                      justifyContent: 'space-between',
-                      width: '100%',
-                    }}
+                  <SecondaryButton
+                    buttonStyle={{ backgroundColor: theme.colors.grey1 }}
+                    onPress={() => void regenerate()}
                   >
-                    {LeftComponent(item.index as number)}
-                    {RightComponent(item.index as number)}
-                  </View>
+                    <RegenerateIcon></RegenerateIcon>
+                    <FontText h4>{i18n.t('on_date_regenerate')}</FontText>
+                  </SecondaryButton>
+                  {!withPartner && (
+                    <PrimaryButton
+                      buttonStyle={{ marginTop: 10 }}
+                      onPress={() => void answer()}
+                      title={i18n.t('on_date_answer')}
+                    ></PrimaryButton>
+                  )}
                 </View>
-              </Card>
-            )}
-          />
-        </View>
+              </View>
+            </Card>
+          </View>
+        </ScrollView>
       </SafeAreaView>
     </View>
   );

@@ -83,7 +83,7 @@ export default function ({
       userId: authContext.userId,
     });
     if (isOnboarding) {
-      navigation.navigate('DiscussWay');
+      navigation.navigate('OnboardingInviteCode', { fromSettings: false });
     } else {
       navigation.navigate('Home', {
         refreshTimeStamp: new Date().toISOString(),

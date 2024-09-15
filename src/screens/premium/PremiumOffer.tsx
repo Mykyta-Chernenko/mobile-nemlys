@@ -74,8 +74,8 @@ export default function ({
   const getData = async () => {
     setLoading(true);
     setButtonDisabled(false);
-    setSelectedPlan('Annual');
-    handleToggle('Annual');
+    setSelectedPlan('Monthly');
+    handleToggle('Monthly');
     let currentPremiumState: CurrentPremiumState = 'daily';
 
     try {
@@ -221,8 +221,8 @@ export default function ({
     }
   };
 
-  const monthlySubscriptionId = 'nemlys.subscription.monthly';
-  const yearlySubscriptionId = 'nemlys.subscription.yearly';
+  const monthlySubscriptionId = 'nemlys.subscription.monthly_no_trial';
+  const yearlySubscriptionId = 'nemlys.subscription.yearly_no_trial';
   const [monthlyPrice, setMonthlyPrice] = useState('');
   const [yearlyPrice, setYearlyPrice] = useState('');
 
@@ -240,13 +240,13 @@ export default function ({
         }
         const handelPurchase = async (purchase: RNIap.Purchase) => {
           try {
+            const receipt = purchase.transactionReceipt;
             localAnalytics().logEvent('PremiumOfferSuccessfulPurchaseReceived', {
+              receipt,
               screen: 'PremiumOffer',
               action: 'SuccessfulPurchaseReceived',
               userId: authContext.userId,
-              purchase,
             });
-            const receipt = purchase.transactionReceipt;
             if (receipt) {
               try {
                 if (Platform.OS === 'android') {
@@ -488,6 +488,10 @@ export default function ({
       action: 'ClosePressed',
       userId: authContext.userId,
     });
+    if (route.params.shouldGoBack) {
+      navigation.goBack();
+      return;
+    }
     const showInterview =
       !route?.params?.isOnboarding &&
       (currentPremiumState === 'trial_expired' ||
@@ -511,7 +515,7 @@ export default function ({
   };
 
   type Plan = 'Monthly' | 'Annual';
-  const [selectedPlan, setSelectedPlan] = useState<Plan>('Annual');
+  const [selectedPlan, setSelectedPlan] = useState<Plan>('Monthly');
   const [containerWidth, setContainerWidth] = useState(0);
   const animateValue = useRef(new Animated.Value(selectedPlan === 'Annual' ? 0 : 1)).current;
 
@@ -554,7 +558,7 @@ export default function ({
   }) as unknown as string;
 
   return loading || productLoading ? (
-    <Loading light></Loading>
+    <Loading></Loading>
   ) : (
     <View
       style={{
@@ -620,6 +624,18 @@ export default function ({
           </View>
           <View>
             <View style={{ alignItems: 'center' }}>
+              {currentPremiumState !== 'premium' && (
+                <FontText
+                  style={{
+                    color: theme.colors.grey3,
+                    textAlign: 'center',
+                    marginBottom: 15,
+                    width: '100%',
+                  }}
+                >
+                  {i18n.t('premium_two')}
+                </FontText>
+              )}
               <FontText
                 h1
                 style={{
@@ -677,9 +693,9 @@ export default function ({
                       );
                     })}
                   </View>
-                  <FontText h4>{i18n.t('premium.offer.unlimited_topics_title')}</FontText>
+                  <FontText h4>{i18n.t('premium_unlimited_topics_title')}</FontText>
                   <FontText style={{ color: theme.colors.grey5, marginTop: 5 }}>
-                    {i18n.t('premium.offer.unlimited_topics_explanation', { dailyTopics })}
+                    {i18n.t('premium_unlimited_topics_explanation', { dailyTopics })}
                   </FontText>
                 </View>
               )}
@@ -798,7 +814,7 @@ export default function ({
                       containerStyle={{ marginTop: '5%' }}
                       buttonStyle={{ width: '100%' }}
                       onPress={() => void handleButtonPress()}
-                      title={i18n.t('premium.offer.subscribe')}
+                      title={i18n.t('continue')}
                     ></SecondaryButton>
                     <View
                       style={{
@@ -826,17 +842,6 @@ export default function ({
                           {i18n.t('premium.offer.privacy')}
                         </FontText>
                       </TouchableOpacity>
-                    </View>
-                    <View
-                      style={{
-                        marginTop: 12,
-                        flexDirection: 'row',
-                        justifyContent: 'center',
-                      }}
-                    >
-                      <FontText style={{ fontSize: 10, color: theme.colors.grey5 }}>
-                        {i18n.t('premium.offer.charged')}
-                      </FontText>
                     </View>
                   </>
                 )}

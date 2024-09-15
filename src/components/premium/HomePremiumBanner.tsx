@@ -47,11 +47,7 @@ const HomePremiumBanner = React.forwardRef<HomePremiumBannerRef, Props>((props, 
     if (canStartDate) {
       // we schedule notification before the first date happens, so we clear it out here
       void removeOldNotification(NOTIFICATION_IDENTIFIERS.PRE_DATE + authContext.userId!);
-      navigation.navigate('ConfigureDate', {
-        job,
-        withPartner: true,
-        refreshTimeStamp: new Date().toISOString(),
-      });
+      navigation.navigate('DateIsWithPartner', { job });
     } else {
       navigation.navigate('PremiumOffer', {
         refreshTimeStamp: new Date().toISOString(),

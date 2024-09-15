@@ -1,5 +1,6 @@
 import React, { useContext, useEffect, useState } from 'react';
 import {
+  DimensionValue,
   ImageBackground,
   KeyboardAvoidingView,
   ScrollView,
@@ -16,7 +17,6 @@ import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { useNavigation } from '@react-navigation/native';
 import StyledTextInput from '../utils/StyledTextInput';
 import LockGrey from '../../icons/lock_grey';
-import Wand from '../../icons/wand';
 import { logSupaErrors } from '@app/utils/errors';
 import { supabase } from '@app/api/initSupabase';
 import { localAnalytics } from '@app/utils/analytics';
@@ -240,7 +240,7 @@ export default function ({
                           backgroundColor: progressColor,
                           height: 16,
                           borderRadius: 20,
-                          width: progress.toString() + '%',
+                          width: (progress.toString() + '%') as DimensionValue,
                         }}
                       ></View>
                     </View>
@@ -261,27 +261,6 @@ export default function ({
                         {i18n.t('onboarding.reflection.perfect')}
                       </FontText>
                     </View>
-                  </View>
-                </View>
-                <View style={{ marginTop: '5%' }}>
-                  <View
-                    style={{
-                      flexDirection: 'row',
-                      alignItems: 'center',
-                      justifyContent: 'center',
-                      backgroundColor: theme.colors.grey2,
-                      padding: 20,
-                      paddingHorizontal: 30,
-                      borderRadius: 16,
-                    }}
-                  >
-                    <Wand></Wand>
-                    <View>
-                      <FontText style={{ marginLeft: 5 }}>
-                        {i18n.t('onboarding.reflection.explanation')}
-                      </FontText>
-                    </View>
-                    <View></View>
                   </View>
                 </View>
               </View>

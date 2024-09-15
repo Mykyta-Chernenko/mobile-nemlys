@@ -17,5 +17,5 @@ export function momentToDate(m: moment.Moment): Date {
 }
 
 export function sleep(time: number) {
-  return new Promise((resolve) => setTimeout(() => resolve(1), time));
+  return new Promise((resolve) => setTimeout(resolve, time));
 }

@@ -56,7 +56,7 @@ export default function ({ route, navigation }: NativeStackScreenProps<MainStack
       job: chosen || other,
       userId: authContext.userId,
     });
-    navigation.navigate('DiscussWay');
+    // navigation.navigate('DiscussWay');
   };
   return (
     <ImageBackground

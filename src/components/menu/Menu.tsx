@@ -10,15 +10,14 @@ import { useNavigation, useRoute } from '@react-navigation/native';
 import { MainNavigationProp } from '@app/types/navigation';
 import QuestionTriangel from '@app/icons/question_triangle';
 import Story from '@app/icons/story';
+import StorySelected from '@app/icons/story_selected';
 import Profile from '@app/icons/profile';
 import Premium from '@app/icons/premium';
-import StorySelected from '@app/icons/story_selected';
-import StoryWithWarning from '@app/icons/story_with_warning';
 import QuestionTriangelSelected from '@app/icons/question_triangle_selected';
 import ProfileSelected from '@app/icons/profile_selected';
 import { Loading } from '../utils/Loading';
 
-export default function ({ reflectionWarning }: { reflectionWarning?: boolean }) {
+export default function () {
   const { theme } = useTheme();
   const [loading, setLoading] = useState(true);
   const authContext = useContext(AuthContext);
@@ -27,7 +26,7 @@ export default function ({ reflectionWarning }: { reflectionWarning?: boolean })
 
   // Determine which page is currently active based on the route name
   const isHomeActive = route.name === 'Home';
-  const isReflectionActive = route.name === 'ReflectionHome';
+  const isAnswerActive = route.name === 'AnswerHome';
   const isProfileActive = route.name === 'Profile';
   const [showPremium, setShowPremium] = useState(false);
   useEffect(() => {
@@ -87,30 +86,26 @@ export default function ({ reflectionWarning }: { reflectionWarning?: boolean })
               alignItems: 'center',
             }}
             onPress={() => {
-              void localAnalytics().logEvent('MenuReflectClicked', {
+              void localAnalytics().logEvent('MenuAnswerClicked', {
                 screen: 'Menu',
-                action: 'ReflectClicked',
+                action: 'AnswerClicked',
                 userId: authContext.userId,
               });
-              navigation.navigate('ReflectionHome', {
-                refreshTimeStamp: new Date().toISOString(),
-              });
+              navigation.navigate('AnswerHome', { refreshTimeStamp: new Date().toISOString() });
             }}
           >
-            {isReflectionActive ? (
+            {isAnswerActive ? (
               <StorySelected height={32} width={32} />
-            ) : reflectionWarning ? (
-              <StoryWithWarning height={32} width={32} />
             ) : (
               <Story height={32} width={32} />
             )}
             <FontText
               style={{
                 marginTop: 5,
-                color: isReflectionActive ? theme.colors.black : theme.colors.grey3,
+                color: isAnswerActive ? theme.colors.black : theme.colors.grey3,
               }}
             >
-              {i18n.t('home.menu.reflect')}
+              {i18n.t('home_menu_answer')}
             </FontText>
           </TouchableOpacity>
           <TouchableOpacity

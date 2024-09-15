@@ -53,7 +53,7 @@ export default function ({
                   action: 'Go back pressed',
                   userId: authContext.userId,
                 });
-                navigation.navigate('DiscussWay');
+                // navigation.navigate('DiscussWay');
               }}
             ></GoBackButton>
           </View>

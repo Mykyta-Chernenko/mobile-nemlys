@@ -12,10 +12,8 @@ export class ApiEntry {
 }
 
 export class APICouple extends ApiEntry {
-  invitation_code: string;
+  invite_code: string;
 }
-
-export type InsertAPICouple = Omit<APICouple, keyof ApiEntry>;
 
 export class APIUserProfile extends ApiEntry {
   first_name: string;
@@ -27,8 +25,11 @@ export class APIUserProfile extends ApiEntry {
   user_id: string;
   couple_id: number;
 }
-
-export type InsertAPIUserProfile = Omit<APIUserProfile, keyof ApiEntry>;
+export class APIQuestionReply extends ApiEntry {
+  text: string;
+  user_id: string;
+  question_id: number;
+}
 
 export class APIDiary extends ApiEntry {
   user_id: string;
@@ -49,6 +50,8 @@ export class APIDate extends ApiEntry {
   level: number;
   active: boolean;
   with_partner: boolean | null;
+  reflection_answer_id: number | null;
+  created_by: string;
 }
 
 export type InsertAPIDate = Omit<APIDate, keyof ApiEntry>;

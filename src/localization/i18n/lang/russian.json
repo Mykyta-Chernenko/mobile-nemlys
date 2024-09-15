@@ -1,5 +1,4 @@
 {
-  "nemlys": "Nemlys",
   "awesome": "Отлично!",
   "loading": "Загрузка",
   "continue": "Продолжить",
@@ -93,7 +92,6 @@
     }
   },
   "home": {
-    "discussed_questions": "обсужденные темы",
     "you": "Вы",
     "partner": "Партнер",
     "menu": {
@@ -143,8 +141,6 @@
       "try_unlimited_2": "неограниченным доступом",
       "premium_title": "Активируйте Премиум с ",
       "trial_expired": "Ваш пробный неограниченный доступ истек",
-      "unlimited_topics_title": "Получите Неограниченные Темы",
-      "unlimited_topics_explanation": "Сейчас у вас есть только {{dailyTopics}} тем в день",
       "trial_button": "Попробуйте 7 дней бесплатно",
       "trial_no_card": "НЕ требуется кредитная карта",
       "choose_plan": "Выберите ваш план",
@@ -268,7 +264,6 @@
       "confirm": "Да, остановить обсуждение",
       "cancel": "Нет, вернуться"
     },
-    "share": "Поделиться",
     "stop": "Остановить",
     "start_date": "Начать свидание",
     "level_title_first": "Выберите ",
@@ -327,15 +322,6 @@
         "choice_3": "Было хорошо",
         "choice_2": "Ничего нового",
         "choice_1": "Это не помогло вообще"
-      },
-      "alone": {
-        "title_first": "Итак! Какое ",
-        "title_second": "ваше впечатление",
-        "title_third": "?",
-        "choice_4": "Много интересных вопросов",
-        "choice_3": "Хорошие вопросы",
-        "choice_2": "Ничего особенного",
-        "choice_1": "Мне это не нравится"
       }
     },
     "new_level": {
@@ -418,5 +404,54 @@
       "google": "Войти через Google",
       "apple": "Войти через Apple"
     }
-  }
+  },
+  "date_mode_choose_mode": "Выберите режим обсуждения",
+  "date_mode_online_title": "Онлайн",
+  "date_mode_online_description": "Делитесь своими ответами в письменном виде",
+  "date_mode_in_person_title": "Лично",
+  "date_mode_in_person_description": "Обсуждайте лицом к лицу",
+  "onboarding_invite_title_1": "Пригласите ",
+  "onboarding_invite_title_3": "\nприсоединиться к Nemlys",
+  "onboarding_invite_description": "У вас будет общий доступ\nк вопросам и истории",
+  "onboarding_invite_share_code": "Поделитесь своим кодом приглашения",
+  "onboarding_invite_enter_pairing": "Введите код пары",
+  "onboarding_invite_copy_success_message": "Текст приглашения скопирован в буфер обмена",
+  "onboarding_invite_share_message": "Привет, {{partnerName}}! Я только что установил приложение Nemlys для пар. Оно генерирует классные вопросы, которые мы можем обсудить. Ты можешь присоединиться ко мне, используя этот код при регистрации: {{inviteCode}}\n",
+  "onboarding_invite_input_title_1": "Введите код приглашения, который ",
+  "onboarding_invite_input_title_3": " поделился с вами",
+  "onboarding_invite_input_invite_code_placeholder": "Введите 5-значный код",
+  "onboarding_invite_input_invite_code_wrong": "Неверный код приглашения. Пожалуйста, попробуйте еще раз.",
+  "onboarding_invite_input_invite_code_full": "Эта пара уже завершена. Пожалуйста, проверьте с вашим партнером.",
+  "onboarding_invite_input_invite_code_error": "Произошла ошибка. Пожалуйста, попробуйте позже.",
+  "onboarding_invite_input_join_success_message": "Вы успешно присоединились к {{partnerName}}",
+  "onboarding_invite_input_join": "Присоединиться к паре",
+  "settings_invite_invite_partner": "Пригласить партнера",
+  "settings_invite_join_partner": "Введите код приглашения",
+  "settings_couple_language": "Язык пары",
+  "couple_language_title": "Выберите язык вашей пары",
+  "couple_language_hint": "Мы будем использовать язык для генерации ваших вопросов",
+  "question_answer_hint": "{{partnerName}} увидит ваш ответ",
+  "question_answer_write": "Напишите ваш ответ...",
+  "question_answer_no_partner": "{{partnerName}} еще не присоединился к приложению",
+  "question_answer_remind_partner": "Напомните {{partnerName}} ответить",
+  "question_answer_invite": "Пригласить",
+  "remind_no_notification": "{{partnerName}} не включил уведомления",
+  "remind_success": "{{partnerName}} напомнен",
+  "done": "Готово",
+  "profile_notification": "Уведомления",
+  "home_menu_answer": "Ответы",
+  "answer_home_title": "Ответы",
+  "answer_home_no_questions": "Обсуждайте вопросы онлайн и проверяйте свои ответы здесь",
+  "question_home_answer": "Ответить",
+  "question_home_unlock": "Ответьте, чтобы разблокировать",
+  "question_home_replies_count": "{{count}} дополнительных ответов",
+  "load_more": "Загрузить еще",
+  "on_date_regenerate": "Сгенерировать заново",
+  "on_date_answer": "Ответить",
+  "date_discuss": "Обсудить лично",
+  "date_answer": "Ответить онлайн",
+  "discussed_questions": "обсуждаемые вопросы",
+  "premium_two": "Для 2 человек",
+  "premium_unlimited_topics_title": "Получите неограниченные вопросы",
+  "premium_unlimited_topics_explanation": "Теперь у вас есть {{dailyTopics}} вопросов в день"
 }

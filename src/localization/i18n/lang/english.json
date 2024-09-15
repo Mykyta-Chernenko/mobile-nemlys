@@ -1,5 +1,4 @@
 {
-  "nemlys": "Nemlys",
   "awesome": "Awesome!",
   "loading": "Loading",
   "continue": "Continue",
@@ -93,7 +92,6 @@
     }
   },
   "home": {
-    "discussed_questions": "discussed topics",
     "you": "You",
     "partner": "Partner",
     "menu": {
@@ -141,10 +139,8 @@
       "reached_limit": "You reached your daily limit. ",
       "try_unlimited_1": "Try with ",
       "try_unlimited_2": "unlimited access",
-      "premium_title": "Get Full Premium for ",
+      "premium_title": "Get Full Premium with ",
       "trial_expired": "You're out of your Trial Unlimited access",
-      "unlimited_topics_title": "Get Unlimited Topics",
-      "unlimited_topics_explanation": "Now you have {{dailyTopics}} topic per day",
       "trial_button": "Try 7 days for free",
       "trial_no_card": "NO Credit Card required",
       "choose_plan": "Choose Your Plan",
@@ -268,7 +264,6 @@
       "confirm": "Yes, stop discussion",
       "cancel": "No, come back"
     },
-    "share": "Share",
     "stop": "Stop date",
     "start_date": "Start date",
     "level_title_first": "Select ",
@@ -327,15 +322,6 @@
         "choice_3": "It was good",
         "choice_2": "Nothing new",
         "choice_1": "It wasn’t helpful at all"
-      },
-      "alone": {
-        "title_first": "So! What is ",
-        "title_second": "your impression",
-        "title_third": "?",
-        "choice_4": "A lot of interesting questions",
-        "choice_3": "Good questions",
-        "choice_2": "Nothing special",
-        "choice_1": "I don't like it"
       }
     },
     "new_level": {
@@ -418,5 +404,54 @@
       "google": "Sign in with Google",
       "apple": "Sign in with Apple"
     }
-  }
+  },
+  "date_mode_choose_mode": "Choose mode of discussion",
+  "date_mode_online_title": "Online",
+  "date_mode_online_description": "Share your answers in writing",
+  "date_mode_in_person_title": "In person",
+  "date_mode_in_person_description": "Discuss in front of each other",
+  "onboarding_invite_title_1": "Invite ",
+  "onboarding_invite_title_3": "\nto join Nemlys",
+  "onboarding_invite_description": "You will have shared access\nto questions and history",
+  "onboarding_invite_share_code": "Share your invite code",
+  "onboarding_invite_enter_pairing": "Enter pairing code",
+  "onboarding_invite_copy_success_message": "Invite text copied to clipboard",
+  "onboarding_invite_share_message": "Hi {{partnerName}}, I've just installed Nemlys couple app. It generates cool questions we can discuss. You can join me by using this code when you sign up: {{inviteCode}}\n",
+  "onboarding_invite_input_title_1": "Enter invite code that ",
+  "onboarding_invite_input_title_3": " shared with you",
+  "onboarding_invite_input_invite_code_placeholder": "Enter 5-digit code",
+  "onboarding_invite_input_invite_code_wrong": "Incorrect invite code. Please try again.",
+  "onboarding_invite_input_invite_code_full": "This couple is already complete. Please check with your partner.",
+  "onboarding_invite_input_invite_code_error": "An error occurred. Please try again later.",
+  "onboarding_invite_input_join_success_message": "You've successfully joined {{partnerName}}",
+  "onboarding_invite_input_join": "Join couple",
+  "settings_invite_invite_partner": "Invite partner",
+  "settings_invite_join_partner": "Enter invite code",
+  "settings_couple_language": "Couple language",
+  "couple_language_title": "Select language of your couple",
+  "couple_language_hint": "We will use the language to generate your questions",
+  "question_answer_hint": "{{partnerName}} will see your answer",
+  "question_answer_write": "Write your answer...",
+  "question_answer_no_partner": "{{partnerName}} hasn't joined the app yet",
+  "question_answer_remind_partner": "Remind {{partnerName}} to answer",
+  "question_answer_invite": "Invite",
+  "remind_no_notification": "{{partnerName}} has not enabled notifications",
+  "remind_success": "{{partnerName}} is reminded",
+  "done": "Done",
+  "profile_notification": "Notifications",
+  "home_menu_answer": "Answers",
+  "answer_home_title": "Answers",
+  "answer_home_no_questions": "Discuss questions online and check your answers here",
+  "question_home_answer": "Answer",
+  "question_home_unlock": "Answer to unlock",
+  "question_home_replies_count": "{{count}} more replies",
+  "load_more": "Load more",
+  "on_date_regenerate": "Regenerate",
+  "on_date_answer": "Answer",
+  "date_discuss": "Discuss in person",
+  "date_answer": "Answer online",
+  "discussed_questions": "discussed questions",
+  "premium_two": "For 2 people",
+  "premium_unlimited_topics_title": "Get Unlimited Questions",
+  "premium_unlimited_topics_explanation": "Now you have {{dailyTopics}} questions per day"
 }

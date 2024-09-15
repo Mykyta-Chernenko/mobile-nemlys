@@ -1,5 +1,5 @@
 import React, { useContext, useState } from 'react';
-import { TouchableOpacity, View, Image, SafeAreaView } from 'react-native';
+import { View, SafeAreaView } from 'react-native';
 import Modal from 'react-native-modal';
 import { i18n } from '@app/localization/i18n';
 import { AuthContext } from '@app/provider/AuthProvider';
@@ -12,6 +12,7 @@ import { localAnalytics } from '@app/utils/analytics';
 import { SettingsButton } from '../menu/SettingsButton';
 import { useTheme } from '@rneui/themed';
 import { ScrollView } from 'react-native';
+import { GoBackButton } from '@app/components/buttons/GoBackButton';
 
 export default function ({ title, placeholder }: { title: string; placeholder: string }) {
   const authContext = useContext(AuthContext);
@@ -64,7 +65,7 @@ export default function ({ title, placeholder }: { title: string; placeholder: s
         avoidKeyboard
         isVisible={visible}
         style={{
-          backgroundColor: theme.colors.white,
+          backgroundColor: theme.colors.grey1,
           flex: 1,
           display: 'flex',
         }}
@@ -77,28 +78,11 @@ export default function ({ title, placeholder }: { title: string; placeholder: s
               justifyContent: 'space-between',
             }}
           >
-            <TouchableOpacity
-              style={{
-                borderRadius: 40,
-                backgroundColor: theme.colors.grey1,
-                alignItems: 'center',
-                justifyContent: 'center',
-                height: 72,
-                width: 72,
-              }}
-              onPress={cancelDialog}
-            >
-              <Image
-                resizeMode="contain"
-                style={{ height: 24, width: 24 }}
-                // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
-                source={require('../../../assets/images/arrow_left_black.png')}
-              />
-            </TouchableOpacity>
+            <GoBackButton theme="light" onPress={cancelDialog} />
             <View style={{ width: '100%' }}>
               <FontText h1>{title}</FontText>
               <StyledTextInput
-                style={{ marginVertical: 20, maxHeight: '50%' }}
+                style={{ marginVertical: 20, maxHeight: '50%', minHeight: '30%' }}
                 onChangeText={setFeedback}
                 placeholder={placeholder}
               ></StyledTextInput>

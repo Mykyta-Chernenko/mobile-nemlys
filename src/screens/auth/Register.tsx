@@ -6,14 +6,7 @@ import { Button, useTheme } from '@rneui/themed';
 import { OAuth } from '@app/components/auth/OAuth';
 import { i18n } from '@app/localization/i18n';
 import { supabase } from '@app/api/initSupabase';
-import {
-  APICouple,
-  InsertAPICouple,
-  InsertAPIUserProfile,
-  SupabaseAnswer,
-  SupabaseUser,
-} from '@app/types/api';
-import { randomReadnableString } from '@app/utils/strings';
+import { SupabaseUser } from '@app/types/api';
 
 import { ANON_USER, AuthContext } from '@app/provider/AuthProvider';
 import { KEYBOARD_BEHAVIOR } from '@app/utils/constants';
@@ -22,7 +15,7 @@ import { logErrorsWithMessage, logErrorsWithMessageWithoutAlert } from '@app/uti
 import { localAnalytics } from '@app/utils/analytics';
 import StyledInput from '@app/components/utils/StyledInput';
 import * as Localization from 'expo-localization';
-import { getNow } from '@app/utils/date';
+import { getNow, sleep } from '@app/utils/date';
 import { Mutex } from 'async-mutex';
 export function handleUserAfterSignUp(provider: string): (user: SupabaseUser) => Promise<void> {
   const handleUserAfterMutex = new Mutex();
@@ -35,66 +28,48 @@ export function handleUserAfterSignUp(provider: string): (user: SupabaseUser) =>
         userId: user.id,
         provider,
       });
-      const { error, count } = await supabase
-        .from('user_profile')
-        .select('*', { count: 'exact' })
-        .eq('user_id', user.id);
-      if (error) {
-        throw error;
-      }
-      if (count) {
-        console.log(`User ${user.email || 'with this email'} already exists, just signing in`);
-        void localAnalytics().logEvent('LoginAlreadyExists', {
-          screen: 'Login',
-          action: 'AlreadyExists',
-          userId: user.id,
-          provider,
-        });
-      } else {
-        const couple: InsertAPICouple = {
-          invitation_code: randomReadnableString(6),
-        };
-        const { data, error }: SupabaseAnswer<APICouple | null> = await supabase
-          .from('couple')
-          .insert(couple)
-          .select()
-          .single();
+
+      // eslint-disable-next-line no-constant-condition
+      while (true) {
+        const { error, count } = await supabase
+          .from('user_profile')
+          .select('*', { count: 'exact' })
+          .eq('user_id', user.id);
         if (error) {
           throw error;
         }
-        if (!data) {
-          throw new Error(`Insert couple no data back, ${JSON.stringify(data)}`);
-        }
-        console.log(data);
-        const userProfile: InsertAPIUserProfile = {
-          couple_id: data.id,
-          user_id: user.id,
-          first_name: '',
-          partner_first_name: '',
-          onboarding_finished: false,
-          ios_expo_token: undefined,
-          android_expo_token: undefined,
-          showed_interview_request: false,
-        };
-        const { error: profileError } = await supabase.from('user_profile').insert(userProfile);
-        if (profileError) {
-          throw profileError;
-        }
-
-        const { error: localeError } = await supabase
+        const { error: error2, count: count2 } = await supabase
           .from('user_technical_details')
-          .update({ user_locale: Localization.locale, updated_at: getNow().toISOString() })
+          .select('*', { count: 'exact' })
           .eq('user_id', user.id);
-        if (localeError) {
-          throw localeError;
+        if (error2) {
+          throw error2;
         }
-
-        void localAnalytics().logEvent('LoginProfileInserted', {
-          screen: 'Login',
-          action: 'ProfileInserted',
-          userId: user.id,
-          provider,
-        });
+        if (count && count2) {
+          console.log(`User ${user.email || 'with this email'} already exists, just signing in`);
+          void localAnalytics().logEvent('LoginAlreadyExists', {
+            screen: 'Login',
+            action: 'AlreadyExists',
+            userId: user.id,
+            provider,
+          });
+          const { error: localeError } = await supabase
+            .from('user_technical_details')
+            .update({ user_locale: Localization.locale, updated_at: getNow().toISOString() })
+            .eq('user_id', user.id);
+          if (localeError) {
+            throw localeError;
+          }
+          return;
+        } else {
+          void localAnalytics().logEvent('LoginProfileDoesNotExistYet', {
+            screen: 'Login',
+            action: 'ProfileDoesNotExistYet',
+            userId: user.id,
+            provider,
+          });
+          await sleep(100);
+        }
       }
     } finally {
       release();

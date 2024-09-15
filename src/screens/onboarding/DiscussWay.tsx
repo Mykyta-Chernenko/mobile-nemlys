@@ -13,7 +13,6 @@ import { MainStackParamList } from '@app/types/navigation';
 import { NativeStackScreenProps } from '@react-navigation/native-stack';
 import { localAnalytics } from '@app/utils/analytics';
 import { SafeAreaView } from 'react-native-safe-area-context';
-import { getNow } from '@app/utils/date';
 
 export default function ({
   route,
@@ -46,17 +45,6 @@ export default function ({
       .insert({ user_id: authContext.userId!, question_slug: 'discuss_way', answer_slug: chosen });
     if (dateReponse.error) {
       logSupaErrors(dateReponse.error);
-      return;
-    }
-    const profileResponse = await supabase
-      .from('user_profile')
-      .update({
-        onboarding_finished: true,
-        updated_at: getNow().toISOString(),
-      })
-      .eq('user_id', authContext.userId!);
-    if (profileResponse.error) {
-      logSupaErrors(profileResponse.error);
       return;
     }
     void localAnalytics().logEvent('DiscussWayContinueClicked', {

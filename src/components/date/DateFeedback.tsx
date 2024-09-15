@@ -1,7 +1,5 @@
-import React, { useContext, useEffect } from 'react';
+import React, { useCallback } from 'react';
 import { ImageBackground, ScrollView, View } from 'react-native';
-import { localAnalytics } from '@app/utils/analytics';
-import { GoBackButton } from '@app/components/buttons/GoBackButton';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { FontText } from '@app/components/utils/FontText';
 import { i18n } from '@app/localization/i18n';
@@ -9,48 +7,31 @@ import Feedback4Icon from '@app/icons/feedback4';
 import Feedback3Icon from '@app/icons/feedback3';
 import Feedback2Icon from '@app/icons/feedback2';
 import Feedback1Icon from '@app/icons/feedback1';
-import { AuthContext } from '@app/provider/AuthProvider';
 import { TouchableOpacity } from 'react-native';
 import { useTheme, useThemeMode } from '@rneui/themed';
+import { useFocusEffect } from '@react-navigation/native';
 
-export default function (props: {
-  withPartner: boolean;
-  onPressBack: () => void;
-  onPressForward: (feedback: number) => void;
-}) {
+export default function (props: { onPressForward: (feedback: number) => void }) {
   const { theme } = useTheme();
 
   const { setMode } = useThemeMode();
-  useEffect(() => {
-    setMode('light');
-    return () => setMode('dark');
-  }, []);
+  useFocusEffect(
+    useCallback(() => {
+      setMode('light');
+    }, []),
+  );
 
-  const authContext = useContext(AuthContext);
-  const choicesAlone = [
-    { value: 4, icon: Feedback4Icon, title: i18n.t('date.feedback.alone.choice_4') },
-    { value: 3, icon: Feedback3Icon, title: i18n.t('date.feedback.alone.choice_3') },
-    { value: 2, icon: Feedback2Icon, title: i18n.t('date.feedback.alone.choice_2') },
-    { value: 1, icon: Feedback1Icon, title: i18n.t('date.feedback.alone.choice_1') },
-  ];
-  const choicesWithPartner = [
+  const choices = [
     { value: 4, icon: Feedback4Icon, title: i18n.t('date.feedback.with_partner.choice_4') },
     { value: 3, icon: Feedback3Icon, title: i18n.t('date.feedback.with_partner.choice_3') },
     { value: 2, icon: Feedback2Icon, title: i18n.t('date.feedback.with_partner.choice_2') },
     { value: 1, icon: Feedback1Icon, title: i18n.t('date.feedback.with_partner.choice_1') },
   ];
-  const choices = props.withPartner ? choicesWithPartner : choicesAlone;
 
-  const titleFirst = props.withPartner
-    ? i18n.t('date.feedback.with_partner.title_first')
-    : i18n.t('date.feedback.alone.title_first');
+  const titleFirst = i18n.t('date.feedback.with_partner.title_first');
 
-  const titleSecond = props.withPartner
-    ? i18n.t('date.feedback.with_partner.title_second')
-    : i18n.t('date.feedback.alone.title_second');
-  const titleThird = props.withPartner
-    ? i18n.t('date.feedback.with_partner.title_third')
-    : i18n.t('date.feedback.alone.title_third');
+  const titleSecond = i18n.t('date.feedback.with_partner.title_second');
+  const titleThird = i18n.t('date.feedback.with_partner.title_third');
 
   return (
     <ImageBackground
@@ -66,17 +47,6 @@ export default function (props: {
             paddingHorizontal: 15,
           }}
         >
-          <GoBackButton
-            theme="light"
-            onPress={() => {
-              void localAnalytics().logEvent('DateFeedbackGoBack', {
-                screen: 'DateFeedback',
-                action: 'DateFeedback go back pressed',
-                userId: authContext.userId,
-              });
-              props.onPressBack();
-            }}
-          ></GoBackButton>
           <View style={{ flexGrow: 1, justifyContent: 'space-between' }}>
             <View
               style={{

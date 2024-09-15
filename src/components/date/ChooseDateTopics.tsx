@@ -8,7 +8,6 @@ import { PrimaryButton } from '../buttons/PrimaryButtons';
 import { localAnalytics } from '@app/utils/analytics';
 import { AuthContext } from '@app/provider/AuthProvider';
 
-import { getCanPersonalTopics } from '@app/api/reflection';
 import { Loading } from '../utils/Loading';
 import { JobSlug } from '@app/types/domain';
 import { supabase } from '@app/api/initSupabase';
@@ -40,11 +39,7 @@ export default function (props: {
   useEffect(() => {
     const getData = async () => {
       setLoading(true);
-      const [canGetPersonalTopics, topics] = await Promise.all([
-        getCanPersonalTopics(),
-        getTopics(job),
-      ]);
-      // setIsLowPersonalization(!canGetPersonalTopics);
+      const [topics] = await Promise.all([getTopics(job)]);
       setAllTopics(topics);
       setLoading(false);
     };

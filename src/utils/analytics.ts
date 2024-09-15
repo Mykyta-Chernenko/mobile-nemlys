@@ -143,7 +143,7 @@ export class ExpoMixpanelAnalytics {
     }
   }
 
-  _pushEvent(event) {
+  async _pushEvent(event) {
     const data = {
       event: event.name,
       properties: {
@@ -180,17 +180,17 @@ export class ExpoMixpanelAnalytics {
     const buffer = new Buffer(JSON.stringify(data)).toString('base64');
     try {
       // eslint-disable-next-line @typescript-eslint/restrict-template-expressions
-      return fetch(`${MIXPANEL_API_URL}/track/?data=${buffer}&ip=1`);
+      return await fetch(`${MIXPANEL_API_URL}/track/?data=${buffer}&ip=1`);
     } catch (error) {
       console.error('Failed to send Mixpanel event:', error);
     }
   }
 
-  _pushProfile(data) {
+  async _pushProfile(data) {
     data = new Buffer(JSON.stringify(data)).toString('base64');
     try {
       // eslint-disable-next-line @typescript-eslint/restrict-template-expressions
-      return fetch(`${MIXPANEL_API_URL}/engage/?data=${data}&ip=1`);
+      return await fetch(`${MIXPANEL_API_URL}/engage/?data=${data}&ip=1`);
     } catch (error) {
       console.error('Failed to send Mixpanel event:', error);
     }

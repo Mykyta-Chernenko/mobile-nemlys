@@ -145,6 +145,7 @@ export default function ({
                     returnKeyType="send"
                     onChangeText={(text) => setName(text)}
                     onSubmitEditing={() => void handlePress()}
+                    maxLength={15}
                   />
                 </View>
               </View>

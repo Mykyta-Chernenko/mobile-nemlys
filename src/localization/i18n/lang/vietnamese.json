@@ -1,5 +1,4 @@
 {
-  "nemlys": "Nemlys",
   "awesome": "Tuyệt vời!",
   "loading": "Đang tải",
   "continue": "Tiếp tục",
@@ -93,7 +92,6 @@
     }
   },
   "home": {
-    "discussed_questions": "chủ đề đã thảo luận",
     "you": "Bạn",
     "partner": "Đối tác",
     "menu": {
@@ -143,8 +141,6 @@
       "try_unlimited_2": "truy cập không giới hạn",
       "premium_title": "Nhận cao cấp đầy đủ cho ",
       "trial_expired": "Bạn đã hết truy cập không giới hạn thử nghiệm",
-      "unlimited_topics_title": "Nhận Chủ đề Không Giới hạn",
-      "unlimited_topics_explanation": "Bây giờ bạn có {{dailyTopics}} chủ đề mỗi ngày",
       "trial_button": "Thử 7 ngày miễn phí",
       "trial_no_card": "KHÔNG yêu cầu thẻ tín dụng",
       "choose_plan": "Chọn kế hoạch của bạn",
@@ -268,7 +264,6 @@
       "confirm": "Có, dừng thảo luận",
       "cancel": "Không, quay lại"
     },
-    "share": "Chia sẻ",
     "stop": "Dừng hẹn hò",
     "start_date": "Bắt đầu hẹn hò",
     "level_title_first": "Chọn ",
@@ -327,15 +322,6 @@
         "choice_3": "Rất tốt",
         "choice_2": "Không có gì mới",
         "choice_1": "Không giúp ích gì cả"
-      },
-      "alone": {
-        "title_first": "Vậy! Ấn tượng của bạn ",
-        "title_second": "là gì",
-        "title_third": "?",
-        "choice_4": "Rất nhiều câu hỏi thú vị",
-        "choice_3": "Câu hỏi tốt",
-        "choice_2": "Không có gì đặc biệt",
-        "choice_1": "Tôi không thích nó"
       }
     },
     "new_level": {
@@ -418,5 +404,54 @@
       "google": "Đăng nhập với Google",
       "apple": "Đăng nhập với Apple"
     }
-  }
+  },
+  "date_mode_choose_mode": "Chọn chế độ thảo luận",
+  "date_mode_online_title": "Trực tuyến",
+  "date_mode_online_description": "Chia sẻ câu trả lời của bạn bằng văn bản",
+  "date_mode_in_person_title": "Gặp mặt trực tiếp",
+  "date_mode_in_person_description": "Thảo luận trước mặt nhau",
+  "onboarding_invite_title_1": "Mời ",
+  "onboarding_invite_title_3": "\ntham gia Nemlys",
+  "onboarding_invite_description": "Bạn sẽ có quyền truy cập chung\ntới các câu hỏi và lịch sử",
+  "onboarding_invite_share_code": "Chia sẻ mã mời của bạn",
+  "onboarding_invite_enter_pairing": "Nhập mã ghép đôi",
+  "onboarding_invite_copy_success_message": "Văn bản mời đã được sao chép vào clipboard",
+  "onboarding_invite_share_message": "Chào {{partnerName}}, mình vừa cài đặt ứng dụng cặp đôi Nemlys. Nó tạo ra những câu hỏi thú vị mà chúng ta có thể thảo luận. Bạn có thể tham gia cùng mình bằng cách sử dụng mã này khi đăng ký: {{inviteCode}}\n",
+  "onboarding_invite_input_title_1": "Nhập mã mời mà ",
+  "onboarding_invite_input_title_3": " đã chia sẻ với bạn",
+  "onboarding_invite_input_invite_code_placeholder": "Nhập mã 5 chữ số",
+  "onboarding_invite_input_invite_code_wrong": "Mã mời không chính xác. Vui lòng thử lại.",
+  "onboarding_invite_input_invite_code_full": "Cặp đôi này đã đầy đủ. Vui lòng kiểm tra với đối tác của bạn.",
+  "onboarding_invite_input_invite_code_error": "Đã xảy ra lỗi. Vui lòng thử lại sau.",
+  "onboarding_invite_input_join_success_message": "Bạn đã tham gia thành công cùng {{partnerName}}",
+  "onboarding_invite_input_join": "Tham gia cặp đôi",
+  "settings_invite_invite_partner": "Mời bạn đời",
+  "settings_invite_join_partner": "Nhập mã mời",
+  "settings_couple_language": "Ngôn ngữ của cặp đôi",
+  "couple_language_title": "Chọn ngôn ngữ của bạn và người yêu",
+  "couple_language_hint": "Chúng tôi sẽ sử dụng ngôn ngữ này để tạo ra các câu hỏi của bạn",
+  "question_answer_hint": "{{partnerName}} sẽ thấy câu trả lời của bạn",
+  "question_answer_write": "Viết câu trả lời của bạn...",
+  "question_answer_no_partner": "{{partnerName}} chưa tham gia ứng dụng",
+  "question_answer_remind_partner": "Nhắc nhở {{partnerName}} trả lời",
+  "question_answer_invite": "Mời",
+  "remind_no_notification": "{{partnerName}} chưa bật thông báo",
+  "remind_success": "{{partnerName}} đã được nhắc nhở",
+  "done": "Xong",
+  "profile_notification": "Thông báo",
+  "home_menu_answer": "Câu trả lời",
+  "answer_home_title": "Câu trả lời",
+  "answer_home_no_questions": "Thảo luận các câu hỏi trực tuyến và kiểm tra câu trả lời của bạn ở đây",
+  "question_home_answer": "Trả lời",
+  "question_home_unlock": "Trả lời để mở khóa",
+  "question_home_replies_count": "{{count}} câu trả lời nữa",
+  "load_more": "Tải thêm",
+  "on_date_regenerate": "Tạo lại",
+  "on_date_answer": "Trả lời",
+  "date_discuss": "Thảo luận trực tiếp",
+  "date_answer": "Trả lời trực tuyến",
+  "discussed_questions": "các câu hỏi đã thảo luận",
+  "premium_two": "Dành cho 2 người",
+  "premium_unlimited_topics_title": "Nhận Câu Hỏi Không Giới Hạn",
+  "premium_unlimited_topics_explanation": "Bây giờ bạn có {{dailyTopics}} câu hỏi mỗi ngày"
 }

@@ -1,5 +1,4 @@
 {
-  "nemlys": "Nemlys",
   "awesome": "Harika!",
   "loading": "Yükleniyor",
   "continue": "Devam et",
@@ -93,7 +92,6 @@
     }
   },
   "home": {
-    "discussed_questions": "tartışılan konular",
     "you": "Sen",
     "partner": "Partner",
     "menu": {
@@ -143,8 +141,6 @@
       "try_unlimited_2": "sınırsız erişim ile",
       "premium_title": "Tam Premium alın ",
       "trial_expired": "Deneme Sınırsız erişiminiz sona erdi",
-      "unlimited_topics_title": "Sınırsız Konulara Erişin",
-      "unlimited_topics_explanation": "Şu anda günde {{dailyTopics}} konuya sahipsiniz",
       "trial_button": "7 gün ücretsiz deneyin",
       "trial_no_card": "Kredi Kartı gerekmez",
       "choose_plan": "Planınızı Seçin",
@@ -268,7 +264,6 @@
       "confirm": "Evet, tartışmayı durdur",
       "cancel": "Hayır, geri dön"
     },
-    "share": "Paylaş",
     "stop": "Randevuyu durdur",
     "start_date": "Randevu başlat",
     "level_title_first": "Seviyeyi seçin ",
@@ -327,15 +322,6 @@
         "choice_3": "İyi geçti",
         "choice_2": "Yeni bir şey yok",
         "choice_1": "Hiç yardımcı olmadı"
-      },
-      "alone": {
-        "title_first": "Yani! Ne ",
-        "title_second": "düşünüyorsunuz",
-        "title_third": "?",
-        "choice_4": "Birçok ilginç soru",
-        "choice_3": "İyi sorular",
-        "choice_2": "Pek bir şey yok",
-        "choice_1": "Beğenmedim"
       }
     },
     "new_level": {
@@ -418,5 +404,54 @@
       "google": "Google ile giriş yapın",
       "apple": "Apple ile giriş yapın"
     }
-  }
+  },
+  "date_mode_choose_mode": "Tartışma modunu seçin",
+  "date_mode_online_title": "Çevrimiçi",
+  "date_mode_online_description": "Cevaplarınızı yazılı olarak paylaşın",
+  "date_mode_in_person_title": "Yüz yüze",
+  "date_mode_in_person_description": "Birbirinizin önünde tartışın",
+  "onboarding_invite_title_1": "Davet et ",
+  "onboarding_invite_title_3": "\nNemlys'e katılmaya",
+  "onboarding_invite_description": "Sorulara ve geçmişe ortak erişiminiz olacak",
+  "onboarding_invite_share_code": "Davet kodunuzu paylaşın",
+  "onboarding_invite_enter_pairing": "Eşleştirme kodunu girin",
+  "onboarding_invite_copy_success_message": "Davet metni panoya kopyalandı",
+  "onboarding_invite_share_message": "Merhaba {{partnerName}}, Nemlys çift uygulamasını yeni yükledim. Tartışabileceğimiz harika sorular üretiyor. Kaydolurken bu kodu kullanarak bana katılabilirsin: {{inviteCode}}\n",
+  "onboarding_invite_input_title_1": "Giren davet kodunu ",
+  "onboarding_invite_input_title_3": " ile paylaştı",
+  "onboarding_invite_input_invite_code_placeholder": "5 haneli kodu girin",
+  "onboarding_invite_input_invite_code_wrong": "Geçersiz davet kodu. Lütfen tekrar deneyin.",
+  "onboarding_invite_input_invite_code_full": "Bu çift zaten tamamlandı. Lütfen partnerinizle kontrol edin.",
+  "onboarding_invite_input_invite_code_error": "Bir hata oluştu. Lütfen daha sonra tekrar deneyin.",
+  "onboarding_invite_input_join_success_message": "{{partnerName}} ile başarıyla katıldınız",
+  "onboarding_invite_input_join": "Çifte katıl",
+  "settings_invite_invite_partner": "Eşinizi davet edin",
+  "settings_invite_join_partner": "Davet kodunu girin",
+  "settings_couple_language": "Çift dili",
+  "couple_language_title": "Çiftinizin dilini seçin",
+  "couple_language_hint": "Sorularınızı oluşturmak için bu dili kullanacağız",
+  "question_answer_hint": "{{partnerName}} cevabınızı görecek",
+  "question_answer_write": "Cevabınızı yazın...",
+  "question_answer_no_partner": "{{partnerName}} henüz uygulamaya katılmadı",
+  "question_answer_remind_partner": "{{partnerName}}'ı cevap vermesi için hatırlat",
+  "question_answer_invite": "Davet et",
+  "remind_no_notification": "{{partnerName}} bildirimleri etkinleştirmedi",
+  "remind_success": "{{partnerName}} hatırlatıldı",
+  "done": "Tamam",
+  "profile_notification": "Bildirimler",
+  "home_menu_answer": "Cevaplar",
+  "answer_home_title": "Cevaplar",
+  "answer_home_no_questions": "Soruları çevrimiçi tartışın ve cevaplarınızı burada kontrol edin",
+  "question_home_answer": "Cevapla",
+  "question_home_unlock": "Açmak için cevap ver",
+  "question_home_replies_count": "{{count}} daha yanıt",
+  "load_more": "Daha fazla yükle",
+  "on_date_regenerate": "Yenile",
+  "on_date_answer": "Cevapla",
+  "date_discuss": "Yüz yüze tartış",
+  "date_answer": "Çevrimiçi cevapla",
+  "discussed_questions": "tartışılan sorular",
+  "premium_two": "2 kişi için",
+  "premium_unlimited_topics_title": "Sınırsız Sorular Al",
+  "premium_unlimited_topics_explanation": "Artık günde {{dailyTopics}} soru hakkınız var"
 }

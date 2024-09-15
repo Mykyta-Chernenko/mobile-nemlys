@@ -1,5 +1,4 @@
 {
-  "nemlys": "Nemlys",
   "awesome": "すごい!",
   "loading": "読み込み中",
   "continue": "続ける",
@@ -93,7 +92,6 @@
     }
   },
   "home": {
-    "discussed_questions": "議論されたトピック",
     "you": "あなた",
     "partner": "パートナー",
     "menu": {
@@ -143,8 +141,6 @@
       "try_unlimited_2": "試してみる",
       "premium_title": "フルプレミアムを取得する",
       "trial_expired": "あなたの試用無制限アクセスは終了しました",
-      "unlimited_topics_title": "無制限のトピックを取得",
-      "unlimited_topics_explanation": "現在、1日{{dailyTopics}}トピックがあります",
       "trial_button": "7日間無料で試してみる",
       "trial_no_card": "クレジットカードは不要です",
       "choose_plan": "プランを選択",
@@ -268,7 +264,6 @@
       "confirm": "はい、議論を停止する",
       "cancel": "いいえ、戻る"
     },
-    "share": "共有",
     "stop": "デートを停止",
     "start_date": "デートを開始",
     "level_title_first": "深さを選択",
@@ -327,15 +322,6 @@
         "choice_3": "良かったです",
         "choice_2": "何も新しいことはありませんでした",
         "choice_1": "まったく役に立ちませんでした"
-      },
-      "alone": {
-        "title_first": "では！あなたの印象はどうですか？",
-        "title_second": "",
-        "title_third": "",
-        "choice_4": "多くの興味深い質問がありました",
-        "choice_3": "良い質問でした",
-        "choice_2": "特に何もありませんでした",
-        "choice_1": "気に入りませんでした"
       }
     },
     "new_level": {
@@ -418,5 +404,54 @@
       "google": "Googleでサインイン",
       "apple": "Appleでサインイン"
     }
-  }
+  },
+  "date_mode_choose_mode": "ディスカッションのモードを選択",
+  "date_mode_online_title": "オンライン",
+  "date_mode_online_description": "回答を文章で共有",
+  "date_mode_in_person_title": "対面",
+  "date_mode_in_person_description": "お互いの前で話し合う",
+  "onboarding_invite_title_1": "招待する",
+  "onboarding_invite_title_3": "\nNemlysに参加する",
+  "onboarding_invite_description": "質問と履歴に共有アクセスできます",
+  "onboarding_invite_share_code": "招待コードを共有",
+  "onboarding_invite_enter_pairing": "ペアリングコードを入力",
+  "onboarding_invite_copy_success_message": "招待テキストがクリップボードにコピーされました",
+  "onboarding_invite_share_message": "こんにちは{{partnerName}}、私はNemlysカップルアプリをインストールしました。私たちが話し合える素敵な質問を生成します。このコードを使ってサインアップすると参加できます: {{inviteCode}}\n",
+  "onboarding_invite_input_title_1": "入力してください、",
+  "onboarding_invite_input_title_3": "が共有した招待コード",
+  "onboarding_invite_input_invite_code_placeholder": "5桁のコードを入力",
+  "onboarding_invite_input_invite_code_wrong": "招待コードが正しくありません。もう一度お試しください。",
+  "onboarding_invite_input_invite_code_full": "このカップルはすでに完了しています。パートナーに確認してください。",
+  "onboarding_invite_input_invite_code_error": "エラーが発生しました。後でもう一度お試しください。",
+  "onboarding_invite_input_join_success_message": "{{partnerName}}に成功裏に参加しました",
+  "onboarding_invite_input_join": "カップルに参加",
+  "settings_invite_invite_partner": "パートナーを招待",
+  "settings_invite_join_partner": "招待コードを入力",
+  "settings_couple_language": "カップルの言語",
+  "couple_language_title": "カップルの言語を選択",
+  "couple_language_hint": "質問を生成するためにこの言語を使用します",
+  "question_answer_hint": "{{partnerName}}はあなたの回答を見ることができます",
+  "question_answer_write": "あなたの回答を書いて...",
+  "question_answer_no_partner": "{{partnerName}}はまだアプリに参加していません",
+  "question_answer_remind_partner": "{{partnerName}}に回答を思い出させる",
+  "question_answer_invite": "招待する",
+  "remind_no_notification": "{{partnerName}}は通知を有効にしていません",
+  "remind_success": "{{partnerName}}にリマインドしました",
+  "done": "完了",
+  "profile_notification": "通知",
+  "home_menu_answer": "回答",
+  "answer_home_title": "回答",
+  "answer_home_no_questions": "オンラインで質問を話し合い、ここで回答を確認してください",
+  "question_home_answer": "回答する",
+  "question_home_unlock": "回答してロックを解除",
+  "question_home_replies_count": "{{count}}件の返信があります",
+  "load_more": "もっと読み込む",
+  "on_date_regenerate": "再生成",
+  "on_date_answer": "回答する",
+  "date_discuss": "対面で話し合う",
+  "date_answer": "オンラインで回答する",
+  "discussed_questions": "話し合った質問",
+  "premium_two": "2人用",
+  "premium_unlimited_topics_title": "無制限の質問を手に入れよう",
+  "premium_unlimited_topics_explanation": "今、あなたは1日に{{dailyTopics}}の質問があります"
 }

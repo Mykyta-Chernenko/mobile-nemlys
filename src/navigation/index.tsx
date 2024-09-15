@@ -9,6 +9,7 @@ import { Loading } from '@app/components/utils/Loading';
 import { useBackHandler } from '@react-native-community/hooks';
 import NavigationWrapper from './NavigationWrapper';
 import { localAnalytics } from '@app/utils/analytics';
+import { navigationRef } from '@app/navigation/ref';
 const linking = {
   prefixes: ['nemlys://', 'exp://192.168.0.9:19000/--/'],
   config: {
@@ -43,7 +44,7 @@ export default () => {
     comp = <Auth></Auth>;
   }
   return (
-    <NavigationContainer linking={linking}>
+    <NavigationContainer linking={linking} ref={navigationRef as any}>
       <NavigationWrapper>{comp}</NavigationWrapper>
     </NavigationContainer>
   );

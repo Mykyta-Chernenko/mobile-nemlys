@@ -55,6 +55,28 @@ export default function ({
       logSupaErrors(languageData.error);
       return;
     }
+    if (!fromSettings) {
+      const data = await supabase
+        .from('user_profile')
+        .select('couple_id')
+        .eq('user_id', authContext.userId!)
+        .single();
+      if (data.error) {
+        logSupaErrors(data.error);
+        return;
+      }
+      const languageData = await supabase
+        .from('couple')
+        .update({
+          language,
+        })
+        .eq('id', data.data.couple_id)
+        .single();
+      if (languageData.error) {
+        logSupaErrors(languageData.error);
+        return;
+      }
+    }
     await setAppLanguage(language);
     void localAnalytics().logEvent('LanguageContinueClicked', {
       screen: 'Language',
@@ -66,7 +88,7 @@ export default function ({
     if (fromSettings) {
       navigation.navigate('Profile', { refreshTimeStamp: new Date().toISOString() });
     } else {
-      navigation.navigate('DiscussWay');
+      navigation.navigate('OnboardingInviteCode', { fromSettings: false });
     }
   };
   return (

@@ -1,0 +1,324 @@
+import React, { useContext, useEffect, useState } from 'react';
+import {
+  Image,
+  ImageBackground,
+  KeyboardAvoidingView,
+  ScrollView,
+  View,
+  TouchableOpacity,
+  Clipboard,
+  Share,
+  RefreshControl,
+} from 'react-native';
+import { useTheme, useThemeMode } from '@rneui/themed';
+import { i18n } from '@app/localization/i18n';
+import { PrimaryButton } from '@app/components/buttons/PrimaryButtons';
+import { FontText } from '@app/components/utils/FontText';
+import { Progress } from '@app/components/utils/Progress';
+import { GoBackButton } from '@app/components/buttons/GoBackButton';
+import { KEYBOARD_BEHAVIOR } from '@app/utils/constants';
+import { supabase } from '@app/api/initSupabase';
+import { AuthContext } from '@app/provider/AuthProvider';
+import { MainStackParamList } from '@app/types/navigation';
+import { NativeStackScreenProps } from '@react-navigation/native-stack';
+import { localAnalytics } from '@app/utils/analytics';
+import { SafeAreaView } from 'react-native-safe-area-context';
+import ShareIcon from '@app/icons/share';
+import CopyIcon from '@app/icons/copy';
+import Toast from 'react-native-toast-message';
+import { Loading } from '@app/components/utils/Loading';
+import { logErrorsWithMessage, logSupaErrors } from '@app/utils/errors';
+
+type OnboardingInviteCodeProps = NativeStackScreenProps<MainStackParamList, 'OnboardingInviteCode'>;
+
+export default function OnboardingInviteCode({ route, navigation }: OnboardingInviteCodeProps) {
+  const { theme } = useTheme();
+  const [inviteCode, setInviteCode] = useState<string>('');
+  const [partnerName, setPartnerName] = useState<string>('');
+  const [loading, setLoading] = useState(true);
+  const [refreshing, setRefreshing] = useState(false);
+  const [codeShared, setCodeShared] = useState(false);
+  const authContext = useContext(AuthContext);
+  const fromSettings = route.params.fromSettings;
+
+  const { setMode } = useThemeMode();
+
+  useEffect(() => {
+    const unsubscribeFocus = navigation.addListener('focus', () => {
+      setMode('light');
+      void onRefresh();
+    });
+    return unsubscribeFocus;
+  }, [navigation, authContext.userId]);
+
+  const fetchInviteCode = async () => {
+    setLoading(true);
+    try {
+      const { data: userProfile, error: userError } = await supabase
+        .from('user_profile')
+        .select('couple_id, partner_first_name')
+        .eq('user_id', authContext.userId!)
+        .single();
+
+      if (userError) {
+        logSupaErrors(userError);
+        return;
+      }
+
+      const { data: couple, error: coupleError } = await supabase
+        .from('couple')
+        .select('invite_code')
+        .eq('id', userProfile.couple_id)
+        .single();
+
+      if (coupleError) {
+        logSupaErrors(coupleError);
+        return;
+      }
+
+      setInviteCode(couple.invite_code);
+      setPartnerName(userProfile.partner_first_name || 'Partner');
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  const onRefresh = async () => {
+    setRefreshing(true);
+    setCodeShared(false);
+    await fetchInviteCode();
+    setRefreshing(false);
+  };
+
+  const getInviteMessage = () => {
+    const iosLink = 'https://apps.apple.com/app/nemlys-couples-game-questions/id1662262055';
+    const androidLink = 'https://play.google.com/store/apps/details?id=com.nemlys.app';
+    return (
+      i18n.t('onboarding_invite_share_message', {
+        partnerName,
+        inviteCode,
+      }) + `\nApple: ${iosLink}\nAndroid: ${androidLink}`
+    );
+  };
+
+  const handleCopyInviteCode = () => {
+    const message = getInviteMessage();
+    Clipboard.setString(message);
+    Toast.show({
+      type: 'success',
+      text1: i18n.t('onboarding_invite_copy_success_message'),
+      visibilityTime: 500,
+    });
+    setCodeShared(true);
+    void localAnalytics().logEvent('InviteCodeCopied', {
+      screen: 'OnboardingInviteCode',
+      action: 'CopyCode',
+      userId: authContext.userId,
+    });
+  };
+
+  const handleShareInviteCode = async () => {
+    try {
+      const message = getInviteMessage();
+      const result = await Share.share({
+        message: message,
+      });
+      if (result.action === Share.sharedAction) {
+        setCodeShared(true);
+        void localAnalytics().logEvent('InviteCodeShared', {
+          screen: 'OnboardingInviteCode',
+          action: 'ShareCode',
+          userId: authContext.userId,
+        });
+      }
+    } catch (e) {
+      logErrorsWithMessage(e, (e?.message as string) || '');
+    }
+  };
+
+  const handleEnterPairingCode = () => {
+    void localAnalytics().logEvent('OnboardingInviteCodeEnterPairingClicked', {
+      screen: 'OnboardingInviteCode',
+      action: 'EnterPairingClicked',
+      userId: authContext.userId,
+    });
+    navigation.navigate('OnboardingInviteCodeInput', { fromSettings });
+  };
+
+  const handleContinue = () => {
+    void localAnalytics().logEvent('OnboardingInviteCodeContinue', {
+      screen: 'OnboardingInviteCode',
+      action: 'Continue',
+      userId: authContext.userId,
+    });
+    if (fromSettings) {
+      navigation.goBack();
+    } else {
+      navigation.navigate('OnDateNotification', { withPartner: true, isOnboarding: true });
+    }
+  };
+
+  if (loading) {
+    return <Loading light />;
+  }
+
+  return (
+    <KeyboardAvoidingView behavior={KEYBOARD_BEHAVIOR} style={{ flexGrow: 1 }}>
+      <ImageBackground
+        style={{ flexGrow: 1 }}
+        source={require('../../../assets/images/onboarding_background.png')}
+      >
+        <SafeAreaView style={{ flexGrow: 1 }}>
+          <ScrollView
+            contentContainerStyle={{ flexGrow: 1, padding: 20 }}
+            refreshControl={
+              <RefreshControl refreshing={refreshing} onRefresh={() => void onRefresh()} />
+            }
+          >
+            <View
+              style={{
+                flexDirection: 'row',
+                alignItems: 'center',
+                justifyContent: 'center',
+                height: 32,
+              }}
+            >
+              <GoBackButton
+                theme="light"
+                containerStyle={{ position: 'absolute', left: 0 }}
+                onPress={() => {
+                  void localAnalytics().logEvent('OnboardingInviteCodeBackClicked', {
+                    screen: 'OnboardingInviteCode',
+                    action: 'BackClicked',
+                    userId: authContext.userId,
+                  });
+                  if (fromSettings) {
+                    navigation.goBack();
+                  } else {
+                    navigation.navigate('Language', { fromSettings: false });
+                  }
+                }}
+              />
+
+              {!fromSettings ? <Progress current={4} all={5} /> : <View></View>}
+              <View
+                style={{
+                  position: 'absolute',
+                  right: 0,
+                  borderRadius: 40,
+                  backgroundColor: theme.colors.white,
+                }}
+              >
+                <TouchableOpacity style={{ padding: 10 }} onPress={() => void handleContinue()}>
+                  <FontText>{i18n.t('next')}</FontText>
+                </TouchableOpacity>
+              </View>
+            </View>
+            <Image
+              style={{
+                marginTop: '10%',
+                alignItems: 'center',
+                justifyContent: 'center',
+                alignSelf: 'center',
+                height: 100,
+                width: '100%',
+              }}
+              resizeMode="contain"
+              source={require('../../../assets/images/buddy_invite_code.png')}
+            />
+            <View style={{ flexGrow: 1, justifyContent: 'center', alignItems: 'center' }}>
+              <FontText h1 style={{ textAlign: 'center' }}>
+                {i18n.t('onboarding_invite_title_1')}
+                <FontText h1 style={{ color: theme.colors.error }}>
+                  {partnerName}
+                </FontText>
+                {i18n.t('onboarding_invite_title_3')}
+              </FontText>
+              <FontText style={{ color: theme.colors.grey5, marginTop: 20, textAlign: 'center' }}>
+                {i18n.t('onboarding_invite_description')}
+              </FontText>
+              <View
+                style={{
+                  marginTop: 20,
+                  backgroundColor: theme.colors.white,
+                  borderRadius: 16,
+                  padding: 20,
+                  width: '100%',
+                  alignItems: 'center',
+                }}
+              >
+                <FontText
+                  style={{ color: '#A39BAC', fontSize: 13, fontWeight: '600', marginBottom: 24 }}
+                >
+                  {i18n.t('onboarding_invite_share_code')}
+                </FontText>
+                <View
+                  style={{
+                    flexDirection: 'row',
+                    alignItems: 'center',
+                    justifyContent: 'space-between',
+                    width: '100%',
+                  }}
+                >
+                  <View style={{ flexDirection: 'row', gap: 8 }}>
+                    <FontText style={{ color: '#1A052F', fontSize: 40, fontWeight: '600' }}>
+                      {inviteCode}
+                    </FontText>
+                    <TouchableOpacity
+                      onPress={handleCopyInviteCode}
+                      style={{ padding: 8, backgroundColor: '#F5E9EB', borderRadius: 40 }}
+                    >
+                      <CopyIcon height={24} width={24} />
+                    </TouchableOpacity>
+                  </View>
+
+                  <TouchableOpacity
+                    onPress={() => void handleShareInviteCode()}
+                    style={{
+                      paddingHorizontal: 8,
+                      paddingVertical: 4,
+                      backgroundColor: 'black',
+                      borderRadius: 40,
+                    }}
+                  >
+                    <ShareIcon height={24} width={24} />
+                  </TouchableOpacity>
+                </View>
+              </View>
+
+              {!codeShared && (
+                <>
+                  <View style={{ flexDirection: 'row', alignItems: 'center', marginVertical: 20 }}>
+                    <View style={{ flex: 1, height: 1, backgroundColor: theme.colors.grey4 }} />
+                    <FontText style={{ marginHorizontal: 10, color: theme.colors.grey3 }}>
+                      {i18n.t('or')}
+                    </FontText>
+                    <View style={{ flex: 1, height: 1, backgroundColor: theme.colors.grey4 }} />
+                  </View>
+
+                  <PrimaryButton
+                    title={i18n.t('onboarding_invite_enter_pairing')}
+                    onPress={handleEnterPairingCode}
+                    buttonStyle={{ backgroundColor: theme.colors.black, width: '100%' }}
+                  />
+                </>
+              )}
+
+              {codeShared && (
+                <PrimaryButton
+                  title={i18n.t('continue')}
+                  onPress={handleContinue}
+                  buttonStyle={{
+                    backgroundColor: theme.colors.black,
+                    width: '100%',
+                    marginTop: 20,
+                  }}
+                />
+              )}
+            </View>
+          </ScrollView>
+        </SafeAreaView>
+      </ImageBackground>
+    </KeyboardAvoidingView>
+  );
+}

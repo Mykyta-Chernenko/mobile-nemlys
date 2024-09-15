@@ -136,20 +136,23 @@ export type Database = {
         Row: {
           created_at: string;
           id: number;
-          invitation_code: string;
+          invite_code: string;
           updated_at: string;
+          language: string;
         };
         Insert: {
           created_at?: string;
           id?: number;
-          invitation_code: string;
+          invite_code: string;
           updated_at?: string;
+          language: string;
         };
         Update: {
           created_at?: string;
           id?: number;
-          invitation_code?: string;
+          invite_code?: string;
           updated_at?: string;
+          language?: string;
         };
         Relationships: [];
       };
@@ -383,6 +386,7 @@ export type Database = {
         Row: {
           active: boolean;
           couple_id: number;
+          created_by: string;
           created_at: string;
           id: number;
           job: JobSlug;
@@ -1533,6 +1537,60 @@ export type Database = {
           },
         ];
       };
+      question_reply: {
+        Row: {
+          id: number;
+          text: string;
+          question_id: number;
+          user_id: string;
+          created_at: string;
+          updated_at: string;
+        };
+        Insert: {
+          text: string;
+          question_id: number;
+          user_id: string;
+          created_at?: string;
+          updated_at?: string;
+        };
+        Update: {
+          text?: string;
+          question_id?: number;
+          user_id?: string;
+          created_at?: string;
+          updated_at?: string;
+        };
+        Relationships: [
+          {
+            foreignKeyName: 'user_profile_couple_id_fkey';
+            columns: ['couple_id'];
+            isOneToOne: false;
+            referencedRelation: 'couple';
+            referencedColumns: ['id'];
+          },
+          {
+            foreignKeyName: 'user_profile_user_id_fkey';
+            columns: ['user_id'];
+            isOneToOne: true;
+            referencedRelation: 'users';
+            referencedColumns: ['id'];
+          },
+          {
+            foreignKeyName: 'user_profile_user_id_fkey1';
+            columns: ['user_id'];
+            isOneToOne: true;
+            referencedRelation: 'users';
+            referencedColumns: ['id'];
+          },
+          {
+            foreignKeyName: 'user_profile_user_id_fkey2';
+            columns: ['user_id'];
+            isOneToOne: true;
+            referencedRelation: 'users';
+            referencedColumns: ['id'];
+          },
+        ];
+      };
       user_technical_details: {
         Row: {
           after_trial_premium_offered: boolean;
@@ -1629,6 +1687,16 @@ export type Database = {
       delete_user: {
         Args: Record<PropertyKey, never>;
         Returns: undefined;
+      };
+      join_couple: {
+        Args: {
+          invite_code: string;
+        };
+        Returns: 'SUCCESS' | 'WRONG_CODE' | 'COUPLE_IS_FULL' | 'ERROR';
+      };
+      has_partner: {
+        Args: Record<PropertyKey, never>;
+        Returns: boolean;
       };
     };
     Enums: {

@@ -11,7 +11,6 @@ import OnboardingReflectionExplanation from '@app/screens/onboarding/OnboardingR
 import ConfigureDate from '@app/screens/date/ConfigureDate';
 import OnDate from '@app/screens/date/OnDate';
 import Profile from '@app/screens/menu/Profile';
-import DiscussWay from '@app/screens/onboarding/DiscussWay';
 import Analyzing from '@app/screens/onboarding/Analyzing';
 import ReflectionHome from '@app/screens/reflection/ReflectionHome';
 import WriteReflection from '@app/screens/reflection/WriteReflection';
@@ -22,6 +21,13 @@ import PremiumSuccess from '@app/screens/premium/PremiumSuccess';
 import InterviewRequest from '@app/screens/utils/InterviewRequest';
 import Language from '@app/screens/onboarding/Language';
 import InterviewText from '@app/screens/utils/InterviewText';
+import DateIsWithPartner from '@app/components/date/DateIsWithPartner';
+import OnboardingInviteCode from '@app/screens/onboarding/OnboardingInviteCode';
+import OnboardingInviteCodeInput from '@app/screens/onboarding/OnboardingInviteCodeInput';
+import CoupleLanguage from '@app/screens/onboarding/CoupleLanguage';
+import QuestionAnswer from '@app/screens/answer/QuestionAnswer';
+import AnswerHome from '@app/screens/answer/AnswerHome';
+import GeneratingQuestion from '@app/components/date/GeneratingQuestion';
 
 const MainStack = createNativeStackNavigator();
 const Main = () => {
@@ -48,17 +54,20 @@ const Main = () => {
         name={'WriteReflection'}
         component={WriteReflection}
       />
-
       <MainStack.Screen
         options={{ animation: 'slide_from_right' }}
         name={'FinishedWriting'}
         component={FinishedWriting}
       />
-
       <MainStack.Screen
         options={{ animation: 'slide_from_right' }}
         name={'Profile'}
         component={Profile}
+      />
+      <MainStack.Screen
+        options={{ animation: 'slide_from_right' }}
+        name={'DateIsWithPartner'}
+        component={DateIsWithPartner}
       />
       <MainStack.Screen
         options={{ animation: 'slide_from_right' }}
@@ -74,6 +83,11 @@ const Main = () => {
         options={{ animation: 'slide_from_right' }}
         name={'OnDateNotification'}
         component={OnDateNotification}
+      />
+      <MainStack.Screen
+        options={{ animation: 'slide_from_right' }}
+        name={'GeneratingQuestion'}
+        component={GeneratingQuestion}
       />
       <MainStack.Screen
         options={{ animation: 'slide_from_right' }}
@@ -112,9 +126,20 @@ const Main = () => {
       />
       <MainStack.Screen
         options={{ animation: 'slide_from_right' }}
-        name={'DiscussWay'}
-        component={DiscussWay}
+        name={'CoupleLanguage'}
+        component={CoupleLanguage}
       />
+      <MainStack.Screen
+        options={{ animation: 'slide_from_right' }}
+        name={'OnboardingInviteCode'}
+        component={OnboardingInviteCode}
+      />
+      <MainStack.Screen
+        options={{ animation: 'slide_from_right' }}
+        name={'OnboardingInviteCodeInput'}
+        component={OnboardingInviteCodeInput}
+      />
+
       <MainStack.Screen
         options={{ animation: 'slide_from_right' }}
         name={'OnboardingReflection'}
@@ -125,11 +150,20 @@ const Main = () => {
         name={'OnboardingReflectionExplanation'}
         component={OnboardingReflectionExplanation}
       />
-
       <MainStack.Screen
         options={{ animation: 'slide_from_right' }}
         name={'Analyzing'}
         component={Analyzing}
+      />
+      <MainStack.Screen
+        options={{ animation: 'slide_from_right' }}
+        name={'QuestionAnswer'}
+        component={QuestionAnswer}
+      />
+      <MainStack.Screen
+        options={{ animation: 'slide_from_right' }}
+        name={'AnswerHome'}
+        component={AnswerHome}
       />
     </MainStack.Navigator>
   );

@@ -7,8 +7,8 @@ export const PrimaryButton = ({ buttonStyle, ...props }: ButtonProps) => {
       {...props}
       buttonStyle={[
         {
-          borderRadius: 35,
-          height: 72,
+          borderRadius: 40,
+          height: 56,
           backgroundColor: theme.colors.black,
         },
         buttonStyle,

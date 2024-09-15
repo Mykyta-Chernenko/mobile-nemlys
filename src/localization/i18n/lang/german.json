@@ -1,5 +1,4 @@
 {
-  "nemlys": "Nemlys",
   "awesome": "Fantastisch!",
   "loading": "Laden",
   "continue": "Weiter",
@@ -93,7 +92,6 @@
     }
   },
   "home": {
-    "discussed_questions": "besprochene Themen",
     "you": "Sie",
     "partner": "Partner",
     "menu": {
@@ -143,8 +141,6 @@
       "try_unlimited_2": "unbegrenztem Zugang",
       "premium_title": "Holen Sie sich das volle Premium für ",
       "trial_expired": "Ihr Testzugang ist abgelaufen",
-      "unlimited_topics_title": "Erhalten Sie unbegrenzte Themen",
-      "unlimited_topics_explanation": "Sie haben jetzt {{dailyTopics}} Themen pro Tag",
       "trial_button": "7 Tage kostenlos testen",
       "trial_no_card": "Keine Kreditkarte erforderlich",
       "choose_plan": "Wählen Sie Ihren Plan",
@@ -268,7 +264,6 @@
       "confirm": "Ja, Diskussion beenden",
       "cancel": "Nein, zurück"
     },
-    "share": "Teilen",
     "stop": "Date beenden",
     "start_date": "Date starten",
     "level_title_first": "Wählen Sie die ",
@@ -327,15 +322,6 @@
         "choice_3": "Es war gut",
         "choice_2": "Nichts Neues",
         "choice_1": "Es war überhaupt nicht hilfreich"
-      },
-      "alone": {
-        "title_first": "Also! Was ist ",
-        "title_second": "Ihr Eindruck",
-        "title_third": "?",
-        "choice_4": "Viele interessante Fragen",
-        "choice_3": "Gute Fragen",
-        "choice_2": "Nichts Besonderes",
-        "choice_1": "Es gefällt mir nicht"
       }
     },
     "new_level": {
@@ -418,5 +404,54 @@
       "google": "Mit Google anmelden",
       "apple": "Mit Apple anmelden"
     }
-  }
+  },
+  "date_mode_choose_mode": "Wähle den Diskussionsmodus",
+  "date_mode_online_title": "Online",
+  "date_mode_online_description": "Teile deine Antworten schriftlich",
+  "date_mode_in_person_title": "Persönlich",
+  "date_mode_in_person_description": "Diskutiere direkt miteinander",
+  "onboarding_invite_title_1": "Lade ein ",
+  "onboarding_invite_title_3": "\nbei Nemlys beizutreten",
+  "onboarding_invite_description": "Ihr habt gemeinsamen Zugriff\nauf Fragen und Verlauf",
+  "onboarding_invite_share_code": "Teile deinen Einladungscode",
+  "onboarding_invite_enter_pairing": "Gib den Pairing-Code ein",
+  "onboarding_invite_copy_success_message": "Einladungstext in die Zwischenablage kopiert",
+  "onboarding_invite_share_message": "Hallo {{partnerName}}, ich habe gerade die Nemlys-App für Paare installiert. Sie generiert coole Fragen, die wir diskutieren können. Du kannst mir beitreten, indem du diesen Code bei der Anmeldung verwendest: {{inviteCode}}\n",
+  "onboarding_invite_input_title_1": "Gib den Einladungscode ein, den ",
+  "onboarding_invite_input_title_3": " dir gegeben hat",
+  "onboarding_invite_input_invite_code_placeholder": "Gib den 5-stelligen Code ein",
+  "onboarding_invite_input_invite_code_wrong": "Falscher Einladungscode. Bitte versuche es erneut.",
+  "onboarding_invite_input_invite_code_full": "Dieses Paar ist bereits vollständig. Bitte überprüfe das mit deinem Partner.",
+  "onboarding_invite_input_invite_code_error": "Ein Fehler ist aufgetreten. Bitte versuche es später erneut.",
+  "onboarding_invite_input_join_success_message": "Du bist erfolgreich {{partnerName}} beigetreten",
+  "onboarding_invite_input_join": "Paar beitreten",
+  "settings_invite_invite_partner": "Partner einladen",
+  "settings_invite_join_partner": "Einladungscode eingeben",
+  "settings_couple_language": "Sprache des Paares",
+  "couple_language_title": "Wählen Sie die Sprache Ihres Paares",
+  "couple_language_hint": "Wir verwenden die Sprache, um Ihre Fragen zu generieren",
+  "question_answer_hint": "{{partnerName}} wird Ihre Antwort sehen",
+  "question_answer_write": "Schreiben Sie Ihre Antwort...",
+  "question_answer_no_partner": "{{partnerName}} ist noch nicht der App beigetreten",
+  "question_answer_remind_partner": "{{partnerName}} daran erinnern, zu antworten",
+  "question_answer_invite": "Einladen",
+  "remind_no_notification": "{{partnerName}} hat Benachrichtigungen nicht aktiviert",
+  "remind_success": "{{partnerName}} wurde erinnert",
+  "done": "Fertig",
+  "profile_notification": "Benachrichtigungen",
+  "home_menu_answer": "Antworten",
+  "answer_home_title": "Antworten",
+  "answer_home_no_questions": "Diskutieren Sie Fragen online und überprüfen Sie hier Ihre Antworten",
+  "question_home_answer": "Antworten",
+  "question_home_unlock": "Antworten, um freizuschalten",
+  "question_home_replies_count": "{{count}} weitere Antworten",
+  "load_more": "Mehr laden",
+  "on_date_regenerate": "Regenerieren",
+  "on_date_answer": "Antworten",
+  "date_discuss": "Persönlich besprechen",
+  "date_answer": "Online antworten",
+  "discussed_questions": "besprochene Fragen",
+  "premium_two": "Für 2 Personen",
+  "premium_unlimited_topics_title": "Unbegrenzte Fragen erhalten",
+  "premium_unlimited_topics_explanation": "Jetzt hast du {{dailyTopics}} Fragen pro Tag"
 }

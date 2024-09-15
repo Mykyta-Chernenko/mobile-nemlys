@@ -6,9 +6,136 @@ import { isDevice } from 'expo-device';
 import { DENIED_NOTIFICATION_STATUS, GRANTED_NOTIFICATION_STATUS } from '@app/utils/constants';
 import { localAnalytics } from './analytics';
 import { NotificationTriggerInput } from 'expo-notifications';
-import { getNow } from './date';
+import { calculateEveningTimeAfterDays, getNow } from './date';
 import { Mutex } from 'async-mutex';
 import Constants from 'expo-constants';
+import { i18n } from '@app/localization/i18n';
+import {
+  NOTIFICATION_IDENTIFIERS,
+  NOTIFICATION_SUBTYPE,
+  NOTIFICATION_TYPE,
+} from '@app/types/domain';
+import { shuffle } from '@app/utils/array';
+import _ from 'lodash';
+
+export async function createFinishDateNotifications(userId: string) {
+  const finishDateIdentifier = NOTIFICATION_IDENTIFIERS.FINISH_DATE + userId;
+
+  const notificationOrder = shuffle([
+    NOTIFICATION_SUBTYPE.FINISH_DATE_1,
+    NOTIFICATION_SUBTYPE.FINISH_DATE_2,
+  ]);
+  const trigerSeconds = [30 * 60, 4 * 60 * 60];
+  const notifications = (
+    _.zip(notificationOrder, trigerSeconds) as [NOTIFICATION_SUBTYPE, number][]
+  ).map(([subtype, seconds]) => ({
+    screen: 'Home',
+    title: i18n.t(`notification.finish_date.${subtype}.title`),
+    body: i18n.t(`notification.finish_date.${subtype}.body`),
+    trigger: {
+      seconds,
+      repeats: false,
+    },
+    subtype,
+  }));
+  await recreateNotificationList(
+    userId,
+    finishDateIdentifier,
+    [
+      ...notifications,
+      {
+        screen: 'Home',
+        title: i18n.t(`notification.finish_date.${NOTIFICATION_SUBTYPE.FINISH_DATE_1}.title`),
+        body: i18n.t(`notification.finish_date.${NOTIFICATION_SUBTYPE.FINISH_DATE_1}.body`),
+        trigger: {
+          seconds: calculateEveningTimeAfterDays(1),
+          repeats: false,
+        },
+        subtype: NOTIFICATION_SUBTYPE.FINISH_DATE_1,
+      },
+      {
+        screen: 'Home',
+        title: i18n.t(`notification.finish_date.${NOTIFICATION_SUBTYPE.FINISH_DATE_2}.title`),
+        body: i18n.t(`notification.finish_date.${NOTIFICATION_SUBTYPE.FINISH_DATE_2}.body`),
+        trigger: {
+          seconds: calculateEveningTimeAfterDays(7),
+          repeats: false,
+        },
+        subtype: NOTIFICATION_SUBTYPE.FINISH_DATE_2,
+      },
+    ],
+    NOTIFICATION_TYPE.FINISH_DATE,
+    [
+      ...notificationOrder,
+      NOTIFICATION_SUBTYPE.FINISH_DATE_1,
+      NOTIFICATION_SUBTYPE.FINISH_DATE_2,
+    ].join(':'),
+  );
+}
+
+export async function createAfterDateNotifications(userId: string) {
+  const finishDateIdentifier = NOTIFICATION_IDENTIFIERS.FINISH_DATE + userId;
+
+  const afterDateIdentifier = NOTIFICATION_IDENTIFIERS.DATE + userId;
+  void removeOldNotification(finishDateIdentifier);
+  const notificationOrder = shuffle([
+    NOTIFICATION_SUBTYPE.AFTER_DATE_1,
+    NOTIFICATION_SUBTYPE.AFTER_DATE_2,
+    NOTIFICATION_SUBTYPE.AFTER_DATE_3,
+    NOTIFICATION_SUBTYPE.AFTER_DATE_4,
+    NOTIFICATION_SUBTYPE.AFTER_DATE_5,
+  ]);
+  const trigerSeconds = [...Array(10)].map((_, i) => calculateEveningTimeAfterDays(i + 1));
+  const notifications = (
+    _.zip([...notificationOrder, ...notificationOrder], trigerSeconds) as [
+      NOTIFICATION_SUBTYPE,
+      number,
+    ][]
+  ).map(([subtype, seconds]) => ({
+    screen: 'Home',
+    title: i18n.t(`notification.after_date.${subtype}.title`),
+    body: i18n.t(`notification.after_date.${subtype}.body`),
+    trigger: {
+      seconds,
+      repeats: false,
+    },
+    subtype,
+  }));
+  await recreateNotificationList(
+    userId,
+    afterDateIdentifier,
+    [
+      ...notifications,
+      {
+        screen: 'Home',
+        title: i18n.t(`notification.after_date.${NOTIFICATION_SUBTYPE.AFTER_DATE_1}.title`),
+        body: i18n.t(`notification.after_date.${NOTIFICATION_SUBTYPE.AFTER_DATE_1}.body`),
+        trigger: {
+          seconds: calculateEveningTimeAfterDays(20),
+          repeats: false,
+        },
+        subtype: NOTIFICATION_SUBTYPE.AFTER_DATE_1,
+      },
+      {
+        screen: 'Home',
+        title: i18n.t(`notification.after_date.${NOTIFICATION_SUBTYPE.AFTER_DATE_1}.title`),
+        body: i18n.t(`notification.after_date.${NOTIFICATION_SUBTYPE.AFTER_DATE_1}.body`),
+        trigger: {
+          seconds: calculateEveningTimeAfterDays(40),
+          repeats: false,
+        },
+        subtype: NOTIFICATION_SUBTYPE.AFTER_DATE_1,
+      },
+    ],
+    NOTIFICATION_TYPE.AFTER_DATE,
+    [
+      ...notificationOrder,
+      ...notificationOrder,
+      NOTIFICATION_SUBTYPE.AFTER_DATE_1,
+      NOTIFICATION_SUBTYPE.AFTER_DATE_2,
+    ].join(':'),
+  );
+}
 
 export async function createNewNotification(
   userId: string,

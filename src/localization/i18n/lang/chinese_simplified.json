@@ -1,5 +1,4 @@
 {
-  "nemlys": "Nemlys",
   "awesome": "太棒了!",
   "loading": "加载中",
   "continue": "继续",
@@ -93,7 +92,6 @@
     }
   },
   "home": {
-    "discussed_questions": "讨论的话题",
     "you": "你",
     "partner": "伴侣",
     "menu": {
@@ -143,8 +141,6 @@
       "try_unlimited_2": "无限访问",
       "premium_title": "获取完整的高级版，",
       "trial_expired": "您的试用期已过",
-      "unlimited_topics_title": "获取无限话题",
-      "unlimited_topics_explanation": "现在您每天有{{dailyTopics}}个话题",
       "trial_button": "免费试用7天",
       "trial_no_card": "不需要信用卡",
       "choose_plan": "选择您的计划",
@@ -268,7 +264,6 @@
       "confirm": "是的，停止讨论",
       "cancel": "不，回来"
     },
-    "share": "分享",
     "stop": "停止约会",
     "start_date": "开始约会",
     "level_title_first": "选择",
@@ -327,15 +322,6 @@
         "choice_3": "很好",
         "choice_2": "没什么新意",
         "choice_1": "一点也不帮忙"
-      },
-      "alone": {
-        "title_first": "那么！",
-        "title_second": "您的印象如何",
-        "title_third": "？",
-        "choice_4": "很多有趣的问题",
-        "choice_3": "好问题",
-        "choice_2": "没什么特别的",
-        "choice_1": "我不喜欢"
       }
     },
     "new_level": {
@@ -418,5 +404,54 @@
       "google": "用Google登录",
       "apple": "用Apple登录"
     }
-  }
+  },
+  "date_mode_choose_mode": "选择讨论模式",
+  "date_mode_online_title": "在线",
+  "date_mode_online_description": "以书面形式分享你的答案",
+  "date_mode_in_person_title": "面对面",
+  "date_mode_in_person_description": "在彼此面前讨论",
+  "onboarding_invite_title_1": "邀请 ",
+  "onboarding_invite_title_3": "\n加入 Nemlys",
+  "onboarding_invite_description": "你将共享访问\n问题和历史记录",
+  "onboarding_invite_share_code": "分享你的邀请代码",
+  "onboarding_invite_enter_pairing": "输入配对代码",
+  "onboarding_invite_copy_success_message": "邀请文本已复制到剪贴板",
+  "onboarding_invite_share_message": "嗨 {{partnerName}}，我刚刚安装了 Nemlys 情侣应用。它生成我们可以讨论的有趣问题。你可以在注册时使用这个代码加入我：{{inviteCode}}\n",
+  "onboarding_invite_input_title_1": "输入邀请代码，",
+  "onboarding_invite_input_title_3": "与你分享",
+  "onboarding_invite_input_invite_code_placeholder": "输入 5 位数字代码",
+  "onboarding_invite_input_invite_code_wrong": "邀请代码不正确。请再试一次。",
+  "onboarding_invite_input_invite_code_full": "这个情侣已经满员。请与您的伴侣确认。",
+  "onboarding_invite_input_invite_code_error": "发生错误。请稍后再试。",
+  "onboarding_invite_input_join_success_message": "你已成功加入 {{partnerName}}",
+  "onboarding_invite_input_join": "加入情侣",
+  "settings_invite_invite_partner": "邀请伴侣",
+  "settings_invite_join_partner": "输入邀请代码",
+  "settings_couple_language": "情侣语言",
+  "couple_language_title": "选择你们的情侣语言",
+  "couple_language_hint": "我们将使用该语言生成你们的问题",
+  "question_answer_hint": "{{partnerName}} 将看到你的回答",
+  "question_answer_write": "写下你的回答...",
+  "question_answer_no_partner": "{{partnerName}} 还没有加入应用",
+  "question_answer_remind_partner": "提醒 {{partnerName}} 回答",
+  "question_answer_invite": "邀请",
+  "remind_no_notification": "{{partnerName}} 尚未启用通知",
+  "remind_success": "{{partnerName}} 已被提醒",
+  "done": "完成",
+  "profile_notification": "通知",
+  "home_menu_answer": "回答",
+  "answer_home_title": "回答",
+  "answer_home_no_questions": "在线讨论问题并在这里查看你的回答",
+  "question_home_answer": "回答",
+  "question_home_unlock": "回答以解锁",
+  "question_home_replies_count": "{{count}} 条更多回复",
+  "load_more": "加载更多",
+  "on_date_regenerate": "重新生成",
+  "on_date_answer": "回答",
+  "date_discuss": "面对面讨论",
+  "date_answer": "在线回答",
+  "discussed_questions": "讨论过的问题",
+  "premium_two": "适合2人",
+  "premium_unlimited_topics_title": "获取无限问题",
+  "premium_unlimited_topics_explanation": "现在你每天有{{dailyTopics}}个问题"
 }
