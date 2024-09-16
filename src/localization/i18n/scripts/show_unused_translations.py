@@ -64,7 +64,7 @@ def get_all_keys(json_obj: Dict, prefix: str = '') -> Set[str]:
 def find_translation_keys_in_file(file_path: str) -> Set[str]:
     with open(file_path, 'r', encoding='utf-8') as file:
         content = file.read()
-    pattern = r"t\(['\"](.+?)['\"]"
+    pattern = r"t\(['\"](.+?)['\"]\)"
     return set(re.findall(pattern, content))
 
 def find_all_used_keys(app_dir: str) -> Set[str]:

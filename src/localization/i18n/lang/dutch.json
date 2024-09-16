@@ -1,13 +1,20 @@
 {
+  "awesome": "Geweldig!",
   "loading": "Laden",
   "continue": "Doorgaan",
   "or": "Of",
+  "ok": "Oké",
+  "yes": "Ja",
+  "no": "Nee",
+  "close": "Sluiten",
   "save": "Opslaan",
   "cancel": "Annuleren",
   "confirm": "Bevestigen",
   "submit": "Indienen",
+  "remove": "Verwijderen",
   "next": "Volgende",
   "skip": "Overslaan",
+  "finish": "Voltooien",
   "input_here": "Voer hier in",
   "email_placeholder": "Voer uw e-mailadres in",
   "password_placeholder": "Voer uw wachtwoord in",
@@ -90,7 +97,8 @@
     "menu": {
       "discuss": "Bespreken",
       "profile": "Profiel",
-      "premium": "Premium"
+      "premium": "Premium",
+      "reflect": "Reflecteren"
     }
   },
   "profile": {
@@ -115,6 +123,8 @@
   },
   "premium": {
     "banner": {
+      "premium": "Onbeperkte toegang",
+      "premium_right": "∞",
       "trial": "Onbeperkte toegang",
       "days_left": "{{days}} dagen resterend",
       "new": "Onderwerpen om te proberen",
@@ -125,6 +135,7 @@
       "title": "Premium",
       "enjoy_your_premium": "Geniet van uw premium!",
       "manage": "Beheer abonnement",
+      "upgrade_trial": "U heeft nog {{trialDays}} proefdagen over ",
       "reached_limit": "U heeft uw dagelijkse limiet bereikt. ",
       "try_unlimited_1": "Probeer met ",
       "try_unlimited_2": "onbeperkte toegang",
@@ -137,8 +148,10 @@
       "plan_monthly_price": "{{price}}/maand",
       "plan_yearly_title": "Jaarlijks",
       "plan_yearly_price": "{{price}}/jaar",
+      "subscribe": "Start met gratis 7-daagse proef*",
       "terms": "Servicevoorwaarden",
-      "privacy": "Privacybeleid"
+      "privacy": "Privacybeleid",
+      "charged": "* U wordt in rekening gebracht na afloop van de proefperiode tenzij u het abonnement annuleert"
     },
     "success": {
       "trial": {
@@ -158,10 +171,19 @@
     "available": "{{number}} nieuwe reflecties beschikbaar",
     "completed": "{{number}} Voltooid",
     "start": "Start",
+    "explanation": {
+      "button": "Begrepen",
+      "reason_1": "Meer Reflecties = Hogere Kwaliteit van 'Gepersonaliseerd' onderwerp",
+      "reason_2": "We gebruiken AI, dus hoe meer je reflecteert en schrijft, hoe beter de app wordt",
+      "reason_3": "Je gegevens zijn veilig. We gebruiken ze alleen voor het genereren van vragen",
+      "title": "Waarom is het belangrijk om te reflecteren en te schrijven?"
+    },
     "no_reflection": "Bespreek 1 onderwerp om je nieuwe reflectiekaart te krijgen",
     "finished_writing_title_1": "Klaar!",
     "finished_writing_title_2": "Je bent zo'n goede schrijver",
-    "finished_writing_button": "Geweldig, bedankt!"
+    "finished_writing_button": "Geweldig, bedankt!",
+    "level_0": "inleiding",
+    "level": "niveau {{number}}"
   },
   "update": {
     "title": "Update",
@@ -185,10 +207,12 @@
   "interview_text": {
     "title_first": "Schrijf je feedback om ",
     "title_second": "1 maand Premium te krijgen",
+    "reason_1_title_1": "",
     "reason_1_title_2": "Schrijf antwoorden",
     "reason_1_title_3": " op 3 vragen over wat je leuk en niet leuk vindt aan Nemlys",
     "reason_2_title_1": "Krijg ",
     "reason_2_title_2": "1 maand premium",
+    "reason_2_title_3": "",
     "reason_3_title_1": "Jouw antwoorden ",
     "reason_3_title_2": "helpen ons beslissen",
     "reason_3_title_3": " waar we aan moeten werken",
@@ -221,10 +245,15 @@
     }
   },
   "date": {
+    "reminder": {
+      "title": "{{firstName}}, Tijd om te verbinden met Partner",
+      "body": "Leuk? Diep? Intiem? Kies en bespreek onderwerpen samen"
+    },
     "generating_questions_error": "Sorry, onze AI kan deze vragen niet genereren, probeer een andere categorie of onderwerp",
     "notification": {
       "title_1": "Krijg een herinnering",
       "title_2": " om vragen te bespreken met je partner",
+      "title_3": "",
       "confirm": "Sta meldingen toe"
     },
     "stop_popup": {
@@ -235,6 +264,8 @@
       "confirm": "Ja, stop de discussie",
       "cancel": "Nee, ga terug"
     },
+    "stop": "Stop datum",
+    "start_date": "Begin datum",
     "level_title_first": "Selecteer ",
     "level_title_second": "diepte ",
     "level_title_third": "van je vragen",
@@ -247,7 +278,37 @@
     "topic_title_second": "1 onderwerp ",
     "topic_title_third": "om te bespreken met partner",
     "topic": {
-      "surprise": "Willekeurig"
+      "title": "Selecteer een onderwerp",
+      "surprise": "Willekeurig",
+      "intimacy": "Pikant",
+      "emotions": "Emoties",
+      "fun": "Plezier",
+      "worldview": "Wereldbeeld",
+      "goals": "Doelen",
+      "future": "Toekomst",
+      "communication": "Communicatie",
+      "preferences": "Voorkeuren",
+      "appearance": "Uiterlijk",
+      "travel": "Reizen",
+      "career": "Carrière",
+      "expectations": "Verwachtingen",
+      "values": "Waarden",
+      "gifts": "Cadeaus",
+      "friends": "Vrienden",
+      "childhood": "Kindertijd",
+      "commitment": "Toewijding",
+      "past": "Verleden",
+      "ex": "Ex",
+      "fidelity": "Trouw",
+      "trust": "Vertrouwen",
+      "money": "Geld",
+      "conflict": "Conflict",
+      "social_circle": "Sociale kring",
+      "love_language": "Liefdestaal",
+      "mental_health": "Geestelijke gezondheid",
+      "parents": "Ouders",
+      "children": "Kinderen",
+      "living_together": "Samenwonen"
     },
     "generating_questions_first": "Vragen genereren om te bespreken ",
     "generating_questions_second": "met partner",
@@ -262,6 +323,14 @@
         "choice_2": "Niets nieuws",
         "choice_1": "Het was helemaal niet behulpzaam"
       }
+    },
+    "new_level": {
+      "reached": "je hebt bereikt",
+      "have": "je hebt",
+      "title_first": "Discussie",
+      "title_second": "voltooid",
+      "alone_title_first": "Je App Verkenning",
+      "home": "Terug naar home"
     }
   },
   "welcome": {
@@ -280,6 +349,7 @@
     "partner_name_third": "?",
     "job": {
       "title_first": "Wat wil je ",
+      "title_second": "",
       "title_third": "krijgen?",
       "fun": "Leuke en makkelijke vragen voor date gesprekken",
       "hard": "Vragen die we moeilijk zelf ter sprake brengen",
@@ -370,6 +440,7 @@
   "done": "Klaar",
   "profile_notification": "Meldingen",
   "home_menu_answer": "Antwoorden",
+  "answer_home_title": "Antwoorden",
   "answer_home_no_questions": "Bespreek vragen online en bekijk hier je antwoorden",
   "question_home_answer": "Beantwoord",
   "question_home_unlock": "Beantwoord om te ontgrendelen",

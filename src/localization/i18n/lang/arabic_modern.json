@@ -1,13 +1,20 @@
 {
+  "awesome": "رائع!",
   "loading": "جار التحميل",
   "continue": "متابعة",
   "or": "أو",
+  "ok": "حسنًا",
+  "yes": "نعم",
+  "no": "لا",
+  "close": "إغلاق",
   "save": "حفظ",
   "cancel": "إلغاء",
   "confirm": "تأكيد",
   "submit": "إرسال",
+  "remove": "إزالة",
   "next": "التالي",
   "skip": "تخطي",
+  "finish": "إنهاء",
   "input_here": "أدخل هنا",
   "email_placeholder": "أدخل بريدك الإلكتروني",
   "password_placeholder": "أدخل كلمة المرور",
@@ -90,7 +97,8 @@
     "menu": {
       "discuss": "ناقش",
       "profile": "الملف الشخصي",
-      "premium": "بريميوم"
+      "premium": "بريميوم",
+      "reflect": "تأمل"
     }
   },
   "profile": {
@@ -115,6 +123,8 @@
   },
   "premium": {
     "banner": {
+      "premium": "وصول غير محدود",
+      "premium_right": "∞",
       "trial": "وصول غير محدود",
       "days_left": "{{days}} أيام متبقية",
       "new": "مواضيع للتجربة",
@@ -125,6 +135,7 @@
       "title": "بريميوم",
       "enjoy_your_premium": "استمتع ببريميوم الخاص بك!",
       "manage": "إدارة الاشتراك",
+      "upgrade_trial": "لديك {{trialDays}} أيام من الوصول التجريبي المتبقي ",
       "reached_limit": "لقد وصلت إلى الحد اليومي الخاص بك. ",
       "try_unlimited_1": "جرب ",
       "try_unlimited_2": "الوصول غير المحدود",
@@ -137,8 +148,10 @@
       "plan_monthly_price": "{{price}}/شهر",
       "plan_yearly_title": "سنويًا",
       "plan_yearly_price": "{{price}}/سنة",
+      "subscribe": "ابدأ بتجربة مجانية لمدة 7 أيام*",
       "terms": "شروط الخدمة",
-      "privacy": "سياسة الخصوصية"
+      "privacy": "سياسة الخصوصية",
+      "charged": "* سيتم تحصيل الرسوم عند انتهاء الفترة التجريبية ما لم تقم بإلغاء الاشتراك"
     },
     "success": {
       "trial": {
@@ -158,10 +171,19 @@
     "available": "{{number}} تأملات جديدة متاحة",
     "completed": "{{number}} مكتملة",
     "start": "ابدأ",
+    "explanation": {
+      "button": "فهمت",
+      "reason_1": "المزيد من التأملات = جودة أعلى للموضوعات الشخصية",
+      "reason_2": "نحن نستخدم الذكاء الاصطناعي، لذا كلما زادت تأملاتك وكتابتك، كلما أصبح التطبيق أفضل",
+      "reason_3": "بياناتك آمنة. نستخدمها فقط لتوليد الأسئلة",
+      "title": "لماذا من المهم التأمل والكتابة؟"
+    },
     "no_reflection": "ناقش موضوعًا واحدًا للحصول على بطاقة تأمل جديدة",
     "finished_writing_title_1": "تم!",
     "finished_writing_title_2": " أنت كاتب جيد جدًا",
-    "finished_writing_button": "رائع، شكرًا!"
+    "finished_writing_button": "رائع، شكرًا!",
+    "level_0": "مقدمة",
+    "level": "المستوى {{number}}"
   },
   "update": {
     "title": "تحديث",
@@ -185,10 +207,12 @@
   "interview_text": {
     "title_first": "اكتب ملاحظاتك للحصول على ",
     "title_second": "شهر من بريميوم",
+    "reason_1_title_1": "",
     "reason_1_title_2": "اكتب الإجابات",
     "reason_1_title_3": "لـ3 أسئلة حول ما تحبه وما لا تحبه في نيمليس",
     "reason_2_title_1": "احصل على ",
     "reason_2_title_2": "شهر من بريميوم",
+    "reason_2_title_3": "",
     "reason_3_title_1": "إجاباتك ",
     "reason_3_title_2": "تساعدنا في اتخاذ قرار",
     "reason_3_title_3": "ما الذي يجب العمل عليه بعد ذلك",
@@ -221,10 +245,15 @@
     }
   },
   "date": {
+    "reminder": {
+      "title": "{{firstName}}، حان الوقت للتواصل مع الشريك",
+      "body": "مرح؟ عميق؟ حميمي؟ اختر وناقش الموضوعات معًا"
+    },
     "generating_questions_error": "عذرًا، لا يمكن لنظام الذكاء الاصطناعي لدينا توليد هذه الأسئلة، جرب فئة أخرى أو موضوعًا آخر",
     "notification": {
       "title_1": "احصل على تذكير",
       "title_2": " لمناقشة الأسئلة مع شريكك",
+      "title_3": "",
       "confirm": "السماح بالإشعارات"
     },
     "stop_popup": {
@@ -235,6 +264,8 @@
       "confirm": "نعم، أوقف النقاش",
       "cancel": "لا، عد"
     },
+    "stop": "أوقف الموعد",
+    "start_date": "ابدأ الموعد",
     "level_title_first": "حدد ",
     "level_title_second": "عمق ",
     "level_title_third": "أسئلتك",
@@ -247,7 +278,37 @@
     "topic_title_second": "موضوعًا واحدًا ",
     "topic_title_third": "لمناقشته مع الشريك",
     "topic": {
-      "surprise": "عشوائي"
+      "title": "اختر موضوعًا واحدًا",
+      "surprise": "عشوائي",
+      "intimacy": "حار",
+      "emotions": "العواطف",
+      "fun": "المرح",
+      "worldview": "وجهة نظر",
+      "goals": "الأهداف",
+      "future": "المستقبل",
+      "communication": "التواصل",
+      "preferences": "التفضيلات",
+      "appearance": "المظهر",
+      "travel": "السفر",
+      "career": "المهنة",
+      "expectations": "التوقعات",
+      "values": "القيم",
+      "gifts": "الهدايا",
+      "friends": "الأصدقاء",
+      "childhood": "الطفولة",
+      "commitment": "الالتزام",
+      "past": "الماضي",
+      "ex": "السابق",
+      "fidelity": "الوفاء",
+      "trust": "الثقة",
+      "money": "المال",
+      "conflict": "الصراع",
+      "social_circle": "الدائرة الاجتماعية",
+      "love_language": "لغة الحب",
+      "mental_health": "الصحة النفسية",
+      "parents": "الوالدين",
+      "children": "الأطفال",
+      "living_together": "العيش معًا"
     },
     "generating_questions_first": "جاري توليد الأسئلة لمناقشتها ",
     "generating_questions_second": "مع الشريك",
@@ -262,6 +323,14 @@
         "choice_2": "لا شيء جديد",
         "choice_1": "لم تكن مفيدة على الإطلاق"
       }
+    },
+    "new_level": {
+      "reached": "لقد وصلت إلى",
+      "have": "لديك",
+      "title_first": "المناقشة",
+      "title_second": "مكتملة",
+      "alone_title_first": "استكشاف التطبيق الخاص بك",
+      "home": "العودة إلى الصفحة الرئيسية"
     }
   },
   "welcome": {
@@ -280,6 +349,7 @@
     "partner_name_third": "؟",
     "job": {
       "title_first": "ماذا تريد ",
+      "title_second": "",
       "title_third": "تحقيقه؟",
       "fun": "أسئلة ممتعة وسهلة لمحادثات المواعيد",
       "hard": "أسئلة نجد صعوبة في طرحها بأنفسنا",
@@ -370,6 +440,7 @@
   "done": "تم",
   "profile_notification": "الإشعارات",
   "home_menu_answer": "الإجابات",
+  "answer_home_title": "الإجابات",
   "answer_home_no_questions": "ناقش الأسئلة عبر الإنترنت وتحقق من إجاباتك هنا",
   "question_home_answer": "إجابة",
   "question_home_unlock": "أجب لفتح",

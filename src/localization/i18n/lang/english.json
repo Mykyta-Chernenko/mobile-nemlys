@@ -1,13 +1,20 @@
 {
+  "awesome": "Awesome!",
   "loading": "Loading",
   "continue": "Continue",
   "or": "Or",
+  "ok": "Ok",
+  "yes": "Yes",
+  "no": "No",
+  "close": "Close",
   "save": "Save",
   "cancel": "Cancel",
   "confirm": "Confirm",
   "submit": "Submit",
+  "remove": "Remove",
   "next": "Next",
   "skip": "Skip",
+  "finish": "Finish",
   "input_here": "Input here",
   "email_placeholder": "Enter your email",
   "password_placeholder": "Enter your password",
@@ -90,7 +97,8 @@
     "menu": {
       "discuss": "Discuss",
       "profile": "Profile",
-      "premium": "Premium"
+      "premium": "Premium",
+      "reflect": "Reflect"
     }
   },
   "profile": {
@@ -115,6 +123,8 @@
   },
   "premium": {
     "banner": {
+      "premium": "Unlimited access",
+      "premium_right": "∞",
       "trial": "Unlimited access",
       "days_left": "{{days}} days left",
       "new": "Topics to try",
@@ -125,6 +135,7 @@
       "title": "Premium",
       "enjoy_your_premium": "Enjoy your premium!",
       "manage": "Manage Subscription",
+      "upgrade_trial": "You have {{trialDays}} Trial Access days left ",
       "reached_limit": "You reached your daily limit. ",
       "try_unlimited_1": "Try with ",
       "try_unlimited_2": "unlimited access",
@@ -137,8 +148,10 @@
       "plan_monthly_price": "{{price}}/month",
       "plan_yearly_title": "Annual",
       "plan_yearly_price": "{{price}}/year",
+      "subscribe": "Start with free 7-day trial*",
       "terms": "Terms of Service",
-      "privacy": "Privacy Policy"
+      "privacy": "Privacy Policy",
+      "charged": "* You will be charged when the trial is over unless you cancel the subscription"
     },
     "success": {
       "trial": {
@@ -158,10 +171,19 @@
     "available": "{{number}} new reflections available",
     "completed": "{{number}} Completed",
     "start": "Start",
+    "explanation": {
+      "button": "Got you",
+      "reason_1": "More Reflections = Higher Quality of 'Personalized' topic",
+      "reason_2": "We use AI, so the more you reflect and write the better app will get",
+      "reason_3": "Your data is safe. We use it only for generating questions",
+      "title": "Why is it important to reflect and write?"
+    },
     "no_reflection": "Discuss 1 topic to get your new reflection card",
     "finished_writing_title_1": "Done!",
     "finished_writing_title_2": " You're such a good writer",
-    "finished_writing_button": "Great, thanks!"
+    "finished_writing_button": "Great, thanks!",
+    "level_0": "introduction",
+    "level": "level {{number}}"
   },
   "update": {
     "title": "Update",
@@ -185,10 +207,12 @@
   "interview_text": {
     "title_first": "Write your feedback to get ",
     "title_second": "1 month of Premium",
+    "reason_1_title_1": "",
     "reason_1_title_2": "Write answers",
     "reason_1_title_3": " to 3 questions what you like and dislike in Nemlys",
     "reason_2_title_1": "Get ",
     "reason_2_title_2": "1 month of premium",
+    "reason_2_title_3": "",
     "reason_3_title_1": "Your answers ",
     "reason_3_title_2": "help us decide",
     "reason_3_title_3": " what to work on next",
@@ -221,10 +245,15 @@
     }
   },
   "date": {
+    "reminder": {
+      "title": "{{firstName}}, Time to Connect with Partner",
+      "body": "Fun? Deep? Intimate? Choose and Discuss topics together"
+    },
     "generating_questions_error": "Sorry, our AI cannot generate these questions, try another category or topic",
     "notification": {
       "title_1": "Get a reminder",
       "title_2": " to discuss questions with your partner",
+      "title_3": "",
       "confirm": "Allow notifications"
     },
     "stop_popup": {
@@ -235,6 +264,8 @@
       "confirm": "Yes, stop discussion",
       "cancel": "No, come back"
     },
+    "stop": "Stop date",
+    "start_date": "Start date",
     "level_title_first": "Select ",
     "level_title_second": "depth ",
     "level_title_third": "of your questions",
@@ -247,7 +278,37 @@
     "topic_title_second": "1 topic ",
     "topic_title_third": "to discuss with partner",
     "topic": {
-      "surprise": "Random"
+      "title": "Select one topic",
+      "surprise": "Random",
+      "intimacy": "Spicy",
+      "emotions": "Emotions",
+      "fun": "Fun",
+      "worldview": "Worldview",
+      "goals": "Goals",
+      "future": "Future",
+      "communication": "Communication",
+      "preferences": "Preferences",
+      "appearance": "Appearance",
+      "travel": "Travel",
+      "career": "Career",
+      "expectations": "Expectations",
+      "values": "Values",
+      "gifts": "Gifts",
+      "friends": "Friends",
+      "childhood": "Childhood",
+      "commitment": "Commitment",
+      "past": "Past",
+      "ex": "Ex",
+      "fidelity": "Fidelity",
+      "trust": "Trust",
+      "money": "Money",
+      "conflict": "Conflict",
+      "social_circle": "Social circle",
+      "love_language": "Love language",
+      "mental_health": "Mental health",
+      "parents": "Parents",
+      "children": "Children",
+      "living_together": "Living together"
     },
     "generating_questions_first": "Generating questions to discuss ",
     "generating_questions_second": "with partner",
@@ -262,6 +323,14 @@
         "choice_2": "Nothing new",
         "choice_1": "It wasn’t helpful at all"
       }
+    },
+    "new_level": {
+      "reached": "you reached",
+      "have": "you have",
+      "title_first": "Discussion",
+      "title_second": "completed",
+      "alone_title_first": "Your App Exploration",
+      "home": "Back home"
     }
   },
   "welcome": {
@@ -280,6 +349,7 @@
     "partner_name_third": "?",
     "job": {
       "title_first": "What do you ",
+      "title_second": "",
       "title_third": "want to get?",
       "fun": "Fun and easy questions for date talks",
       "hard": "Questions that we find hard to bring up ourselves",
@@ -370,6 +440,7 @@
   "done": "Done",
   "profile_notification": "Notifications",
   "home_menu_answer": "Answers",
+  "answer_home_title": "Answers",
   "answer_home_no_questions": "Discuss questions online and check your answers here",
   "question_home_answer": "Answer",
   "question_home_unlock": "Answer to unlock",
