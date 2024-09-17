@@ -1,5 +1,6 @@
 import React from 'react';
 import { Button, ButtonProps, useTheme } from '@rneui/themed';
+import { getFontSizeForScreen } from '@app/components/utils/FontText';
 export const SecondaryButton = ({ buttonStyle, ...props }: ButtonProps) => {
   const { theme } = useTheme();
   return (
@@ -12,7 +13,10 @@ export const SecondaryButton = ({ buttonStyle, ...props }: ButtonProps) => {
         },
         buttonStyle,
       ]}
-      titleStyle={{ color: theme.colors.black, fontWeight: '600', fontSize: 16 }}
+      titleStyle={{
+        color: theme.colors.black,
+        fontSize: getFontSizeForScreen('normal'),
+      }}
       disabledTitleStyle={{ color: theme.colors.grey5 }}
       {...props}
     ></Button>

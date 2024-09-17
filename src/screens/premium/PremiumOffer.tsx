@@ -9,7 +9,11 @@ import {
 } from 'react-native';
 import * as Linking from 'expo-linking';
 import { SafeAreaView } from 'react-native-safe-area-context';
-import { FontText, REGULAR_FONT_FAMILY } from '@app/components/utils/FontText';
+import {
+  FontText,
+  getFontSizeForScreen,
+  REGULAR_FONT_FAMILY,
+} from '@app/components/utils/FontText';
 import { i18n } from '@app/localization/i18n';
 import { useTheme, useThemeMode } from '@rneui/themed';
 import { logErrorsWithMessage, logSupaErrors, retryAsync } from '@app/utils/errors';
@@ -610,6 +614,7 @@ export default function ({
                 backgroundColor: 'rgba(255,255,255,0.1)',
                 padding: 10,
                 borderRadius: 40,
+                alignSelf: 'center',
               }}
             >
               <FontText
@@ -676,9 +681,8 @@ export default function ({
                             borderRadius: 8,
                             padding: 5,
                             backgroundColor: theme.colors.white,
-
-                            height: 42,
-                            width: 42,
+                            height: getFontSizeForScreen('h3') * 2,
+                            width: getFontSizeForScreen('h3') * 2,
                             justifyContent: 'center',
                             alignItems: 'center',
                             transform: [

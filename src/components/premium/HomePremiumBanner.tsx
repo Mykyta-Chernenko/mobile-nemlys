@@ -115,7 +115,7 @@ const HomePremiumBanner = React.forwardRef<HomePremiumBannerRef, Props>((props, 
       left: newDatesLeft,
     });
   } else if (premiumState === 'free') {
-    leftText = i18n.t('premium.banner.free');
+    leftText = i18n.t('premium_banner_free');
     rightText = i18n.t('premium.banner.topics_left', {
       total: dailyDatesLimit,
       left: freeDatesLeft,

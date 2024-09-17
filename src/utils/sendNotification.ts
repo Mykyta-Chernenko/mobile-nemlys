@@ -8,37 +8,43 @@ export const handleRemindPartner = async (
   questionId: number,
   partnerName: string,
   userId: string,
+  setLoading: (l: boolean) => void,
 ) => {
-  const res = await supabase.functions.invoke('send-partner-notification', {
-    body: { question_id: questionId, type: 'remind_answer' },
-  });
-  if (res.error) {
-    logErrorsWithMessage(res.error, 'notify partner function returned error');
-    return;
-  }
-  if (res.data?.error === 'NO_PARTNER_TOKEN') {
-    Toast.show({
-      type: 'error',
-      text1: i18n.t('remind_no_notification', { partnerName }),
-      visibilityTime: 5000,
+  setLoading(true);
+  try {
+    const res = await supabase.functions.invoke('send-partner-notification', {
+      body: { question_id: questionId, type: 'remind_answer' },
     });
-    void localAnalytics().logEvent('QuestionAnswerPartnerRemindedNoToken', {
-      screen: 'QuestionAnswer',
-      action: 'PartnerRemindedNoToken',
-      questionId,
-      userId,
-    });
-  } else {
-    Toast.show({
-      type: 'success',
-      text1: i18n.t('remind_success', { partnerName }),
-      visibilityTime: 5000,
-    });
-    void localAnalytics().logEvent('QuestionAnswerPartnerReminded', {
-      screen: 'QuestionAnswer',
-      action: 'PartnerReminded',
-      questionId,
-      userId: userId,
-    });
+    if (res.error) {
+      logErrorsWithMessage(res.error, 'notify partner function returned error');
+      return;
+    }
+    if (res.data?.error === 'NO_PARTNER_TOKEN') {
+      Toast.show({
+        type: 'error',
+        text1: i18n.t('remind_no_notification', { partnerName }),
+        visibilityTime: 5000,
+      });
+      void localAnalytics().logEvent('QuestionAnswerPartnerRemindedNoToken', {
+        screen: 'QuestionAnswer',
+        action: 'PartnerRemindedNoToken',
+        questionId,
+        userId,
+      });
+    } else {
+      Toast.show({
+        type: 'success',
+        text1: i18n.t('remind_success', { partnerName }),
+        visibilityTime: 5000,
+      });
+      void localAnalytics().logEvent('QuestionAnswerPartnerReminded', {
+        screen: 'QuestionAnswer',
+        action: 'PartnerReminded',
+        questionId,
+        userId: userId,
+      });
+    }
+  } finally {
+    setLoading(false);
   }
 };

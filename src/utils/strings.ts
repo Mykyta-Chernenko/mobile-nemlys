@@ -13,9 +13,9 @@ export function capitalize(str: string) {
 }
 
 export const getFontSize = (text: string) => {
-  if (text?.length > 350) {
+  if (text?.length > 250) {
     return { h4: true };
-  } else if (text?.length > 220) {
+  } else if (text?.length > 100) {
     return { h3: true };
   }
   return { h2: true };

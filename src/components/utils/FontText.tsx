@@ -1,21 +1,49 @@
 import React from 'react';
 import { TextProps } from '@rneui/themed';
-import { TextStyle, Text, Dimensions } from 'react-native';
+import { TextStyle, Text, Dimensions, PixelRatio } from 'react-native';
+
 export const REGULAR_FONT_FAMILY = 'Epilogue-Regular';
 export const BOLD_FONT_FAMILY = 'Epilogue-Bold';
 export const SEMIBOLD_FONT_FAMILY = 'Epilogue-SemiBold';
-export const FontText = ({ style, h1, h2, h3, h4, ...props }: TextProps) => {
-  const windowWidth = Dimensions.get('window').width;
-  const windowHeight = Dimensions.get('window').height;
 
-  let screenType = 's';
-  if (windowWidth * windowHeight > 550000) {
-    screenType = 'xl';
-  } else if (windowWidth * windowHeight > 350000) {
-    screenType = 'l';
-  } else if (windowWidth * windowHeight > 290000) {
-    screenType = 'm';
-  }
+type FontSize = 'normal' | 'small' | 'h1' | 'h2' | 'h3' | 'h4';
+type ScreenType = 's' | 'm' | 'l' | 'xl' | 'xxl';
+
+const fontBySize = {
+  s: { h1: 30, h2: 24, h3: 18, h4: 14, normal: 13, small: 11 },
+  m: { h1: 34, h2: 28, h3: 22, h4: 18, normal: 15, small: 13 },
+  l: { h1: 40, h2: 32, h3: 24, h4: 20, normal: 16, small: 14 },
+  xl: { h1: 50, h2: 40, h3: 30, h4: 26, normal: 18, small: 15 },
+  xxl: { h1: 72, h2: 58, h3: 44, h4: 34, normal: 24, small: 16 },
+};
+
+const getScreenType = (): ScreenType => {
+  const windowDimensions = Dimensions.get('window');
+  const physicalWidth = PixelRatio.getPixelSizeForLayoutSize(windowDimensions.width);
+  const physicalHeight = PixelRatio.getPixelSizeForLayoutSize(windowDimensions.height);
+  const physicalScreenArea = physicalWidth * physicalHeight;
+
+  if (physicalScreenArea > 4800000) return 'xxl';
+  if (physicalScreenArea > 3400000) return 'xl';
+  if (physicalScreenArea > 2400000) return 'l';
+  if (physicalScreenArea > 1400000) return 'm';
+  return 's';
+};
+
+export const getFontSizeForScreen = (size: FontSize): number => {
+  const screenType = getScreenType();
+  return fontBySize[screenType][size];
+};
+
+export const FontText = ({
+  style,
+  h1,
+  h2,
+  h3,
+  h4,
+  small,
+  ...props
+}: TextProps & { small?: boolean }) => {
   const fontWeight = (style as TextStyle)?.fontWeight || '600';
   let fontFamily = REGULAR_FONT_FAMILY;
   switch (fontWeight) {
@@ -27,48 +55,13 @@ export const FontText = ({ style, h1, h2, h3, h4, ...props }: TextProps) => {
       break;
   }
 
-  const fontBySize = {
-    s: {
-      h1: 30,
-      h2: 24,
-      h3: 18,
-      h4: 14,
-      normal: 13,
-    },
-    m: {
-      h1: 34,
-      h2: 28,
-      h3: 22,
-      h4: 18,
-      normal: 15,
-    },
-    l: {
-      h1: 40,
-      h2: 32,
-      h3: 24,
-      h4: 20,
-      normal: 16,
-    },
-    xl: {
-      h1: 50,
-      h2: 40,
-      h3: 30,
-      h4: 26,
-      normal: 18,
-    },
-  };
-  let fontSize = fontBySize[screenType].normal;
-  if (h1) {
-    fontSize = fontBySize[screenType].h1;
-  }
-  if (h2) {
-    fontSize = fontBySize[screenType].h2;
-  }
-  if (h3) {
-    fontSize = fontBySize[screenType].h3;
-  }
-  if (h4) {
-    fontSize = fontBySize[screenType].h4;
-  }
-  return <Text style={[{ fontSize, fontWeight: '600', fontFamily }, style]} {...props}></Text>;
+  let fontSize: number;
+  if (h1) fontSize = getFontSizeForScreen('h1');
+  else if (h2) fontSize = getFontSizeForScreen('h2');
+  else if (h3) fontSize = getFontSizeForScreen('h3');
+  else if (h4) fontSize = getFontSizeForScreen('h4');
+  else if (small) fontSize = getFontSizeForScreen('small');
+  else fontSize = getFontSizeForScreen('normal');
+
+  return <Text style={[{ fontSize, fontWeight: '600', fontFamily }, style]} {...props} />;
 };

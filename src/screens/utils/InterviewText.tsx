@@ -1,7 +1,7 @@
 import React, { useContext, useEffect, useRef, useState } from 'react';
 import { View, Image } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
-import { FontText } from '@app/components/utils/FontText';
+import { FontText, getFontSizeForScreen } from '@app/components/utils/FontText';
 import { i18n } from '@app/localization/i18n';
 import { useTheme, useThemeMode } from '@rneui/themed';
 import { MainStackParamList } from '@app/types/navigation';
@@ -128,15 +128,24 @@ export default function ({
         </View>
         <View style={{ flexDirection: 'row' }}>
           <Image
-            style={{ height: 56, width: 56 }}
+            style={{
+              height: getFontSizeForScreen('h2') * 2,
+              width: getFontSizeForScreen('h2') * 2,
+            }}
             source={require('../../../assets/images/mykyta.png')}
           ></Image>
           <Image
-            style={{ height: 56, width: 56 }}
+            style={{
+              height: getFontSizeForScreen('h2') * 2,
+              width: getFontSizeForScreen('h2') * 2,
+            }}
             source={require('../../../assets/images/mark.png')}
           ></Image>
           <Image
-            style={{ height: 56, width: 56 }}
+            style={{
+              height: getFontSizeForScreen('h2') * 2,
+              width: getFontSizeForScreen('h2') * 2,
+            }}
             source={require('../../../assets/images/lily.png')}
           ></Image>
         </View>

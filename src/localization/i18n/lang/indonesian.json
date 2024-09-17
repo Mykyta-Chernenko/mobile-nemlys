@@ -1,20 +1,13 @@
 {
-  "awesome": "Keren!",
   "loading": "Memuat",
   "continue": "Lanjutkan",
   "or": "Atau",
-  "ok": "Ok",
-  "yes": "Ya",
-  "no": "Tidak",
-  "close": "Tutup",
   "save": "Simpan",
   "cancel": "Batal",
   "confirm": "Konfirmasi",
   "submit": "Kirim",
-  "remove": "Hapus",
   "next": "Berikutnya",
   "skip": "Lewati",
-  "finish": "Selesai",
   "input_here": "Masukkan di sini",
   "email_placeholder": "Masukkan email Anda",
   "password_placeholder": "Masukkan kata sandi Anda",
@@ -97,8 +90,7 @@
     "menu": {
       "discuss": "Diskusikan",
       "profile": "Profil",
-      "premium": "Premium",
-      "reflect": "Refleksi"
+      "premium": "Premium"
     }
   },
   "profile": {
@@ -123,19 +115,15 @@
   },
   "premium": {
     "banner": {
-      "premium": "Akses tak terbatas",
-      "premium_right": "∞",
       "trial": "Akses tak terbatas",
       "days_left": "{{days}} hari tersisa",
       "new": "Topik baru untuk dicoba",
-      "topics_left": "{{left}}/{{total}} tersisa",
-      "free": "Topik harian"
+      "topics_left": "{{left}}/{{total}} tersisa"
     },
     "offer": {
       "title": "Premium",
       "enjoy_your_premium": "Nikmati premium Anda!",
       "manage": "Kelola Langganan",
-      "upgrade_trial": "Anda memiliki {{trialDays}} hari Akses Percobaan tersisa ",
       "reached_limit": "Anda telah mencapai batas harian Anda. ",
       "try_unlimited_1": "Coba dengan ",
       "try_unlimited_2": "akses tak terbatas",
@@ -148,10 +136,8 @@
       "plan_monthly_price": "{{price}}/bulan",
       "plan_yearly_title": "Tahunan",
       "plan_yearly_price": "{{price}}/tahun",
-      "subscribe": "Mulai dengan uji coba gratis 7 hari*",
       "terms": "Ketentuan Layanan",
-      "privacy": "Kebijakan Privasi",
-      "charged": "* Anda akan dikenakan biaya setelah uji coba selesai kecuali Anda membatalkan langganan"
+      "privacy": "Kebijakan Privasi"
     },
     "success": {
       "trial": {
@@ -171,19 +157,10 @@
     "available": "{{number}} refleksi baru tersedia",
     "completed": "{{number}} Selesai",
     "start": "Mulai",
-    "explanation": {
-      "button": "Mengerti",
-      "reason_1": "Lebih Banyak Refleksi = Kualitas Topik 'Dipersonalisasi' Lebih Tinggi",
-      "reason_2": "Kami menggunakan AI, jadi semakin banyak Anda merefleksikan dan menulis, semakin baik aplikasi ini",
-      "reason_3": "Data Anda aman. Kami hanya menggunakannya untuk menghasilkan pertanyaan",
-      "title": "Mengapa penting untuk merefleksikan dan menulis?"
-    },
     "no_reflection": "Diskusikan 1 topik untuk mendapatkan kartu refleksi baru Anda",
     "finished_writing_title_1": "Selesai!",
     "finished_writing_title_2": " Anda penulis yang hebat",
-    "finished_writing_button": "Bagus, terima kasih!",
-    "level_0": "perkenalan",
-    "level": "tingkat {{number}}"
+    "finished_writing_button": "Bagus, terima kasih!"
   },
   "update": {
     "title": "Pembaruan",
@@ -245,10 +222,6 @@
     }
   },
   "date": {
-    "reminder": {
-      "title": "{{firstName}}, Waktunya Terhubung dengan Pasangan",
-      "body": "Menyenangkan? Mendalam? Intim? Pilih dan Diskusikan topik bersama"
-    },
     "generating_questions_error": "Maaf, AI kami tidak dapat menghasilkan pertanyaan ini, coba kategori atau topik lain",
     "notification": {
       "title_1": "Dapatkan pengingat",
@@ -264,8 +237,6 @@
       "confirm": "Ya, hentikan diskusi",
       "cancel": "Tidak, kembali"
     },
-    "stop": "Hentikan kencan",
-    "start_date": "Mulai kencan",
     "level_title_first": "Pilih ",
     "level_title_second": "kedalaman ",
     "level_title_third": "pertanyaan Anda",
@@ -278,37 +249,7 @@
     "topic_title_second": "1 topik ",
     "topic_title_third": "untuk didiskusikan dengan pasangan",
     "topic": {
-      "title": "Pilih satu topik",
-      "surprise": "Acak",
-      "intimacy": "Panas",
-      "emotions": "Emosi",
-      "fun": "Menyenangkan",
-      "worldview": "Pandangan dunia",
-      "goals": "Tujuan",
-      "future": "Masa depan",
-      "communication": "Komunikasi",
-      "preferences": "Preferensi",
-      "appearance": "Penampilan",
-      "travel": "Perjalanan",
-      "career": "Karier",
-      "expectations": "Harapan",
-      "values": "Nilai",
-      "gifts": "Hadiah",
-      "friends": "Teman",
-      "childhood": "Masa kecil",
-      "commitment": "Komitmen",
-      "past": "Masa lalu",
-      "ex": "Mantan",
-      "fidelity": "Kesetiaan",
-      "trust": "Kepercayaan",
-      "money": "Uang",
-      "conflict": "Konflik",
-      "social_circle": "Lingkaran sosial",
-      "love_language": "Bahasa cinta",
-      "mental_health": "Kesehatan mental",
-      "parents": "Orang tua",
-      "children": "Anak-anak",
-      "living_together": "Tinggal bersama"
+      "surprise": "Acak"
     },
     "generating_questions_first": "Menghasilkan pertanyaan untuk didiskusikan ",
     "generating_questions_second": "dengan pasangan",
@@ -323,14 +264,6 @@
         "choice_2": "Tidak ada yang baru",
         "choice_1": "Tidak membantu sama sekali"
       }
-    },
-    "new_level": {
-      "reached": "Anda mencapai",
-      "have": "Anda memiliki",
-      "title_first": "Diskusi",
-      "title_second": "selesai",
-      "alone_title_first": "Eksplorasi Aplikasi Anda",
-      "home": "Kembali ke beranda"
     }
   },
   "welcome": {
@@ -440,7 +373,6 @@
   "done": "Selesai",
   "profile_notification": "Notifikasi",
   "home_menu_answer": "Jawaban",
-  "answer_home_title": "Jawaban",
   "answer_home_no_questions": "Diskusikan pertanyaan secara online dan periksa jawaban Anda di sini",
   "question_home_answer": "Jawab",
   "question_home_unlock": "Jawab untuk membuka kunci",
@@ -453,5 +385,6 @@
   "discussed_questions": "pertanyaan yang dibahas",
   "premium_two": "Untuk 2 orang",
   "premium_unlimited_topics_title": "Dapatkan Pertanyaan Tanpa Batas",
-  "premium_unlimited_topics_explanation": "Sekarang Anda memiliki {{dailyTopics}} pertanyaan per hari"
+  "premium_unlimited_topics_explanation": "Sekarang Anda memiliki {{dailyTopics}} pertanyaan per hari",
+  "premium_banner_free": "Pertanyaan harian"
 }

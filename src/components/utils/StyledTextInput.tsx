@@ -3,7 +3,7 @@ import { useTheme } from '@rneui/themed';
 
 import React, { Ref, useRef } from 'react';
 import { TextInput, TextInputProps } from 'react-native';
-import { REGULAR_FONT_FAMILY } from './FontText';
+import { getFontSizeForScreen, REGULAR_FONT_FAMILY } from './FontText';
 
 const StyledTextInput = React.forwardRef((props: TextInputProps, ref?: Ref<any>) => {
   useRef();
@@ -19,12 +19,14 @@ const StyledTextInput = React.forwardRef((props: TextInputProps, ref?: Ref<any>)
           borderColor: '#DDDDDD',
           backgroundColor: theme.colors.white,
           borderWidth: 1,
-          padding: 10,
+          paddingHorizontal: (getFontSizeForScreen('normal') * 3) / 3,
           borderRadius: 12,
           fontFamily: REGULAR_FONT_FAMILY,
           flex: 1,
-          minHeight: 40,
-          paddingTop: 10,
+          minHeight: getFontSizeForScreen('normal') * 3,
+          paddingTop: (getFontSizeForScreen('normal') * 3) / 3,
+          paddingBottom: (getFontSizeForScreen('normal') * 3) / 3,
+          fontSize: getFontSizeForScreen('normal'),
         },
         style,
       ]}

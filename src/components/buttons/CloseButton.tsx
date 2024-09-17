@@ -2,6 +2,7 @@ import React from 'react';
 import { SecondaryButton } from './SecondaryButton';
 import { Image } from 'react-native';
 import { ButtonProps, useTheme } from '@rneui/themed';
+import { getFontSizeForScreen } from '@app/components/utils/FontText';
 
 export const CloseButton = ({
   theme = 'light',
@@ -30,15 +31,15 @@ export const CloseButton = ({
       buttonStyle={{
         backgroundColor: backgroundColor,
         borderRadius: 40,
-        width: 32,
-        height: 32,
+        width: getFontSizeForScreen('h1') * 1.1,
+        height: getFontSizeForScreen('h2') * 1.1,
         justifyContent: 'center',
         alignItems: 'center',
       }}
     >
       <Image
         style={{
-          height: 24,
+          height: getFontSizeForScreen('h3') * 1.1,
         }}
         resizeMode="contain"
         // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment

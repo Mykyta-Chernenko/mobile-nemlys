@@ -13,7 +13,7 @@ import {
 import { useTheme, useThemeMode } from '@rneui/themed';
 import { i18n } from '@app/localization/i18n';
 import { PrimaryButton } from '@app/components/buttons/PrimaryButtons';
-import { FontText } from '@app/components/utils/FontText';
+import { FontText, getFontSizeForScreen } from '@app/components/utils/FontText';
 import { Progress } from '@app/components/utils/Progress';
 import { GoBackButton } from '@app/components/buttons/GoBackButton';
 import { KEYBOARD_BEHAVIOR } from '@app/utils/constants';
@@ -107,7 +107,7 @@ export default function OnboardingInviteCode({ route, navigation }: OnboardingIn
     Toast.show({
       type: 'success',
       text1: i18n.t('onboarding_invite_copy_success_message'),
-      visibilityTime: 500,
+      visibilityTime: 1000,
     });
     setCodeShared(true);
     void localAnalytics().logEvent('InviteCodeCopied', {
@@ -247,9 +247,7 @@ export default function OnboardingInviteCode({ route, navigation }: OnboardingIn
                   alignItems: 'center',
                 }}
               >
-                <FontText
-                  style={{ color: '#A39BAC', fontSize: 13, fontWeight: '600', marginBottom: 24 }}
-                >
+                <FontText small style={{ color: '#A39BAC', marginBottom: 24 }}>
                   {i18n.t('onboarding_invite_share_code')}
                 </FontText>
                 <View
@@ -260,15 +258,18 @@ export default function OnboardingInviteCode({ route, navigation }: OnboardingIn
                     width: '100%',
                   }}
                 >
-                  <View style={{ flexDirection: 'row', gap: 8 }}>
-                    <FontText style={{ color: '#1A052F', fontSize: 40, fontWeight: '600' }}>
+                  <View style={{ flexDirection: 'row', gap: 8, alignItems: 'center' }}>
+                    <FontText h1 style={{ color: '#1A052F', fontWeight: '600' }}>
                       {inviteCode}
                     </FontText>
                     <TouchableOpacity
                       onPress={handleCopyInviteCode}
                       style={{ padding: 8, backgroundColor: '#F5E9EB', borderRadius: 40 }}
                     >
-                      <CopyIcon height={24} width={24} />
+                      <CopyIcon
+                        height={getFontSizeForScreen('h3') * 1.1}
+                        width={getFontSizeForScreen('h3') * 1.1}
+                      />
                     </TouchableOpacity>
                   </View>
 
@@ -281,7 +282,10 @@ export default function OnboardingInviteCode({ route, navigation }: OnboardingIn
                       borderRadius: 40,
                     }}
                   >
-                    <ShareIcon height={24} width={24} />
+                    <ShareIcon
+                      height={getFontSizeForScreen('h3') * 1.1}
+                      width={getFontSizeForScreen('h3') * 1.1}
+                    />
                   </TouchableOpacity>
                 </View>
               </View>

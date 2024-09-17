@@ -23,7 +23,6 @@ import StyledInput from '@app/components/utils/StyledInput';
 import { CloseButton } from '@app/components/buttons/CloseButton';
 import { Loading } from '@app/components/utils/Loading';
 import { logErrorsWithMessage, logSupaErrors } from '@app/utils/errors';
-import { SecondaryButton } from '@app/components/buttons/SecondaryButton';
 
 type OnboardingInviteCodeInputProps = NativeStackScreenProps<
   MainStackParamList,
@@ -40,6 +39,7 @@ export default function OnboardingInviteCodeInput({
   const [error, setError] = useState<string | null>(null);
   const [showContinue, setShowContinue] = useState<boolean>(false);
   const [loading, setLoading] = useState(true);
+  const [buttonLoading, setButtonLoading] = useState(false);
   const [refreshing, setRefreshing] = useState(false);
   const authContext = useContext(AuthContext);
   const fromSettings = route.params?.fromSettings;
@@ -86,6 +86,7 @@ export default function OnboardingInviteCodeInput({
     await fetchPartnerName();
     setShowContinue(false);
     setError('');
+    setButtonLoading(false);
     setRefreshing(false);
   };
 
@@ -95,13 +96,18 @@ export default function OnboardingInviteCodeInput({
       action: 'BackClicked',
       userId: authContext.userId,
     });
-    navigation.navigate('Profile', {
-      refreshTimeStamp: new Date().toISOString(),
-    });
+    if (fromSettings) {
+      navigation.navigate('Profile', {
+        refreshTimeStamp: new Date().toISOString(),
+      });
+    } else {
+      navigation.navigate('OnboardingInviteCode', { fromSettings });
+    }
   };
 
   const handleSubmit = async () => {
     setError(null);
+    setButtonLoading(true);
     try {
       const { data, error } = await supabase.rpc('join_couple', { invite_code: inviteCode });
 
@@ -145,6 +151,8 @@ export default function OnboardingInviteCodeInput({
         error: err,
       });
       setError(i18n.t('unexpected_error'));
+    } finally {
+      setButtonLoading(false);
     }
   };
 
@@ -239,10 +247,10 @@ export default function OnboardingInviteCodeInput({
                   buttonStyle={{ marginTop: 20 }}
                 />
               ) : (
-                <SecondaryButton
-                  title={i18n.t('onboarding_invite_input_join')}
+                <PrimaryButton
+                  title={buttonLoading ? i18n.t('loading') : i18n.t('onboarding_invite_input_join')}
                   onPress={() => void handleSubmit()}
-                  disabled={inviteCode.length !== 5}
+                  disabled={buttonLoading || inviteCode.length !== 5}
                   buttonStyle={{ marginTop: 20 }}
                 />
               )}

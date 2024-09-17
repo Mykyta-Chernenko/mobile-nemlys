@@ -4,7 +4,7 @@ import { SafeAreaView } from 'react-native-safe-area-context';
 import { useTheme, useThemeMode } from '@rneui/themed';
 import { supabase } from '@app/api/initSupabase';
 import { AuthContext } from '@app/provider/AuthProvider';
-import { FontText } from '@app/components/utils/FontText';
+import { FontText, getFontSizeForScreen } from '@app/components/utils/FontText';
 import { i18n } from '@app/localization/i18n';
 import { Loading } from '@app/components/utils/Loading';
 import { localAnalytics } from '@app/utils/analytics';
@@ -22,6 +22,7 @@ import { jobs } from '@app/screens/menu/Home';
 import AnswerNoPartnerWarning from '@app/components/answers/AnswerNoPartnerWarning';
 import { getNow } from '@app/utils/date';
 import { handleRemindPartner } from '@app/utils/sendNotification';
+import { SecondaryButton } from '@app/components/buttons/SecondaryButton';
 
 interface QuestionReply {
   id: number;
@@ -49,6 +50,7 @@ export default function AnswerHome({
   const { theme } = useTheme();
   const authContext = useContext(AuthContext);
   const [loading, setLoading] = useState(true);
+  const [reminderLoading, setReminderLoading] = useState(false);
   const [questions, setQuestions] = useState<Question[]>([]);
   const [refreshing, setRefreshing] = useState(false);
   const [hasPartner, setHasPartner] = useState(false);
@@ -143,6 +145,7 @@ export default function AnswerHome({
 
   const handleRefresh = async () => {
     setRefreshing(true);
+    setReminderLoading(false);
     setMode('light');
     setPartnerName('');
     setName('');
@@ -302,23 +305,34 @@ export default function AnswerHome({
         )}
 
         {userReplies.length > 0 && partnerReplies.length === 0 && hasPartner && (
-          <TouchableOpacity
-            style={{
-              borderRadius: 40,
-              backgroundColor: theme.colors.grey1,
-              padding: 10,
+          <SecondaryButton
+            containerStyle={{
               flexDirection: 'row',
               justifyContent: 'center',
-              alignSelf: 'center',
-              marginTop: 10,
+              marginVertical: 20,
             }}
-            onPress={() => void handleRemindPartner(question.id, partnerName, authContext.userId!)}
+            buttonStyle={{
+              height: undefined,
+              backgroundColor: theme.colors.grey1,
+            }}
+            disabled={reminderLoading}
+            onPress={() =>
+              hasPartner &&
+              void handleRemindPartner(
+                question.id,
+                partnerName,
+                authContext.userId!,
+                setReminderLoading,
+              )
+            }
           >
             <RemindIcon height={20} width={20} />
             <FontText style={{ marginLeft: 5, paddingTop: 3 }}>
-              {i18n.t('question_answer_remind_partner', { partnerName })}
+              {reminderLoading
+                ? i18n.t('loading')
+                : i18n.t('question_answer_remind_partner', { partnerName })}
             </FontText>
-          </TouchableOpacity>
+          </SecondaryButton>
         )}
 
         {JobIcon && (
@@ -330,7 +344,7 @@ export default function AnswerHome({
             }}
           >
             <View style={{ flexDirection: 'row' }}>
-              <JobIcon width={16} height={16} />
+              <JobIcon width={getFontSizeForScreen('h3')} height={getFontSizeForScreen('h3')} />
               <FontText h4 style={{ color: '#87778D', marginLeft: 5 }}>
                 {question.date.topic}
               </FontText>
@@ -423,7 +437,7 @@ export default function AnswerHome({
               style={{
                 backgroundColor: theme.colors.grey1,
                 marginHorizontal: -20,
-                height: 70,
+                height: getFontSizeForScreen('h1') * 2,
               }}
             >
               <Menu />

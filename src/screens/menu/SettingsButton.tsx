@@ -35,8 +35,6 @@ export const SettingsButton = ({
     >
       <FontText
         style={{
-          fontSize: 16,
-          fontWeight: '600',
           flexShrink: 1,
         }}
       >
@@ -55,9 +53,7 @@ export const SettingsButton = ({
             <FontText
               style={{
                 color: theme.colors.grey3,
-                fontSize: 16,
                 marginRight: 5,
-                fontWeight: '600',
               }}
             >
               {data}

@@ -29,6 +29,7 @@ export class APIQuestionReply extends ApiEntry {
   text: string;
   user_id: string;
   question_id: number;
+  loading?: boolean;
 }
 
 export class APIDiary extends ApiEntry {

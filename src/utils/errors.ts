@@ -21,7 +21,17 @@ export function logErrorsWithMessage(e: any, message: string | undefined = undef
   alert(i18n.t(UNEXPECTED_ERROR));
 }
 
-export function logErrorsWithMessageWithoutAlert(e: unknown) {
+export function logErrorsWithMessageWithoutAlert(
+  e: unknown,
+  message: string | undefined = undefined,
+) {
+  if (message) {
+    if (e.message && typeof e.message === 'string') {
+      e.message += ' ' + message;
+    } else {
+      e.message = message;
+    }
+  }
   baseLogError(e);
 }
 export const isNetworkError = (error: any): boolean => {

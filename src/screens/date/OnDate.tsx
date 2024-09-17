@@ -8,7 +8,7 @@ import { logErrorsWithMessage, logSupaErrors } from '@app/utils/errors';
 import { MainStackParamList } from '@app/types/navigation';
 import { NativeStackScreenProps } from '@react-navigation/native-stack';
 import { SafeAreaView } from 'react-native-safe-area-context';
-import { FontText } from '@app/components/utils/FontText';
+import { FontText, getFontSizeForScreen } from '@app/components/utils/FontText';
 import { i18n } from '@app/localization/i18n';
 import DateFeedback from '../../components/date/DateFeedback';
 import { localAnalytics } from '@app/utils/analytics';
@@ -497,7 +497,13 @@ export default function ({
           contentContainerStyle={{
             flexGrow: 1,
           }}
-          refreshControl={<RefreshControl refreshing={loading} onRefresh={onRefresh} />}
+          refreshControl={
+            <RefreshControl
+              refreshing={loading}
+              onRefresh={onRefresh}
+              tintColor={theme.colors.white}
+            />
+          }
         >
           <View
             style={{
@@ -528,8 +534,11 @@ export default function ({
                       marginVertical: 8,
                     }}
                   >
-                    <JobIcon width={24} height={24} />
-                    <FontText style={{ color: '#87778D', marginLeft: 2, fontSize: 13 }}>
+                    <JobIcon
+                      width={getFontSizeForScreen('h2')}
+                      height={getFontSizeForScreen('h2')}
+                    />
+                    <FontText small style={{ color: '#87778D', marginLeft: 2 }}>
                       {currentDate?.topic === 'General'
                         ? i18n.t('date.topic.surprise')
                         : currentDate?.topic?.slice(0, 25)}
@@ -601,7 +610,7 @@ export default function ({
                     onPress={() => void regenerate()}
                   >
                     <RegenerateIcon></RegenerateIcon>
-                    <FontText h4>{i18n.t('on_date_regenerate')}</FontText>
+                    <FontText style={{ marginLeft: 2 }}>{i18n.t('on_date_regenerate')}</FontText>
                   </SecondaryButton>
                   {!withPartner && (
                     <PrimaryButton

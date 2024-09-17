@@ -115,7 +115,7 @@ const RecordingButtonElement = ({
       CenterElement = (
         <>
           <Mic></Mic>
-          <FontText style={{ fontSize: 11 }}>{i18n.t('recording.button')}</FontText>
+          <FontText small>{i18n.t('recording.button')}</FontText>
         </>
       );
       break;
@@ -123,7 +123,7 @@ const RecordingButtonElement = ({
       CenterElement = (
         <>
           <StopDark></StopDark>
-          <FontText style={{ fontSize: 11 }}>{formatTime(recordingSeconds)}</FontText>
+          <FontText small>{formatTime(recordingSeconds)}</FontText>
         </>
       );
       break;
@@ -134,7 +134,7 @@ const RecordingButtonElement = ({
             <RecordingDelete></RecordingDelete>
           </View>
           <Mic></Mic>
-          <FontText style={{ fontSize: 11 }}>{formatTime(recordingSeconds)}</FontText>
+          <FontText small>{formatTime(recordingSeconds)}</FontText>
         </>
       );
       break;

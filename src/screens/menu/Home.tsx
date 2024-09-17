@@ -7,7 +7,7 @@ import { logSupaErrors } from '@app/utils/errors';
 import { AuthContext } from '@app/provider/AuthProvider';
 import { RefreshControl, SafeAreaView, ScrollView, TouchableOpacity, View } from 'react-native';
 import { useTheme, useThemeMode } from '@rneui/themed';
-import { FontText } from '@app/components/utils/FontText';
+import { FontText, getFontSizeForScreen } from '@app/components/utils/FontText';
 import DateIssues from '@app/icons/date_issues';
 import DateSex from '@app/icons/date_sex';
 import DateKnow from '@app/icons/date_know';
@@ -146,23 +146,24 @@ export default function ({
     } else {
       const coupleId = userProfileData.data.couple_id;
       setCoupleId(coupleId);
-      if (!userProfileData.data.showed_interview_request) {
-        const { error: errorDateYesterday, count: dateYesterdayCount } = await supabase
-          .from('date')
-          .select('*', { count: 'exact' })
-          .eq('couple_id', coupleId)
-          .eq('active', false)
-          .lt('created_at', getNow().startOf('day').toISOString())
-          .limit(1);
-        if (errorDateYesterday) {
-          logSupaErrors(errorDateYesterday);
-          return;
-        }
-        const showInterview = (dateYesterdayCount || 0) > 0;
-        if (showInterview) {
-          navigation.navigate('InterviewText', { refreshTimeStamp: new Date().toISOString() });
-        }
-      }
+      //  TODO not showing interview whne users come back second day now
+      // if (!userProfileData.data.showed_interview_request) {
+      //   const { error: errorDateYesterday, count: dateYesterdayCount } = await supabase
+      //     .from('date')
+      //     .select('*', { count: 'exact' })
+      //     .eq('couple_id', coupleId)
+      //     .eq('active', false)
+      //     .lt('created_at', getNow().startOf('day').toISOString())
+      //     .limit(1);
+      //   if (errorDateYesterday) {
+      //     logSupaErrors(errorDateYesterday);
+      //     return;
+      //   }
+      //   const showInterview = (dateYesterdayCount || 0) > 0;
+      //   if (showInterview) {
+      //     navigation.navigate('InterviewText', { refreshTimeStamp: new Date().toISOString() });
+      //   }
+      // }
       if (activeDatesRes.error) {
         logSupaErrors(activeDatesRes.error);
         return;
@@ -317,7 +318,7 @@ export default function ({
             style={{
               backgroundColor: theme.colors.grey1,
               marginHorizontal: -padding,
-              height: 70,
+              height: getFontSizeForScreen('h1') * 2,
             }}
           >
             <Menu></Menu>

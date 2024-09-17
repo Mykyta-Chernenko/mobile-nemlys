@@ -154,7 +154,6 @@ export const OAuth = ({
                 marginLeft: 5,
                 color: theme.colors.grey0,
                 paddingTop: 7,
-                fontSize: 16,
               }}
             >
               {i18n.t('oauth.button.apple')}
@@ -168,7 +167,7 @@ export const OAuth = ({
         buttonStyle={{ marginTop: 10, borderColor: theme.colors.grey3, borderWidth: 1 }}
       >
         <GoogleIcon height="20" width="20" />
-        <FontText style={{ marginLeft: 5, fontSize: 16, paddingTop: 3 }}>
+        <FontText style={{ marginLeft: 5, paddingTop: 3 }}>
           {i18n.t('oauth.button.google')}
         </FontText>
       </SecondaryButton>

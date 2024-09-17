@@ -94,7 +94,7 @@ export default function ({
             onPress={() => void goBack()}
           />
           <View style={{ marginTop: 24, marginBottom: 24 }}>
-            <FontText style={{ color: theme.colors.grey5, fontSize: 13, fontWeight: '600' }}>
+            <FontText small style={{ color: theme.colors.grey5, fontWeight: '600' }}>
               {jobTitle}
             </FontText>
           </View>

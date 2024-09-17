@@ -1,11 +1,12 @@
 import * as React from 'react';
 import Svg, { Path } from 'react-native-svg';
+import { getFontSizeForScreen } from '@app/components/utils/FontText';
 
 function SvgComponent(props) {
   return (
     <Svg
-      width={32}
-      height={32}
+      width={getFontSizeForScreen('h1')}
+      height={getFontSizeForScreen('h1')}
       viewBox="0 0 32 32"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"

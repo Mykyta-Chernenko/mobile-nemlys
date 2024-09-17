@@ -15,7 +15,7 @@ import {
   View,
 } from 'react-native';
 import { useTheme } from '@rneui/themed';
-import { FontText } from '@app/components/utils/FontText';
+import { FontText, getFontSizeForScreen } from '@app/components/utils/FontText';
 import ProfileBuddyCorner from '@app/icons/profile_buddy_corner';
 import StarRating from '@app/icons/star_rating';
 import TopRightArrow from '@app/icons/top_right_arrow';
@@ -380,8 +380,6 @@ export default function ({
                       <FontText
                         style={{
                           marginLeft: 10,
-                          fontSize: 16,
-                          fontWeight: '600',
                           flexShrink: 1,
                         }}
                       >
@@ -435,7 +433,7 @@ export default function ({
             style={{
               backgroundColor: theme.colors.grey1,
               marginHorizontal: -padding,
-              height: 70,
+              height: getFontSizeForScreen('h1') * 2,
             }}
           >
             <Menu></Menu>

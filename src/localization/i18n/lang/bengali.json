@@ -1,20 +1,13 @@
 {
-  "awesome": "দারুণ!",
   "loading": "লোড হচ্ছে",
   "continue": "চালিয়ে যান",
   "or": "অথবা",
-  "ok": "ঠিক আছে",
-  "yes": "হ্যাঁ",
-  "no": "না",
-  "close": "বন্ধ করুন",
   "save": "সংরক্ষণ করুন",
   "cancel": "বাতিল করুন",
   "confirm": "নিশ্চিত করুন",
   "submit": "জমা দিন",
-  "remove": "অপসারণ করুন",
   "next": "পরবর্তী",
   "skip": "এড়িয়ে যান",
-  "finish": "শেষ করুন",
   "input_here": "এখানে ইনপুট করুন",
   "email_placeholder": "আপনার ইমেল লিখুন",
   "password_placeholder": "আপনার পাসওয়ার্ড লিখুন",
@@ -97,8 +90,7 @@
     "menu": {
       "discuss": "আলোচনা করুন",
       "profile": "প্রোফাইল",
-      "premium": "প্রিমিয়াম",
-      "reflect": "প্রতিফলন করুন"
+      "premium": "প্রিমিয়াম"
     }
   },
   "profile": {
@@ -123,19 +115,15 @@
   },
   "premium": {
     "banner": {
-      "premium": "অসীম অ্যাক্সেস",
-      "premium_right": "∞",
       "trial": "অসীম অ্যাক্সেস",
       "days_left": "{{days}} দিন বাকি",
       "new": "পরীক্ষা করার বিষয়",
-      "topics_left": "{{left}}/{{total}} বাকি",
-      "free": "দৈনিক বিষয়"
+      "topics_left": "{{left}}/{{total}} বাকি"
     },
     "offer": {
       "title": "প্রিমিয়াম",
       "enjoy_your_premium": "আপনার প্রিমিয়াম উপভোগ করুন!",
       "manage": "সদস্যতা পরিচালনা করুন",
-      "upgrade_trial": "আপনার {{trialDays}} ট্রায়াল অ্যাক্সেস দিন বাকি",
       "reached_limit": "আপনি আপনার দৈনিক সীমা পূরণ করেছেন।",
       "try_unlimited_1": "इसके साथ प्रयास करें",
       "try_unlimited_2": "असीमित पहुँच",
@@ -148,10 +136,8 @@
       "plan_monthly_price": "{{price}}/মাস",
       "plan_yearly_title": "বার্ষিক",
       "plan_yearly_price": "{{price}}/বছর",
-      "subscribe": "বিনামূল্যে 7-দিনের ট্রায়াল দিয়ে শুরু করুন*",
       "terms": "পরিষেবার শর্তাবলী",
-      "privacy": "গোপনীয়তা নীতি",
-      "charged": "* আপনি যদি সদস্যতা বাতিল না করেন তবে পরীক্ষার শেষ হওয়ার পরে আপনার কাছ থেকে চার্জ নেওয়া হবে"
+      "privacy": "গোপনীয়তা নীতি"
     },
     "success": {
       "trial": {
@@ -171,19 +157,10 @@
     "available": "{{number}} নতুন প্রতিফলন উপলব্ধ",
     "completed": "{{number}} সম্পন্ন হয়েছে",
     "start": "শুরু করুন",
-    "explanation": {
-      "button": "বুঝেছি",
-      "reason_1": "আরও প্রতিফলন = 'ব্যক্তিগত' বিষয়ের উচ্চ মানের",
-      "reason_2": "আমরা AI ব্যবহার করি, তাই আপনি যত বেশি প্রতিফলন করবেন এবং লিখবেন, অ্যাপটি ততই ভাল হয়ে উঠবে",
-      "reason_3": "আপনার ডেটা নিরাপদ। আমরা এটি শুধুমাত্র প্রশ্ন তৈরির জন্য ব্যবহার করি",
-      "title": "প্রতিফলন করা এবং লেখা কেন গুরুত্বপূর্ণ?"
-    },
     "no_reflection": "আপনার নতুন প্রতিফলন কার্ড পেতে 1 বিষয় আলোচনা করুন",
     "finished_writing_title_1": "সম্পন্ন!",
     "finished_writing_title_2": "আপনি একজন ভাল লেখক",
-    "finished_writing_button": "দারুণ, ধন্যবাদ!",
-    "level_0": "পরিচিতি",
-    "level": "স্তর {{number}}"
+    "finished_writing_button": "দারুণ, ধন্যবাদ!"
   },
   "update": {
     "title": "আপডেট",
@@ -245,10 +222,6 @@
     }
   },
   "date": {
-    "reminder": {
-      "title": "{{firstName}}, সঙ্গীর সাথে সংযুক্ত হওয়ার সময়",
-      "body": "মজাদার? গভীর? ঘনিষ্ঠ? নির্বাচন করুন এবং একসাথে বিষয়গুলি আলোচনা করুন"
-    },
     "generating_questions_error": "দুঃখিত, আমাদের AI এই প্রশ্নগুলি তৈরি করতে পারে না, অন্য বিভাগ বা বিষয় চেষ্টা করুন",
     "notification": {
       "title_1": "একটি রিমাইন্ডার পান",
@@ -264,8 +237,6 @@
       "confirm": "হ্যাঁ, আলোচনা বন্ধ করুন",
       "cancel": "না, ফিরে যান"
     },
-    "stop": "ডেট বন্ধ করুন",
-    "start_date": "ডেট শুরু করুন",
     "level_title_first": "আপনার প্রশ্নের গভীরতা চয়ন করুন",
     "level_title_second": "",
     "level_title_third": "",
@@ -278,37 +249,7 @@
     "topic_title_second": "আলোচনা করতে",
     "topic_title_third": "সঙ্গীর সাথে",
     "topic": {
-      "title": "1 টি বিষয় নির্বাচন করুন",
-      "surprise": "র‌্যান্ডম",
-      "intimacy": "মশলাদার",
-      "emotions": "অনুভূতি",
-      "fun": "মজা",
-      "worldview": "বিশ্বদর্শন",
-      "goals": "লক্ষ্য",
-      "future": "ভবিষ্যত",
-      "communication": "যোগাযোগ",
-      "preferences": "পছন্দ",
-      "appearance": "চেহারা",
-      "travel": "ভ্রমণ",
-      "career": "ক্যারিয়ার",
-      "expectations": "প্রত্যাশা",
-      "values": "মূল্য",
-      "gifts": "উপহার",
-      "friends": "বন্ধুরা",
-      "childhood": "শৈশব",
-      "commitment": "অঙ্গীকার",
-      "past": "অতীত",
-      "ex": "প্রাক্তন",
-      "fidelity": "বিশ্বস্ততা",
-      "trust": "বিশ্বাস",
-      "money": "অর্থ",
-      "conflict": "সংঘাত",
-      "social_circle": "সামাজিক চক্র",
-      "love_language": "ভালবাসার ভাষা",
-      "mental_health": "মানসিক স্বাস্থ্য",
-      "parents": "পিতা-মাতা",
-      "children": "শিশুরা",
-      "living_together": "একসাথে বাস করা"
+      "surprise": "র‌্যান্ডম"
     },
     "generating_questions_first": "সঙ্গীর সাথে আলোচনা করার জন্য প্রশ্ন তৈরি করছে",
     "generating_questions_second": "",
@@ -323,14 +264,6 @@
         "choice_2": "কিছু নতুন নেই",
         "choice_1": "এটি একেবারেই সহায়ক ছিল না"
       }
-    },
-    "new_level": {
-      "reached": "আপনি পৌঁছেছেন",
-      "have": "আপনার আছে",
-      "title_first": "আলোচনা",
-      "title_second": "সম্পন্ন",
-      "alone_title_first": "আপনার অ্যাপ এক্সপ্লোরেশন",
-      "home": "বাড়ি ফিরে"
     }
   },
   "welcome": {
@@ -440,7 +373,6 @@
   "done": "সম্পন্ন",
   "profile_notification": "নোটিফিকেশন",
   "home_menu_answer": "উত্তর",
-  "answer_home_title": "উত্তর",
   "answer_home_no_questions": "অনলাইনে প্রশ্ন আলোচনা করুন এবং এখানে আপনার উত্তরগুলি পরীক্ষা করুন",
   "question_home_answer": "উত্তর দিন",
   "question_home_unlock": "মুক্ত করতে উত্তর দিন",
@@ -453,5 +385,6 @@
   "discussed_questions": "আলোচনা করা প্রশ্ন",
   "premium_two": "২ জনের জন্য",
   "premium_unlimited_topics_title": "অসীম প্রশ্ন পান",
-  "premium_unlimited_topics_explanation": "এখন আপনার কাছে প্রতিদিন {{dailyTopics}} প্রশ্ন রয়েছে"
+  "premium_unlimited_topics_explanation": "এখন আপনার কাছে প্রতিদিন {{dailyTopics}} প্রশ্ন রয়েছে",
+  "premium_banner_free": "প্রতিদিনের প্রশ্ন"
 }

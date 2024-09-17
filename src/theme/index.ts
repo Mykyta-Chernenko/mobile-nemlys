@@ -1,4 +1,5 @@
 import { createTheme } from '@rneui/themed';
+import { getFontSizeForScreen } from '@app/components/utils/FontText';
 const colors = {
   black: 'rgba(26, 5, 47, 1)', // violet 900
   white: 'rgba(255, 255, 255, 1)', // white
@@ -28,7 +29,7 @@ export const theme = createTheme({
         borderBottomWidth: 0,
       },
       inputStyle: {
-        fontSize: 16,
+        fontSize: getFontSizeForScreen('normal'),
         fontWeight: '600',
       },
     },

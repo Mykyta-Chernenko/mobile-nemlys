@@ -4,7 +4,7 @@ import { NativeStackScreenProps } from '@react-navigation/native-stack';
 import { AuthContext } from '@app/provider/AuthProvider';
 import { ScrollView, View } from 'react-native';
 import { useTheme } from '@rneui/themed';
-import { FontText } from '@app/components/utils/FontText';
+import { FontText, getFontSizeForScreen } from '@app/components/utils/FontText';
 import { i18n } from '@app/localization/i18n';
 import { Image } from 'react-native';
 import { TouchableOpacity } from 'react-native';
@@ -439,7 +439,7 @@ export default function ({
             style={{
               backgroundColor: theme.colors.grey1,
               marginHorizontal: -padding,
-              height: 70,
+              height: getFontSizeForScreen('h1') * 2,
             }}
           >
             <Menu></Menu>

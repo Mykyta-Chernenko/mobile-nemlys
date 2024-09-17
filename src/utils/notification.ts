@@ -314,16 +314,6 @@ export const retrieveNotificationAccess = async (
   setLoading: (b: boolean) => void,
 ): Promise<string | undefined> => {
   let finalStatus = notificationStatus;
-
-  const profileResponse = await supabase
-    .from('user_profile')
-    .select('id, ios_expo_token, android_expo_token')
-    .eq('user_id', userId!)
-    .single();
-  if (profileResponse.error) {
-    logSupaErrors(profileResponse.error);
-    return finalStatus;
-  }
   try {
     if (Platform.OS === 'android') {
       await Notifications.setNotificationChannelAsync('default', {
@@ -367,11 +357,11 @@ export const retrieveNotificationAccess = async (
         } else if (Platform.OS === 'android') {
           tokenField = 'android_expo_token';
         }
-        if (token && tokenField && token != profileResponse.data?.[tokenField]) {
+        if (token && tokenField && userId) {
           const res = await supabase
             .from('user_profile')
             .update({ [tokenField]: token, updated_at: getNow().toISOString() })
-            .eq('id', profileResponse.data?.id);
+            .eq('user_id', userId);
           if (res.error) {
             logSupaErrors(res.error);
           }

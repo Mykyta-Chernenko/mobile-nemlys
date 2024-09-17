@@ -1,20 +1,13 @@
 {
-  "awesome": "Incrível!",
   "loading": "Carregando",
   "continue": "Continuar",
   "or": "Ou",
-  "ok": "Ok",
-  "yes": "Sim",
-  "no": "Não",
-  "close": "Fechar",
   "save": "Salvar",
   "cancel": "Cancelar",
   "confirm": "Confirmar",
   "submit": "Enviar",
-  "remove": "Remover",
   "next": "Próximo",
   "skip": "Pular",
-  "finish": "Concluir",
   "input_here": "Digite aqui",
   "email_placeholder": "Digite seu e-mail",
   "password_placeholder": "Digite sua senha",
@@ -97,8 +90,7 @@
     "menu": {
       "discuss": "Discutir",
       "profile": "Perfil",
-      "premium": "Premium",
-      "reflect": "Refletir"
+      "premium": "Premium"
     }
   },
   "profile": {
@@ -123,19 +115,15 @@
   },
   "premium": {
     "banner": {
-      "premium": "Acesso ilimitado",
-      "premium_right": "∞",
       "trial": "Acesso ilimitado",
       "days_left": "{{days}} dias restantes",
       "new": "Tópicos para experimentar",
-      "topics_left": "{{left}}/{{total}} restantes",
-      "free": "Tópicos diários"
+      "topics_left": "{{left}}/{{total}} restantes"
     },
     "offer": {
       "title": "Premium",
       "enjoy_your_premium": "Aproveite seu premium!",
       "manage": "Gerenciar Assinatura",
-      "upgrade_trial": "Você tem {{trialDays}} dias de acesso de teste",
       "reached_limit": "Você atingiu seu limite diário.",
       "try_unlimited_1": "Experimente com ",
       "try_unlimited_2": "acesso ilimitado",
@@ -148,10 +136,8 @@
       "plan_monthly_price": "{{price}}/mês",
       "plan_yearly_title": "Anual",
       "plan_yearly_price": "{{price}}/ano",
-      "subscribe": "Inicie com um teste gratuito de 7 dias*",
       "terms": "Termos de Serviço",
-      "privacy": "Política de Privacidade",
-      "charged": "* Você será cobrado quando o teste terminar, a menos que cancele a assinatura"
+      "privacy": "Política de Privacidade"
     },
     "success": {
       "trial": {
@@ -171,19 +157,10 @@
     "available": "{{number}} novas reflexões disponíveis",
     "completed": "{{number}} completadas",
     "start": "Iniciar",
-    "explanation": {
-      "button": "Entendi",
-      "reason_1": "Mais Reflexões = Maior Qualidade de Tópico 'Personalizado'",
-      "reason_2": "Usamos IA, então quanto mais você reflete e escreve, melhor o aplicativo ficará",
-      "reason_3": "Seus dados estão seguros. Usamos apenas para gerar perguntas",
-      "title": "Por que é importante refletir e escrever?"
-    },
     "no_reflection": "Discuta 1 tópico para obter seu novo cartão de reflexão",
     "finished_writing_title_1": "Pronto!",
     "finished_writing_title_2": "Você é um ótimo escritor",
-    "finished_writing_button": "Ótimo, obrigado!",
-    "level_0": "introdução",
-    "level": "nível {{number}}"
+    "finished_writing_button": "Ótimo, obrigado!"
   },
   "update": {
     "title": "Atualizar",
@@ -245,10 +222,6 @@
     }
   },
   "date": {
-    "reminder": {
-      "title": "{{firstName}}, hora de se conectar com o parceiro",
-      "body": "Divertido? Profundo? Íntimo? Escolha e discuta tópicos juntos"
-    },
     "generating_questions_error": "Desculpe, nossa IA não pode gerar essas perguntas, tente outra categoria ou tópico",
     "notification": {
       "title_1": "Receba um lembrete",
@@ -264,8 +237,6 @@
       "confirm": "Sim, parar discussão",
       "cancel": "Não, voltar"
     },
-    "stop": "Parar encontro",
-    "start_date": "Iniciar encontro",
     "level_title_first": "Selecione ",
     "level_title_second": "a profundidade ",
     "level_title_third": "das suas perguntas",
@@ -278,37 +249,7 @@
     "topic_title_second": "1 tópico ",
     "topic_title_third": "para discutir com o parceiro",
     "topic": {
-      "title": "Selecione um tópico",
-      "surprise": "Aleatório",
-      "intimacy": "Apimentado",
-      "emotions": "Emoções",
-      "fun": "Diversão",
-      "worldview": "Visão de mundo",
-      "goals": "Objetivos",
-      "future": "Futuro",
-      "communication": "Comunicação",
-      "preferences": "Preferências",
-      "appearance": "Aparência",
-      "travel": "Viagem",
-      "career": "Carreira",
-      "expectations": "Expectativas",
-      "values": "Valores",
-      "gifts": "Presentes",
-      "friends": "Amigos",
-      "childhood": "Infância",
-      "commitment": "Compromisso",
-      "past": "Passado",
-      "ex": "Ex",
-      "fidelity": "Fidelidade",
-      "trust": "Confiança",
-      "money": "Dinheiro",
-      "conflict": "Conflito",
-      "social_circle": "Círculo social",
-      "love_language": "Linguagem do amor",
-      "mental_health": "Saúde mental",
-      "parents": "Pais",
-      "children": "Crianças",
-      "living_together": "Morando juntos"
+      "surprise": "Aleatório"
     },
     "generating_questions_first": "Gerando perguntas para discutir ",
     "generating_questions_second": "com o parceiro",
@@ -323,14 +264,6 @@
         "choice_2": "Nada de novo",
         "choice_1": "Não foi nada útil"
       }
-    },
-    "new_level": {
-      "reached": "você alcançou",
-      "have": "você tem",
-      "title_first": "Discussão",
-      "title_second": "concluída",
-      "alone_title_first": "Sua Exploração do App",
-      "home": "De volta ao início"
     }
   },
   "welcome": {
@@ -440,7 +373,6 @@
   "done": "Concluído",
   "profile_notification": "Notificações",
   "home_menu_answer": "Respostas",
-  "answer_home_title": "Respostas",
   "answer_home_no_questions": "Discuta perguntas online e verifique suas respostas aqui",
   "question_home_answer": "Responder",
   "question_home_unlock": "Responda para desbloquear",
@@ -453,5 +385,6 @@
   "discussed_questions": "questões discutidas",
   "premium_two": "Para 2 pessoas",
   "premium_unlimited_topics_title": "Obtenha Perguntas Ilimitadas",
-  "premium_unlimited_topics_explanation": "Agora você tem {{dailyTopics}} perguntas por dia"
+  "premium_unlimited_topics_explanation": "Agora você tem {{dailyTopics}} perguntas por dia",
+  "premium_banner_free": "Perguntas diárias"
 }

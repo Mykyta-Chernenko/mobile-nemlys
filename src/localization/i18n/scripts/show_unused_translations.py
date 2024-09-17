@@ -64,7 +64,7 @@ def get_all_keys(json_obj: Dict, prefix: str = '') -> Set[str]:
 def find_translation_keys_in_file(file_path: str) -> Set[str]:
     with open(file_path, 'r', encoding='utf-8') as file:
         content = file.read()
-    pattern = r"t\(['\"](.+?)['\"]\)"
+    pattern = r"t\(['\"](.+?)['\"]"
     return set(re.findall(pattern, content))
 
 def find_all_used_keys(app_dir: str) -> Set[str]:
@@ -88,7 +88,7 @@ def remove_key(obj: Dict, key: str):
 def clean_empty(obj: Dict):
     if not isinstance(obj, dict):
         return obj
-    return {k: v for k, v in ((k, clean_empty(v)) for k, v in obj.items()) if v}
+    return {k: v for k, v in ((k, clean_empty(v)) for k, v in obj.items()) if not (isinstance(v, dict) and len(v) == 0)}
 
 def check_and_clean_unused_translations(lang_dir: str, app_dir: str):
     all_translation_keys = set()
