@@ -142,7 +142,7 @@ export default function OnboardingInviteCode({ route, navigation }: OnboardingIn
       action: 'EnterPairingClicked',
       userId: authContext.userId,
     });
-    navigation.navigate('OnboardingInviteCodeInput', { fromSettings });
+    navigation.replace('OnboardingInviteCodeInput', { fromSettings });
   };
 
   const handleContinue = () => {
@@ -154,7 +154,7 @@ export default function OnboardingInviteCode({ route, navigation }: OnboardingIn
     if (fromSettings) {
       navigation.goBack();
     } else {
-      navigation.navigate('OnDateNotification', { withPartner: true, isOnboarding: true });
+      navigation.replace('OnDateNotification', { withPartner: true, isOnboarding: true });
     }
   };
 
@@ -195,7 +195,7 @@ export default function OnboardingInviteCode({ route, navigation }: OnboardingIn
                   if (fromSettings) {
                     navigation.goBack();
                   } else {
-                    navigation.navigate('Language', { fromSettings: false });
+                    navigation.replace('Language', { fromSettings: false });
                   }
                 }}
               />

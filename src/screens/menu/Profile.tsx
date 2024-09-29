@@ -5,15 +5,7 @@ import { AUTH_STORAGE_KEY, supabase } from '@app/api/initSupabase';
 import { Loading } from '@app/components/utils/Loading';
 import { logSupaErrors } from '@app/utils/errors';
 import { AuthContext } from '@app/provider/AuthProvider';
-import {
-  Alert,
-  Platform,
-  SafeAreaView,
-  ScrollView,
-  Share,
-  TouchableOpacity,
-  View,
-} from 'react-native';
+import { Alert, SafeAreaView, ScrollView, Share, TouchableOpacity, View } from 'react-native';
 import { useTheme } from '@rneui/themed';
 import { FontText, getFontSizeForScreen } from '@app/components/utils/FontText';
 import ProfileBuddyCorner from '@app/icons/profile_buddy_corner';
@@ -217,12 +209,13 @@ export default function ({
       screen: 'Profile',
       action: 'ShareClicked',
     });
-    const iosLink = 'https://apps.apple.com/app/nemlys-couples-game-questions/id1662262055';
-    const androidLink = 'https://play.google.com/store/apps/details?id=com.nemlys.app';
+    const getInviteMessage = () => {
+      const iosLink = 'https://apps.apple.com/app/nemlys-couples-game-questions/id1662262055';
+      const androidLink = 'https://play.google.com/store/apps/details?id=com.nemlys.app';
+      return i18n.t('settings_share_message') + `\nApple: ${iosLink}\nAndroid: ${androidLink}`;
+    };
     await Share.share({
-      title: 'Nemlys: relationship questions',
-      message: `Nemlys: couples questions\nApple: ${iosLink}\nAndroid: ${androidLink}\n\nHave fun, deep conversations and personalized questions!\n\n\n`,
-      url: Platform.OS === 'android' ? androidLink : iosLink,
+      message: getInviteMessage(),
     });
   };
   const manageCall = () => {
@@ -319,16 +312,20 @@ export default function ({
                     title={i18n.t('profile.partner_name')}
                     action={() => void handlePartnerName()}
                   ></SettingsButton>
-                  <SettingsButton
-                    data={null}
-                    title={i18n.t('settings_invite_invite_partner', { partnerName })}
-                    action={() => void handleInviteCode()}
-                  ></SettingsButton>
-                  <SettingsButton
-                    data={null}
-                    title={i18n.t('settings_invite_join_partner', { partnerName })}
-                    action={() => void handleInviteCodeInput()}
-                  ></SettingsButton>
+                  {!hasPartner && (
+                    <SettingsButton
+                      data={null}
+                      title={i18n.t('settings_invite_invite_partner', { partnerName })}
+                      action={() => void handleInviteCode()}
+                    ></SettingsButton>
+                  )}
+                  {!hasPartner && (
+                    <SettingsButton
+                      data={null}
+                      title={i18n.t('settings_invite_join_partner', { partnerName })}
+                      action={() => void handleInviteCodeInput()}
+                    ></SettingsButton>
+                  )}
                 </View>
                 <View style={{ marginTop: 40 }}>
                   <FontText h3>{i18n.t('profile.settings')}</FontText>

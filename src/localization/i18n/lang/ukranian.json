@@ -386,5 +386,13 @@
   "premium_two": "Для 2 осіб",
   "premium_unlimited_topics_title": "Отримайте необмежені питання",
   "premium_unlimited_topics_explanation": "Тепер у вас є {{dailyTopics}} питань на день",
-  "premium_banner_free": "Щоденні питання"
+  "premium_banner_free": "Щоденні питання",
+  "settings_share_message": "Привіт, я щойно встановив додаток Nemlys для пар. Він генерує класні питання, які можна обговорити зі своїм партнером.\n\n",
+  "premium_7_days_trial": "Почати 7-денний безкоштовний період*",
+  "premium_3_days_trial": "Почати 3-денний безкоштовний період*",
+  "premium_14_days_trial": "Почати 14-денний безкоштовний період*",
+  "premium_7_days_trial_desc": "7 днів безкоштовно",
+  "premium_3_days_trial_desc": "3 дні безкоштовно",
+  "premium_14_days_trial_desc": "14 днів безкоштовно",
+  "premium_charged": "* Вам буде нараховано {{price}} після закінчення безкоштовного періоду, якщо ви не скасуєте підписку"
 }

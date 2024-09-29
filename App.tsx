@@ -10,6 +10,7 @@ import * as Sentry from '@sentry/react-native';
 import SplashScreen from '@app/theme/SplashScreen';
 import ThemeStatusBar from '@app/theme/ThemeStatusBar';
 import Toast, { BaseToast, ErrorToast } from 'react-native-toast-message';
+import { isNetworkError } from '@app/utils/errors';
 
 const toastConfig = {
   success: (props) => (
@@ -48,6 +49,13 @@ if (!__DEV__) {
     tracesSampleRate: 0.1,
     attachScreenshot: true,
     attachStacktrace: true,
+    beforeSend: (event, hint) => {
+      // discard network error
+      if (hint && hint.originalException && isNetworkError(hint.originalException)) {
+        return null;
+      }
+      return event;
+    },
   });
 }
 

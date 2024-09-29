@@ -386,5 +386,13 @@
   "premium_two": "Pentru 2 persoane",
   "premium_unlimited_topics_title": "Obțineți Întrebări Nelimitate",
   "premium_unlimited_topics_explanation": "Acum aveți {{dailyTopics}} întrebări pe zi",
-  "premium_banner_free": "Întrebări zilnice"
+  "premium_banner_free": "Întrebări zilnice",
+  "settings_share_message": "Bună, tocmai am instalat aplicația pentru cupluri Nemlys. Aceasta generează întrebări interesante pe care le poți discuta cu partenerul tău.\n\n",
+  "premium_7_days_trial": "Începeți o probă de 7 zile*",
+  "premium_3_days_trial": "Începeți o probă de 3 zile*",
+  "premium_14_days_trial": "Începeți o probă de 14 zile*",
+  "premium_7_days_trial_desc": "Probă gratuită de 7 zile",
+  "premium_3_days_trial_desc": "Probă gratuită de 3 zile",
+  "premium_14_days_trial_desc": "Probă gratuită de 14 zile",
+  "premium_charged": "* Veți fi taxat {{price}} când proba se încheie, cu excepția cazului în care anulați abonamentul"
 }

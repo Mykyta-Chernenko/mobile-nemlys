@@ -386,5 +386,13 @@
   "premium_two": "2 kişi için",
   "premium_unlimited_topics_title": "Sınırsız Sorular Al",
   "premium_unlimited_topics_explanation": "Artık günde {{dailyTopics}} soru hakkınız var",
-  "premium_banner_free": "Günlük sorular"
+  "premium_banner_free": "Günlük sorular",
+  "settings_share_message": "Merhaba, Nemlys çift uygulamasını yeni yükledim. Partnerinizle tartışabileceğiniz harika sorular üretiyor.\n\n",
+  "premium_7_days_trial": "7 günlük deneme süresine başla*",
+  "premium_3_days_trial": "3 günlük deneme süresine başla*",
+  "premium_14_days_trial": "14 günlük deneme süresine başla*",
+  "premium_7_days_trial_desc": "7 gün ücretsiz deneme",
+  "premium_3_days_trial_desc": "3 gün ücretsiz deneme",
+  "premium_14_days_trial_desc": "14 gün ücretsiz deneme",
+  "premium_charged": "* Deneme süresi sona erdiğinde aboneliği iptal etmediğiniz takdirde {{price}} ücretlendirileceksiniz"
 }

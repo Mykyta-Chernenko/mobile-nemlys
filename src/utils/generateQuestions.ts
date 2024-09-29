@@ -59,7 +59,7 @@ export async function generateQuestions(
       action: 'QuestionGeneratedErrorGoHome',
       userId: userId,
     });
-    navigation.navigate('Home', { refreshTimeStamp: new Date().toISOString() });
+    navigation.replace('Home', { refreshTimeStamp: new Date().toISOString() });
     return;
   }
 
@@ -68,7 +68,7 @@ export async function generateQuestions(
     action: 'QuestionGenerated',
     userId: userId,
   });
-  navigation.navigate('OnDate', {
+  navigation.replace('OnDate', {
     id: dateId,
     refreshTimeStamp: new Date().toISOString(),
   });

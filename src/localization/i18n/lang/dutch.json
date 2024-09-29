@@ -386,5 +386,13 @@
   "premium_two": "Voor 2 personen",
   "premium_unlimited_topics_title": "Krijg Onbeperkte Vragen",
   "premium_unlimited_topics_explanation": "Nu heb je {{dailyTopics}} vragen per dag",
-  "premium_banner_free": "Dagelijkse vragen"
+  "premium_banner_free": "Dagelijkse vragen",
+  "settings_share_message": "Hoi, ik heb zojuist de Nemlys-koppelapp geïnstalleerd. Het genereert leuke vragen die je met je partner kunt bespreken.\n\n",
+  "premium_7_days_trial": "Start 7 dagen proefperiode*",
+  "premium_3_days_trial": "Start 3 dagen proefperiode*",
+  "premium_14_days_trial": "Start 14 dagen proefperiode*",
+  "premium_7_days_trial_desc": "7 dagen gratis proefperiode",
+  "premium_3_days_trial_desc": "3 dagen gratis proefperiode",
+  "premium_14_days_trial_desc": "14 dagen gratis proefperiode",
+  "premium_charged": "* Je wordt {{price}} in rekening gebracht wanneer de proefperiode voorbij is, tenzij je het abonnement annuleert"
 }

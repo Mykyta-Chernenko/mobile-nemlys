@@ -386,5 +386,13 @@
   "premium_two": "Dành cho 2 người",
   "premium_unlimited_topics_title": "Nhận Câu Hỏi Không Giới Hạn",
   "premium_unlimited_topics_explanation": "Bây giờ bạn có {{dailyTopics}} câu hỏi mỗi ngày",
-  "premium_banner_free": "Câu hỏi hàng ngày"
+  "premium_banner_free": "Câu hỏi hàng ngày",
+  "settings_share_message": "Chào bạn, tôi vừa cài đặt ứng dụng cặp đôi Nemlys. Nó tạo ra những câu hỏi thú vị để bạn có thể thảo luận với người yêu của mình.\n\n",
+  "premium_7_days_trial": "Bắt đầu dùng thử 7 ngày*",
+  "premium_3_days_trial": "Bắt đầu dùng thử 3 ngày*",
+  "premium_14_days_trial": "Bắt đầu dùng thử 14 ngày*",
+  "premium_7_days_trial_desc": "Dùng thử miễn phí 7 ngày",
+  "premium_3_days_trial_desc": "Dùng thử miễn phí 3 ngày",
+  "premium_14_days_trial_desc": "Dùng thử miễn phí 14 ngày",
+  "premium_charged": "* Bạn sẽ bị tính phí {{price}} khi thời gian dùng thử kết thúc trừ khi bạn hủy đăng ký"
 }

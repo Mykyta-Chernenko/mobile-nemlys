@@ -386,5 +386,13 @@
   "premium_two": "Для 2 человек",
   "premium_unlimited_topics_title": "Получите неограниченные вопросы",
   "premium_unlimited_topics_explanation": "Теперь у вас есть {{dailyTopics}} вопросов в день",
-  "premium_banner_free": "Ежедневные вопросы"
+  "premium_banner_free": "Ежедневные вопросы",
+  "settings_share_message": "Привет, я только что установил приложение для пар Nemlys. Оно генерирует классные вопросы, которые можно обсудить с партнером.\n\n",
+  "premium_7_days_trial": "Начать 7-дневный пробный период*",
+  "premium_3_days_trial": "Начать 3-дневный пробный период*",
+  "premium_14_days_trial": "Начать 14-дневный пробный период*",
+  "premium_7_days_trial_desc": "7 дней бесплатного пробного периода",
+  "premium_3_days_trial_desc": "3 дня бесплатного пробного периода",
+  "premium_14_days_trial_desc": "14 дней бесплатного пробного периода",
+  "premium_charged": "* С вас будет взиматься {{price}} по окончании пробного периода, если вы не отмените подписку"
 }

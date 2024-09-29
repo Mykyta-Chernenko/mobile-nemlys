@@ -318,7 +318,7 @@ export default function QuestionAnswer({
       userId: authContext.userId,
     });
 
-    navigation.navigate('AnswerHome', { refreshTimeStamp: new Date().toISOString() });
+    navigation.replace('AnswerHome', { refreshTimeStamp: new Date().toISOString() });
   };
 
   const handleGoBack = () => {

@@ -386,5 +386,13 @@
   "premium_two": "لشخصين",
   "premium_unlimited_topics_title": "احصل على أسئلة غير محدودة",
   "premium_unlimited_topics_explanation": "الآن لديك {{dailyTopics}} أسئلة يوميًا",
-  "premium_banner_free": "أسئلة يومية"
+  "premium_banner_free": "أسئلة يومية",
+  "settings_share_message": "مرحبًا، لقد قمت للتو بتثبيت تطبيق نيمليس للأزواج. إنه يولد أسئلة رائعة يمكن مناقشتها مع شريكك.\n\n",
+  "premium_7_days_trial": "ابدأ تجربة لمدة 7 أيام*",
+  "premium_3_days_trial": "ابدأ تجربة لمدة 3 أيام*",
+  "premium_14_days_trial": "ابدأ تجربة لمدة 14 يومًا*",
+  "premium_7_days_trial_desc": "تجربة مجانية لمدة 7 أيام",
+  "premium_3_days_trial_desc": "تجربة مجانية لمدة 3 أيام",
+  "premium_14_days_trial_desc": "تجربة مجانية لمدة 14 يومًا",
+  "premium_charged": "* سيتم خصم {{price}} منك عند انتهاء التجربة ما لم تقم بإلغاء الاشتراك"
 }

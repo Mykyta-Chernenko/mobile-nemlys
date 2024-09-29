@@ -26,10 +26,10 @@ export function logErrorsWithMessageWithoutAlert(
   message: string | undefined = undefined,
 ) {
   if (message) {
-    if (e.message && typeof e.message === 'string') {
-      e.message += ' ' + message;
+    if ((e as Error).message && typeof (e as Error).message === 'string') {
+      (e as Error).message += ' ' + message;
     } else {
-      e.message = message;
+      (e as { message: string }).message = message;
     }
   }
   baseLogError(e);

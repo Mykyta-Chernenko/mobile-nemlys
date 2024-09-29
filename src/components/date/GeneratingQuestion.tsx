@@ -71,7 +71,6 @@ export default function ({
       );
     };
     if (route.params.refreshTimeStamp) {
-      console.log(route.params.refreshTimeStamp);
       void func();
     }
   }, [route.params.refreshTimeStamp]);

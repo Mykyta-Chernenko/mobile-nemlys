@@ -386,5 +386,13 @@
   "premium_two": "2人用",
   "premium_unlimited_topics_title": "無制限の質問を手に入れよう",
   "premium_unlimited_topics_explanation": "今、あなたは1日に{{dailyTopics}}の質問があります",
-  "premium_banner_free": "毎日の質問"
+  "premium_banner_free": "毎日の質問",
+  "settings_share_message": "こんにちは、私はNemlysカップルアプリをインストールしました。これは、パートナーと話し合うための素敵な質問を生成します。\n\n",
+  "premium_7_days_trial": "7日間のトライアルを開始*",
+  "premium_3_days_trial": "3日間のトライアルを開始*",
+  "premium_14_days_trial": "14日間のトライアルを開始*",
+  "premium_7_days_trial_desc": "7日間の無料トライアル",
+  "premium_3_days_trial_desc": "3日間の無料トライアル",
+  "premium_14_days_trial_desc": "14日間の無料トライアル",
+  "premium_charged": "* トライアルが終了すると、購読をキャンセルしない限り、{{price}}が請求されます"
 }

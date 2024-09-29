@@ -386,5 +386,13 @@
   "premium_two": "Für 2 Personen",
   "premium_unlimited_topics_title": "Unbegrenzte Fragen erhalten",
   "premium_unlimited_topics_explanation": "Jetzt hast du {{dailyTopics}} Fragen pro Tag",
-  "premium_banner_free": "Tägliche Fragen"
+  "premium_banner_free": "Tägliche Fragen",
+  "settings_share_message": "Hallo, ich habe gerade die Nemlys Partner-App installiert. Sie generiert coole Fragen, die man mit seinem Partner besprechen kann.\n\n",
+  "premium_7_days_trial": "Starte 7 Tage Testversion*",
+  "premium_3_days_trial": "Starte 3 Tage Testversion*",
+  "premium_14_days_trial": "Starte 14 Tage Testversion*",
+  "premium_7_days_trial_desc": "7 Tage kostenlose Testversion",
+  "premium_3_days_trial_desc": "3 Tage kostenlose Testversion",
+  "premium_14_days_trial_desc": "14 Tage kostenlose Testversion",
+  "premium_charged": "* Du wirst {{price}} berechnet, wenn die Testversion endet, es sei denn, du kündigst das Abonnement"
 }

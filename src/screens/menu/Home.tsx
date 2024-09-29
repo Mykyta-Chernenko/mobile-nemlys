@@ -33,6 +33,7 @@ import { COUNTRY, TIMEZONE } from '@app/utils/constants';
 import HomeHeader from '@app/screens/menu/HomeHeader';
 import { useDatePolling } from '@app/api/getNewActiveDates';
 import { useIsFocused } from '@react-navigation/native';
+import Constants from 'expo-constants';
 
 export const jobs: { slug: JobSlug; title: string; icon: (props: any) => JSX.Element }[] = [
   { slug: 'issues', title: i18n.t('jobs.issues'), icon: DateIssues },
@@ -211,7 +212,11 @@ export default function ({
           .eq('stopped', false),
         supabase
           .from('user_technical_details')
-          .update({ user_timezone: TIMEZONE, user_country: COUNTRY })
+          .update({
+            user_timezone: TIMEZONE,
+            user_country: COUNTRY,
+            app_version: Constants.expoConfig?.version || null,
+          })
           .eq('user_id', authContext.userId!),
       ]);
 
@@ -245,7 +250,7 @@ export default function ({
     isFirstMount.current = false;
   }, []);
 
-  const isFocused = useIsFocused() && coupleId;
+  const isFocused = useIsFocused() && !!coupleId;
 
   useDatePolling(hasPartner, undefined, navigation, authContext.userId!, coupleId || 0, isFocused);
 

@@ -1,22 +1,16 @@
 import React, { useContext, useEffect, useRef, useState } from 'react';
-import {
-  ScrollView,
-  View,
-  Animated,
-  TouchableWithoutFeedback,
-  Platform,
-  Modal,
-} from 'react-native';
+import { ScrollView, View, TouchableWithoutFeedback, Platform, Modal } from 'react-native';
 import * as Linking from 'expo-linking';
 import { SafeAreaView } from 'react-native-safe-area-context';
-import {
-  FontText,
-  getFontSizeForScreen,
-  REGULAR_FONT_FAMILY,
-} from '@app/components/utils/FontText';
+import { FontText, getFontSizeForScreen } from '@app/components/utils/FontText';
 import { i18n } from '@app/localization/i18n';
 import { useTheme, useThemeMode } from '@rneui/themed';
-import { logErrorsWithMessage, logSupaErrors, retryAsync } from '@app/utils/errors';
+import {
+  logErrorsWithMessage,
+  logErrorsWithMessageWithoutAlert,
+  logSupaErrors,
+  retryAsync,
+} from '@app/utils/errors';
 import { supabase } from '@app/api/initSupabase';
 import { MainStackParamList } from '@app/types/navigation';
 import { SecondaryButton } from '@app/components/buttons/SecondaryButton';
@@ -33,9 +27,9 @@ import PremiumHard from '@app/icons/premium_hard';
 import PremiumMeaningful from '@app/icons/premium_meaningful';
 import PremiumFun from '@app/icons/premium_fun';
 import { getNow, sleep } from '@app/utils/date';
-import { AnimatedFontText } from '@app/components/utils/AnimatedFontText';
 import * as RNIap from 'react-native-iap';
 import { TouchableOpacity } from 'react-native';
+import PlanSelector from '@app/components/premium/PlanSelector';
 export default function ({
   route,
   navigation,
@@ -46,6 +40,7 @@ export default function ({
   const [subscriptionLoading, setSubscriptionLoading] = useState(false);
   const [productLoading, setProductLoading] = useState(false);
   const [buttonDisabled, setButtonDisabled] = useState(false);
+  const [trialLength, setTrialLength] = useState(7);
   type CurrentPremiumState =
     | 'premium'
     | 'trial'
@@ -78,8 +73,8 @@ export default function ({
   const getData = async () => {
     setLoading(true);
     setButtonDisabled(false);
-    setSelectedPlan('Monthly');
-    handleToggle('Monthly');
+    setSelectedPlan('Annual');
+    handleToggle('Annual');
     let currentPremiumState: CurrentPremiumState = 'daily';
 
     try {
@@ -226,7 +221,7 @@ export default function ({
   };
 
   const monthlySubscriptionId = 'nemlys.subscription.monthly_no_trial';
-  const yearlySubscriptionId = 'nemlys.subscription.yearly_no_trial';
+  const yearlySubscriptionId = 'nemlys.subscription.yearly';
   const [monthlyPrice, setMonthlyPrice] = useState('');
   const [yearlyPrice, setYearlyPrice] = useState('');
 
@@ -359,18 +354,40 @@ export default function ({
           const products = await RNIap.getProducts({
             skus: [monthlySubscriptionId, yearlySubscriptionId],
           });
-          let subscriptions: RNIap.Subscription[] = [];
+          const subscriptions = await RNIap.getSubscriptions({
+            skus: [monthlySubscriptionId, yearlySubscriptionId],
+          });
           if (Platform.OS === 'ios') {
-            const monthlyProduct = products.find((x) => x.productId === monthlySubscriptionId);
-            const yearlyProduct = products.find((x) => x.productId === yearlySubscriptionId);
-            setMonthlyPrice(monthlyProduct ? monthlyProduct.localizedPrice : '5$');
+            const monthlyProduct: RNIap.ProductIOS | undefined = products.find(
+              (x) => x.productId === monthlySubscriptionId,
+            );
+            const yearlyProduct: RNIap.ProductIOS | undefined = products.find(
+              (x) => x.productId === yearlySubscriptionId,
+            );
+            setMonthlyPrice(monthlyProduct ? monthlyProduct.localizedPrice : '10$');
             setYearlyPrice(yearlyProduct ? yearlyProduct.localizedPrice : '49$');
-          } else if (Platform.OS === 'android') {
-            // we need to get all subscription so that it works on android
-            subscriptions = await RNIap.getSubscriptions({
-              skus: [monthlySubscriptionId, yearlySubscriptionId],
-            });
 
+            const yearlySubscription = subscriptions.find(
+              (sub) => sub.productId === yearlySubscriptionId,
+            ) as RNIap.SubscriptionIOS;
+            if (
+              yearlySubscription &&
+              yearlySubscription.introductoryPricePaymentModeIOS === 'FREETRIAL'
+            ) {
+              const trialPeriod = yearlySubscription.introductoryPriceSubscriptionPeriodIOS;
+
+              const trialPeriodNumber = parseInt(
+                yearlySubscription.introductoryPriceNumberOfPeriodsIOS || '0',
+                10,
+              );
+
+              if (trialPeriod === 'DAY') {
+                setTrialLength(trialPeriodNumber);
+              } else if (trialPeriod === 'WEEK') {
+                setTrialLength(trialPeriodNumber * 7);
+              }
+            }
+          } else if (Platform.OS === 'android') {
             const monthlySubscription = subscriptions.find(
               (sub) => sub.productId === monthlySubscriptionId,
             );
@@ -390,10 +407,10 @@ export default function ({
                 const monthlyFormattedPrice = validMonthlyPricing['formattedPrice'] as string;
                 setMonthlyPrice(monthlyFormattedPrice);
               } else {
-                setMonthlyPrice('5$');
+                setMonthlyPrice('10$');
               }
             } else {
-              setMonthlyPrice('5$');
+              setMonthlyPrice('10$');
             }
 
             if (yearlySubscription) {
@@ -409,6 +426,19 @@ export default function ({
                 setYearlyPrice(yearlyFormattedPrice);
               } else {
                 setYearlyPrice('49$');
+              }
+              try {
+                const trialPhase = yearlyPricingPhaseList.find(
+                  (phase) => phase['priceAmountMicros'] === '0',
+                ) as { billingPeriod: string };
+                if (trialPhase && trialPhase['billingPeriod']) {
+                  setTrialLength(
+                    parseInt(trialPhase['billingPeriod'].replace('P', '').replace('D', ''), 10),
+                  );
+                }
+              } catch (e) {
+                logErrorsWithMessageWithoutAlert(e);
+                setTrialLength(7);
               }
             } else {
               setYearlyPrice('49$');
@@ -431,7 +461,7 @@ export default function ({
           err,
         });
         logErrorsWithMessage(err, (err?.message as string) || '');
-        setMonthlyPrice('5$');
+        setMonthlyPrice('10$');
         setYearlyPrice('49$');
       }
 
@@ -503,9 +533,9 @@ export default function ({
           currentPremiumState !== 'trial' &&
           !eligibleForTrial));
     if (showInterview) {
-      navigation.navigate('InterviewText', { refreshTimeStamp: new Date().toISOString() });
+      navigation.replace('InterviewText', { refreshTimeStamp: new Date().toISOString() });
     } else {
-      navigation.navigate('Home', {
+      navigation.replace('Home', {
         refreshTimeStamp: new Date().toISOString(),
       });
     }
@@ -519,48 +549,21 @@ export default function ({
   };
 
   type Plan = 'Monthly' | 'Annual';
-  const [selectedPlan, setSelectedPlan] = useState<Plan>('Monthly');
-  const [containerWidth, setContainerWidth] = useState(0);
-  const animateValue = useRef(new Animated.Value(selectedPlan === 'Annual' ? 0 : 1)).current;
+  const [selectedPlan, setSelectedPlan] = useState<Plan>('Annual');
 
-  const handleToggleAnimation = (plan: Plan) => {
-    Animated.timing(animateValue, {
-      toValue: plan === 'Annual' ? 0 : 1,
-      duration: 300,
-      useNativeDriver: false,
-    }).start();
-  };
   const handleToggle = (plan: Plan) => {
-    handleToggleAnimation(plan);
     setSelectedPlan(plan);
   };
-  handleToggleAnimation(selectedPlan);
 
-  const buttonTranslateX = animateValue.interpolate({
-    inputRange: [0, 1],
-    outputRange: [0, containerWidth / 2], // Use numeric values
-  });
+  let yearlyTrialLength;
 
-  const textColorAnnual = animateValue.interpolate({
-    inputRange: [0, 1],
-    outputRange: [theme.colors.black, theme.colors.white],
-  }) as unknown as string;
-
-  const subTextColorAnnual = animateValue.interpolate({
-    inputRange: [0, 1],
-    outputRange: ['rgba(26, 5, 47, 0.6)', theme.colors.grey3],
-  }) as unknown as string;
-
-  const textColorMonthly = animateValue.interpolate({
-    inputRange: [0, 1],
-    outputRange: [theme.colors.white, theme.colors.black],
-  }) as unknown as string;
-
-  const subTextColorMonthly = animateValue.interpolate({
-    inputRange: [0, 1],
-    outputRange: [theme.colors.grey3, 'rgba(26, 5, 47, 0.6)'],
-  }) as unknown as string;
-
+  if (trialLength === 3) {
+    yearlyTrialLength = i18n.t('premium_3_days_trial');
+  } else if (trialLength === 14) {
+    yearlyTrialLength = i18n.t('premium_14_days_trial');
+  } else {
+    yearlyTrialLength = i18n.t('premium_7_days_trial');
+  }
   return loading || productLoading ? (
     <Loading></Loading>
   ) : (
@@ -625,7 +628,7 @@ export default function ({
                 {i18n.t('premium.offer.title')}
               </FontText>
             </View>
-            <View style={{ height: 32, width: 32 }}></View>
+            <View style={{ width: getFontSizeForScreen('h1') * 1.1 }}></View>
           </View>
           <View>
             <View style={{ alignItems: 'center' }}>
@@ -634,7 +637,8 @@ export default function ({
                   style={{
                     color: theme.colors.grey3,
                     textAlign: 'center',
-                    marginBottom: 15,
+                    marginTop: 30,
+                    marginBottom: 10,
                     width: '100%',
                   }}
                 >
@@ -659,7 +663,7 @@ export default function ({
               ) : (
                 <View
                   style={{
-                    marginTop: 40,
+                    marginTop: 25,
                     borderRadius: 20,
                     backgroundColor: theme.colors.grey1,
                     padding: 20,
@@ -707,7 +711,7 @@ export default function ({
           </View>
           {currentPremiumState !== 'premium' ? (
             <>
-              <View style={{ marginBottom: 10 }}>
+              <View style={{ marginBottom: 10, marginTop: 40 }}>
                 {eligibleForTrial ? (
                   <>
                     <SecondaryButton
@@ -722,7 +726,7 @@ export default function ({
                       }
                     ></SecondaryButton>
                     <FontText
-                      style={{ color: theme.colors.grey3, textAlign: 'center', marginVertical: 15 }}
+                      style={{ color: theme.colors.grey3, textAlign: 'center', marginVertical: 20 }}
                     >
                       {i18n.t('premium.offer.trial_no_card')}
                     </FontText>
@@ -734,95 +738,26 @@ export default function ({
                     >
                       {i18n.t('premium.offer.choose_plan')}
                     </FontText>
-                    <View
-                      style={{
-                        flex: 1,
-                        flexDirection: 'row',
-                        borderRadius: 25,
-                        overflow: 'hidden',
-                        backgroundColor: 'rgba(245, 233, 235, 0.1)',
-                      }}
-                      onLayout={(event) => {
-                        const { width } = event.nativeEvent.layout;
-                        setContainerWidth(width);
-                      }}
-                    >
-                      <Animated.View
-                        style={{
-                          position: 'absolute',
-                          top: 0,
-                          bottom: 0,
-                          left: 0,
-                          width: '50%',
-                          backgroundColor: theme.colors.primary,
-                          transform: [{ translateX: buttonTranslateX }],
-                          borderRadius: 25,
-                        }}
-                      />
-                      <TouchableWithoutFeedback
-                        style={{ flex: 1 }}
-                        onPress={() => handleToggle('Annual')}
-                      >
-                        <View
-                          style={{
-                            flex: 1,
-                            justifyContent: 'center',
-                            alignItems: 'center',
-                            padding: 15,
-                          }}
-                        >
-                          <AnimatedFontText
-                            style={{ color: textColorAnnual, fontFamily: REGULAR_FONT_FAMILY }}
-                          >
-                            {i18n.t('premium.offer.plan_yearly_title')}
-                          </AnimatedFontText>
-                          <AnimatedFontText
-                            style={{ color: subTextColorAnnual, fontFamily: REGULAR_FONT_FAMILY }}
-                          >
-                            {i18n.t('premium.offer.plan_yearly_price', { price: yearlyPrice })}
-                          </AnimatedFontText>
-                        </View>
-                      </TouchableWithoutFeedback>
-                      <TouchableWithoutFeedback
-                        style={{
-                          flex: 1,
-                          justifyContent: 'center',
-                          alignItems: 'center',
-                          padding: 15,
-                        }}
-                        onPress={() => handleToggle('Monthly')}
-                      >
-                        <View
-                          style={{
-                            flex: 1,
-                            justifyContent: 'center',
-                            alignItems: 'center',
-                            padding: 15,
-                          }}
-                        >
-                          <AnimatedFontText
-                            style={{ color: textColorMonthly, fontFamily: REGULAR_FONT_FAMILY }}
-                          >
-                            {i18n.t('premium.offer.plan_monthly_title')}
-                          </AnimatedFontText>
-                          <AnimatedFontText
-                            style={{ color: subTextColorMonthly, fontFamily: REGULAR_FONT_FAMILY }}
-                          >
-                            {i18n.t('premium.offer.plan_monthly_price', { price: monthlyPrice })}
-                          </AnimatedFontText>
-                        </View>
-                      </TouchableWithoutFeedback>
-                    </View>
+                    <PlanSelector
+                      selectedPlan={selectedPlan}
+                      handleToggle={handleToggle}
+                      monthlyPrice={monthlyPrice}
+                      yearlyPrice={yearlyPrice}
+                      yearlyTrialLength={yearlyTrialLength}
+                    ></PlanSelector>
                     <SecondaryButton
                       disabled={buttonDisabled}
-                      containerStyle={{ marginTop: '5%' }}
+                      containerStyle={{ marginTop: 20 }}
                       buttonStyle={{ width: '100%' }}
                       onPress={() => void handleButtonPress()}
-                      title={i18n.t('continue')}
-                    ></SecondaryButton>
+                    >
+                      <FontText>
+                        {selectedPlan === 'Annual' ? yearlyTrialLength : i18n.t('continue')}
+                      </FontText>
+                    </SecondaryButton>
                     <View
                       style={{
-                        marginTop: 15,
+                        marginTop: 30,
                         flexDirection: 'row',
                         justifyContent: 'center',
                       }}
@@ -846,6 +781,25 @@ export default function ({
                           {i18n.t('premium.offer.privacy')}
                         </FontText>
                       </TouchableOpacity>
+                    </View>
+                    <View
+                      style={{
+                        marginTop: 15,
+                        flexDirection: 'row',
+                        justifyContent: 'center',
+                        opacity: selectedPlan === 'Annual' ? 1 : 0,
+                      }}
+                    >
+                      <FontText
+                        style={{
+                          fontSize: getFontSizeForScreen('small'),
+                          color: theme.colors.grey5,
+                        }}
+                      >
+                        {i18n.t('premium_charged', {
+                          price: yearlyPrice,
+                        })}
+                      </FontText>
                     </View>
                   </>
                 )}

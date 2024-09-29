@@ -211,26 +211,28 @@ export default function AnswerHome({
             {noMyReplies ? (
               <>
                 <FontText
+                  small
                   style={{
                     color: isAuthor ? theme.colors.white : theme.colors.black,
                   }}
                 >
                   {truncateText(reply.text)}
                 </FontText>
-                <FontText style={{ color: theme.colors.grey3, marginTop: 5 }}>
+                <FontText small style={{ color: theme.colors.grey3, marginTop: 5 }}>
                   {isAuthor ? name : partnerName}
                 </FontText>
               </>
             ) : (
               <>
                 <FontText
+                  small
                   style={{
                     color: isAuthor ? theme.colors.white : theme.colors.black,
                   }}
                 >
                   {reply.text}
                 </FontText>
-                <FontText style={{ color: theme.colors.grey3, marginTop: 5 }}>
+                <FontText small style={{ color: theme.colors.grey3, marginTop: 5 }}>
                   {isAuthor ? name : partnerName}
                 </FontText>
               </>
@@ -251,7 +253,7 @@ export default function AnswerHome({
         }}
         onPress={() => navigateToQuestionAnswer(question.id)}
       >
-        <FontText h3>{question.question}</FontText>
+        <FontText>{question.question}</FontText>
         {additionalRepliesCount > 0 && (
           <View
             style={{
@@ -263,7 +265,7 @@ export default function AnswerHome({
               marginTop: 10,
             }}
           >
-            <FontText h4>
+            <FontText small>
               {i18n.t('question_home_replies_count', { count: additionalRepliesCount })}
             </FontText>
           </View>
@@ -281,7 +283,9 @@ export default function AnswerHome({
             }}
             onPress={() => navigateToQuestionAnswer(question.id)}
           >
-            <FontText style={{ textAlign: 'center' }}>{i18n.t('question_home_answer')}</FontText>
+            <FontText small style={{ textAlign: 'center' }}>
+              {i18n.t('question_home_answer')}
+            </FontText>
           </TouchableOpacity>
         )}
         {partnerReplies.length > 0 && userReplies.length === 0 && (
@@ -298,7 +302,7 @@ export default function AnswerHome({
             onPress={() => navigateToQuestionAnswer(question.id)}
           >
             <LockIcon height={20} width={20}></LockIcon>
-            <FontText style={{ marginLeft: 3, paddingTop: 4 }}>
+            <FontText small style={{ marginLeft: 3, paddingTop: 4 }}>
               {i18n.t('question_home_unlock')}
             </FontText>
           </TouchableOpacity>
@@ -327,7 +331,7 @@ export default function AnswerHome({
             }
           >
             <RemindIcon height={20} width={20} />
-            <FontText style={{ marginLeft: 5, paddingTop: 3 }}>
+            <FontText small style={{ marginLeft: 5, paddingTop: 3 }}>
               {reminderLoading
                 ? i18n.t('loading')
                 : i18n.t('question_answer_remind_partner', { partnerName })}
@@ -344,13 +348,16 @@ export default function AnswerHome({
             }}
           >
             <View style={{ flexDirection: 'row' }}>
-              <JobIcon width={getFontSizeForScreen('h3')} height={getFontSizeForScreen('h3')} />
-              <FontText h4 style={{ color: '#87778D', marginLeft: 5 }}>
+              <JobIcon
+                width={getFontSizeForScreen('small')}
+                height={getFontSizeForScreen('small')}
+              />
+              <FontText small style={{ marginLeft: 5 }}>
                 {question.date.topic}
               </FontText>
             </View>
             <View>
-              <FontText h4 style={{ color: '#87778D' }}>
+              <FontText small>
                 {question.date.with_partner
                   ? i18n.t('date_mode_in_person_title')
                   : i18n.t('date_mode_online_title')}
@@ -407,7 +414,7 @@ export default function AnswerHome({
             }}
             onPress={() => void handleLoadMore()}
           >
-            <FontText>{i18n.t('load_more')}</FontText>
+            <FontText small>{i18n.t('load_more')}</FontText>
           </TouchableOpacity>
         )}
       </ScrollView>

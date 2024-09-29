@@ -386,5 +386,13 @@
   "premium_two": "Per 2 persone",
   "premium_unlimited_topics_title": "Ottieni Domande Illimitate",
   "premium_unlimited_topics_explanation": "Ora hai {{dailyTopics}} domande al giorno",
-  "premium_banner_free": "Domande quotidiane"
+  "premium_banner_free": "Domande quotidiane",
+  "settings_share_message": "Ciao, ho appena installato l'app Nemlys per coppie. Genera domande interessanti da discutere con il proprio partner.\n\n",
+  "premium_7_days_trial": "Inizia la prova di 7 giorni*",
+  "premium_3_days_trial": "Inizia la prova di 3 giorni*",
+  "premium_14_days_trial": "Inizia la prova di 14 giorni*",
+  "premium_7_days_trial_desc": "Prova gratuita di 7 giorni",
+  "premium_3_days_trial_desc": "Prova gratuita di 3 giorni",
+  "premium_14_days_trial_desc": "Prova gratuita di 14 giorni",
+  "premium_charged": "* Ti verrà addebitato {{price}} al termine della prova, a meno che tu non annulli l'abbonamento"
 }

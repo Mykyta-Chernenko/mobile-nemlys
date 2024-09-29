@@ -386,5 +386,13 @@
   "premium_two": "适合2人",
   "premium_unlimited_topics_title": "获取无限问题",
   "premium_unlimited_topics_explanation": "现在你每天有{{dailyTopics}}个问题",
-  "premium_banner_free": "每日问题"
+  "premium_banner_free": "每日问题",
+  "settings_share_message": "嗨，我刚刚安装了Nemlys情侣应用。它生成了一些很酷的问题，可以和伴侣一起讨论。\n\n",
+  "premium_7_days_trial": "开始7天试用*",
+  "premium_3_days_trial": "开始3天试用*",
+  "premium_14_days_trial": "开始14天试用*",
+  "premium_7_days_trial_desc": "7天免费试用",
+  "premium_3_days_trial_desc": "3天免费试用",
+  "premium_14_days_trial_desc": "14天免费试用",
+  "premium_charged": "* 试用结束后，除非您取消订阅，否则将收取{{price}}"
 }
