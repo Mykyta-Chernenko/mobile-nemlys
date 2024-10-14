@@ -10,7 +10,6 @@ import {
 import { supabase } from '@app/api/initSupabase';
 import { AuthStackParamList } from '@app/types/navigation';
 import { NativeStackScreenProps } from '@react-navigation/native-stack';
-import { useTheme } from '@rneui/themed';
 import * as WebBrowser from 'expo-web-browser';
 import { i18n } from '@app/localization/i18n';
 import { ANON_USER, AuthContext } from '@app/provider/AuthProvider';
@@ -29,7 +28,6 @@ import { OAuth } from '@app/components/auth/OAuth';
 WebBrowser.maybeCompleteAuthSession();
 
 export default function ({ navigation }: NativeStackScreenProps<AuthStackParamList, 'Login'>) {
-  const { theme } = useTheme();
   const [isContinueWithEmail, setIsContinueWithEmail] = useState<boolean>(false);
   const [email, setEmail] = useState<string>('');
   const [password, setPassword] = useState<string>('');
@@ -56,9 +54,11 @@ export default function ({ navigation }: NativeStackScreenProps<AuthStackParamLi
       });
       if (error2) {
         if (error2.message.includes('User already registered')) {
-          alert(i18n.t('login.invalid_username'));
+          alert(i18n.t('login_invalid_username'));
         } else if (error2.message.includes('Password should be at least 6 characters')) {
-          alert(i18n.t('login.password_is_too_short'));
+          alert(i18n.t('login_password_is_too_short'));
+        } else if (error2.message.includes('Unable to validate email address: invalid format')) {
+          alert(i18n.t('login_email_is_incorrect'));
         } else {
           logErrorsWithMessage(error2, error2.message);
         }
@@ -71,7 +71,7 @@ export default function ({ navigation }: NativeStackScreenProps<AuthStackParamLi
         auth.setUserId?.(user.id);
       }
     } else if (!error && !user) {
-      alert(i18n.t('login.check_email_for_login_link'));
+      alert(i18n.t('login_check_email_for_login_link'));
     } else {
       auth.setIsSignedIn?.(true);
       auth.setUserId?.(user!.id);
@@ -132,7 +132,7 @@ export default function ({ navigation }: NativeStackScreenProps<AuthStackParamLi
                   }}
                   h1
                 >
-                  {i18n.t('login.title')}
+                  {i18n.t('login_2_title')}
                 </FontText>
               </View>
 
@@ -145,7 +145,7 @@ export default function ({ navigation }: NativeStackScreenProps<AuthStackParamLi
                 >
                   <OAuth setLoading={setLoading} handleUser={handleUserAfterSignUp} />
                   <SecondaryButton
-                    title={i18n.t('login.button.default')}
+                    title={i18n.t('login_button_default')}
                     buttonStyle={{
                       marginTop: 10,
                     }}
@@ -217,7 +217,7 @@ export default function ({ navigation }: NativeStackScreenProps<AuthStackParamLi
                       }}
                     >
                       <FontText style={{ fontWeight: 'bold' }}>
-                        {i18n.t('login.forgot_password.link')}
+                        {i18n.t('login_forgot_password_link')}
                       </FontText>
                     </TouchableOpacity>
                   </View>

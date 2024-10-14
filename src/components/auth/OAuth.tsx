@@ -156,7 +156,7 @@ export const OAuth = ({
                 paddingTop: 7,
               }}
             >
-              {i18n.t('oauth.button.apple')}
+              {i18n.t('oauth_button_apple')}
             </FontText>
           </View>
         </PrimaryButton>
@@ -168,7 +168,7 @@ export const OAuth = ({
       >
         <GoogleIcon height="20" width="20" />
         <FontText style={{ marginLeft: 5, paddingTop: 3 }}>
-          {i18n.t('oauth.button.google')}
+          {i18n.t('oauth_button_google')}
         </FontText>
       </SecondaryButton>
     </>

@@ -115,7 +115,7 @@ const RecordingButtonElement = ({
       CenterElement = (
         <>
           <Mic></Mic>
-          <FontText small>{i18n.t('recording.button')}</FontText>
+          <FontText small>{i18n.t('recording_button')}</FontText>
         </>
       );
       break;

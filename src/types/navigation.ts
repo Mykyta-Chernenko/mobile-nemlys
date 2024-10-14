@@ -4,6 +4,8 @@ import { JobSlug } from './domain';
 export type MainStackParamList = {
   YourName: { fromSettings: boolean };
   PartnerName: { fromSettings: boolean };
+  DatingLength: undefined;
+  JobInput: undefined;
   Language: { fromSettings: boolean };
   CoupleLanguage: { fromSettings: boolean; language: string };
   OnboardingInviteCode: { fromSettings: boolean };
@@ -35,7 +37,7 @@ export type MainStackParamList = {
     topic: string;
     job: JobSlug;
     level: number;
-    reflectionAnswerId: number | undefined | null;
+    reflectionAnswer: string | undefined | null;
     refreshTimeStamp: string | undefined;
   };
   PremiumOffer: {

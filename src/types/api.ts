@@ -51,7 +51,7 @@ export class APIDate extends ApiEntry {
   level: number;
   active: boolean;
   with_partner: boolean | null;
-  reflection_answer_id: number | null;
+  issue: string | null;
   created_by: string;
 }
 

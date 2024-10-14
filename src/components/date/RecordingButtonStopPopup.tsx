@@ -36,17 +36,17 @@ export default function ({ onConfirm, onClose }: { onConfirm: () => void; onClos
               </View>
               <View style={{ marginTop: 5 }}>
                 <FontText h1>
-                  {i18n.t('recording.stop.title_1')}
+                  {i18n.t('recording_stop_title_1')}
 
                   <FontText h1 style={{ color: theme.colors.error }}>
-                    {i18n.t('recording.stop.title_2')}
+                    {i18n.t('recording_stop_title_2')}
                   </FontText>
-                  {i18n.t('recording.stop.title_3')}
+                  {i18n.t('recording_stop_title_3')}
                 </FontText>
               </View>
 
               <PrimaryButton
-                title={i18n.t('recording.stop.button')}
+                title={i18n.t('recording_stop_button')}
                 onPress={() => void onConfirm()}
                 style={{ marginBottom: 5 }}
               ></PrimaryButton>

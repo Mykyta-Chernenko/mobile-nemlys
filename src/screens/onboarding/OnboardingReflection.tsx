@@ -17,7 +17,6 @@ export default function ({
   const authContext = useContext(AuthContext);
   const [loading, setLoading] = useState(true);
   const [reflection, setReflection] = useState('');
-  const [reflectionId, setReflectionId] = useState(0);
 
   useEffect(() => {
     const getData = async () => {
@@ -32,7 +31,6 @@ export default function ({
         return;
       }
       setReflection(data.data.reflection);
-      setReflectionId(data.data.id);
       setLoading(false);
     };
     void getData();
@@ -76,7 +74,6 @@ export default function ({
     <Loading></Loading>
   ) : (
     <Reflection
-      reflectionId={reflectionId}
       onSave={() => void handlePress()}
       question={reflection}
       onBack={handleBack}

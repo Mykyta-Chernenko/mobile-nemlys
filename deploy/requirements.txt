@@ -1,0 +1,7 @@
+google-auth==2.22.0
+google-auth-httplib2==0.1.0
+google-api-python-client==2.88.0
+openai==1.51.2
+cryptography==41.0.1
+PyJWT
+requests

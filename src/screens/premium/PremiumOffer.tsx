@@ -295,7 +295,7 @@ export default function ({
               userId: authContext.userId,
               error,
             });
-            alert(i18n.t('errors.play_market'));
+            alert(i18n.t('errors_play_market'));
           } else if (error.code === ('PROMISE_BUY_ITEM' as RNIap.ErrorCode)) {
             void localAnalytics().logEvent('PremiumOfferSubscriptionErrorProductNotLoaded', {
               screen: 'PremiumOffer',
@@ -303,7 +303,7 @@ export default function ({
               userId: authContext.userId,
               error,
             });
-            alert(i18n.t('errors.play_market'));
+            alert(i18n.t('errors_play_market'));
           } else if (error.code === 'E_UNKNOWN') {
             void localAnalytics().logEvent('PremiumOfferSubscriptionErrorUnknownError', {
               screen: 'PremiumOffer',
@@ -311,7 +311,7 @@ export default function ({
               userId: authContext.userId,
               error,
             });
-            alert(i18n.t('errors.payment_error'));
+            alert(i18n.t('errors_payment_error'));
           } else if (error.code === 'E_ALREADY_OWNED') {
             console.log('skip');
           } else {
@@ -486,10 +486,10 @@ export default function ({
   let TitleComponent = <></>;
   switch (currentPremiumState) {
     case 'premium':
-      TitleComponent = <>{i18n.t('premium.offer.enjoy_your_premium')}</>;
+      TitleComponent = <>{i18n.t('premium_offer_enjoy_your_premium')}</>;
       break;
     case 'trial_expired':
-      TitleComponent = <>{i18n.t('premium.offer.trial_expired')}</>;
+      TitleComponent = <>{i18n.t('premium_offer_trial_expired')}</>;
       break;
     case 'trial':
     case 'introduction_limit':
@@ -502,15 +502,15 @@ export default function ({
             <>
               {(currentPremiumState === 'introduction_limit' ||
                 currentPremiumState === 'daily_limit') && (
-                <>{i18n.t('premium.offer.reached_limit')}</>
+                <>{i18n.t('premium_offer_reached_limit')}</>
               )}
-              {i18n.t('premium.offer.try_unlimited_1')}
+              {i18n.t('premium_offer_try_unlimited_1')}
             </>
           ) : (
-            <>{i18n.t('premium.offer.premium_title')}</>
+            <>{i18n.t('premium_offer_premium_title')}</>
           )}
           <FontText h1 style={{ color: theme.colors.primary }}>
-            {i18n.t('premium.offer.try_unlimited_2')}
+            {i18n.t('premium_offer_try_unlimited_2')}
           </FontText>
         </>
       );
@@ -625,7 +625,7 @@ export default function ({
                   color: theme.colors.white,
                 }}
               >
-                {i18n.t('premium.offer.title')}
+                {i18n.t('premium_offer_title')}
               </FontText>
             </View>
             <View style={{ width: getFontSizeForScreen('h1') * 1.1 }}></View>
@@ -658,7 +658,7 @@ export default function ({
             <View>
               {currentPremiumState === 'premium' ? (
                 <SecondaryButton buttonStyle={{ marginTop: 150 }} onPress={managePremium}>
-                  {i18n.t('premium.offer.manage')}
+                  {i18n.t('premium_offer_manage')}
                 </SecondaryButton>
               ) : (
                 <View
@@ -721,14 +721,14 @@ export default function ({
                       onPress={() => void handleButtonPress()}
                       title={
                         eligibleForTrial
-                          ? i18n.t('premium.offer.trial_button')
-                          : i18n.t('premium.offer.premium_button')
+                          ? i18n.t('premium_offer_trial_button')
+                          : i18n.t('premium_offer_premium_button')
                       }
                     ></SecondaryButton>
                     <FontText
                       style={{ color: theme.colors.grey3, textAlign: 'center', marginVertical: 20 }}
                     >
-                      {i18n.t('premium.offer.trial_no_card')}
+                      {i18n.t('premium_offer_trial_no_card')}
                     </FontText>
                   </>
                 ) : (
@@ -736,7 +736,7 @@ export default function ({
                     <FontText
                       style={{ color: theme.colors.grey3, textAlign: 'center', marginVertical: 15 }}
                     >
-                      {i18n.t('premium.offer.choose_plan')}
+                      {i18n.t('premium_offer_choose_plan')}
                     </FontText>
                     <PlanSelector
                       selectedPlan={selectedPlan}
@@ -757,33 +757,6 @@ export default function ({
                     </SecondaryButton>
                     <View
                       style={{
-                        marginTop: 30,
-                        flexDirection: 'row',
-                        justifyContent: 'center',
-                      }}
-                    >
-                      <TouchableOpacity
-                        onPress={() => {
-                          void Linking.openURL('https://nemlys.com/terms');
-                        }}
-                      >
-                        <FontText style={{ color: theme.colors.grey3, marginRight: 10 }}>
-                          {i18n.t('premium.offer.terms')}
-                        </FontText>
-                      </TouchableOpacity>
-                      <FontText style={{ color: theme.colors.grey5 }}> </FontText>
-                      <TouchableOpacity
-                        onPress={() => {
-                          void Linking.openURL('https://nemlys.com/policy');
-                        }}
-                      >
-                        <FontText style={{ color: theme.colors.grey3, marginLeft: 10 }}>
-                          {i18n.t('premium.offer.privacy')}
-                        </FontText>
-                      </TouchableOpacity>
-                    </View>
-                    <View
-                      style={{
                         marginTop: 15,
                         flexDirection: 'row',
                         justifyContent: 'center',
@@ -800,6 +773,34 @@ export default function ({
                           price: yearlyPrice,
                         })}
                       </FontText>
+                    </View>
+                    <View
+                      style={{
+                        marginTop: 30,
+                        flexDirection: 'column',
+                        justifyContent: 'center',
+                        alignItems: 'center',
+                      }}
+                    >
+                      <TouchableOpacity
+                        onPress={() => {
+                          void Linking.openURL('https://nemlys.com/terms');
+                        }}
+                      >
+                        <FontText style={{ color: theme.colors.grey3 }}>
+                          {i18n.t('premium_offer_terms')}
+                        </FontText>
+                      </TouchableOpacity>
+                      <FontText style={{ color: theme.colors.grey5 }}> </FontText>
+                      <TouchableOpacity
+                        onPress={() => {
+                          void Linking.openURL('https://nemlys.com/policy');
+                        }}
+                      >
+                        <FontText style={{ color: theme.colors.grey3 }}>
+                          {i18n.t('premium_offer_privacy')}
+                        </FontText>
+                      </TouchableOpacity>
                     </View>
                   </>
                 )}

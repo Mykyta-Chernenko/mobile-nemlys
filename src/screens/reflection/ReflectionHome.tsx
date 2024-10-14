@@ -194,7 +194,7 @@ export default function ({
                     paddingBottom: '3%',
                   }}
                 >
-                  <FontText h3>{i18n.t('reflection.title')}</FontText>
+                  <FontText h3>{i18n.t('reflection_title')}</FontText>
                   <FontText style={{ color: theme.colors.grey3, marginTop: '2%' }}></FontText>
                 </View>
                 <View
@@ -225,12 +225,12 @@ export default function ({
                 >
                   <Bulb></Bulb>
                   <View style={{ marginLeft: 10 }}>
-                    <FontText>{i18n.t('onboarding.reflection.explanation')}</FontText>
+                    <FontText>{i18n.t('onboarding_reflection_explanation')}</FontText>
                   </View>
                 </View>
               </View>
               <FontText h3 style={{ marginTop: 20 }}>
-                {i18n.t('reflection.available', { number: reflectionsAvailable })}
+                {i18n.t('reflection_available', { number: reflectionsAvailable })}
               </FontText>
 
               {reflectionsAvailable > 0 ? (
@@ -358,7 +358,7 @@ export default function ({
                               </View>
 
                               <PrimaryButton
-                                title={i18n.t('reflection.start')}
+                                title={i18n.t('reflection_start')}
                                 buttonStyle={{
                                   backgroundColor: theme.colors.warning,
                                   paddingHorizontal: 60,
@@ -398,14 +398,14 @@ export default function ({
                   <LockWhite></LockWhite>
                   <View style={{ marginRight: 40, marginLeft: 10 }}>
                     <FontText style={{ color: theme.colors.white }}>
-                      {i18n.t('reflection.no_reflection')}
+                      {i18n.t('reflection_no_reflection')}
                     </FontText>
                   </View>
                   <SmallArrowRight></SmallArrowRight>
                 </TouchableOpacity>
               )}
               <FontText h3 style={{ marginTop: 20 }}>
-                {i18n.t('reflection.completed', { number: completedReflections.length })}
+                {i18n.t('reflection_completed', { number: completedReflections.length })}
               </FontText>
               {completedReflections.map((r, i) => (
                 <TouchableOpacity

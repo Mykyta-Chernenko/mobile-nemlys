@@ -28,6 +28,8 @@ import CoupleLanguage from '@app/screens/onboarding/CoupleLanguage';
 import QuestionAnswer from '@app/screens/answer/QuestionAnswer';
 import AnswerHome from '@app/screens/answer/AnswerHome';
 import GeneratingQuestion from '@app/components/date/GeneratingQuestion';
+import JobInput from '@app/screens/onboarding/JobInput';
+import DatingLength from '@app/screens/onboarding/DatingLength';
 
 const MainStack = createNativeStackNavigator();
 const Main = () => {
@@ -118,6 +120,16 @@ const Main = () => {
         options={{ animation: 'slide_from_right' }}
         name={'PartnerName'}
         component={PartnerName}
+      />
+      <MainStack.Screen
+        options={{ animation: 'slide_from_right' }}
+        name={'DatingLength'}
+        component={DatingLength}
+      />
+      <MainStack.Screen
+        options={{ animation: 'slide_from_right' }}
+        name={'JobInput'}
+        component={JobInput}
       />
       <MainStack.Screen
         options={{ animation: 'slide_from_right' }}

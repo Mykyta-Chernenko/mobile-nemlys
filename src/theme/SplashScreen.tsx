@@ -28,11 +28,11 @@ export default function (props: Props) {
       }
       if (res.data.version > parseInt(Constants.expoConfig!.version!.replaceAll('.', ''), 10)) {
         Alert.alert(
-          i18n.t('update.outdated_title'),
-          i18n.t('update.need_to_update'),
+          i18n.t('update_outdated_title'),
+          i18n.t('update_need_to_update'),
           [
             {
-              text: i18n.t('update.title'),
+              text: i18n.t('update_title'),
               onPress: () => {
                 void BackHandler.exitApp();
                 const url = StoreReview.storeUrl();

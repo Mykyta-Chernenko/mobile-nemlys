@@ -31,7 +31,7 @@ import { GoBackButton } from '@app/components/buttons/GoBackButton';
 import { Loading } from '@app/components/utils/Loading';
 import RemindIcon from '@app/icons/remind';
 import AsyncStorage from '@react-native-async-storage/async-storage';
-import { jobs } from '@app/screens/menu/Home';
+import { getJobs } from '@app/screens/menu/Home';
 import AnswerNoPartnerWarning from '@app/components/answers/AnswerNoPartnerWarning';
 import { getFontSize } from '@app/utils/strings';
 import { handleRemindPartner } from '@app/utils/sendNotification';
@@ -461,7 +461,7 @@ export default function QuestionAnswer({
     return null;
   };
 
-  const JobIcon = dateJob ? jobs.find((job) => job.slug === dateJob)?.icon : null;
+  const JobIcon = dateJob ? getJobs().find((job) => job.slug === dateJob)?.icon : null;
 
   const handleChangeText = async (text: string) => {
     setNewReply(text);

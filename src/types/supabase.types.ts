@@ -391,7 +391,7 @@ export type Database = {
           id: number;
           job: JobSlug;
           level: number;
-          reflection_answer_id: number | null;
+          issue: string | null;
           stopped: boolean;
           topic: string;
           updated_at: string;
@@ -404,7 +404,7 @@ export type Database = {
           id?: number;
           job?: JobSlug;
           level: number;
-          reflection_answer_id?: number | null;
+          issue?: string | null;
           stopped?: boolean;
           topic: string;
           updated_at?: string;
@@ -417,7 +417,7 @@ export type Database = {
           id?: number;
           job?: JobSlug;
           level?: number;
-          reflection_answer_id?: number | null;
+          issue?: string | null;
           stopped?: boolean;
           topic?: string;
           updated_at?: string;
@@ -429,13 +429,6 @@ export type Database = {
             columns: ['couple_id'];
             isOneToOne: false;
             referencedRelation: 'couple';
-            referencedColumns: ['id'];
-          },
-          {
-            foreignKeyName: 'date_reflection_answer_id_fkey';
-            columns: ['reflection_answer_id'];
-            isOneToOne: false;
-            referencedRelation: 'reflection_question_answer';
             referencedColumns: ['id'];
           },
         ];

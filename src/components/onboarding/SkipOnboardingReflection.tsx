@@ -93,22 +93,22 @@ export default function ({
 
             <View>
               <FontText h2 style={{ color: theme.colors.black }}>
-                {i18n.t('onboarding.relationship_story.skip_first')}
+                {i18n.t('onboarding_relationship_story_skip_first')}
                 <FontText h2 style={{ color: theme.colors.error }}>
-                  {i18n.t('onboarding.relationship_story.skip_second')}
+                  {i18n.t('onboarding_relationship_story_skip_second')}
                 </FontText>
-                {i18n.t('onboarding.relationship_story.skip_third')}
+                {i18n.t('onboarding_relationship_story_skip_third')}
               </FontText>
             </View>
             <View>
               <PrimaryButton
                 onPress={handleGoBack}
-                title={i18n.t('onboarding.relationship_story.skip_back')}
+                title={i18n.t('onboarding_relationship_story_skip_back')}
               ></PrimaryButton>
               <SecondaryButton
                 buttonStyle={{ marginTop: 10 }}
                 onPress={() => void handleSkip()}
-                title={i18n.t('onboarding.relationship_story.skip_confirm')}
+                title={i18n.t('onboarding_relationship_story_skip_confirm')}
               ></SecondaryButton>
             </View>
           </View>

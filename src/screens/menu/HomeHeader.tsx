@@ -95,9 +95,9 @@ const HomeHeader: React.FC = () => {
             }}
           >
             <FontText h3>
-              {firstName || i18n.t('home.you')}
+              {firstName || i18n.t('home_you')}
               {' & '}
-              {partnerName || i18n.t('home.partner')}
+              {partnerName || i18n.t('home_partner')}
             </FontText>
             <FontText style={{ color: theme.colors.grey3, marginTop: '2%' }}>
               {dateCount} {i18n.t('discussed_questions')}

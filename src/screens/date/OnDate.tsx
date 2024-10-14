@@ -28,7 +28,7 @@ import { ScrollView } from 'react-native';
 import { useIsFocused } from '@react-navigation/native';
 import { Loading } from '@app/components/utils/Loading';
 import { SecondaryButton } from '@app/components/buttons/SecondaryButton';
-import { jobs } from '@app/screens/menu/Home';
+import { getJobs } from '@app/screens/menu/Home';
 import RegenerateIcon from '@app/icons/regenerate';
 import { PrimaryButton } from '@app/components/buttons/PrimaryButtons';
 import { useDatePolling } from '@app/api/getNewActiveDates';
@@ -101,7 +101,7 @@ export default function ({
   const getData = async () => {
     try {
       const dateFields =
-        'id, couple_id, created_by, with_partner, active, topic, level, job, created_at, updated_at, reflection_answer_id';
+        'id, couple_id, created_by, with_partner, active, topic, level, job, created_at, updated_at, issue';
 
       const [dateCountRes, dateRes, premiumDetails, hasPartnerRes, userProfileRes] =
         await Promise.all([
@@ -392,7 +392,7 @@ export default function ({
         topic: currentDate!.topic,
         job: currentDate!.job,
         level: currentDate!.level,
-        reflectionAnswerId: currentDate!.reflection_answer_id,
+        reflectionAnswer: currentDate!.issue,
         refreshTimeStamp: new Date().toISOString(),
       });
       setLoading(false);
@@ -416,7 +416,9 @@ export default function ({
     navigation.navigate('QuestionAnswer', { questionId: questions[0]?.id, fromDate: true });
   };
 
-  const JobIcon = currentDate?.job ? jobs.find((job) => job.slug === currentDate?.job)?.icon : null;
+  const JobIcon = currentDate?.job
+    ? getJobs().find((job) => job.slug === currentDate?.job)?.icon
+    : null;
 
   const [notificationStatus, setNotificationStatus] = useState<string | undefined>(undefined);
   useEffect(() => {
@@ -539,15 +541,15 @@ export default function ({
                       height={getFontSizeForScreen('h2')}
                     />
                     <FontText small style={{ color: '#87778D', marginLeft: 2 }}>
-                      {currentDate?.topic === 'General'
-                        ? i18n.t('date.topic.surprise')
-                        : currentDate?.topic?.slice(0, 25)}
+                      {currentDate && i18n.get(`topic_${currentDate.job}_${currentDate.topic}`)
+                        ? i18n.t(`topic_${currentDate.job}_${currentDate.topic}`)?.slice(0, 25)
+                        : currentDate?.topic}
                       {currentDate?.topic && ', '}
                       {{
-                        1: i18n.t('date.level.light'),
-                        2: i18n.t('date.level.normal'),
-                        3: i18n.t('date.level.deep'),
-                      }[currentDate?.level || 1] ?? i18n.t('date.level.normal')}
+                        1: i18n.t('date_level_light'),
+                        2: i18n.t('date_level_normal'),
+                        3: i18n.t('date_level_deep'),
+                      }[currentDate?.level || 1] ?? i18n.t('date_level_normal')}
                     </FontText>
                   </View>
                 )}
@@ -586,7 +588,7 @@ export default function ({
                     }}
                   >
                     <FontText>
-                      {i18n.t('premium.banner.topics_left', {
+                      {i18n.t('premium_banner_topics_left', {
                         total: dailyDatesLimit,
                         left: freeDatesLeft,
                       })}

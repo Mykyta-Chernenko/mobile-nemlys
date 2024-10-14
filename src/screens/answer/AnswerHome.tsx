@@ -18,7 +18,7 @@ import { useFocusEffect } from '@react-navigation/native';
 import RemindIcon from '@app/icons/remind';
 import LockIcon from '@app/icons/lock_grey';
 import { truncateText } from '@app/screens/answer/QuestionAnswer';
-import { jobs } from '@app/screens/menu/Home';
+import { getJobs } from '@app/screens/menu/Home';
 import AnswerNoPartnerWarning from '@app/components/answers/AnswerNoPartnerWarning';
 import { getNow } from '@app/utils/date';
 import { handleRemindPartner } from '@app/utils/sendNotification';
@@ -182,7 +182,7 @@ export default function AnswerHome({
     );
     const lastTwoReplies = question.question_reply.slice(-2);
     const JobIcon = question.date.job
-      ? jobs.find((job) => job.slug === question.date.job)?.icon
+      ? getJobs().find((job) => job.slug === question.date.job)?.icon
       : null;
 
     const renderReplyContent = (reply: QuestionReply) => {
@@ -353,7 +353,9 @@ export default function AnswerHome({
                 height={getFontSizeForScreen('small')}
               />
               <FontText small style={{ marginLeft: 5 }}>
-                {question.date.topic}
+                {i18n.get(`topic_${question.date.job}_${question.date.topic}`)
+                  ? i18n.t(`topic_${question.date.job}_${question.date.topic}`)?.slice(0, 25)
+                  : question.date.topic}
               </FontText>
             </View>
             <View>

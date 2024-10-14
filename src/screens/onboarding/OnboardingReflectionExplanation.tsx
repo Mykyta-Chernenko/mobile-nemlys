@@ -70,14 +70,14 @@ export default function ({
                 source={require('../../../assets/images/relationship_story_explanation.png')}
               ></Image>
               <FontText h1 style={{ color: theme.colors.white }}>
-                {i18n.t('onboarding.relationship_story_explanation_first')}
+                {i18n.t('onboarding_relationship_story_explanation_first')}
                 <FontText h1 style={{ color: theme.colors.primary }}>
-                  {i18n.t('onboarding.relationship_story_explanation_second')}
+                  {i18n.t('onboarding_relationship_story_explanation_second')}
                 </FontText>
-                {i18n.t('onboarding.relationship_story_explanation_third')}
+                {i18n.t('onboarding_relationship_story_explanation_third')}
               </FontText>
               <FontText style={{ marginTop: 15, color: theme.colors.grey3 }}>
-                {i18n.t('onboarding.relationship_story_explanation_description')}
+                {i18n.t('onboarding_relationship_story_explanation_description')}
               </FontText>
             </View>
             <SecondaryButton

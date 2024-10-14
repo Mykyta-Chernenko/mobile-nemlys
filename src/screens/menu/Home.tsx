@@ -35,14 +35,16 @@ import { useDatePolling } from '@app/api/getNewActiveDates';
 import { useIsFocused } from '@react-navigation/native';
 import Constants from 'expo-constants';
 
-export const jobs: { slug: JobSlug; title: string; icon: (props: any) => JSX.Element }[] = [
-  { slug: 'issues', title: i18n.t('jobs.issues'), icon: DateIssues },
-  { slug: 'sex', title: i18n.t('jobs.sex'), icon: DateSex },
-  { slug: 'know', title: i18n.t('jobs.know'), icon: DateKnow },
-  { slug: 'hard', title: i18n.t('jobs.hard'), icon: DateHard },
-  { slug: 'meaningful', title: i18n.t('jobs.meaningful'), icon: DateMeaningful },
-  { slug: 'fun', title: i18n.t('jobs.fun'), icon: DateFun },
-];
+export function getJobs(): { slug: JobSlug; title: string; icon: (props: any) => JSX.Element }[] {
+  return [
+    { slug: 'issues', title: i18n.t('jobs_issues'), icon: DateIssues },
+    { slug: 'sex', title: i18n.t('jobs_sex'), icon: DateSex },
+    { slug: 'know', title: i18n.t('jobs_know'), icon: DateKnow },
+    { slug: 'hard', title: i18n.t('jobs_hard'), icon: DateHard },
+    { slug: 'meaningful', title: i18n.t('jobs_meaningful'), icon: DateMeaningful },
+    { slug: 'fun', title: i18n.t('jobs_fun'), icon: DateFun },
+  ];
+}
 
 export default function ({
   route,
@@ -88,8 +90,8 @@ export default function ({
       _.zip(notificationOrder, trigerSeconds) as [NOTIFICATION_SUBTYPE, number][]
     ).map(([subtype, seconds]) => ({
       screen: 'Home',
-      title: i18n.t(`notification.pre_date.${subtype}.title`),
-      body: i18n.t(`notification.pre_date.${subtype}.body`),
+      title: i18n.t(`notification_pre_date_${subtype}_title`),
+      body: i18n.t(`notification_pre_date_${subtype}_body`),
       trigger: {
         seconds,
         repeats: false,
@@ -103,8 +105,8 @@ export default function ({
         ...notifications,
         {
           screen: 'Home',
-          title: i18n.t(`notification.pre_date.${NOTIFICATION_SUBTYPE.PRE_DATE_1}.title`),
-          body: i18n.t(`notification.pre_date.${NOTIFICATION_SUBTYPE.PRE_DATE_1}.body`),
+          title: i18n.t(`notification_pre_date_${NOTIFICATION_SUBTYPE.PRE_DATE_1}_title`),
+          body: i18n.t(`notification_pre_date_${NOTIFICATION_SUBTYPE.PRE_DATE_1}_body`),
           trigger: {
             seconds: calculateEveningTimeAfterDays(7),
             repeats: false,
@@ -294,9 +296,9 @@ export default function ({
                 ) : (
                   <>
                     <FontText h3 style={{ marginBottom: 15, width: '100%' }}>
-                      {i18n.t('date.discuss')}
+                      {i18n.t('home_date_discuss')}
                     </FontText>
-                    {jobs.map((j) => (
+                    {getJobs().map((j) => (
                       <TouchableOpacity
                         key={j.slug}
                         style={{

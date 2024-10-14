@@ -144,10 +144,10 @@ export default function ({
             <View style={{ marginTop: 20 }}>
               <FontText h1 style={{ textAlign: 'center' }}>
                 <FontText h1 style={{ color: theme.colors.error }}>
-                  {i18n.t('date.notification.title_1')}
+                  {i18n.t('date_notification_title_1')}
                 </FontText>
-                {i18n.t('date.notification.title_2')}
-                {i18n.t('date.notification.title_3')}
+                {i18n.t('date_notification_title_2')}
+                {i18n.t('date_notification_title_3')}
               </FontText>
             </View>
 
@@ -163,7 +163,7 @@ export default function ({
               <PrimaryButton
                 buttonStyle={{ width: '100%' }}
                 onPress={() => void handleConfirm()}
-                title={i18n.t('date.notification.confirm')}
+                title={i18n.t('date_notification_confirm')}
               ></PrimaryButton>
             </View>
           </View>

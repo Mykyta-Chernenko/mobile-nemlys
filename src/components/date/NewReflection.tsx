@@ -103,8 +103,8 @@ export default function ({
       authContext.userId!,
       reflectionItendifier,
       'ReflectionHome',
-      i18n.t('notification.reflection.title', { partnerName: data.data.partner_first_name }),
-      i18n.t('notification.reflection.body'),
+      i18n.t('notification_reflection_title', { partnerName: data.data.partner_first_name }),
+      i18n.t('notification_reflection_body'),
       {
         seconds: 60 * 60 * 24, // in a day
         repeats: false,
@@ -160,11 +160,11 @@ export default function ({
                   </View>
                   <View style={{ marginTop: 5 }}>
                     <FontText h1 style={{ textAlign: 'center' }}>
-                      {i18n.t('new_reflection.title_1')}
+                      {i18n.t('new_reflection_title_1')}
                       <FontText h1 style={{ color: theme.colors.primary }}>
-                        {i18n.t('new_reflection.title_2')}
+                        {i18n.t('new_reflection_title_2')}
                       </FontText>
-                      {i18n.t('new_reflection.title_3')}
+                      {i18n.t('new_reflection_title_3')}
                     </FontText>
                   </View>
                   <View style={{ height: 400, maxHeight: '65%' }}>
@@ -190,7 +190,7 @@ export default function ({
                           </FontText>
                         </View>
                         <PrimaryButton
-                          title={i18n.t('reflection.start')}
+                          title={i18n.t('reflection_start')}
                           buttonStyle={{
                             backgroundColor: theme.colors.warning,
                             paddingHorizontal: 60,
@@ -218,7 +218,7 @@ export default function ({
                   </View>
                   <SecondaryButton
                     buttonStyle={{ backgroundColor: theme.colors.grey1 }}
-                    title={i18n.t('new_reflection.button')}
+                    title={i18n.t('new_reflection_button')}
                     onPress={() => void onPress()}
                     style={{ marginBottom: 10 }}
                   ></SecondaryButton>

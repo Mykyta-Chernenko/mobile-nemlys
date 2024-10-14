@@ -16,7 +16,7 @@ export default function ({
   route,
   navigation,
 }: NativeStackScreenProps<MainStackParamList, 'GeneratingQuestion'>) {
-  const { withPartner, topic, job, level, reflectionAnswerId } = route.params;
+  const { withPartner, topic, job, level, reflectionAnswer } = route.params;
   const authContext = useContext(AuthContext);
   const { theme } = useTheme();
 
@@ -66,7 +66,7 @@ export default function ({
         topic,
         level,
         withPartner,
-        reflectionAnswerId,
+        reflectionAnswer,
         navigation,
       );
     };
@@ -100,9 +100,9 @@ export default function ({
       </View>
       <View style={{ marginTop: '10%' }}>
         <FontText style={{ textAlign: 'center' }} h1>
-          {i18n.t('date.generating_questions_first')}
+          {i18n.t('date_generating_questions_first')}
           <FontText h1 style={{ color: theme.colors.error }}>
-            {i18n.t('date.generating_questions_second')}
+            {i18n.t('date_generating_questions_second')}
           </FontText>
         </FontText>
       </View>

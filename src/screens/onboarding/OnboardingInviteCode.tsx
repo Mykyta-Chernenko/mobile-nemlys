@@ -195,12 +195,12 @@ export default function OnboardingInviteCode({ route, navigation }: OnboardingIn
                   if (fromSettings) {
                     navigation.goBack();
                   } else {
-                    navigation.replace('Language', { fromSettings: false });
+                    navigation.replace('JobInput');
                   }
                 }}
               />
 
-              {!fromSettings ? <Progress current={4} all={5} /> : <View></View>}
+              {!fromSettings ? <Progress current={6} all={7} /> : <View></View>}
               <View
                 style={{
                   position: 'absolute',
@@ -232,10 +232,10 @@ export default function OnboardingInviteCode({ route, navigation }: OnboardingIn
                 <FontText h1 style={{ color: theme.colors.error }}>
                   {partnerName}
                 </FontText>
-                {i18n.t('onboarding_invite_title_3')}
+                {i18n.t('onboarding_invite_2_title_3')}
               </FontText>
               <FontText style={{ color: theme.colors.grey5, marginTop: 20, textAlign: 'center' }}>
-                {i18n.t('onboarding_invite_description')}
+                {i18n.t('onboarding_invite_2_description')}
               </FontText>
               <View
                 style={{

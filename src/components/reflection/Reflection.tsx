@@ -17,23 +17,18 @@ import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { useNavigation } from '@react-navigation/native';
 import StyledTextInput from '../utils/StyledTextInput';
 import LockGrey from '../../icons/lock_grey';
-import { logSupaErrors } from '@app/utils/errors';
-import { supabase } from '@app/api/initSupabase';
 import { localAnalytics } from '@app/utils/analytics';
-import { getNow } from '@app/utils/date';
 
 export default function ({
-  reflectionId,
   question,
   answer = '',
   onBack,
   onSave,
 }: {
-  reflectionId: number;
   question: string;
   answer?: string;
   onBack: () => void;
-  onSave: (answerId: number) => void;
+  onSave: (answer: string) => void;
 }) {
   const insets = useSafeAreaInsets();
   const [inputHeight, setInputHeight] = useState(100);
@@ -69,54 +64,17 @@ export default function ({
     if (type === activeLengthResult) return { color: theme.colors.black };
     return { color: theme.colors.grey3 };
   };
-  const handleOnPress = async () => {
+  const handleOnPress = () => {
     void localAnalytics().logEvent('ReflectionSaved', {
       screen: 'Reflection',
       action: 'SavedClicked',
       length: resultAnswer?.length,
       userId: authContext.userId,
     });
-    const { error, data } = await supabase
-      .from('reflection_question_answer')
-      .select('id')
-      .match({ user_id: authContext.userId, reflection_id: reflectionId, answer: resultAnswer })
-      .maybeSingle();
-    if (error) {
-      logSupaErrors(error);
-      return;
-    }
-    let reflectionAnswerId = 0;
-    if (data) {
-      reflectionAnswerId = data.id;
-      const relfectionResponse = await supabase
-        .from('reflection_question_answer')
-        .update({ answer: resultAnswer, updated_at: getNow().toISOString() })
-        .eq('id', data.id)
-        .single();
 
-      if (relfectionResponse.error) {
-        logSupaErrors(relfectionResponse.error);
-        return;
-      }
-    } else {
-      const relfectionResponse = await supabase
-        .from('reflection_question_answer')
-        .insert({
-          user_id: authContext.userId!,
-          reflection_id: reflectionId,
-          answer: resultAnswer,
-        })
-        .select('id')
-        .single();
-      if (relfectionResponse.error) {
-        logSupaErrors(relfectionResponse.error);
-        return;
-      }
-      reflectionAnswerId = relfectionResponse.data.id;
-    }
     setTouched(false);
     setResultAnswer('');
-    onSave(reflectionAnswerId);
+    onSave(resultAnswer);
   };
   return (
     <KeyboardAvoidingView behavior={KEYBOARD_BEHAVIOR} style={{ flexGrow: 1 }}>
@@ -145,7 +103,7 @@ export default function ({
             <View style={{ flexDirection: 'row', alignItems: 'center' }}>
               <LockGrey></LockGrey>
               <FontText style={{ color: theme.colors.grey5 }}>
-                {i18n.t('onboarding.reflection.private')}
+                {i18n.t('onboarding_reflection_private')}
               </FontText>
             </View>
 
@@ -176,7 +134,6 @@ export default function ({
             <View
               style={{
                 padding: 20,
-
                 flex: 1,
                 backgroundColor: theme.colors.grey1,
               }}
@@ -206,7 +163,7 @@ export default function ({
                   <StyledTextInput
                     value={resultAnswer}
                     returnKeyType="done"
-                    placeholder={i18n.t('onboarding.reflection.write_answer')}
+                    placeholder={i18n.t('onboarding_reflection_write_answer')}
                     style={{
                       height: Math.max(100, inputHeight),
                       marginTop: '3%',
@@ -252,13 +209,13 @@ export default function ({
                       }}
                     >
                       <FontText style={getLengthStyle('short')}>
-                        {i18n.t('onboarding.reflection.short')}
+                        {i18n.t('onboarding_reflection_short')}
                       </FontText>
                       <FontText style={getLengthStyle('good')}>
-                        {i18n.t('onboarding.reflection.good')}
+                        {i18n.t('onboarding_reflection_good')}
                       </FontText>
                       <FontText style={getLengthStyle('perfect')}>
-                        {i18n.t('onboarding.reflection.perfect')}
+                        {i18n.t('onboarding_reflection_perfect')}
                       </FontText>
                     </View>
                   </View>

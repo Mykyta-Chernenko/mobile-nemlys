@@ -60,16 +60,16 @@ export default function ({ navigation }: NativeStackScreenProps<AuthStackParamLi
                 }}
                 h1
               >
-                {i18n.t('welcome.title_first')}
+                {i18n.t('welcome_title_first')}
                 <FontText h1 style={{ color: theme.colors.primary }}>
-                  {i18n.t('welcome.title_second')}
+                  {i18n.t('welcome_title_second')}
                 </FontText>
               </FontText>
             </View>
 
             <PrimaryButton
               buttonStyle={{ marginTop: '5%', marginBottom: '2%' }}
-              title={i18n.t('welcome.button.default')}
+              title={i18n.t('welcome_button_default')}
               onPress={() => {
                 void localAnalytics().logEvent('WelcomeNextClicked', {
                   screen: 'Welcome',

@@ -111,7 +111,7 @@ export default function ({
                     }
                   }}
                 ></GoBackButton>
-                {!fromSettings && <Progress current={1} all={5}></Progress>}
+                {!fromSettings && <Progress current={1} all={7}></Progress>}
               </View>
               <View
                 style={{
@@ -130,11 +130,11 @@ export default function ({
                   }}
                   h1
                 >
-                  {i18n.t('onboarding.your_name_first')}
+                  {i18n.t('onboarding_your_name_first')}
                   <FontText style={{ color: theme.colors.primary }} h1>
-                    {i18n.t('onboarding.your_name_second')}
+                    {i18n.t('onboarding_your_name_second')}
                   </FontText>
-                  {i18n.t('onboarding.your_name_third')}
+                  {i18n.t('onboarding_your_name_third')}
                 </FontText>
                 <View style={{ marginTop: '5%' }}>
                   <StyledInput

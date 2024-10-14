@@ -46,7 +46,7 @@ export default function ({ title, placeholder }: { title: string; placeholder: s
 
     setVisible(false);
 
-    alert(i18n.t('settings.feedback_thanks'));
+    alert(i18n.t('settings_feedback_thanks'));
 
     const res = await supabase.from('feedback').insert({
       user_id: authContext.userId!,

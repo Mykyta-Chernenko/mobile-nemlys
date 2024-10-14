@@ -22,16 +22,22 @@ export default function (props: { onPressForward: (feedback: number) => void }) 
   );
 
   const choices = [
-    { value: 4, icon: Feedback4Icon, title: i18n.t('date.feedback.with_partner.choice_4') },
-    { value: 3, icon: Feedback3Icon, title: i18n.t('date.feedback.with_partner.choice_3') },
-    { value: 2, icon: Feedback2Icon, title: i18n.t('date.feedback.with_partner.choice_2') },
-    { value: 1, icon: Feedback1Icon, title: i18n.t('date.feedback.with_partner.choice_1') },
+    {
+      value: 4,
+      icon: Feedback4Icon,
+      title:
+        i18n.t('date_feedback_with_partner_choice_4') +
+        i18n.t('date_feedback_with_partner_choice_4'),
+    },
+    { value: 3, icon: Feedback3Icon, title: i18n.t('date_feedback_with_partner_choice_3') },
+    { value: 2, icon: Feedback2Icon, title: i18n.t('date_feedback_with_partner_choice_2') },
+    { value: 1, icon: Feedback1Icon, title: i18n.t('date_feedback_with_partner_choice_1') },
   ];
 
-  const titleFirst = i18n.t('date.feedback.with_partner.title_first');
+  const titleFirst = i18n.t('date_feedback_with_partner_title_first');
 
-  const titleSecond = i18n.t('date.feedback.with_partner.title_second');
-  const titleThird = i18n.t('date.feedback.with_partner.title_third');
+  const titleSecond = i18n.t('date_feedback_with_partner_title_second');
+  const titleThird = i18n.t('date_feedback_with_partner_title_third');
 
   return (
     <ImageBackground

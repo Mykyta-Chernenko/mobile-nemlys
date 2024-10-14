@@ -129,9 +129,9 @@ export default function ({
           </View>
           <View>
             <FontText h1 style={{ color: theme.colors.white }}>
-              {i18n.t('interview.title_first')}
+              {i18n.t('interview_title_first')}
               <FontText h1 style={{ color: theme.colors.primary }}>
-                {i18n.t('interview.title_second')}
+                {i18n.t('interview_title_second')}
               </FontText>
             </FontText>
           </View>
@@ -173,11 +173,11 @@ export default function ({
                   }}
                 >
                   <FontText style={{ color: theme.colors.white }}>
-                    {i18n.t(`interview.reason_${x.i}_title_1`)}
+                    {i18n.t(`interview_reason_${x.i}_title_1`)}
                     <FontText style={{ color: x.color }}>
-                      {i18n.t(`interview.reason_${x.i}_title_2`)}
+                      {i18n.t(`interview_reason_${x.i}_title_2`)}
                     </FontText>
-                    {i18n.t(`interview.reason_${x.i}_title_3`)}
+                    {i18n.t(`interview_reason_${x.i}_title_3`)}
                   </FontText>
                 </View>
               </View>
@@ -186,7 +186,7 @@ export default function ({
 
           <SecondaryButton
             buttonStyle={{ marginBottom: 10 }}
-            title={i18n.t('interview.button')}
+            title={i18n.t('interview_button')}
             disabled={!link}
             onPress={() => void onPress()}
           ></SecondaryButton>

@@ -32,9 +32,7 @@ const SubscriptionPlanSelector: React.FC<SubscriptionPlanSelectorProps> = ({
       width: '100%',
       padding: 20,
       borderRadius: 16,
-      flexDirection: 'row',
-      justifyContent: 'space-between',
-      alignItems: 'center',
+      flexDirection: 'column',
     },
     selectedPlan: {
       backgroundColor: theme.colors.grey1,
@@ -79,36 +77,39 @@ const SubscriptionPlanSelector: React.FC<SubscriptionPlanSelectorProps> = ({
         ]}
         onPress={() => handleToggle('Annual')}
       >
-        <View>
-          <FontText
-            style={[
-              styles.planText,
-              selectedPlan === 'Annual' ? styles.selectedPlanText : styles.unselectedPlanText,
-            ]}
-          >
-            {i18n.t('premium.offer.plan_yearly_title')}
-          </FontText>
-          <FontText style={[styles.planText, { color: theme.colors.grey5 }]}>
-            {getTrialText(yearlyTrialLength)}
-          </FontText>
-        </View>
-        <View style={{ flexDirection: 'row', alignItems: 'center', gap: 8 }}>
-          <View style={styles.discountBadge}>
-            <FontText style={styles.discountText}>-60%</FontText>
+        <View style={{ flexDirection: 'row', justifyContent: 'space-between', width: '100%' }}>
+          <View>
+            <FontText
+              style={[
+                styles.planText,
+                selectedPlan === 'Annual' ? styles.selectedPlanText : styles.unselectedPlanText,
+              ]}
+            >
+              {i18n.t('premium_offer_plan_yearly_title')}
+            </FontText>
           </View>
-          <FontText
-            style={[
-              styles.planText,
-              selectedPlan === 'Annual' ? styles.selectedPlanText : styles.unselectedPlanText,
-            ]}
-          >
-            {yearlyPrice}
-          </FontText>
+          <View style={{ flexDirection: 'row', alignItems: 'center', gap: 8 }}>
+            <View style={styles.discountBadge}>
+              <FontText style={styles.discountText}>-60%</FontText>
+            </View>
+            <FontText
+              style={[
+                styles.planText,
+                selectedPlan === 'Annual' ? styles.selectedPlanText : styles.unselectedPlanText,
+              ]}
+            >
+              {yearlyPrice}
+            </FontText>
+          </View>
         </View>
+        <FontText style={[styles.planText, { color: theme.colors.grey5 }]}>
+          {getTrialText(yearlyTrialLength)}
+        </FontText>
       </TouchableOpacity>
       <TouchableOpacity
         style={[
           styles.planButton,
+          { flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center' },
           selectedPlan === 'Monthly' ? styles.selectedPlan : styles.unselectedPlan,
         ]}
         onPress={() => handleToggle('Monthly')}
@@ -125,7 +126,7 @@ const SubscriptionPlanSelector: React.FC<SubscriptionPlanSelectorProps> = ({
               selectedPlan === 'Monthly' ? styles.selectedPlanText : styles.unselectedPlanText,
             ]}
           >
-            {i18n.t('premium.offer.plan_monthly_title')}
+            {i18n.t('premium_offer_plan_monthly_title')}
           </FontText>
         </View>
         <FontText

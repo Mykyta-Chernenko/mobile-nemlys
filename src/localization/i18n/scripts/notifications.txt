@@ -1,0 +1,1316 @@
+export const translations = {
+  en: {
+    partner_joined: {
+      t: (partnerName) => `${partnerName} joined Nemlys`,
+      d: (_) => 'Start discussing questions together',
+    },
+    partner_answered: {
+      t: (partnerName) => `${partnerName} answered a question`,
+      d: (question) => question,
+    },
+    partner_replied: {
+      t: (partnerName) => `${partnerName} replied`,
+      d: (reply) => reply,
+    },
+    remind_answer: {
+      t: (partnerName) => `${partnerName} is reminding you to answer a question`,
+      d: (question) => question,
+    },
+  },
+  es: {
+    partner_joined: {
+      t: (partnerName) => `${partnerName} se unió a Nemlys`,
+      d: (_) => 'Empiecen a discutir preguntas juntos',
+    },
+    partner_answered: {
+      t: (partnerName) => `${partnerName} respondió a una pregunta`,
+      d: (question) => question,
+    },
+    partner_replied: {
+      t: (partnerName) => `${partnerName} respondió`,
+      d: (reply) => reply,
+    },
+    remind_answer: {
+      t: (partnerName) => `${partnerName} te recuerda que respondas una pregunta`,
+      d: (question) => question,
+    },
+  },
+  nl: {
+    partner_joined: {
+      t: (partnerName) => `${partnerName} is bij Nemlys gekomen`,
+      d: (_) => 'Begin samen vragen te bespreken',
+    },
+    partner_answered: {
+      t: (partnerName) => `${partnerName} heeft een vraag beantwoord`,
+      d: (question) => question,
+    },
+    partner_replied: {
+      t: (partnerName) => `${partnerName} heeft gereageerd`,
+      d: (reply) => reply,
+    },
+    remind_answer: {
+      t: (partnerName) => `${partnerName} herinnert je eraan om een vraag te beantwoorden`,
+      d: (question) => question,
+    },
+  },
+  de: {
+    partner_joined: {
+      t: (partnerName) => `${partnerName} ist Nemlys beigetreten`,
+      d: (_) => 'Fangt an, gemeinsam Fragen zu diskutieren',
+    },
+    partner_answered: {
+      t: (partnerName) => `${partnerName} hat eine Frage beantwortet`,
+      d: (question) => question,
+    },
+    partner_replied: {
+      t: (partnerName) => `${partnerName} hat geantwortet`,
+      d: (reply) => reply,
+    },
+    remind_answer: {
+      t: (partnerName) => `${partnerName} erinnert dich daran, eine Frage zu beantworten`,
+      d: (question) => question,
+    },
+  },
+  it: {
+    partner_joined: {
+      t: (partnerName) => `${partnerName} si è unito a Nemlys`,
+      d: (_) => 'Inizia a discutere le domande insieme',
+    },
+    partner_answered: {
+      t: (partnerName) => `${partnerName} ha risposto a una domanda`,
+      d: (question) => question,
+    },
+    partner_replied: {
+      t: (partnerName) => `${partnerName} ha risposto`,
+      d: (reply) => reply,
+    },
+    remind_answer: {
+      t: (partnerName) => `${partnerName} ti ricorda di rispondere a una domanda`,
+      d: (question) => question,
+    },
+  },
+  fr: {
+    partner_joined: {
+      t: (partnerName) => `${partnerName} a rejoint Nemlys`,
+      d: (_) => 'Commencez à discuter des questions ensemble',
+    },
+    partner_answered: {
+      t: (partnerName) => `${partnerName} a répondu à une question`,
+      d: (question) => question,
+    },
+    partner_replied: {
+      t: (partnerName) => `${partnerName} a répondu`,
+      d: (reply) => reply,
+    },
+    remind_answer: {
+      t: (partnerName) => `${partnerName} te rappelle de répondre à une question`,
+      d: (question) => question,
+    },
+  },
+  ar: {
+    partner_joined: {
+      t: (partnerName) => `${partnerName} انضم إلى نيمليس`,
+      d: (_) => 'ابدأوا مناقشة الأسئلة معًا',
+    },
+    partner_answered: {
+      t: (partnerName) => `${partnerName} أجاب على سؤال`,
+      d: (question) => question,
+    },
+    partner_replied: {
+      t: (partnerName) => `${partnerName} رد`,
+      d: (reply) => reply,
+    },
+    remind_answer: {
+      t: (partnerName) => `${partnerName} يذكرك بالإجابة على سؤال`,
+      d: (question) => question,
+    },
+  },
+  bn: {
+    partner_joined: {
+      t: (partnerName) => `${partnerName} নেমলিসে যোগ দিয়েছে`,
+      d: (_) => 'একসাথে প্রশ্ন নিয়ে আলোচনা শুরু করুন',
+    },
+    partner_answered: {
+      t: (partnerName) => `${partnerName} একটি প্রশ্নের উত্তর দিয়েছে`,
+      d: (question) => question,
+    },
+    partner_replied: {
+      t: (partnerName) => `${partnerName} উত্তর দিয়েছে`,
+      d: (reply) => reply,
+    },
+    remind_answer: {
+      t: (partnerName) => `${partnerName} আপনাকে একটি প্রশ্নের উত্তর দিতে মনে করিয়ে দিচ্ছে`,
+      d: (question) => question,
+    },
+  },
+  zh_cn: {
+    partner_joined: {
+      t: (partnerName) => `${partnerName} 加入了 Nemlys`,
+      d: (_) => '开始一起讨论问题',
+    },
+    partner_answered: {
+      t: (partnerName) => `${partnerName} 回答了一个问题`,
+      d: (question) => question,
+    },
+    partner_replied: {
+      t: (partnerName) => `${partnerName} 回复了`,
+      d: (reply) => reply,
+    },
+    remind_answer: {
+      t: (partnerName) => `${partnerName} 在提醒你回答一个问题`,
+      d: (question) => question,
+    },
+  },
+  zh_tw: {
+    partner_joined: {
+      t: (partnerName) => `${partnerName} 加入了 Nemlys`,
+      d: (_) => '開始一起討論問題',
+    },
+    partner_answered: {
+      t: (partnerName) => `${partnerName} 回答了一個問題`,
+      d: (question) => question,
+    },
+    partner_replied: {
+      t: (partnerName) => `${partnerName} 回覆了`,
+      d: (reply) => reply,
+    },
+    remind_answer: {
+      t: (partnerName) => `${partnerName} 正在提醒你回答一個問題`,
+      d: (question) => question,
+    },
+  },
+  zh_hk: {
+    partner_joined: {
+      t: (partnerName) => `${partnerName} 加入了 Nemlys`,
+      d: (_) => '開始一起討論問題',
+    },
+    partner_answered: {
+      t: (partnerName) => `${partnerName} 回答了一個問題`,
+      d: (question) => question,
+    },
+    partner_replied: {
+      t: (partnerName) => `${partnerName} 回覆了`,
+      d: (reply) => reply,
+    },
+    remind_answer: {
+      t: (partnerName) => `${partnerName} 正在提醒你回答一個問題`,
+      d: (question) => question,
+    },
+  },
+  hi: {
+    partner_joined: {
+      t: (partnerName) => `${partnerName} ने Nemlys में शामिल हो गए`,
+      d: (_) => 'साथ में सवालों पर चर्चा करना शुरू करें',
+    },
+    partner_answered: {
+      t: (partnerName) => `${partnerName} ने एक सवाल का जवाब दिया`,
+      d: (question) => question,
+    },
+    partner_replied: {
+      t: (partnerName) => `${partnerName} ने जवाब दिया`,
+      d: (reply) => reply,
+    },
+    remind_answer: {
+      t: (partnerName) => `${partnerName} आपको एक सवाल का जवाब देने के लिए याद दिला रहे हैं`,
+      d: (question) => question,
+    },
+  },
+  ja: {
+    partner_joined: {
+      t: (partnerName) => `${partnerName}がNemlysに参加しました`,
+      d: (_) => '一緒に質問を話し合い始めましょう',
+    },
+    partner_answered: {
+      t: (partnerName) => `${partnerName}が質問に答えました`,
+      d: (question) => question,
+    },
+    partner_replied: {
+      t: (partnerName) => `${partnerName}が返信しました`,
+      d: (reply) => reply,
+    },
+    remind_answer: {
+      t: (partnerName) => `${partnerName}が質問に答えるようリマインドしています`,
+      d: (question) => question,
+    },
+  },
+  pt: {
+    partner_joined: {
+      t: (partnerName) => `${partnerName} entrou no Nemlys`,
+      d: (_) => 'Comece a discutir perguntas juntos',
+    },
+    partner_answered: {
+      t: (partnerName) => `${partnerName} respondeu a uma pergunta`,
+      d: (question) => question,
+    },
+    partner_replied: {
+      t: (partnerName) => `${partnerName} respondeu`,
+      d: (reply) => reply,
+    },
+    remind_answer: {
+      t: (partnerName) => `${partnerName} está te lembrando de responder a uma pergunta`,
+      d: (question) => question,
+    },
+  },
+  fil: {
+    partner_joined: {
+      t: (partnerName) => `Sumali si ${partnerName} sa Nemlys`,
+      d: (_) => 'Magsimula nang pag-usapan ang mga tanong nang magkasama',
+    },
+    partner_answered: {
+      t: (partnerName) => `Sumagot si ${partnerName} sa isang tanong`,
+      d: (question) => question,
+    },
+    partner_replied: {
+      t: (partnerName) => `Tumugon si ${partnerName}`,
+      d: (reply) => reply,
+    },
+    remind_answer: {
+      t: (partnerName) => `Pinapaalala ni ${partnerName} sa'yo na sumagot sa isang tanong`,
+      d: (question) => question,
+    },
+  },
+  id: {
+    partner_joined: {
+      t: (partnerName) => `${partnerName} bergabung dengan Nemlys`,
+      d: (_) => 'Mulai diskusikan pertanyaan bersama',
+    },
+    partner_answered: {
+      t: (partnerName) => `${partnerName} menjawab sebuah pertanyaan`,
+      d: (question) => question,
+    },
+    partner_replied: {
+      t: (partnerName) => `${partnerName} membalas`,
+      d: (reply) => reply,
+    },
+    remind_answer: {
+      t: (partnerName) => `${partnerName} mengingatkanmu untuk menjawab sebuah pertanyaan`,
+      d: (question) => question,
+    },
+  },
+  pl: {
+    partner_joined: {
+      t: (partnerName) => `${partnerName} dołączył do Nemlys`,
+      d: (_) => 'Zacznijcie razem omawiać pytania',
+    },
+    partner_answered: {
+      t: (partnerName) => `${partnerName} odpowiedział na pytanie`,
+      d: (question) => question,
+    },
+    partner_replied: {
+      t: (partnerName) => `${partnerName} odpowiedział`,
+      d: (reply) => reply,
+    },
+    remind_answer: {
+      t: (partnerName) => `${partnerName} przypomina ci, żebyś odpowiedział na pytanie`,
+      d: (question) => question,
+    },
+  },
+  ro: {
+    partner_joined: {
+      t: (partnerName) => `${partnerName} s-a alăturat lui Nemlys`,
+      d: (_) => 'Începeți să discutați întrebări împreună',
+    },
+    partner_answered: {
+      t: (partnerName) => `${partnerName} a răspuns la o întrebare`,
+      d: (question) => question,
+    },
+    partner_replied: {
+      t: (partnerName) => `${partnerName} a răspuns`,
+      d: (reply) => reply,
+    },
+    remind_answer: {
+      t: (partnerName) => `${partnerName} îți amintește să răspunzi la o întrebare`,
+      d: (question) => question,
+    },
+  },
+  tr: {
+    partner_joined: {
+      t: (partnerName) => `${partnerName} Nemlys'e katıldı`,
+      d: (_) => 'Birlikte soruları tartışmaya başlayın',
+    },
+    partner_answered: {
+      t: (partnerName) => `${partnerName} bir soruyu yanıtladı`,
+      d: (question) => question,
+    },
+    partner_replied: {
+      t: (partnerName) => `${partnerName} yanıt verdi`,
+      d: (reply) => reply,
+    },
+    remind_answer: {
+      t: (partnerName) => `${partnerName} sana bir soruyu yanıtlamanı hatırlatıyor`,
+      d: (question) => question,
+    },
+  },
+  uk: {
+    partner_joined: {
+      t: (partnerName) => `${partnerName} приєднався до Nemlys`,
+      d: (_) => 'Почніть обговорювати питання разом',
+    },
+    partner_answered: {
+      t: (partnerName) => `${partnerName} відповів на питання`,
+      d: (question) => question,
+    },
+    partner_replied: {
+      t: (partnerName) => `${partnerName} відповів`,
+      d: (reply) => reply,
+    },
+    remind_answer: {
+      t: (partnerName) => `${partnerName} нагадує тобі відповісти на питання`,
+      d: (question) => question,
+    },
+  },
+  ru: {
+    partner_joined: {
+      t: (partnerName) => `${partnerName} присоединился к Nemlys`,
+      d: (_) => 'Начните обсуждать вопросы вместе',
+    },
+    partner_answered: {
+      t: (partnerName) => `${partnerName} ответил на вопрос`,
+      d: (question) => question,
+    },
+    partner_replied: {
+      t: (partnerName) => `${partnerName} ответил`,
+      d: (reply) => reply,
+    },
+    remind_answer: {
+      t: (partnerName) => `${partnerName} напоминает тебе ответить на вопрос`,
+      d: (question) => question,
+    },
+  },
+  vi: {
+    partner_joined: {
+      t: (partnerName) => `${partnerName} đã tham gia Nemlys`,
+      d: (_) => 'Bắt đầu thảo luận các câu hỏi cùng nhau',
+    },
+    partner_answered: {
+      t: (partnerName) => `${partnerName} đã trả lời một câu hỏi`,
+      d: (question) => question,
+    },
+    partner_replied: {
+      t: (partnerName) => `${partnerName} đã phản hồi`,
+      d: (reply) => reply,
+    },
+    remind_answer: {
+      t: (partnerName) => `${partnerName} đang nhắc bạn trả lời một câu hỏi`,
+      d: (question) => question,
+    },
+  },
+  no: {
+    partner_joined: {
+      t: (partnerName) => `${partnerName} ble med i Nemlys`,
+      d: (_) => 'Begynn å diskutere spørsmål sammen',
+    },
+    partner_answered: {
+      t: (partnerName) => `${partnerName} svarte på et spørsmål`,
+      d: (question) => question,
+    },
+    partner_replied: {
+      t: (partnerName) => `${partnerName} svarte`,
+      d: (reply) => reply,
+    },
+    remind_answer: {
+      t: (partnerName) => `${partnerName} minner deg på å svare på et spørsmål`,
+      d: (question) => question,
+    },
+  },
+  af: {
+    partner_joined: {
+      t: (partnerName) => `${partnerName} het by Nemlys aangesluit`,
+      d: (_) => 'Begin om vrae saam te bespreek',
+    },
+    partner_answered: {
+      t: (partnerName) => `${partnerName} het 'n vraag beantwoord`,
+      d: (question) => question,
+    },
+    partner_replied: {
+      t: (partnerName) => `${partnerName} het geantwoord`,
+      d: (reply) => reply,
+    },
+    remind_answer: {
+      t: (partnerName) => `${partnerName} herinner jou om 'n vraag te beantwoord`,
+      d: (question) => question,
+    },
+  },
+  sq: {
+    partner_joined: {
+      t: (partnerName) => `${partnerName} u bashkua në Nemlys`,
+      d: (_) => 'Filloni të diskutoni pyetje së bashku',
+    },
+    partner_answered: {
+      t: (partnerName) => `${partnerName} përgjigji një pyetje`,
+      d: (question) => question,
+    },
+    partner_replied: {
+      t: (partnerName) => `${partnerName} u përgjigj`,
+      d: (reply) => reply,
+    },
+    remind_answer: {
+      t: (partnerName) => `${partnerName} po të kujton të përgjigjesh një pyetje`,
+      d: (question) => question,
+    },
+  },
+  am: {
+    partner_joined: {
+      t: (partnerName) => `${partnerName} ነምሊስ ተቀላቅሏል`,
+      d: (_) => 'ጥያቄዎችን በአንድነት ይወያዩ',
+    },
+    partner_answered: {
+      t: (partnerName) => `${partnerName} ጥያቄ መልስ ሰጥቷል`,
+      d: (question) => question,
+    },
+    partner_replied: {
+      t: (partnerName) => `${partnerName} መልስ ሰጥቷል`,
+      d: (reply) => reply,
+    },
+    remind_answer: {
+      t: (partnerName) => `${partnerName} ጥያቄ ለመልስ እንደሚያስታውስ ነው`,
+      d: (question) => question,
+    },
+  },
+  hy: {
+    partner_joined: {
+      t: (partnerName) => `${partnerName} միացավ Nemlys-ին`,
+      d: (_) => 'Սկսեք քննարկել հարցեր միասին',
+    },
+    partner_answered: {
+      t: (partnerName) => `${partnerName} պատասխանեց հարցին`,
+      d: (question) => question,
+    },
+    partner_replied: {
+      t: (partnerName) => `${partnerName} պատասխանեց`,
+      d: (reply) => reply,
+    },
+    remind_answer: {
+      t: (partnerName) => `${partnerName} հիշեցնում է ձեզ պատասխանել հարցին`,
+      d: (question) => question,
+    },
+  },
+  az: {
+    partner_joined: {
+      t: (partnerName) => `${partnerName} Nemlys-ə qoşuldu`,
+      d: (_) => 'Birlikdə suallar müzakirə etməyə başlayın',
+    },
+    partner_answered: {
+      t: (partnerName) => `${partnerName} bir suala cavab verdi`,
+      d: (question) => question,
+    },
+    partner_replied: {
+      t: (partnerName) => `${partnerName} cavab verdi`,
+      d: (reply) => reply,
+    },
+    remind_answer: {
+      t: (partnerName) => `${partnerName} sənə bir suala cavab verməyi xatırladır`,
+      d: (question) => question,
+    },
+  },
+  eu: {
+    partner_joined: {
+      t: (partnerName) => `${partnerName} Nemlysen bat egin du`,
+      d: (_) => 'Hasi galderak elkarrekin eztabaidatzen',
+    },
+    partner_answered: {
+      t: (partnerName) => `${partnerName} galdera bat erantzun du`,
+      d: (question) => question,
+    },
+    partner_replied: {
+      t: (partnerName) => `${partnerName} erantzun du`,
+      d: (reply) => reply,
+    },
+    remind_answer: {
+      t: (partnerName) => `${partnerName} galdera bat erantzuteko gogorarazten dizu`,
+      d: (question) => question,
+    },
+  },
+  be: {
+    partner_joined: {
+      t: (partnerName) => `${partnerName} далучыўся да Nemlys`,
+      d: (_) => 'Пачніце абмяркоўваць пытанні разам',
+    },
+    partner_answered: {
+      t: (partnerName) => `${partnerName} адказаў на пытанне`,
+      d: (question) => question,
+    },
+    partner_replied: {
+      t: (partnerName) => `${partnerName} адказаў`,
+      d: (reply) => reply,
+    },
+    remind_answer: {
+      t: (partnerName) => `${partnerName} нагадвае табе адказаць на пытанне`,
+      d: (question) => question,
+    },
+  },
+  bg: {
+    partner_joined: {
+      t: (partnerName) => `${partnerName} се присъедини към Nemlys`,
+      d: (_) => 'Започнете да обсъждате въпроси заедно',
+    },
+    partner_answered: {
+      t: (partnerName) => `${partnerName} отговори на въпрос`,
+      d: (question) => question,
+    },
+    partner_replied: {
+      t: (partnerName) => `${partnerName} отговори`,
+      d: (reply) => reply,
+    },
+    remind_answer: {
+      t: (partnerName) => `${partnerName} ти напомня да отговориш на въпрос`,
+      d: (question) => question,
+    },
+  },
+  my: {
+    partner_joined: {
+      t: (partnerName) => `${partnerName} က Nemlys မှာ ပါဝင်လိုက်ပါပြီ`,
+      d: (_) => 'အတူတူ မေးခွန်းတွေကို ဆွေးနွေးဖို့ စတင်လိုက်ပါ',
+    },
+    partner_answered: {
+      t: (partnerName) => `${partnerName} က မေးခွန်းတစ်ခုကို ဖြေကြားလိုက်ပါပြီ`,
+      d: (question) => question,
+    },
+    partner_replied: {
+      t: (partnerName) => `${partnerName} က ပြန်လည်ဖြေကြားလိုက်ပါပြီ`,
+      d: (reply) => reply,
+    },
+    remind_answer: {
+      t: (partnerName) => `${partnerName} က မေးခွန်းတစ်ခုကို ဖြေဖို့ သတိပေးနေပါတယ်`,
+      d: (question) => question,
+    },
+  },
+  ca: {
+    partner_joined: {
+      t: (partnerName) => `${partnerName} s'ha unit a Nemlys`,
+      d: (_) => 'Comenceu a discutir preguntes junts',
+    },
+    partner_answered: {
+      t: (partnerName) => `${partnerName} ha contestat una pregunta`,
+      d: (question) => question,
+    },
+    partner_replied: {
+      t: (partnerName) => `${partnerName} ha respost`,
+      d: (reply) => reply,
+    },
+    remind_answer: {
+      t: (partnerName) => `${partnerName} et recorda que contestis una pregunta`,
+      d: (question) => question,
+    },
+  },
+  hr: {
+    partner_joined: {
+      t: (partnerName) => `${partnerName} se pridružio Nemlys-u`,
+      d: (_) => 'Započnite zajedničku raspravu o pitanjima',
+    },
+    partner_answered: {
+      t: (partnerName) => `${partnerName} je odgovorio na pitanje`,
+      d: (question) => question,
+    },
+    partner_replied: {
+      t: (partnerName) => `${partnerName} je odgovorio`,
+      d: (reply) => reply,
+    },
+    remind_answer: {
+      t: (partnerName) => `${partnerName} te podsjeća da odgovoriš na pitanje`,
+      d: (question) => question,
+    },
+  },
+  cs: {
+    partner_joined: {
+      t: (partnerName) => `${partnerName} se připojil(a) k Nemlys`,
+      d: (_) => 'Začněte spolu diskutovat o otázkách',
+    },
+    partner_answered: {
+      t: (partnerName) => `${partnerName} odpověděl(a) na otázku`,
+      d: (question) => question,
+    },
+    partner_replied: {
+      t: (partnerName) => `${partnerName} odpověděl(a)`,
+      d: (reply) => reply,
+    },
+    remind_answer: {
+      t: (partnerName) => `${partnerName} ti připomíná, abys odpověděl(a) na otázku`,
+      d: (question) => question,
+    },
+  },
+  da: {
+    partner_joined: {
+      t: (partnerName) => `${partnerName} er blevet medlem af Nemlys`,
+      d: (_) => 'Begynd at diskutere spørgsmål sammen',
+    },
+    partner_answered: {
+      t: (partnerName) => `${partnerName} har besvaret et spørgsmål`,
+      d: (question) => question,
+    },
+    partner_replied: {
+      t: (partnerName) => `${partnerName} har svaret`,
+      d: (reply) => reply,
+    },
+    remind_answer: {
+      t: (partnerName) => `${partnerName} minder dig om at besvare et spørgsmål`,
+      d: (question) => question,
+    },
+  },
+  et: {
+    partner_joined: {
+      t: (partnerName) => `${partnerName} liitus Nemlysiga`,
+      d: (_) => 'Alustage koos küsimuste arutamist',
+    },
+    partner_answered: {
+      t: (partnerName) => `${partnerName} vastas küsimusele`,
+      d: (question) => question,
+    },
+    partner_replied: {
+      t: (partnerName) => `${partnerName} vastas`,
+      d: (reply) => reply,
+    },
+    remind_answer: {
+      t: (partnerName) => `${partnerName} tuletab meelde, et vastaksid küsimusele`,
+      d: (question) => question,
+    },
+  },
+  fi: {
+    partner_joined: {
+      t: (partnerName) => `${partnerName} liittyi Nemlysiin`,
+      d: (_) => 'Aloita kysymysten keskustelu yhdessä',
+    },
+    partner_answered: {
+      t: (partnerName) => `${partnerName} vastasi kysymykseen`,
+      d: (question) => question,
+    },
+    partner_replied: {
+      t: (partnerName) => `${partnerName} vastasi`,
+      d: (reply) => reply,
+    },
+    remind_answer: {
+      t: (partnerName) => `${partnerName} muistuttaa sinua vastaamaan kysymykseen`,
+      d: (question) => question,
+    },
+  },
+  gl: {
+    partner_joined: {
+      t: (partnerName) => `${partnerName} uniuuse a Nemlys`,
+      d: (_) => 'Comeza a discutir preguntas xuntos',
+    },
+    partner_answered: {
+      t: (partnerName) => `${partnerName} respondeu a unha pregunta`,
+      d: (question) => question,
+    },
+    partner_replied: {
+      t: (partnerName) => `${partnerName} respondeu`,
+      d: (reply) => reply,
+    },
+    remind_answer: {
+      t: (partnerName) => `${partnerName} está recordándoche que respondas a unha pregunta`,
+      d: (question) => question,
+    },
+  },
+  ka: {
+    partner_joined: {
+      t: (partnerName) => `${partnerName} შეუერთდა Nemlys-ს`,
+      d: (_) => 'დაიწყეთ კითხვებზე ერთად საუბარი',
+    },
+    partner_answered: {
+      t: (partnerName) => `${partnerName} უპასუხა კითხვას`,
+      d: (question) => question,
+    },
+    partner_replied: {
+      t: (partnerName) => `${partnerName} უპასუხა`,
+      d: (reply) => reply,
+    },
+    remind_answer: {
+      t: (partnerName) => `${partnerName} გახსენებს, რომ უპასუხო კითხვას`,
+      d: (question) => question,
+    },
+  },
+  el: {
+    partner_joined: {
+      t: (partnerName) => `${partnerName} μπήκε στο Nemlys`,
+      d: (_) => 'Αρχίστε να συζητάτε ερωτήσεις μαζί',
+    },
+    partner_answered: {
+      t: (partnerName) => `${partnerName} απάντησε σε μια ερώτηση`,
+      d: (question) => question,
+    },
+    partner_replied: {
+      t: (partnerName) => `${partnerName} απάντησε`,
+      d: (reply) => reply,
+    },
+    remind_answer: {
+      t: (partnerName) => `${partnerName} σου θυμίζει να απαντήσεις σε μια ερώτηση`,
+      d: (question) => question,
+    },
+  },
+  gu: {
+    partner_joined: {
+      t: (partnerName) => `${partnerName} ને નેમલિસમાં જોડાયા`,
+      d: (_) => 'સાથે પ્રશ્નો પર ચર્ચા શરૂ કરો',
+    },
+    partner_answered: {
+      t: (partnerName) => `${partnerName} એ એક પ્રશ્નનો જવાબ આપ્યો`,
+      d: (question) => question,
+    },
+    partner_replied: {
+      t: (partnerName) => `${partnerName} એ જવાબ આપ્યો`,
+      d: (reply) => reply,
+    },
+    remind_answer: {
+      t: (partnerName) => `${partnerName} તમને પ્રશ્નનો જવાબ આપવા યાદ અપાવી રહ્યો છે`,
+      d: (question) => question,
+    },
+  },
+  he: {
+    partner_joined: {
+      t: (partnerName) => `${partnerName} הצטרף לנמליס`,
+      d: (_) => 'תתחילו לדון בשאלות יחד',
+    },
+    partner_answered: {
+      t: (partnerName) => `${partnerName} ענה על שאלה`,
+      d: (question) => question,
+    },
+    partner_replied: {
+      t: (partnerName) => `${partnerName} ענה`,
+      d: (reply) => reply,
+    },
+    remind_answer: {
+      t: (partnerName) => `${partnerName} מזכיר לך לענות על שאלה`,
+      d: (question) => question,
+    },
+  },
+  hu: {
+    partner_joined: {
+      t: (partnerName) => `${partnerName} csatlakozott a Nemlys-hez`,
+      d: (_) => 'Kezdjétek el együtt megvitatni a kérdéseket',
+    },
+    partner_answered: {
+      t: (partnerName) => `${partnerName} válaszolt egy kérdésre`,
+      d: (question) => question,
+    },
+    partner_replied: {
+      t: (partnerName) => `${partnerName} válaszolt`,
+      d: (reply) => reply,
+    },
+    remind_answer: {
+      t: (partnerName) => `${partnerName} emlékeztet, hogy válaszolj egy kérdésre`,
+      d: (question) => question,
+    },
+  },
+  is: {
+    partner_joined: {
+      t: (partnerName) => `${partnerName} gekk í Nemlys`,
+      d: (_) => 'Byrjaðu að ræða spurningarnar saman',
+    },
+    partner_answered: {
+      t: (partnerName) => `${partnerName} svaraði spurningu`,
+      d: (question) => question,
+    },
+    partner_replied: {
+      t: (partnerName) => `${partnerName} svaraði`,
+      d: (reply) => reply,
+    },
+    remind_answer: {
+      t: (partnerName) => `${partnerName} minnir þig á að svara spurningu`,
+      d: (question) => question,
+    },
+  },
+  kn: {
+    partner_joined: {
+      t: (partnerName) => `${partnerName} ನೆಮ್‌ಲಿಸ್‌ನಲ್ಲಿ ಸೇರಿದ್ದಾರೆ`,
+      d: (_) => 'ಒಟ್ಟಾಗಿ ಪ್ರಶ್ನೆಗಳ ಬಗ್ಗೆ ಚರ್ಚೆ ಮಾಡಲು ಪ್ರಾರಂಭಿಸಿ',
+    },
+    partner_answered: {
+      t: (partnerName) => `${partnerName} ಒಂದು ಪ್ರಶ್ನೆಗೆ ಉತ್ತರಿಸಿದ್ದಾರೆ`,
+      d: (question) => question,
+    },
+    partner_replied: {
+      t: (partnerName) => `${partnerName} ಉತ್ತರಿಸಿದ್ದಾರೆ`,
+      d: (reply) => reply,
+    },
+    remind_answer: {
+      t: (partnerName) => `${partnerName} ನಿಮಗೆ ಒಂದು ಪ್ರಶ್ನೆಗೆ ಉತ್ತರಿಸಲು ನೆನಪಿಸುತ್ತಿದ್ದಾರೆ`,
+      d: (question) => question,
+    },
+  },
+  kk: {
+    partner_joined: {
+      t: (partnerName) => `${partnerName} Nemlys-ке қосылды`,
+      d: (_) => 'Сұрақтарды бірге талқылай бастаңдар',
+    },
+    partner_answered: {
+      t: (partnerName) => `${partnerName} сұраққа жауап берді`,
+      d: (question) => question,
+    },
+    partner_replied: {
+      t: (partnerName) => `${partnerName} жауап берді`,
+      d: (reply) => reply,
+    },
+    remind_answer: {
+      t: (partnerName) => `${partnerName} саған сұраққа жауап беруді ескертуде`,
+      d: (question) => question,
+    },
+  },
+  km: {
+    partner_joined: {
+      t: (partnerName) => `${partnerName} បានចូលរួមជាមួយ Nemlys`,
+      d: (_) => 'ចាប់ផ្តើមពិភាក្សាអំពីសំណួរទាំងអស់ជាមួយគ្នា',
+    },
+    partner_answered: {
+      t: (partnerName) => `${partnerName} បានឆ្លើយសំណួរ`,
+      d: (question) => question,
+    },
+    partner_replied: {
+      t: (partnerName) => `${partnerName} បានឆ្លើយតប`,
+      d: (reply) => reply,
+    },
+    remind_answer: {
+      t: (partnerName) => `${partnerName} កំពុងរំលឹកអ្នកឱ្យឆ្លើយសំណួរ`,
+      d: (question) => question,
+    },
+  },
+  ko: {
+    partner_joined: {
+      t: (partnerName) => `${partnerName}가 Nemlys에 가입했어요`,
+      d: (_) => '함께 질문을 논의해보세요',
+    },
+    partner_answered: {
+      t: (partnerName) => `${partnerName}가 질문에 답했어요`,
+      d: (question) => question,
+    },
+    partner_replied: {
+      t: (partnerName) => `${partnerName}가 답장했어요`,
+      d: (reply) => reply,
+    },
+    remind_answer: {
+      t: (partnerName) => `${partnerName}가 질문에 답하라고 상기시켜요`,
+      d: (question) => question,
+    },
+  },
+  ky: {
+    partner_joined: {
+      t: (partnerName) => `${partnerName} Немлыска кошулду`,
+      d: (_) => 'Суроолорду бирге талкуулоону башта',
+    },
+    partner_answered: {
+      t: (partnerName) => `${partnerName} суроого жооп берди`,
+      d: (question) => question,
+    },
+    partner_replied: {
+      t: (partnerName) => `${partnerName} жооп берди`,
+      d: (reply) => reply,
+    },
+    remind_answer: {
+      t: (partnerName) => `${partnerName} сага суроого жооп берүүнү эскертүүдө`,
+      d: (question) => question,
+    },
+  },
+  lo: {
+    partner_joined: {
+      t: (partnerName) => `${partnerName} បានចូលរួមជាមួយ Nemlys`,
+      d: (_) => 'ចាប់ផ្តើមពិភាក្សាអំពីសំណួរទៅជាមួយគ្នា',
+    },
+    partner_answered: {
+      t: (partnerName) => `${partnerName} បានឆ្លើយសំណួរ`,
+      d: (question) => question,
+    },
+    partner_replied: {
+      t: (partnerName) => `${partnerName} បានឆ្លើយតប`,
+      d: (reply) => reply,
+    },
+    remind_answer: {
+      t: (partnerName) => `${partnerName} កំពុងរំលឹកអ្នកឱ្យឆ្លើយសំណួរ`,
+      d: (question) => question,
+    },
+  },
+  lv: {
+    partner_joined: {
+      t: (partnerName) => `${partnerName} pievienojās Nemlys`,
+      d: (_) => 'Sāciet kopā apspriest jautājumus',
+    },
+    partner_answered: {
+      t: (partnerName) => `${partnerName} atbildēja uz jautājumu`,
+      d: (question) => question,
+    },
+    partner_replied: {
+      t: (partnerName) => `${partnerName} atbildēja`,
+      d: (reply) => reply,
+    },
+    remind_answer: {
+      t: (partnerName) => `${partnerName} atgādina, ka jāatbild uz jautājumu`,
+      d: (question) => question,
+    },
+  },
+  lt: {
+    partner_joined: {
+      t: (partnerName) => `${partnerName} prisijungė prie Nemlys`,
+      d: (_) => 'Pradėkite kartu diskutuoti apie klausimus',
+    },
+    partner_answered: {
+      t: (partnerName) => `${partnerName} atsakė į klausimą`,
+      d: (question) => question,
+    },
+    partner_replied: {
+      t: (partnerName) => `${partnerName} atsakė`,
+      d: (reply) => reply,
+    },
+    remind_answer: {
+      t: (partnerName) => `${partnerName} primena, kad turėtum atsakyti į klausimą`,
+      d: (question) => question,
+    },
+  },
+  mk: {
+    partner_joined: {
+      t: (partnerName) => `${partnerName} се приклучи на Немлис`,
+      d: (_) => 'Започнете да дискутирате прашања заедно',
+    },
+    partner_answered: {
+      t: (partnerName) => `${partnerName} одговори на прашање`,
+      d: (question) => question,
+    },
+    partner_replied: {
+      t: (partnerName) => `${partnerName} одговори`,
+      d: (reply) => reply,
+    },
+    remind_answer: {
+      t: (partnerName) => `${partnerName} те потсетува да одговориш на прашање`,
+      d: (question) => question,
+    },
+  },
+  ms: {
+    partner_joined: {
+      t: (partnerName) => `${partnerName} telah menyertai Nemlys`,
+      d: (_) => 'Mulakan perbincangan soalan bersama',
+    },
+    partner_answered: {
+      t: (partnerName) => `${partnerName} telah menjawab satu soalan`,
+      d: (question) => question,
+    },
+    partner_replied: {
+      t: (partnerName) => `${partnerName} telah membalas`,
+      d: (reply) => reply,
+    },
+    remind_answer: {
+      t: (partnerName) => `${partnerName} mengingatkan kamu untuk menjawab satu soalan`,
+      d: (question) => question,
+    },
+  },
+  ml: {
+    partner_joined: {
+      t: (partnerName) => `${partnerName} Nemlys-ലേക്ക് ചേർന്നു`,
+      d: (_) => 'കൂടെയായി ചോദ്യങ്ങൾ ചർച്ച ചെയ്യാൻ തുടങ്ങൂ',
+    },
+    partner_answered: {
+      t: (partnerName) => `${partnerName} ഒരു ചോദ്യത്തിന് മറുപടി നൽകി`,
+      d: (question) => question,
+    },
+    partner_replied: {
+      t: (partnerName) => `${partnerName} മറുപടി നൽകി`,
+      d: (reply) => reply,
+    },
+    remind_answer: {
+      t: (partnerName) => `${partnerName} ഒരു ചോദ്യത്തിന് മറുപടി നൽകാൻ നിങ്ങളെ ഓർമ്മിപ്പിക്കുന്നു`,
+      d: (question) => question,
+    },
+  },
+  mr: {
+    partner_joined: {
+      t: (partnerName) => `${partnerName} ने नेम्लिसमध्ये सामील झाले`,
+      d: (_) => 'एकत्रितपणे प्रश्नांवर चर्चा सुरू करा',
+    },
+    partner_answered: {
+      t: (partnerName) => `${partnerName} ने एक प्रश्न उत्तरला`,
+      d: (question) => question,
+    },
+    partner_replied: {
+      t: (partnerName) => `${partnerName} ने उत्तर दिले`,
+      d: (reply) => reply,
+    },
+    remind_answer: {
+      t: (partnerName) => `${partnerName} तुम्हाला प्रश्नाचे उत्तर देण्याची आठवण करून देत आहे`,
+      d: (question) => question,
+    },
+  },
+  mn: {
+    partner_joined: {
+      t: (partnerName) => `${partnerName} Nemlys-д нэгдлээ`,
+      d: (_) => 'Хамтдаа асуултуудыг хэлэлцэж эхлээрэй',
+    },
+    partner_answered: {
+      t: (partnerName) => `${partnerName} асуултанд хариуллаа`,
+      d: (question) => question,
+    },
+    partner_replied: {
+      t: (partnerName) => `${partnerName} хариуллаа`,
+      d: (reply) => reply,
+    },
+    remind_answer: {
+      t: (partnerName) => `${partnerName} чамд асуултанд хариулахыг сануулж байна`,
+      d: (question) => question,
+    },
+  },
+  ne: {
+    partner_joined: {
+      t: (partnerName) => `${partnerName} ले Nemlys मा सामेल भए`,
+      d: (_) => 'साथै प्रश्नहरूमा छलफल गर्न सुरु गर',
+    },
+    partner_answered: {
+      t: (partnerName) => `${partnerName} ले एक प्रश्नको उत्तर दिए`,
+      d: (question) => question,
+    },
+    partner_replied: {
+      t: (partnerName) => `${partnerName} ले जवाफ दिए`,
+      d: (reply) => reply,
+    },
+    remind_answer: {
+      t: (partnerName) => `${partnerName} ले तिमीलाई एक प्रश्नको उत्तर दिन सम्झाइरहेका छन्`,
+      d: (question) => question,
+    },
+  },
+  fa: {
+    partner_joined: {
+      t: (partnerName) => `${partnerName} به نملیس پیوست`,
+      d: (_) => 'شروع به بحث در مورد سوالات با هم کنید',
+    },
+    partner_answered: {
+      t: (partnerName) => `${partnerName} به یک سوال پاسخ داد`,
+      d: (question) => question,
+    },
+    partner_replied: {
+      t: (partnerName) => `${partnerName} پاسخ داد`,
+      d: (reply) => reply,
+    },
+    remind_answer: {
+      t: (partnerName) => `${partnerName} به شما یادآوری می‌کند که به یک سوال پاسخ دهید`,
+      d: (question) => question,
+    },
+  },
+  pa: {
+    partner_joined: {
+      t: (partnerName) => `${partnerName} ਨੇ Nemlys ਵਿੱਚ ਸ਼ਾਮਲ ਹੋਇਆ`,
+      d: (_) => "ਸਾਥੀ ਨਾਲ ਸਵਾਲਾਂ 'ਤੇ ਗੱਲ ਕਰਨਾ ਸ਼ੁਰੂ ਕਰੋ",
+    },
+    partner_answered: {
+      t: (partnerName) => `${partnerName} ਨੇ ਇੱਕ ਸਵਾਲ ਦਾ ਜਵਾਬ ਦਿੱਤਾ`,
+      d: (question) => question,
+    },
+    partner_replied: {
+      t: (partnerName) => `${partnerName} ਨੇ ਜਵਾਬ ਦਿੱਤਾ`,
+      d: (reply) => reply,
+    },
+    remind_answer: {
+      t: (partnerName) => `${partnerName} ਤੁਹਾਨੂੰ ਇੱਕ ਸਵਾਲ ਦਾ ਜਵਾਬ ਦੇਣ ਦੀ ਯਾਦ ਦਿਵਾ ਰਿਹਾ ਹੈ`,
+      d: (question) => question,
+    },
+  },
+  rm: {
+    partner_joined: {
+      t: (partnerName) => `${partnerName} è s'unì a Nemlys`,
+      d: (_) => 'Cumenzai a discutir dumondas ensemen',
+    },
+    partner_answered: {
+      t: (partnerName) => `${partnerName} ha respondì a ina dumonda`,
+      d: (question) => question,
+    },
+    partner_replied: {
+      t: (partnerName) => `${partnerName} ha respundì`,
+      d: (reply) => reply,
+    },
+    remind_answer: {
+      t: (partnerName) => `${partnerName} t'emmembra da responder a ina dumonda`,
+      d: (question) => question,
+    },
+  },
+  sr: {
+    partner_joined: {
+      t: (partnerName) => `${partnerName} se pridružio Nemlys-u`,
+      d: (_) => 'Počnite da razgovarate o pitanjima zajedno',
+    },
+    partner_answered: {
+      t: (partnerName) => `${partnerName} je odgovorio na pitanje`,
+      d: (question) => question,
+    },
+    partner_replied: {
+      t: (partnerName) => `${partnerName} je odgovorio`,
+      d: (reply) => reply,
+    },
+    remind_answer: {
+      t: (partnerName) => `${partnerName} te podseća da odgovoriš na pitanje`,
+      d: (question) => question,
+    },
+  },
+  si: {
+    partner_joined: {
+      t: (partnerName) => `${partnerName} Nemlys එකට එකතු වුණා`,
+      d: (_) => 'සමූහ ප්‍රශ්න ගැන කතා කිරීමට ආරම්භ කරන්න',
+    },
+    partner_answered: {
+      t: (partnerName) => `${partnerName} ප්‍රශ්නයකට පිළිතුරු දුන්නා`,
+      d: (question) => question,
+    },
+    partner_replied: {
+      t: (partnerName) => `${partnerName} පිළිතුරු දුන්නා`,
+      d: (reply) => reply,
+    },
+    remind_answer: {
+      t: (partnerName) => `${partnerName} ඔබට ප්‍රශ්නයකට පිළිතුරු දිය යුතු බව මතක දෙනවා`,
+      d: (question) => question,
+    },
+  },
+  sk: {
+    partner_joined: {
+      t: (partnerName) => `${partnerName} sa pridal do Nemlys`,
+      d: (_) => 'Začnite spolu diskutovať o otázkach',
+    },
+    partner_answered: {
+      t: (partnerName) => `${partnerName} odpovedal na otázku`,
+      d: (question) => question,
+    },
+    partner_replied: {
+      t: (partnerName) => `${partnerName} odpovedal`,
+      d: (reply) => reply,
+    },
+    remind_answer: {
+      t: (partnerName) => `${partnerName} ti pripomína, aby si odpovedal na otázku`,
+      d: (question) => question,
+    },
+  },
+  sl: {
+    partner_joined: {
+      t: (partnerName) => `${partnerName} se je pridružil/a Nemlys`,
+      d: (_) => 'Začnita skupaj razpravljati o vprašanjih',
+    },
+    partner_answered: {
+      t: (partnerName) => `${partnerName} je odgovoril/a na vprašanje`,
+      d: (question) => question,
+    },
+    partner_replied: {
+      t: (partnerName) => `${partnerName} je odgovoril/a`,
+      d: (reply) => reply,
+    },
+    remind_answer: {
+      t: (partnerName) => `${partnerName} te spominja, da odgovoriš na vprašanje`,
+      d: (question) => question,
+    },
+  },
+  sw: {
+    partner_joined: {
+      t: (partnerName) => `${partnerName} amejiunga na Nemlys`,
+      d: (_) => 'Anza kujadili maswali pamoja',
+    },
+    partner_answered: {
+      t: (partnerName) => `${partnerName} ameijibu swali`,
+      d: (question) => question,
+    },
+    partner_replied: {
+      t: (partnerName) => `${partnerName} amejibu`,
+      d: (reply) => reply,
+    },
+    remind_answer: {
+      t: (partnerName) => `${partnerName} anakukumbusha kujibu swali`,
+      d: (question) => question,
+    },
+  },
+  sv: {
+    partner_joined: {
+      t: (partnerName) => `${partnerName} har gått med i Nemlys`,
+      d: (_) => 'Börja diskutera frågor tillsammans',
+    },
+    partner_answered: {
+      t: (partnerName) => `${partnerName} har svarat på en fråga`,
+      d: (question) => question,
+    },
+    partner_replied: {
+      t: (partnerName) => `${partnerName} har svarat`,
+      d: (reply) => reply,
+    },
+    remind_answer: {
+      t: (partnerName) => `${partnerName} påminner dig om att svara på en fråga`,
+      d: (question) => question,
+    },
+  },
+  ta: {
+    partner_joined: {
+      t: (partnerName) => `${partnerName} நெம்லீஸில் சேர்ந்தார்`,
+      d: (_) => 'கேள்விகளை ஒன்றாக விவாதிக்க தொடங்குங்கள்',
+    },
+    partner_answered: {
+      t: (partnerName) => `${partnerName} ஒரு கேள்விக்கு பதிலளித்தார்`,
+      d: (question) => question,
+    },
+    partner_replied: {
+      t: (partnerName) => `${partnerName} பதிலளித்தார்`,
+      d: (reply) => reply,
+    },
+    remind_answer: {
+      t: (partnerName) => `${partnerName} உங்களுக்கு ஒரு கேள்விக்கு பதிலளிக்க நினைவூட்டுகிறார்`,
+      d: (question) => question,
+    },
+  },
+  te: {
+    partner_joined: {
+      t: (partnerName) => `${partnerName} Nemlys లో చేరారు`,
+      d: (_) => 'కలిసి ప్రశ్నలపై చర్చ చేయడం ప్రారంభించండి',
+    },
+    partner_answered: {
+      t: (partnerName) => `${partnerName} ఒక ప్రశ్నకు సమాధానం ఇచ్చారు`,
+      d: (question) => question,
+    },
+    partner_replied: {
+      t: (partnerName) => `${partnerName} సమాధానం ఇచ్చారు`,
+      d: (reply) => reply,
+    },
+    remind_answer: {
+      t: (partnerName) => `${partnerName} ఒక ప్రశ్నకు సమాధానం ఇవ్వాలని మీకు గుర్తు చేస్తున్నారు`,
+      d: (question) => question,
+    },
+  },
+  th: {
+    partner_joined: {
+      t: (partnerName) => `${partnerName} เข้าร่วม Nemlys แล้ว`,
+      d: (_) => 'เริ่มพูดคุยเกี่ยวกับคำถามด้วยกัน',
+    },
+    partner_answered: {
+      t: (partnerName) => `${partnerName} ตอบคำถามแล้ว`,
+      d: (question) => question,
+    },
+    partner_replied: {
+      t: (partnerName) => `${partnerName} ตอบกลับแล้ว`,
+      d: (reply) => reply,
+    },
+    remind_answer: {
+      t: (partnerName) => `${partnerName} กำลังเตือนคุณให้ตอบคำถาม`,
+      d: (question) => question,
+    },
+  },
+  ur: {
+    partner_joined: {
+      t: (partnerName) => `${partnerName} نے نیملس میں شمولیت اختیار کی`,
+      d: (_) => 'مل کر سوالات پر بات چیت شروع کریں',
+    },
+    partner_answered: {
+      t: (partnerName) => `${partnerName} نے ایک سوال کا جواب دیا`,
+      d: (question) => question,
+    },
+    partner_replied: {
+      t: (partnerName) => `${partnerName} نے جواب دیا`,
+      d: (reply) => reply,
+    },
+    remind_answer: {
+      t: (partnerName) => `${partnerName} آپ کو ایک سوال کا جواب دینے کی یاد دہانی کروا رہا ہے`,
+      d: (question) => question,
+    },
+  },
+  zu: {
+    partner_joined: {
+      t: (partnerName) => `${partnerName} ujoyine i-Nemlys`,
+      d: (_) => 'Qala ukuxoxa ngezinkinga ndawonye',
+    },
+    partner_answered: {
+      t: (partnerName) => `${partnerName} uphendule umbuzo`,
+      d: (question) => question,
+    },
+    partner_replied: {
+      t: (partnerName) => `${partnerName} uphendule`,
+      d: (reply) => reply,
+    },
+    remind_answer: {
+      t: (partnerName) => `${partnerName} uyakukhumbuza ukuthi uphendule umbuzo`,
+      d: (question) => question,
+    },
+  },
+};

@@ -76,7 +76,7 @@ export default function () {
                 color: isHomeActive ? theme.colors.black : theme.colors.grey3,
               }}
             >
-              {i18n.t('home.menu.discuss')}
+              {i18n.t('home_menu_discuss')}
             </FontText>
           </TouchableOpacity>
 
@@ -135,7 +135,7 @@ export default function () {
                 color: isProfileActive ? theme.colors.black : theme.colors.grey3,
               }}
             >
-              {i18n.t('home.menu.profile')}
+              {i18n.t('home_menu_profile')}
             </FontText>
           </TouchableOpacity>
           {showPremium && (
@@ -158,7 +158,7 @@ export default function () {
             >
               <Premium height={32} width={32} />
               <FontText style={{ marginTop: 5, color: theme.colors.grey3 }}>
-                {i18n.t('home.menu.premium')}
+                {i18n.t('home_menu_premium')}
               </FontText>
             </TouchableOpacity>
           )}

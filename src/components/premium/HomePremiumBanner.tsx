@@ -106,17 +106,17 @@ const HomePremiumBanner = React.forwardRef<HomePremiumBannerRef, Props>((props, 
     leftText = '';
     rightText = '';
   } else if (premiumState === 'trial') {
-    leftText = i18n.t('premium.banner.trial');
-    rightText = i18n.t('premium.banner.days_left', { days: trialDaysLeft });
+    leftText = i18n.t('premium_banner_trial');
+    rightText = i18n.t('premium_banner_days_left', { days: trialDaysLeft });
   } else if (premiumState === 'new') {
-    leftText = i18n.t('premium.banner.new');
-    rightText = i18n.t('premium.banner.topics_left', {
+    leftText = i18n.t('premium_banner_new');
+    rightText = i18n.t('premium_banner_topics_left', {
       total: introductionDatesLimit,
       left: newDatesLeft,
     });
   } else if (premiumState === 'free') {
     leftText = i18n.t('premium_banner_free');
-    rightText = i18n.t('premium.banner.topics_left', {
+    rightText = i18n.t('premium_banner_topics_left', {
       total: dailyDatesLimit,
       left: freeDatesLeft,
     });
@@ -142,11 +142,12 @@ const HomePremiumBanner = React.forwardRef<HomePremiumBannerRef, Props>((props, 
           <Loading></Loading>
         ) : (
           <>
-            <FontText>{leftText}</FontText>
+            <FontText style={{ maxWidth: '50%' }}>{leftText}</FontText>
             <View
               style={{
                 backgroundColor: theme.colors.grey0,
                 padding: 10,
+                marginLeft: 5,
                 paddingHorizontal: 15,
                 borderRadius: 40,
               }}

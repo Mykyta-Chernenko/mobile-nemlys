@@ -21,7 +21,7 @@ export default function ({
   navigation,
 }: NativeStackScreenProps<MainStackParamList, 'DateIsWithPartner'>) {
   const { job } = route.params;
-  const jobTitle = i18n.t(`jobs.${job}`);
+  const jobTitle = i18n.t(`jobs_${job}`);
 
   const { theme } = useTheme();
   const { setMode } = useThemeMode();

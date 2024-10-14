@@ -10,7 +10,6 @@ import { useTheme, useThemeMode } from '@rneui/themed';
 import { getFullLanguageByLocale, i18n, LANGUAGES } from '@app/localization/i18n';
 import { PrimaryButton } from '@app/components/buttons/PrimaryButtons';
 import { FontText } from '@app/components/utils/FontText';
-import { Progress } from '@app/components/utils/Progress';
 import { GoBackButton } from '@app/components/buttons/GoBackButton';
 import { supabase } from '@app/api/initSupabase';
 import { AuthContext } from '@app/provider/AuthProvider';
@@ -110,7 +109,7 @@ export default function ({
                   }
                 }}
               ></GoBackButton>
-              {!fromSettings && <Progress current={3} all={5}></Progress>}
+              {/*{!fromSettings && <Progress current={5} all={7}></Progress>}*/}
             </View>
             <View
               style={{
@@ -131,6 +130,22 @@ export default function ({
               >
                 {i18n.t('couple_language_title')}
               </FontText>
+              <View
+                style={{
+                  marginTop: 10,
+                  borderRadius: 20,
+                  backgroundColor: theme.colors.white,
+                  borderColor: theme.colors.black,
+                  borderWidth: 1,
+                  padding: 20,
+                  height: 70,
+                  flexDirection: 'row',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                }}
+              >
+                <FontText style={{ marginLeft: 10 }}>{getFullLanguageByLocale(language)}</FontText>
+              </View>
               <ScrollView style={{ marginTop: '5%', flex: 1 }}>
                 <View
                   style={{

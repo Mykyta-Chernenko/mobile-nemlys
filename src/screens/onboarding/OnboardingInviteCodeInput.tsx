@@ -123,7 +123,6 @@ export default function OnboardingInviteCodeInput({
           logErrorsWithMessage(res.error, 'notify partner function returned error');
           return;
         }
-        setShowContinue(true);
         void localAnalytics().logEvent('OnboardingInviteCodeInputSuccess', {
           screen: 'OnboardingInviteCodeInput',
           action: 'Success',
@@ -139,6 +138,7 @@ export default function OnboardingInviteCodeInput({
           break;
         case 'SUCCESS':
           void handleSuccess();
+          setShowContinue(true);
           break;
         default:
           setError(i18n.t('onboarding_invite_input_invite_code_error'));
@@ -210,7 +210,7 @@ export default function OnboardingInviteCodeInput({
                 containerStyle={{ position: 'absolute', left: 0 }}
                 onPress={handleGoBack}
               />
-              {fromSettings ? <View /> : <Progress current={4} all={5} />}
+              {fromSettings ? <View /> : <Progress current={6} all={7} />}
               {fromSettings ? <CloseButton onPress={onClosePressed} theme="black" /> : <View />}
             </View>
             <View style={{ marginTop: 20 }}>

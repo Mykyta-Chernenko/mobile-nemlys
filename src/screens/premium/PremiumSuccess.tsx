@@ -61,12 +61,12 @@ export default function ({
           <View>
             <FontText h1 style={{ textAlign: 'center', color: theme.colors.white }}>
               {isPremium
-                ? i18n.t('premium.success.premium.title_1')
-                : i18n.t('premium.success.trial.title_1')}
+                ? i18n.t('premium_success_premium_title_1')
+                : i18n.t('premium_success_trial_title_1')}
               <FontText h1 style={{ color: theme.colors.primary }}>
                 {isPremium
-                  ? i18n.t('premium.success.premium.title_2')
-                  : i18n.t('premium.success.trial.title_2')}
+                  ? i18n.t('premium_success_premium_title_2')
+                  : i18n.t('premium_success_trial_title_2')}
               </FontText>
             </FontText>
           </View>
@@ -85,8 +85,8 @@ export default function ({
             }}
             title={
               isPremium
-                ? i18n.t('premium.success.premium.button')
-                : i18n.t('premium.success.trial.button')
+                ? i18n.t('premium_success_premium_button')
+                : i18n.t('premium_success_trial_button')
             }
           ></SecondaryButton>
         </View>

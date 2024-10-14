@@ -32,7 +32,7 @@ export default function ({
     const { error } = await supabase.auth.resetPasswordForEmail(email, { redirectTo });
     if (!error) {
       setLoading(false);
-      alert(i18n.t('forgot_password.email_sent'));
+      alert(i18n.t('forgot_password_email_sent'));
     }
     if (error) {
       setLoading(false);
@@ -71,7 +71,7 @@ export default function ({
             }}
             h3
           >
-            {i18n.t('forgot_password.title')}
+            {i18n.t('forgot_password_title')}
           </FontText>
           <StyledInput
             containerStyle={{ marginTop: 15 }}
@@ -84,7 +84,7 @@ export default function ({
             onChangeText={(text: string) => setEmail(text)}
           />
           <Button
-            title={loading ? i18n.t('loading') : i18n.t('forgot_password.button.default')}
+            title={loading ? i18n.t('loading') : i18n.t('forgot_password_button_default')}
             onPress={() => {
               void forget();
             }}
@@ -99,7 +99,7 @@ export default function ({
               justifyContent: 'center',
             }}
           >
-            <FontText>{i18n.t('register.login.pretext')}</FontText>
+            <FontText>{i18n.t('register_login_pretext')}</FontText>
             <TouchableOpacity
               onPress={() => {
                 navigation.navigate('Login');
@@ -111,7 +111,7 @@ export default function ({
                   fontWeight: 'bold',
                 }}
               >
-                {i18n.t('register.login.link')}
+                {i18n.t('register_login_link')}
               </FontText>
             </TouchableOpacity>
           </View>

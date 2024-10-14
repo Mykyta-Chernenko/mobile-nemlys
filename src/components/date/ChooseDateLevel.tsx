@@ -31,9 +31,9 @@ export default function (props: { level?: number; onNextPress: (level: number) =
     };
     const Icon = iconByLevel[level];
     const iconTextByLevel = {
-      1: i18n.t('date.level.light'),
-      2: i18n.t('date.level.normal'),
-      3: i18n.t('date.level.deep'),
+      1: i18n.t('date_level_light'),
+      2: i18n.t('date_level_normal'),
+      3: i18n.t('date_level_deep'),
     };
     const dotHeight = 10 + 5 * level;
 
@@ -118,11 +118,11 @@ export default function (props: { level?: number; onNextPress: (level: number) =
           }}
           h1
         >
-          {i18n.t('date.level_title_first')}
+          {i18n.t('date_level_title_first')}
           <FontText style={{ color: theme.colors.primary }} h1>
-            {i18n.t('date.level_title_second')}
+            {i18n.t('date_level_title_second')}
           </FontText>
-          {i18n.t('date.level_title_third')}
+          {i18n.t('date_level_title_third')}
         </FontText>
       </View>
       <View style={{ backgroundColor: 'white', margin: -20, paddingHorizontal: 20 }}>

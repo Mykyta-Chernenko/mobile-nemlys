@@ -149,7 +149,7 @@ export default function ({
             }}
             h3
           >
-            {i18n.t('register.title')}
+            {i18n.t('register_title')}
           </FontText>
           {continueWithEmail ? (
             <View>
@@ -167,7 +167,7 @@ export default function ({
               />
               {passwordsAreNotTheSame && (
                 <FontText style={{ color: theme.colors.grey3 }}>
-                  {i18n.t('register.passwords_are_not_the_same')}
+                  {i18n.t('register_passwords_are_not_the_same')}
                 </FontText>
               )}
               <StyledInput
@@ -196,7 +196,7 @@ export default function ({
                 onChangeText={(text) => setPasswordAgain(text)}
               />
               <Button
-                title={loading ? i18n.t('loading') : i18n.t('register.register_button.default')}
+                title={loading ? i18n.t('loading') : i18n.t('register_register_button_default')}
                 onPress={() => {
                   void register();
                 }}
@@ -206,7 +206,7 @@ export default function ({
           ) : (
             <Button
               buttonStyle={{ marginTop: '3%' }}
-              title={loading ? i18n.t('loading') : i18n.t('register.continue_with_email.default')}
+              title={loading ? i18n.t('loading') : i18n.t('register_continue_with_email_default')}
               onPress={() => {
                 setContinueWithEmail(true);
               }}
@@ -231,7 +231,7 @@ export default function ({
               justifyContent: 'center',
             }}
           >
-            <FontText>{i18n.t('register.login.pretext')}</FontText>
+            <FontText>{i18n.t('register_login_pretext')}</FontText>
             <TouchableOpacity
               onPress={() => {
                 void localAnalytics().logEvent('RegisterGoToLogin', {
@@ -248,7 +248,7 @@ export default function ({
                   fontWeight: 'bold',
                 }}
               >
-                {i18n.t('register.login.link')}
+                {i18n.t('register_login_link')}
               </FontText>
             </TouchableOpacity>
           </View>

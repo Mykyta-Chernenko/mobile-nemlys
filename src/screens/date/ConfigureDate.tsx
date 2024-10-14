@@ -13,9 +13,7 @@ import { AuthContext } from '@app/provider/AuthProvider';
 import { localAnalytics } from '@app/utils/analytics';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import Reflection from '@app/components/reflection/Reflection';
-import { logSupaErrors } from '@app/utils/errors';
-import { supabase } from '@app/api/initSupabase';
-import { Loading } from '@app/components/utils/Loading';
+import { i18n } from '@app/localization/i18n';
 
 export default function ({
   route,
@@ -27,7 +25,7 @@ export default function ({
   const [currentStep, setCurrentStep] = useState(1);
   const [chosenTopic, setChosenTopic] = useState<string>('');
   const [chosenLevel, setChosenLevel] = useState<number>(2);
-  const [reflectionAnswerId, setReflectionAnswerId] = useState<number | undefined>(undefined);
+  const [reflectionAnswer, setReflectionAnswer] = useState<string>('');
   const authContext = useContext(AuthContext);
   // to set the color of status bar
   const { setMode } = useThemeMode();
@@ -36,28 +34,7 @@ export default function ({
     return unsubscribeFocus;
   }, [navigation]);
 
-  const [loading, setLoading] = useState(false);
-  const [reflectionId, setReflectionId] = useState(0);
-  const [reflection, setReflection] = useState('');
-
-  useEffect(() => {
-    const getData = async () => {
-      setLoading(true);
-      const data = await supabase
-        .from('reflection_question')
-        .select('id, reflection')
-        .eq('slug', 'discuss_issue')
-        .single();
-      if (data.error) {
-        logSupaErrors(data.error);
-        return;
-      }
-      setReflection(data.data.reflection);
-      setReflectionId(data.data.id);
-      setLoading(false);
-    };
-    isIssue && void getData();
-  }, [isIssue]);
+  const reflection = i18n.t('topic_issue_discuss');
 
   const goBack = () => {
     if (currentStep === 1) {
@@ -83,7 +60,7 @@ export default function ({
       job: job,
       topic,
       level,
-      reflectionAnswerId: reflectionAnswerId,
+      reflectionAnswer,
       refreshTimeStamp: new Date().toISOString(),
     });
   }
@@ -133,19 +110,16 @@ export default function ({
       break;
   }
 
-  return loading ? (
-    <Loading></Loading>
-  ) : currentStep === 1 && isIssue ? (
+  return currentStep === 1 && isIssue ? (
     <Reflection
-      reflectionId={reflectionId}
-      onSave={(answerId) => {
+      onSave={(answer) => {
         void localAnalytics().logEvent('ConfigureDateIssueWritten', {
           screen: 'ConfigureDate',
           action: 'IssueWritten',
           userId: authContext.userId,
         });
         setCurrentStep(2);
-        setReflectionAnswerId(answerId);
+        setReflectionAnswer(answer);
       }}
       question={reflection}
       onBack={() => void goBack()}

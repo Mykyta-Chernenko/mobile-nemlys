@@ -107,7 +107,7 @@ export default function ({
   };
   const deleteAccountAlert = () => {
     Alert.alert(
-      i18n.t('profile.are_you_sure_you_want_to_delete_account'),
+      i18n.t('profile_are_you_sure_you_want_to_delete_account'),
       undefined,
       [
         {
@@ -268,7 +268,7 @@ export default function ({
                     paddingBottom: '3%',
                   }}
                 >
-                  <FontText h3>{i18n.t('profile.title')}</FontText>
+                  <FontText h3>{i18n.t('profile_title')}</FontText>
                   <FontText style={{ color: theme.colors.grey3, marginTop: '2%' }}></FontText>
                 </View>
                 <View
@@ -301,15 +301,15 @@ export default function ({
                   <AnswerNoPartnerWarning prefix={'Profile'} partnerName={partnerName} />
                 )}
                 <View style={{ marginTop: 10 }}>
-                  <FontText h3>{i18n.t('profile.my_account')}</FontText>
+                  <FontText h3>{i18n.t('profile_my_account')}</FontText>
                   <SettingsButton
                     data={name}
-                    title={i18n.t('profile.your_name')}
+                    title={i18n.t('profile_your_name')}
                     action={() => void handleYourName()}
                   ></SettingsButton>
                   <SettingsButton
                     data={partnerName}
-                    title={i18n.t('profile.partner_name')}
+                    title={i18n.t('profile_partner_name')}
                     action={() => void handlePartnerName()}
                   ></SettingsButton>
                   {!hasPartner && (
@@ -328,7 +328,7 @@ export default function ({
                   )}
                 </View>
                 <View style={{ marginTop: 40 }}>
-                  <FontText h3>{i18n.t('profile.settings')}</FontText>
+                  <FontText h3>{i18n.t('profile_settings')}</FontText>
                   <SettingsButton
                     data={null}
                     title={i18n.t('profile_notification')}
@@ -336,7 +336,7 @@ export default function ({
                   ></SettingsButton>
                   <SettingsButton
                     data={languageTitle}
-                    title={i18n.t('profile.language')}
+                    title={i18n.t('profile_language')}
                     action={() => void handleLanguage()}
                   ></SettingsButton>
                   <SettingsButton
@@ -346,15 +346,15 @@ export default function ({
                   ></SettingsButton>
                   <SettingsButton
                     data={null}
-                    title={i18n.t('profile.subscription')}
+                    title={i18n.t('profile_subscription')}
                     action={() => void manageSubscription()}
                   ></SettingsButton>
                 </View>
                 <View style={{ marginTop: 40 }}>
-                  <FontText h3>{i18n.t('profile.about')}</FontText>
+                  <FontText h3>{i18n.t('profile_about')}</FontText>
                   <Feedback
-                    title={i18n.t('profile.contact')}
-                    placeholder={i18n.t('profile.contact_placeholder')}
+                    title={i18n.t('profile_contact')}
+                    placeholder={i18n.t('profile_contact_placeholder')}
                   ></Feedback>
                   <TouchableOpacity
                     onPress={() => void manageReview()}
@@ -380,7 +380,7 @@ export default function ({
                           flexShrink: 1,
                         }}
                       >
-                        {i18n.t('profile.rate')}
+                        {i18n.t('profile_rate')}
                       </FontText>
                     </View>
                     <TopRightArrow></TopRightArrow>
@@ -388,16 +388,16 @@ export default function ({
 
                   <SettingsButton
                     data={null}
-                    title={i18n.t('profile.share')}
+                    title={i18n.t('profile_share')}
                     action={() => void manageShare()}
                   ></SettingsButton>
                   <Feedback
-                    title={i18n.t('profile.feature_request')}
-                    placeholder={i18n.t('profile.feature_request_placeholder')}
+                    title={i18n.t('profile_feature_request')}
+                    placeholder={i18n.t('profile_feature_request_placeholder')}
                   ></Feedback>
                   <SettingsButton
                     data={' '}
-                    title={i18n.t('profile.call')}
+                    title={i18n.t('profile_call')}
                     action={() => void manageCall()}
                   ></SettingsButton>
                   <PrimaryButton
@@ -410,7 +410,7 @@ export default function ({
                       void logout().then(logout);
                     }}
                   >
-                    {i18n.t('profile.logout')}
+                    {i18n.t('profile_logout')}
                   </PrimaryButton>
                   <TouchableOpacity
                     style={{ marginTop: 10 }}
@@ -419,7 +419,7 @@ export default function ({
                     }}
                   >
                     <FontText style={{ width: '100%', textAlign: 'center', marginVertical: 20 }}>
-                      {i18n.t('profile.delete_account')}
+                      {i18n.t('profile_delete_account')}
                     </FontText>
                   </TouchableOpacity>
                 </View>

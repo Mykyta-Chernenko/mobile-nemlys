@@ -30,8 +30,8 @@ export async function createFinishDateNotifications(userId: string) {
     _.zip(notificationOrder, trigerSeconds) as [NOTIFICATION_SUBTYPE, number][]
   ).map(([subtype, seconds]) => ({
     screen: 'Home',
-    title: i18n.t(`notification.finish_date.${subtype}.title`),
-    body: i18n.t(`notification.finish_date.${subtype}.body`),
+    title: i18n.t(`notification_finish_date_${subtype}_title`),
+    body: i18n.t(`notification_finish_date_${subtype}_body`),
     trigger: {
       seconds,
       repeats: false,
@@ -45,8 +45,8 @@ export async function createFinishDateNotifications(userId: string) {
       ...notifications,
       {
         screen: 'Home',
-        title: i18n.t(`notification.finish_date.${NOTIFICATION_SUBTYPE.FINISH_DATE_1}.title`),
-        body: i18n.t(`notification.finish_date.${NOTIFICATION_SUBTYPE.FINISH_DATE_1}.body`),
+        title: i18n.t(`notification_finish_date_${NOTIFICATION_SUBTYPE.FINISH_DATE_1}_title`),
+        body: i18n.t(`notification_finish_date_${NOTIFICATION_SUBTYPE.FINISH_DATE_1}_body`),
         trigger: {
           seconds: calculateEveningTimeAfterDays(1),
           repeats: false,
@@ -55,8 +55,8 @@ export async function createFinishDateNotifications(userId: string) {
       },
       {
         screen: 'Home',
-        title: i18n.t(`notification.finish_date.${NOTIFICATION_SUBTYPE.FINISH_DATE_2}.title`),
-        body: i18n.t(`notification.finish_date.${NOTIFICATION_SUBTYPE.FINISH_DATE_2}.body`),
+        title: i18n.t(`notification_finish_date_${NOTIFICATION_SUBTYPE.FINISH_DATE_2}_title`),
+        body: i18n.t(`notification_finish_date_${NOTIFICATION_SUBTYPE.FINISH_DATE_2}_body`),
         trigger: {
           seconds: calculateEveningTimeAfterDays(7),
           repeats: false,
@@ -93,8 +93,8 @@ export async function createAfterDateNotifications(userId: string) {
     ][]
   ).map(([subtype, seconds]) => ({
     screen: 'Home',
-    title: i18n.t(`notification.after_date.${subtype}.title`),
-    body: i18n.t(`notification.after_date.${subtype}.body`),
+    title: i18n.t(`notification_after_date_${subtype}_title`),
+    body: i18n.t(`notification_after_date_${subtype}_body`),
     trigger: {
       seconds,
       repeats: false,
@@ -108,8 +108,8 @@ export async function createAfterDateNotifications(userId: string) {
       ...notifications,
       {
         screen: 'Home',
-        title: i18n.t(`notification.after_date.${NOTIFICATION_SUBTYPE.AFTER_DATE_1}.title`),
-        body: i18n.t(`notification.after_date.${NOTIFICATION_SUBTYPE.AFTER_DATE_1}.body`),
+        title: i18n.t(`notification_after_date_${NOTIFICATION_SUBTYPE.AFTER_DATE_1}_title`),
+        body: i18n.t(`notification_after_date_${NOTIFICATION_SUBTYPE.AFTER_DATE_1}_body`),
         trigger: {
           seconds: calculateEveningTimeAfterDays(20),
           repeats: false,
@@ -118,8 +118,8 @@ export async function createAfterDateNotifications(userId: string) {
       },
       {
         screen: 'Home',
-        title: i18n.t(`notification.after_date.${NOTIFICATION_SUBTYPE.AFTER_DATE_1}.title`),
-        body: i18n.t(`notification.after_date.${NOTIFICATION_SUBTYPE.AFTER_DATE_1}.body`),
+        title: i18n.t(`notification_after_date_${NOTIFICATION_SUBTYPE.AFTER_DATE_1}_title`),
+        body: i18n.t(`notification_after_date_${NOTIFICATION_SUBTYPE.AFTER_DATE_1}_body`),
         trigger: {
           seconds: calculateEveningTimeAfterDays(40),
           repeats: false,

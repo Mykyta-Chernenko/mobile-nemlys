@@ -75,25 +75,25 @@ export default function ({
               </View>
               <View style={{ marginTop: 5 }}>
                 <FontText h1>
-                  {i18n.t('date.stop_popup.title_1')}
+                  {i18n.t('date_stop_popup_title_1')}
                   <FontText h1 style={{ color: theme.colors.error }}>
-                    {i18n.t('date.stop_popup.title_2')}
+                    {i18n.t('date_stop_popup_title_2')}
                   </FontText>
-                  {i18n.t('date.stop_popup.title_3')}
+                  {i18n.t('date_stop_popup_title_3')}
                 </FontText>
                 <FontText style={{ color: theme.colors.grey5, marginTop: 20 }}>
-                  {i18n.t('date.stop_popup.subtitle')}
+                  {i18n.t('date_stop_popup_subtitle')}
                 </FontText>
               </View>
               <View style={{ marginTop: 5 }}>
                 <PrimaryButton
-                  title={i18n.t('date.stop_popup.confirm')}
+                  title={i18n.t('date_stop_popup_confirm')}
                   onPress={() => void onPress()}
                   style={{ marginBottom: 5 }}
                 ></PrimaryButton>
                 <SecondaryButton
                   buttonStyle={{ backgroundColor: theme.colors.grey1 }}
-                  title={i18n.t('date.stop_popup.cancel')}
+                  title={i18n.t('date_stop_popup_cancel')}
                   onPress={() => void onClosePressed()}
                   style={{ marginBottom: 5 }}
                 ></SecondaryButton>

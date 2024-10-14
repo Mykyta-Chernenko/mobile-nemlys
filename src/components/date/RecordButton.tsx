@@ -330,7 +330,7 @@ const RecordButton = React.forwardRef<RecordButtonRef, Props>((props, ref) => {
         return (
           <RecordingButtonTolltip
             onPress={onTooltipPress}
-            text={i18n.t('recording.tooltip.wanted_recording')}
+            text={i18n.t('recording_tooltip_wanted_recording')}
             color={theme.colors.primary}
           ></RecordingButtonTolltip>
         );
@@ -338,7 +338,7 @@ const RecordButton = React.forwardRef<RecordButtonRef, Props>((props, ref) => {
         return (
           <RecordingButtonTolltip
             onPress={onTooltipPress}
-            text={i18n.t('recording.tooltip.feature_intro')}
+            text={i18n.t('recording_tooltip_feature_intro')}
             color={theme.colors.warning}
           ></RecordingButtonTolltip>
         );
@@ -346,7 +346,7 @@ const RecordButton = React.forwardRef<RecordButtonRef, Props>((props, ref) => {
         return (
           <RecordingButtonTolltip
             onPress={onTooltipPress}
-            text={i18n.t('recording.tooltip.limit_reached')}
+            text={i18n.t('recording_tooltip_limit_reached')}
             color={theme.colors.error}
           ></RecordingButtonTolltip>
         );

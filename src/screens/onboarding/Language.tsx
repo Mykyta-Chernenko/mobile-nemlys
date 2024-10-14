@@ -88,7 +88,7 @@ export default function ({
     if (fromSettings) {
       navigation.navigate('Profile', { refreshTimeStamp: new Date().toISOString() });
     } else {
-      navigation.navigate('OnboardingInviteCode', { fromSettings: false });
+      navigation.navigate('DatingLength');
     }
   };
   return (
@@ -126,7 +126,7 @@ export default function ({
                   }
                 }}
               ></GoBackButton>
-              {!fromSettings && <Progress current={3} all={5}></Progress>}
+              {!fromSettings && <Progress current={3} all={7}></Progress>}
             </View>
             <View
               style={{
@@ -145,8 +145,24 @@ export default function ({
                 }}
                 h1
               >
-                {i18n.t('onboarding.language.title')}
+                {i18n.t('onboarding_language_title')}
               </FontText>
+              <View
+                style={{
+                  marginTop: 10,
+                  borderRadius: 20,
+                  backgroundColor: theme.colors.white,
+                  borderColor: theme.colors.black,
+                  borderWidth: 1,
+                  padding: 20,
+                  height: 70,
+                  flexDirection: 'row',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                }}
+              >
+                <FontText style={{ marginLeft: 10 }}>{getFullLanguageByLocale(language)}</FontText>
+              </View>
               <ScrollView style={{ marginTop: '5%', flex: 1 }}>
                 {choices.map((c, i) => (
                   <TouchableOpacity
@@ -155,8 +171,7 @@ export default function ({
                       marginTop: 10,
                       borderRadius: 20,
                       backgroundColor: theme.colors.white,
-                      borderColor:
-                        c.language === language ? theme.colors.black : theme.colors.white,
+                      borderColor: theme.colors.white,
                       borderWidth: 1,
                       padding: 20,
                       flexDirection: 'row',
@@ -169,10 +184,10 @@ export default function ({
                   </TouchableOpacity>
                 ))}
                 <View style={{ marginTop: 40 }}>
-                  <FontText h4>{i18n.t('onboarding.language.new_language')}</FontText>
+                  <FontText h4>{i18n.t('onboarding_language_new_language')}</FontText>
                   <StyledInput
                     containerStyle={{ marginTop: 10 }}
-                    placeholder={i18n.t('onboarding.language.write_language')}
+                    placeholder={i18n.t('onboarding_language_write_language')}
                     value={requestedLanguage}
                     autoCorrect={true}
                     onChangeText={(text) => setRequestedLanguage(text)}

@@ -48,21 +48,21 @@ export default function ({
   let textElement = <></>;
   switch (text) {
     case 1:
-      textElement = <>{i18n.t('onboarding.analyzing.text_1')}</>;
+      textElement = <>{i18n.t('onboarding_analyzing_2_text_1')}</>;
       break;
     case 2:
-      textElement = <>{i18n.t('onboarding.analyzing.text_2')}</>;
+      textElement = <>{i18n.t('onboarding_analyzing_2_text_2')}</>;
       break;
     case 3:
-      textElement = <>{i18n.t('onboarding.analyzing.text_3')}</>;
+      textElement = <>{i18n.t('onboarding_analyzing_2_text_3')}</>;
       break;
     case 4:
       textElement = (
         <>
           <FontText h1 style={{ color: theme.colors.primary }}>
-            {i18n.t('onboarding.analyzing.text_4_first')}
+            {i18n.t('onboarding_analyzing_2_text_4_first')}
           </FontText>
-          {i18n.t('onboarding.analyzing.text_4_second')}
+          {i18n.t('onboarding_analyzing_2_text_4_second')}
         </>
       );
       break;

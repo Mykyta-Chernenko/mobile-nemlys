@@ -36,16 +36,16 @@ export default function ({ onConfirm, onClose }: { onConfirm: () => void; onClos
               </View>
               <View style={{ marginTop: 5 }}>
                 <FontText h1>
-                  {i18n.t('recording.permission.title_1')}
+                  {i18n.t('recording_permission_title_1')}
 
                   <FontText h1 style={{ color: theme.colors.error }}>
-                    {i18n.t('recording.permission.title_2')}
+                    {i18n.t('recording_permission_title_2')}
                   </FontText>
                 </FontText>
               </View>
 
               <PrimaryButton
-                title={i18n.t('recording.permission.button')}
+                title={i18n.t('recording_permission_button')}
                 onPress={() => void onConfirm()}
                 style={{ marginBottom: 5 }}
               ></PrimaryButton>

@@ -43,9 +43,9 @@ export default function ({
           <View style={{ height: '20%' }}>
             <FontText h1 style={{ textAlign: 'center', color: theme.colors.white }}>
               <FontText h1 style={{ color: theme.colors.primary }}>
-                {i18n.t('reflection.finished_writing_title_1')}
+                {i18n.t('reflection_finished_writing_title_1')}
               </FontText>
-              {i18n.t('reflection.finished_writing_title_2')}
+              {i18n.t('reflection_finished_writing_title_2')}
             </FontText>
           </View>
 
@@ -54,7 +54,7 @@ export default function ({
             onPress={() => {
               navigation.navigate('ReflectionHome', { refreshTimeStamp: new Date().toISOString() });
             }}
-            title={i18n.t('reflection.finished_writing_button')}
+            title={i18n.t('reflection_finished_writing_button')}
           ></SecondaryButton>
         </View>
       </SafeAreaView>
