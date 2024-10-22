@@ -108,10 +108,8 @@ export async function retryRequestAsync<T>(
 
   for (let attempt = 1; attempt <= maxAttempts; attempt++) {
     try {
-      console.log('attemp');
       return await operation();
     } catch (error) {
-      console.log('errror');
       lastError = error;
       const status = error?.context?.status;
       void localAnalytics().logEvent(capitalize(name) + 'RetryOperationError', {
@@ -121,7 +119,7 @@ export async function retryRequestAsync<T>(
         error: error instanceof Error ? error.message : String(error),
         status,
       });
-      if (error?.context.status === 401) {
+      if (status === 401) {
         if (attempt === maxAttempts) {
           void localAnalytics().logEvent('RetryAuthErrorLogout', {
             screen: 'Retry',
