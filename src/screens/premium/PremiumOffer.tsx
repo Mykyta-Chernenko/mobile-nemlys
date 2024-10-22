@@ -10,6 +10,7 @@ import {
   logErrorsWithMessageWithoutAlert,
   logSupaErrors,
   retryAsync,
+  retryRequestAsync,
 } from '@app/utils/errors';
 import { supabase } from '@app/api/initSupabase';
 import { MainStackParamList } from '@app/types/navigation';
@@ -41,6 +42,7 @@ export default function ({
   const [productLoading, setProductLoading] = useState(false);
   const [buttonDisabled, setButtonDisabled] = useState(false);
   const [trialLength, setTrialLength] = useState(7);
+  const [canClose, setCanClose] = useState(false);
   type CurrentPremiumState =
     | 'premium'
     | 'trial'
@@ -50,7 +52,6 @@ export default function ({
     | 'daily'
     | 'introduction';
   const [currentPremiumState, setCurrentPremiumState] = useState<CurrentPremiumState>('daily');
-  const [eligibleForTrial, setEligebleForTrial] = useState(true);
 
   const [dailyTopics, setDailyTopics] = useState(0);
 
@@ -85,19 +86,22 @@ export default function ({
         dailyDatesLimit: dailySetCounts,
         todayDateCount,
         trialExpired,
-        trialStart,
+        forcePremium,
         afterTrialPremiumOffered,
-        premiumStart,
       } = await getPremiumDetails(authContext.userId!);
 
-      setDailyTopics(dailySetCounts);
+      setCanClose(!forcePremium);
+      if (forcePremium) {
+        void localAnalytics().logEvent('PremiumOfferForcedLoaded', {
+          screen: 'PremiumOffer',
+          action: 'ForcedLoaded',
+          userId: authContext.userId,
+          premiumState: currentPremiumState,
+          isOnboarding: route?.params?.isOnboarding,
+        });
+      }
 
-      // already has trial or premium
-      // if (trialStart || premiumStart) {
-      //   setEligebleForTrial(false);
-      // }
-      // no more in app trial, we have subscription trial
-      setEligebleForTrial(false);
+      setDailyTopics(dailySetCounts);
 
       if (premiumState === 'premium') {
         currentPremiumState = 'premium';
@@ -157,62 +161,46 @@ export default function ({
         screen: 'Premium',
         action: 'ContinuePressed',
         userId: authContext.userId,
-        eligibleForTrial,
       });
-      if (eligibleForTrial) {
-        void localAnalytics().logEvent('PremiumTrialStarted', {
+
+      try {
+        setSubscriptionLoading(true);
+        void localAnalytics().logEvent('PremiumPremiumStartInitiated', {
           screen: 'Premium',
-          action: 'TrialStarted',
+          action: 'PremiumStartInitiated',
           userId: authContext.userId,
+          plan: selectedPlan,
         });
-        const res = await supabase.functions.invoke('manage-premium', {
-          body: { action: 'start_trial' },
-        });
-        if (res.error) {
-          logErrorsWithMessage(res.error, 'Manage premium function returned error');
-          return;
-        }
-        navigation.navigate('PremiumSuccess', { state: 'trial_started' });
-      } else {
-        try {
-          setSubscriptionLoading(true);
-          void localAnalytics().logEvent('PremiumPremiumStartInitiated', {
-            screen: 'Premium',
-            action: 'PremiumStartInitiated',
-            userId: authContext.userId,
-            plan: selectedPlan,
+        const subscriptionPlan =
+          selectedPlan === 'Annual' ? yearlySubscriptionId : monthlySubscriptionId;
+
+        if (Platform.OS === 'ios') {
+          await RNIap.requestSubscription({
+            sku: subscriptionPlan,
           });
-          const subscriptionPlan =
-            selectedPlan === 'Annual' ? yearlySubscriptionId : monthlySubscriptionId;
+        } else if (Platform.OS === 'android') {
+          const subscriptions = await RNIap.getSubscriptions({
+            skus: [subscriptionPlan],
+          });
 
-          if (Platform.OS === 'ios') {
-            await RNIap.requestSubscription({
-              sku: subscriptionPlan,
-            });
-          } else if (Platform.OS === 'android') {
-            const subscriptions = await RNIap.getSubscriptions({
-              skus: [subscriptionPlan],
-            });
+          const subscription = subscriptions?.[0] as RNIap.SubscriptionAndroid;
+          const offerToken = subscription?.subscriptionOfferDetails?.[0]?.offerToken ?? '';
 
-            const subscription = subscriptions?.[0] as RNIap.SubscriptionAndroid;
-            const offerToken = subscription?.subscriptionOfferDetails?.[0]?.offerToken ?? '';
-
-            await RNIap.requestSubscription({
-              subscriptionOffers: [
-                {
-                  sku: subscriptionPlan,
-                  offerToken: offerToken,
-                },
-              ],
-              // TODO handle update of the subscription
-              // purchaseTokenAndroid:
-              //   '',
-              // prorationModeAndroid: RNIap.ProrationModesAndroid.IMMEDIATE_WITHOUT_PRORATION,
-            });
-          }
-        } catch (error) {
-          setSubscriptionLoading(false);
+          await RNIap.requestSubscription({
+            subscriptionOffers: [
+              {
+                sku: subscriptionPlan,
+                offerToken: offerToken,
+              },
+            ],
+            // TODO handle update of the subscription
+            // purchaseTokenAndroid:
+            //   '',
+            // prorationModeAndroid: RNIap.ProrationModesAndroid.IMMEDIATE_WITHOUT_PRORATION,
+          });
         }
+      } catch (error) {
+        setSubscriptionLoading(false);
       }
       await sleep(200);
     } finally {
@@ -224,6 +212,7 @@ export default function ({
   const yearlySubscriptionId = 'nemlys.subscription.yearly';
   const [monthlyPrice, setMonthlyPrice] = useState('');
   const [yearlyPrice, setYearlyPrice] = useState('');
+  const [partnerName, setPartnerName] = useState('');
 
   useEffect(() => {
     let purchaseUpdateSubscription;
@@ -452,7 +441,7 @@ export default function ({
             subscriptions,
           });
         };
-        await retryAsync('PremiumOfferGetProducts', func);
+        await retryRequestAsync('PremiumOfferGetProducts', func, authContext.userId!);
       } catch (err) {
         void localAnalytics().logEvent('PremiumOfferStoreProductsError', {
           screen: 'PremiumOffer',
@@ -498,17 +487,7 @@ export default function ({
     case 'daily':
       TitleComponent = (
         <>
-          {eligibleForTrial ? (
-            <>
-              {(currentPremiumState === 'introduction_limit' ||
-                currentPremiumState === 'daily_limit') && (
-                <>{i18n.t('premium_offer_reached_limit')}</>
-              )}
-              {i18n.t('premium_offer_try_unlimited_1')}
-            </>
-          ) : (
-            <>{i18n.t('premium_offer_premium_title')}</>
-          )}
+          {i18n.t('premium_offer_premium_title')}
           <FontText h1 style={{ color: theme.colors.primary }}>
             {i18n.t('premium_offer_try_unlimited_2')}
           </FontText>
@@ -526,12 +505,12 @@ export default function ({
       navigation.goBack();
       return;
     }
-    const showInterview =
-      !route?.params?.isOnboarding &&
-      (currentPremiumState === 'trial_expired' ||
-        (currentPremiumState !== 'premium' &&
-          currentPremiumState !== 'trial' &&
-          !eligibleForTrial));
+    // TODO do not show text interview for now, we do not use it
+    // const showInterview =
+    //   !route?.params?.isOnboarding &&
+    //   (currentPremiumState === 'trial_expired' ||
+    //     (currentPremiumState !== 'premium' && currentPremiumState !== 'trial'));
+    const showInterview = false;
     if (showInterview) {
       navigation.replace('InterviewText', { refreshTimeStamp: new Date().toISOString() });
     } else {
@@ -611,7 +590,16 @@ export default function ({
           }}
         >
           <View style={{ flexDirection: 'row', justifyContent: 'space-between' }}>
-            <CloseButton onPress={onClosePressed} theme="black"></CloseButton>
+            {canClose ? (
+              <CloseButton onPress={onClosePressed} theme="black"></CloseButton>
+            ) : (
+              <View
+                style={{
+                  width: getFontSizeForScreen('h1') * 1.1,
+                  height: getFontSizeForScreen('h2') * 1.1,
+                }}
+              ></View>
+            )}
             <View
               style={{
                 backgroundColor: 'rgba(255,255,255,0.1)',
@@ -701,10 +689,21 @@ export default function ({
                       );
                     })}
                   </View>
-                  <FontText h4>{i18n.t('premium_unlimited_topics_title')}</FontText>
-                  <FontText style={{ color: theme.colors.grey5, marginTop: 5 }}>
-                    {i18n.t('premium_unlimited_topics_explanation', { dailyTopics })}
-                  </FontText>
+                  {canClose ? (
+                    <>
+                      <FontText h4>{i18n.t('premium_unlimited_topics_title')}</FontText>
+                      <FontText style={{ color: theme.colors.grey5, marginTop: 5 }}>
+                        {i18n.t('premium_unlimited_topics_explanation', { dailyTopics })}
+                      </FontText>
+                    </>
+                  ) : (
+                    <>
+                      <FontText h4>{i18n.t('premium_forced_title', { partnerName })}</FontText>
+                      <FontText style={{ color: theme.colors.grey5, marginTop: 5 }}>
+                        {i18n.t('premium_forced_description')}
+                      </FontText>
+                    </>
+                  )}
                 </View>
               )}
             </View>
@@ -712,98 +711,77 @@ export default function ({
           {currentPremiumState !== 'premium' ? (
             <>
               <View style={{ marginBottom: 10, marginTop: 40 }}>
-                {eligibleForTrial ? (
-                  <>
-                    <SecondaryButton
-                      disabled={buttonDisabled}
-                      containerStyle={{ marginTop: 10 }}
-                      buttonStyle={{ width: '100%' }}
-                      onPress={() => void handleButtonPress()}
-                      title={
-                        eligibleForTrial
-                          ? i18n.t('premium_offer_trial_button')
-                          : i18n.t('premium_offer_premium_button')
-                      }
-                    ></SecondaryButton>
-                    <FontText
-                      style={{ color: theme.colors.grey3, textAlign: 'center', marginVertical: 20 }}
-                    >
-                      {i18n.t('premium_offer_trial_no_card')}
+                <>
+                  <FontText
+                    style={{ color: theme.colors.grey3, textAlign: 'center', marginVertical: 15 }}
+                  >
+                    {i18n.t('premium_offer_choose_plan')}
+                  </FontText>
+                  <PlanSelector
+                    selectedPlan={selectedPlan}
+                    handleToggle={handleToggle}
+                    monthlyPrice={monthlyPrice}
+                    yearlyPrice={yearlyPrice}
+                    yearlyTrialLength={yearlyTrialLength}
+                  ></PlanSelector>
+                  <SecondaryButton
+                    disabled={buttonDisabled}
+                    containerStyle={{ marginTop: 20 }}
+                    buttonStyle={{ width: '100%' }}
+                    onPress={() => void handleButtonPress()}
+                  >
+                    <FontText>
+                      {selectedPlan === 'Annual' ? yearlyTrialLength : i18n.t('continue')}
                     </FontText>
-                  </>
-                ) : (
-                  <>
+                  </SecondaryButton>
+                  <View
+                    style={{
+                      marginTop: 15,
+                      flexDirection: 'row',
+                      justifyContent: 'center',
+                      opacity: selectedPlan === 'Annual' ? 1 : 0,
+                    }}
+                  >
                     <FontText
-                      style={{ color: theme.colors.grey3, textAlign: 'center', marginVertical: 15 }}
-                    >
-                      {i18n.t('premium_offer_choose_plan')}
-                    </FontText>
-                    <PlanSelector
-                      selectedPlan={selectedPlan}
-                      handleToggle={handleToggle}
-                      monthlyPrice={monthlyPrice}
-                      yearlyPrice={yearlyPrice}
-                      yearlyTrialLength={yearlyTrialLength}
-                    ></PlanSelector>
-                    <SecondaryButton
-                      disabled={buttonDisabled}
-                      containerStyle={{ marginTop: 20 }}
-                      buttonStyle={{ width: '100%' }}
-                      onPress={() => void handleButtonPress()}
-                    >
-                      <FontText>
-                        {selectedPlan === 'Annual' ? yearlyTrialLength : i18n.t('continue')}
-                      </FontText>
-                    </SecondaryButton>
-                    <View
                       style={{
-                        marginTop: 15,
-                        flexDirection: 'row',
-                        justifyContent: 'center',
-                        opacity: selectedPlan === 'Annual' ? 1 : 0,
+                        fontSize: getFontSizeForScreen('small'),
+                        color: theme.colors.grey5,
                       }}
                     >
-                      <FontText
-                        style={{
-                          fontSize: getFontSizeForScreen('small'),
-                          color: theme.colors.grey5,
-                        }}
-                      >
-                        {i18n.t('premium_charged', {
-                          price: yearlyPrice,
-                        })}
-                      </FontText>
-                    </View>
-                    <View
-                      style={{
-                        marginTop: 30,
-                        flexDirection: 'column',
-                        justifyContent: 'center',
-                        alignItems: 'center',
+                      {i18n.t('premium_charged', {
+                        price: yearlyPrice,
+                      })}
+                    </FontText>
+                  </View>
+                  <View
+                    style={{
+                      marginTop: 30,
+                      flexDirection: 'column',
+                      justifyContent: 'center',
+                      alignItems: 'center',
+                    }}
+                  >
+                    <TouchableOpacity
+                      onPress={() => {
+                        void Linking.openURL('https://nemlys.com/terms');
                       }}
                     >
-                      <TouchableOpacity
-                        onPress={() => {
-                          void Linking.openURL('https://nemlys.com/terms');
-                        }}
-                      >
-                        <FontText style={{ color: theme.colors.grey3 }}>
-                          {i18n.t('premium_offer_terms')}
-                        </FontText>
-                      </TouchableOpacity>
-                      <FontText style={{ color: theme.colors.grey5 }}> </FontText>
-                      <TouchableOpacity
-                        onPress={() => {
-                          void Linking.openURL('https://nemlys.com/policy');
-                        }}
-                      >
-                        <FontText style={{ color: theme.colors.grey3 }}>
-                          {i18n.t('premium_offer_privacy')}
-                        </FontText>
-                      </TouchableOpacity>
-                    </View>
-                  </>
-                )}
+                      <FontText style={{ color: theme.colors.grey3 }}>
+                        {i18n.t('premium_offer_terms')}
+                      </FontText>
+                    </TouchableOpacity>
+                    <FontText style={{ color: theme.colors.grey5 }}> </FontText>
+                    <TouchableOpacity
+                      onPress={() => {
+                        void Linking.openURL('https://nemlys.com/policy');
+                      }}
+                    >
+                      <FontText style={{ color: theme.colors.grey3 }}>
+                        {i18n.t('premium_offer_privacy')}
+                      </FontText>
+                    </TouchableOpacity>
+                  </View>
+                </>
               </View>
             </>
           ) : (

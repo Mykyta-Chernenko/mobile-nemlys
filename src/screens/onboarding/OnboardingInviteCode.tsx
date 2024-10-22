@@ -226,7 +226,13 @@ export default function OnboardingInviteCode({ route, navigation }: OnboardingIn
               resizeMode="contain"
               source={require('../../../assets/images/buddy_invite_code.png')}
             />
-            <View style={{ flexGrow: 1, justifyContent: 'center', alignItems: 'center' }}>
+            <View
+              style={{
+                flexGrow: 1,
+                justifyContent: 'center',
+                alignItems: 'center',
+              }}
+            >
               <FontText h1 style={{ textAlign: 'center' }}>
                 {i18n.t('onboarding_invite_title_1')}
                 <FontText h1 style={{ color: theme.colors.error }}>
@@ -299,25 +305,29 @@ export default function OnboardingInviteCode({ route, navigation }: OnboardingIn
                     </FontText>
                     <View style={{ flex: 1, height: 1, backgroundColor: theme.colors.grey4 }} />
                   </View>
-
-                  <PrimaryButton
-                    title={i18n.t('onboarding_invite_enter_pairing')}
-                    onPress={handleEnterPairingCode}
-                    buttonStyle={{ backgroundColor: theme.colors.black, width: '100%' }}
-                  />
+                  <View style={{ width: '100%' }}>
+                    <PrimaryButton
+                      title={i18n.t('onboarding_invite_enter_pairing')}
+                      onPress={handleEnterPairingCode}
+                      buttonStyle={{
+                        backgroundColor: theme.colors.black,
+                      }}
+                    />
+                  </View>
                 </>
               )}
 
               {codeShared && (
-                <PrimaryButton
-                  title={i18n.t('continue')}
-                  onPress={handleContinue}
-                  buttonStyle={{
-                    backgroundColor: theme.colors.black,
-                    width: '100%',
-                    marginTop: 20,
-                  }}
-                />
+                <View style={{ width: '100%' }}>
+                  <PrimaryButton
+                    title={i18n.t('continue')}
+                    onPress={handleContinue}
+                    buttonStyle={{
+                      backgroundColor: theme.colors.black,
+                      marginTop: 20,
+                    }}
+                  />
+                </View>
               )}
             </View>
           </ScrollView>

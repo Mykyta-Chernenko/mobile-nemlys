@@ -26,7 +26,7 @@ import StyledInput from '@app/components/utils/StyledInput';
 import { OAuth } from '@app/components/auth/OAuth';
 
 WebBrowser.maybeCompleteAuthSession();
-
+// new comment
 export default function ({ navigation }: NativeStackScreenProps<AuthStackParamList, 'Login'>) {
   const [isContinueWithEmail, setIsContinueWithEmail] = useState<boolean>(false);
   const [email, setEmail] = useState<string>('');
@@ -57,6 +57,8 @@ export default function ({ navigation }: NativeStackScreenProps<AuthStackParamLi
           alert(i18n.t('login_invalid_username'));
         } else if (error2.message.includes('Password should be at least 6 characters')) {
           alert(i18n.t('login_password_is_too_short'));
+        } else if (error2.message.includes('Signup requires a valid password')) {
+          alert(i18n.t('login_password_is_incorrect'));
         } else if (error2.message.includes('Unable to validate email address: invalid format')) {
           alert(i18n.t('login_email_is_incorrect'));
         } else {

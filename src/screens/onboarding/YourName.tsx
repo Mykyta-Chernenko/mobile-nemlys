@@ -16,7 +16,7 @@ import { localAnalytics } from '@app/utils/analytics';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import StyledInput from '@app/components/utils/StyledInput';
 import { getNow } from '@app/utils/date';
-import { logout } from '../menu/Profile';
+import { logout } from '@app/utils/auth';
 
 export default function ({
   route,

@@ -25,7 +25,6 @@ import {
 import HomePremiumBanner, { HomePremiumBannerRef } from '@app/components/premium/HomePremiumBanner';
 import { calculateEveningTimeAfterDays, getDateFromString, getNow } from '@app/utils/date';
 import Menu from '@app/components/menu/Menu';
-import { logout } from './Profile';
 import { recreateNotificationList } from '@app/utils/notification';
 import { shuffle } from '@app/utils/array';
 import _ from 'lodash';
@@ -34,6 +33,7 @@ import HomeHeader from '@app/screens/menu/HomeHeader';
 import { useDatePolling } from '@app/api/getNewActiveDates';
 import { useIsFocused } from '@react-navigation/native';
 import Constants from 'expo-constants';
+import { logout } from '@app/utils/auth';
 
 export function getJobs(): { slug: JobSlug; title: string; icon: (props: any) => JSX.Element }[] {
   return [

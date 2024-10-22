@@ -71,6 +71,11 @@ const HomePremiumBanner = React.forwardRef<HomePremiumBannerRef, Props>((props, 
             isOnboarding: false,
           });
           return;
+        } else if (premiumDetails.forcePremium) {
+          navigation.navigate('PremiumOffer', {
+            refreshTimeStamp: new Date().toISOString(),
+            isOnboarding: false,
+          });
         }
         setPremiumState(premiumDetails.premiumState);
         setDailyDatesLimit(premiumDetails.dailyDatesLimit);

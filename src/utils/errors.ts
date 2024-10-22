@@ -4,6 +4,8 @@ import { UNEXPECTED_ERROR } from './constants';
 import { localAnalytics } from './analytics';
 import { capitalize } from './strings';
 import { PostgrestError } from '@supabase/supabase-js';
+import { supabase } from '@app/api/initSupabase';
+import { logout } from '@app/utils/auth';
 
 export function logSupaErrors(e: PostgrestError) {
   logErrorsWithMessage(e, `${e.code}:${e.message}:${e.details}:${e.hint}`);
@@ -91,6 +93,61 @@ export async function retryAsync<T>(
         attempt: attempt,
         error: error instanceof Error ? error.message : String(error),
       });
+    }
+  }
+  throw lastError;
+}
+
+export async function retryRequestAsync<T>(
+  name: string,
+  operation: () => Promise<T>,
+  userId: string,
+  maxAttempts = 3,
+) {
+  let lastError: any;
+
+  for (let attempt = 1; attempt <= maxAttempts; attempt++) {
+    try {
+      console.log('attemp');
+      return await operation();
+    } catch (error) {
+      console.log('errror');
+      lastError = error;
+      const status = error?.context?.status;
+      void localAnalytics().logEvent(capitalize(name) + 'RetryOperationError', {
+        screen: name,
+        action: 'RetryOperationError',
+        attempt: attempt,
+        error: error instanceof Error ? error.message : String(error),
+        status,
+      });
+      if (error?.context.status === 401) {
+        if (attempt === maxAttempts) {
+          void localAnalytics().logEvent('RetryAuthErrorLogout', {
+            screen: 'Retry',
+            action: 'QuestionGeneratedAuthErrorLogout',
+            error: error,
+            userId,
+            status,
+          });
+          void logout();
+          void logout();
+          return;
+        }
+        const { error: authError } = await supabase.auth.refreshSession();
+        if (authError) {
+          void localAnalytics().logEvent('RetryRefreshAuthErrorLogout', {
+            screen: 'Retry',
+            action: 'QuestionGeneratedAuthErrorLogout',
+            error: authError,
+            userId,
+            status,
+          });
+          void logout();
+          void logout();
+          return;
+        }
+      }
     }
   }
   throw lastError;

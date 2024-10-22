@@ -1,7 +1,7 @@
 import React, { useContext, useEffect, useRef, useState } from 'react';
 import { MainStackParamList } from '@app/types/navigation';
 import { NativeStackScreenProps } from '@react-navigation/native-stack';
-import { AUTH_STORAGE_KEY, supabase } from '@app/api/initSupabase';
+import { supabase } from '@app/api/initSupabase';
 import { Loading } from '@app/components/utils/Loading';
 import { logSupaErrors } from '@app/utils/errors';
 import { AuthContext } from '@app/provider/AuthProvider';
@@ -12,24 +12,17 @@ import ProfileBuddyCorner from '@app/icons/profile_buddy_corner';
 import StarRating from '@app/icons/star_rating';
 import TopRightArrow from '@app/icons/top_right_arrow';
 import { getFullLanguageByLocale, i18n } from '@app/localization/i18n';
-import { analyticsForgetUser, localAnalytics } from '@app/utils/analytics';
+import { localAnalytics } from '@app/utils/analytics';
 
 import Menu from '@app/components/menu/Menu';
 import { APIUserProfile, SupabaseAnswer } from '@app/types/api';
 import * as StoreReview from 'expo-store-review';
-import AsyncStorage from '@react-native-async-storage/async-storage';
 import Feedback from '../settings/Feedback';
 import { SettingsButton } from './SettingsButton';
 import { PrimaryButton } from '@app/components/buttons/PrimaryButtons';
 import { getNow } from '@app/utils/date';
 import AnswerNoPartnerWarning from '@app/components/answers/AnswerNoPartnerWarning';
-
-export const logout = async () => {
-  await supabase.auth.signOut();
-  await analyticsForgetUser();
-  // just to make sure in case something goes wrong
-  await AsyncStorage.removeItem(AUTH_STORAGE_KEY);
-};
+import { logout } from '@app/utils/auth';
 
 export default function ({
   route,

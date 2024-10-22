@@ -22,13 +22,7 @@ export default function (props: { onPressForward: (feedback: number) => void }) 
   );
 
   const choices = [
-    {
-      value: 4,
-      icon: Feedback4Icon,
-      title:
-        i18n.t('date_feedback_with_partner_choice_4') +
-        i18n.t('date_feedback_with_partner_choice_4'),
-    },
+    { value: 4, icon: Feedback4Icon, title: i18n.t('date_feedback_with_partner_choice_4') },
     { value: 3, icon: Feedback3Icon, title: i18n.t('date_feedback_with_partner_choice_3') },
     { value: 2, icon: Feedback2Icon, title: i18n.t('date_feedback_with_partner_choice_2') },
     { value: 1, icon: Feedback1Icon, title: i18n.t('date_feedback_with_partner_choice_1') },

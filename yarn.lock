@@ -5065,11 +5065,6 @@ expo-auth-session@~5.5.2:
     expo-web-browser "~13.0.0"
     invariant "^2.2.4"
 
-expo-av@~14.0.5:
-  version "14.0.7"
-  resolved "https://registry.yarnpkg.com/expo-av/-/expo-av-14.0.7.tgz#deb967325e58b2c4d408f5d76a7ccb269442cba1"
-  integrity sha512-FvKZxyy+2/qcCmp+e1GTK3s4zH8ZO1RfjpqNxh7ARlS1oH8HPtk1AyZAMo52tHz3yQ3UIqxQ2YbI9CFb4065lA==
-
 expo-build-properties@~0.12.3:
   version "0.12.3"
   resolved "https://registry.npmjs.org/expo-build-properties/-/expo-build-properties-0.12.3.tgz"

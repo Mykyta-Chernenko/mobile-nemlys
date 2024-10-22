@@ -1,4 +1,3 @@
-import { APIUserPremium, SupabaseAnswer } from '@app/types/api';
 import { supabase } from './initSupabase';
 import { getDateFromString, getNow } from '@app/utils/date';
 import moment from 'moment';
@@ -6,6 +5,7 @@ import moment from 'moment';
 export type PremiumState = 'free' | 'trial' | 'new' | 'premium';
 export type PremiumDetails = {
   premiumState: PremiumState;
+  forcePremium: boolean;
   trialExpired: boolean;
   trialStart?: moment.Moment;
   trialFinish?: moment.Moment;
@@ -16,45 +16,37 @@ export type PremiumDetails = {
   trialDaysLeft?: number;
   totalDateCount: number;
   todayDateCount: number;
-  freeRecordingMinutes: number;
-  premiumRecordingMinutes: number;
 };
-export type PremiumDetailsWithRecording = PremiumDetails & {
-  // amount of recording second left for a date
-  recordingSecondsLeft: number;
-};
+
 export async function getPremiumDetails(userId: string): Promise<PremiumDetails> {
-  const [dateResponse, premiumDetailsResponse] = await Promise.all([
+  const [dateResponse, premiumResponse, profileResponse, technicalResponse] = await Promise.all([
     supabase
       .from('date')
       .select('id, created_at')
-      .order('created_at', { ascending: true })
       .eq('active', false)
-      .eq('created_by', userId),
+      .eq('created_by', userId)
+      .order('created_at', { ascending: true }),
     supabase.from('user_premium').select('*').eq('user_id', userId).single(),
+    supabase.from('user_profile').select('couple!inner(created_at)').eq('user_id', userId).single(),
+    supabase
+      .from('user_technical_details')
+      .select('after_trial_premium_offered')
+      .eq('user_id', userId)
+      .single(),
   ]);
 
-  const { data: dateData, error: dateError } = dateResponse as SupabaseAnswer<
-    { id: string; created_at: string }[]
-  >;
-  if (dateError) {
-    throw dateError;
-  }
+  if (dateResponse.error) throw dateResponse.error;
+  if (premiumResponse.error) throw premiumResponse.error;
+  if (profileResponse.error) throw profileResponse.error;
+  if (technicalResponse.error) throw technicalResponse.error;
+
+  const dateData = dateResponse.data;
+  const premiumDetails = premiumResponse.data;
+  const profileDetails = profileResponse.data;
+  const techDetails = technicalResponse.data;
+
   const dateCount = dateData.length;
 
-  const { data: premiumDetails, error: premiumDetailsError } =
-    premiumDetailsResponse as SupabaseAnswer<APIUserPremium>;
-  if (premiumDetailsError) {
-    throw premiumDetailsError;
-  }
-  const { data: techDetails, error: techDetailsError } = await supabase
-    .from('user_technical_details')
-    .select('after_trial_premium_offered')
-    .eq('user_id', userId)
-    .single();
-  if (techDetailsError) {
-    throw techDetailsError;
-  }
   let premiumState: PremiumState = 'free';
   if (
     premiumDetails.is_premium &&
@@ -69,14 +61,10 @@ export async function getPremiumDetails(userId: string): Promise<PremiumDetails>
   ) {
     premiumState = 'trial';
   } else if (dateCount < premiumDetails.introduction_sets_count) {
-    // revert to state 'new' for having first 5 intro sets  without limit
-    premiumState = 'free';
-  } else {
     premiumState = 'free';
   }
+
   const dailyDatesLimit = premiumDetails.daily_sets_count;
-  // revert for having first 5 intro sets without limit
-  // const introductionDatesLimit = premiumDetails.introduction_sets_count;
   const introductionDatesLimit = 0;
   const trialStart = premiumDetails.trial_start
     ? getDateFromString(premiumDetails.trial_start)
@@ -94,12 +82,16 @@ export async function getPremiumDetails(userId: string): Promise<PremiumDetails>
 
   const totalDateCount = dateCount;
 
-  const todayDateCount = dateData
-    // revert for having first 5 intro sets without limit
-    // .slice(premiumDetails.introduction_sets_count - 1)
-    .filter((x) => getDateFromString(x.created_at).isSame(getNow(), 'day')).length;
-  const freeRecordingMinutes = premiumDetails.free_recording_minutes;
-  const premiumRecordingMinutes = premiumDetails.premium_recording_minutes;
+  const todayDateCount = dateData.filter((x) =>
+    getDateFromString(x.created_at).isSame(getNow(), 'day'),
+  ).length;
+
+  const forcePremium =
+    !(premiumState === 'premium' || premiumState === 'trial') &&
+    getDateFromString(profileDetails.couple!.created_at).isAfter(
+      getDateFromString('2024-10-20T08:00:00Z'),
+    );
+
   return {
     premiumState,
     trialStart,
@@ -112,46 +104,6 @@ export async function getPremiumDetails(userId: string): Promise<PremiumDetails>
     trialDaysLeft,
     totalDateCount,
     todayDateCount,
-    freeRecordingMinutes,
-    premiumRecordingMinutes,
-  };
-}
-
-export async function getPremiumDetailsWithRecording(
-  userId: string,
-): Promise<PremiumDetailsWithRecording> {
-  const details = await getPremiumDetails(userId);
-  const isPremium = details.premiumState === 'premium' || details.premiumState === 'trial';
-  let recordingSecondsLeft = isPremium
-    ? details.premiumRecordingMinutes * 60
-    : details.freeRecordingMinutes * 60;
-  // if not premium, we deduct the amount of seconds spent today
-  if (!isPremium) {
-    const todayStart = getNow().startOf('day');
-    const now = getNow();
-
-    const { data, error } = await supabase
-      .from('discussion_summary')
-      .select('seconds_spent')
-      .gte('created_at', todayStart.toISOString())
-      .lte('created_at', now.toISOString());
-    if (error) {
-      throw error;
-    }
-
-    const totalSecondsSpent = data
-      .map((x) => x.seconds_spent)
-      .reduce((accumulator, currentValue) => {
-        return accumulator + currentValue;
-      }, 0);
-    recordingSecondsLeft -= totalSecondsSpent;
-    if (recordingSecondsLeft < 10) {
-      recordingSecondsLeft = 0;
-    }
-  }
-
-  return {
-    ...details,
-    recordingSecondsLeft,
+    forcePremium,
   };
 }

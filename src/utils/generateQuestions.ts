@@ -6,7 +6,7 @@ import { localAnalytics } from '@app/utils/analytics';
 import { JobSlug } from '@app/types/domain';
 import { MainStackParamList } from '@app/types/navigation';
 import { NativeStackNavigationProp } from '@react-navigation/native-stack';
-import { logout } from '../screens/menu/Profile';
+import { logout } from '@app/utils/auth';
 
 async function attemptQuestionGeneration(dateId: number) {
   const [res, _] = await Promise.all([
@@ -80,10 +80,19 @@ export async function generateQuestions(
       });
       return;
     }
-
-    if (res.error.status === 401) {
+    const errorStatus = res?.error?.context?.status;
+    if (errorStatus === 401) {
       unauthorizedCount++;
-      if (unauthorizedCount === maxRetries) {
+      const { error: authError } = await supabase.auth.refreshSession();
+      if (authError) {
+        void localAnalytics().logEvent('DateQuestionGeneratedAuthErrorLogout', {
+          screen: 'Date',
+          action: 'QuestionGeneratedAuthErrorLogout',
+          userId: userId,
+          error: authError,
+        });
+      }
+      if (authError || unauthorizedCount === maxRetries) {
         await logout();
         await logout();
       }
@@ -97,15 +106,18 @@ export async function generateQuestions(
         screen: 'Date',
         action: 'QuestionGeneratedErrorGoHome',
         userId: userId,
+        error: res.error,
+        status: errorStatus,
       });
       navigation.replace('Home', { refreshTimeStamp: new Date().toISOString() });
       return;
     }
-    await sleep(1000 * attemptCount);
     void localAnalytics().logEvent('DateQuestionGeneratedRetry', {
       screen: 'Date',
       action: 'QuestionGeneratedRetry',
       attemptCount: attemptCount + 1,
+      error: res.error,
+      status: errorStatus,
     });
   }
 }

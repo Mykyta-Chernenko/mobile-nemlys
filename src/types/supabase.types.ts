@@ -1386,13 +1386,11 @@ export type Database = {
         Row: {
           created_at: string;
           daily_sets_count: number;
-          free_recording_minutes: number | null;
           id: number;
           introduction_sets_count: number;
           is_premium: boolean;
           is_trial: boolean;
           premium_finish: string | null;
-          premium_recording_minutes: number | null;
           premium_start: string | null;
           transaction: string | null;
           trial_finish: string | null;
@@ -1404,13 +1402,11 @@ export type Database = {
         Insert: {
           created_at?: string;
           daily_sets_count?: number;
-          free_recording_minutes?: number | null;
           id?: number;
           introduction_sets_count?: number;
           is_premium?: boolean;
           is_trial?: boolean;
           premium_finish?: string | null;
-          premium_recording_minutes?: number | null;
           premium_start?: string | null;
           transaction?: string | null;
           trial_finish?: string | null;
@@ -1422,13 +1418,11 @@ export type Database = {
         Update: {
           created_at?: string;
           daily_sets_count?: number;
-          free_recording_minutes?: number | null;
           id?: number;
           introduction_sets_count?: number;
           is_premium?: boolean;
           is_trial?: boolean;
           premium_finish?: string | null;
-          premium_recording_minutes?: number | null;
           premium_start?: string | null;
           transaction?: string | null;
           trial_finish?: string | null;
