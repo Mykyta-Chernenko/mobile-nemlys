@@ -72,10 +72,18 @@ class CustomApi:
             return data['data'][0]['id']
         return None
 
+    def delete_app_version(self, version_id):
+        delete_url = f"{self.BASE_URL}/appStoreVersions/{version_id}"
+        delete_response = requests.delete(delete_url, headers=self._get_headers())
+        delete_response.raise_for_status()
+
     def create_or_update_app_version(self, app_id: str, version: str) -> str:
         existing_version_id = self.get_app_version(app_id, version)
         if existing_version_id:
-            print(f"Version {version} already exists. Updating existing version.")
+#             print(f"Version {version} already exists {existing_version_id}. removing existing version.")
+#             self.delete_app_version(existing_version_id)
+
+            print(f"Version {version} already exists {existing_version_id}. Updating existing version.")
             return existing_version_id
 
         url = f"{self.BASE_URL}/appStoreVersions"

@@ -333,30 +333,9 @@ export default function ({
         return;
       }
     }
-    const userProfileData = await supabase
-      .from('user_profile')
-      .select('showed_rating')
-      .eq('user_id', authContext.userId!)
-      .single();
-    if (userProfileData.error) {
-      logSupaErrors(userProfileData.error);
-      return;
-    }
-    if (
-      dateCount > 1 &&
-      (feedback || 0) > 2 &&
-      (!userProfileData.data.showed_rating || dateCount % 5 === 0)
-    ) {
+    if (dateCount == 1 || dateCount == 6 || (dateCount - 6) % 10 === 0) {
       if (await StoreReview.hasAction()) {
         await StoreReview.requestReview();
-        const updateProfile = await supabase
-          .from('user_profile')
-          .update({ showed_rating: true, updated_at: getNow().toISOString() })
-          .eq('user_id', authContext.userId!);
-        if (updateProfile.error) {
-          logSupaErrors(updateProfile.error);
-          return;
-        }
       }
     }
 
@@ -379,14 +358,7 @@ export default function ({
 
     if (canStartDate) {
       setLoading(true);
-      const dateRes = await supabase
-        .from('date')
-        .update({ active: false, updated_at: getNow().toISOString() })
-        .eq('id', id);
-      if (dateRes.error) {
-        logSupaErrors(dateRes.error);
-        return;
-      }
+      await finishSaveDate(undefined);
       navigation.navigate('GeneratingQuestion', {
         withPartner: !!currentDate!.with_partner,
         topic: currentDate!.topic,
