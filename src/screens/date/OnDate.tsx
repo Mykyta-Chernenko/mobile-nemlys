@@ -336,6 +336,10 @@ export default function ({
     if (dateCount == 1 || dateCount == 6 || (dateCount - 6) % 10 === 0) {
       if (await StoreReview.hasAction()) {
         await StoreReview.requestReview();
+        await supabase
+          .from('user_profile')
+          .update({ showed_rating: true, updated_at: getNow().toISOString() })
+          .eq('user_id', authContext.userId!);
       }
     }
 

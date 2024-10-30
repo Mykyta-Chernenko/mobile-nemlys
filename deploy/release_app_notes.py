@@ -227,6 +227,9 @@ def update_app_store(bundle_id: str, version: str, release_notes: Dict[str, str]
             lang, notes = lang_notes
             try:
                 cleaned_notes = remove_emojis(notes)
+                if len(cleaned_notes) < 10:
+                    print('WARNING, LANG REMOVED')
+                    print(lang, cleaned_notes)
                 api.update_app_version_localization(version_id, lang, cleaned_notes)
             except Exception as e:
                 print(f"Error updating localization for {lang}: {str(e)}")
@@ -250,6 +253,8 @@ def remove_emojis(text):
        u"\U0001F300-\U0001F5FF"  # symbols & pictographs
         u"\U0001F680-\U0001F6FF"  # transport & map symbols
         u"\U0001F1E0-\U0001F1FF"  # flags (iOS)
+        u"\U00002600-\U000026FF" # Miscellaneous symbols (includes ⭐✨☀️etc)
+        u"\U00002700-\U000027BF"
         "]+", flags=re.UNICODE)
     return emoji_pattern.sub(r'', text)
 def main():

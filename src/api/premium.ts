@@ -19,7 +19,7 @@ export type PremiumDetails = {
 };
 
 export async function getPremiumDetails(userId: string): Promise<PremiumDetails> {
-  const [dateResponse, premiumResponse, profileResponse, technicalResponse] = await Promise.all([
+  const [dateResponse, premiumResponse, technicalResponse] = await Promise.all([
     supabase
       .from('date')
       .select('id, created_at')
@@ -27,7 +27,6 @@ export async function getPremiumDetails(userId: string): Promise<PremiumDetails>
       .eq('created_by', userId)
       .order('created_at', { ascending: true }),
     supabase.from('user_premium').select('*').eq('user_id', userId).single(),
-    supabase.from('user_profile').select('couple!inner(created_at)').eq('user_id', userId).single(),
     supabase
       .from('user_technical_details')
       .select('after_trial_premium_offered')
@@ -37,12 +36,10 @@ export async function getPremiumDetails(userId: string): Promise<PremiumDetails>
 
   if (dateResponse.error) throw dateResponse.error;
   if (premiumResponse.error) throw premiumResponse.error;
-  if (profileResponse.error) throw profileResponse.error;
   if (technicalResponse.error) throw technicalResponse.error;
 
   const dateData = dateResponse.data;
   const premiumDetails = premiumResponse.data;
-  const profileDetails = profileResponse.data;
   const techDetails = technicalResponse.data;
 
   const dateCount = dateData.length;
@@ -86,11 +83,7 @@ export async function getPremiumDetails(userId: string): Promise<PremiumDetails>
     getDateFromString(x.created_at).isSame(getNow(), 'day'),
   ).length;
 
-  const forcePremium =
-    !(premiumState === 'premium' || premiumState === 'trial') &&
-    getDateFromString(profileDetails.couple!.created_at).isAfter(
-      getDateFromString('2024-10-20T08:00:00Z'),
-    );
+  const forcePremium = false;
 
   return {
     premiumState,
