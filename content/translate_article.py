@@ -167,7 +167,7 @@ def build_translation_prompt(content_item: Dict[str, Any], target_language: str)
         ],
         "title": "Trust Through Open Communication",
         "test_question": "What is essential for building trust in communication?",
-        "correct_answers": "Consistently honest and transparent dialogue",
+        "correct_answer": "Consistently honest and transparent dialogue",
         "all_answers": [
             "Sharing your favorite movies regularly",
             "Consistently honest and transparent dialogue",
@@ -186,7 +186,7 @@ def build_translation_prompt(content_item: Dict[str, Any], target_language: str)
         ],
         "title": "Confianza a través de la comunicación abierta",
         "test_question": "¿Qué es esencial para generar confianza en la comunicación?",
-        "correct_answers": "Diálogo constante y transparente",
+        "correct_answer": "Diálogo constante y transparente",
         "all_answers": [
             "Compartir tus películas favoritas regularmente",
             "Diálogo constante y transparente",
@@ -207,7 +207,7 @@ def build_translation_prompt(content_item: Dict[str, Any], target_language: str)
         ],
         "title": "Consistency: Trust's Best Friend",
         "test_question": "Why is consistency important in building trust?",
-        "correct_answers": "It creates predictability and reliability in the relationship",
+        "correct_answer": "It creates predictability and reliability in the relationship",
         "all_answers": [
             "It makes the relationship feel monotonous",
             "It allows partners to surprise each other often",
@@ -226,7 +226,7 @@ def build_translation_prompt(content_item: Dict[str, Any], target_language: str)
         ],
         "title": "Послідовність: найкращий друг довіри",
         "test_question": "Чому послідовність важлива у побудові довіри?",
-        "correct_answers": "Це створює передбачуваність і надійність у відносинах",
+        "correct_answer": "Це створює передбачуваність і надійність у відносинах",
         "all_answers": [
             "Це робить відносини одноманітними",
             "Це дає партнерам змогу часто дивувати одне одного",
@@ -350,13 +350,13 @@ def call_gpt_translation(content_item: Dict[str, Any], target_language: str) -> 
             translated_data["slug"] = content_item.get("slug", "")
 
             # 3. Ensure correct_answers is in all_answers
-            if "correct_answers" not in translated_data or "all_answers" not in translated_data or "test_question" not in translated_data or "content" not in translated_data or "title" not in translated_data:
+            if "correct_answer" not in translated_data or "all_answers" not in translated_data or "test_question" not in translated_data or "content" not in translated_data or "title" not in translated_data:
                 raise Exception("correct_answers or all_answers or test_question or content or title is not present")
 
             if len(translated_data["all_answers"]) != len(content_item['all_answers']):
                 raise Exception("Translated 'all_answers' was not same size")
 
-            if translated_data["correct_answers"] not in translated_data["all_answers"]:
+            if translated_data["correct_answer"] not in translated_data["all_answers"]:
                 raise Exception("Translated 'correct_answers' was not in 'all_answers'")
 
             if "<br>" not in translated_data["content"]:
