@@ -1,0 +1,242 @@
+{
+  "title": "Navigating Difficult Conversations Together",
+  "description": "This journey is designed to guide you and your partner through the challenges of discussing sensitive topics in your relationship. Each day, you'll explore different aspects of communication, from establishing a solid foundation to tackling deeply personal subjects. By the end of this journey, you'll have the tools and confidence to engage in meaningful discussions, strengthening your emotional connection and mutual understanding.",
+  "subtopics": [
+    {
+      "title": "Establishing Open Communication",
+      "description": "Learn the importance of open communication and how to create a safe space for discussing hard topics. This subtopic will introduce basic communication strategies.",
+      "content": [
+        {
+          "type": "quiz",
+          "title": "Discover Your Communication Style",
+          "id": 2071
+        },
+        {
+          "type": "question",
+          "title": "How do you prefer to communicate your needs and desires?",
+          "id": 1004
+        },
+        {
+          "type": "article",
+          "title": "Mastering Communication Techniques",
+          "id": 5005
+        },
+        {
+          "type": "game",
+          "title": "Communication Clues",
+          "id": 3005
+        },
+        {
+          "type": "checkup",
+          "title": "Mastering Communication Skills",
+          "id": 6002
+        },
+        {
+          "type": "question",
+          "title": "What's your favorite memory of us having a great conversation?",
+          "id": 1046
+        },
+        {
+          "type": "exercise",
+          "title": "Active Listening Practice",
+          "id": 4010
+        }
+      ]
+    },
+    {
+      "title": "Understanding Different Perspectives",
+      "description": "Explore the significance of empathy by understanding your partner's perspective on difficult topics. Discuss methods to approach disagreements constructively.",
+      "content": [
+        {
+          "type": "quiz",
+          "title": "Empathy Resonance Style",
+          "id": 2112
+        },
+        {
+          "type": "question",
+          "title": "How can we ensure both of us feel heard during a disagreement?",
+          "id": 1135
+        },
+        {
+          "type": "article",
+          "title": "Enhancing Emotional Intimacy Together",
+          "id": 5006
+        },
+        {
+          "type": "game",
+          "title": "Deep Dive Dialogues",
+          "id": 3006
+        },
+        {
+          "type": "checkup",
+          "title": "Empathy Adventure",
+          "id": 6000
+        },
+        {
+          "type": "question",
+          "title": "How do you prefer to approach conversations when emotions run high?",
+          "id": 1222
+        },
+        {
+          "type": "exercise",
+          "title": "Difference Identification and Acceptance",
+          "id": 4052
+        }
+      ]
+    },
+    {
+      "title": "Navigating Jealousy and Trust",
+      "description": "Delve into feelings of jealousy and trust in your relationship. This subtopic focuses on how to discuss these tough feelings without conflict.",
+      "content": [
+        {
+          "type": "quiz",
+          "title": "Trust Building Style Quiz",
+          "id": 2024
+        },
+        {
+          "type": "question",
+          "title": "Have you ever felt jealous in our relationship? How did you handle it?",
+          "id": 1020
+        },
+        {
+          "type": "article",
+          "title": "Building Trust Through Intimacy",
+          "id": 5020
+        },
+        {
+          "type": "game",
+          "title": "Trust Talk",
+          "id": 3007
+        },
+        {
+          "type": "checkup",
+          "title": "Trusting Truths",
+          "id": 6020
+        },
+        {
+          "type": "question",
+          "title": "Do you think cheating only relate to physical things or is there emotional cheating as well?",
+          "id": 1379
+        },
+        {
+          "type": "exercise",
+          "title": "Rebuilding Trust Session",
+          "id": 4126
+        }
+      ]
+    },
+    {
+      "title": "Setting Boundaries in Discussions",
+      "description": "Learn how to establish boundaries when discussing sensitive subjects to ensure both partners feel comfortable and respected during conversations.",
+      "content": [
+        {
+          "type": "quiz",
+          "title": "Boundary Communication Style",
+          "id": 2148
+        },
+        {
+          "type": "question",
+          "title": "Are there any boundaries around work that you'd like to set?",
+          "id": 1258
+        },
+        {
+          "type": "game",
+          "title": "Communication Carousel",
+          "id": 3008
+        },
+        {
+          "type": "checkup",
+          "title": "Boundary Respect Style",
+          "id": 2185
+        },
+        {
+          "type": "question",
+          "title": "What's one boundary you'd like to set to keep our relationship healthy?",
+          "id": 1818
+        },
+        {
+          "type": "exercise",
+          "title": "Boundaries Practice",
+          "id": 4025
+        }
+      ]
+    },
+    {
+      "title": "Addressing Past Trauma",
+      "description": "Tackle conversations surrounding past traumas and how they may impact your relationship. This subtopic provides strategies for discussing these challenging topics delicately.",
+      "content": [
+        {
+          "type": "quiz",
+          "title": "Life Story Style",
+          "id": 2203
+        },
+        {
+          "type": "question",
+          "title": "Have you had any childhood experiences that you can call traumatic? How has it affected you?",
+          "id": 1118
+        },
+        {
+          "type": "article",
+          "title": "Navigating Emotional Waters Together",
+          "id": 5012
+        },
+        {
+          "type": "checkup",
+          "title": "Exploring Childhood Memories",
+          "id": 6030
+        },
+        {
+          "type": "question",
+          "title": "Have you had any unresolved issues with your parents?",
+          "id": 1175
+        },
+        {
+          "type": "exercise",
+          "title": "Sensitive Subjects Dialogue Practice",
+          "id": 4017
+        }
+      ]
+    },
+    {
+      "title": "Conflict Resolution Strategies",
+      "description": "Develop your skills in resolving conflicts that arise during discussions. Explore techniques to turn arguments into opportunities for growth and mutual understanding.",
+      "content": [
+        {
+          "type": "quiz",
+          "title": "Your Conflict Style",
+          "id": 2102
+        },
+        {
+          "type": "question",
+          "title": "How can we turn our arguments into opportunities for growth?",
+          "id": 1215
+        },
+        {
+          "type": "article",
+          "title": "Effective Conflict Resolution Strategies",
+          "id": 5037
+        },
+        {
+          "type": "game",
+          "title": "Problem-Solving Pals",
+          "id": 3010
+        },
+        {
+          "type": "checkup",
+          "title": "Conflict Resolution Styles",
+          "id": 6060
+        },
+        {
+          "type": "question",
+          "title": "How do you prefer to resolve disagreements: calm discussion or taking a short break?",
+          "id": 1230
+        },
+        {
+          "type": "exercise",
+          "title": "Conflict Resolution Strategies Practice",
+          "id": 4076
+        }
+      ]
+    }
+  ]
+}

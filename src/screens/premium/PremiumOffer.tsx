@@ -256,7 +256,10 @@ export default function ({
                   }
                 };
                 await retryAsync('PremiumOfferManagePremiumFunc', func);
-                navigation.navigate('PremiumSuccess', { state: 'premium_started' });
+                navigation.navigate('PremiumSuccess', {
+                  state: 'premium_started',
+                  isOnboarding: route.params.isOnboarding,
+                });
               } catch (e) {
                 logErrorsWithMessage(e, (e?.message as string) || '');
               }
@@ -502,7 +505,13 @@ export default function ({
       userId: authContext.userId,
     });
     if (route.params.shouldGoBack) {
-      navigation.goBack();
+      if (navigation.canGoBack()) {
+        navigation.goBack();
+      } else {
+        navigation.replace('Home', {
+          refreshTimeStamp: new Date().toISOString(),
+        });
+      }
       return;
     }
     // TODO do not show text interview for now, we do not use it

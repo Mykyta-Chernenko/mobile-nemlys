@@ -1,0 +1,145 @@
+{
+  "topic": [
+    "getting_to_know_partner",
+    "exploring_feelings",
+    "improving_communication",
+    "understanding_mutual_compatibility",
+    "building_trust"
+  ],
+  "test_headline": "Unlock Your Emotional Connection",
+  "scientific_basis": "This quiz is based on emotional intelligence and self-awareness research, helping you understand your and your partner's emotional needs and triggers.",
+  "description": "Dive into this fun quiz to uncover your emotional needs and triggers. Strengthen your empathy and build a deeper connection with your partner!",
+  "questions": [
+    {
+      "question": "When you have a bad day, what do you most want your partner to do?",
+      "options": [
+        "Give you a warm hug and lots of affection.",
+        "Respect your need for space and let you be alone.",
+        "Reassure you that everything will be okay.",
+        "Praise your efforts and achievements.",
+        "Listen attentively and try to understand your feelings."
+      ]
+    },
+    {
+      "question": "How do you prefer to spend quality time with your partner?",
+      "options": [
+        "Sharing a cozy movie night with lots of cuddling.",
+        "Engaging in a solo hobby while being together in the same space.",
+        "Planning secure and predictable activities like weekly dinners.",
+        "Celebrating your successes and milestones together.",
+        "Having deep conversations about your dreams and feelings."
+      ]
+    },
+    {
+      "question": "What makes you feel most appreciated in your relationship?",
+      "options": [
+        "Receiving affectionate gestures like hugs and kisses.",
+        "Having the freedom to pursue your interests without feeling controlled.",
+        "Knowing that your partner is reliable and always there for you.",
+        "Being acknowledged and praised for your hard work.",
+        "Having your thoughts and emotions understood and valued."
+      ]
+    },
+    {
+      "question": "When facing a disagreement, how do you typically respond?",
+      "options": [
+        "Seek comfort and affection to ease the tension.",
+        "Prefer to take time alone to think things through.",
+        "Look for reassurance that the relationship is stable.",
+        "Want your partner to recognize your perspective and efforts.",
+        "Aim to understand your partner's point of view through open dialogue."
+      ]
+    },
+    {
+      "question": "What do you find most challenging in your relationship?",
+      "options": [
+        "Feeling neglected when your partner is busy.",
+        "Dealing with your partner wanting too much personal space.",
+        "Worrying about your partner's reliability during tough times.",
+        "Receiving criticism instead of positive feedback.",
+        "Experiencing miscommunication or lack of understanding."
+      ]
+    },
+    {
+      "question": "How do you like to celebrate special occasions with your partner?",
+      "options": [
+        "With affectionate surprises and intimate moments.",
+        "Having the freedom to choose how you want to celebrate.",
+        "Planning secure and meaningful traditions together.",
+        "Highlighting each other's achievements and milestones.",
+        "Engaging in heartfelt conversations about your journey together."
+      ]
+    },
+    {
+      "question": "What triggers stress for you in your relationship?",
+      "options": [
+        "Lack of physical affection and closeness.",
+        "Feeling restricted or overly controlled.",
+        "Uncertainty about your partner's commitment.",
+        "Not receiving enough recognition for your efforts.",
+        "Difficulty in communicating your needs and feelings."
+      ]
+    },
+    {
+      "question": "How do you prefer your partner to show support during tough times?",
+      "options": [
+        "Offering lots of hugs and physical comfort.",
+        "Giving you space to process your emotions alone.",
+        "Providing steady reassurance and stability.",
+        "Acknowledging your struggles and celebrating your resilience.",
+        "Listening carefully and helping you articulate your feelings."
+      ]
+    },
+    {
+      "question": "What makes you feel most connected to your partner?",
+      "options": [
+        "Sharing affectionate and intimate moments.",
+        "Having the independence to grow individually while being together.",
+        "Relying on each other consistently in everyday life.",
+        "Receiving compliments and recognition for who you are.",
+        "Engaging in meaningful and deep conversations."
+      ]
+    },
+    {
+      "question": "How do you handle changes or unexpected situations in your relationship?",
+      "options": [
+        "Seek extra affection to feel secure.",
+        "Maintain your independence and adapt on your own.",
+        "Look for reassurance that things will remain stable.",
+        "Want your partner to acknowledge and support your adaptability.",
+        "Communicate openly to understand and navigate the changes together."
+      ]
+    }
+  ],
+  "evaluation_method": {
+    "explanation": "Each answer corresponds to one of five emotional profiles: Affectionate (A), Independent (B), Secure (C), Recognition-seeking (D), and Understanding-oriented (E). Tally your responses by counting how many times you selected each letter. The profile with the highest count reveals your primary emotional needs and triggers in your relationship.",
+    "example": "For instance, if you selected mostly 'A' answers, you have a strong need for affection and may be sensitive to feelings of neglect. If 'E' is your highest, you value understanding and may find miscommunication triggering."
+  },
+  "outcome_interpretation": {
+    "mostly_A": {
+      "label": "Affectionate",
+      "description": "You thrive on physical affection and emotional closeness. Your need for warmth and intimacy strengthens your bond, but you might feel neglected if your affectionate needs aren't met.",
+      "advice": "Communicate your desire for more physical and emotional closeness with your partner. Small gestures like hugs or kind words can significantly enhance your connection."
+    },
+    "mostly_B": {
+      "label": "Independent",
+      "description": "You value your independence and personal space within the relationship. Maintaining your individuality helps you stay balanced, but you may feel overwhelmed if your independence is compromised.",
+      "advice": "Discuss the importance of personal space with your partner. Encourage mutual respect for each other's hobbies and interests to maintain a healthy balance."
+    },
+    "mostly_C": {
+      "label": "Secure",
+      "description": "You seek stability and reliability in your relationship. Knowing that your partner is dependable gives you peace of mind, but uncertainty can be particularly unsettling for you.",
+      "advice": "Continue building trust by being reliable yourself and appreciating your partner's consistency. Openly discuss any concerns to maintain the security you value."
+    },
+    "mostly_D": {
+      "label": "Recognition-seeking",
+      "description": "Acknowledgment and appreciation are essential for your happiness. Being recognized for your efforts fuels your motivation and strengthens your relationship, but lack of recognition can be disheartening.",
+      "advice": "Express your need for appreciation to your partner and also recognize their efforts. Celebrating each other's achievements can foster mutual respect and admiration."
+    },
+    "mostly_E": {
+      "label": "Understanding-oriented",
+      "description": "You prioritize deep understanding and meaningful communication. Striving to comprehend each other's feelings enhances your connection, but miscommunication can lead to frustration.",
+      "advice": "Engage in active listening and encourage open dialogues with your partner. Sharing your thoughts and feelings regularly can deepen your emotional bond."
+    }
+  }
+}

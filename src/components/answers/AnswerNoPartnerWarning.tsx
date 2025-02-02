@@ -9,7 +9,15 @@ import { i18n } from '@app/localization/i18n';
 import { MainNavigationProp } from '@app/types/navigation';
 import { useNavigation } from '@react-navigation/native';
 
-const AnswerNoPartnerWarning = ({ prefix, partnerName }) => {
+const AnswerNoPartnerWarning = ({
+  prefix,
+  partnerName,
+  isV3,
+}: {
+  prefix: string;
+  partnerName: string;
+  isV3: boolean;
+}) => {
   const navigation = useNavigation<MainNavigationProp>();
 
   const authContext = useContext(AuthContext);
@@ -18,11 +26,16 @@ const AnswerNoPartnerWarning = ({ prefix, partnerName }) => {
   const { colors } = theme;
 
   const handleInvite = () => {
-    void localAnalytics().logEvent(`${prefix as string}PartnerInviteClicked`, {
+    void localAnalytics().logEvent(`${prefix}PartnerInviteClicked`, {
       screen: prefix,
       userId,
     });
-    navigation.navigate('OnboardingInviteCode', { fromSettings: true });
+    navigation.navigate('OnboardingInviteCode', {
+      nextScreen: isV3 ? 'V3AnswerHome' : 'AnswerHome',
+      screenParams: {
+        refreshTimeStamp: new Date().toISOString(),
+      },
+    });
   };
 
   return (

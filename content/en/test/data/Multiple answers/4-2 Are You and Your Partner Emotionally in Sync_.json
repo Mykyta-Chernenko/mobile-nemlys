@@ -1,0 +1,145 @@
+{
+  "topic": [
+    "understanding_mutual_compatibility",
+    "exploring_feelings",
+    "improving_communication",
+    "enhancing_love_and_affection",
+    "building_trust"
+  ],
+  "test_headline": "Are You and Your Partner Emotionally in Sync?",
+  "scientific_basis": "This quiz is grounded in emotional intelligence research, highlighting how the ability to recognize, understand, and manage emotions contributes to healthy and fulfilling relationships.",
+  "description": "Discover how well you and your partner understand and respond to each other's emotional needs. This quiz will help you gain insights into your emotional connection and how you can enhance empathy and support in your relationship.",
+  "questions": [
+    {
+      "question": "When your partner is upset, how do you usually respond?",
+      "options": [
+        "I immediately try to fix the problem.",
+        "I listen and let them express their feelings.",
+        "I give them space to process on their own.",
+        "I feel overwhelmed and unsure how to help.",
+        "I try to distract them with something fun."
+      ]
+    },
+    {
+      "question": "How do you typically share your own emotions with your partner?",
+      "options": [
+        "I openly share how I feel without hesitation.",
+        "I express myself but choose my words carefully.",
+        "I struggle to share my emotions openly.",
+        "I avoid sharing emotions unless absolutely necessary.",
+        "I use humor or light-heartedness to express emotions."
+      ]
+    },
+    {
+      "question": "When your partner expresses joy about something, how do you react?",
+      "options": [
+        "I celebrate with them enthusiastically.",
+        "I share their happiness but stay calm.",
+        "I acknowledge it but don't get too involved.",
+        "I feel indifferent or distracted by my own concerns.",
+        "I encourage them but don't match their energy."
+      ]
+    },
+    {
+      "question": "How often do you notice when your partner is feeling stressed or down?",
+      "options": [
+        "Almost always—I can sense it right away.",
+        "Often, though sometimes I miss subtle signs.",
+        "Occasionally, if it's very noticeable.",
+        "Rarely, unless they tell me directly.",
+        "I don't usually notice unless it's obvious."
+      ]
+    },
+    {
+      "question": "How do you approach conflict resolution in your relationship?",
+      "options": [
+        "I address issues calmly and look for solutions.",
+        "I try to understand my partner's perspective first.",
+        "I avoid conflicts or let them resolve on their own.",
+        "I tend to get defensive or emotional.",
+        "I focus on resolving it quickly, even if it's not perfect."
+      ]
+    },
+    {
+      "question": "When your partner shares their dreams or goals, how do you react?",
+      "options": [
+        "I feel excited and encourage them wholeheartedly.",
+        "I support them and discuss practical steps.",
+        "I listen but don't engage deeply in the discussion.",
+        "I struggle to connect with their aspirations.",
+        "I focus on how their goals might impact our relationship."
+      ]
+    },
+    {
+      "question": "How do you express love and appreciation for your partner?",
+      "options": [
+        "I say it directly and often.",
+        "I show it through thoughtful actions.",
+        "I express it occasionally but not too often.",
+        "I struggle to express love openly.",
+        "I rely on subtle or indirect ways to show appreciation."
+      ]
+    },
+    {
+      "question": "How do you handle situations where your partner needs emotional support but doesn't ask for it?",
+      "options": [
+        "I offer support anyway because I sense they need it.",
+        "I gently ask if they need anything from me.",
+        "I wait for them to come to me first.",
+        "I feel unsure and don't take action.",
+        "I focus on giving them space unless they ask."
+      ]
+    },
+    {
+      "question": "What's your approach to discussing emotions during challenging times?",
+      "options": [
+        "I initiate open discussions about feelings.",
+        "I wait for the right moment to talk about it.",
+        "I avoid emotional discussions if I can help it.",
+        "I let my partner lead the conversation.",
+        "I try to keep the focus on practical solutions."
+      ]
+    },
+    {
+      "question": "How well do you and your partner align in handling emotional challenges?",
+      "options": [
+        "We are usually on the same page and work as a team.",
+        "We have some differences but find common ground.",
+        "We often handle things separately, with mixed results.",
+        "We struggle to align our approaches to emotions.",
+        "I'm not sure how aligned we are in this area."
+      ]
+    }
+  ],
+  "evaluation_method": {
+    "explanation": "Each answer aligns with specific levels of emotional intelligence and responsiveness in relationships. Responses are scored to determine how emotionally in sync you are with your partner.",
+    "example": "For example, consistently choosing empathetic or supportive responses suggests high emotional alignment, while more detached or uncertain responses indicate areas for growth."
+  },
+  "outcome_interpretation": {
+    "mostly_A": {
+      "label": "Emotionally Aligned",
+      "description": "You and your partner are highly attuned to each other's emotions, fostering a deep sense of connection and support.",
+      "advice": "Continue nurturing this bond by staying open and communicative."
+    },
+    "mostly_B": {
+      "label": "Supportive but Practical",
+      "description": "You balance emotional connection with practicality, which can be a strong foundation for your relationship.",
+      "advice": "Consider incorporating more moments of emotional vulnerability to deepen your bond."
+    },
+    "mostly_C": {
+      "label": "Emotionally Detached",
+      "description": "You may have some distance in how you handle emotions as a couple, which can lead to misunderstandings.",
+      "advice": "Focus on building empathy and sharing your feelings more openly."
+    },
+    "mostly_D": {
+      "label": "Emotionally Unsure",
+      "description": "You might feel uncertain about how to navigate emotions in your relationship, which can create barriers.",
+      "advice": "Work on understanding each other's emotional needs through open conversations."
+    },
+    "mostly_E": {
+      "label": "Emotionally Independent",
+      "description": "You value personal space and independence in handling emotions, but this might sometimes feel isolating.",
+      "advice": "Aim to strike a balance between independence and emotional connection."
+    }
+  }
+}

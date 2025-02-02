@@ -1,0 +1,145 @@
+{
+  "topic": [
+    "understanding_mutual_compatibility",
+    "exploring_feelings",
+    "having_meaningful_conversations",
+    "improving_communication",
+    "having_new_experiences"
+  ],
+  "test_headline": "Are You an Intellectual Match?",
+  "scientific_basis": "This quiz is grounded in the similarity-attraction theory, which suggests that shared intellectual interests and stimulation enhance compatibility between partners.",
+  "description": "Dive into this fun and insightful quiz to discover how intellectually aligned you and your partner are! Explore your shared interests, curiosity levels, and ability to engage in deep conversations to strengthen your connection.",
+  "questions": [
+    {
+      "question": "How do you and your partner typically spend your free time together?",
+      "options": [
+        "Engaging in stimulating discussions about books or current events.",
+        "Watching movies or TV shows that we both enjoy.",
+        "Participating in outdoor activities or sports.",
+        "Relaxing and enjoying each other's company without a specific plan.",
+        "Exploring new hobbies and learning something new together."
+      ]
+    },
+    {
+      "question": "When faced with a challenging problem, how do you approach solving it as a couple?",
+      "options": [
+        "Brainstorming together to come up with creative solutions.",
+        "Dividing the tasks based on each person's strengths.",
+        "Researching individually and then sharing findings.",
+        "Taking a step back and discussing the issue calmly.",
+        "Seeking advice from others before making a decision."
+      ]
+    },
+    {
+      "question": "How important is it for you and your partner to share similar intellectual interests?",
+      "options": [
+        "Extremely important; it's a key part of our connection.",
+        "Quite important; we enjoy discussing our interests.",
+        "Somewhat important; we respect each other's interests.",
+        "Not very important; we have different interests but get along well.",
+        "Not important at all; we don't focus on intellectual compatibility."
+      ]
+    },
+    {
+      "question": "How often do you and your partner engage in deep, meaningful conversations?",
+      "options": [
+        "Daily – we love diving deep into various topics.",
+        "Several times a week – we make it a priority.",
+        "Once a week – we have meaningful talks regularly.",
+        "A few times a month – when the mood strikes.",
+        "Rarely – our conversations are mostly light and casual."
+      ]
+    },
+    {
+      "question": "How do you feel when your partner introduces you to a new idea or perspective?",
+      "options": [
+        "Excited and eager to learn more.",
+        "Interested and open to discussion.",
+        "Curious but need time to process.",
+        "Indifferent but respectful of their viewpoint.",
+        "Overwhelmed and prefer sticking to familiar ideas."
+      ]
+    },
+    {
+      "question": "When planning activities, how aligned are your interests with your partner's?",
+      "options": [
+        "Very aligned – we love doing the same things.",
+        "Mostly aligned – we have several shared interests.",
+        "Somewhat aligned – we have a mix of shared and separate interests.",
+        "Slightly aligned – we often choose different activities.",
+        "Not aligned – our interests rarely overlap."
+      ]
+    },
+    {
+      "question": "How do you and your partner handle differences in intellectual opinions?",
+      "options": [
+        "Engage in healthy debates and learn from each other.",
+        "Respectfully agree to disagree.",
+        "Seek to understand each other's perspectives.",
+        "Find common ground or compromise.",
+        "Avoid discussing topics where we disagree."
+      ]
+    },
+    {
+      "question": "How important is intellectual growth in your relationship?",
+      "options": [
+        "Essential – we prioritize learning and growing together.",
+        "Important – we encourage each other's growth.",
+        "Moderately important – we support growth when possible.",
+        "Slightly important – growth happens naturally without focus.",
+        "Not important – we focus on other aspects of the relationship."
+      ]
+    },
+    {
+      "question": "How do you and your partner celebrate each other's achievements in intellectual pursuits?",
+      "options": [
+        "We actively celebrate and encourage each other's successes.",
+        "We acknowledge achievements and show appreciation.",
+        "We offer support and congratulations.",
+        "We recognize achievements but keep it low-key.",
+        "We rarely discuss each other's intellectual achievements."
+      ]
+    },
+    {
+      "question": "How often do you and your partner seek out new knowledge or skills together?",
+      "options": [
+        "Regularly – we frequently take courses or attend workshops together.",
+        "Often – we occasionally engage in learning activities together.",
+        "Sometimes – we participate in learning experiences when interested.",
+        "Rarely – we seldom pursue new knowledge together.",
+        "Never – we do not engage in learning activities together."
+      ]
+    }
+  ],
+  "evaluation_method": {
+    "explanation": "Each answer corresponds to a different level of intellectual compatibility based on similarity-attraction theory. Your responses will be tallied to determine how intellectually aligned you and your partner are.",
+    "example": "For example, choosing more 'A' options indicates a high level of intellectual alignment, while selecting more 'E' options suggests lower intellectual compatibility."
+  },
+  "outcome_interpretation": {
+    "mostly_A": {
+      "label": "Intellectual Harmony",
+      "description": "You and your partner share a strong intellectual bond, frequently engaging in deep and meaningful conversations. This mutual stimulation fosters a deep and lasting connection.",
+      "advice": "Continue exploring new ideas and activities together to maintain and strengthen your intellectual bond."
+    },
+    "mostly_B": {
+      "label": "Intellectual Compatibility",
+      "description": "You and your partner have a good level of intellectual alignment, enjoying shared interests and stimulating discussions that enhance your relationship.",
+      "advice": "Seek out new experiences and continue supporting each other's intellectual pursuits to further enrich your connection."
+    },
+    "mostly_C": {
+      "label": "Balanced Compatibility",
+      "description": "You and your partner have a balanced intellectual relationship, with a mix of shared and individual interests that complement each other well.",
+      "advice": "Encourage each other to pursue both shared and individual intellectual interests to maintain a healthy balance."
+    },
+    "mostly_D": {
+      "label": "Divergent Interests",
+      "description": "You and your partner have some differences in intellectual interests, which can add variety to your relationship but may require effort to find common ground.",
+      "advice": "Find activities that incorporate both of your interests and make time for shared intellectual pursuits to enhance your compatibility."
+    },
+    "mostly_E": {
+      "label": "Intellectual Independence",
+      "description": "You and your partner have distinct intellectual interests and may prefer pursuing them independently, which can coexist harmoniously with mutual respect.",
+      "advice": "Respect each other's intellectual independence while finding occasional opportunities to connect over shared interests."
+    }
+  }
+}

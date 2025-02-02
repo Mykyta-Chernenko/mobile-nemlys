@@ -1,0 +1,145 @@
+{
+  "topic": [
+    "improving_communication",
+    "understanding_mutual_compatibility",
+    "exploring_feelings",
+    "having_meaningful_conversations",
+    "building_trust"
+  ],
+  "test_headline": "Discover Your Communication Style",
+  "scientific_basis": "This quiz is grounded in interpersonal communication theories, focusing on assertiveness and various listening styles to help you understand how you and your partner communicate.",
+  "description": "Unlock the secrets of your relationship by exploring your unique communication styles! This fun and insightful quiz will help you and your partner discover how you express yourselves and listen to each other, paving the way for more effective and satisfying interactions.",
+  "questions": [
+    {
+      "question": "When discussing plans for the weekend, how do you usually express your ideas?",
+      "options": [
+        "I clearly state what I want and encourage my partner to share theirs.",
+        "I suggest my ideas but am open to my partner taking the lead.",
+        "I prefer to go along with whatever my partner decides.",
+        "I hint at my preferences without directly stating them.",
+        "I get frustrated if my ideas aren't accepted immediately."
+      ]
+    },
+    {
+      "question": "How do you typically respond when your partner shares something important with you?",
+      "options": [
+        "I listen attentively and ask questions to show my interest.",
+        "I listen but often think about my response while they're talking.",
+        "I nod and agree, even if I have a different perspective.",
+        "I get distracted easily and might miss some details.",
+        "I offer solutions right away, sometimes without fully understanding."
+      ]
+    },
+    {
+      "question": "During an argument, how do you communicate your feelings?",
+      "options": [
+        "I express my feelings calmly and clearly without blaming.",
+        "I get emotional but try to stay on topic.",
+        "I avoid expressing my feelings to keep the peace.",
+        "I use sarcasm or passive-aggressive remarks.",
+        "I raise my voice to make sure I'm heard."
+      ]
+    },
+    {
+      "question": "How do you prefer to receive feedback from your partner?",
+      "options": [
+        "Direct and honest feedback, even if it's tough to hear.",
+        "Gentle feedback with positive reinforcement.",
+        "Feedback delivered through actions rather than words.",
+        "Indirect hints that I can interpret myself.",
+        "Minimal feedback to avoid conflict."
+      ]
+    },
+    {
+      "question": "When your partner is upset, what is your immediate reaction?",
+      "options": [
+        "I offer a listening ear and ask how I can help.",
+        "I try to cheer them up with humor or distractions.",
+        "I give them space, believing they'll reach out when ready.",
+        "I feel unsure of how to respond and stay silent.",
+        "I become defensive, thinking they might be upset with me."
+      ]
+    },
+    {
+      "question": "How do you handle misunderstandings in your conversations?",
+      "options": [
+        "I clarify by asking questions to ensure mutual understanding.",
+        "I apologize quickly to smooth things over.",
+        "I let it go, assuming it wasn't a big deal.",
+        "I revisit the topic later when emotions have cooled.",
+        "I stand my ground, believing my perspective is correct."
+      ]
+    },
+    {
+      "question": "When making decisions together, how do you communicate your preferences?",
+      "options": [
+        "I openly share my thoughts and encourage my partner to do the same.",
+        "I suggest compromises that consider both our preferences.",
+        "I often defer to my partner's choices to avoid disagreements.",
+        "I present my ideas subtly, hoping they'll be accepted.",
+        "I push strongly for what I believe is best."
+      ]
+    },
+    {
+      "question": "How do you show appreciation in your communication?",
+      "options": [
+        "I regularly express gratitude verbally and through actions.",
+        "I give compliments and acknowledge their efforts.",
+        "I show appreciation by doing things for them.",
+        "I express it indirectly, like through small gestures.",
+        "I rarely express appreciation, preferring to keep things straightforward."
+      ]
+    },
+    {
+      "question": "In conversations, how often do you find yourself interrupting your partner?",
+      "options": [
+        "Rarely or never; I let them finish their thoughts.",
+        "Sometimes, especially when I'm excited about the topic.",
+        "Frequently, as I have a lot to say.",
+        "Only when I think it's necessary to clarify.",
+        "I tend to interrupt often, sometimes without realizing it."
+      ]
+    },
+    {
+      "question": "How comfortable are you with discussing your feelings openly?",
+      "options": [
+        "Very comfortable; I share my feelings easily.",
+        "Somewhat comfortable; I share when I feel it's important.",
+        "Neutral; I share occasionally but not consistently.",
+        "Somewhat uncomfortable; I find it challenging to express my feelings.",
+        "Very uncomfortable; I avoid discussing my feelings altogether."
+      ]
+    }
+  ],
+  "evaluation_method": {
+    "explanation": "Each answer corresponds to a specific communication style: Assertive, Passive, Aggressive, Passive-Aggressive, and Analytical. By tallying your responses, you can identify which style is most prevalent in your communication with your partner.",
+    "example": "For example, selecting mostly 'A' options indicates an Assertive communication style, while selecting mostly 'D' options suggests a Passive-Aggressive style."
+  },
+  "outcome_interpretation": {
+    "mostly_A": {
+      "label": "Assertive Communicator",
+      "description": "You communicate your thoughts and feelings openly and respectfully, fostering a healthy and balanced relationship.",
+      "advice": "Continue leveraging your strong communication skills to maintain transparency and understanding in your relationship."
+    },
+    "mostly_B": {
+      "label": "Passive Communicator",
+      "description": "You often prioritize your partner's needs over your own, which can lead to unexpressed feelings and potential misunderstandings.",
+      "advice": "Practice expressing your own needs and desires to ensure a balanced and fulfilling partnership."
+    },
+    "mostly_C": {
+      "label": "Aggressive Communicator",
+      "description": "You tend to express your thoughts forcefully, which can sometimes overwhelm your partner and create tension.",
+      "advice": "Work on adopting a more collaborative approach to communication to enhance mutual respect and understanding."
+    },
+    "mostly_D": {
+      "label": "Passive-Aggressive Communicator",
+      "description": "You may express negative feelings indirectly, which can lead to confusion and unresolved conflicts in your relationship.",
+      "advice": "Strive to communicate your feelings openly and directly to prevent misunderstandings and build trust."
+    },
+    "mostly_E": {
+      "label": "Analytical Communicator",
+      "description": "You approach communication logically and thoughtfully, which helps in problem-solving but might sometimes overlook emotional nuances.",
+      "advice": "Incorporate more emotional expression into your conversations to strengthen your emotional connection with your partner."
+    }
+  }
+}

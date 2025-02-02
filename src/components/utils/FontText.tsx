@@ -42,8 +42,9 @@ export const FontText = ({
   h3,
   h4,
   small,
+  normal,
   ...props
-}: TextProps & { small?: boolean }) => {
+}: TextProps & { small?: boolean; normal?: boolean }) => {
   const fontWeight = (style as TextStyle)?.fontWeight || '600';
   let fontFamily = REGULAR_FONT_FAMILY;
   switch (fontWeight) {
@@ -61,6 +62,7 @@ export const FontText = ({
   else if (h3) fontSize = getFontSizeForScreen('h3');
   else if (h4) fontSize = getFontSizeForScreen('h4');
   else if (small) fontSize = getFontSizeForScreen('small');
+  else if (normal) fontSize = getFontSizeForScreen('normal');
   else fontSize = getFontSizeForScreen('normal');
 
   return <Text style={[{ fontSize, fontWeight: '600', fontFamily }, style]} {...props} />;

@@ -1,0 +1,145 @@
+{
+  "topic": [
+    "having_and_discussing_sex",
+    "enhancing_love_and_affection",
+    "exploring_feelings",
+    "building_trust",
+    "improving_communication"
+  ],
+  "test_headline": "Fantasy & Reality: Unlock Your Intimate Communication Style",
+  "scientific_basis": "This quiz is inspired by fantasy communication research, exploring how sharing your fantasies can enhance intimacy and strengthen your relationship.",
+  "description": "Dive into the exciting world of your desires! This quiz helps you and your partner understand how sharing fantasies can boost your closeness and add excitement to your relationship. Let's explore together!",
+  "questions": [
+    {
+      "question": "How comfortable are you discussing your sexual fantasies with your partner?",
+      "options": [
+        "Very comfortable – I love sharing my desires.",
+        "Somewhat comfortable – I share sometimes.",
+        "Neutral – It depends on the fantasy.",
+        "Slightly uncomfortable – I prefer to keep some to myself.",
+        "Not comfortable at all – I rarely discuss fantasies."
+      ]
+    },
+    {
+      "question": "When your partner shares a fantasy, how do you typically respond?",
+      "options": [
+        "Enthusiastically – I love hearing their desires.",
+        "Supportively – I encourage open communication.",
+        "Indifferently – I listen but don't react much.",
+        "Hesitantly – I'm not sure how to respond.",
+        "Uncomfortably – It makes me uneasy."
+      ]
+    },
+    {
+      "question": "How often do you and your partner explore new fantasies together?",
+      "options": [
+        "Regularly – We make it a fun part of our relationship.",
+        "Occasionally – When the mood strikes us.",
+        "Rarely – It's not something we focus on.",
+        "Almost never – We stick to what we know.",
+        "Never – We don't discuss or explore fantasies."
+      ]
+    },
+    {
+      "question": "To what extent do you believe sharing fantasies enhances intimacy in your relationship?",
+      "options": [
+        "Strongly believe – It significantly deepens our connection.",
+        "Believe – It contributes positively to our intimacy.",
+        "Neutral – I'm not sure about its impact.",
+        "Don't believe – It has little effect on our relationship.",
+        "Strongly disagree – It might even harm our intimacy."
+      ]
+    },
+    {
+      "question": "How do you feel when a fantasy you share with your partner is fulfilled?",
+      "options": [
+        "Thrilled – It brings us closer together.",
+        "Satisfied – It enhances our relationship.",
+        "Indifferent – It's a pleasant experience.",
+        "Uncertain – Not sure how it affects us.",
+        "Reluctant – It feels uncomfortable or forced."
+      ]
+    },
+    {
+      "question": "How do you prioritize discussing fantasies in your relationship?",
+      "options": [
+        "High priority – It's essential for our connection.",
+        "Medium priority – Important but not always top of mind.",
+        "Low priority – It's something we do occasionally.",
+        "Minimal priority – We rarely focus on it.",
+        "No priority – We don't discuss fantasies."
+      ]
+    },
+    {
+      "question": "How open are you to trying your partner's fantasies?",
+      "options": [
+        "Very open – I'm excited to explore together.",
+        "Open – Willing to consider new experiences.",
+        "Somewhat open – Depends on the fantasy.",
+        "Hesitant – Not sure about trying new things.",
+        "Not open – I prefer to stick to what we know."
+      ]
+    },
+    {
+      "question": "How often do you and your partner discuss fantasies as part of your regular conversations?",
+      "options": [
+        "Frequently – It's a common topic for us.",
+        "Sometimes – We talk about it when relevant.",
+        "Occasionally – Rarely do we bring it up.",
+        "Seldom – It's not a usual topic.",
+        "Never – We don't discuss fantasies."
+      ]
+    },
+    {
+      "question": "When a partner shares a fantasy that you're not interested in, how do you handle it?",
+      "options": [
+        "Respectfully discuss – We find a compromise.",
+        "Listen without judgment – Acknowledge their feelings.",
+        "Change the subject – Avoid delving deeper.",
+        "Feel uncomfortable and withdraw.",
+        "Dismiss or criticize their fantasy."
+      ]
+    },
+    {
+      "question": "How does sharing fantasies affect your overall satisfaction in the relationship?",
+      "options": [
+        "Greatly increases – It adds excitement and connection.",
+        "Increases – It enhances our bond.",
+        "No change – It doesn't affect satisfaction.",
+        "Decreases – It sometimes causes tension.",
+        "Greatly decreases – It negatively impacts our relationship."
+      ]
+    }
+  ],
+  "evaluation_method": {
+    "explanation": "Each answer corresponds to a specific communication style regarding the sharing of fantasies: A for highly open and positive, B for supportive and encouraging, C for balanced and occasional, D for hesitant and reserved, and E for uncomfortable or dismissive. Tally your answers to see which style predominates in your relationship.",
+    "example": "For example, if you selected mostly 'A' answers, you likely have an Open Communicator style, indicating a high level of comfort and positivity in sharing fantasies. Conversely, mostly 'E' answers suggest a Reserved Keeper style, where sharing fantasies may be uncomfortable or avoided."
+  },
+  "outcome_interpretation": {
+    "mostly_A": {
+      "label": "Open Communicators",
+      "description": "You and your partner are highly open and enthusiastic about sharing your fantasies, which significantly enhances your intimacy and connection.",
+      "advice": "Continue fostering this openness by regularly discussing your desires and exploring new fantasies together to keep the excitement alive."
+    },
+    "mostly_B": {
+      "label": "Supportive Partners",
+      "description": "You both support each other in sharing fantasies, contributing positively to your relationship's intimacy and trust.",
+      "advice": "Maintain this supportive environment by encouraging each other to express desires and consider occasional new experiences to deepen your bond."
+    },
+    "mostly_C": {
+      "label": "Balanced Explorers",
+      "description": "You have a balanced approach to sharing fantasies, engaging in discussions and explorations occasionally which adds a pleasant dynamic to your relationship.",
+      "advice": "Explore ways to integrate fantasy sharing more regularly to enhance intimacy, while respecting each other's comfort levels."
+    },
+    "mostly_D": {
+      "label": "Hesitant Discussers",
+      "description": "You may feel hesitant or uncertain about sharing fantasies, which can sometimes create barriers to deeper intimacy.",
+      "advice": "Work on building trust and open communication by gradually sharing small desires and reassuring each other to create a safer space for discussions."
+    },
+    "mostly_E": {
+      "label": "Reserved Keepers",
+      "description": "Sharing fantasies is uncomfortable for you and your partner, which might limit opportunities for enhanced intimacy and excitement.",
+      "advice": "Consider seeking ways to gently introduce fantasy discussions, perhaps starting with less intimate topics, to slowly build comfort and openness in your relationship."
+    }
+  }
+}

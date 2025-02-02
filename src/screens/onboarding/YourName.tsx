@@ -6,7 +6,7 @@ import { PrimaryButton } from '@app/components/buttons/PrimaryButtons';
 import { FontText } from '@app/components/utils/FontText';
 import { Progress } from '@app/components/utils/Progress';
 import { GoBackButton } from '@app/components/buttons/GoBackButton';
-import { KEYBOARD_BEHAVIOR } from '@app/utils/constants';
+import { KEYBOARD_BEHAVIOR, ONBOARDING_STEPS } from '@app/utils/constants';
 import { supabase } from '@app/api/initSupabase';
 import { AuthContext } from '@app/provider/AuthProvider';
 import { logSupaErrors } from '@app/utils/errors';
@@ -17,6 +17,7 @@ import { SafeAreaView } from 'react-native-safe-area-context';
 import StyledInput from '@app/components/utils/StyledInput';
 import { getNow } from '@app/utils/date';
 import { logout } from '@app/utils/auth';
+import { showName } from '@app/utils/strings';
 
 export default function ({
   route,
@@ -36,14 +37,14 @@ export default function ({
       } else {
         const { data, error } = await supabase
           .from('user_profile')
-          .select('*')
+          .select('first_name')
           .eq('user_id', authContext.userId!)
           .single();
         if (error) {
           logSupaErrors(error);
           return;
         }
-        setName(data.first_name);
+        setName(showName(data.first_name));
       }
     })();
   }, []);
@@ -111,7 +112,7 @@ export default function ({
                     }
                   }}
                 ></GoBackButton>
-                {!fromSettings && <Progress current={1} all={7}></Progress>}
+                {!fromSettings && <Progress current={1} all={ONBOARDING_STEPS}></Progress>}
               </View>
               <View
                 style={{

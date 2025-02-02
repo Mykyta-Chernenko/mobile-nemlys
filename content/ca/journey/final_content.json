@@ -1,0 +1,4892 @@
+[
+  {
+    "job": [
+      "getting_to_know_partner"
+    ],
+    "title": "Coneixent-nos: Un Viatge de Descobriment",
+    "description": "Embarca't en un viatge transformador per entendre't i connectar profundament amb la teva parella. Aquest viatge consisteix en activitats diàries dissenyades amb cura, incloent preguntes, exercicis, articles i jocs que fomentaran la intimitat, milloraran la comunicació i descobriran coneixements personals. Al llarg de diversos dies, exploraràs les teves similituds, diferències i les qualitats úniques que fan de cadascun de vosaltres qui sou.",
+    "subtopics": [
+      {
+        "title": "Descobrint Antecedents i Característiques",
+        "description": "Comença per entendre els antecedents, personalitats i valors de cadascun. Participa en preguntes sobre records d'infantesa, talents amagats i preferències personals per construir una base de confiança i obertura.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "life-story-style"
+          },
+          {
+            "type": "question",
+            "slug": "can-you-share-a-memory-from-your-childhood-that-you-think-has-shaped-who-you-are-today"
+          },
+          {
+            "type": "article",
+            "slug": "love-maps-knowing-each-other-deeply"
+          },
+          {
+            "type": "game",
+            "slug": "memory-lane"
+          },
+          {
+            "type": "checkup",
+            "slug": "exploring-childhood-memories"
+          },
+          {
+            "type": "exercise",
+            "slug": "difference-identification-and-acceptance"
+          },
+          {
+            "type": "question",
+            "slug": "whats-your-favorite-childhood-memory"
+          }
+        ]
+      },
+      {
+        "title": "Explorant Interessos i Hobbies",
+        "description": "Descobreix passions compartides i hobbies individuals. Participa en discussions i activitats que t'ajuden a conèixer els interessos, passatemps preferits i les qualitats úniques que cadascun de vosaltres aporta a la relació.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "hobby-harmony-style"
+          },
+          {
+            "type": "game",
+            "slug": "hobby-harmony"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-hobby-that-makes-you-feel-alive"
+          },
+          {
+            "type": "article",
+            "slug": "exploring-shared-hobbies-together"
+          },
+          {
+            "type": "exercise",
+            "slug": "hobbies-and-interests-exercise"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-new-hobby-we-could-start-together-to-spice-things-up"
+          }
+        ]
+      },
+      {
+        "title": "Entenent Estils de Comunicació",
+        "description": "Aprèn a comunicar les teves necessitats i desitjos de manera efectiva. Participa en exercicis i jocs que fomenten l'escolta activa i milloren la teva capacitat d'expressar emocions i expectatives.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "discover-your-communication-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-prefer-to-communicate-your-needs-and-desires"
+          },
+          {
+            "type": "article",
+            "slug": "mastering-communication-techniques"
+          },
+          {
+            "type": "game",
+            "slug": "communication-clues"
+          },
+          {
+            "type": "checkup",
+            "slug": "mastering-our-communication-styles"
+          },
+          {
+            "type": "exercise",
+            "slug": "active-listening-practice"
+          },
+          {
+            "type": "question",
+            "slug": "whats-your-favorite-memory-of-us-having-a-great-conversation"
+          }
+        ]
+      },
+      {
+        "title": "Identificant Llenguatges de l'Amor",
+        "description": "Endinsa't en les maneres úniques en què cadascun de vosaltres dóna i rep amor. Explora els teus llenguatges de l'amor a través de preguntes i exercicis reflexius, obtenint coneixements sobre com expressar millor l'afecte d'una manera que ressoni amb la teva parella.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "love-language-type"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-believe-in-love-languages-if-so-which-one-are-you"
+          },
+          {
+            "type": "article",
+            "slug": "decoding-love-languages"
+          },
+          {
+            "type": "game",
+            "slug": "love-languages-exploration"
+          },
+          {
+            "type": "checkup",
+            "slug": "emotional-needs-compatibility"
+          },
+          {
+            "type": "exercise",
+            "slug": "find-out-your-love-language"
+          },
+          {
+            "type": "question",
+            "slug": "what-is-your-love-language"
+          }
+        ]
+      },
+      {
+        "title": "Auto-Reflexió i Establiment d'Objectius",
+        "description": "Fomenta la compartició personal d'aspiracions i somnis. Utilitza activitats guiades per reflexionar sobre objectius personals i com aquests s'alineen amb la teva relació, fomentant un sentiment de suport mutu en els viatges de cadascun.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "goal-alignment-style"
+          },
+          {
+            "type": "question",
+            "slug": "what-are-your-dreams-and-aspirations-outside-of-work"
+          },
+          {
+            "type": "article",
+            "slug": "setting-shared-future-goals"
+          },
+          {
+            "type": "game",
+            "slug": "future-visionaries"
+          },
+          {
+            "type": "checkup",
+            "slug": "future-plans-alignment"
+          },
+          {
+            "type": "exercise",
+            "slug": "long-term-goal-planning"
+          },
+          {
+            "type": "question",
+            "slug": "what-personal-goals-do-you-have-that-i-might-not-be-aware-of"
+          }
+        ]
+      },
+      {
+        "title": "Cultivant la Intimitat Emocional",
+        "description": "Aprofundeix la teva connexió emocional a través d'exercicis de vulnerabilitat i converses honestes. Participa en activitats i discussions que promouen compartir sentiments, desitjos i pors en un entorn segur, millorant la teva intimitat i confiança.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "emotional-intimacy-style"
+          },
+          {
+            "type": "question",
+            "slug": "whats-something-that-always-makes-you-feel-loved"
+          },
+          {
+            "type": "article",
+            "slug": "building-emotional-intimacy-together"
+          },
+          {
+            "type": "game",
+            "slug": "intimacy-insights"
+          },
+          {
+            "type": "checkup",
+            "slug": "emotional-intimacy-check-in"
+          },
+          {
+            "type": "exercise",
+            "slug": "emotional-closeness-exercises"
+          },
+          {
+            "type": "question",
+            "slug": "what-little-gestures-make-you-feel-most-loved-and-appreciated"
+          }
+        ]
+      }
+    ],
+    "slug": "getting-to-know-each-other-a-journey-of-discovery"
+  },
+  {
+    "job": [
+      "discussing_religions"
+    ],
+    "title": "Navegant les Nosses Creences Religioses Junts",
+    "description": "Aquesta aventura està dissenyada per ajudar-te a tu i a la teva parella a discutir i entendre les creences religioses de cadascun, fomentant el respecte i la comunicació oberta. Explorant diversos aspectes de la religió, aprendràs a abraçar les diferències i a crear una connexió espiritual compartida.",
+    "subtopics": [
+      {
+        "title": "Entenent les Fonaments Religioses",
+        "description": "Comença la teva aventura explorant les creences i pràctiques fonamentals de les religions de cadascun. Discuteix com aquestes fonaments modelen les teves identitats i visions del món. Aquest subtema inclourà preguntes sobre creences i pràctiques personals.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "religious-identity-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-practice-your-faith-and-how-would-you-like-to-incorporate-it-into-our-relationship"
+          },
+          {
+            "type": "article",
+            "slug": "navigating-religious-conversations-smoothly"
+          },
+          {
+            "type": "exercise",
+            "slug": "spiritual-practices-exchange"
+          },
+          {
+            "type": "question",
+            "slug": "what-role-does-religion-or-spirituality-play-in-your-life-and-how-does-it-affect-our-relationship"
+          }
+        ]
+      },
+      {
+        "title": "Celebrant els Milestones Religiosos",
+        "description": "Aprèn com celebrar junts els milestones i assoliments religiosos. Explora com honrar les tradicions de cadascun durant esdeveniments importants de la vida, com naixements, casaments i festes, integrant-los sense problemes a les vostres vides compartides.",
+        "content": [
+          {
+            "type": "checkup",
+            "slug": "celebrating-religious-holidays-together"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-celebrate-religious-achievements-or-milestones"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-celebrate-your-faith-during-personal-milestones-like-birthdays-or-anniversaries"
+          }
+        ]
+      },
+      {
+        "title": "Respectant les Diferències i Desacords",
+        "description": "Endinsa't en com navegar les diferències en creences i pràctiques religioses sense conflicte. Aquest subtema et proporcionarà eines per a converses respectuoses quan sorgeixin desacords, centrant-se en la comprensió més que en convèncer.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "your-conflict-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-handle-religious-disagreements-in-relationships"
+          },
+          {
+            "type": "article",
+            "slug": "bridging-religious-differences-together"
+          },
+          {
+            "type": "game",
+            "slug": "conflict-resolution-quest"
+          },
+          {
+            "type": "checkup",
+            "slug": "handling-religious-conflicts"
+          }
+        ]
+      },
+      {
+        "title": "Incorporant la Fe a la Vida Diària",
+        "description": "Discuteix com integrar els valors religiosos a les teves rutines diàries i a la presa de decisions. Explora pràctiques compartides, activitats espirituals i com la religió pot millorar la vostra parella i el creixement personal.",
+        "content": [
+          {
+            "type": "checkup",
+            "slug": "supportive-communication"
+          },
+          {
+            "type": "question",
+            "slug": "how-can-we-support-each-others-spiritual-growth"
+          },
+          {
+            "type": "game",
+            "slug": "spiritual-journey"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-integrate-your-faith-with-your-personal-hobbies-or-interests"
+          }
+        ]
+      },
+      {
+        "title": "Planificant per a les Futures Benediccions",
+        "description": "Participa en converses significatives sobre com les teves creences religioses influeixen en les decisions sobre família i fills. Discuteix si imagines criar fills dins d'una tradició religiosa particular i explora les implicacions per a la vostra vida junts.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "parenting-style-alignment"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-envision-having-children-in-a-particular-religious-tradition"
+          },
+          {
+            "type": "question",
+            "slug": "what-religious-values-are-most-important-to-you-in-a-relationship"
+          },
+          {
+            "type": "article",
+            "slug": "enhancing-communication-before-parenthood"
+          },
+          {
+            "type": "checkup",
+            "slug": "parenting-playbook-compatibility"
+          },
+          {
+            "type": "exercise",
+            "slug": "parenting-styles-discussion"
+          }
+        ]
+      },
+      {
+        "title": "Construint una Espiritualitat Compartida",
+        "description": "En aquest pas final, centra't en com crear una barreja harmònica de les teves creences religioses. Explora pràctiques que honoren tant les teves tradicions com discuteix com donar suport al creixement espiritual de cadascun, assegurant una relació satisfactòria basada en el respecte mutu i la comprensió.",
+        "content": [
+          {
+            "type": "checkup",
+            "slug": "sharing-spiritual-beliefs"
+          },
+          {
+            "type": "question",
+            "slug": "are-there-any-religious-practices-youd-like-to-explore-together"
+          },
+          {
+            "type": "exercise",
+            "slug": "interfaith-understanding-sessions"
+          }
+        ]
+      }
+    ],
+    "slug": "navigating-our-religious-beliefs-together"
+  },
+  {
+    "job": [
+      "preparing_for_marriage"
+    ],
+    "title": "Preparant-se per al Matrimoni: Construint una Base Sòlida",
+    "description": "Aquesta aventura està dissenyada per equipar-te a tu i a la teva parella amb les eines i coneixements necessaris per a un matrimoni exitós. Cada dia, exploraràs conceptes essencials, des de la comunicació fins a l'harmonia financera, obrint el camí per a una comprensió més profunda l'un de l'altre i una relació resilient.",
+    "subtopics": [
+      {
+        "title": "Entenent els Llenguatges de l'Amor",
+        "description": "Identifica i explora els llenguatges de l'amor de cadascun per millorar la connexió emocional. Entendre com doneu i rebeu amor pot millorar significativament la dinàmica de la vostra relació.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "love-language-type"
+          },
+          {
+            "type": "article",
+            "slug": "decoding-love-languages"
+          },
+          {
+            "type": "game",
+            "slug": "love-languages-exploration"
+          },
+          {
+            "type": "exercise",
+            "slug": "find-out-your-love-language"
+          }
+        ]
+      },
+      {
+        "title": "Mestre en Converses Financeres",
+        "description": "Aprèn la importància de les discussions obertes sobre finances. Endinsa't en els estils de pressupost, hàbits de despesa i objectius financers per construir confiança i transparència en la vostra associació financera.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "financial-communication-style"
+          },
+          {
+            "type": "article",
+            "slug": "mastering-money-talks-together"
+          },
+          {
+            "type": "game",
+            "slug": "dream-budget-builders"
+          },
+          {
+            "type": "checkup",
+            "slug": "aligning-financial-values-and-goals"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-prefer-to-communicate-your-needs-and-desires"
+          },
+          {
+            "type": "exercise",
+            "slug": "financial-planning-for-marriage"
+          }
+        ]
+      },
+      {
+        "title": "Navegant per la Intimitat Emocional",
+        "description": "Desenvolupa habilitats per fomentar la intimitat emocional a través de la vulnerabilitat, l'escolta activa i la comunicació honesta. Entén com expressar emocions lliurement i donar suport a les necessitats emocionals de l'altre.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "emotional-intimacy-style"
+          },
+          {
+            "type": "article",
+            "slug": "building-emotional-intimacy-together"
+          },
+          {
+            "type": "game",
+            "slug": "feelings-explorer"
+          },
+          {
+            "type": "checkup",
+            "slug": "emotional-intimacy-check-in"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-feel-about-writing-love-notes-to-each-other-want-to-give-it-a-try"
+          },
+          {
+            "type": "exercise",
+            "slug": "vulnerability-exploration-session"
+          }
+        ]
+      },
+      {
+        "title": "Alineant Objectius Futurs",
+        "description": "Explora com discutir i alinear els vostres somnis i aspiracions. Establiu objectius compartits per al vostre futur junts, assegurant que ambdós socis se sentin valorats i entesos en el procés de planificació.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "goal-alignment-style"
+          },
+          {
+            "type": "article",
+            "slug": "setting-shared-future-goals"
+          },
+          {
+            "type": "game",
+            "slug": "future-visionaries"
+          },
+          {
+            "type": "checkup",
+            "slug": "charting-our-shared-future"
+          },
+          {
+            "type": "exercise",
+            "slug": "long-term-goal-planning"
+          }
+        ]
+      },
+      {
+        "title": "Enfrontant els Reptes Junts",
+        "description": "Prepara't per als reptes de la vida matrimonial desenvolupant habilitats de resolució de conflictes i estratègies per donar suport l'un a l'altre durant moments difícils. Aprèn a navegar desacords amb empatia i respecte.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "your-conflict-style"
+          },
+          {
+            "type": "article",
+            "slug": "mastering-conflict-resolution-together"
+          },
+          {
+            "type": "game",
+            "slug": "conflict-resolution-quest"
+          },
+          {
+            "type": "checkup",
+            "slug": "conflict-resolution-style-match"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-game-we-could-play-to-improve-our-conflict-resolution-skills"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-feel-about-using-humor-to-ease-tense-conversations"
+          },
+          {
+            "type": "exercise",
+            "slug": "conflict-resolution-strategies-practice"
+          }
+        ]
+      },
+      {
+        "title": "Creant Rituals i Tradicions Compartides",
+        "description": "Estableix rituals i tradicions significatives que enforteixin el vostre vincle. Descobreix maneres de celebrar la vostra relació i crear records duradors com a parella, fomentant un sentiment d'unitat i pertinença.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "ritual-building-style"
+          },
+          {
+            "type": "article",
+            "slug": "fun-rituals-to-strengthen-bonds"
+          },
+          {
+            "type": "game",
+            "slug": "date-night-planner"
+          },
+          {
+            "type": "checkup",
+            "slug": "creative-date-designers"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-new-hobby-we-can-start-together-to-strengthen-our-bond"
+          },
+          {
+            "type": "exercise",
+            "slug": "creating-passion-renewal-date"
+          }
+        ]
+      }
+    ],
+    "slug": "preparing-for-marriage-building-a-strong-foundation"
+  },
+  {
+    "job": [
+      "learning_relationship_skills"
+    ],
+    "title": "Aprenentatge d'Habilitats en les Relacions",
+    "description": "Aquesta experiència està dissenyada per ajudar-te a desenvolupar habilitats essencials en les relacions que enfortiran la teva connexió, milloraran la comunicació i augmentaran la teva capacitat per resoldre conflictes de manera efectiva. El contingut de cada dia es basa en l'anterior, guiant-te a través d'una progressió d'habilitats necessàries per a una parella sana i satisfactòria.",
+    "subtopics": [
+      {
+        "title": "Entendre les Emocions",
+        "description": "Aprèn a identificar i articular les teves emocions, així com a entendre les respostes emocionals de la teva parella. Aquesta habilitat fonamental és crucial per a una comunicació efectiva.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "emotion-management-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-handle-your-strong-emotions"
+          },
+          {
+            "type": "article",
+            "slug": "building-emotional-intimacy-together"
+          },
+          {
+            "type": "game",
+            "slug": "emotional-seasons"
+          },
+          {
+            "type": "checkup",
+            "slug": "mood-mapping"
+          },
+          {
+            "type": "exercise",
+            "slug": "emotional-regulation-techniques"
+          }
+        ]
+      },
+      {
+        "title": "Tècniques de Comunicació Efectiva",
+        "description": "Explora diferents estils i tècniques de comunicació, incloent l'escolta activa i les pràctiques de retroalimentació que fomenten l'obertura i l'honestedat en la teva relació.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "discover-your-communication-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-prefer-to-communicate-your-needs-and-desires"
+          },
+          {
+            "type": "article",
+            "slug": "mastering-communication-techniques"
+          },
+          {
+            "type": "game",
+            "slug": "communication-clues"
+          },
+          {
+            "type": "checkup",
+            "slug": "mastering-our-communication-styles"
+          },
+          {
+            "type": "exercise",
+            "slug": "active-listening-practice"
+          }
+        ]
+      },
+      {
+        "title": "Estratègies de Resolució de Conflictes",
+        "description": "Endinsa't en diverses estratègies per resoldre conflictes de manera saludable. Aprendràs a abordar els desacords de manera constructiva i a trobar solucions que beneficiïn ambdues parts.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "your-conflict-style"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-metaphor-that-describes-how-we-handle-problems-together"
+          },
+          {
+            "type": "article",
+            "slug": "effective-conflict-resolution-strategies"
+          },
+          {
+            "type": "game",
+            "slug": "conflict-resolution-quest"
+          },
+          {
+            "type": "checkup",
+            "slug": "conflict-resolution-styles"
+          },
+          {
+            "type": "exercise",
+            "slug": "conflict-resolution-strategies-practice"
+          }
+        ]
+      },
+      {
+        "title": "Desenvolupament de la Vulnerabilitat i la Confiança",
+        "description": "Concentra't en construir confiança a través de la vulnerabilitat. Aquest subtema implica entendre la importància de l'obertura i com compartir sentiments i experiències personals.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "vulnerability-style-assessment"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-relationship-skill-you-admire-in-others-and-want-to-develop"
+          },
+          {
+            "type": "article",
+            "slug": "vulnerability-trusts-gateway"
+          },
+          {
+            "type": "game",
+            "slug": "trust-talk"
+          },
+          {
+            "type": "checkup",
+            "slug": "building-a-fortress-of-trust"
+          },
+          {
+            "type": "exercise",
+            "slug": "rebuild-trust-session"
+          }
+        ]
+      },
+      {
+        "title": "Navegant Converses Difícils",
+        "description": "Aprèn a iniciar i navegar converses difícils sense escalar el conflicte. Practicaràs tècniques per discutir temes sensibles de manera calmada i respectuosa.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "communication-timing-style"
+          },
+          {
+            "type": "question",
+            "slug": "whats-the-best-advice-youve-ever-received-about-communicating-in-a-relationship"
+          },
+          {
+            "type": "article",
+            "slug": "navigating-difficult-conversations"
+          },
+          {
+            "type": "game",
+            "slug": "communication-carousel"
+          },
+          {
+            "type": "checkup",
+            "slug": "emotions-expressed-freely"
+          },
+          {
+            "type": "exercise",
+            "slug": "nonviolent-communication-practice"
+          }
+        ]
+      },
+      {
+        "title": "Millorar la Intimitat Emocional",
+        "description": "Conclou la teva experiència explorant maneres de profunditzar la teva connexió emocional. Això inclou pràctiques per millorar la intimitat física i emocional en la teva relació, assegurant que us apropeu més l'un a l'altre.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "emotional-intimacy-style"
+          },
+          {
+            "type": "question",
+            "slug": "whats-something-youd-like-to-learn-together-to-enhance-our-relationship"
+          },
+          {
+            "type": "article",
+            "slug": "building-emotional-intimacy-together"
+          },
+          {
+            "type": "game",
+            "slug": "intimacy-adventure"
+          },
+          {
+            "type": "checkup",
+            "slug": "emotional-intimacy-check-in"
+          },
+          {
+            "type": "exercise",
+            "slug": "emotional-closeness-exercises"
+          }
+        ]
+      }
+    ],
+    "slug": "learning-relationship-skills"
+  },
+  {
+    "job": [
+      "having_fun_and_entertainment"
+    ],
+    "title": "Creant Diversió i Entreteniment Junts",
+    "description": "Aquesta aventura et guiarà a través d'activitats i discussions dissenyades per millorar la joia i la diversió en la teva relació. Explorant diversos aspectes de la diversió i l'entreteniment, cultivaràs una connexió més profunda mentre aprens a incorporar riures i creativitat a la teva vida diària. Cada dia, et comprometràs amb noves experiències i reflexions que fomenten la unió i l'exploració.",
+    "subtopics": [
+      {
+        "title": "Començant amb Riures",
+        "description": "Explora el paper de l'humor en la teva relació. Participa amb preguntes divertides com els teus acudits inapropiats preferits i missatges flirtejos. Aquest tema fonamental t'ajudarà a descobrir maneres d'incorporar riures a les teves vides diàries.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "humor-harmony-style"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-have-a-favorite-inappropriate-joke"
+          },
+          {
+            "type": "article",
+            "slug": "laughing-together-keeps-love-strong"
+          },
+          {
+            "type": "game",
+            "slug": "love-laughter"
+          },
+          {
+            "type": "checkup",
+            "slug": "fun-flirtation"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-have-any-favorite-flirty-texts-or-messages-that-make-you-smile"
+          }
+        ]
+      },
+      {
+        "title": "Celebrant Èxits i Fites",
+        "description": "Aprèn a celebrar els èxits de l'altre, grans o petits. Discuteix les teves maneres preferides de celebrar ocasions especials com aniversaris i festes, fomentant una atmosfera d'apreciació i joia.",
+        "content": [
+          {
+            "type": "checkup",
+            "slug": "marriage-milestones"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-like-to-celebrate-anniversaries"
+          },
+          {
+            "type": "game",
+            "slug": "date-night-planner"
+          },
+          {
+            "type": "test",
+            "slug": "milestone-celebration-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-like-to-celebrate-achievements-big-or-small"
+          }
+        ]
+      },
+      {
+        "title": "Descobrint Interessos Compartits",
+        "description": "Endinsa't en discussions sobre activitats i aficions que ambdós gaudiu. Identifica interessos comuns i suggereix activitats divertides per provar junts, que ajudaran a enfortir el vostre vincle compartit i crear records duradors.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "hobby-harmony-style"
+          },
+          {
+            "type": "question",
+            "slug": "what-hobbies-or-activities-would-you-like-us-to-pursue-together-in-the-future"
+          },
+          {
+            "type": "article",
+            "slug": "exploring-shared-hobbies-together"
+          },
+          {
+            "type": "game",
+            "slug": "hobby-harmony"
+          },
+          {
+            "type": "checkup",
+            "slug": "uncovering-daily-habits-and-quirks"
+          },
+          {
+            "type": "exercise",
+            "slug": "hobbies-and-interests-exercise"
+          }
+        ]
+      },
+      {
+        "title": "Aventures Espontànies",
+        "description": "Sortiu de la vostra zona de confort planificant sortides espontànies o sorpreses divertides per a l'altre. Utilitzeu suggeriments per decidir noves experiències, com activitats a l'aire lliure o nits de cita temàtiques, augmentant l'emoció a la vostra relació.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "spontaneity-style"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-new-sport-or-physical-activity-youd-like-to-try-as-a-team"
+          },
+          {
+            "type": "article",
+            "slug": "adventure-sparks-deeper-bonds"
+          },
+          {
+            "type": "game",
+            "slug": "adventure-awaits"
+          },
+          {
+            "type": "checkup",
+            "slug": "adventure-together"
+          },
+          {
+            "type": "exercise",
+            "slug": "adventure-challenge"
+          }
+        ]
+      },
+      {
+        "title": "Creativitat Juganera",
+        "description": "Aprofiteu la vostra creativitat junts explorant activitats artístiques o jocs divertits. Participa en exercicis que us desafien a pensar fora de la caixa, com projectes de bricolatge o nits de cuina temàtiques.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "creative-sparks-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-express-your-creativity"
+          },
+          {
+            "type": "article",
+            "slug": "crafting-memorable-date-nights"
+          },
+          {
+            "type": "game",
+            "slug": "decor-dilemma"
+          },
+          {
+            "type": "exercise",
+            "slug": "creative-drawing-contest"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-creative-project-youd-love-to-tackle-as-a-duo"
+          }
+        ]
+      },
+      {
+        "title": "Construint Tradicions i Rituals",
+        "description": "Acabeu la vostra aventura reflexionant sobre com establir tradicions regulars que mantinguin la diversió viva a la vostra relació. Discuteix el valor dels rituals divertits i com poden millorar la vostra connexió i crear records estimats junts.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "ritual-building-style"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-tradition-youd-like-to-start-together"
+          },
+          {
+            "type": "article",
+            "slug": "fun-rituals-to-strengthen-bonds"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-tradition-youd-like-us-to-start-as-a-couple"
+          }
+        ]
+      }
+    ],
+    "slug": "creating-fun-and-entertainment-together"
+  },
+  {
+    "job": [
+      "introducing_healthy_habits"
+    ],
+    "title": "Introduint Hàbits Saludables Junts",
+    "description": "Aquesta aventura està dissenyada per ajudar les parelles a desenvolupar i mantenir hàbits saludables que contribueixin al seu benestar general i enforteixin la seva relació. Fent un pas cada dia, exploraràs la nutrició, les pràctiques de benestar i com donar-se suport mútuament en aquest camí cap a un estil de vida més saludable.",
+    "subtopics": [
+      {
+        "title": "Entenent els Fonaments de la Nutrició",
+        "description": "Aprèn els fonaments d'una bona nutrició, discutint aspectes com vitamines i nutrients, preparació de menjars i com incorporar aliments saludables a la teva dieta. Això estableix la base per a un estil de vida saludable.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "healthy-eating-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-ensure-youre-getting-enough-vitamins-and-nutrients"
+          },
+          {
+            "type": "article",
+            "slug": "kickstart-healthy-routines-together"
+          },
+          {
+            "type": "game",
+            "slug": "nutri-quiz"
+          },
+          {
+            "type": "exercise",
+            "slug": "healthy-eating-plans"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-prefer-cooking-together-or-trying-out-new-healthy-recipes-separately"
+          }
+        ]
+      },
+      {
+        "title": "Creant Routines Saludables",
+        "description": "Explora maneres d'establir rutines diàries que fomentin l'alimentació saludable i l'exercici, incloent rituals matinals i rituals nocturns. Discuteix la importància de la consistència i com afecta la teva salut.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "healthy-habits-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-incorporate-healthy-eating-into-your-busy-schedule"
+          },
+          {
+            "type": "article",
+            "slug": "healthy-habits-for-stronger-bonds"
+          },
+          {
+            "type": "game",
+            "slug": "healthy-habits-hub"
+          },
+          {
+            "type": "exercise",
+            "slug": "positive-habit-tracking"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-enjoy-morning-workouts-or-evening-wind-downs-more"
+          }
+        ]
+      },
+      {
+        "title": "Gestió de l'Estrès Junts",
+        "description": "Identifica estratègies saludables per gestionar l'estrès, incloent pràctiques de mindfulness i com donar-se suport durant moments de molta activitat. Aquest subtema aborda el benestar mental com a part d'un estil de vida saludable.",
+        "content": [
+          {
+            "type": "checkup",
+            "slug": "mood-mapping"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-handle-stress-in-a-healthy-way"
+          },
+          {
+            "type": "article",
+            "slug": "navigating-emotional-waters-together"
+          },
+          {
+            "type": "game",
+            "slug": "mindfulness-match"
+          },
+          {
+            "type": "exercise",
+            "slug": "mindfulness-meditation-sessions"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-handle-stress-or-unexpected-challenges"
+          }
+        ]
+      },
+      {
+        "title": "Incorporant Activitat Física",
+        "description": "Discuteix diferents formes d'activitat física que ambdós gaudiu, la importància del treball en equip per mantenir-se actius, i establiu un pla per a rutines d'exercici regulars junts que us mantinguin responsables.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "accountability-style-quiz"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-prefer-solo-workouts-or-exercising-together"
+          },
+          {
+            "type": "checkup",
+            "slug": "fitness-partners-unite"
+          },
+          {
+            "type": "exercise",
+            "slug": "fitness-routine-together"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-new-form-of-exercise-youd-like-to-do-together-regularly"
+          }
+        ]
+      },
+      {
+        "title": "Fent Seguiment del Progrés i Objectius",
+        "description": "Aprèn com establir i fer seguiment dels teus objectius de salut i benestar i com celebrar els èxits de l'altre. Això crearà motivació i un sentiment de col·laboració en el vostre viatge cap a un estil de vida saludable.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "goal-alignment-style"
+          },
+          {
+            "type": "question",
+            "slug": "what-are-your-long-term-health-and-wellness-goals-and-how-can-we-support-each-other"
+          },
+          {
+            "type": "article",
+            "slug": "setting-shared-future-goals"
+          },
+          {
+            "type": "game",
+            "slug": "future-visionaries"
+          },
+          {
+            "type": "exercise",
+            "slug": "smart-goals-planning"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-stay-motivated-to-maintain-your-healthy-habits"
+          }
+        ]
+      },
+      {
+        "title": "Construint Hàbits Saludables per al Futur",
+        "description": "Discuteix objectius de salut a llarg termini, com incorporar hàbits saludables a les vostres vides com a parella, i establir tradicions que fomentin el benestar, assegurant que adoptar pràctiques saludables esdevingui un estil de vida.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "growth-balance-style"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-new-habit-youd-like-to-develop-together-for-personal-growth"
+          },
+          {
+            "type": "exercise",
+            "slug": "positive-reinforcement-practices"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-new-healthy-habit-youd-like-to-try-this-month"
+          }
+        ]
+      }
+    ],
+    "slug": "introducing-healthy-habits-together"
+  },
+  {
+    "job": [
+      "understanding_mutual_compatibility"
+    ],
+    "title": "Entenent la Compatibilitat Mútua",
+    "description": "Aquesta aventura està dissenyada per ajudar-te a explorar i entendre les capes de compatibilitat en la teva relació. A mesura que tractis temes de manera gradual, aprendràs a identificar, apreciar i navegar tant les teves similituds com les teves diferències. Cada dia, et comprometràs amb diversos tipus de contingut que faciliten converses reflexives i fomenten connexions més profundes.",
+    "subtopics": [
+      {
+        "title": "Explorant els Valors Fonamentals",
+        "description": "Comença parlant dels teus tres valors més importants i com influeixen en les teves decisions. Aquest tema fonamental guiarà la teva comprensió del que és important per a cadascun de vosaltres en una relació.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "values-alignment-style"
+          },
+          {
+            "type": "question",
+            "slug": "what-are-three-values-you-believe-are-most-important-in-a-person"
+          },
+          {
+            "type": "article",
+            "slug": "aligning-future-goals"
+          },
+          {
+            "type": "game",
+            "slug": "values-vibes"
+          },
+          {
+            "type": "checkup",
+            "slug": "core-values-connection"
+          },
+          {
+            "type": "exercise",
+            "slug": "values-alignment-exercise"
+          }
+        ]
+      },
+      {
+        "title": "Estils de Comunicació",
+        "description": "Aprèn sobre els teus estils de comunicació individuals i discuteix com afecten les teves interaccions. Aquest subtema t'ajudarà a desenvolupar estratègies per a una comunicació més clara i efectiva.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "discover-your-communication-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-prefer-to-communicate-your-needs-and-desires"
+          },
+          {
+            "type": "article",
+            "slug": "mastering-communication-techniques"
+          },
+          {
+            "type": "game",
+            "slug": "communication-clues"
+          },
+          {
+            "type": "checkup",
+            "slug": "mastering-our-communication-styles"
+          },
+          {
+            "type": "exercise",
+            "slug": "active-listening-practice"
+          }
+        ]
+      },
+      {
+        "title": "Diferències Culturals i de Fons",
+        "description": "Explora com els teus diferents orígens culturals i experiències de vida modelen les teves perspectives. Entendre aquests elements fomenta l'empatia i l'apreciació mútua.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "cultural-connection-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-our-different-cultural-backgrounds-shape-our-relationship-and-how-can-we-honor-both"
+          },
+          {
+            "type": "article",
+            "slug": "bridging-religious-differences-together"
+          },
+          {
+            "type": "game",
+            "slug": "cultural-quest"
+          },
+          {
+            "type": "checkup",
+            "slug": "navigating-cultural-and-religious-differences"
+          },
+          {
+            "type": "exercise",
+            "slug": "difference-identification-and-acceptance"
+          }
+        ]
+      },
+      {
+        "title": "Equilibrant Interessos Personals i Compartits",
+        "description": "Discuteix els teus interessos, aficions i com poden complementar-se o entrar en conflicte entre ells. Trobar un equilibri millorarà la teva relació i assegurarà que ambdós socis se sentin satisfets.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "hobby-harmony-style"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-new-hobby-we-can-try-together-that-honors-both-our-interests"
+          },
+          {
+            "type": "article",
+            "slug": "exploring-shared-hobbies-together"
+          },
+          {
+            "type": "game",
+            "slug": "hobby-harmony"
+          },
+          {
+            "type": "exercise",
+            "slug": "hobbies-and-interests-exercise"
+          }
+        ]
+      },
+      {
+        "title": "Gestionant Conflictes i Diferències",
+        "description": "Endinsa't en com cadascun de vosaltres gestiona els conflictes i les opinions diferents. Explorant tècniques efectives de resolució de conflictes, aprendràs a convertir les discrepàncies en oportunitats de creixement.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "your-conflict-style"
+          },
+          {
+            "type": "game",
+            "slug": "conflict-resolution-quest"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-handle-feelings-of-jealousy-or-insecurity"
+          },
+          {
+            "type": "article",
+            "slug": "mastering-conflict-resolution-together"
+          },
+          {
+            "type": "checkup",
+            "slug": "conflict-connoisseurs"
+          },
+          {
+            "type": "exercise",
+            "slug": "conflict-resolution-styles"
+          },
+          {
+            "type": "question",
+            "slug": "how-can-we-turn-our-differences-into-opportunities-for-growth-as-a-couple"
+          }
+        ]
+      },
+      {
+        "title": "Evolució de la Relació",
+        "description": "Reflexiona sobre com la teva relació ha canviat amb el temps i discuteix com imagines el seu futur. Aquest tema et permetrà alinear els teus objectius i aspiracions a llarg termini com a parella.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "future-vision-type"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-see-our-relationship-evolving-over-time"
+          },
+          {
+            "type": "article",
+            "slug": "creating-a-vision-for-us"
+          },
+          {
+            "type": "game",
+            "slug": "future-visionaries"
+          },
+          {
+            "type": "checkup",
+            "slug": "future-talk-together"
+          },
+          {
+            "type": "exercise",
+            "slug": "future-goals-compatibility"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-see-our-relationship-evolving-over-the-next-decade"
+          }
+        ]
+      }
+    ],
+    "slug": "understanding-mutual-compatibility"
+  },
+  {
+    "job": [
+      "building_trust"
+    ],
+    "title": "Construint Confiança Junts",
+    "description": "Aquesta aventura està dissenyada per ajudar-te a tu i a la teva parella a explorar els components essencials de la confiança en la vostra relació. Al llarg de diversos dies, participaràs en discussions significatives, activitats i reflexions destinades a enfortir la vostra confiança i intimitat emocional.",
+    "subtopics": [
+      {
+        "title": "Definint la Confiança",
+        "description": "Comença explorant què significa la confiança per a ambdós. Discuteix les teves definicions de confiança i com aquestes modelen la vostra relació.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "trust-building-style-quiz"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-define-trust-in-a-relationship"
+          },
+          {
+            "type": "article",
+            "slug": "trust-through-open-communication"
+          },
+          {
+            "type": "game",
+            "slug": "trust-fund-trivia"
+          },
+          {
+            "type": "checkup",
+            "slug": "trust-builders"
+          },
+          {
+            "type": "question",
+            "slug": "can-you-share-a-time-when-honesty-led-to-a-positive-outcome-in-our-relationship"
+          },
+          {
+            "type": "exercise",
+            "slug": "trust-fall"
+          }
+        ]
+      },
+      {
+        "title": "Comunicació Oberta",
+        "description": "Aprèn la importància d'un diàleg transparent i obert. Participa en exercicis i preguntes que promouen la comunicació honesta.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "discover-your-communication-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-prefer-to-communicate-your-needs-and-desires"
+          },
+          {
+            "type": "article",
+            "slug": "enhancing-communication-for-stronger-bonds"
+          },
+          {
+            "type": "game",
+            "slug": "communication-clues"
+          },
+          {
+            "type": "checkup",
+            "slug": "mastering-our-communication-styles"
+          },
+          {
+            "type": "question",
+            "slug": "how-important-is-it-for-you-to-always-be-transparent-with-me-even-about-small-things"
+          },
+          {
+            "type": "exercise",
+            "slug": "active-listening-practice"
+          }
+        ]
+      },
+      {
+        "title": "Gestionant la Gelosia i la Inseguretat",
+        "description": "Identifica i aborda els sentiments de gelosia i inseguretat. Comparteix experiències personals i estratègies d'afrontament en un entorn de suport.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "emotional-regulation-styles"
+          },
+          {
+            "type": "question",
+            "slug": "have-you-ever-felt-jealous-in-our-relationship-how-did-you-handle-it"
+          },
+          {
+            "type": "article",
+            "slug": "navigating-emotional-waters-together"
+          },
+          {
+            "type": "game",
+            "slug": "emotion-explorer"
+          },
+          {
+            "type": "checkup",
+            "slug": "emotional-needs-compatibility"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-handle-feelings-of-jealousy-or-insecurity"
+          },
+          {
+            "type": "exercise",
+            "slug": "jealously-navigation-technique"
+          }
+        ]
+      },
+      {
+        "title": "Establint Límits",
+        "description": "Discuteix els límits personals i entén els nivells de confort de cadascun. Construir respecte mutu i comprensió és clau per establir confiança.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "boundary-setting-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-comfortable-are-you-discussing-your-boundaries-and-desires"
+          },
+          {
+            "type": "article",
+            "slug": "navigating-boundaries-for-intimacy"
+          },
+          {
+            "type": "checkup",
+            "slug": "personal-space-balancing-togetherness-and-alone-time"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-boundary-you-need-to-feel-more-secure-and-trusting-in-our-relationship"
+          },
+          {
+            "type": "exercise",
+            "slug": "boundaries-practice"
+          }
+        ]
+      },
+      {
+        "title": "Reparant la Confiança",
+        "description": "Explora com reconstruir la confiança després que hagi estat posada a prova. Discuteix tècniques i compromisos necessaris per restaurar la fe l'un en l'altre.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "trust-repair-style-type"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-prefer-to-rebuild-trust-if-its-ever-broken"
+          },
+          {
+            "type": "article",
+            "slug": "rebuilding-trust-after-betrayal"
+          },
+          {
+            "type": "game",
+            "slug": "trust-talk-challenge"
+          },
+          {
+            "type": "checkup",
+            "slug": "trust-in-communication"
+          },
+          {
+            "type": "question",
+            "slug": "have-you-done-something-in-the-past-that-you-think-can-significantly-change-my-image-of-you-and-what-are-the-things-that-can-hypothetically-change-your-image-of-me-maybe-i-did-something-amoral-or-cheated"
+          },
+          {
+            "type": "exercise",
+            "slug": "rebuild-trust-session"
+          }
+        ]
+      },
+      {
+        "title": "Activitats per Construir Confiança",
+        "description": "Participa en activitats divertides i interactives que milloren la confiança. Participa en exercicis dissenyats per apropar-vos i enfortir el vostre vincle.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "transparency-style-assessment"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-fun-activity-we-can-do-together-to-strengthen-our-trust"
+          },
+          {
+            "type": "article",
+            "slug": "fun-rituals-to-strengthen-bonds"
+          },
+          {
+            "type": "game",
+            "slug": "trust-trek"
+          },
+          {
+            "type": "checkup",
+            "slug": "trust-in-conflict-resolution"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-trust-building-challenge-youd-like-us-to-try"
+          },
+          {
+            "type": "exercise",
+            "slug": "adventure-challenge"
+          }
+        ]
+      }
+    ],
+    "slug": "building-trust-together"
+  },
+  {
+    "job": [
+      "preparing_for_children"
+    ],
+    "title": "Preparant-se per a la Paternitat: Un Viatge cap a la Paternitat",
+    "description": "Aquest viatge té com a objectiu equipar-te a tu i a la teva parella per a l'emocionant i desafiador aventura de ser pares. Cada dia us guiarà a través de diverses discussions, reflexions i activitats per fomentar converses significatives sobre la paternitat. A mesura que avanceu, explorareu conceptes fonamentals, preparació emocional i estratègies pràctiques per assegurar un viatge exitós cap a la paternitat.",
+    "subtopics": [
+      {
+        "title": "Entenent el Desig de Paternitat",
+        "description": "Explora els teus pensaments i sentiments individuals sobre tenir fills. Participa en preguntes reflexives per entendre els desitjos i expectatives de cadascun, establint les bases per a futures discussions.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "parenthood-readiness-styles"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-see-yourself-wanting-children-someday"
+          },
+          {
+            "type": "game",
+            "slug": "future-visionaries"
+          },
+          {
+            "type": "checkup",
+            "slug": "parenting-pathways"
+          },
+          {
+            "type": "exercise",
+            "slug": "family-planning-exercise"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-want-to-have-children-if-so-when-do-you-think-is-the-right-time"
+          }
+        ]
+      },
+      {
+        "title": "Alineant els Valors de Paternitat",
+        "description": "Discuteix els teus valors i creences fonamentals sobre la paternitat. Aquest subtema t'ajudarà a alinear-te en qüestions importants, com l'educació, la disciplina i els valors que desitges inculcar als teus futurs fills.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "parenting-style-alignment"
+          },
+          {
+            "type": "question",
+            "slug": "what-values-are-most-important-for-us-to-instill-in-our-children"
+          },
+          {
+            "type": "game",
+            "slug": "values-vibes"
+          },
+          {
+            "type": "checkup",
+            "slug": "parenting-playbook-compatibility"
+          },
+          {
+            "type": "exercise",
+            "slug": "values-alignment-exercise"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-believe-in-religious-education-for-children-why-or-why-not"
+          }
+        ]
+      },
+      {
+        "title": "Gestionant la Preparació Emocional",
+        "description": "Avalua la teva preparació emocional per als alts i baixos de la paternitat. A través de diversos exercicis i reflexions, abordaràs possibles pors, preocupacions i esperances sobre la paternitat.",
+        "content": [
+          {
+            "type": "checkup",
+            "slug": "emotional-rollercoaster-ride"
+          },
+          {
+            "type": "question",
+            "slug": "are-you-ready-to-handle-the-emotional-rollercoaster-that-comes-with-parenting"
+          },
+          {
+            "type": "article",
+            "slug": "navigating-emotional-waters-together"
+          },
+          {
+            "type": "game",
+            "slug": "emotional-seasons"
+          },
+          {
+            "type": "exercise",
+            "slug": "emotional-support-exercises"
+          },
+          {
+            "type": "question",
+            "slug": "what-fears-or-concerns-do-you-have-about-becoming-parents"
+          }
+        ]
+      },
+      {
+        "title": "Responsabilitats Pràctiques de Paternitat",
+        "description": "Endinsa't en la logística de les responsabilitats de paternitat. Discuteix com t'agradaria dividir les tasques, planificar opcions de cura infantil i gestionar les feines domèstiques, preparant-te per a les realitats pràctiques de criar fills.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "responsibility-sharing-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-should-we-divide-parenting-responsibilities"
+          },
+          {
+            "type": "game",
+            "slug": "household-harmony"
+          },
+          {
+            "type": "exercise",
+            "slug": "shared-responsibilities-mapping"
+          },
+          {
+            "type": "question",
+            "slug": "what-are-your-thoughts-on-childcare-options"
+          }
+        ]
+      },
+      {
+        "title": "Planificació Financera per a la Paternitat",
+        "description": "Concentra't en els aspectes financers de criar fills. Participa en discussions sobre pressupostos, estalvis per al futur del teu fill i fer ajustaments als teus plans financers a mesura que entres en aquest nou capítol.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "financial-planning-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-should-we-save-for-our-childs-future"
+          },
+          {
+            "type": "article",
+            "slug": "financial-planning-together"
+          },
+          {
+            "type": "game",
+            "slug": "dream-budget-builders"
+          },
+          {
+            "type": "exercise",
+            "slug": "budget-planning-session"
+          }
+        ]
+      },
+      {
+        "title": "Construint una Xarxa de Suport",
+        "description": "Explora la importància d'una xarxa de suport mentre et prepares per tenir fills. Discuteix els rols de la família, els amics i els recursos de paternitat que poden ajudar-te a navegar pels desafiaments que vindran.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "support-network-style"
+          },
+          {
+            "type": "question",
+            "slug": "are-you-comfortable-with-pet-allergies-or-preferences-if-we-have-kids"
+          },
+          {
+            "type": "exercise",
+            "slug": "parenting-support-networks"
+          },
+          {
+            "type": "question",
+            "slug": "are-you-willing-to-retire-just-to-take-care-of-our-kids"
+          }
+        ]
+      }
+    ],
+    "slug": "preparing-for-children-a-journey-to-parenthood"
+  },
+  {
+    "job": [
+      "improving_communication"
+    ],
+    "title": "Millorar la Comunicació: Construint Ponts a la Nostra Relació",
+    "description": "Aquesta aventura se centra en millorar les habilitats de comunicació entre parelles. Mitjançant diverses activitats, discussions i pràctiques reflexives, aprendràs a expressar-te de manera més oberta i a entendre't millor, fomentant una connexió més estreta i una relació més satisfactòria.",
+    "subtopics": [
+      {
+        "title": "Entenent els Estils de Comunicació de l'Altre",
+        "description": "Explora diferents estils de comunicació i descobreix com afecten les teves interaccions. Això inclou identificar el teu propi estil i conèixer les preferències de la teva parella per crear un diàleg obert.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "discover-your-communication-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-prefer-to-communicate-your-needs-and-desires"
+          },
+          {
+            "type": "article",
+            "slug": "enhancing-communication-for-stronger-bonds"
+          },
+          {
+            "type": "game",
+            "slug": "communication-clues"
+          },
+          {
+            "type": "exercise",
+            "slug": "active-listening-practice"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-feel-about-writing-down-our-issues-before-discussing-them"
+          },
+          {
+            "type": "checkup",
+            "slug": "mastering-our-communication-styles"
+          }
+        ]
+      },
+      {
+        "title": "Navegant Converses Difícils",
+        "description": "Aprèn tècniques per abordar discussions difícils amb empatia i respecte. Adquiriràs habilitats per expressar els teus pensaments i sentiments mentre estàs atent a la perspectiva de la teva parella.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "problem-solving-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-can-we-make-our-disagreements-more-constructive"
+          },
+          {
+            "type": "article",
+            "slug": "navigating-sensitive-conversations"
+          },
+          {
+            "type": "game",
+            "slug": "problem-solving-pals"
+          },
+          {
+            "type": "exercise",
+            "slug": "conflict-resolution-strategies-practice"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-prefer-discussing-issues-immediately-or-taking-some-time-to-cool-off"
+          },
+          {
+            "type": "checkup",
+            "slug": "navigating-tough-conversations"
+          }
+        ]
+      },
+      {
+        "title": "Expressant Necessitats i Límits",
+        "description": "Aquest tema aprofundeix en com comunicar les teves necessitats i establir límits saludables. Practicaràs expressar el que necessites de l'altre d'una manera que enforteixi la vostra relació.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "boundary-setting-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-comfortable-are-you-discussing-your-boundaries-and-desires"
+          },
+          {
+            "type": "article",
+            "slug": "navigating-boundaries-for-intimacy"
+          },
+          {
+            "type": "exercise",
+            "slug": "boundaries-practice"
+          },
+          {
+            "type": "question",
+            "slug": "whats-one-boundary-youd-like-to-set-to-keep-our-relationship-healthy"
+          }
+        ]
+      },
+      {
+        "title": "Escolta Activa i Validació Emocional",
+        "description": "Domina l'art de l'escolta activa i aprèn a validar els sentiments de la teva parella. Descobriràs eines per millorar les teves habilitats d'escolta i assegurar-te que ambdós se sentin escoltats i entesos.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "listening-style-quiz"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-like-to-receive-feedback-in-our-relationship"
+          },
+          {
+            "type": "article",
+            "slug": "mastering-active-listening"
+          },
+          {
+            "type": "checkup",
+            "slug": "emotional-explorers"
+          },
+          {
+            "type": "exercise",
+            "slug": "active-listening-practice"
+          },
+          {
+            "type": "question",
+            "slug": "whats-your-favorite-non-verbal-way-i-show-you-im-listening"
+          }
+        ]
+      },
+      {
+        "title": "Resolució Constructiva de Conflictes",
+        "description": "Aprèn estratègies efectives per resoldre conflictes de manera constructiva. Això inclou tècniques per gestionar desacords sense danyar la relació, fomentant un esperit de treball en equip.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "your-conflict-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-handle-disagreements-or-conflicts"
+          },
+          {
+            "type": "article",
+            "slug": "effective-conflict-resolution-strategies"
+          },
+          {
+            "type": "game",
+            "slug": "conflict-resolution-quest"
+          },
+          {
+            "type": "exercise",
+            "slug": "conflict-resolution-strategies-practice"
+          },
+          {
+            "type": "question",
+            "slug": "whats-one-thing-youd-like-to-change-about-how-we-handle-our-differences"
+          },
+          {
+            "type": "checkup",
+            "slug": "conflict-resolution-styles"
+          }
+        ]
+      },
+      {
+        "title": "Fomentant Diàlegs Honests i Oberts",
+        "description": "Cultiva l'hàbit de la comunicació oberta i honesta dins de la teva relació. Aquest subtema et guiarà a través de pràctiques que fomenten la transparència i la confiança, obrint el camí per a una connexió més profunda i intimitat.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "honesty-and-openness-style"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-feel-comfortable-expressing-your-true-feelings-with-me-why-or-why-not"
+          },
+          {
+            "type": "article",
+            "slug": "building-trust-through-transparency"
+          },
+          {
+            "type": "game",
+            "slug": "honesty-huddle"
+          },
+          {
+            "type": "checkup",
+            "slug": "the-honesty-hangout"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-think-honesty-is-always-the-best-policy-why-or-why-not"
+          },
+          {
+            "type": "exercise",
+            "slug": "complete-honesty-sessions"
+          }
+        ]
+      }
+    ],
+    "slug": "improving-communication-building-bridges-in-our-relationship"
+  },
+  {
+    "job": [
+      "having_meaningful_conversations"
+    ],
+    "title": "Cultivant Converses Significatives",
+    "description": "Aquesta aventura està dissenyada per millorar la teva capacitat d'involucrar-te en converses significatives amb la teva parella. Al llarg de diversos dies, exploraràs diversos aspectes de la comunicació, des de comprendre els valors de l'altre fins a discutir temes emocionals més profunds. Cada dia es basa en l'anterior, fomentant el creixement i la connexió.",
+    "subtopics": [
+      {
+        "title": "Els Fonaments de la Comunicació",
+        "description": "Comença explorant els fonaments de la comunicació efectiva amb la teva parella. Aprèn sobre l'escolta activa, expressar pensaments amb claredat i la importància de les pistes no verbals.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "discover-your-communication-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-prefer-to-communicate-your-needs-and-desires"
+          },
+          {
+            "type": "article",
+            "slug": "mastering-communication-techniques"
+          },
+          {
+            "type": "game",
+            "slug": "communication-clues"
+          },
+          {
+            "type": "checkup",
+            "slug": "mastering-our-communication-styles"
+          },
+          {
+            "type": "exercise",
+            "slug": "active-listening-practice"
+          },
+          {
+            "type": "question",
+            "slug": "whats-your-favorite-memory-of-us-having-a-great-conversation"
+          }
+        ]
+      },
+      {
+        "title": "Entenent els Valors de l'Altre",
+        "description": "Endinsa't en els valors fonamentals que donen forma a les teves creences i accions. Discuteix com aquests valors influeixen en les teves decisions i com poden impactar la teva relació.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "values-alignment-style"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-think-we-share-the-same-values"
+          },
+          {
+            "type": "article",
+            "slug": "aligning-life-ambitions-together"
+          },
+          {
+            "type": "game",
+            "slug": "values-vibes"
+          },
+          {
+            "type": "checkup",
+            "slug": "core-values-connection"
+          },
+          {
+            "type": "exercise",
+            "slug": "values-alignment-exercise"
+          },
+          {
+            "type": "question",
+            "slug": "what-are-your-top-three-values-and-how-do-they-influence-your-decisions"
+          }
+        ]
+      },
+      {
+        "title": "Navegant Temes Difícils",
+        "description": "Aprèn tècniques per abordar converses difícils amb sensibilitat i respecte. Practica discutir temes desafiadors com les finances, la dinàmica familiar o les aspiracions futures.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "problem-solving-style"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-think-that-money-play-a-big-role-in-feeling-fulfilled"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-balance-personal-time-with-time-spent-together"
+          },
+          {
+            "type": "article",
+            "slug": "navigating-difficult-conversations"
+          },
+          {
+            "type": "game",
+            "slug": "conflict-resolution-quest"
+          },
+          {
+            "type": "checkup",
+            "slug": "tackling-tough-talks"
+          },
+          {
+            "type": "exercise",
+            "slug": "tough-talks-toolkit"
+          }
+        ]
+      },
+      {
+        "title": "Compartint Experiències Personals",
+        "description": "Involucra't en la narració d'històries per compartir records significatius del teu passat. Descobreix com les teves experiències han influït en les teves perspectives actuals i estats emocionals.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "life-story-style"
+          },
+          {
+            "type": "question",
+            "slug": "can-you-share-a-memory-from-your-childhood-that-you-think-has-shaped-who-you-are-today"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-memorable-lesson-youve-learned-from-past-relationships"
+          },
+          {
+            "type": "article",
+            "slug": "love-maps-knowing-each-other-deeply"
+          },
+          {
+            "type": "game",
+            "slug": "memory-lane"
+          },
+          {
+            "type": "checkup",
+            "slug": "exploring-childhood-memories"
+          },
+          {
+            "type": "exercise",
+            "slug": "intimate-story-sharing"
+          }
+        ]
+      },
+      {
+        "title": "Profundint la Connexió Emocional",
+        "description": "Explora converses que milloren la intimitat emocional. Discuteix temes com les pors, els somnis i les aspiracions per fomentar un vincle més profund amb la teva parella.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "emotional-intimacy-style"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-believe-in-soulmates-why-or-why-not"
+          },
+          {
+            "type": "question",
+            "slug": "what-are-your-dreams-and-aspirations-outside-of-work"
+          },
+          {
+            "type": "article",
+            "slug": "building-emotional-intimacy-together"
+          },
+          {
+            "type": "game",
+            "slug": "emotional-expeditions"
+          },
+          {
+            "type": "checkup",
+            "slug": "emotional-intimacy-check-in"
+          },
+          {
+            "type": "exercise",
+            "slug": "emotional-closeness-exercises"
+          }
+        ]
+      },
+      {
+        "title": "Construint una Cultura d'Apertura",
+        "description": "Crea un entorn on ambdós socis se sentin segurs per expressar els seus pensaments i sentiments. Aprèn estratègies per mantenir una comunicació oberta i fomentar la vulnerabilitat.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "openness-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-feel-about-surprise-conversations-versus-planned-discussions"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-express-your-creativity"
+          },
+          {
+            "type": "article",
+            "slug": "cultivating-honest-conversations"
+          },
+          {
+            "type": "game",
+            "slug": "open-hearts-challenge"
+          },
+          {
+            "type": "checkup",
+            "slug": "vulnerability-and-openness"
+          },
+          {
+            "type": "exercise",
+            "slug": "transparent-communication-practices"
+          }
+        ]
+      }
+    ],
+    "slug": "cultivating-meaningful-conversations"
+  },
+  {
+    "job": [
+      "preparing_for_intimacy"
+    ],
+    "title": "Preparant-se per a la Intimitat",
+    "description": "Aquesta aventura està dissenyada per ajudar les parelles a explorar i millorar les seves connexions íntimes d'una manera solidària i constructiva. A través d'una sèrie de continguts curosament elaborats, les parelles s'involucraran en diversos aspectes de la intimitat, des de la construcció de la confiança fins a l'exploració dels desitjos. Cada dia, descobriràs noves perspectives i pràctiques per fomentar una connexió emocional i física més profunda.",
+    "subtopics": [
+      {
+        "title": "Entenent la Intimitat",
+        "description": "Comença la teva aventura explorant el concepte d'intimitat. Entén les diferents dimensions de la intimitat, incloent aspectes emocionals i físics, i discuteix què significa la intimitat tant per a tu com per a la teva parella.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "emotional-intimacy-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-envision-our-intimate-life-evolving-over-the-next-year"
+          },
+          {
+            "type": "article",
+            "slug": "building-emotional-intimacy-together"
+          },
+          {
+            "type": "game",
+            "slug": "intimacy-insights"
+          },
+          {
+            "type": "checkup",
+            "slug": "emotional-intimacy-check-in"
+          },
+          {
+            "type": "exercise",
+            "slug": "intimate-story-sharing"
+          }
+        ]
+      },
+      {
+        "title": "Construint Confiança i Vulnerabilitat",
+        "description": "Endinsa't en exercicis de construcció de confiança i discuteix la importància de la vulnerabilitat en una relació. Aprèn com compartir sentiments i experiències personals pot crear un espai segur per a la intimitat.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "trust-building-style-quiz"
+          },
+          {
+            "type": "question",
+            "slug": "what-role-does-vulnerability-play-in-our-intimate-life"
+          },
+          {
+            "type": "article",
+            "slug": "vulnerability-trusts-gateway"
+          },
+          {
+            "type": "game",
+            "slug": "trust-builders"
+          },
+          {
+            "type": "checkup",
+            "slug": "trusting-truths"
+          },
+          {
+            "type": "exercise",
+            "slug": "vulnerability-exploration-session"
+          }
+        ]
+      },
+      {
+        "title": "Comunicant Desitjos",
+        "description": "Concentra't en l'art de la comunicació pel que fa als teus desitjos i preferències. Participa en activitats que ajudin a articular les teves aspiracions íntimes i practica compartir fantasies d'una manera solidària.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "sexual-communication-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-prefer-to-communicate-your-needs-and-desires"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-feel-about-sharing-your-deepest-desires-with-each-other"
+          },
+          {
+            "type": "article",
+            "slug": "enhancing-sexual-communication"
+          },
+          {
+            "type": "game",
+            "slug": "fantasy-fulfillment"
+          },
+          {
+            "type": "checkup",
+            "slug": "emotional-needs-compatibility"
+          },
+          {
+            "type": "exercise",
+            "slug": "fantasy-sharing-session"
+          }
+        ]
+      },
+      {
+        "title": "Creant Rituals Íntims",
+        "description": "Treballa conjuntament per desenvolupar rituals personalitzats que millorin la intimitat. Això pot implicar rutines, nits de cita especials o altres pràctiques que us apropin regularment.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "ritual-building-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-can-we-create-more-intimate-moments-in-our-daily-routine"
+          },
+          {
+            "type": "question",
+            "slug": "whats-one-intimate-goal-youd-like-us-to-achieve-together"
+          },
+          {
+            "type": "article",
+            "slug": "fun-rituals-to-strengthen-bonds"
+          },
+          {
+            "type": "game",
+            "slug": "date-night-planner"
+          },
+          {
+            "type": "checkup",
+            "slug": "everyday-chats-that-count"
+          },
+          {
+            "type": "exercise",
+            "slug": "shared-calendar-setup"
+          }
+        ]
+      },
+      {
+        "title": "Explorant Connexions Físiques",
+        "description": "Després de reforçar els aspectes emocionals, canvia el focus cap a la intimitat física. Explora diferents formes de connexions físiques, des del tacte fins a l'exploració lúdica, per millorar la teva comprensió de les necessitats de l'altre.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "physical-touch-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-feel-about-introducing-new-elements-into-our-intimate-life"
+          },
+          {
+            "type": "question",
+            "slug": "whats-your-favorite-type-of-foreplay"
+          },
+          {
+            "type": "article",
+            "slug": "enhancing-physical-intimacy-mindfully"
+          },
+          {
+            "type": "game",
+            "slug": "intimacy-adventure"
+          },
+          {
+            "type": "checkup",
+            "slug": "balancing-fun-and-intimacy-in-sex"
+          },
+          {
+            "type": "exercise",
+            "slug": "erotic-massage-exchange"
+          }
+        ]
+      },
+      {
+        "title": "Navegant per les Fronteres i Desitjos",
+        "description": "Conclou la teva aventura abordant les fronteres i els desitjos obertament. Discuteix qualsevol kink o fantasia específica en un entorn respectuós, assegurant-te que la teva relació es mantingui consensuada i satisfactòria.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "intimate-boundary-style"
+          },
+          {
+            "type": "question",
+            "slug": "is-there-a-particular-kink-or-fetish-you-want-to-explore-but-havent-shared-yet"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-prefer-spontaneity-or-planning-when-it-comes-to-intimacy"
+          },
+          {
+            "type": "article",
+            "slug": "navigating-boundaries-for-intimacy"
+          },
+          {
+            "type": "exercise",
+            "slug": "boundaries-practice"
+          }
+        ]
+      }
+    ],
+    "slug": "preparing-for-intimacy"
+  },
+  {
+    "job": [
+      "planning_for_future"
+    ],
+    "title": "Navegant cap al Nostre Futur Junts",
+    "description": "Aquesta aventura està dissenyada per ajudar-te a tu i a la teva parella a planificar amb cura el futur i a navegar decisions importants de la vida. Exploraràs diversos aspectes de la vostra relació, discutiràs objectius a llarg termini i enfortiràs la vostra associació mitjançant activitats atractives, fomentant la comunicació oberta i la comprensió mútua.",
+    "subtopics": [
+      {
+        "title": "Imaginant la Nostra Vida Futura",
+        "description": "Comença imaginant el teu futur ideal junts, discutint somnis i aspiracions durant els pròxims cinc anys. Crearàs una visió clara del que ambdós voleu de la vida.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "future-planning-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-envision-our-relationship-evolving-over-the-next-five-years"
+          },
+          {
+            "type": "article",
+            "slug": "creating-a-vision-for-us"
+          },
+          {
+            "type": "game",
+            "slug": "future-visionaries"
+          },
+          {
+            "type": "checkup",
+            "slug": "future-talk-together"
+          },
+          {
+            "type": "exercise",
+            "slug": "long-term-goal-planning"
+          }
+        ]
+      },
+      {
+        "title": "Futurs Financers",
+        "description": "Explora els vostres objectius financers com a parella. Discuteix el pressupost, l'estalvi i les inversions potencials per assegurar un estil de vida segur i còmode mentre alineu les vostres aspiracions financeres amb els plans futurs.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "financial-planning-style"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-think-financial-discussions-should-happen-regularly-how-often"
+          },
+          {
+            "type": "article",
+            "slug": "mastering-money-talks-together"
+          },
+          {
+            "type": "game",
+            "slug": "dream-budget-builders"
+          },
+          {
+            "type": "checkup",
+            "slug": "budgeting-together-without-breaking-up"
+          },
+          {
+            "type": "exercise",
+            "slug": "budget-planning-session"
+          }
+        ]
+      },
+      {
+        "title": "Construint un Pla Familiar",
+        "description": "Endinsa't en discussions sobre la planificació familiar i els objectius de criança. Decideix si vols tenir fills, quants, i considera quin tipus d'educació imagines.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "parenting-style-alignment"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-want-to-have-children-if-so-when-do-you-think-is-the-right-time"
+          },
+          {
+            "type": "game",
+            "slug": "parenting-philosophy-play"
+          },
+          {
+            "type": "checkup",
+            "slug": "parenting-pathways"
+          },
+          {
+            "type": "exercise",
+            "slug": "parenting-styles-discussion"
+          },
+          {
+            "type": "question",
+            "slug": "should-we-adopt-if-we-are-unable-to-have-children"
+          }
+        ]
+      },
+      {
+        "title": "Navegant Decisions Importants de la Vida",
+        "description": "Discuteix com abordareu decisions significatives a les vostres vides junts. Això inclou mudar-se junts, canvis de carrera i desafiaments inesperats que poden sorgir.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "decision-making-styles"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-feel-about-making-major-life-decisions-together"
+          },
+          {
+            "type": "game",
+            "slug": "problem-solving-pals"
+          },
+          {
+            "type": "checkup",
+            "slug": "resolving-decision-making-conflicts"
+          },
+          {
+            "type": "exercise",
+            "slug": "negotiation-skills-exercises"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-feel-about-relocating-for-career-opportunities-in-the-future"
+          }
+        ]
+      },
+      {
+        "title": "Creant una Llista de Desitjos Conjunta",
+        "description": "Desenvolupa una llista de desitjos de parella que reflecteixi els vostres somnis compartits i les aventures que desitgeu viure junts. Centra't en viatges, experiències i tradicions que voleu construir.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "goal-alignment-style"
+          },
+          {
+            "type": "question",
+            "slug": "if-we-were-to-create-a-couples-bucket-list-whats-the-first-adventure-youd-add"
+          },
+          {
+            "type": "article",
+            "slug": "adventure-sparks-deeper-bonds"
+          },
+          {
+            "type": "game",
+            "slug": "dream-adventure-quest"
+          },
+          {
+            "type": "exercise",
+            "slug": "fantasy-sharing-session"
+          },
+          {
+            "type": "question",
+            "slug": "if-we-could-teleport-to-any-romantic-destination-right-now-where-would-we-go"
+          }
+        ]
+      },
+      {
+        "title": "Alineant Valors i Tradicions",
+        "description": "Discuteix valors i tradicions importants que voleu cultivar com a parella i com a família. Endinsa't en creences religioses, eleccions de vida i l'herència que desitgeu crear junts.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "values-alignment-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-see-our-religious-beliefs-influencing-our-future-goals"
+          },
+          {
+            "type": "game",
+            "slug": "beliefs-values"
+          },
+          {
+            "type": "checkup",
+            "slug": "core-values-connection"
+          },
+          {
+            "type": "exercise",
+            "slug": "family-values-alignment"
+          },
+          {
+            "type": "question",
+            "slug": "what-values-are-most-important-for-us-to-instill-in-our-children"
+          }
+        ]
+      }
+    ],
+    "slug": "navigating-our-future-together"
+  },
+  {
+    "job": [
+      "discussing_finances"
+    ],
+    "title": "Parlant de les Nosses Finances: Construint un Futur Més Fort Junts",
+    "description": "Aquesta aventura està dissenyada per ajudar-te a tu i a la teva parella a participar en converses significatives sobre finances, construir una comprensió mútua i desenvolupar un enfocament cooperatiu cap als objectius financers. A mesura que avanceu a través de diversos subtemes, aprendràs a comunicar-te de manera efectiva, establir objectius financers i alinear els vostres hàbits de despesa per a un futur compartit més brillant.",
+    "subtopics": [
+      {
+        "title": "Entenent els Nosses Valors Financers",
+        "description": "Explora les creences i valors financers de cadascun per crear una base sòlida per a les vostres discussions financeres. Aquest subtema inclou preguntes sobre els vostres models a seguir financers i què prioritzeu financerament.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "financial-communication-style"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-have-a-financial-role-model-who-and-why"
+          },
+          {
+            "type": "article",
+            "slug": "mastering-money-talks-together"
+          },
+          {
+            "type": "game",
+            "slug": "dream-budget-builders"
+          },
+          {
+            "type": "checkup",
+            "slug": "aligning-financial-values-and-goals"
+          },
+          {
+            "type": "exercise",
+            "slug": "financial-planning-session"
+          },
+          {
+            "type": "question",
+            "slug": "whats-one-financial-habit-you-admire-in-others"
+          }
+        ]
+      },
+      {
+        "title": "Establint Objectius Financers Junts",
+        "description": "Discuteix la importància dels objectius financers com a parella. Aquest subtema et guia a través de la creació d'objectius financers a curt i llarg termini i a entendre com aconseguir-los junts.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "budgeting-style-for-couples"
+          },
+          {
+            "type": "question",
+            "slug": "what-are-your-financial-goals-and-how-can-we-achieve-them-together"
+          },
+          {
+            "type": "article",
+            "slug": "aligning-financial-goals-harmoniously"
+          },
+          {
+            "type": "game",
+            "slug": "future-visionaries"
+          },
+          {
+            "type": "checkup",
+            "slug": "future-financial-adventures"
+          },
+          {
+            "type": "exercise",
+            "slug": "budget-planning-session"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-new-financial-goal-youd-like-to-set-together"
+          }
+        ]
+      },
+      {
+        "title": "Comunicant Sobre Temes Financers",
+        "description": "Aprèn estratègies de comunicació efectives per discutir finances. Aquest subtema introdueix eines com aplicacions de pressupost i l'establiment de revisions regulars per facilitar aquestes converses.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "discover-your-communication-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-feel-about-budgeting-apps-yay-or-nay"
+          },
+          {
+            "type": "article",
+            "slug": "mastering-communication-techniques"
+          },
+          {
+            "type": "game",
+            "slug": "communication-champions"
+          },
+          {
+            "type": "checkup",
+            "slug": "mastering-our-communication-styles"
+          },
+          {
+            "type": "exercise",
+            "slug": "transparency-talks"
+          },
+          {
+            "type": "question",
+            "slug": "what-smartphone-app-do-you-mostly-use"
+          }
+        ]
+      },
+      {
+        "title": "Equilibrant Despeses i Estalvis",
+        "description": "Endinsa't en converses sobre els vostres diferents hàbits de despesa i com trobar un terreny comú. Aquest subtema t'encoratja a prioritzar els teus objectius financers amb les teves eleccions de vida.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "your-spending-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-feel-about-our-different-spending-habits-and-how-can-we-find-a-middle-ground"
+          },
+          {
+            "type": "article",
+            "slug": "building-trust-through-financial-transparency"
+          },
+          {
+            "type": "game",
+            "slug": "budget-battle-royale"
+          },
+          {
+            "type": "checkup",
+            "slug": "budgeting-together-without-breaking-up"
+          },
+          {
+            "type": "exercise",
+            "slug": "spending-habits-review"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-prefer-saving-money-in-a-bank-or-investing-it-elsewhere"
+          }
+        ]
+      },
+      {
+        "title": "Gestionant Els Reptes Financers Junts",
+        "description": "Discuteix les teves estratègies per gestionar l'estrès financer i les despeses inesperades. Aquest subtema t'ajuda a desenvolupar un pla per donar suport l'un a l'altre en moments de dificultat financera.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "debt-management-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-handle-financial-stress-together"
+          },
+          {
+            "type": "game",
+            "slug": "debt-decision-duel"
+          },
+          {
+            "type": "checkup",
+            "slug": "tackling-debt-together"
+          },
+          {
+            "type": "exercise",
+            "slug": "debt-management-planning"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-handle-unexpected-expenses"
+          }
+        ]
+      },
+      {
+        "title": "Planificant el Nostre Futur Financer",
+        "description": "Explora aspectes més profunds de la planificació financera, incloent estratègies de jubilació, propietat de la casa i el futur de les finances de la teva família. Aquest subtema t'ajuda a alinear les teves visions per al futur i establir una sòlida associació financera.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "future-planning-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-prioritize-financial-goals-with-other-life-goals"
+          },
+          {
+            "type": "game",
+            "slug": "future-forecast"
+          },
+          {
+            "type": "checkup",
+            "slug": "future-talk-flow"
+          },
+          {
+            "type": "exercise",
+            "slug": "retirement-dreams-mapping"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-see-the-budget-in-our-partnership-now-what-method-will-be-more-comfortable-for-you"
+          }
+        ]
+      }
+    ],
+    "slug": "discussing-our-finances-building-a-stronger-future-together"
+  },
+  {
+    "job": [
+      "improving_relationship_satisfaction"
+    ],
+    "title": "Millorar la Satisfacció de la Relació",
+    "description": "Aquest viatge està dissenyat per proporcionar a les parelles coneixements i activitats pràctiques que augmentin progressivament la seva satisfacció en la relació. Al llarg de diversos dies, exploraràs una gamma de temes, des de la comprensió de les necessitats fins a la profundització de la intimitat emocional, culminant en estratègies pràctiques per a la millora contínua de la vostra parella.",
+    "subtopics": [
+      {
+        "title": "Entendre les Necessitats Personals",
+        "description": "Comença parlant de les teves necessitats i desitjos individuals en la relació. Aquesta base ajuda ambdós socis a entendre què necessita cadascun per sentir-se satisfet.",
+        "content": [
+          {
+            "type": "checkup",
+            "slug": "emotional-needs-compatibility"
+          },
+          {
+            "type": "question",
+            "slug": "how-can-we-ensure-both-of-our-needs-are-being-met"
+          },
+          {
+            "type": "article",
+            "slug": "building-trust-through-intimacy"
+          },
+          {
+            "type": "game",
+            "slug": "future-visionaries"
+          },
+          {
+            "type": "exercise",
+            "slug": "values-alignment-exercise"
+          },
+          {
+            "type": "question",
+            "slug": "how-can-we-better-support-each-other-during-stressful-situations"
+          }
+        ]
+      },
+      {
+        "title": "Pràctiques de Comunicació Oberta",
+        "description": "Aprèn tècniques de comunicació efectives que fomentin l'obertura i la transparència entre els socis. Participa en exercicis que promoguin l'escolta activa i l'expressió de sentiments.",
+        "content": [
+          {
+            "type": "checkup",
+            "slug": "mastering-our-communication-styles"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-prefer-to-communicate-your-needs-and-desires"
+          },
+          {
+            "type": "article",
+            "slug": "enhancing-communication-for-stronger-bonds"
+          },
+          {
+            "type": "game",
+            "slug": "communication-clues"
+          },
+          {
+            "type": "exercise",
+            "slug": "active-listening-practice"
+          },
+          {
+            "type": "question",
+            "slug": "whats-your-favorite-memory-of-us-having-a-great-conversation"
+          }
+        ]
+      },
+      {
+        "title": "Celebrar les Diferències i les Similituts",
+        "description": "Explora què fa que cadascun de vosaltres sigui únic mentre celebreu interessos compartits. Això ajudarà a tancar les llacunes de connexió i a respectar les preferències individuals.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "growth-through-differences-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-can-we-celebrate-our-unique-strengths-and-compensate-for-our-differences"
+          },
+          {
+            "type": "article",
+            "slug": "embrace-and-celebrate-differences"
+          },
+          {
+            "type": "game",
+            "slug": "cultural-quest"
+          },
+          {
+            "type": "exercise",
+            "slug": "difference-identification-and-acceptance"
+          },
+          {
+            "type": "question",
+            "slug": "whats-one-thing-you-appreciate-about-how-i-handle-our-differences"
+          }
+        ]
+      },
+      {
+        "title": "Equilibrar la Companyia i la Independència",
+        "description": "Concentra't a trobar un equilibri harmònic entre el temps de qualitat junts i el respecte per la necessitat de cada un d'espai personal i interessos individuals.",
+        "content": [
+          {
+            "type": "checkup",
+            "slug": "balancing-our-unique-interests"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-feel-about-the-balance-between-our-personal-time-and-together-time"
+          },
+          {
+            "type": "article",
+            "slug": "fun-rituals-to-strengthen-bonds"
+          },
+          {
+            "type": "game",
+            "slug": "routine-rendezvous"
+          },
+          {
+            "type": "exercise",
+            "slug": "shared-calendar-setup"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-prefer-solo-workouts-or-exercising-together"
+          }
+        ]
+      },
+      {
+        "title": "Crear Intimitat a través de la Vulnerabilitat",
+        "description": "Endinsa't en pràctiques que construeixin intimitat emocional a través de la vulnerabilitat. Això pot incloure compartir experiències passades i pors per aprofundir la connexió.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "vulnerability-style-assessment"
+          },
+          {
+            "type": "question",
+            "slug": "is-there-something-from-your-past-that-still-affects-our-relationship"
+          },
+          {
+            "type": "article",
+            "slug": "vulnerability-trusts-gateway"
+          },
+          {
+            "type": "game",
+            "slug": "secret-share"
+          },
+          {
+            "type": "exercise",
+            "slug": "truth-telling-exercises"
+          },
+          {
+            "type": "question",
+            "slug": "whats-something-youd-like-to-feel-more-of-in-our-relationship"
+          }
+        ]
+      },
+      {
+        "title": "Establir Objectius de Relació",
+        "description": "Conclou amb estratègies pràctiques sobre com establir objectius mutus per a la vostra relació, incloent aspiracions de creixement, intimitat i satisfacció a llarg termini.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "goal-alignment-style"
+          },
+          {
+            "type": "question",
+            "slug": "what-are-your-aspirations-for-our-relationship-five-ten-or-twenty-years-down-the-line"
+          },
+          {
+            "type": "article",
+            "slug": "aligning-life-ambitions-together"
+          },
+          {
+            "type": "game",
+            "slug": "future-talks-fiesta"
+          },
+          {
+            "type": "exercise",
+            "slug": "smart-goals-planning"
+          },
+          {
+            "type": "question",
+            "slug": "what-are-your-thoughts-on-continuing-personal-growth-and-self-improvement-in-our-relationship"
+          }
+        ]
+      }
+    ],
+    "slug": "enhancing-relationship-satisfaction"
+  },
+  {
+    "job": [
+      "preparing_for_cohabitation"
+    ],
+    "title": "Preparant-se per a la Cohabitació",
+    "description": "Aquesta aventura està dissenyada per preparar-te a tu i a la teva parella per a la cohabitació abordant diversos aspectes de viure junts. Aprendràs com comunicar-te de manera efectiva, gestionar responsabilitats i crear un ambient domèstic harmoniós. Cada dia, exploraràs temes vitals que ajudaran a enfortir la vostra relació i facilitaran la transició a la vida compartida.",
+    "subtopics": [
+      {
+        "title": "Somniant el Nostre Espai Compartit",
+        "description": "Comença compartint les teves visions de com serà la vostra casa. Discuteix idees sobre l'espai, la decoració i l'atmosfera. Això estableix la base per a la comprensió mútua i els somnis compartits.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "lifestyle-harmony-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-can-we-create-a-home-environment-that-respects-both-of-our-preferences"
+          },
+          {
+            "type": "article",
+            "slug": "sharing-spaces-harmoniously"
+          },
+          {
+            "type": "exercise",
+            "slug": "living-space-design"
+          },
+          {
+            "type": "game",
+            "slug": "decor-dilemma"
+          },
+          {
+            "type": "question",
+            "slug": "whats-one-piece-of-furniture-you-absolutely-need-in-our-new-home"
+          }
+        ]
+      },
+      {
+        "title": "Essencials de Comunicació",
+        "description": "Aprèn estratègies de comunicació efectives que t'ajudaran a gestionar els reptes diaris. Explora maneres d'expressar necessitats, establir expectatives i escoltar activament l'un a l'altre.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "discover-your-communication-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-prefer-to-communicate-your-needs-and-desires"
+          },
+          {
+            "type": "article",
+            "slug": "mastering-communication-techniques"
+          },
+          {
+            "type": "game",
+            "slug": "communication-clues"
+          },
+          {
+            "type": "checkup",
+            "slug": "mastering-our-communication-styles"
+          },
+          {
+            "type": "exercise",
+            "slug": "active-listening-practice"
+          }
+        ]
+      },
+      {
+        "title": "Responsabilitats Domèstiques",
+        "description": "Discuteix i estableix com dividireu les tasques i responsabilitats domèstiques. Crea un sistema que funcioni per a tots dos per mantenir un ambient de vida net i organitzat.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "domestic-labor-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-feel-about-handling-household-responsibilities-and-chores"
+          },
+          {
+            "type": "article",
+            "slug": "establishing-household-routines"
+          },
+          {
+            "type": "exercise",
+            "slug": "shared-responsibilities-mapping"
+          },
+          {
+            "type": "game",
+            "slug": "chore-chart-challenge"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-feel-about-having-a-cleaning-schedule-versus-cleaning-as-we-go"
+          }
+        ]
+      },
+      {
+        "title": "Fonaments Financers",
+        "description": "Aligneu-vos en la gestió financera i el pressupost com a parella. Discuteix estratègies per compartir despeses, prendre decisions financeres conjuntes i mantenir la transparència sobre les finances.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "budgeting-style-for-couples"
+          },
+          {
+            "type": "game",
+            "slug": "dream-budget-builders"
+          },
+          {
+            "type": "article",
+            "slug": "mastering-money-talks-together"
+          },
+          {
+            "type": "exercise",
+            "slug": "budget-planning-session"
+          },
+          {
+            "type": "checkup",
+            "slug": "aligning-financial-values-and-goals"
+          },
+          {
+            "type": "question",
+            "slug": "whats-one-thing-you-want-to-achieve-together-in-our-new-home"
+          }
+        ]
+      },
+      {
+        "title": "Gestionant el Conflicte amb Gràcia",
+        "description": "Prepara't per a desacords inevitables aprenent estratègies de resolució de conflictes. Explora com gestionar opinions diferents i trobar un terreny comú de manera saludable.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "your-conflict-style"
+          },
+          {
+            "type": "game",
+            "slug": "conflict-resolution-quest"
+          },
+          {
+            "type": "article",
+            "slug": "mastering-conflict-resolution-together"
+          },
+          {
+            "type": "exercise",
+            "slug": "conflict-resolution-strategies-practice"
+          },
+          {
+            "type": "checkup",
+            "slug": "tackling-tough-talks"
+          },
+          {
+            "type": "question",
+            "slug": "how-should-we-handle-maintenance-and-repairs-around-the-house"
+          }
+        ]
+      },
+      {
+        "title": "Creant un Espai Segur",
+        "description": "Finalitza les teves preparacions centrant-te en la seguretat emocional i física en el vostre espai compartit. Discuteix límits, privacitat i com cultivar un ambient on ambdós se sentin segurs i respectats.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "emotional-safety-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-should-we-handle-setting-up-our-home-office-or-study-space"
+          },
+          {
+            "type": "article",
+            "slug": "navigating-boundaries-for-intimacy"
+          },
+          {
+            "type": "exercise",
+            "slug": "personal-space-respect-practices"
+          },
+          {
+            "type": "game",
+            "slug": "space-personalities"
+          },
+          {
+            "type": "question",
+            "slug": "how-should-we-handle-guests-and-visitors-in-our-home"
+          }
+        ]
+      }
+    ],
+    "slug": "preparing-for-cohabitation"
+  },
+  {
+    "job": [
+      "discussing_difficult_topics"
+    ],
+    "title": "Navegant Converses Difícils Junts",
+    "description": "Aquesta aventura està dissenyada per guiar-te a tu i a la teva parella a través dels reptes de discutir temes sensibles a la vostra relació. Cada dia, exploraràs diferents aspectes de la comunicació, des d'establir una base sòlida fins a abordar temes profundament personals. Al final d'aquest viatge, tindràs les eines i la confiança per participar en discussions significatives, enfortint la vostra connexió emocional i comprensió mútua.",
+    "subtopics": [
+      {
+        "title": "Establint una Comunicació Oberta",
+        "description": "Aprèn la importància de la comunicació oberta i com crear un espai segur per discutir temes difícils. Aquest subtema introduirà estratègies bàsiques de comunicació.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "discover-your-communication-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-prefer-to-communicate-your-needs-and-desires"
+          },
+          {
+            "type": "article",
+            "slug": "mastering-communication-techniques"
+          },
+          {
+            "type": "game",
+            "slug": "communication-clues"
+          },
+          {
+            "type": "checkup",
+            "slug": "mastering-our-communication-styles"
+          },
+          {
+            "type": "question",
+            "slug": "whats-your-favorite-memory-of-us-having-a-great-conversation"
+          },
+          {
+            "type": "exercise",
+            "slug": "active-listening-practice"
+          }
+        ]
+      },
+      {
+        "title": "Entenent Diferents Perspectives",
+        "description": "Explora la importància de l'empatia entenent la perspectiva de la teva parella sobre temes difícils. Discuteix mètodes per abordar desacords de manera constructiva.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "empathy-resonance-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-can-we-ensure-both-of-us-feel-heard-during-a-disagreement"
+          },
+          {
+            "type": "article",
+            "slug": "building-emotional-intimacy-together"
+          },
+          {
+            "type": "game",
+            "slug": "deep-dive-dialogues"
+          },
+          {
+            "type": "checkup",
+            "slug": "empathy-adventure"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-prefer-to-approach-conversations-when-emotions-run-high"
+          },
+          {
+            "type": "exercise",
+            "slug": "difference-identification-and-acceptance"
+          }
+        ]
+      },
+      {
+        "title": "Navegant la Gelosia i la Confiança",
+        "description": "Endinsa't en els sentiments de gelosia i confiança a la teva relació. Aquest subtema se centra en com discutir aquests sentiments difícils sense conflicte.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "trust-building-style-quiz"
+          },
+          {
+            "type": "question",
+            "slug": "have-you-ever-felt-jealous-in-our-relationship-how-did-you-handle-it"
+          },
+          {
+            "type": "article",
+            "slug": "building-trust-through-intimacy"
+          },
+          {
+            "type": "game",
+            "slug": "trust-talk"
+          },
+          {
+            "type": "checkup",
+            "slug": "trusting-truths"
+          },
+          {
+            "type": "question",
+            "slug": "does-cheating-only-relate-to-physical-things-or-is-there-emotional-cheating-as-well"
+          },
+          {
+            "type": "exercise",
+            "slug": "rebuild-trust-session"
+          }
+        ]
+      },
+      {
+        "title": "Establint Límits en les Discussions",
+        "description": "Aprèn com establir límits quan discuteixes temes sensibles per assegurar-te que ambdós socis se sentin còmodes i respectats durant les converses.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "boundary-communication-style"
+          },
+          {
+            "type": "question",
+            "slug": "are-there-any-boundaries-around-work-that-youd-like-to-set"
+          },
+          {
+            "type": "game",
+            "slug": "communication-carousel"
+          },
+          {
+            "type": "question",
+            "slug": "whats-one-boundary-youd-like-to-set-to-keep-our-relationship-healthy"
+          },
+          {
+            "type": "exercise",
+            "slug": "boundaries-practice"
+          }
+        ]
+      },
+      {
+        "title": "Tractant el Trauma del Passat",
+        "description": "Enfronta converses sobre traumes passats i com poden afectar la vostra relació. Aquest subtema proporciona estratègies per discutir aquests temes desafiadors amb delicadesa.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "life-story-style"
+          },
+          {
+            "type": "question",
+            "slug": "have-you-had-any-childhood-experiences-that-you-can-call-traumatic-how-has-it-affected-you"
+          },
+          {
+            "type": "article",
+            "slug": "navigating-emotional-waters-together"
+          },
+          {
+            "type": "checkup",
+            "slug": "exploring-childhood-memories"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-have-any-unresolved-issues-with-your-parents"
+          },
+          {
+            "type": "exercise",
+            "slug": "sensitive-subjects-dialogue-practice"
+          }
+        ]
+      },
+      {
+        "title": "Estratègies de Resolució de Conflictes",
+        "description": "Desenvolupa les teves habilitats per resoldre conflictes que sorgeixen durant les discussions. Explora tècniques per convertir arguments en oportunitats de creixement i comprensió mútua.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "your-conflict-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-can-we-turn-our-arguments-into-opportunities-for-growth"
+          },
+          {
+            "type": "article",
+            "slug": "effective-conflict-resolution-strategies"
+          },
+          {
+            "type": "game",
+            "slug": "problem-solving-pals"
+          },
+          {
+            "type": "checkup",
+            "slug": "conflict-resolution-styles"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-prefer-to-resolve-disagreements-calm-discussion-or-taking-a-short-break"
+          },
+          {
+            "type": "exercise",
+            "slug": "conflict-resolution-strategies-practice"
+          }
+        ]
+      }
+    ],
+    "slug": "navigating-difficult-conversations-together"
+  },
+  {
+    "job": [
+      "having_new_experiences"
+    ],
+    "title": "Aventurers Junts: Explorant Noves Experiències",
+    "description": "Aquesta aventura anima tu i la teva parella a abraçar la novetat i l'aventura a la vostra relació provant noves activitats, explorant entorns desconeguts i identificant interessos compartits. Cada dia, descobrireu idees creatives i contingut atractiu que us inspirarà a passar-ho bé junts i a enfortir el vostre vincle a través d'experiències compartides.",
+    "subtopics": [
+      {
+        "title": "Començant Petit: Provant Noves Activitats",
+        "description": "Comenceu el vostre viatge identificant activitats senzilles que siguin còmodes però noves. Participa en discussions sobre aficions que us agradaria explorar junts, des de classes de cuina fins a nits de jocs de taula.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "breaking-routine-style-quiz"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-hobby-youd-like-us-to-try-together"
+          },
+          {
+            "type": "article",
+            "slug": "rediscover-adventure-together"
+          },
+          {
+            "type": "game",
+            "slug": "adventure-awaits"
+          },
+          {
+            "type": "exercise",
+            "slug": "try-something-new-day"
+          }
+        ]
+      },
+      {
+        "title": "Creacions de Llista de Desitjos",
+        "description": "Creeu junts una llista de desitjos per a parelles! Discuteix llocs emocionants per visitar, experiències úniques per compartir i aventures significatives que voleu tenir en el futur.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "adventure-style-assessment"
+          },
+          {
+            "type": "question",
+            "slug": "if-we-were-to-create-a-couples-bucket-list-whats-the-first-adventure-youd-add"
+          },
+          {
+            "type": "article",
+            "slug": "adventure-sparks-deeper-bonds"
+          },
+          {
+            "type": "game",
+            "slug": "future-adventure-quest"
+          },
+          {
+            "type": "exercise",
+            "slug": "future-goals-compatibility"
+          }
+        ]
+      },
+      {
+        "title": "Espontaneïtat i Aventura",
+        "description": "Abraça l'espontaneïtat planificant sortides sorpresa o provant activitats de manera impulsiva. Descobriu l'emoció d'aventures inesperades junts i enfortiu el vostre vincle a través de l'espontaneïtat.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "spontaneity-style"
+          },
+          {
+            "type": "question",
+            "slug": "whats-the-most-fun-youve-ever-had-while-doing-something-completely-spontaneous"
+          },
+          {
+            "type": "question",
+            "slug": "if-we-could-go-on-a-crazy-themed-road-trip-what-would-our-theme-be"
+          },
+          {
+            "type": "game",
+            "slug": "adventure-awaits"
+          },
+          {
+            "type": "exercise",
+            "slug": "outdoor-exploration-adventures"
+          }
+        ]
+      },
+      {
+        "title": "Explorant Nous Llocs",
+        "description": "Feu una mirada més profunda als llocs que ambdós voleu explorar, ja siguin locals o internacionals. Discuteix els vostres somnis de viatge i com aquestes experiències poden enriquir la vostra relació.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "exploration-partnership-style"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-like-to-travel-whats-the-most-exciting-place-youve-been"
+          },
+          {
+            "type": "question",
+            "slug": "which-country-is-at-the-top-of-your-travel-bucket-list-as-a-couple"
+          },
+          {
+            "type": "article",
+            "slug": "adventure-sparks-deeper-bonds"
+          },
+          {
+            "type": "game",
+            "slug": "cultural-quest"
+          },
+          {
+            "type": "exercise",
+            "slug": "cultural-exchange-day"
+          }
+        ]
+      },
+      {
+        "title": "Aprenent Junts",
+        "description": "Identifiqueu habilitats o temes que ambdós estigueu interessats a aprendre junts. Podria ser aprendre un nou idioma, dominar tècniques de cuina o fer classes d'art—el que sigui que us aproparà més!",
+        "content": [
+          {
+            "type": "test",
+            "slug": "shared-learning-style"
+          },
+          {
+            "type": "question",
+            "slug": "if-you-could-learn-a-new-language-together-which-one-would-it-be"
+          },
+          {
+            "type": "question",
+            "slug": "whats-something-youd-like-to-learn-together-to-bring-us-closer"
+          },
+          {
+            "type": "article",
+            "slug": "mastering-communication-techniques"
+          },
+          {
+            "type": "game",
+            "slug": "laugh-learn-quiz"
+          },
+          {
+            "type": "exercise",
+            "slug": "smart-goals-planning"
+          }
+        ]
+      },
+      {
+        "title": "Creativitat en l'Aventura",
+        "description": "Explora maneres creatives de convertir activitats ordinàries en experiències memorables. Pensa en nits de cita temàtiques, desafiaments creatius o tasques aventureres que us permetin unir-vos a través de la imaginació i el joc.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "creative-sparks-style"
+          },
+          {
+            "type": "question",
+            "slug": "if-you-could-embark-on-a-creative-retreat-together-what-would-you-focus-on"
+          },
+          {
+            "type": "question",
+            "slug": "if-we-could-perform-in-a-talent-show-together-what-act-would-we-do"
+          },
+          {
+            "type": "article",
+            "slug": "fun-rituals-to-strengthen-bonds"
+          },
+          {
+            "type": "game",
+            "slug": "decor-dilemma"
+          },
+          {
+            "type": "exercise",
+            "slug": "artistic-expression-days"
+          }
+        ]
+      }
+    ],
+    "slug": "adventurous-together-exploring-new-experiences"
+  },
+  {
+    "job": [
+      "overcoming_differences"
+    ],
+    "title": "Acceptant les Nostres Diferències: Un Viatge cap a una Comprensió Més Profunda",
+    "description": "Aquest viatge està dissenyat per ajudar les parelles a navegar i celebrar les seves diferències, transformant els desafiaments en oportunitats de creixement. Cada dia, et comprometràs amb preguntes que fan pensar, articles perspicaces i exercicis pràctics que fomenten l'empatia, el respecte i la col·laboració en la teva relació.",
+    "subtopics": [
+      {
+        "title": "Entenent els Nostres Antecedents",
+        "description": "Explora com els nostres antecedents culturals, religiosos i personals modelen les nostres perspectives i comportaments en la relació. Reflexiona sobre preguntes sobre les diferències culturals i les creences, establint les bases per a futures converses.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "cultural-harmony-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-our-different-cultural-backgrounds-shape-our-relationship-and-how-can-we-honor-both"
+          },
+          {
+            "type": "article",
+            "slug": "navigating-religious-conversations-smoothly"
+          },
+          {
+            "type": "game",
+            "slug": "cultural-quest"
+          },
+          {
+            "type": "checkup",
+            "slug": "navigating-cultural-and-religious-differences"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-respect-each-others-religious-beliefs-when-they-differ"
+          },
+          {
+            "type": "exercise",
+            "slug": "cultural-exchange-day"
+          }
+        ]
+      },
+      {
+        "title": "Habilitats de Comunicació Efectives",
+        "description": "Aprèn la importància de la transparència i l'escolta activa per superar malentenduts. Participa en exercicis i articles que milloren els teus estils de comunicació i promouen un diàleg obert sobre temes sensibles.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "discover-your-communication-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-prefer-to-communicate-your-needs-and-desires"
+          },
+          {
+            "type": "article",
+            "slug": "mastering-communication-techniques"
+          },
+          {
+            "type": "game",
+            "slug": "communication-clues"
+          },
+          {
+            "type": "checkup",
+            "slug": "mastering-our-communication-styles"
+          },
+          {
+            "type": "question",
+            "slug": "whats-your-favorite-memory-of-us-having-a-great-conversation"
+          },
+          {
+            "type": "exercise",
+            "slug": "active-listening-practice"
+          }
+        ]
+      },
+      {
+        "title": "Celebrant les Diferències",
+        "description": "Descobreix maneres de celebrar i honrar les fortaleses i perspectives úniques de cadascun. A través de contingut interactiu, explora com les diferències poden fomentar la creativitat i la joia en la teva parella.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "growth-through-differences-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-can-we-celebrate-our-unique-strengths-and-compensate-for-our-differences"
+          },
+          {
+            "type": "article",
+            "slug": "embrace-and-celebrate-differences"
+          },
+          {
+            "type": "game",
+            "slug": "hobby-harmony"
+          },
+          {
+            "type": "checkup",
+            "slug": "embracing-our-personality-traits"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-fun-way-to-explore-and-embrace-our-differences-together"
+          },
+          {
+            "type": "exercise",
+            "slug": "difference-identification-and-acceptance"
+          }
+        ]
+      },
+      {
+        "title": "Navegant Conflictes amb Respecte",
+        "description": "Desenvolupa habilitats per gestionar els conflictes de manera positiva i constructiva. Aquest subtema inclou tècniques pràctiques per resoldre desacords mentre respectes els punts de vista de cadascun i mantens la confiança.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "your-conflict-style"
+          },
+          {
+            "type": "question",
+            "slug": "whats-one-thing-youd-like-to-change-about-how-we-handle-our-differences"
+          },
+          {
+            "type": "article",
+            "slug": "mastering-conflict-resolution-together"
+          },
+          {
+            "type": "game",
+            "slug": "conflict-resolution-quest"
+          },
+          {
+            "type": "checkup",
+            "slug": "conflict-resolution-styles"
+          },
+          {
+            "type": "question",
+            "slug": "whats-one-thing-you-admire-about-my-perspective-thats-different-from-yours"
+          },
+          {
+            "type": "exercise",
+            "slug": "conflict-resolution-strategies-practice"
+          }
+        ]
+      },
+      {
+        "title": "Convertint Desafiaments en Oportunitats de Creixement",
+        "description": "Canvia la teva mentalitat de veure les diferències com a obstacles a veure-les com a vies per al creixement personal i de la relació. Participa en activitats que fomenten la col·laboració i la resolució compartida de problemes.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "flexibility-style-assessment"
+          },
+          {
+            "type": "question",
+            "slug": "how-can-we-turn-our-differences-into-opportunities-for-growth-as-a-couple"
+          },
+          {
+            "type": "article",
+            "slug": "embracing-differences-positively"
+          },
+          {
+            "type": "game",
+            "slug": "problem-solving-escapades"
+          },
+          {
+            "type": "checkup",
+            "slug": "team-problem-solving"
+          },
+          {
+            "type": "question",
+            "slug": "can-boredom-be-helpful"
+          },
+          {
+            "type": "exercise",
+            "slug": "cognitive-restructuring-together"
+          }
+        ]
+      },
+      {
+        "title": "Construint una Visió Unificada",
+        "description": "Consolida el que has après per crear una visió compartida per al teu futur. Reflexiona sobre els teus valors, objectius i aspiracions com a parella, assegurant-te que ambdós se sentin vistos i escoltats en el viatge que teniu per davant.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "future-vision-type"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-challenge-weve-overcome-together-that-made-our-relationship-stronger"
+          },
+          {
+            "type": "article",
+            "slug": "aligning-future-goals"
+          },
+          {
+            "type": "game",
+            "slug": "future-visionaries"
+          },
+          {
+            "type": "checkup",
+            "slug": "future-talk-together"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-memorable-moment-where-our-differences-made-our-relationship-stronger"
+          },
+          {
+            "type": "exercise",
+            "slug": "long-term-goal-planning"
+          }
+        ]
+      }
+    ],
+    "slug": "embracing-our-differences-a-journey-to-deeper-understanding"
+  },
+  {
+    "job": [
+      "enhancing_love_and_affection"
+    ],
+    "title": "Millorar l'Amor i l'Afecte",
+    "description": "Aquesta aventura està dissenyada per ajudar les parelles a cultivar un amor i un afecte més profunds en la seva relació a través de discussions significatives, activitats divertides i pràctiques reflexives. Cada dia, exploraràs diversos aspectes de l'amor i l'afecte, començant per entendre les teves expressions d'amor, fins a crear moments íntims que millorin el teu vincle.",
+    "subtopics": [
+      {
+        "title": "Entenent les Llengües de l'Amor",
+        "description": "Aprèn sobre el concepte de les llengües de l'amor i descobreix com tu i la teva parella exprimeu i rebieu amor. Aquest coneixement estableix les bases per millorar la vostra connexió emocional.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "love-language-type"
+          },
+          {
+            "type": "question",
+            "slug": "what-is-your-love-language"
+          },
+          {
+            "type": "article",
+            "slug": "decoding-love-languages"
+          },
+          {
+            "type": "game",
+            "slug": "love-languages-quiz"
+          },
+          {
+            "type": "checkup",
+            "slug": "emotional-needs-compatibility"
+          },
+          {
+            "type": "question",
+            "slug": "whats-your-favorite-way-to-express-love-and-how-does-it-differ-from-mine"
+          },
+          {
+            "type": "exercise",
+            "slug": "find-out-your-love-language"
+          }
+        ]
+      },
+      {
+        "title": "Expressions Diàries d'Afecte",
+        "description": "Explora maneres simples però poderoses d'expressar afecte diàriament. Aquest subtema inclou discutir petits gestos, notes d'amor i compliments que poden il·luminar el dia de l'altre.",
+        "content": [
+          {
+            "type": "exercise",
+            "slug": "compliment-exchange"
+          },
+          {
+            "type": "question",
+            "slug": "how-can-we-better-express-our-appreciation-for-each-other-daily"
+          },
+          {
+            "type": "article",
+            "slug": "enhance-affection-daily"
+          },
+          {
+            "type": "game",
+            "slug": "affectionate-habits"
+          },
+          {
+            "type": "checkup",
+            "slug": "acts-of-kindness-and-appreciation"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-small-gesture-that-always-makes-you-smile"
+          }
+        ]
+      },
+      {
+        "title": "Creant Moments Íntims",
+        "description": "Descobreix com crear i incorporar moments íntims a la teva rutina diària. Això inclou planificar nits de cita sorpresa, abraçades espontànies i moments per connectar profundament.",
+        "content": [
+          {
+            "type": "checkup",
+            "slug": "emotional-intimacy-check-in"
+          },
+          {
+            "type": "test",
+            "slug": "sensory-intimacy-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-feel-about-trying-new-activities-together-to-build-intimacy"
+          },
+          {
+            "type": "article",
+            "slug": "building-emotional-intimacy-together"
+          },
+          {
+            "type": "game",
+            "slug": "intimacy-insights"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-feel-about-surprise-date-nights-whats-your-ideal-surprise"
+          },
+          {
+            "type": "exercise",
+            "slug": "creating-passion-renewal-date"
+          }
+        ]
+      },
+      {
+        "title": "Cultivant la Gratitud i l'Apreciació",
+        "description": "Endinsa't en la importància d'expressar gratitud en la teva relació. Discuteix com l'apreciació pot millorar l'amor i l'afecte, i aprèn pràctiques específiques per reconèixer-vos mútuament.",
+        "content": [
+          {
+            "type": "exercise",
+            "slug": "expressing-gratitude-session"
+          },
+          {
+            "type": "question",
+            "slug": "how-can-we-better-express-our-appreciation-for-each-other"
+          },
+          {
+            "type": "article",
+            "slug": "mastering-communication-techniques"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-like-to-express-appreciation-in-our-conversations"
+          }
+        ]
+      },
+      {
+        "title": "Joc i Humor en l'Afecte",
+        "description": "Aprèn com l'humor i el joc poden millorar la intimitat. Aquest subtema anima a trobar maneres de riure junts i participar en activitats divertides que enforteixin el vostre vincle.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "playfulness-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-feel-about-incorporating-humor-into-our-intimate-moments"
+          },
+          {
+            "type": "article",
+            "slug": "fun-rituals-to-strengthen-bonds"
+          },
+          {
+            "type": "game",
+            "slug": "laugh-learn-quiz"
+          },
+          {
+            "type": "checkup",
+            "slug": "fun-flirtation"
+          },
+          {
+            "type": "question",
+            "slug": "how-can-we-incorporate-more-playfulness-into-our-relationship"
+          },
+          {
+            "type": "exercise",
+            "slug": "karaoke-session"
+          }
+        ]
+      },
+      {
+        "title": "Afecte Físic i Toc",
+        "description": "Explora el paper del toc físic en fomentar un afecte més profund. Discuteix preferències per petons, abraçades, acaronar-se i altres formes d'afecte físic que reforcen la vostra connexió.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "physical-touch-style"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-prefer-cuddling-on-the-couch-or-a-romantic-dinner-to-feel-loved"
+          },
+          {
+            "type": "article",
+            "slug": "enhancing-physical-intimacy-mindfully"
+          },
+          {
+            "type": "game",
+            "slug": "bedroom-preferences"
+          },
+          {
+            "type": "checkup",
+            "slug": "physical-comfort-and-boundaries"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-prefer-morning-hugs-or-goodnight-kisses"
+          },
+          {
+            "type": "exercise",
+            "slug": "affectionate-gestures-practice"
+          }
+        ]
+      }
+    ],
+    "slug": "enhancing-love-and-affection"
+  },
+  {
+    "job": [
+      "improving_honesty_and_openness"
+    ],
+    "title": "Millorar l'Honestedat i l'Apertura",
+    "description": "Aquest viatge està dissenyat per ajudar-te a tu i a la teva parella a cultivar un sentit més profund d'honestedat i apertura en la vostra relació. Al llarg de diversos dies, participaràs en activitats, discussions i exercicis que construeixen confiança i transparència, permetent-vos navegar per temes sensibles i enfortir el vostre vincle.",
+    "subtopics": [
+      {
+        "title": "Entenent l'Honestedat",
+        "description": "Explora el concepte d'honestedat en les relacions, incloent la seva importància i les diferents dimensions de ser honest amb la teva parella. Participa en preguntes que aprofundeixen en les teves perspectives actuals sobre l'honestedat.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "honesty-and-openness-style"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-believe-in-complete-transparency-in-a-relationship-why-or-why-not"
+          },
+          {
+            "type": "article",
+            "slug": "cultivating-honest-conversations"
+          },
+          {
+            "type": "game",
+            "slug": "honesty-hunt"
+          },
+          {
+            "type": "checkup",
+            "slug": "the-honesty-hangout"
+          },
+          {
+            "type": "exercise",
+            "slug": "honesty-commitment-ritual"
+          }
+        ]
+      },
+      {
+        "title": "Abordant les Porcs sobre l'Honestedat",
+        "description": "Identifica pors o preocupacions comunes sobre l'apertura en la vostra relació. Junts, reflexioneu sobre situacions en què us heu sentit incapaços de ser honestos i discutiu com podeu crear un entorn més segur per a la comunicació oberta.",
+        "content": [
+          {
+            "type": "checkup",
+            "slug": "openness-odyssey"
+          },
+          {
+            "type": "question",
+            "slug": "have-you-ever-felt-you-couldnt-be-completely-honest-with-me-why"
+          },
+          {
+            "type": "article",
+            "slug": "vulnerability-trusts-gateway"
+          },
+          {
+            "type": "exercise",
+            "slug": "truth-telling-exercises"
+          },
+          {
+            "type": "game",
+            "slug": "trust-talk-challenge"
+          },
+          {
+            "type": "question",
+            "slug": "have-you-ever-hidden-something-to-protect-my-feelings-how-did-it-turn-out"
+          }
+        ]
+      },
+      {
+        "title": "Cultivant la Transparència",
+        "description": "Aprèn sobre els beneficis de la transparència en una relació i com pot millorar la intimitat. Participa en activitats i discussions que fomentin compartir detalls i pensaments que normalment podries mantenir privats.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "transparency-style-assessment"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-think-its-ever-ok-to-tell-white-lies-in-a-relationship-why-or-why-not"
+          },
+          {
+            "type": "article",
+            "slug": "transparency-builds-strong-bonds"
+          },
+          {
+            "type": "exercise",
+            "slug": "transparency-talks"
+          },
+          {
+            "type": "game",
+            "slug": "transparency-trivia"
+          },
+          {
+            "type": "checkup",
+            "slug": "transparency-tools"
+          }
+        ]
+      },
+      {
+        "title": "Construint Confiança a través de l'Apertura",
+        "description": "Descobreix estratègies per cultivar la confiança sent obert sobre els teus sentiments, inseguretats i desitjos. Participa en exercicis que promoguin el compartir i la vulnerabilitat.",
+        "content": [
+          {
+            "type": "exercise",
+            "slug": "openness-commitment-ritual"
+          },
+          {
+            "type": "question",
+            "slug": "how-can-we-support-each-other-to-be-more-open-and-honest-daily"
+          },
+          {
+            "type": "article",
+            "slug": "building-emotional-intimacy-together"
+          },
+          {
+            "type": "game",
+            "slug": "trust-builders"
+          },
+          {
+            "type": "checkup",
+            "slug": "trusting-truths"
+          },
+          {
+            "type": "question",
+            "slug": "can-you-share-a-time-when-honesty-led-to-a-positive-outcome-in-our-relationship"
+          }
+        ]
+      },
+      {
+        "title": "Navegant Converses Difícils",
+        "description": "Explora tècniques per abordar temes difícils amb honestedat i apertura. Practica l'ús d'estratègies de comunicació efectives per expressar els teus pensaments i sentiments, amb l'objectiu de resoldre conflictes de manera constructiva.",
+        "content": [
+          {
+            "type": "checkup",
+            "slug": "conflict-to-connection"
+          },
+          {
+            "type": "test",
+            "slug": "your-conflict-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-handle-situations-where-being-honest-might-hurt-someone"
+          },
+          {
+            "type": "article",
+            "slug": "navigating-difficult-conversations"
+          },
+          {
+            "type": "game",
+            "slug": "dialogue-duel"
+          },
+          {
+            "type": "exercise",
+            "slug": "conflict-resolution-strategies-practice"
+          }
+        ]
+      },
+      {
+        "title": "Creant una Cultura de Relació Honesta",
+        "description": "Desenvolupa un acord compartit sobre les pràctiques d'honestedat dins de la vostra relació. Discuteix els límits i les intencions per mantenir una cultura d'apertura, assegurant que ambdós socis se sentin segurs d'expressar-se.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "trust-building-style-quiz"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-boundary-you-need-to-feel-safe-being-honest-with-me"
+          },
+          {
+            "type": "article",
+            "slug": "building-trust-through-transparency"
+          },
+          {
+            "type": "game",
+            "slug": "trust-sparks"
+          },
+          {
+            "type": "exercise",
+            "slug": "boundaries-practice"
+          },
+          {
+            "type": "checkup",
+            "slug": "trust-builders"
+          }
+        ]
+      }
+    ],
+    "slug": "improving-honesty-and-openness"
+  },
+  {
+    "job": [
+      "rekindling_passion"
+    ],
+    "title": "Reavivando la Passió",
+    "description": "Aquesta aventura està dissenyada per ajudar-te a reencendre la passió a la teva relació a través d'una sèrie d'activitats, discussions i exercicis divertits. Cada dia, exploraràs diferents aspectes de la intimitat, la comunicació i les experiències compartides per enfortir el teu vincle i millorar la teva connexió romàntica.",
+    "subtopics": [
+      {
+        "title": "Explorant els Nostres Desitjos",
+        "description": "Comença parlant del que trobeu sexy i atractiu l'un de l'altre, incloent fantasies i noves idees. Utilitzeu preguntes i proves atractives per descobrir desitjos més profunds.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "desire-reignition-style"
+          },
+          {
+            "type": "question",
+            "slug": "what-do-you-find-especially-sexy-about-me"
+          },
+          {
+            "type": "article",
+            "slug": "enhancing-sexual-communication"
+          },
+          {
+            "type": "game",
+            "slug": "fantasy-feelings"
+          },
+          {
+            "type": "checkup",
+            "slug": "emotional-intimacy-check-in"
+          },
+          {
+            "type": "question",
+            "slug": "whats-something-we-could-do-to-spice-things-up"
+          },
+          {
+            "type": "exercise",
+            "slug": "sexual-bucket-list-creation"
+          }
+        ]
+      },
+      {
+        "title": "Creant Moments Romàntics",
+        "description": "Aprèn a fer que els moments quotidians se sentin especials. Aquest subtema t'anima a desenvolupar gestos romàntics i sorprendre's mútuament, aportant emoció a les vostres vides diàries.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "romantic-gesture-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-can-we-make-everyday-moments-feel-more-special-and-romantic"
+          },
+          {
+            "type": "article",
+            "slug": "crafting-memorable-date-nights"
+          },
+          {
+            "type": "game",
+            "slug": "date-night-planner"
+          },
+          {
+            "type": "checkup",
+            "slug": "quality-time-quality-love"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-new-hobby-we-could-start-together-to-spice-things-up"
+          },
+          {
+            "type": "exercise",
+            "slug": "creating-passion-renewal-date"
+          }
+        ]
+      },
+      {
+        "title": "Aplicant Espècies Junts",
+        "description": "Explora nous hobbies o experiències que podeu compartir com a parella. Descobreix activitats que poden reencendre la diversió i la passió a la teva relació mentre permeten el creixement personal.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "hobby-harmony-style"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-new-hobby-we-can-start-together-to-strengthen-our-bond"
+          },
+          {
+            "type": "article",
+            "slug": "exploring-shared-hobbies-together"
+          },
+          {
+            "type": "game",
+            "slug": "hobby-harmony"
+          },
+          {
+            "type": "checkup",
+            "slug": "growth-through-novelty"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-way-we-can-challenge-each-other-to-grow-while-keeping-the-romance-alive"
+          },
+          {
+            "type": "exercise",
+            "slug": "hobbies-and-interests-exercise"
+          }
+        ]
+      },
+      {
+        "title": "Intimitat i Vulnerabilitat",
+        "description": "Endinsa't més en la intimitat emocional i la vulnerabilitat. Practicaràs la comunicació oberta sobre les teves necessitats emocionals, millorant la connexió que impulsa la passió.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "emotional-intimacy-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-prefer-to-communicate-your-needs-and-desires"
+          },
+          {
+            "type": "article",
+            "slug": "building-emotional-intimacy-together"
+          },
+          {
+            "type": "game",
+            "slug": "trust-builders"
+          },
+          {
+            "type": "checkup",
+            "slug": "emotional-needs-compatibility"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-fun-way-we-can-explore-each-others-fantasies-together"
+          },
+          {
+            "type": "exercise",
+            "slug": "active-listening-practice"
+          }
+        ]
+      },
+      {
+        "title": "Mantenint l'Esplendor",
+        "description": "Discuteix estratègies per mantenir l'esplendor viu, fins i tot en moments mundans. Explora maneres de desafiar i créixer junts mentre mantens el romanç al centre.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "growth-balance-style"
+          },
+          {
+            "type": "question",
+            "slug": "what-do-you-think-we-can-do-to-keep-the-spark-alive-in-our-relationship"
+          },
+          {
+            "type": "article",
+            "slug": "boosting-relationship-happiness"
+          },
+          {
+            "type": "game",
+            "slug": "passion-rekindle-quest"
+          },
+          {
+            "type": "checkup",
+            "slug": "fun-and-affection"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-new-hobby-we-can-try-together-that-honors-both-our-interests"
+          },
+          {
+            "type": "exercise",
+            "slug": "flexible-role-playing"
+          }
+        ]
+      },
+      {
+        "title": "Plans de Passió a Llarg Termini",
+        "description": "Crea una fulla de ruta per sostenir la passió a la teva relació al llarg del temps. Desenvolupa objectius compartits i una visió per al teu futur que mantingui viva tant la intimitat com l'emoció.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "future-planning-style"
+          },
+          {
+            "type": "question",
+            "slug": "if-you-won-the-lottery-tomorrow-whats-the-first-thing-youd-do"
+          },
+          {
+            "type": "article",
+            "slug": "creating-a-vision-for-us"
+          },
+          {
+            "type": "game",
+            "slug": "future-visionaries"
+          },
+          {
+            "type": "checkup",
+            "slug": "future-talk-together"
+          },
+          {
+            "type": "question",
+            "slug": "whats-your-favorite-memory-of-us-having-a-great-conversation"
+          },
+          {
+            "type": "exercise",
+            "slug": "long-term-goal-planning"
+          }
+        ]
+      }
+    ],
+    "slug": "rekindling-the-passion"
+  },
+  {
+    "job": [
+      "solving_relationship_problems"
+    ],
+    "title": "Navegant i Resolent Problemes de Relació",
+    "description": "Aquesta aventura està dissenyada per ajudar-te a tu i a la teva parella a navegar i resoldre conflictes de manera efectiva. Cada dia, participaràs en exercicis, preguntes i activitats que milloren les teves habilitats de comunicació i resolució de problemes. Al final d'aquest viatge, et sentiràs més preparat per afrontar els reptes junts i trobar solucions com a equip.",
+    "subtopics": [
+      {
+        "title": "Entenent els Estils de Conflicte",
+        "description": "Descobreix els teus estils de conflicte individuals i com afecten la teva relació. Utilitza preguntes i reflexions per entendre com sol respondre durant les desavinences.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "your-conflict-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-handle-disagreements-or-conflicts"
+          },
+          {
+            "type": "article",
+            "slug": "effective-conflict-resolution-strategies"
+          },
+          {
+            "type": "game",
+            "slug": "conflict-resolution-quest"
+          },
+          {
+            "type": "checkup",
+            "slug": "conflict-resolution-styles"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-handle-disagreements-and-whats-your-favorite-way-for-us-to-make-up-after-a-fight"
+          },
+          {
+            "type": "exercise",
+            "slug": "conflict-resolution-styles"
+          }
+        ]
+      },
+      {
+        "title": "Fonaments de la Comunicació",
+        "description": "Concentra't en millorar les teves habilitats de comunicació durant els conflictes. Explora tècniques d'escolta efectiva i la importància d'una expressió clara a través d'exercicis i jocs.",
+        "content": [
+          {
+            "type": "checkup",
+            "slug": "mastering-our-communication-styles"
+          },
+          {
+            "type": "test",
+            "slug": "discover-your-communication-style"
+          },
+          {
+            "type": "article",
+            "slug": "mastering-communication-techniques"
+          },
+          {
+            "type": "game",
+            "slug": "communication-clues"
+          },
+          {
+            "type": "exercise",
+            "slug": "active-listening-practice"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-prefer-to-communicate-your-needs-and-desires"
+          },
+          {
+            "type": "question",
+            "slug": "whats-your-favorite-memory-of-us-having-a-great-conversation"
+          }
+        ]
+      },
+      {
+        "title": "Resolució Constructiva de Conflictes",
+        "description": "Aprèn a convertir les desavinences en converses constructives. Participa en exercicis i articles que proporcionen estratègies per resoldre conflictes sense escalar-los.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "solution-focused-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-can-we-make-our-disagreements-more-constructive"
+          },
+          {
+            "type": "article",
+            "slug": "mastering-conflict-resolution-together"
+          },
+          {
+            "type": "game",
+            "slug": "problem-solving-escapades"
+          },
+          {
+            "type": "checkup",
+            "slug": "conflict-resolution-wizards"
+          },
+          {
+            "type": "question",
+            "slug": "can-you-recall-a-time-when-you-felt-misunderstood-how-did-you-handle-it"
+          },
+          {
+            "type": "exercise",
+            "slug": "conflict-resolution-strategies-practice"
+          }
+        ]
+      },
+      {
+        "title": "Temes Econòmics i Conflicte",
+        "description": "Explora com les discussions financeres poden portar a conflictes i com navegar aquestes converses. Treballa en estils de pressupost i comunicació financera a través de tests i discussions.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "financial-communication-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-feel-about-our-different-spending-habits-and-how-can-we-find-a-middle-ground"
+          },
+          {
+            "type": "article",
+            "slug": "mastering-money-talks-together"
+          },
+          {
+            "type": "game",
+            "slug": "dream-budget-builders"
+          },
+          {
+            "type": "checkup",
+            "slug": "trust-in-financial-transparency"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-have-any-issues-with-budgeting-like-are-you-in-debt-to-somebody-do-you-make-any-useless-spending"
+          },
+          {
+            "type": "exercise",
+            "slug": "budget-planning-session"
+          }
+        ]
+      },
+      {
+        "title": "Creant un Espai Segur per a les Discussions",
+        "description": "Construeix un entorn on ambdós socis se sentin segurs per expressar els seus sentiments. Utilitza controls i exercicis per facilitar diàlegs oberts i abordar problemes subjacents.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "emotional-safety-style"
+          },
+          {
+            "type": "checkup",
+            "slug": "vulnerability-and-openness"
+          },
+          {
+            "type": "article",
+            "slug": "trust-through-open-communication"
+          },
+          {
+            "type": "game",
+            "slug": "communication-connection"
+          },
+          {
+            "type": "exercise",
+            "slug": "transparent-communication-practices"
+          },
+          {
+            "type": "question",
+            "slug": "are-there-any-habits-or-behaviors-of-mine-that-bother-you"
+          },
+          {
+            "type": "question",
+            "slug": "describe-a-time-when-a-simple-text-message-led-to-a-big-misunderstanding-how-did-you-resolve-it"
+          }
+        ]
+      },
+      {
+        "title": "Convertint el Conflicte en Creixement",
+        "description": "Canvia la teva perspectiva sobre el conflicte aprenent a utilitzar-lo com una eina per al creixement. Reflexiona sobre conflictes passats, aplica l'humor i crea plans de creixement personal com a parella.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "growth-opportunity-style-assessment"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-past-problem-weve-solved-that-makes-you-proud-of-us"
+          },
+          {
+            "type": "article",
+            "slug": "embracing-differences-positively"
+          },
+          {
+            "type": "game",
+            "slug": "compatibility-conundrum"
+          },
+          {
+            "type": "checkup",
+            "slug": "team-problem-solving"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-relationship-problem-you-think-we-can-solve-with-humor"
+          },
+          {
+            "type": "exercise",
+            "slug": "relationship-journal"
+          }
+        ]
+      }
+    ],
+    "slug": "navigating-and-resolving-relationship-problems"
+  },
+  {
+    "job": [
+      "having_and_discussing_sex"
+    ],
+    "title": "Navegant pel Nostre Món Íntim",
+    "description": "Aquesta aventura se centra a millorar la teva comprensió i les discussions sobre el sexe dins de la teva relació. Exploraràs límits, desitjos i estils de comunicació per cultivar una connexió sexual satisfactòria i oberta amb la teva parella. Cada dia, participaràs en diverses activitats dissenyades per promoure la intimitat i la comprensió.",
+    "subtopics": [
+      {
+        "title": "Entenent els Desitjos i Límits",
+        "description": "Comença parlant dels teus desitjos i límits personals. Aquest pas fonamental construeix confiança i estableix les bases per a converses obertes sobre la intimitat. Descobreix eines per articular el que necessites i amb què et sents còmode.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "discover-your-communication-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-comfortable-are-you-discussing-your-boundaries-and-desires"
+          },
+          {
+            "type": "article",
+            "slug": "trust-through-open-communication"
+          },
+          {
+            "type": "game",
+            "slug": "communication-clues"
+          },
+          {
+            "type": "checkup",
+            "slug": "mastering-our-communication-styles"
+          },
+          {
+            "type": "question",
+            "slug": "are-there-any-boundaries-youd-like-to-discuss-regarding-our-physical-relationship"
+          },
+          {
+            "type": "exercise",
+            "slug": "boundaries-practice"
+          }
+        ]
+      },
+      {
+        "title": "Explorant Fantasies Sexuals i Experiments",
+        "description": "Ara que has establert un espai segur, endinsa't en compartir fantasies i discutir les noves experiències que t'agradaria provar junts. Explora maneres d'introduir aquests elements a la teva vida íntima.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "fantasy-sharing-style"
+          },
+          {
+            "type": "question",
+            "slug": "are-there-any-fantasies-or-desires-youd-like-to-share"
+          },
+          {
+            "type": "article",
+            "slug": "building-emotional-intimacy-together"
+          },
+          {
+            "type": "game",
+            "slug": "intimacy-insights"
+          },
+          {
+            "type": "checkup",
+            "slug": "maintaining-sexual-satisfaction-over-time"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-fun-way-we-can-explore-each-others-fantasies-together"
+          },
+          {
+            "type": "exercise",
+            "slug": "fantasy-sharing-session"
+          }
+        ]
+      },
+      {
+        "title": "Comunicant Obertament sobre la Intimitat",
+        "description": "Desenvolupa les teves habilitats de comunicació al voltant del sexe, assegurant-te que ambdós expressin necessitats, preferències i qualsevol preocupació. Aquest subtema inclou exercicis que ajuden a millorar la transparència i la connexió.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "sexual-communication-style"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-find-it-easy-to-say-everything-you-want-during-sex"
+          },
+          {
+            "type": "article",
+            "slug": "enhancing-sexual-communication"
+          },
+          {
+            "type": "game",
+            "slug": "communication-carousel"
+          },
+          {
+            "type": "checkup",
+            "slug": "mastering-communication"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-feel-about-discussing-intimacy-outside-of-the-bedroom"
+          },
+          {
+            "type": "exercise",
+            "slug": "talking-about-sex-practice"
+          }
+        ]
+      },
+      {
+        "title": "Millorant la Intimitat Física",
+        "description": "Explora diverses formes d'afecte físic i intimitat. Discuteix què et fa sentir connectat i satisfet, i prova noves activitats que poden millorar el teu vincle i augmentar la intimitat.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "sensory-intimacy-style"
+          },
+          {
+            "type": "question",
+            "slug": "whats-your-favorite-way-to-be-touched"
+          },
+          {
+            "type": "article",
+            "slug": "building-emotional-intimacy-together"
+          },
+          {
+            "type": "game",
+            "slug": "satisfaction-safari"
+          },
+          {
+            "type": "checkup",
+            "slug": "maintaining-sexual-satisfaction-over-time"
+          },
+          {
+            "type": "question",
+            "slug": "what-parts-of-your-body-you-want-your-partner-to-focus-more-how-does-it-make-you-feel"
+          },
+          {
+            "type": "exercise",
+            "slug": "sensual-exploration-night"
+          }
+        ]
+      },
+      {
+        "title": "Navegant per Reptes i Canvis a la Vida Sexual",
+        "description": "Aborda possibles obstacles a la teva vida sexual, com ara libido diferents o barreres emocionals. Aprèn estratègies per navegar aquests reptes mentre mantens un diàleg de suport per enfortir la teva relació.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "sexual-harmony-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-high-is-your-sex-drive"
+          },
+          {
+            "type": "article",
+            "slug": "mastering-conflict-resolution-together"
+          },
+          {
+            "type": "game",
+            "slug": "problem-solving-partners"
+          },
+          {
+            "type": "checkup",
+            "slug": "aligning-sexual-values-and-expectations"
+          },
+          {
+            "type": "question",
+            "slug": "how-has-your-sexual-expectations-changed-since-weve-started-dating"
+          },
+          {
+            "type": "exercise",
+            "slug": "conflict-resolution-strategies-practice"
+          }
+        ]
+      },
+      {
+        "title": "Celebrant la Teva Connexió Sexual",
+        "description": "Reflexiona sobre el teu viatge junts i celebra els fites a la teva relació sexual. Discuteix maneres d'honorar la teva intimitat i mantenir l'emoció viva, assegurant-te que ambdós se sentin valorats i apreciats.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "love-language-type"
+          },
+          {
+            "type": "question",
+            "slug": "whats-the-best-thing-about-our-sex-life"
+          },
+          {
+            "type": "article",
+            "slug": "fun-rituals-to-strengthen-bonds"
+          },
+          {
+            "type": "game",
+            "slug": "date-night-planner"
+          },
+          {
+            "type": "exercise",
+            "slug": "shared-mood-boards"
+          },
+          {
+            "type": "question",
+            "slug": "whats-one-thing-you-love-about-our-physical-connection"
+          }
+        ]
+      }
+    ],
+    "slug": "navigating-our-intimate-world"
+  },
+  {
+    "job": [
+      "exploring_feelings"
+    ],
+    "title": "Navegant pels Nostres Paisatges Emocionals",
+    "description": "Aquesta aventura està dissenyada per ajudar-te a tu i a la teva parella a explorar i entendre els vostres sentiments a un nivell més profund. A través de diversos tipus de contingut, descobriràs els teus patrons emocionals, comunicaràs efectivament sobre les teves emocions i construiràs una connexió emocional més forta. Cada dia portarà noves perspectives i desafiaments que fomentaran la intimitat emocional en la vostra relació.",
+    "subtopics": [
+      {
+        "title": "Entenent les Nosses Emocions",
+        "description": "Comença la teva aventura explorant les emocions bàsiques i com es manifesten a les vostres vides. A través de preguntes i articles, obtindràs claredat sobre els teus sentiments i els teus mètodes per afrontar-los.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "emotional-awareness-type"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-think-that-you-feel-emotions-stronger-or-weaker-than-other-people"
+          },
+          {
+            "type": "article",
+            "slug": "building-emotional-intimacy-together"
+          },
+          {
+            "type": "game",
+            "slug": "emotional-seasons"
+          },
+          {
+            "type": "checkup",
+            "slug": "emotional-rollercoaster-ride"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-handle-your-strong-emotions"
+          },
+          {
+            "type": "exercise",
+            "slug": "emotional-regulation-techniques"
+          }
+        ]
+      },
+      {
+        "title": "Expressant Sentiments Efectivament",
+        "description": "Aprèn a comunicar les teves emocions l'un a l'altre en un entorn segur i nutritiu. Participa en exercicis que faciliten un diàleg obert sobre els teus sentiments sense por a ser jutjat.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "communication-style-type"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-prefer-to-receive-support-when-youre-feeling-low"
+          },
+          {
+            "type": "article",
+            "slug": "mastering-communication-techniques"
+          },
+          {
+            "type": "game",
+            "slug": "communication-clues"
+          },
+          {
+            "type": "checkup",
+            "slug": "mastering-our-communication-styles"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-feel-comfortable-expressing-your-true-feelings-with-me-why-or-why-not"
+          },
+          {
+            "type": "exercise",
+            "slug": "transparent-communication-practices"
+          }
+        ]
+      },
+      {
+        "title": "Mergullant-se en la Vulnerabilitat",
+        "description": "Descobreix el poder de la vulnerabilitat en les relacions. Explora preguntes i activitats que fomenten compartir les teves pors i desitjos més profunds, i discuteix com la vulnerabilitat pot millorar la intimitat.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "vulnerability-comfort-type"
+          },
+          {
+            "type": "question",
+            "slug": "can-you-describe-a-moment-where-you-felt-most-connected-during-our-sex-and-what-made-it-special-for-you"
+          },
+          {
+            "type": "article",
+            "slug": "vulnerability-trusts-gateway"
+          },
+          {
+            "type": "game",
+            "slug": "feelings-explorer"
+          },
+          {
+            "type": "checkup",
+            "slug": "vulnerability-and-openness"
+          },
+          {
+            "type": "question",
+            "slug": "how-comfortable-are-you-sharing-your-true-feelings-with-me-on-a-scale-of-1-10"
+          },
+          {
+            "type": "exercise",
+            "slug": "vulnerability-exploration-session"
+          }
+        ]
+      },
+      {
+        "title": "Navegant Emocions Difícils Junts",
+        "description": "Identifica i aborda emocions difícils com la gelosia, la inseguretat o la tristesa. Participa en tests i revisions dissenyades per ajudar-vos a tots dos a entendre com donar suport l'un a l'altre durant moments emocionals difícils.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "emotion-management-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-handle-feelings-of-jealousy-or-insecurity"
+          },
+          {
+            "type": "article",
+            "slug": "navigating-emotional-waters-together"
+          },
+          {
+            "type": "game",
+            "slug": "emotional-ride"
+          },
+          {
+            "type": "checkup",
+            "slug": "emotional-rollercoaster-ride"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-handle-feelings-of-stress-or-anxiety"
+          },
+          {
+            "type": "exercise",
+            "slug": "confidentiality-agreements"
+          }
+        ]
+      },
+      {
+        "title": "Construint Seguretat Emocional",
+        "description": "Fomenta un entorn on ambdós socis se sentin segurs per expressar i explorar els seus sentiments. Entén la importància de la seguretat emocional per aprofundir la vostra connexió i aprèn estratègies pràctiques per crear-la.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "emotional-safety-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-feel-about-our-current-level-of-intimacy-and-affection"
+          },
+          {
+            "type": "article",
+            "slug": "trust-through-open-communication"
+          },
+          {
+            "type": "game",
+            "slug": "trust-builders"
+          },
+          {
+            "type": "checkup",
+            "slug": "emotional-intimacy-check-in"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-feel-we-handle-each-others-vulnerabilities"
+          },
+          {
+            "type": "exercise",
+            "slug": "feelings-validation-practices"
+          }
+        ]
+      },
+      {
+        "title": "Cultivant la Intimitat Emocional",
+        "description": "Acaba la teva aventura implementant estratègies que millorin la intimitat emocional en la vostra relació. Participa en jocs i exercicis que enforteixin els vostres lligams emocionals, fent que la vostra connexió sigui més profunda i resilient.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "emotional-intimacy-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-feel-about-sharing-your-deepest-desires-with-each-other"
+          },
+          {
+            "type": "article",
+            "slug": "building-emotional-intelligence-together"
+          },
+          {
+            "type": "game",
+            "slug": "emotion-explorer"
+          },
+          {
+            "type": "checkup",
+            "slug": "emotional-needs-compatibility"
+          },
+          {
+            "type": "question",
+            "slug": "how-can-we-better-express-our-needs-without-feeling-vulnerable"
+          },
+          {
+            "type": "exercise",
+            "slug": "emotional-expression-sessions"
+          }
+        ]
+      }
+    ],
+    "slug": "navigating-our-emotional-landscapes"
+  }
+]

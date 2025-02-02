@@ -81,8 +81,8 @@ export const useDatePolling = (
             stopPolling();
             subscription.remove();
           }
-        } catch (error) {
-          logErrorsWithMessage(error, 'Error in polling');
+        } catch (e) {
+          logErrorsWithMessage(e, (e?.message as string) || '');
         }
       }, 5000);
     };

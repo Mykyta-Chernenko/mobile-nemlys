@@ -1,0 +1,242 @@
+{
+  "title": "Discussing Our Finances: Building a Stronger Future Together",
+  "description": "This journey is designed to help you and your partner engage in meaningful conversations about finances, build mutual understanding, and develop a cooperative approach to financial goals. By progressing through various subtopics, you'll learn how to communicate effectively, set financial goals, and align your spending habits for a brighter shared future.",
+  "subtopics": [
+    {
+      "title": "Understanding Our Financial Values",
+      "description": "Explore each other's financial beliefs and values to create a strong foundation for your financial discussions. This subtopic includes questions about your financial role models and what you prioritize financially.",
+      "content": [
+        {
+          "type": "test",
+          "title": "Financial Communication Style",
+          "id": 2008
+        },
+        {
+          "type": "question",
+          "title": "Do you have a financial role model? Who and why?",
+          "id": 1163
+        },
+        {
+          "type": "article",
+          "title": "Mastering Money Talks Together",
+          "id": 5021
+        },
+        {
+          "type": "game",
+          "title": "Dream Budget Builders",
+          "id": 3001
+        },
+        {
+          "type": "checkup",
+          "title": "Aligning Financial Values and Goals",
+          "id": 6055
+        },
+        {
+          "type": "exercise",
+          "title": "Financial Planning Session",
+          "id": 4045
+        },
+        {
+          "type": "question",
+          "title": "What's one financial habit you admire in others?",
+          "id": 1820
+        }
+      ]
+    },
+    {
+      "title": "Setting Financial Goals Together",
+      "description": "Discuss the importance of financial goals as a couple. This subtopic guides you through creating short-term and long-term financial aims and understanding how to achieve them together.",
+      "content": [
+        {
+          "type": "test",
+          "title": "Budgeting Style for Couples",
+          "id": 2009
+        },
+        {
+          "type": "question",
+          "title": "What are your financial goals, and how can we achieve them together?",
+          "id": 1522
+        },
+        {
+          "type": "article",
+          "title": "Aligning Financial Goals Harmoniously",
+          "id": 5022
+        },
+        {
+          "type": "game",
+          "title": "Future Visionaries",
+          "id": 3000
+        },
+        {
+          "type": "checkup",
+          "title": "Future Financial Adventures",
+          "id": 6024
+        },
+        {
+          "type": "exercise",
+          "title": "Budget Planning Session",
+          "id": 4033
+        },
+        {
+          "type": "question",
+          "title": "What's a new financial goal you'd like to set together?",
+          "id": 1653
+        }
+      ]
+    },
+    {
+      "title": "Communicating About Money Matters",
+      "description": "Learn effective communication strategies for discussing finances. This subtopic introduces tools like budgeting apps and setting regular check-ins to help facilitate these conversations.",
+      "content": [
+        {
+          "type": "test",
+          "title": "Discover Your Communication Style",
+          "id": 2071
+        },
+        {
+          "type": "question",
+          "title": "How do you feel about budgeting apps? Yay or nay?",
+          "id": 1322
+        },
+        {
+          "type": "article",
+          "title": "Mastering Communication Techniques",
+          "id": 5054
+        },
+        {
+          "type": "game",
+          "title": "Communication Champions",
+          "id": 3027
+        },
+        {
+          "type": "checkup",
+          "title": "Mastering Communication Skills",
+          "id": 6004
+        },
+        {
+          "type": "exercise",
+          "title": "Transparency Talks",
+          "id": 4024
+        },
+        {
+          "type": "question",
+          "title": "What smartphone app do you mostly use?",
+          "id": 1045
+        }
+      ]
+    },
+    {
+      "title": "Balancing Spending and Saving",
+      "description": "Dive into conversations about your different spending habits and how to find common ground. This subtopic encourages you to prioritize your financial goals with your lifestyle choices.",
+      "content": [
+        {
+          "type": "test",
+          "title": "Your Spending Style",
+          "id": 2010
+        },
+        {
+          "type": "question",
+          "title": "How do you feel about our different spending habits, and how can we find a middle ground?",
+          "id": 1094
+        },
+        {
+          "type": "article",
+          "title": "Building Trust Through Financial Transparency",
+          "id": 5023
+        },
+        {
+          "type": "game",
+          "title": "Budget Battle Royale",
+          "id": 3012
+        },
+        {
+          "type": "checkup",
+          "title": "Budgeting Together Without Breaking Up",
+          "id": 6039
+        },
+        {
+          "type": "exercise",
+          "title": "Spending Habits Review",
+          "id": 4063
+        },
+        {
+          "type": "question",
+          "title": "Do you prefer saving money in a bank or investing it elsewhere?",
+          "id": 1302
+        }
+      ]
+    },
+    {
+      "title": "Handling Financial Challenges Together",
+      "description": "Discuss your strategies for managing financial stress and unexpected expenses. This subtopic helps you develop a plan to support each other in times of financial difficulty.",
+      "content": [
+        {
+          "type": "test",
+          "title": "Debt Management Style",
+          "id": 2012
+        },
+        {
+          "type": "question",
+          "title": "How do you handle financial stress together?",
+          "id": 1184
+        },
+        {
+          "type": "game",
+          "title": "Debt Decision Duel",
+          "id": 3016
+        },
+        {
+          "type": "checkup",
+          "title": "Tackling Debt Together",
+          "id": 6054
+        },
+        {
+          "type": "exercise",
+          "title": "Debt Management Planning",
+          "id": 4032
+        },
+        {
+          "type": "question",
+          "title": "How do you handle unexpected expenses?",
+          "id": 1197
+        }
+      ]
+    },
+    {
+      "title": "Planning for Our Financial Future",
+      "description": "Explore deeper financial planning aspects, including retirement strategies, homeownership, and the future of your family's finances. This subtopic helps you align your visions for the future and establish a solid financial partnership.",
+      "content": [
+        {
+          "type": "test",
+          "title": "Future Planning Style",
+          "id": 2058
+        },
+        {
+          "type": "question",
+          "title": "How do you prioritize financial goals with other life goals?",
+          "id": 1231
+        },
+        {
+          "type": "game",
+          "title": "Future Forecast",
+          "id": 3045
+        },
+        {
+          "type": "checkup",
+          "title": "Future Talk Flow",
+          "id": 6010
+        },
+        {
+          "type": "exercise",
+          "title": "Retirement Dreams Mapping",
+          "id": 4023
+        },
+        {
+          "type": "question",
+          "title": "How do you see the budget in our partnership now? What method will be more comfortable for you?",
+          "id": 1398
+        }
+      ]
+    }
+  ]
+}

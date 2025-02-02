@@ -1,0 +1,4892 @@
+[
+  {
+    "job": [
+      "discussing_religions"
+    ],
+    "title": "Samskipti trúarbragða okkar saman",
+    "description": "Þessi ferð er hönnuð til að hjálpa þér og maka þínum að ræða og skilja trúarbrögð hvors annars á meðan virðing og opin samskipti eru efld. Með því að kanna ýmsa þætti trúarbragða munuð þið læra að fagna munum og skapa sameiginlega andlega tengingu.",
+    "subtopics": [
+      {
+        "title": "Skilningur á trúarlegum grunni",
+        "description": "Byrjið ferðina ykkar með því að kanna grundvallartrú og venjur trúarbragða hvors annars. Ræðið hvernig þessar forsendur móta sjálfsmyndir ykkar og heimsmyndir. Þessi undirtitill mun innihalda spurningar um persónulegar trúir og venjur.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "religious-identity-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-practice-your-faith-and-how-would-you-like-to-incorporate-it-into-our-relationship"
+          },
+          {
+            "type": "article",
+            "slug": "navigating-religious-conversations-smoothly"
+          },
+          {
+            "type": "exercise",
+            "slug": "spiritual-practices-exchange"
+          },
+          {
+            "type": "question",
+            "slug": "what-role-does-religion-or-spirituality-play-in-your-life-and-how-does-it-affect-our-relationship"
+          }
+        ]
+      },
+      {
+        "title": "Fagna trúarlegum tímamótum",
+        "description": "Lærðu hvernig á að fagna trúarlegum tímamótum og árangri saman. Kynntu ykkur hvernig á að heiðra hefðir hvors annars við mikilvægar lífsviðburði, svo sem fæðingar, brúðkaup og hátíðir, og samþætta þær á náttúrulegan hátt í sameiginlegu lífi ykkar.",
+        "content": [
+          {
+            "type": "checkup",
+            "slug": "celebrating-religious-holidays-together"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-celebrate-religious-achievements-or-milestones"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-celebrate-your-faith-during-personal-milestones-like-birthdays-or-anniversaries"
+          }
+        ]
+      },
+      {
+        "title": "Virðing fyrir munum og ósamkomulagi",
+        "description": "Kynntu ykkur hvernig á að takast á við mun á trúarbrögðum og venjum án átaka. Þessi undirtitill mun veita ykkur verkfæri til að eiga virðuleg samtöl þegar ósamkomulag kemur upp, með áherslu á að skilja frekar en að sannfæra.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "your-conflict-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-handle-religious-disagreements-in-relationships"
+          },
+          {
+            "type": "article",
+            "slug": "bridging-religious-differences-together"
+          },
+          {
+            "type": "game",
+            "slug": "conflict-resolution-quest"
+          },
+          {
+            "type": "checkup",
+            "slug": "handling-religious-conflicts"
+          }
+        ]
+      },
+      {
+        "title": "Innfærsla trúar í daglegt líf",
+        "description": "Ræðið hvernig á að samþætta trúarleg gildi í daglegar venjur ykkar og ákvarðanatöku. Kynnið ykkur sameiginlegar venjur, andlegar athafnir og hvernig trúin getur aukið samstarf ykkar og persónulegan vöxt.",
+        "content": [
+          {
+            "type": "checkup",
+            "slug": "supportive-communication"
+          },
+          {
+            "type": "question",
+            "slug": "how-can-we-support-each-others-spiritual-growth"
+          },
+          {
+            "type": "game",
+            "slug": "spiritual-journey"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-integrate-your-faith-with-your-personal-hobbies-or-interests"
+          }
+        ]
+      },
+      {
+        "title": "Skipulagning fyrir framtíðarblessun",
+        "description": "Takið þátt í merkingarbærum samtölum um hvernig trúarbrögð ykkar hafa áhrif á ákvarðanir um fjölskyldu og börn. Ræðið hvort þið sjáið fyrir ykkur að ala börn upp innan ákveðinna trúarhefða og skoðið afleiðingarnar fyrir líf ykkar saman.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "parenting-style-alignment"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-envision-having-children-in-a-particular-religious-tradition"
+          },
+          {
+            "type": "question",
+            "slug": "what-religious-values-are-most-important-to-you-in-a-relationship"
+          },
+          {
+            "type": "article",
+            "slug": "enhancing-communication-before-parenthood"
+          },
+          {
+            "type": "checkup",
+            "slug": "parenting-playbook-compatibility"
+          },
+          {
+            "type": "exercise",
+            "slug": "parenting-styles-discussion"
+          }
+        ]
+      },
+      {
+        "title": "Bygging sameiginlegrar andlegrar",
+        "description": "Í þessu síðasta skrefi, einbeittu þér að því hvernig á að skapa samhljóm í trúarbrögðum ykkar. Kynnið ykkur venjur sem heiðra bæði hefðir ykkar og ræðið hvernig á að styðja andlegan vöxt hvors annars, til að tryggja fullnægjandi samband byggt á gagnkvæmri virðingu og skilningi.",
+        "content": [
+          {
+            "type": "checkup",
+            "slug": "sharing-spiritual-beliefs"
+          },
+          {
+            "type": "question",
+            "slug": "are-there-any-religious-practices-youd-like-to-explore-together"
+          },
+          {
+            "type": "exercise",
+            "slug": "interfaith-understanding-sessions"
+          }
+        ]
+      }
+    ],
+    "slug": "navigating-our-religious-beliefs-together"
+  },
+  {
+    "job": [
+      "having_fun_and_entertainment"
+    ],
+    "title": "Skapa Rolighet och Underhållning Tillsammans",
+    "description": "Denna resa kommer att vägleda dig och din partner genom aktiviteter och diskussioner som är utformade för att öka glädje och lekfullhet i er relation. Genom att utforska olika aspekter av roligheter och underhållning kommer ni att odla en djupare koppling samtidigt som ni lär er att integrera skratt och kreativitet i ert dagliga liv. Varje dag kommer ni att delta i nya upplevelser och reflektioner som uppmuntrar gemenskap och utforskande.",
+    "subtopics": [
+      {
+        "title": "Börja med Skratt",
+        "description": "Utforska humorns roll i er relation. Engagera er med roliga frågor som era favorit olämpliga skämt och flörtiga texter. Detta grundläggande ämne hjälper er att upptäcka sätt att integrera skratt i era dagliga liv.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "humor-harmony-style"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-have-a-favorite-inappropriate-joke"
+          },
+          {
+            "type": "article",
+            "slug": "laughing-together-keeps-love-strong"
+          },
+          {
+            "type": "game",
+            "slug": "love-laughter"
+          },
+          {
+            "type": "checkup",
+            "slug": "fun-flirtation"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-have-any-favorite-flirty-texts-or-messages-that-make-you-smile"
+          }
+        ]
+      },
+      {
+        "title": "Fira Framgångar och Milstolpar",
+        "description": "Lär er att fira varandras framgångar, stora som små. Diskutera era favorit sätt att fira speciella tillfällen som årsdagar och helgdagar, och skapa en atmosfär av uppskattning och glädje.",
+        "content": [
+          {
+            "type": "checkup",
+            "slug": "marriage-milestones"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-like-to-celebrate-anniversaries"
+          },
+          {
+            "type": "game",
+            "slug": "date-night-planner"
+          },
+          {
+            "type": "test",
+            "slug": "milestone-celebration-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-like-to-celebrate-achievements-big-or-small"
+          }
+        ]
+      },
+      {
+        "title": "Upptäck Gemensamma Intressen",
+        "description": "Dyk ner i diskussioner om aktiviteter och hobbyer som ni båda tycker om. Identifiera gemensamma intressen och föreslå roliga aktiviteter att prova tillsammans, vilket hjälper till att stärka er gemensamma koppling och skapa bestående minnen.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "hobby-harmony-style"
+          },
+          {
+            "type": "question",
+            "slug": "what-hobbies-or-activities-would-you-like-us-to-pursue-together-in-the-future"
+          },
+          {
+            "type": "article",
+            "slug": "exploring-shared-hobbies-together"
+          },
+          {
+            "type": "game",
+            "slug": "hobby-harmony"
+          },
+          {
+            "type": "checkup",
+            "slug": "uncovering-daily-habits-and-quirks"
+          },
+          {
+            "type": "exercise",
+            "slug": "hobbies-and-interests-exercise"
+          }
+        ]
+      },
+      {
+        "title": "Spontana Äventyr",
+        "description": "Kliv ut ur er bekvämlighetszon genom att planera spontana utflykter eller roliga överraskningar för varandra. Använd uppmaningar för att bestämma nya upplevelser, som utomhusaktiviteter eller temakvällar, för att öka spänningen i er relation.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "spontaneity-style"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-new-sport-or-physical-activity-youd-like-to-try-as-a-team"
+          },
+          {
+            "type": "article",
+            "slug": "adventure-sparks-deeper-bonds"
+          },
+          {
+            "type": "game",
+            "slug": "adventure-awaits"
+          },
+          {
+            "type": "checkup",
+            "slug": "adventure-together"
+          },
+          {
+            "type": "exercise",
+            "slug": "adventure-challenge"
+          }
+        ]
+      },
+      {
+        "title": "Kreativ Lekfullhet",
+        "description": "Utnyttja er kreativitet tillsammans genom att utforska konstnärliga strävanden eller lekfulla spel. Delta i övningar som utmanar er båda att tänka utanför boxen, som DIY-projekt eller temabaserade matlagningkvällar.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "creative-sparks-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-express-your-creativity"
+          },
+          {
+            "type": "article",
+            "slug": "crafting-memorable-date-nights"
+          },
+          {
+            "type": "game",
+            "slug": "decor-dilemma"
+          },
+          {
+            "type": "exercise",
+            "slug": "creative-drawing-contest"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-creative-project-youd-love-to-tackle-as-a-duo"
+          }
+        ]
+      },
+      {
+        "title": "Bygga Traditioner och Ritualer",
+        "description": "Avsluta er resa med att reflektera över hur ni kan etablera regelbundna traditioner som håller roligheten vid liv i er relation. Diskutera värdet av roliga ritualer och hur de kan stärka er koppling och skapa älskade minnen tillsammans.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "ritual-building-style"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-tradition-youd-like-to-start-together"
+          },
+          {
+            "type": "article",
+            "slug": "fun-rituals-to-strengthen-bonds"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-tradition-youd-like-us-to-start-as-a-couple"
+          }
+        ]
+      }
+    ],
+    "slug": "creating-fun-and-entertainment-together"
+  },
+  {
+    "job": [
+      "learning_relationship_skills"
+    ],
+    "title": "Læra Sambandsfærni",
+    "description": "Þessi ferð er hönnuð til að hjálpa þér að þróa nauðsynleg sambandsfærni sem mun styrkja tengslin ykkar, bæta samskipti og auka hæfni þína til að leysa ágreining á áhrifaríkan hátt. Efni hvers dags byggir á því síðasta, leiðir þig í gegnum þróun færni sem nauðsynleg er fyrir heilbrigt og fullnægjandi samband.",
+    "subtopics": [
+      {
+        "title": "Skilningur á Tilfinningum",
+        "description": "Lærðu að bera kennsl á og tjá tilfinningar þínar, auk þess að skilja tilfinningalegar viðbrögð maka þíns. Þessi grunnfærni er nauðsynleg fyrir áhrifarík samskipti.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "emotion-management-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-handle-your-strong-emotions"
+          },
+          {
+            "type": "article",
+            "slug": "building-emotional-intimacy-together"
+          },
+          {
+            "type": "game",
+            "slug": "emotional-seasons"
+          },
+          {
+            "type": "checkup",
+            "slug": "mood-mapping"
+          },
+          {
+            "type": "exercise",
+            "slug": "emotional-regulation-techniques"
+          }
+        ]
+      },
+      {
+        "title": "Áhrifaríkar Samskiptatækni",
+        "description": "Kannaðu mismunandi samskiptastíla og tækni, þar á meðal virka hlustun og endurgjöf sem stuðlar að opnum og heiðarlegum samskiptum í sambandinu ykkar.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "discover-your-communication-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-prefer-to-communicate-your-needs-and-desires"
+          },
+          {
+            "type": "article",
+            "slug": "mastering-communication-techniques"
+          },
+          {
+            "type": "game",
+            "slug": "communication-clues"
+          },
+          {
+            "type": "checkup",
+            "slug": "mastering-our-communication-styles"
+          },
+          {
+            "type": "exercise",
+            "slug": "active-listening-practice"
+          }
+        ]
+      },
+      {
+        "title": "Ágreiningslausnir",
+        "description": "Kannaðu ýmsar aðferðir til að leysa ágreining á heilbrigðan hátt. Þú munt læra hvernig á að takast á við ósamkomulag á uppbyggilegan hátt og finna lausnir sem gagnast báðum aðilum.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "your-conflict-style"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-metaphor-that-describes-how-we-handle-problems-together"
+          },
+          {
+            "type": "article",
+            "slug": "effective-conflict-resolution-strategies"
+          },
+          {
+            "type": "game",
+            "slug": "conflict-resolution-quest"
+          },
+          {
+            "type": "checkup",
+            "slug": "conflict-resolution-styles"
+          },
+          {
+            "type": "exercise",
+            "slug": "conflict-resolution-strategies-practice"
+          }
+        ]
+      },
+      {
+        "title": "Þróun Viðkvæmni og Trausts",
+        "description": "Fókus á að byggja upp traust í gegnum viðkvæmni. Þessi undirtitill felur í sér að skilja mikilvægi opins hjarta og hvernig á að deila persónulegum tilfinningum og reynslu.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "vulnerability-style-assessment"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-relationship-skill-you-admire-in-others-and-want-to-develop"
+          },
+          {
+            "type": "article",
+            "slug": "vulnerability-trusts-gateway"
+          },
+          {
+            "type": "game",
+            "slug": "trust-talk"
+          },
+          {
+            "type": "checkup",
+            "slug": "building-a-fortress-of-trust"
+          },
+          {
+            "type": "exercise",
+            "slug": "rebuild-trust-session"
+          }
+        ]
+      },
+      {
+        "title": "Navegando Erfiðar Samræður",
+        "description": "Lærðu hvernig á að hefja og leiða erfiðar samræður án þess að auka ágreining. Þú munt æfa aðferðir til að ræða viðkvæm efni rólega og virðulega.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "communication-timing-style"
+          },
+          {
+            "type": "question",
+            "slug": "whats-the-best-advice-youve-ever-received-about-communicating-in-a-relationship"
+          },
+          {
+            "type": "article",
+            "slug": "navigating-difficult-conversations"
+          },
+          {
+            "type": "game",
+            "slug": "communication-carousel"
+          },
+          {
+            "type": "checkup",
+            "slug": "emotions-expressed-freely"
+          },
+          {
+            "type": "exercise",
+            "slug": "nonviolent-communication-practice"
+          }
+        ]
+      },
+      {
+        "title": "Auka Tilfinningalega Nálægð",
+        "description": "Ljúktu ferðinni þinni með því að kanna leiðir til að dýpka tilfinningalega tengingu ykkar. Þetta felur í sér aðferðir til að auka líkamlega og tilfinningalega nálægð í sambandinu ykkar, sem tryggir að þið komist nær hvoru öðru.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "emotional-intimacy-style"
+          },
+          {
+            "type": "question",
+            "slug": "whats-something-youd-like-to-learn-together-to-enhance-our-relationship"
+          },
+          {
+            "type": "article",
+            "slug": "building-emotional-intimacy-together"
+          },
+          {
+            "type": "game",
+            "slug": "intimacy-adventure"
+          },
+          {
+            "type": "checkup",
+            "slug": "emotional-intimacy-check-in"
+          },
+          {
+            "type": "exercise",
+            "slug": "emotional-closeness-exercises"
+          }
+        ]
+      }
+    ],
+    "slug": "learning-relationship-skills"
+  },
+  {
+    "job": [
+      "introducing_healthy_habits"
+    ],
+    "title": "Kynna Heilbrigða Venjur Saman",
+    "description": "Þessi ferð er hönnuð til að hjálpa pörum að þróa og viðhalda heilbrigðum venjum sem stuðla að heildarvelferð þeirra og styrkja sambandið. Með því að taka eitt skref á hverjum degi muntu kanna næringu, velferðarvenjur og hvernig á að styðja hvort annað á þessari ferð að heilbrigðara lífsstíl.",
+    "subtopics": [
+      {
+        "title": "Skilningur á Grunnatriðum Næringar",
+        "description": "Lærðu grunnatriðin um góða næringu, þar á meðal um vítamín og næringarefni, matreiðslu og hvernig á að innleiða heilbrigða fæðu í mataræðið þitt. Þetta setur grunninn að heilbrigðum lífsstíl.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "healthy-eating-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-ensure-youre-getting-enough-vitamins-and-nutrients"
+          },
+          {
+            "type": "article",
+            "slug": "kickstart-healthy-routines-together"
+          },
+          {
+            "type": "game",
+            "slug": "nutri-quiz"
+          },
+          {
+            "type": "exercise",
+            "slug": "healthy-eating-plans"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-prefer-cooking-together-or-trying-out-new-healthy-recipes-separately"
+          }
+        ]
+      },
+      {
+        "title": "Að Búa til Heilbrigðar Venjur",
+        "description": "Kannaðu leiðir til að koma á daglegum venjum sem hvetja til heilbrigðs mataræðis og hreyfingar, þar á meðal morgunvenjur og kvöldvenjur. Ræðið mikilvægi stöðugleika og hvernig það hefur áhrif á heilsuna ykkar.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "healthy-habits-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-incorporate-healthy-eating-into-your-busy-schedule"
+          },
+          {
+            "type": "article",
+            "slug": "healthy-habits-for-stronger-bonds"
+          },
+          {
+            "type": "game",
+            "slug": "healthy-habits-hub"
+          },
+          {
+            "type": "exercise",
+            "slug": "positive-habit-tracking"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-enjoy-morning-workouts-or-evening-wind-downs-more"
+          }
+        ]
+      },
+      {
+        "title": "Stjórnun Streitu Saman",
+        "description": "Greindu heilbrigðar aðferðir til að stjórna streitu, þar á meðal hugrænar venjur og hvernig á að styðja hvort annað á hektískum tímum. Þessi undirtitill fjallar um andlega velferð sem hluta af heilbrigðum lífsstíl.",
+        "content": [
+          {
+            "type": "checkup",
+            "slug": "mood-mapping"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-handle-stress-in-a-healthy-way"
+          },
+          {
+            "type": "article",
+            "slug": "navigating-emotional-waters-together"
+          },
+          {
+            "type": "game",
+            "slug": "mindfulness-match"
+          },
+          {
+            "type": "exercise",
+            "slug": "mindfulness-meditation-sessions"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-handle-stress-or-unexpected-challenges"
+          }
+        ]
+      },
+      {
+        "title": "Að Innleiða Líkamlega Hreyfingu",
+        "description": "Ræðið um mismunandi tegundir líkamlegrar hreyfingar sem þið báðir njótið, mikilvægi teymis í að vera virkur, og setjið áætlun um reglulegar hreyfingar saman sem geta haldið ykkur ábyrgum.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "accountability-style-quiz"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-prefer-solo-workouts-or-exercising-together"
+          },
+          {
+            "type": "checkup",
+            "slug": "fitness-partners-unite"
+          },
+          {
+            "type": "exercise",
+            "slug": "fitness-routine-together"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-new-form-of-exercise-youd-like-to-do-together-regularly"
+          }
+        ]
+      },
+      {
+        "title": "Skráning Framfara og Markmiða",
+        "description": "Lærðu hvernig á að setja og skrá heilsu- og velferðarmarkmið ykkar og hvernig á að fagna árangri hvors annars. Þetta mun skapa hvatningu og tilfinningu um samstarf í ferð ykkar að heilbrigðum lífsstíl.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "goal-alignment-style"
+          },
+          {
+            "type": "question",
+            "slug": "what-are-your-long-term-health-and-wellness-goals-and-how-can-we-support-each-other"
+          },
+          {
+            "type": "article",
+            "slug": "setting-shared-future-goals"
+          },
+          {
+            "type": "game",
+            "slug": "future-visionaries"
+          },
+          {
+            "type": "exercise",
+            "slug": "smart-goals-planning"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-stay-motivated-to-maintain-your-healthy-habits"
+          }
+        ]
+      },
+      {
+        "title": "Að Byggja Heilbrigðar Venjur Fyrir Framtíðina",
+        "description": "Ræðið um langtímaheilsumarkmið, hvernig á að innleiða heilbrigðar venjur í líf ykkar sem par, og stofna hefðir sem stuðla að velferð, tryggjandi að heilbrigðar venjur verði lífsstíll.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "growth-balance-style"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-new-habit-youd-like-to-develop-together-for-personal-growth"
+          },
+          {
+            "type": "exercise",
+            "slug": "positive-reinforcement-practices"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-new-healthy-habit-youd-like-to-try-this-month"
+          }
+        ]
+      }
+    ],
+    "slug": "introducing-healthy-habits-together"
+  },
+  {
+    "job": [
+      "improving_honesty_and_openness"
+    ],
+    "title": "Bætting á Heiðarleika og Opnun",
+    "description": "Þessi ferð er hönnuð til að hjálpa þér og maka þínum að rækta dýrmætari tilfinningu fyrir heiðarleika og opnun í sambandinu ykkar. Á nokkrum dögum munuð þið taka þátt í athöfnum, umræðum og æfingum sem byggja upp traust og gegnsæi, sem gerir ykkur kleift að takast á við viðkvæm efni og styrkja tengslin ykkar.",
+    "subtopics": [
+      {
+        "title": "Að Skilja Heiðarleika",
+        "description": "Kannaðu hugtakið heiðarleika í samböndum, þar á meðal mikilvægi þess og mismunandi víddir þess að vera heiðarlegur við maka þinn. Taktu þátt í spurningum sem grafa dýpra í núverandi sjónarmið þín um heiðarleika.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "honesty-and-openness-style"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-believe-in-complete-transparency-in-a-relationship-why-or-why-not"
+          },
+          {
+            "type": "article",
+            "slug": "cultivating-honest-conversations"
+          },
+          {
+            "type": "game",
+            "slug": "honesty-hunt"
+          },
+          {
+            "type": "checkup",
+            "slug": "the-honesty-hangout"
+          },
+          {
+            "type": "exercise",
+            "slug": "honesty-commitment-ritual"
+          }
+        ]
+      },
+      {
+        "title": "Að Takast á við Ótta um Heiðarleika",
+        "description": "Greindu algenga ótta eða áhyggjur varðandi opnun í sambandinu ykkar. Í sameiningu, íhugaðu aðstæður þar sem þú fannst þig ekki geta verið heiðarlegur og ræða hvernig þið getið skapað öruggara umhverfi fyrir opna samskipti.",
+        "content": [
+          {
+            "type": "checkup",
+            "slug": "openness-odyssey"
+          },
+          {
+            "type": "question",
+            "slug": "have-you-ever-felt-you-couldnt-be-completely-honest-with-me-why"
+          },
+          {
+            "type": "article",
+            "slug": "vulnerability-trusts-gateway"
+          },
+          {
+            "type": "exercise",
+            "slug": "truth-telling-exercises"
+          },
+          {
+            "type": "game",
+            "slug": "trust-talk-challenge"
+          },
+          {
+            "type": "question",
+            "slug": "have-you-ever-hidden-something-to-protect-my-feelings-how-did-it-turn-out"
+          }
+        ]
+      },
+      {
+        "title": "Að Rækta Gegnsæi",
+        "description": "Lærðu um kosti gegnsæis í sambandi og hvernig það getur aukið nánd. Taktu þátt í athöfnum og umræðum sem hvetja til að deila upplýsingum og hugsunum sem þú gætir venjulega haldið fyrir þig.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "transparency-style-assessment"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-think-its-ever-ok-to-tell-white-lies-in-a-relationship-why-or-why-not"
+          },
+          {
+            "type": "article",
+            "slug": "transparency-builds-strong-bonds"
+          },
+          {
+            "type": "exercise",
+            "slug": "transparency-talks"
+          },
+          {
+            "type": "game",
+            "slug": "transparency-trivia"
+          },
+          {
+            "type": "checkup",
+            "slug": "transparency-tools"
+          }
+        ]
+      },
+      {
+        "title": "Að Byggja Traust í Gegnsæi",
+        "description": "Fáðu að vita aðferðir til að rækta traust með því að vera opinn um tilfinningar þínar, óöryggi og langanir. Taktu þátt í æfingum sem hvetja til að deila og vera viðkvæmur.",
+        "content": [
+          {
+            "type": "exercise",
+            "slug": "openness-commitment-ritual"
+          },
+          {
+            "type": "question",
+            "slug": "how-can-we-support-each-other-to-be-more-open-and-honest-daily"
+          },
+          {
+            "type": "article",
+            "slug": "building-emotional-intimacy-together"
+          },
+          {
+            "type": "game",
+            "slug": "trust-builders"
+          },
+          {
+            "type": "checkup",
+            "slug": "trusting-truths"
+          },
+          {
+            "type": "question",
+            "slug": "can-you-share-a-time-when-honesty-led-to-a-positive-outcome-in-our-relationship"
+          }
+        ]
+      },
+      {
+        "title": "Að Fara í Gegnum Erfiðar Umræður",
+        "description": "Kannaðu tækni til að takast á við erfið efni með heiðarleika og opnun. Æfðu að nota árangursríkar samskiptastefnur til að tjá hugsanir og tilfinningar þínar, með það að markmiði að leysa ágreining á uppbyggilegan hátt.",
+        "content": [
+          {
+            "type": "checkup",
+            "slug": "conflict-to-connection"
+          },
+          {
+            "type": "test",
+            "slug": "your-conflict-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-handle-situations-where-being-honest-might-hurt-someone"
+          },
+          {
+            "type": "article",
+            "slug": "navigating-difficult-conversations"
+          },
+          {
+            "type": "game",
+            "slug": "dialogue-duel"
+          },
+          {
+            "type": "exercise",
+            "slug": "conflict-resolution-strategies-practice"
+          }
+        ]
+      },
+      {
+        "title": "Að Búa til Heiðarlega Menningu í Sambandi",
+        "description": "Þróaðu sameiginlega samkomulag um heiðarleikapraxis innan sambandsins ykkar. Ræddu um mörk og ásetning til að viðhalda menningu opnunar, sem tryggir að báðir aðilar finni sig örugga við að tjá sig.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "trust-building-style-quiz"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-boundary-you-need-to-feel-safe-being-honest-with-me"
+          },
+          {
+            "type": "article",
+            "slug": "building-trust-through-transparency"
+          },
+          {
+            "type": "game",
+            "slug": "trust-sparks"
+          },
+          {
+            "type": "exercise",
+            "slug": "boundaries-practice"
+          },
+          {
+            "type": "checkup",
+            "slug": "trust-builders"
+          }
+        ]
+      }
+    ],
+    "slug": "improving-honesty-and-openness"
+  },
+  {
+    "job": [
+      "preparing_for_marriage"
+    ],
+    "title": "Undirbúningur fyrir hjónaband: Bygging sterkra grunna",
+    "description": "Þessi ferð er hönnuð til að útvega þér og maka þínum verkfæri og innsýn sem nauðsynleg eru fyrir farsælt hjónaband. Hvern dag munuð þið kanna nauðsynleg hugtök, allt frá samskiptum til fjárhagslegs samhljóða, sem leggja grunn að dýpri skilningi á hvort öðru og traustu sambandi.",
+    "subtopics": [
+      {
+        "title": "Skilningur á ástarmálum",
+        "description": "Greindu og skoðaðu ástarmál hvors annars til að auka tilfinningalegt tengsl. Að skilja hvernig þið bæði gefið og mótið ást getur verulega bætt dýnamík sambandsins ykkar.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "love-language-type"
+          },
+          {
+            "type": "article",
+            "slug": "decoding-love-languages"
+          },
+          {
+            "type": "game",
+            "slug": "love-languages-exploration"
+          },
+          {
+            "type": "exercise",
+            "slug": "find-out-your-love-language"
+          }
+        ]
+      },
+      {
+        "title": "Meistari fjárhagslegra samræðna",
+        "description": "Lærðu mikilvægi opinna umræðna um fjármál. Kynntu þér fjárhagsáætlanir, útgjaldavenjur og fjárhagsmarkmið til að byggja upp traust og gegnsæi í fjárhagslegu samstarfi ykkar.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "financial-communication-style"
+          },
+          {
+            "type": "article",
+            "slug": "mastering-money-talks-together"
+          },
+          {
+            "type": "game",
+            "slug": "dream-budget-builders"
+          },
+          {
+            "type": "checkup",
+            "slug": "aligning-financial-values-and-goals"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-prefer-to-communicate-your-needs-and-desires"
+          },
+          {
+            "type": "exercise",
+            "slug": "financial-planning-for-marriage"
+          }
+        ]
+      },
+      {
+        "title": "Ná að tilfinningalegri nánd",
+        "description": "Þróaðu færni til að efla tilfinningalega nánd í gegnum viðkvæmni, virkt hlustun og heiðarleg samskipti. Skildu hvernig á að tjá tilfinningar frjálst og styðja tilfinningalegar þarfir hvors annars.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "emotional-intimacy-style"
+          },
+          {
+            "type": "article",
+            "slug": "building-emotional-intimacy-together"
+          },
+          {
+            "type": "game",
+            "slug": "feelings-explorer"
+          },
+          {
+            "type": "checkup",
+            "slug": "emotional-intimacy-check-in"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-feel-about-writing-love-notes-to-each-other-want-to-give-it-a-try"
+          },
+          {
+            "type": "exercise",
+            "slug": "vulnerability-exploration-session"
+          }
+        ]
+      },
+      {
+        "title": "Samræming framtíðarmarkmiða",
+        "description": "Skoðaðu hvernig á að ræða og samræma drauma og vonir ykkar. Setjið sameiginleg markmið fyrir framtíðina saman, þannig að báðir aðilar finni sig metna og skilja í áætlunarferlinu.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "goal-alignment-style"
+          },
+          {
+            "type": "article",
+            "slug": "setting-shared-future-goals"
+          },
+          {
+            "type": "game",
+            "slug": "future-visionaries"
+          },
+          {
+            "type": "checkup",
+            "slug": "charting-our-shared-future"
+          },
+          {
+            "type": "exercise",
+            "slug": "long-term-goal-planning"
+          }
+        ]
+      },
+      {
+        "title": "Að takast á við áskoranir saman",
+        "description": "Undirbúðu þig fyrir áskoranir hjónalífsins með því að þróa færni í að leysa ágreining og aðferðir til að styðja hvorn annan á erfiðum tímum. Lærðu að takast á við ósammála skoðanir með samúð og virðingu.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "your-conflict-style"
+          },
+          {
+            "type": "article",
+            "slug": "mastering-conflict-resolution-together"
+          },
+          {
+            "type": "game",
+            "slug": "conflict-resolution-quest"
+          },
+          {
+            "type": "checkup",
+            "slug": "conflict-resolution-style-match"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-game-we-could-play-to-improve-our-conflict-resolution-skills"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-feel-about-using-humor-to-ease-tense-conversations"
+          },
+          {
+            "type": "exercise",
+            "slug": "conflict-resolution-strategies-practice"
+          }
+        ]
+      },
+      {
+        "title": "Að skapa sameiginlegar hefðir og venjur",
+        "description": "Stofnaðu merkingarbærar hefðir og venjur sem styrkja tengslin ykkar. Uppgötvaðu leiðir til að fagna sambandi ykkar og skapa varanlegar minningar sem par, sem stuðlar að tilfinningu um einingu og tilheyrandi.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "ritual-building-style"
+          },
+          {
+            "type": "article",
+            "slug": "fun-rituals-to-strengthen-bonds"
+          },
+          {
+            "type": "game",
+            "slug": "date-night-planner"
+          },
+          {
+            "type": "checkup",
+            "slug": "creative-date-designers"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-new-hobby-we-can-start-together-to-strengthen-our-bond"
+          },
+          {
+            "type": "exercise",
+            "slug": "creating-passion-renewal-date"
+          }
+        ]
+      }
+    ],
+    "slug": "preparing-for-marriage-building-a-strong-foundation"
+  },
+  {
+    "job": [
+      "improving_relationship_satisfaction"
+    ],
+    "title": "Auka Sambandsánægju",
+    "description": "Þessi ferð er hönnuð til að veita pörum aðgerðarhæfar innsýn og virkni sem smám saman byggja upp sambandsánægju þeirra. Á nokkrum dögum muntu kanna ýmis efni, allt frá því að skilja þarfir til að dýpka tilfinningalega nánd, sem endar með hagnýtum aðferðum til að bæta áfram í samstarfi ykkar.",
+    "subtopics": [
+      {
+        "title": "Að Skilja Persónulegar Þarfir",
+        "description": "Byrjið á því að ræða einstakar þarfir og óskir ykkar í sambandinu. Þessi grunnur hjálpar báðum aðilum að skilja hvað hver og einn þarf til að finna ánægju.",
+        "content": [
+          {
+            "type": "checkup",
+            "slug": "emotional-needs-compatibility"
+          },
+          {
+            "type": "question",
+            "slug": "how-can-we-ensure-both-of-our-needs-are-being-met"
+          },
+          {
+            "type": "article",
+            "slug": "building-trust-through-intimacy"
+          },
+          {
+            "type": "game",
+            "slug": "future-visionaries"
+          },
+          {
+            "type": "exercise",
+            "slug": "values-alignment-exercise"
+          },
+          {
+            "type": "question",
+            "slug": "how-can-we-better-support-each-other-during-stressful-situations"
+          }
+        ]
+      },
+      {
+        "title": "Opin Samskiptavenjur",
+        "description": "Lærðu áhrifaríkar samskiptatækni sem stuðla að opnum og gegnsæjum samskiptum milli aðila. Taktu þátt í æfingum sem stuðla að virkri hlustun og tjáningu tilfinninga.",
+        "content": [
+          {
+            "type": "checkup",
+            "slug": "mastering-our-communication-styles"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-prefer-to-communicate-your-needs-and-desires"
+          },
+          {
+            "type": "article",
+            "slug": "enhancing-communication-for-stronger-bonds"
+          },
+          {
+            "type": "game",
+            "slug": "communication-clues"
+          },
+          {
+            "type": "exercise",
+            "slug": "active-listening-practice"
+          },
+          {
+            "type": "question",
+            "slug": "whats-your-favorite-memory-of-us-having-a-great-conversation"
+          }
+        ]
+      },
+      {
+        "title": "Fagna Munum og Sameiginlegum Hagsmunum",
+        "description": "Kannaðu hvað gerir hvern ykkar einstakan á meðan þú fagnar sameiginlegum áhugamálum. Þetta mun brúa tengslagötur og virða einstaklingslegar óskir.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "growth-through-differences-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-can-we-celebrate-our-unique-strengths-and-compensate-for-our-differences"
+          },
+          {
+            "type": "article",
+            "slug": "embrace-and-celebrate-differences"
+          },
+          {
+            "type": "game",
+            "slug": "cultural-quest"
+          },
+          {
+            "type": "exercise",
+            "slug": "difference-identification-and-acceptance"
+          },
+          {
+            "type": "question",
+            "slug": "whats-one-thing-you-appreciate-about-how-i-handle-our-differences"
+          }
+        ]
+      },
+      {
+        "title": "Jafnvægi Samveru og Sjálfstæðis",
+        "description": "Fókus á að finna jafnvægi milli gæðatíma saman og virða þarfir hvors annars fyrir persónulegu rými og einstaklingslegum áhugamálum.",
+        "content": [
+          {
+            "type": "checkup",
+            "slug": "balancing-our-unique-interests"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-feel-about-the-balance-between-our-personal-time-and-together-time"
+          },
+          {
+            "type": "article",
+            "slug": "fun-rituals-to-strengthen-bonds"
+          },
+          {
+            "type": "game",
+            "slug": "routine-rendezvous"
+          },
+          {
+            "type": "exercise",
+            "slug": "shared-calendar-setup"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-prefer-solo-workouts-or-exercising-together"
+          }
+        ]
+      },
+      {
+        "title": "Að Búa til Nánd í Gegnsæi",
+        "description": "Kannaðu aðferðir sem byggja upp tilfinningalega nánd í gegnum gegnsæi. Þetta getur falið í sér að deila fyrri reynslu og ótta til að dýpka tengslin.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "vulnerability-style-assessment"
+          },
+          {
+            "type": "question",
+            "slug": "is-there-something-from-your-past-that-still-affects-our-relationship"
+          },
+          {
+            "type": "article",
+            "slug": "vulnerability-trusts-gateway"
+          },
+          {
+            "type": "game",
+            "slug": "secret-share"
+          },
+          {
+            "type": "exercise",
+            "slug": "truth-telling-exercises"
+          },
+          {
+            "type": "question",
+            "slug": "whats-something-youd-like-to-feel-more-of-in-our-relationship"
+          }
+        ]
+      },
+      {
+        "title": "Setja Sambandsmarkmið",
+        "description": "Ljúktu með hagnýtum aðferðum við að setja sameiginleg markmið fyrir samband ykkar, þar á meðal væntingar um vöxt, nánd og langtíma ánægju.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "goal-alignment-style"
+          },
+          {
+            "type": "question",
+            "slug": "what-are-your-aspirations-for-our-relationship-five-ten-or-twenty-years-down-the-line"
+          },
+          {
+            "type": "article",
+            "slug": "aligning-life-ambitions-together"
+          },
+          {
+            "type": "game",
+            "slug": "future-talks-fiesta"
+          },
+          {
+            "type": "exercise",
+            "slug": "smart-goals-planning"
+          },
+          {
+            "type": "question",
+            "slug": "what-are-your-thoughts-on-continuing-personal-growth-and-self-improvement-in-our-relationship"
+          }
+        ]
+      }
+    ],
+    "slug": "enhancing-relationship-satisfaction"
+  },
+  {
+    "job": [
+      "discussing_finances"
+    ],
+    "title": "Að ræða fjármál okkar: Byggja sterkari framtíð saman",
+    "description": "Þessi ferð er hönnuð til að hjálpa þér og maka þínum að taka þátt í merkingarbærum samtölum um fjármál, byggja upp sameiginlega skilning og þróa samvinnu við fjármálamarkmið. Með því að fara í gegnum ýmis undirtök, munuð þið læra hvernig á að koma á framfæri á áhrifaríkan hátt, setja fjármálamarkmið og samræma útgjaldavenjur ykkar fyrir bjartari sameiginlega framtíð.",
+    "subtopics": [
+      {
+        "title": "Að skilja fjármálaleg gildi okkar",
+        "description": "Kynnið ykkar fjármálalegu trú og gildi til að skapa sterka grunn fyrir fjármálasamtöl ykkar. Þetta undirtök inniheldur spurningar um fjármálalega fyrirmyndir ykkar og hvað þið forgangsraðið fjárhagslega.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "financial-communication-style"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-have-a-financial-role-model-who-and-why"
+          },
+          {
+            "type": "article",
+            "slug": "mastering-money-talks-together"
+          },
+          {
+            "type": "game",
+            "slug": "dream-budget-builders"
+          },
+          {
+            "type": "checkup",
+            "slug": "aligning-financial-values-and-goals"
+          },
+          {
+            "type": "exercise",
+            "slug": "financial-planning-session"
+          },
+          {
+            "type": "question",
+            "slug": "whats-one-financial-habit-you-admire-in-others"
+          }
+        ]
+      },
+      {
+        "title": "Að setja fjármálamarkmið saman",
+        "description": "Ræðið mikilvægi fjármálamarkmiða sem par. Þetta undirtök leiðir ykkur í gegnum sköpun stutt- og langtímamarkmiða og skilning á því hvernig á að ná þeim saman.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "budgeting-style-for-couples"
+          },
+          {
+            "type": "question",
+            "slug": "what-are-your-financial-goals-and-how-can-we-achieve-them-together"
+          },
+          {
+            "type": "article",
+            "slug": "aligning-financial-goals-harmoniously"
+          },
+          {
+            "type": "game",
+            "slug": "future-visionaries"
+          },
+          {
+            "type": "checkup",
+            "slug": "future-financial-adventures"
+          },
+          {
+            "type": "exercise",
+            "slug": "budget-planning-session"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-new-financial-goal-youd-like-to-set-together"
+          }
+        ]
+      },
+      {
+        "title": "Að koma á framfæri um fjármál",
+        "description": "Lærðu áhrifaríkar samskiptastefnur fyrir að ræða fjármál. Þetta undirtök kynna verkfæri eins og fjárhagsáætlunartæki og að setja regluleg skoðanir til að auðvelda þessi samtöl.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "discover-your-communication-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-feel-about-budgeting-apps-yay-or-nay"
+          },
+          {
+            "type": "article",
+            "slug": "mastering-communication-techniques"
+          },
+          {
+            "type": "game",
+            "slug": "communication-champions"
+          },
+          {
+            "type": "checkup",
+            "slug": "mastering-our-communication-styles"
+          },
+          {
+            "type": "exercise",
+            "slug": "transparency-talks"
+          },
+          {
+            "type": "question",
+            "slug": "what-smartphone-app-do-you-mostly-use"
+          }
+        ]
+      },
+      {
+        "title": "Að jafna útgjöld og sparnað",
+        "description": "Kynnið ykkur samtöl um mismunandi útgjaldavenjur ykkar og hvernig á að finna sameiginlegan grundvöll. Þetta undirtök hvetur ykkur til að forgangsraða fjármálamarkmiðum ykkar með lífsstílsvalkostum ykkar.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "your-spending-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-feel-about-our-different-spending-habits-and-how-can-we-find-a-middle-ground"
+          },
+          {
+            "type": "article",
+            "slug": "building-trust-through-financial-transparency"
+          },
+          {
+            "type": "game",
+            "slug": "budget-battle-royale"
+          },
+          {
+            "type": "checkup",
+            "slug": "budgeting-together-without-breaking-up"
+          },
+          {
+            "type": "exercise",
+            "slug": "spending-habits-review"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-prefer-saving-money-in-a-bank-or-investing-it-elsewhere"
+          }
+        ]
+      },
+      {
+        "title": "Að takast á við fjármálalegar áskoranir saman",
+        "description": "Ræðið aðferðir ykkar við að stjórna fjármálastressi og óvæntum útgjöldum. Þetta undirtök hjálpar ykkur að þróa áætlun til að styðja hvort annað á erfiðum tímum.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "debt-management-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-handle-financial-stress-together"
+          },
+          {
+            "type": "game",
+            "slug": "debt-decision-duel"
+          },
+          {
+            "type": "checkup",
+            "slug": "tackling-debt-together"
+          },
+          {
+            "type": "exercise",
+            "slug": "debt-management-planning"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-handle-unexpected-expenses"
+          }
+        ]
+      },
+      {
+        "title": "Að skipuleggja fjármál framtíðar okkar",
+        "description": "Kynnið ykkur dýrmætari þætti fjármálaskipulags, þar á meðal eftirlaunaáætlanir, eignarhald á heimili og framtíð fjármála fjölskyldunnar ykkar. Þetta undirtök hjálpar ykkur að samræma sýnir ykkar fyrir framtíðina og koma á fót traustum fjármálasamstarfi.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "future-planning-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-prioritize-financial-goals-with-other-life-goals"
+          },
+          {
+            "type": "game",
+            "slug": "future-forecast"
+          },
+          {
+            "type": "checkup",
+            "slug": "future-talk-flow"
+          },
+          {
+            "type": "exercise",
+            "slug": "retirement-dreams-mapping"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-see-the-budget-in-our-partnership-now-what-method-will-be-more-comfortable-for-you"
+          }
+        ]
+      }
+    ],
+    "slug": "discussing-our-finances-building-a-stronger-future-together"
+  },
+  {
+    "job": [
+      "understanding_mutual_compatibility"
+    ],
+    "title": "Skilning á Sameiginlegri Samhæfni",
+    "description": "Þessi ferð er hönnuð til að hjálpa þér að kanna og skilja lögin í samhæfni í sambandinu ykkar. Með því að takast á við efni smám saman muntu læra að bera kennsl á, meta og sigla í gegnum bæði líkindi og mun. Hvern dag muntu taka þátt í ýmsum tegundum efnis sem auðvelda íhugandi samtöl og efla dýrmæt tengsl.",
+    "subtopics": [
+      {
+        "title": "Könnun á Kjarna Gildum",
+        "description": "Byrjið á að ræða þrjú aðal gildi ykkar og hvernig þau hafa áhrif á ákvarðanir ykkar. Þetta grunn efni mun leiða ykkur í skilning á því hvað er mikilvægt fyrir hvorn annan í sambandi.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "values-alignment-style"
+          },
+          {
+            "type": "question",
+            "slug": "what-are-three-values-you-believe-are-most-important-in-a-person"
+          },
+          {
+            "type": "article",
+            "slug": "aligning-future-goals"
+          },
+          {
+            "type": "game",
+            "slug": "values-vibes"
+          },
+          {
+            "type": "checkup",
+            "slug": "core-values-connection"
+          },
+          {
+            "type": "exercise",
+            "slug": "values-alignment-exercise"
+          }
+        ]
+      },
+      {
+        "title": "Samskiptastílar",
+        "description": "Lærðu um einstaklingsbundna samskiptastíla ykkar og ræða hvernig þeir hafa áhrif á samskipti ykkar. Þetta undirefni mun hjálpa ykkur að þróa aðferðir fyrir skýrari og áhrifaríkari samskipti.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "discover-your-communication-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-prefer-to-communicate-your-needs-and-desires"
+          },
+          {
+            "type": "article",
+            "slug": "mastering-communication-techniques"
+          },
+          {
+            "type": "game",
+            "slug": "communication-clues"
+          },
+          {
+            "type": "checkup",
+            "slug": "mastering-our-communication-styles"
+          },
+          {
+            "type": "exercise",
+            "slug": "active-listening-practice"
+          }
+        ]
+      },
+      {
+        "title": "Menningar- og Bakgrunnarmunur",
+        "description": "Kannaðu hvernig mismunandi menningarlegar bakgrunnar og lífsreynsla móta sjónarhorn ykkar. Að skilja þessa þætti eykur samkennd og virðingu fyrir hvort öðru.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "cultural-connection-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-our-different-cultural-backgrounds-shape-our-relationship-and-how-can-we-honor-both"
+          },
+          {
+            "type": "article",
+            "slug": "bridging-religious-differences-together"
+          },
+          {
+            "type": "game",
+            "slug": "cultural-quest"
+          },
+          {
+            "type": "checkup",
+            "slug": "navigating-cultural-and-religious-differences"
+          },
+          {
+            "type": "exercise",
+            "slug": "difference-identification-and-acceptance"
+          }
+        ]
+      },
+      {
+        "title": "Jafnvægi Persónulegra og Sameiginlegra Hagsmuna",
+        "description": "Ræðið hagsmuni ykkar, áhugamál og hvernig þau geta annað hvort stuðlað að eða verið í mótsögn við hvort annað. Að finna jafnvægi mun auka samband ykkar og tryggja að báðir aðilar finni sig fullnægða.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "hobby-harmony-style"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-new-hobby-we-can-try-together-that-honors-both-our-interests"
+          },
+          {
+            "type": "article",
+            "slug": "exploring-shared-hobbies-together"
+          },
+          {
+            "type": "game",
+            "slug": "hobby-harmony"
+          },
+          {
+            "type": "exercise",
+            "slug": "hobbies-and-interests-exercise"
+          }
+        ]
+      },
+      {
+        "title": "Meðhöndlun Árekstra og Mun",
+        "description": "Kannaðu hvernig þið hvor um sig meðhöndlið árekstra og mismunandi skoðanir. Með því að kanna áhrifaríkar aðferðir til að leysa árekstra munuð þið læra að breyta ósammála í tækifæri til vaxtar.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "your-conflict-style"
+          },
+          {
+            "type": "game",
+            "slug": "conflict-resolution-quest"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-handle-feelings-of-jealousy-or-insecurity"
+          },
+          {
+            "type": "article",
+            "slug": "mastering-conflict-resolution-together"
+          },
+          {
+            "type": "checkup",
+            "slug": "conflict-connoisseurs"
+          },
+          {
+            "type": "exercise",
+            "slug": "conflict-resolution-styles"
+          },
+          {
+            "type": "question",
+            "slug": "how-can-we-turn-our-differences-into-opportunities-for-growth-as-a-couple"
+          }
+        ]
+      },
+      {
+        "title": "Þróun Sambands",
+        "description": "Endurspeglaðu hvernig samband ykkar hefur breyst með tímanum og ræða hvernig þið sjáið framtíð þess. Þetta efni mun leyfa ykkur að samræma langtíma markmið og vonir sem par.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "future-vision-type"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-see-our-relationship-evolving-over-time"
+          },
+          {
+            "type": "article",
+            "slug": "creating-a-vision-for-us"
+          },
+          {
+            "type": "game",
+            "slug": "future-visionaries"
+          },
+          {
+            "type": "checkup",
+            "slug": "future-talk-together"
+          },
+          {
+            "type": "exercise",
+            "slug": "future-goals-compatibility"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-see-our-relationship-evolving-over-the-next-decade"
+          }
+        ]
+      }
+    ],
+    "slug": "understanding-mutual-compatibility"
+  },
+  {
+    "job": [
+      "having_new_experiences"
+    ],
+    "title": "Ævintýraleg Samverka: Utforska Nýjar Upplifanir",
+    "description": "Þessi ferð hvetur þig og maka þinn til að fagna nýjungum og ævintýrum í sambandinu ykkar með því að prófa nýjar athafnir, kanna ókunnug umhverfi og finna sameiginleg áhugamál. Hvern dag munuð þið uppgötva skapandi hugmyndir og áhugavert efni sem mun hvetja ykkur til að hafa gaman saman og styrkja tengslin ykkar í gegnum sameiginlegar upplifanir.",
+    "subtopics": [
+      {
+        "title": "Byrjaðu Smátt: Prófa Nýjar Athafnir",
+        "description": "Byrjið ferðina ykkar með því að finna einfaldar athafnir sem eru þægilegar en samt nýjar. Talið um áhugamál sem þið viljið kanna saman, allt frá matreiðslunámskeiðum til borðspilakvölda.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "breaking-routine-style-quiz"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-hobby-youd-like-us-to-try-together"
+          },
+          {
+            "type": "article",
+            "slug": "rediscover-adventure-together"
+          },
+          {
+            "type": "game",
+            "slug": "adventure-awaits"
+          },
+          {
+            "type": "exercise",
+            "slug": "try-something-new-day"
+          }
+        ]
+      },
+      {
+        "title": "Sköpun Listans",
+        "description": "Búið til sameiginlega lista yfir ævintýri! Talið um spennandi staði til að heimsækja, einstakar upplifanir til að deila og merkingarfull ævintýri sem þið viljið upplifa í framtíðinni.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "adventure-style-assessment"
+          },
+          {
+            "type": "question",
+            "slug": "if-we-were-to-create-a-couples-bucket-list-whats-the-first-adventure-youd-add"
+          },
+          {
+            "type": "article",
+            "slug": "adventure-sparks-deeper-bonds"
+          },
+          {
+            "type": "game",
+            "slug": "future-adventure-quest"
+          },
+          {
+            "type": "exercise",
+            "slug": "future-goals-compatibility"
+          }
+        ]
+      },
+      {
+        "title": "Óvænt Ævintýri",
+        "description": "Fagnaðu óvæntum með því að skipuleggja óvæntar ferðir eða prófa athafnir á hvatningu. Uppgötvaðu spennuna í óvæntum ævintýrum saman og styrktu tengslin ykkar í gegnum óvænt.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "spontaneity-style"
+          },
+          {
+            "type": "question",
+            "slug": "whats-the-most-fun-youve-ever-had-while-doing-something-completely-spontaneous"
+          },
+          {
+            "type": "question",
+            "slug": "if-we-could-go-on-a-crazy-themed-road-trip-what-would-our-theme-be"
+          },
+          {
+            "type": "game",
+            "slug": "adventure-awaits"
+          },
+          {
+            "type": "exercise",
+            "slug": "outdoor-exploration-adventures"
+          }
+        ]
+      },
+      {
+        "title": "Kanna Nýja Staði",
+        "description": "Kannaðu dýpra í þá staði sem þið báðir viljið kanna, hvort sem þeir eru staðbundnir eða alþjóðlegir. Talið um ferðadraumana ykkar og hvernig þessar upplifanir geta auðgað samband ykkar.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "exploration-partnership-style"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-like-to-travel-whats-the-most-exciting-place-youve-been"
+          },
+          {
+            "type": "question",
+            "slug": "which-country-is-at-the-top-of-your-travel-bucket-list-as-a-couple"
+          },
+          {
+            "type": "article",
+            "slug": "adventure-sparks-deeper-bonds"
+          },
+          {
+            "type": "game",
+            "slug": "cultural-quest"
+          },
+          {
+            "type": "exercise",
+            "slug": "cultural-exchange-day"
+          }
+        ]
+      },
+      {
+        "title": "Læra Saman",
+        "description": "Finndu færni eða efni sem þið báðir eruð áhugasöm um að læra saman. Það gæti verið að læra nýtt tungumál, ná tökum á matreiðslutækni eða taka listnámskeið—hvað sem eykur tengslin ykkar!",
+        "content": [
+          {
+            "type": "test",
+            "slug": "shared-learning-style"
+          },
+          {
+            "type": "question",
+            "slug": "if-you-could-learn-a-new-language-together-which-one-would-it-be"
+          },
+          {
+            "type": "question",
+            "slug": "whats-something-youd-like-to-learn-together-to-bring-us-closer"
+          },
+          {
+            "type": "article",
+            "slug": "mastering-communication-techniques"
+          },
+          {
+            "type": "game",
+            "slug": "laugh-learn-quiz"
+          },
+          {
+            "type": "exercise",
+            "slug": "smart-goals-planning"
+          }
+        ]
+      },
+      {
+        "title": "Sköpun í Ævintýrum",
+        "description": "Kannaðu skapandi leiðir til að breyta venjulegum athöfnum í minnisstæðar upplifanir. Hugleiddu þema kvöldverði, skapandi áskoranir eða ævintýralegar verkefni sem leyfa ykkur að tengjast í gegnum ímyndunarafl og leik.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "creative-sparks-style"
+          },
+          {
+            "type": "question",
+            "slug": "if-you-could-embark-on-a-creative-retreat-together-what-would-you-focus-on"
+          },
+          {
+            "type": "question",
+            "slug": "if-we-could-perform-in-a-talent-show-together-what-act-would-we-do"
+          },
+          {
+            "type": "article",
+            "slug": "fun-rituals-to-strengthen-bonds"
+          },
+          {
+            "type": "game",
+            "slug": "decor-dilemma"
+          },
+          {
+            "type": "exercise",
+            "slug": "artistic-expression-days"
+          }
+        ]
+      }
+    ],
+    "slug": "adventurous-together-exploring-new-experiences"
+  },
+  {
+    "job": [
+      "preparing_for_children"
+    ],
+    "title": "Undirbúningur fyrir Börn: Ferð til Foreldrahlutverks",
+    "description": "Þessi ferð miðar að því að útvega þér og maka þínum nauðsynlegan undirbúning fyrir spennandi og krefjandi ævintýri foreldrahlutverks. Hver dagur mun leiða ykkur í gegnum ýmsar umræður, íhugun og virkni til að efla merkingarbærar samræður um foreldrahlutverk. Þegar þið haldið áfram munuð þið kanna grundvallarhugtök, tilfinningalega undirbúning og hagnýtar aðferðir til að tryggja árangursríka ferð inn í foreldrahlutverkið.",
+    "subtopics": [
+      {
+        "title": "Skilningur á Þörf fyrir Foreldrahlutverk",
+        "description": "Kynnið ykkar eigin hugsanir og tilfinningar um að eignast börn. Takið þátt í íhugunarspurningum til að skilja óskir og væntingar hvors annars, sem leggur grunninn að framtíðarsamræðum.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "parenthood-readiness-styles"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-see-yourself-wanting-children-someday"
+          },
+          {
+            "type": "game",
+            "slug": "future-visionaries"
+          },
+          {
+            "type": "checkup",
+            "slug": "parenting-pathways"
+          },
+          {
+            "type": "exercise",
+            "slug": "family-planning-exercise"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-want-to-have-children-if-so-when-do-you-think-is-the-right-time"
+          }
+        ]
+      },
+      {
+        "title": "Samræming Gildis um Foreldrahlutverk",
+        "description": "Ræðið um ykkar kjarngildi og trú varðandi foreldrahlutverk. Þessi undirtitill mun hjálpa ykkur að samræma mikilvægar spurningar, svo sem menntun, aga og gildin sem þið viljið innleiða í framtíðarbörn ykkar.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "parenting-style-alignment"
+          },
+          {
+            "type": "question",
+            "slug": "what-values-are-most-important-for-us-to-instill-in-our-children"
+          },
+          {
+            "type": "game",
+            "slug": "values-vibes"
+          },
+          {
+            "type": "checkup",
+            "slug": "parenting-playbook-compatibility"
+          },
+          {
+            "type": "exercise",
+            "slug": "values-alignment-exercise"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-believe-in-religious-education-for-children-why-or-why-not"
+          }
+        ]
+      },
+      {
+        "title": "Stjórnun Tilfinningalegs Undirbúnings",
+        "description": "Metið tilfinningalega undirbúning ykkar fyrir upps og niður í foreldrahlutverkinu. Í gegnum ýmsar æfingar og íhugun munuð þið takast á við hugsanlegar ótta, áhyggjur og vonir um foreldrahlutverkið.",
+        "content": [
+          {
+            "type": "checkup",
+            "slug": "emotional-rollercoaster-ride"
+          },
+          {
+            "type": "question",
+            "slug": "are-you-ready-to-handle-the-emotional-rollercoaster-that-comes-with-parenting"
+          },
+          {
+            "type": "article",
+            "slug": "navigating-emotional-waters-together"
+          },
+          {
+            "type": "game",
+            "slug": "emotional-seasons"
+          },
+          {
+            "type": "exercise",
+            "slug": "emotional-support-exercises"
+          },
+          {
+            "type": "question",
+            "slug": "what-fears-or-concerns-do-you-have-about-becoming-parents"
+          }
+        ]
+      },
+      {
+        "title": "Hagnýtar Foreldraábyrgðir",
+        "description": "Kynnið ykkur aðferðir við að skipuleggja foreldraábyrgðir. Ræðið hvernig þið viljið skipta um skyldur, skipuleggja umönnun barna og stjórna heimilisverkum, undirbúa ykkur fyrir hagnýtar raunveruleika við að ala upp börn.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "responsibility-sharing-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-should-we-divide-parenting-responsibilities"
+          },
+          {
+            "type": "game",
+            "slug": "household-harmony"
+          },
+          {
+            "type": "exercise",
+            "slug": "shared-responsibilities-mapping"
+          },
+          {
+            "type": "question",
+            "slug": "what-are-your-thoughts-on-childcare-options"
+          }
+        ]
+      },
+      {
+        "title": "Fjármálaskipulag fyrir Foreldrahlutverk",
+        "description": "Fókus á fjármálasvið uppeldis barna. Takið þátt í umræðum um fjárhagsáætlun, sparnað fyrir framtíð barnsins ykkar, og að gera breytingar á fjárhagsáætlunum ykkar þegar þið farið inn í þetta nýja kafla.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "financial-planning-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-should-we-save-for-our-childs-future"
+          },
+          {
+            "type": "article",
+            "slug": "financial-planning-together"
+          },
+          {
+            "type": "game",
+            "slug": "dream-budget-builders"
+          },
+          {
+            "type": "exercise",
+            "slug": "budget-planning-session"
+          }
+        ]
+      },
+      {
+        "title": "Að Byggja Stuðningsnet",
+        "description": "Kynnið ykkur mikilvægi stuðningsnets þegar þið undirbúið ykkur fyrir börn. Ræðið um hlutverk fjölskyldu, vina og foreldraauðlinda sem geta hjálpað ykkur að takast á við komandi áskoranir.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "support-network-style"
+          },
+          {
+            "type": "question",
+            "slug": "are-you-comfortable-with-pet-allergies-or-preferences-if-we-have-kids"
+          },
+          {
+            "type": "exercise",
+            "slug": "parenting-support-networks"
+          },
+          {
+            "type": "question",
+            "slug": "are-you-willing-to-retire-just-to-take-care-of-our-kids"
+          }
+        ]
+      }
+    ],
+    "slug": "preparing-for-children-a-journey-to-parenthood"
+  },
+  {
+    "job": [
+      "planning_for_future"
+    ],
+    "title": "Samskipti um framtíðina saman",
+    "description": "Þessi ferð er hönnuð til að hjálpa þér og maka þínum að skipuleggja framtíðina af umhyggju og takast á við mikilvægar lífsákvarðanir. Þið munuð skoða ýmsa þætti í sambandi ykkar, ræða langtímamarkmið og styrkja samstarf ykkar í gegnum skemmtilegar athafnir, efla opna samskipti og gagnkvæma skilning.",
+    "subtopics": [
+      {
+        "title": "Sjáum fyrir okkur lífið framundan",
+        "description": "Byrjið á því að ímynda ykkur fullkomna framtíð saman, ræða drauma og vonir næstu fimm árin. Þið munuð búa til skýra sýn á það sem þið bæði viljið úr lífinu.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "future-planning-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-envision-our-relationship-evolving-over-the-next-five-years"
+          },
+          {
+            "type": "article",
+            "slug": "creating-a-vision-for-us"
+          },
+          {
+            "type": "game",
+            "slug": "future-visionaries"
+          },
+          {
+            "type": "checkup",
+            "slug": "future-talk-together"
+          },
+          {
+            "type": "exercise",
+            "slug": "long-term-goal-planning"
+          }
+        ]
+      },
+      {
+        "title": "Fjárhagsleg framtíð",
+        "description": "Skoðið fjárhagsleg markmið ykkar sem par. Ræðið um fjárhagsáætlanir, sparnað og mögulegar fjárfestingar til að tryggja öruggt og þægilegt líf, á meðan þið samræmið fjárhagslegar vonir við framtíðarplön.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "financial-planning-style"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-think-financial-discussions-should-happen-regularly-how-often"
+          },
+          {
+            "type": "article",
+            "slug": "mastering-money-talks-together"
+          },
+          {
+            "type": "game",
+            "slug": "dream-budget-builders"
+          },
+          {
+            "type": "checkup",
+            "slug": "budgeting-together-without-breaking-up"
+          },
+          {
+            "type": "exercise",
+            "slug": "budget-planning-session"
+          }
+        ]
+      },
+      {
+        "title": "Bygging fjölskylduáætlunar",
+        "description": "Kynnið ykkur umfjöllun um fjölskylduáætlanir og markmið varðandi foreldrahlutverk. Ákveðið hvort þið viljið börn, hversu mörg, og íhugað hvaða uppeldi þið sjáið fyrir ykkur.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "parenting-style-alignment"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-want-to-have-children-if-so-when-do-you-think-is-the-right-time"
+          },
+          {
+            "type": "game",
+            "slug": "parenting-philosophy-play"
+          },
+          {
+            "type": "checkup",
+            "slug": "parenting-pathways"
+          },
+          {
+            "type": "exercise",
+            "slug": "parenting-styles-discussion"
+          },
+          {
+            "type": "question",
+            "slug": "should-we-adopt-if-we-are-unable-to-have-children"
+          }
+        ]
+      },
+      {
+        "title": "Samskipti um mikilvægar lífsákvarðanir",
+        "description": "Ræðið hvernig þið munið nálgast mikilvægar ákvarðanir í lífi ykkar saman. Þetta felur í sér að flytja saman, breytingar á starfsferli og óvæntar áskoranir í lífinu sem kunna að koma upp.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "decision-making-styles"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-feel-about-making-major-life-decisions-together"
+          },
+          {
+            "type": "game",
+            "slug": "problem-solving-pals"
+          },
+          {
+            "type": "checkup",
+            "slug": "resolving-decision-making-conflicts"
+          },
+          {
+            "type": "exercise",
+            "slug": "negotiation-skills-exercises"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-feel-about-relocating-for-career-opportunities-in-the-future"
+          }
+        ]
+      },
+      {
+        "title": "Búa til sameiginlega drauma lista",
+        "description": "Þróið drauma lista fyrir pör sem endurspeglar sameiginlegar drauma ykkar og ævintýrin sem þið viljið upplifa saman. Fókus á ferðalög, reynslu og hefðir sem þið viljið byggja.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "goal-alignment-style"
+          },
+          {
+            "type": "question",
+            "slug": "if-we-were-to-create-a-couples-bucket-list-whats-the-first-adventure-youd-add"
+          },
+          {
+            "type": "article",
+            "slug": "adventure-sparks-deeper-bonds"
+          },
+          {
+            "type": "game",
+            "slug": "dream-adventure-quest"
+          },
+          {
+            "type": "exercise",
+            "slug": "fantasy-sharing-session"
+          },
+          {
+            "type": "question",
+            "slug": "if-we-could-teleport-to-any-romantic-destination-right-now-where-would-we-go"
+          }
+        ]
+      },
+      {
+        "title": "Samræma gildi og hefðir",
+        "description": "Ræðið mikilvæga gildi og hefðir sem þið viljið rækta sem par og fjölskylda. Kynnið ykkur trúarbrögð, lífsstíl og arfleifðina sem þið viljið skapa saman.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "values-alignment-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-see-our-religious-beliefs-influencing-our-future-goals"
+          },
+          {
+            "type": "game",
+            "slug": "beliefs-values"
+          },
+          {
+            "type": "checkup",
+            "slug": "core-values-connection"
+          },
+          {
+            "type": "exercise",
+            "slug": "family-values-alignment"
+          },
+          {
+            "type": "question",
+            "slug": "what-values-are-most-important-for-us-to-instill-in-our-children"
+          }
+        ]
+      }
+    ],
+    "slug": "navigating-our-future-together"
+  },
+  {
+    "job": [
+      "preparing_for_cohabitation"
+    ],
+    "title": "Undirbúningur fyrir Samlíf",
+    "description": "Þessi ferð er hönnuð til að undirbúa þig og maka þinn fyrir samlíf með því að taka á ýmsum þáttum í því að búa saman. Þú munt læra hvernig á að koma á framfæri á áhrifaríkan hátt, stýra ábyrgðum og skapa samhljóða heimaskilyrði. Hvern dag muntu kanna mikilvægar efnisþætti sem munu hjálpa til við að styrkja sambandið ykkar og auðvelda yfirfærsluna í sameiginlegt líf.",
+    "subtopics": [
+      {
+        "title": "Draumar um Sameiginlegt Rými",
+        "description": "Byrjið á því að deila sýn ykkar á hvernig heimilið ykkar mun líta út. Ræðið hugmyndir um rými, skreytingar og andrúmsloft. Þetta setur grunninn að gagnkvæmu skilningi og sameiginlegum draumum.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "lifestyle-harmony-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-can-we-create-a-home-environment-that-respects-both-of-our-preferences"
+          },
+          {
+            "type": "article",
+            "slug": "sharing-spaces-harmoniously"
+          },
+          {
+            "type": "exercise",
+            "slug": "living-space-design"
+          },
+          {
+            "type": "game",
+            "slug": "decor-dilemma"
+          },
+          {
+            "type": "question",
+            "slug": "whats-one-piece-of-furniture-you-absolutely-need-in-our-new-home"
+          }
+        ]
+      },
+      {
+        "title": "Grunnþættir Samskipta",
+        "description": "Lærðu áhrifaríkar samskiptastefnur sem munu hjálpa þér að stýra daglegum áskorunum. Kannaðu leiðir til að koma þörfum á framfæri, setja væntingar og hlusta virkilega á hvort annað.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "discover-your-communication-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-prefer-to-communicate-your-needs-and-desires"
+          },
+          {
+            "type": "article",
+            "slug": "mastering-communication-techniques"
+          },
+          {
+            "type": "game",
+            "slug": "communication-clues"
+          },
+          {
+            "type": "checkup",
+            "slug": "mastering-our-communication-styles"
+          },
+          {
+            "type": "exercise",
+            "slug": "active-listening-practice"
+          }
+        ]
+      },
+      {
+        "title": "Húsverkaskyldur",
+        "description": "Ræðið og komdu á fót hvernig þið munuð skipta heimilisverkum og ábyrgðum. Búið til kerfi sem virkar fyrir ykkur bæði til að viðhalda hreinu og skipulögðu heimaskilyrði.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "domestic-labor-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-feel-about-handling-household-responsibilities-and-chores"
+          },
+          {
+            "type": "article",
+            "slug": "establishing-household-routines"
+          },
+          {
+            "type": "exercise",
+            "slug": "shared-responsibilities-mapping"
+          },
+          {
+            "type": "game",
+            "slug": "chore-chart-challenge"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-feel-about-having-a-cleaning-schedule-versus-cleaning-as-we-go"
+          }
+        ]
+      },
+      {
+        "title": "Fjárhagsleg Grunnur",
+        "description": "Samræmið ykkur um fjármálastjórnun og fjárhagsáætlun sem par. Ræðið stefnur um að deila kostnaði, taka sameiginlegar fjárhagslegar ákvarðanir og viðhalda gegnsæi um fjármál.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "budgeting-style-for-couples"
+          },
+          {
+            "type": "game",
+            "slug": "dream-budget-builders"
+          },
+          {
+            "type": "article",
+            "slug": "mastering-money-talks-together"
+          },
+          {
+            "type": "exercise",
+            "slug": "budget-planning-session"
+          },
+          {
+            "type": "checkup",
+            "slug": "aligning-financial-values-and-goals"
+          },
+          {
+            "type": "question",
+            "slug": "whats-one-thing-you-want-to-achieve-together-in-our-new-home"
+          }
+        ]
+      },
+      {
+        "title": "Að Takast á við Ágreining með Grace",
+        "description": "Undirbúið ykkur fyrir óhjákvæmilega ósamkomulag með því að læra aðferðir til að leysa ágreining. Kannaðu hvernig á að stýra mismunandi skoðunum og finna sameiginlegan grundvöll á heilbrigðan hátt.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "your-conflict-style"
+          },
+          {
+            "type": "game",
+            "slug": "conflict-resolution-quest"
+          },
+          {
+            "type": "article",
+            "slug": "mastering-conflict-resolution-together"
+          },
+          {
+            "type": "exercise",
+            "slug": "conflict-resolution-strategies-practice"
+          },
+          {
+            "type": "checkup",
+            "slug": "tackling-tough-talks"
+          },
+          {
+            "type": "question",
+            "slug": "how-should-we-handle-maintenance-and-repairs-around-the-house"
+          }
+        ]
+      },
+      {
+        "title": "Að Búa til Örugg Rými",
+        "description": "Ljúkið undirbúningnum með því að einbeita ykkur að tilfinningalegri og líkamlegri öryggi í sameiginlegu rými ykkar. Ræðið mörk, einkalíf og hvernig á að rækta umhverfi þar sem báðir finni sig örugga og virða hvort annað.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "emotional-safety-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-should-we-handle-setting-up-our-home-office-or-study-space"
+          },
+          {
+            "type": "article",
+            "slug": "navigating-boundaries-for-intimacy"
+          },
+          {
+            "type": "exercise",
+            "slug": "personal-space-respect-practices"
+          },
+          {
+            "type": "game",
+            "slug": "space-personalities"
+          },
+          {
+            "type": "question",
+            "slug": "how-should-we-handle-guests-and-visitors-in-our-home"
+          }
+        ]
+      }
+    ],
+    "slug": "preparing-for-cohabitation"
+  },
+  {
+    "job": [
+      "overcoming_differences"
+    ],
+    "title": "Að Fagna Munum: Ferð til Dýrmætari Skilnings",
+    "description": "Þessi ferð er hönnuð til að hjálpa pörum að sigla um og fagna munum sínum, umbreyta áskorunum í tækifæri til vaxtar. Hvern dag muntu taka þátt í hugsunarverðum spurningum, innsýnandi greinum og framkvæmanlegum æfingum sem stuðla að samkennd, virðingu og samstarfi í sambandinu þínu.",
+    "subtopics": [
+      {
+        "title": "Að Skilja Bakgrunn okkar",
+        "description": "Kannaðu hvernig menningarlegur, trúarlegur og persónulegur bakgrunnur okkar mótar sjónarhorn okkar og hegðun í sambandinu. Hugleiddu spurningar um menningarlegar mismunir og trú, sem leggur grunninn að framtíðarsamtölum.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "cultural-harmony-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-our-different-cultural-backgrounds-shape-our-relationship-and-how-can-we-honor-both"
+          },
+          {
+            "type": "article",
+            "slug": "navigating-religious-conversations-smoothly"
+          },
+          {
+            "type": "game",
+            "slug": "cultural-quest"
+          },
+          {
+            "type": "checkup",
+            "slug": "navigating-cultural-and-religious-differences"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-respect-each-others-religious-beliefs-when-they-differ"
+          },
+          {
+            "type": "exercise",
+            "slug": "cultural-exchange-day"
+          }
+        ]
+      },
+      {
+        "title": "Skilvirk Samskipti",
+        "description": "Lærðu mikilvægi gegnsæis og virks hlustunar til að yfirstíga misskilning. Taktu þátt í æfingum og greinum sem bæta samskiptastílana þína og stuðla að opnum samræðum um viðkvæm efni.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "discover-your-communication-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-prefer-to-communicate-your-needs-and-desires"
+          },
+          {
+            "type": "article",
+            "slug": "mastering-communication-techniques"
+          },
+          {
+            "type": "game",
+            "slug": "communication-clues"
+          },
+          {
+            "type": "checkup",
+            "slug": "mastering-our-communication-styles"
+          },
+          {
+            "type": "question",
+            "slug": "whats-your-favorite-memory-of-us-having-a-great-conversation"
+          },
+          {
+            "type": "exercise",
+            "slug": "active-listening-practice"
+          }
+        ]
+      },
+      {
+        "title": "Að Fagna Munum",
+        "description": "Kannaðu leiðir til að fagna og heiðra einstaka styrkleika og sjónarhorn hvors annars. Í gegnum gagnvirkt efni, skoðaðu hvernig munir geta stuðlað að sköpunargáfu og gleði í samstarfi ykkar.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "growth-through-differences-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-can-we-celebrate-our-unique-strengths-and-compensate-for-our-differences"
+          },
+          {
+            "type": "article",
+            "slug": "embrace-and-celebrate-differences"
+          },
+          {
+            "type": "game",
+            "slug": "hobby-harmony"
+          },
+          {
+            "type": "checkup",
+            "slug": "embracing-our-personality-traits"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-fun-way-to-explore-and-embrace-our-differences-together"
+          },
+          {
+            "type": "exercise",
+            "slug": "difference-identification-and-acceptance"
+          }
+        ]
+      },
+      {
+        "title": "Að Sigla um Árekstra með Virðingu",
+        "description": "Þróaðu færni til að stjórna árekstrum á jákvæðan og uppbyggilegan hátt. Þessi undirtitill inniheldur hagnýtar tækni til að leysa ósamkomulag á meðan virðing er sýnd fyrir sjónarhornum hvors annars og traust er viðhaldið.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "your-conflict-style"
+          },
+          {
+            "type": "question",
+            "slug": "whats-one-thing-youd-like-to-change-about-how-we-handle-our-differences"
+          },
+          {
+            "type": "article",
+            "slug": "mastering-conflict-resolution-together"
+          },
+          {
+            "type": "game",
+            "slug": "conflict-resolution-quest"
+          },
+          {
+            "type": "checkup",
+            "slug": "conflict-resolution-styles"
+          },
+          {
+            "type": "question",
+            "slug": "whats-one-thing-you-admire-about-my-perspective-thats-different-from-yours"
+          },
+          {
+            "type": "exercise",
+            "slug": "conflict-resolution-strategies-practice"
+          }
+        ]
+      },
+      {
+        "title": "Að Breyta Áskorunum í Vöxtartækifæri",
+        "description": "Breytðu hugarfari þínu frá því að sjá munina sem hindranir yfir í að sjá þá sem leiðir til persónulegs og sambandsvöxtar. Taktu þátt í athöfnum sem hvetja til samstarfs og sameiginlegrar lausnar á vandamálum.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "flexibility-style-assessment"
+          },
+          {
+            "type": "question",
+            "slug": "how-can-we-turn-our-differences-into-opportunities-for-growth-as-a-couple"
+          },
+          {
+            "type": "article",
+            "slug": "embracing-differences-positively"
+          },
+          {
+            "type": "game",
+            "slug": "problem-solving-escapades"
+          },
+          {
+            "type": "checkup",
+            "slug": "team-problem-solving"
+          },
+          {
+            "type": "question",
+            "slug": "can-boredom-be-helpful"
+          },
+          {
+            "type": "exercise",
+            "slug": "cognitive-restructuring-together"
+          }
+        ]
+      },
+      {
+        "title": "Að Byggja Sameinaða Sýn",
+        "description": "Sameinaðu það sem þú hefur lært til að búa til sameinaða sýn fyrir framtíðina ykkar. Hugleiddu gildi, markmið og vonir ykkar sem par, og tryggðu að báðir aðilar finni sig séð og heyrð í ferðinni framundan.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "future-vision-type"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-challenge-weve-overcome-together-that-made-our-relationship-stronger"
+          },
+          {
+            "type": "article",
+            "slug": "aligning-future-goals"
+          },
+          {
+            "type": "game",
+            "slug": "future-visionaries"
+          },
+          {
+            "type": "checkup",
+            "slug": "future-talk-together"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-memorable-moment-where-our-differences-made-our-relationship-stronger"
+          },
+          {
+            "type": "exercise",
+            "slug": "long-term-goal-planning"
+          }
+        ]
+      }
+    ],
+    "slug": "embracing-our-differences-a-journey-to-deeper-understanding"
+  },
+  {
+    "job": [
+      "discussing_difficult_topics"
+    ],
+    "title": "Samskipti erfiðra samtala saman",
+    "description": "Þessi ferð er hönnuð til að leiða þig og maka þinn í gegnum áskoranir við að ræða viðkvæm efni í sambandinu ykkar. Hvern dag munuð þið kanna mismunandi þætti samskipta, frá því að byggja upp traustan grunn til að takast á við djúp persónuleg efni. Í lok þessarar ferðar munuð þið hafa verkfæri og sjálfstraust til að taka þátt í merkingarbærum umræðum, styrkja tilfinningalegt tengsl ykkar og sameiginlega skilning.",
+    "subtopics": [
+      {
+        "title": "Að koma á opnum samskiptum",
+        "description": "Lærðu mikilvægi opinna samskipta og hvernig á að skapa öruggt rými til að ræða erfið efni. Þessi undirtitill mun kynna grunnsamskiptastefnur.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "discover-your-communication-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-prefer-to-communicate-your-needs-and-desires"
+          },
+          {
+            "type": "article",
+            "slug": "mastering-communication-techniques"
+          },
+          {
+            "type": "game",
+            "slug": "communication-clues"
+          },
+          {
+            "type": "checkup",
+            "slug": "mastering-our-communication-styles"
+          },
+          {
+            "type": "question",
+            "slug": "whats-your-favorite-memory-of-us-having-a-great-conversation"
+          },
+          {
+            "type": "exercise",
+            "slug": "active-listening-practice"
+          }
+        ]
+      },
+      {
+        "title": "Að skilja mismunandi sjónarhorn",
+        "description": "Kynntu þér mikilvægi samkenndar með því að skilja sjónarhorn maka þíns á erfið efni. Ræðið aðferðir til að nálgast ósamkomulag á uppbyggilegan hátt.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "empathy-resonance-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-can-we-ensure-both-of-us-feel-heard-during-a-disagreement"
+          },
+          {
+            "type": "article",
+            "slug": "building-emotional-intimacy-together"
+          },
+          {
+            "type": "game",
+            "slug": "deep-dive-dialogues"
+          },
+          {
+            "type": "checkup",
+            "slug": "empathy-adventure"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-prefer-to-approach-conversations-when-emotions-run-high"
+          },
+          {
+            "type": "exercise",
+            "slug": "difference-identification-and-acceptance"
+          }
+        ]
+      },
+      {
+        "title": "Að takast á við öfund og traust",
+        "description": "Kynntu þér tilfinningar um öfund og traust í sambandinu ykkar. Þessi undirtitill einbeitir sér að því hvernig á að ræða þessar erfiðu tilfinningar án átaka.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "trust-building-style-quiz"
+          },
+          {
+            "type": "question",
+            "slug": "have-you-ever-felt-jealous-in-our-relationship-how-did-you-handle-it"
+          },
+          {
+            "type": "article",
+            "slug": "building-trust-through-intimacy"
+          },
+          {
+            "type": "game",
+            "slug": "trust-talk"
+          },
+          {
+            "type": "checkup",
+            "slug": "trusting-truths"
+          },
+          {
+            "type": "question",
+            "slug": "does-cheating-only-relate-to-physical-things-or-is-there-emotional-cheating-as-well"
+          },
+          {
+            "type": "exercise",
+            "slug": "rebuild-trust-session"
+          }
+        ]
+      },
+      {
+        "title": "Að setja mörk í umræðum",
+        "description": "Lærðu hvernig á að koma á mörkum þegar rætt er um viðkvæm efni til að tryggja að báðir aðilar finni sig þægilega og virtir í samtölum.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "boundary-communication-style"
+          },
+          {
+            "type": "question",
+            "slug": "are-there-any-boundaries-around-work-that-youd-like-to-set"
+          },
+          {
+            "type": "game",
+            "slug": "communication-carousel"
+          },
+          {
+            "type": "question",
+            "slug": "whats-one-boundary-youd-like-to-set-to-keep-our-relationship-healthy"
+          },
+          {
+            "type": "exercise",
+            "slug": "boundaries-practice"
+          }
+        ]
+      },
+      {
+        "title": "Að takast á við fortíðartrauma",
+        "description": "Ræðið um samtöl sem snúa að fortíðartraumum og hvernig þau geta haft áhrif á samband ykkar. Þessi undirtitill veitir aðferðir til að ræða þessi krefjandi efni á næmari hátt.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "life-story-style"
+          },
+          {
+            "type": "question",
+            "slug": "have-you-had-any-childhood-experiences-that-you-can-call-traumatic-how-has-it-affected-you"
+          },
+          {
+            "type": "article",
+            "slug": "navigating-emotional-waters-together"
+          },
+          {
+            "type": "checkup",
+            "slug": "exploring-childhood-memories"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-have-any-unresolved-issues-with-your-parents"
+          },
+          {
+            "type": "exercise",
+            "slug": "sensitive-subjects-dialogue-practice"
+          }
+        ]
+      },
+      {
+        "title": "Aðferðir til að leysa átök",
+        "description": "Þróaðu færni þína í að leysa átök sem koma upp í umræðum. Kynntu þér aðferðir til að breyta deilum í tækifæri til vaxtar og sameiginlegs skilnings.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "your-conflict-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-can-we-turn-our-arguments-into-opportunities-for-growth"
+          },
+          {
+            "type": "article",
+            "slug": "effective-conflict-resolution-strategies"
+          },
+          {
+            "type": "game",
+            "slug": "problem-solving-pals"
+          },
+          {
+            "type": "checkup",
+            "slug": "conflict-resolution-styles"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-prefer-to-resolve-disagreements-calm-discussion-or-taking-a-short-break"
+          },
+          {
+            "type": "exercise",
+            "slug": "conflict-resolution-strategies-practice"
+          }
+        ]
+      }
+    ],
+    "slug": "navigating-difficult-conversations-together"
+  },
+  {
+    "job": [
+      "enhancing_love_and_affection"
+    ],
+    "title": "Auka Ást og Umhyggju",
+    "description": "Þessi ferð er hönnuð til að hjálpa pörum að rækta dýrmætari ást og umhyggju í sambandi þeirra í gegnum merkingarbærar umræður, leikandi virkni og íhugandi venjur. Hvern dag muntu kanna ýmsa þætti ástar og umhyggju, allt frá því að skilja tjáningu þína á ást, til að skapa náin augnablik sem styrkja tengslin ykkar.",
+    "subtopics": [
+      {
+        "title": "Að Skilja Ástarmál",
+        "description": "Lærðu um hugtakið ástarmál og uppgötvaðu hvernig þú og þinn maki tjáið og móttakið ást. Þekkingin veitir grunninn að því að auka tilfinningalegt tengsl ykkar.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "love-language-type"
+          },
+          {
+            "type": "question",
+            "slug": "what-is-your-love-language"
+          },
+          {
+            "type": "article",
+            "slug": "decoding-love-languages"
+          },
+          {
+            "type": "game",
+            "slug": "love-languages-quiz"
+          },
+          {
+            "type": "checkup",
+            "slug": "emotional-needs-compatibility"
+          },
+          {
+            "type": "question",
+            "slug": "whats-your-favorite-way-to-express-love-and-how-does-it-differ-from-mine"
+          },
+          {
+            "type": "exercise",
+            "slug": "find-out-your-love-language"
+          }
+        ]
+      },
+      {
+        "title": "Dagleg Tjáning Umhyggju",
+        "description": "Kannaðu einfaldar en öflugar leiðir til að tjá umhyggju daglega. Þessi undirtitill felur í sér að ræða litlar gjafir, ástarnótur og hrós sem geta lýst upp daginn hjá hvort öðru.",
+        "content": [
+          {
+            "type": "exercise",
+            "slug": "compliment-exchange"
+          },
+          {
+            "type": "question",
+            "slug": "how-can-we-better-express-our-appreciation-for-each-other-daily"
+          },
+          {
+            "type": "article",
+            "slug": "enhance-affection-daily"
+          },
+          {
+            "type": "game",
+            "slug": "affectionate-habits"
+          },
+          {
+            "type": "checkup",
+            "slug": "acts-of-kindness-and-appreciation"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-small-gesture-that-always-makes-you-smile"
+          }
+        ]
+      },
+      {
+        "title": "Að Búa Til Náin Augnablik",
+        "description": "Uppgötvaðu hvernig á að búa til og innleiða náin augnablik í daglegu lífi. Þetta felur í sér að skipuleggja óvæntar stefnumótakvöld, óvæntar knús og augnablik til að tengjast dýrmætari.",
+        "content": [
+          {
+            "type": "checkup",
+            "slug": "emotional-intimacy-check-in"
+          },
+          {
+            "type": "test",
+            "slug": "sensory-intimacy-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-feel-about-trying-new-activities-together-to-build-intimacy"
+          },
+          {
+            "type": "article",
+            "slug": "building-emotional-intimacy-together"
+          },
+          {
+            "type": "game",
+            "slug": "intimacy-insights"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-feel-about-surprise-date-nights-whats-your-ideal-surprise"
+          },
+          {
+            "type": "exercise",
+            "slug": "creating-passion-renewal-date"
+          }
+        ]
+      },
+      {
+        "title": "Að Rækta Þakklæti og Virðingu",
+        "description": "Kastaðu ljósi á mikilvægi þess að tjá þakklæti í sambandi ykkar. Ræðið hvernig virðing getur aukið ást og umhyggju, og lærðu sérstakar venjur til að viðurkenna hvort annað.",
+        "content": [
+          {
+            "type": "exercise",
+            "slug": "expressing-gratitude-session"
+          },
+          {
+            "type": "question",
+            "slug": "how-can-we-better-express-our-appreciation-for-each-other"
+          },
+          {
+            "type": "article",
+            "slug": "mastering-communication-techniques"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-like-to-express-appreciation-in-our-conversations"
+          }
+        ]
+      },
+      {
+        "title": "Leikur og Húmor í Umhyggju",
+        "description": "Lærðu hvernig húmor og leikur geta aukið nánd. Þessi undirtitill hvetur til að finna leiðir til að hlæja saman og taka þátt í leikandi virkni sem styrkir tengslin ykkar.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "playfulness-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-feel-about-incorporating-humor-into-our-intimate-moments"
+          },
+          {
+            "type": "article",
+            "slug": "fun-rituals-to-strengthen-bonds"
+          },
+          {
+            "type": "game",
+            "slug": "laugh-learn-quiz"
+          },
+          {
+            "type": "checkup",
+            "slug": "fun-flirtation"
+          },
+          {
+            "type": "question",
+            "slug": "how-can-we-incorporate-more-playfulness-into-our-relationship"
+          },
+          {
+            "type": "exercise",
+            "slug": "karaoke-session"
+          }
+        ]
+      },
+      {
+        "title": "Fýsisk Umhyggja og Snerting",
+        "description": "Kannaðu hlutverk líkamlegrar snertingar í að efla dýrmætari umhyggju. Ræðið óskir um koss, knús, kram og aðrar tegundir líkamlegrar umhyggju sem styrkja tengslin ykkar.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "physical-touch-style"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-prefer-cuddling-on-the-couch-or-a-romantic-dinner-to-feel-loved"
+          },
+          {
+            "type": "article",
+            "slug": "enhancing-physical-intimacy-mindfully"
+          },
+          {
+            "type": "game",
+            "slug": "bedroom-preferences"
+          },
+          {
+            "type": "checkup",
+            "slug": "physical-comfort-and-boundaries"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-prefer-morning-hugs-or-goodnight-kisses"
+          },
+          {
+            "type": "exercise",
+            "slug": "affectionate-gestures-practice"
+          }
+        ]
+      }
+    ],
+    "slug": "enhancing-love-and-affection"
+  },
+  {
+    "job": [
+      "building_trust"
+    ],
+    "title": "Byggja Traust Saman",
+    "description": "Þessi ferð er hönnuð til að hjálpa þér og maka þínum að kanna nauðsynlegar þætti trausts í sambandinu ykkar. Á nokkrum dögum munuð þið taka þátt í merkingarbærum umræðum, athöfnum og íhugunum sem miða að því að styrkja traust ykkar og tilfinningalega nánd.",
+    "subtopics": [
+      {
+        "title": "Skilgreina Traust",
+        "description": "Byrjið á því að kanna hvað traust þýðir fyrir ykkur bæði. Ræðið skilgreiningar ykkar á trausti og hvernig þær móta samband ykkar.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "trust-building-style-quiz"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-define-trust-in-a-relationship"
+          },
+          {
+            "type": "article",
+            "slug": "trust-through-open-communication"
+          },
+          {
+            "type": "game",
+            "slug": "trust-fund-trivia"
+          },
+          {
+            "type": "checkup",
+            "slug": "trust-builders"
+          },
+          {
+            "type": "question",
+            "slug": "can-you-share-a-time-when-honesty-led-to-a-positive-outcome-in-our-relationship"
+          },
+          {
+            "type": "exercise",
+            "slug": "trust-fall"
+          }
+        ]
+      },
+      {
+        "title": "Opin Samskipti",
+        "description": "Lærðu um mikilvægi gegnsærrar og opinna samræðu. Taktu þátt í æfingum og spurningum sem stuðla að heiðarlegum samskiptum.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "discover-your-communication-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-prefer-to-communicate-your-needs-and-desires"
+          },
+          {
+            "type": "article",
+            "slug": "enhancing-communication-for-stronger-bonds"
+          },
+          {
+            "type": "game",
+            "slug": "communication-clues"
+          },
+          {
+            "type": "checkup",
+            "slug": "mastering-our-communication-styles"
+          },
+          {
+            "type": "question",
+            "slug": "how-important-is-it-for-you-to-always-be-transparent-with-me-even-about-small-things"
+          },
+          {
+            "type": "exercise",
+            "slug": "active-listening-practice"
+          }
+        ]
+      },
+      {
+        "title": "Að Takast á við Öfund og Óöryggi",
+        "description": "Greindu og taktu á tilfinningum um öfund og óöryggi. Deildu persónulegum reynslum og aðferðum til að takast á við í stuðningsumhverfi.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "emotional-regulation-styles"
+          },
+          {
+            "type": "question",
+            "slug": "have-you-ever-felt-jealous-in-our-relationship-how-did-you-handle-it"
+          },
+          {
+            "type": "article",
+            "slug": "navigating-emotional-waters-together"
+          },
+          {
+            "type": "game",
+            "slug": "emotion-explorer"
+          },
+          {
+            "type": "checkup",
+            "slug": "emotional-needs-compatibility"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-handle-feelings-of-jealousy-or-insecurity"
+          },
+          {
+            "type": "exercise",
+            "slug": "jealously-navigation-technique"
+          }
+        ]
+      },
+      {
+        "title": "Setja Mörk",
+        "description": "Ræðið persónuleg mörk og skiljið þægindastig hvors annars. Að byggja upp gagnkvæman virðingu og skilning er lykillinn að því að koma á trausti.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "boundary-setting-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-comfortable-are-you-discussing-your-boundaries-and-desires"
+          },
+          {
+            "type": "article",
+            "slug": "navigating-boundaries-for-intimacy"
+          },
+          {
+            "type": "checkup",
+            "slug": "personal-space-balancing-togetherness-and-alone-time"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-boundary-you-need-to-feel-more-secure-and-trusting-in-our-relationship"
+          },
+          {
+            "type": "exercise",
+            "slug": "boundaries-practice"
+          }
+        ]
+      },
+      {
+        "title": "Lagfæra Traust",
+        "description": "Kannaðu hvernig á að endurbyggja traust eftir að það hefur verið prófað. Ræðið tækni og skuldbindingar sem nauðsynlegar eru til að endurheimta trú á hvort annað.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "trust-repair-style-type"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-prefer-to-rebuild-trust-if-its-ever-broken"
+          },
+          {
+            "type": "article",
+            "slug": "rebuilding-trust-after-betrayal"
+          },
+          {
+            "type": "game",
+            "slug": "trust-talk-challenge"
+          },
+          {
+            "type": "checkup",
+            "slug": "trust-in-communication"
+          },
+          {
+            "type": "question",
+            "slug": "have-you-done-something-in-the-past-that-you-think-can-significantly-change-my-image-of-you-and-what-are-the-things-that-can-hypothetically-change-your-image-of-me-maybe-i-did-something-amoral-or-cheated"
+          },
+          {
+            "type": "exercise",
+            "slug": "rebuild-trust-session"
+          }
+        ]
+      },
+      {
+        "title": "Traust-Byggjandi Athafnir",
+        "description": "Taktu þátt í skemmtilegum og gagnvirkum athöfnum sem styrkja traust. Taktu þátt í æfingum sem eru hannaðar til að koma ykkur nær og styrkja tengslin ykkar.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "transparency-style-assessment"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-fun-activity-we-can-do-together-to-strengthen-our-trust"
+          },
+          {
+            "type": "article",
+            "slug": "fun-rituals-to-strengthen-bonds"
+          },
+          {
+            "type": "game",
+            "slug": "trust-trek"
+          },
+          {
+            "type": "checkup",
+            "slug": "trust-in-conflict-resolution"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-trust-building-challenge-youd-like-us-to-try"
+          },
+          {
+            "type": "exercise",
+            "slug": "adventure-challenge"
+          }
+        ]
+      }
+    ],
+    "slug": "building-trust-together"
+  },
+  {
+    "job": [
+      "having_meaningful_conversations"
+    ],
+    "title": "Rækta Merkingarfullar Samtöl",
+    "description": "Þessi ferð er hönnuð til að auka hæfni þína til að taka þátt í merkingarfullum samtölum við maka þinn. Á nokkrum dögum muntu kanna ýmsa þætti samskipta, allt frá því að skilja gildi hvors annars til að ræða dýpri tilfinningaleg málefni. Hver dagur byggir á þeim síðasta, hvetjandi vöxt og tengingu.",
+    "subtopics": [
+      {
+        "title": "Grunnurinn að Samskiptum",
+        "description": "Byrjaðu á því að kanna grunnatriði árangursríkra samskipta við maka þinn. Lærðu um virka hlustun, að tjá hugsanir skýrt, og mikilvægi ómállegra vísbendinga.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "discover-your-communication-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-prefer-to-communicate-your-needs-and-desires"
+          },
+          {
+            "type": "article",
+            "slug": "mastering-communication-techniques"
+          },
+          {
+            "type": "game",
+            "slug": "communication-clues"
+          },
+          {
+            "type": "checkup",
+            "slug": "mastering-our-communication-styles"
+          },
+          {
+            "type": "exercise",
+            "slug": "active-listening-practice"
+          },
+          {
+            "type": "question",
+            "slug": "whats-your-favorite-memory-of-us-having-a-great-conversation"
+          }
+        ]
+      },
+      {
+        "title": "Skilning á Gildum Hvors Annars",
+        "description": "Kannaðu kjarngildi sem móta trú þína og aðgerðir. Ræddu hvernig þessi gildi hafa áhrif á ákvarðanir þínar og hvernig þau geta haft áhrif á sambandið ykkar.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "values-alignment-style"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-think-we-share-the-same-values"
+          },
+          {
+            "type": "article",
+            "slug": "aligning-life-ambitions-together"
+          },
+          {
+            "type": "game",
+            "slug": "values-vibes"
+          },
+          {
+            "type": "checkup",
+            "slug": "core-values-connection"
+          },
+          {
+            "type": "exercise",
+            "slug": "values-alignment-exercise"
+          },
+          {
+            "type": "question",
+            "slug": "what-are-your-top-three-values-and-how-do-they-influence-your-decisions"
+          }
+        ]
+      },
+      {
+        "title": "Ná að Erfiðum Efnum",
+        "description": "Lærðu tækni til að nálgast erfið samtöl með næmni og virðingu. Æfðu að ræða krefjandi efni eins og fjármál, fjölskyldudýnamík eða framtíðarsýn.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "problem-solving-style"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-think-that-money-play-a-big-role-in-feeling-fulfilled"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-balance-personal-time-with-time-spent-together"
+          },
+          {
+            "type": "article",
+            "slug": "navigating-difficult-conversations"
+          },
+          {
+            "type": "game",
+            "slug": "conflict-resolution-quest"
+          },
+          {
+            "type": "checkup",
+            "slug": "tackling-tough-talks"
+          },
+          {
+            "type": "exercise",
+            "slug": "tough-talks-toolkit"
+          }
+        ]
+      },
+      {
+        "title": "Deila Persónulegum Reynslum",
+        "description": "Taktu þátt í sögum til að deila mikilvægum minningum frá fortíðinni. Kannaðu hvernig reynsla þín hefur haft áhrif á núverandi sjónarhorn þitt og tilfinningalegt ástand.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "life-story-style"
+          },
+          {
+            "type": "question",
+            "slug": "can-you-share-a-memory-from-your-childhood-that-you-think-has-shaped-who-you-are-today"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-memorable-lesson-youve-learned-from-past-relationships"
+          },
+          {
+            "type": "article",
+            "slug": "love-maps-knowing-each-other-deeply"
+          },
+          {
+            "type": "game",
+            "slug": "memory-lane"
+          },
+          {
+            "type": "checkup",
+            "slug": "exploring-childhood-memories"
+          },
+          {
+            "type": "exercise",
+            "slug": "intimate-story-sharing"
+          }
+        ]
+      },
+      {
+        "title": "Dýpka Tilfinningaleg Tengsl",
+        "description": "Kannaðu samtöl sem auka tilfinningalega nánd. Ræddu um efni eins og ótta, drauma og vonir til að efla dýpri tengsl við maka þinn.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "emotional-intimacy-style"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-believe-in-soulmates-why-or-why-not"
+          },
+          {
+            "type": "question",
+            "slug": "what-are-your-dreams-and-aspirations-outside-of-work"
+          },
+          {
+            "type": "article",
+            "slug": "building-emotional-intimacy-together"
+          },
+          {
+            "type": "game",
+            "slug": "emotional-expeditions"
+          },
+          {
+            "type": "checkup",
+            "slug": "emotional-intimacy-check-in"
+          },
+          {
+            "type": "exercise",
+            "slug": "emotional-closeness-exercises"
+          }
+        ]
+      },
+      {
+        "title": "Byggja Menningu Opins Samtals",
+        "description": "Skapaðu umhverfi þar sem báðir aðilar finna sig örugga til að tjá hugsanir sínar og tilfinningar. Lærðu aðferðir til að viðhalda opinni samskiptum og hvetja til viðkvæmni.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "openness-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-feel-about-surprise-conversations-versus-planned-discussions"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-express-your-creativity"
+          },
+          {
+            "type": "article",
+            "slug": "cultivating-honest-conversations"
+          },
+          {
+            "type": "game",
+            "slug": "open-hearts-challenge"
+          },
+          {
+            "type": "checkup",
+            "slug": "vulnerability-and-openness"
+          },
+          {
+            "type": "exercise",
+            "slug": "transparent-communication-practices"
+          }
+        ]
+      }
+    ],
+    "slug": "cultivating-meaningful-conversations"
+  },
+  {
+    "job": [
+      "improving_communication"
+    ],
+    "title": "Bæta Samskipti: Byggja Brýr í Sambandi okkar",
+    "description": "Þessi ferð einbeitir sér að því að bæta samskiptahæfileika milli maka. Með því að taka þátt í ýmsum athöfnum, umræðum og íhugunaræfingum muntu læra að tjá þig opnari og skilja hvort annað betur, sem stuðlar að nánara sambandi og fullnægjandi sambandi.",
+    "subtopics": [
+      {
+        "title": "Að Skilja Samskiptastíla Hvors Annars",
+        "description": "Kannaðu mismunandi samskiptastíla og uppgötvaðu hvernig þeir hafa áhrif á samskipti ykkar. Þetta felur í sér að bera kennsl á þinn eigin stíl og læra um óskir maka þíns til að skapa opinn dialog.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "discover-your-communication-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-prefer-to-communicate-your-needs-and-desires"
+          },
+          {
+            "type": "article",
+            "slug": "enhancing-communication-for-stronger-bonds"
+          },
+          {
+            "type": "game",
+            "slug": "communication-clues"
+          },
+          {
+            "type": "exercise",
+            "slug": "active-listening-practice"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-feel-about-writing-down-our-issues-before-discussing-them"
+          },
+          {
+            "type": "checkup",
+            "slug": "mastering-our-communication-styles"
+          }
+        ]
+      },
+      {
+        "title": "Að Fara í Gegnum Erfiðar Umræður",
+        "description": "Lærðu tækni til að nálgast erfiðar umræður með samúð og virðingu. Þú munt öðlast hæfileika til að tjá hugsanir og tilfinningar á meðan þú ert athugandi á sjónarhóli maka þíns.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "problem-solving-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-can-we-make-our-disagreements-more-constructive"
+          },
+          {
+            "type": "article",
+            "slug": "navigating-sensitive-conversations"
+          },
+          {
+            "type": "game",
+            "slug": "problem-solving-pals"
+          },
+          {
+            "type": "exercise",
+            "slug": "conflict-resolution-strategies-practice"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-prefer-discussing-issues-immediately-or-taking-some-time-to-cool-off"
+          },
+          {
+            "type": "checkup",
+            "slug": "navigating-tough-conversations"
+          }
+        ]
+      },
+      {
+        "title": "Að Tjá Þarfir og Mörk",
+        "description": "Þetta efni fjallar um hvernig á að tjá þarfir þínar og setja heilbrigð mörk. Þú munt æfa að tjá hvað þú þarft frá hvort öðru á þann hátt sem styrkir samband ykkar.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "boundary-setting-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-comfortable-are-you-discussing-your-boundaries-and-desires"
+          },
+          {
+            "type": "article",
+            "slug": "navigating-boundaries-for-intimacy"
+          },
+          {
+            "type": "exercise",
+            "slug": "boundaries-practice"
+          },
+          {
+            "type": "question",
+            "slug": "whats-one-boundary-youd-like-to-set-to-keep-our-relationship-healthy"
+          }
+        ]
+      },
+      {
+        "title": "Virkt Hlusta og Tilfinningaleg Styrking",
+        "description": "Lærðu listina að hlusta virkt og hvernig á að staðfesta tilfinningar maka þíns. Þú munt uppgötva verkfæri til að bæta hlustunarfærni þína og tryggja að báðir aðilar finni sig heyrða og skilja.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "listening-style-quiz"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-like-to-receive-feedback-in-our-relationship"
+          },
+          {
+            "type": "article",
+            "slug": "mastering-active-listening"
+          },
+          {
+            "type": "checkup",
+            "slug": "emotional-explorers"
+          },
+          {
+            "type": "exercise",
+            "slug": "active-listening-practice"
+          },
+          {
+            "type": "question",
+            "slug": "whats-your-favorite-non-verbal-way-i-show-you-im-listening"
+          }
+        ]
+      },
+      {
+        "title": "Byggja Uppbyggjandi Ágreininga",
+        "description": "Lærðu árangursríkar aðferðir til að leysa ágreining á uppbyggjandi hátt. Þetta felur í sér tækni til að takast á við ósamkomulag án þess að skaða sambandi, sem stuðlar að teymisanda.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "your-conflict-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-handle-disagreements-or-conflicts"
+          },
+          {
+            "type": "article",
+            "slug": "effective-conflict-resolution-strategies"
+          },
+          {
+            "type": "game",
+            "slug": "conflict-resolution-quest"
+          },
+          {
+            "type": "exercise",
+            "slug": "conflict-resolution-strategies-practice"
+          },
+          {
+            "type": "question",
+            "slug": "whats-one-thing-youd-like-to-change-about-how-we-handle-our-differences"
+          },
+          {
+            "type": "checkup",
+            "slug": "conflict-resolution-styles"
+          }
+        ]
+      },
+      {
+        "title": "Að Hvetja til Heiðarlegra og Opinna Samræðna",
+        "description": "Ræktaðu venju um opnar og heiðarlegar samskipti innan sambands ykkar. Þetta undirefni mun leiða þig í gegnum aðferðir sem hvetja til gegnsæis og trausts, sem opnar leiðina fyrir dýrmætari tengsl og nánd.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "honesty-and-openness-style"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-feel-comfortable-expressing-your-true-feelings-with-me-why-or-why-not"
+          },
+          {
+            "type": "article",
+            "slug": "building-trust-through-transparency"
+          },
+          {
+            "type": "game",
+            "slug": "honesty-huddle"
+          },
+          {
+            "type": "checkup",
+            "slug": "the-honesty-hangout"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-think-honesty-is-always-the-best-policy-why-or-why-not"
+          },
+          {
+            "type": "exercise",
+            "slug": "complete-honesty-sessions"
+          }
+        ]
+      }
+    ],
+    "slug": "improving-communication-building-bridges-in-our-relationship"
+  },
+  {
+    "job": [
+      "preparing_for_intimacy"
+    ],
+    "title": "Undirbúningur fyrir Nærgætni",
+    "description": "Þessi ferð er hönnuð til að hjálpa pörum að kanna og styrkja náin tengsl á stuðningsfullan og uppbyggilegan hátt. Í gegnum röð af vandlega unnu efni munu pörin taka þátt í ýmsum þáttum nærgætni, frá því að byggja upp traust til að kanna óskir. Hvern dag munuð þið afhjúpa nýjar innsýn og venjur til að efla dýpri tilfinningaleg og líkamleg tengsl.",
+    "subtopics": [
+      {
+        "title": "Að Skilja Nærgætni",
+        "description": "Byrjið ferðina ykkar með því að kanna hugtakið nærgætni. Skiljið mismunandi víddir nærgætni, þar á meðal tilfinningalega og líkamlega þætti, og ræða hvað nærgætni þýðir fyrir ykkur bæði.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "emotional-intimacy-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-envision-our-intimate-life-evolving-over-the-next-year"
+          },
+          {
+            "type": "article",
+            "slug": "building-emotional-intimacy-together"
+          },
+          {
+            "type": "game",
+            "slug": "intimacy-insights"
+          },
+          {
+            "type": "checkup",
+            "slug": "emotional-intimacy-check-in"
+          },
+          {
+            "type": "exercise",
+            "slug": "intimate-story-sharing"
+          }
+        ]
+      },
+      {
+        "title": "Að Byggja Traust og Viðkvæmni",
+        "description": "Kynnið ykkur æfingar til að byggja upp traust og ræða mikilvægi viðkvæmni í sambandi. Lærðu hvernig að deila persónulegum tilfinningum og reynslu getur skapað öruggt rými fyrir nærgætni.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "trust-building-style-quiz"
+          },
+          {
+            "type": "question",
+            "slug": "what-role-does-vulnerability-play-in-our-intimate-life"
+          },
+          {
+            "type": "article",
+            "slug": "vulnerability-trusts-gateway"
+          },
+          {
+            "type": "game",
+            "slug": "trust-builders"
+          },
+          {
+            "type": "checkup",
+            "slug": "trusting-truths"
+          },
+          {
+            "type": "exercise",
+            "slug": "vulnerability-exploration-session"
+          }
+        ]
+      },
+      {
+        "title": "Að Sýna Óskir",
+        "description": "Fókus á listina að koma óskum og óskum ykkar á framfæri. Takið þátt í athöfnum sem hjálpa ykkur að orða náin markmið ykkar, og æfið ykkur í að deila fantasíum á stuðningsfullan hátt.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "sexual-communication-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-prefer-to-communicate-your-needs-and-desires"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-feel-about-sharing-your-deepest-desires-with-each-other"
+          },
+          {
+            "type": "article",
+            "slug": "enhancing-sexual-communication"
+          },
+          {
+            "type": "game",
+            "slug": "fantasy-fulfillment"
+          },
+          {
+            "type": "checkup",
+            "slug": "emotional-needs-compatibility"
+          },
+          {
+            "type": "exercise",
+            "slug": "fantasy-sharing-session"
+          }
+        ]
+      },
+      {
+        "title": "Að Búa til Nærgætisvenjur",
+        "description": "Vinnið saman að því að þróa persónulegar venjur sem efla nærgætni. Þetta gæti falið í sér rútínur, sérstakar stefnumótanætur, eða aðrar venjur sem koma ykkur nær saman reglulega.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "ritual-building-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-can-we-create-more-intimate-moments-in-our-daily-routine"
+          },
+          {
+            "type": "question",
+            "slug": "whats-one-intimate-goal-youd-like-us-to-achieve-together"
+          },
+          {
+            "type": "article",
+            "slug": "fun-rituals-to-strengthen-bonds"
+          },
+          {
+            "type": "game",
+            "slug": "date-night-planner"
+          },
+          {
+            "type": "checkup",
+            "slug": "everyday-chats-that-count"
+          },
+          {
+            "type": "exercise",
+            "slug": "shared-calendar-setup"
+          }
+        ]
+      },
+      {
+        "title": "Að Kanna Líkamleg Tengsl",
+        "description": "Eftir að hafa styrkt tilfinningalegu þættina, breyttu fókusnum að líkamlegri nærgætni. Kynnið ykkur mismunandi form líkamlegra tengsla, frá snertingu til leikrænnar könnunar, til að efla skilning ykkar á þörfum hvors annars.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "physical-touch-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-feel-about-introducing-new-elements-into-our-intimate-life"
+          },
+          {
+            "type": "question",
+            "slug": "whats-your-favorite-type-of-foreplay"
+          },
+          {
+            "type": "article",
+            "slug": "enhancing-physical-intimacy-mindfully"
+          },
+          {
+            "type": "game",
+            "slug": "intimacy-adventure"
+          },
+          {
+            "type": "checkup",
+            "slug": "balancing-fun-and-intimacy-in-sex"
+          },
+          {
+            "type": "exercise",
+            "slug": "erotic-massage-exchange"
+          }
+        ]
+      },
+      {
+        "title": "Að Stýra Mörkum og Óskum",
+        "description": "Ljúkið ferðinni ykkar með því að ræða mörk og óskir opinskátt. Ræðið um sérstakar kink eða fantasíur í virðingarfullu umhverfi, og tryggið að samband ykkar haldist samþykkt og fullnægjandi.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "intimate-boundary-style"
+          },
+          {
+            "type": "question",
+            "slug": "is-there-a-particular-kink-or-fetish-you-want-to-explore-but-havent-shared-yet"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-prefer-spontaneity-or-planning-when-it-comes-to-intimacy"
+          },
+          {
+            "type": "article",
+            "slug": "navigating-boundaries-for-intimacy"
+          },
+          {
+            "type": "exercise",
+            "slug": "boundaries-practice"
+          }
+        ]
+      }
+    ],
+    "slug": "preparing-for-intimacy"
+  },
+  {
+    "job": [
+      "solving_relationship_problems"
+    ],
+    "title": "Navigating and Resolving Relationship Problems",
+    "description": "Þetta ferðalag er hannað til að hjálpa þér og maka þínum að sigla í gegnum og leysa ágreining á áhrifaríkan hátt. Á hverjum degi munuð þið taka þátt í æfingum, spurningum og verkefnum sem byggja upp samskiptahæfileika ykkar og lausnaraðferðir. Í lok þessa ferðalags munuð þið finna ykkur betur í stakk búin til að takast á við áskoranir saman og finna lausnir sem teymi.",
+    "subtopics": [
+      {
+        "title": "Understanding Conflict Styles",
+        "description": "Fáðu að vita um einstaklingsbundin ágreiningsstíl ykkar og hvernig þeir hafa áhrif á sambandið. Notaðu spurningar og íhugun til að skilja hvernig þú venjulega bregst við ágreiningi.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "your-conflict-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-handle-disagreements-or-conflicts"
+          },
+          {
+            "type": "article",
+            "slug": "effective-conflict-resolution-strategies"
+          },
+          {
+            "type": "game",
+            "slug": "conflict-resolution-quest"
+          },
+          {
+            "type": "checkup",
+            "slug": "conflict-resolution-styles"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-handle-disagreements-and-whats-your-favorite-way-for-us-to-make-up-after-a-fight"
+          },
+          {
+            "type": "exercise",
+            "slug": "conflict-resolution-styles"
+          }
+        ]
+      },
+      {
+        "title": "Communication Basics",
+        "description": "Fókus á að bæta samskiptahæfileika ykkar í ágreiningi. Kynntu þér áhrifaríkar hlustunartækni og mikilvægi skýrrar tjáningar í gegnum æfingar og leiki.",
+        "content": [
+          {
+            "type": "checkup",
+            "slug": "mastering-our-communication-styles"
+          },
+          {
+            "type": "test",
+            "slug": "discover-your-communication-style"
+          },
+          {
+            "type": "article",
+            "slug": "mastering-communication-techniques"
+          },
+          {
+            "type": "game",
+            "slug": "communication-clues"
+          },
+          {
+            "type": "exercise",
+            "slug": "active-listening-practice"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-prefer-to-communicate-your-needs-and-desires"
+          },
+          {
+            "type": "question",
+            "slug": "whats-your-favorite-memory-of-us-having-a-great-conversation"
+          }
+        ]
+      },
+      {
+        "title": "Constructive Conflict Resolution",
+        "description": "Lærðu hvernig á að breyta ágreiningi í uppbyggilegar samræður. Taktu þátt í æfingum og greinum sem veita aðferðir til að leysa ágreining án þess að auka hann.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "solution-focused-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-can-we-make-our-disagreements-more-constructive"
+          },
+          {
+            "type": "article",
+            "slug": "mastering-conflict-resolution-together"
+          },
+          {
+            "type": "game",
+            "slug": "problem-solving-escapades"
+          },
+          {
+            "type": "checkup",
+            "slug": "conflict-resolution-wizards"
+          },
+          {
+            "type": "question",
+            "slug": "can-you-recall-a-time-when-you-felt-misunderstood-how-did-you-handle-it"
+          },
+          {
+            "type": "exercise",
+            "slug": "conflict-resolution-strategies-practice"
+          }
+        ]
+      },
+      {
+        "title": "Money Matters and Conflict",
+        "description": "Kynntu þér hvernig fjárhagslegar umræður geta leitt til ágreinings og hvernig á að sigla í gegnum þessar samræður. Vinna að fjárhagslegum stílum og samskiptum í gegnum próf og umræður.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "financial-communication-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-feel-about-our-different-spending-habits-and-how-can-we-find-a-middle-ground"
+          },
+          {
+            "type": "article",
+            "slug": "mastering-money-talks-together"
+          },
+          {
+            "type": "game",
+            "slug": "dream-budget-builders"
+          },
+          {
+            "type": "checkup",
+            "slug": "trust-in-financial-transparency"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-have-any-issues-with-budgeting-like-are-you-in-debt-to-somebody-do-you-make-any-useless-spending"
+          },
+          {
+            "type": "exercise",
+            "slug": "budget-planning-session"
+          }
+        ]
+      },
+      {
+        "title": "Creating a Safe Space for Discussions",
+        "description": "Byggðu umhverfi þar sem báðir aðilar finna sig örugga til að tjá tilfinningar sínar. Notaðu skoðanir og æfingar til að auðvelda opnar samræður og takast á við undirliggjandi málefni.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "emotional-safety-style"
+          },
+          {
+            "type": "checkup",
+            "slug": "vulnerability-and-openness"
+          },
+          {
+            "type": "article",
+            "slug": "trust-through-open-communication"
+          },
+          {
+            "type": "game",
+            "slug": "communication-connection"
+          },
+          {
+            "type": "exercise",
+            "slug": "transparent-communication-practices"
+          },
+          {
+            "type": "question",
+            "slug": "are-there-any-habits-or-behaviors-of-mine-that-bother-you"
+          },
+          {
+            "type": "question",
+            "slug": "describe-a-time-when-a-simple-text-message-led-to-a-big-misunderstanding-how-did-you-resolve-it"
+          }
+        ]
+      },
+      {
+        "title": "Turning Conflict into Growth",
+        "description": "Breytðu sjónarhorni þínu á ágreiningi með því að læra hvernig á að nota hann sem verkfæri til vaxtar. Íhugið fyrri ágreininga, notið húmor og búið til persónulegar vaxtaráætlanir sem par.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "growth-opportunity-style-assessment"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-past-problem-weve-solved-that-makes-you-proud-of-us"
+          },
+          {
+            "type": "article",
+            "slug": "embracing-differences-positively"
+          },
+          {
+            "type": "game",
+            "slug": "compatibility-conundrum"
+          },
+          {
+            "type": "checkup",
+            "slug": "team-problem-solving"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-relationship-problem-you-think-we-can-solve-with-humor"
+          },
+          {
+            "type": "exercise",
+            "slug": "relationship-journal"
+          }
+        ]
+      }
+    ],
+    "slug": "navigating-and-resolving-relationship-problems"
+  },
+  {
+    "job": [
+      "rekindling_passion"
+    ],
+    "title": "Endurheimta Ástríðunnar",
+    "description": "Þessi ferð er hönnuð til að hjálpa þér að kveikja aftur á ástríðunni í sambandinu þínu í gegnum röð innsýnandi athafna, umræðna og skemmtilegra æfinga. Hvern dag muntu kanna mismunandi þætti nándar, samskipta og sameiginlegra upplifana til að styrkja tengslin ykkar og auka rómantíska tengingu.",
+    "subtopics": [
+      {
+        "title": "Könnun á Þráum Vora",
+        "description": "Byrjið á því að ræða hvað þið báðir finnið sexy og aðlaðandi í hvort öðru, þar á meðal fantasíur og nýjar hugmyndir. Notið áhugaverðar spurningar og próf til að afhjúpa dýrmætari þrá.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "desire-reignition-style"
+          },
+          {
+            "type": "question",
+            "slug": "what-do-you-find-especially-sexy-about-me"
+          },
+          {
+            "type": "article",
+            "slug": "enhancing-sexual-communication"
+          },
+          {
+            "type": "game",
+            "slug": "fantasy-feelings"
+          },
+          {
+            "type": "checkup",
+            "slug": "emotional-intimacy-check-in"
+          },
+          {
+            "type": "question",
+            "slug": "whats-something-we-could-do-to-spice-things-up"
+          },
+          {
+            "type": "exercise",
+            "slug": "sexual-bucket-list-creation"
+          }
+        ]
+      },
+      {
+        "title": "Sköpun Rómantískra Augnablik",
+        "description": "Lærðu hvernig á að gera dagleg augnablik sérstök. Þessi undirtitill hvetur ykkur til að þróa rómantískar gjafir og koma á óvart hvort annað, sem fær spennu inn í daglegt líf ykkar.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "romantic-gesture-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-can-we-make-everyday-moments-feel-more-special-and-romantic"
+          },
+          {
+            "type": "article",
+            "slug": "crafting-memorable-date-nights"
+          },
+          {
+            "type": "game",
+            "slug": "date-night-planner"
+          },
+          {
+            "type": "checkup",
+            "slug": "quality-time-quality-love"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-new-hobby-we-could-start-together-to-spice-things-up"
+          },
+          {
+            "type": "exercise",
+            "slug": "creating-passion-renewal-date"
+          }
+        ]
+      },
+      {
+        "title": "Auka Spennuna Sameiginlega",
+        "description": "Kanna nýja áhugamál eða upplifanir sem þið getið deilt sem par. Uppgötvaðu athafnir sem geta kveikt aftur á skemmtun og ástríðu í sambandinu ykkar á meðan þið leyfið persónulegri vexti.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "hobby-harmony-style"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-new-hobby-we-can-start-together-to-strengthen-our-bond"
+          },
+          {
+            "type": "article",
+            "slug": "exploring-shared-hobbies-together"
+          },
+          {
+            "type": "game",
+            "slug": "hobby-harmony"
+          },
+          {
+            "type": "checkup",
+            "slug": "growth-through-novelty"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-way-we-can-challenge-each-other-to-grow-while-keeping-the-romance-alive"
+          },
+          {
+            "type": "exercise",
+            "slug": "hobbies-and-interests-exercise"
+          }
+        ]
+      },
+      {
+        "title": "Nánd og Viðkvæmni",
+        "description": "Kannaðu dýpra í tilfinningalega nánd og viðkvæmni. Þið munuð æfa opin samskipti um tilfinningalegar þarfir ykkar, sem eykur tengslin sem knýja ástríðuna.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "emotional-intimacy-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-prefer-to-communicate-your-needs-and-desires"
+          },
+          {
+            "type": "article",
+            "slug": "building-emotional-intimacy-together"
+          },
+          {
+            "type": "game",
+            "slug": "trust-builders"
+          },
+          {
+            "type": "checkup",
+            "slug": "emotional-needs-compatibility"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-fun-way-we-can-explore-each-others-fantasies-together"
+          },
+          {
+            "type": "exercise",
+            "slug": "active-listening-practice"
+          }
+        ]
+      },
+      {
+        "title": "Halda Kveikjunni",
+        "description": "Ræðið aðferðir til að halda kveikjunni lifandi, jafnvel í hversdagslegum augnablikum. Kannaðu leiðir til að stöðugt áskorun og vaxa saman á meðan rómantíkin er í forgrunni.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "growth-balance-style"
+          },
+          {
+            "type": "question",
+            "slug": "what-do-you-think-we-can-do-to-keep-the-spark-alive-in-our-relationship"
+          },
+          {
+            "type": "article",
+            "slug": "boosting-relationship-happiness"
+          },
+          {
+            "type": "game",
+            "slug": "passion-rekindle-quest"
+          },
+          {
+            "type": "checkup",
+            "slug": "fun-and-affection"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-new-hobby-we-can-try-together-that-honors-both-our-interests"
+          },
+          {
+            "type": "exercise",
+            "slug": "flexible-role-playing"
+          }
+        ]
+      },
+      {
+        "title": "Langtíma Ástríðuáætlanir",
+        "description": "Búðu til leiðarvísi til að viðhalda ástríðunni í sambandinu ykkar yfir tíma. Þróaðu sameiginleg markmið og sýn fyrir framtíðina ykkar sem heldur bæði nánd og spennu lifandi.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "future-planning-style"
+          },
+          {
+            "type": "question",
+            "slug": "if-you-won-the-lottery-tomorrow-whats-the-first-thing-youd-do"
+          },
+          {
+            "type": "article",
+            "slug": "creating-a-vision-for-us"
+          },
+          {
+            "type": "game",
+            "slug": "future-visionaries"
+          },
+          {
+            "type": "checkup",
+            "slug": "future-talk-together"
+          },
+          {
+            "type": "question",
+            "slug": "whats-your-favorite-memory-of-us-having-a-great-conversation"
+          },
+          {
+            "type": "exercise",
+            "slug": "long-term-goal-planning"
+          }
+        ]
+      }
+    ],
+    "slug": "rekindling-the-passion"
+  },
+  {
+    "job": [
+      "getting_to_know_partner"
+    ],
+    "title": "Kynnast Hvort öðru: Ferð í Upplýsingar",
+    "description": "Fara í umbreytandi ferð til að dýrmætan skilning og tengingu við maka þinn. Þessi ferð samanstendur af vel hönnuðum daglegum verkefnum, þar á meðal spurningum, æfingum, greinum og leikjum sem munu efla nánd, bæta samskipti og afhjúpa persónulegar innsýn. Yfir nokkra daga muntu kanna líkindi, mun og einstakar eiginleika sem gera hvorn annan að því sem þið eruð.",
+    "subtopics": [
+      {
+        "title": "Afhjúpun Bakgrunns og Eiginleika",
+        "description": "Byrjaðu á því að skilja bakgrunn, persónuleika og gildi hvors annars. Taktu þátt í spurningum um bernsku minningar, falin hæfileika og persónulegar óskir til að byggja upp traust og opnun.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "life-story-style"
+          },
+          {
+            "type": "question",
+            "slug": "can-you-share-a-memory-from-your-childhood-that-you-think-has-shaped-who-you-are-today"
+          },
+          {
+            "type": "article",
+            "slug": "love-maps-knowing-each-other-deeply"
+          },
+          {
+            "type": "game",
+            "slug": "memory-lane"
+          },
+          {
+            "type": "checkup",
+            "slug": "exploring-childhood-memories"
+          },
+          {
+            "type": "exercise",
+            "slug": "difference-identification-and-acceptance"
+          },
+          {
+            "type": "question",
+            "slug": "whats-your-favorite-childhood-memory"
+          }
+        ]
+      },
+      {
+        "title": "Könnun á Áhugamálum og Hobbíum",
+        "description": "Fyrirgefðu sameiginlegar ástríður og einstaklingshobbí. Taktu þátt í umræðum og verkefnum sem hjálpa þér að læra um áhugamál hvors annars, uppáhalds tíma og einstaka eiginleika sem hvorn ykkar færir í sambandið.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "hobby-harmony-style"
+          },
+          {
+            "type": "game",
+            "slug": "hobby-harmony"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-hobby-that-makes-you-feel-alive"
+          },
+          {
+            "type": "article",
+            "slug": "exploring-shared-hobbies-together"
+          },
+          {
+            "type": "exercise",
+            "slug": "hobbies-and-interests-exercise"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-new-hobby-we-could-start-together-to-spice-things-up"
+          }
+        ]
+      },
+      {
+        "title": "Skilning á Samskiptastílum",
+        "description": "Lærðu hvernig á að koma þínum þörfum og óskum á framfæri á áhrifaríkan hátt. Taktu þátt í æfingum og leikjum sem efla virka hlustun og bæta getu þína til að tjá tilfinningar og væntingar.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "discover-your-communication-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-prefer-to-communicate-your-needs-and-desires"
+          },
+          {
+            "type": "article",
+            "slug": "mastering-communication-techniques"
+          },
+          {
+            "type": "game",
+            "slug": "communication-clues"
+          },
+          {
+            "type": "checkup",
+            "slug": "mastering-our-communication-styles"
+          },
+          {
+            "type": "exercise",
+            "slug": "active-listening-practice"
+          },
+          {
+            "type": "question",
+            "slug": "whats-your-favorite-memory-of-us-having-a-great-conversation"
+          }
+        ]
+      },
+      {
+        "title": "Að Greina Ástarmál",
+        "description": "Dýfðu þér í einstakar leiðir sem þið gefið og fáið ást. Kannaðu ástarmál þín í gegnum spurningar og íhugunaræfingar, fáðu innsýn í hvernig á að tjá ást á hátt sem hentar maka þínum.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "love-language-type"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-believe-in-love-languages-if-so-which-one-are-you"
+          },
+          {
+            "type": "article",
+            "slug": "decoding-love-languages"
+          },
+          {
+            "type": "game",
+            "slug": "love-languages-exploration"
+          },
+          {
+            "type": "checkup",
+            "slug": "emotional-needs-compatibility"
+          },
+          {
+            "type": "exercise",
+            "slug": "find-out-your-love-language"
+          },
+          {
+            "type": "question",
+            "slug": "what-is-your-love-language"
+          }
+        ]
+      },
+      {
+        "title": "Sjálfsímynd og Markmiðasetning",
+        "description": "Hvetja til persónulegs deilingar á vonum og draumum. Notaðu leiðbeiningar til að íhuga persónuleg markmið og hvernig þau tengjast sambandinu ykkar, efla tilfinningu um sameiginlegan stuðning í ferðum hvors annars.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "goal-alignment-style"
+          },
+          {
+            "type": "question",
+            "slug": "what-are-your-dreams-and-aspirations-outside-of-work"
+          },
+          {
+            "type": "article",
+            "slug": "setting-shared-future-goals"
+          },
+          {
+            "type": "game",
+            "slug": "future-visionaries"
+          },
+          {
+            "type": "checkup",
+            "slug": "future-plans-alignment"
+          },
+          {
+            "type": "exercise",
+            "slug": "long-term-goal-planning"
+          },
+          {
+            "type": "question",
+            "slug": "what-personal-goals-do-you-have-that-i-might-not-be-aware-of"
+          }
+        ]
+      },
+      {
+        "title": "Að Rækta Tilfinningalega Nánd",
+        "description": "Dýpkaðu tilfinningalega tengingu þína í gegnum viðkvæmniæfingar og heiðarlegar samræður. Taktu þátt í verkefnum og umræðum sem efla deilingu tilfinninga, óskir og ótta í öruggu umhverfi, sem eykur nándina og traustið.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "emotional-intimacy-style"
+          },
+          {
+            "type": "question",
+            "slug": "whats-something-that-always-makes-you-feel-loved"
+          },
+          {
+            "type": "article",
+            "slug": "building-emotional-intimacy-together"
+          },
+          {
+            "type": "game",
+            "slug": "intimacy-insights"
+          },
+          {
+            "type": "checkup",
+            "slug": "emotional-intimacy-check-in"
+          },
+          {
+            "type": "exercise",
+            "slug": "emotional-closeness-exercises"
+          },
+          {
+            "type": "question",
+            "slug": "what-little-gestures-make-you-feel-most-loved-and-appreciated"
+          }
+        ]
+      }
+    ],
+    "slug": "getting-to-know-each-other-a-journey-of-discovery"
+  },
+  {
+    "job": [
+      "having_and_discussing_sex"
+    ],
+    "title": "Navigating Our Intimate World",
+    "description": "Þetta ferðalag einbeitir sér að því að auka skilning ykkar og umræðu um kynlíf í sambandinu ykkar. Þið munuð kanna mörk, óskir og samskiptastíla til að rækta ánægjulegt og opið kynferðislegt samband við hvort annað. Hvern dag munuð þið taka þátt í ýmsum verkefnum sem hannað er til að stuðla að nánd og skilningi.",
+    "subtopics": [
+      {
+        "title": "Skilningur á Óskum og Mörkum",
+        "description": "Byrjið á því að ræða persónulegar óskir ykkar og mörk. Þessi grunnskref byggir upp traust og setur sviðið fyrir opnar umræður um nánd. Uppgötvaðu verkfæri til að tjá hvað þú þarft og hvað þér líður vel með.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "discover-your-communication-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-comfortable-are-you-discussing-your-boundaries-and-desires"
+          },
+          {
+            "type": "article",
+            "slug": "trust-through-open-communication"
+          },
+          {
+            "type": "game",
+            "slug": "communication-clues"
+          },
+          {
+            "type": "checkup",
+            "slug": "mastering-our-communication-styles"
+          },
+          {
+            "type": "question",
+            "slug": "are-there-any-boundaries-youd-like-to-discuss-regarding-our-physical-relationship"
+          },
+          {
+            "type": "exercise",
+            "slug": "boundaries-practice"
+          }
+        ]
+      },
+      {
+        "title": "Könnun á Kynferðislegum Fantasíum og Tilraunum",
+        "description": "Nú þegar þið hafið komið á öruggu rými, dýfið ykkur í að deila fantasíum og ræða nýjar reynslur sem þið viljið prófa saman. Kannaðu leiðir til að kynna þessa þætti í nánd ykkar.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "fantasy-sharing-style"
+          },
+          {
+            "type": "question",
+            "slug": "are-there-any-fantasies-or-desires-youd-like-to-share"
+          },
+          {
+            "type": "article",
+            "slug": "building-emotional-intimacy-together"
+          },
+          {
+            "type": "game",
+            "slug": "intimacy-insights"
+          },
+          {
+            "type": "checkup",
+            "slug": "maintaining-sexual-satisfaction-over-time"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-fun-way-we-can-explore-each-others-fantasies-together"
+          },
+          {
+            "type": "exercise",
+            "slug": "fantasy-sharing-session"
+          }
+        ]
+      },
+      {
+        "title": "Að Tjá Opinskátt um Nánd",
+        "description": "Þróaðu samskiptahæfileika þína um kynlíf, tryggðu að þið bæði tjáið þarfir, óskir og áhyggjur. Þessi undirtitill inniheldur æfingar sem hjálpa til við að bæta gegnsæi og tengingu.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "sexual-communication-style"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-find-it-easy-to-say-everything-you-want-during-sex"
+          },
+          {
+            "type": "article",
+            "slug": "enhancing-sexual-communication"
+          },
+          {
+            "type": "game",
+            "slug": "communication-carousel"
+          },
+          {
+            "type": "checkup",
+            "slug": "mastering-communication"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-feel-about-discussing-intimacy-outside-of-the-bedroom"
+          },
+          {
+            "type": "exercise",
+            "slug": "talking-about-sex-practice"
+          }
+        ]
+      },
+      {
+        "title": "Auka Líkamlega Nánd",
+        "description": "Kannaðu ýmsar tegundir líkamlegrar ástar og nándar. Ræðið hvað gerir ykkur að tengjast og fyllast, og prófið nýjar aðgerðir sem geta aukið tengsl ykkar og aukið nánd.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "sensory-intimacy-style"
+          },
+          {
+            "type": "question",
+            "slug": "whats-your-favorite-way-to-be-touched"
+          },
+          {
+            "type": "article",
+            "slug": "building-emotional-intimacy-together"
+          },
+          {
+            "type": "game",
+            "slug": "satisfaction-safari"
+          },
+          {
+            "type": "checkup",
+            "slug": "maintaining-sexual-satisfaction-over-time"
+          },
+          {
+            "type": "question",
+            "slug": "what-parts-of-your-body-you-want-your-partner-to-focus-more-how-does-it-make-you-feel"
+          },
+          {
+            "type": "exercise",
+            "slug": "sensual-exploration-night"
+          }
+        ]
+      },
+      {
+        "title": "Að Takast á við Áskoranir og Breytingar í Kynlífi",
+        "description": "Ræðið hugsanlegar hindranir í kynlífi ykkar, svo sem mismunandi kynhvöt eða tilfinningalegar hindranir. Lærðu aðferðir til að takast á við þessar áskoranir á meðan þú heldur stuðningsfullum samræðum til að styrkja samband ykkar.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "sexual-harmony-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-high-is-your-sex-drive"
+          },
+          {
+            "type": "article",
+            "slug": "mastering-conflict-resolution-together"
+          },
+          {
+            "type": "game",
+            "slug": "problem-solving-partners"
+          },
+          {
+            "type": "checkup",
+            "slug": "aligning-sexual-values-and-expectations"
+          },
+          {
+            "type": "question",
+            "slug": "how-has-your-sexual-expectations-changed-since-weve-started-dating"
+          },
+          {
+            "type": "exercise",
+            "slug": "conflict-resolution-strategies-practice"
+          }
+        ]
+      },
+      {
+        "title": "Fagna Kynferðislegu Tengslum Ykkar",
+        "description": "Endurspeglaðu ferðalag ykkar saman og fagnaðu tímamótum í kynferðislegu sambandi ykkar. Ræðið leiðir til að heiðra nánd ykkar og halda spennunni lifandi, tryggjandi að báðir aðilar finni sig metna og þakklátir.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "love-language-type"
+          },
+          {
+            "type": "question",
+            "slug": "whats-the-best-thing-about-our-sex-life"
+          },
+          {
+            "type": "article",
+            "slug": "fun-rituals-to-strengthen-bonds"
+          },
+          {
+            "type": "game",
+            "slug": "date-night-planner"
+          },
+          {
+            "type": "exercise",
+            "slug": "shared-mood-boards"
+          },
+          {
+            "type": "question",
+            "slug": "whats-one-thing-you-love-about-our-physical-connection"
+          }
+        ]
+      }
+    ],
+    "slug": "navigating-our-intimate-world"
+  },
+  {
+    "job": [
+      "exploring_feelings"
+    ],
+    "title": "Navigating Our Emotional Landscapes",
+    "description": "Þetta ferðalag er hannað til að hjálpa þér og maka þínum að kanna og skilja tilfinningar ykkar á dýrmætari hátt. Með því að taka þátt í ýmsum tegundum efnis, munuð þið afhjúpa tilfinningaleg mynstur ykkar, koma á skilvirkri samskiptum um tilfinningar ykkar og byggja upp sterkari tilfinningalega tengsl. Hver dagur mun færa nýjar innsýn og áskoranir sem munu efla tilfinningalega nánd í sambandinu ykkar.",
+    "subtopics": [
+      {
+        "title": "Understanding Our Emotions",
+        "description": "Byrjið ferðalagið með því að kanna grunn tilfinningar og hvernig þær koma fram í lífi ykkar. Í gegnum spurningar og greinar, fáðu skýrleika um tilfinningar ykkar og aðferðir til að takast á við þær.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "emotional-awareness-type"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-think-that-you-feel-emotions-stronger-or-weaker-than-other-people"
+          },
+          {
+            "type": "article",
+            "slug": "building-emotional-intimacy-together"
+          },
+          {
+            "type": "game",
+            "slug": "emotional-seasons"
+          },
+          {
+            "type": "checkup",
+            "slug": "emotional-rollercoaster-ride"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-handle-your-strong-emotions"
+          },
+          {
+            "type": "exercise",
+            "slug": "emotional-regulation-techniques"
+          }
+        ]
+      },
+      {
+        "title": "Expressing Feelings Effectively",
+        "description": "Lærðu hvernig á að koma tilfinningum ykkar á framfæri við hvort annað í öruggu og umhyggjusömu umhverfi. Takið þátt í æfingum sem auðvelda opna umræðu um tilfinningar ykkar án ótta við dóm.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "communication-style-type"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-prefer-to-receive-support-when-youre-feeling-low"
+          },
+          {
+            "type": "article",
+            "slug": "mastering-communication-techniques"
+          },
+          {
+            "type": "game",
+            "slug": "communication-clues"
+          },
+          {
+            "type": "checkup",
+            "slug": "mastering-our-communication-styles"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-feel-comfortable-expressing-your-true-feelings-with-me-why-or-why-not"
+          },
+          {
+            "type": "exercise",
+            "slug": "transparent-communication-practices"
+          }
+        ]
+      },
+      {
+        "title": "Deep Dive into Vulnerability",
+        "description": "Kynntu þér krafti viðkvæmni í samböndum. Kannaðu spurningar og virkni sem hvetja til að deila innsta ótta og óskum, og ræða hvernig viðkvæmni getur aukið nánd.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "vulnerability-comfort-type"
+          },
+          {
+            "type": "question",
+            "slug": "can-you-describe-a-moment-where-you-felt-most-connected-during-our-sex-and-what-made-it-special-for-you"
+          },
+          {
+            "type": "article",
+            "slug": "vulnerability-trusts-gateway"
+          },
+          {
+            "type": "game",
+            "slug": "feelings-explorer"
+          },
+          {
+            "type": "checkup",
+            "slug": "vulnerability-and-openness"
+          },
+          {
+            "type": "question",
+            "slug": "how-comfortable-are-you-sharing-your-true-feelings-with-me-on-a-scale-of-1-10"
+          },
+          {
+            "type": "exercise",
+            "slug": "vulnerability-exploration-session"
+          }
+        ]
+      },
+      {
+        "title": "Navigating Difficult Emotions Together",
+        "description": "Greindu og taktu á erfiðum tilfinningum eins og öfund, óöryggi eða sorg. Takið þátt í prófum og skoðunum sem eru hönnuð til að hjálpa ykkur að skilja hvernig á að styðja hvort annað á erfiðum tilfinningalegum tímum.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "emotion-management-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-handle-feelings-of-jealousy-or-insecurity"
+          },
+          {
+            "type": "article",
+            "slug": "navigating-emotional-waters-together"
+          },
+          {
+            "type": "game",
+            "slug": "emotional-ride"
+          },
+          {
+            "type": "checkup",
+            "slug": "emotional-rollercoaster-ride"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-handle-feelings-of-stress-or-anxiety"
+          },
+          {
+            "type": "exercise",
+            "slug": "confidentiality-agreements"
+          }
+        ]
+      },
+      {
+        "title": "Building Emotional Safety",
+        "description": "Skapaðu umhverfi þar sem báðir aðilar finna sig örugga til að tjá og kanna tilfinningar sínar. Skildu mikilvægi tilfinningalegs öryggis í að dýpka tengslin ykkar og lærðu hagnýtar aðferðir til að skapa það.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "emotional-safety-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-feel-about-our-current-level-of-intimacy-and-affection"
+          },
+          {
+            "type": "article",
+            "slug": "trust-through-open-communication"
+          },
+          {
+            "type": "game",
+            "slug": "trust-builders"
+          },
+          {
+            "type": "checkup",
+            "slug": "emotional-intimacy-check-in"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-feel-we-handle-each-others-vulnerabilities"
+          },
+          {
+            "type": "exercise",
+            "slug": "feelings-validation-practices"
+          }
+        ]
+      },
+      {
+        "title": "Cultivating Emotional Intimacy",
+        "description": "Ljúktu ferðalaginu með því að innleiða aðferðir sem auka tilfinningalega nánd í sambandinu ykkar. Takið þátt í leikjum og æfingum sem styrkja tilfinningaleg tengsl ykkar, sem gerir tengslin dýrmætari og þolnari.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "emotional-intimacy-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-feel-about-sharing-your-deepest-desires-with-each-other"
+          },
+          {
+            "type": "article",
+            "slug": "building-emotional-intelligence-together"
+          },
+          {
+            "type": "game",
+            "slug": "emotion-explorer"
+          },
+          {
+            "type": "checkup",
+            "slug": "emotional-needs-compatibility"
+          },
+          {
+            "type": "question",
+            "slug": "how-can-we-better-express-our-needs-without-feeling-vulnerable"
+          },
+          {
+            "type": "exercise",
+            "slug": "emotional-expression-sessions"
+          }
+        ]
+      }
+    ],
+    "slug": "navigating-our-emotional-landscapes"
+  }
+]

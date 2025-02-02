@@ -1,5 +1,6 @@
 import React, { useContext, useState } from 'react';
-import { View, SafeAreaView } from 'react-native';
+import { View } from 'react-native';
+import { SafeAreaView } from 'react-native-safe-area-context';
 import Modal from 'react-native-modal';
 import { i18n } from '@app/localization/i18n';
 import { AuthContext } from '@app/provider/AuthProvider';
@@ -73,7 +74,7 @@ export default function ({ title, placeholder }: { title: string; placeholder: s
         <SafeAreaView style={{ flexGrow: 1 }}>
           <ScrollView
             contentContainerStyle={{
-              flex: 1,
+              flexGrow: 1,
               flexDirection: 'column',
               justifyContent: 'space-between',
             }}

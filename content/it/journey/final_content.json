@@ -1,0 +1,4892 @@
+[
+  {
+    "job": [
+      "preparing_for_cohabitation"
+    ],
+    "title": "Prepararsi alla Convivenza",
+    "description": "Questo viaggio è progettato per preparare te e il tuo partner alla convivenza affrontando vari aspetti del vivere insieme. Imparerai a comunicare in modo efficace, a gestire le responsabilità e a creare un ambiente domestico armonioso. Ogni giorno esplorerai argomenti vitali che aiuteranno a rafforzare la tua relazione e a facilitare la transizione verso una vita condivisa.",
+    "subtopics": [
+      {
+        "title": "Sognare il Nostro Spazio Condiviso",
+        "description": "Inizia condividendo le tue visioni su come sarà la tua casa. Discuti idee riguardo allo spazio, al decoro e all'atmosfera. Questo stabilisce le basi per una comprensione reciproca e sogni condivisi.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "lifestyle-harmony-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-can-we-create-a-home-environment-that-respects-both-of-our-preferences"
+          },
+          {
+            "type": "article",
+            "slug": "sharing-spaces-harmoniously"
+          },
+          {
+            "type": "exercise",
+            "slug": "living-space-design"
+          },
+          {
+            "type": "game",
+            "slug": "decor-dilemma"
+          },
+          {
+            "type": "question",
+            "slug": "whats-one-piece-of-furniture-you-absolutely-need-in-our-new-home"
+          }
+        ]
+      },
+      {
+        "title": "Essenziali della Comunicazione",
+        "description": "Impara strategie di comunicazione efficaci che ti aiuteranno a gestire le sfide quotidiane. Esplora modi per esprimere bisogni, stabilire aspettative e ascoltarsi attivamente l'un l'altro.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "discover-your-communication-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-prefer-to-communicate-your-needs-and-desires"
+          },
+          {
+            "type": "article",
+            "slug": "mastering-communication-techniques"
+          },
+          {
+            "type": "game",
+            "slug": "communication-clues"
+          },
+          {
+            "type": "checkup",
+            "slug": "mastering-our-communication-styles"
+          },
+          {
+            "type": "exercise",
+            "slug": "active-listening-practice"
+          }
+        ]
+      },
+      {
+        "title": "Responsabilità Domestiche",
+        "description": "Discuti e stabilisci come dividerete le faccende domestiche e le responsabilità. Crea un sistema che funzioni per entrambi per mantenere un ambiente di vita pulito e organizzato.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "domestic-labor-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-feel-about-handling-household-responsibilities-and-chores"
+          },
+          {
+            "type": "article",
+            "slug": "establishing-household-routines"
+          },
+          {
+            "type": "exercise",
+            "slug": "shared-responsibilities-mapping"
+          },
+          {
+            "type": "game",
+            "slug": "chore-chart-challenge"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-feel-about-having-a-cleaning-schedule-versus-cleaning-as-we-go"
+          }
+        ]
+      },
+      {
+        "title": "Fondamenti Finanziari",
+        "description": "Allineati sulla gestione finanziaria e sul budgeting come coppia. Discuti strategie per condividere le spese, prendere decisioni finanziarie congiunte e mantenere la trasparenza riguardo alle finanze.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "budgeting-style-for-couples"
+          },
+          {
+            "type": "game",
+            "slug": "dream-budget-builders"
+          },
+          {
+            "type": "article",
+            "slug": "mastering-money-talks-together"
+          },
+          {
+            "type": "exercise",
+            "slug": "budget-planning-session"
+          },
+          {
+            "type": "checkup",
+            "slug": "aligning-financial-values-and-goals"
+          },
+          {
+            "type": "question",
+            "slug": "whats-one-thing-you-want-to-achieve-together-in-our-new-home"
+          }
+        ]
+      },
+      {
+        "title": "Gestire i Conflitti con Grazia",
+        "description": "Preparati a inevitabili disaccordi imparando strategie di risoluzione dei conflitti. Esplora come gestire opinioni diverse e trovare un terreno comune in modo sano.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "your-conflict-style"
+          },
+          {
+            "type": "game",
+            "slug": "conflict-resolution-quest"
+          },
+          {
+            "type": "article",
+            "slug": "mastering-conflict-resolution-together"
+          },
+          {
+            "type": "exercise",
+            "slug": "conflict-resolution-strategies-practice"
+          },
+          {
+            "type": "checkup",
+            "slug": "tackling-tough-talks"
+          },
+          {
+            "type": "question",
+            "slug": "how-should-we-handle-maintenance-and-repairs-around-the-house"
+          }
+        ]
+      },
+      {
+        "title": "Creare uno Spazio Sicuro",
+        "description": "Finalizza i tuoi preparativi concentrandoti sulla sicurezza emotiva e fisica nel tuo spazio condiviso. Discuti di confini, privacy e come coltivare un ambiente in cui entrambi si sentano al sicuro e rispettati.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "emotional-safety-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-should-we-handle-setting-up-our-home-office-or-study-space"
+          },
+          {
+            "type": "article",
+            "slug": "navigating-boundaries-for-intimacy"
+          },
+          {
+            "type": "exercise",
+            "slug": "personal-space-respect-practices"
+          },
+          {
+            "type": "game",
+            "slug": "space-personalities"
+          },
+          {
+            "type": "question",
+            "slug": "how-should-we-handle-guests-and-visitors-in-our-home"
+          }
+        ]
+      }
+    ],
+    "slug": "preparing-for-cohabitation"
+  },
+  {
+    "job": [
+      "preparing_for_marriage"
+    ],
+    "title": "Prepararsi al Matrimonio: Costruire una Base Solida",
+    "description": "Questo viaggio è progettato per fornire a te e al tuo partner gli strumenti e le intuizioni necessari per un matrimonio di successo. Ogni giorno esplorerete concetti essenziali, dalla comunicazione all'armonia finanziaria, aprendo la strada a una comprensione più profonda l'uno dell'altro e a una relazione resiliente.",
+    "subtopics": [
+      {
+        "title": "Comprendere i Linguaggi dell'Amore",
+        "description": "Identifica ed esplora i linguaggi dell'amore reciproci per migliorare la connessione emotiva. Comprendere come entrambi date e ricevete amore può migliorare significativamente la dinamica della vostra relazione.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "love-language-type"
+          },
+          {
+            "type": "article",
+            "slug": "decoding-love-languages"
+          },
+          {
+            "type": "game",
+            "slug": "love-languages-exploration"
+          },
+          {
+            "type": "exercise",
+            "slug": "find-out-your-love-language"
+          }
+        ]
+      },
+      {
+        "title": "Padroneggiare le Conversazioni Finanziarie",
+        "description": "Impara l'importanza di discussioni aperte riguardo le finanze. Approfondisci gli stili di budgeting, le abitudini di spesa e gli obiettivi finanziari per costruire fiducia e trasparenza nella vostra partnership finanziaria.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "financial-communication-style"
+          },
+          {
+            "type": "article",
+            "slug": "mastering-money-talks-together"
+          },
+          {
+            "type": "game",
+            "slug": "dream-budget-builders"
+          },
+          {
+            "type": "checkup",
+            "slug": "aligning-financial-values-and-goals"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-prefer-to-communicate-your-needs-and-desires"
+          },
+          {
+            "type": "exercise",
+            "slug": "financial-planning-for-marriage"
+          }
+        ]
+      },
+      {
+        "title": "Navigare l'Intimità Emotiva",
+        "description": "Sviluppa abilità per favorire l'intimità emotiva attraverso la vulnerabilità, l'ascolto attivo e la comunicazione onesta. Comprendi come esprimere liberamente le emozioni e supportare i bisogni emotivi reciproci.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "emotional-intimacy-style"
+          },
+          {
+            "type": "article",
+            "slug": "building-emotional-intimacy-together"
+          },
+          {
+            "type": "game",
+            "slug": "feelings-explorer"
+          },
+          {
+            "type": "checkup",
+            "slug": "emotional-intimacy-check-in"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-feel-about-writing-love-notes-to-each-other-want-to-give-it-a-try"
+          },
+          {
+            "type": "exercise",
+            "slug": "vulnerability-exploration-session"
+          }
+        ]
+      },
+      {
+        "title": "Allineare gli Obiettivi Futuri",
+        "description": "Esplora come discutere e allineare i tuoi sogni e aspirazioni. Stabilisci obiettivi condivisi per il vostro futuro insieme, assicurandoti che entrambi i partner si sentano valorizzati e compresi nel processo di pianificazione.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "goal-alignment-style"
+          },
+          {
+            "type": "article",
+            "slug": "setting-shared-future-goals"
+          },
+          {
+            "type": "game",
+            "slug": "future-visionaries"
+          },
+          {
+            "type": "checkup",
+            "slug": "charting-our-shared-future"
+          },
+          {
+            "type": "exercise",
+            "slug": "long-term-goal-planning"
+          }
+        ]
+      },
+      {
+        "title": "Affrontare le Sfide Insieme",
+        "description": "Preparati alle sfide della vita matrimoniale sviluppando abilità di risoluzione dei conflitti e strategie per supportarsi a vicenda nei momenti difficili. Impara a gestire i disaccordi con empatia e rispetto.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "your-conflict-style"
+          },
+          {
+            "type": "article",
+            "slug": "mastering-conflict-resolution-together"
+          },
+          {
+            "type": "game",
+            "slug": "conflict-resolution-quest"
+          },
+          {
+            "type": "checkup",
+            "slug": "conflict-resolution-style-match"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-game-we-could-play-to-improve-our-conflict-resolution-skills"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-feel-about-using-humor-to-ease-tense-conversations"
+          },
+          {
+            "type": "exercise",
+            "slug": "conflict-resolution-strategies-practice"
+          }
+        ]
+      },
+      {
+        "title": "Creare Rituali e Tradizioni Condivisi",
+        "description": "Stabilisci rituali e tradizioni significative che rafforzano il vostro legame. Scopri modi per celebrare la vostra relazione e creare ricordi duraturi come coppia, favorendo un senso di unità e appartenenza.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "ritual-building-style"
+          },
+          {
+            "type": "article",
+            "slug": "fun-rituals-to-strengthen-bonds"
+          },
+          {
+            "type": "game",
+            "slug": "date-night-planner"
+          },
+          {
+            "type": "checkup",
+            "slug": "creative-date-designers"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-new-hobby-we-can-start-together-to-strengthen-our-bond"
+          },
+          {
+            "type": "exercise",
+            "slug": "creating-passion-renewal-date"
+          }
+        ]
+      }
+    ],
+    "slug": "preparing-for-marriage-building-a-strong-foundation"
+  },
+  {
+    "job": [
+      "understanding_mutual_compatibility"
+    ],
+    "title": "Comprendere la Compatibilità Reciproca",
+    "description": "Questo viaggio è progettato per aiutarti a esplorare e comprendere i livelli di compatibilità nella tua relazione. Affrontando i temi gradualmente, imparerai a identificare, apprezzare e navigare sia le tue somiglianze che le tue differenze. Ogni giorno, ti impegnerai con vari tipi di contenuti che facilitano conversazioni riflessive e favoriscono connessioni più profonde.",
+    "subtopics": [
+      {
+        "title": "Esplorare i Valori Fondamentali",
+        "description": "Inizia discutendo i tuoi tre valori principali e come influenzano le tue decisioni. Questo argomento fondamentale guiderà la tua comprensione di ciò che è importante per entrambi in una relazione.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "values-alignment-style"
+          },
+          {
+            "type": "question",
+            "slug": "what-are-three-values-you-believe-are-most-important-in-a-person"
+          },
+          {
+            "type": "article",
+            "slug": "aligning-future-goals"
+          },
+          {
+            "type": "game",
+            "slug": "values-vibes"
+          },
+          {
+            "type": "checkup",
+            "slug": "core-values-connection"
+          },
+          {
+            "type": "exercise",
+            "slug": "values-alignment-exercise"
+          }
+        ]
+      },
+      {
+        "title": "Stili di Comunicazione",
+        "description": "Scopri i tuoi stili di comunicazione individuali e discuti come influenzano le tue interazioni. Questo sottotema ti aiuterà a sviluppare strategie per una comunicazione più chiara ed efficace.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "discover-your-communication-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-prefer-to-communicate-your-needs-and-desires"
+          },
+          {
+            "type": "article",
+            "slug": "mastering-communication-techniques"
+          },
+          {
+            "type": "game",
+            "slug": "communication-clues"
+          },
+          {
+            "type": "checkup",
+            "slug": "mastering-our-communication-styles"
+          },
+          {
+            "type": "exercise",
+            "slug": "active-listening-practice"
+          }
+        ]
+      },
+      {
+        "title": "Differenze Culturali e di Background",
+        "description": "Esplora come i tuoi diversi background culturali e le esperienze di vita plasmano le tue prospettive. Comprendere questi elementi favorisce empatia e apprezzamento reciproco.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "cultural-connection-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-our-different-cultural-backgrounds-shape-our-relationship-and-how-can-we-honor-both"
+          },
+          {
+            "type": "article",
+            "slug": "bridging-religious-differences-together"
+          },
+          {
+            "type": "game",
+            "slug": "cultural-quest"
+          },
+          {
+            "type": "checkup",
+            "slug": "navigating-cultural-and-religious-differences"
+          },
+          {
+            "type": "exercise",
+            "slug": "difference-identification-and-acceptance"
+          }
+        ]
+      },
+      {
+        "title": "Equilibrare Interessi Personali e Condivisi",
+        "description": "Discuti i tuoi interessi, hobby e come possono completarsi o entrare in conflitto tra loro. Trovare un equilibrio migliorerà la tua relazione e garantirà che entrambi i partner si sentano soddisfatti.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "hobby-harmony-style"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-new-hobby-we-can-try-together-that-honors-both-our-interests"
+          },
+          {
+            "type": "article",
+            "slug": "exploring-shared-hobbies-together"
+          },
+          {
+            "type": "game",
+            "slug": "hobby-harmony"
+          },
+          {
+            "type": "exercise",
+            "slug": "hobbies-and-interests-exercise"
+          }
+        ]
+      },
+      {
+        "title": "Gestire Conflitti e Differenze",
+        "description": "Approfondisci la comprensione di come ciascuno di voi gestisce i conflitti e le opinioni diverse. Esplorando tecniche efficaci di risoluzione dei conflitti, imparerai a trasformare i disaccordi in opportunità di crescita.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "your-conflict-style"
+          },
+          {
+            "type": "game",
+            "slug": "conflict-resolution-quest"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-handle-feelings-of-jealousy-or-insecurity"
+          },
+          {
+            "type": "article",
+            "slug": "mastering-conflict-resolution-together"
+          },
+          {
+            "type": "checkup",
+            "slug": "conflict-connoisseurs"
+          },
+          {
+            "type": "exercise",
+            "slug": "conflict-resolution-styles"
+          },
+          {
+            "type": "question",
+            "slug": "how-can-we-turn-our-differences-into-opportunities-for-growth-as-a-couple"
+          }
+        ]
+      },
+      {
+        "title": "Evoluzione della Relazione",
+        "description": "Rifletti su come la tua relazione è cambiata nel tempo e discuti come la immagini nel futuro. Questo argomento ti permetterà di allineare i tuoi obiettivi e aspirazioni a lungo termine come coppia.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "future-vision-type"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-see-our-relationship-evolving-over-time"
+          },
+          {
+            "type": "article",
+            "slug": "creating-a-vision-for-us"
+          },
+          {
+            "type": "game",
+            "slug": "future-visionaries"
+          },
+          {
+            "type": "checkup",
+            "slug": "future-talk-together"
+          },
+          {
+            "type": "exercise",
+            "slug": "future-goals-compatibility"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-see-our-relationship-evolving-over-the-next-decade"
+          }
+        ]
+      }
+    ],
+    "slug": "understanding-mutual-compatibility"
+  },
+  {
+    "job": [
+      "discussing_religions"
+    ],
+    "title": "Navigare le Nostre Credenze Religiose Insieme",
+    "description": "Questo viaggio è progettato per aiutarti e il tuo partner a discutere e comprendere le credenze religiose reciproche, promuovendo il rispetto e la comunicazione aperta. Esplorando vari aspetti della religione, imparerete a abbracciare le differenze e a creare una connessione spirituale condivisa.",
+    "subtopics": [
+      {
+        "title": "Comprendere le Fondamenta Religiose",
+        "description": "Inizia il tuo viaggio esplorando le credenze e le pratiche fondamentali delle religioni reciproche. Discuti di come queste fondamenta plasmino le vostre identità e visioni del mondo. Questo sottotema includerà domande sulle credenze e pratiche personali.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "religious-identity-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-practice-your-faith-and-how-would-you-like-to-incorporate-it-into-our-relationship"
+          },
+          {
+            "type": "article",
+            "slug": "navigating-religious-conversations-smoothly"
+          },
+          {
+            "type": "exercise",
+            "slug": "spiritual-practices-exchange"
+          },
+          {
+            "type": "question",
+            "slug": "what-role-does-religion-or-spirituality-play-in-your-life-and-how-does-it-affect-our-relationship"
+          }
+        ]
+      },
+      {
+        "title": "Celebrare le Pietre Miliari Religiose",
+        "description": "Impara a celebrare insieme le pietre miliari e i successi religiosi. Esplora come onorare le tradizioni reciproche durante eventi significativi della vita, come nascite, matrimoni e festività, integrandole senza sforzo nelle vostre vite condivise.",
+        "content": [
+          {
+            "type": "checkup",
+            "slug": "celebrating-religious-holidays-together"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-celebrate-religious-achievements-or-milestones"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-celebrate-your-faith-during-personal-milestones-like-birthdays-or-anniversaries"
+          }
+        ]
+      },
+      {
+        "title": "Rispettare le Differenze e i Disaccordi",
+        "description": "Approfondisci come navigare le differenze nelle credenze e pratiche religiose senza conflitti. Questo sottotema ti fornirà strumenti per conversazioni rispettose quando sorgono disaccordi, concentrandosi sulla comprensione piuttosto che sul convincere.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "your-conflict-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-handle-religious-disagreements-in-relationships"
+          },
+          {
+            "type": "article",
+            "slug": "bridging-religious-differences-together"
+          },
+          {
+            "type": "game",
+            "slug": "conflict-resolution-quest"
+          },
+          {
+            "type": "checkup",
+            "slug": "handling-religious-conflicts"
+          }
+        ]
+      },
+      {
+        "title": "Incorporare la Fede nella Vita Quotidiana",
+        "description": "Discuti di come integrare i valori religiosi nelle tue routine quotidiane e nel processo decisionale. Esplora pratiche condivise, attività spirituali e come la religione può migliorare la tua partnership e la crescita personale.",
+        "content": [
+          {
+            "type": "checkup",
+            "slug": "supportive-communication"
+          },
+          {
+            "type": "question",
+            "slug": "how-can-we-support-each-others-spiritual-growth"
+          },
+          {
+            "type": "game",
+            "slug": "spiritual-journey"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-integrate-your-faith-with-your-personal-hobbies-or-interests"
+          }
+        ]
+      },
+      {
+        "title": "Pianificare per le Future Benedizioni",
+        "description": "Impegnati in conversazioni significative su come le tue credenze religiose influenzano le decisioni riguardo alla famiglia e ai bambini. Discuti se immagini di crescere i bambini all'interno di una particolare tradizione religiosa ed esplora le implicazioni per la vostra vita insieme.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "parenting-style-alignment"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-envision-having-children-in-a-particular-religious-tradition"
+          },
+          {
+            "type": "question",
+            "slug": "what-religious-values-are-most-important-to-you-in-a-relationship"
+          },
+          {
+            "type": "article",
+            "slug": "enhancing-communication-before-parenthood"
+          },
+          {
+            "type": "checkup",
+            "slug": "parenting-playbook-compatibility"
+          },
+          {
+            "type": "exercise",
+            "slug": "parenting-styles-discussion"
+          }
+        ]
+      },
+      {
+        "title": "Costruire una Spiritualità Condivisa",
+        "description": "In questo passo finale, concentrati su come creare un'armonia tra le tue credenze religiose. Esplora pratiche che onorano entrambe le tue tradizioni e discuti su come supportare la crescita spirituale reciproca, assicurando una relazione appagante fondata sul rispetto e sulla comprensione reciproca.",
+        "content": [
+          {
+            "type": "checkup",
+            "slug": "sharing-spiritual-beliefs"
+          },
+          {
+            "type": "question",
+            "slug": "are-there-any-religious-practices-youd-like-to-explore-together"
+          },
+          {
+            "type": "exercise",
+            "slug": "interfaith-understanding-sessions"
+          }
+        ]
+      }
+    ],
+    "slug": "navigating-our-religious-beliefs-together"
+  },
+  {
+    "job": [
+      "having_fun_and_entertainment"
+    ],
+    "title": "Creare Divertimento e Intrattenimento Insieme",
+    "description": "Questo viaggio ti guiderà attraverso attività e discussioni progettate per aumentare la gioia e il gioco nella tua relazione. Esplorando vari aspetti del divertimento e dell'intrattenimento, coltiverai una connessione più profonda mentre impari a incorporare risate e creatività nella tua vita quotidiana. Ogni giorno, ti impegnerai in nuove esperienze e riflessioni che incoraggiano la compagnia e l'esplorazione.",
+    "subtopics": [
+      {
+        "title": "Iniziare con le Risate",
+        "description": "Esplora il ruolo dell'umorismo nella tua relazione. Impegnati con domande divertenti come le tue barzellette inappropriate preferite e messaggi flirty. Questo argomento fondamentale ti aiuterà a scoprire modi per incorporare le risate nelle vostre vite quotidiane.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "humor-harmony-style"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-have-a-favorite-inappropriate-joke"
+          },
+          {
+            "type": "article",
+            "slug": "laughing-together-keeps-love-strong"
+          },
+          {
+            "type": "game",
+            "slug": "love-laughter"
+          },
+          {
+            "type": "checkup",
+            "slug": "fun-flirtation"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-have-any-favorite-flirty-texts-or-messages-that-make-you-smile"
+          }
+        ]
+      },
+      {
+        "title": "Celebrare Successi e Traguardi",
+        "description": "Impara a celebrare i successi reciproci, grandi o piccoli. Discuti i tuoi modi preferiti per festeggiare occasioni speciali come anniversari e festività, creando un'atmosfera di apprezzamento e gioia.",
+        "content": [
+          {
+            "type": "checkup",
+            "slug": "marriage-milestones"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-like-to-celebrate-anniversaries"
+          },
+          {
+            "type": "game",
+            "slug": "date-night-planner"
+          },
+          {
+            "type": "test",
+            "slug": "milestone-celebration-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-like-to-celebrate-achievements-big-or-small"
+          }
+        ]
+      },
+      {
+        "title": "Scoprire Interessi Condivisi",
+        "description": "Immergiti in discussioni su attività e hobby che entrambi amate. Identifica interessi comuni e suggerisci attività divertenti da provare insieme, che aiuteranno a rafforzare il vostro legame condiviso e a creare ricordi duraturi.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "hobby-harmony-style"
+          },
+          {
+            "type": "question",
+            "slug": "what-hobbies-or-activities-would-you-like-us-to-pursue-together-in-the-future"
+          },
+          {
+            "type": "article",
+            "slug": "exploring-shared-hobbies-together"
+          },
+          {
+            "type": "game",
+            "slug": "hobby-harmony"
+          },
+          {
+            "type": "checkup",
+            "slug": "uncovering-daily-habits-and-quirks"
+          },
+          {
+            "type": "exercise",
+            "slug": "hobbies-and-interests-exercise"
+          }
+        ]
+      },
+      {
+        "title": "Avventure Spontanee",
+        "description": "Esci dalla tua zona di comfort pianificando uscite spontanee o sorprese divertenti per l'uno per l'altro. Usa suggerimenti per decidere su nuove esperienze, come attività all'aperto o serate a tema, aumentando l'eccitazione nella tua relazione.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "spontaneity-style"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-new-sport-or-physical-activity-youd-like-to-try-as-a-team"
+          },
+          {
+            "type": "article",
+            "slug": "adventure-sparks-deeper-bonds"
+          },
+          {
+            "type": "game",
+            "slug": "adventure-awaits"
+          },
+          {
+            "type": "checkup",
+            "slug": "adventure-together"
+          },
+          {
+            "type": "exercise",
+            "slug": "adventure-challenge"
+          }
+        ]
+      },
+      {
+        "title": "Giocosa Creatività",
+        "description": "Sfrutta la tua creatività insieme esplorando attività artistiche o giochi divertenti. Impegnati in esercizi che sfidano entrambi a pensare fuori dagli schemi, come progetti fai-da-te o serate di cucina a tema.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "creative-sparks-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-express-your-creativity"
+          },
+          {
+            "type": "article",
+            "slug": "crafting-memorable-date-nights"
+          },
+          {
+            "type": "game",
+            "slug": "decor-dilemma"
+          },
+          {
+            "type": "exercise",
+            "slug": "creative-drawing-contest"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-creative-project-youd-love-to-tackle-as-a-duo"
+          }
+        ]
+      },
+      {
+        "title": "Costruire Tradizioni e Rituali",
+        "description": "Termina il tuo viaggio riflettendo su come stabilire tradizioni regolari che mantengano vivo il divertimento nella tua relazione. Discuti il valore dei rituali divertenti e come possono migliorare la tua connessione e creare ricordi amati insieme.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "ritual-building-style"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-tradition-youd-like-to-start-together"
+          },
+          {
+            "type": "article",
+            "slug": "fun-rituals-to-strengthen-bonds"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-tradition-youd-like-us-to-start-as-a-couple"
+          }
+        ]
+      }
+    ],
+    "slug": "creating-fun-and-entertainment-together"
+  },
+  {
+    "job": [
+      "learning_relationship_skills"
+    ],
+    "title": "Imparare le Competenze Relazionali",
+    "description": "Questo viaggio è progettato per aiutarti a sviluppare competenze relazionali essenziali che rafforzeranno la tua connessione, miglioreranno la comunicazione e aumenteranno la tua capacità di risolvere i conflitti in modo efficace. Il contenuto di ogni giorno si basa su quello precedente, guidandoti attraverso una progressione di abilità necessarie per una partnership sana e appagante.",
+    "subtopics": [
+      {
+        "title": "Comprendere le Emozioni",
+        "description": "Impara a identificare e articolare le tue emozioni, oltre a comprendere le risposte emotive del tuo partner. Questa abilità fondamentale è cruciale per una comunicazione efficace.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "emotion-management-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-handle-your-strong-emotions"
+          },
+          {
+            "type": "article",
+            "slug": "building-emotional-intimacy-together"
+          },
+          {
+            "type": "game",
+            "slug": "emotional-seasons"
+          },
+          {
+            "type": "checkup",
+            "slug": "mood-mapping"
+          },
+          {
+            "type": "exercise",
+            "slug": "emotional-regulation-techniques"
+          }
+        ]
+      },
+      {
+        "title": "Tecniche di Comunicazione Efficaci",
+        "description": "Esplora diversi stili e tecniche di comunicazione, inclusi l'ascolto attivo e le pratiche di feedback che favoriscono l'apertura e l'onestà nella tua relazione.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "discover-your-communication-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-prefer-to-communicate-your-needs-and-desires"
+          },
+          {
+            "type": "article",
+            "slug": "mastering-communication-techniques"
+          },
+          {
+            "type": "game",
+            "slug": "communication-clues"
+          },
+          {
+            "type": "checkup",
+            "slug": "mastering-our-communication-styles"
+          },
+          {
+            "type": "exercise",
+            "slug": "active-listening-practice"
+          }
+        ]
+      },
+      {
+        "title": "Strategie di Risoluzione dei Conflitti",
+        "description": "Approfondisci varie strategie per risolvere i conflitti in modo sano. Imparerai a affrontare le divergenze in modo costruttivo e a trovare soluzioni vantaggiose per entrambi.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "your-conflict-style"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-metaphor-that-describes-how-we-handle-problems-together"
+          },
+          {
+            "type": "article",
+            "slug": "effective-conflict-resolution-strategies"
+          },
+          {
+            "type": "game",
+            "slug": "conflict-resolution-quest"
+          },
+          {
+            "type": "checkup",
+            "slug": "conflict-resolution-styles"
+          },
+          {
+            "type": "exercise",
+            "slug": "conflict-resolution-strategies-practice"
+          }
+        ]
+      },
+      {
+        "title": "Sviluppare Vulnerabilità e Fiducia",
+        "description": "Concentrati sulla costruzione della fiducia attraverso la vulnerabilità. Questo sottotema implica comprendere l'importanza dell'apertura e come condividere sentimenti ed esperienze personali.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "vulnerability-style-assessment"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-relationship-skill-you-admire-in-others-and-want-to-develop"
+          },
+          {
+            "type": "article",
+            "slug": "vulnerability-trusts-gateway"
+          },
+          {
+            "type": "game",
+            "slug": "trust-talk"
+          },
+          {
+            "type": "checkup",
+            "slug": "building-a-fortress-of-trust"
+          },
+          {
+            "type": "exercise",
+            "slug": "rebuild-trust-session"
+          }
+        ]
+      },
+      {
+        "title": "Navigare Conversazioni Difficili",
+        "description": "Impara come avviare e gestire conversazioni difficili senza far aumentare il conflitto. Praticherai tecniche per discutere argomenti sensibili in modo calmo e rispettoso.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "communication-timing-style"
+          },
+          {
+            "type": "question",
+            "slug": "whats-the-best-advice-youve-ever-received-about-communicating-in-a-relationship"
+          },
+          {
+            "type": "article",
+            "slug": "navigating-difficult-conversations"
+          },
+          {
+            "type": "game",
+            "slug": "communication-carousel"
+          },
+          {
+            "type": "checkup",
+            "slug": "emotions-expressed-freely"
+          },
+          {
+            "type": "exercise",
+            "slug": "nonviolent-communication-practice"
+          }
+        ]
+      },
+      {
+        "title": "Migliorare l'Intimità Emotiva",
+        "description": "Concludi il tuo viaggio esplorando modi per approfondire la tua connessione emotiva. Questo include pratiche per migliorare l'intimità fisica ed emotiva nella tua relazione, assicurandoti di avvicinarti sempre di più.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "emotional-intimacy-style"
+          },
+          {
+            "type": "question",
+            "slug": "whats-something-youd-like-to-learn-together-to-enhance-our-relationship"
+          },
+          {
+            "type": "article",
+            "slug": "building-emotional-intimacy-together"
+          },
+          {
+            "type": "game",
+            "slug": "intimacy-adventure"
+          },
+          {
+            "type": "checkup",
+            "slug": "emotional-intimacy-check-in"
+          },
+          {
+            "type": "exercise",
+            "slug": "emotional-closeness-exercises"
+          }
+        ]
+      }
+    ],
+    "slug": "learning-relationship-skills"
+  },
+  {
+    "job": [
+      "introducing_healthy_habits"
+    ],
+    "title": "Introdurre Abitudini Sane Insieme",
+    "description": "Questo viaggio è progettato per aiutare le coppie a sviluppare e mantenere abitudini sane che contribuiscono al loro benessere generale e rafforzano la loro relazione. Facendo un passo ogni giorno, esplorerete la nutrizione, le pratiche di benessere e come supportarvi a vicenda in questo percorso verso uno stile di vita più sano.",
+    "subtopics": [
+      {
+        "title": "Comprendere le Basi della Nutrizione",
+        "description": "Impara i fondamenti di una buona nutrizione, discutendo aspetti come vitamine e nutrienti, preparazione dei pasti e come incorporare cibi sani nella tua dieta. Questo stabilisce le basi per uno stile di vita sano.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "healthy-eating-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-ensure-youre-getting-enough-vitamins-and-nutrients"
+          },
+          {
+            "type": "article",
+            "slug": "kickstart-healthy-routines-together"
+          },
+          {
+            "type": "game",
+            "slug": "nutri-quiz"
+          },
+          {
+            "type": "exercise",
+            "slug": "healthy-eating-plans"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-prefer-cooking-together-or-trying-out-new-healthy-recipes-separately"
+          }
+        ]
+      },
+      {
+        "title": "Creare Routine Sane",
+        "description": "Esplora modi per stabilire routine quotidiane che incoraggiano una sana alimentazione e esercizio fisico, inclusi rituali mattutini e serali. Discuti l'importanza della coerenza e come influisce sulla tua salute.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "healthy-habits-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-incorporate-healthy-eating-into-your-busy-schedule"
+          },
+          {
+            "type": "article",
+            "slug": "healthy-habits-for-stronger-bonds"
+          },
+          {
+            "type": "game",
+            "slug": "healthy-habits-hub"
+          },
+          {
+            "type": "exercise",
+            "slug": "positive-habit-tracking"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-enjoy-morning-workouts-or-evening-wind-downs-more"
+          }
+        ]
+      },
+      {
+        "title": "Gestione dello Stress Insieme",
+        "description": "Identifica strategie sane per gestire lo stress, comprese pratiche di mindfulness e come supportarvi a vicenda durante i periodi frenetici. Questo sottotema affronta il benessere mentale come parte di uno stile di vita sano.",
+        "content": [
+          {
+            "type": "checkup",
+            "slug": "mood-mapping"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-handle-stress-in-a-healthy-way"
+          },
+          {
+            "type": "article",
+            "slug": "navigating-emotional-waters-together"
+          },
+          {
+            "type": "game",
+            "slug": "mindfulness-match"
+          },
+          {
+            "type": "exercise",
+            "slug": "mindfulness-meditation-sessions"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-handle-stress-or-unexpected-challenges"
+          }
+        ]
+      },
+      {
+        "title": "Incorporare Attività Fisica",
+        "description": "Discuti le diverse forme di attività fisica che entrambi apprezzate, l'importanza del lavoro di squadra per rimanere attivi e stabilite un piano per routine di esercizio regolari insieme che possano tenervi responsabili.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "accountability-style-quiz"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-prefer-solo-workouts-or-exercising-together"
+          },
+          {
+            "type": "checkup",
+            "slug": "fitness-partners-unite"
+          },
+          {
+            "type": "exercise",
+            "slug": "fitness-routine-together"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-new-form-of-exercise-youd-like-to-do-together-regularly"
+          }
+        ]
+      },
+      {
+        "title": "Monitorare i Progressi e gli Obiettivi",
+        "description": "Impara come impostare e monitorare i tuoi obiettivi di salute e benessere e come celebrare i successi reciproci. Questo creerà motivazione e un senso di partnership nel vostro viaggio verso uno stile di vita sano.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "goal-alignment-style"
+          },
+          {
+            "type": "question",
+            "slug": "what-are-your-long-term-health-and-wellness-goals-and-how-can-we-support-each-other"
+          },
+          {
+            "type": "article",
+            "slug": "setting-shared-future-goals"
+          },
+          {
+            "type": "game",
+            "slug": "future-visionaries"
+          },
+          {
+            "type": "exercise",
+            "slug": "smart-goals-planning"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-stay-motivated-to-maintain-your-healthy-habits"
+          }
+        ]
+      },
+      {
+        "title": "Costruire Abitudini Sane per il Futuro",
+        "description": "Discuti obiettivi di salute a lungo termine, come incorporare abitudini sane nelle vostre vite come coppia e stabilire tradizioni che promuovono il benessere, assicurandoti che adottare pratiche sane diventi uno stile di vita.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "growth-balance-style"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-new-habit-youd-like-to-develop-together-for-personal-growth"
+          },
+          {
+            "type": "exercise",
+            "slug": "positive-reinforcement-practices"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-new-healthy-habit-youd-like-to-try-this-month"
+          }
+        ]
+      }
+    ],
+    "slug": "introducing-healthy-habits-together"
+  },
+  {
+    "job": [
+      "having_new_experiences"
+    ],
+    "title": "Avventurosi Insieme: Esplorando Nuove Esperienze",
+    "description": "Questo viaggio incoraggia te e il tuo partner ad abbracciare la novità e l'avventura nella vostra relazione provando nuove attività, esplorando ambienti sconosciuti e identificando interessi condivisi. Ogni giorno, scoprirete idee creative e contenuti coinvolgenti che vi ispireranno a divertirvi insieme e a rafforzare il vostro legame attraverso esperienze condivise.",
+    "subtopics": [
+      {
+        "title": "Iniziare in Piccolo: Provare Nuove Attività",
+        "description": "Inizia il tuo viaggio identificando attività semplici che siano comode ma nuove. Parla di hobby che vorreste esplorare insieme, da corsi di cucina a serate di giochi da tavolo.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "breaking-routine-style-quiz"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-hobby-youd-like-us-to-try-together"
+          },
+          {
+            "type": "article",
+            "slug": "rediscover-adventure-together"
+          },
+          {
+            "type": "game",
+            "slug": "adventure-awaits"
+          },
+          {
+            "type": "exercise",
+            "slug": "try-something-new-day"
+          }
+        ]
+      },
+      {
+        "title": "Creazione della Lista dei Desideri",
+        "description": "Create insieme una lista dei desideri per coppie! Discutete dei posti emozionanti da visitare, delle esperienze uniche da condividere e delle avventure significative che volete vivere in futuro.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "adventure-style-assessment"
+          },
+          {
+            "type": "question",
+            "slug": "if-we-were-to-create-a-couples-bucket-list-whats-the-first-adventure-youd-add"
+          },
+          {
+            "type": "article",
+            "slug": "adventure-sparks-deeper-bonds"
+          },
+          {
+            "type": "game",
+            "slug": "future-adventure-quest"
+          },
+          {
+            "type": "exercise",
+            "slug": "future-goals-compatibility"
+          }
+        ]
+      },
+      {
+        "title": "Spontaneità e Avventura",
+        "description": "Abbraccia la spontaneità pianificando uscite a sorpresa o provando attività all'improvviso. Scopri il brivido delle avventure inaspettate insieme e rafforza il tuo legame attraverso la spontaneità.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "spontaneity-style"
+          },
+          {
+            "type": "question",
+            "slug": "whats-the-most-fun-youve-ever-had-while-doing-something-completely-spontaneous"
+          },
+          {
+            "type": "question",
+            "slug": "if-we-could-go-on-a-crazy-themed-road-trip-what-would-our-theme-be"
+          },
+          {
+            "type": "game",
+            "slug": "adventure-awaits"
+          },
+          {
+            "type": "exercise",
+            "slug": "outdoor-exploration-adventures"
+          }
+        ]
+      },
+      {
+        "title": "Esplorare Nuovi Posti",
+        "description": "Dai un'occhiata più approfondita ai posti che entrambi volete esplorare, siano essi locali o internazionali. Discutete dei vostri sogni di viaggio e di come queste esperienze possano arricchire la vostra relazione.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "exploration-partnership-style"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-like-to-travel-whats-the-most-exciting-place-youve-been"
+          },
+          {
+            "type": "question",
+            "slug": "which-country-is-at-the-top-of-your-travel-bucket-list-as-a-couple"
+          },
+          {
+            "type": "article",
+            "slug": "adventure-sparks-deeper-bonds"
+          },
+          {
+            "type": "game",
+            "slug": "cultural-quest"
+          },
+          {
+            "type": "exercise",
+            "slug": "cultural-exchange-day"
+          }
+        ]
+      },
+      {
+        "title": "Imparare Insieme",
+        "description": "Identifica abilità o argomenti che entrambi siete interessati a imparare insieme. Potrebbe essere imparare una nuova lingua, padroneggiare tecniche di cucina o seguire corsi d'arte—qualunque cosa vi avvicini di più!",
+        "content": [
+          {
+            "type": "test",
+            "slug": "shared-learning-style"
+          },
+          {
+            "type": "question",
+            "slug": "if-you-could-learn-a-new-language-together-which-one-would-it-be"
+          },
+          {
+            "type": "question",
+            "slug": "whats-something-youd-like-to-learn-together-to-bring-us-closer"
+          },
+          {
+            "type": "article",
+            "slug": "mastering-communication-techniques"
+          },
+          {
+            "type": "game",
+            "slug": "laugh-learn-quiz"
+          },
+          {
+            "type": "exercise",
+            "slug": "smart-goals-planning"
+          }
+        ]
+      },
+      {
+        "title": "Creatività nell'Avventura",
+        "description": "Esplora modi creativi per trasformare attività ordinarie in esperienze memorabili. Pensa a serate a tema, sfide creative o compiti avventurosi che ti permettano di legare attraverso l'immaginazione e il gioco.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "creative-sparks-style"
+          },
+          {
+            "type": "question",
+            "slug": "if-you-could-embark-on-a-creative-retreat-together-what-would-you-focus-on"
+          },
+          {
+            "type": "question",
+            "slug": "if-we-could-perform-in-a-talent-show-together-what-act-would-we-do"
+          },
+          {
+            "type": "article",
+            "slug": "fun-rituals-to-strengthen-bonds"
+          },
+          {
+            "type": "game",
+            "slug": "decor-dilemma"
+          },
+          {
+            "type": "exercise",
+            "slug": "artistic-expression-days"
+          }
+        ]
+      }
+    ],
+    "slug": "adventurous-together-exploring-new-experiences"
+  },
+  {
+    "job": [
+      "preparing_for_children"
+    ],
+    "title": "Prepararsi per i Bambini: Un Viaggio verso la Genitorialità",
+    "description": "Questo viaggio ha lo scopo di preparare te e il tuo partner per l'emozionante e impegnativa avventura della genitorialità. Ogni giorno vi guiderà attraverso varie discussioni, riflessioni e attività per favorire conversazioni significative sulla genitorialità. Man mano che progredite, esplorerete concetti fondamentali, prontezza emotiva e strategie pratiche per garantire un viaggio di successo verso la genitorialità.",
+    "subtopics": [
+      {
+        "title": "Comprendere il Desiderio di Genitorialità",
+        "description": "Esplora i tuoi pensieri e sentimenti individuali riguardo all'avere figli. Impegnati in domande riflessive per comprendere i desideri e le aspettative reciproche, ponendo le basi per future discussioni.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "parenthood-readiness-styles"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-see-yourself-wanting-children-someday"
+          },
+          {
+            "type": "game",
+            "slug": "future-visionaries"
+          },
+          {
+            "type": "checkup",
+            "slug": "parenting-pathways"
+          },
+          {
+            "type": "exercise",
+            "slug": "family-planning-exercise"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-want-to-have-children-if-so-when-do-you-think-is-the-right-time"
+          }
+        ]
+      },
+      {
+        "title": "Allineare i Valori Genitoriali",
+        "description": "Discuti i tuoi valori e credenze fondamentali riguardo alla genitorialità. Questo sottotema ti aiuterà ad allinearti su questioni importanti, come l'educazione, la disciplina e i valori che desideri trasmettere ai tuoi futuri figli.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "parenting-style-alignment"
+          },
+          {
+            "type": "question",
+            "slug": "what-values-are-most-important-for-us-to-instill-in-our-children"
+          },
+          {
+            "type": "game",
+            "slug": "values-vibes"
+          },
+          {
+            "type": "checkup",
+            "slug": "parenting-playbook-compatibility"
+          },
+          {
+            "type": "exercise",
+            "slug": "values-alignment-exercise"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-believe-in-religious-education-for-children-why-or-why-not"
+          }
+        ]
+      },
+      {
+        "title": "Gestire la Prontezza Emotiva",
+        "description": "Valuta la tua preparazione emotiva per gli alti e bassi della genitorialità. Attraverso vari esercizi e riflessioni, affronterai potenziali paure, preoccupazioni e speranze riguardo alla genitorialità.",
+        "content": [
+          {
+            "type": "checkup",
+            "slug": "emotional-rollercoaster-ride"
+          },
+          {
+            "type": "question",
+            "slug": "are-you-ready-to-handle-the-emotional-rollercoaster-that-comes-with-parenting"
+          },
+          {
+            "type": "article",
+            "slug": "navigating-emotional-waters-together"
+          },
+          {
+            "type": "game",
+            "slug": "emotional-seasons"
+          },
+          {
+            "type": "exercise",
+            "slug": "emotional-support-exercises"
+          },
+          {
+            "type": "question",
+            "slug": "what-fears-or-concerns-do-you-have-about-becoming-parents"
+          }
+        ]
+      },
+      {
+        "title": "Responsabilità Pratiche nella Genitorialità",
+        "description": "Approfondisci la logistica delle responsabilità genitoriali. Discuti come vorresti dividere i compiti, pianificare le opzioni di assistenza all'infanzia e gestire le faccende domestiche, preparandoti alle realtà pratiche di crescere dei bambini.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "responsibility-sharing-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-should-we-divide-parenting-responsibilities"
+          },
+          {
+            "type": "game",
+            "slug": "household-harmony"
+          },
+          {
+            "type": "exercise",
+            "slug": "shared-responsibilities-mapping"
+          },
+          {
+            "type": "question",
+            "slug": "what-are-your-thoughts-on-childcare-options"
+          }
+        ]
+      },
+      {
+        "title": "Pianificazione Finanziaria per la Genitorialità",
+        "description": "Concentrati sugli aspetti finanziari della crescita dei bambini. Impegnati in discussioni riguardo al budget, ai risparmi per il futuro di tuo figlio e a come apportare modifiche ai tuoi piani finanziari mentre entri in questo nuovo capitolo.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "financial-planning-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-should-we-save-for-our-childs-future"
+          },
+          {
+            "type": "article",
+            "slug": "financial-planning-together"
+          },
+          {
+            "type": "game",
+            "slug": "dream-budget-builders"
+          },
+          {
+            "type": "exercise",
+            "slug": "budget-planning-session"
+          }
+        ]
+      },
+      {
+        "title": "Costruire una Rete di Supporto",
+        "description": "Esplora l'importanza di una rete di supporto mentre ti prepari per i bambini. Discuti i ruoli di famiglia, amici e risorse per la genitorialità che possono aiutarti a affrontare le sfide future.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "support-network-style"
+          },
+          {
+            "type": "question",
+            "slug": "are-you-comfortable-with-pet-allergies-or-preferences-if-we-have-kids"
+          },
+          {
+            "type": "exercise",
+            "slug": "parenting-support-networks"
+          },
+          {
+            "type": "question",
+            "slug": "are-you-willing-to-retire-just-to-take-care-of-our-kids"
+          }
+        ]
+      }
+    ],
+    "slug": "preparing-for-children-a-journey-to-parenthood"
+  },
+  {
+    "job": [
+      "planning_for_future"
+    ],
+    "title": "Navigare nel Nostro Futuro Insieme",
+    "description": "Questo viaggio è progettato per aiutarti e il tuo partner a pianificare con attenzione il futuro e affrontare decisioni importanti della vita. Esplorerete vari aspetti della vostra relazione, discuterete obiettivi a lungo termine e rafforzerete la vostra partnership attraverso attività coinvolgenti, promuovendo una comunicazione aperta e una comprensione reciproca.",
+    "subtopics": [
+      {
+        "title": "Immaginare la Nostra Vita Futura",
+        "description": "Iniziate immaginando il vostro futuro ideale insieme, discutendo sogni e aspirazioni per i prossimi cinque anni. Creerete una visione chiara di ciò che entrambi desiderate dalla vita.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "future-planning-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-envision-our-relationship-evolving-over-the-next-five-years"
+          },
+          {
+            "type": "article",
+            "slug": "creating-a-vision-for-us"
+          },
+          {
+            "type": "game",
+            "slug": "future-visionaries"
+          },
+          {
+            "type": "checkup",
+            "slug": "future-talk-together"
+          },
+          {
+            "type": "exercise",
+            "slug": "long-term-goal-planning"
+          }
+        ]
+      },
+      {
+        "title": "Futuri Finanziari",
+        "description": "Esplora i vostri obiettivi finanziari come coppia. Discutete di budget, risparmi e potenziali investimenti per garantire uno stile di vita sicuro e confortevole, allineando le vostre aspirazioni finanziarie con i piani futuri.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "financial-planning-style"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-think-financial-discussions-should-happen-regularly-how-often"
+          },
+          {
+            "type": "article",
+            "slug": "mastering-money-talks-together"
+          },
+          {
+            "type": "game",
+            "slug": "dream-budget-builders"
+          },
+          {
+            "type": "checkup",
+            "slug": "budgeting-together-without-breaking-up"
+          },
+          {
+            "type": "exercise",
+            "slug": "budget-planning-session"
+          }
+        ]
+      },
+      {
+        "title": "Costruire un Piano Familiare",
+        "description": "Approfondite le discussioni sulla pianificazione familiare e sugli obiettivi di genitorialità. Decidete se volete avere figli, quanti e considerate che tipo di educazione immaginate.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "parenting-style-alignment"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-want-to-have-children-if-so-when-do-you-think-is-the-right-time"
+          },
+          {
+            "type": "game",
+            "slug": "parenting-philosophy-play"
+          },
+          {
+            "type": "checkup",
+            "slug": "parenting-pathways"
+          },
+          {
+            "type": "exercise",
+            "slug": "parenting-styles-discussion"
+          },
+          {
+            "type": "question",
+            "slug": "should-we-adopt-if-we-are-unable-to-have-children"
+          }
+        ]
+      },
+      {
+        "title": "Affrontare Grandi Decisioni di Vita",
+        "description": "Discutete come affronterete decisioni significative nelle vostre vite insieme. Questo include convivere, cambi di carriera e sfide inaspettate che potrebbero sorgere.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "decision-making-styles"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-feel-about-making-major-life-decisions-together"
+          },
+          {
+            "type": "game",
+            "slug": "problem-solving-pals"
+          },
+          {
+            "type": "checkup",
+            "slug": "resolving-decision-making-conflicts"
+          },
+          {
+            "type": "exercise",
+            "slug": "negotiation-skills-exercises"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-feel-about-relocating-for-career-opportunities-in-the-future"
+          }
+        ]
+      },
+      {
+        "title": "Creare una Lista dei Desideri Condivisa",
+        "description": "Sviluppate una lista dei desideri per coppie che rifletta i vostri sogni condivisi e le avventure che desiderate vivere insieme. Concentratevi su viaggi, esperienze e tradizioni che volete costruire.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "goal-alignment-style"
+          },
+          {
+            "type": "question",
+            "slug": "if-we-were-to-create-a-couples-bucket-list-whats-the-first-adventure-youd-add"
+          },
+          {
+            "type": "article",
+            "slug": "adventure-sparks-deeper-bonds"
+          },
+          {
+            "type": "game",
+            "slug": "dream-adventure-quest"
+          },
+          {
+            "type": "exercise",
+            "slug": "fantasy-sharing-session"
+          },
+          {
+            "type": "question",
+            "slug": "if-we-could-teleport-to-any-romantic-destination-right-now-where-would-we-go"
+          }
+        ]
+      },
+      {
+        "title": "Allineare Valori e Tradizioni",
+        "description": "Discutete i valori e le tradizioni importanti che volete coltivare come coppia e come famiglia. Approfondite le credenze religiose, le scelte di vita e l'eredità che desiderate creare insieme.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "values-alignment-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-see-our-religious-beliefs-influencing-our-future-goals"
+          },
+          {
+            "type": "game",
+            "slug": "beliefs-values"
+          },
+          {
+            "type": "checkup",
+            "slug": "core-values-connection"
+          },
+          {
+            "type": "exercise",
+            "slug": "family-values-alignment"
+          },
+          {
+            "type": "question",
+            "slug": "what-values-are-most-important-for-us-to-instill-in-our-children"
+          }
+        ]
+      }
+    ],
+    "slug": "navigating-our-future-together"
+  },
+  {
+    "job": [
+      "improving_relationship_satisfaction"
+    ],
+    "title": "Migliorare la Soddisfazione nella Relazione",
+    "description": "Questo viaggio è progettato per fornire alle coppie intuizioni e attività pratiche che aumentano progressivamente la loro soddisfazione nella relazione. Nel corso di diversi giorni, esplorerai una serie di argomenti che vanno dalla comprensione dei bisogni all'approfondimento dell'intimità emotiva, culminando in strategie pratiche per un miglioramento continuo della tua partnership.",
+    "subtopics": [
+      {
+        "title": "Comprendere i Bisogni Personali",
+        "description": "Inizia discutendo i tuoi bisogni e desideri individuali nella relazione. Questa base aiuta entrambi i partner a capire cosa richiede ciascuno per sentirsi soddisfatto.",
+        "content": [
+          {
+            "type": "checkup",
+            "slug": "emotional-needs-compatibility"
+          },
+          {
+            "type": "question",
+            "slug": "how-can-we-ensure-both-of-our-needs-are-being-met"
+          },
+          {
+            "type": "article",
+            "slug": "building-trust-through-intimacy"
+          },
+          {
+            "type": "game",
+            "slug": "future-visionaries"
+          },
+          {
+            "type": "exercise",
+            "slug": "values-alignment-exercise"
+          },
+          {
+            "type": "question",
+            "slug": "how-can-we-better-support-each-other-during-stressful-situations"
+          }
+        ]
+      },
+      {
+        "title": "Pratiche di Comunicazione Aperta",
+        "description": "Impara tecniche di comunicazione efficaci che favoriscono l'apertura e la trasparenza tra i partner. Partecipa a esercizi che promuovono l'ascolto attivo e l'espressione dei sentimenti.",
+        "content": [
+          {
+            "type": "checkup",
+            "slug": "mastering-our-communication-styles"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-prefer-to-communicate-your-needs-and-desires"
+          },
+          {
+            "type": "article",
+            "slug": "enhancing-communication-for-stronger-bonds"
+          },
+          {
+            "type": "game",
+            "slug": "communication-clues"
+          },
+          {
+            "type": "exercise",
+            "slug": "active-listening-practice"
+          },
+          {
+            "type": "question",
+            "slug": "whats-your-favorite-memory-of-us-having-a-great-conversation"
+          }
+        ]
+      },
+      {
+        "title": "Celebrare Differenze e Affinità",
+        "description": "Esplora cosa rende ciascuno di voi unico mentre celebri interessi condivisi. Questo colmerà le lacune di connessione e rispetterà le preferenze individuali.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "growth-through-differences-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-can-we-celebrate-our-unique-strengths-and-compensate-for-our-differences"
+          },
+          {
+            "type": "article",
+            "slug": "embrace-and-celebrate-differences"
+          },
+          {
+            "type": "game",
+            "slug": "cultural-quest"
+          },
+          {
+            "type": "exercise",
+            "slug": "difference-identification-and-acceptance"
+          },
+          {
+            "type": "question",
+            "slug": "whats-one-thing-you-appreciate-about-how-i-handle-our-differences"
+          }
+        ]
+      },
+      {
+        "title": "Bilanciare Insieme e Indipendenza",
+        "description": "Concentrati sul trovare un equilibrio armonioso tra il tempo di qualità insieme e il rispetto del bisogno di spazio personale e interessi individuali.",
+        "content": [
+          {
+            "type": "checkup",
+            "slug": "balancing-our-unique-interests"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-feel-about-the-balance-between-our-personal-time-and-together-time"
+          },
+          {
+            "type": "article",
+            "slug": "fun-rituals-to-strengthen-bonds"
+          },
+          {
+            "type": "game",
+            "slug": "routine-rendezvous"
+          },
+          {
+            "type": "exercise",
+            "slug": "shared-calendar-setup"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-prefer-solo-workouts-or-exercising-together"
+          }
+        ]
+      },
+      {
+        "title": "Creare Intimità attraverso la Vulnerabilità",
+        "description": "Approfondisci le pratiche che costruiscono intimità emotiva attraverso la vulnerabilità. Questo può includere la condivisione di esperienze passate e paure per approfondire la connessione.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "vulnerability-style-assessment"
+          },
+          {
+            "type": "question",
+            "slug": "is-there-something-from-your-past-that-still-affects-our-relationship"
+          },
+          {
+            "type": "article",
+            "slug": "vulnerability-trusts-gateway"
+          },
+          {
+            "type": "game",
+            "slug": "secret-share"
+          },
+          {
+            "type": "exercise",
+            "slug": "truth-telling-exercises"
+          },
+          {
+            "type": "question",
+            "slug": "whats-something-youd-like-to-feel-more-of-in-our-relationship"
+          }
+        ]
+      },
+      {
+        "title": "Stabilire Obiettivi di Relazione",
+        "description": "Concludi con strategie pratiche per stabilire obiettivi reciproci per la tua relazione, comprese le aspirazioni per la crescita, l'intimità e la soddisfazione a lungo termine.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "goal-alignment-style"
+          },
+          {
+            "type": "question",
+            "slug": "what-are-your-aspirations-for-our-relationship-five-ten-or-twenty-years-down-the-line"
+          },
+          {
+            "type": "article",
+            "slug": "aligning-life-ambitions-together"
+          },
+          {
+            "type": "game",
+            "slug": "future-talks-fiesta"
+          },
+          {
+            "type": "exercise",
+            "slug": "smart-goals-planning"
+          },
+          {
+            "type": "question",
+            "slug": "what-are-your-thoughts-on-continuing-personal-growth-and-self-improvement-in-our-relationship"
+          }
+        ]
+      }
+    ],
+    "slug": "enhancing-relationship-satisfaction"
+  },
+  {
+    "job": [
+      "improving_communication"
+    ],
+    "title": "Migliorare la Comunicazione: Costruire Ponti nella Nostra Relazione",
+    "description": "Questo viaggio si concentra sul miglioramento delle abilità comunicative tra i partner. Partecipando a varie attività, discussioni e pratiche riflessive, imparerai a esprimerti in modo più aperto e a comprendere meglio l'altro, favorendo una connessione più stretta e una relazione più appagante.",
+    "subtopics": [
+      {
+        "title": "Comprendere gli Stili di Comunicazione dell'Altro",
+        "description": "Esplora i diversi stili di comunicazione e scopri come influenzano le tue interazioni. Questo include l'identificazione del tuo stile e la conoscenza delle preferenze del tuo partner per creare un dialogo aperto.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "discover-your-communication-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-prefer-to-communicate-your-needs-and-desires"
+          },
+          {
+            "type": "article",
+            "slug": "enhancing-communication-for-stronger-bonds"
+          },
+          {
+            "type": "game",
+            "slug": "communication-clues"
+          },
+          {
+            "type": "exercise",
+            "slug": "active-listening-practice"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-feel-about-writing-down-our-issues-before-discussing-them"
+          },
+          {
+            "type": "checkup",
+            "slug": "mastering-our-communication-styles"
+          }
+        ]
+      },
+      {
+        "title": "Navigare Conversazioni Difficili",
+        "description": "Impara tecniche per affrontare discussioni difficili con empatia e rispetto. Acquisirai competenze per esprimere i tuoi pensieri e sentimenti, prestando attenzione alla prospettiva del tuo partner.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "problem-solving-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-can-we-make-our-disagreements-more-constructive"
+          },
+          {
+            "type": "article",
+            "slug": "navigating-sensitive-conversations"
+          },
+          {
+            "type": "game",
+            "slug": "problem-solving-pals"
+          },
+          {
+            "type": "exercise",
+            "slug": "conflict-resolution-strategies-practice"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-prefer-discussing-issues-immediately-or-taking-some-time-to-cool-off"
+          },
+          {
+            "type": "checkup",
+            "slug": "navigating-tough-conversations"
+          }
+        ]
+      },
+      {
+        "title": "Esprimere Bisogni e Confini",
+        "description": "Questo argomento approfondisce come comunicare i tuoi bisogni e stabilire confini sani. Praticherai l'espressione di ciò di cui hai bisogno dall'altro in un modo che rafforzi la tua relazione.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "boundary-setting-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-comfortable-are-you-discussing-your-boundaries-and-desires"
+          },
+          {
+            "type": "article",
+            "slug": "navigating-boundaries-for-intimacy"
+          },
+          {
+            "type": "exercise",
+            "slug": "boundaries-practice"
+          },
+          {
+            "type": "question",
+            "slug": "whats-one-boundary-youd-like-to-set-to-keep-our-relationship-healthy"
+          }
+        ]
+      },
+      {
+        "title": "Ascolto Attivo e Validazione Emotiva",
+        "description": "Padroneggia l'arte dell'ascolto attivo e impara a convalidare i sentimenti del tuo partner. Scoprirai strumenti per migliorare le tue abilità di ascolto e garantire che entrambi i partner si sentano ascoltati e compresi.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "listening-style-quiz"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-like-to-receive-feedback-in-our-relationship"
+          },
+          {
+            "type": "article",
+            "slug": "mastering-active-listening"
+          },
+          {
+            "type": "checkup",
+            "slug": "emotional-explorers"
+          },
+          {
+            "type": "exercise",
+            "slug": "active-listening-practice"
+          },
+          {
+            "type": "question",
+            "slug": "whats-your-favorite-non-verbal-way-i-show-you-im-listening"
+          }
+        ]
+      },
+      {
+        "title": "Risoluzione Costruttiva dei Conflitti",
+        "description": "Impara strategie efficaci per risolvere i conflitti in modo costruttivo. Questo include tecniche per gestire i disaccordi senza danneggiare la relazione, promuovendo uno spirito di collaborazione.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "your-conflict-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-handle-disagreements-or-conflicts"
+          },
+          {
+            "type": "article",
+            "slug": "effective-conflict-resolution-strategies"
+          },
+          {
+            "type": "game",
+            "slug": "conflict-resolution-quest"
+          },
+          {
+            "type": "exercise",
+            "slug": "conflict-resolution-strategies-practice"
+          },
+          {
+            "type": "question",
+            "slug": "whats-one-thing-youd-like-to-change-about-how-we-handle-our-differences"
+          },
+          {
+            "type": "checkup",
+            "slug": "conflict-resolution-styles"
+          }
+        ]
+      },
+      {
+        "title": "Favorire Dialoghi Onesti e Aperti",
+        "description": "Coltiva l'abitudine di una comunicazione aperta e onesta all'interno della tua relazione. Questo sottotema ti guiderà attraverso pratiche che incoraggiano la trasparenza e la fiducia, aprendo la strada a una connessione e intimità più profonde.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "honesty-and-openness-style"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-feel-comfortable-expressing-your-true-feelings-with-me-why-or-why-not"
+          },
+          {
+            "type": "article",
+            "slug": "building-trust-through-transparency"
+          },
+          {
+            "type": "game",
+            "slug": "honesty-huddle"
+          },
+          {
+            "type": "checkup",
+            "slug": "the-honesty-hangout"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-think-honesty-is-always-the-best-policy-why-or-why-not"
+          },
+          {
+            "type": "exercise",
+            "slug": "complete-honesty-sessions"
+          }
+        ]
+      }
+    ],
+    "slug": "improving-communication-building-bridges-in-our-relationship"
+  },
+  {
+    "job": [
+      "getting_to_know_partner"
+    ],
+    "title": "Conoscersi Meglio: Un Viaggio di Scoperta",
+    "description": "Inizia un viaggio trasformativo per comprendere e connetterti profondamente con il tuo partner. Questo viaggio consiste in attività quotidiane progettate con cura, tra cui domande, esercizi, articoli e giochi che favoriranno l'intimità, miglioreranno la comunicazione e sveleranno intuizioni personali. Nel corso di diversi giorni, esplorerai le tue somiglianze, differenze e le qualità uniche che rendono ciascuno di voi ciò che è.",
+    "subtopics": [
+      {
+        "title": "Scoprire Origini e Caratteristiche",
+        "description": "Inizia comprendendo le origini, le personalità e i valori reciproci. Impegnati in domande sui ricordi d'infanzia, talenti nascosti e preferenze personali per costruire una base di fiducia e apertura.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "life-story-style"
+          },
+          {
+            "type": "question",
+            "slug": "can-you-share-a-memory-from-your-childhood-that-you-think-has-shaped-who-you-are-today"
+          },
+          {
+            "type": "article",
+            "slug": "love-maps-knowing-each-other-deeply"
+          },
+          {
+            "type": "game",
+            "slug": "memory-lane"
+          },
+          {
+            "type": "checkup",
+            "slug": "exploring-childhood-memories"
+          },
+          {
+            "type": "exercise",
+            "slug": "difference-identification-and-acceptance"
+          },
+          {
+            "type": "question",
+            "slug": "whats-your-favorite-childhood-memory"
+          }
+        ]
+      },
+      {
+        "title": "Esplorare Interessi e Hobby",
+        "description": "Scopri passioni condivise e hobby individuali. Partecipa a discussioni e attività che ti aiutano a conoscere gli interessi, i passatempi preferiti e le qualità uniche che ciascuno di voi porta nella relazione.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "hobby-harmony-style"
+          },
+          {
+            "type": "game",
+            "slug": "hobby-harmony"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-hobby-that-makes-you-feel-alive"
+          },
+          {
+            "type": "article",
+            "slug": "exploring-shared-hobbies-together"
+          },
+          {
+            "type": "exercise",
+            "slug": "hobbies-and-interests-exercise"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-new-hobby-we-could-start-together-to-spice-things-up"
+          }
+        ]
+      },
+      {
+        "title": "Comprendere gli Stili di Comunicazione",
+        "description": "Impara a comunicare le tue esigenze e desideri in modo efficace. Impegnati in esercizi e giochi che favoriscono l'ascolto attivo e migliorano la tua capacità di esprimere emozioni e aspettative.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "discover-your-communication-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-prefer-to-communicate-your-needs-and-desires"
+          },
+          {
+            "type": "article",
+            "slug": "mastering-communication-techniques"
+          },
+          {
+            "type": "game",
+            "slug": "communication-clues"
+          },
+          {
+            "type": "checkup",
+            "slug": "mastering-our-communication-styles"
+          },
+          {
+            "type": "exercise",
+            "slug": "active-listening-practice"
+          },
+          {
+            "type": "question",
+            "slug": "whats-your-favorite-memory-of-us-having-a-great-conversation"
+          }
+        ]
+      },
+      {
+        "title": "Identificare le Lingue dell'Amore",
+        "description": "Immergiti nei modi unici in cui ciascuno di voi dà e riceve amore. Esplora le tue lingue dell'amore attraverso domande ed esercizi riflessivi, ottenendo intuizioni su come esprimere meglio l'affetto in un modo che risuoni con il tuo partner.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "love-language-type"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-believe-in-love-languages-if-so-which-one-are-you"
+          },
+          {
+            "type": "article",
+            "slug": "decoding-love-languages"
+          },
+          {
+            "type": "game",
+            "slug": "love-languages-exploration"
+          },
+          {
+            "type": "checkup",
+            "slug": "emotional-needs-compatibility"
+          },
+          {
+            "type": "exercise",
+            "slug": "find-out-your-love-language"
+          },
+          {
+            "type": "question",
+            "slug": "what-is-your-love-language"
+          }
+        ]
+      },
+      {
+        "title": "Auto-Riflessione e Definizione degli Obiettivi",
+        "description": "Incoraggia la condivisione personale di aspirazioni e sogni. Utilizza attività guidate per riflettere sugli obiettivi personali e su come questi si allineano con la tua relazione, favorendo un senso di supporto reciproco nei percorsi di ciascuno.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "goal-alignment-style"
+          },
+          {
+            "type": "question",
+            "slug": "what-are-your-dreams-and-aspirations-outside-of-work"
+          },
+          {
+            "type": "article",
+            "slug": "setting-shared-future-goals"
+          },
+          {
+            "type": "game",
+            "slug": "future-visionaries"
+          },
+          {
+            "type": "checkup",
+            "slug": "future-plans-alignment"
+          },
+          {
+            "type": "exercise",
+            "slug": "long-term-goal-planning"
+          },
+          {
+            "type": "question",
+            "slug": "what-personal-goals-do-you-have-that-i-might-not-be-aware-of"
+          }
+        ]
+      },
+      {
+        "title": "Coltivare l'Intimità Emozionale",
+        "description": "Approfondisci la tua connessione emotiva attraverso esercizi di vulnerabilità e conversazioni oneste. Impegnati in attività e discussioni che promuovono la condivisione di sentimenti, desideri e paure in un ambiente sicuro, migliorando la tua intimità e fiducia.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "emotional-intimacy-style"
+          },
+          {
+            "type": "question",
+            "slug": "whats-something-that-always-makes-you-feel-loved"
+          },
+          {
+            "type": "article",
+            "slug": "building-emotional-intimacy-together"
+          },
+          {
+            "type": "game",
+            "slug": "intimacy-insights"
+          },
+          {
+            "type": "checkup",
+            "slug": "emotional-intimacy-check-in"
+          },
+          {
+            "type": "exercise",
+            "slug": "emotional-closeness-exercises"
+          },
+          {
+            "type": "question",
+            "slug": "what-little-gestures-make-you-feel-most-loved-and-appreciated"
+          }
+        ]
+      }
+    ],
+    "slug": "getting-to-know-each-other-a-journey-of-discovery"
+  },
+  {
+    "job": [
+      "discussing_difficult_topics"
+    ],
+    "title": "Navigare Conversazioni Difficili Insieme",
+    "description": "Questo viaggio è progettato per guidare te e il tuo partner attraverso le sfide di discutere argomenti sensibili nella vostra relazione. Ogni giorno esplorerete diversi aspetti della comunicazione, dalla creazione di una solida base all'affrontare argomenti profondamente personali. Alla fine di questo viaggio, avrete gli strumenti e la fiducia per impegnarvi in discussioni significative, rafforzando la vostra connessione emotiva e comprensione reciproca.",
+    "subtopics": [
+      {
+        "title": "Stabilire una Comunicazione Aperta",
+        "description": "Scopri l'importanza della comunicazione aperta e come creare uno spazio sicuro per discutere argomenti difficili. Questo sottotema introdurrà strategie di comunicazione di base.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "discover-your-communication-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-prefer-to-communicate-your-needs-and-desires"
+          },
+          {
+            "type": "article",
+            "slug": "mastering-communication-techniques"
+          },
+          {
+            "type": "game",
+            "slug": "communication-clues"
+          },
+          {
+            "type": "checkup",
+            "slug": "mastering-our-communication-styles"
+          },
+          {
+            "type": "question",
+            "slug": "whats-your-favorite-memory-of-us-having-a-great-conversation"
+          },
+          {
+            "type": "exercise",
+            "slug": "active-listening-practice"
+          }
+        ]
+      },
+      {
+        "title": "Comprendere Prospettive Diverse",
+        "description": "Esplora il significato dell'empatia comprendendo la prospettiva del tuo partner su argomenti difficili. Discuti metodi per affrontare le divergenze in modo costruttivo.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "empathy-resonance-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-can-we-ensure-both-of-us-feel-heard-during-a-disagreement"
+          },
+          {
+            "type": "article",
+            "slug": "building-emotional-intimacy-together"
+          },
+          {
+            "type": "game",
+            "slug": "deep-dive-dialogues"
+          },
+          {
+            "type": "checkup",
+            "slug": "empathy-adventure"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-prefer-to-approach-conversations-when-emotions-run-high"
+          },
+          {
+            "type": "exercise",
+            "slug": "difference-identification-and-acceptance"
+          }
+        ]
+      },
+      {
+        "title": "Navigare Gelosia e Fiducia",
+        "description": "Approfondisci i sentimenti di gelosia e fiducia nella tua relazione. Questo sottotema si concentra su come discutere di questi sentimenti difficili senza conflitti.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "trust-building-style-quiz"
+          },
+          {
+            "type": "question",
+            "slug": "have-you-ever-felt-jealous-in-our-relationship-how-did-you-handle-it"
+          },
+          {
+            "type": "article",
+            "slug": "building-trust-through-intimacy"
+          },
+          {
+            "type": "game",
+            "slug": "trust-talk"
+          },
+          {
+            "type": "checkup",
+            "slug": "trusting-truths"
+          },
+          {
+            "type": "question",
+            "slug": "does-cheating-only-relate-to-physical-things-or-is-there-emotional-cheating-as-well"
+          },
+          {
+            "type": "exercise",
+            "slug": "rebuild-trust-session"
+          }
+        ]
+      },
+      {
+        "title": "Stabilire Limiti nelle Discussioni",
+        "description": "Impara come stabilire limiti quando discuti argomenti sensibili per garantire che entrambi i partner si sentano a proprio agio e rispettati durante le conversazioni.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "boundary-communication-style"
+          },
+          {
+            "type": "question",
+            "slug": "are-there-any-boundaries-around-work-that-youd-like-to-set"
+          },
+          {
+            "type": "game",
+            "slug": "communication-carousel"
+          },
+          {
+            "type": "question",
+            "slug": "whats-one-boundary-youd-like-to-set-to-keep-our-relationship-healthy"
+          },
+          {
+            "type": "exercise",
+            "slug": "boundaries-practice"
+          }
+        ]
+      },
+      {
+        "title": "Affrontare Traumi Passati",
+        "description": "Affronta le conversazioni riguardanti traumi passati e come possono influenzare la tua relazione. Questo sottotema fornisce strategie per discutere questi argomenti difficili con delicatezza.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "life-story-style"
+          },
+          {
+            "type": "question",
+            "slug": "have-you-had-any-childhood-experiences-that-you-can-call-traumatic-how-has-it-affected-you"
+          },
+          {
+            "type": "article",
+            "slug": "navigating-emotional-waters-together"
+          },
+          {
+            "type": "checkup",
+            "slug": "exploring-childhood-memories"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-have-any-unresolved-issues-with-your-parents"
+          },
+          {
+            "type": "exercise",
+            "slug": "sensitive-subjects-dialogue-practice"
+          }
+        ]
+      },
+      {
+        "title": "Strategie di Risoluzione dei Conflitti",
+        "description": "Sviluppa le tue abilità nella risoluzione dei conflitti che sorgono durante le discussioni. Esplora tecniche per trasformare le liti in opportunità di crescita e comprensione reciproca.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "your-conflict-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-can-we-turn-our-arguments-into-opportunities-for-growth"
+          },
+          {
+            "type": "article",
+            "slug": "effective-conflict-resolution-strategies"
+          },
+          {
+            "type": "game",
+            "slug": "problem-solving-pals"
+          },
+          {
+            "type": "checkup",
+            "slug": "conflict-resolution-styles"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-prefer-to-resolve-disagreements-calm-discussion-or-taking-a-short-break"
+          },
+          {
+            "type": "exercise",
+            "slug": "conflict-resolution-strategies-practice"
+          }
+        ]
+      }
+    ],
+    "slug": "navigating-difficult-conversations-together"
+  },
+  {
+    "job": [
+      "improving_honesty_and_openness"
+    ],
+    "title": "Migliorare l'Onestà e l'Apertura",
+    "description": "Questo viaggio è progettato per aiutarti e il tuo partner a coltivare un senso più profondo di onestà e apertura nella vostra relazione. Nel corso di diversi giorni, parteciperai ad attività, discussioni ed esercizi che costruiscono fiducia e trasparenza, permettendovi di affrontare argomenti delicati e rafforzare il vostro legame.",
+    "subtopics": [
+      {
+        "title": "Comprendere l'Onestà",
+        "description": "Esplora il concetto di onestà nelle relazioni, inclusa la sua importanza e le diverse dimensioni dell'essere onesti con il tuo partner. Impegnati in domande che approfondiscono le tue attuali prospettive sull'onestà.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "honesty-and-openness-style"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-believe-in-complete-transparency-in-a-relationship-why-or-why-not"
+          },
+          {
+            "type": "article",
+            "slug": "cultivating-honest-conversations"
+          },
+          {
+            "type": "game",
+            "slug": "honesty-hunt"
+          },
+          {
+            "type": "checkup",
+            "slug": "the-honesty-hangout"
+          },
+          {
+            "type": "exercise",
+            "slug": "honesty-commitment-ritual"
+          }
+        ]
+      },
+      {
+        "title": "Affrontare le Paure sull'Onestà",
+        "description": "Identifica paure o preoccupazioni comuni riguardo all'apertura nella tua relazione. Insieme, rifletti su situazioni in cui ti sei sentito incapace di essere onesto e discuti su come puoi creare un ambiente più sicuro per una comunicazione aperta.",
+        "content": [
+          {
+            "type": "checkup",
+            "slug": "openness-odyssey"
+          },
+          {
+            "type": "question",
+            "slug": "have-you-ever-felt-you-couldnt-be-completely-honest-with-me-why"
+          },
+          {
+            "type": "article",
+            "slug": "vulnerability-trusts-gateway"
+          },
+          {
+            "type": "exercise",
+            "slug": "truth-telling-exercises"
+          },
+          {
+            "type": "game",
+            "slug": "trust-talk-challenge"
+          },
+          {
+            "type": "question",
+            "slug": "have-you-ever-hidden-something-to-protect-my-feelings-how-did-it-turn-out"
+          }
+        ]
+      },
+      {
+        "title": "Coltivare la Trasparenza",
+        "description": "Scopri i benefici della trasparenza in una relazione e come può migliorare l'intimità. Partecipa ad attività e discussioni che incoraggiano la condivisione di dettagli e pensieri che di solito potresti tenere privati.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "transparency-style-assessment"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-think-its-ever-ok-to-tell-white-lies-in-a-relationship-why-or-why-not"
+          },
+          {
+            "type": "article",
+            "slug": "transparency-builds-strong-bonds"
+          },
+          {
+            "type": "exercise",
+            "slug": "transparency-talks"
+          },
+          {
+            "type": "game",
+            "slug": "transparency-trivia"
+          },
+          {
+            "type": "checkup",
+            "slug": "transparency-tools"
+          }
+        ]
+      },
+      {
+        "title": "Costruire Fiducia attraverso l'Apertura",
+        "description": "Scopri strategie per coltivare la fiducia essendo aperto riguardo ai tuoi sentimenti, insicurezze e desideri. Impegnati in esercizi che promuovono la condivisione e la vulnerabilità.",
+        "content": [
+          {
+            "type": "exercise",
+            "slug": "openness-commitment-ritual"
+          },
+          {
+            "type": "question",
+            "slug": "how-can-we-support-each-other-to-be-more-open-and-honest-daily"
+          },
+          {
+            "type": "article",
+            "slug": "building-emotional-intimacy-together"
+          },
+          {
+            "type": "game",
+            "slug": "trust-builders"
+          },
+          {
+            "type": "checkup",
+            "slug": "trusting-truths"
+          },
+          {
+            "type": "question",
+            "slug": "can-you-share-a-time-when-honesty-led-to-a-positive-outcome-in-our-relationship"
+          }
+        ]
+      },
+      {
+        "title": "Navigare Conversazioni Difficili",
+        "description": "Esplora tecniche per affrontare argomenti difficili con onestà e apertura. Pratica l'uso di strategie di comunicazione efficaci per esprimere i tuoi pensieri e sentimenti, mirando a risolvere i conflitti in modo costruttivo.",
+        "content": [
+          {
+            "type": "checkup",
+            "slug": "conflict-to-connection"
+          },
+          {
+            "type": "test",
+            "slug": "your-conflict-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-handle-situations-where-being-honest-might-hurt-someone"
+          },
+          {
+            "type": "article",
+            "slug": "navigating-difficult-conversations"
+          },
+          {
+            "type": "game",
+            "slug": "dialogue-duel"
+          },
+          {
+            "type": "exercise",
+            "slug": "conflict-resolution-strategies-practice"
+          }
+        ]
+      },
+      {
+        "title": "Creare una Cultura di Relazione Onesta",
+        "description": "Sviluppa un accordo condiviso sulle pratiche di onestà all'interno della tua relazione. Discuti i confini e le intenzioni per mantenere una cultura di apertura, assicurando che entrambi i partner si sentano sicuri nell'esprimersi.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "trust-building-style-quiz"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-boundary-you-need-to-feel-safe-being-honest-with-me"
+          },
+          {
+            "type": "article",
+            "slug": "building-trust-through-transparency"
+          },
+          {
+            "type": "game",
+            "slug": "trust-sparks"
+          },
+          {
+            "type": "exercise",
+            "slug": "boundaries-practice"
+          },
+          {
+            "type": "checkup",
+            "slug": "trust-builders"
+          }
+        ]
+      }
+    ],
+    "slug": "improving-honesty-and-openness"
+  },
+  {
+    "job": [
+      "enhancing_love_and_affection"
+    ],
+    "title": "Potenziare Amore e Affetto",
+    "description": "Questo viaggio è progettato per aiutare le coppie a coltivare un amore e un affetto più profondi nella loro relazione attraverso discussioni significative, attività giocose e pratiche riflessive. Ogni giorno esplorerai vari aspetti dell'amore e dell'affetto, partendo dalla comprensione delle tue espressioni d'amore, fino a creare momenti intimi che rafforzano il vostro legame.",
+    "subtopics": [
+      {
+        "title": "Comprendere i Linguaggi dell'Amore",
+        "description": "Scopri il concetto di linguaggi dell'amore e scopri come tu e il tuo partner esprimete e ricevete amore. Questa conoscenza getta le basi per migliorare la vostra connessione emotiva.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "love-language-type"
+          },
+          {
+            "type": "question",
+            "slug": "what-is-your-love-language"
+          },
+          {
+            "type": "article",
+            "slug": "decoding-love-languages"
+          },
+          {
+            "type": "game",
+            "slug": "love-languages-quiz"
+          },
+          {
+            "type": "checkup",
+            "slug": "emotional-needs-compatibility"
+          },
+          {
+            "type": "question",
+            "slug": "whats-your-favorite-way-to-express-love-and-how-does-it-differ-from-mine"
+          },
+          {
+            "type": "exercise",
+            "slug": "find-out-your-love-language"
+          }
+        ]
+      },
+      {
+        "title": "Espressioni Quotidiane di Affetto",
+        "description": "Esplora modi semplici ma potenti per esprimere affetto ogni giorno. Questo sottotema include la discussione di piccoli gesti, note d'amore e complimenti che possono illuminare la giornata dell'altro.",
+        "content": [
+          {
+            "type": "exercise",
+            "slug": "compliment-exchange"
+          },
+          {
+            "type": "question",
+            "slug": "how-can-we-better-express-our-appreciation-for-each-other-daily"
+          },
+          {
+            "type": "article",
+            "slug": "enhance-affection-daily"
+          },
+          {
+            "type": "game",
+            "slug": "affectionate-habits"
+          },
+          {
+            "type": "checkup",
+            "slug": "acts-of-kindness-and-appreciation"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-small-gesture-that-always-makes-you-smile"
+          }
+        ]
+      },
+      {
+        "title": "Creare Momenti Intimi",
+        "description": "Scopri come creare e incorporare momenti intimi nella tua routine quotidiana. Questo include pianificare serate a sorpresa, coccole spontanee e momenti per connettersi profondamente.",
+        "content": [
+          {
+            "type": "checkup",
+            "slug": "emotional-intimacy-check-in"
+          },
+          {
+            "type": "test",
+            "slug": "sensory-intimacy-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-feel-about-trying-new-activities-together-to-build-intimacy"
+          },
+          {
+            "type": "article",
+            "slug": "building-emotional-intimacy-together"
+          },
+          {
+            "type": "game",
+            "slug": "intimacy-insights"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-feel-about-surprise-date-nights-whats-your-ideal-surprise"
+          },
+          {
+            "type": "exercise",
+            "slug": "creating-passion-renewal-date"
+          }
+        ]
+      },
+      {
+        "title": "Coltivare Gratitudine e Apprezzamento",
+        "description": "Immergiti nell'importanza di esprimere gratitudine nella tua relazione. Discuti di come l'apprezzamento possa migliorare amore e affetto e impara pratiche specifiche per riconoscere l'uno l'altro.",
+        "content": [
+          {
+            "type": "exercise",
+            "slug": "expressing-gratitude-session"
+          },
+          {
+            "type": "question",
+            "slug": "how-can-we-better-express-our-appreciation-for-each-other"
+          },
+          {
+            "type": "article",
+            "slug": "mastering-communication-techniques"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-like-to-express-appreciation-in-our-conversations"
+          }
+        ]
+      },
+      {
+        "title": "Giocosità e Umorismo nell'Affetto",
+        "description": "Scopri come l'umorismo e la giocosità possono migliorare l'intimità. Questo sottotema incoraggia a trovare modi per ridere insieme e impegnarsi in attività giocose che rafforzano il vostro legame.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "playfulness-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-feel-about-incorporating-humor-into-our-intimate-moments"
+          },
+          {
+            "type": "article",
+            "slug": "fun-rituals-to-strengthen-bonds"
+          },
+          {
+            "type": "game",
+            "slug": "laugh-learn-quiz"
+          },
+          {
+            "type": "checkup",
+            "slug": "fun-flirtation"
+          },
+          {
+            "type": "question",
+            "slug": "how-can-we-incorporate-more-playfulness-into-our-relationship"
+          },
+          {
+            "type": "exercise",
+            "slug": "karaoke-session"
+          }
+        ]
+      },
+      {
+        "title": "Affetto Fisico e Contatto",
+        "description": "Esplora il ruolo del contatto fisico nel favorire un affetto più profondo. Discuti le preferenze per baci, abbracci, coccole e altre forme di affetto fisico che rafforzano la tua connessione.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "physical-touch-style"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-prefer-cuddling-on-the-couch-or-a-romantic-dinner-to-feel-loved"
+          },
+          {
+            "type": "article",
+            "slug": "enhancing-physical-intimacy-mindfully"
+          },
+          {
+            "type": "game",
+            "slug": "bedroom-preferences"
+          },
+          {
+            "type": "checkup",
+            "slug": "physical-comfort-and-boundaries"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-prefer-morning-hugs-or-goodnight-kisses"
+          },
+          {
+            "type": "exercise",
+            "slug": "affectionate-gestures-practice"
+          }
+        ]
+      }
+    ],
+    "slug": "enhancing-love-and-affection"
+  },
+  {
+    "job": [
+      "building_trust"
+    ],
+    "title": "Costruire Fiducia Insieme",
+    "description": "Questo viaggio è progettato per aiutarti e il tuo partner a esplorare i componenti essenziali della fiducia nella vostra relazione. Nel corso di diversi giorni, parteciperete a discussioni significative, attività e riflessioni mirate a rafforzare la vostra fiducia e intimità emotiva.",
+    "subtopics": [
+      {
+        "title": "Definire la Fiducia",
+        "description": "Iniziate esplorando cosa significa fiducia per entrambi. Discutete le vostre definizioni di fiducia e come queste plasmano la vostra relazione.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "trust-building-style-quiz"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-define-trust-in-a-relationship"
+          },
+          {
+            "type": "article",
+            "slug": "trust-through-open-communication"
+          },
+          {
+            "type": "game",
+            "slug": "trust-fund-trivia"
+          },
+          {
+            "type": "checkup",
+            "slug": "trust-builders"
+          },
+          {
+            "type": "question",
+            "slug": "can-you-share-a-time-when-honesty-led-to-a-positive-outcome-in-our-relationship"
+          },
+          {
+            "type": "exercise",
+            "slug": "trust-fall"
+          }
+        ]
+      },
+      {
+        "title": "Comunicazione Aperta",
+        "description": "Impara l'importanza di un dialogo trasparente e aperto. Partecipa a esercizi e domande che promuovono una comunicazione onesta.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "discover-your-communication-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-prefer-to-communicate-your-needs-and-desires"
+          },
+          {
+            "type": "article",
+            "slug": "enhancing-communication-for-stronger-bonds"
+          },
+          {
+            "type": "game",
+            "slug": "communication-clues"
+          },
+          {
+            "type": "checkup",
+            "slug": "mastering-our-communication-styles"
+          },
+          {
+            "type": "question",
+            "slug": "how-important-is-it-for-you-to-always-be-transparent-with-me-even-about-small-things"
+          },
+          {
+            "type": "exercise",
+            "slug": "active-listening-practice"
+          }
+        ]
+      },
+      {
+        "title": "Gestire Gelosia e Insicurezza",
+        "description": "Identifica e affronta i sentimenti di gelosia e insicurezza. Condividi esperienze personali e strategie di coping in un ambiente di supporto.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "emotional-regulation-styles"
+          },
+          {
+            "type": "question",
+            "slug": "have-you-ever-felt-jealous-in-our-relationship-how-did-you-handle-it"
+          },
+          {
+            "type": "article",
+            "slug": "navigating-emotional-waters-together"
+          },
+          {
+            "type": "game",
+            "slug": "emotion-explorer"
+          },
+          {
+            "type": "checkup",
+            "slug": "emotional-needs-compatibility"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-handle-feelings-of-jealousy-or-insecurity"
+          },
+          {
+            "type": "exercise",
+            "slug": "jealously-navigation-technique"
+          }
+        ]
+      },
+      {
+        "title": "Stabilire Confini",
+        "description": "Discuti i confini personali e comprendi i livelli di comfort reciproci. Costruire rispetto e comprensione reciproci è fondamentale per stabilire fiducia.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "boundary-setting-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-comfortable-are-you-discussing-your-boundaries-and-desires"
+          },
+          {
+            "type": "article",
+            "slug": "navigating-boundaries-for-intimacy"
+          },
+          {
+            "type": "checkup",
+            "slug": "personal-space-balancing-togetherness-and-alone-time"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-boundary-you-need-to-feel-more-secure-and-trusting-in-our-relationship"
+          },
+          {
+            "type": "exercise",
+            "slug": "boundaries-practice"
+          }
+        ]
+      },
+      {
+        "title": "Riparare la Fiducia",
+        "description": "Esplora come ricostruire la fiducia dopo che è stata messa alla prova. Discuti tecniche e impegni necessari per ripristinare la fede l'uno nell'altro.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "trust-repair-style-type"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-prefer-to-rebuild-trust-if-its-ever-broken"
+          },
+          {
+            "type": "article",
+            "slug": "rebuilding-trust-after-betrayal"
+          },
+          {
+            "type": "game",
+            "slug": "trust-talk-challenge"
+          },
+          {
+            "type": "checkup",
+            "slug": "trust-in-communication"
+          },
+          {
+            "type": "question",
+            "slug": "have-you-done-something-in-the-past-that-you-think-can-significantly-change-my-image-of-you-and-what-are-the-things-that-can-hypothetically-change-your-image-of-me-maybe-i-did-something-amoral-or-cheated"
+          },
+          {
+            "type": "exercise",
+            "slug": "rebuild-trust-session"
+          }
+        ]
+      },
+      {
+        "title": "Attività per Costruire Fiducia",
+        "description": "Partecipa a attività divertenti e interattive che migliorano la fiducia. Partecipa a esercizi progettati per avvicinarti e rafforzare il vostro legame.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "transparency-style-assessment"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-fun-activity-we-can-do-together-to-strengthen-our-trust"
+          },
+          {
+            "type": "article",
+            "slug": "fun-rituals-to-strengthen-bonds"
+          },
+          {
+            "type": "game",
+            "slug": "trust-trek"
+          },
+          {
+            "type": "checkup",
+            "slug": "trust-in-conflict-resolution"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-trust-building-challenge-youd-like-us-to-try"
+          },
+          {
+            "type": "exercise",
+            "slug": "adventure-challenge"
+          }
+        ]
+      }
+    ],
+    "slug": "building-trust-together"
+  },
+  {
+    "job": [
+      "solving_relationship_problems"
+    ],
+    "title": "Navigare e Risolvere i Problemi di Relazione",
+    "description": "Questo viaggio è progettato per aiutarti e il tuo partner a navigare e risolvere i conflitti in modo efficace. Ogni giorno, parteciperai a esercizi, domande e attività che sviluppano le tue abilità comunicative e di problem-solving. Alla fine di questo viaggio, ti sentirai più pronto ad affrontare le sfide insieme e a trovare soluzioni come una squadra.",
+    "subtopics": [
+      {
+        "title": "Comprendere gli Stili di Conflitto",
+        "description": "Scopri i tuoi stili di conflitto individuali e come influenzano la tua relazione. Usa domande e riflessioni per capire come rispondi di solito durante i disaccordi.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "your-conflict-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-handle-disagreements-or-conflicts"
+          },
+          {
+            "type": "article",
+            "slug": "effective-conflict-resolution-strategies"
+          },
+          {
+            "type": "game",
+            "slug": "conflict-resolution-quest"
+          },
+          {
+            "type": "checkup",
+            "slug": "conflict-resolution-styles"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-handle-disagreements-and-whats-your-favorite-way-for-us-to-make-up-after-a-fight"
+          },
+          {
+            "type": "exercise",
+            "slug": "conflict-resolution-styles"
+          }
+        ]
+      },
+      {
+        "title": "Fondamenti della Comunicazione",
+        "description": "Concentrati sul migliorare le tue abilità comunicative durante i conflitti. Esplora tecniche di ascolto efficace e l'importanza di un'espressione chiara attraverso esercizi e giochi.",
+        "content": [
+          {
+            "type": "checkup",
+            "slug": "mastering-our-communication-styles"
+          },
+          {
+            "type": "test",
+            "slug": "discover-your-communication-style"
+          },
+          {
+            "type": "article",
+            "slug": "mastering-communication-techniques"
+          },
+          {
+            "type": "game",
+            "slug": "communication-clues"
+          },
+          {
+            "type": "exercise",
+            "slug": "active-listening-practice"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-prefer-to-communicate-your-needs-and-desires"
+          },
+          {
+            "type": "question",
+            "slug": "whats-your-favorite-memory-of-us-having-a-great-conversation"
+          }
+        ]
+      },
+      {
+        "title": "Risoluzione Costruttiva dei Conflitti",
+        "description": "Impara a trasformare i disaccordi in conversazioni costruttive. Partecipa a esercizi e articoli che forniscono strategie per risolvere i conflitti senza farli degenerare.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "solution-focused-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-can-we-make-our-disagreements-more-constructive"
+          },
+          {
+            "type": "article",
+            "slug": "mastering-conflict-resolution-together"
+          },
+          {
+            "type": "game",
+            "slug": "problem-solving-escapades"
+          },
+          {
+            "type": "checkup",
+            "slug": "conflict-resolution-wizards"
+          },
+          {
+            "type": "question",
+            "slug": "can-you-recall-a-time-when-you-felt-misunderstood-how-did-you-handle-it"
+          },
+          {
+            "type": "exercise",
+            "slug": "conflict-resolution-strategies-practice"
+          }
+        ]
+      },
+      {
+        "title": "Questioni Finanziarie e Conflitto",
+        "description": "Esplora come le discussioni finanziarie possano portare a conflitti e come navigare in queste conversazioni. Lavora sugli stili di budgeting e sulla comunicazione finanziaria attraverso test e discussioni.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "financial-communication-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-feel-about-our-different-spending-habits-and-how-can-we-find-a-middle-ground"
+          },
+          {
+            "type": "article",
+            "slug": "mastering-money-talks-together"
+          },
+          {
+            "type": "game",
+            "slug": "dream-budget-builders"
+          },
+          {
+            "type": "checkup",
+            "slug": "trust-in-financial-transparency"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-have-any-issues-with-budgeting-like-are-you-in-debt-to-somebody-do-you-make-any-useless-spending"
+          },
+          {
+            "type": "exercise",
+            "slug": "budget-planning-session"
+          }
+        ]
+      },
+      {
+        "title": "Creare uno Spazio Sicuro per le Discussioni",
+        "description": "Costruisci un ambiente in cui entrambi i partner si sentano al sicuro per esprimere i propri sentimenti. Usa checkup ed esercizi per facilitare dialoghi aperti e affrontare questioni sottostanti.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "emotional-safety-style"
+          },
+          {
+            "type": "checkup",
+            "slug": "vulnerability-and-openness"
+          },
+          {
+            "type": "article",
+            "slug": "trust-through-open-communication"
+          },
+          {
+            "type": "game",
+            "slug": "communication-connection"
+          },
+          {
+            "type": "exercise",
+            "slug": "transparent-communication-practices"
+          },
+          {
+            "type": "question",
+            "slug": "are-there-any-habits-or-behaviors-of-mine-that-bother-you"
+          },
+          {
+            "type": "question",
+            "slug": "describe-a-time-when-a-simple-text-message-led-to-a-big-misunderstanding-how-did-you-resolve-it"
+          }
+        ]
+      },
+      {
+        "title": "Trasformare il Conflitto in Crescita",
+        "description": "Cambia la tua prospettiva sul conflitto imparando a usarlo come strumento per la crescita. Rifletti sui conflitti passati, applica l'umorismo e crea piani di crescita personale come coppia.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "growth-opportunity-style-assessment"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-past-problem-weve-solved-that-makes-you-proud-of-us"
+          },
+          {
+            "type": "article",
+            "slug": "embracing-differences-positively"
+          },
+          {
+            "type": "game",
+            "slug": "compatibility-conundrum"
+          },
+          {
+            "type": "checkup",
+            "slug": "team-problem-solving"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-relationship-problem-you-think-we-can-solve-with-humor"
+          },
+          {
+            "type": "exercise",
+            "slug": "relationship-journal"
+          }
+        ]
+      }
+    ],
+    "slug": "navigating-and-resolving-relationship-problems"
+  },
+  {
+    "job": [
+      "discussing_finances"
+    ],
+    "title": "Discutere delle Nostre Finanze: Costruire un Futuro Più Forte Insieme",
+    "description": "Questo viaggio è progettato per aiutarti e il tuo partner a impegnarvi in conversazioni significative sulle finanze, costruire una comprensione reciproca e sviluppare un approccio cooperativo agli obiettivi finanziari. Progredendo attraverso vari sottotemi, imparerete a comunicare in modo efficace, impostare obiettivi finanziari e allineare le vostre abitudini di spesa per un futuro condiviso più luminoso.",
+    "subtopics": [
+      {
+        "title": "Comprendere i Nostri Valori Finanziari",
+        "description": "Esplora le credenze e i valori finanziari dell'altro per creare una solida base per le vostre discussioni finanziarie. Questo sottotema include domande sui vostri modelli di ruolo finanziari e su cosa priorizzate finanziariamente.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "financial-communication-style"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-have-a-financial-role-model-who-and-why"
+          },
+          {
+            "type": "article",
+            "slug": "mastering-money-talks-together"
+          },
+          {
+            "type": "game",
+            "slug": "dream-budget-builders"
+          },
+          {
+            "type": "checkup",
+            "slug": "aligning-financial-values-and-goals"
+          },
+          {
+            "type": "exercise",
+            "slug": "financial-planning-session"
+          },
+          {
+            "type": "question",
+            "slug": "whats-one-financial-habit-you-admire-in-others"
+          }
+        ]
+      },
+      {
+        "title": "Impostare Obiettivi Finanziari Insieme",
+        "description": "Discuti l'importanza degli obiettivi finanziari come coppia. Questo sottotema ti guida nella creazione di obiettivi finanziari a breve e lungo termine e nella comprensione di come raggiungerli insieme.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "budgeting-style-for-couples"
+          },
+          {
+            "type": "question",
+            "slug": "what-are-your-financial-goals-and-how-can-we-achieve-them-together"
+          },
+          {
+            "type": "article",
+            "slug": "aligning-financial-goals-harmoniously"
+          },
+          {
+            "type": "game",
+            "slug": "future-visionaries"
+          },
+          {
+            "type": "checkup",
+            "slug": "future-financial-adventures"
+          },
+          {
+            "type": "exercise",
+            "slug": "budget-planning-session"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-new-financial-goal-youd-like-to-set-together"
+          }
+        ]
+      },
+      {
+        "title": "Comunicare su Questioni Finanziarie",
+        "description": "Impara strategie di comunicazione efficaci per discutere delle finanze. Questo sottotema introduce strumenti come app di budgeting e impostare controlli regolari per facilitare queste conversazioni.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "discover-your-communication-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-feel-about-budgeting-apps-yay-or-nay"
+          },
+          {
+            "type": "article",
+            "slug": "mastering-communication-techniques"
+          },
+          {
+            "type": "game",
+            "slug": "communication-champions"
+          },
+          {
+            "type": "checkup",
+            "slug": "mastering-our-communication-styles"
+          },
+          {
+            "type": "exercise",
+            "slug": "transparency-talks"
+          },
+          {
+            "type": "question",
+            "slug": "what-smartphone-app-do-you-mostly-use"
+          }
+        ]
+      },
+      {
+        "title": "Bilanciare Spesa e Risparmio",
+        "description": "Immergiti in conversazioni sulle tue diverse abitudini di spesa e su come trovare un terreno comune. Questo sottotema ti incoraggia a dare priorità ai tuoi obiettivi finanziari con le tue scelte di vita.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "your-spending-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-feel-about-our-different-spending-habits-and-how-can-we-find-a-middle-ground"
+          },
+          {
+            "type": "article",
+            "slug": "building-trust-through-financial-transparency"
+          },
+          {
+            "type": "game",
+            "slug": "budget-battle-royale"
+          },
+          {
+            "type": "checkup",
+            "slug": "budgeting-together-without-breaking-up"
+          },
+          {
+            "type": "exercise",
+            "slug": "spending-habits-review"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-prefer-saving-money-in-a-bank-or-investing-it-elsewhere"
+          }
+        ]
+      },
+      {
+        "title": "Affrontare Insieme le Sfide Finanziarie",
+        "description": "Discuti le tue strategie per gestire lo stress finanziario e le spese impreviste. Questo sottotema ti aiuta a sviluppare un piano per supportarvi a vicenda nei momenti di difficoltà finanziaria.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "debt-management-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-handle-financial-stress-together"
+          },
+          {
+            "type": "game",
+            "slug": "debt-decision-duel"
+          },
+          {
+            "type": "checkup",
+            "slug": "tackling-debt-together"
+          },
+          {
+            "type": "exercise",
+            "slug": "debt-management-planning"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-handle-unexpected-expenses"
+          }
+        ]
+      },
+      {
+        "title": "Pianificare il Nostro Futuro Finanziario",
+        "description": "Esplora aspetti più profondi della pianificazione finanziaria, comprese le strategie di pensionamento, la proprietà della casa e il futuro delle finanze della tua famiglia. Questo sottotema ti aiuta ad allineare le tue visioni per il futuro e stabilire una solida partnership finanziaria.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "future-planning-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-prioritize-financial-goals-with-other-life-goals"
+          },
+          {
+            "type": "game",
+            "slug": "future-forecast"
+          },
+          {
+            "type": "checkup",
+            "slug": "future-talk-flow"
+          },
+          {
+            "type": "exercise",
+            "slug": "retirement-dreams-mapping"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-see-the-budget-in-our-partnership-now-what-method-will-be-more-comfortable-for-you"
+          }
+        ]
+      }
+    ],
+    "slug": "discussing-our-finances-building-a-stronger-future-together"
+  },
+  {
+    "job": [
+      "having_meaningful_conversations"
+    ],
+    "title": "Coltivare Conversazioni Significative",
+    "description": "Questo viaggio è progettato per migliorare la tua capacità di impegnarti in conversazioni significative con il tuo partner. Nel corso di diversi giorni, esplorerai vari aspetti della comunicazione, dalla comprensione dei valori reciproci alla discussione di questioni emotive più profonde. Ogni giorno si basa sul precedente, incoraggiando la crescita e la connessione.",
+    "subtopics": [
+      {
+        "title": "Le Basi della Comunicazione",
+        "description": "Inizia esplorando i fondamenti della comunicazione efficace con il tuo partner. Scopri l'ascolto attivo, l'espressione chiara dei pensieri e l'importanza dei segnali non verbali.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "discover-your-communication-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-prefer-to-communicate-your-needs-and-desires"
+          },
+          {
+            "type": "article",
+            "slug": "mastering-communication-techniques"
+          },
+          {
+            "type": "game",
+            "slug": "communication-clues"
+          },
+          {
+            "type": "checkup",
+            "slug": "mastering-our-communication-styles"
+          },
+          {
+            "type": "exercise",
+            "slug": "active-listening-practice"
+          },
+          {
+            "type": "question",
+            "slug": "whats-your-favorite-memory-of-us-having-a-great-conversation"
+          }
+        ]
+      },
+      {
+        "title": "Comprendere i Valori Reciproci",
+        "description": "Approfondisci i valori fondamentali che plasmano le tue credenze e azioni. Discuti di come questi valori influenzano le tue decisioni e come possono impattare la tua relazione.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "values-alignment-style"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-think-we-share-the-same-values"
+          },
+          {
+            "type": "article",
+            "slug": "aligning-life-ambitions-together"
+          },
+          {
+            "type": "game",
+            "slug": "values-vibes"
+          },
+          {
+            "type": "checkup",
+            "slug": "core-values-connection"
+          },
+          {
+            "type": "exercise",
+            "slug": "values-alignment-exercise"
+          },
+          {
+            "type": "question",
+            "slug": "what-are-your-top-three-values-and-how-do-they-influence-your-decisions"
+          }
+        ]
+      },
+      {
+        "title": "Affrontare Temi Difficili",
+        "description": "Impara tecniche per affrontare conversazioni difficili con sensibilità e rispetto. Pratica la discussione di argomenti sfidanti come le finanze, le dinamiche familiari o le aspirazioni future.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "problem-solving-style"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-think-that-money-play-a-big-role-in-feeling-fulfilled"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-balance-personal-time-with-time-spent-together"
+          },
+          {
+            "type": "article",
+            "slug": "navigating-difficult-conversations"
+          },
+          {
+            "type": "game",
+            "slug": "conflict-resolution-quest"
+          },
+          {
+            "type": "checkup",
+            "slug": "tackling-tough-talks"
+          },
+          {
+            "type": "exercise",
+            "slug": "tough-talks-toolkit"
+          }
+        ]
+      },
+      {
+        "title": "Condividere Esperienze Personali",
+        "description": "Impegnati nella narrazione per condividere ricordi significativi del tuo passato. Scopri come le tue esperienze hanno influenzato le tue prospettive attuali e i tuoi stati emotivi.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "life-story-style"
+          },
+          {
+            "type": "question",
+            "slug": "can-you-share-a-memory-from-your-childhood-that-you-think-has-shaped-who-you-are-today"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-memorable-lesson-youve-learned-from-past-relationships"
+          },
+          {
+            "type": "article",
+            "slug": "love-maps-knowing-each-other-deeply"
+          },
+          {
+            "type": "game",
+            "slug": "memory-lane"
+          },
+          {
+            "type": "checkup",
+            "slug": "exploring-childhood-memories"
+          },
+          {
+            "type": "exercise",
+            "slug": "intimate-story-sharing"
+          }
+        ]
+      },
+      {
+        "title": "Approfondire la Connessione Emotiva",
+        "description": "Esplora conversazioni che migliorano l'intimità emotiva. Discuti di argomenti come paure, sogni e aspirazioni per favorire un legame più profondo con il tuo partner.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "emotional-intimacy-style"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-believe-in-soulmates-why-or-why-not"
+          },
+          {
+            "type": "question",
+            "slug": "what-are-your-dreams-and-aspirations-outside-of-work"
+          },
+          {
+            "type": "article",
+            "slug": "building-emotional-intimacy-together"
+          },
+          {
+            "type": "game",
+            "slug": "emotional-expeditions"
+          },
+          {
+            "type": "checkup",
+            "slug": "emotional-intimacy-check-in"
+          },
+          {
+            "type": "exercise",
+            "slug": "emotional-closeness-exercises"
+          }
+        ]
+      },
+      {
+        "title": "Costruire una Cultura di Apertura",
+        "description": "Crea un ambiente in cui entrambi i partner si sentano al sicuro nell'esprimere i propri pensieri e sentimenti. Impara strategie per mantenere una comunicazione aperta e incoraggiare la vulnerabilità.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "openness-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-feel-about-surprise-conversations-versus-planned-discussions"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-express-your-creativity"
+          },
+          {
+            "type": "article",
+            "slug": "cultivating-honest-conversations"
+          },
+          {
+            "type": "game",
+            "slug": "open-hearts-challenge"
+          },
+          {
+            "type": "checkup",
+            "slug": "vulnerability-and-openness"
+          },
+          {
+            "type": "exercise",
+            "slug": "transparent-communication-practices"
+          }
+        ]
+      }
+    ],
+    "slug": "cultivating-meaningful-conversations"
+  },
+  {
+    "job": [
+      "rekindling_passion"
+    ],
+    "title": "Riaccendere la Passione",
+    "description": "Questo viaggio è progettato per aiutarti a riaccendere la passione nella tua relazione attraverso una serie di attività, discussioni e esercizi divertenti. Ogni giorno esplorerai diversi aspetti dell'intimità, della comunicazione e delle esperienze condivise per rafforzare il tuo legame e migliorare la tua connessione romantica.",
+    "subtopics": [
+      {
+        "title": "Esplorare i Nostri Desideri",
+        "description": "Inizia discutendo cosa trovate sexy e attraente l'uno nell'altro, comprese fantasie e nuove idee. Usa domande coinvolgenti e test per scoprire desideri più profondi.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "desire-reignition-style"
+          },
+          {
+            "type": "question",
+            "slug": "what-do-you-find-especially-sexy-about-me"
+          },
+          {
+            "type": "article",
+            "slug": "enhancing-sexual-communication"
+          },
+          {
+            "type": "game",
+            "slug": "fantasy-feelings"
+          },
+          {
+            "type": "checkup",
+            "slug": "emotional-intimacy-check-in"
+          },
+          {
+            "type": "question",
+            "slug": "whats-something-we-could-do-to-spice-things-up"
+          },
+          {
+            "type": "exercise",
+            "slug": "sexual-bucket-list-creation"
+          }
+        ]
+      },
+      {
+        "title": "Creare Momenti Romantici",
+        "description": "Impara a rendere speciali i momenti quotidiani. Questo sottotema ti incoraggia a sviluppare gesti romantici e a sorprendere l'altro, portando eccitazione nelle vostre vite quotidiane.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "romantic-gesture-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-can-we-make-everyday-moments-feel-more-special-and-romantic"
+          },
+          {
+            "type": "article",
+            "slug": "crafting-memorable-date-nights"
+          },
+          {
+            "type": "game",
+            "slug": "date-night-planner"
+          },
+          {
+            "type": "checkup",
+            "slug": "quality-time-quality-love"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-new-hobby-we-could-start-together-to-spice-things-up"
+          },
+          {
+            "type": "exercise",
+            "slug": "creating-passion-renewal-date"
+          }
+        ]
+      },
+      {
+        "title": "Rendere le Cose più Piccanti Insieme",
+        "description": "Esplora nuovi hobby o esperienze che puoi condividere come coppia. Scopri attività che possono riaccendere il divertimento e la passione nella tua relazione, consentendo anche la crescita personale.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "hobby-harmony-style"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-new-hobby-we-can-start-together-to-strengthen-our-bond"
+          },
+          {
+            "type": "article",
+            "slug": "exploring-shared-hobbies-together"
+          },
+          {
+            "type": "game",
+            "slug": "hobby-harmony"
+          },
+          {
+            "type": "checkup",
+            "slug": "growth-through-novelty"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-way-we-can-challenge-each-other-to-grow-while-keeping-the-romance-alive"
+          },
+          {
+            "type": "exercise",
+            "slug": "hobbies-and-interests-exercise"
+          }
+        ]
+      },
+      {
+        "title": "Intimità e Vulnerabilità",
+        "description": "Approfondisci l'intimità emotiva e la vulnerabilità. Praticherai una comunicazione aperta riguardo ai tuoi bisogni emotivi, migliorando la connessione che alimenta la passione.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "emotional-intimacy-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-prefer-to-communicate-your-needs-and-desires"
+          },
+          {
+            "type": "article",
+            "slug": "building-emotional-intimacy-together"
+          },
+          {
+            "type": "game",
+            "slug": "trust-builders"
+          },
+          {
+            "type": "checkup",
+            "slug": "emotional-needs-compatibility"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-fun-way-we-can-explore-each-others-fantasies-together"
+          },
+          {
+            "type": "exercise",
+            "slug": "active-listening-practice"
+          }
+        ]
+      },
+      {
+        "title": "Mantenere la Fiamma",
+        "description": "Discuti strategie per mantenere viva la fiamma, anche nei momenti più banali. Esplora modi per sfidarti continuamente e crescere insieme, mantenendo il romanticismo al centro.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "growth-balance-style"
+          },
+          {
+            "type": "question",
+            "slug": "what-do-you-think-we-can-do-to-keep-the-spark-alive-in-our-relationship"
+          },
+          {
+            "type": "article",
+            "slug": "boosting-relationship-happiness"
+          },
+          {
+            "type": "game",
+            "slug": "passion-rekindle-quest"
+          },
+          {
+            "type": "checkup",
+            "slug": "fun-and-affection"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-new-hobby-we-can-try-together-that-honors-both-our-interests"
+          },
+          {
+            "type": "exercise",
+            "slug": "flexible-role-playing"
+          }
+        ]
+      },
+      {
+        "title": "Piani di Passione a Lungo Termine",
+        "description": "Crea una mappa per sostenere la passione nella tua relazione nel tempo. Sviluppa obiettivi condivisi e una visione per il tuo futuro che mantenga viva sia l'intimità che l'eccitazione.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "future-planning-style"
+          },
+          {
+            "type": "question",
+            "slug": "if-you-won-the-lottery-tomorrow-whats-the-first-thing-youd-do"
+          },
+          {
+            "type": "article",
+            "slug": "creating-a-vision-for-us"
+          },
+          {
+            "type": "game",
+            "slug": "future-visionaries"
+          },
+          {
+            "type": "checkup",
+            "slug": "future-talk-together"
+          },
+          {
+            "type": "question",
+            "slug": "whats-your-favorite-memory-of-us-having-a-great-conversation"
+          },
+          {
+            "type": "exercise",
+            "slug": "long-term-goal-planning"
+          }
+        ]
+      }
+    ],
+    "slug": "rekindling-the-passion"
+  },
+  {
+    "job": [
+      "overcoming_differences"
+    ],
+    "title": "Abbracciare le Nostre Differenze: Un Viaggio verso una Comprensione Più Profonda",
+    "description": "Questo viaggio è progettato per aiutare le coppie a navigare e celebrare le proprie differenze, trasformando le sfide in opportunità di crescita. Ogni giorno, ti impegnerai con domande stimolanti, articoli perspicaci ed esercizi pratici che favoriscono empatia, rispetto e collaborazione nella tua relazione.",
+    "subtopics": [
+      {
+        "title": "Comprendere i Nostri Background",
+        "description": "Esplora come i nostri background culturali, religiosi e personali plasmano le nostre prospettive e comportamenti nella relazione. Rifletti su domande riguardanti le differenze culturali e le credenze, ponendo le basi per conversazioni future.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "cultural-harmony-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-our-different-cultural-backgrounds-shape-our-relationship-and-how-can-we-honor-both"
+          },
+          {
+            "type": "article",
+            "slug": "navigating-religious-conversations-smoothly"
+          },
+          {
+            "type": "game",
+            "slug": "cultural-quest"
+          },
+          {
+            "type": "checkup",
+            "slug": "navigating-cultural-and-religious-differences"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-respect-each-others-religious-beliefs-when-they-differ"
+          },
+          {
+            "type": "exercise",
+            "slug": "cultural-exchange-day"
+          }
+        ]
+      },
+      {
+        "title": "Competenze di Comunicazione Efficaci",
+        "description": "Impara l'importanza della trasparenza e dell'ascolto attivo per superare i malintesi. Impegnati in esercizi e articoli che migliorano i tuoi stili di comunicazione e promuovono un dialogo aperto su argomenti delicati.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "discover-your-communication-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-prefer-to-communicate-your-needs-and-desires"
+          },
+          {
+            "type": "article",
+            "slug": "mastering-communication-techniques"
+          },
+          {
+            "type": "game",
+            "slug": "communication-clues"
+          },
+          {
+            "type": "checkup",
+            "slug": "mastering-our-communication-styles"
+          },
+          {
+            "type": "question",
+            "slug": "whats-your-favorite-memory-of-us-having-a-great-conversation"
+          },
+          {
+            "type": "exercise",
+            "slug": "active-listening-practice"
+          }
+        ]
+      },
+      {
+        "title": "Celebrare le Differenze",
+        "description": "Scopri modi per celebrare e onorare le uniche forze e prospettive dell'altro. Attraverso contenuti interattivi, esplora come le differenze possano favorire la creatività e la gioia nella tua partnership.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "growth-through-differences-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-can-we-celebrate-our-unique-strengths-and-compensate-for-our-differences"
+          },
+          {
+            "type": "article",
+            "slug": "embrace-and-celebrate-differences"
+          },
+          {
+            "type": "game",
+            "slug": "hobby-harmony"
+          },
+          {
+            "type": "checkup",
+            "slug": "embracing-our-personality-traits"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-fun-way-to-explore-and-embrace-our-differences-together"
+          },
+          {
+            "type": "exercise",
+            "slug": "difference-identification-and-acceptance"
+          }
+        ]
+      },
+      {
+        "title": "Navigare i Conflitti con Rispetto",
+        "description": "Sviluppa competenze per gestire i conflitti in modo positivo e costruttivo. Questo sottotema include tecniche pratiche per risolvere disaccordi rispettando i punti di vista dell'altro e mantenendo la fiducia.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "your-conflict-style"
+          },
+          {
+            "type": "question",
+            "slug": "whats-one-thing-youd-like-to-change-about-how-we-handle-our-differences"
+          },
+          {
+            "type": "article",
+            "slug": "mastering-conflict-resolution-together"
+          },
+          {
+            "type": "game",
+            "slug": "conflict-resolution-quest"
+          },
+          {
+            "type": "checkup",
+            "slug": "conflict-resolution-styles"
+          },
+          {
+            "type": "question",
+            "slug": "whats-one-thing-you-admire-about-my-perspective-thats-different-from-yours"
+          },
+          {
+            "type": "exercise",
+            "slug": "conflict-resolution-strategies-practice"
+          }
+        ]
+      },
+      {
+        "title": "Trasformare le Sfide in Opportunità di Crescita",
+        "description": "Cambia il tuo modo di pensare, passando dal vedere le differenze come ostacoli a considerarle come vie per la crescita personale e della relazione. Impegnati in attività che incoraggiano la collaborazione e la risoluzione condivisa dei problemi.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "flexibility-style-assessment"
+          },
+          {
+            "type": "question",
+            "slug": "how-can-we-turn-our-differences-into-opportunities-for-growth-as-a-couple"
+          },
+          {
+            "type": "article",
+            "slug": "embracing-differences-positively"
+          },
+          {
+            "type": "game",
+            "slug": "problem-solving-escapades"
+          },
+          {
+            "type": "checkup",
+            "slug": "team-problem-solving"
+          },
+          {
+            "type": "question",
+            "slug": "can-boredom-be-helpful"
+          },
+          {
+            "type": "exercise",
+            "slug": "cognitive-restructuring-together"
+          }
+        ]
+      },
+      {
+        "title": "Costruire una Visione Unificata",
+        "description": "Consolida ciò che hai imparato per creare una visione condivisa per il tuo futuro. Rifletti sui tuoi valori, obiettivi e aspirazioni come coppia, assicurandoti che entrambi i partner si sentano visti e ascoltati nel viaggio che li attende.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "future-vision-type"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-challenge-weve-overcome-together-that-made-our-relationship-stronger"
+          },
+          {
+            "type": "article",
+            "slug": "aligning-future-goals"
+          },
+          {
+            "type": "game",
+            "slug": "future-visionaries"
+          },
+          {
+            "type": "checkup",
+            "slug": "future-talk-together"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-memorable-moment-where-our-differences-made-our-relationship-stronger"
+          },
+          {
+            "type": "exercise",
+            "slug": "long-term-goal-planning"
+          }
+        ]
+      }
+    ],
+    "slug": "embracing-our-differences-a-journey-to-deeper-understanding"
+  },
+  {
+    "job": [
+      "having_and_discussing_sex"
+    ],
+    "title": "Navigare nel Nostro Mondo Intimo",
+    "description": "Questo viaggio si concentra sul migliorare la tua comprensione e le discussioni riguardo al sesso all'interno della tua relazione. Esplorerai confini, desideri e stili di comunicazione per coltivare una connessione sessuale soddisfacente e aperta con il tuo partner. Ogni giorno, parteciperai a varie attività progettate per promuovere l'intimità e la comprensione.",
+    "subtopics": [
+      {
+        "title": "Comprendere Desideri e Confini",
+        "description": "Inizia discutendo i tuoi desideri e confini personali. Questo passo fondamentale costruisce fiducia e prepara il terreno per conversazioni aperte sull'intimità. Scopri strumenti per articolare ciò di cui hai bisogno e ciò con cui ti senti a tuo agio.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "discover-your-communication-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-comfortable-are-you-discussing-your-boundaries-and-desires"
+          },
+          {
+            "type": "article",
+            "slug": "trust-through-open-communication"
+          },
+          {
+            "type": "game",
+            "slug": "communication-clues"
+          },
+          {
+            "type": "checkup",
+            "slug": "mastering-our-communication-styles"
+          },
+          {
+            "type": "question",
+            "slug": "are-there-any-boundaries-youd-like-to-discuss-regarding-our-physical-relationship"
+          },
+          {
+            "type": "exercise",
+            "slug": "boundaries-practice"
+          }
+        ]
+      },
+      {
+        "title": "Esplorare Fantasie e Sperimentazioni Sessuali",
+        "description": "Ora che hai stabilito uno spazio sicuro, immergiti nella condivisione di fantasie e nella discussione delle nuove esperienze che vorresti provare insieme. Esplora modi per introdurre questi elementi nella tua vita intima.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "fantasy-sharing-style"
+          },
+          {
+            "type": "question",
+            "slug": "are-there-any-fantasies-or-desires-youd-like-to-share"
+          },
+          {
+            "type": "article",
+            "slug": "building-emotional-intimacy-together"
+          },
+          {
+            "type": "game",
+            "slug": "intimacy-insights"
+          },
+          {
+            "type": "checkup",
+            "slug": "maintaining-sexual-satisfaction-over-time"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-fun-way-we-can-explore-each-others-fantasies-together"
+          },
+          {
+            "type": "exercise",
+            "slug": "fantasy-sharing-session"
+          }
+        ]
+      },
+      {
+        "title": "Comunicare Apertamente sull'Intimità",
+        "description": "Sviluppa le tue abilità comunicative riguardo al sesso, assicurandoti che entrambi esprimiate bisogni, preferenze e qualsiasi preoccupazione. Questo sottotema include esercizi che aiutano a migliorare la trasparenza e la connessione.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "sexual-communication-style"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-find-it-easy-to-say-everything-you-want-during-sex"
+          },
+          {
+            "type": "article",
+            "slug": "enhancing-sexual-communication"
+          },
+          {
+            "type": "game",
+            "slug": "communication-carousel"
+          },
+          {
+            "type": "checkup",
+            "slug": "mastering-communication"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-feel-about-discussing-intimacy-outside-of-the-bedroom"
+          },
+          {
+            "type": "exercise",
+            "slug": "talking-about-sex-practice"
+          }
+        ]
+      },
+      {
+        "title": "Migliorare l'Intimità Fisica",
+        "description": "Esplora varie forme di affetto fisico e intimità. Discuti cosa ti fa sentire connesso e soddisfatto, e prova nuove attività che possono migliorare il tuo legame e aumentare l'intimità.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "sensory-intimacy-style"
+          },
+          {
+            "type": "question",
+            "slug": "whats-your-favorite-way-to-be-touched"
+          },
+          {
+            "type": "article",
+            "slug": "building-emotional-intimacy-together"
+          },
+          {
+            "type": "game",
+            "slug": "satisfaction-safari"
+          },
+          {
+            "type": "checkup",
+            "slug": "maintaining-sexual-satisfaction-over-time"
+          },
+          {
+            "type": "question",
+            "slug": "what-parts-of-your-body-you-want-your-partner-to-focus-more-how-does-it-make-you-feel"
+          },
+          {
+            "type": "exercise",
+            "slug": "sensual-exploration-night"
+          }
+        ]
+      },
+      {
+        "title": "Affrontare Sfide e Cambiamenti nella Vita Sessuale",
+        "description": "Affronta potenziali ostacoli nella tua vita sessuale, come desideri sessuali diversi o barriere emotive. Impara strategie per affrontare queste sfide mantenendo un dialogo di supporto per rafforzare la tua relazione.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "sexual-harmony-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-high-is-your-sex-drive"
+          },
+          {
+            "type": "article",
+            "slug": "mastering-conflict-resolution-together"
+          },
+          {
+            "type": "game",
+            "slug": "problem-solving-partners"
+          },
+          {
+            "type": "checkup",
+            "slug": "aligning-sexual-values-and-expectations"
+          },
+          {
+            "type": "question",
+            "slug": "how-has-your-sexual-expectations-changed-since-weve-started-dating"
+          },
+          {
+            "type": "exercise",
+            "slug": "conflict-resolution-strategies-practice"
+          }
+        ]
+      },
+      {
+        "title": "Celebrare la Tua Connessione Sessuale",
+        "description": "Rifletti sul tuo viaggio insieme e celebra i traguardi nella tua relazione sessuale. Discuti modi per onorare la tua intimità e mantenere viva l'eccitazione, assicurando che entrambi i partner si sentano apprezzati e valorizzati.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "love-language-type"
+          },
+          {
+            "type": "question",
+            "slug": "whats-the-best-thing-about-our-sex-life"
+          },
+          {
+            "type": "article",
+            "slug": "fun-rituals-to-strengthen-bonds"
+          },
+          {
+            "type": "game",
+            "slug": "date-night-planner"
+          },
+          {
+            "type": "exercise",
+            "slug": "shared-mood-boards"
+          },
+          {
+            "type": "question",
+            "slug": "whats-one-thing-you-love-about-our-physical-connection"
+          }
+        ]
+      }
+    ],
+    "slug": "navigating-our-intimate-world"
+  },
+  {
+    "job": [
+      "exploring_feelings"
+    ],
+    "title": "Navigare nei Nostri Paesaggi Emotivi",
+    "description": "Questo viaggio è progettato per aiutarti e il tuo partner a esplorare e comprendere i vostri sentimenti a un livello più profondo. Interagendo con vari tipi di contenuti, scoprirete i vostri schemi emotivi, comunicherete efficacemente riguardo alle vostre emozioni e costruirete una connessione emotiva più forte. Ogni giorno porterà nuove intuizioni e sfide che favoriranno l'intimità emotiva nella vostra relazione.",
+    "subtopics": [
+      {
+        "title": "Comprendere le Nostre Emozioni",
+        "description": "Inizia il tuo viaggio esplorando le emozioni di base e come si manifestano nelle vostre vite. Attraverso domande e articoli, ottieni chiarezza sui tuoi sentimenti e sui tuoi metodi per affrontarli.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "emotional-awareness-type"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-think-that-you-feel-emotions-stronger-or-weaker-than-other-people"
+          },
+          {
+            "type": "article",
+            "slug": "building-emotional-intimacy-together"
+          },
+          {
+            "type": "game",
+            "slug": "emotional-seasons"
+          },
+          {
+            "type": "checkup",
+            "slug": "emotional-rollercoaster-ride"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-handle-your-strong-emotions"
+          },
+          {
+            "type": "exercise",
+            "slug": "emotional-regulation-techniques"
+          }
+        ]
+      },
+      {
+        "title": "Esprimere i Sentimenti Efficacemente",
+        "description": "Impara a comunicare le tue emozioni l'uno all'altro in un ambiente sicuro e nutriente. Partecipa a esercizi che facilitano un dialogo aperto sui tuoi sentimenti senza paura di giudizi.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "communication-style-type"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-prefer-to-receive-support-when-youre-feeling-low"
+          },
+          {
+            "type": "article",
+            "slug": "mastering-communication-techniques"
+          },
+          {
+            "type": "game",
+            "slug": "communication-clues"
+          },
+          {
+            "type": "checkup",
+            "slug": "mastering-our-communication-styles"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-feel-comfortable-expressing-your-true-feelings-with-me-why-or-why-not"
+          },
+          {
+            "type": "exercise",
+            "slug": "transparent-communication-practices"
+          }
+        ]
+      },
+      {
+        "title": "Immersione nella Vulnerabilità",
+        "description": "Scopri il potere della vulnerabilità nelle relazioni. Esplora domande e attività che incoraggiano a condividere le tue paure e desideri più profondi, e discuti su come la vulnerabilità possa migliorare l'intimità.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "vulnerability-comfort-type"
+          },
+          {
+            "type": "question",
+            "slug": "can-you-describe-a-moment-where-you-felt-most-connected-during-our-sex-and-what-made-it-special-for-you"
+          },
+          {
+            "type": "article",
+            "slug": "vulnerability-trusts-gateway"
+          },
+          {
+            "type": "game",
+            "slug": "feelings-explorer"
+          },
+          {
+            "type": "checkup",
+            "slug": "vulnerability-and-openness"
+          },
+          {
+            "type": "question",
+            "slug": "how-comfortable-are-you-sharing-your-true-feelings-with-me-on-a-scale-of-1-10"
+          },
+          {
+            "type": "exercise",
+            "slug": "vulnerability-exploration-session"
+          }
+        ]
+      },
+      {
+        "title": "Navigare Emozioni Difficili Insieme",
+        "description": "Identifica e affronta emozioni difficili come gelosia, insicurezza o tristezza. Partecipa a test e controlli progettati per aiutarti a capire come supportarvi a vicenda durante momenti emotivi difficili.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "emotion-management-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-handle-feelings-of-jealousy-or-insecurity"
+          },
+          {
+            "type": "article",
+            "slug": "navigating-emotional-waters-together"
+          },
+          {
+            "type": "game",
+            "slug": "emotional-ride"
+          },
+          {
+            "type": "checkup",
+            "slug": "emotional-rollercoaster-ride"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-handle-feelings-of-stress-or-anxiety"
+          },
+          {
+            "type": "exercise",
+            "slug": "confidentiality-agreements"
+          }
+        ]
+      },
+      {
+        "title": "Costruire Sicurezza Emotiva",
+        "description": "Favorisci un ambiente in cui entrambi i partner si sentano al sicuro per esprimere ed esplorare i propri sentimenti. Comprendi l'importanza della sicurezza emotiva nel rafforzare la tua connessione e impara strategie pratiche per crearla.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "emotional-safety-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-feel-about-our-current-level-of-intimacy-and-affection"
+          },
+          {
+            "type": "article",
+            "slug": "trust-through-open-communication"
+          },
+          {
+            "type": "game",
+            "slug": "trust-builders"
+          },
+          {
+            "type": "checkup",
+            "slug": "emotional-intimacy-check-in"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-feel-we-handle-each-others-vulnerabilities"
+          },
+          {
+            "type": "exercise",
+            "slug": "feelings-validation-practices"
+          }
+        ]
+      },
+      {
+        "title": "Coltivare l'Intimità Emotiva",
+        "description": "Termina il tuo viaggio implementando strategie che migliorano l'intimità emotiva nella tua relazione. Partecipa a giochi ed esercizi che rafforzano i tuoi legami emotivi, rendendo la tua connessione più profonda e resiliente.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "emotional-intimacy-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-feel-about-sharing-your-deepest-desires-with-each-other"
+          },
+          {
+            "type": "article",
+            "slug": "building-emotional-intelligence-together"
+          },
+          {
+            "type": "game",
+            "slug": "emotion-explorer"
+          },
+          {
+            "type": "checkup",
+            "slug": "emotional-needs-compatibility"
+          },
+          {
+            "type": "question",
+            "slug": "how-can-we-better-express-our-needs-without-feeling-vulnerable"
+          },
+          {
+            "type": "exercise",
+            "slug": "emotional-expression-sessions"
+          }
+        ]
+      }
+    ],
+    "slug": "navigating-our-emotional-landscapes"
+  },
+  {
+    "job": [
+      "preparing_for_intimacy"
+    ],
+    "title": "Prepararsi all'Intimità",
+    "description": "Questo viaggio è progettato per aiutare le coppie a esplorare e migliorare le loro connessioni intime in modo supportivo e costruttivo. Attraverso una serie di contenuti accuratamente elaborati, le coppie si impegneranno in vari aspetti dell'intimità, dalla costruzione della fiducia all'esplorazione dei desideri. Ogni giorno, scoprirai nuove intuizioni e pratiche per favorire una connessione emotiva e fisica più profonda.",
+    "subtopics": [
+      {
+        "title": "Comprendere l'Intimità",
+        "description": "Inizia il tuo viaggio esplorando il concetto di intimità. Comprendi le diverse dimensioni dell'intimità, inclusi gli aspetti emotivi e fisici, e discuti cosa significa intimità per te e il tuo partner.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "emotional-intimacy-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-envision-our-intimate-life-evolving-over-the-next-year"
+          },
+          {
+            "type": "article",
+            "slug": "building-emotional-intimacy-together"
+          },
+          {
+            "type": "game",
+            "slug": "intimacy-insights"
+          },
+          {
+            "type": "checkup",
+            "slug": "emotional-intimacy-check-in"
+          },
+          {
+            "type": "exercise",
+            "slug": "intimate-story-sharing"
+          }
+        ]
+      },
+      {
+        "title": "Costruire Fiducia e Vulnerabilità",
+        "description": "Immergiti in esercizi per costruire fiducia e discuti l'importanza della vulnerabilità in una relazione. Scopri come condividere sentimenti ed esperienze personali può creare uno spazio sicuro per l'intimità.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "trust-building-style-quiz"
+          },
+          {
+            "type": "question",
+            "slug": "what-role-does-vulnerability-play-in-our-intimate-life"
+          },
+          {
+            "type": "article",
+            "slug": "vulnerability-trusts-gateway"
+          },
+          {
+            "type": "game",
+            "slug": "trust-builders"
+          },
+          {
+            "type": "checkup",
+            "slug": "trusting-truths"
+          },
+          {
+            "type": "exercise",
+            "slug": "vulnerability-exploration-session"
+          }
+        ]
+      },
+      {
+        "title": "Comunicare i Desideri",
+        "description": "Concentrati sull'arte della comunicazione riguardo ai tuoi desideri e preferenze. Partecipa ad attività che aiutano a esprimere le tue aspirazioni intime e pratica la condivisione delle fantasie in modo supportivo.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "sexual-communication-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-prefer-to-communicate-your-needs-and-desires"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-feel-about-sharing-your-deepest-desires-with-each-other"
+          },
+          {
+            "type": "article",
+            "slug": "enhancing-sexual-communication"
+          },
+          {
+            "type": "game",
+            "slug": "fantasy-fulfillment"
+          },
+          {
+            "type": "checkup",
+            "slug": "emotional-needs-compatibility"
+          },
+          {
+            "type": "exercise",
+            "slug": "fantasy-sharing-session"
+          }
+        ]
+      },
+      {
+        "title": "Creare Rituali Intimi",
+        "description": "Lavorate insieme per sviluppare rituali personalizzati che migliorano l'intimità. Questo potrebbe includere routine, serate speciali o altre pratiche che vi avvicinano regolarmente.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "ritual-building-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-can-we-create-more-intimate-moments-in-our-daily-routine"
+          },
+          {
+            "type": "question",
+            "slug": "whats-one-intimate-goal-youd-like-us-to-achieve-together"
+          },
+          {
+            "type": "article",
+            "slug": "fun-rituals-to-strengthen-bonds"
+          },
+          {
+            "type": "game",
+            "slug": "date-night-planner"
+          },
+          {
+            "type": "checkup",
+            "slug": "everyday-chats-that-count"
+          },
+          {
+            "type": "exercise",
+            "slug": "shared-calendar-setup"
+          }
+        ]
+      },
+      {
+        "title": "Esplorare le Connessioni Fisiche",
+        "description": "Dopo aver rafforzato gli aspetti emotivi, sposta l'attenzione sull'intimità fisica. Esplora diverse forme di connessioni fisiche, dal tocco all'esplorazione giocosa, per migliorare la tua comprensione dei bisogni reciproci.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "physical-touch-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-feel-about-introducing-new-elements-into-our-intimate-life"
+          },
+          {
+            "type": "question",
+            "slug": "whats-your-favorite-type-of-foreplay"
+          },
+          {
+            "type": "article",
+            "slug": "enhancing-physical-intimacy-mindfully"
+          },
+          {
+            "type": "game",
+            "slug": "intimacy-adventure"
+          },
+          {
+            "type": "checkup",
+            "slug": "balancing-fun-and-intimacy-in-sex"
+          },
+          {
+            "type": "exercise",
+            "slug": "erotic-massage-exchange"
+          }
+        ]
+      },
+      {
+        "title": "Navigare i Confini e i Desideri",
+        "description": "Concludi il tuo viaggio affrontando apertamente confini e desideri. Discuti eventuali kink o fantasie specifiche in un ambiente rispettoso, assicurandoti che la tua relazione rimanga consensuale e soddisfacente.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "intimate-boundary-style"
+          },
+          {
+            "type": "question",
+            "slug": "is-there-a-particular-kink-or-fetish-you-want-to-explore-but-havent-shared-yet"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-prefer-spontaneity-or-planning-when-it-comes-to-intimacy"
+          },
+          {
+            "type": "article",
+            "slug": "navigating-boundaries-for-intimacy"
+          },
+          {
+            "type": "exercise",
+            "slug": "boundaries-practice"
+          }
+        ]
+      }
+    ],
+    "slug": "preparing-for-intimacy"
+  }
+]

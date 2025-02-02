@@ -98,7 +98,7 @@ export default function ({
 
   const CorrectView = isAnimated ? Animated.View : View;
 
-  const interpolateCard = (card: typeof backgroundCardProps[number]) =>
+  const interpolateCard = (card: (typeof backgroundCardProps)[number]) =>
     card.animatedValue.interpolate({
       inputRange: [0, 50, 100],
       outputRange: [`${card.rotation}deg`, `${-card.rotation}deg`, `${card.rotation}deg`],

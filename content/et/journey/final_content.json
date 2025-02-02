@@ -1,0 +1,4892 @@
+[
+  {
+    "job": [
+      "preparing_for_children"
+    ],
+    "title": "Lastele Valmistumine: Teekond Vanemaks Saamisele",
+    "description": "See teekond on mõeldud selleks, et varustada sind ja su partnerit põneva ja väljakutsuva vanemluse seiklusega. Iga päev juhatab teid läbi erinevate arutelude, mõtiskluste ja tegevuste, et edendada tähenduslikke vestlusi vanemluse teemal. Edasi liikudes uurite põhikontseptsioone, emotsionaalset valmisolekut ja praktilisi strateegiaid, et tagada edukas teekond vanemaks saamisel.",
+    "subtopics": [
+      {
+        "title": "Vanemaks Saamise Soovi Mõistmine",
+        "description": "Uurige oma individuaalseid mõtteid ja tundeid laste saamise kohta. Osalege mõtisklevates küsimustes, et mõista üksteise soove ja ootusi, luues aluse tulevastele aruteludele.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "parenthood-readiness-styles"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-see-yourself-wanting-children-someday"
+          },
+          {
+            "type": "game",
+            "slug": "future-visionaries"
+          },
+          {
+            "type": "checkup",
+            "slug": "parenting-pathways"
+          },
+          {
+            "type": "exercise",
+            "slug": "family-planning-exercise"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-want-to-have-children-if-so-when-do-you-think-is-the-right-time"
+          }
+        ]
+      },
+      {
+        "title": "Vanemluse Väärtuste Ühtlustamine",
+        "description": "Arutage oma põhiväärtusi ja uskumusi seoses vanemlusega. See alateema aitab teil ühtlustada olulisi küsimusi, nagu haridus, distsipliin ja väärtused, mida soovite oma tulevastele lastele edastada.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "parenting-style-alignment"
+          },
+          {
+            "type": "question",
+            "slug": "what-values-are-most-important-for-us-to-instill-in-our-children"
+          },
+          {
+            "type": "game",
+            "slug": "values-vibes"
+          },
+          {
+            "type": "checkup",
+            "slug": "parenting-playbook-compatibility"
+          },
+          {
+            "type": "exercise",
+            "slug": "values-alignment-exercise"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-believe-in-religious-education-for-children-why-or-why-not"
+          }
+        ]
+      },
+      {
+        "title": "Emotsionaalse Valmiduse Haldamine",
+        "description": "Hinnake oma emotsionaalset ettevalmistust vanemluse tõusude ja mõõnade jaoks. Erinevate harjutuste ja mõtiskluste kaudu käsitlete võimalikke hirme, muresid ja lootusi seoses vanemaks saamisega.",
+        "content": [
+          {
+            "type": "checkup",
+            "slug": "emotional-rollercoaster-ride"
+          },
+          {
+            "type": "question",
+            "slug": "are-you-ready-to-handle-the-emotional-rollercoaster-that-comes-with-parenting"
+          },
+          {
+            "type": "article",
+            "slug": "navigating-emotional-waters-together"
+          },
+          {
+            "type": "game",
+            "slug": "emotional-seasons"
+          },
+          {
+            "type": "exercise",
+            "slug": "emotional-support-exercises"
+          },
+          {
+            "type": "question",
+            "slug": "what-fears-or-concerns-do-you-have-about-becoming-parents"
+          }
+        ]
+      },
+      {
+        "title": "Praktilised Vanemluse Kohustused",
+        "description": "Sukelduge vanemluse kohustuste logistikas. Arutage, kuidas soovite jagada ülesandeid, planeerida lastehoiuvõimalusi ja hallata kodutöid, valmistudes laste kasvatamise praktilistele reaalsustele.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "responsibility-sharing-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-should-we-divide-parenting-responsibilities"
+          },
+          {
+            "type": "game",
+            "slug": "household-harmony"
+          },
+          {
+            "type": "exercise",
+            "slug": "shared-responsibilities-mapping"
+          },
+          {
+            "type": "question",
+            "slug": "what-are-your-thoughts-on-childcare-options"
+          }
+        ]
+      },
+      {
+        "title": "Finantsplaneerimine Vanemaks Saamiseks",
+        "description": "Keskenduge laste kasvatamise finantsaspektidele. Osalege aruteludes eelarvestamise, laste tuleviku säästmise ja oma finantsplaanide kohandamise üle, kui astute sellesse uude peatükki.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "financial-planning-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-should-we-save-for-our-childs-future"
+          },
+          {
+            "type": "article",
+            "slug": "financial-planning-together"
+          },
+          {
+            "type": "game",
+            "slug": "dream-budget-builders"
+          },
+          {
+            "type": "exercise",
+            "slug": "budget-planning-session"
+          }
+        ]
+      },
+      {
+        "title": "Toetava Võrgustiku Loomine",
+        "description": "Uurige toetava võrgustiku tähtsust laste saamiseks valmistumisel. Arutage pereliikmete, sõprade ja vanemluse ressursside rolle, mis aitavad teil navigeerida eesootavate väljakutsetega.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "support-network-style"
+          },
+          {
+            "type": "question",
+            "slug": "are-you-comfortable-with-pet-allergies-or-preferences-if-we-have-kids"
+          },
+          {
+            "type": "exercise",
+            "slug": "parenting-support-networks"
+          },
+          {
+            "type": "question",
+            "slug": "are-you-willing-to-retire-just-to-take-care-of-our-kids"
+          }
+        ]
+      }
+    ],
+    "slug": "preparing-for-children-a-journey-to-parenthood"
+  },
+  {
+    "job": [
+      "preparing_for_marriage"
+    ],
+    "title": "Valmistumine Abieluks: Tugeva Aluse Loomine",
+    "description": "See teekond on loodud selleks, et varustada sind ja su partnerit tööriistade ja teadmistega, mis on vajalikud eduka abielu jaoks. Igal päeval uurite olulisi kontseptsioone, alates suhtlemisest kuni rahalise harmooniani, sillutades teed sügavamale mõistmisele ja vastupidavale suhtele.",
+    "subtopics": [
+      {
+        "title": "Armastuse Keelte Mõistmine",
+        "description": "Tuvastage ja uurige üksteise armastuse keeli, et tugevdada emotsionaalset sidet. Mõistmine, kuidas te mõlemad armastust annate ja vastu võtate, võib oluliselt parandada teie suhte dünaamikat.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "love-language-type"
+          },
+          {
+            "type": "article",
+            "slug": "decoding-love-languages"
+          },
+          {
+            "type": "game",
+            "slug": "love-languages-exploration"
+          },
+          {
+            "type": "exercise",
+            "slug": "find-out-your-love-language"
+          }
+        ]
+      },
+      {
+        "title": "Rahanduskõneluste Valdamine",
+        "description": "Õppige avatud arutelude tähtsust rahandusest. Süvenege eelarvestamise stiilidesse, kulutamisharjumustesse ja rahalistes eesmärkidesse, et luua usaldus ja läbipaistvus teie rahanduspartnerluses.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "financial-communication-style"
+          },
+          {
+            "type": "article",
+            "slug": "mastering-money-talks-together"
+          },
+          {
+            "type": "game",
+            "slug": "dream-budget-builders"
+          },
+          {
+            "type": "checkup",
+            "slug": "aligning-financial-values-and-goals"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-prefer-to-communicate-your-needs-and-desires"
+          },
+          {
+            "type": "exercise",
+            "slug": "financial-planning-for-marriage"
+          }
+        ]
+      },
+      {
+        "title": "Emotsionaalse Intiimsuse Navigeerimine",
+        "description": "Arendage oskusi emotsionaalse intiimsuse edendamiseks haavatavuse, aktiivse kuulamise ja ausa suhtlemise kaudu. Mõistke, kuidas vabalt emotsioone väljendada ja toetada üksteise emotsionaalseid vajadusi.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "emotional-intimacy-style"
+          },
+          {
+            "type": "article",
+            "slug": "building-emotional-intimacy-together"
+          },
+          {
+            "type": "game",
+            "slug": "feelings-explorer"
+          },
+          {
+            "type": "checkup",
+            "slug": "emotional-intimacy-check-in"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-feel-about-writing-love-notes-to-each-other-want-to-give-it-a-try"
+          },
+          {
+            "type": "exercise",
+            "slug": "vulnerability-exploration-session"
+          }
+        ]
+      },
+      {
+        "title": "Tuleviku Eesmärkide Ühtlustamine",
+        "description": "Uurige, kuidas arutada ja ühtlustada oma unistusi ja ambitsioone. Seadke ühiselt eesmärke oma tuleviku jaoks, tagades, et mõlemad partnerid tunnevad end planeerimisprotsessis väärtustatuna ja mõistetuna.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "goal-alignment-style"
+          },
+          {
+            "type": "article",
+            "slug": "setting-shared-future-goals"
+          },
+          {
+            "type": "game",
+            "slug": "future-visionaries"
+          },
+          {
+            "type": "checkup",
+            "slug": "charting-our-shared-future"
+          },
+          {
+            "type": "exercise",
+            "slug": "long-term-goal-planning"
+          }
+        ]
+      },
+      {
+        "title": "Koos Raskustega Toimetulemine",
+        "description": "Valmistuge abielu väljakutseteks, arendades konfliktide lahendamise oskusi ja strateegiaid üksteise toetamiseks raskete aegade jooksul. Õppige lahkarvamusi navigeerima empaatia ja austusega.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "your-conflict-style"
+          },
+          {
+            "type": "article",
+            "slug": "mastering-conflict-resolution-together"
+          },
+          {
+            "type": "game",
+            "slug": "conflict-resolution-quest"
+          },
+          {
+            "type": "checkup",
+            "slug": "conflict-resolution-style-match"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-game-we-could-play-to-improve-our-conflict-resolution-skills"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-feel-about-using-humor-to-ease-tense-conversations"
+          },
+          {
+            "type": "exercise",
+            "slug": "conflict-resolution-strategies-practice"
+          }
+        ]
+      },
+      {
+        "title": "Ühiste Rituaalide ja Traditsioonide Loomine",
+        "description": "Kasutage tähenduslikke rituaale ja traditsioone, mis tugevdavad teie sidet. Avastage viise, kuidas tähistada oma suhet ja luua püsivaid mälestusi paarina, edendades ühtekuuluvuse ja kuuluvuse tunnet.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "ritual-building-style"
+          },
+          {
+            "type": "article",
+            "slug": "fun-rituals-to-strengthen-bonds"
+          },
+          {
+            "type": "game",
+            "slug": "date-night-planner"
+          },
+          {
+            "type": "checkup",
+            "slug": "creative-date-designers"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-new-hobby-we-can-start-together-to-strengthen-our-bond"
+          },
+          {
+            "type": "exercise",
+            "slug": "creating-passion-renewal-date"
+          }
+        ]
+      }
+    ],
+    "slug": "preparing-for-marriage-building-a-strong-foundation"
+  },
+  {
+    "job": [
+      "having_new_experiences"
+    ],
+    "title": "Seikluslik koos: Uute kogemuste avastamine",
+    "description": "See teekond julgustab sind ja su partnerit omaks võtma uuendusi ja seiklusi teie suhtes, proovides uusi tegevusi, avastades tundmatuid kohti ja tuvastades ühiseid huve. Igal päeval avastate loovaid ideid ja kaasahaaravat sisu, mis inspireerib teid koos lõbutsema ja tugevdama oma sidet jagatud kogemuste kaudu.",
+    "subtopics": [
+      {
+        "title": "Alustamine väikeselt: Uute tegevuste proovimine",
+        "description": "Alustage oma teekonda, tuvastades lihtsad tegevused, mis tunduvad mugavad, kuid uued. Osalege aruteludes hobide üle, mida soovite koos avastada, alates kokanduse tundidest kuni lauamänguõhtuteni.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "breaking-routine-style-quiz"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-hobby-youd-like-us-to-try-together"
+          },
+          {
+            "type": "article",
+            "slug": "rediscover-adventure-together"
+          },
+          {
+            "type": "game",
+            "slug": "adventure-awaits"
+          },
+          {
+            "type": "exercise",
+            "slug": "try-something-new-day"
+          }
+        ]
+      },
+      {
+        "title": "Unistuste nimekirja loomine",
+        "description": "Looge koos paaride unistuste nimekiri! Arutage põnevaid kohti, mida külastada, ainulaadseid kogemusi, mida jagada, ja tähenduslikke seiklusi, mida soovite tulevikus kogeda.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "adventure-style-assessment"
+          },
+          {
+            "type": "question",
+            "slug": "if-we-were-to-create-a-couples-bucket-list-whats-the-first-adventure-youd-add"
+          },
+          {
+            "type": "article",
+            "slug": "adventure-sparks-deeper-bonds"
+          },
+          {
+            "type": "game",
+            "slug": "future-adventure-quest"
+          },
+          {
+            "type": "exercise",
+            "slug": "future-goals-compatibility"
+          }
+        ]
+      },
+      {
+        "title": "Spontaansus ja seiklus",
+        "description": "Omaks võtke spontaansus, planeerides üllatusretki või proovides tegevusi äkkideedena. Avastage koos ootamatute seikluste põnevust ja tugevdage oma sidet spontaansuse kaudu.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "spontaneity-style"
+          },
+          {
+            "type": "question",
+            "slug": "whats-the-most-fun-youve-ever-had-while-doing-something-completely-spontaneous"
+          },
+          {
+            "type": "question",
+            "slug": "if-we-could-go-on-a-crazy-themed-road-trip-what-would-our-theme-be"
+          },
+          {
+            "type": "game",
+            "slug": "adventure-awaits"
+          },
+          {
+            "type": "exercise",
+            "slug": "outdoor-exploration-adventures"
+          }
+        ]
+      },
+      {
+        "title": "Uute kohtade avastamine",
+        "description": "Vaadake sügavamalt kohti, mida mõlemad soovite avastada, olgu need siis kohalikud või rahvusvahelised. Arutage oma reisisoove ja kuidas need kogemused võivad teie suhet rikastada.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "exploration-partnership-style"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-like-to-travel-whats-the-most-exciting-place-youve-been"
+          },
+          {
+            "type": "question",
+            "slug": "which-country-is-at-the-top-of-your-travel-bucket-list-as-a-couple"
+          },
+          {
+            "type": "article",
+            "slug": "adventure-sparks-deeper-bonds"
+          },
+          {
+            "type": "game",
+            "slug": "cultural-quest"
+          },
+          {
+            "type": "exercise",
+            "slug": "cultural-exchange-day"
+          }
+        ]
+      },
+      {
+        "title": "Koos õppimine",
+        "description": "Tuvastage oskused või teemad, mis teid mõlemaid huvitavad. See võib olla uue keele õppimine, kokandustehnikate valdamine või kunstiklassides osalemine - mis iganes toob teid lähemale!",
+        "content": [
+          {
+            "type": "test",
+            "slug": "shared-learning-style"
+          },
+          {
+            "type": "question",
+            "slug": "if-you-could-learn-a-new-language-together-which-one-would-it-be"
+          },
+          {
+            "type": "question",
+            "slug": "whats-something-youd-like-to-learn-together-to-bring-us-closer"
+          },
+          {
+            "type": "article",
+            "slug": "mastering-communication-techniques"
+          },
+          {
+            "type": "game",
+            "slug": "laugh-learn-quiz"
+          },
+          {
+            "type": "exercise",
+            "slug": "smart-goals-planning"
+          }
+        ]
+      },
+      {
+        "title": "Loovus seikluses",
+        "description": "Uurige loovaid viise, kuidas tavalisi tegevusi muuta meeldejäävateks kogemusteks. Mõelge temaatilistele kohtingutele, loovatele väljakutsetele või seikluslikele ülesannetele, mis võimaldavad teil kujutlusvõime ja mängu kaudu sidet luua.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "creative-sparks-style"
+          },
+          {
+            "type": "question",
+            "slug": "if-you-could-embark-on-a-creative-retreat-together-what-would-you-focus-on"
+          },
+          {
+            "type": "question",
+            "slug": "if-we-could-perform-in-a-talent-show-together-what-act-would-we-do"
+          },
+          {
+            "type": "article",
+            "slug": "fun-rituals-to-strengthen-bonds"
+          },
+          {
+            "type": "game",
+            "slug": "decor-dilemma"
+          },
+          {
+            "type": "exercise",
+            "slug": "artistic-expression-days"
+          }
+        ]
+      }
+    ],
+    "slug": "adventurous-together-exploring-new-experiences"
+  },
+  {
+    "job": [
+      "preparing_for_cohabitation"
+    ],
+    "title": "Valmistumine Kooseluks",
+    "description": "See teekond on loodud selleks, et valmistada sind ja su partnerit ette kooseluks, käsitledes erinevaid aspekte koos elamisest. Sa õpid, kuidas tõhusalt suhelda, jagada vastutusi ja luua harmooniline koduõhkkond. Igal päeval uurid olulisi teemasid, mis aitavad tugevdada teie suhet ja lihtsustada ühiseks eluks üleminekut.",
+    "subtopics": [
+      {
+        "title": "Unistades Meie Ühisest Ruumi",
+        "description": "Alusta oma visioonide jagamisega selle kohta, milline näeb välja teie kodu. Arutage ideid ruumi, kaunistuse ja atmosfääri kohta. See loob aluse vastastikusele mõistmisele ja jagatud unistustele.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "lifestyle-harmony-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-can-we-create-a-home-environment-that-respects-both-of-our-preferences"
+          },
+          {
+            "type": "article",
+            "slug": "sharing-spaces-harmoniously"
+          },
+          {
+            "type": "exercise",
+            "slug": "living-space-design"
+          },
+          {
+            "type": "game",
+            "slug": "decor-dilemma"
+          },
+          {
+            "type": "question",
+            "slug": "whats-one-piece-of-furniture-you-absolutely-need-in-our-new-home"
+          }
+        ]
+      },
+      {
+        "title": "Suhtlemise Alused",
+        "description": "Õpi tõhusaid suhtlemisstrateegiaid, mis aitavad sul igapäevaseid väljakutseid ületada. Uuri viise, kuidas väljendada vajadusi, seada ootusi ja aktiivselt üksteist kuulata.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "discover-your-communication-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-prefer-to-communicate-your-needs-and-desires"
+          },
+          {
+            "type": "article",
+            "slug": "mastering-communication-techniques"
+          },
+          {
+            "type": "game",
+            "slug": "communication-clues"
+          },
+          {
+            "type": "checkup",
+            "slug": "mastering-our-communication-styles"
+          },
+          {
+            "type": "exercise",
+            "slug": "active-listening-practice"
+          }
+        ]
+      },
+      {
+        "title": "Koduülesanded",
+        "description": "Arutage ja määrake, kuidas jagate koduseid töid ja vastutusi. Looge süsteem, mis töötab teie mõlema jaoks, et hoida kodu puhtana ja organiseerituna.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "domestic-labor-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-feel-about-handling-household-responsibilities-and-chores"
+          },
+          {
+            "type": "article",
+            "slug": "establishing-household-routines"
+          },
+          {
+            "type": "exercise",
+            "slug": "shared-responsibilities-mapping"
+          },
+          {
+            "type": "game",
+            "slug": "chore-chart-challenge"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-feel-about-having-a-cleaning-schedule-versus-cleaning-as-we-go"
+          }
+        ]
+      },
+      {
+        "title": "Finantsalused",
+        "description": "Selleks, et olla ühel lainel finantside haldamise ja eelarvestamise osas paarina. Arutage strateegiaid kulude jagamiseks, ühiseks finantsotsuste tegemiseks ja finantside läbipaistvuse säilitamiseks.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "budgeting-style-for-couples"
+          },
+          {
+            "type": "game",
+            "slug": "dream-budget-builders"
+          },
+          {
+            "type": "article",
+            "slug": "mastering-money-talks-together"
+          },
+          {
+            "type": "exercise",
+            "slug": "budget-planning-session"
+          },
+          {
+            "type": "checkup",
+            "slug": "aligning-financial-values-and-goals"
+          },
+          {
+            "type": "question",
+            "slug": "whats-one-thing-you-want-to-achieve-together-in-our-new-home"
+          }
+        ]
+      },
+      {
+        "title": "Konfliktide Lahendamine Elegantselt",
+        "description": "Valmistuge vältimatuteks erimeelsusteks, õppides konfliktide lahendamise strateegiaid. Uurige, kuidas hallata erinevaid arvamusi ja leida ühist keelt tervislikul viisil.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "your-conflict-style"
+          },
+          {
+            "type": "game",
+            "slug": "conflict-resolution-quest"
+          },
+          {
+            "type": "article",
+            "slug": "mastering-conflict-resolution-together"
+          },
+          {
+            "type": "exercise",
+            "slug": "conflict-resolution-strategies-practice"
+          },
+          {
+            "type": "checkup",
+            "slug": "tackling-tough-talks"
+          },
+          {
+            "type": "question",
+            "slug": "how-should-we-handle-maintenance-and-repairs-around-the-house"
+          }
+        ]
+      },
+      {
+        "title": "Turvalise Ruumi Loomine",
+        "description": "Lõpetage oma ettevalmistused, keskendudes emotsionaalsele ja füüsilisele ohutusele teie ühises ruumis. Arutage piire, privaatsust ja kuidas luua keskkond, kus mõlemad tunnevad end turvaliselt ja austatuna.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "emotional-safety-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-should-we-handle-setting-up-our-home-office-or-study-space"
+          },
+          {
+            "type": "article",
+            "slug": "navigating-boundaries-for-intimacy"
+          },
+          {
+            "type": "exercise",
+            "slug": "personal-space-respect-practices"
+          },
+          {
+            "type": "game",
+            "slug": "space-personalities"
+          },
+          {
+            "type": "question",
+            "slug": "how-should-we-handle-guests-and-visitors-in-our-home"
+          }
+        ]
+      }
+    ],
+    "slug": "preparing-for-cohabitation"
+  },
+  {
+    "job": [
+      "understanding_mutual_compatibility"
+    ],
+    "title": "Mõistmine Ühise Ühildumise",
+    "description": "See teekond on loodud selleks, et aidata sul uurida ja mõista oma suhte ühilduvuse kihte. Aadressides teemasid järk-järgult, õpid tuvastama, hindama ja navigeerima nii oma sarnasuste kui ka erinevuste vahel. Igal päeval tegeled erinevat tüüpi sisuga, mis soodustab mõtlemapanevaid vestlusi ja sügavamate sidemete loomist.",
+    "subtopics": [
+      {
+        "title": "Tuuma Väärtuste Uurimine",
+        "description": "Alusta arutlemisega oma kolme peamise väärtuse üle ja kuidas need mõjutavad sinu otsuseid. See alus teema juhatab teid mõistma, mis on teie jaoks suhtes oluline.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "values-alignment-style"
+          },
+          {
+            "type": "question",
+            "slug": "what-are-three-values-you-believe-are-most-important-in-a-person"
+          },
+          {
+            "type": "article",
+            "slug": "aligning-future-goals"
+          },
+          {
+            "type": "game",
+            "slug": "values-vibes"
+          },
+          {
+            "type": "checkup",
+            "slug": "core-values-connection"
+          },
+          {
+            "type": "exercise",
+            "slug": "values-alignment-exercise"
+          }
+        ]
+      },
+      {
+        "title": "Suhtlemise Stiilid",
+        "description": "Uuri oma individuaalseid suhtlemisstiile ja arutle, kuidas need mõjutavad teie omavahelisi suhtlemisi. See alateema aitab sul välja töötada strateegiaid selgemaks ja tõhusamaks suhtlemiseks.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "discover-your-communication-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-prefer-to-communicate-your-needs-and-desires"
+          },
+          {
+            "type": "article",
+            "slug": "mastering-communication-techniques"
+          },
+          {
+            "type": "game",
+            "slug": "communication-clues"
+          },
+          {
+            "type": "checkup",
+            "slug": "mastering-our-communication-styles"
+          },
+          {
+            "type": "exercise",
+            "slug": "active-listening-practice"
+          }
+        ]
+      },
+      {
+        "title": "Kultuurilised ja Taustalised Erinevused",
+        "description": "Uuri, kuidas teie erinevad kultuurilised taustad ja elukogemused kujundavad teie vaatenurki. Nende elementide mõistmine soodustab empaatiat ja üksteise hindamist.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "cultural-connection-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-our-different-cultural-backgrounds-shape-our-relationship-and-how-can-we-honor-both"
+          },
+          {
+            "type": "article",
+            "slug": "bridging-religious-differences-together"
+          },
+          {
+            "type": "game",
+            "slug": "cultural-quest"
+          },
+          {
+            "type": "checkup",
+            "slug": "navigating-cultural-and-religious-differences"
+          },
+          {
+            "type": "exercise",
+            "slug": "difference-identification-and-acceptance"
+          }
+        ]
+      },
+      {
+        "title": "Isiklike ja Ühiste Huvi Tasakaal",
+        "description": "Arutle oma huvide, hobide üle ja kuidas need võivad üksteist täiendada või konfliktida. Tasakaalu leidmine rikastab teie suhet ja tagab, et mõlemad partnerid tunnevad end rahulolevana.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "hobby-harmony-style"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-new-hobby-we-can-try-together-that-honors-both-our-interests"
+          },
+          {
+            "type": "article",
+            "slug": "exploring-shared-hobbies-together"
+          },
+          {
+            "type": "game",
+            "slug": "hobby-harmony"
+          },
+          {
+            "type": "exercise",
+            "slug": "hobbies-and-interests-exercise"
+          }
+        ]
+      },
+      {
+        "title": "Konfliktide ja Erinevuste Lahendamine",
+        "description": "Sukelduge mõistma, kuidas te kumbki konflikte ja erinevaid arvamusi käsitlete. Uurides tõhusaid konfliktide lahendamise tehnikaid, õpite muutma erimeelsusi kasvuvõimalusteks.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "your-conflict-style"
+          },
+          {
+            "type": "game",
+            "slug": "conflict-resolution-quest"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-handle-feelings-of-jealousy-or-insecurity"
+          },
+          {
+            "type": "article",
+            "slug": "mastering-conflict-resolution-together"
+          },
+          {
+            "type": "checkup",
+            "slug": "conflict-connoisseurs"
+          },
+          {
+            "type": "exercise",
+            "slug": "conflict-resolution-styles"
+          },
+          {
+            "type": "question",
+            "slug": "how-can-we-turn-our-differences-into-opportunities-for-growth-as-a-couple"
+          }
+        ]
+      },
+      {
+        "title": "Suhete Evolutsioon",
+        "description": "Mõtle, kuidas teie suhe on aja jooksul muutunud ja arutle, kuidas te seda tulevikus ette kujutate. See teema võimaldab teil ühtlustada oma pikaajalisi eesmärke ja ambitsioone paarina.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "future-vision-type"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-see-our-relationship-evolving-over-time"
+          },
+          {
+            "type": "article",
+            "slug": "creating-a-vision-for-us"
+          },
+          {
+            "type": "game",
+            "slug": "future-visionaries"
+          },
+          {
+            "type": "checkup",
+            "slug": "future-talk-together"
+          },
+          {
+            "type": "exercise",
+            "slug": "future-goals-compatibility"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-see-our-relationship-evolving-over-the-next-decade"
+          }
+        ]
+      }
+    ],
+    "slug": "understanding-mutual-compatibility"
+  },
+  {
+    "job": [
+      "improving_relationship_satisfaction"
+    ],
+    "title": "Suhete Rahulolu Tõstmine",
+    "description": "See teekond on loodud, et anda paaridele praktilisi teadmisi ja tegevusi, mis järk-järgult suurendavad nende suhete rahulolu. Mitme päeva jooksul uurite erinevaid teemasid alates vajaduste mõistmisest kuni emotsionaalse intiimsuse süvendamiseni, lõpetades praktiliste strateegiatega pidevaks paranemiseks teie partnerluses.",
+    "subtopics": [
+      {
+        "title": "Isiklike Vajaduste Mõistmine",
+        "description": "Alustage oma individuaalsete vajaduste ja soovide arutamisega suhtes. See alus aitab mõlemal partneril mõista, mida igaüks ainulaadselt vajab, et end rahulolevana tunda.",
+        "content": [
+          {
+            "type": "checkup",
+            "slug": "emotional-needs-compatibility"
+          },
+          {
+            "type": "question",
+            "slug": "how-can-we-ensure-both-of-our-needs-are-being-met"
+          },
+          {
+            "type": "article",
+            "slug": "building-trust-through-intimacy"
+          },
+          {
+            "type": "game",
+            "slug": "future-visionaries"
+          },
+          {
+            "type": "exercise",
+            "slug": "values-alignment-exercise"
+          },
+          {
+            "type": "question",
+            "slug": "how-can-we-better-support-each-other-during-stressful-situations"
+          }
+        ]
+      },
+      {
+        "title": "Avatud Suhtlemise Praktikad",
+        "description": "Õppige tõhusaid suhtlemistehnikaid, mis soodustavad avatud ja läbipaistvat suhtlemist partnerite vahel. Osalege harjutustes, mis edendavad aktiivset kuulamist ja tunnete väljendamist.",
+        "content": [
+          {
+            "type": "checkup",
+            "slug": "mastering-our-communication-styles"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-prefer-to-communicate-your-needs-and-desires"
+          },
+          {
+            "type": "article",
+            "slug": "enhancing-communication-for-stronger-bonds"
+          },
+          {
+            "type": "game",
+            "slug": "communication-clues"
+          },
+          {
+            "type": "exercise",
+            "slug": "active-listening-practice"
+          },
+          {
+            "type": "question",
+            "slug": "whats-your-favorite-memory-of-us-having-a-great-conversation"
+          }
+        ]
+      },
+      {
+        "title": "Erinevuste ja Ühisuste Tähistamine",
+        "description": "Uurige, mis teeb teid igaühe eriliseks, tähistades samal ajal ühiselt huve. See aitab ületada ühenduse lõhesid ja austada individuaalseid eelistusi.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "growth-through-differences-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-can-we-celebrate-our-unique-strengths-and-compensate-for-our-differences"
+          },
+          {
+            "type": "article",
+            "slug": "embrace-and-celebrate-differences"
+          },
+          {
+            "type": "game",
+            "slug": "cultural-quest"
+          },
+          {
+            "type": "exercise",
+            "slug": "difference-identification-and-acceptance"
+          },
+          {
+            "type": "question",
+            "slug": "whats-one-thing-you-appreciate-about-how-i-handle-our-differences"
+          }
+        ]
+      },
+      {
+        "title": "Koosoleku ja Iseseisvuse Tasakaalustamine",
+        "description": "Keskenduge harmoonilise tasakaalu leidmisele kvaliteetsete koosolekute ja üksteise isikliku ruumi ning individuaalsete huvide austamise vahel.",
+        "content": [
+          {
+            "type": "checkup",
+            "slug": "balancing-our-unique-interests"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-feel-about-the-balance-between-our-personal-time-and-together-time"
+          },
+          {
+            "type": "article",
+            "slug": "fun-rituals-to-strengthen-bonds"
+          },
+          {
+            "type": "game",
+            "slug": "routine-rendezvous"
+          },
+          {
+            "type": "exercise",
+            "slug": "shared-calendar-setup"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-prefer-solo-workouts-or-exercising-together"
+          }
+        ]
+      },
+      {
+        "title": "Intiimsuse Loomine Haavatavuse kaudu",
+        "description": "Sukelduge praktikatesse, mis loovad emotsionaalset intiimsust haavatavuse kaudu. See võib hõlmata minevikukogemuste ja hirmude jagamist, et süvendada ühendust.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "vulnerability-style-assessment"
+          },
+          {
+            "type": "question",
+            "slug": "is-there-something-from-your-past-that-still-affects-our-relationship"
+          },
+          {
+            "type": "article",
+            "slug": "vulnerability-trusts-gateway"
+          },
+          {
+            "type": "game",
+            "slug": "secret-share"
+          },
+          {
+            "type": "exercise",
+            "slug": "truth-telling-exercises"
+          },
+          {
+            "type": "question",
+            "slug": "whats-something-youd-like-to-feel-more-of-in-our-relationship"
+          }
+        ]
+      },
+      {
+        "title": "Suhete Eesmärkide Seadmine",
+        "description": "Kokkuvõtteks praktilised strateegiad ühiselt eesmärkide seadmiseks teie suhtes, sealhulgas kasvamise, intiimsuse ja pikaajalise rahulolu aspiratsioonid.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "goal-alignment-style"
+          },
+          {
+            "type": "question",
+            "slug": "what-are-your-aspirations-for-our-relationship-five-ten-or-twenty-years-down-the-line"
+          },
+          {
+            "type": "article",
+            "slug": "aligning-life-ambitions-together"
+          },
+          {
+            "type": "game",
+            "slug": "future-talks-fiesta"
+          },
+          {
+            "type": "exercise",
+            "slug": "smart-goals-planning"
+          },
+          {
+            "type": "question",
+            "slug": "what-are-your-thoughts-on-continuing-personal-growth-and-self-improvement-in-our-relationship"
+          }
+        ]
+      }
+    ],
+    "slug": "enhancing-relationship-satisfaction"
+  },
+  {
+    "job": [
+      "having_fun_and_entertainment"
+    ],
+    "title": "Koos lõbu ja meelelahutust koos",
+    "description": "See teekond juhatab teid läbi tegevuste ja arutelude, mis on loodud, et suurendada rõõmu ja mängulisust teie suhtes. Uurides erinevaid lõbu ja meelelahutuse aspekte, arendate sügavamat sidet, õppides samal ajal, kuidas integreerida naeru ja loovust oma igapäevaellu. Igal päeval osalete uutes kogemustes ja mõtisklustes, mis julgustavad koosolekuid ja avastamist.",
+    "subtopics": [
+      {
+        "title": "Naeruga Alustamine",
+        "description": "Uurige huumori rolli teie suhtes. Tehke lõbusaid küsimusi, nagu teie lemmikud sobimatud naljad ja flirtivad tekstid. See alus teema aitab teil avastada viise, kuidas naeru oma igapäevaellu tuua.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "humor-harmony-style"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-have-a-favorite-inappropriate-joke"
+          },
+          {
+            "type": "article",
+            "slug": "laughing-together-keeps-love-strong"
+          },
+          {
+            "type": "game",
+            "slug": "love-laughter"
+          },
+          {
+            "type": "checkup",
+            "slug": "fun-flirtation"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-have-any-favorite-flirty-texts-or-messages-that-make-you-smile"
+          }
+        ]
+      },
+      {
+        "title": "Saavutuste ja Tähtpäevade Tähistamine",
+        "description": "Õppige, kuidas üksteise edusamme, olgu need suured või väikesed, tähistada. Arutage oma lemmikviise eriliste sündmuste, nagu aastapäevade ja pühade, tähistamiseks, edendades tänulikkuse ja rõõmu õhkkonda.",
+        "content": [
+          {
+            "type": "checkup",
+            "slug": "marriage-milestones"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-like-to-celebrate-anniversaries"
+          },
+          {
+            "type": "game",
+            "slug": "date-night-planner"
+          },
+          {
+            "type": "test",
+            "slug": "milestone-celebration-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-like-to-celebrate-achievements-big-or-small"
+          }
+        ]
+      },
+      {
+        "title": "Ühiste Huviavalduste Avastamine",
+        "description": "Sukelduge aruteludesse tegevuste ja hobide üle, mis teile mõlemale meeldivad. Tuvastage ühised huvid ja soovitage lõbusaid tegevusi, mida koos proovida, mis aitab tugevdada teie ühist sidet ja luua kestev mälestus.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "hobby-harmony-style"
+          },
+          {
+            "type": "question",
+            "slug": "what-hobbies-or-activities-would-you-like-us-to-pursue-together-in-the-future"
+          },
+          {
+            "type": "article",
+            "slug": "exploring-shared-hobbies-together"
+          },
+          {
+            "type": "game",
+            "slug": "hobby-harmony"
+          },
+          {
+            "type": "checkup",
+            "slug": "uncovering-daily-habits-and-quirks"
+          },
+          {
+            "type": "exercise",
+            "slug": "hobbies-and-interests-exercise"
+          }
+        ]
+      },
+      {
+        "title": "Spontaansed Seiklused",
+        "description": "Astuge oma mugavustsoonist välja, planeerides spontaansed väljasõidud või lõbusaid üllatusi üksteisele. Kasutage vihjeid, et otsustada uute kogemuste üle, nagu välitegevused või temaatilised kohtingud, suurendades elevust teie suhtes.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "spontaneity-style"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-new-sport-or-physical-activity-youd-like-to-try-as-a-team"
+          },
+          {
+            "type": "article",
+            "slug": "adventure-sparks-deeper-bonds"
+          },
+          {
+            "type": "game",
+            "slug": "adventure-awaits"
+          },
+          {
+            "type": "checkup",
+            "slug": "adventure-together"
+          },
+          {
+            "type": "exercise",
+            "slug": "adventure-challenge"
+          }
+        ]
+      },
+      {
+        "title": "Loov Mängulisus",
+        "description": "Kasutage oma loovust koos, uurides kunstilisi ettevõtmisi või mängulisi mänge. Osalege harjutustes, mis panevad teid mõtlema kastist välja, nagu DIY projektid või teemapõhised kokanduse õhtud.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "creative-sparks-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-express-your-creativity"
+          },
+          {
+            "type": "article",
+            "slug": "crafting-memorable-date-nights"
+          },
+          {
+            "type": "game",
+            "slug": "decor-dilemma"
+          },
+          {
+            "type": "exercise",
+            "slug": "creative-drawing-contest"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-creative-project-youd-love-to-tackle-as-a-duo"
+          }
+        ]
+      },
+      {
+        "title": "Traditsioonide ja Rituaalide Loomine",
+        "description": "Lõpetage oma teekond, mõeldes sellele, kuidas luua regulaarseid traditsioone, mis hoiavad lõbu elavana teie suhtes. Arutage lõbusaid rituaale ja nende väärtust, kuidas need võivad tugevdada teie sidet ja luua armastatud mälestusi koos.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "ritual-building-style"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-tradition-youd-like-to-start-together"
+          },
+          {
+            "type": "article",
+            "slug": "fun-rituals-to-strengthen-bonds"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-tradition-youd-like-us-to-start-as-a-couple"
+          }
+        ]
+      }
+    ],
+    "slug": "creating-fun-and-entertainment-together"
+  },
+  {
+    "job": [
+      "preparing_for_intimacy"
+    ],
+    "title": "Valmistumine Intiimsusele",
+    "description": "See teekond on loodud aitama paaridel uurida ja tugevdada oma intiimseid sidemeid toetaval ja konstruktiivsel viisil. Hoolikalt koostatud sisu kaudu tegelevad paarid erinevate intiimsuse aspektidega, alates usalduse loomisest kuni soovide uurimiseni. Igal päeval avastate uusi teadmisi ja praktikaid, et edendada sügavamat emotsionaalset ja füüsilist ühendust.",
+    "subtopics": [
+      {
+        "title": "Intiimsuse Mõistmine",
+        "description": "Alustage oma teekonda intiimsuse mõiste uurimisega. Mõistke intiimsuse erinevaid mõõtmeid, sealhulgas emotsionaalseid ja füüsilisi aspekte, ning arutage, mida intiimsus tähendab teile ja teie partnerile.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "emotional-intimacy-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-envision-our-intimate-life-evolving-over-the-next-year"
+          },
+          {
+            "type": "article",
+            "slug": "building-emotional-intimacy-together"
+          },
+          {
+            "type": "game",
+            "slug": "intimacy-insights"
+          },
+          {
+            "type": "checkup",
+            "slug": "emotional-intimacy-check-in"
+          },
+          {
+            "type": "exercise",
+            "slug": "intimate-story-sharing"
+          }
+        ]
+      },
+      {
+        "title": "Usalduse ja Haavatavuse Loomine",
+        "description": "Sukelduge usalduse loomise harjutustesse ja arutage haavatavuse tähtsust suhtes. Õppige, kuidas isiklike tunnete ja kogemuste jagamine võib luua intiimsuseks turvalise ruumi.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "trust-building-style-quiz"
+          },
+          {
+            "type": "question",
+            "slug": "what-role-does-vulnerability-play-in-our-intimate-life"
+          },
+          {
+            "type": "article",
+            "slug": "vulnerability-trusts-gateway"
+          },
+          {
+            "type": "game",
+            "slug": "trust-builders"
+          },
+          {
+            "type": "checkup",
+            "slug": "trusting-truths"
+          },
+          {
+            "type": "exercise",
+            "slug": "vulnerability-exploration-session"
+          }
+        ]
+      },
+      {
+        "title": "Soovide Suhtlemine",
+        "description": "Keskenduge soovide ja eelistuste suhtlemise kunstile. Osalege tegevustes, mis aitavad väljendada teie intiimseid ambitsioone, ja harjutage fantaasiate jagamist toetaval viisil.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "sexual-communication-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-prefer-to-communicate-your-needs-and-desires"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-feel-about-sharing-your-deepest-desires-with-each-other"
+          },
+          {
+            "type": "article",
+            "slug": "enhancing-sexual-communication"
+          },
+          {
+            "type": "game",
+            "slug": "fantasy-fulfillment"
+          },
+          {
+            "type": "checkup",
+            "slug": "emotional-needs-compatibility"
+          },
+          {
+            "type": "exercise",
+            "slug": "fantasy-sharing-session"
+          }
+        ]
+      },
+      {
+        "title": "Intiimsete Rituaalide Loomine",
+        "description": "Töötage koos välja isikupärased rituaalid, mis suurendavad intiimsust. See võib hõlmata rutiine, erilisi kohtinguid või muid praktikaid, mis toovad teid regulaarselt lähemale.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "ritual-building-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-can-we-create-more-intimate-moments-in-our-daily-routine"
+          },
+          {
+            "type": "question",
+            "slug": "whats-one-intimate-goal-youd-like-us-to-achieve-together"
+          },
+          {
+            "type": "article",
+            "slug": "fun-rituals-to-strengthen-bonds"
+          },
+          {
+            "type": "game",
+            "slug": "date-night-planner"
+          },
+          {
+            "type": "checkup",
+            "slug": "everyday-chats-that-count"
+          },
+          {
+            "type": "exercise",
+            "slug": "shared-calendar-setup"
+          }
+        ]
+      },
+      {
+        "title": "Füüsiliste Ühenduste Uurimine",
+        "description": "Pärast emotsionaalsete aspektide tugevdamist suunake tähelepanu füüsilisele intiimsusele. Uurige erinevaid füüsilisi ühenduse vorme, alates puudutusest kuni mängulise uurimiseni, et suurendada oma arusaamist üksteise vajadustest.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "physical-touch-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-feel-about-introducing-new-elements-into-our-intimate-life"
+          },
+          {
+            "type": "question",
+            "slug": "whats-your-favorite-type-of-foreplay"
+          },
+          {
+            "type": "article",
+            "slug": "enhancing-physical-intimacy-mindfully"
+          },
+          {
+            "type": "game",
+            "slug": "intimacy-adventure"
+          },
+          {
+            "type": "checkup",
+            "slug": "balancing-fun-and-intimacy-in-sex"
+          },
+          {
+            "type": "exercise",
+            "slug": "erotic-massage-exchange"
+          }
+        ]
+      },
+      {
+        "title": "Piiride ja Soovide Navigeerimine",
+        "description": "Kokkuvõtteks käsitlege oma teekonda avameelselt piiride ja soovidega. Arutage igasuguseid spetsiifilisi fetiše või fantaasiaid austavas keskkonnas, tagades, et teie suhe jääb konsensuslikuks ja rahuldavaks.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "intimate-boundary-style"
+          },
+          {
+            "type": "question",
+            "slug": "is-there-a-particular-kink-or-fetish-you-want-to-explore-but-havent-shared-yet"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-prefer-spontaneity-or-planning-when-it-comes-to-intimacy"
+          },
+          {
+            "type": "article",
+            "slug": "navigating-boundaries-for-intimacy"
+          },
+          {
+            "type": "exercise",
+            "slug": "boundaries-practice"
+          }
+        ]
+      }
+    ],
+    "slug": "preparing-for-intimacy"
+  },
+  {
+    "job": [
+      "discussing_religions"
+    ],
+    "title": "Koos usuliste veendumuste navigeerimine",
+    "description": "See teekond on loodud selleks, et aidata sul ja su partneril arutada ja mõista üksteise usulisi veendumusi, edendades samal ajal austust ja avatud suhtlemist. Uurides erinevaid religiooni aspekte, õpite, kuidas erinevusi omaks võtta ja luua ühine vaimne side.",
+    "subtopics": [
+      {
+        "title": "Usuliste Aluste Mõistmine",
+        "description": "Alustage oma teekonda, uurides üksteise religioonide põhiveendumusi ja -tavasid. Arutage, kuidas need alused kujundavad teie identiteete ja maailmavaateid. See alateema sisaldab küsimusi isiklike veendumuste ja tavade kohta.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "religious-identity-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-practice-your-faith-and-how-would-you-like-to-incorporate-it-into-our-relationship"
+          },
+          {
+            "type": "article",
+            "slug": "navigating-religious-conversations-smoothly"
+          },
+          {
+            "type": "exercise",
+            "slug": "spiritual-practices-exchange"
+          },
+          {
+            "type": "question",
+            "slug": "what-role-does-religion-or-spirituality-play-in-your-life-and-how-does-it-affect-our-relationship"
+          }
+        ]
+      },
+      {
+        "title": "Usuliste Tähtpäevade Tähistamine",
+        "description": "Õppige, kuidas koos usulisi tähtpäevi ja saavutusi tähistada. Uurige, kuidas austada üksteise traditsioone oluliste eluürituste, nagu sünnid, pulmad ja pühad, ajal, integreerides need sujuvalt oma ühisesse ellu.",
+        "content": [
+          {
+            "type": "checkup",
+            "slug": "celebrating-religious-holidays-together"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-celebrate-religious-achievements-or-milestones"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-celebrate-your-faith-during-personal-milestones-like-birthdays-or-anniversaries"
+          }
+        ]
+      },
+      {
+        "title": "Erinevuste ja Erimeelsuste Austamine",
+        "description": "Sukelduge sellesse, kuidas navigeerida usuliste veendumuste ja tavade erinevustes ilma konfliktideta. See alateema varustab teid tööriistadega austavateks vestlusteks, kui erimeelsused tekivad, keskendudes mõistmisele, mitte veenmisele.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "your-conflict-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-handle-religious-disagreements-in-relationships"
+          },
+          {
+            "type": "article",
+            "slug": "bridging-religious-differences-together"
+          },
+          {
+            "type": "game",
+            "slug": "conflict-resolution-quest"
+          },
+          {
+            "type": "checkup",
+            "slug": "handling-religious-conflicts"
+          }
+        ]
+      },
+      {
+        "title": "Usu Integreerimine Igapäevaellu",
+        "description": "Arutage, kuidas integreerida usulisi väärtusi oma igapäevastesse rutiinidesse ja otsuste tegemisse. Uurige ühiseid praktikaid, vaimseid tegevusi ja kuidas religioon võib teie partnerlust ja isiklikku kasvu täiustada.",
+        "content": [
+          {
+            "type": "checkup",
+            "slug": "supportive-communication"
+          },
+          {
+            "type": "question",
+            "slug": "how-can-we-support-each-others-spiritual-growth"
+          },
+          {
+            "type": "game",
+            "slug": "spiritual-journey"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-integrate-your-faith-with-your-personal-hobbies-or-interests"
+          }
+        ]
+      },
+      {
+        "title": "Tulevaste Õnnistuste Plaanimine",
+        "description": "Osalege tähenduslikes vestlustes selle üle, kuidas teie usulised veendumused mõjutavad pereteemalisi ja lastega seotud otsuseid. Arutage, kas näete ette laste kasvatamist teatud usulises traditsioonis ja uurige selle mõju teie ühiselle.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "parenting-style-alignment"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-envision-having-children-in-a-particular-religious-tradition"
+          },
+          {
+            "type": "question",
+            "slug": "what-religious-values-are-most-important-to-you-in-a-relationship"
+          },
+          {
+            "type": "article",
+            "slug": "enhancing-communication-before-parenthood"
+          },
+          {
+            "type": "checkup",
+            "slug": "parenting-playbook-compatibility"
+          },
+          {
+            "type": "exercise",
+            "slug": "parenting-styles-discussion"
+          }
+        ]
+      },
+      {
+        "title": "Ühise Vaimsuse Loomine",
+        "description": "Selles viimases etapis keskenduge sellele, kuidas luua harmooniline segu teie usulistest veendumustest. Uurige praktikaid, mis austavad mõlemaid teie traditsioone, ja arutage, kuidas toetada üksteise vaimset kasvu, tagades täisväärtusliku suhte, mis põhineb vastastikusel austusel ja mõistmisel.",
+        "content": [
+          {
+            "type": "checkup",
+            "slug": "sharing-spiritual-beliefs"
+          },
+          {
+            "type": "question",
+            "slug": "are-there-any-religious-practices-youd-like-to-explore-together"
+          },
+          {
+            "type": "exercise",
+            "slug": "interfaith-understanding-sessions"
+          }
+        ]
+      }
+    ],
+    "slug": "navigating-our-religious-beliefs-together"
+  },
+  {
+    "job": [
+      "rekindling_passion"
+    ],
+    "title": "Kirekki Kireduse",
+    "description": "See teekond on loodud selleks, et aidata teil ja teie partneril taaselustada kirge teie suhtes, kasutades mitmeid sisukaid tegevusi, arutelusid ja lõbusaid harjutusi. Igal päeval uurite erinevaid intiimsuse, suhtlemise ja jagatud kogemuste aspekte, et tugevdada oma sidet ja suurendada romantilist ühendust.",
+    "subtopics": [
+      {
+        "title": "Meie Soovide Uurimine",
+        "description": "Alustage arutlemisega selle üle, mis teile mõlemale teineteises seksikas ja atraktiivne tundub, sealhulgas fantaasiad ja uued ideed. Kasutage kaasahaaravaid küsimusi ja teste, et avastada sügavaid soove.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "desire-reignition-style"
+          },
+          {
+            "type": "question",
+            "slug": "what-do-you-find-especially-sexy-about-me"
+          },
+          {
+            "type": "article",
+            "slug": "enhancing-sexual-communication"
+          },
+          {
+            "type": "game",
+            "slug": "fantasy-feelings"
+          },
+          {
+            "type": "checkup",
+            "slug": "emotional-intimacy-check-in"
+          },
+          {
+            "type": "question",
+            "slug": "whats-something-we-could-do-to-spice-things-up"
+          },
+          {
+            "type": "exercise",
+            "slug": "sexual-bucket-list-creation"
+          }
+        ]
+      },
+      {
+        "title": "Romantiliste Momentide Loomine",
+        "description": "Õppige, kuidas muuta igapäevased hetked eriliseks. See alateema julgustab teid arendama romantilisi žeste ja üksteist üllatama, tuues elevust teie igapäevaellu.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "romantic-gesture-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-can-we-make-everyday-moments-feel-more-special-and-romantic"
+          },
+          {
+            "type": "article",
+            "slug": "crafting-memorable-date-nights"
+          },
+          {
+            "type": "game",
+            "slug": "date-night-planner"
+          },
+          {
+            "type": "checkup",
+            "slug": "quality-time-quality-love"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-new-hobby-we-could-start-together-to-spice-things-up"
+          },
+          {
+            "type": "exercise",
+            "slug": "creating-passion-renewal-date"
+          }
+        ]
+      },
+      {
+        "title": "Asjade Vürtsitamine Koos",
+        "description": "Uurige uusi hobisid või kogemusi, mida saate paarina jagada. Avastage tegevusi, mis võivad taaselustada lõbu ja kirge teie suhtes, võimaldades samal ajal isiklikku kasvu.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "hobby-harmony-style"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-new-hobby-we-can-start-together-to-strengthen-our-bond"
+          },
+          {
+            "type": "article",
+            "slug": "exploring-shared-hobbies-together"
+          },
+          {
+            "type": "game",
+            "slug": "hobby-harmony"
+          },
+          {
+            "type": "checkup",
+            "slug": "growth-through-novelty"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-way-we-can-challenge-each-other-to-grow-while-keeping-the-romance-alive"
+          },
+          {
+            "type": "exercise",
+            "slug": "hobbies-and-interests-exercise"
+          }
+        ]
+      },
+      {
+        "title": "Intiimsus ja Haavatavus",
+        "description": "Süvenege emotsionaalsesse intiimsusesse ja haavatavusse. Harjutate avatud suhtlemist oma emotsionaalsete vajaduste osas, tugevdades sidet, mis toidab kirge.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "emotional-intimacy-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-prefer-to-communicate-your-needs-and-desires"
+          },
+          {
+            "type": "article",
+            "slug": "building-emotional-intimacy-together"
+          },
+          {
+            "type": "game",
+            "slug": "trust-builders"
+          },
+          {
+            "type": "checkup",
+            "slug": "emotional-needs-compatibility"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-fun-way-we-can-explore-each-others-fantasies-together"
+          },
+          {
+            "type": "exercise",
+            "slug": "active-listening-practice"
+          }
+        ]
+      },
+      {
+        "title": "Särtsu Säilitamine",
+        "description": "Arutage strateegiaid, kuidas säilitada sädet isegi igapäevastes hetkedes. Uurige viise, kuidas pidevalt üksteist väljakutsuda ja koos kasvada, hoides romantika esiplaanil.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "growth-balance-style"
+          },
+          {
+            "type": "question",
+            "slug": "what-do-you-think-we-can-do-to-keep-the-spark-alive-in-our-relationship"
+          },
+          {
+            "type": "article",
+            "slug": "boosting-relationship-happiness"
+          },
+          {
+            "type": "game",
+            "slug": "passion-rekindle-quest"
+          },
+          {
+            "type": "checkup",
+            "slug": "fun-and-affection"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-new-hobby-we-can-try-together-that-honors-both-our-interests"
+          },
+          {
+            "type": "exercise",
+            "slug": "flexible-role-playing"
+          }
+        ]
+      },
+      {
+        "title": "Pikaajalised Kirge Plaanid",
+        "description": "Looge teekaart kirge säilitamiseks teie suhtes aja jooksul. Arendage ühiseid eesmärke ja visiooni oma tuleviku jaoks, mis hoiab nii intiimsuse kui ka elevuse elus.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "future-planning-style"
+          },
+          {
+            "type": "question",
+            "slug": "if-you-won-the-lottery-tomorrow-whats-the-first-thing-youd-do"
+          },
+          {
+            "type": "article",
+            "slug": "creating-a-vision-for-us"
+          },
+          {
+            "type": "game",
+            "slug": "future-visionaries"
+          },
+          {
+            "type": "checkup",
+            "slug": "future-talk-together"
+          },
+          {
+            "type": "question",
+            "slug": "whats-your-favorite-memory-of-us-having-a-great-conversation"
+          },
+          {
+            "type": "exercise",
+            "slug": "long-term-goal-planning"
+          }
+        ]
+      }
+    ],
+    "slug": "rekindling-the-passion"
+  },
+  {
+    "job": [
+      "learning_relationship_skills"
+    ],
+    "title": "Suheteoskuste Omandamine",
+    "description": "See teekond on loodud selleks, et aidata sul arendada olulisi suhete oskusi, mis tugevdavad teie sidet, parandavad suhtlemist ja suurendavad teie võimet konflikte tõhusalt lahendada. Iga päeva sisu tugineb eelnevale, suunates teid oskuste arengus, mis on vajalikud tervisliku ja rahuldustpakkuva partnerluse jaoks.",
+    "subtopics": [
+      {
+        "title": "Emotsioonide Mõistmine",
+        "description": "Õpi, kuidas tuvastada ja väljendada oma emotsioone ning mõista oma partneri emotsionaalset vastust. See alusoskus on tõhusaks suhtlemiseks hädavajalik.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "emotion-management-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-handle-your-strong-emotions"
+          },
+          {
+            "type": "article",
+            "slug": "building-emotional-intimacy-together"
+          },
+          {
+            "type": "game",
+            "slug": "emotional-seasons"
+          },
+          {
+            "type": "checkup",
+            "slug": "mood-mapping"
+          },
+          {
+            "type": "exercise",
+            "slug": "emotional-regulation-techniques"
+          }
+        ]
+      },
+      {
+        "title": "Tõhusad Suhtlemistehnikad",
+        "description": "Uuri erinevaid suhtlemisstiile ja -tehnikaid, sealhulgas aktiivset kuulamist ja tagasiside praktikaid, mis soodustavad avatud ja ausat suhtlemist teie suhetes.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "discover-your-communication-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-prefer-to-communicate-your-needs-and-desires"
+          },
+          {
+            "type": "article",
+            "slug": "mastering-communication-techniques"
+          },
+          {
+            "type": "game",
+            "slug": "communication-clues"
+          },
+          {
+            "type": "checkup",
+            "slug": "mastering-our-communication-styles"
+          },
+          {
+            "type": "exercise",
+            "slug": "active-listening-practice"
+          }
+        ]
+      },
+      {
+        "title": "Konflikti Lahendamise Strateegiad",
+        "description": "Sukeldu erinevatesse strateegiatesse konfliktide tervislikuks lahendamiseks. Õpid, kuidas konstruktiivselt lahendada erimeelsusi ja leida win-win lahendusi.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "your-conflict-style"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-metaphor-that-describes-how-we-handle-problems-together"
+          },
+          {
+            "type": "article",
+            "slug": "effective-conflict-resolution-strategies"
+          },
+          {
+            "type": "game",
+            "slug": "conflict-resolution-quest"
+          },
+          {
+            "type": "checkup",
+            "slug": "conflict-resolution-styles"
+          },
+          {
+            "type": "exercise",
+            "slug": "conflict-resolution-strategies-practice"
+          }
+        ]
+      },
+      {
+        "title": "Haavatavuse ja Usalduse Arendamine",
+        "description": "Keskendu usalduse loomisele haavatavuse kaudu. See alateema hõlmab avatud suhtlemise tähtsuse mõistmist ja isiklike tunnete ning kogemuste jagamist.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "vulnerability-style-assessment"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-relationship-skill-you-admire-in-others-and-want-to-develop"
+          },
+          {
+            "type": "article",
+            "slug": "vulnerability-trusts-gateway"
+          },
+          {
+            "type": "game",
+            "slug": "trust-talk"
+          },
+          {
+            "type": "checkup",
+            "slug": "building-a-fortress-of-trust"
+          },
+          {
+            "type": "exercise",
+            "slug": "rebuild-trust-session"
+          }
+        ]
+      },
+      {
+        "title": "Raskete Vestluste Navigeerimine",
+        "description": "Õpi, kuidas alustada ja navigeerida keerulistes vestlustes ilma konflikti eskaleerimata. Harjuta tehnikaid tundlike teemade rahulikuks ja austavaks arutamiseks.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "communication-timing-style"
+          },
+          {
+            "type": "question",
+            "slug": "whats-the-best-advice-youve-ever-received-about-communicating-in-a-relationship"
+          },
+          {
+            "type": "article",
+            "slug": "navigating-difficult-conversations"
+          },
+          {
+            "type": "game",
+            "slug": "communication-carousel"
+          },
+          {
+            "type": "checkup",
+            "slug": "emotions-expressed-freely"
+          },
+          {
+            "type": "exercise",
+            "slug": "nonviolent-communication-practice"
+          }
+        ]
+      },
+      {
+        "title": "Emotsionaalse Intiimsuse Suurendamine",
+        "description": "Käivita oma teekond, uurides viise, kuidas süvendada oma emotsionaalset sidet. See hõlmab praktikaid füüsilise ja emotsionaalse intiimsuse suurendamiseks teie suhetes, tagades, et te kasvate üksteisega lähemale.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "emotional-intimacy-style"
+          },
+          {
+            "type": "question",
+            "slug": "whats-something-youd-like-to-learn-together-to-enhance-our-relationship"
+          },
+          {
+            "type": "article",
+            "slug": "building-emotional-intimacy-together"
+          },
+          {
+            "type": "game",
+            "slug": "intimacy-adventure"
+          },
+          {
+            "type": "checkup",
+            "slug": "emotional-intimacy-check-in"
+          },
+          {
+            "type": "exercise",
+            "slug": "emotional-closeness-exercises"
+          }
+        ]
+      }
+    ],
+    "slug": "learning-relationship-skills"
+  },
+  {
+    "job": [
+      "solving_relationship_problems"
+    ],
+    "title": "Suhete Probleemide Lahendamine ja Navigeerimine",
+    "description": "See teekond on loodud selleks, et aidata sul ja su partneril konflikte tõhusalt navigeerida ja lahendada. Igal päeval osaled tegevustes, küsimustes ja harjutustes, mis arendavad teie suhtlemisoskusi ja probleemide lahendamise võimeid. Selle teekonna lõpuks tunned end paremini varustatuna, et koos väljakutseid lahendada ja leida lahendusi meeskonnana.",
+    "subtopics": [
+      {
+        "title": "Konflikti Tüübid",
+        "description": "Avasta oma individuaalsed konfliktitüübid ja kuidas need mõjutavad teie suhet. Kasuta küsimusi ja refleksiooni, et mõista, kuidas sa tavaliselt erimeelsustes reageerid.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "your-conflict-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-handle-disagreements-or-conflicts"
+          },
+          {
+            "type": "article",
+            "slug": "effective-conflict-resolution-strategies"
+          },
+          {
+            "type": "game",
+            "slug": "conflict-resolution-quest"
+          },
+          {
+            "type": "checkup",
+            "slug": "conflict-resolution-styles"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-handle-disagreements-and-whats-your-favorite-way-for-us-to-make-up-after-a-fight"
+          },
+          {
+            "type": "exercise",
+            "slug": "conflict-resolution-styles"
+          }
+        ]
+      },
+      {
+        "title": "Suhtlemise Alused",
+        "description": "Keskendu oma suhtlemisoskuste parandamisele konfliktide ajal. Uuri tõhusa kuulamise tehnikaid ja selge väljendamise tähtsust harjutuste ja mängude kaudu.",
+        "content": [
+          {
+            "type": "checkup",
+            "slug": "mastering-our-communication-styles"
+          },
+          {
+            "type": "test",
+            "slug": "discover-your-communication-style"
+          },
+          {
+            "type": "article",
+            "slug": "mastering-communication-techniques"
+          },
+          {
+            "type": "game",
+            "slug": "communication-clues"
+          },
+          {
+            "type": "exercise",
+            "slug": "active-listening-practice"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-prefer-to-communicate-your-needs-and-desires"
+          },
+          {
+            "type": "question",
+            "slug": "whats-your-favorite-memory-of-us-having-a-great-conversation"
+          }
+        ]
+      },
+      {
+        "title": "Konstruktiivne Konflikti Lahendamine",
+        "description": "Õpi, kuidas muuta erimeelsused konstruktiivseteks vestlusteks. Osale harjutustes ja artiklites, mis pakuvad strateegiaid konfliktide lahendamiseks ilma nende eskaleerimiseta.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "solution-focused-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-can-we-make-our-disagreements-more-constructive"
+          },
+          {
+            "type": "article",
+            "slug": "mastering-conflict-resolution-together"
+          },
+          {
+            "type": "game",
+            "slug": "problem-solving-escapades"
+          },
+          {
+            "type": "checkup",
+            "slug": "conflict-resolution-wizards"
+          },
+          {
+            "type": "question",
+            "slug": "can-you-recall-a-time-when-you-felt-misunderstood-how-did-you-handle-it"
+          },
+          {
+            "type": "exercise",
+            "slug": "conflict-resolution-strategies-practice"
+          }
+        ]
+      },
+      {
+        "title": "Rahaasjad ja Konflikt",
+        "description": "Uuri, kuidas rahalised arutelud võivad viia konfliktideni ja kuidas neid vestlusi navigeerida. Tööta eelarve stiilide ja rahalise suhtlemise kallal testide ja arutelude kaudu.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "financial-communication-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-feel-about-our-different-spending-habits-and-how-can-we-find-a-middle-ground"
+          },
+          {
+            "type": "article",
+            "slug": "mastering-money-talks-together"
+          },
+          {
+            "type": "game",
+            "slug": "dream-budget-builders"
+          },
+          {
+            "type": "checkup",
+            "slug": "trust-in-financial-transparency"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-have-any-issues-with-budgeting-like-are-you-in-debt-to-somebody-do-you-make-any-useless-spending"
+          },
+          {
+            "type": "exercise",
+            "slug": "budget-planning-session"
+          }
+        ]
+      },
+      {
+        "title": "Turvalise Ruumi Loomine Aruteludeks",
+        "description": "Loo keskkond, kus mõlemad partnerid tunnevad end turvaliselt oma tunnete väljendamisel. Kasuta kontrollimisi ja harjutusi avatud dialoogide soodustamiseks ja alateadlike probleemide käsitlemiseks.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "emotional-safety-style"
+          },
+          {
+            "type": "checkup",
+            "slug": "vulnerability-and-openness"
+          },
+          {
+            "type": "article",
+            "slug": "trust-through-open-communication"
+          },
+          {
+            "type": "game",
+            "slug": "communication-connection"
+          },
+          {
+            "type": "exercise",
+            "slug": "transparent-communication-practices"
+          },
+          {
+            "type": "question",
+            "slug": "are-there-any-habits-or-behaviors-of-mine-that-bother-you"
+          },
+          {
+            "type": "question",
+            "slug": "describe-a-time-when-a-simple-text-message-led-to-a-big-misunderstanding-how-did-you-resolve-it"
+          }
+        ]
+      },
+      {
+        "title": "Konflikti Muutmine Kasvuks",
+        "description": "Muuda oma perspektiivi konfliktide suhtes, õppides, kuidas kasutada neid kasvuvahendina. Reflekteeri varasemate konfliktide üle, kasuta huumorit ja loo isiklikke arenguplaani paarina.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "growth-opportunity-style-assessment"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-past-problem-weve-solved-that-makes-you-proud-of-us"
+          },
+          {
+            "type": "article",
+            "slug": "embracing-differences-positively"
+          },
+          {
+            "type": "game",
+            "slug": "compatibility-conundrum"
+          },
+          {
+            "type": "checkup",
+            "slug": "team-problem-solving"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-relationship-problem-you-think-we-can-solve-with-humor"
+          },
+          {
+            "type": "exercise",
+            "slug": "relationship-journal"
+          }
+        ]
+      }
+    ],
+    "slug": "navigating-and-resolving-relationship-problems"
+  },
+  {
+    "job": [
+      "introducing_healthy_habits"
+    ],
+    "title": "Tervete harjumuste tutvustamine koos",
+    "description": "See teekond on loodud selleks, et aidata paaridel arendada ja säilitada tervislikke harjumusi, mis aitavad kaasa nende üldisele heaolule ja tugevdavad nende suhet. Iga päev astudes ühe sammu, uurite toitumist, heaolu praktikaid ja kuidas üksteist sellel teekonnal toetada, et saavutada tervislikum eluviis.",
+    "subtopics": [
+      {
+        "title": "Toitumise Aluste Mõistmine",
+        "description": "Õppige hea toitumise aluseid, arutades selliseid aspekte nagu vitamiinid ja toitained, toidu valmistamine ja tervislike toitude lisamine oma dieeti. See loob aluse tervislikule eluviisile.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "healthy-eating-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-ensure-youre-getting-enough-vitamins-and-nutrients"
+          },
+          {
+            "type": "article",
+            "slug": "kickstart-healthy-routines-together"
+          },
+          {
+            "type": "game",
+            "slug": "nutri-quiz"
+          },
+          {
+            "type": "exercise",
+            "slug": "healthy-eating-plans"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-prefer-cooking-together-or-trying-out-new-healthy-recipes-separately"
+          }
+        ]
+      },
+      {
+        "title": "Tervislike Rutiinide Loomine",
+        "description": "Uurige viise, kuidas luua igapäevaseid rutiine, mis soodustavad tervislikku toitumist ja liikumist, sealhulgas hommikusi ja õhtuseid rituaale. Arutage järjepidevuse tähtsust ja kuidas see mõjutab teie tervist.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "healthy-habits-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-incorporate-healthy-eating-into-your-busy-schedule"
+          },
+          {
+            "type": "article",
+            "slug": "healthy-habits-for-stronger-bonds"
+          },
+          {
+            "type": "game",
+            "slug": "healthy-habits-hub"
+          },
+          {
+            "type": "exercise",
+            "slug": "positive-habit-tracking"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-enjoy-morning-workouts-or-evening-wind-downs-more"
+          }
+        ]
+      },
+      {
+        "title": "Stressiga Toimetulek Koos",
+        "description": "Määrake tervislikud strateegiad stressi juhtimiseks, sealhulgas teadlikkuse praktikaid ja kuidas üksteist toetada kiiretel aegadel. See alateema käsitleb vaimset heaolu osana tervislikust eluviisist.",
+        "content": [
+          {
+            "type": "checkup",
+            "slug": "mood-mapping"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-handle-stress-in-a-healthy-way"
+          },
+          {
+            "type": "article",
+            "slug": "navigating-emotional-waters-together"
+          },
+          {
+            "type": "game",
+            "slug": "mindfulness-match"
+          },
+          {
+            "type": "exercise",
+            "slug": "mindfulness-meditation-sessions"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-handle-stress-or-unexpected-challenges"
+          }
+        ]
+      },
+      {
+        "title": "Füüsilise Tegevuse Lisamine",
+        "description": "Arutage erinevaid füüsilise tegevuse vorme, mis teile mõlemale meeldivad, meeskonnatöö tähtsust aktiivsena püsimisel ja seadke plaan regulaarsete treeningute jaoks koos, mis aitab teil vastutust võtta.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "accountability-style-quiz"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-prefer-solo-workouts-or-exercising-together"
+          },
+          {
+            "type": "checkup",
+            "slug": "fitness-partners-unite"
+          },
+          {
+            "type": "exercise",
+            "slug": "fitness-routine-together"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-new-form-of-exercise-youd-like-to-do-together-regularly"
+          }
+        ]
+      },
+      {
+        "title": "Eesmärkide ja Edusammude Jälgimine",
+        "description": "Õppige, kuidas seada ja jälgida oma tervise ja heaolu eesmärke ning kuidas üksteise saavutusi tähistada. See loob motivatsiooni ja partnerluse tunnet teie tervisliku eluviisi teekonnal.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "goal-alignment-style"
+          },
+          {
+            "type": "question",
+            "slug": "what-are-your-long-term-health-and-wellness-goals-and-how-can-we-support-each-other"
+          },
+          {
+            "type": "article",
+            "slug": "setting-shared-future-goals"
+          },
+          {
+            "type": "game",
+            "slug": "future-visionaries"
+          },
+          {
+            "type": "exercise",
+            "slug": "smart-goals-planning"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-stay-motivated-to-maintain-your-healthy-habits"
+          }
+        ]
+      },
+      {
+        "title": "Tervislike Harjumuste Loomine Tulevikuks",
+        "description": "Arutage pikaajalisi tervise eesmärke, kuidas lisada tervislikke harjumusi oma ellu paarina ja luua traditsioone, mis soodustavad heaolu, tagades, et tervislike praktikate omaksvõtt muutub eluviisiks.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "growth-balance-style"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-new-habit-youd-like-to-develop-together-for-personal-growth"
+          },
+          {
+            "type": "exercise",
+            "slug": "positive-reinforcement-practices"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-new-healthy-habit-youd-like-to-try-this-month"
+          }
+        ]
+      }
+    ],
+    "slug": "introducing-healthy-habits-together"
+  },
+  {
+    "job": [
+      "improving_communication"
+    ],
+    "title": "Suhtlemise Parandamine: Sildade Ehitus Meie Suhtes",
+    "description": "See teekond keskendub suhtlemisoskuste parandamisele partnerite vahel. Osaledes erinevates tegevustes, aruteludes ja reflektiivsetes praktikates, õpid end avatumalt väljendama ja üksteist paremini mõistma, edendades lähedasemat sidet ja rahuldustpakkuvamat suhet.",
+    "subtopics": [
+      {
+        "title": "Üksteise Suhtlemisstiilide Mõistmine",
+        "description": "Uuri erinevaid suhtlemisstiile ja avasta, kuidas need mõjutavad teie suhtlemist. See hõlmab oma stiili tuvastamist ja partneri eelistuste tundmaõppimist, et luua avatud dialoog.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "discover-your-communication-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-prefer-to-communicate-your-needs-and-desires"
+          },
+          {
+            "type": "article",
+            "slug": "enhancing-communication-for-stronger-bonds"
+          },
+          {
+            "type": "game",
+            "slug": "communication-clues"
+          },
+          {
+            "type": "exercise",
+            "slug": "active-listening-practice"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-feel-about-writing-down-our-issues-before-discussing-them"
+          },
+          {
+            "type": "checkup",
+            "slug": "mastering-our-communication-styles"
+          }
+        ]
+      },
+      {
+        "title": "Raskete Vestluste Navigeerimine",
+        "description": "Õpi tehnikaid, kuidas läheneda keerulistele aruteludele empaatia ja austusega. Sa saad oskusi, et väljendada oma mõtteid ja tundeid, olles samal ajal tähelepanelik partneri vaatepunkti suhtes.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "problem-solving-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-can-we-make-our-disagreements-more-constructive"
+          },
+          {
+            "type": "article",
+            "slug": "navigating-sensitive-conversations"
+          },
+          {
+            "type": "game",
+            "slug": "problem-solving-pals"
+          },
+          {
+            "type": "exercise",
+            "slug": "conflict-resolution-strategies-practice"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-prefer-discussing-issues-immediately-or-taking-some-time-to-cool-off"
+          },
+          {
+            "type": "checkup",
+            "slug": "navigating-tough-conversations"
+          }
+        ]
+      },
+      {
+        "title": "Vajaduste ja Piiride Väljendamine",
+        "description": "See teema käsitleb, kuidas suhelda oma vajadustest ja seada tervislikke piire. Sa harjutad, kuidas väljendada, mida sa üksteiselt vajad, viisil, mis tugevdab teie suhet.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "boundary-setting-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-comfortable-are-you-discussing-your-boundaries-and-desires"
+          },
+          {
+            "type": "article",
+            "slug": "navigating-boundaries-for-intimacy"
+          },
+          {
+            "type": "exercise",
+            "slug": "boundaries-practice"
+          },
+          {
+            "type": "question",
+            "slug": "whats-one-boundary-youd-like-to-set-to-keep-our-relationship-healthy"
+          }
+        ]
+      },
+      {
+        "title": "Aktiivne Kuulamine ja Emotsionaalne Kinnitamine",
+        "description": "Valda aktiivse kuulamise kunsti ja õpi, kuidas kinnitada oma partneri tundeid. Sa avastad tööriistu, et parandada oma kuulamisoskusi ja tagada, et mõlemad partnerid tunnevad end kuulatud ja mõistetuna.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "listening-style-quiz"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-like-to-receive-feedback-in-our-relationship"
+          },
+          {
+            "type": "article",
+            "slug": "mastering-active-listening"
+          },
+          {
+            "type": "checkup",
+            "slug": "emotional-explorers"
+          },
+          {
+            "type": "exercise",
+            "slug": "active-listening-practice"
+          },
+          {
+            "type": "question",
+            "slug": "whats-your-favorite-non-verbal-way-i-show-you-im-listening"
+          }
+        ]
+      },
+      {
+        "title": "Konstruktiivne Konflikti Lahendamine",
+        "description": "Õpi tõhusaid strateegiaid konfliktide lahendamiseks konstruktiivsel viisil. See hõlmab tehnikaid, kuidas käsitleda erimeelsusi ilma suhte kahjustamiseta, edendades meeskonnatööd.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "your-conflict-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-handle-disagreements-or-conflicts"
+          },
+          {
+            "type": "article",
+            "slug": "effective-conflict-resolution-strategies"
+          },
+          {
+            "type": "game",
+            "slug": "conflict-resolution-quest"
+          },
+          {
+            "type": "exercise",
+            "slug": "conflict-resolution-strategies-practice"
+          },
+          {
+            "type": "question",
+            "slug": "whats-one-thing-youd-like-to-change-about-how-we-handle-our-differences"
+          },
+          {
+            "type": "checkup",
+            "slug": "conflict-resolution-styles"
+          }
+        ]
+      },
+      {
+        "title": "Ausate ja Avatud Dialoogide Edendamine",
+        "description": "Kultiveeri avatud ja ausa suhtlemise harjumust oma suhtes. See alateema juhatab sind praktikatesse, mis julgustavad läbipaistvust ja usaldust, sillutades teed sügavamale ühendusele ja intiimsusele.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "honesty-and-openness-style"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-feel-comfortable-expressing-your-true-feelings-with-me-why-or-why-not"
+          },
+          {
+            "type": "article",
+            "slug": "building-trust-through-transparency"
+          },
+          {
+            "type": "game",
+            "slug": "honesty-huddle"
+          },
+          {
+            "type": "checkup",
+            "slug": "the-honesty-hangout"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-think-honesty-is-always-the-best-policy-why-or-why-not"
+          },
+          {
+            "type": "exercise",
+            "slug": "complete-honesty-sessions"
+          }
+        ]
+      }
+    ],
+    "slug": "improving-communication-building-bridges-in-our-relationship"
+  },
+  {
+    "job": [
+      "planning_for_future"
+    ],
+    "title": "Koosoleku Tuleviku Navigeerimine",
+    "description": "See teekond on loodud selleks, et aidata sul ja su partneril tulevikku mõtestatult planeerida ning olulistes eluotsustes navigeerida. Uurite oma suhte erinevaid aspekte, arutate pikaajalisi eesmärke ja tugevdage oma partnerlust kaasahaaravate tegevuste, avatud suhtlemise ja vastastikuse mõistmise kaudu.",
+    "subtopics": [
+      {
+        "title": "Kujutades Meie Tulevikku",
+        "description": "Alustage oma ideaalse tuleviku kujutlemisest koos, arutades unistusi ja eesmärke järgmise viie aasta jooksul. Loote selge visiooni sellest, mida mõlemad elult soovite.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "future-planning-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-envision-our-relationship-evolving-over-the-next-five-years"
+          },
+          {
+            "type": "article",
+            "slug": "creating-a-vision-for-us"
+          },
+          {
+            "type": "game",
+            "slug": "future-visionaries"
+          },
+          {
+            "type": "checkup",
+            "slug": "future-talk-together"
+          },
+          {
+            "type": "exercise",
+            "slug": "long-term-goal-planning"
+          }
+        ]
+      },
+      {
+        "title": "Finantsilised Tulevikud",
+        "description": "Uurige oma finantseesmärke paarina. Arutage eelarvestamist, säästmist ja võimalikke investeeringuid, et tagada turvaline ja mugav eluviis, samal ajal kui joondute oma finantsiliste ambitsioonidega tulevikuplaanides.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "financial-planning-style"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-think-financial-discussions-should-happen-regularly-how-often"
+          },
+          {
+            "type": "article",
+            "slug": "mastering-money-talks-together"
+          },
+          {
+            "type": "game",
+            "slug": "dream-budget-builders"
+          },
+          {
+            "type": "checkup",
+            "slug": "budgeting-together-without-breaking-up"
+          },
+          {
+            "type": "exercise",
+            "slug": "budget-planning-session"
+          }
+        ]
+      },
+      {
+        "title": "Pere Plaani Loomine",
+        "description": "Sukelduge aruteludesse pereplaneerimise ja vanemluse eesmärkide üle. Otsustage, kas soovite lapsi, kui palju, ja mõelge, millist kasvatust te ette kujutate.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "parenting-style-alignment"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-want-to-have-children-if-so-when-do-you-think-is-the-right-time"
+          },
+          {
+            "type": "game",
+            "slug": "parenting-philosophy-play"
+          },
+          {
+            "type": "checkup",
+            "slug": "parenting-pathways"
+          },
+          {
+            "type": "exercise",
+            "slug": "parenting-styles-discussion"
+          },
+          {
+            "type": "question",
+            "slug": "should-we-adopt-if-we-are-unable-to-have-children"
+          }
+        ]
+      },
+      {
+        "title": "Oluliste Eluotsuste Navigeerimine",
+        "description": "Arutage, kuidas te koos oluliste otsustega lähenete. See hõlmab koos elama asumist, karjäärimuutusi ja ootamatuid elu väljakutseid, mis võivad tekkida.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "decision-making-styles"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-feel-about-making-major-life-decisions-together"
+          },
+          {
+            "type": "game",
+            "slug": "problem-solving-pals"
+          },
+          {
+            "type": "checkup",
+            "slug": "resolving-decision-making-conflicts"
+          },
+          {
+            "type": "exercise",
+            "slug": "negotiation-skills-exercises"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-feel-about-relocating-for-career-opportunities-in-the-future"
+          }
+        ]
+      },
+      {
+        "title": "Ühise Soovide Loendi Loomine",
+        "description": "Arendage välja paaride soovide loend, mis peegeldab teie ühiseid unistusi ja seiklusi, mida soovite koos kogeda. Keskenduge reisidele, kogemustele ja traditsioonidele, mida soovite luua.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "goal-alignment-style"
+          },
+          {
+            "type": "question",
+            "slug": "if-we-were-to-create-a-couples-bucket-list-whats-the-first-adventure-youd-add"
+          },
+          {
+            "type": "article",
+            "slug": "adventure-sparks-deeper-bonds"
+          },
+          {
+            "type": "game",
+            "slug": "dream-adventure-quest"
+          },
+          {
+            "type": "exercise",
+            "slug": "fantasy-sharing-session"
+          },
+          {
+            "type": "question",
+            "slug": "if-we-could-teleport-to-any-romantic-destination-right-now-where-would-we-go"
+          }
+        ]
+      },
+      {
+        "title": "Väärtuste ja Traditsioonide Joondamine",
+        "description": "Arutage olulisi väärtusi ja traditsioone, mida soovite paarina ja perena arendada. Sukelduge uskumustesse, eluviisi valikutesse ja pärandisse, mida soovite koos luua.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "values-alignment-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-see-our-religious-beliefs-influencing-our-future-goals"
+          },
+          {
+            "type": "game",
+            "slug": "beliefs-values"
+          },
+          {
+            "type": "checkup",
+            "slug": "core-values-connection"
+          },
+          {
+            "type": "exercise",
+            "slug": "family-values-alignment"
+          },
+          {
+            "type": "question",
+            "slug": "what-values-are-most-important-for-us-to-instill-in-our-children"
+          }
+        ]
+      }
+    ],
+    "slug": "navigating-our-future-together"
+  },
+  {
+    "job": [
+      "overcoming_differences"
+    ],
+    "title": "Kallistame Meie Erinevusi: Teekond Sügavamale Arusaamisele",
+    "description": "See teekond on loodud aitama paaridel navigeerida ja tähistada oma erinevusi, muutes väljakutsed kasvuvõimalusteks. Igal päeval tegelete mõtlemapanevate küsimustega, sisukate artiklite ja teostatavate harjutustega, mis edendavad empaatiat, austust ja koostööd teie suhtes.",
+    "subtopics": [
+      {
+        "title": "Meie Taustade Mõistmine",
+        "description": "Uurige, kuidas meie kultuurilised, usulised ja isiklikud taustad kujundavad meie vaatenurki ja käitumist suhtes. Mõelge küsimustele kultuuriliste erinevuste ja uskumuste kohta, luues aluse tulevasteks vestlusteks.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "cultural-harmony-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-our-different-cultural-backgrounds-shape-our-relationship-and-how-can-we-honor-both"
+          },
+          {
+            "type": "article",
+            "slug": "navigating-religious-conversations-smoothly"
+          },
+          {
+            "type": "game",
+            "slug": "cultural-quest"
+          },
+          {
+            "type": "checkup",
+            "slug": "navigating-cultural-and-religious-differences"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-respect-each-others-religious-beliefs-when-they-differ"
+          },
+          {
+            "type": "exercise",
+            "slug": "cultural-exchange-day"
+          }
+        ]
+      },
+      {
+        "title": "Tõhusad Suhtlemisoskused",
+        "description": "Õppige läbipaistvuse ja aktiivse kuulamise tähtsust arusaamatuste ületamisel. Tegelege harjutuste ja artiklitega, mis parandavad teie suhtlemisstiile ja edendavad avatud dialooge tundlike teemade üle.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "discover-your-communication-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-prefer-to-communicate-your-needs-and-desires"
+          },
+          {
+            "type": "article",
+            "slug": "mastering-communication-techniques"
+          },
+          {
+            "type": "game",
+            "slug": "communication-clues"
+          },
+          {
+            "type": "checkup",
+            "slug": "mastering-our-communication-styles"
+          },
+          {
+            "type": "question",
+            "slug": "whats-your-favorite-memory-of-us-having-a-great-conversation"
+          },
+          {
+            "type": "exercise",
+            "slug": "active-listening-practice"
+          }
+        ]
+      },
+      {
+        "title": "Erinevuste Tähistamine",
+        "description": "Avastage viise, kuidas tähistada ja austada üksteise ainulaadseid tugevusi ja vaatenurki. Interaktiivse sisu kaudu uurige, kuidas erinevused võivad edendada loovust ja rõõmu teie partnerluses.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "growth-through-differences-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-can-we-celebrate-our-unique-strengths-and-compensate-for-our-differences"
+          },
+          {
+            "type": "article",
+            "slug": "embrace-and-celebrate-differences"
+          },
+          {
+            "type": "game",
+            "slug": "hobby-harmony"
+          },
+          {
+            "type": "checkup",
+            "slug": "embracing-our-personality-traits"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-fun-way-to-explore-and-embrace-our-differences-together"
+          },
+          {
+            "type": "exercise",
+            "slug": "difference-identification-and-acceptance"
+          }
+        ]
+      },
+      {
+        "title": "Konfliktide Navigeerimine Austusega",
+        "description": "Arendage oskusi konfliktide positiivseks ja konstruktiivseks haldamiseks. See alateema sisaldab praktilisi tehnikaid erimeelsuste lahendamiseks, austades üksteise vaatenurki ja säilitades usaldust.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "your-conflict-style"
+          },
+          {
+            "type": "question",
+            "slug": "whats-one-thing-youd-like-to-change-about-how-we-handle-our-differences"
+          },
+          {
+            "type": "article",
+            "slug": "mastering-conflict-resolution-together"
+          },
+          {
+            "type": "game",
+            "slug": "conflict-resolution-quest"
+          },
+          {
+            "type": "checkup",
+            "slug": "conflict-resolution-styles"
+          },
+          {
+            "type": "question",
+            "slug": "whats-one-thing-you-admire-about-my-perspective-thats-different-from-yours"
+          },
+          {
+            "type": "exercise",
+            "slug": "conflict-resolution-strategies-practice"
+          }
+        ]
+      },
+      {
+        "title": "Väljakutsete Muutmine Kasvuvõimalusteks",
+        "description": "Muutke oma mõtteviisi, vaadates erinevusi takistustena, et näha neid isikliku ja suhete kasvu võimalustena. Tegelege tegevustega, mis julgustavad koostööd ja ühist probleemide lahendamist.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "flexibility-style-assessment"
+          },
+          {
+            "type": "question",
+            "slug": "how-can-we-turn-our-differences-into-opportunities-for-growth-as-a-couple"
+          },
+          {
+            "type": "article",
+            "slug": "embracing-differences-positively"
+          },
+          {
+            "type": "game",
+            "slug": "problem-solving-escapades"
+          },
+          {
+            "type": "checkup",
+            "slug": "team-problem-solving"
+          },
+          {
+            "type": "question",
+            "slug": "can-boredom-be-helpful"
+          },
+          {
+            "type": "exercise",
+            "slug": "cognitive-restructuring-together"
+          }
+        ]
+      },
+      {
+        "title": "Ühtse Visiooni Loomine",
+        "description": "Konsolideerige, mida olete õppinud, et luua ühine visioon oma tuleviku jaoks. Mõelge oma väärtustele, eesmärkidele ja ambitsioonidele paarina, tagades, et mõlemad partnerid tunnevad end teekonnal nähtuna ja kuulda.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "future-vision-type"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-challenge-weve-overcome-together-that-made-our-relationship-stronger"
+          },
+          {
+            "type": "article",
+            "slug": "aligning-future-goals"
+          },
+          {
+            "type": "game",
+            "slug": "future-visionaries"
+          },
+          {
+            "type": "checkup",
+            "slug": "future-talk-together"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-memorable-moment-where-our-differences-made-our-relationship-stronger"
+          },
+          {
+            "type": "exercise",
+            "slug": "long-term-goal-planning"
+          }
+        ]
+      }
+    ],
+    "slug": "embracing-our-differences-a-journey-to-deeper-understanding"
+  },
+  {
+    "job": [
+      "building_trust"
+    ],
+    "title": "Usaldus Ühiselt",
+    "description": "See teekond on loodud selleks, et aidata sul ja su partneril uurida usalduse olulisi komponente teie suhtes. Mitme päeva jooksul osalete te tähenduslikes aruteludes, tegevustes ja mõtisklustes, mille eesmärk on tugevdada teie usaldust ja emotsionaalset intiimsust.",
+    "subtopics": [
+      {
+        "title": "Usalduse Määratlemine",
+        "description": "Alustage uurimist, mida usaldus teie jaoks tähendab. Arutage oma usalduse määratlusi ja kuidas need kujundavad teie suhet.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "trust-building-style-quiz"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-define-trust-in-a-relationship"
+          },
+          {
+            "type": "article",
+            "slug": "trust-through-open-communication"
+          },
+          {
+            "type": "game",
+            "slug": "trust-fund-trivia"
+          },
+          {
+            "type": "checkup",
+            "slug": "trust-builders"
+          },
+          {
+            "type": "question",
+            "slug": "can-you-share-a-time-when-honesty-led-to-a-positive-outcome-in-our-relationship"
+          },
+          {
+            "type": "exercise",
+            "slug": "trust-fall"
+          }
+        ]
+      },
+      {
+        "title": "Avatud Suhtlemine",
+        "description": "Õppige läbipaistva ja avatud dialooge. Osalege harjutustes ja küsimustes, mis edendavad ausat suhtlemist.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "discover-your-communication-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-prefer-to-communicate-your-needs-and-desires"
+          },
+          {
+            "type": "article",
+            "slug": "enhancing-communication-for-stronger-bonds"
+          },
+          {
+            "type": "game",
+            "slug": "communication-clues"
+          },
+          {
+            "type": "checkup",
+            "slug": "mastering-our-communication-styles"
+          },
+          {
+            "type": "question",
+            "slug": "how-important-is-it-for-you-to-always-be-transparent-with-me-even-about-small-things"
+          },
+          {
+            "type": "exercise",
+            "slug": "active-listening-practice"
+          }
+        ]
+      },
+      {
+        "title": "Kadeduse ja Ebakindluse Käsitlemine",
+        "description": "Tuvastage ja käsitlege kadeduse ja ebakindluse tundeid. Jagage isiklikke kogemusi ja toimetuleku strateegiaid toetavas keskkonnas.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "emotional-regulation-styles"
+          },
+          {
+            "type": "question",
+            "slug": "have-you-ever-felt-jealous-in-our-relationship-how-did-you-handle-it"
+          },
+          {
+            "type": "article",
+            "slug": "navigating-emotional-waters-together"
+          },
+          {
+            "type": "game",
+            "slug": "emotion-explorer"
+          },
+          {
+            "type": "checkup",
+            "slug": "emotional-needs-compatibility"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-handle-feelings-of-jealousy-or-insecurity"
+          },
+          {
+            "type": "exercise",
+            "slug": "jealously-navigation-technique"
+          }
+        ]
+      },
+      {
+        "title": "Piiride Seadmine",
+        "description": "Arutage isiklikke piire ja mõistke üksteise mugavustasemeid. Vastastikuse austuse ja mõistmise loomine on usalduse kehtestamise võti.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "boundary-setting-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-comfortable-are-you-discussing-your-boundaries-and-desires"
+          },
+          {
+            "type": "article",
+            "slug": "navigating-boundaries-for-intimacy"
+          },
+          {
+            "type": "checkup",
+            "slug": "personal-space-balancing-togetherness-and-alone-time"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-boundary-you-need-to-feel-more-secure-and-trusting-in-our-relationship"
+          },
+          {
+            "type": "exercise",
+            "slug": "boundaries-practice"
+          }
+        ]
+      },
+      {
+        "title": "Usalduse Taastamine",
+        "description": "Uurige, kuidas usaldust taastada pärast selle proovilepanekut. Arutage tehnikaid ja kohustusi, mis on vajalikud usalduse taastamiseks üksteise suhtes.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "trust-repair-style-type"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-prefer-to-rebuild-trust-if-its-ever-broken"
+          },
+          {
+            "type": "article",
+            "slug": "rebuilding-trust-after-betrayal"
+          },
+          {
+            "type": "game",
+            "slug": "trust-talk-challenge"
+          },
+          {
+            "type": "checkup",
+            "slug": "trust-in-communication"
+          },
+          {
+            "type": "question",
+            "slug": "have-you-done-something-in-the-past-that-you-think-can-significantly-change-my-image-of-you-and-what-are-the-things-that-can-hypothetically-change-your-image-of-me-maybe-i-did-something-amoral-or-cheated"
+          },
+          {
+            "type": "exercise",
+            "slug": "rebuild-trust-session"
+          }
+        ]
+      },
+      {
+        "title": "Usalduse Loomise Tegevused",
+        "description": "Osalege lõbusates ja interaktiivsetes tegevustes, mis suurendavad usaldust. Osalege harjutustes, mis on loodud selleks, et tuua teid lähemale ja tugevdada teie sidet.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "transparency-style-assessment"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-fun-activity-we-can-do-together-to-strengthen-our-trust"
+          },
+          {
+            "type": "article",
+            "slug": "fun-rituals-to-strengthen-bonds"
+          },
+          {
+            "type": "game",
+            "slug": "trust-trek"
+          },
+          {
+            "type": "checkup",
+            "slug": "trust-in-conflict-resolution"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-trust-building-challenge-youd-like-us-to-try"
+          },
+          {
+            "type": "exercise",
+            "slug": "adventure-challenge"
+          }
+        ]
+      }
+    ],
+    "slug": "building-trust-together"
+  },
+  {
+    "job": [
+      "improving_honesty_and_openness"
+    ],
+    "title": "Aususe ja Avatuse Parandamine",
+    "description": "See teekond on loodud selleks, et aidata sul ja su partneril arendada sügavamat aususe ja avatuse tunnet oma suhtes. Mitme päeva jooksul osaled tegevustes, aruteludes ja harjutustes, mis loovad usaldust ja läbipaistvust, võimaldades teil navigeerida tundlikke teemasid ja tugevdada oma sidet.",
+    "subtopics": [
+      {
+        "title": "Aususe Mõistmine",
+        "description": "Uuri aususe kontsepti suhetes, sealhulgas selle tähtsust ja erinevaid mõõtmeid, mis on seotud aususega oma partneri suhtes. Osale küsimustes, mis kaevavad sügavale sinu praegustesse vaadetesse aususe osas.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "honesty-and-openness-style"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-believe-in-complete-transparency-in-a-relationship-why-or-why-not"
+          },
+          {
+            "type": "article",
+            "slug": "cultivating-honest-conversations"
+          },
+          {
+            "type": "game",
+            "slug": "honesty-hunt"
+          },
+          {
+            "type": "checkup",
+            "slug": "the-honesty-hangout"
+          },
+          {
+            "type": "exercise",
+            "slug": "honesty-commitment-ritual"
+          }
+        ]
+      },
+      {
+        "title": "Aususe Ümber Hirmude Lahendamine",
+        "description": "Tuvasta tavalised hirmud või mured, mis on seotud avatusega teie suhtes. Koos mõelge olukordadele, kus te tundsite, et ei saanud olla ausad, ja arutage, kuidas saate luua avatud suhtlemiseks turvalisema keskkonna.",
+        "content": [
+          {
+            "type": "checkup",
+            "slug": "openness-odyssey"
+          },
+          {
+            "type": "question",
+            "slug": "have-you-ever-felt-you-couldnt-be-completely-honest-with-me-why"
+          },
+          {
+            "type": "article",
+            "slug": "vulnerability-trusts-gateway"
+          },
+          {
+            "type": "exercise",
+            "slug": "truth-telling-exercises"
+          },
+          {
+            "type": "game",
+            "slug": "trust-talk-challenge"
+          },
+          {
+            "type": "question",
+            "slug": "have-you-ever-hidden-something-to-protect-my-feelings-how-did-it-turn-out"
+          }
+        ]
+      },
+      {
+        "title": "Läbipaistvuse Arendamine",
+        "description": "Uuri läbipaistvuse eeliseid suhtes ja kuidas see võib suurendada intiimsust. Osale tegevustes ja aruteludes, mis julgustavad jagama detaile ja mõtteid, mida sa tavaliselt privaatsena hoiad.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "transparency-style-assessment"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-think-its-ever-ok-to-tell-white-lies-in-a-relationship-why-or-why-not"
+          },
+          {
+            "type": "article",
+            "slug": "transparency-builds-strong-bonds"
+          },
+          {
+            "type": "exercise",
+            "slug": "transparency-talks"
+          },
+          {
+            "type": "game",
+            "slug": "transparency-trivia"
+          },
+          {
+            "type": "checkup",
+            "slug": "transparency-tools"
+          }
+        ]
+      },
+      {
+        "title": "Usalduse Loomine Avatuse kaudu",
+        "description": "Avasta strateegiad usalduse arendamiseks, olles avatud oma tunnete, ebakindluste ja soovide osas. Osale harjutustes, mis edendavad jagamist ja haavatavust.",
+        "content": [
+          {
+            "type": "exercise",
+            "slug": "openness-commitment-ritual"
+          },
+          {
+            "type": "question",
+            "slug": "how-can-we-support-each-other-to-be-more-open-and-honest-daily"
+          },
+          {
+            "type": "article",
+            "slug": "building-emotional-intimacy-together"
+          },
+          {
+            "type": "game",
+            "slug": "trust-builders"
+          },
+          {
+            "type": "checkup",
+            "slug": "trusting-truths"
+          },
+          {
+            "type": "question",
+            "slug": "can-you-share-a-time-when-honesty-led-to-a-positive-outcome-in-our-relationship"
+          }
+        ]
+      },
+      {
+        "title": "Raskete Vestluste Navigeerimine",
+        "description": "Uuri tehnikaid, kuidas käsitleda keerulisi teemasid aususe ja avatuse kaudu. Harjuta tõhusate suhtlemisstrateegiate kasutamist, et väljendada oma mõtteid ja tundeid, püüdes lahendada konflikte konstruktiivselt.",
+        "content": [
+          {
+            "type": "checkup",
+            "slug": "conflict-to-connection"
+          },
+          {
+            "type": "test",
+            "slug": "your-conflict-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-handle-situations-where-being-honest-might-hurt-someone"
+          },
+          {
+            "type": "article",
+            "slug": "navigating-difficult-conversations"
+          },
+          {
+            "type": "game",
+            "slug": "dialogue-duel"
+          },
+          {
+            "type": "exercise",
+            "slug": "conflict-resolution-strategies-practice"
+          }
+        ]
+      },
+      {
+        "title": "Aususe Suhte Loomine",
+        "description": "Arendage ühist kokkulepet aususe praktikate osas oma suhtes. Arutage piire ja kavatsusi avatuse kultuuri säilitamiseks, tagades, et mõlemad partnerid tunnevad end turvaliselt enda väljendamisel.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "trust-building-style-quiz"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-boundary-you-need-to-feel-safe-being-honest-with-me"
+          },
+          {
+            "type": "article",
+            "slug": "building-trust-through-transparency"
+          },
+          {
+            "type": "game",
+            "slug": "trust-sparks"
+          },
+          {
+            "type": "exercise",
+            "slug": "boundaries-practice"
+          },
+          {
+            "type": "checkup",
+            "slug": "trust-builders"
+          }
+        ]
+      }
+    ],
+    "slug": "improving-honesty-and-openness"
+  },
+  {
+    "job": [
+      "enhancing_love_and_affection"
+    ],
+    "title": "Armastuse ja Kiindumuse Tugevdamine",
+    "description": "See teekond on loodud aitama paaridel arendada sügavamat armastust ja kiindumust oma suhtes tähenduslike arutelude, mänguliste tegevuste ja läbimõeldud praktikate kaudu. Igal päeval uurite erinevaid armastuse ja kiindumuse aspekte, alates oma armastuse väljendamise mõistmisest kuni intiimsete hetkede loomisega, mis tugevdavad teie sidet.",
+    "subtopics": [
+      {
+        "title": "Armastuse Keelte Mõistmine",
+        "description": "Tutvuge armastuse keelte kontseptsiooniga ja avastage, kuidas teie ja teie partner väljendavad ja saavad armastust. See teadmine loob aluse teie emotsionaalse sideme tugevdamiseks.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "love-language-type"
+          },
+          {
+            "type": "question",
+            "slug": "what-is-your-love-language"
+          },
+          {
+            "type": "article",
+            "slug": "decoding-love-languages"
+          },
+          {
+            "type": "game",
+            "slug": "love-languages-quiz"
+          },
+          {
+            "type": "checkup",
+            "slug": "emotional-needs-compatibility"
+          },
+          {
+            "type": "question",
+            "slug": "whats-your-favorite-way-to-express-love-and-how-does-it-differ-from-mine"
+          },
+          {
+            "type": "exercise",
+            "slug": "find-out-your-love-language"
+          }
+        ]
+      },
+      {
+        "title": "Igapäevased Kiindumuse Väljendused",
+        "description": "Uurige lihtsaid, kuid võimsaid viise kiindumuse väljendamiseks igapäevaselt. See alateema hõlmab väikeste žestide, armastuskirjade ja komplimentide arutamist, mis võivad teineteise päeva brighten.",
+        "content": [
+          {
+            "type": "exercise",
+            "slug": "compliment-exchange"
+          },
+          {
+            "type": "question",
+            "slug": "how-can-we-better-express-our-appreciation-for-each-other-daily"
+          },
+          {
+            "type": "article",
+            "slug": "enhance-affection-daily"
+          },
+          {
+            "type": "game",
+            "slug": "affectionate-habits"
+          },
+          {
+            "type": "checkup",
+            "slug": "acts-of-kindness-and-appreciation"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-small-gesture-that-always-makes-you-smile"
+          }
+        ]
+      },
+      {
+        "title": "Intiimsete Momentide Loomine",
+        "description": "Avastage, kuidas luua ja integreerida intiimseid hetki oma igapäevaellu. See hõlmab üllatuskohtingute planeerimist, spontaanset kallistamist ja sügava ühenduse hetki.",
+        "content": [
+          {
+            "type": "checkup",
+            "slug": "emotional-intimacy-check-in"
+          },
+          {
+            "type": "test",
+            "slug": "sensory-intimacy-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-feel-about-trying-new-activities-together-to-build-intimacy"
+          },
+          {
+            "type": "article",
+            "slug": "building-emotional-intimacy-together"
+          },
+          {
+            "type": "game",
+            "slug": "intimacy-insights"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-feel-about-surprise-date-nights-whats-your-ideal-surprise"
+          },
+          {
+            "type": "exercise",
+            "slug": "creating-passion-renewal-date"
+          }
+        ]
+      },
+      {
+        "title": "Tänulikkuse ja Hindamise Arendamine",
+        "description": "Sukelduge tänulikkuse väljendamise tähtsusesse oma suhtes. Arutage, kuidas hindamine võib tugevdada armastust ja kiindumust, ning õppige konkreetseid praktikaid teineteise tunnustamiseks.",
+        "content": [
+          {
+            "type": "exercise",
+            "slug": "expressing-gratitude-session"
+          },
+          {
+            "type": "question",
+            "slug": "how-can-we-better-express-our-appreciation-for-each-other"
+          },
+          {
+            "type": "article",
+            "slug": "mastering-communication-techniques"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-like-to-express-appreciation-in-our-conversations"
+          }
+        ]
+      },
+      {
+        "title": "Mängulisus ja Huumor Kiindumuses",
+        "description": "Uurige, kuidas huumor ja mängulisus võivad intiimsust tugevdada. See alateema julgustab leidma viise koos naermiseks ja mänguliste tegevuste tegemiseks, mis tugevdavad teie sidet.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "playfulness-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-feel-about-incorporating-humor-into-our-intimate-moments"
+          },
+          {
+            "type": "article",
+            "slug": "fun-rituals-to-strengthen-bonds"
+          },
+          {
+            "type": "game",
+            "slug": "laugh-learn-quiz"
+          },
+          {
+            "type": "checkup",
+            "slug": "fun-flirtation"
+          },
+          {
+            "type": "question",
+            "slug": "how-can-we-incorporate-more-playfulness-into-our-relationship"
+          },
+          {
+            "type": "exercise",
+            "slug": "karaoke-session"
+          }
+        ]
+      },
+      {
+        "title": "Füüsiline Kiindumus ja Puudutus",
+        "description": "Uurige füüsilise puudutuse rolli sügava kiindumuse edendamisel. Arutage eelistusi suudlusteks, kallistusteks, embusteks ja muude füüsilise kiindumuse vormide üle, mis tugevdavad teie ühendust.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "physical-touch-style"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-prefer-cuddling-on-the-couch-or-a-romantic-dinner-to-feel-loved"
+          },
+          {
+            "type": "article",
+            "slug": "enhancing-physical-intimacy-mindfully"
+          },
+          {
+            "type": "game",
+            "slug": "bedroom-preferences"
+          },
+          {
+            "type": "checkup",
+            "slug": "physical-comfort-and-boundaries"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-prefer-morning-hugs-or-goodnight-kisses"
+          },
+          {
+            "type": "exercise",
+            "slug": "affectionate-gestures-practice"
+          }
+        ]
+      }
+    ],
+    "slug": "enhancing-love-and-affection"
+  },
+  {
+    "job": [
+      "having_and_discussing_sex"
+    ],
+    "title": "Navigeerimine Meie Intiimses Maailmas",
+    "description": "See teekond keskendub teie arusaamise ja arutelude parandamisele seksi osas teie suhtes. Uurite piire, soove ja suhtlemisstiile, et arendada rahuldavat ja avatud seksuaalset sidet oma partneriga. Igal päeval osalete erinevates tegevustes, mis on loodud intiimsuse ja arusaamise edendamiseks.",
+    "subtopics": [
+      {
+        "title": "Soovide ja Piiride Mõistmine",
+        "description": "Alustage oma isiklike soovide ja piiride arutamisest. See alusaste loob usaldust ja seab aluse avatud vestlustele intiimsuse teemal. Avastage tööriistu, et väljendada, mida vajate ja millega olete mugav.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "discover-your-communication-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-comfortable-are-you-discussing-your-boundaries-and-desires"
+          },
+          {
+            "type": "article",
+            "slug": "trust-through-open-communication"
+          },
+          {
+            "type": "game",
+            "slug": "communication-clues"
+          },
+          {
+            "type": "checkup",
+            "slug": "mastering-our-communication-styles"
+          },
+          {
+            "type": "question",
+            "slug": "are-there-any-boundaries-youd-like-to-discuss-regarding-our-physical-relationship"
+          },
+          {
+            "type": "exercise",
+            "slug": "boundaries-practice"
+          }
+        ]
+      },
+      {
+        "title": "Seksuaalfantaasiate ja Eksperimentide Uurimine",
+        "description": "Nüüd, kui olete loonud turvalise ruumi, sukelduge fantaasiate jagamisse ja arutage uusi kogemusi, mida soovite koos proovida. Uurige, kuidas neid elemente oma intiimsesse ellu tuua.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "fantasy-sharing-style"
+          },
+          {
+            "type": "question",
+            "slug": "are-there-any-fantasies-or-desires-youd-like-to-share"
+          },
+          {
+            "type": "article",
+            "slug": "building-emotional-intimacy-together"
+          },
+          {
+            "type": "game",
+            "slug": "intimacy-insights"
+          },
+          {
+            "type": "checkup",
+            "slug": "maintaining-sexual-satisfaction-over-time"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-fun-way-we-can-explore-each-others-fantasies-together"
+          },
+          {
+            "type": "exercise",
+            "slug": "fantasy-sharing-session"
+          }
+        ]
+      },
+      {
+        "title": "Avatud Suhtlemine Intiimsuse Kohta",
+        "description": "Arendage oma suhtlemisoskusi seksi osas, tagades, et mõlemad väljendate vajadusi, eelistusi ja muresid. See alateema sisaldab harjutusi, mis aitavad parandada läbipaistvust ja sidet.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "sexual-communication-style"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-find-it-easy-to-say-everything-you-want-during-sex"
+          },
+          {
+            "type": "article",
+            "slug": "enhancing-sexual-communication"
+          },
+          {
+            "type": "game",
+            "slug": "communication-carousel"
+          },
+          {
+            "type": "checkup",
+            "slug": "mastering-communication"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-feel-about-discussing-intimacy-outside-of-the-bedroom"
+          },
+          {
+            "type": "exercise",
+            "slug": "talking-about-sex-practice"
+          }
+        ]
+      },
+      {
+        "title": "Füüsilise Intiimsuse Suurendamine",
+        "description": "Uurige erinevaid füüsilise afektsiooni ja intiimsuse vorme. Arutage, mis teeb teid ühendatuks ja rahuldatuks, ning proovige uusi tegevusi, mis võivad teie sidet tugevdada ja intiimsust suurendada.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "sensory-intimacy-style"
+          },
+          {
+            "type": "question",
+            "slug": "whats-your-favorite-way-to-be-touched"
+          },
+          {
+            "type": "article",
+            "slug": "building-emotional-intimacy-together"
+          },
+          {
+            "type": "game",
+            "slug": "satisfaction-safari"
+          },
+          {
+            "type": "checkup",
+            "slug": "maintaining-sexual-satisfaction-over-time"
+          },
+          {
+            "type": "question",
+            "slug": "what-parts-of-your-body-you-want-your-partner-to-focus-more-how-does-it-make-you-feel"
+          },
+          {
+            "type": "exercise",
+            "slug": "sensual-exploration-night"
+          }
+        ]
+      },
+      {
+        "title": "Väljakutsete ja Muutuste Navigeerimine Seksielus",
+        "description": "Käsitlege võimalikke takistusi oma seksielus, nagu erinevad libiidod või emotsionaalsed barjäärid. Õppige strateegiaid nende väljakutsete navigeerimiseks, säilitades toetava dialooge, et tugevdada oma suhet.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "sexual-harmony-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-high-is-your-sex-drive"
+          },
+          {
+            "type": "article",
+            "slug": "mastering-conflict-resolution-together"
+          },
+          {
+            "type": "game",
+            "slug": "problem-solving-partners"
+          },
+          {
+            "type": "checkup",
+            "slug": "aligning-sexual-values-and-expectations"
+          },
+          {
+            "type": "question",
+            "slug": "how-has-your-sexual-expectations-changed-since-weve-started-dating"
+          },
+          {
+            "type": "exercise",
+            "slug": "conflict-resolution-strategies-practice"
+          }
+        ]
+      },
+      {
+        "title": "Teie Seksuaalse Sideme Tähistamine",
+        "description": "Peegeldage oma teekonda koos ja tähistage verstaposte oma seksuaalses suhtes. Arutage viise, kuidas austada oma intiimsust ja hoida elevust elavana, tagades, et mõlemad partnerid tunnevad end väärtustatuna ja hinnatuna.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "love-language-type"
+          },
+          {
+            "type": "question",
+            "slug": "whats-the-best-thing-about-our-sex-life"
+          },
+          {
+            "type": "article",
+            "slug": "fun-rituals-to-strengthen-bonds"
+          },
+          {
+            "type": "game",
+            "slug": "date-night-planner"
+          },
+          {
+            "type": "exercise",
+            "slug": "shared-mood-boards"
+          },
+          {
+            "type": "question",
+            "slug": "whats-one-thing-you-love-about-our-physical-connection"
+          }
+        ]
+      }
+    ],
+    "slug": "navigating-our-intimate-world"
+  },
+  {
+    "job": [
+      "exploring_feelings"
+    ],
+    "title": "Navigeerimine Meie Emotsionaalsetes Maastikes",
+    "description": "See teekond on loodud selleks, et aidata sul ja su partneril uurida ja mõista oma tundeid sügavamal tasandil. Erinevate sisutüüpidega tegeledes avastate oma emotsionaalsed mustrid, suhtlete tõhusalt oma tunnete osas ja loote tugevama emotsionaalse sideme. Iga päev toob uusi teadmisi ja väljakutseid, mis soodustavad emotsionaalset intiimsust teie suhtes.",
+    "subtopics": [
+      {
+        "title": "Meie Tunnete Mõistmine",
+        "description": "Alustage oma teekonda, uurides põhietunde ja kuidas need teie elus avalduvad. Küsimuste ja artiklite kaudu saavutage selgus oma tunnete ja nende käsitlemise meetodite osas.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "emotional-awareness-type"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-think-that-you-feel-emotions-stronger-or-weaker-than-other-people"
+          },
+          {
+            "type": "article",
+            "slug": "building-emotional-intimacy-together"
+          },
+          {
+            "type": "game",
+            "slug": "emotional-seasons"
+          },
+          {
+            "type": "checkup",
+            "slug": "emotional-rollercoaster-ride"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-handle-your-strong-emotions"
+          },
+          {
+            "type": "exercise",
+            "slug": "emotional-regulation-techniques"
+          }
+        ]
+      },
+      {
+        "title": "Tunnete Tõhus Väljendamine",
+        "description": "Õppige, kuidas oma emotsioone üksteisele turvalises ja toetavas keskkonnas edastada. Osalege harjutustes, mis soodustavad avatud dialooge teie tunnete üle ilma hirmuta hinnangute ees.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "communication-style-type"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-prefer-to-receive-support-when-youre-feeling-low"
+          },
+          {
+            "type": "article",
+            "slug": "mastering-communication-techniques"
+          },
+          {
+            "type": "game",
+            "slug": "communication-clues"
+          },
+          {
+            "type": "checkup",
+            "slug": "mastering-our-communication-styles"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-feel-comfortable-expressing-your-true-feelings-with-me-why-or-why-not"
+          },
+          {
+            "type": "exercise",
+            "slug": "transparent-communication-practices"
+          }
+        ]
+      },
+      {
+        "title": "Sügav Sukeldumine Haavatavusse",
+        "description": "Avastage haavatavuse jõud suhetes. Uurige küsimusi ja tegevusi, mis julgustavad jagama oma kõige sügavamate hirmude ja soovide jagamist ning arutage, kuidas haavatavus võib intiimsust suurendada.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "vulnerability-comfort-type"
+          },
+          {
+            "type": "question",
+            "slug": "can-you-describe-a-moment-where-you-felt-most-connected-during-our-sex-and-what-made-it-special-for-you"
+          },
+          {
+            "type": "article",
+            "slug": "vulnerability-trusts-gateway"
+          },
+          {
+            "type": "game",
+            "slug": "feelings-explorer"
+          },
+          {
+            "type": "checkup",
+            "slug": "vulnerability-and-openness"
+          },
+          {
+            "type": "question",
+            "slug": "how-comfortable-are-you-sharing-your-true-feelings-with-me-on-a-scale-of-1-10"
+          },
+          {
+            "type": "exercise",
+            "slug": "vulnerability-exploration-session"
+          }
+        ]
+      },
+      {
+        "title": "Raskete Tunnete Koos Navigeerimine",
+        "description": "Tuvastage ja käsitlege keerulisi tundeid, nagu armukadedus, ebakindlus või kurbus. Osalege testides ja kontrollides, mis on loodud selleks, et aidata teil mõista, kuidas üksteist toetada keerulistel emotsionaalsetel aegadel.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "emotion-management-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-handle-feelings-of-jealousy-or-insecurity"
+          },
+          {
+            "type": "article",
+            "slug": "navigating-emotional-waters-together"
+          },
+          {
+            "type": "game",
+            "slug": "emotional-ride"
+          },
+          {
+            "type": "checkup",
+            "slug": "emotional-rollercoaster-ride"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-handle-feelings-of-stress-or-anxiety"
+          },
+          {
+            "type": "exercise",
+            "slug": "confidentiality-agreements"
+          }
+        ]
+      },
+      {
+        "title": "Emotsionaalse Turvalisuse Loomine",
+        "description": "Looge keskkond, kus mõlemad partnerid tunnevad end turvaliselt oma tunnete väljendamisel ja uurimisel. Mõistke emotsionaalse turvalisuse tähtsust teie sideme süvendamisel ja õppige praktilisi strateegiaid selle loomiseks.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "emotional-safety-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-feel-about-our-current-level-of-intimacy-and-affection"
+          },
+          {
+            "type": "article",
+            "slug": "trust-through-open-communication"
+          },
+          {
+            "type": "game",
+            "slug": "trust-builders"
+          },
+          {
+            "type": "checkup",
+            "slug": "emotional-intimacy-check-in"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-feel-we-handle-each-others-vulnerabilities"
+          },
+          {
+            "type": "exercise",
+            "slug": "feelings-validation-practices"
+          }
+        ]
+      },
+      {
+        "title": "Emotsionaalse Intiimsuse Arendamine",
+        "description": "Lõpetage oma teekond, rakendades strateegiaid, mis suurendavad emotsionaalset intiimsust teie suhtes. Osalege mängudes ja harjutustes, mis tugevdavad teie emotsionaalseid sidemeid, muutes teie ühenduse sügavamaks ja vastupidavamaks.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "emotional-intimacy-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-feel-about-sharing-your-deepest-desires-with-each-other"
+          },
+          {
+            "type": "article",
+            "slug": "building-emotional-intelligence-together"
+          },
+          {
+            "type": "game",
+            "slug": "emotion-explorer"
+          },
+          {
+            "type": "checkup",
+            "slug": "emotional-needs-compatibility"
+          },
+          {
+            "type": "question",
+            "slug": "how-can-we-better-express-our-needs-without-feeling-vulnerable"
+          },
+          {
+            "type": "exercise",
+            "slug": "emotional-expression-sessions"
+          }
+        ]
+      }
+    ],
+    "slug": "navigating-our-emotional-landscapes"
+  },
+  {
+    "job": [
+      "getting_to_know_partner"
+    ],
+    "title": "Üksteise Tunnetamine: Avastusretk",
+    "description": "Alustage transformatiivset teekonda, et sügavalt mõista ja ühenduda oma partneriga. See teekond koosneb hoolikalt kavandatud igapäevastest tegevustest, sealhulgas küsimustest, harjutustest, artiklitest ja mängudest, mis edendavad intiimsust, parandavad suhtlemist ja avavad isiklikke teadmisi. Mitme päeva jooksul uurite oma sarnasusi, erinevusi ja ainulaadseid omadusi, mis teid mõlemat isikuna määratlevad.",
+    "subtopics": [
+      {
+        "title": "Taustade ja Omaduste Avamine",
+        "description": "Alustage üksteise taustade, isiksuste ja väärtuste mõistmisest. Tehke koostööd küsimustega lapsepõlve mälestuste, varjatud talentide ja isiklike eelistuste kohta, et luua usalduse ja avatud suhtlemise alus.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "life-story-style"
+          },
+          {
+            "type": "question",
+            "slug": "can-you-share-a-memory-from-your-childhood-that-you-think-has-shaped-who-you-are-today"
+          },
+          {
+            "type": "article",
+            "slug": "love-maps-knowing-each-other-deeply"
+          },
+          {
+            "type": "game",
+            "slug": "memory-lane"
+          },
+          {
+            "type": "checkup",
+            "slug": "exploring-childhood-memories"
+          },
+          {
+            "type": "exercise",
+            "slug": "difference-identification-and-acceptance"
+          },
+          {
+            "type": "question",
+            "slug": "whats-your-favorite-childhood-memory"
+          }
+        ]
+      },
+      {
+        "title": "Huvide ja Hobide Uurimine",
+        "description": "Avastage ühiselt jagatud kirgi ja individuaalseid hobisid. Osalege aruteludes ja tegevustes, mis aitavad teil õppida üksteise huvide, lemmiktegevuste ja ainulaadsete omaduste kohta, mida igaühel on suhetes.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "hobby-harmony-style"
+          },
+          {
+            "type": "game",
+            "slug": "hobby-harmony"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-hobby-that-makes-you-feel-alive"
+          },
+          {
+            "type": "article",
+            "slug": "exploring-shared-hobbies-together"
+          },
+          {
+            "type": "exercise",
+            "slug": "hobbies-and-interests-exercise"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-new-hobby-we-could-start-together-to-spice-things-up"
+          }
+        ]
+      },
+      {
+        "title": "Suhtlemisstiilide Mõistmine",
+        "description": "Õppige, kuidas oma vajadusi ja soove tõhusalt edastada. Osalege harjutustes ja mängudes, mis edendavad aktiivset kuulamist ja parandavad teie võimet väljendada emotsioone ja ootusi.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "discover-your-communication-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-prefer-to-communicate-your-needs-and-desires"
+          },
+          {
+            "type": "article",
+            "slug": "mastering-communication-techniques"
+          },
+          {
+            "type": "game",
+            "slug": "communication-clues"
+          },
+          {
+            "type": "checkup",
+            "slug": "mastering-our-communication-styles"
+          },
+          {
+            "type": "exercise",
+            "slug": "active-listening-practice"
+          },
+          {
+            "type": "question",
+            "slug": "whats-your-favorite-memory-of-us-having-a-great-conversation"
+          }
+        ]
+      },
+      {
+        "title": "Armastuse Keelte Tuvastamine",
+        "description": "Sukelduge ainulaadsetesse viisidesse, kuidas te üksteisele armastust annate ja vastu võtate. Uurige oma armastuse keeli küsimuste ja reflektiivsete harjutuste kaudu, et saada teadmisi, kuidas paremini väljendada kiindumust viisil, mis resoneerib teie partneriga.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "love-language-type"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-believe-in-love-languages-if-so-which-one-are-you"
+          },
+          {
+            "type": "article",
+            "slug": "decoding-love-languages"
+          },
+          {
+            "type": "game",
+            "slug": "love-languages-exploration"
+          },
+          {
+            "type": "checkup",
+            "slug": "emotional-needs-compatibility"
+          },
+          {
+            "type": "exercise",
+            "slug": "find-out-your-love-language"
+          },
+          {
+            "type": "question",
+            "slug": "what-is-your-love-language"
+          }
+        ]
+      },
+      {
+        "title": "Enesepeegeldus ja Eesmärkide Seadmine",
+        "description": "Julgustage isiklikku jagamist oma ambitsioonide ja unistuste osas. Kasutage juhendatud tegevusi, et mõelda isiklikele eesmärkidele ja sellele, kuidas need seonduvad teie suhtega, edendades vastastikust toetust üksteise teekondades.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "goal-alignment-style"
+          },
+          {
+            "type": "question",
+            "slug": "what-are-your-dreams-and-aspirations-outside-of-work"
+          },
+          {
+            "type": "article",
+            "slug": "setting-shared-future-goals"
+          },
+          {
+            "type": "game",
+            "slug": "future-visionaries"
+          },
+          {
+            "type": "checkup",
+            "slug": "future-plans-alignment"
+          },
+          {
+            "type": "exercise",
+            "slug": "long-term-goal-planning"
+          },
+          {
+            "type": "question",
+            "slug": "what-personal-goals-do-you-have-that-i-might-not-be-aware-of"
+          }
+        ]
+      },
+      {
+        "title": "Emotsionaalse Intiimsuse Arendamine",
+        "description": "Süvendage oma emotsionaalset sidet haavatavuse harjutuste ja ausate vestluste kaudu. Osalege tegevustes ja aruteludes, mis edendavad tunnete, soovide ja hirmude jagamist turvalises keskkonnas, suurendades teie intiimsust ja usaldust.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "emotional-intimacy-style"
+          },
+          {
+            "type": "question",
+            "slug": "whats-something-that-always-makes-you-feel-loved"
+          },
+          {
+            "type": "article",
+            "slug": "building-emotional-intimacy-together"
+          },
+          {
+            "type": "game",
+            "slug": "intimacy-insights"
+          },
+          {
+            "type": "checkup",
+            "slug": "emotional-intimacy-check-in"
+          },
+          {
+            "type": "exercise",
+            "slug": "emotional-closeness-exercises"
+          },
+          {
+            "type": "question",
+            "slug": "what-little-gestures-make-you-feel-most-loved-and-appreciated"
+          }
+        ]
+      }
+    ],
+    "slug": "getting-to-know-each-other-a-journey-of-discovery"
+  },
+  {
+    "job": [
+      "discussing_finances"
+    ],
+    "title": "Räägime Meie Finantse: Koos Tugevama Tuleviku Loomine",
+    "description": "See teekond on loodud selleks, et aidata sul ja su partneril pidada tähendusrikkaid vestlusi finantside üle, luua vastastikune arusaam ja arendada koostööl põhinevat lähenemist finantseesmärkidele. Liikudes läbi erinevate alateemade, õpite, kuidas tõhusalt suhelda, seada finantseesmärke ja kohandada oma kulutamisharjumusi, et luua helgem ühine tulevik.",
+    "subtopics": [
+      {
+        "title": "Meie Finantsväärtuste Mõistmine",
+        "description": "Uurige üksteise finantsusku ja -väärtusi, et luua tugev alus teie finantsvestlustele. See alateema sisaldab küsimusi teie finantsmudeleid ja seda, mida te rahaliselt prioriseerite.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "financial-communication-style"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-have-a-financial-role-model-who-and-why"
+          },
+          {
+            "type": "article",
+            "slug": "mastering-money-talks-together"
+          },
+          {
+            "type": "game",
+            "slug": "dream-budget-builders"
+          },
+          {
+            "type": "checkup",
+            "slug": "aligning-financial-values-and-goals"
+          },
+          {
+            "type": "exercise",
+            "slug": "financial-planning-session"
+          },
+          {
+            "type": "question",
+            "slug": "whats-one-financial-habit-you-admire-in-others"
+          }
+        ]
+      },
+      {
+        "title": "Finantseesmärkide Koostamine",
+        "description": "Arutage finantseesmärkide tähtsust paarina. See alateema juhendab teid lühiajaliste ja pikaajaliste finantseesmärkide seadmisel ning mõistmisel, kuidas neid koos saavutada.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "budgeting-style-for-couples"
+          },
+          {
+            "type": "question",
+            "slug": "what-are-your-financial-goals-and-how-can-we-achieve-them-together"
+          },
+          {
+            "type": "article",
+            "slug": "aligning-financial-goals-harmoniously"
+          },
+          {
+            "type": "game",
+            "slug": "future-visionaries"
+          },
+          {
+            "type": "checkup",
+            "slug": "future-financial-adventures"
+          },
+          {
+            "type": "exercise",
+            "slug": "budget-planning-session"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-new-financial-goal-youd-like-to-set-together"
+          }
+        ]
+      },
+      {
+        "title": "Rahaasjade Suhtlemine",
+        "description": "Õppige tõhusaid suhtlemisstrateegiaid finantside arutamiseks. See alateema tutvustab tööriistu, nagu eelarve rakendused ja regulaarsete kontrollide seadmine, et aidata neid vestlusi hõlbustada.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "discover-your-communication-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-feel-about-budgeting-apps-yay-or-nay"
+          },
+          {
+            "type": "article",
+            "slug": "mastering-communication-techniques"
+          },
+          {
+            "type": "game",
+            "slug": "communication-champions"
+          },
+          {
+            "type": "checkup",
+            "slug": "mastering-our-communication-styles"
+          },
+          {
+            "type": "exercise",
+            "slug": "transparency-talks"
+          },
+          {
+            "type": "question",
+            "slug": "what-smartphone-app-do-you-mostly-use"
+          }
+        ]
+      },
+      {
+        "title": "Kulutamise ja Säästmise Tasakaalustamine",
+        "description": "Sukelduge vestlustesse oma erinevate kulutamisharjumuste üle ja kuidas leida ühist keelt. See alateema julgustab teid prioriseerima oma finantseesmärke oma eluviisi valikute seas.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "your-spending-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-feel-about-our-different-spending-habits-and-how-can-we-find-a-middle-ground"
+          },
+          {
+            "type": "article",
+            "slug": "building-trust-through-financial-transparency"
+          },
+          {
+            "type": "game",
+            "slug": "budget-battle-royale"
+          },
+          {
+            "type": "checkup",
+            "slug": "budgeting-together-without-breaking-up"
+          },
+          {
+            "type": "exercise",
+            "slug": "spending-habits-review"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-prefer-saving-money-in-a-bank-or-investing-it-elsewhere"
+          }
+        ]
+      },
+      {
+        "title": "Finantsprobleemide Kooslahendamine",
+        "description": "Arutage oma strateegiaid finantsstressi ja ootamatute kulude haldamiseks. See alateema aitab teil välja töötada plaani, et toetada üksteist finantsraskuste ajal.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "debt-management-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-handle-financial-stress-together"
+          },
+          {
+            "type": "game",
+            "slug": "debt-decision-duel"
+          },
+          {
+            "type": "checkup",
+            "slug": "tackling-debt-together"
+          },
+          {
+            "type": "exercise",
+            "slug": "debt-management-planning"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-handle-unexpected-expenses"
+          }
+        ]
+      },
+      {
+        "title": "Meie Finantsilise Tuleviku Planeerimine",
+        "description": "Uurige sügavamalt finantsplaneerimise aspekte, sealhulgas pensionistrateegiaid, kodu omamist ja teie pere finantse tulevikku. See alateema aitab teil ühtlustada oma visioone tuleviku jaoks ja luua kindel finantspartnerlus.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "future-planning-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-prioritize-financial-goals-with-other-life-goals"
+          },
+          {
+            "type": "game",
+            "slug": "future-forecast"
+          },
+          {
+            "type": "checkup",
+            "slug": "future-talk-flow"
+          },
+          {
+            "type": "exercise",
+            "slug": "retirement-dreams-mapping"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-see-the-budget-in-our-partnership-now-what-method-will-be-more-comfortable-for-you"
+          }
+        ]
+      }
+    ],
+    "slug": "discussing-our-finances-building-a-stronger-future-together"
+  },
+  {
+    "job": [
+      "having_meaningful_conversations"
+    ],
+    "title": "Tähtsate Vestluste Arendamine",
+    "description": "See teekond on loodud selleks, et suurendada sinu ja sinu partneri võimet osaleda tähenduslikes vestlustes. Mitme päeva jooksul uurite erinevaid suhtlemise aspekte, alates üksteise väärtuste mõistmisest kuni sügavamate emotsionaalsete küsimuste arutamiseni. Iga päev toetab eelmist, julgustades kasvu ja sidet.",
+    "subtopics": [
+      {
+        "title": "Suhtlemise Alused",
+        "description": "Alustage tõhusate suhtlemise aluste uurimisega oma partneriga. Õppige aktiivset kuulamist, mõtete selget väljendamist ja mitteverbaalsete vihjete tähtsust.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "discover-your-communication-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-prefer-to-communicate-your-needs-and-desires"
+          },
+          {
+            "type": "article",
+            "slug": "mastering-communication-techniques"
+          },
+          {
+            "type": "game",
+            "slug": "communication-clues"
+          },
+          {
+            "type": "checkup",
+            "slug": "mastering-our-communication-styles"
+          },
+          {
+            "type": "exercise",
+            "slug": "active-listening-practice"
+          },
+          {
+            "type": "question",
+            "slug": "whats-your-favorite-memory-of-us-having-a-great-conversation"
+          }
+        ]
+      },
+      {
+        "title": "Üksteise Väärtuste Mõistmine",
+        "description": "Sukelduge põhiväärtustesse, mis kujundavad teie uskumusi ja tegusid. Arutage, kuidas need väärtused mõjutavad teie otsuseid ja kuidas need võivad teie suhet mõjutada.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "values-alignment-style"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-think-we-share-the-same-values"
+          },
+          {
+            "type": "article",
+            "slug": "aligning-life-ambitions-together"
+          },
+          {
+            "type": "game",
+            "slug": "values-vibes"
+          },
+          {
+            "type": "checkup",
+            "slug": "core-values-connection"
+          },
+          {
+            "type": "exercise",
+            "slug": "values-alignment-exercise"
+          },
+          {
+            "type": "question",
+            "slug": "what-are-your-top-three-values-and-how-do-they-influence-your-decisions"
+          }
+        ]
+      },
+      {
+        "title": "Raskete Teemade Navigeerimine",
+        "description": "Õppige tehnikaid, kuidas läheneda keerulistele vestlustele tundlikkuse ja austusega. Harjutage keeruliste teemade, nagu rahandus, peredünaamika või tulevikuambitsioonide arutamist.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "problem-solving-style"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-think-that-money-play-a-big-role-in-feeling-fulfilled"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-balance-personal-time-with-time-spent-together"
+          },
+          {
+            "type": "article",
+            "slug": "navigating-difficult-conversations"
+          },
+          {
+            "type": "game",
+            "slug": "conflict-resolution-quest"
+          },
+          {
+            "type": "checkup",
+            "slug": "tackling-tough-talks"
+          },
+          {
+            "type": "exercise",
+            "slug": "tough-talks-toolkit"
+          }
+        ]
+      },
+      {
+        "title": "Isiklike Kogemuste Jagamine",
+        "description": "Osalege jutustamises, et jagada olulisi mälestusi oma minevikust. Avastage, kuidas teie kogemused on mõjutanud teie praeguseid vaateid ja emotsionaalseid seisundeid.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "life-story-style"
+          },
+          {
+            "type": "question",
+            "slug": "can-you-share-a-memory-from-your-childhood-that-you-think-has-shaped-who-you-are-today"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-memorable-lesson-youve-learned-from-past-relationships"
+          },
+          {
+            "type": "article",
+            "slug": "love-maps-knowing-each-other-deeply"
+          },
+          {
+            "type": "game",
+            "slug": "memory-lane"
+          },
+          {
+            "type": "checkup",
+            "slug": "exploring-childhood-memories"
+          },
+          {
+            "type": "exercise",
+            "slug": "intimate-story-sharing"
+          }
+        ]
+      },
+      {
+        "title": "Emotsionaalse Sideme Süvendamine",
+        "description": "Uurige vestlusi, mis suurendavad emotsionaalset intiimsust. Arutage teemasid, nagu hirmud, unistused ja ambitsioonid, et edendada sügavamat sidet oma partneriga.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "emotional-intimacy-style"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-believe-in-soulmates-why-or-why-not"
+          },
+          {
+            "type": "question",
+            "slug": "what-are-your-dreams-and-aspirations-outside-of-work"
+          },
+          {
+            "type": "article",
+            "slug": "building-emotional-intimacy-together"
+          },
+          {
+            "type": "game",
+            "slug": "emotional-expeditions"
+          },
+          {
+            "type": "checkup",
+            "slug": "emotional-intimacy-check-in"
+          },
+          {
+            "type": "exercise",
+            "slug": "emotional-closeness-exercises"
+          }
+        ]
+      },
+      {
+        "title": "Avatuse Kultuuri Loomine",
+        "description": "Looge keskkond, kus mõlemad partnerid tunnevad end turvaliselt oma mõtete ja tunnete väljendamisel. Õppige strateegiaid avatud suhtlemise säilitamiseks ja haavatavuse julgustamiseks.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "openness-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-feel-about-surprise-conversations-versus-planned-discussions"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-express-your-creativity"
+          },
+          {
+            "type": "article",
+            "slug": "cultivating-honest-conversations"
+          },
+          {
+            "type": "game",
+            "slug": "open-hearts-challenge"
+          },
+          {
+            "type": "checkup",
+            "slug": "vulnerability-and-openness"
+          },
+          {
+            "type": "exercise",
+            "slug": "transparent-communication-practices"
+          }
+        ]
+      }
+    ],
+    "slug": "cultivating-meaningful-conversations"
+  },
+  {
+    "job": [
+      "discussing_difficult_topics"
+    ],
+    "title": "Koos raskete vestluste navigeerimine",
+    "description": "See teekond on loodud selleks, et juhendada sind ja su partnerit tundlike teemade arutamise väljakutsetes teie suhtes. Igal päeval uurite erinevaid suhtlemise aspekte, alates tugeva aluse loomise kuni sügavalt isiklike teemade käsitlemiseni. Selle teekonna lõpuks on teil tööriistad ja enesekindlus, et osaleda tähenduslikes aruteludes, tugevdades teie emotsionaalset sidet ja vastastikust mõistmist.",
+    "subtopics": [
+      {
+        "title": "Avatud Suhtlemise Loomine",
+        "description": "Õpi avatud suhtlemise tähtsust ja kuidas luua turvaline ruum raskete teemade arutamiseks. See alateema tutvustab põhisuhtlemise strateegiaid.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "discover-your-communication-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-prefer-to-communicate-your-needs-and-desires"
+          },
+          {
+            "type": "article",
+            "slug": "mastering-communication-techniques"
+          },
+          {
+            "type": "game",
+            "slug": "communication-clues"
+          },
+          {
+            "type": "checkup",
+            "slug": "mastering-our-communication-styles"
+          },
+          {
+            "type": "question",
+            "slug": "whats-your-favorite-memory-of-us-having-a-great-conversation"
+          },
+          {
+            "type": "exercise",
+            "slug": "active-listening-practice"
+          }
+        ]
+      },
+      {
+        "title": "Erinevate Perspektiivide Mõistmine",
+        "description": "Uuri empaatia tähtsust, mõistes oma partneri perspektiivi raskete teemade osas. Arutage meetodeid, kuidas läheneda erimeelsustele konstruktiivselt.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "empathy-resonance-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-can-we-ensure-both-of-us-feel-heard-during-a-disagreement"
+          },
+          {
+            "type": "article",
+            "slug": "building-emotional-intimacy-together"
+          },
+          {
+            "type": "game",
+            "slug": "deep-dive-dialogues"
+          },
+          {
+            "type": "checkup",
+            "slug": "empathy-adventure"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-prefer-to-approach-conversations-when-emotions-run-high"
+          },
+          {
+            "type": "exercise",
+            "slug": "difference-identification-and-acceptance"
+          }
+        ]
+      },
+      {
+        "title": "Armukadeduse ja Usalduse Navigeerimine",
+        "description": "Sukeldu oma suhetesse armukadeduse ja usalduse tunnetesse. See alateema keskendub sellele, kuidas neid keerulisi tundeid arutada ilma konfliktideta.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "trust-building-style-quiz"
+          },
+          {
+            "type": "question",
+            "slug": "have-you-ever-felt-jealous-in-our-relationship-how-did-you-handle-it"
+          },
+          {
+            "type": "article",
+            "slug": "building-trust-through-intimacy"
+          },
+          {
+            "type": "game",
+            "slug": "trust-talk"
+          },
+          {
+            "type": "checkup",
+            "slug": "trusting-truths"
+          },
+          {
+            "type": "question",
+            "slug": "does-cheating-only-relate-to-physical-things-or-is-there-emotional-cheating-as-well"
+          },
+          {
+            "type": "exercise",
+            "slug": "rebuild-trust-session"
+          }
+        ]
+      },
+      {
+        "title": "Piiride Seadmine Aruteludes",
+        "description": "Õpi, kuidas seada piire tundlike teemade arutamisel, et tagada, et mõlemad partnerid tunneksid end vestluste ajal mugavalt ja austatult.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "boundary-communication-style"
+          },
+          {
+            "type": "question",
+            "slug": "are-there-any-boundaries-around-work-that-youd-like-to-set"
+          },
+          {
+            "type": "game",
+            "slug": "communication-carousel"
+          },
+          {
+            "type": "question",
+            "slug": "whats-one-boundary-youd-like-to-set-to-keep-our-relationship-healthy"
+          },
+          {
+            "type": "exercise",
+            "slug": "boundaries-practice"
+          }
+        ]
+      },
+      {
+        "title": "Mineviku Trauma Käsitlemine",
+        "description": "Käsitlege vestlusi, mis puudutavad mineviku traumasid ja kuidas need võivad teie suhet mõjutada. See alateema pakub strateegiaid nende keeruliste teemade delikaatseks arutamiseks.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "life-story-style"
+          },
+          {
+            "type": "question",
+            "slug": "have-you-had-any-childhood-experiences-that-you-can-call-traumatic-how-has-it-affected-you"
+          },
+          {
+            "type": "article",
+            "slug": "navigating-emotional-waters-together"
+          },
+          {
+            "type": "checkup",
+            "slug": "exploring-childhood-memories"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-have-any-unresolved-issues-with-your-parents"
+          },
+          {
+            "type": "exercise",
+            "slug": "sensitive-subjects-dialogue-practice"
+          }
+        ]
+      },
+      {
+        "title": "Konflikti Lahendamise Strateegiad",
+        "description": "Arenda oma oskusi konfliktide lahendamisel, mis tekivad arutelude käigus. Uuri tehnikaid, kuidas muuta vaidlused kasvamise ja vastastikuse mõistmise võimalusteks.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "your-conflict-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-can-we-turn-our-arguments-into-opportunities-for-growth"
+          },
+          {
+            "type": "article",
+            "slug": "effective-conflict-resolution-strategies"
+          },
+          {
+            "type": "game",
+            "slug": "problem-solving-pals"
+          },
+          {
+            "type": "checkup",
+            "slug": "conflict-resolution-styles"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-prefer-to-resolve-disagreements-calm-discussion-or-taking-a-short-break"
+          },
+          {
+            "type": "exercise",
+            "slug": "conflict-resolution-strategies-practice"
+          }
+        ]
+      }
+    ],
+    "slug": "navigating-difficult-conversations-together"
+  }
+]

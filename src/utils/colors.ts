@@ -1,0 +1,11 @@
+export const JOURNEY_COLOR = '#1A052F';
+export const TEST_COLOR = '#9D69DF';
+export const GAME_COLOR = '#696DDF';
+export const EXERCISE_COLOR = '#C9584E';
+export const QUESTION_COLOR = '#579CB3';
+export const ARTICLE_COLOR = '#5E57B3';
+export const CHECKUP_COLOR = '#369E6F';
+export const BADGE_COLOR = '#FBEFF1';
+export const BACKGROUND_LIGHT_BEIGE_COLOR = '#F5E9EB';
+export const MEDIUM_BEIGE_COLOR = '#E3D3D6';
+export const MEDIUM_VIOLET_COLOR = '#87778D';

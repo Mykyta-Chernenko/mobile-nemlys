@@ -78,7 +78,7 @@ export default function ({
       action: 'Go back pressed',
       userId: authContext.userId,
     });
-    navigation.navigate('Home', { refreshTimeStamp: undefined });
+    navigation.navigate('Home', { refreshTimeStamp: new Date().toISOString() });
   };
 
   return (

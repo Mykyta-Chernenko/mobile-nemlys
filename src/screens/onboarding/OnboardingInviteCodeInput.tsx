@@ -1,4 +1,4 @@
-import React, { useState, useContext, useEffect } from 'react';
+import React, { useState, useContext, useEffect, useCallback } from 'react';
 import {
   View,
   KeyboardAvoidingView,
@@ -18,11 +18,14 @@ import { GoBackButton } from '@app/components/buttons/GoBackButton';
 import { Progress } from '@app/components/utils/Progress';
 import { PrimaryButton } from '@app/components/buttons/PrimaryButtons';
 import { localAnalytics } from '@app/utils/analytics';
-import { KEYBOARD_BEHAVIOR } from '@app/utils/constants';
+import { KEYBOARD_BEHAVIOR, ONBOARDING_STEPS, UNEXPECTED_ERROR } from '@app/utils/constants';
 import StyledInput from '@app/components/utils/StyledInput';
 import { CloseButton } from '@app/components/buttons/CloseButton';
 import { Loading } from '@app/components/utils/Loading';
-import { logErrorsWithMessage, logSupaErrors } from '@app/utils/errors';
+import { logErrorsWithMessageWithoutAlert, logSupaErrors, retryAsync } from '@app/utils/errors';
+import { showName } from '@app/utils/strings';
+import { useFocusEffect } from '@react-navigation/native';
+import OnboardingInviteCodeSuccess from '@app/components/onboarding/OnboardingInviteCodeSuccess';
 
 type OnboardingInviteCodeInputProps = NativeStackScreenProps<
   MainStackParamList,
@@ -35,23 +38,22 @@ export default function OnboardingInviteCodeInput({
 }: OnboardingInviteCodeInputProps) {
   const { theme } = useTheme();
   const [inviteCode, setInviteCode] = useState<string>('');
+  const [name, setName] = useState<string>('');
   const [partnerName, setPartnerName] = useState<string>('');
   const [error, setError] = useState<string | null>(null);
-  const [showContinue, setShowContinue] = useState<boolean>(false);
   const [loading, setLoading] = useState(true);
   const [buttonLoading, setButtonLoading] = useState(false);
   const [refreshing, setRefreshing] = useState(false);
   const authContext = useContext(AuthContext);
-  const fromSettings = route.params?.fromSettings;
-
+  const { nextScreen, screenParams } = route.params || {};
+  const [showSuccess, setShowSuccess] = useState(false);
   const { setMode } = useThemeMode();
-  useEffect(() => {
-    const unsubscribeFocus = navigation.addListener('focus', () => {
+
+  useFocusEffect(
+    useCallback(() => {
       setMode('light');
-      void onRefresh();
-    });
-    return unsubscribeFocus;
-  }, [navigation, authContext.userId]);
+    }, []),
+  );
 
   useEffect(() => {
     void localAnalytics().logEvent('OnboardingInviteCodeInputScreenViewed', {
@@ -66,7 +68,7 @@ export default function OnboardingInviteCodeInput({
     try {
       const { data, error } = await supabase
         .from('user_profile')
-        .select('partner_first_name')
+        .select('first_name, partner_first_name')
         .eq('user_id', authContext.userId!)
         .single();
 
@@ -75,7 +77,8 @@ export default function OnboardingInviteCodeInput({
         return;
       }
 
-      setPartnerName(data.partner_first_name || 'Partner');
+      setPartnerName(showName(data.partner_first_name) || i18n.t('home_partner'));
+      setName(showName(data.first_name));
     } finally {
       setLoading(false);
     }
@@ -84,7 +87,6 @@ export default function OnboardingInviteCodeInput({
   const onRefresh = async () => {
     setRefreshing(true);
     await fetchPartnerName();
-    setShowContinue(false);
     setError('');
     setButtonLoading(false);
     setRefreshing(false);
@@ -96,12 +98,13 @@ export default function OnboardingInviteCodeInput({
       action: 'BackClicked',
       userId: authContext.userId,
     });
-    if (fromSettings) {
-      navigation.navigate('Profile', {
-        refreshTimeStamp: new Date().toISOString(),
-      });
+    if (navigation.canGoBack()) {
+      navigation.goBack();
     } else {
-      navigation.navigate('OnboardingInviteCode', { fromSettings });
+      navigation.navigate('OnboardingInviteCode', {
+        nextScreen: nextScreen,
+        screenParams: screenParams,
+      });
     }
   };
 
@@ -116,18 +119,20 @@ export default function OnboardingInviteCodeInput({
         return;
       }
       const handleSuccess = async () => {
-        const res = await supabase.functions.invoke('send-partner-notification', {
-          body: { type: 'partner_joined' },
+        const res = await retryAsync('OnboardingInviteCodeInput', async () => {
+          return await supabase.functions.invoke('send-partner-notification', {
+            body: { type: 'partner_joined' },
+          });
         });
         if (res.error) {
-          logErrorsWithMessage(res.error, 'notify partner function returned error');
-          return;
+          logErrorsWithMessageWithoutAlert(res.error, i18n.t('reminding_partner_error'));
         }
         void localAnalytics().logEvent('OnboardingInviteCodeInputSuccess', {
           screen: 'OnboardingInviteCodeInput',
           action: 'Success',
           userId: authContext.userId,
         });
+        setShowSuccess(true);
       };
       switch (data) {
         case 'WRONG_CODE':
@@ -138,7 +143,6 @@ export default function OnboardingInviteCodeInput({
           break;
         case 'SUCCESS':
           void handleSuccess();
-          setShowContinue(true);
           break;
         default:
           setError(i18n.t('onboarding_invite_input_invite_code_error'));
@@ -150,7 +154,7 @@ export default function OnboardingInviteCodeInput({
         userId: authContext.userId,
         error: err,
       });
-      setError(i18n.t('unexpected_error'));
+      setError(UNEXPECTED_ERROR);
     } finally {
       setButtonLoading(false);
     }
@@ -164,20 +168,38 @@ export default function OnboardingInviteCodeInput({
     });
     navigation.navigate('Home', { refreshTimeStamp: new Date().toISOString() });
   };
-  const handleContinue = () => {
-    void localAnalytics().logEvent('OnboardingInviteCodeInputContinue', {
-      screen: 'OnboardingInviteCodeInput',
-      action: 'Continue',
+
+  const handleNext = () => {
+    void localAnalytics().logEvent('OnboardingInviteCodeSuccessButtonPressed', {
+      screen: 'OnboardingInviteCodeSuccess',
+      action: 'ButtonPressed',
       userId: authContext.userId,
     });
-    if (fromSettings) {
-      navigation.navigate('Profile', {
-        refreshTimeStamp: new Date().toISOString(),
-      });
+
+    if (nextScreen) {
+      navigation.navigate(
+        // @ts-expect-error cannot type screen name here
+        nextScreen,
+        screenParams || { refreshTimeStamp: new Date().toISOString() },
+      );
     } else {
-      navigation.navigate('OnDateNotification', { withPartner: true, isOnboarding: true });
+      navigation.navigate('OnboardingQuizIntro', {
+        name,
+        partnerName,
+      });
     }
   };
+
+  if (showSuccess) {
+    return (
+      <OnboardingInviteCodeSuccess
+        handleNext={handleNext}
+        handleGoBack={() => setShowSuccess(false)}
+        name={name}
+        partnerName={partnerName}
+      />
+    );
+  }
 
   if (loading) {
     return <Loading light />;
@@ -210,8 +232,8 @@ export default function OnboardingInviteCodeInput({
                 containerStyle={{ position: 'absolute', left: 0 }}
                 onPress={handleGoBack}
               />
-              {fromSettings ? <View /> : <Progress current={6} all={7} />}
-              {fromSettings ? <CloseButton onPress={onClosePressed} theme="black" /> : <View />}
+              {nextScreen ? <View /> : <Progress current={5} all={ONBOARDING_STEPS} />}
+              {nextScreen ? <CloseButton onPress={onClosePressed} theme="black" /> : <View />}
             </View>
             <View style={{ marginTop: 20 }}>
               <FontText h1 style={{ textAlign: 'center', marginBottom: 20 }}>
@@ -234,26 +256,13 @@ export default function OnboardingInviteCodeInput({
                   {error}
                 </FontText>
               )}
-              {showContinue && (
-                <FontText style={{ textAlign: 'center', marginTop: 10 }}>
-                  {i18n.t('onboarding_invite_input_join_success_message', { partnerName })}
-                </FontText>
-              )}
-              {showContinue ? (
-                <PrimaryButton
-                  title={i18n.t('continue')}
-                  onPress={() => void handleContinue()}
-                  disabled={inviteCode.length !== 5}
-                  buttonStyle={{ marginTop: 20 }}
-                />
-              ) : (
-                <PrimaryButton
-                  title={buttonLoading ? i18n.t('loading') : i18n.t('onboarding_invite_input_join')}
-                  onPress={() => void handleSubmit()}
-                  disabled={buttonLoading || inviteCode.length !== 5}
-                  buttonStyle={{ marginTop: 20 }}
-                />
-              )}
+
+              <PrimaryButton
+                title={buttonLoading ? i18n.t('loading') : i18n.t('onboarding_invite_input_join')}
+                onPress={() => void handleSubmit()}
+                disabled={buttonLoading || inviteCode.length !== 5}
+                buttonStyle={{ marginTop: 20 }}
+              />
             </View>
           </ScrollView>
         </SafeAreaView>

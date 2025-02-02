@@ -1,0 +1,145 @@
+{
+  "topic": [
+    "having_fun_and_entertainment",
+    "improving_relationship_satisfaction",
+    "exploring_feelings",
+    "understanding_mutual_compatibility",
+    "enhancing_love_and_affection"
+  ],
+  "test_headline": "How Does Humor Hold Your Relationship Together?",
+  "scientific_basis": "This quiz is based on research into the role of humor in relationship satisfaction and resilience. Studies have shown that couples who effectively use humor can navigate challenges more smoothly, strengthen their bond, and maintain a joyful connection.",
+  "description": "Ready to laugh your way to a stronger relationship? Discover how you and your partner use humor to keep things light, build rapport, and tackle life's ups and downs together!",
+  "questions": [
+    {
+      "question": "When you and your partner have a disagreement, how do you usually respond?",
+      "options": [
+        "I make a joke to lighten the mood and ease the tension.",
+        "I use sarcasm to point out the absurdity of the situation.",
+        "I prefer to stay serious and focus on resolving the issue.",
+        "I make a funny comment to deflect from the conflict.",
+        "I encourage us to laugh together and find the humor in our differences."
+      ]
+    },
+    {
+      "question": "How often do you and your partner share inside jokes?",
+      "options": [
+        "All the time! We have a never-ending list of inside jokes.",
+        "Sometimes, when something funny happens.",
+        "Rarely, we don't have many inside jokes.",
+        "Only during stressful times to lighten the mood.",
+        "Frequently, it helps us feel connected and unique."
+      ]
+    },
+    {
+      "question": "When planning a fun activity together, how do you incorporate humor?",
+      "options": [
+        "We choose activities that make us laugh, like comedy shows.",
+        "I like to add funny twists to the plans.",
+        "Humor isn't really a part of our planning process.",
+        "I suggest silly or unconventional activities to keep things interesting.",
+        "We both enjoy being spontaneous and finding humor in whatever we do."
+      ]
+    },
+    {
+      "question": "How do you handle it when one of you makes a mistake?",
+      "options": [
+        "We laugh it off and move on without any hard feelings.",
+        "I tease them gently to make light of the mistake.",
+        "We discuss it seriously to understand what went wrong.",
+        "I use humor to distract from the mistake.",
+        "We find the funny side together and learn from it."
+      ]
+    },
+    {
+      "question": "What role does humor play in your daily interactions?",
+      "options": [
+        "It's a central part; we joke around constantly.",
+        "It's present but not a major focus.",
+        "Humor is rarely used in our daily conversations.",
+        "I use humor mainly to cope with stress.",
+        "We use humor to maintain a positive and joyful atmosphere."
+      ]
+    },
+    {
+      "question": "How do you feel when your partner makes you laugh after a tough day?",
+      "options": [
+        "It makes me feel loved and appreciated.",
+        "I enjoy the distraction from my stress.",
+        "I prefer to talk about my feelings instead.",
+        "It helps me relax and feel better.",
+        "It strengthens our bond and lifts my spirits."
+      ]
+    },
+    {
+      "question": "When reminiscing about past experiences, how do you and your partner use humor?",
+      "options": [
+        "We laugh about the funny moments and mishaps.",
+        "I often make humorous remarks about our past.",
+        "We don't really focus on humor when reminiscing.",
+        "I use humor to lighten up old memories.",
+        "We enjoy sharing and laughing about our unique experiences together."
+      ]
+    },
+    {
+      "question": "How do you incorporate humor when meeting each other's friends and family?",
+      "options": [
+        "We share funny stories to break the ice.",
+        "I use humor to make a good impression.",
+        "Humor isn't really part of our introductions.",
+        "I make jokes to ease any awkwardness.",
+        "We both contribute to a lighthearted and fun atmosphere."
+      ]
+    },
+    {
+      "question": "How do you and your partner use humor to support each other during tough times?",
+      "options": [
+        "We make each other laugh to lift our moods.",
+        "I use humor to help us cope with stress.",
+        "We prefer to handle tough times seriously.",
+        "I sometimes use humor to avoid dealing with the stress.",
+        "We find humor together, which helps us stay resilient."
+      ]
+    },
+    {
+      "question": "Which statement best describes your overall approach to humor in your relationship?",
+      "options": [
+        "Humor is essential; we rely on it to keep our relationship strong.",
+        "I enjoy humor, but it's not the main focus of our relationship.",
+        "We don't use much humor, focusing more on other aspects.",
+        "I use humor mainly when things get tough.",
+        "We balance humor with other forms of communication to maintain a happy relationship."
+      ]
+    }
+  ],
+  "evaluation_method": {
+    "explanation": "Each answer corresponds to a specific humor style in your relationship: Playful, Sarcastic, Serious, Defensive, or Supportive. Tally your responses to see which style predominates in how you and your partner use humor.",
+    "example": "For example, selecting more 'A' options indicates a Playful Humor style, while more 'B' answers suggest a Sarcastic Humor style."
+  },
+  "outcome_interpretation": {
+    "mostly_A": {
+      "label": "Playful Humor",
+      "description": "You and your partner use humor to create a joyful and lighthearted atmosphere. Your playful interactions help keep the relationship fun and resilient.",
+      "advice": "Continue to nurture your playful side! Keep sharing jokes and playful moments to maintain your strong bond."
+    },
+    "mostly_B": {
+      "label": "Sarcastic Humor",
+      "description": "You tend to use sarcasm in your interactions. While it can be entertaining, it's important to ensure it doesn't lead to misunderstandings.",
+      "advice": "Balance your sarcasm with positive humor to strengthen your connection and avoid potential conflicts."
+    },
+    "mostly_C": {
+      "label": "Serious Approach",
+      "description": "Humor isn't a primary tool in your relationship. You focus on serious discussions and problem-solving to maintain your bond.",
+      "advice": "Incorporate more lighthearted moments and humor to add an extra layer of connection and joy to your relationship."
+    },
+    "mostly_D": {
+      "label": "Defensive Humor",
+      "description": "You use humor to deflect or avoid serious issues. This can help in the short term but might prevent deeper connections.",
+      "advice": "Try to address serious matters directly while still maintaining a sense of humor to support each other through challenges."
+    },
+    "mostly_E": {
+      "label": "Supportive Humor",
+      "description": "You and your partner use humor to uplift and support each other, especially during tough times. This fosters a strong and resilient relationship.",
+      "advice": "Keep leveraging your supportive humor to navigate life's ups and downs together. It's a powerful tool for maintaining a healthy, happy relationship."
+    }
+  }
+}

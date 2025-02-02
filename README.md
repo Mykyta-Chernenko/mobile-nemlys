@@ -16,6 +16,12 @@ https://console.firebase.google.com/u/0/project/nemlys-dev/settings/general/andr
 # apple sign in
 every half a year you need to rate secret key and create secret out of it, here is the instruction for the p8 file
 https://developer.apple.com/account/resources/authkeys/list
+https://developer.apple.com/account/resources/authkeys/add
+add a new sign in key
+Account ID:
+ZKX3P2M839
+service id: 	
+app.com.marakaci.nemlys
 https://supabase.com/docs/guides/auth/social-login/auth-apple?queryGroups=platform&platform=flutter
 
 ## translation guide

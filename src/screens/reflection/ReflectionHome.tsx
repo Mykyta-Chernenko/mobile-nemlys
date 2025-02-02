@@ -208,7 +208,11 @@ export default function ({
             </View>
           </View>
           <ScrollView
-            style={{ flex: 1, backgroundColor: theme.colors.grey1, marginHorizontal: -padding }}
+            contentContainerStyle={{
+              flexGrow: 1,
+              backgroundColor: theme.colors.grey1,
+              marginHorizontal: -padding,
+            }}
           >
             <View style={{ padding, flex: 1 }}>
               <View>
@@ -439,7 +443,7 @@ export default function ({
             style={{
               backgroundColor: theme.colors.grey1,
               marginHorizontal: -padding,
-              height: getFontSizeForScreen('h1') * 2,
+              height: getFontSizeForScreen('h1') * 4,
             }}
           >
             <Menu></Menu>

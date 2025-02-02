@@ -1,0 +1,4892 @@
+[
+  {
+    "job": [
+      "discussing_religions"
+    ],
+    "title": "Kopā Pārvietojoties Mūsu Reliģiskajās Pārliecībās",
+    "description": "Šī ceļojuma mērķis ir palīdzēt jums un jūsu partnerim apspriest un saprast viens otra reliģiskās pārliecības, vienlaikus veicinot cieņu un atklātu komunikāciju. Izpētot dažādus reliģijas aspektus, jūs iemācīsieties pieņemt atšķirības un radīt kopīgu garīgu saikni.",
+    "subtopics": [
+      {
+        "title": "Reliģisko Pamatu Izpratne",
+        "description": "Sāciet savu ceļojumu, izpētot katra otra reliģijas pamatprincipus un praksi. Apspriediet, kā šie pamati veido jūsu identitāti un pasaules uzskatus. Šis apakštēma ietvers jautājumus par personīgajām pārliecībām un praksēm.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "religious-identity-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-practice-your-faith-and-how-would-you-like-to-incorporate-it-into-our-relationship"
+          },
+          {
+            "type": "article",
+            "slug": "navigating-religious-conversations-smoothly"
+          },
+          {
+            "type": "exercise",
+            "slug": "spiritual-practices-exchange"
+          },
+          {
+            "type": "question",
+            "slug": "what-role-does-religion-or-spirituality-play-in-your-life-and-how-does-it-affect-our-relationship"
+          }
+        ]
+      },
+      {
+        "title": "Reliģisko Notikumu Svētīšana",
+        "description": "Uzziniet, kā kopā svinēt reliģiskos notikumus un sasniegumus. Izpētiet, kā godināt viens otra tradīcijas nozīmīgās dzīves notikumu laikā, piemēram, dzimšanas, kāzās un svētku laikā, bez piepūles integrējot tās jūsu kopīgajā dzīvē.",
+        "content": [
+          {
+            "type": "checkup",
+            "slug": "celebrating-religious-holidays-together"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-celebrate-religious-achievements-or-milestones"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-celebrate-your-faith-during-personal-milestones-like-birthdays-or-anniversaries"
+          }
+        ]
+      },
+      {
+        "title": "Cieņa Pret Atšķirībām un Nesaistībām",
+        "description": "Iedziļinieties, kā pārvaldīt atšķirības reliģiskajās pārliecībās un praksēs bez konfliktiem. Šis apakštēma sniegs jums rīkus cieņpilnām sarunām, kad rodas nesaskaņas, koncentrējoties uz izpratni, nevis pārliecināšanu.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "your-conflict-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-handle-religious-disagreements-in-relationships"
+          },
+          {
+            "type": "article",
+            "slug": "bridging-religious-differences-together"
+          },
+          {
+            "type": "game",
+            "slug": "conflict-resolution-quest"
+          },
+          {
+            "type": "checkup",
+            "slug": "handling-religious-conflicts"
+          }
+        ]
+      },
+      {
+        "title": "Reliģijas Iekļaušana Ikdienas Dzīvē",
+        "description": "Apspriediet, kā integrēt reliģiskās vērtības savās ikdienas rutīnās un lēmumu pieņemšanā. Izpētiet kopīgas prakses, garīgas aktivitātes un to, kā reliģija var uzlabot jūsu partnerību un personīgo izaugsmi.",
+        "content": [
+          {
+            "type": "checkup",
+            "slug": "supportive-communication"
+          },
+          {
+            "type": "question",
+            "slug": "how-can-we-support-each-others-spiritual-growth"
+          },
+          {
+            "type": "game",
+            "slug": "spiritual-journey"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-integrate-your-faith-with-your-personal-hobbies-or-interests"
+          }
+        ]
+      },
+      {
+        "title": "Nākotnes Svētību Plānošana",
+        "description": "Iesaistieties nozīmīgās sarunās par to, kā jūsu reliģiskās pārliecības ietekmē lēmumus par ģimeni un bērniem. Apspriediet, vai jūs iedomājaties audzināt bērnus noteiktā reliģiskajā tradīcijā un izpētiet sekas jūsu kopīgajai dzīvei.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "parenting-style-alignment"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-envision-having-children-in-a-particular-religious-tradition"
+          },
+          {
+            "type": "question",
+            "slug": "what-religious-values-are-most-important-to-you-in-a-relationship"
+          },
+          {
+            "type": "article",
+            "slug": "enhancing-communication-before-parenthood"
+          },
+          {
+            "type": "checkup",
+            "slug": "parenting-playbook-compatibility"
+          },
+          {
+            "type": "exercise",
+            "slug": "parenting-styles-discussion"
+          }
+        ]
+      },
+      {
+        "title": "Kopīgas Garīgās Tradīcijas Veidošana",
+        "description": "Šajā pēdējā solī koncentrējieties uz to, kā radīt harmonisku jūsu reliģisko pārliecību sajaukumu. Izpētiet prakses, kas godā abas jūsu tradīcijas, un apspriediet, kā atbalstīt viens otra garīgo izaugsmi, nodrošinot piepildītu attiecību, kas balstīta uz savstarpēju cieņu un izpratni.",
+        "content": [
+          {
+            "type": "checkup",
+            "slug": "sharing-spiritual-beliefs"
+          },
+          {
+            "type": "question",
+            "slug": "are-there-any-religious-practices-youd-like-to-explore-together"
+          },
+          {
+            "type": "exercise",
+            "slug": "interfaith-understanding-sessions"
+          }
+        ]
+      }
+    ],
+    "slug": "navigating-our-religious-beliefs-together"
+  },
+  {
+    "job": [
+      "preparing_for_cohabitation"
+    ],
+    "title": "Sagatavošanās Kopdzīvei",
+    "description": "Šī ceļojums ir izstrādāts, lai sagatavotu tevi un tavu partneri kopdzīvei, risinot dažādus aspektus par dzīvošanu kopā. Tu iemācīsies, kā efektīvi sazināties, pārvaldīt atbildības un radīt harmonisku mājas vidi. Katru dienu tu izpētīsi svarīgas tēmas, kas palīdzēs nostiprināt jūsu attiecības un atvieglot pāreju uz kopīgu dzīvošanu.",
+    "subtopics": [
+      {
+        "title": "Sapņojot par Mūsu Kopīgo Telpu",
+        "description": "Sāc ar savu redzējumu dalīšanos par to, kā izskatīsies jūsu mājas. Apspried idejas par telpu, dekoru un atmosfēru. Tas veido pamatu savstarpējai izpratnei un kopīgām sapņiem.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "lifestyle-harmony-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-can-we-create-a-home-environment-that-respects-both-of-our-preferences"
+          },
+          {
+            "type": "article",
+            "slug": "sharing-spaces-harmoniously"
+          },
+          {
+            "type": "exercise",
+            "slug": "living-space-design"
+          },
+          {
+            "type": "game",
+            "slug": "decor-dilemma"
+          },
+          {
+            "type": "question",
+            "slug": "whats-one-piece-of-furniture-you-absolutely-need-in-our-new-home"
+          }
+        ]
+      },
+      {
+        "title": "Saziņas Pamati",
+        "description": "Iemācies efektīvas saziņas stratēģijas, kas palīdzēs tev risināt ikdienas izaicinājumus. Izpēti veidus, kā izteikt vajadzības, noteikt gaidas un aktīvi klausīties viens otru.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "discover-your-communication-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-prefer-to-communicate-your-needs-and-desires"
+          },
+          {
+            "type": "article",
+            "slug": "mastering-communication-techniques"
+          },
+          {
+            "type": "game",
+            "slug": "communication-clues"
+          },
+          {
+            "type": "checkup",
+            "slug": "mastering-our-communication-styles"
+          },
+          {
+            "type": "exercise",
+            "slug": "active-listening-practice"
+          }
+        ]
+      },
+      {
+        "title": "Mājsaimniecības Atbildības",
+        "description": "Apspried un nosaki, kā jūs sadalīsiet mājsaimniecības darbus un atbildības. Izveidojiet sistēmu, kas der abiem, lai uzturētu tīru un organizētu dzīves vidi.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "domestic-labor-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-feel-about-handling-household-responsibilities-and-chores"
+          },
+          {
+            "type": "article",
+            "slug": "establishing-household-routines"
+          },
+          {
+            "type": "exercise",
+            "slug": "shared-responsibilities-mapping"
+          },
+          {
+            "type": "game",
+            "slug": "chore-chart-challenge"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-feel-about-having-a-cleaning-schedule-versus-cleaning-as-we-go"
+          }
+        ]
+      },
+      {
+        "title": "Finanšu Pamati",
+        "description": "Saskaņojiet finanšu pārvaldību un budžetēšanu kā pāris. Apspriediet stratēģijas izdevumu dalīšanai, kopīgu finanšu lēmumu pieņemšanai un caurredzamības uzturēšanai attiecībā uz finansēm.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "budgeting-style-for-couples"
+          },
+          {
+            "type": "game",
+            "slug": "dream-budget-builders"
+          },
+          {
+            "type": "article",
+            "slug": "mastering-money-talks-together"
+          },
+          {
+            "type": "exercise",
+            "slug": "budget-planning-session"
+          },
+          {
+            "type": "checkup",
+            "slug": "aligning-financial-values-and-goals"
+          },
+          {
+            "type": "question",
+            "slug": "whats-one-thing-you-want-to-achieve-together-in-our-new-home"
+          }
+        ]
+      },
+      {
+        "title": "Konfliktu Risināšana ar Žēlastību",
+        "description": "Sagatavojieties neizbēgamām nesaskaņām, apgūstot konfliktu risināšanas stratēģijas. Izpētiet, kā pārvaldīt atšķirīgas domas un atrast kopīgu valodu veselīgā veidā.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "your-conflict-style"
+          },
+          {
+            "type": "game",
+            "slug": "conflict-resolution-quest"
+          },
+          {
+            "type": "article",
+            "slug": "mastering-conflict-resolution-together"
+          },
+          {
+            "type": "exercise",
+            "slug": "conflict-resolution-strategies-practice"
+          },
+          {
+            "type": "checkup",
+            "slug": "tackling-tough-talks"
+          },
+          {
+            "type": "question",
+            "slug": "how-should-we-handle-maintenance-and-repairs-around-the-house"
+          }
+        ]
+      },
+      {
+        "title": "Droša Telpa",
+        "description": "Pabeidziet savas sagataves, koncentrējoties uz emocionālo un fizisko drošību jūsu kopīgajā telpā. Apspriediet robežas, privātumu un to, kā radīt vidi, kurā abi jūtas droši un cienīti.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "emotional-safety-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-should-we-handle-setting-up-our-home-office-or-study-space"
+          },
+          {
+            "type": "article",
+            "slug": "navigating-boundaries-for-intimacy"
+          },
+          {
+            "type": "exercise",
+            "slug": "personal-space-respect-practices"
+          },
+          {
+            "type": "game",
+            "slug": "space-personalities"
+          },
+          {
+            "type": "question",
+            "slug": "how-should-we-handle-guests-and-visitors-in-our-home"
+          }
+        ]
+      }
+    ],
+    "slug": "preparing-for-cohabitation"
+  },
+  {
+    "job": [
+      "understanding_mutual_compatibility"
+    ],
+    "title": "Savstarpējās Saderības Izpratne",
+    "description": "Šī ceļojuma mērķis ir palīdzēt jums izpētīt un saprast saderības slāņus jūsu attiecībās. Pakāpeniski risinot tēmas, jūs iemācīsieties identificēt, novērtēt un orientēties gan savās līdzībās, gan atšķirībās. Katru dienu jūs iesaistīsieties dažāda veida saturā, kas veicina pārdomātas sarunas un veicina dziļākas saiknes.",
+    "subtopics": [
+      {
+        "title": "Pamatvērtību Izpēte",
+        "description": "Sāciet ar savu trīs galveno vērtību apspriešanu un to, kā tās ietekmē jūsu lēmumus. Šī pamattēma palīdzēs jums saprast, kas katram no jums ir svarīgs attiecībās.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "values-alignment-style"
+          },
+          {
+            "type": "question",
+            "slug": "what-are-three-values-you-believe-are-most-important-in-a-person"
+          },
+          {
+            "type": "article",
+            "slug": "aligning-future-goals"
+          },
+          {
+            "type": "game",
+            "slug": "values-vibes"
+          },
+          {
+            "type": "checkup",
+            "slug": "core-values-connection"
+          },
+          {
+            "type": "exercise",
+            "slug": "values-alignment-exercise"
+          }
+        ]
+      },
+      {
+        "title": "Komunikācijas Stili",
+        "description": "Uzziniet par saviem individuālajiem komunikācijas stiliem un apspriediet, kā tie ietekmē jūsu mijiedarbību. Šī apakštēma palīdzēs jums izstrādāt stratēģijas skaidrākai un efektīvākai komunikācijai.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "discover-your-communication-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-prefer-to-communicate-your-needs-and-desires"
+          },
+          {
+            "type": "article",
+            "slug": "mastering-communication-techniques"
+          },
+          {
+            "type": "game",
+            "slug": "communication-clues"
+          },
+          {
+            "type": "checkup",
+            "slug": "mastering-our-communication-styles"
+          },
+          {
+            "type": "exercise",
+            "slug": "active-listening-practice"
+          }
+        ]
+      },
+      {
+        "title": "Kultūras un Fona Atšķirības",
+        "description": "Izpētiet, kā jūsu atšķirīgās kultūras foni un dzīves pieredze veido jūsu skatījumus. Šo elementu izpratne veicina empātiju un novērtējumu viens pret otru.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "cultural-connection-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-our-different-cultural-backgrounds-shape-our-relationship-and-how-can-we-honor-both"
+          },
+          {
+            "type": "article",
+            "slug": "bridging-religious-differences-together"
+          },
+          {
+            "type": "game",
+            "slug": "cultural-quest"
+          },
+          {
+            "type": "checkup",
+            "slug": "navigating-cultural-and-religious-differences"
+          },
+          {
+            "type": "exercise",
+            "slug": "difference-identification-and-acceptance"
+          }
+        ]
+      },
+      {
+        "title": "Personīgo un Kopīgo Interešu Sabalansēšana",
+        "description": "Apspriediet savas intereses, hobijus un to, kā tie var papildināt vai konfliktēt viens ar otru. Sabalansēšana uzlabos jūsu attiecības un nodrošinās, ka abi partneri jūtas piepildīti.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "hobby-harmony-style"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-new-hobby-we-can-try-together-that-honors-both-our-interests"
+          },
+          {
+            "type": "article",
+            "slug": "exploring-shared-hobbies-together"
+          },
+          {
+            "type": "game",
+            "slug": "hobby-harmony"
+          },
+          {
+            "type": "exercise",
+            "slug": "hobbies-and-interests-exercise"
+          }
+        ]
+      },
+      {
+        "title": "Konfliktu un Atšķirību Risināšana",
+        "description": "Ienirstiet izpratnē par to, kā katrs no jums risina konfliktus un atšķirīgas domas. Izpētot efektīvas konfliktu risināšanas tehnikas, jūs iemācīsieties pārvērst nesaskaņas par izaugsmes iespējām.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "your-conflict-style"
+          },
+          {
+            "type": "game",
+            "slug": "conflict-resolution-quest"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-handle-feelings-of-jealousy-or-insecurity"
+          },
+          {
+            "type": "article",
+            "slug": "mastering-conflict-resolution-together"
+          },
+          {
+            "type": "checkup",
+            "slug": "conflict-connoisseurs"
+          },
+          {
+            "type": "exercise",
+            "slug": "conflict-resolution-styles"
+          },
+          {
+            "type": "question",
+            "slug": "how-can-we-turn-our-differences-into-opportunities-for-growth-as-a-couple"
+          }
+        ]
+      },
+      {
+        "title": "Attiecību Evolūcija",
+        "description": "Apsveriet, kā jūsu attiecības ir mainījušās laika gaitā, un apspriediet, kā jūs iedomājaties tās nākotni. Šī tēma ļaus jums saskaņot savus ilgtermiņa mērķus un vēlmes kā pārim.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "future-vision-type"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-see-our-relationship-evolving-over-time"
+          },
+          {
+            "type": "article",
+            "slug": "creating-a-vision-for-us"
+          },
+          {
+            "type": "game",
+            "slug": "future-visionaries"
+          },
+          {
+            "type": "checkup",
+            "slug": "future-talk-together"
+          },
+          {
+            "type": "exercise",
+            "slug": "future-goals-compatibility"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-see-our-relationship-evolving-over-the-next-decade"
+          }
+        ]
+      }
+    ],
+    "slug": "understanding-mutual-compatibility"
+  },
+  {
+    "job": [
+      "learning_relationship_skills"
+    ],
+    "title": "Attiecību Prasmju Apguve",
+    "description": "Šī ceļojuma mērķis ir palīdzēt jums attīstīt būtiskas attiecību prasmes, kas stiprinās jūsu saikni, uzlabos komunikāciju un palielinās jūsu spēju efektīvi risināt konfliktus. Katras dienas saturs balstās uz iepriekšējā, vadot jūs cauri prasmju attīstībai, kas nepieciešama veselīgai un piepildītai partnerattiecībai.",
+    "subtopics": [
+      {
+        "title": "Emociju Izpratne",
+        "description": "Uzziniet, kā identificēt un izteikt savas emocijas, kā arī saprast sava partnera emocionālās reakcijas. Šī pamata prasme ir būtiska efektīvai komunikācijai.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "emotion-management-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-handle-your-strong-emotions"
+          },
+          {
+            "type": "article",
+            "slug": "building-emotional-intimacy-together"
+          },
+          {
+            "type": "game",
+            "slug": "emotional-seasons"
+          },
+          {
+            "type": "checkup",
+            "slug": "mood-mapping"
+          },
+          {
+            "type": "exercise",
+            "slug": "emotional-regulation-techniques"
+          }
+        ]
+      },
+      {
+        "title": "Efektīvas Komunikācijas Tehnikas",
+        "description": "Izpētiet dažādus komunikācijas stilus un tehnikas, tostarp aktīvo klausīšanos un atsauksmju praksi, kas veicina atklātību un godīgumu jūsu attiecībās.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "discover-your-communication-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-prefer-to-communicate-your-needs-and-desires"
+          },
+          {
+            "type": "article",
+            "slug": "mastering-communication-techniques"
+          },
+          {
+            "type": "game",
+            "slug": "communication-clues"
+          },
+          {
+            "type": "checkup",
+            "slug": "mastering-our-communication-styles"
+          },
+          {
+            "type": "exercise",
+            "slug": "active-listening-practice"
+          }
+        ]
+      },
+      {
+        "title": "Konfliktu Risināšanas Stratēģijas",
+        "description": "Iedziļinieties dažādās stratēģijās, kā veselīgi risināt konfliktus. Jūs uzzināsiet, kā konstruktīvi risināt nesaskaņas un atrast win-win risinājumus.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "your-conflict-style"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-metaphor-that-describes-how-we-handle-problems-together"
+          },
+          {
+            "type": "article",
+            "slug": "effective-conflict-resolution-strategies"
+          },
+          {
+            "type": "game",
+            "slug": "conflict-resolution-quest"
+          },
+          {
+            "type": "checkup",
+            "slug": "conflict-resolution-styles"
+          },
+          {
+            "type": "exercise",
+            "slug": "conflict-resolution-strategies-practice"
+          }
+        ]
+      },
+      {
+        "title": "Vulnerabilitātes un Uzticības Attīstīšana",
+        "description": "Koncentrējieties uz uzticības veidošanu caur vulnerabilitāti. Šis apakštēma ietver izpratni par atklātības nozīmi un to, kā dalīties ar personīgām sajūtām un pieredzi.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "vulnerability-style-assessment"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-relationship-skill-you-admire-in-others-and-want-to-develop"
+          },
+          {
+            "type": "article",
+            "slug": "vulnerability-trusts-gateway"
+          },
+          {
+            "type": "game",
+            "slug": "trust-talk"
+          },
+          {
+            "type": "checkup",
+            "slug": "building-a-fortress-of-trust"
+          },
+          {
+            "type": "exercise",
+            "slug": "rebuild-trust-session"
+          }
+        ]
+      },
+      {
+        "title": "Grūtu Sarunu Vadīšana",
+        "description": "Uzziniet, kā uzsākt un vadīt grūtas sarunas, nepalielinot konfliktu. Jūs praktizēsiet tehnikas, kā mierīgi un cieņpilni apspriest jutīgas tēmas.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "communication-timing-style"
+          },
+          {
+            "type": "question",
+            "slug": "whats-the-best-advice-youve-ever-received-about-communicating-in-a-relationship"
+          },
+          {
+            "type": "article",
+            "slug": "navigating-difficult-conversations"
+          },
+          {
+            "type": "game",
+            "slug": "communication-carousel"
+          },
+          {
+            "type": "checkup",
+            "slug": "emotions-expressed-freely"
+          },
+          {
+            "type": "exercise",
+            "slug": "nonviolent-communication-practice"
+          }
+        ]
+      },
+      {
+        "title": "Emocionālās Intimitātes Uzlabošana",
+        "description": "Noslēdziet savu ceļojumu, izpētot veidus, kā padziļināt emocionālo saikni. Tas ietver praksi, lai uzlabotu fizisko un emocionālo intimitāti jūsu attiecībās, nodrošinot, ka jūs kļūstat tuvāki viens otram.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "emotional-intimacy-style"
+          },
+          {
+            "type": "question",
+            "slug": "whats-something-youd-like-to-learn-together-to-enhance-our-relationship"
+          },
+          {
+            "type": "article",
+            "slug": "building-emotional-intimacy-together"
+          },
+          {
+            "type": "game",
+            "slug": "intimacy-adventure"
+          },
+          {
+            "type": "checkup",
+            "slug": "emotional-intimacy-check-in"
+          },
+          {
+            "type": "exercise",
+            "slug": "emotional-closeness-exercises"
+          }
+        ]
+      }
+    ],
+    "slug": "learning-relationship-skills"
+  },
+  {
+    "job": [
+      "preparing_for_marriage"
+    ],
+    "title": "Sagatavojoties Kāzām: Spēcīgas Pamatu Veidošana",
+    "description": "Šī ceļojuma mērķis ir nodrošināt tevi un tavu partneri ar rīkiem un ieskatiem, kas nepieciešami veiksmīgām kāzām. Katru dienu jūs izpētīsiet būtiskus konceptus, sākot no komunikācijas līdz finansiālai harmonijai, veidojot dziļāku izpratni par otru un izturīgu attiecību.",
+    "subtopics": [
+      {
+        "title": "Mīlestības Valodu Izpratne",
+        "description": "Identificējiet un izpētiet viens otra mīlestības valodas, lai uzlabotu emocionālo saikni. Izpratne par to, kā jūs abi izrādāt un saņemat mīlestību, var ievērojami uzlabot jūsu attiecību dinamiku.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "love-language-type"
+          },
+          {
+            "type": "article",
+            "slug": "decoding-love-languages"
+          },
+          {
+            "type": "game",
+            "slug": "love-languages-exploration"
+          },
+          {
+            "type": "exercise",
+            "slug": "find-out-your-love-language"
+          }
+        ]
+      },
+      {
+        "title": "Finanšu Sarunu Apgūšana",
+        "description": "Uzziniet par atklātu diskusiju nozīmi attiecībā uz finansēm. Iedziļinieties budžeta stilos, izdevumu ieradumos un finansiālajos mērķos, lai veidotu uzticību un caurredzamību jūsu finansiālajā partnerībā.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "financial-communication-style"
+          },
+          {
+            "type": "article",
+            "slug": "mastering-money-talks-together"
+          },
+          {
+            "type": "game",
+            "slug": "dream-budget-builders"
+          },
+          {
+            "type": "checkup",
+            "slug": "aligning-financial-values-and-goals"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-prefer-to-communicate-your-needs-and-desires"
+          },
+          {
+            "type": "exercise",
+            "slug": "financial-planning-for-marriage"
+          }
+        ]
+      },
+      {
+        "title": "Emocionālās Intimitātes Pārvaldīšana",
+        "description": "Attīstiet prasmes, lai veicinātu emocionālo intimitāti caur ievainojamību, aktīvu klausīšanos un godīgu komunikāciju. Izprotiet, kā brīvi izteikt emocijas un atbalstīt viens otra emocionālās vajadzības.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "emotional-intimacy-style"
+          },
+          {
+            "type": "article",
+            "slug": "building-emotional-intimacy-together"
+          },
+          {
+            "type": "game",
+            "slug": "feelings-explorer"
+          },
+          {
+            "type": "checkup",
+            "slug": "emotional-intimacy-check-in"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-feel-about-writing-love-notes-to-each-other-want-to-give-it-a-try"
+          },
+          {
+            "type": "exercise",
+            "slug": "vulnerability-exploration-session"
+          }
+        ]
+      },
+      {
+        "title": "Nākotnes Mērķu Saskaņošana",
+        "description": "Izpētiet, kā apspriest un saskaņot savas sapņus un ambīcijas. Iestatiet kopīgus mērķus jūsu nākotnei kopā, nodrošinot, ka abi partneri jūtas novērtēti un saprasti plānošanas procesā.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "goal-alignment-style"
+          },
+          {
+            "type": "article",
+            "slug": "setting-shared-future-goals"
+          },
+          {
+            "type": "game",
+            "slug": "future-visionaries"
+          },
+          {
+            "type": "checkup",
+            "slug": "charting-our-shared-future"
+          },
+          {
+            "type": "exercise",
+            "slug": "long-term-goal-planning"
+          }
+        ]
+      },
+      {
+        "title": "Kopīgu Grūtību Pārvarēšana",
+        "description": "Sagatavojieties laulības dzīves izaicinājumiem, attīstot konfliktu risināšanas prasmes un stratēģijas, lai atbalstītu viens otru grūtos brīžos. Iemācieties pārvaldīt nesaskaņas ar empātiju un cieņu.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "your-conflict-style"
+          },
+          {
+            "type": "article",
+            "slug": "mastering-conflict-resolution-together"
+          },
+          {
+            "type": "game",
+            "slug": "conflict-resolution-quest"
+          },
+          {
+            "type": "checkup",
+            "slug": "conflict-resolution-style-match"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-game-we-could-play-to-improve-our-conflict-resolution-skills"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-feel-about-using-humor-to-ease-tense-conversations"
+          },
+          {
+            "type": "exercise",
+            "slug": "conflict-resolution-strategies-practice"
+          }
+        ]
+      },
+      {
+        "title": "Kopīgu Rituālu un Tradīciju Veidošana",
+        "description": "Izveidojiet nozīmīgus rituālus un tradīcijas, kas stiprina jūsu saikni. Atklājiet veidus, kā svinēt jūsu attiecības un radīt paliekošas atmiņas kā pārim, veicinot vienotības un piederības sajūtu.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "ritual-building-style"
+          },
+          {
+            "type": "article",
+            "slug": "fun-rituals-to-strengthen-bonds"
+          },
+          {
+            "type": "game",
+            "slug": "date-night-planner"
+          },
+          {
+            "type": "checkup",
+            "slug": "creative-date-designers"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-new-hobby-we-can-start-together-to-strengthen-our-bond"
+          },
+          {
+            "type": "exercise",
+            "slug": "creating-passion-renewal-date"
+          }
+        ]
+      }
+    ],
+    "slug": "preparing-for-marriage-building-a-strong-foundation"
+  },
+  {
+    "job": [
+      "introducing_healthy_habits"
+    ],
+    "title": "Kopīgu Veselīgu Ieradumu Ieviešana",
+    "description": "Šī ceļojuma mērķis ir palīdzēt pāriem attīstīt un uzturēt veselīgus ieradumus, kas veicina viņu vispārējo labklājību un stiprina attiecības. Veicot vienu soli katru dienu, jūs izpētīsiet uzturu, labklājības praksi un to, kā atbalstīt viens otru ceļojumā uz veselīgāku dzīvesveidu.",
+    "subtopics": [
+      {
+        "title": "Uztura Pamatu Izpratne",
+        "description": "Iemācieties labas uztura pamatus, apspriežot tādus aspektus kā vitamīni un barības vielas, ēdienu sagatavošana un veselīgu pārtikas produktu iekļaušana uzturā. Tas veido pamatu veselīgam dzīvesveidam.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "healthy-eating-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-ensure-youre-getting-enough-vitamins-and-nutrients"
+          },
+          {
+            "type": "article",
+            "slug": "kickstart-healthy-routines-together"
+          },
+          {
+            "type": "game",
+            "slug": "nutri-quiz"
+          },
+          {
+            "type": "exercise",
+            "slug": "healthy-eating-plans"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-prefer-cooking-together-or-trying-out-new-healthy-recipes-separately"
+          }
+        ]
+      },
+      {
+        "title": "Veselīgu Rituālu Veidošana",
+        "description": "Izpētiet veidus, kā izveidot ikdienas rituālus, kas veicina veselīgu ēšanu un fiziskās aktivitātes, tostarp rīta un vakara rituālus. Apspriediet konsekvences nozīmi un to, kā tā ietekmē jūsu veselību.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "healthy-habits-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-incorporate-healthy-eating-into-your-busy-schedule"
+          },
+          {
+            "type": "article",
+            "slug": "healthy-habits-for-stronger-bonds"
+          },
+          {
+            "type": "game",
+            "slug": "healthy-habits-hub"
+          },
+          {
+            "type": "exercise",
+            "slug": "positive-habit-tracking"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-enjoy-morning-workouts-or-evening-wind-downs-more"
+          }
+        ]
+      },
+      {
+        "title": "Stresa Pārvaldība Kopā",
+        "description": "Identificējiet veselīgas stratēģijas stresa pārvaldīšanai, tostarp apzinātības praksi un to, kā atbalstīt viens otru hektiskos laikos. Šis apakštēma attiecas uz garīgo labklājību kā daļu no veselīga dzīvesveida.",
+        "content": [
+          {
+            "type": "checkup",
+            "slug": "mood-mapping"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-handle-stress-in-a-healthy-way"
+          },
+          {
+            "type": "article",
+            "slug": "navigating-emotional-waters-together"
+          },
+          {
+            "type": "game",
+            "slug": "mindfulness-match"
+          },
+          {
+            "type": "exercise",
+            "slug": "mindfulness-meditation-sessions"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-handle-stress-or-unexpected-challenges"
+          }
+        ]
+      },
+      {
+        "title": "Fiziskās Aktivitātes Iekļaušana",
+        "description": "Apspriediet dažādas fiziskās aktivitātes formas, kas jums abiem patīk, komandas darba nozīmi aktīvu dzīvesveidu uzturēšanā un izveidojiet plānu regulārām fiziskajām aktivitātēm kopā, kas var palīdzēt jums būt atbildīgiem.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "accountability-style-quiz"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-prefer-solo-workouts-or-exercising-together"
+          },
+          {
+            "type": "checkup",
+            "slug": "fitness-partners-unite"
+          },
+          {
+            "type": "exercise",
+            "slug": "fitness-routine-together"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-new-form-of-exercise-youd-like-to-do-together-regularly"
+          }
+        ]
+      },
+      {
+        "title": "Progresu un Mērķu Izsekošana",
+        "description": "Iemācieties, kā noteikt un izsekot saviem veselības un labklājības mērķiem un kā svinēt viens otra sasniegumus. Tas radīs motivāciju un partnerības sajūtu jūsu veselīga dzīvesveida ceļojumā.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "goal-alignment-style"
+          },
+          {
+            "type": "question",
+            "slug": "what-are-your-long-term-health-and-wellness-goals-and-how-can-we-support-each-other"
+          },
+          {
+            "type": "article",
+            "slug": "setting-shared-future-goals"
+          },
+          {
+            "type": "game",
+            "slug": "future-visionaries"
+          },
+          {
+            "type": "exercise",
+            "slug": "smart-goals-planning"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-stay-motivated-to-maintain-your-healthy-habits"
+          }
+        ]
+      },
+      {
+        "title": "Veselīgu Ieradumu Veidošana Nākotnei",
+        "description": "Apspriediet ilgtermiņa veselības mērķus, kā iekļaut veselīgus ieradumus savā dzīvē kā pārim, un izveidojiet tradīcijas, kas veicina labklājību, nodrošinot, ka veselīgu praksi pieņemšana kļūst par dzīvesveidu.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "growth-balance-style"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-new-habit-youd-like-to-develop-together-for-personal-growth"
+          },
+          {
+            "type": "exercise",
+            "slug": "positive-reinforcement-practices"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-new-healthy-habit-youd-like-to-try-this-month"
+          }
+        ]
+      }
+    ],
+    "slug": "introducing-healthy-habits-together"
+  },
+  {
+    "job": [
+      "planning_for_future"
+    ],
+    "title": "Kopā plānojot mūsu nākotni",
+    "description": "Šis ceļojums ir izstrādāts, lai palīdzētu jums un jūsu partnerim pārdomāti plānot nākotni un pieņemt svarīgus dzīves lēmumus. Jūs izpētīsiet dažādus jūsu attiecību aspektus, apspriedīsiet ilgtermiņa mērķus un stiprināsiet savu partnerību, piedaloties aizraujošās aktivitātēs, veicinot atklātu komunikāciju un savstarpēju sapratni.",
+    "subtopics": [
+      {
+        "title": "Iedomājoties mūsu nākotni",
+        "description": "Sāciet, iedomājoties savu ideālo nākotni kopā, apspriežot sapņus un ambīcijas nākamo piecu gadu laikā. Jūs izveidosiet skaidru redzējumu par to, ko abi vēlaties no dzīves.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "future-planning-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-envision-our-relationship-evolving-over-the-next-five-years"
+          },
+          {
+            "type": "article",
+            "slug": "creating-a-vision-for-us"
+          },
+          {
+            "type": "game",
+            "slug": "future-visionaries"
+          },
+          {
+            "type": "checkup",
+            "slug": "future-talk-together"
+          },
+          {
+            "type": "exercise",
+            "slug": "long-term-goal-planning"
+          }
+        ]
+      },
+      {
+        "title": "Finanšu nākotnes",
+        "description": "Izpētiet savus finanšu mērķus kā pāris. Apspriediet budžeta plānošanu, taupīšanu un potenciālās investīcijas, lai nodrošinātu drošu un komfortablu dzīvesveidu, vienlaikus saskaņojot savas finanšu ambīcijas ar nākotnes plāniem.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "financial-planning-style"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-think-financial-discussions-should-happen-regularly-how-often"
+          },
+          {
+            "type": "article",
+            "slug": "mastering-money-talks-together"
+          },
+          {
+            "type": "game",
+            "slug": "dream-budget-builders"
+          },
+          {
+            "type": "checkup",
+            "slug": "budgeting-together-without-breaking-up"
+          },
+          {
+            "type": "exercise",
+            "slug": "budget-planning-session"
+          }
+        ]
+      },
+      {
+        "title": "Ģimenes plānošanas pamati",
+        "description": "Iedziļinieties diskusijās par ģimenes plānošanu un vecāku mērķiem. Izlemiet, vai vēlaties bērnus, cik daudz, un apsveriet, kādu audzināšanu jūs iedomājaties.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "parenting-style-alignment"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-want-to-have-children-if-so-when-do-you-think-is-the-right-time"
+          },
+          {
+            "type": "game",
+            "slug": "parenting-philosophy-play"
+          },
+          {
+            "type": "checkup",
+            "slug": "parenting-pathways"
+          },
+          {
+            "type": "exercise",
+            "slug": "parenting-styles-discussion"
+          },
+          {
+            "type": "question",
+            "slug": "should-we-adopt-if-we-are-unable-to-have-children"
+          }
+        ]
+      },
+      {
+        "title": "Lielu dzīves lēmumu pieņemšana",
+        "description": "Apspriediet, kā jūs kopā pievērsīsities nozīmīgiem lēmumiem savā dzīvē. Tas ietver kopā dzīvošanu, karjeras maiņu un negaidītus dzīves izaicinājumus, kas var rasties.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "decision-making-styles"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-feel-about-making-major-life-decisions-together"
+          },
+          {
+            "type": "game",
+            "slug": "problem-solving-pals"
+          },
+          {
+            "type": "checkup",
+            "slug": "resolving-decision-making-conflicts"
+          },
+          {
+            "type": "exercise",
+            "slug": "negotiation-skills-exercises"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-feel-about-relocating-for-career-opportunities-in-the-future"
+          }
+        ]
+      },
+      {
+        "title": "Kopīgas sapņu saraksta veidošana",
+        "description": "Izstrādājiet pāra sapņu sarakstu, kas atspoguļo jūsu kopīgās sapņus un piedzīvojumus, ko vēlaties piedzīvot kopā. Koncentrējieties uz ceļojumiem, pieredzi un tradīcijām, ko vēlaties veidot.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "goal-alignment-style"
+          },
+          {
+            "type": "question",
+            "slug": "if-we-were-to-create-a-couples-bucket-list-whats-the-first-adventure-youd-add"
+          },
+          {
+            "type": "article",
+            "slug": "adventure-sparks-deeper-bonds"
+          },
+          {
+            "type": "game",
+            "slug": "dream-adventure-quest"
+          },
+          {
+            "type": "exercise",
+            "slug": "fantasy-sharing-session"
+          },
+          {
+            "type": "question",
+            "slug": "if-we-could-teleport-to-any-romantic-destination-right-now-where-would-we-go"
+          }
+        ]
+      },
+      {
+        "title": "Vērtību un tradīciju saskaņošana",
+        "description": "Apspriediet svarīgas vērtības un tradīcijas, kuras vēlaties attīstīt kā pāris un ģimene. Iedziļinieties reliģiskajās pārliecībās, dzīvesveida izvēlēs un mantojumā, ko vēlaties radīt kopā.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "values-alignment-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-see-our-religious-beliefs-influencing-our-future-goals"
+          },
+          {
+            "type": "game",
+            "slug": "beliefs-values"
+          },
+          {
+            "type": "checkup",
+            "slug": "core-values-connection"
+          },
+          {
+            "type": "exercise",
+            "slug": "family-values-alignment"
+          },
+          {
+            "type": "question",
+            "slug": "what-values-are-most-important-for-us-to-instill-in-our-children"
+          }
+        ]
+      }
+    ],
+    "slug": "navigating-our-future-together"
+  },
+  {
+    "job": [
+      "preparing_for_children"
+    ],
+    "title": "Sagatavošanās Bērniem: Ceļojums uz Vecāku Lomu",
+    "description": "Šis ceļojums ir paredzēts, lai sagatavotu tevi un tavu partneri aizraujošajai un izaicinošajai vecāku pieredzei. Katru dienu jūs tiksiet vadīti cauri dažādām diskusijām, pārdomām un aktivitātēm, lai veicinātu nozīmīgas sarunas par vecāku lomu. Attīstoties, jūs izpētīsiet pamata jēdzienus, emocionālo gatavību un praktiskas stratēģijas, lai nodrošinātu veiksmīgu ceļojumu uz vecāku lomu.",
+    "subtopics": [
+      {
+        "title": "Sapratne par Vēlmi Būt Vecākiem",
+        "description": "Izpētiet savas individuālās domas un jūtas par bērnu iegūšanu. Piedalieties refleksīvās jautājumos, lai saprastu viens otra vēlmes un gaidas, veidojot pamatu nākotnes diskusijām.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "parenthood-readiness-styles"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-see-yourself-wanting-children-someday"
+          },
+          {
+            "type": "game",
+            "slug": "future-visionaries"
+          },
+          {
+            "type": "checkup",
+            "slug": "parenting-pathways"
+          },
+          {
+            "type": "exercise",
+            "slug": "family-planning-exercise"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-want-to-have-children-if-so-when-do-you-think-is-the-right-time"
+          }
+        ]
+      },
+      {
+        "title": "Saskaņošana Vecāku Vērtībās",
+        "description": "Apspriediet savas pamatvērtības un uzskatus par vecāku lomu. Šis apakštēma palīdzēs jums saskaņot svarīgus jautājumus, piemēram, izglītību, disciplīnu un vērtības, kuras vēlaties ieaudzināt saviem nākotnes bērniem.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "parenting-style-alignment"
+          },
+          {
+            "type": "question",
+            "slug": "what-values-are-most-important-for-us-to-instill-in-our-children"
+          },
+          {
+            "type": "game",
+            "slug": "values-vibes"
+          },
+          {
+            "type": "checkup",
+            "slug": "parenting-playbook-compatibility"
+          },
+          {
+            "type": "exercise",
+            "slug": "values-alignment-exercise"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-believe-in-religious-education-for-children-why-or-why-not"
+          }
+        ]
+      },
+      {
+        "title": "Emocionālās Gatavības Pārvaldība",
+        "description": "Novērtējiet savu emocionālo gatavību vecāku lomas kāpumiem un kritumiem. Caur dažādām aktivitātēm un pārdomām jūs risināsiet potenciālos bailes, bažas un cerības par vecāku lomu.",
+        "content": [
+          {
+            "type": "checkup",
+            "slug": "emotional-rollercoaster-ride"
+          },
+          {
+            "type": "question",
+            "slug": "are-you-ready-to-handle-the-emotional-rollercoaster-that-comes-with-parenting"
+          },
+          {
+            "type": "article",
+            "slug": "navigating-emotional-waters-together"
+          },
+          {
+            "type": "game",
+            "slug": "emotional-seasons"
+          },
+          {
+            "type": "exercise",
+            "slug": "emotional-support-exercises"
+          },
+          {
+            "type": "question",
+            "slug": "what-fears-or-concerns-do-you-have-about-becoming-parents"
+          }
+        ]
+      },
+      {
+        "title": "Praktiskās Vecāku Atbildības",
+        "description": "Iedziļinieties vecāku atbildības loģistikā. Apspriediet, kā vēlaties sadalīt pienākumus, plānot bērnu aprūpes iespējas un pārvaldīt mājas darbus, sagatavojoties praktiskajām realitātēm bērnu audzināšanā.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "responsibility-sharing-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-should-we-divide-parenting-responsibilities"
+          },
+          {
+            "type": "game",
+            "slug": "household-harmony"
+          },
+          {
+            "type": "exercise",
+            "slug": "shared-responsibilities-mapping"
+          },
+          {
+            "type": "question",
+            "slug": "what-are-your-thoughts-on-childcare-options"
+          }
+        ]
+      },
+      {
+        "title": "Finanšu Plānošana Vecāku Lomai",
+        "description": "Pievērsiet uzmanību finanšu aspektiem bērnu audzināšanā. Piedalieties diskusijās par budžeta plānošanu, uzkrājumiem jūsu bērna nākotnei un izmaiņām jūsu finanšu plānos, kad ieejat šajā jaunajā posmā.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "financial-planning-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-should-we-save-for-our-childs-future"
+          },
+          {
+            "type": "article",
+            "slug": "financial-planning-together"
+          },
+          {
+            "type": "game",
+            "slug": "dream-budget-builders"
+          },
+          {
+            "type": "exercise",
+            "slug": "budget-planning-session"
+          }
+        ]
+      },
+      {
+        "title": "Atbalsta Tīkla Veidošana",
+        "description": "Izpētiet atbalsta tīkla nozīmi, gatavojoties bērniem. Apspriediet ģimenes, draugu un vecāku resursu lomas, kas var palīdzēt jums tikt galā ar nākamajiem izaicinājumiem.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "support-network-style"
+          },
+          {
+            "type": "question",
+            "slug": "are-you-comfortable-with-pet-allergies-or-preferences-if-we-have-kids"
+          },
+          {
+            "type": "exercise",
+            "slug": "parenting-support-networks"
+          },
+          {
+            "type": "question",
+            "slug": "are-you-willing-to-retire-just-to-take-care-of-our-kids"
+          }
+        ]
+      }
+    ],
+    "slug": "preparing-for-children-a-journey-to-parenthood"
+  },
+  {
+    "job": [
+      "building_trust"
+    ],
+    "title": "Uzticības Veidošana Kopā",
+    "description": "Šī ceļojuma mērķis ir palīdzēt jums un jūsu partnerim izpētīt uzticības būtiskos komponentus jūsu attiecībās. Dažu dienu laikā jūs piedalīsieties nozīmīgās diskusijās, aktivitātēs un pārdomās, kas vērstas uz uzticības un emocionālās tuvības stiprināšanu.",
+    "subtopics": [
+      {
+        "title": "Uzticības Definēšana",
+        "description": "Sāciet ar to, lai izpētītu, ko uzticība nozīmē jums abiem. Apspriediet savas uzticības definīcijas un to, kā tās veido jūsu attiecības.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "trust-building-style-quiz"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-define-trust-in-a-relationship"
+          },
+          {
+            "type": "article",
+            "slug": "trust-through-open-communication"
+          },
+          {
+            "type": "game",
+            "slug": "trust-fund-trivia"
+          },
+          {
+            "type": "checkup",
+            "slug": "trust-builders"
+          },
+          {
+            "type": "question",
+            "slug": "can-you-share-a-time-when-honesty-led-to-a-positive-outcome-in-our-relationship"
+          },
+          {
+            "type": "exercise",
+            "slug": "trust-fall"
+          }
+        ]
+      },
+      {
+        "title": "Atklāta Komunikācija",
+        "description": "Uzziniet par caurspīdīgas un atklātas sarunas nozīmi. Piedalieties vingrinājumos un jautājumos, kas veicina godīgu komunikāciju.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "discover-your-communication-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-prefer-to-communicate-your-needs-and-desires"
+          },
+          {
+            "type": "article",
+            "slug": "enhancing-communication-for-stronger-bonds"
+          },
+          {
+            "type": "game",
+            "slug": "communication-clues"
+          },
+          {
+            "type": "checkup",
+            "slug": "mastering-our-communication-styles"
+          },
+          {
+            "type": "question",
+            "slug": "how-important-is-it-for-you-to-always-be-transparent-with-me-even-about-small-things"
+          },
+          {
+            "type": "exercise",
+            "slug": "active-listening-practice"
+          }
+        ]
+      },
+      {
+        "title": "Rūpes par Greizsirdību un Nedrošību",
+        "description": "Identificējiet un risiniet greizsirdības un nedrošības sajūtas. Dalieties personiskajās pieredzēs un pārvarēšanas stratēģijās atbalstošā vidē.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "emotional-regulation-styles"
+          },
+          {
+            "type": "question",
+            "slug": "have-you-ever-felt-jealous-in-our-relationship-how-did-you-handle-it"
+          },
+          {
+            "type": "article",
+            "slug": "navigating-emotional-waters-together"
+          },
+          {
+            "type": "game",
+            "slug": "emotion-explorer"
+          },
+          {
+            "type": "checkup",
+            "slug": "emotional-needs-compatibility"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-handle-feelings-of-jealousy-or-insecurity"
+          },
+          {
+            "type": "exercise",
+            "slug": "jealously-navigation-technique"
+          }
+        ]
+      },
+      {
+        "title": "Robušu Iestatīšana",
+        "description": "Apspriediet personiskos ierobežojumus un saprotiet viens otra komforta līmeņus. Savstarpējā cieņa un izpratne ir atslēga uzticības veidošanai.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "boundary-setting-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-comfortable-are-you-discussing-your-boundaries-and-desires"
+          },
+          {
+            "type": "article",
+            "slug": "navigating-boundaries-for-intimacy"
+          },
+          {
+            "type": "checkup",
+            "slug": "personal-space-balancing-togetherness-and-alone-time"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-boundary-you-need-to-feel-more-secure-and-trusting-in-our-relationship"
+          },
+          {
+            "type": "exercise",
+            "slug": "boundaries-practice"
+          }
+        ]
+      },
+      {
+        "title": "Uzticības Atjaunošana",
+        "description": "Izpētiet, kā atjaunot uzticību pēc tam, kad tā ir pārbaudīta. Apspriediet tehnikas un apņemšanās, kas nepieciešamas, lai atjaunotu ticību viens otram.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "trust-repair-style-type"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-prefer-to-rebuild-trust-if-its-ever-broken"
+          },
+          {
+            "type": "article",
+            "slug": "rebuilding-trust-after-betrayal"
+          },
+          {
+            "type": "game",
+            "slug": "trust-talk-challenge"
+          },
+          {
+            "type": "checkup",
+            "slug": "trust-in-communication"
+          },
+          {
+            "type": "question",
+            "slug": "have-you-done-something-in-the-past-that-you-think-can-significantly-change-my-image-of-you-and-what-are-the-things-that-can-hypothetically-change-your-image-of-me-maybe-i-did-something-amoral-or-cheated"
+          },
+          {
+            "type": "exercise",
+            "slug": "rebuild-trust-session"
+          }
+        ]
+      },
+      {
+        "title": "Uzticības Veidošanas Aktivitātes",
+        "description": "Piedalieties jautrās un interaktīvās aktivitātēs, kas uzlabo uzticību. Piedalieties vingrinājumos, kas paredzēti, lai tuvinātu jūs un stiprinātu jūsu saikni.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "transparency-style-assessment"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-fun-activity-we-can-do-together-to-strengthen-our-trust"
+          },
+          {
+            "type": "article",
+            "slug": "fun-rituals-to-strengthen-bonds"
+          },
+          {
+            "type": "game",
+            "slug": "trust-trek"
+          },
+          {
+            "type": "checkup",
+            "slug": "trust-in-conflict-resolution"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-trust-building-challenge-youd-like-us-to-try"
+          },
+          {
+            "type": "exercise",
+            "slug": "adventure-challenge"
+          }
+        ]
+      }
+    ],
+    "slug": "building-trust-together"
+  },
+  {
+    "job": [
+      "discussing_difficult_topics"
+    ],
+    "title": "Kopā Pārvarēt Grūtās Sarunas",
+    "description": "Šis ceļojums ir izstrādāts, lai vadītu tevi un tavu partneri caur izaicinājumiem, kas saistīti ar jutīgu tēmu apspriešanu jūsu attiecībās. Katru dienu jūs izpētīsiet dažādus komunikācijas aspektus, sākot no stabilas pamata izveides līdz dziļi personīgu tematu apspriešanai. Ceļojuma beigās jums būs rīki un pārliecība, lai iesaistītos nozīmīgās diskusijās, stiprinot jūsu emocionālo saikni un savstarpēju izpratni.",
+    "subtopics": [
+      {
+        "title": "Atvērtas Komunikācijas Izveide",
+        "description": "Uzzini par atvērtas komunikācijas nozīmi un to, kā izveidot drošu telpu grūtu tēmu apspriešanai. Šis apakštemats iepazīstinās ar pamata komunikācijas stratēģijām.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "discover-your-communication-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-prefer-to-communicate-your-needs-and-desires"
+          },
+          {
+            "type": "article",
+            "slug": "mastering-communication-techniques"
+          },
+          {
+            "type": "game",
+            "slug": "communication-clues"
+          },
+          {
+            "type": "checkup",
+            "slug": "mastering-our-communication-styles"
+          },
+          {
+            "type": "question",
+            "slug": "whats-your-favorite-memory-of-us-having-a-great-conversation"
+          },
+          {
+            "type": "exercise",
+            "slug": "active-listening-practice"
+          }
+        ]
+      },
+      {
+        "title": "Atšķirīgu Perspektīvu Izpratne",
+        "description": "Izpēti empātijas nozīmi, saprotot sava partnera skatījumu uz grūtām tēmām. Apspried metodes, kā konstruktīvi pievērsties nesaskaņām.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "empathy-resonance-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-can-we-ensure-both-of-us-feel-heard-during-a-disagreement"
+          },
+          {
+            "type": "article",
+            "slug": "building-emotional-intimacy-together"
+          },
+          {
+            "type": "game",
+            "slug": "deep-dive-dialogues"
+          },
+          {
+            "type": "checkup",
+            "slug": "empathy-adventure"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-prefer-to-approach-conversations-when-emotions-run-high"
+          },
+          {
+            "type": "exercise",
+            "slug": "difference-identification-and-acceptance"
+          }
+        ]
+      },
+      {
+        "title": "Greizsirdības un Uzticības Pārvarēšana",
+        "description": "Iedziļinies greizsirdības un uzticības sajūtās jūsu attiecībās. Šis apakštemats koncentrējas uz to, kā apspriest šīs grūtās sajūtas bez konfliktiem.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "trust-building-style-quiz"
+          },
+          {
+            "type": "question",
+            "slug": "have-you-ever-felt-jealous-in-our-relationship-how-did-you-handle-it"
+          },
+          {
+            "type": "article",
+            "slug": "building-trust-through-intimacy"
+          },
+          {
+            "type": "game",
+            "slug": "trust-talk"
+          },
+          {
+            "type": "checkup",
+            "slug": "trusting-truths"
+          },
+          {
+            "type": "question",
+            "slug": "does-cheating-only-relate-to-physical-things-or-is-there-emotional-cheating-as-well"
+          },
+          {
+            "type": "exercise",
+            "slug": "rebuild-trust-session"
+          }
+        ]
+      },
+      {
+        "title": "Robu Izveide Sarunās",
+        "description": "Uzzini, kā izveidot robežas, apspriežot jutīgas tēmas, lai nodrošinātu, ka abi partneri jūtas ērti un cienīti sarunu laikā.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "boundary-communication-style"
+          },
+          {
+            "type": "question",
+            "slug": "are-there-any-boundaries-around-work-that-youd-like-to-set"
+          },
+          {
+            "type": "game",
+            "slug": "communication-carousel"
+          },
+          {
+            "type": "question",
+            "slug": "whats-one-boundary-youd-like-to-set-to-keep-our-relationship-healthy"
+          },
+          {
+            "type": "exercise",
+            "slug": "boundaries-practice"
+          }
+        ]
+      },
+      {
+        "title": "Pagātnes Traumu Apspriešana",
+        "description": "Risiniet sarunas par pagātnes traumām un to, kā tās var ietekmēt jūsu attiecības. Šis apakštemats sniedz stratēģijas, kā delikāti apspriest šos izaicinošos tematus.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "life-story-style"
+          },
+          {
+            "type": "question",
+            "slug": "have-you-had-any-childhood-experiences-that-you-can-call-traumatic-how-has-it-affected-you"
+          },
+          {
+            "type": "article",
+            "slug": "navigating-emotional-waters-together"
+          },
+          {
+            "type": "checkup",
+            "slug": "exploring-childhood-memories"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-have-any-unresolved-issues-with-your-parents"
+          },
+          {
+            "type": "exercise",
+            "slug": "sensitive-subjects-dialogue-practice"
+          }
+        ]
+      },
+      {
+        "title": "Konfliktu Risināšanas Stratēģijas",
+        "description": "Attīsti savas prasmes konfliktu risināšanā, kas rodas sarunu laikā. Izpēti tehnikas, kā pārvērst strīdus par izaugsmes un savstarpējas izpratnes iespējām.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "your-conflict-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-can-we-turn-our-arguments-into-opportunities-for-growth"
+          },
+          {
+            "type": "article",
+            "slug": "effective-conflict-resolution-strategies"
+          },
+          {
+            "type": "game",
+            "slug": "problem-solving-pals"
+          },
+          {
+            "type": "checkup",
+            "slug": "conflict-resolution-styles"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-prefer-to-resolve-disagreements-calm-discussion-or-taking-a-short-break"
+          },
+          {
+            "type": "exercise",
+            "slug": "conflict-resolution-strategies-practice"
+          }
+        ]
+      }
+    ],
+    "slug": "navigating-difficult-conversations-together"
+  },
+  {
+    "job": [
+      "improving_relationship_satisfaction"
+    ],
+    "title": "Attiecību Apmierinātības Uzlabošana",
+    "description": "Šī ceļojuma mērķis ir sniegt pāriem praktiskus ieskatus un aktivitātes, kas pakāpeniski uzlabo viņu attiecību apmierinātību. Dažu dienu laikā jūs izpētīsiet dažādas tēmas, sākot no vajadzību izpratnes līdz emocionālās tuvības padziļināšanai, noslēdzot ar praktiskām stratēģijām turpmākai uzlabošanai jūsu partnerībā.",
+    "subtopics": [
+      {
+        "title": "Personīgo Vajadzību Izpratne",
+        "description": "Sāciet ar savu individuālo vajadzību un vēlmju apspriešanu attiecībās. Šī pamats palīdz abiem partneriem saprast, ko katrs unikāli prasa, lai justos apmierināts.",
+        "content": [
+          {
+            "type": "checkup",
+            "slug": "emotional-needs-compatibility"
+          },
+          {
+            "type": "question",
+            "slug": "how-can-we-ensure-both-of-our-needs-are-being-met"
+          },
+          {
+            "type": "article",
+            "slug": "building-trust-through-intimacy"
+          },
+          {
+            "type": "game",
+            "slug": "future-visionaries"
+          },
+          {
+            "type": "exercise",
+            "slug": "values-alignment-exercise"
+          },
+          {
+            "type": "question",
+            "slug": "how-can-we-better-support-each-other-during-stressful-situations"
+          }
+        ]
+      },
+      {
+        "title": "Atklātas Komunikācijas Prakses",
+        "description": "Mācieties efektīvas komunikācijas tehnikas, kas veicina atklātību un caurspīdīgumu starp partneriem. Piedalieties vingrinājumos, kas veicina aktīvu klausīšanos un sajūtu izteikšanu.",
+        "content": [
+          {
+            "type": "checkup",
+            "slug": "mastering-our-communication-styles"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-prefer-to-communicate-your-needs-and-desires"
+          },
+          {
+            "type": "article",
+            "slug": "enhancing-communication-for-stronger-bonds"
+          },
+          {
+            "type": "game",
+            "slug": "communication-clues"
+          },
+          {
+            "type": "exercise",
+            "slug": "active-listening-practice"
+          },
+          {
+            "type": "question",
+            "slug": "whats-your-favorite-memory-of-us-having-a-great-conversation"
+          }
+        ]
+      },
+      {
+        "title": "Atšķirību un Kopīgā Svētīšana",
+        "description": "Izpētiet, kas katru no jums padara unikālu, svinot kopīgās intereses. Tas palīdzēs pārvarēt savienojuma plaisas un cienīt individuālās preferences.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "growth-through-differences-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-can-we-celebrate-our-unique-strengths-and-compensate-for-our-differences"
+          },
+          {
+            "type": "article",
+            "slug": "embrace-and-celebrate-differences"
+          },
+          {
+            "type": "game",
+            "slug": "cultural-quest"
+          },
+          {
+            "type": "exercise",
+            "slug": "difference-identification-and-acceptance"
+          },
+          {
+            "type": "question",
+            "slug": "whats-one-thing-you-appreciate-about-how-i-handle-our-differences"
+          }
+        ]
+      },
+      {
+        "title": "Kopības un Neatkarības Līdzsvars",
+        "description": "Koncentrējieties uz harmoniska līdzsvara atrašanu starp kvalitatīvu laiku kopā un cieņu pret katra vajadzību pēc personīgās telpas un individuālajām interesēm.",
+        "content": [
+          {
+            "type": "checkup",
+            "slug": "balancing-our-unique-interests"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-feel-about-the-balance-between-our-personal-time-and-together-time"
+          },
+          {
+            "type": "article",
+            "slug": "fun-rituals-to-strengthen-bonds"
+          },
+          {
+            "type": "game",
+            "slug": "routine-rendezvous"
+          },
+          {
+            "type": "exercise",
+            "slug": "shared-calendar-setup"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-prefer-solo-workouts-or-exercising-together"
+          }
+        ]
+      },
+      {
+        "title": "Tuvības Radīšana caur Vulnerabilitāti",
+        "description": "Iedziļinieties praksēs, kas veido emocionālo tuvību caur vulnerabilitāti. Tas var ietvert pagātnes pieredzes un baiļu dalīšanu, lai padziļinātu savienojumu.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "vulnerability-style-assessment"
+          },
+          {
+            "type": "question",
+            "slug": "is-there-something-from-your-past-that-still-affects-our-relationship"
+          },
+          {
+            "type": "article",
+            "slug": "vulnerability-trusts-gateway"
+          },
+          {
+            "type": "game",
+            "slug": "secret-share"
+          },
+          {
+            "type": "exercise",
+            "slug": "truth-telling-exercises"
+          },
+          {
+            "type": "question",
+            "slug": "whats-something-youd-like-to-feel-more-of-in-our-relationship"
+          }
+        ]
+      },
+      {
+        "title": "Attiecību Mērķu Iestatīšana",
+        "description": "Noslēdziet ar praktiskām stratēģijām kopīgu mērķu iestatīšanai jūsu attiecībās, tostarp izaugsmes, tuvības un ilgtermiņa apmierinātības aspirācijām.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "goal-alignment-style"
+          },
+          {
+            "type": "question",
+            "slug": "what-are-your-aspirations-for-our-relationship-five-ten-or-twenty-years-down-the-line"
+          },
+          {
+            "type": "article",
+            "slug": "aligning-life-ambitions-together"
+          },
+          {
+            "type": "game",
+            "slug": "future-talks-fiesta"
+          },
+          {
+            "type": "exercise",
+            "slug": "smart-goals-planning"
+          },
+          {
+            "type": "question",
+            "slug": "what-are-your-thoughts-on-continuing-personal-growth-and-self-improvement-in-our-relationship"
+          }
+        ]
+      }
+    ],
+    "slug": "enhancing-relationship-satisfaction"
+  },
+  {
+    "job": [
+      "having_fun_and_entertainment"
+    ],
+    "title": "Kopā Radot Prieku un Izklaidi",
+    "description": "Šī ceļojuma laikā jūs tiksiet vadīti caur aktivitātēm un diskusijām, kas paredzētas, lai uzlabotu prieku un rotaļīgumu jūsu attiecībās. Izpētot dažādus izklaides aspektus, jūs attīstīsiet dziļāku saikni, vienlaikus mācoties iekļaut smieklus un radošumu savā ikdienā. Katru dienu jūs piedalīsieties jaunatklātās pieredzēs un pārdomās, kas veicina kopību un izpēti.",
+    "subtopics": [
+      {
+        "title": "Sākot ar Smiekliem",
+        "description": "Izpētiet humora lomu jūsu attiecībās. Piedalieties jautros jautājumos, piemēram, par savām iecienītākajām nepiemērotajām joks un flirtējošiem ziņojumiem. Šis pamata temats palīdzēs jums atrast veidus, kā iekļaut smieklus savā ikdienā.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "humor-harmony-style"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-have-a-favorite-inappropriate-joke"
+          },
+          {
+            "type": "article",
+            "slug": "laughing-together-keeps-love-strong"
+          },
+          {
+            "type": "game",
+            "slug": "love-laughter"
+          },
+          {
+            "type": "checkup",
+            "slug": "fun-flirtation"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-have-any-favorite-flirty-texts-or-messages-that-make-you-smile"
+          }
+        ]
+      },
+      {
+        "title": "Svinot Sasniegumus un Pārejas",
+        "description": "Uzziniet, kā svinēt viens otra panākumus, lielus vai mazus. Apspriediet savas iecienītākās svinēšanas metodes īpašiem notikumiem, piemēram, gadadienām un svētkiem, veicinot novērtēšanas un prieka atmosfēru.",
+        "content": [
+          {
+            "type": "checkup",
+            "slug": "marriage-milestones"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-like-to-celebrate-anniversaries"
+          },
+          {
+            "type": "game",
+            "slug": "date-night-planner"
+          },
+          {
+            "type": "test",
+            "slug": "milestone-celebration-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-like-to-celebrate-achievements-big-or-small"
+          }
+        ]
+      },
+      {
+        "title": "Kopīgu Interešu Atklāšana",
+        "description": "Ienirstiet diskusijās par aktivitātēm un hobijiem, kas jums abiem patīk. Identificējiet kopīgas intereses un piedāvājiet jautras aktivitātes, ko izmēģināt kopā, kas palīdzēs stiprināt jūsu kopējo saikni un radīt paliekošas atmiņas.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "hobby-harmony-style"
+          },
+          {
+            "type": "question",
+            "slug": "what-hobbies-or-activities-would-you-like-us-to-pursue-together-in-the-future"
+          },
+          {
+            "type": "article",
+            "slug": "exploring-shared-hobbies-together"
+          },
+          {
+            "type": "game",
+            "slug": "hobby-harmony"
+          },
+          {
+            "type": "checkup",
+            "slug": "uncovering-daily-habits-and-quirks"
+          },
+          {
+            "type": "exercise",
+            "slug": "hobbies-and-interests-exercise"
+          }
+        ]
+      },
+      {
+        "title": "Spontānas Piedzīvojumi",
+        "description": "Iziet no savas komforta zonas, plānojot spontānas izklaides vai jautras pārsteigumus viens otram. Izmantojiet ieteikumus, lai izlemtu par jaunām pieredzēm, piemēram, āra aktivitātēm vai tematiskām randiņu naktīm, palielinot satraukumu jūsu attiecībās.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "spontaneity-style"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-new-sport-or-physical-activity-youd-like-to-try-as-a-team"
+          },
+          {
+            "type": "article",
+            "slug": "adventure-sparks-deeper-bonds"
+          },
+          {
+            "type": "game",
+            "slug": "adventure-awaits"
+          },
+          {
+            "type": "checkup",
+            "slug": "adventure-together"
+          },
+          {
+            "type": "exercise",
+            "slug": "adventure-challenge"
+          }
+        ]
+      },
+      {
+        "title": "Radoša Rotaļīgums",
+        "description": "Izmantojiet savu radošumu kopā, izpētot mākslinieciskus centienus vai rotaļīgas spēles. Piedalieties vingrinājumos, kas izaicina jūs abus domāt ārpus ierastā, piemēram, DIY projektos vai tematiskās vakariņās.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "creative-sparks-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-express-your-creativity"
+          },
+          {
+            "type": "article",
+            "slug": "crafting-memorable-date-nights"
+          },
+          {
+            "type": "game",
+            "slug": "decor-dilemma"
+          },
+          {
+            "type": "exercise",
+            "slug": "creative-drawing-contest"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-creative-project-youd-love-to-tackle-as-a-duo"
+          }
+        ]
+      },
+      {
+        "title": "Tradīciju un Rituālu Veidošana",
+        "description": "Pabeidziet savu ceļojumu, pārdomājot, kā izveidot regulāras tradīcijas, kas uztur prieku jūsu attiecībās. Apspriediet jautrības rituālu vērtību un to, kā tie var uzlabot jūsu saikni un radīt mīļas atmiņas kopā.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "ritual-building-style"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-tradition-youd-like-to-start-together"
+          },
+          {
+            "type": "article",
+            "slug": "fun-rituals-to-strengthen-bonds"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-tradition-youd-like-us-to-start-as-a-couple"
+          }
+        ]
+      }
+    ],
+    "slug": "creating-fun-and-entertainment-together"
+  },
+  {
+    "job": [
+      "having_new_experiences"
+    ],
+    "title": "Piedzīvojumi Kopā: Jaunu Pieredžu Izpēte",
+    "description": "Šī ceļojuma mērķis ir mudināt tevi un tavu partneri pieņemt jaunumus un piedzīvojumus jūsu attiecībās, izmēģinot jaunas aktivitātes, izpētot nepazīstamas vietas un identificējot kopīgas intereses. Katru dienu jūs atklāsiet radošas idejas un aizraujošu saturu, kas iedvesmos jūs izklaidēties kopā un stiprināt jūsu saikni caur kopīgām pieredzēm.",
+    "subtopics": [
+      {
+        "title": "Sākt Ar Mazām Lietām: Jaunu Aktivitāšu Izmēģināšana",
+        "description": "Sāciet savu ceļojumu, identificējot vienkāršas aktivitātes, kas šķiet ērti, bet jauni. Iesaistieties diskusijās par hobijiem, kurus vēlētos izpētīt kopā, sākot no kulinārijas nodarbībām līdz galda spēļu vakariem.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "breaking-routine-style-quiz"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-hobby-youd-like-us-to-try-together"
+          },
+          {
+            "type": "article",
+            "slug": "rediscover-adventure-together"
+          },
+          {
+            "type": "game",
+            "slug": "adventure-awaits"
+          },
+          {
+            "type": "exercise",
+            "slug": "try-something-new-day"
+          }
+        ]
+      },
+      {
+        "title": "Kopīgas Vēlmju Saraksta Izveide",
+        "description": "Izveidojiet kopīgu pāra vēlmju sarakstu! Apspriediet aizraujošas vietas, kuras apmeklēt, unikālas pieredzes, ko dalīties, un nozīmīgus piedzīvojumus, kurus vēlaties piedzīvot nākotnē.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "adventure-style-assessment"
+          },
+          {
+            "type": "question",
+            "slug": "if-we-were-to-create-a-couples-bucket-list-whats-the-first-adventure-youd-add"
+          },
+          {
+            "type": "article",
+            "slug": "adventure-sparks-deeper-bonds"
+          },
+          {
+            "type": "game",
+            "slug": "future-adventure-quest"
+          },
+          {
+            "type": "exercise",
+            "slug": "future-goals-compatibility"
+          }
+        ]
+      },
+      {
+        "title": "Spontanitāte un Piedzīvojums",
+        "description": "Pieņemiet spontanitāti, plānojot pārsteiguma izbraucienus vai izmēģinot aktivitātes uz brīvo. Atklājiet negaidītu piedzīvojumu aizraujošumu kopā un stipriniet savu saikni caur spontanitāti.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "spontaneity-style"
+          },
+          {
+            "type": "question",
+            "slug": "whats-the-most-fun-youve-ever-had-while-doing-something-completely-spontaneous"
+          },
+          {
+            "type": "question",
+            "slug": "if-we-could-go-on-a-crazy-themed-road-trip-what-would-our-theme-be"
+          },
+          {
+            "type": "game",
+            "slug": "adventure-awaits"
+          },
+          {
+            "type": "exercise",
+            "slug": "outdoor-exploration-adventures"
+          }
+        ]
+      },
+      {
+        "title": "Jaunu Vietu Izpēte",
+        "description": "Paskatieties dziļāk uz vietām, kuras abi vēlaties izpētīt, vai tās būtu vietējās vai starptautiskas. Apspriediet savus ceļojumu sapņus un to, kā šīs pieredzes var bagātināt jūsu attiecības.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "exploration-partnership-style"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-like-to-travel-whats-the-most-exciting-place-youve-been"
+          },
+          {
+            "type": "question",
+            "slug": "which-country-is-at-the-top-of-your-travel-bucket-list-as-a-couple"
+          },
+          {
+            "type": "article",
+            "slug": "adventure-sparks-deeper-bonds"
+          },
+          {
+            "type": "game",
+            "slug": "cultural-quest"
+          },
+          {
+            "type": "exercise",
+            "slug": "cultural-exchange-day"
+          }
+        ]
+      },
+      {
+        "title": "Mācīšanās Kopā",
+        "description": "Identificējiet prasmes vai priekšmetus, kas jūs abus interesē mācīties kopā. Tas varētu būt jaunas valodas apguve, kulinārijas tehniku apgūšana vai mākslas nodarbību apmeklēšana—jebkas, kas jūs tuvina!",
+        "content": [
+          {
+            "type": "test",
+            "slug": "shared-learning-style"
+          },
+          {
+            "type": "question",
+            "slug": "if-you-could-learn-a-new-language-together-which-one-would-it-be"
+          },
+          {
+            "type": "question",
+            "slug": "whats-something-youd-like-to-learn-together-to-bring-us-closer"
+          },
+          {
+            "type": "article",
+            "slug": "mastering-communication-techniques"
+          },
+          {
+            "type": "game",
+            "slug": "laugh-learn-quiz"
+          },
+          {
+            "type": "exercise",
+            "slug": "smart-goals-planning"
+          }
+        ]
+      },
+      {
+        "title": "Radošums Piedzīvojumā",
+        "description": "Izpētiet radošus veidus, kā pārvērst parastas aktivitātes neaizmirstamās pieredzēs. Domājiet par tematiskām randiņu naktīm, radošiem izaicinājumiem vai piedzīvojumu uzdevumiem, kas ļauj jums saistīties caur iztēli un spēli.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "creative-sparks-style"
+          },
+          {
+            "type": "question",
+            "slug": "if-you-could-embark-on-a-creative-retreat-together-what-would-you-focus-on"
+          },
+          {
+            "type": "question",
+            "slug": "if-we-could-perform-in-a-talent-show-together-what-act-would-we-do"
+          },
+          {
+            "type": "article",
+            "slug": "fun-rituals-to-strengthen-bonds"
+          },
+          {
+            "type": "game",
+            "slug": "decor-dilemma"
+          },
+          {
+            "type": "exercise",
+            "slug": "artistic-expression-days"
+          }
+        ]
+      }
+    ],
+    "slug": "adventurous-together-exploring-new-experiences"
+  },
+  {
+    "job": [
+      "enhancing_love_and_affection"
+    ],
+    "title": "Mīlestības un Mīļuma Uzlabošana",
+    "description": "Šis ceļojums ir izstrādāts, lai palīdzētu pāriem attīstīt dziļāku mīlestību un mīļumu savās attiecībās, izmantojot nozīmīgas diskusijas, rotaļīgas aktivitātes un pārdomātas prakses. Katru dienu jūs izpētīsiet dažādus mīlestības un mīļuma aspektus, sākot no izpratnes par jūsu mīlestības izpausmēm līdz intīmu mirkļu radīšanai, kas stiprina jūsu saikni.",
+    "subtopics": [
+      {
+        "title": "Mīlestības Valodu Izpratne",
+        "description": "Uzziniet par mīlestības valodu jēdzienu un atklājiet, kā jūs un jūsu partneris izsaka un saņem mīlestību. Šīs zināšanas veido pamatu jūsu emocionālās saiknes uzlabošanai.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "love-language-type"
+          },
+          {
+            "type": "question",
+            "slug": "what-is-your-love-language"
+          },
+          {
+            "type": "article",
+            "slug": "decoding-love-languages"
+          },
+          {
+            "type": "game",
+            "slug": "love-languages-quiz"
+          },
+          {
+            "type": "checkup",
+            "slug": "emotional-needs-compatibility"
+          },
+          {
+            "type": "question",
+            "slug": "whats-your-favorite-way-to-express-love-and-how-does-it-differ-from-mine"
+          },
+          {
+            "type": "exercise",
+            "slug": "find-out-your-love-language"
+          }
+        ]
+      },
+      {
+        "title": "Ikdienas Mīļuma Izpausmes",
+        "description": "Izpētiet vienkāršus, bet spēcīgus veidus, kā ikdienā izteikt mīļumu. Šis apakštēma ietver diskusijas par mazām žestiem, mīlestības piezīmēm un komplimentiem, kas var iepriecināt viens otru.",
+        "content": [
+          {
+            "type": "exercise",
+            "slug": "compliment-exchange"
+          },
+          {
+            "type": "question",
+            "slug": "how-can-we-better-express-our-appreciation-for-each-other-daily"
+          },
+          {
+            "type": "article",
+            "slug": "enhance-affection-daily"
+          },
+          {
+            "type": "game",
+            "slug": "affectionate-habits"
+          },
+          {
+            "type": "checkup",
+            "slug": "acts-of-kindness-and-appreciation"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-small-gesture-that-always-makes-you-smile"
+          }
+        ]
+      },
+      {
+        "title": "Intīmu Miru Radīšana",
+        "description": "Atklājiet, kā radīt un iekļaut intīmus mirkļus savā ikdienas rutīnā. Tas ietver pārsteiguma randiņu plānošanu, spontānas samīļošanās un mirkļus, lai dziļi savienotos.",
+        "content": [
+          {
+            "type": "checkup",
+            "slug": "emotional-intimacy-check-in"
+          },
+          {
+            "type": "test",
+            "slug": "sensory-intimacy-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-feel-about-trying-new-activities-together-to-build-intimacy"
+          },
+          {
+            "type": "article",
+            "slug": "building-emotional-intimacy-together"
+          },
+          {
+            "type": "game",
+            "slug": "intimacy-insights"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-feel-about-surprise-date-nights-whats-your-ideal-surprise"
+          },
+          {
+            "type": "exercise",
+            "slug": "creating-passion-renewal-date"
+          }
+        ]
+      },
+      {
+        "title": "Pateicības un Novērtējuma Attīstīšana",
+        "description": "Ienirstiet pateicības izteikšanas nozīmībā jūsu attiecībās. Apspriediet, kā novērtējums var uzlabot mīlestību un mīļumu, un uzziniet konkrētas prakses, lai atzītu viens otru.",
+        "content": [
+          {
+            "type": "exercise",
+            "slug": "expressing-gratitude-session"
+          },
+          {
+            "type": "question",
+            "slug": "how-can-we-better-express-our-appreciation-for-each-other"
+          },
+          {
+            "type": "article",
+            "slug": "mastering-communication-techniques"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-like-to-express-appreciation-in-our-conversations"
+          }
+        ]
+      },
+      {
+        "title": "Rotaļīgums un Humors Mīļumā",
+        "description": "Uzziniet, kā humors un rotaļīgums var uzlabot intimitāti. Šis apakštēma mudina atrast veidus, kā kopā smieties un piedalīties rotaļīgās aktivitātēs, kas stiprina jūsu saikni.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "playfulness-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-feel-about-incorporating-humor-into-our-intimate-moments"
+          },
+          {
+            "type": "article",
+            "slug": "fun-rituals-to-strengthen-bonds"
+          },
+          {
+            "type": "game",
+            "slug": "laugh-learn-quiz"
+          },
+          {
+            "type": "checkup",
+            "slug": "fun-flirtation"
+          },
+          {
+            "type": "question",
+            "slug": "how-can-we-incorporate-more-playfulness-into-our-relationship"
+          },
+          {
+            "type": "exercise",
+            "slug": "karaoke-session"
+          }
+        ]
+      },
+      {
+        "title": "Fiziskais Mīļums un Saskare",
+        "description": "Izpētiet fiziskās saskares lomu dziļāka mīļuma veidošanā. Apspriediet preferences attiecībā uz skūpstiem, apskāvieniem, samīļošanos un citiem fiziskā mīļuma veidiem, kas nostiprina jūsu saikni.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "physical-touch-style"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-prefer-cuddling-on-the-couch-or-a-romantic-dinner-to-feel-loved"
+          },
+          {
+            "type": "article",
+            "slug": "enhancing-physical-intimacy-mindfully"
+          },
+          {
+            "type": "game",
+            "slug": "bedroom-preferences"
+          },
+          {
+            "type": "checkup",
+            "slug": "physical-comfort-and-boundaries"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-prefer-morning-hugs-or-goodnight-kisses"
+          },
+          {
+            "type": "exercise",
+            "slug": "affectionate-gestures-practice"
+          }
+        ]
+      }
+    ],
+    "slug": "enhancing-love-and-affection"
+  },
+  {
+    "job": [
+      "improving_honesty_and_openness"
+    ],
+    "title": "Godīguma un Atklātības Uzlabošana",
+    "description": "Šis ceļojums ir izstrādāts, lai palīdzētu tev un tavam partnerim attīstīt dziļāku godīguma un atklātības sajūtu jūsu attiecībās. Dažu dienu laikā jūs piedalīsieties aktivitātēs, diskusijās un vingrinājumos, kas veido uzticību un caurspīdīgumu, ļaujot jums pārvietoties pa jutīgiem tematiem un stiprināt jūsu saikni.",
+    "subtopics": [
+      {
+        "title": "Godīguma Izpratne",
+        "description": "Izpētiet godīguma jēdzienu attiecībās, tostarp tā nozīmi un dažādās dimensijas, kā būt godīgam pret savu partneri. Piedalieties jautājumos, kas izpēta jūsu pašreizējās perspektīvas par godīgumu.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "honesty-and-openness-style"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-believe-in-complete-transparency-in-a-relationship-why-or-why-not"
+          },
+          {
+            "type": "article",
+            "slug": "cultivating-honest-conversations"
+          },
+          {
+            "type": "game",
+            "slug": "honesty-hunt"
+          },
+          {
+            "type": "checkup",
+            "slug": "the-honesty-hangout"
+          },
+          {
+            "type": "exercise",
+            "slug": "honesty-commitment-ritual"
+          }
+        ]
+      },
+      {
+        "title": "Bailes Ap Godīgumu",
+        "description": "Identificējiet kopīgas bailes vai bažas par atklātību jūsu attiecībās. Kopā pārdomājiet situācijas, kad jutāties nespējīgi būt godīgi, un apspriediet, kā varat izveidot drošāku vidi atklātai komunikācijai.",
+        "content": [
+          {
+            "type": "checkup",
+            "slug": "openness-odyssey"
+          },
+          {
+            "type": "question",
+            "slug": "have-you-ever-felt-you-couldnt-be-completely-honest-with-me-why"
+          },
+          {
+            "type": "article",
+            "slug": "vulnerability-trusts-gateway"
+          },
+          {
+            "type": "exercise",
+            "slug": "truth-telling-exercises"
+          },
+          {
+            "type": "game",
+            "slug": "trust-talk-challenge"
+          },
+          {
+            "type": "question",
+            "slug": "have-you-ever-hidden-something-to-protect-my-feelings-how-did-it-turn-out"
+          }
+        ]
+      },
+      {
+        "title": "Caurspīdīguma Attīstīšana",
+        "description": "Uzziniet par caurspīdīguma priekšrocībām attiecībās un to, kā tas var uzlabot tuvību. Piedalieties aktivitātēs un diskusijās, kas veicina detaļu un domu dalīšanos, kuras parasti varētu paturēt privātas.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "transparency-style-assessment"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-think-its-ever-ok-to-tell-white-lies-in-a-relationship-why-or-why-not"
+          },
+          {
+            "type": "article",
+            "slug": "transparency-builds-strong-bonds"
+          },
+          {
+            "type": "exercise",
+            "slug": "transparency-talks"
+          },
+          {
+            "type": "game",
+            "slug": "transparency-trivia"
+          },
+          {
+            "type": "checkup",
+            "slug": "transparency-tools"
+          }
+        ]
+      },
+      {
+        "title": "Uzticības Veidošana Caur Atklātību",
+        "description": "Atklājiet stratēģijas, kā attīstīt uzticību, būdami atklāti par savām jūtām, nedrošībām un vēlmēm. Piedalieties vingrinājumos, kas veicina dalīšanos un ievainojamību.",
+        "content": [
+          {
+            "type": "exercise",
+            "slug": "openness-commitment-ritual"
+          },
+          {
+            "type": "question",
+            "slug": "how-can-we-support-each-other-to-be-more-open-and-honest-daily"
+          },
+          {
+            "type": "article",
+            "slug": "building-emotional-intimacy-together"
+          },
+          {
+            "type": "game",
+            "slug": "trust-builders"
+          },
+          {
+            "type": "checkup",
+            "slug": "trusting-truths"
+          },
+          {
+            "type": "question",
+            "slug": "can-you-share-a-time-when-honesty-led-to-a-positive-outcome-in-our-relationship"
+          }
+        ]
+      },
+      {
+        "title": "Grūtu Sarunu Pārvaldīšana",
+        "description": "Izpētiet tehnikas, kā risināt grūtus tematus ar godīgumu un atklātību. Praktizējiet efektīvas komunikācijas stratēģijas, lai izteiktu savas domas un jūtas, cenšoties konstruktīvi risināt konfliktus.",
+        "content": [
+          {
+            "type": "checkup",
+            "slug": "conflict-to-connection"
+          },
+          {
+            "type": "test",
+            "slug": "your-conflict-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-handle-situations-where-being-honest-might-hurt-someone"
+          },
+          {
+            "type": "article",
+            "slug": "navigating-difficult-conversations"
+          },
+          {
+            "type": "game",
+            "slug": "dialogue-duel"
+          },
+          {
+            "type": "exercise",
+            "slug": "conflict-resolution-strategies-practice"
+          }
+        ]
+      },
+      {
+        "title": "Godīgas Attiecību Kultūras Veidošana",
+        "description": "Izstrādājiet kopīgu vienošanos par godīguma praksi jūsu attiecībās. Apspriediet robežas un nodomus, lai uzturētu atklātības kultūru, nodrošinot, ka abi partneri jūtas droši, izsakoties.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "trust-building-style-quiz"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-boundary-you-need-to-feel-safe-being-honest-with-me"
+          },
+          {
+            "type": "article",
+            "slug": "building-trust-through-transparency"
+          },
+          {
+            "type": "game",
+            "slug": "trust-sparks"
+          },
+          {
+            "type": "exercise",
+            "slug": "boundaries-practice"
+          },
+          {
+            "type": "checkup",
+            "slug": "trust-builders"
+          }
+        ]
+      }
+    ],
+    "slug": "improving-honesty-and-openness"
+  },
+  {
+    "job": [
+      "discussing_finances"
+    ],
+    "title": "Finanšu Apspriešana: Spēcīgākas Nākotnes Veidošana Kopā",
+    "description": "Šī ceļojuma mērķis ir palīdzēt jums un jūsu partnerim iesaistīties nozīmīgās sarunās par finansēm, veidot savstarpēju izpratni un attīstīt sadarbības pieeju finanšu mērķiem. Virzoties cauri dažādiem apakštēmas, jūs uzzināsiet, kā efektīvi sazināties, noteikt finanšu mērķus un saskaņot savus izdevumu ieradumus, lai kopā veidotu gaišāku nākotni.",
+    "subtopics": [
+      {
+        "title": "Mūsu Finanšu Vērtību Izpratne",
+        "description": "Izpētiet viens otra finanšu uzskatus un vērtības, lai izveidotu spēcīgu pamatu jūsu finanšu sarunām. Šī apakštēma ietver jautājumus par jūsu finanšu lomu modeļiem un to, ko jūs prioritizējat finansēs.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "financial-communication-style"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-have-a-financial-role-model-who-and-why"
+          },
+          {
+            "type": "article",
+            "slug": "mastering-money-talks-together"
+          },
+          {
+            "type": "game",
+            "slug": "dream-budget-builders"
+          },
+          {
+            "type": "checkup",
+            "slug": "aligning-financial-values-and-goals"
+          },
+          {
+            "type": "exercise",
+            "slug": "financial-planning-session"
+          },
+          {
+            "type": "question",
+            "slug": "whats-one-financial-habit-you-admire-in-others"
+          }
+        ]
+      },
+      {
+        "title": "Finanšu Mērķu Noteikšana Kopā",
+        "description": "Apspriediet finanšu mērķu nozīmi kā pārim. Šī apakštēma palīdzēs jums izveidot īstermiņa un ilgtermiņa finanšu mērķus un saprast, kā tos kopā sasniegt.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "budgeting-style-for-couples"
+          },
+          {
+            "type": "question",
+            "slug": "what-are-your-financial-goals-and-how-can-we-achieve-them-together"
+          },
+          {
+            "type": "article",
+            "slug": "aligning-financial-goals-harmoniously"
+          },
+          {
+            "type": "game",
+            "slug": "future-visionaries"
+          },
+          {
+            "type": "checkup",
+            "slug": "future-financial-adventures"
+          },
+          {
+            "type": "exercise",
+            "slug": "budget-planning-session"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-new-financial-goal-youd-like-to-set-together"
+          }
+        ]
+      },
+      {
+        "title": "Saziņa Par Naudas Lietām",
+        "description": "Uzziniet efektīvas saziņas stratēģijas finanšu apspriešanai. Šī apakštēma iepazīstina ar rīkiem, piemēram, budžeta lietotnēm un regulāru pārbaudi, lai atvieglotu šīs sarunas.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "discover-your-communication-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-feel-about-budgeting-apps-yay-or-nay"
+          },
+          {
+            "type": "article",
+            "slug": "mastering-communication-techniques"
+          },
+          {
+            "type": "game",
+            "slug": "communication-champions"
+          },
+          {
+            "type": "checkup",
+            "slug": "mastering-our-communication-styles"
+          },
+          {
+            "type": "exercise",
+            "slug": "transparency-talks"
+          },
+          {
+            "type": "question",
+            "slug": "what-smartphone-app-do-you-mostly-use"
+          }
+        ]
+      },
+      {
+        "title": "Izdevumu un Ietaupījumu Saskaņošana",
+        "description": "Ienāciet sarunās par jūsu atšķirīgajiem izdevumu ieradumiem un to, kā atrast kopīgu pamatu. Šī apakštēma mudina jūs prioritizēt savus finanšu mērķus attiecībā uz dzīvesveida izvēlēm.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "your-spending-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-feel-about-our-different-spending-habits-and-how-can-we-find-a-middle-ground"
+          },
+          {
+            "type": "article",
+            "slug": "building-trust-through-financial-transparency"
+          },
+          {
+            "type": "game",
+            "slug": "budget-battle-royale"
+          },
+          {
+            "type": "checkup",
+            "slug": "budgeting-together-without-breaking-up"
+          },
+          {
+            "type": "exercise",
+            "slug": "spending-habits-review"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-prefer-saving-money-in-a-bank-or-investing-it-elsewhere"
+          }
+        ]
+      },
+      {
+        "title": "Finanšu Izaicinājumu Risināšana Kopā",
+        "description": "Apspriediet savas stratēģijas finanšu stresa un negaidītu izdevumu pārvaldīšanai. Šī apakštēma palīdzēs jums izstrādāt plānu, lai atbalstītu viens otru finanšu grūtību laikā.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "debt-management-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-handle-financial-stress-together"
+          },
+          {
+            "type": "game",
+            "slug": "debt-decision-duel"
+          },
+          {
+            "type": "checkup",
+            "slug": "tackling-debt-together"
+          },
+          {
+            "type": "exercise",
+            "slug": "debt-management-planning"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-handle-unexpected-expenses"
+          }
+        ]
+      },
+      {
+        "title": "Plānošana Mūsu Finanšu Nākotnei",
+        "description": "Izpētiet dziļākas finanšu plānošanas aspektus, tostarp pensiju stratēģijas, mājokļa iegādi un jūsu ģimenes finanšu nākotni. Šī apakštēma palīdzēs jums saskaņot jūsu vīzijas nākotnei un izveidot stabilu finanšu partnerību.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "future-planning-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-prioritize-financial-goals-with-other-life-goals"
+          },
+          {
+            "type": "game",
+            "slug": "future-forecast"
+          },
+          {
+            "type": "checkup",
+            "slug": "future-talk-flow"
+          },
+          {
+            "type": "exercise",
+            "slug": "retirement-dreams-mapping"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-see-the-budget-in-our-partnership-now-what-method-will-be-more-comfortable-for-you"
+          }
+        ]
+      }
+    ],
+    "slug": "discussing-our-finances-building-a-stronger-future-together"
+  },
+  {
+    "job": [
+      "rekindling_passion"
+    ],
+    "title": "Atjaunojot Kaislību",
+    "description": "Šī ceļojuma mērķis ir palīdzēt jums atjaunot kaislību jūsu attiecībās, izmantojot virkni ieskatu sniedzošu aktivitāšu, diskusiju un jautru vingrinājumu. Katru dienu jūs izpētīsiet dažādus intimitātes, komunikācijas un kopīgu pieredžu aspektus, lai stiprinātu savu saikni un uzlabotu romantisko savienojumu.",
+    "subtopics": [
+      {
+        "title": "Izpētot Mūsu Vēlmes",
+        "description": "Sāciet ar diskusiju par to, kas jums abiem šķiet seksīgs un pievilcīgs viens otram, tostarp fantāzijas un jaunas idejas. Izmantojiet aizraujošus jautājumus un testus, lai atklātu dziļākas vēlmes.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "desire-reignition-style"
+          },
+          {
+            "type": "question",
+            "slug": "what-do-you-find-especially-sexy-about-me"
+          },
+          {
+            "type": "article",
+            "slug": "enhancing-sexual-communication"
+          },
+          {
+            "type": "game",
+            "slug": "fantasy-feelings"
+          },
+          {
+            "type": "checkup",
+            "slug": "emotional-intimacy-check-in"
+          },
+          {
+            "type": "question",
+            "slug": "whats-something-we-could-do-to-spice-things-up"
+          },
+          {
+            "type": "exercise",
+            "slug": "sexual-bucket-list-creation"
+          }
+        ]
+      },
+      {
+        "title": "Romantisku Mirkļu Radīšana",
+        "description": "Uzziniet, kā padarīt ikdienas mirkļus īpašus. Šis apakštēma mudina jūs attīstīt romantiskus žestus un pārsteigt viens otru, ieviešot aizrautību jūsu ikdienas dzīvē.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "romantic-gesture-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-can-we-make-everyday-moments-feel-more-special-and-romantic"
+          },
+          {
+            "type": "article",
+            "slug": "crafting-memorable-date-nights"
+          },
+          {
+            "type": "game",
+            "slug": "date-night-planner"
+          },
+          {
+            "type": "checkup",
+            "slug": "quality-time-quality-love"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-new-hobby-we-could-start-together-to-spice-things-up"
+          },
+          {
+            "type": "exercise",
+            "slug": "creating-passion-renewal-date"
+          }
+        ]
+      },
+      {
+        "title": "Pievienojot Aizrautību Kopā",
+        "description": "Izpētiet jaunus hobijus vai pieredzes, ko varat dalīties kā pāris. Atklājiet aktivitātes, kas var atjaunot jautrību un kaislību jūsu attiecībās, vienlaikus ļaujot personīgai izaugsmei.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "hobby-harmony-style"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-new-hobby-we-can-start-together-to-strengthen-our-bond"
+          },
+          {
+            "type": "article",
+            "slug": "exploring-shared-hobbies-together"
+          },
+          {
+            "type": "game",
+            "slug": "hobby-harmony"
+          },
+          {
+            "type": "checkup",
+            "slug": "growth-through-novelty"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-way-we-can-challenge-each-other-to-grow-while-keeping-the-romance-alive"
+          },
+          {
+            "type": "exercise",
+            "slug": "hobbies-and-interests-exercise"
+          }
+        ]
+      },
+      {
+        "title": "Intimitāte un Vainība",
+        "description": "Iedziļinieties emocionālajā intimitātē un vainībā. Jūs praktizēsiet atklātu komunikāciju par savām emocionālajām vajadzībām, uzlabojot saikni, kas virza kaislību.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "emotional-intimacy-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-prefer-to-communicate-your-needs-and-desires"
+          },
+          {
+            "type": "article",
+            "slug": "building-emotional-intimacy-together"
+          },
+          {
+            "type": "game",
+            "slug": "trust-builders"
+          },
+          {
+            "type": "checkup",
+            "slug": "emotional-needs-compatibility"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-fun-way-we-can-explore-each-others-fantasies-together"
+          },
+          {
+            "type": "exercise",
+            "slug": "active-listening-practice"
+          }
+        ]
+      },
+      {
+        "title": "Saglabājot Dzirksti",
+        "description": "Apspriediet stratēģijas, kā saglabāt dzirksti dzīvu, pat ikdienišķos brīžos. Izpētiet veidus, kā nepārtraukti izaicināt un augt kopā, vienlaikus saglabājot romantiku priekšplānā.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "growth-balance-style"
+          },
+          {
+            "type": "question",
+            "slug": "what-do-you-think-we-can-do-to-keep-the-spark-alive-in-our-relationship"
+          },
+          {
+            "type": "article",
+            "slug": "boosting-relationship-happiness"
+          },
+          {
+            "type": "game",
+            "slug": "passion-rekindle-quest"
+          },
+          {
+            "type": "checkup",
+            "slug": "fun-and-affection"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-new-hobby-we-can-try-together-that-honors-both-our-interests"
+          },
+          {
+            "type": "exercise",
+            "slug": "flexible-role-playing"
+          }
+        ]
+      },
+      {
+        "title": "Ilgtermiņa Kaislības Plāni",
+        "description": "Izveidojiet ceļvedi, kā saglabāt kaislību jūsu attiecībās laika gaitā. Izstrādājiet kopīgus mērķus un vīziju par savu nākotni, kas saglabā gan intimitāti, gan aizrautību dzīvu.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "future-planning-style"
+          },
+          {
+            "type": "question",
+            "slug": "if-you-won-the-lottery-tomorrow-whats-the-first-thing-youd-do"
+          },
+          {
+            "type": "article",
+            "slug": "creating-a-vision-for-us"
+          },
+          {
+            "type": "game",
+            "slug": "future-visionaries"
+          },
+          {
+            "type": "checkup",
+            "slug": "future-talk-together"
+          },
+          {
+            "type": "question",
+            "slug": "whats-your-favorite-memory-of-us-having-a-great-conversation"
+          },
+          {
+            "type": "exercise",
+            "slug": "long-term-goal-planning"
+          }
+        ]
+      }
+    ],
+    "slug": "rekindling-the-passion"
+  },
+  {
+    "job": [
+      "having_and_discussing_sex"
+    ],
+    "title": "Pārvietojoties Mūsu Intīmajā Pasaulē",
+    "description": "Šī ceļojuma mērķis ir uzlabot jūsu izpratni un diskusijas par seksu jūsu attiecībās. Jūs izpētīsiet robežas, vēlmes un komunikācijas stilus, lai attīstītu apmierinošu un atklātu seksuālo saikni ar savu partneri. Katru dienu jūs iesaistīsieties dažādās aktivitātēs, kas paredzētas intimitātes un izpratnes veicināšanai.",
+    "subtopics": [
+      {
+        "title": "Izpratne par Vēlmēm un Robežām",
+        "description": "Sāciet ar savu personīgo vēlmju un robežu apspriešanu. Šis pamata solis veido uzticību un sagatavo pamatu atklātām sarunām par intimitāti. Atklājiet rīkus, lai izteiktu, ko jums vajag un ar ko jūs jūtaties ērti.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "discover-your-communication-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-comfortable-are-you-discussing-your-boundaries-and-desires"
+          },
+          {
+            "type": "article",
+            "slug": "trust-through-open-communication"
+          },
+          {
+            "type": "game",
+            "slug": "communication-clues"
+          },
+          {
+            "type": "checkup",
+            "slug": "mastering-our-communication-styles"
+          },
+          {
+            "type": "question",
+            "slug": "are-there-any-boundaries-youd-like-to-discuss-regarding-our-physical-relationship"
+          },
+          {
+            "type": "exercise",
+            "slug": "boundaries-practice"
+          }
+        ]
+      },
+      {
+        "title": "Izpētot Seksuālās Fantāzijas un Eksperimentus",
+        "description": "Tagad, kad esat izveidojuši drošu telpu, dalieties fantāzijās un apspriediet jaunās pieredzes, ko vēlaties izmēģināt kopā. Izpētiet veidus, kā ieviest šos elementus savā intīmajā dzīvē.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "fantasy-sharing-style"
+          },
+          {
+            "type": "question",
+            "slug": "are-there-any-fantasies-or-desires-youd-like-to-share"
+          },
+          {
+            "type": "article",
+            "slug": "building-emotional-intimacy-together"
+          },
+          {
+            "type": "game",
+            "slug": "intimacy-insights"
+          },
+          {
+            "type": "checkup",
+            "slug": "maintaining-sexual-satisfaction-over-time"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-fun-way-we-can-explore-each-others-fantasies-together"
+          },
+          {
+            "type": "exercise",
+            "slug": "fantasy-sharing-session"
+          }
+        ]
+      },
+      {
+        "title": "Atklāta Komunikācija par Intimitāti",
+        "description": "Attīstiet savas komunikācijas prasmes attiecībā uz seksu, nodrošinot, ka abi izsakat savas vajadzības, preferences un jebkādas bažas. Šis apakštēma ietver vingrinājumus, kas palīdz uzlabot caurspīdīgumu un saikni.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "sexual-communication-style"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-find-it-easy-to-say-everything-you-want-during-sex"
+          },
+          {
+            "type": "article",
+            "slug": "enhancing-sexual-communication"
+          },
+          {
+            "type": "game",
+            "slug": "communication-carousel"
+          },
+          {
+            "type": "checkup",
+            "slug": "mastering-communication"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-feel-about-discussing-intimacy-outside-of-the-bedroom"
+          },
+          {
+            "type": "exercise",
+            "slug": "talking-about-sex-practice"
+          }
+        ]
+      },
+      {
+        "title": "Fiziskās Intimitātes Uzlabošana",
+        "description": "Izpētiet dažādas fiziskās mīlestības un intimitātes formas. Apspriediet, kas liek jums justies saistītiem un apmierinātiem, un izmēģiniet jaunas aktivitātes, kas var uzlabot jūsu saikni un palielināt intimitāti.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "sensory-intimacy-style"
+          },
+          {
+            "type": "question",
+            "slug": "whats-your-favorite-way-to-be-touched"
+          },
+          {
+            "type": "article",
+            "slug": "building-emotional-intimacy-together"
+          },
+          {
+            "type": "game",
+            "slug": "satisfaction-safari"
+          },
+          {
+            "type": "checkup",
+            "slug": "maintaining-sexual-satisfaction-over-time"
+          },
+          {
+            "type": "question",
+            "slug": "what-parts-of-your-body-you-want-your-partner-to-focus-more-how-does-it-make-you-feel"
+          },
+          {
+            "type": "exercise",
+            "slug": "sensual-exploration-night"
+          }
+        ]
+      },
+      {
+        "title": "Pārvarot Izaicinājumus un Izmaiņas Seksuālajā Dzīvē",
+        "description": "Risiniet potenciālos šķēršļus savā seksuālajā dzīvē, piemēram, atšķirīgas libido vai emocionālas barjeras. Uzziniet stratēģijas, kā pārvarēt šos izaicinājumus, vienlaikus saglabājot atbalstošu dialogu, lai stiprinātu jūsu attiecības.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "sexual-harmony-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-high-is-your-sex-drive"
+          },
+          {
+            "type": "article",
+            "slug": "mastering-conflict-resolution-together"
+          },
+          {
+            "type": "game",
+            "slug": "problem-solving-partners"
+          },
+          {
+            "type": "checkup",
+            "slug": "aligning-sexual-values-and-expectations"
+          },
+          {
+            "type": "question",
+            "slug": "how-has-your-sexual-expectations-changed-since-weve-started-dating"
+          },
+          {
+            "type": "exercise",
+            "slug": "conflict-resolution-strategies-practice"
+          }
+        ]
+      },
+      {
+        "title": "Svinot Jūsu Seksuālo Saikni",
+        "description": "Apsveriet savu ceļojumu kopā un sviniet sasniegumus savās seksuālajās attiecībās. Apspriediet veidus, kā godināt savu intimitāti un saglabāt aizrautību, nodrošinot, ka abi partneri jūtas novērtēti un cienīti.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "love-language-type"
+          },
+          {
+            "type": "question",
+            "slug": "whats-the-best-thing-about-our-sex-life"
+          },
+          {
+            "type": "article",
+            "slug": "fun-rituals-to-strengthen-bonds"
+          },
+          {
+            "type": "game",
+            "slug": "date-night-planner"
+          },
+          {
+            "type": "exercise",
+            "slug": "shared-mood-boards"
+          },
+          {
+            "type": "question",
+            "slug": "whats-one-thing-you-love-about-our-physical-connection"
+          }
+        ]
+      }
+    ],
+    "slug": "navigating-our-intimate-world"
+  },
+  {
+    "job": [
+      "preparing_for_intimacy"
+    ],
+    "title": "Sagatavošanās Intimitātei",
+    "description": "Šī ceļojums ir izstrādāts, lai palīdzētu pāriem izpētīt un uzlabot viņu intīmās saites atbalstošā un konstruktīvā veidā. Caur sēriju rūpīgi izstrādāta satura, pāri iesaistīsies dažādos intimitātes aspektos, sākot no uzticības veidošanas līdz vēlmju izpētei. Katru dienu jūs atklāsiet jaunas atziņas un prakses, lai veicinātu dziļāku emocionālo un fizisko saikni.",
+    "subtopics": [
+      {
+        "title": "Intimitātes Izpratne",
+        "description": "Sāciet savu ceļojumu, izpētot intimitātes jēdzienu. Izprotat dažādas intimitātes dimensijas, tostarp emocionālos un fiziskos aspektus, un apspriediet, ko intimitāte nozīmē jums abiem.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "emotional-intimacy-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-envision-our-intimate-life-evolving-over-the-next-year"
+          },
+          {
+            "type": "article",
+            "slug": "building-emotional-intimacy-together"
+          },
+          {
+            "type": "game",
+            "slug": "intimacy-insights"
+          },
+          {
+            "type": "checkup",
+            "slug": "emotional-intimacy-check-in"
+          },
+          {
+            "type": "exercise",
+            "slug": "intimate-story-sharing"
+          }
+        ]
+      },
+      {
+        "title": "Uzticības un Vainīguma Veidošana",
+        "description": "Ienirstiet uzticības veidošanas vingrinājumos un apspriediet vainīguma nozīmi attiecībās. Uzziniet, kā personīgu jūtu un pieredzes dalīšana var radīt drošu telpu intimitātei.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "trust-building-style-quiz"
+          },
+          {
+            "type": "question",
+            "slug": "what-role-does-vulnerability-play-in-our-intimate-life"
+          },
+          {
+            "type": "article",
+            "slug": "vulnerability-trusts-gateway"
+          },
+          {
+            "type": "game",
+            "slug": "trust-builders"
+          },
+          {
+            "type": "checkup",
+            "slug": "trusting-truths"
+          },
+          {
+            "type": "exercise",
+            "slug": "vulnerability-exploration-session"
+          }
+        ]
+      },
+      {
+        "title": "Vēlmju Komunikācija",
+        "description": "Koncentrējieties uz komunikācijas mākslu attiecībā uz jūsu vēlmēm un priekšrocībām. Iesaistieties aktivitātēs, kas palīdz izteikt jūsu intīmās ambīcijas, un praktizējiet fantāziju dalīšanu atbalstošā veidā.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "sexual-communication-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-prefer-to-communicate-your-needs-and-desires"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-feel-about-sharing-your-deepest-desires-with-each-other"
+          },
+          {
+            "type": "article",
+            "slug": "enhancing-sexual-communication"
+          },
+          {
+            "type": "game",
+            "slug": "fantasy-fulfillment"
+          },
+          {
+            "type": "checkup",
+            "slug": "emotional-needs-compatibility"
+          },
+          {
+            "type": "exercise",
+            "slug": "fantasy-sharing-session"
+          }
+        ]
+      },
+      {
+        "title": "Intīmo Rituālu Veidošana",
+        "description": "Strādājiet kopā, lai izstrādātu personalizētus rituālus, kas uzlabo intimitāti. Tas var ietvert rutīnas, īpašas datumu naktis vai citas prakses, kas regulāri tuvina jūs kopā.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "ritual-building-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-can-we-create-more-intimate-moments-in-our-daily-routine"
+          },
+          {
+            "type": "question",
+            "slug": "whats-one-intimate-goal-youd-like-us-to-achieve-together"
+          },
+          {
+            "type": "article",
+            "slug": "fun-rituals-to-strengthen-bonds"
+          },
+          {
+            "type": "game",
+            "slug": "date-night-planner"
+          },
+          {
+            "type": "checkup",
+            "slug": "everyday-chats-that-count"
+          },
+          {
+            "type": "exercise",
+            "slug": "shared-calendar-setup"
+          }
+        ]
+      },
+      {
+        "title": "Fizisko Savienojumu Izpēte",
+        "description": "Pēc emocionālo aspektu stiprināšanas, pārejiet pie fiziskās intimitātes. Izpētiet dažādas fizisko savienojumu formas, sākot no pieskāriena līdz rotaļīgai izpētei, lai uzlabotu izpratni par katra vajadzībām.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "physical-touch-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-feel-about-introducing-new-elements-into-our-intimate-life"
+          },
+          {
+            "type": "question",
+            "slug": "whats-your-favorite-type-of-foreplay"
+          },
+          {
+            "type": "article",
+            "slug": "enhancing-physical-intimacy-mindfully"
+          },
+          {
+            "type": "game",
+            "slug": "intimacy-adventure"
+          },
+          {
+            "type": "checkup",
+            "slug": "balancing-fun-and-intimacy-in-sex"
+          },
+          {
+            "type": "exercise",
+            "slug": "erotic-massage-exchange"
+          }
+        ]
+      },
+      {
+        "title": "Robu un Vēlmju Pārvaldīšana",
+        "description": "Noslēdziet savu ceļojumu, atklājot robežas un vēlmes atklāti. Apspriediet jebkādas specifiskas kinks vai fantāzijas cieņpilnā vidē, nodrošinot, ka jūsu attiecības paliek konsensuālas un piepildītas.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "intimate-boundary-style"
+          },
+          {
+            "type": "question",
+            "slug": "is-there-a-particular-kink-or-fetish-you-want-to-explore-but-havent-shared-yet"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-prefer-spontaneity-or-planning-when-it-comes-to-intimacy"
+          },
+          {
+            "type": "article",
+            "slug": "navigating-boundaries-for-intimacy"
+          },
+          {
+            "type": "exercise",
+            "slug": "boundaries-practice"
+          }
+        ]
+      }
+    ],
+    "slug": "preparing-for-intimacy"
+  },
+  {
+    "job": [
+      "getting_to_know_partner"
+    ],
+    "title": "Iepazīšanās: Atklāšanas Ceļojums",
+    "description": "Sāciet transformējošu ceļojumu, lai dziļi saprastu un savienotos ar savu partneri. Šis ceļojums sastāv no rūpīgi izstrādātām ikdienas aktivitātēm, tostarp jautājumiem, vingrinājumiem, rakstiem un spēlēm, kas veicinās tuvību, uzlabos komunikāciju un atklās personiskus ieskatus. Dažu dienu laikā jūs izpētīsiet savas līdzības, atšķirības un unikālās īpašības, kas padara katru no jums par to, kas jūs esat.",
+    "subtopics": [
+      {
+        "title": "Fona un Īpašību Atklāšana",
+        "description": "Sāciet ar savstarpējo fona, personību un vērtību izpratni. Iesaistieties jautājumos par bērnības atmiņām, slēptajām talantām un personiskajām vēlmēm, lai izveidotu uzticības un atklātības pamatu.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "life-story-style"
+          },
+          {
+            "type": "question",
+            "slug": "can-you-share-a-memory-from-your-childhood-that-you-think-has-shaped-who-you-are-today"
+          },
+          {
+            "type": "article",
+            "slug": "love-maps-knowing-each-other-deeply"
+          },
+          {
+            "type": "game",
+            "slug": "memory-lane"
+          },
+          {
+            "type": "checkup",
+            "slug": "exploring-childhood-memories"
+          },
+          {
+            "type": "exercise",
+            "slug": "difference-identification-and-acceptance"
+          },
+          {
+            "type": "question",
+            "slug": "whats-your-favorite-childhood-memory"
+          }
+        ]
+      },
+      {
+        "title": "Interešu un Hobiju Izpēte",
+        "description": "Atklājiet kopīgas kaislības un individuālos hobijus. Piedalieties diskusijās un aktivitātēs, kas palīdzēs jums uzzināt par otra intereses, iecienītākajiem vaļaspriekiem un unikālajām īpašībām, ko katrs no jums nes attiecībās.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "hobby-harmony-style"
+          },
+          {
+            "type": "game",
+            "slug": "hobby-harmony"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-hobby-that-makes-you-feel-alive"
+          },
+          {
+            "type": "article",
+            "slug": "exploring-shared-hobbies-together"
+          },
+          {
+            "type": "exercise",
+            "slug": "hobbies-and-interests-exercise"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-new-hobby-we-could-start-together-to-spice-things-up"
+          }
+        ]
+      },
+      {
+        "title": "Komunikācijas Stilu Izpratne",
+        "description": "Mācieties efektīvi izteikt savas vajadzības un vēlmes. Iesaistieties vingrinājumos un spēlēs, kas veicina aktīvo klausīšanos un uzlabo jūsu spēju izteikt emocijas un gaidas.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "discover-your-communication-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-prefer-to-communicate-your-needs-and-desires"
+          },
+          {
+            "type": "article",
+            "slug": "mastering-communication-techniques"
+          },
+          {
+            "type": "game",
+            "slug": "communication-clues"
+          },
+          {
+            "type": "checkup",
+            "slug": "mastering-our-communication-styles"
+          },
+          {
+            "type": "exercise",
+            "slug": "active-listening-practice"
+          },
+          {
+            "type": "question",
+            "slug": "whats-your-favorite-memory-of-us-having-a-great-conversation"
+          }
+        ]
+      },
+      {
+        "title": "Mīlestības Valodu Identifikācija",
+        "description": "Ienirstiet unikālajos veidos, kā katrs no jums dod un saņem mīlestību. Izpētiet savas mīlestības valodas, izmantojot jautājumus un reflektējošus vingrinājumus, iegūstot ieskatus par to, kā labāk izteikt mīlestību tādā veidā, kas rezonē ar jūsu partneri.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "love-language-type"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-believe-in-love-languages-if-so-which-one-are-you"
+          },
+          {
+            "type": "article",
+            "slug": "decoding-love-languages"
+          },
+          {
+            "type": "game",
+            "slug": "love-languages-exploration"
+          },
+          {
+            "type": "checkup",
+            "slug": "emotional-needs-compatibility"
+          },
+          {
+            "type": "exercise",
+            "slug": "find-out-your-love-language"
+          },
+          {
+            "type": "question",
+            "slug": "what-is-your-love-language"
+          }
+        ]
+      },
+      {
+        "title": "Pašrefleksija un Mērķu Iestatīšana",
+        "description": "Veiciniet personīgu dalīšanos ar ambīcijām un sapņiem. Izmantojiet vadītas aktivitātes, lai pārdomātu personīgos mērķus un to, kā tie saskan ar jūsu attiecībām, veicinot savstarpēju atbalstu katra ceļojumā.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "goal-alignment-style"
+          },
+          {
+            "type": "question",
+            "slug": "what-are-your-dreams-and-aspirations-outside-of-work"
+          },
+          {
+            "type": "article",
+            "slug": "setting-shared-future-goals"
+          },
+          {
+            "type": "game",
+            "slug": "future-visionaries"
+          },
+          {
+            "type": "checkup",
+            "slug": "future-plans-alignment"
+          },
+          {
+            "type": "exercise",
+            "slug": "long-term-goal-planning"
+          },
+          {
+            "type": "question",
+            "slug": "what-personal-goals-do-you-have-that-i-might-not-be-aware-of"
+          }
+        ]
+      },
+      {
+        "title": "Emocionālās Tuvības Attīstīšana",
+        "description": "Padziļiniet savu emocionālo saikni, izmantojot atklātības vingrinājumus un godīgas sarunas. Iesaistieties aktivitātēs un diskusijās, kas veicina sajūtu, vēlmju un baiļu dalīšanos drošā vidē, uzlabojot jūsu tuvību un uzticību.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "emotional-intimacy-style"
+          },
+          {
+            "type": "question",
+            "slug": "whats-something-that-always-makes-you-feel-loved"
+          },
+          {
+            "type": "article",
+            "slug": "building-emotional-intimacy-together"
+          },
+          {
+            "type": "game",
+            "slug": "intimacy-insights"
+          },
+          {
+            "type": "checkup",
+            "slug": "emotional-intimacy-check-in"
+          },
+          {
+            "type": "exercise",
+            "slug": "emotional-closeness-exercises"
+          },
+          {
+            "type": "question",
+            "slug": "what-little-gestures-make-you-feel-most-loved-and-appreciated"
+          }
+        ]
+      }
+    ],
+    "slug": "getting-to-know-each-other-a-journey-of-discovery"
+  },
+  {
+    "job": [
+      "overcoming_differences"
+    ],
+    "title": "Pieņemot Mūsu Atšķirības: Ceļojums uz Dziļāku Izpratni",
+    "description": "Šis ceļojums ir izstrādāts, lai palīdzētu pāriem orientēties un svinēt savas atšķirības, pārvēršot izaicinājumus izaugsmes iespējās. Katru dienu jūs iesaistīsieties domājošos jautājumos, ieskatu sniedzošos rakstos un praktiskos uzdevumos, kas veicina empātiju, cieņu un sadarbību jūsu attiecībās.",
+    "subtopics": [
+      {
+        "title": "Izprotot Mūsu Fona",
+        "description": "Izpētiet, kā mūsu kultūras, reliģiskie un personīgie foni veido mūsu skatījumus un uzvedību attiecībās. Apsveriet jautājumus par kultūras atšķirībām un uzskatiem, sagatavojot pamatu nākotnes sarunām.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "cultural-harmony-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-our-different-cultural-backgrounds-shape-our-relationship-and-how-can-we-honor-both"
+          },
+          {
+            "type": "article",
+            "slug": "navigating-religious-conversations-smoothly"
+          },
+          {
+            "type": "game",
+            "slug": "cultural-quest"
+          },
+          {
+            "type": "checkup",
+            "slug": "navigating-cultural-and-religious-differences"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-respect-each-others-religious-beliefs-when-they-differ"
+          },
+          {
+            "type": "exercise",
+            "slug": "cultural-exchange-day"
+          }
+        ]
+      },
+      {
+        "title": "Efektīvas Komunikācijas Prasmes",
+        "description": "Uzziniet par caurspīdīguma un aktīvās klausīšanās nozīmi, pārvarot pārpratumus. Iesaistieties uzdevumos un rakstos, kas uzlabo jūsu komunikācijas stilus un veicina atklātu dialogu par jutīgiem tematiem.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "discover-your-communication-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-prefer-to-communicate-your-needs-and-desires"
+          },
+          {
+            "type": "article",
+            "slug": "mastering-communication-techniques"
+          },
+          {
+            "type": "game",
+            "slug": "communication-clues"
+          },
+          {
+            "type": "checkup",
+            "slug": "mastering-our-communication-styles"
+          },
+          {
+            "type": "question",
+            "slug": "whats-your-favorite-memory-of-us-having-a-great-conversation"
+          },
+          {
+            "type": "exercise",
+            "slug": "active-listening-practice"
+          }
+        ]
+      },
+      {
+        "title": "Svinot Atšķirības",
+        "description": "Atklājiet veidus, kā svinēt un godināt katra unikālās stiprās puses un skatījumus. Caur interaktīvu saturu izpētiet, kā atšķirības var veicināt radošumu un prieku jūsu partnerībā.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "growth-through-differences-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-can-we-celebrate-our-unique-strengths-and-compensate-for-our-differences"
+          },
+          {
+            "type": "article",
+            "slug": "embrace-and-celebrate-differences"
+          },
+          {
+            "type": "game",
+            "slug": "hobby-harmony"
+          },
+          {
+            "type": "checkup",
+            "slug": "embracing-our-personality-traits"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-fun-way-to-explore-and-embrace-our-differences-together"
+          },
+          {
+            "type": "exercise",
+            "slug": "difference-identification-and-acceptance"
+          }
+        ]
+      },
+      {
+        "title": "Konfliktu Pārvaldīšana ar Cieņu",
+        "description": "Attīstiet prasmes, lai pozitīvi un konstruktīvi pārvaldītu konfliktus. Šis apakštēma ietver praktiskas tehnikas, lai risinātu nesaskaņas, vienlaikus cienot katra viedokļus un uzturot uzticību.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "your-conflict-style"
+          },
+          {
+            "type": "question",
+            "slug": "whats-one-thing-youd-like-to-change-about-how-we-handle-our-differences"
+          },
+          {
+            "type": "article",
+            "slug": "mastering-conflict-resolution-together"
+          },
+          {
+            "type": "game",
+            "slug": "conflict-resolution-quest"
+          },
+          {
+            "type": "checkup",
+            "slug": "conflict-resolution-styles"
+          },
+          {
+            "type": "question",
+            "slug": "whats-one-thing-you-admire-about-my-perspective-thats-different-from-yours"
+          },
+          {
+            "type": "exercise",
+            "slug": "conflict-resolution-strategies-practice"
+          }
+        ]
+      },
+      {
+        "title": "Pārvēršot Izaicinājumus Izaugsmes Iespējās",
+        "description": "Mainiet savu domāšanu no atšķirību uzskatīšanas par šķēršļiem uz to redzēšanu kā ceļiem uz personīgo un attiecību izaugsmi. Iesaistieties aktivitātēs, kas veicina sadarbību un kopīgu problēmu risināšanu.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "flexibility-style-assessment"
+          },
+          {
+            "type": "question",
+            "slug": "how-can-we-turn-our-differences-into-opportunities-for-growth-as-a-couple"
+          },
+          {
+            "type": "article",
+            "slug": "embracing-differences-positively"
+          },
+          {
+            "type": "game",
+            "slug": "problem-solving-escapades"
+          },
+          {
+            "type": "checkup",
+            "slug": "team-problem-solving"
+          },
+          {
+            "type": "question",
+            "slug": "can-boredom-be-helpful"
+          },
+          {
+            "type": "exercise",
+            "slug": "cognitive-restructuring-together"
+          }
+        ]
+      },
+      {
+        "title": "Vienotas Redzējums",
+        "description": "Konsolidējiet to, ko esat iemācījušies, lai izveidotu kopīgu redzējumu par savu nākotni. Apsveriet savas vērtības, mērķus un ambīcijas kā pāris, nodrošinot, ka abi partneri jūtas redzēti un dzirdēti nākotnes ceļojumā.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "future-vision-type"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-challenge-weve-overcome-together-that-made-our-relationship-stronger"
+          },
+          {
+            "type": "article",
+            "slug": "aligning-future-goals"
+          },
+          {
+            "type": "game",
+            "slug": "future-visionaries"
+          },
+          {
+            "type": "checkup",
+            "slug": "future-talk-together"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-memorable-moment-where-our-differences-made-our-relationship-stronger"
+          },
+          {
+            "type": "exercise",
+            "slug": "long-term-goal-planning"
+          }
+        ]
+      }
+    ],
+    "slug": "embracing-our-differences-a-journey-to-deeper-understanding"
+  },
+  {
+    "job": [
+      "having_meaningful_conversations"
+    ],
+    "title": "Veidojot Jēgpilnas Sarunas",
+    "description": "Šis ceļojums ir izstrādāts, lai uzlabotu jūsu spēju iesaistīties jēgpilnās sarunās ar savu partneri. Dažu dienu laikā jūs izpētīsiet dažādus komunikācijas aspektus, sākot no savstarpējo vērtību izpratnes līdz dziļāku emocionālo jautājumu apspriešanai. Katru dienu jūs būvēsit uz iepriekšējās, veicinot izaugsmi un saikni.",
+    "subtopics": [
+      {
+        "title": "Komunikācijas Pamati",
+        "description": "Sāciet ar efektīvas komunikācijas pamatu izpēti ar savu partneri. Uzziniet par aktīvo klausīšanos, skaidru domu izteikšanu un neverbālo signālu nozīmi.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "discover-your-communication-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-prefer-to-communicate-your-needs-and-desires"
+          },
+          {
+            "type": "article",
+            "slug": "mastering-communication-techniques"
+          },
+          {
+            "type": "game",
+            "slug": "communication-clues"
+          },
+          {
+            "type": "checkup",
+            "slug": "mastering-our-communication-styles"
+          },
+          {
+            "type": "exercise",
+            "slug": "active-listening-practice"
+          },
+          {
+            "type": "question",
+            "slug": "whats-your-favorite-memory-of-us-having-a-great-conversation"
+          }
+        ]
+      },
+      {
+        "title": "Savstarpējo Vērtību Izpratne",
+        "description": "Iedziļinieties pamatvērtībās, kas veido jūsu uzskatus un rīcību. Apspriediet, kā šīs vērtības ietekmē jūsu lēmumus un kā tās var ietekmēt jūsu attiecības.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "values-alignment-style"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-think-we-share-the-same-values"
+          },
+          {
+            "type": "article",
+            "slug": "aligning-life-ambitions-together"
+          },
+          {
+            "type": "game",
+            "slug": "values-vibes"
+          },
+          {
+            "type": "checkup",
+            "slug": "core-values-connection"
+          },
+          {
+            "type": "exercise",
+            "slug": "values-alignment-exercise"
+          },
+          {
+            "type": "question",
+            "slug": "what-are-your-top-three-values-and-how-do-they-influence-your-decisions"
+          }
+        ]
+      },
+      {
+        "title": "Grūtu Tēmu Apspriešana",
+        "description": "Uzziniet tehnikas, kā pievērsties grūtām sarunām ar jutību un cieņu. Praktizējiet grūtu tematu apspriešanu, piemēram, finanses, ģimenes dinamiku vai nākotnes ambīcijas.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "problem-solving-style"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-think-that-money-play-a-big-role-in-feeling-fulfilled"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-balance-personal-time-with-time-spent-together"
+          },
+          {
+            "type": "article",
+            "slug": "navigating-difficult-conversations"
+          },
+          {
+            "type": "game",
+            "slug": "conflict-resolution-quest"
+          },
+          {
+            "type": "checkup",
+            "slug": "tackling-tough-talks"
+          },
+          {
+            "type": "exercise",
+            "slug": "tough-talks-toolkit"
+          }
+        ]
+      },
+      {
+        "title": "Personīgo Pieredžu Dalīšanās",
+        "description": "Iesaistieties stāstu stāstīšanā, lai dalītos nozīmīgās atmiņās no jūsu pagātnes. Atklājiet, kā jūsu pieredze ir ietekmējusi jūsu pašreizējās perspektīvas un emocionālo stāvokli.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "life-story-style"
+          },
+          {
+            "type": "question",
+            "slug": "can-you-share-a-memory-from-your-childhood-that-you-think-has-shaped-who-you-are-today"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-memorable-lesson-youve-learned-from-past-relationships"
+          },
+          {
+            "type": "article",
+            "slug": "love-maps-knowing-each-other-deeply"
+          },
+          {
+            "type": "game",
+            "slug": "memory-lane"
+          },
+          {
+            "type": "checkup",
+            "slug": "exploring-childhood-memories"
+          },
+          {
+            "type": "exercise",
+            "slug": "intimate-story-sharing"
+          }
+        ]
+      },
+      {
+        "title": "Emocionālās Saiknes Padziļināšana",
+        "description": "Izpētiet sarunas, kas uzlabo emocionālo tuvību. Apspriediet tēmas, piemēram, bailes, sapņus un ambīcijas, lai veicinātu dziļāku saikni ar savu partneri.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "emotional-intimacy-style"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-believe-in-soulmates-why-or-why-not"
+          },
+          {
+            "type": "question",
+            "slug": "what-are-your-dreams-and-aspirations-outside-of-work"
+          },
+          {
+            "type": "article",
+            "slug": "building-emotional-intimacy-together"
+          },
+          {
+            "type": "game",
+            "slug": "emotional-expeditions"
+          },
+          {
+            "type": "checkup",
+            "slug": "emotional-intimacy-check-in"
+          },
+          {
+            "type": "exercise",
+            "slug": "emotional-closeness-exercises"
+          }
+        ]
+      },
+      {
+        "title": "Atvērtības Kultūras Veidošana",
+        "description": "Izveidojiet vidi, kurā abi partneri jūtas droši izteikt savas domas un jūtas. Uzziniet stratēģijas, kā uzturēt atklātu komunikāciju un veicināt ievainojamību.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "openness-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-feel-about-surprise-conversations-versus-planned-discussions"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-express-your-creativity"
+          },
+          {
+            "type": "article",
+            "slug": "cultivating-honest-conversations"
+          },
+          {
+            "type": "game",
+            "slug": "open-hearts-challenge"
+          },
+          {
+            "type": "checkup",
+            "slug": "vulnerability-and-openness"
+          },
+          {
+            "type": "exercise",
+            "slug": "transparent-communication-practices"
+          }
+        ]
+      }
+    ],
+    "slug": "cultivating-meaningful-conversations"
+  },
+  {
+    "job": [
+      "improving_communication"
+    ],
+    "title": "Saziņas Uzlabošana: Tilti Mūsu Attiecībās",
+    "description": "Šī ceļojuma mērķis ir uzlabot saziņas prasmes starp partneriem. Piedaloties dažādās aktivitātēs, diskusijās un refleksīvās praksēs, jūs iemācīsieties izteikt sevi atklātāk un labāk saprast viens otru, veicinot tuvāku saikni un piepildītākas attiecības.",
+    "subtopics": [
+      {
+        "title": "Sapratne par Citu Saziņas Stiliem",
+        "description": "Izpētiet dažādus saziņas stilus un atklājiet, kā tie ietekmē jūsu mijiedarbību. Tas ietver jūsu pašu stila identificēšanu un partnera priekšroku izzināšanu, lai izveidotu atklātu dialogu.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "discover-your-communication-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-prefer-to-communicate-your-needs-and-desires"
+          },
+          {
+            "type": "article",
+            "slug": "enhancing-communication-for-stronger-bonds"
+          },
+          {
+            "type": "game",
+            "slug": "communication-clues"
+          },
+          {
+            "type": "exercise",
+            "slug": "active-listening-practice"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-feel-about-writing-down-our-issues-before-discussing-them"
+          },
+          {
+            "type": "checkup",
+            "slug": "mastering-our-communication-styles"
+          }
+        ]
+      },
+      {
+        "title": "Grūtu Sarunu Pārvaldīšana",
+        "description": "Iemācieties tehnikas, kā pievērsties grūtām diskusijām ar empātiju un cieņu. Jūs iegūsiet prasmes izteikt savas domas un jūtas, vienlaikus pievēršot uzmanību partnera perspektīvai.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "problem-solving-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-can-we-make-our-disagreements-more-constructive"
+          },
+          {
+            "type": "article",
+            "slug": "navigating-sensitive-conversations"
+          },
+          {
+            "type": "game",
+            "slug": "problem-solving-pals"
+          },
+          {
+            "type": "exercise",
+            "slug": "conflict-resolution-strategies-practice"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-prefer-discussing-issues-immediately-or-taking-some-time-to-cool-off"
+          },
+          {
+            "type": "checkup",
+            "slug": "navigating-tough-conversations"
+          }
+        ]
+      },
+      {
+        "title": "Nepieciešamību un Robežu Izteikšana",
+        "description": "Šī tēma pēta, kā sazināt savas vajadzības un noteikt veselīgas robežas. Jūs praktizēsiet, kā izteikt to, ko no otra sagaidāt, veidā, kas stiprina jūsu attiecības.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "boundary-setting-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-comfortable-are-you-discussing-your-boundaries-and-desires"
+          },
+          {
+            "type": "article",
+            "slug": "navigating-boundaries-for-intimacy"
+          },
+          {
+            "type": "exercise",
+            "slug": "boundaries-practice"
+          },
+          {
+            "type": "question",
+            "slug": "whats-one-boundary-youd-like-to-set-to-keep-our-relationship-healthy"
+          }
+        ]
+      },
+      {
+        "title": "Aktīvā Klausīšanās un Emocionālā Validācija",
+        "description": "Apgūstiet aktīvās klausīšanās mākslu un uzziniet, kā apstiprināt partnera jūtas. Jūs atklāsiet rīkus, lai uzlabotu klausīšanās prasmes un nodrošinātu, ka abi partneri jūtas uzklausīti un saprasti.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "listening-style-quiz"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-like-to-receive-feedback-in-our-relationship"
+          },
+          {
+            "type": "article",
+            "slug": "mastering-active-listening"
+          },
+          {
+            "type": "checkup",
+            "slug": "emotional-explorers"
+          },
+          {
+            "type": "exercise",
+            "slug": "active-listening-practice"
+          },
+          {
+            "type": "question",
+            "slug": "whats-your-favorite-non-verbal-way-i-show-you-im-listening"
+          }
+        ]
+      },
+      {
+        "title": "Konstruktīva Konfliktu Risināšana",
+        "description": "Iemācieties efektīvas stratēģijas konfliktu risināšanai konstruktīvā veidā. Tas ietver tehnikas, kā risināt nesaskaņas, nesabojājot attiecības, veicinot komandas garu.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "your-conflict-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-handle-disagreements-or-conflicts"
+          },
+          {
+            "type": "article",
+            "slug": "effective-conflict-resolution-strategies"
+          },
+          {
+            "type": "game",
+            "slug": "conflict-resolution-quest"
+          },
+          {
+            "type": "exercise",
+            "slug": "conflict-resolution-strategies-practice"
+          },
+          {
+            "type": "question",
+            "slug": "whats-one-thing-youd-like-to-change-about-how-we-handle-our-differences"
+          },
+          {
+            "type": "checkup",
+            "slug": "conflict-resolution-styles"
+          }
+        ]
+      },
+      {
+        "title": "Atklātu un Godīgu Dialogu Veicināšana",
+        "description": "Attīstiet atklātas un godīgas komunikācijas ieradumu savās attiecībās. Šī apakštēma vadīs jūs cauri praksēm, kas veicina caurspīdīgumu un uzticību, atverot ceļu dziļākai saiknei un tuvībai.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "honesty-and-openness-style"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-feel-comfortable-expressing-your-true-feelings-with-me-why-or-why-not"
+          },
+          {
+            "type": "article",
+            "slug": "building-trust-through-transparency"
+          },
+          {
+            "type": "game",
+            "slug": "honesty-huddle"
+          },
+          {
+            "type": "checkup",
+            "slug": "the-honesty-hangout"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-think-honesty-is-always-the-best-policy-why-or-why-not"
+          },
+          {
+            "type": "exercise",
+            "slug": "complete-honesty-sessions"
+          }
+        ]
+      }
+    ],
+    "slug": "improving-communication-building-bridges-in-our-relationship"
+  },
+  {
+    "job": [
+      "solving_relationship_problems"
+    ],
+    "title": "Attiecību Problēmu Risinašana un Pārvaldīšana",
+    "description": "Šis ceļojums ir izstrādāts, lai palīdzētu tev un tavam partnerim efektīvi risināt un pārvaldīt konfliktus. Katru dienu tu iesaistīsies vingrinājumos, jautājumos un aktivitātēs, kas attīsta tavas komunikācijas prasmes un problēmu risināšanas spējas. Ceļojuma beigās tu jutīsies labāk sagatavots, lai kopā risinātu izaicinājumus un atrastu risinājumus kā komandai.",
+    "subtopics": [
+      {
+        "title": "Konfliktu Stilu Izpratne",
+        "description": "Atklāj savus individuālos konfliktu stilus un to, kā tie ietekmē tavas attiecības. Izmanto jautājumus un refleksiju, lai saprastu, kā tu parasti reaģē uz nesaskaņām.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "your-conflict-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-handle-disagreements-or-conflicts"
+          },
+          {
+            "type": "article",
+            "slug": "effective-conflict-resolution-strategies"
+          },
+          {
+            "type": "game",
+            "slug": "conflict-resolution-quest"
+          },
+          {
+            "type": "checkup",
+            "slug": "conflict-resolution-styles"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-handle-disagreements-and-whats-your-favorite-way-for-us-to-make-up-after-a-fight"
+          },
+          {
+            "type": "exercise",
+            "slug": "conflict-resolution-styles"
+          }
+        ]
+      },
+      {
+        "title": "Komunikācijas Pamati",
+        "description": "Koncentrējies uz savu komunikācijas prasmju uzlabošanu konfliktu laikā. Izpēti efektīvas klausīšanās tehnikas un skaidras izteiksmes nozīmi, izmantojot vingrinājumus un spēles.",
+        "content": [
+          {
+            "type": "checkup",
+            "slug": "mastering-our-communication-styles"
+          },
+          {
+            "type": "test",
+            "slug": "discover-your-communication-style"
+          },
+          {
+            "type": "article",
+            "slug": "mastering-communication-techniques"
+          },
+          {
+            "type": "game",
+            "slug": "communication-clues"
+          },
+          {
+            "type": "exercise",
+            "slug": "active-listening-practice"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-prefer-to-communicate-your-needs-and-desires"
+          },
+          {
+            "type": "question",
+            "slug": "whats-your-favorite-memory-of-us-having-a-great-conversation"
+          }
+        ]
+      },
+      {
+        "title": "Konstruktīva Konfliktu Risinašana",
+        "description": "Mācies, kā pārvērst nesaskaņas konstruktīvās sarunās. Iesaisties vingrinājumos un rakstos, kas sniedz stratēģijas konfliktu risināšanai bez to eskalācijas.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "solution-focused-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-can-we-make-our-disagreements-more-constructive"
+          },
+          {
+            "type": "article",
+            "slug": "mastering-conflict-resolution-together"
+          },
+          {
+            "type": "game",
+            "slug": "problem-solving-escapades"
+          },
+          {
+            "type": "checkup",
+            "slug": "conflict-resolution-wizards"
+          },
+          {
+            "type": "question",
+            "slug": "can-you-recall-a-time-when-you-felt-misunderstood-how-did-you-handle-it"
+          },
+          {
+            "type": "exercise",
+            "slug": "conflict-resolution-strategies-practice"
+          }
+        ]
+      },
+      {
+        "title": "Naudas Jautājumi un Konflikti",
+        "description": "Izpēti, kā finanšu diskusijas var novest pie konfliktiem un kā tos pārvaldīt. Strādā pie budžeta stiliem un finanšu komunikācijas, izmantojot testus un diskusijas.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "financial-communication-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-feel-about-our-different-spending-habits-and-how-can-we-find-a-middle-ground"
+          },
+          {
+            "type": "article",
+            "slug": "mastering-money-talks-together"
+          },
+          {
+            "type": "game",
+            "slug": "dream-budget-builders"
+          },
+          {
+            "type": "checkup",
+            "slug": "trust-in-financial-transparency"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-have-any-issues-with-budgeting-like-are-you-in-debt-to-somebody-do-you-make-any-useless-spending"
+          },
+          {
+            "type": "exercise",
+            "slug": "budget-planning-session"
+          }
+        ]
+      },
+      {
+        "title": "Droša Vieta Diskusijām",
+        "description": "Veido vidi, kurā abi partneri jūtas droši izteikt savas jūtas. Izmanto pārbaudes un vingrinājumus, lai veicinātu atklātas sarunas un risinātu pamatproblēmas.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "emotional-safety-style"
+          },
+          {
+            "type": "checkup",
+            "slug": "vulnerability-and-openness"
+          },
+          {
+            "type": "article",
+            "slug": "trust-through-open-communication"
+          },
+          {
+            "type": "game",
+            "slug": "communication-connection"
+          },
+          {
+            "type": "exercise",
+            "slug": "transparent-communication-practices"
+          },
+          {
+            "type": "question",
+            "slug": "are-there-any-habits-or-behaviors-of-mine-that-bother-you"
+          },
+          {
+            "type": "question",
+            "slug": "describe-a-time-when-a-simple-text-message-led-to-a-big-misunderstanding-how-did-you-resolve-it"
+          }
+        ]
+      },
+      {
+        "title": "Konfliktu Pārvēršana Izaugsmē",
+        "description": "Maini savu skatījumu uz konfliktiem, mācoties, kā izmantot tos kā izaugsmes rīku. Reflektē par pagātnes konfliktiem, pielieto humoru un izveido personīgās izaugsmes plānus kā pāris.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "growth-opportunity-style-assessment"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-past-problem-weve-solved-that-makes-you-proud-of-us"
+          },
+          {
+            "type": "article",
+            "slug": "embracing-differences-positively"
+          },
+          {
+            "type": "game",
+            "slug": "compatibility-conundrum"
+          },
+          {
+            "type": "checkup",
+            "slug": "team-problem-solving"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-relationship-problem-you-think-we-can-solve-with-humor"
+          },
+          {
+            "type": "exercise",
+            "slug": "relationship-journal"
+          }
+        ]
+      }
+    ],
+    "slug": "navigating-and-resolving-relationship-problems"
+  },
+  {
+    "job": [
+      "exploring_feelings"
+    ],
+    "title": "Pārvietojoties Mūsu Emocionālajos Ainavās",
+    "description": "Šī ceļojuma mērķis ir palīdzēt tev un tavam partnerim izpētīt un saprast savas jūtas dziļākā līmenī. Iesaistoties dažāda veida saturā, tu atklāsi savus emocionālos modeļus, efektīvi sazināsies par savām emocijām un veidosi spēcīgāku emocionālo saikni. Katru dienu tiks piedāvāti jauni ieskati un izaicinājumi, kas veicinās emocionālo tuvību jūsu attiecībās.",
+    "subtopics": [
+      {
+        "title": "Saprotot Mūsu Emocijas",
+        "description": "Sāc savu ceļojumu, izpētot pamata emocijas un to, kā tās izpaužas jūsu dzīvē. Izmantojot jautājumus un rakstus, iegūsti skaidrību par savām jūtām un saviem veidiem, kā ar tām tikt galā.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "emotional-awareness-type"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-think-that-you-feel-emotions-stronger-or-weaker-than-other-people"
+          },
+          {
+            "type": "article",
+            "slug": "building-emotional-intimacy-together"
+          },
+          {
+            "type": "game",
+            "slug": "emotional-seasons"
+          },
+          {
+            "type": "checkup",
+            "slug": "emotional-rollercoaster-ride"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-handle-your-strong-emotions"
+          },
+          {
+            "type": "exercise",
+            "slug": "emotional-regulation-techniques"
+          }
+        ]
+      },
+      {
+        "title": "Efektīva Jūtu Izteikšana",
+        "description": "Mācies, kā drošā un atbalstošā vidē sazināties par savām emocijām. Iesaisties vingrinājumos, kas veicina atklātu dialogu par tavām jūtām bez bailēm no vērtējuma.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "communication-style-type"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-prefer-to-receive-support-when-youre-feeling-low"
+          },
+          {
+            "type": "article",
+            "slug": "mastering-communication-techniques"
+          },
+          {
+            "type": "game",
+            "slug": "communication-clues"
+          },
+          {
+            "type": "checkup",
+            "slug": "mastering-our-communication-styles"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-feel-comfortable-expressing-your-true-feelings-with-me-why-or-why-not"
+          },
+          {
+            "type": "exercise",
+            "slug": "transparent-communication-practices"
+          }
+        ]
+      },
+      {
+        "title": "Dziļš Iegremdējums Vainīguma",
+        "description": "Atklāj vainīguma spēku attiecībās. Izpēti jautājumus un aktivitātes, kas mudina dalīties ar savām iekšējām bailēm un vēlmēm, un apspried, kā vainīgums var uzlabot tuvību.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "vulnerability-comfort-type"
+          },
+          {
+            "type": "question",
+            "slug": "can-you-describe-a-moment-where-you-felt-most-connected-during-our-sex-and-what-made-it-special-for-you"
+          },
+          {
+            "type": "article",
+            "slug": "vulnerability-trusts-gateway"
+          },
+          {
+            "type": "game",
+            "slug": "feelings-explorer"
+          },
+          {
+            "type": "checkup",
+            "slug": "vulnerability-and-openness"
+          },
+          {
+            "type": "question",
+            "slug": "how-comfortable-are-you-sharing-your-true-feelings-with-me-on-a-scale-of-1-10"
+          },
+          {
+            "type": "exercise",
+            "slug": "vulnerability-exploration-session"
+          }
+        ]
+      },
+      {
+        "title": "Kopā Pārvietojoties Grūtajām Emocijām",
+        "description": "Identificējiet un risiniet grūtās emocijas, piemēram, greizsirdību, nenoteiktību vai skumjas. Piedalieties testos un pārbaudēs, kas izstrādātas, lai palīdzētu jums abiem saprast, kā atbalstīt viens otru grūtajos emocionālajos brīžos.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "emotion-management-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-handle-feelings-of-jealousy-or-insecurity"
+          },
+          {
+            "type": "article",
+            "slug": "navigating-emotional-waters-together"
+          },
+          {
+            "type": "game",
+            "slug": "emotional-ride"
+          },
+          {
+            "type": "checkup",
+            "slug": "emotional-rollercoaster-ride"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-handle-feelings-of-stress-or-anxiety"
+          },
+          {
+            "type": "exercise",
+            "slug": "confidentiality-agreements"
+          }
+        ]
+      },
+      {
+        "title": "Emocionālās Drošības Veidošana",
+        "description": "Veidojiet vidi, kurā abi partneri jūtas droši izteikt un izpētīt savas jūtas. Saprotiet emocionālās drošības nozīmi, lai padziļinātu jūsu saikni, un apgūstiet praktiskas stratēģijas tās radīšanai.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "emotional-safety-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-feel-about-our-current-level-of-intimacy-and-affection"
+          },
+          {
+            "type": "article",
+            "slug": "trust-through-open-communication"
+          },
+          {
+            "type": "game",
+            "slug": "trust-builders"
+          },
+          {
+            "type": "checkup",
+            "slug": "emotional-intimacy-check-in"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-feel-we-handle-each-others-vulnerabilities"
+          },
+          {
+            "type": "exercise",
+            "slug": "feelings-validation-practices"
+          }
+        ]
+      },
+      {
+        "title": "Emocionālās Tuvības Attīstīšana",
+        "description": "Pabeidziet savu ceļojumu, īstenojot stratēģijas, kas uzlabo emocionālo tuvību jūsu attiecībās. Iesaistieties spēlēs un vingrinājumos, kas stiprina jūsu emocionālās saites, padarot jūsu savienojumu dziļāku un izturīgāku.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "emotional-intimacy-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-feel-about-sharing-your-deepest-desires-with-each-other"
+          },
+          {
+            "type": "article",
+            "slug": "building-emotional-intelligence-together"
+          },
+          {
+            "type": "game",
+            "slug": "emotion-explorer"
+          },
+          {
+            "type": "checkup",
+            "slug": "emotional-needs-compatibility"
+          },
+          {
+            "type": "question",
+            "slug": "how-can-we-better-express-our-needs-without-feeling-vulnerable"
+          },
+          {
+            "type": "exercise",
+            "slug": "emotional-expression-sessions"
+          }
+        ]
+      }
+    ],
+    "slug": "navigating-our-emotional-landscapes"
+  }
+]

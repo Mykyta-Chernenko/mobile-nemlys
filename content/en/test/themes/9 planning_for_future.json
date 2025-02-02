@@ -1,0 +1,64 @@
+{
+  "themes": [
+    {
+      "initial_topic": "planning_for_future",
+      "test_theme": "Goal Alignment Index",
+      "scientific_basis": "Based on goal-setting theory (Locke & Latham) and research on shared relationship goals in long-term partnerships",
+      "description": "Evaluates how well couples align their individual and shared life goals, measuring their ability to create unified visions for their future while respecting individual aspirations"
+    },
+    {
+      "initial_topic": "planning_for_future",
+      "test_theme": "Financial Harmony Scale",
+      "scientific_basis": "Grounded in behavioral economics and research on financial compatibility in relationships (Dew et al., 2012)",
+      "description": "Assesses couples' compatibility in financial planning, spending habits, and long-term financial goals, including attitudes toward saving and investment"
+    },
+    {
+      "initial_topic": "planning_for_future",
+      "test_theme": "Life Transition Readiness",
+      "scientific_basis": "Based on family life cycle theory and research on relationship adaptation during major life transitions",
+      "description": "Measures how prepared couples are for major life changes (career shifts, relocation, starting a family) and their ability to support each other through transitions"
+    },
+    {
+      "initial_topic": "planning_for_future",
+      "test_theme": "Values Congruence Meter",
+      "scientific_basis": "Derived from values theory in psychology and research on shared values in relationship satisfaction",
+      "description": "Examines the alignment of core values and life priorities between partners, particularly regarding future lifestyle choices and major life decisions"
+    },
+    {
+      "initial_topic": "planning_for_future",
+      "test_theme": "Decision-Making Dynamics",
+      "scientific_basis": "Based on decision-making theory and research on collaborative problem-solving in relationships",
+      "description": "Evaluates how couples approach joint decision-making for future plans, including their ability to compromise and reach consensus on important life choices"
+    },
+    {
+      "initial_topic": "planning_for_future",
+      "test_theme": "Timeline Synchronization",
+      "scientific_basis": "Grounded in temporal psychology and research on time perspective in relationship planning",
+      "description": "Assesses how well partners' timelines align for major life events and milestones, including their flexibility in adjusting personal timelines"
+    },
+    {
+      "initial_topic": "planning_for_future",
+      "test_theme": "Support System Blueprint",
+      "scientific_basis": "Based on social support theory and research on mutual support in long-term relationships",
+      "description": "Measures how couples plan to support each other's future goals and aspirations, including career development and personal growth"
+    },
+    {
+      "initial_topic": "planning_for_future",
+      "test_theme": "Risk Management Approach",
+      "scientific_basis": "Derived from risk assessment psychology and research on couples' approaches to uncertainty",
+      "description": "Examines how couples discuss and plan for potential future challenges, including their strategies for managing unexpected life events"
+    },
+    {
+      "initial_topic": "planning_for_future",
+      "test_theme": "Legacy Planning Perspective",
+      "scientific_basis": "Based on research on generativity (Erikson) and shared meaning in relationships",
+      "description": "Explores how couples envision their long-term impact and shared legacy, including their plans for family, community, and personal achievements"
+    },
+    {
+      "initial_topic": "planning_for_future",
+      "test_theme": "Adaptability Quotient",
+      "scientific_basis": "Grounded in psychological flexibility research and studies on relationship resilience",
+      "description": "Measures couples' ability to adapt their future plans while maintaining relationship stability, including their openness to revising goals as circumstances change"
+    }
+  ]
+}

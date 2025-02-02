@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "318892102836",
+    "project_id": "nemlys-prod",
+    "storage_bucket": "nemlys-prod.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:318892102836:android:f7da2fe4dc39fb66beb3e1",
+        "android_client_info": {
+          "package_name": "com.nemlys.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "318892102836-d27hl77305a4e4qcgbmo5chtgc43kups.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBbvnHVeN0mfYofYVTgEWQ3zTLXgXF-Kh4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "318892102836-d27hl77305a4e4qcgbmo5chtgc43kups.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "318892102836-9ud8fcu170fqr5i56bcskeci051gc6ra.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.marakaci.nemlys",
+                "app_store_id": "1662262055"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

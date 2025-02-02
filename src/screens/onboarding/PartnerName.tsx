@@ -6,7 +6,7 @@ import { PrimaryButton } from '@app/components/buttons/PrimaryButtons';
 import { FontText } from '@app/components/utils/FontText';
 import { Progress } from '@app/components/utils/Progress';
 import { GoBackButton } from '@app/components/buttons/GoBackButton';
-import { KEYBOARD_BEHAVIOR } from '@app/utils/constants';
+import { KEYBOARD_BEHAVIOR, ONBOARDING_STEPS } from '@app/utils/constants';
 import { supabase } from '@app/api/initSupabase';
 import { AuthContext } from '@app/provider/AuthProvider';
 import { logSupaErrors } from '@app/utils/errors';
@@ -16,6 +16,7 @@ import { localAnalytics } from '@app/utils/analytics';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import StyledInput from '@app/components/utils/StyledInput';
 import { getNow } from '@app/utils/date';
+import { showName } from '@app/utils/strings';
 
 export default function ({
   route,
@@ -33,14 +34,14 @@ export default function ({
     const getData = async () => {
       const { data, error } = await supabase
         .from('user_profile')
-        .select('*')
+        .select('partner_first_name')
         .eq('user_id', authContext.userId!)
         .single();
       if (error) {
         logSupaErrors(error);
         return;
       }
-      setName(data.partner_first_name || '');
+      setName(showName(data.partner_first_name) || '');
     };
     void getData();
     return unsubscribeFocus;
@@ -105,11 +106,11 @@ export default function ({
                         refreshTimeStamp: new Date().toISOString(),
                       });
                     } else {
-                      navigation.navigate('YourName', { fromSettings: false });
+                      navigation.goBack();
                     }
                   }}
                 ></GoBackButton>
-                {!fromSettings && <Progress current={2} all={7}></Progress>}
+                {!fromSettings && <Progress current={2} all={ONBOARDING_STEPS}></Progress>}
               </View>
               <View
                 style={{

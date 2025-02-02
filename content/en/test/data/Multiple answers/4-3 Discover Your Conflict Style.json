@@ -1,0 +1,145 @@
+{
+  "topic": [
+    "understanding_mutual_compatibility",
+    "solving_relationship_problems",
+    "improving_communication",
+    "overcoming_differences",
+    "building_trust"
+  ],
+  "test_headline": "Discover Your Conflict Style!",
+  "scientific_basis": "This quiz is inspired by conflict resolution research, including John Gottman's work on conflict styles and their impact on relationship compatibility.",
+  "description": "Ever wondered how you and your partner handle disagreements? Take this fun quiz to uncover your unique conflict styles and see how compatible you are in handling conflicts. Let's turn those bumps into building blocks for a stronger relationship!",
+  "questions": [
+    {
+      "question": "When a disagreement arises, how do you typically respond?",
+      "options": [
+        "I prefer to avoid the conflict and keep the peace.",
+        "I assert my viewpoint strongly to win the argument.",
+        "I accommodate my partner's wishes to maintain harmony.",
+        "I seek a middle ground where both of us give a little.",
+        "I collaborate to find a solution that satisfies both of us."
+      ]
+    },
+    {
+      "question": "If your partner suggests a change that you're unsure about, you:",
+      "options": [
+        "Ignore it and hope it resolves itself.",
+        "Challenge the idea to prove your perspective.",
+        "Agree to the change, even if you're hesitant.",
+        "Suggest a compromise that works for both of you.",
+        "Discuss the pros and cons to reach a mutual decision."
+      ]
+    },
+    {
+      "question": "During an argument, your main goal is to:",
+      "options": [
+        "Stay out of it and avoid further discussion.",
+        "Win the argument no matter what.",
+        "Make sure your partner feels heard and valued.",
+        "Find a quick solution that both can accept.",
+        "Understand each other's viewpoints and find a shared solution."
+      ]
+    },
+    {
+      "question": "When facing a conflict, you tend to:",
+      "options": [
+        "Withdraw and give your partner space.",
+        "Take charge and direct the conversation.",
+        "Go along with your partner's ideas to keep things smooth.",
+        "Meet halfway to resolve the issue.",
+        "Work together to address the root cause of the conflict."
+      ]
+    },
+    {
+      "question": "How do you feel after a conflict is resolved?",
+      "options": [
+        "Relieved that it's over.",
+        "Satisfied that your point was made.",
+        "Content that your partner is happy.",
+        "Neutral, as both gave a little.",
+        "Fulfilled that you both found a solution together."
+      ]
+    },
+    {
+      "question": "When a sensitive topic comes up, you usually:",
+      "options": [
+        "Change the subject to avoid discomfort.",
+        "Express your thoughts passionately and forcefully.",
+        "Agree with your partner to avoid tension.",
+        "Find a middle path that slightly favors both sides.",
+        "Engage in a thoughtful discussion to understand each other."
+      ]
+    },
+    {
+      "question": "If you feel hurt by something your partner did, you:",
+      "options": [
+        "Keep your feelings to yourself and hope it fades.",
+        "Confront them directly and express your anger.",
+        "Forgive quickly to move past the issue.",
+        "Agree to disagree to maintain peace.",
+        "Talk about your feelings and work towards understanding."
+      ]
+    },
+    {
+      "question": "In a conflict, you believe the best outcome is:",
+      "options": [
+        "No conflict at all.",
+        "Your partner sees things your way.",
+        "Your partner is happy, even if it's not ideal for you.",
+        "Both of you make concessions.",
+        "Both of you feel satisfied with the resolution."
+      ]
+    },
+    {
+      "question": "When discussing a disagreement, you tend to:",
+      "options": [
+        "Stay silent and hope it resolves itself.",
+        "Dominate the conversation to get your point across.",
+        "Agree with your partner to avoid further conflict.",
+        "Seek a balance where both viewpoints are considered.",
+        "Encourage open dialogue to find a mutual understanding."
+      ]
+    },
+    {
+      "question": "After a conflict, you prefer to:",
+      "options": [
+        "Move on without discussing it further.",
+        "Reiterate your stance to ensure it's understood.",
+        "Reassure your partner that everything is okay.",
+        "Find a quick compromise to let go of the issue.",
+        "Reflect together on what happened to prevent future conflicts."
+      ]
+    }
+  ],
+  "evaluation_method": {
+    "explanation": "Each answer corresponds to a specific conflict style: Avoidant (A), Competing (B), Accommodating (C), Compromising (D), and Collaborating (E). Tally your selections to see which style you predominantly use in conflicts. The style with the highest count reflects your natural approach to handling disagreements.",
+    "example": "For example, if you chose option A four times, B three times, C one time, D one time, and E one time, your dominant conflict style is Avoidant."
+  },
+  "outcome_interpretation": {
+    "mostly_A": {
+      "label": "Avoidant",
+      "description": "You tend to steer clear of conflicts, valuing peace and harmony in your relationship. While this can keep the atmosphere calm, it might sometimes lead to unresolved issues.",
+      "advice": "Try to address conflicts openly with your partner. Establish a safe space for both of you to express your feelings and work through disagreements together."
+    },
+    "mostly_B": {
+      "label": "Competing",
+      "description": "You approach conflicts with determination to win, asserting your viewpoint strongly. This can be effective in certain situations but may sometimes overshadow your partner's perspective.",
+      "advice": "Balance your assertiveness by also listening to your partner's views. Aim for solutions that consider both of your needs to foster mutual respect."
+    },
+    "mostly_C": {
+      "label": "Accommodating",
+      "description": "You prioritize your partner's happiness, often putting their needs above your own. This can strengthen your partner's trust but may sometimes leave your own needs unmet.",
+      "advice": "Ensure that your own feelings are also acknowledged. Communicate openly about your needs to create a balanced and fulfilling relationship."
+    },
+    "mostly_D": {
+      "label": "Compromising",
+      "description": "You seek a middle ground in conflicts, aiming for solutions where both partners give a little. This approach promotes fairness but may sometimes lead to solutions that aren't fully satisfying.",
+      "advice": "Continue valuing fairness, but also explore deeper discussions to achieve more comprehensive resolutions that fully address both partners' concerns."
+    },
+    "mostly_E": {
+      "label": "Collaborating",
+      "description": "You strive to work together with your partner to find solutions that satisfy both of you. This style fosters strong communication and mutual understanding.",
+      "advice": "Maintain your collaborative approach by encouraging open dialogue and joint problem-solving. This will continue to strengthen your relationship."
+    }
+  }
+}

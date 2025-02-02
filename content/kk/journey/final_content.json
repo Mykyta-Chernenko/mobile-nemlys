@@ -1,0 +1,4892 @@
+[
+  {
+    "job": [
+      "preparing_for_marriage"
+    ],
+    "title": "Некеге дайындық: Мықты негіз құру",
+    "description": "Бұл саяхат сіз бен серіктесіңізді сәтті некеге қажетті құралдар мен түсініктермен қамтамасыз ету үшін жасалған. Әр күні сіз қарым-қатынас, қаржылық үйлесім сияқты маңызды концепцияларды зерттеп, бір-біріңізді тереңірек түсінуге және мықты қарым-қатынас орнатуға жол ашасыз.",
+    "subtopics": [
+      {
+        "title": "Махаббат тілдерін түсіну",
+        "description": "Эмоционалдық байланысты нығайту үшін бір-біріңіздің махаббат тілдерін анықтап, зерттеңіз. Сіздердің махаббатты қалай беріп, қалай алатыныңызды түсіну қарым-қатынас динамикасын айтарлықтай жақсарта алады.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "love-language-type"
+          },
+          {
+            "type": "article",
+            "slug": "decoding-love-languages"
+          },
+          {
+            "type": "game",
+            "slug": "love-languages-exploration"
+          },
+          {
+            "type": "exercise",
+            "slug": "find-out-your-love-language"
+          }
+        ]
+      },
+      {
+        "title": "Қаржылық әңгімелерді меңгеру",
+        "description": "Қаржы мәселелері бойынша ашық талқылаудың маңыздылығын біліңіз. Бюджеттеу стильдері, шығын әдеттері және қаржылық мақсаттар туралы тереңірек зерттеп, қаржылық серіктестікте сенімділік пен ашықтықты қалыптастырыңыз.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "financial-communication-style"
+          },
+          {
+            "type": "article",
+            "slug": "mastering-money-talks-together"
+          },
+          {
+            "type": "game",
+            "slug": "dream-budget-builders"
+          },
+          {
+            "type": "checkup",
+            "slug": "aligning-financial-values-and-goals"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-prefer-to-communicate-your-needs-and-desires"
+          },
+          {
+            "type": "exercise",
+            "slug": "financial-planning-for-marriage"
+          }
+        ]
+      },
+      {
+        "title": "Эмоционалдық жақындықты басқару",
+        "description": "Уязвимость, белсенді тыңдау және адал қарым-қатынас арқылы эмоционалдық жақындықты дамыту дағдыларын қалыптастырыңыз. Эмоцияларды еркін білдіруді және бір-біріңіздің эмоционалдық қажеттіліктеріңізді қолдауды түсініңіз.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "emotional-intimacy-style"
+          },
+          {
+            "type": "article",
+            "slug": "building-emotional-intimacy-together"
+          },
+          {
+            "type": "game",
+            "slug": "feelings-explorer"
+          },
+          {
+            "type": "checkup",
+            "slug": "emotional-intimacy-check-in"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-feel-about-writing-love-notes-to-each-other-want-to-give-it-a-try"
+          },
+          {
+            "type": "exercise",
+            "slug": "vulnerability-exploration-session"
+          }
+        ]
+      },
+      {
+        "title": "Болашақ мақсаттарды үйлестіру",
+        "description": "Армандарыңыз бен мақсаттарыңызды талқылау және үйлестіру жолдарын зерттеңіз. Бірге болашаққа ортақ мақсаттар қойыңыз, осылайша екі серіктес те жоспарлау процесінде бағаланған және түсінілген сезінеді.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "goal-alignment-style"
+          },
+          {
+            "type": "article",
+            "slug": "setting-shared-future-goals"
+          },
+          {
+            "type": "game",
+            "slug": "future-visionaries"
+          },
+          {
+            "type": "checkup",
+            "slug": "charting-our-shared-future"
+          },
+          {
+            "type": "exercise",
+            "slug": "long-term-goal-planning"
+          }
+        ]
+      },
+      {
+        "title": "Сынақтармен бірге күресу",
+        "description": "Некенің қиындықтарына дайындалу үшін конфликтті шешу дағдыларын және қиын кезеңдерде бір-біріңізді қолдау стратегияларын дамыту. Түсіністік пен құрметпен келіспеушіліктерді басқаруды үйреніңіз.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "your-conflict-style"
+          },
+          {
+            "type": "article",
+            "slug": "mastering-conflict-resolution-together"
+          },
+          {
+            "type": "game",
+            "slug": "conflict-resolution-quest"
+          },
+          {
+            "type": "checkup",
+            "slug": "conflict-resolution-style-match"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-game-we-could-play-to-improve-our-conflict-resolution-skills"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-feel-about-using-humor-to-ease-tense-conversations"
+          },
+          {
+            "type": "exercise",
+            "slug": "conflict-resolution-strategies-practice"
+          }
+        ]
+      },
+      {
+        "title": "Ортақ ритуалдар мен дәстүрлерді құру",
+        "description": "Сіздің байланысыңызды нығайтатын мағыналы ритуалдар мен дәстүрлерді орнатыңыз. Сіздің қарым-қатынасыңызды тойлау және жұп ретінде ұзақ мерзімді естеліктер жасау жолдарын табыңыз, бірлік пен принадлежность сезімін қалыптастырыңыз.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "ritual-building-style"
+          },
+          {
+            "type": "article",
+            "slug": "fun-rituals-to-strengthen-bonds"
+          },
+          {
+            "type": "game",
+            "slug": "date-night-planner"
+          },
+          {
+            "type": "checkup",
+            "slug": "creative-date-designers"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-new-hobby-we-can-start-together-to-strengthen-our-bond"
+          },
+          {
+            "type": "exercise",
+            "slug": "creating-passion-renewal-date"
+          }
+        ]
+      }
+    ],
+    "slug": "preparing-for-marriage-building-a-strong-foundation"
+  },
+  {
+    "job": [
+      "planning_for_future"
+    ],
+    "title": "Біздің Болашағымызды Бірге Жоспарлау",
+    "description": "Бұл саяхат сіз бен сіздің серіктесіңізге болашақты мұқият жоспарлауға және маңызды өмірлік шешімдерді қабылдауға көмектесу үшін жасалған. Сіздер өз қарым-қатынасыңыздың әртүрлі аспектілерін зерттеп, ұзақ мерзімді мақсаттарды талқылайсыздар, қызықты әрекеттер арқылы серіктестігіңізді нығайтып, ашық қарым-қатынасты және өзара түсіністікті дамытасыздар.",
+    "subtopics": [
+      {
+        "title": "Болашақтағы Өмірімізді Көз алдымызға Елестету",
+        "description": "Бірге идеалды болашағыңызды елестетуден бастаңыз, келесі бес жылдағы армандарыңыз бен мақсаттарыңызды талқылаңыз. Сіздер өмірден не қалайтыныңыз туралы нақты көзқарас жасайсыз.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "future-planning-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-envision-our-relationship-evolving-over-the-next-five-years"
+          },
+          {
+            "type": "article",
+            "slug": "creating-a-vision-for-us"
+          },
+          {
+            "type": "game",
+            "slug": "future-visionaries"
+          },
+          {
+            "type": "checkup",
+            "slug": "future-talk-together"
+          },
+          {
+            "type": "exercise",
+            "slug": "long-term-goal-planning"
+          }
+        ]
+      },
+      {
+        "title": "Қаржылық Болашақтар",
+        "description": "Сіздер жұп ретінде қаржылық мақсаттарыңызды зерттеңіздер. Бюджеттеу, жинақтау және болашақ жоспарларыңызбен қаржылық мақсаттарыңызды сәйкестендіре отырып, қауіпсіз және жайлы өмір сүру үшін инвестицияларды талқылаңыздар.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "financial-planning-style"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-think-financial-discussions-should-happen-regularly-how-often"
+          },
+          {
+            "type": "article",
+            "slug": "mastering-money-talks-together"
+          },
+          {
+            "type": "game",
+            "slug": "dream-budget-builders"
+          },
+          {
+            "type": "checkup",
+            "slug": "budgeting-together-without-breaking-up"
+          },
+          {
+            "type": "exercise",
+            "slug": "budget-planning-session"
+          }
+        ]
+      },
+      {
+        "title": "Отбасы Жоспарын Құру",
+        "description": "Отбасы жоспарлау және ата-ана болу мақсаттары туралы талқылауларға тереңірек үңіліңіз. Сіздер балаларды қалайсыз ба, қанша бала, және қандай тәрбиені көз алдыңызға елестетесіздер.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "parenting-style-alignment"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-want-to-have-children-if-so-when-do-you-think-is-the-right-time"
+          },
+          {
+            "type": "game",
+            "slug": "parenting-philosophy-play"
+          },
+          {
+            "type": "checkup",
+            "slug": "parenting-pathways"
+          },
+          {
+            "type": "exercise",
+            "slug": "parenting-styles-discussion"
+          },
+          {
+            "type": "question",
+            "slug": "should-we-adopt-if-we-are-unable-to-have-children"
+          }
+        ]
+      },
+      {
+        "title": "Маңызды Өмірлік Шешімдерді Қабылдау",
+        "description": "Сіздер бірге өмірлеріңіздегі маңызды шешімдерді қалай қабылдайтыныңызды талқылаңыздар. Бұл бірге тұру, мансап өзгерістері және туындайтын күтпеген өмірлік қиындықтарды қамтиды.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "decision-making-styles"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-feel-about-making-major-life-decisions-together"
+          },
+          {
+            "type": "game",
+            "slug": "problem-solving-pals"
+          },
+          {
+            "type": "checkup",
+            "slug": "resolving-decision-making-conflicts"
+          },
+          {
+            "type": "exercise",
+            "slug": "negotiation-skills-exercises"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-feel-about-relocating-for-career-opportunities-in-the-future"
+          }
+        ]
+      },
+      {
+        "title": "Бірлескен Тізім Жасау",
+        "description": "Сіздер бірге тәжірибелегіңіз келетін ортақ армандарыңызды көрсететін жұптар үшін тізім жасаңыз. Саяхат, тәжірибелер және құруды қалайтын дәстүрлерге назар аударыңыз.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "goal-alignment-style"
+          },
+          {
+            "type": "question",
+            "slug": "if-we-were-to-create-a-couples-bucket-list-whats-the-first-adventure-youd-add"
+          },
+          {
+            "type": "article",
+            "slug": "adventure-sparks-deeper-bonds"
+          },
+          {
+            "type": "game",
+            "slug": "dream-adventure-quest"
+          },
+          {
+            "type": "exercise",
+            "slug": "fantasy-sharing-session"
+          },
+          {
+            "type": "question",
+            "slug": "if-we-could-teleport-to-any-romantic-destination-right-now-where-would-we-go"
+          }
+        ]
+      },
+      {
+        "title": "Құндылықтар мен Дәстүрлерді Сәйкестендіру",
+        "description": "Сіздер жұп ретінде және отбасы ретінде дамытуға ниеттенген маңызды құндылықтар мен дәстүрлерді талқылаңыздар. Діни сенімдер, өмір салты таңдау және бірге жасағыңыз келетін мұра туралы тереңірек ойланыңыздар.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "values-alignment-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-see-our-religious-beliefs-influencing-our-future-goals"
+          },
+          {
+            "type": "game",
+            "slug": "beliefs-values"
+          },
+          {
+            "type": "checkup",
+            "slug": "core-values-connection"
+          },
+          {
+            "type": "exercise",
+            "slug": "family-values-alignment"
+          },
+          {
+            "type": "question",
+            "slug": "what-values-are-most-important-for-us-to-instill-in-our-children"
+          }
+        ]
+      }
+    ],
+    "slug": "navigating-our-future-together"
+  },
+  {
+    "job": [
+      "having_fun_and_entertainment"
+    ],
+    "title": "Бірге Көңіл Көтеру және Ойын-сауық Жасау",
+    "description": "Бұл саяхат сізді қарым-қатынасыңыздағы қуаныш пен ойыншылдықты арттыруға арналған әрекеттер мен талқылаулар арқылы бағыттайды. Көңіл көтеру мен ойын-сауықтың әртүрлі аспектілерін зерттей отырып, сіз күлкі мен шығармашылықты күнделікті өміріңізге енгізуді үйренесіз. Әр күні сіз бірге болуды және зерттеуді ынталандыратын жаңа тәжірибелер мен ойлармен айналысасыз.",
+    "subtopics": [
+      {
+        "title": "Күлкімен Бастау",
+        "description": "Сіздің қарым-қатынасыңыздағы юмордың рөлін зерттеңіз. Сүйкімді сұрақтармен айналысыңыз, мысалы, сіздің сүйікті орынсыз әзілдеріңіз бен флирт мәтіндеріңіз. Бұл негіз қалаушы тақырып сізге күнделікті өміріңізге күлкі енгізудің жолдарын табуға көмектеседі.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "humor-harmony-style"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-have-a-favorite-inappropriate-joke"
+          },
+          {
+            "type": "article",
+            "slug": "laughing-together-keeps-love-strong"
+          },
+          {
+            "type": "game",
+            "slug": "love-laughter"
+          },
+          {
+            "type": "checkup",
+            "slug": "fun-flirtation"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-have-any-favorite-flirty-texts-or-messages-that-make-you-smile"
+          }
+        ]
+      },
+      {
+        "title": "Жетістіктер мен Мерейтойларды Мерекелеу",
+        "description": "Бір-біріңіздің жетістіктеріңізді, үлкен немесе кіші, қалай мерекелеуді үйреніңіз. Мерейтойлар мен мерекелер сияқты ерекше жағдайларды мерекелеудің сүйікті тәсілдерін талқылаңыз, бұл бағалау мен қуаныш атмосферасын қалыптастырады.",
+        "content": [
+          {
+            "type": "checkup",
+            "slug": "marriage-milestones"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-like-to-celebrate-anniversaries"
+          },
+          {
+            "type": "game",
+            "slug": "date-night-planner"
+          },
+          {
+            "type": "test",
+            "slug": "milestone-celebration-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-like-to-celebrate-achievements-big-or-small"
+          }
+        ]
+      },
+      {
+        "title": "Ортақ Мүдделерді Зерттеу",
+        "description": "Сіз екеуіңізге де ұнайтын әрекеттер мен хоббилар туралы талқылауларға кірісіңіз. Ортақ мүдделерді анықтап, бірге сынап көруге қызықты әрекеттерді ұсыныңыз, бұл сіздің ортақ байланысыңызды нығайтуға және есте қаларлық естеліктер жасауға көмектеседі.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "hobby-harmony-style"
+          },
+          {
+            "type": "question",
+            "slug": "what-hobbies-or-activities-would-you-like-us-to-pursue-together-in-the-future"
+          },
+          {
+            "type": "article",
+            "slug": "exploring-shared-hobbies-together"
+          },
+          {
+            "type": "game",
+            "slug": "hobby-harmony"
+          },
+          {
+            "type": "checkup",
+            "slug": "uncovering-daily-habits-and-quirks"
+          },
+          {
+            "type": "exercise",
+            "slug": "hobbies-and-interests-exercise"
+          }
+        ]
+      },
+      {
+        "title": "Спонтанды Приключения",
+        "description": "Сіздің жайлылық аймағыңыздан шығып, бір-біріңіз үшін спонтанды шығып кетулер немесе көңілді тосынсыйлар жоспарлаңыз. Жаңа тәжірибелерді шешу үшін ұсыныстарды пайдаланыңыз, мысалы, ашық ауада әрекеттер немесе тақырыптық кештер, бұл қарым-қатынасыңыздағы қызығушылықты арттырады.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "spontaneity-style"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-new-sport-or-physical-activity-youd-like-to-try-as-a-team"
+          },
+          {
+            "type": "article",
+            "slug": "adventure-sparks-deeper-bonds"
+          },
+          {
+            "type": "game",
+            "slug": "adventure-awaits"
+          },
+          {
+            "type": "checkup",
+            "slug": "adventure-together"
+          },
+          {
+            "type": "exercise",
+            "slug": "adventure-challenge"
+          }
+        ]
+      },
+      {
+        "title": "Шығармашылық Ойыншылдық",
+        "description": "Шығармашылығыңызды бірге пайдаланып, өнер жобаларын немесе ойын-сауық ойындарын зерттеңіз. Сізді екеуіңізді де қораптан тыс ойлауға шақыратын жаттығулармен айналысыңыз, мысалы, DIY жобалары немесе тақырыптық аспаздық кештер.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "creative-sparks-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-express-your-creativity"
+          },
+          {
+            "type": "article",
+            "slug": "crafting-memorable-date-nights"
+          },
+          {
+            "type": "game",
+            "slug": "decor-dilemma"
+          },
+          {
+            "type": "exercise",
+            "slug": "creative-drawing-contest"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-creative-project-youd-love-to-tackle-as-a-duo"
+          }
+        ]
+      },
+      {
+        "title": "Дәстүрлер мен Ритуалдарды Құру",
+        "description": "Саяхатыңызды аяқтап, қарым-қатынасыңыздағы көңілді сақтайтын тұрақты дәстүрлерді қалай орнату керектігін ойлаңыз. Көңілді ритуалдардың құндылығын және олардың сіздің байланысыңызды қалай нығайта алатынын, сондай-ақ бірге сүйікті естеліктер жасауға көмектесетінін талқылаңыз.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "ritual-building-style"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-tradition-youd-like-to-start-together"
+          },
+          {
+            "type": "article",
+            "slug": "fun-rituals-to-strengthen-bonds"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-tradition-youd-like-us-to-start-as-a-couple"
+          }
+        ]
+      }
+    ],
+    "slug": "creating-fun-and-entertainment-together"
+  },
+  {
+    "job": [
+      "having_new_experiences"
+    ],
+    "title": "Бірге Жаңа Тәжірибелерді Зерттеу",
+    "description": "Бұл саяхат сіз бен серіктесіңізді жаңа әрекеттерді сынап, таныс емес ортада зерттеп, ортақ қызығушылықтарды анықтау арқылы жаңашылдық пен冒险ды қабылдауға шақырады. Әр күні сіздер бірге көңілді уақыт өткізуге және ортақ тәжірибелер арқылы байланыстарыңызды нығайтуға шабыт беретін шығармашылық идеялар мен қызықты мазмұнды ашасыз.",
+    "subtopics": [
+      {
+        "title": "Кішкентайдан Бастау: Жаңа Әрекеттерді Сынау",
+        "description": "Саяхатыңызды жайлы, бірақ жаңа сезілетін қарапайым әрекеттерді анықтаудан бастаңыз. Бірге зерттегіңіз келетін хоббилар туралы талқылаңыз, аспаздық курстардан бастап, үстел ойындары түндеріне дейін.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "breaking-routine-style-quiz"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-hobby-youd-like-us-to-try-together"
+          },
+          {
+            "type": "article",
+            "slug": "rediscover-adventure-together"
+          },
+          {
+            "type": "game",
+            "slug": "adventure-awaits"
+          },
+          {
+            "type": "exercise",
+            "slug": "try-something-new-day"
+          }
+        ]
+      },
+      {
+        "title": "Армандар Тізімі",
+        "description": "Бірге жұптар үшін армандар тізімін жасаңыз! Саяхаттайтын қызықты орындар, бөлісетін ерекше тәжірибелер және болашақта өткізгіңіз келетін маңызды冒险дарды талқылаңыз.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "adventure-style-assessment"
+          },
+          {
+            "type": "question",
+            "slug": "if-we-were-to-create-a-couples-bucket-list-whats-the-first-adventure-youd-add"
+          },
+          {
+            "type": "article",
+            "slug": "adventure-sparks-deeper-bonds"
+          },
+          {
+            "type": "game",
+            "slug": "future-adventure-quest"
+          },
+          {
+            "type": "exercise",
+            "slug": "future-goals-compatibility"
+          }
+        ]
+      },
+      {
+        "title": "Спонтандық және冒险",
+        "description": "Сюрприздермен жоспарлау немесе импровизациямен әрекеттерді сынау арқылы спонтандықты қабылдаңыз. Бірге күтпеген冒险дардың қызығын ашып, спонтандық арқылы байланыстарыңызды нығайтыңыз.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "spontaneity-style"
+          },
+          {
+            "type": "question",
+            "slug": "whats-the-most-fun-youve-ever-had-while-doing-something-completely-spontaneous"
+          },
+          {
+            "type": "question",
+            "slug": "if-we-could-go-on-a-crazy-themed-road-trip-what-would-our-theme-be"
+          },
+          {
+            "type": "game",
+            "slug": "adventure-awaits"
+          },
+          {
+            "type": "exercise",
+            "slug": "outdoor-exploration-adventures"
+          }
+        ]
+      },
+      {
+        "title": "Жаңа Орындарды Зерттеу",
+        "description": "Сіздер екеуіңіз де зерттегіңіз келетін орындарға тереңірек қараңыз, олар жергілікті немесе халықаралық болуы мүмкін. Саяхат армандарыңызды талқылап, бұл тәжірибелер сіздің қарым-қатынасыңызды қалай байыта алатынын қарастырыңыз.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "exploration-partnership-style"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-like-to-travel-whats-the-most-exciting-place-youve-been"
+          },
+          {
+            "type": "question",
+            "slug": "which-country-is-at-the-top-of-your-travel-bucket-list-as-a-couple"
+          },
+          {
+            "type": "article",
+            "slug": "adventure-sparks-deeper-bonds"
+          },
+          {
+            "type": "game",
+            "slug": "cultural-quest"
+          },
+          {
+            "type": "exercise",
+            "slug": "cultural-exchange-day"
+          }
+        ]
+      },
+      {
+        "title": "Бірге Оқу",
+        "description": "Сіздер екеуіңіз де бірге үйренгіңіз келетін дағдылар немесе пәндерді анықтаңыз. Бұл жаңа тіл үйрену, аспаздық техникасын меңгеру немесе өнер сабақтарына қатысу болуы мүмкін - не болмаса, сізді жақындататын нәрсе!",
+        "content": [
+          {
+            "type": "test",
+            "slug": "shared-learning-style"
+          },
+          {
+            "type": "question",
+            "slug": "if-you-could-learn-a-new-language-together-which-one-would-it-be"
+          },
+          {
+            "type": "question",
+            "slug": "whats-something-youd-like-to-learn-together-to-bring-us-closer"
+          },
+          {
+            "type": "article",
+            "slug": "mastering-communication-techniques"
+          },
+          {
+            "type": "game",
+            "slug": "laugh-learn-quiz"
+          },
+          {
+            "type": "exercise",
+            "slug": "smart-goals-planning"
+          }
+        ]
+      },
+      {
+        "title": "冒险дағы Шығармашылық",
+        "description": "Күнделікті әрекеттерді есте қаларлық тәжірибелерге айналдырудың шығармашылық жолдарын зерттеңіз. Тақырыптық кештер, шығармашылық сынақтар немесе қиял мен ойын арқылы байланыс орнатуға мүмкіндік беретін冒险ды тапсырмалар туралы ойланыңыз.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "creative-sparks-style"
+          },
+          {
+            "type": "question",
+            "slug": "if-you-could-embark-on-a-creative-retreat-together-what-would-you-focus-on"
+          },
+          {
+            "type": "question",
+            "slug": "if-we-could-perform-in-a-talent-show-together-what-act-would-we-do"
+          },
+          {
+            "type": "article",
+            "slug": "fun-rituals-to-strengthen-bonds"
+          },
+          {
+            "type": "game",
+            "slug": "decor-dilemma"
+          },
+          {
+            "type": "exercise",
+            "slug": "artistic-expression-days"
+          }
+        ]
+      }
+    ],
+    "slug": "adventurous-together-exploring-new-experiences"
+  },
+  {
+    "job": [
+      "discussing_religions"
+    ],
+    "title": "Біздің Діни Сенімдерімізді Бірге Зерттеу",
+    "description": "Бұл саяхат сіз бен серіктесіңізге бір-біріңіздің діни сенімдеріңізді талқылауға және түсінуге көмектесу үшін жасалған, сонымен қатар құрмет пен ашық коммуникацияны дамытуға бағытталған. Діннің әртүрлі аспектілерін зерттей отырып, сіз айырмашылықтарды қабылдауды және ортақ рухани байланыс орнатуды үйренесіз.",
+    "subtopics": [
+      {
+        "title": "Діни Негіздерді Түсіну",
+        "description": "Саяхатыңызды бір-біріңіздің діндеріңіздегі негізгі сенімдер мен тәжірибелерді зерттеуден бастаңыз. Бұл негіздердің сіздің тұлғаларыңыз бен дүниетанымдарыңызды қалай қалыптастыратынын талқылаңыз. Бұл тақырып жеке сенімдер мен тәжірибелер туралы сұрақтарды қамтиды.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "religious-identity-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-practice-your-faith-and-how-would-you-like-to-incorporate-it-into-our-relationship"
+          },
+          {
+            "type": "article",
+            "slug": "navigating-religious-conversations-smoothly"
+          },
+          {
+            "type": "exercise",
+            "slug": "spiritual-practices-exchange"
+          },
+          {
+            "type": "question",
+            "slug": "what-role-does-religion-or-spirituality-play-in-your-life-and-how-does-it-affect-our-relationship"
+          }
+        ]
+      },
+      {
+        "title": "Діни Мерекелерді Мерекелеу",
+        "description": "Діни мерекелер мен жетістіктерді бірге қалай мерекелеуді үйреніңіз. Туған күндер, үйлену тойлары және мерекелер сияқты маңызды өмір оқиғаларында бір-біріңіздің дәстүрлеріңізді қалай құрметтеу керектігін зерттеңіз, оларды ортақ өмірлеріңізге үйлесімді түрде енгізіңіз.",
+        "content": [
+          {
+            "type": "checkup",
+            "slug": "celebrating-religious-holidays-together"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-celebrate-religious-achievements-or-milestones"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-celebrate-your-faith-during-personal-milestones-like-birthdays-or-anniversaries"
+          }
+        ]
+      },
+      {
+        "title": "Айырмашылықтар мен Келіспеушіліктерді Құрметтеу",
+        "description": "Діни сенімдер мен тәжірибелердегі айырмашылықтарды жанжалсыз қалай басқаруға болатынын зерттеңіз. Бұл тақырып сізді келіспеушіліктер туындаған кезде құрметті әңгімелер жүргізу құралдарымен қамтамасыз етеді, түсінуге назар аударады, сендіруге емес.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "your-conflict-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-handle-religious-disagreements-in-relationships"
+          },
+          {
+            "type": "article",
+            "slug": "bridging-religious-differences-together"
+          },
+          {
+            "type": "game",
+            "slug": "conflict-resolution-quest"
+          },
+          {
+            "type": "checkup",
+            "slug": "handling-religious-conflicts"
+          }
+        ]
+      },
+      {
+        "title": "Діни Сенімді Күнделікті Өмірге Интеграциялау",
+        "description": "Діни құндылықтарды күнделікті рутиналарыңыз бен шешім қабылдауларыңызға қалай енгізу керектігін талқылаңыз. Ортақ тәжірибелер, рухани әрекеттер және діннің сіздің серіктестігіңіз бен жеке дамуыңызды қалай жақсартатынын зерттеңіз.",
+        "content": [
+          {
+            "type": "checkup",
+            "slug": "supportive-communication"
+          },
+          {
+            "type": "question",
+            "slug": "how-can-we-support-each-others-spiritual-growth"
+          },
+          {
+            "type": "game",
+            "slug": "spiritual-journey"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-integrate-your-faith-with-your-personal-hobbies-or-interests"
+          }
+        ]
+      },
+      {
+        "title": "Болашақ Құттықтауларды Жоспарлау",
+        "description": "Сіздің діни сенімдеріңіз отбасылық және балалар туралы шешімдерге қалай әсер ететіндігі туралы мағыналы әңгімелер жүргізіңіз. Сіз белгілі бір діни дәстүрде балаларды тәрбиелеуді көздейсіз бе, соны талқылаңыз және бірге өмір сүрудің салдарын зерттеңіз.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "parenting-style-alignment"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-envision-having-children-in-a-particular-religious-tradition"
+          },
+          {
+            "type": "question",
+            "slug": "what-religious-values-are-most-important-to-you-in-a-relationship"
+          },
+          {
+            "type": "article",
+            "slug": "enhancing-communication-before-parenthood"
+          },
+          {
+            "type": "checkup",
+            "slug": "parenting-playbook-compatibility"
+          },
+          {
+            "type": "exercise",
+            "slug": "parenting-styles-discussion"
+          }
+        ]
+      },
+      {
+        "title": "Ортақ Руханилықты Құру",
+        "description": "Бұл соңғы қадамда сіздің діни сенімдеріңізді үйлесімді түрде біріктіру жолдарын зерттеңіз. Сіздің дәстүрлеріңізді құрметтейтін тәжірибелерді зерттеңіз және бір-біріңіздің рухани дамуын қалай қолдауға болатынын талқылаңыз, өзара құрмет пен түсінікке негізделген толыққанды қатынасты қамтамасыз етіңіз.",
+        "content": [
+          {
+            "type": "checkup",
+            "slug": "sharing-spiritual-beliefs"
+          },
+          {
+            "type": "question",
+            "slug": "are-there-any-religious-practices-youd-like-to-explore-together"
+          },
+          {
+            "type": "exercise",
+            "slug": "interfaith-understanding-sessions"
+          }
+        ]
+      }
+    ],
+    "slug": "navigating-our-religious-beliefs-together"
+  },
+  {
+    "job": [
+      "preparing_for_children"
+    ],
+    "title": "Балалы болуға дайындық: Ата-ана болу жолы",
+    "description": "Бұл саяхат сіз бен серіктесіңізді ата-ана болудың қызықты әрі қиын приключениясына дайындауға арналған. Әр күні сізді ата-ана болу туралы мағыналы әңгімелерді дамыту үшін әртүрлі талқылаулар, рефлексиялар мен әрекеттер арқылы бағыттайды. Алға жылжыған сайын, сіз негіз қалаушы концепцияларды, эмоционалдық дайындықты және ата-ана болу жолында сәттілікке жету үшін практикалық стратегияларды зерттейсіз.",
+    "subtopics": [
+      {
+        "title": "Ата-ана болуға деген тілекті түсіну",
+        "description": "Балалы болу туралы жеке ойларыңыз бен сезімдеріңізді зерттеңіз. Бір-біріңіздің тілектеріңіз бен күтілімдеріңізді түсіну үшін рефлексиялық сұрақтарға жауап беріңіз, болашақ талқылаулар үшін негіз қалаңыз.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "parenthood-readiness-styles"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-see-yourself-wanting-children-someday"
+          },
+          {
+            "type": "game",
+            "slug": "future-visionaries"
+          },
+          {
+            "type": "checkup",
+            "slug": "parenting-pathways"
+          },
+          {
+            "type": "exercise",
+            "slug": "family-planning-exercise"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-want-to-have-children-if-so-when-do-you-think-is-the-right-time"
+          }
+        ]
+      },
+      {
+        "title": "Ата-ана болу құндылықтарын үйлестіру",
+        "description": "Ата-ана болу туралы негізгі құндылықтарыңыз бен сенімдеріңізді талқылаңыз. Бұл тақырып сізге білім беру, тәртіп және болашақ балаларға бергіңіз келетін құндылықтар сияқты маңызды мәселелер бойынша үйлесуге көмектеседі.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "parenting-style-alignment"
+          },
+          {
+            "type": "question",
+            "slug": "what-values-are-most-important-for-us-to-instill-in-our-children"
+          },
+          {
+            "type": "game",
+            "slug": "values-vibes"
+          },
+          {
+            "type": "checkup",
+            "slug": "parenting-playbook-compatibility"
+          },
+          {
+            "type": "exercise",
+            "slug": "values-alignment-exercise"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-believe-in-religious-education-for-children-why-or-why-not"
+          }
+        ]
+      },
+      {
+        "title": "Эмоционалдық дайындықты басқару",
+        "description": "Ата-ана болудың көтермелеу мен қиындықтарына эмоционалдық дайындықты бағалаңыз. Әртүрлі жаттығулар мен рефлексиялар арқылы ата-ана болу туралы мүмкін болатын қорқыныштар, алаңдаушылықтар мен үміттерді талқылайсыз.",
+        "content": [
+          {
+            "type": "checkup",
+            "slug": "emotional-rollercoaster-ride"
+          },
+          {
+            "type": "question",
+            "slug": "are-you-ready-to-handle-the-emotional-rollercoaster-that-comes-with-parenting"
+          },
+          {
+            "type": "article",
+            "slug": "navigating-emotional-waters-together"
+          },
+          {
+            "type": "game",
+            "slug": "emotional-seasons"
+          },
+          {
+            "type": "exercise",
+            "slug": "emotional-support-exercises"
+          },
+          {
+            "type": "question",
+            "slug": "what-fears-or-concerns-do-you-have-about-becoming-parents"
+          }
+        ]
+      },
+      {
+        "title": "Практикалық ата-ана жауапкершіліктері",
+        "description": "Ата-ана жауапкершіліктерінің логистикасына тереңірек үңіліңіз. Міндеттерді қалай бөлісетіндігіңізді, балаларды күту опцияларын жоспарлауды және үй шаруашылығын басқаруды талқылаңыз, балаларды тәрбиелеудің практикалық шындықтарына дайындалыңыз.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "responsibility-sharing-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-should-we-divide-parenting-responsibilities"
+          },
+          {
+            "type": "game",
+            "slug": "household-harmony"
+          },
+          {
+            "type": "exercise",
+            "slug": "shared-responsibilities-mapping"
+          },
+          {
+            "type": "question",
+            "slug": "what-are-your-thoughts-on-childcare-options"
+          }
+        ]
+      },
+      {
+        "title": "Ата-ана болуға қаржылық жоспарлау",
+        "description": "Балаларды тәрбиелеудің қаржылық аспектілеріне назар аударыңыз. Бюджеттеу, баланың болашағына жинақтау және осы жаңа тарауға кіргенде қаржылық жоспарларыңызды түзету туралы талқылауларға қатысыңыз.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "financial-planning-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-should-we-save-for-our-childs-future"
+          },
+          {
+            "type": "article",
+            "slug": "financial-planning-together"
+          },
+          {
+            "type": "game",
+            "slug": "dream-budget-builders"
+          },
+          {
+            "type": "exercise",
+            "slug": "budget-planning-session"
+          }
+        ]
+      },
+      {
+        "title": "Қолдау желісін құру",
+        "description": "Балалы болуға дайындалғанда қолдау желісінің маңыздылығын зерттеңіз. Отбасы, достар және ата-ана ресурстарының рөлдерін талқылаңыз, олар сізге алдағы қиындықтарды жеңуге көмектеседі.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "support-network-style"
+          },
+          {
+            "type": "question",
+            "slug": "are-you-comfortable-with-pet-allergies-or-preferences-if-we-have-kids"
+          },
+          {
+            "type": "exercise",
+            "slug": "parenting-support-networks"
+          },
+          {
+            "type": "question",
+            "slug": "are-you-willing-to-retire-just-to-take-care-of-our-kids"
+          }
+        ]
+      }
+    ],
+    "slug": "preparing-for-children-a-journey-to-parenthood"
+  },
+  {
+    "job": [
+      "rekindling_passion"
+    ],
+    "title": "Қайтадан Құштарлықты Ояту",
+    "description": "Бұл саяхат сіздің қарым-қатынасыңыздағы құштарлықты қайта оятуға арналған, түрлі қызықты әрекеттер, талқылаулар және көңілді жаттығулар арқылы. Әр күні сіз жақындық, коммуникация және ортақ тәжірибелердің әртүрлі аспектілерін зерттеп, байланысыңызды нығайтып, романтикалық байланысыңызды арттырасыз.",
+    "subtopics": [
+      {
+        "title": "Қалауларымызды Зерттеу",
+        "description": "Сіздер бір-біріңізде не нәрсені сексуалды және тартымды деп санайтыныңызды, соның ішінде фантазиялар мен жаңа идеяларды талқылаудан бастаңыз. Терең қалауларды ашу үшін қызықты сұрақтар мен тестілерді пайдаланыңыз.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "desire-reignition-style"
+          },
+          {
+            "type": "question",
+            "slug": "what-do-you-find-especially-sexy-about-me"
+          },
+          {
+            "type": "article",
+            "slug": "enhancing-sexual-communication"
+          },
+          {
+            "type": "game",
+            "slug": "fantasy-feelings"
+          },
+          {
+            "type": "checkup",
+            "slug": "emotional-intimacy-check-in"
+          },
+          {
+            "type": "question",
+            "slug": "whats-something-we-could-do-to-spice-things-up"
+          },
+          {
+            "type": "exercise",
+            "slug": "sexual-bucket-list-creation"
+          }
+        ]
+      },
+      {
+        "title": "Романтик Моменттер Жасау",
+        "description": "Күнделікті сәттерді ерекше ету жолдарын үйреніңіз. Бұл тақырып сізді романтикалық жесттерді дамытуға және бір-біріңізді таң қалдыруға ынталандырады, күнделікті өміріңізге қызығушылық қосады.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "romantic-gesture-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-can-we-make-everyday-moments-feel-more-special-and-romantic"
+          },
+          {
+            "type": "article",
+            "slug": "crafting-memorable-date-nights"
+          },
+          {
+            "type": "game",
+            "slug": "date-night-planner"
+          },
+          {
+            "type": "checkup",
+            "slug": "quality-time-quality-love"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-new-hobby-we-could-start-together-to-spice-things-up"
+          },
+          {
+            "type": "exercise",
+            "slug": "creating-passion-renewal-date"
+          }
+        ]
+      },
+      {
+        "title": "Бірге Жаңа Тәжірибелерді Зерттеу",
+        "description": "Сіздер жұп ретінде бөлісе алатын жаңа хоббилер немесе тәжірибелерді зерттеңіз. Сіздің қарым-қатынасыңыздағы көңілді және құштарлықты қайта оятатын әрекеттерді табыңыз, сонымен қатар жеке дамуға мүмкіндік беріңіз.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "hobby-harmony-style"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-new-hobby-we-can-start-together-to-strengthen-our-bond"
+          },
+          {
+            "type": "article",
+            "slug": "exploring-shared-hobbies-together"
+          },
+          {
+            "type": "game",
+            "slug": "hobby-harmony"
+          },
+          {
+            "type": "checkup",
+            "slug": "growth-through-novelty"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-way-we-can-challenge-each-other-to-grow-while-keeping-the-romance-alive"
+          },
+          {
+            "type": "exercise",
+            "slug": "hobbies-and-interests-exercise"
+          }
+        ]
+      },
+      {
+        "title": "Жақындық және Әлсіздік",
+        "description": "Эмоционалдық жақындық пен әлсіздікке тереңірек үңіліңіз. Сіздер эмоционалдық қажеттіліктеріңіз туралы ашық сөйлесуді тәжірибе жасап, құштарлықты қозғайтын байланысты нығайта аласыздар.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "emotional-intimacy-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-prefer-to-communicate-your-needs-and-desires"
+          },
+          {
+            "type": "article",
+            "slug": "building-emotional-intimacy-together"
+          },
+          {
+            "type": "game",
+            "slug": "trust-builders"
+          },
+          {
+            "type": "checkup",
+            "slug": "emotional-needs-compatibility"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-fun-way-we-can-explore-each-others-fantasies-together"
+          },
+          {
+            "type": "exercise",
+            "slug": "active-listening-practice"
+          }
+        ]
+      },
+      {
+        "title": "Отты Сақтау",
+        "description": "Тіпті күнделікті сәттерде де отты сақтаудың стратегияларын талқылаңыз. Романтиканы алдыңғы қатарда ұстай отырып, бірге үнемі сынап, дамудың жолдарын зерттеңіз.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "growth-balance-style"
+          },
+          {
+            "type": "question",
+            "slug": "what-do-you-think-we-can-do-to-keep-the-spark-alive-in-our-relationship"
+          },
+          {
+            "type": "article",
+            "slug": "boosting-relationship-happiness"
+          },
+          {
+            "type": "game",
+            "slug": "passion-rekindle-quest"
+          },
+          {
+            "type": "checkup",
+            "slug": "fun-and-affection"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-new-hobby-we-can-try-together-that-honors-both-our-interests"
+          },
+          {
+            "type": "exercise",
+            "slug": "flexible-role-playing"
+          }
+        ]
+      },
+      {
+        "title": "Ұзақ Мерзімді Құштарлық Жоспарлары",
+        "description": "Сіздің қарым-қатынасыңыздағы құштарлықты уақыт өте келе сақтаудың жол картасын жасаңыз. Бірлескен мақсаттар мен болашаққа көзқарас жасаңыз, бұл жақындық пен қызығушылықты сақтауға көмектеседі.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "future-planning-style"
+          },
+          {
+            "type": "question",
+            "slug": "if-you-won-the-lottery-tomorrow-whats-the-first-thing-youd-do"
+          },
+          {
+            "type": "article",
+            "slug": "creating-a-vision-for-us"
+          },
+          {
+            "type": "game",
+            "slug": "future-visionaries"
+          },
+          {
+            "type": "checkup",
+            "slug": "future-talk-together"
+          },
+          {
+            "type": "question",
+            "slug": "whats-your-favorite-memory-of-us-having-a-great-conversation"
+          },
+          {
+            "type": "exercise",
+            "slug": "long-term-goal-planning"
+          }
+        ]
+      }
+    ],
+    "slug": "rekindling-the-passion"
+  },
+  {
+    "job": [
+      "improving_honesty_and_openness"
+    ],
+    "title": "Шындық пен Ашықтықты Жақсарту",
+    "description": "Бұл саяхат сіз бен серіктесіңізге қарым-қатынасыңызда шындық пен ашықтықты тереңірек дамытуға көмектесу үшін жасалған. Бірнеше күн ішінде сіз сенімділік пен ашықтықты арттыратын әрекеттер, талқылаулар және жаттығулармен айналысасыз, бұл сізге сезімтал тақырыптарды талқылауға және байланысыңызды нығайтуға мүмкіндік береді.",
+    "subtopics": [
+      {
+        "title": "Шындықты Түсіну",
+        "description": "Қарым-қатынаста шындықтың маңыздылығын және серіктесіңізбен шыншыл болудың әртүрлі аспектілерін зерттеңіз. Шындыққа қатысты қазіргі көзқарастарыңызды тереңдететін сұрақтарға жауап беріңіз.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "honesty-and-openness-style"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-believe-in-complete-transparency-in-a-relationship-why-or-why-not"
+          },
+          {
+            "type": "article",
+            "slug": "cultivating-honest-conversations"
+          },
+          {
+            "type": "game",
+            "slug": "honesty-hunt"
+          },
+          {
+            "type": "checkup",
+            "slug": "the-honesty-hangout"
+          },
+          {
+            "type": "exercise",
+            "slug": "honesty-commitment-ritual"
+          }
+        ]
+      },
+      {
+        "title": "Шындыққа Қатысты Қорқыныштарды Шешу",
+        "description": "Қарым-қатынасыңыздағы ашықтыққа қатысты жалпы қорқыныштар мен алаңдаушылықтарды анықтаңыз. Бірге, шыншыл бола алмаған жағдайларды еске түсіріп, ашық коммуникация үшін қауіпсіз орта құру жолдарын талқылаңыз.",
+        "content": [
+          {
+            "type": "checkup",
+            "slug": "openness-odyssey"
+          },
+          {
+            "type": "question",
+            "slug": "have-you-ever-felt-you-couldnt-be-completely-honest-with-me-why"
+          },
+          {
+            "type": "article",
+            "slug": "vulnerability-trusts-gateway"
+          },
+          {
+            "type": "exercise",
+            "slug": "truth-telling-exercises"
+          },
+          {
+            "type": "game",
+            "slug": "trust-talk-challenge"
+          },
+          {
+            "type": "question",
+            "slug": "have-you-ever-hidden-something-to-protect-my-feelings-how-did-it-turn-out"
+          }
+        ]
+      },
+      {
+        "title": "Ашықтықты Дамыту",
+        "description": "Қарым-қатынаста ашықтықтың артықшылықтарын және оның жақындықты қалай арттыра алатынын біліңіз. Әдетте жеке ұстайтын мәліметтер мен ойларыңызды бөлісуге ынталандыратын әрекеттер мен талқылауларға қатысыңыз.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "transparency-style-assessment"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-think-its-ever-ok-to-tell-white-lies-in-a-relationship-why-or-why-not"
+          },
+          {
+            "type": "article",
+            "slug": "transparency-builds-strong-bonds"
+          },
+          {
+            "type": "exercise",
+            "slug": "transparency-talks"
+          },
+          {
+            "type": "game",
+            "slug": "transparency-trivia"
+          },
+          {
+            "type": "checkup",
+            "slug": "transparency-tools"
+          }
+        ]
+      },
+      {
+        "title": "Ашықтық Арқылы Сенімді Құру",
+        "description": "Сезімдеріңіз, сенімсіздіктеріңіз және тілектеріңіз туралы ашық болу арқылы сенімділікті дамыту стратегияларын ашыңыз. Бөлісу мен осалдықты насихаттайтын жаттығуларға қатысыңыз.",
+        "content": [
+          {
+            "type": "exercise",
+            "slug": "openness-commitment-ritual"
+          },
+          {
+            "type": "question",
+            "slug": "how-can-we-support-each-other-to-be-more-open-and-honest-daily"
+          },
+          {
+            "type": "article",
+            "slug": "building-emotional-intimacy-together"
+          },
+          {
+            "type": "game",
+            "slug": "trust-builders"
+          },
+          {
+            "type": "checkup",
+            "slug": "trusting-truths"
+          },
+          {
+            "type": "question",
+            "slug": "can-you-share-a-time-when-honesty-led-to-a-positive-outcome-in-our-relationship"
+          }
+        ]
+      },
+      {
+        "title": "Қиын Сұхбаттарды Басқару",
+        "description": "Қиын тақырыптарды шындық пен ашықтықпен шешу техникасын зерттеңіз. Сіздің ойларыңыз бен сезімдеріңізді білдіру үшін тиімді коммуникация стратегияларын қолдануды тәжірибелеңіз, конфликтілерді конструктивті түрде шешуге ұмтылыңыз.",
+        "content": [
+          {
+            "type": "checkup",
+            "slug": "conflict-to-connection"
+          },
+          {
+            "type": "test",
+            "slug": "your-conflict-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-handle-situations-where-being-honest-might-hurt-someone"
+          },
+          {
+            "type": "article",
+            "slug": "navigating-difficult-conversations"
+          },
+          {
+            "type": "game",
+            "slug": "dialogue-duel"
+          },
+          {
+            "type": "exercise",
+            "slug": "conflict-resolution-strategies-practice"
+          }
+        ]
+      },
+      {
+        "title": "Шыншыл Қарым-қатынас Мәдениетін Құру",
+        "description": "Қарым-қатынасыңызда шындық практикасы бойынша ортақ келісім жасаңыз. Ашықтық мәдениетін сақтау үшін шекаралар мен ниеттерді талқылаңыз, екі серіктестің де өздерін білдіруде қауіпсіз сезінуін қамтамасыз етіңіз.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "trust-building-style-quiz"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-boundary-you-need-to-feel-safe-being-honest-with-me"
+          },
+          {
+            "type": "article",
+            "slug": "building-trust-through-transparency"
+          },
+          {
+            "type": "game",
+            "slug": "trust-sparks"
+          },
+          {
+            "type": "exercise",
+            "slug": "boundaries-practice"
+          },
+          {
+            "type": "checkup",
+            "slug": "trust-builders"
+          }
+        ]
+      }
+    ],
+    "slug": "improving-honesty-and-openness"
+  },
+  {
+    "job": [
+      "introducing_healthy_habits"
+    ],
+    "title": "Бірге Денсаулықты Әдеттерді Қалыптастыру",
+    "description": "Бұл саяхат жұптарға денсаулықты жақсартатын әдеттерді дамытуға және сақтауға көмектесуге арналған. Күн сайын бір қадам жасап, сіз тамақтану, денсаулық сақтау тәжірибелері және осы денсаулықты жақсарту жолында бір-біріңізді қалай қолдауға болатынын зерттейсіз.",
+    "subtopics": [
+      {
+        "title": "Тамақтану Негіздерін Түсіну",
+        "description": "Жақсы тамақтанудың негіздерін үйреніңіз, витаминдер мен қоректік заттар, тамақ дайындау және денсаулықты жақсартатын тағамдарды диетаңызға енгізу сияқты аспектілерді талқылаңыз. Бұл денсаулықты жақсартудың негізін қалайды.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "healthy-eating-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-ensure-youre-getting-enough-vitamins-and-nutrients"
+          },
+          {
+            "type": "article",
+            "slug": "kickstart-healthy-routines-together"
+          },
+          {
+            "type": "game",
+            "slug": "nutri-quiz"
+          },
+          {
+            "type": "exercise",
+            "slug": "healthy-eating-plans"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-prefer-cooking-together-or-trying-out-new-healthy-recipes-separately"
+          }
+        ]
+      },
+      {
+        "title": "Денсаулықты Қалыптастыру Рутиналарын Жасау",
+        "description": "Денсаулықты жақсартатын тамақтану мен жаттығуды ынталандыратын күнделікті рутиналарды орнатудың жолдарын зерттеңіз, таңертеңгі және кешкі ритуалдарды қосыңыз. Тұрақтылықтың маңыздылығын және оның денсаулығыңызға әсерін талқылаңыз.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "healthy-habits-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-incorporate-healthy-eating-into-your-busy-schedule"
+          },
+          {
+            "type": "article",
+            "slug": "healthy-habits-for-stronger-bonds"
+          },
+          {
+            "type": "game",
+            "slug": "healthy-habits-hub"
+          },
+          {
+            "type": "exercise",
+            "slug": "positive-habit-tracking"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-enjoy-morning-workouts-or-evening-wind-downs-more"
+          }
+        ]
+      },
+      {
+        "title": "Стресті Басқару Бірге",
+        "description": "Стресті басқарудың денсаулықты жақсартатын стратегияларын анықтаңыз, соның ішінде медитация тәжірибелері мен қиын уақыттарда бір-біріңізді қалай қолдауға болатынын. Бұл тақырып денсаулықты жақсартудың бір бөлігі ретінде психикалық әл-ауқатты қамтиды.",
+        "content": [
+          {
+            "type": "checkup",
+            "slug": "mood-mapping"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-handle-stress-in-a-healthy-way"
+          },
+          {
+            "type": "article",
+            "slug": "navigating-emotional-waters-together"
+          },
+          {
+            "type": "game",
+            "slug": "mindfulness-match"
+          },
+          {
+            "type": "exercise",
+            "slug": "mindfulness-meditation-sessions"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-handle-stress-or-unexpected-challenges"
+          }
+        ]
+      },
+      {
+        "title": "Физикалық Белсенділікті Қосымша",
+        "description": "Сіздер екеуіңізге ұнайтын физикалық белсенділіктің әртүрлі түрлерін талқылаңыз, белсенді болуда командалық жұмыстың маңыздылығын және бірге тұрақты жаттығу рутиналарын орнату жоспарын жасаңыз.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "accountability-style-quiz"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-prefer-solo-workouts-or-exercising-together"
+          },
+          {
+            "type": "checkup",
+            "slug": "fitness-partners-unite"
+          },
+          {
+            "type": "exercise",
+            "slug": "fitness-routine-together"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-new-form-of-exercise-youd-like-to-do-together-regularly"
+          }
+        ]
+      },
+      {
+        "title": "Прогресті және Мақсаттарды Бақылау",
+        "description": "Денсаулық пен әл-ауқат мақсаттарын қалай орнату және бақылау керектігін, сондай-ақ бір-біріңіздің жетістіктеріңізді қалай тойлау керектігін үйреніңіз. Бұл сіздің денсаулықты жақсарту саяхатыңызда ынталандыру мен серіктестік сезімін қалыптастырады.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "goal-alignment-style"
+          },
+          {
+            "type": "question",
+            "slug": "what-are-your-long-term-health-and-wellness-goals-and-how-can-we-support-each-other"
+          },
+          {
+            "type": "article",
+            "slug": "setting-shared-future-goals"
+          },
+          {
+            "type": "game",
+            "slug": "future-visionaries"
+          },
+          {
+            "type": "exercise",
+            "slug": "smart-goals-planning"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-stay-motivated-to-maintain-your-healthy-habits"
+          }
+        ]
+      },
+      {
+        "title": "Болашаққа Денсаулықты Әдеттерді Қалыптастыру",
+        "description": "Ұзақ мерзімді денсаулық мақсаттарын, денсаулықты жақсартатын әдеттерді жұп ретінде өміріңізге қалай енгізу керектігін және әл-ауқатты арттыратын дәстүрлерді орнатуды талқылаңыз, денсаулықты жақсартатын тәжірибелерді өмір салтына айналдыруды қамтамасыз етіңіз.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "growth-balance-style"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-new-habit-youd-like-to-develop-together-for-personal-growth"
+          },
+          {
+            "type": "exercise",
+            "slug": "positive-reinforcement-practices"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-new-healthy-habit-youd-like-to-try-this-month"
+          }
+        ]
+      }
+    ],
+    "slug": "introducing-healthy-habits-together"
+  },
+  {
+    "job": [
+      "understanding_mutual_compatibility"
+    ],
+    "title": "Өзара Сәйкестікті Түсіну",
+    "description": "Бұл саяхат сізге қарым-қатынасыңыздағы сәйкестіктің қабаттарын зерттеп, түсінуге көмектесу үшін жасалған. Тақырыптарды біртіндеп қарастыра отырып, сіз ұқсастықтарыңыз бен айырмашылықтарыңызды анықтап, бағалауды және олармен жұмыс жасауды үйренесіз. Әр күні сіз ойлы әңгімелерді жеңілдететін және терең байланыстарды нығайтатын әртүрлі мазмұнмен айналысасыз.",
+    "subtopics": [
+      {
+        "title": "Негізгі Құндылықтарды Зерттеу",
+        "description": "Сіздің ең маңызды үш құндылығыңызды талқылаудан бастаңыз және олар шешімдеріңізге қалай әсер ететінін қарастырыңыз. Бұл негіз қалаушы тақырып сіздің қарым-қатынаста не маңызды екенін түсінуге бағыт береді.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "values-alignment-style"
+          },
+          {
+            "type": "question",
+            "slug": "what-are-three-values-you-believe-are-most-important-in-a-person"
+          },
+          {
+            "type": "article",
+            "slug": "aligning-future-goals"
+          },
+          {
+            "type": "game",
+            "slug": "values-vibes"
+          },
+          {
+            "type": "checkup",
+            "slug": "core-values-connection"
+          },
+          {
+            "type": "exercise",
+            "slug": "values-alignment-exercise"
+          }
+        ]
+      },
+      {
+        "title": "Коммуникация Стильдері",
+        "description": "Сіздің жеке коммуникация стильдеріңізді біліп, олардың өзара әрекеттесулеріңізге қалай әсер ететінін талқылаңыз. Бұл тақырып сізге анық және тиімді коммуникация үшін стратегияларды дамытуға көмектеседі.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "discover-your-communication-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-prefer-to-communicate-your-needs-and-desires"
+          },
+          {
+            "type": "article",
+            "slug": "mastering-communication-techniques"
+          },
+          {
+            "type": "game",
+            "slug": "communication-clues"
+          },
+          {
+            "type": "checkup",
+            "slug": "mastering-our-communication-styles"
+          },
+          {
+            "type": "exercise",
+            "slug": "active-listening-practice"
+          }
+        ]
+      },
+      {
+        "title": "Мәдениет және Тарихи Айырмашылықтар",
+        "description": "Сіздің әртүрлі мәдениет backgrounds және өмірлік тәжірибелеріңіз көзқарастарыңызды қалай қалыптастыратынын зерттеңіз. Бұл элементтерді түсіну бір-біріңізге деген эмпатия мен бағалауды арттырады.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "cultural-connection-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-our-different-cultural-backgrounds-shape-our-relationship-and-how-can-we-honor-both"
+          },
+          {
+            "type": "article",
+            "slug": "bridging-religious-differences-together"
+          },
+          {
+            "type": "game",
+            "slug": "cultural-quest"
+          },
+          {
+            "type": "checkup",
+            "slug": "navigating-cultural-and-religious-differences"
+          },
+          {
+            "type": "exercise",
+            "slug": "difference-identification-and-acceptance"
+          }
+        ]
+      },
+      {
+        "title": "Жеке және Ортақ Мүдделерді Салмақтау",
+        "description": "Сіздің қызығушылықтарыңызды, хоббилеріңізді талқылап, олар бір-бірін қалай толықтыра алатынын немесе қайшылық тудыруы мүмкін екенін қарастырыңыз. Салмақ табу сіздің қарым-қатынасыңызды нығайтады және екі серіктестің де қанағаттанғанын қамтамасыз етеді.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "hobby-harmony-style"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-new-hobby-we-can-try-together-that-honors-both-our-interests"
+          },
+          {
+            "type": "article",
+            "slug": "exploring-shared-hobbies-together"
+          },
+          {
+            "type": "game",
+            "slug": "hobby-harmony"
+          },
+          {
+            "type": "exercise",
+            "slug": "hobbies-and-interests-exercise"
+          }
+        ]
+      },
+      {
+        "title": "Конфликттер мен Айырмашылықтарды Басқару",
+        "description": "Сіздердің әрқайсыңыз конфликттер мен әртүрлі пікірлерді қалай басқаратынын түсінуге тереңірек кірісіңіз. Тиімді конфликтті шешу техникасын зерттей отырып, сіз келіспеушіліктерді өсу мүмкіндіктеріне айналдыруды үйренесіз.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "your-conflict-style"
+          },
+          {
+            "type": "game",
+            "slug": "conflict-resolution-quest"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-handle-feelings-of-jealousy-or-insecurity"
+          },
+          {
+            "type": "article",
+            "slug": "mastering-conflict-resolution-together"
+          },
+          {
+            "type": "checkup",
+            "slug": "conflict-connoisseurs"
+          },
+          {
+            "type": "exercise",
+            "slug": "conflict-resolution-styles"
+          },
+          {
+            "type": "question",
+            "slug": "how-can-we-turn-our-differences-into-opportunities-for-growth-as-a-couple"
+          }
+        ]
+      },
+      {
+        "title": "Қарым-қатынастың Эволюциясы",
+        "description": "Сіздің қарым-қатынасыңыздың уақыт өте келе қалай өзгергенін ойлаңыз және оның болашағын қалай елестететініңізді талқылаңыз. Бұл тақырып сізге ұзақ мерзімді мақсаттарыңыз бен амбицияларыңызды сәйкестендіруге мүмкіндік береді.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "future-vision-type"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-see-our-relationship-evolving-over-time"
+          },
+          {
+            "type": "article",
+            "slug": "creating-a-vision-for-us"
+          },
+          {
+            "type": "game",
+            "slug": "future-visionaries"
+          },
+          {
+            "type": "checkup",
+            "slug": "future-talk-together"
+          },
+          {
+            "type": "exercise",
+            "slug": "future-goals-compatibility"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-see-our-relationship-evolving-over-the-next-decade"
+          }
+        ]
+      }
+    ],
+    "slug": "understanding-mutual-compatibility"
+  },
+  {
+    "job": [
+      "learning_relationship_skills"
+    ],
+    "title": "Қатынастарды Оқу Дағдылары",
+    "description": "Бұл саяхат сізге байланысыңызды нығайту, коммуникацияны жақсарту және конфликттерді тиімді шешу қабілетін арттыру үшін қажетті қатынастар дағдыларын дамытуға көмектесуге арналған. Әр күннің мазмұны алдыңғы күнмен байланысып, денсаулықты және қанағаттанарлық серіктестік үшін қажетті дағдылардың прогрессиясымен бағыттайды.",
+    "subtopics": [
+      {
+        "title": "Эмоцияларды Түсіну",
+        "description": "Эмоцияларыңызды анықтап, білдіруді үйреніңіз, сондай-ақ серіктесіңіздің эмоционалдық реакцияларын түсініңіз. Бұл негіз қалаушы дағды тиімді коммуникация үшін өте маңызды.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "emotion-management-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-handle-your-strong-emotions"
+          },
+          {
+            "type": "article",
+            "slug": "building-emotional-intimacy-together"
+          },
+          {
+            "type": "game",
+            "slug": "emotional-seasons"
+          },
+          {
+            "type": "checkup",
+            "slug": "mood-mapping"
+          },
+          {
+            "type": "exercise",
+            "slug": "emotional-regulation-techniques"
+          }
+        ]
+      },
+      {
+        "title": "Тиімді Коммуникация Техникалары",
+        "description": "Әртүрлі коммуникация стильдері мен техникаларын зерттеңіз, соның ішінде белсенді тыңдау және ашықтық пен адалдықты арттыратын кері байланыс тәжірибелері.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "discover-your-communication-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-prefer-to-communicate-your-needs-and-desires"
+          },
+          {
+            "type": "article",
+            "slug": "mastering-communication-techniques"
+          },
+          {
+            "type": "game",
+            "slug": "communication-clues"
+          },
+          {
+            "type": "checkup",
+            "slug": "mastering-our-communication-styles"
+          },
+          {
+            "type": "exercise",
+            "slug": "active-listening-practice"
+          }
+        ]
+      },
+      {
+        "title": "Конфликттерді Шешу Стратегиялары",
+        "description": "Денсаулықты сақтау үшін конфликттерді шешудің әртүрлі стратегияларын зерттеңіз. Сіз конструктивті түрде келіспеушіліктерді шешуді және жеңіске жететін шешімдерді табуды үйренесіз.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "your-conflict-style"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-metaphor-that-describes-how-we-handle-problems-together"
+          },
+          {
+            "type": "article",
+            "slug": "effective-conflict-resolution-strategies"
+          },
+          {
+            "type": "game",
+            "slug": "conflict-resolution-quest"
+          },
+          {
+            "type": "checkup",
+            "slug": "conflict-resolution-styles"
+          },
+          {
+            "type": "exercise",
+            "slug": "conflict-resolution-strategies-practice"
+          }
+        ]
+      },
+      {
+        "title": "Сенімділік пен Сенімді Дамыту",
+        "description": "Сенімділікті дамыту арқылы сенімділікті құруға назар аударыңыз. Бұл тақырып ашықтықтың маңыздылығын түсінуді және жеке сезімдер мен тәжірибелерді бөлісуді қамтиды.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "vulnerability-style-assessment"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-relationship-skill-you-admire-in-others-and-want-to-develop"
+          },
+          {
+            "type": "article",
+            "slug": "vulnerability-trusts-gateway"
+          },
+          {
+            "type": "game",
+            "slug": "trust-talk"
+          },
+          {
+            "type": "checkup",
+            "slug": "building-a-fortress-of-trust"
+          },
+          {
+            "type": "exercise",
+            "slug": "rebuild-trust-session"
+          }
+        ]
+      },
+      {
+        "title": "Қиын Сұхбаттарды Басқару",
+        "description": "Конфликтті көтермей, қиын сұхбаттарды бастау мен басқаруды үйреніңіз. Сіз сезімтал тақырыптарды тыныш және құрметпен талқылау техникаларын тәжірибеден өткізесіз.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "communication-timing-style"
+          },
+          {
+            "type": "question",
+            "slug": "whats-the-best-advice-youve-ever-received-about-communicating-in-a-relationship"
+          },
+          {
+            "type": "article",
+            "slug": "navigating-difficult-conversations"
+          },
+          {
+            "type": "game",
+            "slug": "communication-carousel"
+          },
+          {
+            "type": "checkup",
+            "slug": "emotions-expressed-freely"
+          },
+          {
+            "type": "exercise",
+            "slug": "nonviolent-communication-practice"
+          }
+        ]
+      },
+      {
+        "title": "Эмоционалдық Интимділікті Арттыру",
+        "description": "Сіздің эмоционалдық байланысыңызды тереңдету жолдарын зерттей отырып, саяхатыңызды аяқтаңыз. Бұл сіздің қатынасыңыздағы физикалық және эмоционалдық интимділікті арттыру тәжірибелерін қамтиды, сіздің бірге жақындасуыңызды қамтамасыз етеді.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "emotional-intimacy-style"
+          },
+          {
+            "type": "question",
+            "slug": "whats-something-youd-like-to-learn-together-to-enhance-our-relationship"
+          },
+          {
+            "type": "article",
+            "slug": "building-emotional-intimacy-together"
+          },
+          {
+            "type": "game",
+            "slug": "intimacy-adventure"
+          },
+          {
+            "type": "checkup",
+            "slug": "emotional-intimacy-check-in"
+          },
+          {
+            "type": "exercise",
+            "slug": "emotional-closeness-exercises"
+          }
+        ]
+      }
+    ],
+    "slug": "learning-relationship-skills"
+  },
+  {
+    "job": [
+      "preparing_for_intimacy"
+    ],
+    "title": "Интимдік байланысқа дайындық",
+    "description": "Бұл саяхат жұптарға интимдік байланыстарын қолдау мен конструктивті түрде зерттеп, нығайтуға көмектесу үшін жасалған. Мұқият дайындалған контент арқылы жұптар сенімділікті қалыптастырудан бастап, тілектерді зерттеуге дейінгі интимдік аспектілермен айналысады. Әр күні сіз эмоционалдық және физикалық байланысты тереңдетуге көмектесетін жаңа түсініктер мен тәжірибелерді ашасыз.",
+    "subtopics": [
+      {
+        "title": "Интимділікті Түсіну",
+        "description": "Саяхатыңызды интимділік концепциясын зерттеуден бастаңыз. Интимділіктің эмоционалдық және физикалық аспектілерін түсініп, интимділіктің сіз бен серіктесіңіз үшін не білдіретінін талқылаңыз.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "emotional-intimacy-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-envision-our-intimate-life-evolving-over-the-next-year"
+          },
+          {
+            "type": "article",
+            "slug": "building-emotional-intimacy-together"
+          },
+          {
+            "type": "game",
+            "slug": "intimacy-insights"
+          },
+          {
+            "type": "checkup",
+            "slug": "emotional-intimacy-check-in"
+          },
+          {
+            "type": "exercise",
+            "slug": "intimate-story-sharing"
+          }
+        ]
+      },
+      {
+        "title": "Сенімділік пен Vulnerability Құру",
+        "description": "Сенімділікті қалыптастыру жаттығуларына кірісіп, қарым-қатынаста vulnerability-нің маңыздылығын талқылаңыз. Жеке сезімдер мен тәжірибелерді бөлісу интимдік байланыс үшін қауіпсіз кеңістік құра алатынын біліңіз.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "trust-building-style-quiz"
+          },
+          {
+            "type": "question",
+            "slug": "what-role-does-vulnerability-play-in-our-intimate-life"
+          },
+          {
+            "type": "article",
+            "slug": "vulnerability-trusts-gateway"
+          },
+          {
+            "type": "game",
+            "slug": "trust-builders"
+          },
+          {
+            "type": "checkup",
+            "slug": "trusting-truths"
+          },
+          {
+            "type": "exercise",
+            "slug": "vulnerability-exploration-session"
+          }
+        ]
+      },
+      {
+        "title": "Тілектерді Байланыстыру",
+        "description": "Тілектеріңіз бен қалауларыңыз туралы коммуникация өнеріне назар аударыңыз. Интимдік амбицияларыңызды білдіруге көмектесетін әрекеттерге қатысыңыз және қолдаушы түрде фантазияларды бөлісуді тәжірибелеңіз.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "sexual-communication-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-prefer-to-communicate-your-needs-and-desires"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-feel-about-sharing-your-deepest-desires-with-each-other"
+          },
+          {
+            "type": "article",
+            "slug": "enhancing-sexual-communication"
+          },
+          {
+            "type": "game",
+            "slug": "fantasy-fulfillment"
+          },
+          {
+            "type": "checkup",
+            "slug": "emotional-needs-compatibility"
+          },
+          {
+            "type": "exercise",
+            "slug": "fantasy-sharing-session"
+          }
+        ]
+      },
+      {
+        "title": "Интимдік Ритуалдарды Құру",
+        "description": "Интимділікті арттыратын жеке ритуалдарды дамыту үшін бірге жұмыс жасаңыз. Бұл күнделікті өміріңізді жақсартатын рутиналар, арнайы кешкі ас немесе басқа да тәжірибелерді қамтуы мүмкін.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "ritual-building-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-can-we-create-more-intimate-moments-in-our-daily-routine"
+          },
+          {
+            "type": "question",
+            "slug": "whats-one-intimate-goal-youd-like-us-to-achieve-together"
+          },
+          {
+            "type": "article",
+            "slug": "fun-rituals-to-strengthen-bonds"
+          },
+          {
+            "type": "game",
+            "slug": "date-night-planner"
+          },
+          {
+            "type": "checkup",
+            "slug": "everyday-chats-that-count"
+          },
+          {
+            "type": "exercise",
+            "slug": "shared-calendar-setup"
+          }
+        ]
+      },
+      {
+        "title": "Физикалық Байланыстарды Зерттеу",
+        "description": "Эмоционалдық аспектілерді нығайтқаннан кейін, физикалық интимдікке назар аударыңыз. Бір-біріңіздің қажеттіліктеріңізді түсінуді арттыру үшін, жанасудан ойыншық зерттеуге дейінгі физикалық байланыстардың әртүрлі формаларын зерттеңіз.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "physical-touch-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-feel-about-introducing-new-elements-into-our-intimate-life"
+          },
+          {
+            "type": "question",
+            "slug": "whats-your-favorite-type-of-foreplay"
+          },
+          {
+            "type": "article",
+            "slug": "enhancing-physical-intimacy-mindfully"
+          },
+          {
+            "type": "game",
+            "slug": "intimacy-adventure"
+          },
+          {
+            "type": "checkup",
+            "slug": "balancing-fun-and-intimacy-in-sex"
+          },
+          {
+            "type": "exercise",
+            "slug": "erotic-massage-exchange"
+          }
+        ]
+      },
+      {
+        "title": "Шекаралар мен Тілектерді Бағалау",
+        "description": "Саяхатыңызды шекаралар мен тілектерді ашық түрде талқылаумен аяқтаңыз. Қарым-қатынасыңыздың келісімді және қанағаттанарлық болуын қамтамасыз ету үшін, құрметті ортада кез келген ерекше кинки немесе фантазияларды талқылаңыз.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "intimate-boundary-style"
+          },
+          {
+            "type": "question",
+            "slug": "is-there-a-particular-kink-or-fetish-you-want-to-explore-but-havent-shared-yet"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-prefer-spontaneity-or-planning-when-it-comes-to-intimacy"
+          },
+          {
+            "type": "article",
+            "slug": "navigating-boundaries-for-intimacy"
+          },
+          {
+            "type": "exercise",
+            "slug": "boundaries-practice"
+          }
+        ]
+      }
+    ],
+    "slug": "preparing-for-intimacy"
+  },
+  {
+    "job": [
+      "improving_communication"
+    ],
+    "title": "Қарым-қатынасты жақсарту: Біздің қарым-қатынасымызда көпірлер салу",
+    "description": "Бұл саяхат серіктестер арасындағы коммуникация дағдыларын жақсартуға бағытталған. Әр түрлі іс-шараларға, талқылауларға және рефлексиялық тәжірибелерге қатысу арқылы, сіз өзіңізді ашық білдіруді және бір-біріңізді жақсы түсінуді үйренесіз, бұл жақын байланыс пен қанағаттанарлық қарым-қатынасты нығайтады.",
+    "subtopics": [
+      {
+        "title": "Бір-біріміздің Коммуникация Стильдерін Түсіну",
+        "description": "Әр түрлі коммуникация стильдерін зерттеп, олардың өзара әрекеттесуге қалай әсер ететінін анықтаңыз. Бұл өз стиліңізді анықтауды және серіктесіңіздің қалауларын үйренуді қамтиды, ашық диалог құру үшін.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "discover-your-communication-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-prefer-to-communicate-your-needs-and-desires"
+          },
+          {
+            "type": "article",
+            "slug": "enhancing-communication-for-stronger-bonds"
+          },
+          {
+            "type": "game",
+            "slug": "communication-clues"
+          },
+          {
+            "type": "exercise",
+            "slug": "active-listening-practice"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-feel-about-writing-down-our-issues-before-discussing-them"
+          },
+          {
+            "type": "checkup",
+            "slug": "mastering-our-communication-styles"
+          }
+        ]
+      },
+      {
+        "title": "Қиын Сұхбаттарды Басқару",
+        "description": "Қиын талқылауларға эмпатия мен құрметпен жақындау техникасын үйреніңіз. Сіз өз ойларыңыз бен сезімдеріңізді білдіру дағдыларын игересіз, сонымен қатар серіктесіңіздің көзқарасына назар аударасыз.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "problem-solving-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-can-we-make-our-disagreements-more-constructive"
+          },
+          {
+            "type": "article",
+            "slug": "navigating-sensitive-conversations"
+          },
+          {
+            "type": "game",
+            "slug": "problem-solving-pals"
+          },
+          {
+            "type": "exercise",
+            "slug": "conflict-resolution-strategies-practice"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-prefer-discussing-issues-immediately-or-taking-some-time-to-cool-off"
+          },
+          {
+            "type": "checkup",
+            "slug": "navigating-tough-conversations"
+          }
+        ]
+      },
+      {
+        "title": "Қажеттіліктер мен Шекараларды Білдіру",
+        "description": "Бұл тақырып қажеттіліктеріңізді қалай білдіру және сау шекараларды орнату туралы. Сіз бір-біріңізден не қажет екенін білдіруді тәжірибе жасайсыз, бұл қарым-қатынасыңызды нығайтады.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "boundary-setting-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-comfortable-are-you-discussing-your-boundaries-and-desires"
+          },
+          {
+            "type": "article",
+            "slug": "navigating-boundaries-for-intimacy"
+          },
+          {
+            "type": "exercise",
+            "slug": "boundaries-practice"
+          },
+          {
+            "type": "question",
+            "slug": "whats-one-boundary-youd-like-to-set-to-keep-our-relationship-healthy"
+          }
+        ]
+      },
+      {
+        "title": "Белсенді Тыңдау және Эмоционалды Растау",
+        "description": "Белсенді тыңдаудың өнерін меңгеріңіз және серіктесіңіздің сезімдерін қалай растау керектігін үйреніңіз. Сіз тыңдау дағдыларыңызды жақсартуға арналған құралдарды табасыз, бұл екі серіктестің де естілген және түсінілген сезінуін қамтамасыз етеді.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "listening-style-quiz"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-like-to-receive-feedback-in-our-relationship"
+          },
+          {
+            "type": "article",
+            "slug": "mastering-active-listening"
+          },
+          {
+            "type": "checkup",
+            "slug": "emotional-explorers"
+          },
+          {
+            "type": "exercise",
+            "slug": "active-listening-practice"
+          },
+          {
+            "type": "question",
+            "slug": "whats-your-favorite-non-verbal-way-i-show-you-im-listening"
+          }
+        ]
+      },
+      {
+        "title": "Құрылымды Конфликтті Шешу",
+        "description": "Конфликттерді құрылымды түрде шешу үшін тиімді стратегияларды үйреніңіз. Бұл қарым-қатынасқа зиян келтірмей, келіспеушіліктерді басқару техникасын қамтиды, командалық рухты нығайтады.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "your-conflict-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-handle-disagreements-or-conflicts"
+          },
+          {
+            "type": "article",
+            "slug": "effective-conflict-resolution-strategies"
+          },
+          {
+            "type": "game",
+            "slug": "conflict-resolution-quest"
+          },
+          {
+            "type": "exercise",
+            "slug": "conflict-resolution-strategies-practice"
+          },
+          {
+            "type": "question",
+            "slug": "whats-one-thing-youd-like-to-change-about-how-we-handle-our-differences"
+          },
+          {
+            "type": "checkup",
+            "slug": "conflict-resolution-styles"
+          }
+        ]
+      },
+      {
+        "title": "Шынайы және Ашық Диалогтарды Дамыту",
+        "description": "Сіздің қарым-қатынасыңызда ашық және шынайы коммуникация әдетін қалыптастырыңыз. Бұл тақырып сізді ашықтық пен сенімділікті ынталандыратын тәжірибелер арқылы бағыттайды, терең байланыс пен жақындыққа жол ашады.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "honesty-and-openness-style"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-feel-comfortable-expressing-your-true-feelings-with-me-why-or-why-not"
+          },
+          {
+            "type": "article",
+            "slug": "building-trust-through-transparency"
+          },
+          {
+            "type": "game",
+            "slug": "honesty-huddle"
+          },
+          {
+            "type": "checkup",
+            "slug": "the-honesty-hangout"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-think-honesty-is-always-the-best-policy-why-or-why-not"
+          },
+          {
+            "type": "exercise",
+            "slug": "complete-honesty-sessions"
+          }
+        ]
+      }
+    ],
+    "slug": "improving-communication-building-bridges-in-our-relationship"
+  },
+  {
+    "job": [
+      "exploring_feelings"
+    ],
+    "title": "Эмоционалдық Ландшафттарымызды Бағдарлау",
+    "description": "Бұл саяхат сіз бен серіктесіңізге сезімдеріңізді тереңірек зерттеп, түсінуге көмектесу үшін жасалған. Әр түрлі мазмұн түрлерімен айналыса отырып, сіз эмоционалдық үлгілеріңізді ашасыз, эмоцияларыңыз туралы тиімді түрде сөйлесесіз және эмоционалдық байланысыңызды нығайтасыз. Әр күн жаңа түсініктер мен қиындықтарды әкеледі, олар сіздің қарым-қатынасыңыздағы эмоционалдық жақындықты дамытуға көмектеседі.",
+    "subtopics": [
+      {
+        "title": "Эмоцияларды Түсіну",
+        "description": "Саяхатыңызды негізгі эмоцияларды зерттеуден бастаңыз және олар өміріңізде қалай көрініс табатынын анықтаңыз. Сұрақтар мен мақалалар арқылы сезімдеріңіз бен олармен күресу әдістеріңіз туралы түсінік алыңыз.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "emotional-awareness-type"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-think-that-you-feel-emotions-stronger-or-weaker-than-other-people"
+          },
+          {
+            "type": "article",
+            "slug": "building-emotional-intimacy-together"
+          },
+          {
+            "type": "game",
+            "slug": "emotional-seasons"
+          },
+          {
+            "type": "checkup",
+            "slug": "emotional-rollercoaster-ride"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-handle-your-strong-emotions"
+          },
+          {
+            "type": "exercise",
+            "slug": "emotional-regulation-techniques"
+          }
+        ]
+      },
+      {
+        "title": "Сезімдерді Тиімді Түсіндіру",
+        "description": "Эмоцияларыңызды бір-біріңізге қауіпсіз және қолдаушы ортада қалай жеткізуді үйреніңіз. Сезімдеріңіз туралы ашық диалог жүргізуге көмектесетін жаттығуларға қатысыңыз, сынға ұшырау қорқынышынсыз.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "communication-style-type"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-prefer-to-receive-support-when-youre-feeling-low"
+          },
+          {
+            "type": "article",
+            "slug": "mastering-communication-techniques"
+          },
+          {
+            "type": "game",
+            "slug": "communication-clues"
+          },
+          {
+            "type": "checkup",
+            "slug": "mastering-our-communication-styles"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-feel-comfortable-expressing-your-true-feelings-with-me-why-or-why-not"
+          },
+          {
+            "type": "exercise",
+            "slug": "transparent-communication-practices"
+          }
+        ]
+      },
+      {
+        "title": "Әлсіздікке Терең Сүңгу",
+        "description": "Қарым-қатынастардағы әлсіздіктің күшін ашыңыз. Сіздің ішкі қорқыныштарыңыз бен тілектеріңізді бөлісуге ынталандыратын сұрақтар мен әрекеттерді зерттеңіз, және әлсіздік интимділікті қалай арттыра алатынын талқылаңыз.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "vulnerability-comfort-type"
+          },
+          {
+            "type": "question",
+            "slug": "can-you-describe-a-moment-where-you-felt-most-connected-during-our-sex-and-what-made-it-special-for-you"
+          },
+          {
+            "type": "article",
+            "slug": "vulnerability-trusts-gateway"
+          },
+          {
+            "type": "game",
+            "slug": "feelings-explorer"
+          },
+          {
+            "type": "checkup",
+            "slug": "vulnerability-and-openness"
+          },
+          {
+            "type": "question",
+            "slug": "how-comfortable-are-you-sharing-your-true-feelings-with-me-on-a-scale-of-1-10"
+          },
+          {
+            "type": "exercise",
+            "slug": "vulnerability-exploration-session"
+          }
+        ]
+      },
+      {
+        "title": "Қиын Эмоцияларды Бірге Бағдарлау",
+        "description": "Көңілсіздік, сенімсіздік немесе қайғы сияқты қиын эмоцияларды анықтап, шешіңіз. Сіздерге қиын эмоционалдық кезеңдерде бір-біріңізді қолдауға көмектесетін тесттер мен тексерулерге қатысыңыз.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "emotion-management-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-handle-feelings-of-jealousy-or-insecurity"
+          },
+          {
+            "type": "article",
+            "slug": "navigating-emotional-waters-together"
+          },
+          {
+            "type": "game",
+            "slug": "emotional-ride"
+          },
+          {
+            "type": "checkup",
+            "slug": "emotional-rollercoaster-ride"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-handle-feelings-of-stress-or-anxiety"
+          },
+          {
+            "type": "exercise",
+            "slug": "confidentiality-agreements"
+          }
+        ]
+      },
+      {
+        "title": "Эмоционалдық Қауіпсіздікті Құру",
+        "description": "Екі серіктес те сезімдерін білдіруге және зерттеуге қауіпсіз сезінетін орта жасаңыз. Эмоционалдық қауіпсіздіктің байланысыңызды тереңдетудегі маңыздылығын түсініп, оны құрудың практикалық стратегияларын үйреніңіз.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "emotional-safety-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-feel-about-our-current-level-of-intimacy-and-affection"
+          },
+          {
+            "type": "article",
+            "slug": "trust-through-open-communication"
+          },
+          {
+            "type": "game",
+            "slug": "trust-builders"
+          },
+          {
+            "type": "checkup",
+            "slug": "emotional-intimacy-check-in"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-feel-we-handle-each-others-vulnerabilities"
+          },
+          {
+            "type": "exercise",
+            "slug": "feelings-validation-practices"
+          }
+        ]
+      },
+      {
+        "title": "Эмоционалдық Интимділікті Дамыту",
+        "description": "Саяхатыңызды қарым-қатынасыңыздағы эмоционалдық интимділікті арттыру стратегияларын жүзеге асырумен аяқтаңыз. Эмоционалдық байланыстарыңызды нығайтатын ойындар мен жаттығуларға қатысыңыз, байланысыңызды терең әрі берік етіңіз.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "emotional-intimacy-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-feel-about-sharing-your-deepest-desires-with-each-other"
+          },
+          {
+            "type": "article",
+            "slug": "building-emotional-intelligence-together"
+          },
+          {
+            "type": "game",
+            "slug": "emotion-explorer"
+          },
+          {
+            "type": "checkup",
+            "slug": "emotional-needs-compatibility"
+          },
+          {
+            "type": "question",
+            "slug": "how-can-we-better-express-our-needs-without-feeling-vulnerable"
+          },
+          {
+            "type": "exercise",
+            "slug": "emotional-expression-sessions"
+          }
+        ]
+      }
+    ],
+    "slug": "navigating-our-emotional-landscapes"
+  },
+  {
+    "job": [
+      "preparing_for_cohabitation"
+    ],
+    "title": "Бірге Тұруға Дайындық",
+    "description": "Бұл саяхат сіз бен серіктесіңізді бірге тұруға дайындау үшін әртүрлі аспектілерді қарастырады. Сіз тиімді қарым-қатынас жасауды, жауапкершіліктерді басқаруды және үйлесімді үй ортасын құруды үйренесіз. Әр күні сіздің қарым-қатынасыңызды нығайтуға және ортақ өмірге көшу процесін жеңілдетуге көмектесетін маңызды тақырыптарды зерттейсіз.",
+    "subtopics": [
+      {
+        "title": "Біздің Ортақ Кеңістігімізді Армандау",
+        "description": "Үйіңіз қалай көрінетінін бөлісуден бастаңыз. Кеңістік, декор және атмосфера туралы идеяларды талқылаңыз. Бұл өзара түсіністік пен ортақ армандардың негізін қалайды.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "lifestyle-harmony-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-can-we-create-a-home-environment-that-respects-both-of-our-preferences"
+          },
+          {
+            "type": "article",
+            "slug": "sharing-spaces-harmoniously"
+          },
+          {
+            "type": "exercise",
+            "slug": "living-space-design"
+          },
+          {
+            "type": "game",
+            "slug": "decor-dilemma"
+          },
+          {
+            "type": "question",
+            "slug": "whats-one-piece-of-furniture-you-absolutely-need-in-our-new-home"
+          }
+        ]
+      },
+      {
+        "title": "Қарым-қатынас Негіздері",
+        "description": "Күнделікті қиындықтарды жеңуге көмектесетін тиімді қарым-қатынас стратегияларын үйреніңіз. Қажеттіліктерді білдіру, күтілімдерді орнату және бір-біріңізді белсенді тыңдау жолдарын зерттеңіз.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "discover-your-communication-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-prefer-to-communicate-your-needs-and-desires"
+          },
+          {
+            "type": "article",
+            "slug": "mastering-communication-techniques"
+          },
+          {
+            "type": "game",
+            "slug": "communication-clues"
+          },
+          {
+            "type": "checkup",
+            "slug": "mastering-our-communication-styles"
+          },
+          {
+            "type": "exercise",
+            "slug": "active-listening-practice"
+          }
+        ]
+      },
+      {
+        "title": "Отбасылық Жауапкершіліктер",
+        "description": "Отбасылық жұмыстар мен жауапкершіліктерді қалай бөлетініңізді талқылап, орнатыңыз. Сіздерге таза және ұйымдасқан өмір сүру ортасын сақтау үшін жұмыс істейтін жүйе жасаңыз.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "domestic-labor-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-feel-about-handling-household-responsibilities-and-chores"
+          },
+          {
+            "type": "article",
+            "slug": "establishing-household-routines"
+          },
+          {
+            "type": "exercise",
+            "slug": "shared-responsibilities-mapping"
+          },
+          {
+            "type": "game",
+            "slug": "chore-chart-challenge"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-feel-about-having-a-cleaning-schedule-versus-cleaning-as-we-go"
+          }
+        ]
+      },
+      {
+        "title": "Қаржылық Негіздер",
+        "description": "Қаржылық басқару мен бюджеттеу бойынша жұп ретінде келісімге келіңіз. Шығындарды бөлісу, бірлескен қаржылық шешімдер қабылдау және қаржы туралы ашықтықты сақтау стратегияларын талқылаңыз.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "budgeting-style-for-couples"
+          },
+          {
+            "type": "game",
+            "slug": "dream-budget-builders"
+          },
+          {
+            "type": "article",
+            "slug": "mastering-money-talks-together"
+          },
+          {
+            "type": "exercise",
+            "slug": "budget-planning-session"
+          },
+          {
+            "type": "checkup",
+            "slug": "aligning-financial-values-and-goals"
+          },
+          {
+            "type": "question",
+            "slug": "whats-one-thing-you-want-to-achieve-together-in-our-new-home"
+          }
+        ]
+      },
+      {
+        "title": "Конфликттерді Сыпайы Шешу",
+        "description": "Міндетті түрде болатын келіспеушіліктерге дайындалып, конфликттерді шешу стратегияларын үйреніңіз. Әртүрлі пікірлерді қалай басқару және сау жолмен ортақ шешім табу жолдарын зерттеңіз.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "your-conflict-style"
+          },
+          {
+            "type": "game",
+            "slug": "conflict-resolution-quest"
+          },
+          {
+            "type": "article",
+            "slug": "mastering-conflict-resolution-together"
+          },
+          {
+            "type": "exercise",
+            "slug": "conflict-resolution-strategies-practice"
+          },
+          {
+            "type": "checkup",
+            "slug": "tackling-tough-talks"
+          },
+          {
+            "type": "question",
+            "slug": "how-should-we-handle-maintenance-and-repairs-around-the-house"
+          }
+        ]
+      },
+      {
+        "title": "Қауіпсіз Кеңісті Құру",
+        "description": "Дайындықтарыңызды аяқтап, ортақ кеңістікте эмоционалдық және физикалық қауіпсіздікке назар аударыңыз. Шекаралар, жеке өмір және екеуіңіз де қауіпсіз және құрметтелген сезінетін орта құру жолдарын талқылаңыз.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "emotional-safety-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-should-we-handle-setting-up-our-home-office-or-study-space"
+          },
+          {
+            "type": "article",
+            "slug": "navigating-boundaries-for-intimacy"
+          },
+          {
+            "type": "exercise",
+            "slug": "personal-space-respect-practices"
+          },
+          {
+            "type": "game",
+            "slug": "space-personalities"
+          },
+          {
+            "type": "question",
+            "slug": "how-should-we-handle-guests-and-visitors-in-our-home"
+          }
+        ]
+      }
+    ],
+    "slug": "preparing-for-cohabitation"
+  },
+  {
+    "job": [
+      "solving_relationship_problems"
+    ],
+    "title": "Қатынастардағы Мәселелерді Шешу және Бағыттау",
+    "description": "Бұл саяхат сіз бен серіктесіңізге қақтығыстарды тиімді шешуге көмектесу үшін жасалған. Әр күні сіз коммуникация дағдыларыңызды және мәселені шешу қабілеттеріңізді дамытуға арналған жаттығулар, сұрақтар мен әрекеттермен айналысасыз. Бұл саяхаттың соңында сіз бірге қиындықтарды шешуге және команда ретінде шешімдер табуға дайын боласыз.",
+    "subtopics": [
+      {
+        "title": "Қақтығыс Стильдерін Түсіну",
+        "description": "Сіздің жеке қақтығыс стильдеріңізді және олардың қатынасыңызға қалай әсер ететінін анықтаңыз. Түсіністік үшін сұрақтар мен рефлексияны пайдаланыңыз.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "your-conflict-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-handle-disagreements-or-conflicts"
+          },
+          {
+            "type": "article",
+            "slug": "effective-conflict-resolution-strategies"
+          },
+          {
+            "type": "game",
+            "slug": "conflict-resolution-quest"
+          },
+          {
+            "type": "checkup",
+            "slug": "conflict-resolution-styles"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-handle-disagreements-and-whats-your-favorite-way-for-us-to-make-up-after-a-fight"
+          },
+          {
+            "type": "exercise",
+            "slug": "conflict-resolution-styles"
+          }
+        ]
+      },
+      {
+        "title": "Коммуникация Негіздері",
+        "description": "Қақтығыстар кезінде коммуникация дағдыларыңызды жақсартуға назар аударыңыз. Эффективті тыңдау техникасын және анық білдірудің маңыздылығын жаттығулар мен ойындар арқылы зерттеңіз.",
+        "content": [
+          {
+            "type": "checkup",
+            "slug": "mastering-our-communication-styles"
+          },
+          {
+            "type": "test",
+            "slug": "discover-your-communication-style"
+          },
+          {
+            "type": "article",
+            "slug": "mastering-communication-techniques"
+          },
+          {
+            "type": "game",
+            "slug": "communication-clues"
+          },
+          {
+            "type": "exercise",
+            "slug": "active-listening-practice"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-prefer-to-communicate-your-needs-and-desires"
+          },
+          {
+            "type": "question",
+            "slug": "whats-your-favorite-memory-of-us-having-a-great-conversation"
+          }
+        ]
+      },
+      {
+        "title": "Құрылымды Қақтығыстарды Шешу",
+        "description": "Қақтығыстарды құрылымды әңгімелерге айналдыруды үйреніңіз. Қақтығыстарды көтермей шешу стратегияларын ұсынатын жаттығулар мен мақалалармен айналысыңыз.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "solution-focused-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-can-we-make-our-disagreements-more-constructive"
+          },
+          {
+            "type": "article",
+            "slug": "mastering-conflict-resolution-together"
+          },
+          {
+            "type": "game",
+            "slug": "problem-solving-escapades"
+          },
+          {
+            "type": "checkup",
+            "slug": "conflict-resolution-wizards"
+          },
+          {
+            "type": "question",
+            "slug": "can-you-recall-a-time-when-you-felt-misunderstood-how-did-you-handle-it"
+          },
+          {
+            "type": "exercise",
+            "slug": "conflict-resolution-strategies-practice"
+          }
+        ]
+      },
+      {
+        "title": "Ақша Мәселелері және Қақтығыс",
+        "description": "Қаржылық талқылаулардың қақтығысқа қалай әкелетінін және осы әңгімелерді қалай бағыттауды зерттеңіз. Бюджет стильдері мен қаржылық коммуникация бойынша тесттер мен талқылаулар арқылы жұмыс жасаңыз.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "financial-communication-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-feel-about-our-different-spending-habits-and-how-can-we-find-a-middle-ground"
+          },
+          {
+            "type": "article",
+            "slug": "mastering-money-talks-together"
+          },
+          {
+            "type": "game",
+            "slug": "dream-budget-builders"
+          },
+          {
+            "type": "checkup",
+            "slug": "trust-in-financial-transparency"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-have-any-issues-with-budgeting-like-are-you-in-debt-to-somebody-do-you-make-any-useless-spending"
+          },
+          {
+            "type": "exercise",
+            "slug": "budget-planning-session"
+          }
+        ]
+      },
+      {
+        "title": "Әңгімелер үшін Қауіпсіз Орта Құру",
+        "description": "Екі серіктес те өз сезімдерін білдіруге қауіпсіз сезінетін орта құрыңыз. Ашық диалогтарды жеңілдету және негізгі мәселелерді шешу үшін тексерулер мен жаттығуларды пайдаланыңыз.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "emotional-safety-style"
+          },
+          {
+            "type": "checkup",
+            "slug": "vulnerability-and-openness"
+          },
+          {
+            "type": "article",
+            "slug": "trust-through-open-communication"
+          },
+          {
+            "type": "game",
+            "slug": "communication-connection"
+          },
+          {
+            "type": "exercise",
+            "slug": "transparent-communication-practices"
+          },
+          {
+            "type": "question",
+            "slug": "are-there-any-habits-or-behaviors-of-mine-that-bother-you"
+          },
+          {
+            "type": "question",
+            "slug": "describe-a-time-when-a-simple-text-message-led-to-a-big-misunderstanding-how-did-you-resolve-it"
+          }
+        ]
+      },
+      {
+        "title": "Қақтығысты Өсуге Айналдыру",
+        "description": "Қақтығысты өсу құралы ретінде пайдалануды үйрену арқылы өз көзқарасыңызды өзгертіңіз. Өткен қақтығыстарды еске алыңыз, юморды қолданыңыз және жұп ретінде жеке өсу жоспарларын жасаңыз.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "growth-opportunity-style-assessment"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-past-problem-weve-solved-that-makes-you-proud-of-us"
+          },
+          {
+            "type": "article",
+            "slug": "embracing-differences-positively"
+          },
+          {
+            "type": "game",
+            "slug": "compatibility-conundrum"
+          },
+          {
+            "type": "checkup",
+            "slug": "team-problem-solving"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-relationship-problem-you-think-we-can-solve-with-humor"
+          },
+          {
+            "type": "exercise",
+            "slug": "relationship-journal"
+          }
+        ]
+      }
+    ],
+    "slug": "navigating-and-resolving-relationship-problems"
+  },
+  {
+    "job": [
+      "having_meaningful_conversations"
+    ],
+    "title": "Маңызды Сұхбаттарды Дамыту",
+    "description": "Бұл саяхат сіздің серіктесіңізбен маңызды сұхбаттарға қатысу қабілетіңізді арттыруға арналған. Бірнеше күн ішінде сіз коммуникацияның әртүрлі аспектілерін зерттейсіз, бір-біріңіздің құндылықтарыңызды түсінуден бастап, терең эмоционалдық мәселелерді талқылауға дейін. Әр күн алдыңғы күнге негізделеді, өсуді және байланысуды ынталандырады.",
+    "subtopics": [
+      {
+        "title": "Коммуникацияның Негіздері",
+        "description": "Серіктесіңізбен тиімді коммуникацияның негіздерін зерттеуді бастаңыз. Белсенді тыңдау, ойларды анық білдіру және вербалды емес белгілердің маңыздылығы туралы біліңіз.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "discover-your-communication-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-prefer-to-communicate-your-needs-and-desires"
+          },
+          {
+            "type": "article",
+            "slug": "mastering-communication-techniques"
+          },
+          {
+            "type": "game",
+            "slug": "communication-clues"
+          },
+          {
+            "type": "checkup",
+            "slug": "mastering-our-communication-styles"
+          },
+          {
+            "type": "exercise",
+            "slug": "active-listening-practice"
+          },
+          {
+            "type": "question",
+            "slug": "whats-your-favorite-memory-of-us-having-a-great-conversation"
+          }
+        ]
+      },
+      {
+        "title": "Бір-біріміздің Құндылықтарымызды Түсіну",
+        "description": "Сіздің сенімдеріңіз бен әрекеттеріңізді қалыптастыратын негізгі құндылықтарды терең зерттеңіз. Бұл құндылықтардың сіздің шешімдеріңізге қалай әсер ететінін және олар сіздің қатынастарыңызға қалай ықпал ететінін талқылаңыз.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "values-alignment-style"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-think-we-share-the-same-values"
+          },
+          {
+            "type": "article",
+            "slug": "aligning-life-ambitions-together"
+          },
+          {
+            "type": "game",
+            "slug": "values-vibes"
+          },
+          {
+            "type": "checkup",
+            "slug": "core-values-connection"
+          },
+          {
+            "type": "exercise",
+            "slug": "values-alignment-exercise"
+          },
+          {
+            "type": "question",
+            "slug": "what-are-your-top-three-values-and-how-do-they-influence-your-decisions"
+          }
+        ]
+      },
+      {
+        "title": "Қиын Тақырыптарды Талқылау",
+        "description": "Сезімталдық пен құрметпен қиын сұхбаттарға жақындау техникасын үйреніңіз. Қаржы, отбасылық динамика немесе болашақ амбициялары сияқты қиын тақырыптарды талқылауды тәжірибелеңіз.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "problem-solving-style"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-think-that-money-play-a-big-role-in-feeling-fulfilled"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-balance-personal-time-with-time-spent-together"
+          },
+          {
+            "type": "article",
+            "slug": "navigating-difficult-conversations"
+          },
+          {
+            "type": "game",
+            "slug": "conflict-resolution-quest"
+          },
+          {
+            "type": "checkup",
+            "slug": "tackling-tough-talks"
+          },
+          {
+            "type": "exercise",
+            "slug": "tough-talks-toolkit"
+          }
+        ]
+      },
+      {
+        "title": "Жеке Тәжірибелермен Бөлісу",
+        "description": "Өткеніңізден маңызды естеліктерді бөлісу үшін әңгімелесу арқылы қатысыңыз. Сіздің тәжірибелеріңіз қазіргі көзқарастарыңыз бен эмоционалдық күйіңізге қалай әсер еткенін біліңіз.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "life-story-style"
+          },
+          {
+            "type": "question",
+            "slug": "can-you-share-a-memory-from-your-childhood-that-you-think-has-shaped-who-you-are-today"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-memorable-lesson-youve-learned-from-past-relationships"
+          },
+          {
+            "type": "article",
+            "slug": "love-maps-knowing-each-other-deeply"
+          },
+          {
+            "type": "game",
+            "slug": "memory-lane"
+          },
+          {
+            "type": "checkup",
+            "slug": "exploring-childhood-memories"
+          },
+          {
+            "type": "exercise",
+            "slug": "intimate-story-sharing"
+          }
+        ]
+      },
+      {
+        "title": "Эмоционалдық Байланысты Тереңдету",
+        "description": "Эмоционалдық жақындықты арттыратын сұхбаттарды зерттеңіз. Серіктесіңізбен терең байланыс орнату үшін қорқыныштар, армандар және амбициялар сияқты тақырыптарды талқылаңыз.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "emotional-intimacy-style"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-believe-in-soulmates-why-or-why-not"
+          },
+          {
+            "type": "question",
+            "slug": "what-are-your-dreams-and-aspirations-outside-of-work"
+          },
+          {
+            "type": "article",
+            "slug": "building-emotional-intimacy-together"
+          },
+          {
+            "type": "game",
+            "slug": "emotional-expeditions"
+          },
+          {
+            "type": "checkup",
+            "slug": "emotional-intimacy-check-in"
+          },
+          {
+            "type": "exercise",
+            "slug": "emotional-closeness-exercises"
+          }
+        ]
+      },
+      {
+        "title": "Ашықтық Мәдениетін Құру",
+        "description": "Екі серіктес те өз ойлары мен сезімдерін білдіруге қауіпсіз сезінетін орта жасаңыз. Ашық коммуникацияны сақтау және осалдықты ынталандыру стратегияларын үйреніңіз.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "openness-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-feel-about-surprise-conversations-versus-planned-discussions"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-express-your-creativity"
+          },
+          {
+            "type": "article",
+            "slug": "cultivating-honest-conversations"
+          },
+          {
+            "type": "game",
+            "slug": "open-hearts-challenge"
+          },
+          {
+            "type": "checkup",
+            "slug": "vulnerability-and-openness"
+          },
+          {
+            "type": "exercise",
+            "slug": "transparent-communication-practices"
+          }
+        ]
+      }
+    ],
+    "slug": "cultivating-meaningful-conversations"
+  },
+  {
+    "job": [
+      "improving_relationship_satisfaction"
+    ],
+    "title": "Қатынасты Қанағаттандыруды Арттыру",
+    "description": "Бұл саяхат жұптарға қатынасты қанағаттандыруды біртіндеп арттыруға арналған іс-әрекеттер мен пайдалы кеңестер береді. Бірнеше күн ішінде сіз қажеттіліктерді түсінуден бастап, эмоционалдық жақындықты тереңдетуге дейінгі әртүрлі тақырыптарды зерттейсіз, нәтижесінде серіктестікті үздіксіз жақсартуға арналған практикалық стратегияларға қол жеткізесіз.",
+    "subtopics": [
+      {
+        "title": "Жеке Қажеттіліктерді Түсіну",
+        "description": "Қатынастағы жеке қажеттіліктеріңіз бен тілектеріңізді талқылаудан бастаңыз. Бұл негіз әр серіктестің қанағаттану үшін не қажет екенін түсінуге көмектеседі.",
+        "content": [
+          {
+            "type": "checkup",
+            "slug": "emotional-needs-compatibility"
+          },
+          {
+            "type": "question",
+            "slug": "how-can-we-ensure-both-of-our-needs-are-being-met"
+          },
+          {
+            "type": "article",
+            "slug": "building-trust-through-intimacy"
+          },
+          {
+            "type": "game",
+            "slug": "future-visionaries"
+          },
+          {
+            "type": "exercise",
+            "slug": "values-alignment-exercise"
+          },
+          {
+            "type": "question",
+            "slug": "how-can-we-better-support-each-other-during-stressful-situations"
+          }
+        ]
+      },
+      {
+        "title": "Ашық Коммуникация Тәжірибелері",
+        "description": "Серіктестер арасында ашықтық пен мөлдірлікті арттыратын тиімді коммуникация техникасын үйреніңіз. Белсенді тыңдау мен сезімдерді білдіруге арналған жаттығуларға қатысыңыз.",
+        "content": [
+          {
+            "type": "checkup",
+            "slug": "mastering-our-communication-styles"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-prefer-to-communicate-your-needs-and-desires"
+          },
+          {
+            "type": "article",
+            "slug": "enhancing-communication-for-stronger-bonds"
+          },
+          {
+            "type": "game",
+            "slug": "communication-clues"
+          },
+          {
+            "type": "exercise",
+            "slug": "active-listening-practice"
+          },
+          {
+            "type": "question",
+            "slug": "whats-your-favorite-memory-of-us-having-a-great-conversation"
+          }
+        ]
+      },
+      {
+        "title": "Айырмашылықтар мен Ортақтықтарды Мерекелеу",
+        "description": "Әрқайсыңыздың ерекше болатынын зерттеп, ортақ қызығушылықтарды мерекелеңіз. Бұл байланыс алшақтықтарын жоюға және жеке таңдауларды құрметтеуге көмектеседі.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "growth-through-differences-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-can-we-celebrate-our-unique-strengths-and-compensate-for-our-differences"
+          },
+          {
+            "type": "article",
+            "slug": "embrace-and-celebrate-differences"
+          },
+          {
+            "type": "game",
+            "slug": "cultural-quest"
+          },
+          {
+            "type": "exercise",
+            "slug": "difference-identification-and-acceptance"
+          },
+          {
+            "type": "question",
+            "slug": "whats-one-thing-you-appreciate-about-how-i-handle-our-differences"
+          }
+        ]
+      },
+      {
+        "title": "Бірлескендік пен Тәуелсіздікті Теңестіру",
+        "description": "Сапалы уақытты бірге өткізу мен әрқайсыңыздың жеке кеңістік пен жеке қызығушылықтарға деген қажеттіліктерін құрметтеу арасында үйлесімді тепе-теңдікті табуға назар аударыңыз.",
+        "content": [
+          {
+            "type": "checkup",
+            "slug": "balancing-our-unique-interests"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-feel-about-the-balance-between-our-personal-time-and-together-time"
+          },
+          {
+            "type": "article",
+            "slug": "fun-rituals-to-strengthen-bonds"
+          },
+          {
+            "type": "game",
+            "slug": "routine-rendezvous"
+          },
+          {
+            "type": "exercise",
+            "slug": "shared-calendar-setup"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-prefer-solo-workouts-or-exercising-together"
+          }
+        ]
+      },
+      {
+        "title": "Әлсіздік Арқылы Жақындықты Құру",
+        "description": "Эмоционалдық жақындықты әлсіздік арқылы құруға арналған тәжірибелерді зерттеңіз. Бұл байланыс тереңдету үшін өткен тәжірибелер мен қорқыныштарды бөлісуді қамтуы мүмкін.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "vulnerability-style-assessment"
+          },
+          {
+            "type": "question",
+            "slug": "is-there-something-from-your-past-that-still-affects-our-relationship"
+          },
+          {
+            "type": "article",
+            "slug": "vulnerability-trusts-gateway"
+          },
+          {
+            "type": "game",
+            "slug": "secret-share"
+          },
+          {
+            "type": "exercise",
+            "slug": "truth-telling-exercises"
+          },
+          {
+            "type": "question",
+            "slug": "whats-something-youd-like-to-feel-more-of-in-our-relationship"
+          }
+        ]
+      },
+      {
+        "title": "Қатынастар Мақсаттарын Орнату",
+        "description": "Сіздің қатынасыңыз үшін өзара мақсаттарды орнату бойынша практикалық стратегиялармен аяқтаңыз, соның ішінде өсу, жақындық және ұзақ мерзімді қанағаттану үшін ұмтылыстар.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "goal-alignment-style"
+          },
+          {
+            "type": "question",
+            "slug": "what-are-your-aspirations-for-our-relationship-five-ten-or-twenty-years-down-the-line"
+          },
+          {
+            "type": "article",
+            "slug": "aligning-life-ambitions-together"
+          },
+          {
+            "type": "game",
+            "slug": "future-talks-fiesta"
+          },
+          {
+            "type": "exercise",
+            "slug": "smart-goals-planning"
+          },
+          {
+            "type": "question",
+            "slug": "what-are-your-thoughts-on-continuing-personal-growth-and-self-improvement-in-our-relationship"
+          }
+        ]
+      }
+    ],
+    "slug": "enhancing-relationship-satisfaction"
+  },
+  {
+    "job": [
+      "enhancing_love_and_affection"
+    ],
+    "title": "Махаббат пен Мейірімділікті Арттыру",
+    "description": "Бұл саяхат жұптарға өздерінің қарым-қатынасында терең махаббат пен мейірімділікті дамытуға көмектесу үшін жасалған. Сіздер мағыналы талқылаулар, көңілді әрекеттер және ойластырылған тәжірибелер арқылы махаббат пен мейірімділіктің әртүрлі аспектілерін зерттейсіздер. Әр күні сіздер махаббаттың көріністерін түсінуден бастап, байланысыңызды нығайтатын интимдік сәттерді жасауға дейінгі маңызды тақырыптарды зерттейсіздер.",
+    "subtopics": [
+      {
+        "title": "Махаббат Тілдерін Түсіну",
+        "description": "Махаббат тілдері концепциясын үйреніңіз және сіз бен серіктесіңіздің махаббатты қалай білдіретінін және қабылдайтынын анықтаңыз. Бұл білім эмоционалдық байланысыңызды нығайту үшін негіз қалайды.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "love-language-type"
+          },
+          {
+            "type": "question",
+            "slug": "what-is-your-love-language"
+          },
+          {
+            "type": "article",
+            "slug": "decoding-love-languages"
+          },
+          {
+            "type": "game",
+            "slug": "love-languages-quiz"
+          },
+          {
+            "type": "checkup",
+            "slug": "emotional-needs-compatibility"
+          },
+          {
+            "type": "question",
+            "slug": "whats-your-favorite-way-to-express-love-and-how-does-it-differ-from-mine"
+          },
+          {
+            "type": "exercise",
+            "slug": "find-out-your-love-language"
+          }
+        ]
+      },
+      {
+        "title": "Күнделікті Мейірімділік Көріністері",
+        "description": "Күнделікті мейірімділікті білдірудің қарапайым, бірақ күшті тәсілдерін зерттеңіз. Бұл тақырып кішкентай жесттер, махаббат хаттары және бір-біріңіздің күніңізді жарқын ететін комплименттерді талқылауды қамтиды.",
+        "content": [
+          {
+            "type": "exercise",
+            "slug": "compliment-exchange"
+          },
+          {
+            "type": "question",
+            "slug": "how-can-we-better-express-our-appreciation-for-each-other-daily"
+          },
+          {
+            "type": "article",
+            "slug": "enhance-affection-daily"
+          },
+          {
+            "type": "game",
+            "slug": "affectionate-habits"
+          },
+          {
+            "type": "checkup",
+            "slug": "acts-of-kindness-and-appreciation"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-small-gesture-that-always-makes-you-smile"
+          }
+        ]
+      },
+      {
+        "title": "Интимдік Сәттерді Жасау",
+        "description": "Күнделікті өміріңізге интимдік сәттерді қалай жасауға және енгізуге болатынын анықтаңыз. Бұл тосын романтикалық кештер, спонтанды құшақтар және терең байланыс орнату сәттерін жоспарлауды қамтиды.",
+        "content": [
+          {
+            "type": "checkup",
+            "slug": "emotional-intimacy-check-in"
+          },
+          {
+            "type": "test",
+            "slug": "sensory-intimacy-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-feel-about-trying-new-activities-together-to-build-intimacy"
+          },
+          {
+            "type": "article",
+            "slug": "building-emotional-intimacy-together"
+          },
+          {
+            "type": "game",
+            "slug": "intimacy-insights"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-feel-about-surprise-date-nights-whats-your-ideal-surprise"
+          },
+          {
+            "type": "exercise",
+            "slug": "creating-passion-renewal-date"
+          }
+        ]
+      },
+      {
+        "title": "Ризашылық пен Мейірімділікті Дамыту",
+        "description": "Сіздің қарым-қатынасыңызда ризашылық білдірудің маңыздылығына терең бойлаңыз. Мейірімділіктің махаббат пен мейірімділікті қалай арттыра алатынын талқылаңыз және бір-біріңізді мойындау үшін нақты тәжірибелерді үйреніңіз.",
+        "content": [
+          {
+            "type": "exercise",
+            "slug": "expressing-gratitude-session"
+          },
+          {
+            "type": "question",
+            "slug": "how-can-we-better-express-our-appreciation-for-each-other"
+          },
+          {
+            "type": "article",
+            "slug": "mastering-communication-techniques"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-like-to-express-appreciation-in-our-conversations"
+          }
+        ]
+      },
+      {
+        "title": "Мейірімділікте Ойыншылдық пен Юмор",
+        "description": "Юмор мен ойыншылдықтың интимділікті қалай арттыра алатынын үйреніңіз. Бұл тақырып бірге күлу және байланысыңызды нығайтатын ойыншыл әрекеттерге қатысу тәсілдерін табуға ынталандырады.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "playfulness-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-feel-about-incorporating-humor-into-our-intimate-moments"
+          },
+          {
+            "type": "article",
+            "slug": "fun-rituals-to-strengthen-bonds"
+          },
+          {
+            "type": "game",
+            "slug": "laugh-learn-quiz"
+          },
+          {
+            "type": "checkup",
+            "slug": "fun-flirtation"
+          },
+          {
+            "type": "question",
+            "slug": "how-can-we-incorporate-more-playfulness-into-our-relationship"
+          },
+          {
+            "type": "exercise",
+            "slug": "karaoke-session"
+          }
+        ]
+      },
+      {
+        "title": "Физикалық Мейірімділік пен Тиісті Сезім",
+        "description": "Физикалық жанасудың терең мейірімділікті дамытудағы рөлін зерттеңіз. Сіздердің байланысыңызды нығайтатын сүйіс, құшақ, құшақтасу және басқа да физикалық мейірімділік түрлеріне қатысты қалауларыңызды талқылаңыз.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "physical-touch-style"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-prefer-cuddling-on-the-couch-or-a-romantic-dinner-to-feel-loved"
+          },
+          {
+            "type": "article",
+            "slug": "enhancing-physical-intimacy-mindfully"
+          },
+          {
+            "type": "game",
+            "slug": "bedroom-preferences"
+          },
+          {
+            "type": "checkup",
+            "slug": "physical-comfort-and-boundaries"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-prefer-morning-hugs-or-goodnight-kisses"
+          },
+          {
+            "type": "exercise",
+            "slug": "affectionate-gestures-practice"
+          }
+        ]
+      }
+    ],
+    "slug": "enhancing-love-and-affection"
+  },
+  {
+    "job": [
+      "discussing_difficult_topics"
+    ],
+    "title": "Қиын Сұхбаттарды Бірге Жүргізу",
+    "description": "Бұл саяхат сіз бен серіктесіңізді қарым-қатынасыңыздағы сезімтал тақырыптарды талқылау қиындықтарынан өткізу үшін жасалған. Әр күні сіз коммуникацияның әртүрлі аспектілерін зерттейсіз, берік негіз құрудан бастап, терең жеке тақырыптарды шешуге дейін. Бұл саяхаттың соңында сіз мағыналы талқылауларға қатысу үшін құралдар мен сенімділікке ие боласыз, эмоционалдық байланысыңызды және өзара түсіністігіңізді нығайта отырып.",
+    "subtopics": [
+      {
+        "title": "Ашық Коммуникацияны Құру",
+        "description": "Ашық коммуникацияның маңыздылығын және қиын тақырыптарды талқылау үшін қауіпсіз кеңістік қалай құруды үйреніңіз. Бұл тақырып негізгі коммуникация стратегияларын таныстырады.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "discover-your-communication-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-prefer-to-communicate-your-needs-and-desires"
+          },
+          {
+            "type": "article",
+            "slug": "mastering-communication-techniques"
+          },
+          {
+            "type": "game",
+            "slug": "communication-clues"
+          },
+          {
+            "type": "checkup",
+            "slug": "mastering-our-communication-styles"
+          },
+          {
+            "type": "question",
+            "slug": "whats-your-favorite-memory-of-us-having-a-great-conversation"
+          },
+          {
+            "type": "exercise",
+            "slug": "active-listening-practice"
+          }
+        ]
+      },
+      {
+        "title": "Әртүрлі Перспективаларды Түсіну",
+        "description": "Сезімтал тақырыптар бойынша серіктесіңіздің көзқарасын түсіну арқылы эмпатияның маңыздылығын зерттеңіз. Келіспеушіліктерді конструктивті түрде шешу әдістерін талқылаңыз.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "empathy-resonance-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-can-we-ensure-both-of-us-feel-heard-during-a-disagreement"
+          },
+          {
+            "type": "article",
+            "slug": "building-emotional-intimacy-together"
+          },
+          {
+            "type": "game",
+            "slug": "deep-dive-dialogues"
+          },
+          {
+            "type": "checkup",
+            "slug": "empathy-adventure"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-prefer-to-approach-conversations-when-emotions-run-high"
+          },
+          {
+            "type": "exercise",
+            "slug": "difference-identification-and-acceptance"
+          }
+        ]
+      },
+      {
+        "title": "Көңілсіздік пен Сенімді Басқару",
+        "description": "Сіздің қарым-қатынасыңыздағы қызғаныш пен сенім сезімдерін тереңірек зерттеңіз. Бұл тақырып осы қиын сезімдерді жанжалсыз талқылауға қалай болатынына назар аударады.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "trust-building-style-quiz"
+          },
+          {
+            "type": "question",
+            "slug": "have-you-ever-felt-jealous-in-our-relationship-how-did-you-handle-it"
+          },
+          {
+            "type": "article",
+            "slug": "building-trust-through-intimacy"
+          },
+          {
+            "type": "game",
+            "slug": "trust-talk"
+          },
+          {
+            "type": "checkup",
+            "slug": "trusting-truths"
+          },
+          {
+            "type": "question",
+            "slug": "does-cheating-only-relate-to-physical-things-or-is-there-emotional-cheating-as-well"
+          },
+          {
+            "type": "exercise",
+            "slug": "rebuild-trust-session"
+          }
+        ]
+      },
+      {
+        "title": "Талқылауларда Шекараларды Орнату",
+        "description": "Сезімтал тақырыптарды талқылау кезінде шекараларды қалай орнатуды үйреніңіз, бұл екі серіктестің де әңгімелесу кезінде жайлы және құрметтелген сезінуін қамтамасыз етеді.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "boundary-communication-style"
+          },
+          {
+            "type": "question",
+            "slug": "are-there-any-boundaries-around-work-that-youd-like-to-set"
+          },
+          {
+            "type": "game",
+            "slug": "communication-carousel"
+          },
+          {
+            "type": "question",
+            "slug": "whats-one-boundary-youd-like-to-set-to-keep-our-relationship-healthy"
+          },
+          {
+            "type": "exercise",
+            "slug": "boundaries-practice"
+          }
+        ]
+      },
+      {
+        "title": "Өткен Травмаларды Талқылау",
+        "description": "Өткен травмалар туралы әңгімелерді шешіп, олардың сіздің қарым-қатынасыңызға қалай әсер етуі мүмкін екенін талқылаңыз. Бұл тақырып осы қиын тақырыптарды нәзік түрде талқылау стратегияларын ұсынады.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "life-story-style"
+          },
+          {
+            "type": "question",
+            "slug": "have-you-had-any-childhood-experiences-that-you-can-call-traumatic-how-has-it-affected-you"
+          },
+          {
+            "type": "article",
+            "slug": "navigating-emotional-waters-together"
+          },
+          {
+            "type": "checkup",
+            "slug": "exploring-childhood-memories"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-have-any-unresolved-issues-with-your-parents"
+          },
+          {
+            "type": "exercise",
+            "slug": "sensitive-subjects-dialogue-practice"
+          }
+        ]
+      },
+      {
+        "title": "Конфликттерді Шешу Стратегиялары",
+        "description": "Талқылау кезінде туындайтын конфликттерді шешу дағдыларыңызды дамытыңыз. Аргументтерді өсу мен өзара түсіністікке мүмкіндік беретін мүмкіндіктерге айналдыру техникасын зерттеңіз.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "your-conflict-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-can-we-turn-our-arguments-into-opportunities-for-growth"
+          },
+          {
+            "type": "article",
+            "slug": "effective-conflict-resolution-strategies"
+          },
+          {
+            "type": "game",
+            "slug": "problem-solving-pals"
+          },
+          {
+            "type": "checkup",
+            "slug": "conflict-resolution-styles"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-prefer-to-resolve-disagreements-calm-discussion-or-taking-a-short-break"
+          },
+          {
+            "type": "exercise",
+            "slug": "conflict-resolution-strategies-practice"
+          }
+        ]
+      }
+    ],
+    "slug": "navigating-difficult-conversations-together"
+  },
+  {
+    "job": [
+      "having_and_discussing_sex"
+    ],
+    "title": "Біздің Жеке Әлемімізді Зерттеу",
+    "description": "Бұл саяхат сіздің қарым-қатынасыңыздағы жыныстық қатынас туралы түсініктеріңіз бен талқылауларыңызды жақсартуға бағытталған. Сіз шекараларды, тілектерді және коммуникация стильдерін зерттеп, серіктесіңізбен қанағаттанарлық және ашық жыныстық байланыс орнатасыз. Әр күні сіз жақындық пен түсіністікті арттыруға арналған әртүрлі әрекеттермен айналысасыз.",
+    "subtopics": [
+      {
+        "title": "Тілектер мен Шекараларды Түсіну",
+        "description": "Жеке тілектеріңіз бен шекараларыңызды талқылаудан бастаңыз. Бұл негіз қалаушы қадам сенімділікті арттырады және жақындық туралы ашық әңгімелер үшін алаңды орнатады. Не қажет екенін және неге ыңғайлы екеніңізді білдіруге арналған құралдарды ашыңыз.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "discover-your-communication-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-comfortable-are-you-discussing-your-boundaries-and-desires"
+          },
+          {
+            "type": "article",
+            "slug": "trust-through-open-communication"
+          },
+          {
+            "type": "game",
+            "slug": "communication-clues"
+          },
+          {
+            "type": "checkup",
+            "slug": "mastering-our-communication-styles"
+          },
+          {
+            "type": "question",
+            "slug": "are-there-any-boundaries-youd-like-to-discuss-regarding-our-physical-relationship"
+          },
+          {
+            "type": "exercise",
+            "slug": "boundaries-practice"
+          }
+        ]
+      },
+      {
+        "title": "Жыныстық Фантазиялар мен Эксперименттерді Зерттеу",
+        "description": "Енді сіз қауіпсіз кеңістікті орнатқаннан кейін, фантазияларды бөлісіп, бірге сынап көргіңіз келетін жаңа тәжірибелер туралы талқылауға кірісіңіз. Бұл элементтерді интимдік өміріңізге енгізудің жолдарын зерттеңіз.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "fantasy-sharing-style"
+          },
+          {
+            "type": "question",
+            "slug": "are-there-any-fantasies-or-desires-youd-like-to-share"
+          },
+          {
+            "type": "article",
+            "slug": "building-emotional-intimacy-together"
+          },
+          {
+            "type": "game",
+            "slug": "intimacy-insights"
+          },
+          {
+            "type": "checkup",
+            "slug": "maintaining-sexual-satisfaction-over-time"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-fun-way-we-can-explore-each-others-fantasies-together"
+          },
+          {
+            "type": "exercise",
+            "slug": "fantasy-sharing-session"
+          }
+        ]
+      },
+      {
+        "title": "Жақындық Туралы Ашық Әңгімелесу",
+        "description": "Жыныстық қатынасқа қатысты коммуникация дағдыларыңызды дамытыңыз, екеуіңіз де қажеттіліктеріңізді, қалауларыңызды және кез келген алаңдаушылықтарыңызды білдіріңіз. Бұл тақырып ашықтық пен байланыс жақсартуға көмектесетін жаттығуларды қамтиды.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "sexual-communication-style"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-find-it-easy-to-say-everything-you-want-during-sex"
+          },
+          {
+            "type": "article",
+            "slug": "enhancing-sexual-communication"
+          },
+          {
+            "type": "game",
+            "slug": "communication-carousel"
+          },
+          {
+            "type": "checkup",
+            "slug": "mastering-communication"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-feel-about-discussing-intimacy-outside-of-the-bedroom"
+          },
+          {
+            "type": "exercise",
+            "slug": "talking-about-sex-practice"
+          }
+        ]
+      },
+      {
+        "title": "Физикалық Жақындықты Арттыру",
+        "description": "Физикалық сүйіспеншілік пен жақындықтың әртүрлі формаларын зерттеңіз. Сізді байланыстыратын және қанағаттандыратын нәрселерді талқылаңыз, және байланысыңызды арттырып, жақындықты арттыруға көмектесетін жаңа әрекеттерді сынап көріңіз.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "sensory-intimacy-style"
+          },
+          {
+            "type": "question",
+            "slug": "whats-your-favorite-way-to-be-touched"
+          },
+          {
+            "type": "article",
+            "slug": "building-emotional-intimacy-together"
+          },
+          {
+            "type": "game",
+            "slug": "satisfaction-safari"
+          },
+          {
+            "type": "checkup",
+            "slug": "maintaining-sexual-satisfaction-over-time"
+          },
+          {
+            "type": "question",
+            "slug": "what-parts-of-your-body-you-want-your-partner-to-focus-more-how-does-it-make-you-feel"
+          },
+          {
+            "type": "exercise",
+            "slug": "sensual-exploration-night"
+          }
+        ]
+      },
+      {
+        "title": "Жыныстық Өмірдегі Қиындықтар мен Өзгерістерді Зерттеу",
+        "description": "Сіздің жыныстық өміріңіздегі мүмкін кедергілерді, мысалы, әртүрлі либидо немесе эмоционалдық кедергілерді шешіңіз. Бұл қиындықтарды жеңу стратегияларын үйреніңіз, қарым-қатынасыңызды нығайту үшін қолдаушы диалогты сақтай отырып.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "sexual-harmony-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-high-is-your-sex-drive"
+          },
+          {
+            "type": "article",
+            "slug": "mastering-conflict-resolution-together"
+          },
+          {
+            "type": "game",
+            "slug": "problem-solving-partners"
+          },
+          {
+            "type": "checkup",
+            "slug": "aligning-sexual-values-and-expectations"
+          },
+          {
+            "type": "question",
+            "slug": "how-has-your-sexual-expectations-changed-since-weve-started-dating"
+          },
+          {
+            "type": "exercise",
+            "slug": "conflict-resolution-strategies-practice"
+          }
+        ]
+      },
+      {
+        "title": "Сіздің Жыныстық Байланысыңызды Мерекелеу",
+        "description": "Сіздің бірге болған саяхатыңызды еске алып, жыныстық қатынасыңыздағы маңызды кезеңдерді атап өтіңіз. Жақындықты құрметтеу және қызығушылықты сақтаудың жолдарын талқылаңыз, екеуіңіз де бағаланған және құрметтелген сезінетініңізді қамтамасыз етіңіз.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "love-language-type"
+          },
+          {
+            "type": "question",
+            "slug": "whats-the-best-thing-about-our-sex-life"
+          },
+          {
+            "type": "article",
+            "slug": "fun-rituals-to-strengthen-bonds"
+          },
+          {
+            "type": "game",
+            "slug": "date-night-planner"
+          },
+          {
+            "type": "exercise",
+            "slug": "shared-mood-boards"
+          },
+          {
+            "type": "question",
+            "slug": "whats-one-thing-you-love-about-our-physical-connection"
+          }
+        ]
+      }
+    ],
+    "slug": "navigating-our-intimate-world"
+  },
+  {
+    "job": [
+      "discussing_finances"
+    ],
+    "title": "Қаржымызды Талқылау: Бірге Күшті Болашақ Құру",
+    "description": "Бұл саяхат сіз бен серіктесіңізге қаржы туралы мағыналы әңгімелер жүргізуге, өзара түсіністік қалыптастыруға және қаржылық мақсаттарға ынтымақтастықпен қарауға көмектесу үшін жасалған. Әр түрлі тақырыптар арқылы жүріп, сіз тиімді қарым-қатынас жасауды, қаржылық мақсаттарды қоюды және ортақ болашақ үшін шығын әдеттеріңізді үйлестіруді үйренесіз.",
+    "subtopics": [
+      {
+        "title": "Қаржылық Құндылықтарымызды Түсіну",
+        "description": "Сіздің қаржылық сенімдеріңіз бен құндылықтарыңызды зерттеп, қаржылық талқылауларыңыз үшін мықты негіз құрыңыз. Бұл тақырып қаржылық рөл модельдеріңіз бен қаржылық жағынан неге басымдық беретіндігіңіз туралы сұрақтарды қамтиды.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "financial-communication-style"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-have-a-financial-role-model-who-and-why"
+          },
+          {
+            "type": "article",
+            "slug": "mastering-money-talks-together"
+          },
+          {
+            "type": "game",
+            "slug": "dream-budget-builders"
+          },
+          {
+            "type": "checkup",
+            "slug": "aligning-financial-values-and-goals"
+          },
+          {
+            "type": "exercise",
+            "slug": "financial-planning-session"
+          },
+          {
+            "type": "question",
+            "slug": "whats-one-financial-habit-you-admire-in-others"
+          }
+        ]
+      },
+      {
+        "title": "Бірге Қаржылық Мақсаттар Қою",
+        "description": "Пара ретінде қаржылық мақсаттардың маңыздылығын талқылаңыз. Бұл тақырып сізді қысқа мерзімді және ұзақ мерзімді қаржылық мақсаттарды құруға және оларды бірге қалай жүзеге асыруды түсінуге бағыттайды.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "budgeting-style-for-couples"
+          },
+          {
+            "type": "question",
+            "slug": "what-are-your-financial-goals-and-how-can-we-achieve-them-together"
+          },
+          {
+            "type": "article",
+            "slug": "aligning-financial-goals-harmoniously"
+          },
+          {
+            "type": "game",
+            "slug": "future-visionaries"
+          },
+          {
+            "type": "checkup",
+            "slug": "future-financial-adventures"
+          },
+          {
+            "type": "exercise",
+            "slug": "budget-planning-session"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-new-financial-goal-youd-like-to-set-together"
+          }
+        ]
+      },
+      {
+        "title": "Ақша Мәселелері Туралы Қарым-қатынас",
+        "description": "Қаржыны талқылау үшін тиімді қарым-қатынас стратегияларын үйреніңіз. Бұл тақырып қаржылық талқылауларды жеңілдетуге көмектесетін бюджеттік қосымшалар мен тұрақты тексерулерді орнату сияқты құралдарды таныстырады.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "discover-your-communication-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-feel-about-budgeting-apps-yay-or-nay"
+          },
+          {
+            "type": "article",
+            "slug": "mastering-communication-techniques"
+          },
+          {
+            "type": "game",
+            "slug": "communication-champions"
+          },
+          {
+            "type": "checkup",
+            "slug": "mastering-our-communication-styles"
+          },
+          {
+            "type": "exercise",
+            "slug": "transparency-talks"
+          },
+          {
+            "type": "question",
+            "slug": "what-smartphone-app-do-you-mostly-use"
+          }
+        ]
+      },
+      {
+        "title": "Шығын мен Жинақтау Теңгерімі",
+        "description": "Сіздің әртүрлі шығын әдеттеріңіз туралы әңгімелерге тереңірек үңіліп, ортақ шешім табуға тырысыңыз. Бұл тақырып сізді қаржылық мақсаттарыңызды өмір салты таңдауларыңызбен басымдық беруге ынталандырады.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "your-spending-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-feel-about-our-different-spending-habits-and-how-can-we-find-a-middle-ground"
+          },
+          {
+            "type": "article",
+            "slug": "building-trust-through-financial-transparency"
+          },
+          {
+            "type": "game",
+            "slug": "budget-battle-royale"
+          },
+          {
+            "type": "checkup",
+            "slug": "budgeting-together-without-breaking-up"
+          },
+          {
+            "type": "exercise",
+            "slug": "spending-habits-review"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-prefer-saving-money-in-a-bank-or-investing-it-elsewhere"
+          }
+        ]
+      },
+      {
+        "title": "Қаржылық Мәселелерді Бірге Шешу",
+        "description": "Қаржылық стрессті және күтпеген шығындарды басқару стратегияларыңызды талқылаңыз. Бұл тақырып сізге қаржылық қиындықтар кезінде бір-біріңізді қолдау жоспарын әзірлеуге көмектеседі.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "debt-management-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-handle-financial-stress-together"
+          },
+          {
+            "type": "game",
+            "slug": "debt-decision-duel"
+          },
+          {
+            "type": "checkup",
+            "slug": "tackling-debt-together"
+          },
+          {
+            "type": "exercise",
+            "slug": "debt-management-planning"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-handle-unexpected-expenses"
+          }
+        ]
+      },
+      {
+        "title": "Біздің Қаржылық Болашағымызды Жоспарлау",
+        "description": "Зейнетақы стратегиялары, тұрғын үй иелену және отбасыңыздың қаржыларының болашағы сияқты терең қаржылық жоспарлау аспектілерін зерттеңіз. Бұл тақырып сізге болашаққа деген көзқарастарыңызды үйлестіруге және мықты қаржылық серіктестік орнатуға көмектеседі.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "future-planning-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-prioritize-financial-goals-with-other-life-goals"
+          },
+          {
+            "type": "game",
+            "slug": "future-forecast"
+          },
+          {
+            "type": "checkup",
+            "slug": "future-talk-flow"
+          },
+          {
+            "type": "exercise",
+            "slug": "retirement-dreams-mapping"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-see-the-budget-in-our-partnership-now-what-method-will-be-more-comfortable-for-you"
+          }
+        ]
+      }
+    ],
+    "slug": "discussing-our-finances-building-a-stronger-future-together"
+  },
+  {
+    "job": [
+      "building_trust"
+    ],
+    "title": "Сенімді Бірге Құру",
+    "description": "Бұл саяхат сіз бен серіктесіңізге қарым-қатынасыңыздағы сенімнің негізгі компоненттерін зерттеуге көмектесу үшін жасалған. Бірнеше күн ішінде сіз сенімділікті және эмоционалдық жақындықты нығайтуға бағытталған мағыналы талқылаулар, іс-шаралар және ой-пікірлермен айналысасыз.",
+    "subtopics": [
+      {
+        "title": "Сенімді Анықтау",
+        "description": "Сенімнің сіздер үшін не білдіретінін зерттеуден бастаңыз. Сенімнің анықтамаларын талқылап, олардың қарым-қатынасыңызды қалай қалыптастыратынын қарастырыңыз.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "trust-building-style-quiz"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-define-trust-in-a-relationship"
+          },
+          {
+            "type": "article",
+            "slug": "trust-through-open-communication"
+          },
+          {
+            "type": "game",
+            "slug": "trust-fund-trivia"
+          },
+          {
+            "type": "checkup",
+            "slug": "trust-builders"
+          },
+          {
+            "type": "question",
+            "slug": "can-you-share-a-time-when-honesty-led-to-a-positive-outcome-in-our-relationship"
+          },
+          {
+            "type": "exercise",
+            "slug": "trust-fall"
+          }
+        ]
+      },
+      {
+        "title": "Ашық Коммуникация",
+        "description": "Ашық және айқын диалогтың маңыздылығын үйреніңіз. Шынайы коммуникацияны насихаттайтын жаттығулар мен сұрақтарға қатысыңыз.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "discover-your-communication-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-prefer-to-communicate-your-needs-and-desires"
+          },
+          {
+            "type": "article",
+            "slug": "enhancing-communication-for-stronger-bonds"
+          },
+          {
+            "type": "game",
+            "slug": "communication-clues"
+          },
+          {
+            "type": "checkup",
+            "slug": "mastering-our-communication-styles"
+          },
+          {
+            "type": "question",
+            "slug": "how-important-is-it-for-you-to-always-be-transparent-with-me-even-about-small-things"
+          },
+          {
+            "type": "exercise",
+            "slug": "active-listening-practice"
+          }
+        ]
+      },
+      {
+        "title": "Көңілсіздік пен Сенімсіздікті Басқару",
+        "description": "Көңілсіздік пен сенімсіздік сезімдерін анықтап, оларға назар аударыңыз. Қолдаушы ортада жеке тәжірибелер мен қиындықтарды жеңу стратегияларын бөлісіңіз.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "emotional-regulation-styles"
+          },
+          {
+            "type": "question",
+            "slug": "have-you-ever-felt-jealous-in-our-relationship-how-did-you-handle-it"
+          },
+          {
+            "type": "article",
+            "slug": "navigating-emotional-waters-together"
+          },
+          {
+            "type": "game",
+            "slug": "emotion-explorer"
+          },
+          {
+            "type": "checkup",
+            "slug": "emotional-needs-compatibility"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-handle-feelings-of-jealousy-or-insecurity"
+          },
+          {
+            "type": "exercise",
+            "slug": "jealously-navigation-technique"
+          }
+        ]
+      },
+      {
+        "title": "Шекараларды Орнату",
+        "description": "Жеке шекараларды талқылап, бір-біріңіздің жайлылық деңгейлеріңізді түсініңіз. Өзара құрмет пен түсіністік орнату сенімді қалыптастырудың кілті болып табылады.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "boundary-setting-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-comfortable-are-you-discussing-your-boundaries-and-desires"
+          },
+          {
+            "type": "article",
+            "slug": "navigating-boundaries-for-intimacy"
+          },
+          {
+            "type": "checkup",
+            "slug": "personal-space-balancing-togetherness-and-alone-time"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-boundary-you-need-to-feel-more-secure-and-trusting-in-our-relationship"
+          },
+          {
+            "type": "exercise",
+            "slug": "boundaries-practice"
+          }
+        ]
+      },
+      {
+        "title": "Сенімді Қалпына Келтіру",
+        "description": "Сенім сынақтан өткеннен кейін оны қалай қайта құруға болатынын зерттеңіз. Бір-біріңізге деген сенімді қалпына келтіру үшін қажетті техникалар мен міндеттемелерді талқылаңыз.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "trust-repair-style-type"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-prefer-to-rebuild-trust-if-its-ever-broken"
+          },
+          {
+            "type": "article",
+            "slug": "rebuilding-trust-after-betrayal"
+          },
+          {
+            "type": "game",
+            "slug": "trust-talk-challenge"
+          },
+          {
+            "type": "checkup",
+            "slug": "trust-in-communication"
+          },
+          {
+            "type": "question",
+            "slug": "have-you-done-something-in-the-past-that-you-think-can-significantly-change-my-image-of-you-and-what-are-the-things-that-can-hypothetically-change-your-image-of-me-maybe-i-did-something-amoral-or-cheated"
+          },
+          {
+            "type": "exercise",
+            "slug": "rebuild-trust-session"
+          }
+        ]
+      },
+      {
+        "title": "Сенімді Құру Іс-Шаралары",
+        "description": "Сенімді арттыратын қызықты және интерактивті іс-шараларға қатысыңыз. Сізді жақындатып, байланысыңызды нығайтуға арналған жаттығуларға қатысыңыз.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "transparency-style-assessment"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-fun-activity-we-can-do-together-to-strengthen-our-trust"
+          },
+          {
+            "type": "article",
+            "slug": "fun-rituals-to-strengthen-bonds"
+          },
+          {
+            "type": "game",
+            "slug": "trust-trek"
+          },
+          {
+            "type": "checkup",
+            "slug": "trust-in-conflict-resolution"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-trust-building-challenge-youd-like-us-to-try"
+          },
+          {
+            "type": "exercise",
+            "slug": "adventure-challenge"
+          }
+        ]
+      }
+    ],
+    "slug": "building-trust-together"
+  },
+  {
+    "job": [
+      "getting_to_know_partner"
+    ],
+    "title": "Бір-бірімізді танып-білу: Ашылу саяхаты",
+    "description": "Сенің және серіктесіңнің арасындағы терең түсіністік пен байланыс орнату үшін трансформациялық саяхатқа шық. Бұл саяхат күнделікті мұқият әзірленген іс-шаралардан тұрады, соның ішінде сұрақтар, жаттығулар, мақалалар және ойындар, олар жақындықты арттырып, коммуникацияны жақсартады және жеке түсініктерді ашады. Бірнеше күн ішінде сіздер өзара ұқсастықтарыңызды, айырмашылықтарыңызды және әрқайсыңызды ерекше ететін қасиеттерді зерттейсіздер.",
+    "subtopics": [
+      {
+        "title": "Тарихтар мен Мінездерді Ашу",
+        "description": "Бір-біріңіздің тарихтарын, мінездерін және құндылықтарын түсінуден бастаңыз. Сендердің балалық шақтағы естеліктер, жасырын таланттар және жеке таңдаулар туралы сұрақтармен айналысып, сенім мен ашықтықтың негізін қалаңыз.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "life-story-style"
+          },
+          {
+            "type": "question",
+            "slug": "can-you-share-a-memory-from-your-childhood-that-you-think-has-shaped-who-you-are-today"
+          },
+          {
+            "type": "article",
+            "slug": "love-maps-knowing-each-other-deeply"
+          },
+          {
+            "type": "game",
+            "slug": "memory-lane"
+          },
+          {
+            "type": "checkup",
+            "slug": "exploring-childhood-memories"
+          },
+          {
+            "type": "exercise",
+            "slug": "difference-identification-and-acceptance"
+          },
+          {
+            "type": "question",
+            "slug": "whats-your-favorite-childhood-memory"
+          }
+        ]
+      },
+      {
+        "title": "Қызығушылықтар мен Хоббилерді Зерттеу",
+        "description": "Ортақ қызығушылықтар мен жеке хоббилерді ашыңыз. Бір-біріңіздің қызығушылықтары, сүйікті уақыт өткізу тәсілдері және әрқайсыңыздың қарым-қатынасқа әкелетін ерекше қасиеттері туралы талқылаулар мен іс-шараларға қатысыңыз.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "hobby-harmony-style"
+          },
+          {
+            "type": "game",
+            "slug": "hobby-harmony"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-hobby-that-makes-you-feel-alive"
+          },
+          {
+            "type": "article",
+            "slug": "exploring-shared-hobbies-together"
+          },
+          {
+            "type": "exercise",
+            "slug": "hobbies-and-interests-exercise"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-new-hobby-we-could-start-together-to-spice-things-up"
+          }
+        ]
+      },
+      {
+        "title": "Коммуникация Стильдерін Түсіну",
+        "description": "Сенімдеріңіз бен тілектеріңізді тиімді түрде қалай жеткізуді үйреніңіз. Белсенді тыңдауды арттыратын және эмоцияларыңызды, күтілімдеріңізді білдіру қабілетіңізді жақсартатын жаттығулар мен ойындарға қатысыңыз.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "discover-your-communication-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-prefer-to-communicate-your-needs-and-desires"
+          },
+          {
+            "type": "article",
+            "slug": "mastering-communication-techniques"
+          },
+          {
+            "type": "game",
+            "slug": "communication-clues"
+          },
+          {
+            "type": "checkup",
+            "slug": "mastering-our-communication-styles"
+          },
+          {
+            "type": "exercise",
+            "slug": "active-listening-practice"
+          },
+          {
+            "type": "question",
+            "slug": "whats-your-favorite-memory-of-us-having-a-great-conversation"
+          }
+        ]
+      },
+      {
+        "title": "Сүйіспеншілік Тілдерін Анықтау",
+        "description": "Сендердің әрқайсысыңыздың сүйіспеншілікті беру және алу тәсілдеріңізді терең зерттеңіз. Сүйіспеншілік тілдеріңізді сұрақтар мен рефлексиялық жаттығулар арқылы зерттеп, серіктесіңізбен сезімдерді жақсырақ білдіру жолдарын түсініңіз.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "love-language-type"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-believe-in-love-languages-if-so-which-one-are-you"
+          },
+          {
+            "type": "article",
+            "slug": "decoding-love-languages"
+          },
+          {
+            "type": "game",
+            "slug": "love-languages-exploration"
+          },
+          {
+            "type": "checkup",
+            "slug": "emotional-needs-compatibility"
+          },
+          {
+            "type": "exercise",
+            "slug": "find-out-your-love-language"
+          },
+          {
+            "type": "question",
+            "slug": "what-is-your-love-language"
+          }
+        ]
+      },
+      {
+        "title": "Өзін-өзі Рефлексиялау және Мақсат Қою",
+        "description": "Жеке амбициялар мен армандарды бөлісуге ынталандырыңыз. Жеке мақсаттарыңыз бен олардың қарым-қатынасыңызбен қалай үйлесетінін рефлексиялау үшін бағытталған іс-шараларды пайдаланыңыз, бір-біріңіздің саяхаттарыңызда өзара қолдау сезімін арттырыңыз.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "goal-alignment-style"
+          },
+          {
+            "type": "question",
+            "slug": "what-are-your-dreams-and-aspirations-outside-of-work"
+          },
+          {
+            "type": "article",
+            "slug": "setting-shared-future-goals"
+          },
+          {
+            "type": "game",
+            "slug": "future-visionaries"
+          },
+          {
+            "type": "checkup",
+            "slug": "future-plans-alignment"
+          },
+          {
+            "type": "exercise",
+            "slug": "long-term-goal-planning"
+          },
+          {
+            "type": "question",
+            "slug": "what-personal-goals-do-you-have-that-i-might-not-be-aware-of"
+          }
+        ]
+      },
+      {
+        "title": "Эмоционалдық Жақындықты Дамыту",
+        "description": "Сезімталдық жаттығулары мен шынайы әңгімелер арқылы эмоционалдық байланысыңызды тереңдетіңіз. Сезімдер, тілектер және қорқыныштарды қауіпсіз ортада бөлісуге ықпал ететін іс-шаралар мен талқылауларға қатысыңыз, жақындық пен сенімділікті арттырыңыз.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "emotional-intimacy-style"
+          },
+          {
+            "type": "question",
+            "slug": "whats-something-that-always-makes-you-feel-loved"
+          },
+          {
+            "type": "article",
+            "slug": "building-emotional-intimacy-together"
+          },
+          {
+            "type": "game",
+            "slug": "intimacy-insights"
+          },
+          {
+            "type": "checkup",
+            "slug": "emotional-intimacy-check-in"
+          },
+          {
+            "type": "exercise",
+            "slug": "emotional-closeness-exercises"
+          },
+          {
+            "type": "question",
+            "slug": "what-little-gestures-make-you-feel-most-loved-and-appreciated"
+          }
+        ]
+      }
+    ],
+    "slug": "getting-to-know-each-other-a-journey-of-discovery"
+  },
+  {
+    "job": [
+      "overcoming_differences"
+    ],
+    "title": "Біздің Айырмашылықтарымызды Қабылдау: Терең Түсіністікке Жол",
+    "description": "Бұл саяхат жұптарға өз айырмашылықтарын түсініп, тойлауға көмектесу үшін жасалған, қиындықтарды өсу мүмкіндіктеріне айналдыру. Әр күні сіздер ойландыратын сұрақтармен, түсінікті мақалалармен және эмпатия, құрмет және ынтымақтастықты дамытуға арналған іс-әрекеттермен айналысасыз.",
+    "subtopics": [
+      {
+        "title": "Біздің Тарихымызды Түсіну",
+        "description": "Біздің мәдени, діни және жеке тарихымыздың қарым-қатынастағы көзқарастарымыз бен мінез-құлықтарымызды қалай қалыптастыратынын зерттеңіз. Мәдени айырмашылықтар мен сенімдер туралы сұрақтарға жауап беріп, болашақ әңгімелер үшін негіз жасаңыз.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "cultural-harmony-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-our-different-cultural-backgrounds-shape-our-relationship-and-how-can-we-honor-both"
+          },
+          {
+            "type": "article",
+            "slug": "navigating-religious-conversations-smoothly"
+          },
+          {
+            "type": "game",
+            "slug": "cultural-quest"
+          },
+          {
+            "type": "checkup",
+            "slug": "navigating-cultural-and-religious-differences"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-respect-each-others-religious-beliefs-when-they-differ"
+          },
+          {
+            "type": "exercise",
+            "slug": "cultural-exchange-day"
+          }
+        ]
+      },
+      {
+        "title": "Тиімді Коммуникация Дағдылары",
+        "description": "Түсініспеушіліктерді жеңуде ашықтық пен белсенді тыңдаудың маңыздылығын үйреніңіз. Сіздің коммуникация стильдеріңізді жақсартатын және сезімтал тақырыптар туралы ашық диалогты насихаттайтын іс-әрекеттер мен мақалалармен айналысыңыз.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "discover-your-communication-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-prefer-to-communicate-your-needs-and-desires"
+          },
+          {
+            "type": "article",
+            "slug": "mastering-communication-techniques"
+          },
+          {
+            "type": "game",
+            "slug": "communication-clues"
+          },
+          {
+            "type": "checkup",
+            "slug": "mastering-our-communication-styles"
+          },
+          {
+            "type": "question",
+            "slug": "whats-your-favorite-memory-of-us-having-a-great-conversation"
+          },
+          {
+            "type": "exercise",
+            "slug": "active-listening-practice"
+          }
+        ]
+      },
+      {
+        "title": "Айырмашылықтарды Тойлау",
+        "description": "Бір-біріңіздің ерекше күштеріңіз бен көзқарастарыңызды тойлаудың және құрметтеудің жолдарын табыңыз. Интерактивті контент арқылы айырмашылықтардың серіктестікте шығармашылық пен қуаныш тудыруы мүмкін екенін зерттеңіз.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "growth-through-differences-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-can-we-celebrate-our-unique-strengths-and-compensate-for-our-differences"
+          },
+          {
+            "type": "article",
+            "slug": "embrace-and-celebrate-differences"
+          },
+          {
+            "type": "game",
+            "slug": "hobby-harmony"
+          },
+          {
+            "type": "checkup",
+            "slug": "embracing-our-personality-traits"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-fun-way-to-explore-and-embrace-our-differences-together"
+          },
+          {
+            "type": "exercise",
+            "slug": "difference-identification-and-acceptance"
+          }
+        ]
+      },
+      {
+        "title": "Қақтығыстарды Құрметпен Басқару",
+        "description": "Қақтығыстарды оң және конструктивті түрде басқару дағдыларын дамытыңыз. Бұл бөлімде әртүрлі көзқарастарды құрметтей отырып, келіспеушіліктерді шешуге арналған практикалық әдістер бар.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "your-conflict-style"
+          },
+          {
+            "type": "question",
+            "slug": "whats-one-thing-youd-like-to-change-about-how-we-handle-our-differences"
+          },
+          {
+            "type": "article",
+            "slug": "mastering-conflict-resolution-together"
+          },
+          {
+            "type": "game",
+            "slug": "conflict-resolution-quest"
+          },
+          {
+            "type": "checkup",
+            "slug": "conflict-resolution-styles"
+          },
+          {
+            "type": "question",
+            "slug": "whats-one-thing-you-admire-about-my-perspective-thats-different-from-yours"
+          },
+          {
+            "type": "exercise",
+            "slug": "conflict-resolution-strategies-practice"
+          }
+        ]
+      },
+      {
+        "title": "Қиындықтарды Өсу Мүмкіндіктеріне Айналдыру",
+        "description": "Айырмашылықтарды кедергілер ретінде емес, жеке және қарым-қатынас өсуінің жолдары ретінде қарастыру үшін ойлау тәсілін өзгертіңіз. Ынтымақтастық пен ортақ проблемаларды шешуді ынталандыратын іс-әрекеттермен айналысыңыз.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "flexibility-style-assessment"
+          },
+          {
+            "type": "question",
+            "slug": "how-can-we-turn-our-differences-into-opportunities-for-growth-as-a-couple"
+          },
+          {
+            "type": "article",
+            "slug": "embracing-differences-positively"
+          },
+          {
+            "type": "game",
+            "slug": "problem-solving-escapades"
+          },
+          {
+            "type": "checkup",
+            "slug": "team-problem-solving"
+          },
+          {
+            "type": "question",
+            "slug": "can-boredom-be-helpful"
+          },
+          {
+            "type": "exercise",
+            "slug": "cognitive-restructuring-together"
+          }
+        ]
+      },
+      {
+        "title": "Біртұтас Көзқарас Құру",
+        "description": "Сіздер үйренген нәрселеріңізді біріктіріп, болашаққа ортақ көзқарас жасаңыз. Жұп ретінде құндылықтарыңыз, мақсаттарыңыз және армандарыңыз туралы ойланыңыз, болашақта екі серіктестің де көрінетінін және естілетінін қамтамасыз етіңіз.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "future-vision-type"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-challenge-weve-overcome-together-that-made-our-relationship-stronger"
+          },
+          {
+            "type": "article",
+            "slug": "aligning-future-goals"
+          },
+          {
+            "type": "game",
+            "slug": "future-visionaries"
+          },
+          {
+            "type": "checkup",
+            "slug": "future-talk-together"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-memorable-moment-where-our-differences-made-our-relationship-stronger"
+          },
+          {
+            "type": "exercise",
+            "slug": "long-term-goal-planning"
+          }
+        ]
+      }
+    ],
+    "slug": "embracing-our-differences-a-journey-to-deeper-understanding"
+  }
+]

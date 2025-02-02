@@ -1,0 +1,202 @@
+{
+  "title": "Preparing for Children: A Journey to Parenthood",
+  "description": "This journey aims to equip you and your partner for the exciting and challenging adventure of parenting. Each day will guide you through various discussions, reflections, and activities to foster meaningful conversations about parenting. As you progress, you'll explore foundational concepts, emotional readiness, and practical strategies to ensure a successful journey into parenthood.",
+  "subtopics": [
+    {
+      "title": "Understanding the Desire for Parenthood",
+      "description": "Explore your individual thoughts and feelings about having children. Engage in reflective questions to understand each other's desires and expectations, laying the groundwork for future discussions.",
+      "content": [
+        {
+          "type": "test",
+          "title": "Parenthood Readiness Styles",
+          "id": 2088
+        },
+        {
+          "type": "question",
+          "title": "Do you see yourself wanting children someday?",
+          "id": 1315
+        },
+        {
+          "type": "game",
+          "title": "Future Visionaries",
+          "id": 3000
+        },
+        {
+          "type": "checkup",
+          "title": "Parenting Pathways",
+          "id": 6025
+        },
+        {
+          "type": "exercise",
+          "title": "Family Planning Exercise",
+          "id": 4096
+        },
+        {
+          "type": "question",
+          "title": "Do you want to have children? If so, when do you think is the right time?",
+          "id": 1056
+        }
+      ]
+    },
+    {
+      "title": "Aligning Parenting Values",
+      "description": "Discuss your core values and beliefs regarding parenting. This subtopic will help you align on important issues, such as education, discipline, and the values you wish to instill in your future children.",
+      "content": [
+        {
+          "type": "test",
+          "title": "Parenting Style Alignment",
+          "id": 2082
+        },
+        {
+          "type": "question",
+          "title": "What values are most important for us to instill in our children?",
+          "id": 1613
+        },
+        {
+          "type": "game",
+          "title": "Values & Vibes",
+          "id": 3038
+        },
+        {
+          "type": "checkup",
+          "title": "Family Values Alignment",
+          "id": 6042
+        },
+        {
+          "type": "exercise",
+          "title": "Values Alignment Exercise",
+          "id": 4009
+        },
+        {
+          "type": "question",
+          "title": "Do you believe in religious education for children? Why or why not?",
+          "id": 1296
+        }
+      ]
+    },
+    {
+      "title": "Managing Emotional Readiness",
+      "description": "Evaluate your emotional preparedness for the ups and downs of parenting. Through various exercises and reflections, you'll address potential fears, concerns, and hopes about parenthood.",
+      "content": [
+        {
+          "type": "checkup",
+          "title": "Emotional Rollercoaster Ride",
+          "id": 6001
+        },
+        {
+          "type": "question",
+          "title": "Are you ready to handle the emotional rollercoaster that comes with parenting?",
+          "id": 1274
+        },
+        {
+          "type": "article",
+          "title": "Navigating Emotional Waters Together",
+          "id": 5012
+        },
+        {
+          "type": "game",
+          "title": "Emotional Seasons",
+          "id": 3049
+        },
+        {
+          "type": "exercise",
+          "title": "Emotional Support Exercises",
+          "id": 4150
+        },
+        {
+          "type": "question",
+          "title": "What fears or concerns do you have about becoming parents?",
+          "id": 1548
+        }
+      ]
+    },
+    {
+      "title": "Practical Parenting Responsibilities",
+      "description": "Delve into the logistics of parenting responsibilities. Discuss how you would like to divide duties, plan for childcare options, and manage household chores, preparing for the practical realities of raising children.",
+      "content": [
+        {
+          "type": "test",
+          "title": "Responsibility Sharing Style",
+          "id": 2086
+        },
+        {
+          "type": "question",
+          "title": "How should we divide parenting responsibilities?",
+          "id": 1431
+        },
+        {
+          "type": "game",
+          "title": "Household Harmony",
+          "id": 3101
+        },
+        {
+          "type": "exercise",
+          "title": "Shared Responsibilities Mapping",
+          "id": 4028
+        },
+        {
+          "type": "question",
+          "title": "What are your thoughts on childcare options?",
+          "id": 1528
+        }
+      ]
+    },
+    {
+      "title": "Financial Planning for Parenthood",
+      "description": "Focus on the financial aspects of raising children. Engage in discussions around budgeting, savings for your child's future, and making adjustments to your financial plans as you enter this new chapter.",
+      "content": [
+        {
+          "type": "test",
+          "title": "Financial Planning Style",
+          "id": 2083
+        },
+        {
+          "type": "question",
+          "title": "How should we save for our child's future?",
+          "id": 1459
+        },
+        {
+          "type": "article",
+          "title": "Financial Planning Together",
+          "id": 5025
+        },
+        {
+          "type": "game",
+          "title": "Dream Budget Builders",
+          "id": 3001
+        },
+        {
+          "type": "exercise",
+          "title": "Budget Planning Session",
+          "id": 4033
+        }
+      ]
+    },
+    {
+      "title": "Building a Support Network",
+      "description": "Explore the importance of a support network as you prepare for children. Discuss the roles of family, friends, and parenting resources that can help you navigate the challenges ahead.",
+      "content": [
+        {
+          "type": "test",
+          "title": "Support Network Style",
+          "id": 2091
+        },
+        {
+          "type": "question",
+          "title": "Are you comfortable with pet allergies or preferences if we have kids?",
+          "id": 1270
+        },
+        {
+          "type": "exercise",
+          "title": "Parenting Support Networks",
+          "id": 4180
+        },
+        {
+          "type": "question",
+          "title": "Are you willing to retire just to take care of our kids?",
+          "id": 1276
+        }
+      ]
+    }
+  ]
+}

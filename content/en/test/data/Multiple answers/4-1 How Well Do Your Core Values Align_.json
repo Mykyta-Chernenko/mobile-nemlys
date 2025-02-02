@@ -1,0 +1,150 @@
+{
+  "topic": [
+    "understanding_mutual_compatibility",
+    "planning_for_future",
+    "exploring_feelings",
+    "building_trust",
+    "improving_communication"
+  ],
+  "test_headline": "How Well Do Your Core Values Align?",
+  "scientific_basis": "This quiz is grounded in value alignment theories, which explore how shared core values like family, career, and lifestyle priorities contribute to long-term relationship satisfaction.",
+  "description": "Discover how your core values sync up with your partner's! This fun quiz will help you understand the foundation of your compatibility by exploring what truly matters to both of you.",
+  "questions": [
+    {
+      "question": "When thinking about the future, what's most important to you?",
+      "options": [
+        "Building a happy family together.",
+        "Achieving career success and recognition.",
+        "Maintaining a balanced and flexible lifestyle.",
+        "Traveling and experiencing new cultures.",
+        "Focusing on personal growth and self-improvement."
+      ]
+    },
+    {
+      "question": "How do you prioritize work and personal life?",
+      "options": [
+        "Work comes first; personal life follows.",
+        "Personal life is essential; work is secondary.",
+        "I strive for a healthy balance between both.",
+        "I prefer flexibility, letting work and personal life ebb and flow.",
+        "I prioritize personal growth over both work and personal life."
+      ]
+    },
+    {
+      "question": "What role does family play in your life?",
+      "options": [
+        "Family is the cornerstone of my life.",
+        "I value family but also prioritize my career.",
+        "I maintain close family ties while pursuing my own path.",
+        "I cherish family time but also enjoy independence.",
+        "I focus more on chosen relationships than traditional family structures."
+      ]
+    },
+    {
+      "question": "How do you handle financial decisions in a relationship?",
+      "options": [
+        "I believe in joint decision-making for all finances.",
+        "I prefer to manage my own finances independently.",
+        "We combine our finances but maintain some individual control.",
+        "I'm flexible and adapt based on the situation.",
+        "Financial growth and investment are my top priorities."
+      ]
+    },
+    {
+      "question": "What's your ideal way to spend weekends?",
+      "options": [
+        "Hosting family gatherings or spending time with loved ones.",
+        "Focusing on hobbies or career-related activities.",
+        "Enjoying a mix of relaxation and productive tasks.",
+        "Going on adventures or exploring new places.",
+        "Engaging in personal development or learning new skills."
+      ]
+    },
+    {
+      "question": "How important is lifestyle flexibility to you?",
+      "options": [
+        "Very important; I need a predictable routine.",
+        "Somewhat important; I enjoy occasional changes.",
+        "Moderately important; I balance flexibility with stability.",
+        "Highly important; I thrive on spontaneity.",
+        "Extremely important; I prioritize adaptability above all."
+      ]
+    },
+    {
+      "question": "What's your approach to health and wellness?",
+      "options": [
+        "I prioritize a healthy lifestyle and encourage my partner to do the same.",
+        "I focus on my own health but respect my partner's choices.",
+        "I balance personal health with other life priorities.",
+        "I enjoy wellness activities but don't prioritize them.",
+        "I believe in holistic wellness and personal growth."
+      ]
+    },
+    {
+      "question": "How do you view personal space in a relationship?",
+      "options": [
+        "Essential for maintaining individuality.",
+        "Important, but I also value togetherness.",
+        "I need a good balance of both.",
+        "I prefer more shared time over personal space.",
+        "Personal space is less important than connection."
+      ]
+    },
+    {
+      "question": "What's your stance on lifelong learning and education?",
+      "options": [
+        "I believe in continuously pursuing education and growth.",
+        "Education is important for career advancement.",
+        "I value learning but balance it with other aspects of life.",
+        "I engage in learning when it interests me.",
+        "I focus more on practical experiences than formal education."
+      ]
+    },
+    {
+      "question": "How do you handle changes in your relationship?",
+      "options": [
+        "Embrace them as opportunities for growth.",
+        "Adapt carefully while maintaining core values.",
+        "Seek to understand and navigate changes together.",
+        "Handle changes as they come, staying flexible.",
+        "Focus on personal resilience to manage changes."
+      ]
+    }
+  ],
+  "evaluation_method": {
+    "explanation": "Each answer corresponds to different core value categories: Family, Career, Lifestyle, Adventure, and Personal Growth. Tally your selections to see which values are most prominent in your relationship.",
+    "example": "For example, if you selected mostly 'A' options, it indicates a strong emphasis on Family values. Choosing more 'B' options highlights a focus on Career values, and so on."
+  },
+  "outcome_interpretation": {
+    "mostly_A": {
+      "label": "Family-Focused Compatibility",
+      "description": "You and your partner place a high value on family and togetherness, creating a strong foundation for building a nurturing and supportive relationship.",
+      "advice": "Continue fostering family bonds and consider setting shared family goals to strengthen your connection."
+    },
+    "mostly_B": {
+      "label": "Career-Oriented Compatibility",
+      "description": "Your relationship thrives on mutual ambition and career success, supporting each other's professional aspirations.",
+      "advice": "Ensure you balance work with quality time together to maintain a healthy relationship dynamic."
+    },
+    "mostly_C": {
+      "label": "Balanced Compatibility",
+      "description": "You and your partner enjoy a well-rounded relationship, balancing personal and shared values effectively.",
+      "advice": "Maintain this balance by regularly communicating your needs and supporting each other's diverse interests."
+    },
+    "mostly_D": {
+      "label": "Adventure-Seeking Compatibility",
+      "description": "You both cherish excitement and new experiences, bringing energy and spontaneity to your relationship.",
+      "advice": "Plan regular adventures together and embrace new opportunities to keep the relationship vibrant."
+    },
+    "mostly_E": {
+      "label": "Personal Growth Compatibility",
+      "description": "Your relationship is built on mutual support for personal development and self-improvement, fostering a dynamic and evolving partnership.",
+      "advice": "Encourage each other's growth by setting personal and shared development goals."
+    },
+    "mixed": {
+      "label": "Diverse Compatibility",
+      "description": "Your relationship encompasses a variety of values, offering a rich and multifaceted connection.",
+      "advice": "Celebrate your diverse values by finding common ground and appreciating each other's unique priorities."
+    }
+  }
+}

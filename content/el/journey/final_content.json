@@ -1,0 +1,4892 @@
+[
+  {
+    "job": [
+      "learning_relationship_skills"
+    ],
+    "title": "Μαθαίνοντας Δεξιότητες Σχέσεων",
+    "description": "Αυτή η πορεία έχει σχεδιαστεί για να σας βοηθήσει να αναπτύξετε βασικές δεξιότητες σχέσεων που θα ενισχύσουν τη σύνδεσή σας, θα βελτιώσουν την επικοινωνία και θα ενισχύσουν την ικανότητά σας να επιλύετε συγκρούσεις αποτελεσματικά. Το περιεχόμενο κάθε ημέρας βασίζεται στην προηγούμενη, καθοδηγώντας σας μέσα από μια πρόοδο δεξιοτήτων που είναι απαραίτητες για μια υγιή και ικανοποιητική συνεργασία.",
+    "subtopics": [
+      {
+        "title": "Κατανόηση Συναισθημάτων",
+        "description": "Μάθετε πώς να αναγνωρίζετε και να εκφράζετε τα συναισθήματά σας, καθώς και να κατανοείτε τις συναισθηματικές αντιδράσεις του συντρόφου σας. Αυτή η θεμελιώδης δεξιότητα είναι κρίσιμη για την αποτελεσματική επικοινωνία.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "emotion-management-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-handle-your-strong-emotions"
+          },
+          {
+            "type": "article",
+            "slug": "building-emotional-intimacy-together"
+          },
+          {
+            "type": "game",
+            "slug": "emotional-seasons"
+          },
+          {
+            "type": "checkup",
+            "slug": "mood-mapping"
+          },
+          {
+            "type": "exercise",
+            "slug": "emotional-regulation-techniques"
+          }
+        ]
+      },
+      {
+        "title": "Τεχνικές Αποτελεσματικής Επικοινωνίας",
+        "description": "Εξερευνήστε διαφορετικούς στυλ και τεχνικές επικοινωνίας, συμπεριλαμβανομένης της ενεργητικής ακρόασης και των πρακτικών ανατροφοδότησης που προάγουν την ανοιχτότητα και την ειλικρίνεια στη σχέση σας.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "discover-your-communication-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-prefer-to-communicate-your-needs-and-desires"
+          },
+          {
+            "type": "article",
+            "slug": "mastering-communication-techniques"
+          },
+          {
+            "type": "game",
+            "slug": "communication-clues"
+          },
+          {
+            "type": "checkup",
+            "slug": "mastering-our-communication-styles"
+          },
+          {
+            "type": "exercise",
+            "slug": "active-listening-practice"
+          }
+        ]
+      },
+      {
+        "title": "Στρατηγικές Επίλυσης Συγκρούσεων",
+        "description": "Εξερευνήστε διάφορες στρατηγικές για την επίλυση συγκρούσεων με υγιή τρόπο. Θα μάθετε πώς να αντιμετωπίζετε τις διαφωνίες με εποικοδομητικό τρόπο και να βρίσκετε λύσεις win-win.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "your-conflict-style"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-metaphor-that-describes-how-we-handle-problems-together"
+          },
+          {
+            "type": "article",
+            "slug": "effective-conflict-resolution-strategies"
+          },
+          {
+            "type": "game",
+            "slug": "conflict-resolution-quest"
+          },
+          {
+            "type": "checkup",
+            "slug": "conflict-resolution-styles"
+          },
+          {
+            "type": "exercise",
+            "slug": "conflict-resolution-strategies-practice"
+          }
+        ]
+      },
+      {
+        "title": "Ανάπτυξη Ευαλωτότητας και Εμπιστοσύνης",
+        "description": "Επικεντρωθείτε στην οικοδόμηση εμπιστοσύνης μέσω της ευαλωτότητας. Αυτό το υποθέμα περιλαμβάνει την κατανόηση της σημασίας της ανοιχτότητας και πώς να μοιράζεστε προσωπικά συναισθήματα και εμπειρίες.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "vulnerability-style-assessment"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-relationship-skill-you-admire-in-others-and-want-to-develop"
+          },
+          {
+            "type": "article",
+            "slug": "vulnerability-trusts-gateway"
+          },
+          {
+            "type": "game",
+            "slug": "trust-talk"
+          },
+          {
+            "type": "checkup",
+            "slug": "building-a-fortress-of-trust"
+          },
+          {
+            "type": "exercise",
+            "slug": "rebuild-trust-session"
+          }
+        ]
+      },
+      {
+        "title": "Πλοήγηση σε Δύσκολες Συνομιλίες",
+        "description": "Μάθετε πώς να ξεκινάτε και να πλοηγείστε σε δύσκολες συνομιλίες χωρίς να κλιμακώνετε τη σύγκρουση. Θα εξασκηθείτε σε τεχνικές για να συζητάτε ευαίσθητα θέματα ήρεμα και με σεβασμό.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "communication-timing-style"
+          },
+          {
+            "type": "question",
+            "slug": "whats-the-best-advice-youve-ever-received-about-communicating-in-a-relationship"
+          },
+          {
+            "type": "article",
+            "slug": "navigating-difficult-conversations"
+          },
+          {
+            "type": "game",
+            "slug": "communication-carousel"
+          },
+          {
+            "type": "checkup",
+            "slug": "emotions-expressed-freely"
+          },
+          {
+            "type": "exercise",
+            "slug": "nonviolent-communication-practice"
+          }
+        ]
+      },
+      {
+        "title": "Ενίσχυση Συναισθηματικής Εγγύτητας",
+        "description": "Ολοκληρώστε την πορεία σας εξερευνώντας τρόπους για να εμβαθύνετε τη συναισθηματική σας σύνδεση. Αυτό περιλαμβάνει πρακτικές για την ενίσχυση της φυσικής και συναισθηματικής εγγύτητας στη σχέση σας, διασφαλίζοντας ότι θα γίνετε πιο κοντά ο ένας στον άλλο.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "emotional-intimacy-style"
+          },
+          {
+            "type": "question",
+            "slug": "whats-something-youd-like-to-learn-together-to-enhance-our-relationship"
+          },
+          {
+            "type": "article",
+            "slug": "building-emotional-intimacy-together"
+          },
+          {
+            "type": "game",
+            "slug": "intimacy-adventure"
+          },
+          {
+            "type": "checkup",
+            "slug": "emotional-intimacy-check-in"
+          },
+          {
+            "type": "exercise",
+            "slug": "emotional-closeness-exercises"
+          }
+        ]
+      }
+    ],
+    "slug": "learning-relationship-skills"
+  },
+  {
+    "job": [
+      "discussing_religions"
+    ],
+    "title": "Πλοήγηση στις Θρησκευτικές μας Πιστεύω Μαζί",
+    "description": "Αυτή η πορεία έχει σχεδιαστεί για να βοηθήσει εσάς και τον σύντροφό σας να συζητήσετε και να κατανοήσετε τις θρησκευτικές πεποιθήσεις του άλλου, προάγοντας τον σεβασμό και την ανοιχτή επικοινωνία. Εξερευνώντας διάφορες πτυχές της θρησκείας, θα μάθετε πώς να αγκαλιάζετε τις διαφορές και να δημιουργείτε μια κοινή πνευματική σύνδεση.",
+    "subtopics": [
+      {
+        "title": "Κατανόηση των Θρησκευτικών Θεμελίων",
+        "description": "Ξεκινήστε την πορεία σας εξερευνώντας τις θεμελιώδεις πεποιθήσεις και πρακτικές των θρησκειών του άλλου. Συζητήστε πώς αυτά τα θεμέλια διαμορφώνουν τις ταυτότητές σας και τις κοσμοθεωρίες σας. Αυτή η υποενότητα θα περιλαμβάνει ερωτήσεις σχετικά με τις προσωπικές πεποιθήσεις και πρακτικές.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "religious-identity-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-practice-your-faith-and-how-would-you-like-to-incorporate-it-into-our-relationship"
+          },
+          {
+            "type": "article",
+            "slug": "navigating-religious-conversations-smoothly"
+          },
+          {
+            "type": "exercise",
+            "slug": "spiritual-practices-exchange"
+          },
+          {
+            "type": "question",
+            "slug": "what-role-does-religion-or-spirituality-play-in-your-life-and-how-does-it-affect-our-relationship"
+          }
+        ]
+      },
+      {
+        "title": "Γιορτάζοντας Θρησκευτικά Ορόσημα",
+        "description": "Μάθετε πώς να γιορτάζετε θρησκευτικά ορόσημα και επιτεύγματα μαζί. Εξερευνήστε πώς να τιμάτε τις παραδόσεις του άλλου κατά τη διάρκεια σημαντικών γεγονότων στη ζωή, όπως γεννήσεις, γάμοι και γιορτές, ενσωματώνοντάς τα ομαλά στις κοινές σας ζωές.",
+        "content": [
+          {
+            "type": "checkup",
+            "slug": "celebrating-religious-holidays-together"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-celebrate-religious-achievements-or-milestones"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-celebrate-your-faith-during-personal-milestones-like-birthdays-or-anniversaries"
+          }
+        ]
+      },
+      {
+        "title": "Σεβασμός στις Διαφορές και Διαφωνίες",
+        "description": "Εξερευνήστε πώς να πλοηγηθείτε στις διαφορές στις θρησκευτικές πεποιθήσεις και πρακτικές χωρίς συγκρούσεις. Αυτή η υποενότητα θα σας εξοπλίσει με εργαλεία για σεβαστές συνομιλίες όταν προκύπτουν διαφωνίες, εστιάζοντας στην κατανόηση παρά στην πειθώ.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "your-conflict-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-handle-religious-disagreements-in-relationships"
+          },
+          {
+            "type": "article",
+            "slug": "bridging-religious-differences-together"
+          },
+          {
+            "type": "game",
+            "slug": "conflict-resolution-quest"
+          },
+          {
+            "type": "checkup",
+            "slug": "handling-religious-conflicts"
+          }
+        ]
+      },
+      {
+        "title": "Ενσωμάτωση της Πίστης στην Καθημερινή Ζωή",
+        "description": "Συζητήστε πώς να ενσωματώσετε τις θρησκευτικές αξίες στις καθημερινές σας ρουτίνες και στη διαδικασία λήψης αποφάσεων. Εξερευνήστε κοινές πρακτικές, πνευματικές δραστηριότητες και πώς η θρησκεία μπορεί να ενισχύσει τη συνεργασία σας και την προσωπική σας ανάπτυξη.",
+        "content": [
+          {
+            "type": "checkup",
+            "slug": "supportive-communication"
+          },
+          {
+            "type": "question",
+            "slug": "how-can-we-support-each-others-spiritual-growth"
+          },
+          {
+            "type": "game",
+            "slug": "spiritual-journey"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-integrate-your-faith-with-your-personal-hobbies-or-interests"
+          }
+        ]
+      },
+      {
+        "title": "Σχεδιάζοντας για Μελλοντικές Ευλογίες",
+        "description": "Εμπλακείτε σε ουσιαστικές συνομιλίες σχετικά με το πώς οι θρησκευτικές σας πεποιθήσεις επηρεάζουν τις αποφάσεις για την οικογένεια και τα παιδιά. Συζητήστε αν φαντάζεστε να μεγαλώσετε παιδιά μέσα σε μια συγκεκριμένη θρησκευτική παράδοση και εξερευνήστε τις επιπτώσεις για τη ζωή σας μαζί.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "parenting-style-alignment"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-envision-having-children-in-a-particular-religious-tradition"
+          },
+          {
+            "type": "question",
+            "slug": "what-religious-values-are-most-important-to-you-in-a-relationship"
+          },
+          {
+            "type": "article",
+            "slug": "enhancing-communication-before-parenthood"
+          },
+          {
+            "type": "checkup",
+            "slug": "parenting-playbook-compatibility"
+          },
+          {
+            "type": "exercise",
+            "slug": "parenting-styles-discussion"
+          }
+        ]
+      },
+      {
+        "title": "Δημιουργώντας μια Κοινή Πνευματικότητα",
+        "description": "Σε αυτό το τελευταίο βήμα, εστιάστε στο πώς να δημιουργήσετε μια αρμονική σύνθεση των θρησκευτικών σας πεποιθήσεων. Εξερευνήστε πρακτικές που τιμούν και τις δύο παραδόσεις σας και συζητήστε πώς να υποστηρίξετε την πνευματική ανάπτυξη του άλλου, εξασφαλίζοντας μια ικανοποιητική σχέση που βασίζεται στον αμοιβαίο σεβασμό και την κατανόηση.",
+        "content": [
+          {
+            "type": "checkup",
+            "slug": "sharing-spiritual-beliefs"
+          },
+          {
+            "type": "question",
+            "slug": "are-there-any-religious-practices-youd-like-to-explore-together"
+          },
+          {
+            "type": "exercise",
+            "slug": "interfaith-understanding-sessions"
+          }
+        ]
+      }
+    ],
+    "slug": "navigating-our-religious-beliefs-together"
+  },
+  {
+    "job": [
+      "preparing_for_children"
+    ],
+    "title": "Προετοιμασία για Παιδιά: Ένα Ταξίδι στην Γονεϊκότητα",
+    "description": "Αυτή η πορεία στοχεύει να εξοπλίσει εσάς και τον σύντροφό σας για την συναρπαστική και προκλητική περιπέτεια της γονεϊκότητας. Κάθε μέρα θα σας καθοδηγεί μέσα από διάφορες συζητήσεις, αναστοχασμούς και δραστηριότητες για να ενισχύσετε τις σημαντικές συνομιλίες σχετικά με την γονεϊκότητα. Καθώς προχωράτε, θα εξερευνήσετε θεμελιώδεις έννοιες, συναισθηματική ετοιμότητα και πρακτικές στρατηγικές για να διασφαλίσετε μια επιτυχημένη πορεία στην γονεϊκότητα.",
+    "subtopics": [
+      {
+        "title": "Κατανόηση της Επιθυμίας για Γονεϊκότητα",
+        "description": "Εξερευνήστε τις ατομικές σας σκέψεις και συναισθήματα σχετικά με το να έχετε παιδιά. Συμμετάσχετε σε αναστοχαστικές ερωτήσεις για να κατανοήσετε τις επιθυμίες και τις προσδοκίες του άλλου, θέτοντας τα θεμέλια για μελλοντικές συζητήσεις.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "parenthood-readiness-styles"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-see-yourself-wanting-children-someday"
+          },
+          {
+            "type": "game",
+            "slug": "future-visionaries"
+          },
+          {
+            "type": "checkup",
+            "slug": "parenting-pathways"
+          },
+          {
+            "type": "exercise",
+            "slug": "family-planning-exercise"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-want-to-have-children-if-so-when-do-you-think-is-the-right-time"
+          }
+        ]
+      },
+      {
+        "title": "Ευθυγράμμιση Αξιών Γονεϊκότητας",
+        "description": "Συζητήστε τις βασικές σας αξίες και πεποιθήσεις σχετικά με την γονεϊκότητα. Αυτό το υποθέμα θα σας βοηθήσει να ευθυγραμμιστείτε σε σημαντικά ζητήματα, όπως η εκπαίδευση, η πειθαρχία και οι αξίες που θέλετε να εμφυτεύσετε στα μελλοντικά σας παιδιά.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "parenting-style-alignment"
+          },
+          {
+            "type": "question",
+            "slug": "what-values-are-most-important-for-us-to-instill-in-our-children"
+          },
+          {
+            "type": "game",
+            "slug": "values-vibes"
+          },
+          {
+            "type": "checkup",
+            "slug": "parenting-playbook-compatibility"
+          },
+          {
+            "type": "exercise",
+            "slug": "values-alignment-exercise"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-believe-in-religious-education-for-children-why-or-why-not"
+          }
+        ]
+      },
+      {
+        "title": "Διαχείριση Συναισθηματικής Ετοιμότητας",
+        "description": "Αξιολογήστε την συναισθηματική σας προετοιμασία για τις ανόδους και τις πτώσεις της γονεϊκότητας. Μέσω διαφόρων ασκήσεων και αναστοχασμών, θα ασχοληθείτε με πιθανούς φόβους, ανησυχίες και ελπίδες σχετικά με την γονεϊκότητα.",
+        "content": [
+          {
+            "type": "checkup",
+            "slug": "emotional-rollercoaster-ride"
+          },
+          {
+            "type": "question",
+            "slug": "are-you-ready-to-handle-the-emotional-rollercoaster-that-comes-with-parenting"
+          },
+          {
+            "type": "article",
+            "slug": "navigating-emotional-waters-together"
+          },
+          {
+            "type": "game",
+            "slug": "emotional-seasons"
+          },
+          {
+            "type": "exercise",
+            "slug": "emotional-support-exercises"
+          },
+          {
+            "type": "question",
+            "slug": "what-fears-or-concerns-do-you-have-about-becoming-parents"
+          }
+        ]
+      },
+      {
+        "title": "Πρακτικές Ευθύνες Γονεϊκότητας",
+        "description": "Εξερευνήστε τη λογιστική των ευθυνών γονεϊκότητας. Συζητήστε πώς θα θέλατε να μοιραστείτε τα καθήκοντα, να σχεδιάσετε επιλογές φροντίδας παιδιών και να διαχειριστείτε τις οικιακές δουλειές, προετοιμάζοντας για τις πρακτικές πραγματικότητες της ανατροφής παιδιών.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "responsibility-sharing-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-should-we-divide-parenting-responsibilities"
+          },
+          {
+            "type": "game",
+            "slug": "household-harmony"
+          },
+          {
+            "type": "exercise",
+            "slug": "shared-responsibilities-mapping"
+          },
+          {
+            "type": "question",
+            "slug": "what-are-your-thoughts-on-childcare-options"
+          }
+        ]
+      },
+      {
+        "title": "Οικονομικός Σχεδιασμός για Γονεϊκότητα",
+        "description": "Επικεντρωθείτε στις οικονομικές πτυχές της ανατροφής παιδιών. Συμμετάσχετε σε συζητήσεις γύρω από τον προϋπολογισμό, τις αποταμιεύσεις για το μέλλον του παιδιού σας και τις προσαρμογές στα οικονομικά σας σχέδια καθώς εισέρχεστε σε αυτό το νέο κεφάλαιο.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "financial-planning-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-should-we-save-for-our-childs-future"
+          },
+          {
+            "type": "article",
+            "slug": "financial-planning-together"
+          },
+          {
+            "type": "game",
+            "slug": "dream-budget-builders"
+          },
+          {
+            "type": "exercise",
+            "slug": "budget-planning-session"
+          }
+        ]
+      },
+      {
+        "title": "Δημιουργία Δικτύου Υποστήριξης",
+        "description": "Εξερευνήστε τη σημασία ενός δικτύου υποστήριξης καθώς προετοιμάζεστε για παιδιά. Συζητήστε τους ρόλους της οικογένειας, των φίλων και των πόρων γονεϊκότητας που μπορούν να σας βοηθήσουν να πλοηγηθείτε στις προκλήσεις που έρχονται.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "support-network-style"
+          },
+          {
+            "type": "question",
+            "slug": "are-you-comfortable-with-pet-allergies-or-preferences-if-we-have-kids"
+          },
+          {
+            "type": "exercise",
+            "slug": "parenting-support-networks"
+          },
+          {
+            "type": "question",
+            "slug": "are-you-willing-to-retire-just-to-take-care-of-our-kids"
+          }
+        ]
+      }
+    ],
+    "slug": "preparing-for-children-a-journey-to-parenthood"
+  },
+  {
+    "job": [
+      "having_meaningful_conversations"
+    ],
+    "title": "Καλλιεργώντας Σημαντικές Συζητήσεις",
+    "description": "Αυτή η πορεία έχει σχεδιαστεί για να ενισχύσει την ικανότητά σας να συμμετέχετε σε σημαντικές συζητήσεις με τον σύντροφό σας. Κατά τη διάρκεια αρκετών ημερών, θα εξερευνήσετε διάφορες πτυχές της επικοινωνίας, από την κατανόηση των αξιών του άλλου μέχρι τη συζήτηση βαθύτερων συναισθηματικών θεμάτων. Κάθε μέρα χτίζει πάνω στην προηγούμενη, ενθαρρύνοντας την ανάπτυξη και τη σύνδεση.",
+    "subtopics": [
+      {
+        "title": "Οι Βασικές Αρχές της Επικοινωνίας",
+        "description": "Ξεκινήστε εξερευνώντας τα θεμελιώδη στοιχεία της αποτελεσματικής επικοινωνίας με τον σύντροφό σας. Μάθετε για την ενεργητική ακρόαση, την καθαρή έκφραση σκέψεων και τη σημασία των μη λεκτικών σημάτων.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "discover-your-communication-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-prefer-to-communicate-your-needs-and-desires"
+          },
+          {
+            "type": "article",
+            "slug": "mastering-communication-techniques"
+          },
+          {
+            "type": "game",
+            "slug": "communication-clues"
+          },
+          {
+            "type": "checkup",
+            "slug": "mastering-our-communication-styles"
+          },
+          {
+            "type": "exercise",
+            "slug": "active-listening-practice"
+          },
+          {
+            "type": "question",
+            "slug": "whats-your-favorite-memory-of-us-having-a-great-conversation"
+          }
+        ]
+      },
+      {
+        "title": "Κατανόηση των Αξιών του Άλλου",
+        "description": "Εξερευνήστε τις βασικές αξίες που διαμορφώνουν τις πεποιθήσεις και τις ενέργειές σας. Συζητήστε πώς αυτές οι αξίες επηρεάζουν τις αποφάσεις σας και πώς μπορούν να επηρεάσουν τη σχέση σας.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "values-alignment-style"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-think-we-share-the-same-values"
+          },
+          {
+            "type": "article",
+            "slug": "aligning-life-ambitions-together"
+          },
+          {
+            "type": "game",
+            "slug": "values-vibes"
+          },
+          {
+            "type": "checkup",
+            "slug": "core-values-connection"
+          },
+          {
+            "type": "exercise",
+            "slug": "values-alignment-exercise"
+          },
+          {
+            "type": "question",
+            "slug": "what-are-your-top-three-values-and-how-do-they-influence-your-decisions"
+          }
+        ]
+      },
+      {
+        "title": "Πλοήγηση σε Δύσκολα Θέματα",
+        "description": "Μάθετε τεχνικές για να προσεγγίσετε δύσκολες συζητήσεις με ευαισθησία και σεβασμό. Εξασκηθείτε στη συζήτηση προκλητικών θεμάτων όπως τα οικονομικά, οι οικογενειακές δυναμικές ή οι μελλοντικές φιλοδοξίες.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "problem-solving-style"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-think-that-money-play-a-big-role-in-feeling-fulfilled"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-balance-personal-time-with-time-spent-together"
+          },
+          {
+            "type": "article",
+            "slug": "navigating-difficult-conversations"
+          },
+          {
+            "type": "game",
+            "slug": "conflict-resolution-quest"
+          },
+          {
+            "type": "checkup",
+            "slug": "tackling-tough-talks"
+          },
+          {
+            "type": "exercise",
+            "slug": "tough-talks-toolkit"
+          }
+        ]
+      },
+      {
+        "title": "Μοιραζόμενοι Προσωπικές Εμπειρίες",
+        "description": "Συμμετάσχετε σε αφηγήσεις για να μοιραστείτε σημαντικές αναμνήσεις από το παρελθόν σας. Ανακαλύψτε πώς οι εμπειρίες σας έχουν επηρεάσει τις τρέχουσες προοπτικές και συναισθηματικές καταστάσεις σας.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "life-story-style"
+          },
+          {
+            "type": "question",
+            "slug": "can-you-share-a-memory-from-your-childhood-that-you-think-has-shaped-who-you-are-today"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-memorable-lesson-youve-learned-from-past-relationships"
+          },
+          {
+            "type": "article",
+            "slug": "love-maps-knowing-each-other-deeply"
+          },
+          {
+            "type": "game",
+            "slug": "memory-lane"
+          },
+          {
+            "type": "checkup",
+            "slug": "exploring-childhood-memories"
+          },
+          {
+            "type": "exercise",
+            "slug": "intimate-story-sharing"
+          }
+        ]
+      },
+      {
+        "title": "Εμβάθυνση Συναισθηματικής Σύνδεσης",
+        "description": "Εξερευνήστε συζητήσεις που ενισχύουν την συναισθηματική οικειότητα. Συζητήστε θέματα όπως φόβοι, όνειρα και φιλοδοξίες για να ενισχύσετε τον δεσμό σας με τον σύντροφό σας.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "emotional-intimacy-style"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-believe-in-soulmates-why-or-why-not"
+          },
+          {
+            "type": "question",
+            "slug": "what-are-your-dreams-and-aspirations-outside-of-work"
+          },
+          {
+            "type": "article",
+            "slug": "building-emotional-intimacy-together"
+          },
+          {
+            "type": "game",
+            "slug": "emotional-expeditions"
+          },
+          {
+            "type": "checkup",
+            "slug": "emotional-intimacy-check-in"
+          },
+          {
+            "type": "exercise",
+            "slug": "emotional-closeness-exercises"
+          }
+        ]
+      },
+      {
+        "title": "Δημιουργία Πολιτισμού Ανοιχτότητας",
+        "description": "Δημιουργήστε ένα περιβάλλον όπου και οι δύο σύντροφοι αισθάνονται ασφαλείς να εκφράσουν τις σκέψεις και τα συναισθήματά τους. Μάθετε στρατηγικές για να διατηρήσετε ανοιχτή επικοινωνία και να ενθαρρύνετε την ευαλωτότητα.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "openness-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-feel-about-surprise-conversations-versus-planned-discussions"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-express-your-creativity"
+          },
+          {
+            "type": "article",
+            "slug": "cultivating-honest-conversations"
+          },
+          {
+            "type": "game",
+            "slug": "open-hearts-challenge"
+          },
+          {
+            "type": "checkup",
+            "slug": "vulnerability-and-openness"
+          },
+          {
+            "type": "exercise",
+            "slug": "transparent-communication-practices"
+          }
+        ]
+      }
+    ],
+    "slug": "cultivating-meaningful-conversations"
+  },
+  {
+    "job": [
+      "understanding_mutual_compatibility"
+    ],
+    "title": "Κατανόηση της Αμοιβαίας Συμβατότητας",
+    "description": "Αυτή η πορεία έχει σχεδιαστεί για να σας βοηθήσει να εξερευνήσετε και να κατανοήσετε τις διαστάσεις της συμβατότητας στη σχέση σας. Αντιμετωπίζοντας τα θέματα σταδιακά, θα μάθετε να αναγνωρίζετε, να εκτιμάτε και να πλοηγείστε τόσο στις ομοιότητες όσο και στις διαφορές σας. Κάθε μέρα, θα ασχολείστε με διάφορους τύπους περιεχομένου που διευκολύνουν τις στοχαστικές συζητήσεις και ενισχύουν τις βαθύτερες συνδέσεις.",
+    "subtopics": [
+      {
+        "title": "Εξερεύνηση Βασικών Αξιών",
+        "description": "Ξεκινήστε συζητώντας τις τρεις κορυφαίες αξίες σας και πώς επηρεάζουν τις αποφάσεις σας. Αυτό το θεμελιώδες θέμα θα καθοδηγήσει την κατανόησή σας για το τι είναι σημαντικό για τον καθένα σας σε μια σχέση.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "values-alignment-style"
+          },
+          {
+            "type": "question",
+            "slug": "what-are-three-values-you-believe-are-most-important-in-a-person"
+          },
+          {
+            "type": "article",
+            "slug": "aligning-future-goals"
+          },
+          {
+            "type": "game",
+            "slug": "values-vibes"
+          },
+          {
+            "type": "checkup",
+            "slug": "core-values-connection"
+          },
+          {
+            "type": "exercise",
+            "slug": "values-alignment-exercise"
+          }
+        ]
+      },
+      {
+        "title": "Στυλ Επικοινωνίας",
+        "description": "Μάθετε για τα ατομικά σας στυλ επικοινωνίας και συζητήστε πώς επηρεάζουν τις αλληλεπιδράσεις σας. Αυτό το υποθέμα θα σας βοηθήσει να αναπτύξετε στρατηγικές για πιο σαφή και αποτελεσματική επικοινωνία.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "discover-your-communication-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-prefer-to-communicate-your-needs-and-desires"
+          },
+          {
+            "type": "article",
+            "slug": "mastering-communication-techniques"
+          },
+          {
+            "type": "game",
+            "slug": "communication-clues"
+          },
+          {
+            "type": "checkup",
+            "slug": "mastering-our-communication-styles"
+          },
+          {
+            "type": "exercise",
+            "slug": "active-listening-practice"
+          }
+        ]
+      },
+      {
+        "title": "Πολιτισμικές και Υποβάθρου Διαφορές",
+        "description": "Εξερευνήστε πώς οι διαφορετικοί πολιτισμικοί σας φόντοι και οι εμπειρίες ζωής διαμορφώνουν τις προοπτικές σας. Η κατανόηση αυτών των στοιχείων ενισχύει την ενσυναίσθηση και την εκτίμηση ο ένας για τον άλλον.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "cultural-connection-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-our-different-cultural-backgrounds-shape-our-relationship-and-how-can-we-honor-both"
+          },
+          {
+            "type": "article",
+            "slug": "bridging-religious-differences-together"
+          },
+          {
+            "type": "game",
+            "slug": "cultural-quest"
+          },
+          {
+            "type": "checkup",
+            "slug": "navigating-cultural-and-religious-differences"
+          },
+          {
+            "type": "exercise",
+            "slug": "difference-identification-and-acceptance"
+          }
+        ]
+      },
+      {
+        "title": "Εξισορρόπηση Προσωπικών και Κοινών Ενδιαφερόντων",
+        "description": "Συζητήστε τα ενδιαφέροντά σας, τα χόμπι σας και πώς μπορούν είτε να συμπληρώνουν είτε να συγκρούονται μεταξύ τους. Η εύρεση μιας ισορροπίας θα ενισχύσει τη σχέση σας και θα διασφαλίσει ότι και οι δύο σύντροφοι θα νιώθουν ικανοποιημένοι.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "hobby-harmony-style"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-new-hobby-we-can-try-together-that-honors-both-our-interests"
+          },
+          {
+            "type": "article",
+            "slug": "exploring-shared-hobbies-together"
+          },
+          {
+            "type": "game",
+            "slug": "hobby-harmony"
+          },
+          {
+            "type": "exercise",
+            "slug": "hobbies-and-interests-exercise"
+          }
+        ]
+      },
+      {
+        "title": "Διαχείριση Συγκρούσεων και Διαφορών",
+        "description": "Εξερευνήστε πώς ο καθένας σας διαχειρίζεται τις συγκρούσεις και τις διαφορετικές απόψεις. Εξερευνώντας αποτελεσματικές τεχνικές επίλυσης συγκρούσεων, θα μάθετε να μετατρέπετε τις διαφωνίες σε ευκαιρίες για ανάπτυξη.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "your-conflict-style"
+          },
+          {
+            "type": "game",
+            "slug": "conflict-resolution-quest"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-handle-feelings-of-jealousy-or-insecurity"
+          },
+          {
+            "type": "article",
+            "slug": "mastering-conflict-resolution-together"
+          },
+          {
+            "type": "checkup",
+            "slug": "conflict-connoisseurs"
+          },
+          {
+            "type": "exercise",
+            "slug": "conflict-resolution-styles"
+          },
+          {
+            "type": "question",
+            "slug": "how-can-we-turn-our-differences-into-opportunities-for-growth-as-a-couple"
+          }
+        ]
+      },
+      {
+        "title": "Εξέλιξη της Σχέσης",
+        "description": "Αναλογιστείτε πώς έχει αλλάξει η σχέση σας με την πάροδο του χρόνου και συζητήστε πώς φαντάζεστε το μέλλον της. Αυτό το θέμα θα σας επιτρέψει να ευθυγραμμίσετε τους μακροπρόθεσμους στόχους και τις φιλοδοξίες σας ως ζευγάρι.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "future-vision-type"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-see-our-relationship-evolving-over-time"
+          },
+          {
+            "type": "article",
+            "slug": "creating-a-vision-for-us"
+          },
+          {
+            "type": "game",
+            "slug": "future-visionaries"
+          },
+          {
+            "type": "checkup",
+            "slug": "future-talk-together"
+          },
+          {
+            "type": "exercise",
+            "slug": "future-goals-compatibility"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-see-our-relationship-evolving-over-the-next-decade"
+          }
+        ]
+      }
+    ],
+    "slug": "understanding-mutual-compatibility"
+  },
+  {
+    "job": [
+      "planning_for_future"
+    ],
+    "title": "Πλοήγηση στο Μέλλον Μας Μαζί",
+    "description": "Αυτή η πορεία έχει σχεδιαστεί για να βοηθήσει εσάς και τον σύντροφό σας να σχεδιάσετε προσεκτικά το μέλλον και να πλοηγηθείτε σε σημαντικές αποφάσεις ζωής. Θα εξερευνήσετε διάφορες πτυχές της σχέσης σας, θα συζητήσετε μακροπρόθεσμους στόχους και θα ενισχύσετε τη συνεργασία σας μέσω δραστηριοτήτων, προάγοντας την ανοιχτή επικοινωνία και την αμοιβαία κατανόηση.",
+    "subtopics": [
+      {
+        "title": "Οραματιζόμενοι τη Ζωή Μας Μπροστά",
+        "description": "Ξεκινήστε φανταζόμενοι το ιδανικό σας μέλλον μαζί, συζητώντας όνειρα και φιλοδοξίες για τα επόμενα πέντε χρόνια. Θα δημιουργήσετε μια σαφή εικόνα για το τι θέλετε και οι δύο από τη ζωή.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "future-planning-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-envision-our-relationship-evolving-over-the-next-five-years"
+          },
+          {
+            "type": "article",
+            "slug": "creating-a-vision-for-us"
+          },
+          {
+            "type": "game",
+            "slug": "future-visionaries"
+          },
+          {
+            "type": "checkup",
+            "slug": "future-talk-together"
+          },
+          {
+            "type": "exercise",
+            "slug": "long-term-goal-planning"
+          }
+        ]
+      },
+      {
+        "title": "Οικονομικά Μέλλοντα",
+        "description": "Εξερευνήστε τους οικονομικούς σας στόχους ως ζευγάρι. Συζητήστε για τον προϋπολογισμό, την αποταμίευση και τις πιθανές επενδύσεις για να εξασφαλίσετε έναν ασφαλή και άνετο τρόπο ζωής, ενώ ευθυγραμμίζετε τις οικονομικές σας φιλοδοξίες με τα μελλοντικά σχέδια.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "financial-planning-style"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-think-financial-discussions-should-happen-regularly-how-often"
+          },
+          {
+            "type": "article",
+            "slug": "mastering-money-talks-together"
+          },
+          {
+            "type": "game",
+            "slug": "dream-budget-builders"
+          },
+          {
+            "type": "checkup",
+            "slug": "budgeting-together-without-breaking-up"
+          },
+          {
+            "type": "exercise",
+            "slug": "budget-planning-session"
+          }
+        ]
+      },
+      {
+        "title": "Δημιουργώντας ένα Σχέδιο Οικογένειας",
+        "description": "Εμβαθύνετε σε συζητήσεις σχετικά με τον προγραμματισμό οικογένειας και τους στόχους γονεϊκότητας. Αποφασίστε αν θέλετε παιδιά, πόσα και σκεφτείτε τι είδους ανατροφή φαντάζεστε.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "parenting-style-alignment"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-want-to-have-children-if-so-when-do-you-think-is-the-right-time"
+          },
+          {
+            "type": "game",
+            "slug": "parenting-philosophy-play"
+          },
+          {
+            "type": "checkup",
+            "slug": "parenting-pathways"
+          },
+          {
+            "type": "exercise",
+            "slug": "parenting-styles-discussion"
+          },
+          {
+            "type": "question",
+            "slug": "should-we-adopt-if-we-are-unable-to-have-children"
+          }
+        ]
+      },
+      {
+        "title": "Πλοήγηση σε Σημαντικές Αποφάσεις Ζωής",
+        "description": "Συζητήστε πώς θα προσεγγίσετε σημαντικές αποφάσεις στη ζωή σας μαζί. Αυτό περιλαμβάνει τη συγκατοίκηση, τις αλλαγές καριέρας και τις απρόβλεπτες προκλήσεις που μπορεί να προκύψουν.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "decision-making-styles"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-feel-about-making-major-life-decisions-together"
+          },
+          {
+            "type": "game",
+            "slug": "problem-solving-pals"
+          },
+          {
+            "type": "checkup",
+            "slug": "resolving-decision-making-conflicts"
+          },
+          {
+            "type": "exercise",
+            "slug": "negotiation-skills-exercises"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-feel-about-relocating-for-career-opportunities-in-the-future"
+          }
+        ]
+      },
+      {
+        "title": "Δημιουργώντας μια Κοινή Λίστα Επιθυμιών",
+        "description": "Αναπτύξτε μια λίστα επιθυμιών για ζευγάρια που να αντικατοπτρίζει τα κοινά σας όνειρα και τις περιπέτειες που επιθυμείτε να ζήσετε μαζί. Εστιάστε σε ταξίδια, εμπειρίες και παραδόσεις που θέλετε να δημιουργήσετε.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "goal-alignment-style"
+          },
+          {
+            "type": "question",
+            "slug": "if-we-were-to-create-a-couples-bucket-list-whats-the-first-adventure-youd-add"
+          },
+          {
+            "type": "article",
+            "slug": "adventure-sparks-deeper-bonds"
+          },
+          {
+            "type": "game",
+            "slug": "dream-adventure-quest"
+          },
+          {
+            "type": "exercise",
+            "slug": "fantasy-sharing-session"
+          },
+          {
+            "type": "question",
+            "slug": "if-we-could-teleport-to-any-romantic-destination-right-now-where-would-we-go"
+          }
+        ]
+      },
+      {
+        "title": "Ευθυγράμμιση Αξιών και Παραδόσεων",
+        "description": "Συζητήστε σημαντικές αξίες και παραδόσεις που θέλετε να καλλιεργήσετε ως ζευγάρι και ως οικογένεια. Εμβαθύνετε σε θρησκευτικές πεποιθήσεις, επιλογές τρόπου ζωής και την κληρονομιά που επιθυμείτε να δημιουργήσετε μαζί.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "values-alignment-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-see-our-religious-beliefs-influencing-our-future-goals"
+          },
+          {
+            "type": "game",
+            "slug": "beliefs-values"
+          },
+          {
+            "type": "checkup",
+            "slug": "core-values-connection"
+          },
+          {
+            "type": "exercise",
+            "slug": "family-values-alignment"
+          },
+          {
+            "type": "question",
+            "slug": "what-values-are-most-important-for-us-to-instill-in-our-children"
+          }
+        ]
+      }
+    ],
+    "slug": "navigating-our-future-together"
+  },
+  {
+    "job": [
+      "discussing_difficult_topics"
+    ],
+    "title": "Πλοήγηση σε Δύσκολες Συζητήσεις Μαζί",
+    "description": "Αυτή η πορεία έχει σχεδιαστεί για να καθοδηγήσει εσάς και τον σύντροφό σας μέσα από τις προκλήσεις της συζήτησης ευαίσθητων θεμάτων στη σχέση σας. Κάθε μέρα, θα εξερευνήσετε διαφορετικές πτυχές της επικοινωνίας, από την καθιέρωση μιας σταθερής βάσης μέχρι την αντιμετώπιση βαθιά προσωπικών θεμάτων. Στο τέλος αυτής της πορείας, θα έχετε τα εργαλεία και την αυτοπεποίθηση να συμμετάσχετε σε ουσιαστικές συζητήσεις, ενισχύοντας τη συναισθηματική σας σύνδεση και την αμοιβαία κατανόηση.",
+    "subtopics": [
+      {
+        "title": "Καθιέρωση Ανοιχτής Επικοινωνίας",
+        "description": "Μάθετε τη σημασία της ανοιχτής επικοινωνίας και πώς να δημιουργήσετε έναν ασφαλή χώρο για να συζητήσετε δύσκολα θέματα. Αυτό το υποθέμα θα εισαγάγει βασικές στρατηγικές επικοινωνίας.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "discover-your-communication-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-prefer-to-communicate-your-needs-and-desires"
+          },
+          {
+            "type": "article",
+            "slug": "mastering-communication-techniques"
+          },
+          {
+            "type": "game",
+            "slug": "communication-clues"
+          },
+          {
+            "type": "checkup",
+            "slug": "mastering-our-communication-styles"
+          },
+          {
+            "type": "question",
+            "slug": "whats-your-favorite-memory-of-us-having-a-great-conversation"
+          },
+          {
+            "type": "exercise",
+            "slug": "active-listening-practice"
+          }
+        ]
+      },
+      {
+        "title": "Κατανόηση Διαφορετικών Προοπτικών",
+        "description": "Εξερευνήστε τη σημασία της ενσυναίσθησης κατανοώντας την προοπτική του συντρόφου σας σε δύσκολα θέματα. Συζητήστε μεθόδους για να προσεγγίσετε τις διαφωνίες με εποικοδομητικό τρόπο.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "empathy-resonance-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-can-we-ensure-both-of-us-feel-heard-during-a-disagreement"
+          },
+          {
+            "type": "article",
+            "slug": "building-emotional-intimacy-together"
+          },
+          {
+            "type": "game",
+            "slug": "deep-dive-dialogues"
+          },
+          {
+            "type": "checkup",
+            "slug": "empathy-adventure"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-prefer-to-approach-conversations-when-emotions-run-high"
+          },
+          {
+            "type": "exercise",
+            "slug": "difference-identification-and-acceptance"
+          }
+        ]
+      },
+      {
+        "title": "Πλοήγηση στη Ζήλια και την Εμπιστοσύνη",
+        "description": "Εξερευνήστε τα συναισθήματα ζήλιας και εμπιστοσύνης στη σχέση σας. Αυτό το υποθέμα εστιάζει στο πώς να συζητήσετε αυτά τα δύσκολα συναισθήματα χωρίς συγκρούσεις.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "trust-building-style-quiz"
+          },
+          {
+            "type": "question",
+            "slug": "have-you-ever-felt-jealous-in-our-relationship-how-did-you-handle-it"
+          },
+          {
+            "type": "article",
+            "slug": "building-trust-through-intimacy"
+          },
+          {
+            "type": "game",
+            "slug": "trust-talk"
+          },
+          {
+            "type": "checkup",
+            "slug": "trusting-truths"
+          },
+          {
+            "type": "question",
+            "slug": "does-cheating-only-relate-to-physical-things-or-is-there-emotional-cheating-as-well"
+          },
+          {
+            "type": "exercise",
+            "slug": "rebuild-trust-session"
+          }
+        ]
+      },
+      {
+        "title": "Καθόριση Ορίων στις Συζητήσεις",
+        "description": "Μάθετε πώς να καθορίσετε όρια όταν συζητάτε ευαίσθητα θέματα για να διασφαλίσετε ότι και οι δύο σύντροφοι αισθάνονται άνετα και σεβαστά κατά τη διάρκεια των συζητήσεων.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "boundary-communication-style"
+          },
+          {
+            "type": "question",
+            "slug": "are-there-any-boundaries-around-work-that-youd-like-to-set"
+          },
+          {
+            "type": "game",
+            "slug": "communication-carousel"
+          },
+          {
+            "type": "question",
+            "slug": "whats-one-boundary-youd-like-to-set-to-keep-our-relationship-healthy"
+          },
+          {
+            "type": "exercise",
+            "slug": "boundaries-practice"
+          }
+        ]
+      },
+      {
+        "title": "Αντιμετώπιση Παρελθόντων Τραυμάτων",
+        "description": "Ασχοληθείτε με τις συζητήσεις γύρω από τα παρελθόντα τραύματα και πώς αυτά μπορεί να επηρεάσουν τη σχέση σας. Αυτό το υποθέμα παρέχει στρατηγικές για να συζητήσετε αυτά τα προκλητικά θέματα με ευαισθησία.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "life-story-style"
+          },
+          {
+            "type": "question",
+            "slug": "have-you-had-any-childhood-experiences-that-you-can-call-traumatic-how-has-it-affected-you"
+          },
+          {
+            "type": "article",
+            "slug": "navigating-emotional-waters-together"
+          },
+          {
+            "type": "checkup",
+            "slug": "exploring-childhood-memories"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-have-any-unresolved-issues-with-your-parents"
+          },
+          {
+            "type": "exercise",
+            "slug": "sensitive-subjects-dialogue-practice"
+          }
+        ]
+      },
+      {
+        "title": "Στρατηγικές Επίλυσης Συγκρούσεων",
+        "description": "Αναπτύξτε τις ικανότητές σας στην επίλυση συγκρούσεων που προκύπτουν κατά τη διάρκεια των συζητήσεων. Εξερευνήστε τεχνικές για να μετατρέψετε τις διαφωνίες σε ευκαιρίες για ανάπτυξη και αμοιβαία κατανόηση.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "your-conflict-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-can-we-turn-our-arguments-into-opportunities-for-growth"
+          },
+          {
+            "type": "article",
+            "slug": "effective-conflict-resolution-strategies"
+          },
+          {
+            "type": "game",
+            "slug": "problem-solving-pals"
+          },
+          {
+            "type": "checkup",
+            "slug": "conflict-resolution-styles"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-prefer-to-resolve-disagreements-calm-discussion-or-taking-a-short-break"
+          },
+          {
+            "type": "exercise",
+            "slug": "conflict-resolution-strategies-practice"
+          }
+        ]
+      }
+    ],
+    "slug": "navigating-difficult-conversations-together"
+  },
+  {
+    "job": [
+      "enhancing_love_and_affection"
+    ],
+    "title": "Ενίσχυση της Αγάπης και της Στοργής",
+    "description": "Αυτή η πορεία έχει σχεδιαστεί για να βοηθήσει τα ζευγάρια να καλλιεργήσουν βαθύτερη αγάπη και στοργή στη σχέση τους μέσω ουσιαστικών συζητήσεων, παιχνιδιάρικων δραστηριοτήτων και προσεκτικών πρακτικών. Κάθε μέρα, θα εξερευνήσετε διάφορες πτυχές της αγάπης και της στοργής, ξεκινώντας από την κατανόηση των εκφράσεών σας για την αγάπη, μέχρι τη δημιουργία οικείων στιγμών που ενισχύουν τον δεσμό σας.",
+    "subtopics": [
+      {
+        "title": "Κατανόηση των Γλωσσών της Αγάπης",
+        "description": "Μάθετε για την έννοια των γλωσσών της αγάπης και ανακαλύψτε πώς εσείς και ο σύντροφός σας εκφράζετε και λαμβάνετε αγάπη. Αυτή η γνώση θέτει τα θεμέλια για την ενίσχυση της συναισθηματικής σας σύνδεσης.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "love-language-type"
+          },
+          {
+            "type": "question",
+            "slug": "what-is-your-love-language"
+          },
+          {
+            "type": "article",
+            "slug": "decoding-love-languages"
+          },
+          {
+            "type": "game",
+            "slug": "love-languages-quiz"
+          },
+          {
+            "type": "checkup",
+            "slug": "emotional-needs-compatibility"
+          },
+          {
+            "type": "question",
+            "slug": "whats-your-favorite-way-to-express-love-and-how-does-it-differ-from-mine"
+          },
+          {
+            "type": "exercise",
+            "slug": "find-out-your-love-language"
+          }
+        ]
+      },
+      {
+        "title": "Καθημερινές Εκφράσεις Στοργής",
+        "description": "Εξερευνήστε απλούς αλλά ισχυρούς τρόπους για να εκφράσετε τη στοργή καθημερινά. Αυτό το υποθέμα περιλαμβάνει συζητήσεις για μικρές χειρονομίες, σημειώματα αγάπης και κομπλιμέντα που μπορούν να φωτίσουν την ημέρα του άλλου.",
+        "content": [
+          {
+            "type": "exercise",
+            "slug": "compliment-exchange"
+          },
+          {
+            "type": "question",
+            "slug": "how-can-we-better-express-our-appreciation-for-each-other-daily"
+          },
+          {
+            "type": "article",
+            "slug": "enhance-affection-daily"
+          },
+          {
+            "type": "game",
+            "slug": "affectionate-habits"
+          },
+          {
+            "type": "checkup",
+            "slug": "acts-of-kindness-and-appreciation"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-small-gesture-that-always-makes-you-smile"
+          }
+        ]
+      },
+      {
+        "title": "Δημιουργία Οικείων Στιγμών",
+        "description": "Ανακαλύψτε πώς να δημιουργήσετε και να ενσωματώσετε οικείες στιγμές στην καθημερινή σας ρουτίνα. Αυτό περιλαμβάνει τον προγραμματισμό εκπλήξεων για ραντεβού, αυθόρμητους εναγκαλισμούς και στιγμές για βαθιά σύνδεση.",
+        "content": [
+          {
+            "type": "checkup",
+            "slug": "emotional-intimacy-check-in"
+          },
+          {
+            "type": "test",
+            "slug": "sensory-intimacy-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-feel-about-trying-new-activities-together-to-build-intimacy"
+          },
+          {
+            "type": "article",
+            "slug": "building-emotional-intimacy-together"
+          },
+          {
+            "type": "game",
+            "slug": "intimacy-insights"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-feel-about-surprise-date-nights-whats-your-ideal-surprise"
+          },
+          {
+            "type": "exercise",
+            "slug": "creating-passion-renewal-date"
+          }
+        ]
+      },
+      {
+        "title": "Καλλιέργεια Ευγνωμοσύνης και Εκτίμησης",
+        "description": "Εξερευνήστε τη σημασία της έκφρασης ευγνωμοσύνης στη σχέση σας. Συζητήστε πώς η εκτίμηση μπορεί να ενισχύσει την αγάπη και τη στοργή, και μάθετε συγκεκριμένες πρακτικές για να αναγνωρίζετε ο ένας τον άλλον.",
+        "content": [
+          {
+            "type": "exercise",
+            "slug": "expressing-gratitude-session"
+          },
+          {
+            "type": "question",
+            "slug": "how-can-we-better-express-our-appreciation-for-each-other"
+          },
+          {
+            "type": "article",
+            "slug": "mastering-communication-techniques"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-like-to-express-appreciation-in-our-conversations"
+          }
+        ]
+      },
+      {
+        "title": "Παιχνιδιάρικη Διάθεση και Χιούμορ στη Στοργή",
+        "description": "Μάθετε πώς το χιούμορ και η παιχνιδιάρικη διάθεση μπορούν να ενισχύσουν την οικειότητα. Αυτό το υποθέμα ενθαρρύνει την αναζήτηση τρόπων να γελάτε μαζί και να συμμετέχετε σε παιχνιδιάρικες δραστηριότητες που ενδυναμώνουν τον δεσμό σας.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "playfulness-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-feel-about-incorporating-humor-into-our-intimate-moments"
+          },
+          {
+            "type": "article",
+            "slug": "fun-rituals-to-strengthen-bonds"
+          },
+          {
+            "type": "game",
+            "slug": "laugh-learn-quiz"
+          },
+          {
+            "type": "checkup",
+            "slug": "fun-flirtation"
+          },
+          {
+            "type": "question",
+            "slug": "how-can-we-incorporate-more-playfulness-into-our-relationship"
+          },
+          {
+            "type": "exercise",
+            "slug": "karaoke-session"
+          }
+        ]
+      },
+      {
+        "title": "Φυσική Στοργή και Επαφή",
+        "description": "Εξερευνήστε τον ρόλο της φυσικής επαφής στην καλλιέργεια βαθύτερης στοργής. Συζητήστε τις προτιμήσεις σας για φιλιά, αγκαλιές, εναγκαλισμούς και άλλες μορφές φυσικής στοργής που ενισχύουν τη σύνδεσή σας.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "physical-touch-style"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-prefer-cuddling-on-the-couch-or-a-romantic-dinner-to-feel-loved"
+          },
+          {
+            "type": "article",
+            "slug": "enhancing-physical-intimacy-mindfully"
+          },
+          {
+            "type": "game",
+            "slug": "bedroom-preferences"
+          },
+          {
+            "type": "checkup",
+            "slug": "physical-comfort-and-boundaries"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-prefer-morning-hugs-or-goodnight-kisses"
+          },
+          {
+            "type": "exercise",
+            "slug": "affectionate-gestures-practice"
+          }
+        ]
+      }
+    ],
+    "slug": "enhancing-love-and-affection"
+  },
+  {
+    "job": [
+      "solving_relationship_problems"
+    ],
+    "title": "Πλοήγηση και Επίλυση Προβλημάτων Σχέσεων",
+    "description": "Αυτή η πορεία έχει σχεδιαστεί για να βοηθήσει εσάς και τον σύντροφό σας να πλοηγηθείτε και να επιλύσετε συγκρούσεις αποτελεσματικά. Κάθε μέρα, θα συμμετέχετε σε ασκήσεις, ερωτήσεις και δραστηριότητες που θα ενισχύσουν τις επικοινωνιακές σας ικανότητες και τις ικανότητες επίλυσης προβλημάτων. Στο τέλος αυτής της πορείας, θα νιώθετε πιο έτοιμοι να αντιμετωπίσετε προκλήσεις μαζί και να βρείτε λύσεις ως ομάδα.",
+    "subtopics": [
+      {
+        "title": "Κατανόηση Στυλ Συγκρούσεων",
+        "description": "Ανακαλύψτε τα ατομικά σας στυλ συγκρούσεων και πώς επηρεάζουν τη σχέση σας. Χρησιμοποιήστε ερωτήσεις και αναστοχασμό για να κατανοήσετε πώς συνήθως αντιδράτε κατά τη διάρκεια διαφωνιών.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "your-conflict-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-handle-disagreements-or-conflicts"
+          },
+          {
+            "type": "article",
+            "slug": "effective-conflict-resolution-strategies"
+          },
+          {
+            "type": "game",
+            "slug": "conflict-resolution-quest"
+          },
+          {
+            "type": "checkup",
+            "slug": "conflict-resolution-styles"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-handle-disagreements-and-whats-your-favorite-way-for-us-to-make-up-after-a-fight"
+          },
+          {
+            "type": "exercise",
+            "slug": "conflict-resolution-styles"
+          }
+        ]
+      },
+      {
+        "title": "Βασικές Αρχές Επικοινωνίας",
+        "description": "Επικεντρωθείτε στην ενίσχυση των επικοινωνιακών σας ικανοτήτων κατά τη διάρκεια συγκρούσεων. Εξερευνήστε αποτελεσματικές τεχνικές ακρόασης και τη σημασία της σαφούς έκφρασης μέσω ασκήσεων και παιχνιδιών.",
+        "content": [
+          {
+            "type": "checkup",
+            "slug": "mastering-our-communication-styles"
+          },
+          {
+            "type": "test",
+            "slug": "discover-your-communication-style"
+          },
+          {
+            "type": "article",
+            "slug": "mastering-communication-techniques"
+          },
+          {
+            "type": "game",
+            "slug": "communication-clues"
+          },
+          {
+            "type": "exercise",
+            "slug": "active-listening-practice"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-prefer-to-communicate-your-needs-and-desires"
+          },
+          {
+            "type": "question",
+            "slug": "whats-your-favorite-memory-of-us-having-a-great-conversation"
+          }
+        ]
+      },
+      {
+        "title": "Κατασκευαστική Επίλυση Συγκρούσεων",
+        "description": "Μάθετε πώς να μετατρέπετε τις διαφωνίες σε κατασκευαστικές συνομιλίες. Συμμετάσχετε σε ασκήσεις και άρθρα που παρέχουν στρατηγικές για την επίλυση συγκρούσεων χωρίς να τις κλιμακώνετε.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "solution-focused-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-can-we-make-our-disagreements-more-constructive"
+          },
+          {
+            "type": "article",
+            "slug": "mastering-conflict-resolution-together"
+          },
+          {
+            "type": "game",
+            "slug": "problem-solving-escapades"
+          },
+          {
+            "type": "checkup",
+            "slug": "conflict-resolution-wizards"
+          },
+          {
+            "type": "question",
+            "slug": "can-you-recall-a-time-when-you-felt-misunderstood-how-did-you-handle-it"
+          },
+          {
+            "type": "exercise",
+            "slug": "conflict-resolution-strategies-practice"
+          }
+        ]
+      },
+      {
+        "title": "Χρηματοοικονομικά Θέματα και Συγκρούσεις",
+        "description": "Εξερευνήστε πώς οι χρηματοοικονομικές συζητήσεις μπορούν να οδηγήσουν σε συγκρούσεις και πώς να πλοηγηθείτε σε αυτές τις συνομιλίες. Δουλέψτε πάνω σε στυλ προϋπολογισμού και χρηματοοικονομικής επικοινωνίας μέσω τεστ και συζητήσεων.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "financial-communication-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-feel-about-our-different-spending-habits-and-how-can-we-find-a-middle-ground"
+          },
+          {
+            "type": "article",
+            "slug": "mastering-money-talks-together"
+          },
+          {
+            "type": "game",
+            "slug": "dream-budget-builders"
+          },
+          {
+            "type": "checkup",
+            "slug": "trust-in-financial-transparency"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-have-any-issues-with-budgeting-like-are-you-in-debt-to-somebody-do-you-make-any-useless-spending"
+          },
+          {
+            "type": "exercise",
+            "slug": "budget-planning-session"
+          }
+        ]
+      },
+      {
+        "title": "Δημιουργία Ασφαλούς Χώρου για Συζητήσεις",
+        "description": "Δημιουργήστε ένα περιβάλλον όπου και οι δύο σύντροφοι νιώθουν ασφαλείς να εκφράσουν τα συναισθήματά τους. Χρησιμοποιήστε ελέγχους και ασκήσεις για να διευκολύνετε ανοιχτούς διαλόγους και να αντιμετωπίσετε υποκείμενα ζητήματα.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "emotional-safety-style"
+          },
+          {
+            "type": "checkup",
+            "slug": "vulnerability-and-openness"
+          },
+          {
+            "type": "article",
+            "slug": "trust-through-open-communication"
+          },
+          {
+            "type": "game",
+            "slug": "communication-connection"
+          },
+          {
+            "type": "exercise",
+            "slug": "transparent-communication-practices"
+          },
+          {
+            "type": "question",
+            "slug": "are-there-any-habits-or-behaviors-of-mine-that-bother-you"
+          },
+          {
+            "type": "question",
+            "slug": "describe-a-time-when-a-simple-text-message-led-to-a-big-misunderstanding-how-did-you-resolve-it"
+          }
+        ]
+      },
+      {
+        "title": "Μετατρέποντας τη Σύγκρουση σε Ανάπτυξη",
+        "description": "Αλλάξτε την προοπτική σας για τη σύγκρουση μαθαίνοντας πώς να τη χρησιμοποιείτε ως εργαλείο για ανάπτυξη. Αναλογιστείτε παλιές συγκρούσεις, εφαρμόστε χιούμορ και δημιουργήστε σχέδια προσωπικής ανάπτυξης ως ζευγάρι.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "growth-opportunity-style-assessment"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-past-problem-weve-solved-that-makes-you-proud-of-us"
+          },
+          {
+            "type": "article",
+            "slug": "embracing-differences-positively"
+          },
+          {
+            "type": "game",
+            "slug": "compatibility-conundrum"
+          },
+          {
+            "type": "checkup",
+            "slug": "team-problem-solving"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-relationship-problem-you-think-we-can-solve-with-humor"
+          },
+          {
+            "type": "exercise",
+            "slug": "relationship-journal"
+          }
+        ]
+      }
+    ],
+    "slug": "navigating-and-resolving-relationship-problems"
+  },
+  {
+    "job": [
+      "preparing_for_cohabitation"
+    ],
+    "title": "Προετοιμασία για Συγκατοίκηση",
+    "description": "Αυτή η πορεία έχει σχεδιαστεί για να προετοιμάσει εσάς και τον σύντροφό σας για τη συγκατοίκηση, καλύπτοντας διάφορες πτυχές της κοινής ζωής. Θα μάθετε πώς να επικοινωνείτε αποτελεσματικά, να διαχειρίζεστε τις ευθύνες και να δημιουργείτε ένα αρμονικό οικιακό περιβάλλον. Κάθε μέρα, θα εξερευνάτε ζωτικής σημασίας θέματα που θα βοηθήσουν να ενισχύσετε τη σχέση σας και να διευκολύνετε τη μετάβαση στη κοινή ζωή.",
+    "subtopics": [
+      {
+        "title": "Ονειρεύοντας τον Κοινό μας Χώρο",
+        "description": "Ξεκινήστε μοιράζοντας τις οράσεις σας για το πώς θα μοιάζει το σπίτι σας. Συζητήστε ιδέες σχετικά με το χώρο, τη διακόσμηση και την ατμόσφαιρα. Αυτό θέτει τα θεμέλια για αμοιβαία κατανόηση και κοινά όνειρα.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "lifestyle-harmony-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-can-we-create-a-home-environment-that-respects-both-of-our-preferences"
+          },
+          {
+            "type": "article",
+            "slug": "sharing-spaces-harmoniously"
+          },
+          {
+            "type": "exercise",
+            "slug": "living-space-design"
+          },
+          {
+            "type": "game",
+            "slug": "decor-dilemma"
+          },
+          {
+            "type": "question",
+            "slug": "whats-one-piece-of-furniture-you-absolutely-need-in-our-new-home"
+          }
+        ]
+      },
+      {
+        "title": "Βασικές Αρχές Επικοινωνίας",
+        "description": "Μάθετε αποτελεσματικές στρατηγικές επικοινωνίας που θα σας βοηθήσουν να διαχειριστείτε τις καθημερινές προκλήσεις. Εξερευνήστε τρόπους να εκφράσετε τις ανάγκες σας, να θέσετε προσδοκίες και να ακούτε ενεργά ο ένας τον άλλον.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "discover-your-communication-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-prefer-to-communicate-your-needs-and-desires"
+          },
+          {
+            "type": "article",
+            "slug": "mastering-communication-techniques"
+          },
+          {
+            "type": "game",
+            "slug": "communication-clues"
+          },
+          {
+            "type": "checkup",
+            "slug": "mastering-our-communication-styles"
+          },
+          {
+            "type": "exercise",
+            "slug": "active-listening-practice"
+          }
+        ]
+      },
+      {
+        "title": "Οικιακές Ευθύνες",
+        "description": "Συζητήστε και καθορίστε πώς θα μοιραστείτε τις οικιακές δουλειές και τις ευθύνες. Δημιουργήστε ένα σύστημα που να λειτουργεί και για τους δύο σας, ώστε να διατηρείτε ένα καθαρό και οργανωμένο οικιακό περιβάλλον.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "domestic-labor-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-feel-about-handling-household-responsibilities-and-chores"
+          },
+          {
+            "type": "article",
+            "slug": "establishing-household-routines"
+          },
+          {
+            "type": "exercise",
+            "slug": "shared-responsibilities-mapping"
+          },
+          {
+            "type": "game",
+            "slug": "chore-chart-challenge"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-feel-about-having-a-cleaning-schedule-versus-cleaning-as-we-go"
+          }
+        ]
+      },
+      {
+        "title": "Οικονομικές Βάσεις",
+        "description": "Συμφωνήστε για τη διαχείριση των οικονομικών και τον προϋπολογισμό ως ζευγάρι. Συζητήστε στρατηγικές για την κοινή κάλυψη εξόδων, τη λήψη κοινών οικονομικών αποφάσεων και τη διατήρηση διαφάνειας σχετικά με τα οικονομικά.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "budgeting-style-for-couples"
+          },
+          {
+            "type": "game",
+            "slug": "dream-budget-builders"
+          },
+          {
+            "type": "article",
+            "slug": "mastering-money-talks-together"
+          },
+          {
+            "type": "exercise",
+            "slug": "budget-planning-session"
+          },
+          {
+            "type": "checkup",
+            "slug": "aligning-financial-values-and-goals"
+          },
+          {
+            "type": "question",
+            "slug": "whats-one-thing-you-want-to-achieve-together-in-our-new-home"
+          }
+        ]
+      },
+      {
+        "title": "Διαχείριση Συγκρούσεων με Χάρη",
+        "description": "Προετοιμαστείτε για αναπόφευκτες διαφωνίες μαθαίνοντας στρατηγικές επίλυσης συγκρούσεων. Εξερευνήστε πώς να διαχειριστείτε διαφορετικές απόψεις και να βρείτε κοινό έδαφος με υγιή τρόπο.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "your-conflict-style"
+          },
+          {
+            "type": "game",
+            "slug": "conflict-resolution-quest"
+          },
+          {
+            "type": "article",
+            "slug": "mastering-conflict-resolution-together"
+          },
+          {
+            "type": "exercise",
+            "slug": "conflict-resolution-strategies-practice"
+          },
+          {
+            "type": "checkup",
+            "slug": "tackling-tough-talks"
+          },
+          {
+            "type": "question",
+            "slug": "how-should-we-handle-maintenance-and-repairs-around-the-house"
+          }
+        ]
+      },
+      {
+        "title": "Δημιουργία ενός Ασφαλούς Χώρου",
+        "description": "Ολοκληρώστε τις προετοιμασίες σας εστιάζοντας στην συναισθηματική και φυσική ασφάλεια στον κοινό σας χώρο. Συζητήστε τα όρια, την ιδιωτικότητα και πώς να καλλιεργήσετε ένα περιβάλλον όπου και οι δύο θα νιώθουν ασφαλείς και σεβαστοί.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "emotional-safety-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-should-we-handle-setting-up-our-home-office-or-study-space"
+          },
+          {
+            "type": "article",
+            "slug": "navigating-boundaries-for-intimacy"
+          },
+          {
+            "type": "exercise",
+            "slug": "personal-space-respect-practices"
+          },
+          {
+            "type": "game",
+            "slug": "space-personalities"
+          },
+          {
+            "type": "question",
+            "slug": "how-should-we-handle-guests-and-visitors-in-our-home"
+          }
+        ]
+      }
+    ],
+    "slug": "preparing-for-cohabitation"
+  },
+  {
+    "job": [
+      "improving_communication"
+    ],
+    "title": "Βελτίωση της Επικοινωνίας: Δημιουργώντας Γέφυρες στη Σχέση μας",
+    "description": "Αυτή η πορεία επικεντρώνεται στη βελτίωση των επικοινωνιακών δεξιοτήτων μεταξύ των συντρόφων. Μέσω διαφόρων δραστηριοτήτων, συζητήσεων και αναστοχαστικών πρακτικών, θα μάθετε να εκφράζεστε πιο ανοιχτά και να κατανοείτε ο ένας τον άλλον καλύτερα, ενισχύοντας τη σύνδεση και τη σχέση σας.",
+    "subtopics": [
+      {
+        "title": "Κατανόηση των Στυλ Επικοινωνίας του Άλλου",
+        "description": "Εξερευνήστε διαφορετικά στυλ επικοινωνίας και ανακαλύψτε πώς επηρεάζουν τις αλληλεπιδράσεις σας. Αυτό περιλαμβάνει την αναγνώριση του δικού σας στυλ και την εκμάθηση των προτιμήσεων του συντρόφου σας για να δημιουργήσετε έναν ανοιχτό διάλογο.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "discover-your-communication-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-prefer-to-communicate-your-needs-and-desires"
+          },
+          {
+            "type": "article",
+            "slug": "enhancing-communication-for-stronger-bonds"
+          },
+          {
+            "type": "game",
+            "slug": "communication-clues"
+          },
+          {
+            "type": "exercise",
+            "slug": "active-listening-practice"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-feel-about-writing-down-our-issues-before-discussing-them"
+          },
+          {
+            "type": "checkup",
+            "slug": "mastering-our-communication-styles"
+          }
+        ]
+      },
+      {
+        "title": "Πλοήγηση σε Δύσκολες Συζητήσεις",
+        "description": "Μάθετε τεχνικές για να προσεγγίσετε δύσκολες συζητήσεις με ενσυναίσθηση και σεβασμό. Θα αποκτήσετε δεξιότητες για να εκφράσετε τις σκέψεις και τα συναισθήματά σας, ενώ θα είστε προσεκτικοί στην προοπτική του συντρόφου σας.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "problem-solving-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-can-we-make-our-disagreements-more-constructive"
+          },
+          {
+            "type": "article",
+            "slug": "navigating-sensitive-conversations"
+          },
+          {
+            "type": "game",
+            "slug": "problem-solving-pals"
+          },
+          {
+            "type": "exercise",
+            "slug": "conflict-resolution-strategies-practice"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-prefer-discussing-issues-immediately-or-taking-some-time-to-cool-off"
+          },
+          {
+            "type": "checkup",
+            "slug": "navigating-tough-conversations"
+          }
+        ]
+      },
+      {
+        "title": "Εκφράζοντας Ανάγκες και Όρια",
+        "description": "Αυτό το θέμα εμβαθύνει στο πώς να επικοινωνείτε τις ανάγκες σας και να θέτετε υγιή όρια. Θα εξασκηθείτε στο να εκφράζετε τι χρειάζεστε ο ένας από τον άλλον με τρόπο που ενισχύει τη σχέση σας.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "boundary-setting-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-comfortable-are-you-discussing-your-boundaries-and-desires"
+          },
+          {
+            "type": "article",
+            "slug": "navigating-boundaries-for-intimacy"
+          },
+          {
+            "type": "exercise",
+            "slug": "boundaries-practice"
+          },
+          {
+            "type": "question",
+            "slug": "whats-one-boundary-youd-like-to-set-to-keep-our-relationship-healthy"
+          }
+        ]
+      },
+      {
+        "title": "Ενεργητική Ακρόαση και Συναισθηματική Επικύρωση",
+        "description": "Κατα mastering την τέχνη της ενεργητικής ακρόασης και μάθετε πώς να επικυρώνετε τα συναισθήματα του συντρόφου σας. Θα ανακαλύψετε εργαλεία για να βελτιώσετε τις δεξιότητες ακρόασης και να διασφαλίσετε ότι και οι δύο σύντροφοι νιώθουν ότι ακούγονται και κατανοούνται.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "listening-style-quiz"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-like-to-receive-feedback-in-our-relationship"
+          },
+          {
+            "type": "article",
+            "slug": "mastering-active-listening"
+          },
+          {
+            "type": "checkup",
+            "slug": "emotional-explorers"
+          },
+          {
+            "type": "exercise",
+            "slug": "active-listening-practice"
+          },
+          {
+            "type": "question",
+            "slug": "whats-your-favorite-non-verbal-way-i-show-you-im-listening"
+          }
+        ]
+      },
+      {
+        "title": "Κατασκευαστική Επίλυση Συγκρούσεων",
+        "description": "Μάθετε αποτελεσματικές στρατηγικές για την επίλυση συγκρούσεων με κατασκευαστικό τρόπο. Αυτό περιλαμβάνει τεχνικές για να διαχειρίζεστε τις διαφωνίες χωρίς να βλάπτετε τη σχέση, ενισχύοντας το πνεύμα της συνεργασίας.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "your-conflict-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-handle-disagreements-or-conflicts"
+          },
+          {
+            "type": "article",
+            "slug": "effective-conflict-resolution-strategies"
+          },
+          {
+            "type": "game",
+            "slug": "conflict-resolution-quest"
+          },
+          {
+            "type": "exercise",
+            "slug": "conflict-resolution-strategies-practice"
+          },
+          {
+            "type": "question",
+            "slug": "whats-one-thing-youd-like-to-change-about-how-we-handle-our-differences"
+          },
+          {
+            "type": "checkup",
+            "slug": "conflict-resolution-styles"
+          }
+        ]
+      },
+      {
+        "title": "Καλλιεργώντας Ειλικρινείς και Ανοιχτές Συζητήσεις",
+        "description": "Καλλιεργήστε μια συνήθεια ανοιχτής και ειλικρινούς επικοινωνίας στη σχέση σας. Αυτό το υποθέμα θα σας καθοδηγήσει μέσα από πρακτικές που ενθαρρύνουν τη διαφάνεια και την εμπιστοσύνη, ανοίγοντας το δρόμο για βαθύτερη σύνδεση και οικειότητα.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "honesty-and-openness-style"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-feel-comfortable-expressing-your-true-feelings-with-me-why-or-why-not"
+          },
+          {
+            "type": "article",
+            "slug": "building-trust-through-transparency"
+          },
+          {
+            "type": "game",
+            "slug": "honesty-huddle"
+          },
+          {
+            "type": "checkup",
+            "slug": "the-honesty-hangout"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-think-honesty-is-always-the-best-policy-why-or-why-not"
+          },
+          {
+            "type": "exercise",
+            "slug": "complete-honesty-sessions"
+          }
+        ]
+      }
+    ],
+    "slug": "improving-communication-building-bridges-in-our-relationship"
+  },
+  {
+    "job": [
+      "preparing_for_marriage"
+    ],
+    "title": "Προετοιμασία για Γάμο: Δημιουργώντας μια Ισχυρή Βάση",
+    "description": "Αυτή η πορεία έχει σχεδιαστεί για να εξοπλίσει εσάς και τον σύντροφό σας με τα εργαλεία και τις γνώσεις που είναι απαραίτητες για έναν επιτυχημένο γάμο. Κάθε μέρα, θα εξερευνήσετε βασικές έννοιες, από την επικοινωνία μέχρι την οικονομική αρμονία, ανοίγοντας το δρόμο για μια βαθύτερη κατανόηση ο ένας του άλλου και μια ανθεκτική σχέση.",
+    "subtopics": [
+      {
+        "title": "Κατανόηση των Γλωσσών της Αγάπης",
+        "description": "Αναγνωρίστε και εξερευνήστε τις γλώσσες της αγάπης του άλλου για να ενισχύσετε τη συναισθηματική σύνδεση. Η κατανόηση του πώς δίνετε και λαμβάνετε αγάπη μπορεί να βελτιώσει σημαντικά τη δυναμική της σχέσης σας.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "love-language-type"
+          },
+          {
+            "type": "article",
+            "slug": "decoding-love-languages"
+          },
+          {
+            "type": "game",
+            "slug": "love-languages-exploration"
+          },
+          {
+            "type": "exercise",
+            "slug": "find-out-your-love-language"
+          }
+        ]
+      },
+      {
+        "title": "Κα mastering των Οικονομικών Συζητήσεων",
+        "description": "Μάθετε τη σημασία των ανοιχτών συζητήσεων σχετικά με τα οικονομικά. Εξερευνήστε στυλ προϋπολογισμού, συνήθειες δαπανών και οικονομικούς στόχους για να χτίσετε εμπιστοσύνη και διαφάνεια στη χρηματοοικονομική σας συνεργασία.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "financial-communication-style"
+          },
+          {
+            "type": "article",
+            "slug": "mastering-money-talks-together"
+          },
+          {
+            "type": "game",
+            "slug": "dream-budget-builders"
+          },
+          {
+            "type": "checkup",
+            "slug": "aligning-financial-values-and-goals"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-prefer-to-communicate-your-needs-and-desires"
+          },
+          {
+            "type": "exercise",
+            "slug": "financial-planning-for-marriage"
+          }
+        ]
+      },
+      {
+        "title": "Πλοήγηση στη Συναισθηματική Εγγύτητα",
+        "description": "Αναπτύξτε δεξιότητες για να ενισχύσετε τη συναισθηματική εγγύτητα μέσω της ευαλωτότητας, της ενεργητικής ακρόασης και της ειλικρινούς επικοινωνίας. Κατανοήστε πώς να εκφράζετε ελεύθερα τα συναισθήματα και να υποστηρίζετε τις συναισθηματικές ανάγκες του άλλου.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "emotional-intimacy-style"
+          },
+          {
+            "type": "article",
+            "slug": "building-emotional-intimacy-together"
+          },
+          {
+            "type": "game",
+            "slug": "feelings-explorer"
+          },
+          {
+            "type": "checkup",
+            "slug": "emotional-intimacy-check-in"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-feel-about-writing-love-notes-to-each-other-want-to-give-it-a-try"
+          },
+          {
+            "type": "exercise",
+            "slug": "vulnerability-exploration-session"
+          }
+        ]
+      },
+      {
+        "title": "Ευθυγράμμιση Μελλοντικών Στόχων",
+        "description": "Εξερευνήστε πώς να συζητήσετε και να ευθυγραμμίσετε τα όνειρα και τις φιλοδοξίες σας. Θέστε κοινούς στόχους για το μέλλον σας μαζί, διασφαλίζοντας ότι και οι δύο σύντροφοι νιώθουν πολύτιμοι και κατανοητοί στη διαδικασία σχεδιασμού.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "goal-alignment-style"
+          },
+          {
+            "type": "article",
+            "slug": "setting-shared-future-goals"
+          },
+          {
+            "type": "game",
+            "slug": "future-visionaries"
+          },
+          {
+            "type": "checkup",
+            "slug": "charting-our-shared-future"
+          },
+          {
+            "type": "exercise",
+            "slug": "long-term-goal-planning"
+          }
+        ]
+      },
+      {
+        "title": "Αντιμετώπιση Προκλήσεων Μαζί",
+        "description": "Προετοιμαστείτε για τις προκλήσεις της έγγαμης ζωής αναπτύσσοντας δεξιότητες επίλυσης συγκρούσεων και στρατηγικές για να υποστηρίζετε ο ένας τον άλλον σε δύσκολες στιγμές. Μάθετε να πλοηγείστε σε διαφωνίες με ενσυναίσθηση και σεβασμό.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "your-conflict-style"
+          },
+          {
+            "type": "article",
+            "slug": "mastering-conflict-resolution-together"
+          },
+          {
+            "type": "game",
+            "slug": "conflict-resolution-quest"
+          },
+          {
+            "type": "checkup",
+            "slug": "conflict-resolution-style-match"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-game-we-could-play-to-improve-our-conflict-resolution-skills"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-feel-about-using-humor-to-ease-tense-conversations"
+          },
+          {
+            "type": "exercise",
+            "slug": "conflict-resolution-strategies-practice"
+          }
+        ]
+      },
+      {
+        "title": "Δημιουργία Κοινών Ριτούαλ και Παραδόσεων",
+        "description": "Καθιερώστε σημαντικά ριτούαλ και παραδόσεις που ενισχύουν τον δεσμό σας. Ανακαλύψτε τρόπους να γιορτάσετε τη σχέση σας και να δημιουργήσετε διαρκείς αναμνήσεις ως ζευγάρι, ενισχύοντας την αίσθηση της ενότητας και του ανήκειν.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "ritual-building-style"
+          },
+          {
+            "type": "article",
+            "slug": "fun-rituals-to-strengthen-bonds"
+          },
+          {
+            "type": "game",
+            "slug": "date-night-planner"
+          },
+          {
+            "type": "checkup",
+            "slug": "creative-date-designers"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-new-hobby-we-can-start-together-to-strengthen-our-bond"
+          },
+          {
+            "type": "exercise",
+            "slug": "creating-passion-renewal-date"
+          }
+        ]
+      }
+    ],
+    "slug": "preparing-for-marriage-building-a-strong-foundation"
+  },
+  {
+    "job": [
+      "rekindling_passion"
+    ],
+    "title": "Αναζωπύρωση του Πάθους",
+    "description": "Αυτή η πορεία έχει σχεδιαστεί για να σας βοηθήσει να αναζωπυρώσετε το πάθος στη σχέση σας μέσω μιας σειράς διεισδυτικών δραστηριοτήτων, συζητήσεων και διασκεδαστικών ασκήσεων. Κάθε μέρα, θα εξερευνήσετε διαφορετικές πτυχές της οικειότητας, της επικοινωνίας και των κοινών εμπειριών για να ενισχύσετε τον δεσμό σας και να βελτιώσετε τη ρομαντική σας σύνδεση.",
+    "subtopics": [
+      {
+        "title": "Εξερευνώντας τις Επιθυμίες μας",
+        "description": "Ξεκινήστε συζητώντας τι βρίσκετε και οι δύο σέξι και ελκυστικό ο ένας στον άλλο, συμπεριλαμβανομένων φαντασιώσεων και νέων ιδεών. Χρησιμοποιήστε ενδιαφέροντα ερωτήματα και τεστ για να αποκαλύψετε βαθύτερες επιθυμίες.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "desire-reignition-style"
+          },
+          {
+            "type": "question",
+            "slug": "what-do-you-find-especially-sexy-about-me"
+          },
+          {
+            "type": "article",
+            "slug": "enhancing-sexual-communication"
+          },
+          {
+            "type": "game",
+            "slug": "fantasy-feelings"
+          },
+          {
+            "type": "checkup",
+            "slug": "emotional-intimacy-check-in"
+          },
+          {
+            "type": "question",
+            "slug": "whats-something-we-could-do-to-spice-things-up"
+          },
+          {
+            "type": "exercise",
+            "slug": "sexual-bucket-list-creation"
+          }
+        ]
+      },
+      {
+        "title": "Δημιουργώντας Ρομαντικές Στιγμές",
+        "description": "Μάθετε πώς να κάνετε τις καθημερινές στιγμές να φαίνονται ιδιαίτερες. Αυτό το υποθέμα σας ενθαρρύνει να αναπτύξετε ρομαντικές χειρονομίες και να εκπλήσσετε ο ένας τον άλλο, φέρνοντας ενθουσιασμό στην καθημερινότητά σας.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "romantic-gesture-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-can-we-make-everyday-moments-feel-more-special-and-romantic"
+          },
+          {
+            "type": "article",
+            "slug": "crafting-memorable-date-nights"
+          },
+          {
+            "type": "game",
+            "slug": "date-night-planner"
+          },
+          {
+            "type": "checkup",
+            "slug": "quality-time-quality-love"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-new-hobby-we-could-start-together-to-spice-things-up"
+          },
+          {
+            "type": "exercise",
+            "slug": "creating-passion-renewal-date"
+          }
+        ]
+      },
+      {
+        "title": "Προσθέτοντας Πικάντικες Στιγμές Μαζί",
+        "description": "Εξερευνήστε νέα χόμπι ή εμπειρίες που μπορείτε να μοιραστείτε ως ζευγάρι. Ανακαλύψτε δραστηριότητες που μπορούν να αναζωπυρώσουν τη διασκέδαση και το πάθος στη σχέση σας, επιτρέποντας ταυτόχρονα την προσωπική ανάπτυξη.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "hobby-harmony-style"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-new-hobby-we-can-start-together-to-strengthen-our-bond"
+          },
+          {
+            "type": "article",
+            "slug": "exploring-shared-hobbies-together"
+          },
+          {
+            "type": "game",
+            "slug": "hobby-harmony"
+          },
+          {
+            "type": "checkup",
+            "slug": "growth-through-novelty"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-way-we-can-challenge-each-other-to-grow-while-keeping-the-romance-alive"
+          },
+          {
+            "type": "exercise",
+            "slug": "hobbies-and-interests-exercise"
+          }
+        ]
+      },
+      {
+        "title": "Οικειότητα και Ευαλωτότητα",
+        "description": "Εμβαθύνετε στην συναισθηματική οικειότητα και την ευαλωτότητα. Θα εξασκηθείτε σε ανοιχτή επικοινωνία σχετικά με τις συναισθηματικές σας ανάγκες, ενισχύοντας τη σύνδεση που οδηγεί στο πάθος.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "emotional-intimacy-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-prefer-to-communicate-your-needs-and-desires"
+          },
+          {
+            "type": "article",
+            "slug": "building-emotional-intimacy-together"
+          },
+          {
+            "type": "game",
+            "slug": "trust-builders"
+          },
+          {
+            "type": "checkup",
+            "slug": "emotional-needs-compatibility"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-fun-way-we-can-explore-each-others-fantasies-together"
+          },
+          {
+            "type": "exercise",
+            "slug": "active-listening-practice"
+          }
+        ]
+      },
+      {
+        "title": "Διατηρώντας τη Σπίθα",
+        "description": "Συζητήστε στρατηγικές για να κρατήσετε τη σπίθα ζωντανή, ακόμη και στις καθημερινές στιγμές. Εξερευνήστε τρόπους για να προChallenge και να αναπτυχθείτε μαζί, διατηρώντας τη ρομαντική διάθεση στο προσκήνιο.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "growth-balance-style"
+          },
+          {
+            "type": "question",
+            "slug": "what-do-you-think-we-can-do-to-keep-the-spark-alive-in-our-relationship"
+          },
+          {
+            "type": "article",
+            "slug": "boosting-relationship-happiness"
+          },
+          {
+            "type": "game",
+            "slug": "passion-rekindle-quest"
+          },
+          {
+            "type": "checkup",
+            "slug": "fun-and-affection"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-new-hobby-we-can-try-together-that-honors-both-our-interests"
+          },
+          {
+            "type": "exercise",
+            "slug": "flexible-role-playing"
+          }
+        ]
+      },
+      {
+        "title": "Μακροχρόνια Σχέδια Πάθους",
+        "description": "Δημιουργήστε ένα χάρτη πορείας για τη διατήρηση του πάθους στη σχέση σας με την πάροδο του χρόνου. Αναπτύξτε κοινούς στόχους και μια όραση για το μέλλον σας που διατηρεί ζωντανή την οικειότητα και τον ενθουσιασμό.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "future-planning-style"
+          },
+          {
+            "type": "question",
+            "slug": "if-you-won-the-lottery-tomorrow-whats-the-first-thing-youd-do"
+          },
+          {
+            "type": "article",
+            "slug": "creating-a-vision-for-us"
+          },
+          {
+            "type": "game",
+            "slug": "future-visionaries"
+          },
+          {
+            "type": "checkup",
+            "slug": "future-talk-together"
+          },
+          {
+            "type": "question",
+            "slug": "whats-your-favorite-memory-of-us-having-a-great-conversation"
+          },
+          {
+            "type": "exercise",
+            "slug": "long-term-goal-planning"
+          }
+        ]
+      }
+    ],
+    "slug": "rekindling-the-passion"
+  },
+  {
+    "job": [
+      "getting_to_know_partner"
+    ],
+    "title": "Γνωριμία: Ένα Ταξίδι Ανακάλυψης",
+    "description": "Ξεκινήστε ένα μεταμορφωτικό ταξίδι για να κατανοήσετε βαθιά και να συνδεθείτε με τον σύντροφό σας. Αυτό το ταξίδι περιλαμβάνει προσεκτικά σχεδιασμένες καθημερινές δραστηριότητες, όπως ερωτήσεις, ασκήσεις, άρθρα και παιχνίδια που θα ενισχύσουν την οικειότητα, θα βελτιώσουν την επικοινωνία και θα αποκαλύψουν προσωπικές γνώσεις. Σε διάστημα αρκετών ημερών, θα εξερευνήσετε τις ομοιότητες, τις διαφορές και τις μοναδικές ποιότητες που κάνουν τον καθένα σας αυτό που είστε.",
+    "subtopics": [
+      {
+        "title": "Ανακαλύπτοντας Ιστορίες και Χαρακτηριστικά",
+        "description": "Ξεκινήστε κατανοώντας τις ιστορίες, τις προσωπικότητες και τις αξίες του άλλου. Συμμετάσχετε σε ερωτήσεις σχετικά με αναμνήσεις από την παιδική ηλικία, κρυφά ταλέντα και προσωπικές προτιμήσεις για να χτίσετε μια βάση εμπιστοσύνης και ανοιχτότητας.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "life-story-style"
+          },
+          {
+            "type": "question",
+            "slug": "can-you-share-a-memory-from-your-childhood-that-you-think-has-shaped-who-you-are-today"
+          },
+          {
+            "type": "article",
+            "slug": "love-maps-knowing-each-other-deeply"
+          },
+          {
+            "type": "game",
+            "slug": "memory-lane"
+          },
+          {
+            "type": "checkup",
+            "slug": "exploring-childhood-memories"
+          },
+          {
+            "type": "exercise",
+            "slug": "difference-identification-and-acceptance"
+          },
+          {
+            "type": "question",
+            "slug": "whats-your-favorite-childhood-memory"
+          }
+        ]
+      },
+      {
+        "title": "Εξερευνώντας Ενδιαφέροντα και Χόμπι",
+        "description": "Ανακαλύψτε κοινές πάθη και ατομικά χόμπι. Συμμετάσχετε σε συζητήσεις και δραστηριότητες που σας βοηθούν να μάθετε για τα ενδιαφέροντα του άλλου, τα αγαπημένα του χόμπι και τις μοναδικές ποιότητες που φέρνει ο καθένας στη σχέση.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "hobby-harmony-style"
+          },
+          {
+            "type": "game",
+            "slug": "hobby-harmony"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-hobby-that-makes-you-feel-alive"
+          },
+          {
+            "type": "article",
+            "slug": "exploring-shared-hobbies-together"
+          },
+          {
+            "type": "exercise",
+            "slug": "hobbies-and-interests-exercise"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-new-hobby-we-could-start-together-to-spice-things-up"
+          }
+        ]
+      },
+      {
+        "title": "Κατανόηση Στυλ Επικοινωνίας",
+        "description": "Μάθετε πώς να επικοινωνείτε τις ανάγκες και τις επιθυμίες σας αποτελεσματικά. Συμμετάσχετε σε ασκήσεις και παιχνίδια που προάγουν την ενεργητική ακρόαση και ενισχύουν την ικανότητά σας να εκφράζετε συναισθήματα και προσδοκίες.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "discover-your-communication-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-prefer-to-communicate-your-needs-and-desires"
+          },
+          {
+            "type": "article",
+            "slug": "mastering-communication-techniques"
+          },
+          {
+            "type": "game",
+            "slug": "communication-clues"
+          },
+          {
+            "type": "checkup",
+            "slug": "mastering-our-communication-styles"
+          },
+          {
+            "type": "exercise",
+            "slug": "active-listening-practice"
+          },
+          {
+            "type": "question",
+            "slug": "whats-your-favorite-memory-of-us-having-a-great-conversation"
+          }
+        ]
+      },
+      {
+        "title": "Αναγνωρίζοντας Γλώσσες Αγάπης",
+        "description": "Βυθιστείτε στους μοναδικούς τρόπους που ο καθένας σας δίνει και λαμβάνει αγάπη. Εξερευνήστε τις γλώσσες αγάπης σας μέσω ερωτήσεων και αναστοχαστικών ασκήσεων, αποκτώντας γνώσεις για το πώς να εκφράσετε καλύτερα την τρυφερότητα με έναν τρόπο που αντηχεί στον σύντροφό σας.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "love-language-type"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-believe-in-love-languages-if-so-which-one-are-you"
+          },
+          {
+            "type": "article",
+            "slug": "decoding-love-languages"
+          },
+          {
+            "type": "game",
+            "slug": "love-languages-exploration"
+          },
+          {
+            "type": "checkup",
+            "slug": "emotional-needs-compatibility"
+          },
+          {
+            "type": "exercise",
+            "slug": "find-out-your-love-language"
+          },
+          {
+            "type": "question",
+            "slug": "what-is-your-love-language"
+          }
+        ]
+      },
+      {
+        "title": "Αυτοανάλυση και Θέσπιση Στόχων",
+        "description": "Ενθαρρύνετε την προσωπική κοινοποίηση προσδοκιών και ονείρων. Χρησιμοποιήστε καθοδηγούμενες δραστηριότητες για να αναλογιστείτε τους προσωπικούς στόχους και πώς αυτοί ευθυγραμμίζονται με τη σχέση σας, προάγοντας μια αίσθηση αμοιβαίας υποστήριξης στις πορείες του καθενός.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "goal-alignment-style"
+          },
+          {
+            "type": "question",
+            "slug": "what-are-your-dreams-and-aspirations-outside-of-work"
+          },
+          {
+            "type": "article",
+            "slug": "setting-shared-future-goals"
+          },
+          {
+            "type": "game",
+            "slug": "future-visionaries"
+          },
+          {
+            "type": "checkup",
+            "slug": "future-plans-alignment"
+          },
+          {
+            "type": "exercise",
+            "slug": "long-term-goal-planning"
+          },
+          {
+            "type": "question",
+            "slug": "what-personal-goals-do-you-have-that-i-might-not-be-aware-of"
+          }
+        ]
+      },
+      {
+        "title": "Καλλιεργώντας Συναισθηματική Οικειότητα",
+        "description": "Βαθύντε τη συναισθηματική σας σύνδεση μέσω ασκήσεων ευαλωτότητας και ειλικρινών συνομιλιών. Συμμετάσχετε σε δραστηριότητες και συζητήσεις που προάγουν την κοινοποίηση συναισθημάτων, επιθυμιών και φόβων σε ένα ασφαλές περιβάλλον, ενισχύοντας την οικειότητα και την εμπιστοσύνη σας.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "emotional-intimacy-style"
+          },
+          {
+            "type": "question",
+            "slug": "whats-something-that-always-makes-you-feel-loved"
+          },
+          {
+            "type": "article",
+            "slug": "building-emotional-intimacy-together"
+          },
+          {
+            "type": "game",
+            "slug": "intimacy-insights"
+          },
+          {
+            "type": "checkup",
+            "slug": "emotional-intimacy-check-in"
+          },
+          {
+            "type": "exercise",
+            "slug": "emotional-closeness-exercises"
+          },
+          {
+            "type": "question",
+            "slug": "what-little-gestures-make-you-feel-most-loved-and-appreciated"
+          }
+        ]
+      }
+    ],
+    "slug": "getting-to-know-each-other-a-journey-of-discovery"
+  },
+  {
+    "job": [
+      "having_and_discussing_sex"
+    ],
+    "title": "Πλοήγηση στον Ιδιωτικό μας Κόσμο",
+    "description": "Αυτή η πορεία επικεντρώνεται στην ενίσχυση της κατανόησής σας και των συζητήσεων σχετικά με το σεξ στη σχέση σας. Θα εξερευνήσετε τα όρια, τις επιθυμίες και τα στυλ επικοινωνίας για να καλλιεργήσετε μια ικανοποιητική και ανοιχτή σεξουαλική σύνδεση με τον/την σύντροφό σας. Κάθε μέρα, θα συμμετέχετε σε διάφορες δραστηριότητες που έχουν σχεδιαστεί για να προάγουν την οικειότητα και την κατανόηση.",
+    "subtopics": [
+      {
+        "title": "Κατανόηση Επιθυμιών και Ορίων",
+        "description": "Ξεκινήστε συζητώντας τις προσωπικές σας επιθυμίες και τα όρια. Αυτό το θεμελιώδες βήμα χτίζει εμπιστοσύνη και θέτει τη βάση για ανοιχτές συζητήσεις σχετικά με την οικειότητα. Ανακαλύψτε εργαλεία για να εκφράσετε τι χρειάζεστε και με τι είστε άνετοι.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "discover-your-communication-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-comfortable-are-you-discussing-your-boundaries-and-desires"
+          },
+          {
+            "type": "article",
+            "slug": "trust-through-open-communication"
+          },
+          {
+            "type": "game",
+            "slug": "communication-clues"
+          },
+          {
+            "type": "checkup",
+            "slug": "mastering-our-communication-styles"
+          },
+          {
+            "type": "question",
+            "slug": "are-there-any-boundaries-youd-like-to-discuss-regarding-our-physical-relationship"
+          },
+          {
+            "type": "exercise",
+            "slug": "boundaries-practice"
+          }
+        ]
+      },
+      {
+        "title": "Εξερεύνηση Σεξουαλικών Φαντασιώσεων και Πειραμάτων",
+        "description": "Τώρα που έχετε δημιουργήσει έναν ασφαλή χώρο, βυθιστείτε στην ανταλλαγή φαντασιώσεων και στη συζήτηση για τις νέες εμπειρίες που θα θέλατε να δοκιμάσετε μαζί. Εξερευνήστε τρόπους για να εισάγετε αυτά τα στοιχεία στη σεξουαλική σας ζωή.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "fantasy-sharing-style"
+          },
+          {
+            "type": "question",
+            "slug": "are-there-any-fantasies-or-desires-youd-like-to-share"
+          },
+          {
+            "type": "article",
+            "slug": "building-emotional-intimacy-together"
+          },
+          {
+            "type": "game",
+            "slug": "intimacy-insights"
+          },
+          {
+            "type": "checkup",
+            "slug": "maintaining-sexual-satisfaction-over-time"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-fun-way-we-can-explore-each-others-fantasies-together"
+          },
+          {
+            "type": "exercise",
+            "slug": "fantasy-sharing-session"
+          }
+        ]
+      },
+      {
+        "title": "Ανοιχτή Επικοινωνία για την Οικειότητα",
+        "description": "Αναπτύξτε τις επικοινωνιακές σας ικανότητες γύρω από το σεξ, διασφαλίζοντας ότι και οι δύο εκφράζετε ανάγκες, προτιμήσεις και οποιαδήποτε ανησυχία. Αυτό το υποθέμα περιλαμβάνει ασκήσεις που βοηθούν στη βελτίωση της διαφάνειας και της σύνδεσης.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "sexual-communication-style"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-find-it-easy-to-say-everything-you-want-during-sex"
+          },
+          {
+            "type": "article",
+            "slug": "enhancing-sexual-communication"
+          },
+          {
+            "type": "game",
+            "slug": "communication-carousel"
+          },
+          {
+            "type": "checkup",
+            "slug": "mastering-communication"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-feel-about-discussing-intimacy-outside-of-the-bedroom"
+          },
+          {
+            "type": "exercise",
+            "slug": "talking-about-sex-practice"
+          }
+        ]
+      },
+      {
+        "title": "Ενίσχυση της Φυσικής Οικειότητας",
+        "description": "Εξερευνήστε διάφορες μορφές φυσικής τρυφερότητας και οικειότητας. Συζητήστε τι σας κάνει να νιώθετε συνδεδεμένοι και ικανοποιημένοι, και δοκιμάστε νέες δραστηριότητες που μπορούν να ενισχύσουν τον δεσμό σας και να αυξήσουν την οικειότητα.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "sensory-intimacy-style"
+          },
+          {
+            "type": "question",
+            "slug": "whats-your-favorite-way-to-be-touched"
+          },
+          {
+            "type": "article",
+            "slug": "building-emotional-intimacy-together"
+          },
+          {
+            "type": "game",
+            "slug": "satisfaction-safari"
+          },
+          {
+            "type": "checkup",
+            "slug": "maintaining-sexual-satisfaction-over-time"
+          },
+          {
+            "type": "question",
+            "slug": "what-parts-of-your-body-you-want-your-partner-to-focus-more-how-does-it-make-you-feel"
+          },
+          {
+            "type": "exercise",
+            "slug": "sensual-exploration-night"
+          }
+        ]
+      },
+      {
+        "title": "Πλοήγηση σε Προκλήσεις και Αλλαγές στη Σεξουαλική Ζωή",
+        "description": "Ασχοληθείτε με πιθανά εμπόδια στη σεξουαλική σας ζωή, όπως διαφορετικές επιθυμίες ή συναισθηματικά εμπόδια. Μάθετε στρατηγικές για να πλοηγηθείτε σε αυτές τις προκλήσεις διατηρώντας μια υποστηρικτική συζήτηση για να ενισχύσετε τη σχέση σας.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "sexual-harmony-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-high-is-your-sex-drive"
+          },
+          {
+            "type": "article",
+            "slug": "mastering-conflict-resolution-together"
+          },
+          {
+            "type": "game",
+            "slug": "problem-solving-partners"
+          },
+          {
+            "type": "checkup",
+            "slug": "aligning-sexual-values-and-expectations"
+          },
+          {
+            "type": "question",
+            "slug": "how-has-your-sexual-expectations-changed-since-weve-started-dating"
+          },
+          {
+            "type": "exercise",
+            "slug": "conflict-resolution-strategies-practice"
+          }
+        ]
+      },
+      {
+        "title": "Γιορτάζοντας τη Σεξουαλική σας Σύνδεση",
+        "description": "Αναλογιστείτε την πορεία σας μαζί και γιορτάστε τις σημαντικές στιγμές στη σεξουαλική σας σχέση. Συζητήστε τρόπους για να τιμήσετε την οικειότητά σας και να διατηρήσετε τη ζωντάνια, διασφαλίζοντας ότι και οι δύο σύντροφοι νιώθουν πολύτιμοι και εκτιμημένοι.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "love-language-type"
+          },
+          {
+            "type": "question",
+            "slug": "whats-the-best-thing-about-our-sex-life"
+          },
+          {
+            "type": "article",
+            "slug": "fun-rituals-to-strengthen-bonds"
+          },
+          {
+            "type": "game",
+            "slug": "date-night-planner"
+          },
+          {
+            "type": "exercise",
+            "slug": "shared-mood-boards"
+          },
+          {
+            "type": "question",
+            "slug": "whats-one-thing-you-love-about-our-physical-connection"
+          }
+        ]
+      }
+    ],
+    "slug": "navigating-our-intimate-world"
+  },
+  {
+    "job": [
+      "building_trust"
+    ],
+    "title": "Δημιουργώντας Εμπιστοσύνη Μαζί",
+    "description": "Αυτή η πορεία έχει σχεδιαστεί για να βοηθήσει εσάς και τον σύντροφό σας να εξερευνήσετε τα βασικά στοιχεία της εμπιστοσύνης στη σχέση σας. Κατά τη διάρκεια αρκετών ημερών, θα συμμετάσχετε σε ουσιαστικές συζητήσεις, δραστηριότητες και αναστοχασμούς που στοχεύουν στην ενίσχυση της εμπιστοσύνης και της συναισθηματικής οικειότητας.",
+    "subtopics": [
+      {
+        "title": "Ορισμός της Εμπιστοσύνης",
+        "description": "Ξεκινήστε εξερευνώντας τι σημαίνει η εμπιστοσύνη για εσάς και τον σύντροφό σας. Συζητήστε τους ορισμούς σας για την εμπιστοσύνη και πώς διαμορφώνουν τη σχέση σας.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "trust-building-style-quiz"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-define-trust-in-a-relationship"
+          },
+          {
+            "type": "article",
+            "slug": "trust-through-open-communication"
+          },
+          {
+            "type": "game",
+            "slug": "trust-fund-trivia"
+          },
+          {
+            "type": "checkup",
+            "slug": "trust-builders"
+          },
+          {
+            "type": "question",
+            "slug": "can-you-share-a-time-when-honesty-led-to-a-positive-outcome-in-our-relationship"
+          },
+          {
+            "type": "exercise",
+            "slug": "trust-fall"
+          }
+        ]
+      },
+      {
+        "title": "Ανοιχτή Επικοινωνία",
+        "description": "Μάθετε τη σημασία της διαφανούς και ανοιχτής συζήτησης. Συμμετάσχετε σε ασκήσεις και ερωτήσεις που προάγουν την ειλικρινή επικοινωνία.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "discover-your-communication-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-prefer-to-communicate-your-needs-and-desires"
+          },
+          {
+            "type": "article",
+            "slug": "enhancing-communication-for-stronger-bonds"
+          },
+          {
+            "type": "game",
+            "slug": "communication-clues"
+          },
+          {
+            "type": "checkup",
+            "slug": "mastering-our-communication-styles"
+          },
+          {
+            "type": "question",
+            "slug": "how-important-is-it-for-you-to-always-be-transparent-with-me-even-about-small-things"
+          },
+          {
+            "type": "exercise",
+            "slug": "active-listening-practice"
+          }
+        ]
+      },
+      {
+        "title": "Διαχείριση Ζήλιας και Ανασφάλειας",
+        "description": "Αναγνωρίστε και αντιμετωπίστε τα συναισθήματα ζήλιας και ανασφάλειας. Μοιραστείτε προσωπικές εμπειρίες και στρατηγικές αντιμετώπισης σε ένα υποστηρικτικό περιβάλλον.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "emotional-regulation-styles"
+          },
+          {
+            "type": "question",
+            "slug": "have-you-ever-felt-jealous-in-our-relationship-how-did-you-handle-it"
+          },
+          {
+            "type": "article",
+            "slug": "navigating-emotional-waters-together"
+          },
+          {
+            "type": "game",
+            "slug": "emotion-explorer"
+          },
+          {
+            "type": "checkup",
+            "slug": "emotional-needs-compatibility"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-handle-feelings-of-jealousy-or-insecurity"
+          },
+          {
+            "type": "exercise",
+            "slug": "jealously-navigation-technique"
+          }
+        ]
+      },
+      {
+        "title": "Θέτοντας Όρια",
+        "description": "Συζητήστε τα προσωπικά όρια και κατανοήστε τα επίπεδα άνεσης του άλλου. Η οικοδόμηση αμοιβαίου σεβασμού και κατανόησης είναι το κλειδί για την εγκαθίδρυση εμπιστοσύνης.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "boundary-setting-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-comfortable-are-you-discussing-your-boundaries-and-desires"
+          },
+          {
+            "type": "article",
+            "slug": "navigating-boundaries-for-intimacy"
+          },
+          {
+            "type": "checkup",
+            "slug": "personal-space-balancing-togetherness-and-alone-time"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-boundary-you-need-to-feel-more-secure-and-trusting-in-our-relationship"
+          },
+          {
+            "type": "exercise",
+            "slug": "boundaries-practice"
+          }
+        ]
+      },
+      {
+        "title": "Επισκευάζοντας την Εμπιστοσύνη",
+        "description": "Εξερευνήστε πώς να ξαναχτίσετε την εμπιστοσύνη μετά από δοκιμασίες. Συζητήστε τις τεχνικές και τις δεσμεύσεις που απαιτούνται για να αποκαταστήσετε την πίστη ο ένας στον άλλο.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "trust-repair-style-type"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-prefer-to-rebuild-trust-if-its-ever-broken"
+          },
+          {
+            "type": "article",
+            "slug": "rebuilding-trust-after-betrayal"
+          },
+          {
+            "type": "game",
+            "slug": "trust-talk-challenge"
+          },
+          {
+            "type": "checkup",
+            "slug": "trust-in-communication"
+          },
+          {
+            "type": "question",
+            "slug": "have-you-done-something-in-the-past-that-you-think-can-significantly-change-my-image-of-you-and-what-are-the-things-that-can-hypothetically-change-your-image-of-me-maybe-i-did-something-amoral-or-cheated"
+          },
+          {
+            "type": "exercise",
+            "slug": "rebuild-trust-session"
+          }
+        ]
+      },
+      {
+        "title": "Δραστηριότητες Δημιουργίας Εμπιστοσύνης",
+        "description": "Συμμετάσχετε σε διασκεδαστικές και διαδραστικές δραστηριότητες που ενισχύουν την εμπιστοσύνη. Συμμετάσχετε σε ασκήσεις που έχουν σχεδιαστεί για να σας φέρουν πιο κοντά και να ενισχύσουν τον δεσμό σας.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "transparency-style-assessment"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-fun-activity-we-can-do-together-to-strengthen-our-trust"
+          },
+          {
+            "type": "article",
+            "slug": "fun-rituals-to-strengthen-bonds"
+          },
+          {
+            "type": "game",
+            "slug": "trust-trek"
+          },
+          {
+            "type": "checkup",
+            "slug": "trust-in-conflict-resolution"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-trust-building-challenge-youd-like-us-to-try"
+          },
+          {
+            "type": "exercise",
+            "slug": "adventure-challenge"
+          }
+        ]
+      }
+    ],
+    "slug": "building-trust-together"
+  },
+  {
+    "job": [
+      "improving_honesty_and_openness"
+    ],
+    "title": "Βελτίωση της Ειλικρίνειας και της Ανοιχτότητας",
+    "description": "Αυτή η πορεία έχει σχεδιαστεί για να βοηθήσει εσάς και τον σύντροφό σας να καλλιεργήσετε μια βαθύτερη αίσθηση ειλικρίνειας και ανοιχτότητας στη σχέση σας. Κατά τη διάρκεια αρκετών ημερών, θα συμμετάσχετε σε δραστηριότητες, συζητήσεις και ασκήσεις που χτίζουν εμπιστοσύνη και διαφάνεια, επιτρέποντάς σας να πλοηγηθείτε σε ευαίσθητα θέματα και να ενισχύσετε τον δεσμό σας.",
+    "subtopics": [
+      {
+        "title": "Κατανόηση της Ειλικρίνειας",
+        "description": "Εξερευνήστε την έννοια της ειλικρίνειας στις σχέσεις, συμπεριλαμβανομένης της σημασίας της και των διαφορετικών διαστάσεων του να είστε ειλικρινείς με τον σύντροφό σας. Συμμετάσχετε σε ερωτήσεις που εμβαθύνουν στις τρέχουσες προοπτικές σας για την ειλικρίνεια.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "honesty-and-openness-style"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-believe-in-complete-transparency-in-a-relationship-why-or-why-not"
+          },
+          {
+            "type": "article",
+            "slug": "cultivating-honest-conversations"
+          },
+          {
+            "type": "game",
+            "slug": "honesty-hunt"
+          },
+          {
+            "type": "checkup",
+            "slug": "the-honesty-hangout"
+          },
+          {
+            "type": "exercise",
+            "slug": "honesty-commitment-ritual"
+          }
+        ]
+      },
+      {
+        "title": "Αντιμετώπιση Φόβων γύρω από την Ειλικρίνεια",
+        "description": "Εντοπίστε κοινούς φόβους ή ανησυχίες σχετικά με την ανοιχτότητα στη σχέση σας. Μαζί, αναλογιστείτε καταστάσεις όπου νιώσατε ότι δεν μπορούσατε να είστε ειλικρινείς και συζητήστε πώς μπορείτε να δημιουργήσετε ένα ασφαλέστερο περιβάλλον για ανοιχτή επικοινωνία.",
+        "content": [
+          {
+            "type": "checkup",
+            "slug": "openness-odyssey"
+          },
+          {
+            "type": "question",
+            "slug": "have-you-ever-felt-you-couldnt-be-completely-honest-with-me-why"
+          },
+          {
+            "type": "article",
+            "slug": "vulnerability-trusts-gateway"
+          },
+          {
+            "type": "exercise",
+            "slug": "truth-telling-exercises"
+          },
+          {
+            "type": "game",
+            "slug": "trust-talk-challenge"
+          },
+          {
+            "type": "question",
+            "slug": "have-you-ever-hidden-something-to-protect-my-feelings-how-did-it-turn-out"
+          }
+        ]
+      },
+      {
+        "title": "Καλλιέργεια Διαφάνειας",
+        "description": "Μάθετε για τα οφέλη της διαφάνειας σε μια σχέση και πώς μπορεί να ενισχύσει την οικειότητα. Συμμετάσχετε σε δραστηριότητες και συζητήσεις που ενθαρρύνουν την κοινοποίηση λεπτομερειών και σκέψεων που συνήθως θα κρατούσατε ιδιωτικές.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "transparency-style-assessment"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-think-its-ever-ok-to-tell-white-lies-in-a-relationship-why-or-why-not"
+          },
+          {
+            "type": "article",
+            "slug": "transparency-builds-strong-bonds"
+          },
+          {
+            "type": "exercise",
+            "slug": "transparency-talks"
+          },
+          {
+            "type": "game",
+            "slug": "transparency-trivia"
+          },
+          {
+            "type": "checkup",
+            "slug": "transparency-tools"
+          }
+        ]
+      },
+      {
+        "title": "Δημιουργία Εμπιστοσύνης Μέσω της Ανοιχτότητας",
+        "description": "Ανακαλύψτε στρατηγικές για να καλλιεργήσετε εμπιστοσύνη, όντας ανοιχτοί σχετικά με τα συναισθήματά σας, τις ανασφάλειες και τις επιθυμίες σας. Συμμετάσχετε σε ασκήσεις που προάγουν την κοινοποίηση και τη ευαλωτότητα.",
+        "content": [
+          {
+            "type": "exercise",
+            "slug": "openness-commitment-ritual"
+          },
+          {
+            "type": "question",
+            "slug": "how-can-we-support-each-other-to-be-more-open-and-honest-daily"
+          },
+          {
+            "type": "article",
+            "slug": "building-emotional-intimacy-together"
+          },
+          {
+            "type": "game",
+            "slug": "trust-builders"
+          },
+          {
+            "type": "checkup",
+            "slug": "trusting-truths"
+          },
+          {
+            "type": "question",
+            "slug": "can-you-share-a-time-when-honesty-led-to-a-positive-outcome-in-our-relationship"
+          }
+        ]
+      },
+      {
+        "title": "Πλοήγηση σε Δύσκολες Συζητήσεις",
+        "description": "Εξερευνήστε τεχνικές για να αντιμετωπίσετε δύσκολα θέματα με ειλικρίνεια και ανοιχτότητα. Εξασκηθείτε στη χρήση αποτελεσματικών στρατηγικών επικοινωνίας για να εκφράσετε τις σκέψεις και τα συναισθήματά σας, στοχεύοντας να επιλύσετε τις συγκρούσεις με εποικοδομητικό τρόπο.",
+        "content": [
+          {
+            "type": "checkup",
+            "slug": "conflict-to-connection"
+          },
+          {
+            "type": "test",
+            "slug": "your-conflict-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-handle-situations-where-being-honest-might-hurt-someone"
+          },
+          {
+            "type": "article",
+            "slug": "navigating-difficult-conversations"
+          },
+          {
+            "type": "game",
+            "slug": "dialogue-duel"
+          },
+          {
+            "type": "exercise",
+            "slug": "conflict-resolution-strategies-practice"
+          }
+        ]
+      },
+      {
+        "title": "Δημιουργία Πολιτισμού Ειλικρίνειας στη Σχέση",
+        "description": "Αναπτύξτε μια κοινή συμφωνία σχετικά με τις πρακτικές ειλικρίνειας στη σχέση σας. Συζητήστε τα όρια και τις προθέσεις για τη διατήρηση μιας κουλτούρας ανοιχτότητας, διασφαλίζοντας ότι και οι δύο σύντροφοι αισθάνονται ασφαλείς να εκφράζονται.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "trust-building-style-quiz"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-boundary-you-need-to-feel-safe-being-honest-with-me"
+          },
+          {
+            "type": "article",
+            "slug": "building-trust-through-transparency"
+          },
+          {
+            "type": "game",
+            "slug": "trust-sparks"
+          },
+          {
+            "type": "exercise",
+            "slug": "boundaries-practice"
+          },
+          {
+            "type": "checkup",
+            "slug": "trust-builders"
+          }
+        ]
+      }
+    ],
+    "slug": "improving-honesty-and-openness"
+  },
+  {
+    "job": [
+      "improving_relationship_satisfaction"
+    ],
+    "title": "Ενίσχυση Ικανοποίησης Σχέσης",
+    "description": "Αυτή η πορεία έχει σχεδιαστεί για να παρέχει στα ζευγάρια πρακτικές γνώσεις και δραστηριότητες που σταδιακά θα ενισχύσουν την ικανοποίηση στη σχέση τους. Κατά τη διάρκεια αρκετών ημερών, θα εξερευνήσετε μια σειρά θεμάτων, από την κατανόηση των αναγκών μέχρι την εμβάθυνση της συναισθηματικής οικειότητας, καταλήγοντας σε πρακτικές στρατηγικές για συνεχή βελτίωση της συνεργασίας σας.",
+    "subtopics": [
+      {
+        "title": "Κατανόηση Προσωπικών Αναγκών",
+        "description": "Ξεκινήστε συζητώντας τις ατομικές σας ανάγκες και επιθυμίες στη σχέση. Αυτή η βάση βοηθά και τους δύο συντρόφους να κατανοήσουν τι χρειάζεται ο καθένας για να νιώθει ικανοποιημένος.",
+        "content": [
+          {
+            "type": "checkup",
+            "slug": "emotional-needs-compatibility"
+          },
+          {
+            "type": "question",
+            "slug": "how-can-we-ensure-both-of-our-needs-are-being-met"
+          },
+          {
+            "type": "article",
+            "slug": "building-trust-through-intimacy"
+          },
+          {
+            "type": "game",
+            "slug": "future-visionaries"
+          },
+          {
+            "type": "exercise",
+            "slug": "values-alignment-exercise"
+          },
+          {
+            "type": "question",
+            "slug": "how-can-we-better-support-each-other-during-stressful-situations"
+          }
+        ]
+      },
+      {
+        "title": "Ανοιχτές Πρακτικές Επικοινωνίας",
+        "description": "Μάθετε αποτελεσματικές τεχνικές επικοινωνίας που προάγουν την ανοιχτότητα και τη διαφάνεια μεταξύ των συντρόφων. Συμμετάσχετε σε ασκήσεις που προάγουν την ενεργητική ακρόαση και την έκφραση συναισθημάτων.",
+        "content": [
+          {
+            "type": "checkup",
+            "slug": "mastering-our-communication-styles"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-prefer-to-communicate-your-needs-and-desires"
+          },
+          {
+            "type": "article",
+            "slug": "enhancing-communication-for-stronger-bonds"
+          },
+          {
+            "type": "game",
+            "slug": "communication-clues"
+          },
+          {
+            "type": "exercise",
+            "slug": "active-listening-practice"
+          },
+          {
+            "type": "question",
+            "slug": "whats-your-favorite-memory-of-us-having-a-great-conversation"
+          }
+        ]
+      },
+      {
+        "title": "Γιορτάζοντας Διαφορές και Κοινά Σημεία",
+        "description": "Εξερευνήστε τι κάνει τον καθένα σας μοναδικό ενώ γιορτάζετε τα κοινά σας ενδιαφέροντα. Αυτό θα γεφυρώσει τα κενά σύνδεσης και θα σεβαστεί τις ατομικές προτιμήσεις.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "growth-through-differences-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-can-we-celebrate-our-unique-strengths-and-compensate-for-our-differences"
+          },
+          {
+            "type": "article",
+            "slug": "embrace-and-celebrate-differences"
+          },
+          {
+            "type": "game",
+            "slug": "cultural-quest"
+          },
+          {
+            "type": "exercise",
+            "slug": "difference-identification-and-acceptance"
+          },
+          {
+            "type": "question",
+            "slug": "whats-one-thing-you-appreciate-about-how-i-handle-our-differences"
+          }
+        ]
+      },
+      {
+        "title": "Εξισορρόπηση Κοινότητας και Ανεξαρτησίας",
+        "description": "Επικεντρωθείτε στην εύρεση μιας αρμονικής ισορροπίας μεταξύ ποιοτικού χρόνου μαζί και σεβασμού της ανάγκης του άλλου για προσωπικό χώρο και ατομικά ενδιαφέροντα.",
+        "content": [
+          {
+            "type": "checkup",
+            "slug": "balancing-our-unique-interests"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-feel-about-the-balance-between-our-personal-time-and-together-time"
+          },
+          {
+            "type": "article",
+            "slug": "fun-rituals-to-strengthen-bonds"
+          },
+          {
+            "type": "game",
+            "slug": "routine-rendezvous"
+          },
+          {
+            "type": "exercise",
+            "slug": "shared-calendar-setup"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-prefer-solo-workouts-or-exercising-together"
+          }
+        ]
+      },
+      {
+        "title": "Δημιουργία Οικειότητας μέσω Ευαλωτότητας",
+        "description": "Εξερευνήστε πρακτικές που χτίζουν συναισθηματική οικειότητα μέσω της ευαλωτότητας. Αυτό μπορεί να περιλαμβάνει την κοινοποίηση παρελθοντικών εμπειριών και φόβων για να εμβαθύνετε τη σύνδεση.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "vulnerability-style-assessment"
+          },
+          {
+            "type": "question",
+            "slug": "is-there-something-from-your-past-that-still-affects-our-relationship"
+          },
+          {
+            "type": "article",
+            "slug": "vulnerability-trusts-gateway"
+          },
+          {
+            "type": "game",
+            "slug": "secret-share"
+          },
+          {
+            "type": "exercise",
+            "slug": "truth-telling-exercises"
+          },
+          {
+            "type": "question",
+            "slug": "whats-something-youd-like-to-feel-more-of-in-our-relationship"
+          }
+        ]
+      },
+      {
+        "title": "Θέτοντας Στόχους Σχέσης",
+        "description": "Ολοκληρώστε με πρακτικές στρατηγικές για τον καθορισμό κοινών στόχων για τη σχέση σας, συμπεριλαμβανομένων των φιλοδοξιών για ανάπτυξη, οικειότητα και μακροχρόνια ικανοποίηση.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "goal-alignment-style"
+          },
+          {
+            "type": "question",
+            "slug": "what-are-your-aspirations-for-our-relationship-five-ten-or-twenty-years-down-the-line"
+          },
+          {
+            "type": "article",
+            "slug": "aligning-life-ambitions-together"
+          },
+          {
+            "type": "game",
+            "slug": "future-talks-fiesta"
+          },
+          {
+            "type": "exercise",
+            "slug": "smart-goals-planning"
+          },
+          {
+            "type": "question",
+            "slug": "what-are-your-thoughts-on-continuing-personal-growth-and-self-improvement-in-our-relationship"
+          }
+        ]
+      }
+    ],
+    "slug": "enhancing-relationship-satisfaction"
+  },
+  {
+    "job": [
+      "introducing_healthy_habits"
+    ],
+    "title": "Εισάγοντας Υγιεινές Συνήθειες Μαζί",
+    "description": "Αυτή η πορεία έχει σχεδιαστεί για να βοηθήσει τα ζευγάρια να αναπτύξουν και να διατηρήσουν υγιεινές συνήθειες που συμβάλλουν στη συνολική τους ευημερία και ενισχύουν τη σχέση τους. Κάνοντας ένα βήμα κάθε μέρα, θα εξερευνήσετε τη διατροφή, τις πρακτικές ευεξίας και πώς να υποστηρίζετε ο ένας τον άλλον σε αυτό το ταξίδι προς έναν πιο υγιεινό τρόπο ζωής.",
+    "subtopics": [
+      {
+        "title": "Κατανόηση των Βασικών της Διατροφής",
+        "description": "Μάθετε τα θεμελιώδη της καλής διατροφής, συζητώντας πτυχές όπως οι βιταμίνες και τα θρεπτικά συστατικά, η προετοιμασία γευμάτων και η ενσωμάτωση υγιεινών τροφών στη διατροφή σας. Αυτό θέτει τη βάση για έναν υγιεινό τρόπο ζωής.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "healthy-eating-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-ensure-youre-getting-enough-vitamins-and-nutrients"
+          },
+          {
+            "type": "article",
+            "slug": "kickstart-healthy-routines-together"
+          },
+          {
+            "type": "game",
+            "slug": "nutri-quiz"
+          },
+          {
+            "type": "exercise",
+            "slug": "healthy-eating-plans"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-prefer-cooking-together-or-trying-out-new-healthy-recipes-separately"
+          }
+        ]
+      },
+      {
+        "title": "Δημιουργία Υγιεινών Ρουτινών",
+        "description": "Εξερευνήστε τρόπους για να καθιερώσετε καθημερινές ρουτίνες που ενθαρρύνουν την υγιεινή διατροφή και την άσκηση, συμπεριλαμβανομένων των πρωινών και βραδινών τελετών. Συζητήστε τη σημασία της συνέπειας και πώς επηρεάζει την υγεία σας.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "healthy-habits-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-incorporate-healthy-eating-into-your-busy-schedule"
+          },
+          {
+            "type": "article",
+            "slug": "healthy-habits-for-stronger-bonds"
+          },
+          {
+            "type": "game",
+            "slug": "healthy-habits-hub"
+          },
+          {
+            "type": "exercise",
+            "slug": "positive-habit-tracking"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-enjoy-morning-workouts-or-evening-wind-downs-more"
+          }
+        ]
+      },
+      {
+        "title": "Διαχείριση Άγχους Μαζί",
+        "description": "Εντοπίστε υγιείς στρατηγικές για τη διαχείριση του άγχους, συμπεριλαμβανομένων των πρακτικών ενσυνειδητότητας και πώς να υποστηρίζετε ο ένας τον άλλον κατά τη διάρκεια δύσκολων στιγμών. Αυτό το υποκεφάλαιο αναφέρεται στην ψυχική ευημερία ως μέρος ενός υγιεινού τρόπου ζωής.",
+        "content": [
+          {
+            "type": "checkup",
+            "slug": "mood-mapping"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-handle-stress-in-a-healthy-way"
+          },
+          {
+            "type": "article",
+            "slug": "navigating-emotional-waters-together"
+          },
+          {
+            "type": "game",
+            "slug": "mindfulness-match"
+          },
+          {
+            "type": "exercise",
+            "slug": "mindfulness-meditation-sessions"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-handle-stress-or-unexpected-challenges"
+          }
+        ]
+      },
+      {
+        "title": "Ενσωμάτωση Φυσικής Δραστηριότητας",
+        "description": "Συζητήστε διάφορες μορφές φυσικής δραστηριότητας που απολαμβάνετε και οι δύο, τη σημασία της ομαδικής εργασίας για να παραμείνετε δραστήριοι και καθορίστε ένα σχέδιο για τακτικές ρουτίνες άσκησης μαζί που θα σας κρατούν υπεύθυνους.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "accountability-style-quiz"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-prefer-solo-workouts-or-exercising-together"
+          },
+          {
+            "type": "checkup",
+            "slug": "fitness-partners-unite"
+          },
+          {
+            "type": "exercise",
+            "slug": "fitness-routine-together"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-new-form-of-exercise-youd-like-to-do-together-regularly"
+          }
+        ]
+      },
+      {
+        "title": "Παρακολούθηση Προόδου και Στόχων",
+        "description": "Μάθετε πώς να θέτετε και να παρακολουθείτε τους στόχους σας για την υγεία και την ευεξία και πώς να γιορτάζετε τις επιτυχίες του άλλου. Αυτό θα δημιουργήσει κίνητρο και αίσθηση συνεργασίας στην πορεία σας προς έναν υγιεινό τρόπο ζωής.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "goal-alignment-style"
+          },
+          {
+            "type": "question",
+            "slug": "what-are-your-long-term-health-and-wellness-goals-and-how-can-we-support-each-other"
+          },
+          {
+            "type": "article",
+            "slug": "setting-shared-future-goals"
+          },
+          {
+            "type": "game",
+            "slug": "future-visionaries"
+          },
+          {
+            "type": "exercise",
+            "slug": "smart-goals-planning"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-stay-motivated-to-maintain-your-healthy-habits"
+          }
+        ]
+      },
+      {
+        "title": "Δημιουργία Υγιεινών Συνήθειών για το Μέλλον",
+        "description": "Συζητήστε μακροπρόθεσμους στόχους υγείας, πώς να ενσωματώσετε υγιεινές συνήθειες στη ζωή σας ως ζευγάρι και να καθιερώσετε παραδόσεις που προάγουν την ευημερία, διασφαλίζοντας ότι η υιοθέτηση υγιεινών πρακτικών γίνεται τρόπος ζωής.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "growth-balance-style"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-new-habit-youd-like-to-develop-together-for-personal-growth"
+          },
+          {
+            "type": "exercise",
+            "slug": "positive-reinforcement-practices"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-new-healthy-habit-youd-like-to-try-this-month"
+          }
+        ]
+      }
+    ],
+    "slug": "introducing-healthy-habits-together"
+  },
+  {
+    "job": [
+      "having_new_experiences"
+    ],
+    "title": "Περιπετειώδεις Μαζί: Εξερευνώντας Νέες Εμπειρίες",
+    "description": "Αυτή η πορεία ενθαρρύνει εσάς και τον σύντροφό σας να αγκαλιάσετε τη νέα εμπειρία και την περιπέτεια στη σχέση σας, δοκιμάζοντας νέες δραστηριότητες, εξερευνώντας άγνωστα μέρη και εντοπίζοντας κοινά ενδιαφέροντα. Κάθε μέρα, θα ανακαλύπτετε δημιουργικές ιδέες και ενδιαφέρον περιεχόμενο που θα σας εμπνεύσουν να διασκεδάσετε μαζί και να ενισχύσετε τον δεσμό σας μέσω κοινών εμπειριών.",
+    "subtopics": [
+      {
+        "title": "Ξεκινώντας Μικρά: Δοκιμάζοντας Νέες Δραστηριότητες",
+        "description": "Ξεκινήστε την πορεία σας εντοπίζοντας απλές δραστηριότητες που είναι άνετες αλλά καινούργιες. Συζητήστε για χόμπι που θα θέλατε να εξερευνήσετε μαζί, από μαθήματα μαγειρικής μέχρι βραδιές επιτραπέζιων παιχνιδιών.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "breaking-routine-style-quiz"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-hobby-youd-like-us-to-try-together"
+          },
+          {
+            "type": "article",
+            "slug": "rediscover-adventure-together"
+          },
+          {
+            "type": "game",
+            "slug": "adventure-awaits"
+          },
+          {
+            "type": "exercise",
+            "slug": "try-something-new-day"
+          }
+        ]
+      },
+      {
+        "title": "Δημιουργίες Λίστας Ευχών",
+        "description": "Δημιουργήστε μαζί μια λίστα ευχών για ζευγάρια! Συζητήστε για συναρπαστικά μέρη που θέλετε να επισκεφθείτε, μοναδικές εμπειρίες που θέλετε να μοιραστείτε και σημαντικές περιπέτειες που θέλετε να έχετε στο μέλλον.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "adventure-style-assessment"
+          },
+          {
+            "type": "question",
+            "slug": "if-we-were-to-create-a-couples-bucket-list-whats-the-first-adventure-youd-add"
+          },
+          {
+            "type": "article",
+            "slug": "adventure-sparks-deeper-bonds"
+          },
+          {
+            "type": "game",
+            "slug": "future-adventure-quest"
+          },
+          {
+            "type": "exercise",
+            "slug": "future-goals-compatibility"
+          }
+        ]
+      },
+      {
+        "title": "Αυθορμητισμός και Περιπέτεια",
+        "description": "Αγκαλιάστε τον αυθορμητισμό προγραμματίζοντας εκπλήξεις ή δοκιμάζοντας δραστηριότητες αυθόρμητα. Ανακαλύψτε τη συγκίνηση των απροσδόκητων περιπετειών μαζί και ενισχύστε τον δεσμό σας μέσω του αυθορμητισμού.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "spontaneity-style"
+          },
+          {
+            "type": "question",
+            "slug": "whats-the-most-fun-youve-ever-had-while-doing-something-completely-spontaneous"
+          },
+          {
+            "type": "question",
+            "slug": "if-we-could-go-on-a-crazy-themed-road-trip-what-would-our-theme-be"
+          },
+          {
+            "type": "game",
+            "slug": "adventure-awaits"
+          },
+          {
+            "type": "exercise",
+            "slug": "outdoor-exploration-adventures"
+          }
+        ]
+      },
+      {
+        "title": "Εξερευνώντας Νέες Τοποθεσίες",
+        "description": "Ρίξτε μια πιο βαθιά ματιά στα μέρη που θέλετε να εξερευνήσετε, είτε είναι τοπικά είτε διεθνή. Συζητήστε τα ταξιδιωτικά σας όνειρα και πώς αυτές οι εμπειρίες μπορούν να εμπλουτίσουν τη σχέση σας.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "exploration-partnership-style"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-like-to-travel-whats-the-most-exciting-place-youve-been"
+          },
+          {
+            "type": "question",
+            "slug": "which-country-is-at-the-top-of-your-travel-bucket-list-as-a-couple"
+          },
+          {
+            "type": "article",
+            "slug": "adventure-sparks-deeper-bonds"
+          },
+          {
+            "type": "game",
+            "slug": "cultural-quest"
+          },
+          {
+            "type": "exercise",
+            "slug": "cultural-exchange-day"
+          }
+        ]
+      },
+      {
+        "title": "Μαθαίνοντας Μαζί",
+        "description": "Εντοπίστε δεξιότητες ή θέματα που σας ενδιαφέρει να μάθετε μαζί. Μπορεί να είναι η εκμάθηση μιας νέας γλώσσας, η κατάκτηση τεχνικών μαγειρικής ή η παρακολούθηση μαθημάτων τέχνης—οτιδήποτε θα σας φέρει πιο κοντά!",
+        "content": [
+          {
+            "type": "test",
+            "slug": "shared-learning-style"
+          },
+          {
+            "type": "question",
+            "slug": "if-you-could-learn-a-new-language-together-which-one-would-it-be"
+          },
+          {
+            "type": "question",
+            "slug": "whats-something-youd-like-to-learn-together-to-bring-us-closer"
+          },
+          {
+            "type": "article",
+            "slug": "mastering-communication-techniques"
+          },
+          {
+            "type": "game",
+            "slug": "laugh-learn-quiz"
+          },
+          {
+            "type": "exercise",
+            "slug": "smart-goals-planning"
+          }
+        ]
+      },
+      {
+        "title": "Δημιουργικότητα στην Περιπέτεια",
+        "description": "Εξερευνήστε δημιουργικούς τρόπους για να μετατρέψετε τις συνηθισμένες δραστηριότητες σε αξέχαστες εμπειρίες. Σκεφτείτε θεματικές βραδιές ραντεβού, δημιουργικές προκλήσεις ή περιπετειώδεις εργασίες που σας επιτρέπουν να συνδεθείτε μέσω της φαντασίας και του παιχνιδιού.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "creative-sparks-style"
+          },
+          {
+            "type": "question",
+            "slug": "if-you-could-embark-on-a-creative-retreat-together-what-would-you-focus-on"
+          },
+          {
+            "type": "question",
+            "slug": "if-we-could-perform-in-a-talent-show-together-what-act-would-we-do"
+          },
+          {
+            "type": "article",
+            "slug": "fun-rituals-to-strengthen-bonds"
+          },
+          {
+            "type": "game",
+            "slug": "decor-dilemma"
+          },
+          {
+            "type": "exercise",
+            "slug": "artistic-expression-days"
+          }
+        ]
+      }
+    ],
+    "slug": "adventurous-together-exploring-new-experiences"
+  },
+  {
+    "job": [
+      "having_fun_and_entertainment"
+    ],
+    "title": "Δημιουργώντας Διασκέδαση και Ψυχαγωγία Μαζί",
+    "description": "Αυτή η πορεία θα σας καθοδηγήσει μέσα από δραστηριότητες και συζητήσεις που έχουν σχεδιαστεί για να ενισχύσουν τη χαρά και την παιχνιδιάρικη διάθεση στη σχέση σας. Εξερευνώντας διάφορες πτυχές της διασκέδασης και της ψυχαγωγίας, θα καλλιεργήσετε μια βαθύτερη σύνδεση ενώ θα μάθετε πώς να ενσωματώνετε το γέλιο και τη δημιουργικότητα στην καθημερινή σας ζωή. Κάθε μέρα, θα συμμετέχετε σε νέες εμπειρίες και αναστοχασμούς που ενθαρρύνουν την αλληλεπίδραση και την εξερεύνηση.",
+    "subtopics": [
+      {
+        "title": "Ξεκινώντας με Γέλιο",
+        "description": "Εξερευνήστε το ρόλο του χιούμορ στη σχέση σας. Συμμετάσχετε σε διασκεδαστικές ερωτήσεις όπως τα αγαπημένα σας ακατάλληλα αστεία και τα φλερτ μηνύματα. Αυτό το θεμελιώδες θέμα θα σας βοηθήσει να ανακαλύψετε τρόπους να ενσωματώσετε το γέλιο στην καθημερινή σας ζωή.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "humor-harmony-style"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-have-a-favorite-inappropriate-joke"
+          },
+          {
+            "type": "article",
+            "slug": "laughing-together-keeps-love-strong"
+          },
+          {
+            "type": "game",
+            "slug": "love-laughter"
+          },
+          {
+            "type": "checkup",
+            "slug": "fun-flirtation"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-have-any-favorite-flirty-texts-or-messages-that-make-you-smile"
+          }
+        ]
+      },
+      {
+        "title": "Γιορτάζοντας Επιτυχίες και Ορόσημα",
+        "description": "Μάθετε πώς να γιορτάζετε τις επιτυχίες ο ένας του άλλου, μεγάλες ή μικρές. Συζητήστε τους αγαπημένους σας τρόπους να γιορτάζετε ειδικές περιστάσεις όπως επετείους και γιορτές, ενισχύοντας μια ατμόσφαιρα εκτίμησης και χαράς.",
+        "content": [
+          {
+            "type": "checkup",
+            "slug": "marriage-milestones"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-like-to-celebrate-anniversaries"
+          },
+          {
+            "type": "game",
+            "slug": "date-night-planner"
+          },
+          {
+            "type": "test",
+            "slug": "milestone-celebration-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-like-to-celebrate-achievements-big-or-small"
+          }
+        ]
+      },
+      {
+        "title": "Ανακαλύπτοντας Κοινά Ενδιαφέροντα",
+        "description": "Βυθιστείτε σε συζητήσεις σχετικά με δραστηριότητες και χόμπι που απολαμβάνετε και οι δύο. Προσδιορίστε κοινά ενδιαφέροντα και προτείνετε διασκεδαστικές δραστηριότητες για να δοκιμάσετε μαζί, που θα βοηθήσουν να ενισχύσετε τον κοινό σας δεσμό και να δημιουργήσετε αξέχαστες αναμνήσεις.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "hobby-harmony-style"
+          },
+          {
+            "type": "question",
+            "slug": "what-hobbies-or-activities-would-you-like-us-to-pursue-together-in-the-future"
+          },
+          {
+            "type": "article",
+            "slug": "exploring-shared-hobbies-together"
+          },
+          {
+            "type": "game",
+            "slug": "hobby-harmony"
+          },
+          {
+            "type": "checkup",
+            "slug": "uncovering-daily-habits-and-quirks"
+          },
+          {
+            "type": "exercise",
+            "slug": "hobbies-and-interests-exercise"
+          }
+        ]
+      },
+      {
+        "title": "Αυθόρμητες Περιπέτειες",
+        "description": "Βγείτε από τη ζώνη άνεσής σας σχεδιάζοντας αυθόρμητες εξόδους ή διασκεδαστές εκπλήξεις ο ένας για τον άλλον. Χρησιμοποιήστε προτροπές για να αποφασίσετε για νέες εμπειρίες, όπως υπαίθριες δραστηριότητες ή θεματικές βραδιές ραντεβού, ενισχύοντας την ενθουσιασμό στη σχέση σας.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "spontaneity-style"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-new-sport-or-physical-activity-youd-like-to-try-as-a-team"
+          },
+          {
+            "type": "article",
+            "slug": "adventure-sparks-deeper-bonds"
+          },
+          {
+            "type": "game",
+            "slug": "adventure-awaits"
+          },
+          {
+            "type": "checkup",
+            "slug": "adventure-together"
+          },
+          {
+            "type": "exercise",
+            "slug": "adventure-challenge"
+          }
+        ]
+      },
+      {
+        "title": "Δημιουργική Παιχνιδιάρικη Διάθεση",
+        "description": "Αξιοποιήστε τη δημιουργικότητά σας μαζί εξερευνώντας καλλιτεχνικές προσπάθειες ή παιχνιδιάρικα παιχνίδια. Συμμετάσχετε σε ασκήσεις που σας προκαλούν να σκεφτείτε έξω από το κουτί, όπως DIY έργα ή θεματικές βραδιές μαγειρικής.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "creative-sparks-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-express-your-creativity"
+          },
+          {
+            "type": "article",
+            "slug": "crafting-memorable-date-nights"
+          },
+          {
+            "type": "game",
+            "slug": "decor-dilemma"
+          },
+          {
+            "type": "exercise",
+            "slug": "creative-drawing-contest"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-creative-project-youd-love-to-tackle-as-a-duo"
+          }
+        ]
+      },
+      {
+        "title": "Δημιουργία Παραδόσεων και Τελετών",
+        "description": "Ολοκληρώστε την πορεία σας αναλογιζόμενοι πώς να καθιερώσετε τακτικές παραδόσεις που διατηρούν τη διασκέδαση ζωντανή στη σχέση σας. Συζητήστε την αξία των διασκεδαστικών τελετών και πώς μπορούν να ενισχύσουν τη σύνδεσή σας και να δημιουργήσουν αγαπημένες αναμνήσεις μαζί.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "ritual-building-style"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-tradition-youd-like-to-start-together"
+          },
+          {
+            "type": "article",
+            "slug": "fun-rituals-to-strengthen-bonds"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-tradition-youd-like-us-to-start-as-a-couple"
+          }
+        ]
+      }
+    ],
+    "slug": "creating-fun-and-entertainment-together"
+  },
+  {
+    "job": [
+      "overcoming_differences"
+    ],
+    "title": "Αγκαλιάζοντας τις Διαφορές μας: Ένα Ταξίδι προς Βαθύτερη Κατανόηση",
+    "description": "Αυτό το ταξίδι έχει σχεδιαστεί για να βοηθήσει τα ζευγάρια να πλοηγηθούν και να γιορτάσουν τις διαφορές τους, μετατρέποντας τις προκλήσεις σε ευκαιρίες για ανάπτυξη. Κάθε μέρα, θα ασχοληθείτε με ερωτήσεις που προκαλούν σκέψη, διεισδυτικά άρθρα και πρακτικές ασκήσεις που προάγουν την ενσυναίσθηση, τον σεβασμό και τη συνεργασία στη σχέση σας.",
+    "subtopics": [
+      {
+        "title": "Κατανόηση των Υποβάθρων μας",
+        "description": "Εξερευνήστε πώς τα πολιτισμικά, θρησκευτικά και προσωπικά μας υπόβαθρα διαμορφώνουν τις προοπτικές και τις συμπεριφορές μας στη σχέση. Σκεφτείτε ερωτήσεις σχετικά με τις πολιτισμικές διαφορές και τις πεποιθήσεις, θέτοντας τα θεμέλια για μελλοντικές συζητήσεις.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "cultural-harmony-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-our-different-cultural-backgrounds-shape-our-relationship-and-how-can-we-honor-both"
+          },
+          {
+            "type": "article",
+            "slug": "navigating-religious-conversations-smoothly"
+          },
+          {
+            "type": "game",
+            "slug": "cultural-quest"
+          },
+          {
+            "type": "checkup",
+            "slug": "navigating-cultural-and-religious-differences"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-respect-each-others-religious-beliefs-when-they-differ"
+          },
+          {
+            "type": "exercise",
+            "slug": "cultural-exchange-day"
+          }
+        ]
+      },
+      {
+        "title": "Αποτελεσματικές Δεξιότητες Επικοινωνίας",
+        "description": "Μάθετε τη σημασία της διαφάνειας και της ενεργητικής ακρόασης στην υπέρβαση των παρεξηγήσεων. Συμμετάσχετε σε ασκήσεις και άρθρα που ενισχύουν τα στυλ επικοινωνίας σας και προάγουν τον ανοιχτό διάλογο για ευαίσθητα θέματα.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "discover-your-communication-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-prefer-to-communicate-your-needs-and-desires"
+          },
+          {
+            "type": "article",
+            "slug": "mastering-communication-techniques"
+          },
+          {
+            "type": "game",
+            "slug": "communication-clues"
+          },
+          {
+            "type": "checkup",
+            "slug": "mastering-our-communication-styles"
+          },
+          {
+            "type": "question",
+            "slug": "whats-your-favorite-memory-of-us-having-a-great-conversation"
+          },
+          {
+            "type": "exercise",
+            "slug": "active-listening-practice"
+          }
+        ]
+      },
+      {
+        "title": "Γιορτάζοντας τις Διαφορές",
+        "description": "Ανακαλύψτε τρόπους να γιορτάσετε και να τιμήσετε τις μοναδικές δυνάμεις και προοπτικές του άλλου. Μέσω διαδραστικού περιεχομένου, εξερευνήστε πώς οι διαφορές μπορούν να προάγουν τη δημιουργικότητα και τη χαρά στη συνεργασία σας.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "growth-through-differences-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-can-we-celebrate-our-unique-strengths-and-compensate-for-our-differences"
+          },
+          {
+            "type": "article",
+            "slug": "embrace-and-celebrate-differences"
+          },
+          {
+            "type": "game",
+            "slug": "hobby-harmony"
+          },
+          {
+            "type": "checkup",
+            "slug": "embracing-our-personality-traits"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-fun-way-to-explore-and-embrace-our-differences-together"
+          },
+          {
+            "type": "exercise",
+            "slug": "difference-identification-and-acceptance"
+          }
+        ]
+      },
+      {
+        "title": "Πλοήγηση σε Συγκρούσεις με Σεβασμό",
+        "description": "Αναπτύξτε δεξιότητες για να διαχειρίζεστε τις συγκρούσεις θετικά και εποικοδομητικά. Αυτό το υποθέμα περιλαμβάνει πρακτικές τεχνικές για την επίλυση διαφωνιών, ενώ σέβεστε τις απόψεις του άλλου και διατηρείτε την εμπιστοσύνη.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "your-conflict-style"
+          },
+          {
+            "type": "question",
+            "slug": "whats-one-thing-youd-like-to-change-about-how-we-handle-our-differences"
+          },
+          {
+            "type": "article",
+            "slug": "mastering-conflict-resolution-together"
+          },
+          {
+            "type": "game",
+            "slug": "conflict-resolution-quest"
+          },
+          {
+            "type": "checkup",
+            "slug": "conflict-resolution-styles"
+          },
+          {
+            "type": "question",
+            "slug": "whats-one-thing-you-admire-about-my-perspective-thats-different-from-yours"
+          },
+          {
+            "type": "exercise",
+            "slug": "conflict-resolution-strategies-practice"
+          }
+        ]
+      },
+      {
+        "title": "Μετατρέποντας τις Προκλήσεις σε Ευκαιρίες Ανάπτυξης",
+        "description": "Αλλάξτε τη νοοτροπία σας από το να βλέπετε τις διαφορές ως εμπόδια στο να τις βλέπετε ως ευκαιρίες για προσωπική και σχέση ανάπτυξη. Συμμετάσχετε σε δραστηριότητες που ενθαρρύνουν τη συνεργασία και την κοινή επίλυση προβλημάτων.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "flexibility-style-assessment"
+          },
+          {
+            "type": "question",
+            "slug": "how-can-we-turn-our-differences-into-opportunities-for-growth-as-a-couple"
+          },
+          {
+            "type": "article",
+            "slug": "embracing-differences-positively"
+          },
+          {
+            "type": "game",
+            "slug": "problem-solving-escapades"
+          },
+          {
+            "type": "checkup",
+            "slug": "team-problem-solving"
+          },
+          {
+            "type": "question",
+            "slug": "can-boredom-be-helpful"
+          },
+          {
+            "type": "exercise",
+            "slug": "cognitive-restructuring-together"
+          }
+        ]
+      },
+      {
+        "title": "Δημιουργώντας μια Ενοποιημένη Όραση",
+        "description": "Συγκεντρώστε όσα έχετε μάθει για να δημιουργήσετε μια κοινή όραση για το μέλλον σας. Σκεφτείτε τις αξίες, τους στόχους και τις φιλοδοξίες σας ως ζευγάρι, διασφαλίζοντας ότι και οι δύο σύντροφοι αισθάνονται ότι τους βλέπουν και τους ακούν στην πορεία που έρχεται.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "future-vision-type"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-challenge-weve-overcome-together-that-made-our-relationship-stronger"
+          },
+          {
+            "type": "article",
+            "slug": "aligning-future-goals"
+          },
+          {
+            "type": "game",
+            "slug": "future-visionaries"
+          },
+          {
+            "type": "checkup",
+            "slug": "future-talk-together"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-memorable-moment-where-our-differences-made-our-relationship-stronger"
+          },
+          {
+            "type": "exercise",
+            "slug": "long-term-goal-planning"
+          }
+        ]
+      }
+    ],
+    "slug": "embracing-our-differences-a-journey-to-deeper-understanding"
+  },
+  {
+    "job": [
+      "preparing_for_intimacy"
+    ],
+    "title": "Προετοιμασία για την Οικειότητα",
+    "description": "Αυτή η πορεία έχει σχεδιαστεί για να βοηθήσει τα ζευγάρια να εξερευνήσουν και να ενισχύσουν τις οικείες συνδέσεις τους με υποστηρικτικό και εποικοδομητικό τρόπο. Μέσα από μια σειρά προσεκτικά διαμορφωμένου περιεχομένου, τα ζευγάρια θα ασχοληθούν με διάφορες πτυχές της οικειότητας, από την οικοδόμηση εμπιστοσύνης μέχρι την εξερεύνηση επιθυμιών. Κάθε μέρα, θα ανακαλύπτετε νέες γνώσεις και πρακτικές για να ενισχύσετε μια βαθύτερη συναισθηματική και σωματική σύνδεση.",
+    "subtopics": [
+      {
+        "title": "Κατανόηση της Οικειότητας",
+        "description": "Ξεκινήστε την πορεία σας εξερευνώντας την έννοια της οικειότητας. Κατανοήστε τις διαφορετικές διαστάσεις της οικειότητας, συμπεριλαμβανομένων των συναισθηματικών και σωματικών πτυχών, και συζητήστε τι σημαίνει η οικειότητα για εσάς και τον σύντροφό σας.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "emotional-intimacy-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-envision-our-intimate-life-evolving-over-the-next-year"
+          },
+          {
+            "type": "article",
+            "slug": "building-emotional-intimacy-together"
+          },
+          {
+            "type": "game",
+            "slug": "intimacy-insights"
+          },
+          {
+            "type": "checkup",
+            "slug": "emotional-intimacy-check-in"
+          },
+          {
+            "type": "exercise",
+            "slug": "intimate-story-sharing"
+          }
+        ]
+      },
+      {
+        "title": "Δημιουργία Εμπιστοσύνης και Ευαλωτότητας",
+        "description": "Βυθιστείτε σε ασκήσεις οικοδόμησης εμπιστοσύνης και συζητήστε τη σημασία της ευαλωτότητας σε μια σχέση. Μάθετε πώς η κοινοποίηση προσωπικών συναισθημάτων και εμπειριών μπορεί να δημιουργήσει έναν ασφαλή χώρο για την οικειότητα.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "trust-building-style-quiz"
+          },
+          {
+            "type": "question",
+            "slug": "what-role-does-vulnerability-play-in-our-intimate-life"
+          },
+          {
+            "type": "article",
+            "slug": "vulnerability-trusts-gateway"
+          },
+          {
+            "type": "game",
+            "slug": "trust-builders"
+          },
+          {
+            "type": "checkup",
+            "slug": "trusting-truths"
+          },
+          {
+            "type": "exercise",
+            "slug": "vulnerability-exploration-session"
+          }
+        ]
+      },
+      {
+        "title": "Επικοινωνία Επιθυμιών",
+        "description": "Εστιάστε στην τέχνη της επικοινωνίας σχετικά με τις επιθυμίες και τις προτιμήσεις σας. Συμμετάσχετε σε δραστηριότητες που βοηθούν να εκφράσετε τις οικείες επιθυμίες σας και εξασκηθείτε στην κοινοποίηση φαντασιώσεων με υποστηρικτικό τρόπο.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "sexual-communication-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-prefer-to-communicate-your-needs-and-desires"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-feel-about-sharing-your-deepest-desires-with-each-other"
+          },
+          {
+            "type": "article",
+            "slug": "enhancing-sexual-communication"
+          },
+          {
+            "type": "game",
+            "slug": "fantasy-fulfillment"
+          },
+          {
+            "type": "checkup",
+            "slug": "emotional-needs-compatibility"
+          },
+          {
+            "type": "exercise",
+            "slug": "fantasy-sharing-session"
+          }
+        ]
+      },
+      {
+        "title": "Δημιουργία Οικείων Τελετών",
+        "description": "Δουλέψτε μαζί για να αναπτύξετε εξατομικευμένες τελετές που ενισχύουν την οικειότητα. Αυτό μπορεί να περιλαμβάνει ρουτίνες, ειδικές βραδιές ραντεβού ή άλλες πρακτικές που σας φέρνουν πιο κοντά τακτικά.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "ritual-building-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-can-we-create-more-intimate-moments-in-our-daily-routine"
+          },
+          {
+            "type": "question",
+            "slug": "whats-one-intimate-goal-youd-like-us-to-achieve-together"
+          },
+          {
+            "type": "article",
+            "slug": "fun-rituals-to-strengthen-bonds"
+          },
+          {
+            "type": "game",
+            "slug": "date-night-planner"
+          },
+          {
+            "type": "checkup",
+            "slug": "everyday-chats-that-count"
+          },
+          {
+            "type": "exercise",
+            "slug": "shared-calendar-setup"
+          }
+        ]
+      },
+      {
+        "title": "Εξερεύνηση Σωματικών Συνδέσεων",
+        "description": "Αφού ενισχύσετε τις συναισθηματικές πτυχές, μεταφέρετε την προσοχή σας στην σωματική οικειότητα. Εξερευνήστε διαφορετικές μορφές σωματικών συνδέσεων, από την επαφή μέχρι την παιχνιδιάρικη εξερεύνηση, για να ενισχύσετε την κατανόηση των αναγκών του άλλου.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "physical-touch-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-feel-about-introducing-new-elements-into-our-intimate-life"
+          },
+          {
+            "type": "question",
+            "slug": "whats-your-favorite-type-of-foreplay"
+          },
+          {
+            "type": "article",
+            "slug": "enhancing-physical-intimacy-mindfully"
+          },
+          {
+            "type": "game",
+            "slug": "intimacy-adventure"
+          },
+          {
+            "type": "checkup",
+            "slug": "balancing-fun-and-intimacy-in-sex"
+          },
+          {
+            "type": "exercise",
+            "slug": "erotic-massage-exchange"
+          }
+        ]
+      },
+      {
+        "title": "Πλοήγηση σε Όρια και Επιθυμίες",
+        "description": "Ολοκληρώστε την πορεία σας αντιμετωπίζοντας ανοιχτά τα όρια και τις επιθυμίες. Συζητήστε τυχόν συγκεκριμένα kink ή φαντασιώσεις σε ένα σεβαστό περιβάλλον, διασφαλίζοντας ότι η σχέση σας παραμένει συναινετική και ικανοποιητική.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "intimate-boundary-style"
+          },
+          {
+            "type": "question",
+            "slug": "is-there-a-particular-kink-or-fetish-you-want-to-explore-but-havent-shared-yet"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-prefer-spontaneity-or-planning-when-it-comes-to-intimacy"
+          },
+          {
+            "type": "article",
+            "slug": "navigating-boundaries-for-intimacy"
+          },
+          {
+            "type": "exercise",
+            "slug": "boundaries-practice"
+          }
+        ]
+      }
+    ],
+    "slug": "preparing-for-intimacy"
+  },
+  {
+    "job": [
+      "discussing_finances"
+    ],
+    "title": "Συζητώντας τα Οικονομικά μας: Δημιουργώντας ένα Ισχυρότερο Μέλλον Μαζί",
+    "description": "Αυτή η πορεία έχει σχεδιαστεί για να βοηθήσει εσάς και τον σύντροφό σας να συμμετάσχετε σε ουσιαστικές συζητήσεις σχετικά με τα οικονομικά, να χτίσετε αμοιβαία κατανόηση και να αναπτύξετε μια συνεργατική προσέγγιση στους οικονομικούς στόχους. Προχωρώντας μέσα από διάφορα υποθέματα, θα μάθετε πώς να επικοινωνείτε αποτελεσματικά, να θέτετε οικονομικούς στόχους και να ευθυγραμμίζετε τις συνήθειες δαπανών σας για ένα φωτεινότερο κοινό μέλλον.",
+    "subtopics": [
+      {
+        "title": "Κατανόηση των Οικονομικών μας Αξιών",
+        "description": "Εξερευνήστε τις οικονομικές πεποιθήσεις και αξίες του άλλου για να δημιουργήσετε μια ισχυρή βάση για τις οικονομικές σας συζητήσεις. Αυτό το υποθέμα περιλαμβάνει ερωτήσεις σχετικά με τα οικονομικά σας πρότυπα και τι προτεραιότητα δίνετε οικονομικά.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "financial-communication-style"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-have-a-financial-role-model-who-and-why"
+          },
+          {
+            "type": "article",
+            "slug": "mastering-money-talks-together"
+          },
+          {
+            "type": "game",
+            "slug": "dream-budget-builders"
+          },
+          {
+            "type": "checkup",
+            "slug": "aligning-financial-values-and-goals"
+          },
+          {
+            "type": "exercise",
+            "slug": "financial-planning-session"
+          },
+          {
+            "type": "question",
+            "slug": "whats-one-financial-habit-you-admire-in-others"
+          }
+        ]
+      },
+      {
+        "title": "Θέτοντας Οικονομικούς Στόχους Μαζί",
+        "description": "Συζητήστε τη σημασία των οικονομικών στόχων ως ζευγάρι. Αυτό το υποθέμα σας καθοδηγεί στη δημιουργία βραχυπρόθεσμων και μακροπρόθεσμων οικονομικών στόχων και στην κατανόηση του πώς να τους επιτύχετε μαζί.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "budgeting-style-for-couples"
+          },
+          {
+            "type": "question",
+            "slug": "what-are-your-financial-goals-and-how-can-we-achieve-them-together"
+          },
+          {
+            "type": "article",
+            "slug": "aligning-financial-goals-harmoniously"
+          },
+          {
+            "type": "game",
+            "slug": "future-visionaries"
+          },
+          {
+            "type": "checkup",
+            "slug": "future-financial-adventures"
+          },
+          {
+            "type": "exercise",
+            "slug": "budget-planning-session"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-new-financial-goal-youd-like-to-set-together"
+          }
+        ]
+      },
+      {
+        "title": "Επικοινωνώντας για Θέματα Χρημάτων",
+        "description": "Μάθετε αποτελεσματικές στρατηγικές επικοινωνίας για τη συζήτηση των οικονομικών. Αυτό το υποθέμα εισάγει εργαλεία όπως εφαρμογές προϋπολογισμού και καθορισμό τακτικών ελέγχων για να διευκολύνει αυτές τις συζητήσεις.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "discover-your-communication-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-feel-about-budgeting-apps-yay-or-nay"
+          },
+          {
+            "type": "article",
+            "slug": "mastering-communication-techniques"
+          },
+          {
+            "type": "game",
+            "slug": "communication-champions"
+          },
+          {
+            "type": "checkup",
+            "slug": "mastering-our-communication-styles"
+          },
+          {
+            "type": "exercise",
+            "slug": "transparency-talks"
+          },
+          {
+            "type": "question",
+            "slug": "what-smartphone-app-do-you-mostly-use"
+          }
+        ]
+      },
+      {
+        "title": "Εξισορρόπηση Δαπανών και Αποταμιεύσεων",
+        "description": "Εξερευνήστε τις συζητήσεις σχετικά με τις διαφορετικές συνήθειες δαπανών σας και πώς να βρείτε κοινό έδαφος. Αυτό το υποθέμα σας ενθαρρύνει να δώσετε προτεραιότητα στους οικονομικούς σας στόχους με τις επιλογές του τρόπου ζωής σας.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "your-spending-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-feel-about-our-different-spending-habits-and-how-can-we-find-a-middle-ground"
+          },
+          {
+            "type": "article",
+            "slug": "building-trust-through-financial-transparency"
+          },
+          {
+            "type": "game",
+            "slug": "budget-battle-royale"
+          },
+          {
+            "type": "checkup",
+            "slug": "budgeting-together-without-breaking-up"
+          },
+          {
+            "type": "exercise",
+            "slug": "spending-habits-review"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-prefer-saving-money-in-a-bank-or-investing-it-elsewhere"
+          }
+        ]
+      },
+      {
+        "title": "Διαχείριση Οικονομικών Προκλήσεων Μαζί",
+        "description": "Συζητήστε τις στρατηγικές σας για τη διαχείριση οικονομικού άγχους και απρόβλεπτων εξόδων. Αυτό το υποθέμα σας βοηθά να αναπτύξετε ένα σχέδιο για να υποστηρίξετε ο ένας τον άλλον σε περιόδους οικονομικής δυσκολίας.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "debt-management-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-handle-financial-stress-together"
+          },
+          {
+            "type": "game",
+            "slug": "debt-decision-duel"
+          },
+          {
+            "type": "checkup",
+            "slug": "tackling-debt-together"
+          },
+          {
+            "type": "exercise",
+            "slug": "debt-management-planning"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-handle-unexpected-expenses"
+          }
+        ]
+      },
+      {
+        "title": "Σχεδιάζοντας το Οικονομικό μας Μέλλον",
+        "description": "Εξερευνήστε βαθύτερες πτυχές οικονομικού σχεδιασμού, συμπεριλαμβανομένων στρατηγικών συνταξιοδότησης, ιδιοκτησίας σπιτιού και του μέλλοντος των οικονομικών της οικογένειάς σας. Αυτό το υποθέμα σας βοηθά να ευθυγραμμίσετε τις οράσεις σας για το μέλλον και να καθορίσετε μια σταθερή οικονομική συνεργασία.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "future-planning-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-prioritize-financial-goals-with-other-life-goals"
+          },
+          {
+            "type": "game",
+            "slug": "future-forecast"
+          },
+          {
+            "type": "checkup",
+            "slug": "future-talk-flow"
+          },
+          {
+            "type": "exercise",
+            "slug": "retirement-dreams-mapping"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-see-the-budget-in-our-partnership-now-what-method-will-be-more-comfortable-for-you"
+          }
+        ]
+      }
+    ],
+    "slug": "discussing-our-finances-building-a-stronger-future-together"
+  },
+  {
+    "job": [
+      "exploring_feelings"
+    ],
+    "title": "Πλοήγηση στα Συναισθηματικά μας Τοπία",
+    "description": "Αυτή η πορεία έχει σχεδιαστεί για να βοηθήσει εσένα και τον σύντροφό σου να εξερευνήσετε και να κατανοήσετε τα συναισθήματά σας σε πιο βαθύ επίπεδο. Μέσω της εμπλοκής με διάφορους τύπους περιεχομένου, θα ανακαλύψετε τα συναισθηματικά σας μοτίβα, θα επικοινωνείτε αποτελεσματικά για τα συναισθήματά σας και θα χτίσετε μια πιο ισχυρή συναισθηματική σύνδεση. Κάθε μέρα θα φέρνει νέες γνώσεις και προκλήσεις που θα ενισχύσουν τη συναισθηματική οικειότητα στη σχέση σας.",
+    "subtopics": [
+      {
+        "title": "Κατανόηση των Συναισθημάτων μας",
+        "description": "Ξεκινήστε την πορεία σας εξερευνώντας τα βασικά συναισθήματα και πώς εκδηλώνονται στη ζωή σας. Μέσω ερωτήσεων και άρθρων, αποκτήστε σαφήνεια για τα συναισθήματά σας και τις μεθόδους που χρησιμοποιείτε για να τα διαχειριστείτε.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "emotional-awareness-type"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-think-that-you-feel-emotions-stronger-or-weaker-than-other-people"
+          },
+          {
+            "type": "article",
+            "slug": "building-emotional-intimacy-together"
+          },
+          {
+            "type": "game",
+            "slug": "emotional-seasons"
+          },
+          {
+            "type": "checkup",
+            "slug": "emotional-rollercoaster-ride"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-handle-your-strong-emotions"
+          },
+          {
+            "type": "exercise",
+            "slug": "emotional-regulation-techniques"
+          }
+        ]
+      },
+      {
+        "title": "Εκφράζοντας Συναισθήματα Αποτελεσματικά",
+        "description": "Μάθετε πώς να επικοινωνείτε τα συναισθήματά σας ο ένας στον άλλο σε ένα ασφαλές και nurturing περιβάλλον. Συμμετάσχετε σε ασκήσεις που διευκολύνουν τον ανοιχτό διάλογο για τα συναισθήματά σας χωρίς φόβο κριτικής.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "communication-style-type"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-prefer-to-receive-support-when-youre-feeling-low"
+          },
+          {
+            "type": "article",
+            "slug": "mastering-communication-techniques"
+          },
+          {
+            "type": "game",
+            "slug": "communication-clues"
+          },
+          {
+            "type": "checkup",
+            "slug": "mastering-our-communication-styles"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-feel-comfortable-expressing-your-true-feelings-with-me-why-or-why-not"
+          },
+          {
+            "type": "exercise",
+            "slug": "transparent-communication-practices"
+          }
+        ]
+      },
+      {
+        "title": "Βαθιά Βουτιά στην Ευαλωτότητα",
+        "description": "Ανακαλύψτε τη δύναμη της ευαλωτότητας στις σχέσεις. Εξερευνήστε ερωτήσεις και δραστηριότητες που ενθαρρύνουν την κοινοποίηση των πιο εσωτερικών σας φόβων και επιθυμιών, και συζητήστε πώς η ευαλωτότητα μπορεί να ενισχύσει την οικειότητα.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "vulnerability-comfort-type"
+          },
+          {
+            "type": "question",
+            "slug": "can-you-describe-a-moment-where-you-felt-most-connected-during-our-sex-and-what-made-it-special-for-you"
+          },
+          {
+            "type": "article",
+            "slug": "vulnerability-trusts-gateway"
+          },
+          {
+            "type": "game",
+            "slug": "feelings-explorer"
+          },
+          {
+            "type": "checkup",
+            "slug": "vulnerability-and-openness"
+          },
+          {
+            "type": "question",
+            "slug": "how-comfortable-are-you-sharing-your-true-feelings-with-me-on-a-scale-of-1-10"
+          },
+          {
+            "type": "exercise",
+            "slug": "vulnerability-exploration-session"
+          }
+        ]
+      },
+      {
+        "title": "Πλοήγηση Δύσκολων Συναισθημάτων Μαζί",
+        "description": "Εντοπίστε και αντιμετωπίστε δύσκολα συναισθήματα όπως ζήλια, ανασφάλεια ή θλίψη. Συμμετάσχετε σε τεστ και ελέγχους που έχουν σχεδιαστεί για να σας βοηθήσουν να κατανοήσετε πώς να υποστηρίξετε ο ένας τον άλλο κατά τη διάρκεια δύσκολων συναισθηματικών στιγμών.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "emotion-management-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-handle-feelings-of-jealousy-or-insecurity"
+          },
+          {
+            "type": "article",
+            "slug": "navigating-emotional-waters-together"
+          },
+          {
+            "type": "game",
+            "slug": "emotional-ride"
+          },
+          {
+            "type": "checkup",
+            "slug": "emotional-rollercoaster-ride"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-handle-feelings-of-stress-or-anxiety"
+          },
+          {
+            "type": "exercise",
+            "slug": "confidentiality-agreements"
+          }
+        ]
+      },
+      {
+        "title": "Δημιουργία Συναισθηματικής Ασφάλειας",
+        "description": "Δημιουργήστε ένα περιβάλλον όπου και οι δύο σύντροφοι αισθάνονται ασφαλείς να εκφράσουν και να εξερευνήσουν τα συναισθήματά τους. Κατανοήστε τη σημασία της συναισθηματικής ασφάλειας στην εμβάθυνση της σύνδεσής σας και μάθετε πρακτικές στρατηγικές για τη δημιουργία της.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "emotional-safety-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-feel-about-our-current-level-of-intimacy-and-affection"
+          },
+          {
+            "type": "article",
+            "slug": "trust-through-open-communication"
+          },
+          {
+            "type": "game",
+            "slug": "trust-builders"
+          },
+          {
+            "type": "checkup",
+            "slug": "emotional-intimacy-check-in"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-feel-we-handle-each-others-vulnerabilities"
+          },
+          {
+            "type": "exercise",
+            "slug": "feelings-validation-practices"
+          }
+        ]
+      },
+      {
+        "title": "Καλλιέργεια Συναισθηματικής Οικειότητας",
+        "description": "Ολοκληρώστε την πορεία σας εφαρμόζοντας στρατηγικές που ενισχύουν τη συναισθηματική οικειότητα στη σχέση σας. Συμμετάσχετε σε παιχνίδια και ασκήσεις που ενδυναμώνουν τους συναισθηματικούς σας δεσμούς, κάνοντάς τους πιο βαθιούς και ανθεκτικούς.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "emotional-intimacy-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-feel-about-sharing-your-deepest-desires-with-each-other"
+          },
+          {
+            "type": "article",
+            "slug": "building-emotional-intelligence-together"
+          },
+          {
+            "type": "game",
+            "slug": "emotion-explorer"
+          },
+          {
+            "type": "checkup",
+            "slug": "emotional-needs-compatibility"
+          },
+          {
+            "type": "question",
+            "slug": "how-can-we-better-express-our-needs-without-feeling-vulnerable"
+          },
+          {
+            "type": "exercise",
+            "slug": "emotional-expression-sessions"
+          }
+        ]
+      }
+    ],
+    "slug": "navigating-our-emotional-landscapes"
+  }
+]

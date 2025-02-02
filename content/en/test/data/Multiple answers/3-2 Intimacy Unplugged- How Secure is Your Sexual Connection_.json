@@ -1,0 +1,145 @@
+{
+  "topic": [
+    "having_and_discussing_sex",
+    "building_trust",
+    "exploring_feelings",
+    "improving_relationship_satisfaction",
+    "understanding_mutual_compatibility"
+  ],
+  "test_headline": "Intimacy Unplugged: How Secure is Your Sexual Connection?",
+  "scientific_basis": "This quiz is grounded in attachment theory, which explores how secure attachment fosters deeper intimacy and enhances sexual openness between partners.",
+  "description": "Discover how emotional security impacts your sexual openness! Dive into our quiz to explore how trust and emotional safety allow you and your partner to be more vulnerable, enhancing both your emotional and physical intimacy.",
+  "questions": [
+    {
+      "question": "When discussing your sexual desires with your partner, how do you feel?",
+      "options": [
+        "Very comfortable and open.",
+        "A bit nervous but willing to share.",
+        "I prefer to keep my desires to myself.",
+        "I avoid the topic altogether.",
+        "I feel anxious and worry about their reaction."
+      ]
+    },
+    {
+      "question": "How do you react if your partner isn't in the mood for intimacy?",
+      "options": [
+        "I understand and don't take it personally.",
+        "I feel a little disappointed but respect their feelings.",
+        "I get upset and try to persuade them.",
+        "I withdraw and become distant.",
+        "I feel rejected and anxious."
+      ]
+    },
+    {
+      "question": "How often do you and your partner initiate intimate conversations?",
+      "options": [
+        "Regularly and naturally.",
+        "Occasionally, when something comes to mind.",
+        "Rarely, only when necessary.",
+        "Almost never.",
+        "Only when there's a problem."
+      ]
+    },
+    {
+      "question": "When you're feeling vulnerable, how does your partner respond?",
+      "options": [
+        "They provide comfort and support.",
+        "They listen but don't take action.",
+        "They seem unsure of how to help.",
+        "They distance themselves.",
+        "They become defensive."
+      ]
+    },
+    {
+      "question": "How do you handle disagreements about intimacy?",
+      "options": [
+        "We discuss them openly and find solutions together.",
+        "I try to communicate my feelings clearly.",
+        "I avoid the conversation to prevent conflict.",
+        "I become silent and withdraw.",
+        "I express my frustration aggressively."
+      ]
+    },
+    {
+      "question": "Do you feel emotionally safe to express your sexual needs?",
+      "options": [
+        "Absolutely, I feel completely safe.",
+        "Mostly, with occasional hesitations.",
+        "Sometimes, depending on the topic.",
+        "Rarely, I often hold back.",
+        "Not at all, I fear judgment."
+      ]
+    },
+    {
+      "question": "How do you and your partner prioritize intimacy in your relationship?",
+      "options": [
+        "It's a top priority for both of us.",
+        "We make time for it regularly.",
+        "It's important but not always prioritized.",
+        "It's infrequent and often overlooked.",
+        "We rarely prioritize intimacy."
+      ]
+    },
+    {
+      "question": "When trying new things in the bedroom, how do you feel?",
+      "options": [
+        "Excited and eager to explore.",
+        "Interested but cautious.",
+        "Indifferent and go with the flow.",
+        "Uncomfortable and hesitant.",
+        "Anxious and resistant."
+      ]
+    },
+    {
+      "question": "How does your partner react when you express your insecurities about intimacy?",
+      "options": [
+        "They reassure and support me.",
+        "They acknowledge my feelings.",
+        "They seem unsure how to respond.",
+        "They dismiss my feelings.",
+        "They become defensive or critical."
+      ]
+    },
+    {
+      "question": "Overall, how satisfied are you with the level of intimacy in your relationship?",
+      "options": [
+        "Very satisfied and fulfilled.",
+        "Satisfied with some areas to improve.",
+        "Neutral, neither satisfied nor dissatisfied.",
+        "Dissatisfied and seeking changes.",
+        "Very dissatisfied and unhappy."
+      ]
+    }
+  ],
+  "evaluation_method": {
+    "explanation": "Each answer corresponds to a specific attachment style influencing intimacy: Secure, Anxious, Avoidant, and Disorganized. Your responses will be tallied to determine which attachment style is most prevalent in your approach to sexual openness and emotional security.",
+    "example": "For example, selecting more 'A' options may indicate a Secure attachment style, reflecting comfort and openness in intimacy, while more 'D' options could suggest an Avoidant style, indicating discomfort with emotional vulnerability."
+  },
+  "outcome_interpretation": {
+    "mostly_A": {
+      "label": "Secure Attachment",
+      "description": "You and your partner likely share a secure attachment style, fostering open communication and emotional safety in your intimate life. This allows for a healthy and fulfilling sexual relationship.",
+      "advice": "Continue nurturing your open communication and mutual support to maintain and strengthen your intimate connection."
+    },
+    "mostly_B": {
+      "label": "Anxious Attachment",
+      "description": "You may have an anxious attachment style, leading to heightened sensitivity and a strong desire for closeness in your intimate relationships. This can enhance intimacy but may also lead to insecurity at times.",
+      "advice": "Work on building self-confidence and trust with your partner to create a more balanced and secure intimate relationship."
+    },
+    "mostly_C": {
+      "label": "Avoidant Attachment",
+      "description": "You might exhibit an avoidant attachment style, valuing independence and sometimes feeling uncomfortable with deep emotional or sexual vulnerability. This can protect your emotional well-being but may limit intimacy.",
+      "advice": "Explore ways to gradually increase emotional openness with your partner to enhance intimacy while respecting your need for personal space."
+    },
+    "mostly_D": {
+      "label": "Disorganized Attachment",
+      "description": "You may experience a disorganized attachment style, combining elements of both anxious and avoidant styles. This can lead to inconsistent behaviors in intimacy and emotional security.",
+      "advice": "Consider seeking support to understand and address underlying issues, fostering a more stable and secure intimate relationship."
+    },
+    "mostly_E": {
+      "label": "Mixed Attachment",
+      "description": "Your responses indicate a combination of attachment styles, reflecting a unique blend of behaviors and attitudes towards intimacy and emotional security.",
+      "advice": "Embrace your unique relationship dynamics and work together with your partner to create a balanced and fulfilling intimate life."
+    }
+  }
+}

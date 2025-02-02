@@ -1,1316 +1,3890 @@
 export const translations = {
-  en: {
-    partner_joined: {
-      t: (partnerName) => `${partnerName} joined Nemlys`,
-      d: (_) => 'Start discussing questions together',
-    },
-    partner_answered: {
-      t: (partnerName) => `${partnerName} answered a question`,
-      d: (question) => question,
-    },
-    partner_replied: {
-      t: (partnerName) => `${partnerName} replied`,
-      d: (reply) => reply,
-    },
-    remind_answer: {
-      t: (partnerName) => `${partnerName} is reminding you to answer a question`,
-      d: (question) => question,
-    },
-  },
-  es: {
-    partner_joined: {
-      t: (partnerName) => `${partnerName} se unió a Nemlys`,
-      d: (_) => 'Empiecen a discutir preguntas juntos',
-    },
-    partner_answered: {
-      t: (partnerName) => `${partnerName} respondió a una pregunta`,
-      d: (question) => question,
-    },
-    partner_replied: {
-      t: (partnerName) => `${partnerName} respondió`,
-      d: (reply) => reply,
-    },
-    remind_answer: {
-      t: (partnerName) => `${partnerName} te recuerda que respondas una pregunta`,
-      d: (question) => question,
-    },
-  },
-  nl: {
-    partner_joined: {
-      t: (partnerName) => `${partnerName} is bij Nemlys gekomen`,
-      d: (_) => 'Begin samen vragen te bespreken',
-    },
-    partner_answered: {
-      t: (partnerName) => `${partnerName} heeft een vraag beantwoord`,
-      d: (question) => question,
-    },
-    partner_replied: {
-      t: (partnerName) => `${partnerName} heeft gereageerd`,
-      d: (reply) => reply,
-    },
-    remind_answer: {
-      t: (partnerName) => `${partnerName} herinnert je eraan om een vraag te beantwoorden`,
-      d: (question) => question,
-    },
-  },
-  de: {
-    partner_joined: {
-      t: (partnerName) => `${partnerName} ist Nemlys beigetreten`,
-      d: (_) => 'Fangt an, gemeinsam Fragen zu diskutieren',
-    },
-    partner_answered: {
-      t: (partnerName) => `${partnerName} hat eine Frage beantwortet`,
-      d: (question) => question,
-    },
-    partner_replied: {
-      t: (partnerName) => `${partnerName} hat geantwortet`,
-      d: (reply) => reply,
-    },
-    remind_answer: {
-      t: (partnerName) => `${partnerName} erinnert dich daran, eine Frage zu beantworten`,
-      d: (question) => question,
-    },
-  },
-  it: {
-    partner_joined: {
-      t: (partnerName) => `${partnerName} si è unito a Nemlys`,
-      d: (_) => 'Inizia a discutere le domande insieme',
-    },
-    partner_answered: {
-      t: (partnerName) => `${partnerName} ha risposto a una domanda`,
-      d: (question) => question,
-    },
-    partner_replied: {
-      t: (partnerName) => `${partnerName} ha risposto`,
-      d: (reply) => reply,
-    },
-    remind_answer: {
-      t: (partnerName) => `${partnerName} ti ricorda di rispondere a una domanda`,
-      d: (question) => question,
-    },
-  },
-  fr: {
-    partner_joined: {
-      t: (partnerName) => `${partnerName} a rejoint Nemlys`,
-      d: (_) => 'Commencez à discuter des questions ensemble',
-    },
-    partner_answered: {
-      t: (partnerName) => `${partnerName} a répondu à une question`,
-      d: (question) => question,
-    },
-    partner_replied: {
-      t: (partnerName) => `${partnerName} a répondu`,
-      d: (reply) => reply,
-    },
-    remind_answer: {
-      t: (partnerName) => `${partnerName} te rappelle de répondre à une question`,
-      d: (question) => question,
-    },
-  },
-  ar: {
-    partner_joined: {
-      t: (partnerName) => `${partnerName} انضم إلى نيمليس`,
-      d: (_) => 'ابدأوا مناقشة الأسئلة معًا',
-    },
-    partner_answered: {
-      t: (partnerName) => `${partnerName} أجاب على سؤال`,
-      d: (question) => question,
-    },
-    partner_replied: {
-      t: (partnerName) => `${partnerName} رد`,
-      d: (reply) => reply,
-    },
-    remind_answer: {
-      t: (partnerName) => `${partnerName} يذكرك بالإجابة على سؤال`,
-      d: (question) => question,
-    },
-  },
-  bn: {
-    partner_joined: {
-      t: (partnerName) => `${partnerName} নেমলিসে যোগ দিয়েছে`,
-      d: (_) => 'একসাথে প্রশ্ন নিয়ে আলোচনা শুরু করুন',
-    },
-    partner_answered: {
-      t: (partnerName) => `${partnerName} একটি প্রশ্নের উত্তর দিয়েছে`,
-      d: (question) => question,
-    },
-    partner_replied: {
-      t: (partnerName) => `${partnerName} উত্তর দিয়েছে`,
-      d: (reply) => reply,
-    },
-    remind_answer: {
-      t: (partnerName) => `${partnerName} আপনাকে একটি প্রশ্নের উত্তর দিতে মনে করিয়ে দিচ্ছে`,
-      d: (question) => question,
-    },
-  },
-  zh_cn: {
-    partner_joined: {
-      t: (partnerName) => `${partnerName} 加入了 Nemlys`,
-      d: (_) => '开始一起讨论问题',
-    },
-    partner_answered: {
-      t: (partnerName) => `${partnerName} 回答了一个问题`,
-      d: (question) => question,
-    },
-    partner_replied: {
-      t: (partnerName) => `${partnerName} 回复了`,
-      d: (reply) => reply,
-    },
-    remind_answer: {
-      t: (partnerName) => `${partnerName} 在提醒你回答一个问题`,
-      d: (question) => question,
-    },
-  },
-  zh_tw: {
-    partner_joined: {
-      t: (partnerName) => `${partnerName} 加入了 Nemlys`,
-      d: (_) => '開始一起討論問題',
-    },
-    partner_answered: {
-      t: (partnerName) => `${partnerName} 回答了一個問題`,
-      d: (question) => question,
-    },
-    partner_replied: {
-      t: (partnerName) => `${partnerName} 回覆了`,
-      d: (reply) => reply,
-    },
-    remind_answer: {
-      t: (partnerName) => `${partnerName} 正在提醒你回答一個問題`,
-      d: (question) => question,
-    },
-  },
-  zh_hk: {
-    partner_joined: {
-      t: (partnerName) => `${partnerName} 加入了 Nemlys`,
-      d: (_) => '開始一起討論問題',
-    },
-    partner_answered: {
-      t: (partnerName) => `${partnerName} 回答了一個問題`,
-      d: (question) => question,
-    },
-    partner_replied: {
-      t: (partnerName) => `${partnerName} 回覆了`,
-      d: (reply) => reply,
-    },
-    remind_answer: {
-      t: (partnerName) => `${partnerName} 正在提醒你回答一個問題`,
-      d: (question) => question,
-    },
-  },
-  hi: {
-    partner_joined: {
-      t: (partnerName) => `${partnerName} ने Nemlys में शामिल हो गए`,
-      d: (_) => 'साथ में सवालों पर चर्चा करना शुरू करें',
-    },
-    partner_answered: {
-      t: (partnerName) => `${partnerName} ने एक सवाल का जवाब दिया`,
-      d: (question) => question,
-    },
-    partner_replied: {
-      t: (partnerName) => `${partnerName} ने जवाब दिया`,
-      d: (reply) => reply,
-    },
-    remind_answer: {
-      t: (partnerName) => `${partnerName} आपको एक सवाल का जवाब देने के लिए याद दिला रहे हैं`,
-      d: (question) => question,
-    },
-  },
-  ja: {
-    partner_joined: {
-      t: (partnerName) => `${partnerName}がNemlysに参加しました`,
-      d: (_) => '一緒に質問を話し合い始めましょう',
-    },
-    partner_answered: {
-      t: (partnerName) => `${partnerName}が質問に答えました`,
-      d: (question) => question,
-    },
-    partner_replied: {
-      t: (partnerName) => `${partnerName}が返信しました`,
-      d: (reply) => reply,
-    },
-    remind_answer: {
-      t: (partnerName) => `${partnerName}が質問に答えるようリマインドしています`,
-      d: (question) => question,
-    },
-  },
-  pt: {
-    partner_joined: {
-      t: (partnerName) => `${partnerName} entrou no Nemlys`,
-      d: (_) => 'Comece a discutir perguntas juntos',
-    },
-    partner_answered: {
-      t: (partnerName) => `${partnerName} respondeu a uma pergunta`,
-      d: (question) => question,
-    },
-    partner_replied: {
-      t: (partnerName) => `${partnerName} respondeu`,
-      d: (reply) => reply,
-    },
-    remind_answer: {
-      t: (partnerName) => `${partnerName} está te lembrando de responder a uma pergunta`,
-      d: (question) => question,
-    },
-  },
-  fil: {
-    partner_joined: {
-      t: (partnerName) => `Sumali si ${partnerName} sa Nemlys`,
-      d: (_) => 'Magsimula nang pag-usapan ang mga tanong nang magkasama',
-    },
-    partner_answered: {
-      t: (partnerName) => `Sumagot si ${partnerName} sa isang tanong`,
-      d: (question) => question,
-    },
-    partner_replied: {
-      t: (partnerName) => `Tumugon si ${partnerName}`,
-      d: (reply) => reply,
-    },
-    remind_answer: {
-      t: (partnerName) => `Pinapaalala ni ${partnerName} sa'yo na sumagot sa isang tanong`,
-      d: (question) => question,
-    },
-  },
-  id: {
-    partner_joined: {
-      t: (partnerName) => `${partnerName} bergabung dengan Nemlys`,
-      d: (_) => 'Mulai diskusikan pertanyaan bersama',
-    },
-    partner_answered: {
-      t: (partnerName) => `${partnerName} menjawab sebuah pertanyaan`,
-      d: (question) => question,
-    },
-    partner_replied: {
-      t: (partnerName) => `${partnerName} membalas`,
-      d: (reply) => reply,
-    },
-    remind_answer: {
-      t: (partnerName) => `${partnerName} mengingatkanmu untuk menjawab sebuah pertanyaan`,
-      d: (question) => question,
-    },
-  },
-  pl: {
-    partner_joined: {
-      t: (partnerName) => `${partnerName} dołączył do Nemlys`,
-      d: (_) => 'Zacznijcie razem omawiać pytania',
-    },
-    partner_answered: {
-      t: (partnerName) => `${partnerName} odpowiedział na pytanie`,
-      d: (question) => question,
-    },
-    partner_replied: {
-      t: (partnerName) => `${partnerName} odpowiedział`,
-      d: (reply) => reply,
-    },
-    remind_answer: {
-      t: (partnerName) => `${partnerName} przypomina ci, żebyś odpowiedział na pytanie`,
-      d: (question) => question,
-    },
-  },
-  ro: {
-    partner_joined: {
-      t: (partnerName) => `${partnerName} s-a alăturat lui Nemlys`,
-      d: (_) => 'Începeți să discutați întrebări împreună',
-    },
-    partner_answered: {
-      t: (partnerName) => `${partnerName} a răspuns la o întrebare`,
-      d: (question) => question,
-    },
-    partner_replied: {
-      t: (partnerName) => `${partnerName} a răspuns`,
-      d: (reply) => reply,
-    },
-    remind_answer: {
-      t: (partnerName) => `${partnerName} îți amintește să răspunzi la o întrebare`,
-      d: (question) => question,
-    },
-  },
-  tr: {
-    partner_joined: {
-      t: (partnerName) => `${partnerName} Nemlys'e katıldı`,
-      d: (_) => 'Birlikte soruları tartışmaya başlayın',
-    },
-    partner_answered: {
-      t: (partnerName) => `${partnerName} bir soruyu yanıtladı`,
-      d: (question) => question,
-    },
-    partner_replied: {
-      t: (partnerName) => `${partnerName} yanıt verdi`,
-      d: (reply) => reply,
-    },
-    remind_answer: {
-      t: (partnerName) => `${partnerName} sana bir soruyu yanıtlamanı hatırlatıyor`,
-      d: (question) => question,
-    },
-  },
-  uk: {
-    partner_joined: {
-      t: (partnerName) => `${partnerName} приєднався до Nemlys`,
-      d: (_) => 'Почніть обговорювати питання разом',
-    },
-    partner_answered: {
-      t: (partnerName) => `${partnerName} відповів на питання`,
-      d: (question) => question,
-    },
-    partner_replied: {
-      t: (partnerName) => `${partnerName} відповів`,
-      d: (reply) => reply,
-    },
-    remind_answer: {
-      t: (partnerName) => `${partnerName} нагадує тобі відповісти на питання`,
-      d: (question) => question,
-    },
-  },
-  ru: {
-    partner_joined: {
-      t: (partnerName) => `${partnerName} присоединился к Nemlys`,
-      d: (_) => 'Начните обсуждать вопросы вместе',
-    },
-    partner_answered: {
-      t: (partnerName) => `${partnerName} ответил на вопрос`,
-      d: (question) => question,
-    },
-    partner_replied: {
-      t: (partnerName) => `${partnerName} ответил`,
-      d: (reply) => reply,
-    },
-    remind_answer: {
-      t: (partnerName) => `${partnerName} напоминает тебе ответить на вопрос`,
-      d: (question) => question,
-    },
-  },
-  vi: {
-    partner_joined: {
-      t: (partnerName) => `${partnerName} đã tham gia Nemlys`,
-      d: (_) => 'Bắt đầu thảo luận các câu hỏi cùng nhau',
-    },
-    partner_answered: {
-      t: (partnerName) => `${partnerName} đã trả lời một câu hỏi`,
-      d: (question) => question,
-    },
-    partner_replied: {
-      t: (partnerName) => `${partnerName} đã phản hồi`,
-      d: (reply) => reply,
-    },
-    remind_answer: {
-      t: (partnerName) => `${partnerName} đang nhắc bạn trả lời một câu hỏi`,
-      d: (question) => question,
-    },
-  },
-  no: {
-    partner_joined: {
-      t: (partnerName) => `${partnerName} ble med i Nemlys`,
-      d: (_) => 'Begynn å diskutere spørsmål sammen',
-    },
-    partner_answered: {
-      t: (partnerName) => `${partnerName} svarte på et spørsmål`,
-      d: (question) => question,
-    },
-    partner_replied: {
-      t: (partnerName) => `${partnerName} svarte`,
-      d: (reply) => reply,
-    },
-    remind_answer: {
-      t: (partnerName) => `${partnerName} minner deg på å svare på et spørsmål`,
-      d: (question) => question,
-    },
-  },
-  af: {
-    partner_joined: {
-      t: (partnerName) => `${partnerName} het by Nemlys aangesluit`,
-      d: (_) => 'Begin om vrae saam te bespreek',
-    },
-    partner_answered: {
-      t: (partnerName) => `${partnerName} het 'n vraag beantwoord`,
-      d: (question) => question,
-    },
-    partner_replied: {
-      t: (partnerName) => `${partnerName} het geantwoord`,
-      d: (reply) => reply,
-    },
-    remind_answer: {
-      t: (partnerName) => `${partnerName} herinner jou om 'n vraag te beantwoord`,
-      d: (question) => question,
-    },
-  },
-  sq: {
-    partner_joined: {
-      t: (partnerName) => `${partnerName} u bashkua në Nemlys`,
-      d: (_) => 'Filloni të diskutoni pyetje së bashku',
-    },
-    partner_answered: {
-      t: (partnerName) => `${partnerName} përgjigji një pyetje`,
-      d: (question) => question,
-    },
-    partner_replied: {
-      t: (partnerName) => `${partnerName} u përgjigj`,
-      d: (reply) => reply,
-    },
-    remind_answer: {
-      t: (partnerName) => `${partnerName} po të kujton të përgjigjesh një pyetje`,
-      d: (question) => question,
-    },
-  },
-  am: {
-    partner_joined: {
-      t: (partnerName) => `${partnerName} ነምሊስ ተቀላቅሏል`,
-      d: (_) => 'ጥያቄዎችን በአንድነት ይወያዩ',
-    },
-    partner_answered: {
-      t: (partnerName) => `${partnerName} ጥያቄ መልስ ሰጥቷል`,
-      d: (question) => question,
-    },
-    partner_replied: {
-      t: (partnerName) => `${partnerName} መልስ ሰጥቷል`,
-      d: (reply) => reply,
-    },
-    remind_answer: {
-      t: (partnerName) => `${partnerName} ጥያቄ ለመልስ እንደሚያስታውስ ነው`,
-      d: (question) => question,
-    },
-  },
-  hy: {
-    partner_joined: {
-      t: (partnerName) => `${partnerName} միացավ Nemlys-ին`,
-      d: (_) => 'Սկսեք քննարկել հարցեր միասին',
-    },
-    partner_answered: {
-      t: (partnerName) => `${partnerName} պատասխանեց հարցին`,
-      d: (question) => question,
-    },
-    partner_replied: {
-      t: (partnerName) => `${partnerName} պատասխանեց`,
-      d: (reply) => reply,
-    },
-    remind_answer: {
-      t: (partnerName) => `${partnerName} հիշեցնում է ձեզ պատասխանել հարցին`,
-      d: (question) => question,
-    },
-  },
-  az: {
-    partner_joined: {
-      t: (partnerName) => `${partnerName} Nemlys-ə qoşuldu`,
-      d: (_) => 'Birlikdə suallar müzakirə etməyə başlayın',
-    },
-    partner_answered: {
-      t: (partnerName) => `${partnerName} bir suala cavab verdi`,
-      d: (question) => question,
-    },
-    partner_replied: {
-      t: (partnerName) => `${partnerName} cavab verdi`,
-      d: (reply) => reply,
-    },
-    remind_answer: {
-      t: (partnerName) => `${partnerName} sənə bir suala cavab verməyi xatırladır`,
-      d: (question) => question,
-    },
-  },
-  eu: {
-    partner_joined: {
-      t: (partnerName) => `${partnerName} Nemlysen bat egin du`,
-      d: (_) => 'Hasi galderak elkarrekin eztabaidatzen',
-    },
-    partner_answered: {
-      t: (partnerName) => `${partnerName} galdera bat erantzun du`,
-      d: (question) => question,
-    },
-    partner_replied: {
-      t: (partnerName) => `${partnerName} erantzun du`,
-      d: (reply) => reply,
-    },
-    remind_answer: {
-      t: (partnerName) => `${partnerName} galdera bat erantzuteko gogorarazten dizu`,
-      d: (question) => question,
-    },
-  },
-  be: {
-    partner_joined: {
-      t: (partnerName) => `${partnerName} далучыўся да Nemlys`,
-      d: (_) => 'Пачніце абмяркоўваць пытанні разам',
-    },
-    partner_answered: {
-      t: (partnerName) => `${partnerName} адказаў на пытанне`,
-      d: (question) => question,
-    },
-    partner_replied: {
-      t: (partnerName) => `${partnerName} адказаў`,
-      d: (reply) => reply,
-    },
-    remind_answer: {
-      t: (partnerName) => `${partnerName} нагадвае табе адказаць на пытанне`,
-      d: (question) => question,
-    },
-  },
-  bg: {
-    partner_joined: {
-      t: (partnerName) => `${partnerName} се присъедини към Nemlys`,
-      d: (_) => 'Започнете да обсъждате въпроси заедно',
-    },
-    partner_answered: {
-      t: (partnerName) => `${partnerName} отговори на въпрос`,
-      d: (question) => question,
-    },
-    partner_replied: {
-      t: (partnerName) => `${partnerName} отговори`,
-      d: (reply) => reply,
-    },
-    remind_answer: {
-      t: (partnerName) => `${partnerName} ти напомня да отговориш на въпрос`,
-      d: (question) => question,
-    },
-  },
-  my: {
-    partner_joined: {
-      t: (partnerName) => `${partnerName} က Nemlys မှာ ပါဝင်လိုက်ပါပြီ`,
-      d: (_) => 'အတူတူ မေးခွန်းတွေကို ဆွေးနွေးဖို့ စတင်လိုက်ပါ',
-    },
-    partner_answered: {
-      t: (partnerName) => `${partnerName} က မေးခွန်းတစ်ခုကို ဖြေကြားလိုက်ပါပြီ`,
-      d: (question) => question,
-    },
-    partner_replied: {
-      t: (partnerName) => `${partnerName} က ပြန်လည်ဖြေကြားလိုက်ပါပြီ`,
-      d: (reply) => reply,
-    },
-    remind_answer: {
-      t: (partnerName) => `${partnerName} က မေးခွန်းတစ်ခုကို ဖြေဖို့ သတိပေးနေပါတယ်`,
-      d: (question) => question,
-    },
-  },
-  ca: {
-    partner_joined: {
-      t: (partnerName) => `${partnerName} s'ha unit a Nemlys`,
-      d: (_) => 'Comenceu a discutir preguntes junts',
-    },
-    partner_answered: {
-      t: (partnerName) => `${partnerName} ha contestat una pregunta`,
-      d: (question) => question,
-    },
-    partner_replied: {
-      t: (partnerName) => `${partnerName} ha respost`,
-      d: (reply) => reply,
-    },
-    remind_answer: {
-      t: (partnerName) => `${partnerName} et recorda que contestis una pregunta`,
-      d: (question) => question,
-    },
-  },
-  hr: {
-    partner_joined: {
-      t: (partnerName) => `${partnerName} se pridružio Nemlys-u`,
-      d: (_) => 'Započnite zajedničku raspravu o pitanjima',
-    },
-    partner_answered: {
-      t: (partnerName) => `${partnerName} je odgovorio na pitanje`,
-      d: (question) => question,
-    },
-    partner_replied: {
-      t: (partnerName) => `${partnerName} je odgovorio`,
-      d: (reply) => reply,
-    },
-    remind_answer: {
-      t: (partnerName) => `${partnerName} te podsjeća da odgovoriš na pitanje`,
-      d: (question) => question,
-    },
-  },
-  cs: {
-    partner_joined: {
-      t: (partnerName) => `${partnerName} se připojil(a) k Nemlys`,
-      d: (_) => 'Začněte spolu diskutovat o otázkách',
-    },
-    partner_answered: {
-      t: (partnerName) => `${partnerName} odpověděl(a) na otázku`,
-      d: (question) => question,
-    },
-    partner_replied: {
-      t: (partnerName) => `${partnerName} odpověděl(a)`,
-      d: (reply) => reply,
-    },
-    remind_answer: {
-      t: (partnerName) => `${partnerName} ti připomíná, abys odpověděl(a) na otázku`,
-      d: (question) => question,
-    },
-  },
-  da: {
-    partner_joined: {
-      t: (partnerName) => `${partnerName} er blevet medlem af Nemlys`,
-      d: (_) => 'Begynd at diskutere spørgsmål sammen',
-    },
-    partner_answered: {
-      t: (partnerName) => `${partnerName} har besvaret et spørgsmål`,
-      d: (question) => question,
-    },
-    partner_replied: {
-      t: (partnerName) => `${partnerName} har svaret`,
-      d: (reply) => reply,
-    },
-    remind_answer: {
-      t: (partnerName) => `${partnerName} minder dig om at besvare et spørgsmål`,
-      d: (question) => question,
-    },
-  },
-  et: {
-    partner_joined: {
-      t: (partnerName) => `${partnerName} liitus Nemlysiga`,
-      d: (_) => 'Alustage koos küsimuste arutamist',
-    },
-    partner_answered: {
-      t: (partnerName) => `${partnerName} vastas küsimusele`,
-      d: (question) => question,
-    },
-    partner_replied: {
-      t: (partnerName) => `${partnerName} vastas`,
-      d: (reply) => reply,
-    },
-    remind_answer: {
-      t: (partnerName) => `${partnerName} tuletab meelde, et vastaksid küsimusele`,
-      d: (question) => question,
-    },
-  },
-  fi: {
-    partner_joined: {
-      t: (partnerName) => `${partnerName} liittyi Nemlysiin`,
-      d: (_) => 'Aloita kysymysten keskustelu yhdessä',
-    },
-    partner_answered: {
-      t: (partnerName) => `${partnerName} vastasi kysymykseen`,
-      d: (question) => question,
-    },
-    partner_replied: {
-      t: (partnerName) => `${partnerName} vastasi`,
-      d: (reply) => reply,
-    },
-    remind_answer: {
-      t: (partnerName) => `${partnerName} muistuttaa sinua vastaamaan kysymykseen`,
-      d: (question) => question,
-    },
-  },
-  gl: {
-    partner_joined: {
-      t: (partnerName) => `${partnerName} uniuuse a Nemlys`,
-      d: (_) => 'Comeza a discutir preguntas xuntos',
-    },
-    partner_answered: {
-      t: (partnerName) => `${partnerName} respondeu a unha pregunta`,
-      d: (question) => question,
-    },
-    partner_replied: {
-      t: (partnerName) => `${partnerName} respondeu`,
-      d: (reply) => reply,
-    },
-    remind_answer: {
-      t: (partnerName) => `${partnerName} está recordándoche que respondas a unha pregunta`,
-      d: (question) => question,
-    },
-  },
-  ka: {
-    partner_joined: {
-      t: (partnerName) => `${partnerName} შეუერთდა Nemlys-ს`,
-      d: (_) => 'დაიწყეთ კითხვებზე ერთად საუბარი',
-    },
-    partner_answered: {
-      t: (partnerName) => `${partnerName} უპასუხა კითხვას`,
-      d: (question) => question,
-    },
-    partner_replied: {
-      t: (partnerName) => `${partnerName} უპასუხა`,
-      d: (reply) => reply,
-    },
-    remind_answer: {
-      t: (partnerName) => `${partnerName} გახსენებს, რომ უპასუხო კითხვას`,
-      d: (question) => question,
-    },
-  },
-  el: {
-    partner_joined: {
-      t: (partnerName) => `${partnerName} μπήκε στο Nemlys`,
-      d: (_) => 'Αρχίστε να συζητάτε ερωτήσεις μαζί',
-    },
-    partner_answered: {
-      t: (partnerName) => `${partnerName} απάντησε σε μια ερώτηση`,
-      d: (question) => question,
-    },
-    partner_replied: {
-      t: (partnerName) => `${partnerName} απάντησε`,
-      d: (reply) => reply,
-    },
-    remind_answer: {
-      t: (partnerName) => `${partnerName} σου θυμίζει να απαντήσεις σε μια ερώτηση`,
-      d: (question) => question,
-    },
-  },
-  gu: {
-    partner_joined: {
-      t: (partnerName) => `${partnerName} ને નેમલિસમાં જોડાયા`,
-      d: (_) => 'સાથે પ્રશ્નો પર ચર્ચા શરૂ કરો',
-    },
-    partner_answered: {
-      t: (partnerName) => `${partnerName} એ એક પ્રશ્નનો જવાબ આપ્યો`,
-      d: (question) => question,
-    },
-    partner_replied: {
-      t: (partnerName) => `${partnerName} એ જવાબ આપ્યો`,
-      d: (reply) => reply,
-    },
-    remind_answer: {
-      t: (partnerName) => `${partnerName} તમને પ્રશ્નનો જવાબ આપવા યાદ અપાવી રહ્યો છે`,
-      d: (question) => question,
-    },
-  },
-  he: {
-    partner_joined: {
-      t: (partnerName) => `${partnerName} הצטרף לנמליס`,
-      d: (_) => 'תתחילו לדון בשאלות יחד',
-    },
-    partner_answered: {
-      t: (partnerName) => `${partnerName} ענה על שאלה`,
-      d: (question) => question,
-    },
-    partner_replied: {
-      t: (partnerName) => `${partnerName} ענה`,
-      d: (reply) => reply,
-    },
-    remind_answer: {
-      t: (partnerName) => `${partnerName} מזכיר לך לענות על שאלה`,
-      d: (question) => question,
-    },
-  },
-  hu: {
-    partner_joined: {
-      t: (partnerName) => `${partnerName} csatlakozott a Nemlys-hez`,
-      d: (_) => 'Kezdjétek el együtt megvitatni a kérdéseket',
-    },
-    partner_answered: {
-      t: (partnerName) => `${partnerName} válaszolt egy kérdésre`,
-      d: (question) => question,
-    },
-    partner_replied: {
-      t: (partnerName) => `${partnerName} válaszolt`,
-      d: (reply) => reply,
-    },
-    remind_answer: {
-      t: (partnerName) => `${partnerName} emlékeztet, hogy válaszolj egy kérdésre`,
-      d: (question) => question,
-    },
-  },
-  is: {
-    partner_joined: {
-      t: (partnerName) => `${partnerName} gekk í Nemlys`,
-      d: (_) => 'Byrjaðu að ræða spurningarnar saman',
-    },
-    partner_answered: {
-      t: (partnerName) => `${partnerName} svaraði spurningu`,
-      d: (question) => question,
-    },
-    partner_replied: {
-      t: (partnerName) => `${partnerName} svaraði`,
-      d: (reply) => reply,
-    },
-    remind_answer: {
-      t: (partnerName) => `${partnerName} minnir þig á að svara spurningu`,
-      d: (question) => question,
-    },
-  },
-  kn: {
-    partner_joined: {
-      t: (partnerName) => `${partnerName} ನೆಮ್‌ಲಿಸ್‌ನಲ್ಲಿ ಸೇರಿದ್ದಾರೆ`,
-      d: (_) => 'ಒಟ್ಟಾಗಿ ಪ್ರಶ್ನೆಗಳ ಬಗ್ಗೆ ಚರ್ಚೆ ಮಾಡಲು ಪ್ರಾರಂಭಿಸಿ',
-    },
-    partner_answered: {
-      t: (partnerName) => `${partnerName} ಒಂದು ಪ್ರಶ್ನೆಗೆ ಉತ್ತರಿಸಿದ್ದಾರೆ`,
-      d: (question) => question,
-    },
-    partner_replied: {
-      t: (partnerName) => `${partnerName} ಉತ್ತರಿಸಿದ್ದಾರೆ`,
-      d: (reply) => reply,
-    },
-    remind_answer: {
-      t: (partnerName) => `${partnerName} ನಿಮಗೆ ಒಂದು ಪ್ರಶ್ನೆಗೆ ಉತ್ತರಿಸಲು ನೆನಪಿಸುತ್ತಿದ್ದಾರೆ`,
-      d: (question) => question,
-    },
-  },
-  kk: {
-    partner_joined: {
-      t: (partnerName) => `${partnerName} Nemlys-ке қосылды`,
-      d: (_) => 'Сұрақтарды бірге талқылай бастаңдар',
-    },
-    partner_answered: {
-      t: (partnerName) => `${partnerName} сұраққа жауап берді`,
-      d: (question) => question,
-    },
-    partner_replied: {
-      t: (partnerName) => `${partnerName} жауап берді`,
-      d: (reply) => reply,
-    },
-    remind_answer: {
-      t: (partnerName) => `${partnerName} саған сұраққа жауап беруді ескертуде`,
-      d: (question) => question,
-    },
-  },
-  km: {
-    partner_joined: {
-      t: (partnerName) => `${partnerName} បានចូលរួមជាមួយ Nemlys`,
-      d: (_) => 'ចាប់ផ្តើមពិភាក្សាអំពីសំណួរទាំងអស់ជាមួយគ្នា',
-    },
-    partner_answered: {
-      t: (partnerName) => `${partnerName} បានឆ្លើយសំណួរ`,
-      d: (question) => question,
-    },
-    partner_replied: {
-      t: (partnerName) => `${partnerName} បានឆ្លើយតប`,
-      d: (reply) => reply,
-    },
-    remind_answer: {
-      t: (partnerName) => `${partnerName} កំពុងរំលឹកអ្នកឱ្យឆ្លើយសំណួរ`,
-      d: (question) => question,
-    },
-  },
-  ko: {
-    partner_joined: {
-      t: (partnerName) => `${partnerName}가 Nemlys에 가입했어요`,
-      d: (_) => '함께 질문을 논의해보세요',
-    },
-    partner_answered: {
-      t: (partnerName) => `${partnerName}가 질문에 답했어요`,
-      d: (question) => question,
-    },
-    partner_replied: {
-      t: (partnerName) => `${partnerName}가 답장했어요`,
-      d: (reply) => reply,
-    },
-    remind_answer: {
-      t: (partnerName) => `${partnerName}가 질문에 답하라고 상기시켜요`,
-      d: (question) => question,
-    },
-  },
-  ky: {
-    partner_joined: {
-      t: (partnerName) => `${partnerName} Немлыска кошулду`,
-      d: (_) => 'Суроолорду бирге талкуулоону башта',
-    },
-    partner_answered: {
-      t: (partnerName) => `${partnerName} суроого жооп берди`,
-      d: (question) => question,
-    },
-    partner_replied: {
-      t: (partnerName) => `${partnerName} жооп берди`,
-      d: (reply) => reply,
-    },
-    remind_answer: {
-      t: (partnerName) => `${partnerName} сага суроого жооп берүүнү эскертүүдө`,
-      d: (question) => question,
-    },
-  },
-  lo: {
-    partner_joined: {
-      t: (partnerName) => `${partnerName} បានចូលរួមជាមួយ Nemlys`,
-      d: (_) => 'ចាប់ផ្តើមពិភាក្សាអំពីសំណួរទៅជាមួយគ្នា',
-    },
-    partner_answered: {
-      t: (partnerName) => `${partnerName} បានឆ្លើយសំណួរ`,
-      d: (question) => question,
-    },
-    partner_replied: {
-      t: (partnerName) => `${partnerName} បានឆ្លើយតប`,
-      d: (reply) => reply,
-    },
-    remind_answer: {
-      t: (partnerName) => `${partnerName} កំពុងរំលឹកអ្នកឱ្យឆ្លើយសំណួរ`,
-      d: (question) => question,
-    },
-  },
-  lv: {
-    partner_joined: {
-      t: (partnerName) => `${partnerName} pievienojās Nemlys`,
-      d: (_) => 'Sāciet kopā apspriest jautājumus',
-    },
-    partner_answered: {
-      t: (partnerName) => `${partnerName} atbildēja uz jautājumu`,
-      d: (question) => question,
-    },
-    partner_replied: {
-      t: (partnerName) => `${partnerName} atbildēja`,
-      d: (reply) => reply,
-    },
-    remind_answer: {
-      t: (partnerName) => `${partnerName} atgādina, ka jāatbild uz jautājumu`,
-      d: (question) => question,
-    },
-  },
-  lt: {
-    partner_joined: {
-      t: (partnerName) => `${partnerName} prisijungė prie Nemlys`,
-      d: (_) => 'Pradėkite kartu diskutuoti apie klausimus',
-    },
-    partner_answered: {
-      t: (partnerName) => `${partnerName} atsakė į klausimą`,
-      d: (question) => question,
-    },
-    partner_replied: {
-      t: (partnerName) => `${partnerName} atsakė`,
-      d: (reply) => reply,
-    },
-    remind_answer: {
-      t: (partnerName) => `${partnerName} primena, kad turėtum atsakyti į klausimą`,
-      d: (question) => question,
-    },
-  },
-  mk: {
-    partner_joined: {
-      t: (partnerName) => `${partnerName} се приклучи на Немлис`,
-      d: (_) => 'Започнете да дискутирате прашања заедно',
-    },
-    partner_answered: {
-      t: (partnerName) => `${partnerName} одговори на прашање`,
-      d: (question) => question,
-    },
-    partner_replied: {
-      t: (partnerName) => `${partnerName} одговори`,
-      d: (reply) => reply,
-    },
-    remind_answer: {
-      t: (partnerName) => `${partnerName} те потсетува да одговориш на прашање`,
-      d: (question) => question,
-    },
-  },
-  ms: {
-    partner_joined: {
-      t: (partnerName) => `${partnerName} telah menyertai Nemlys`,
-      d: (_) => 'Mulakan perbincangan soalan bersama',
-    },
-    partner_answered: {
-      t: (partnerName) => `${partnerName} telah menjawab satu soalan`,
-      d: (question) => question,
-    },
-    partner_replied: {
-      t: (partnerName) => `${partnerName} telah membalas`,
-      d: (reply) => reply,
-    },
-    remind_answer: {
-      t: (partnerName) => `${partnerName} mengingatkan kamu untuk menjawab satu soalan`,
-      d: (question) => question,
-    },
-  },
-  ml: {
-    partner_joined: {
-      t: (partnerName) => `${partnerName} Nemlys-ലേക്ക് ചേർന്നു`,
-      d: (_) => 'കൂടെയായി ചോദ്യങ്ങൾ ചർച്ച ചെയ്യാൻ തുടങ്ങൂ',
-    },
-    partner_answered: {
-      t: (partnerName) => `${partnerName} ഒരു ചോദ്യത്തിന് മറുപടി നൽകി`,
-      d: (question) => question,
-    },
-    partner_replied: {
-      t: (partnerName) => `${partnerName} മറുപടി നൽകി`,
-      d: (reply) => reply,
-    },
-    remind_answer: {
-      t: (partnerName) => `${partnerName} ഒരു ചോദ്യത്തിന് മറുപടി നൽകാൻ നിങ്ങളെ ഓർമ്മിപ്പിക്കുന്നു`,
-      d: (question) => question,
-    },
-  },
-  mr: {
-    partner_joined: {
-      t: (partnerName) => `${partnerName} ने नेम्लिसमध्ये सामील झाले`,
-      d: (_) => 'एकत्रितपणे प्रश्नांवर चर्चा सुरू करा',
-    },
-    partner_answered: {
-      t: (partnerName) => `${partnerName} ने एक प्रश्न उत्तरला`,
-      d: (question) => question,
-    },
-    partner_replied: {
-      t: (partnerName) => `${partnerName} ने उत्तर दिले`,
-      d: (reply) => reply,
-    },
-    remind_answer: {
-      t: (partnerName) => `${partnerName} तुम्हाला प्रश्नाचे उत्तर देण्याची आठवण करून देत आहे`,
-      d: (question) => question,
-    },
-  },
-  mn: {
-    partner_joined: {
-      t: (partnerName) => `${partnerName} Nemlys-д нэгдлээ`,
-      d: (_) => 'Хамтдаа асуултуудыг хэлэлцэж эхлээрэй',
-    },
-    partner_answered: {
-      t: (partnerName) => `${partnerName} асуултанд хариуллаа`,
-      d: (question) => question,
-    },
-    partner_replied: {
-      t: (partnerName) => `${partnerName} хариуллаа`,
-      d: (reply) => reply,
-    },
-    remind_answer: {
-      t: (partnerName) => `${partnerName} чамд асуултанд хариулахыг сануулж байна`,
-      d: (question) => question,
-    },
-  },
-  ne: {
-    partner_joined: {
-      t: (partnerName) => `${partnerName} ले Nemlys मा सामेल भए`,
-      d: (_) => 'साथै प्रश्नहरूमा छलफल गर्न सुरु गर',
-    },
-    partner_answered: {
-      t: (partnerName) => `${partnerName} ले एक प्रश्नको उत्तर दिए`,
-      d: (question) => question,
-    },
-    partner_replied: {
-      t: (partnerName) => `${partnerName} ले जवाफ दिए`,
-      d: (reply) => reply,
-    },
-    remind_answer: {
-      t: (partnerName) => `${partnerName} ले तिमीलाई एक प्रश्नको उत्तर दिन सम्झाइरहेका छन्`,
-      d: (question) => question,
-    },
-  },
-  fa: {
-    partner_joined: {
-      t: (partnerName) => `${partnerName} به نملیس پیوست`,
-      d: (_) => 'شروع به بحث در مورد سوالات با هم کنید',
-    },
-    partner_answered: {
-      t: (partnerName) => `${partnerName} به یک سوال پاسخ داد`,
-      d: (question) => question,
-    },
-    partner_replied: {
-      t: (partnerName) => `${partnerName} پاسخ داد`,
-      d: (reply) => reply,
-    },
-    remind_answer: {
-      t: (partnerName) => `${partnerName} به شما یادآوری می‌کند که به یک سوال پاسخ دهید`,
-      d: (question) => question,
-    },
-  },
-  pa: {
-    partner_joined: {
-      t: (partnerName) => `${partnerName} ਨੇ Nemlys ਵਿੱਚ ਸ਼ਾਮਲ ਹੋਇਆ`,
-      d: (_) => "ਸਾਥੀ ਨਾਲ ਸਵਾਲਾਂ 'ਤੇ ਗੱਲ ਕਰਨਾ ਸ਼ੁਰੂ ਕਰੋ",
-    },
-    partner_answered: {
-      t: (partnerName) => `${partnerName} ਨੇ ਇੱਕ ਸਵਾਲ ਦਾ ਜਵਾਬ ਦਿੱਤਾ`,
-      d: (question) => question,
-    },
-    partner_replied: {
-      t: (partnerName) => `${partnerName} ਨੇ ਜਵਾਬ ਦਿੱਤਾ`,
-      d: (reply) => reply,
-    },
-    remind_answer: {
-      t: (partnerName) => `${partnerName} ਤੁਹਾਨੂੰ ਇੱਕ ਸਵਾਲ ਦਾ ਜਵਾਬ ਦੇਣ ਦੀ ਯਾਦ ਦਿਵਾ ਰਿਹਾ ਹੈ`,
-      d: (question) => question,
-    },
-  },
-  rm: {
-    partner_joined: {
-      t: (partnerName) => `${partnerName} è s'unì a Nemlys`,
-      d: (_) => 'Cumenzai a discutir dumondas ensemen',
-    },
-    partner_answered: {
-      t: (partnerName) => `${partnerName} ha respondì a ina dumonda`,
-      d: (question) => question,
-    },
-    partner_replied: {
-      t: (partnerName) => `${partnerName} ha respundì`,
-      d: (reply) => reply,
-    },
-    remind_answer: {
-      t: (partnerName) => `${partnerName} t'emmembra da responder a ina dumonda`,
-      d: (question) => question,
-    },
-  },
-  sr: {
-    partner_joined: {
-      t: (partnerName) => `${partnerName} se pridružio Nemlys-u`,
-      d: (_) => 'Počnite da razgovarate o pitanjima zajedno',
-    },
-    partner_answered: {
-      t: (partnerName) => `${partnerName} je odgovorio na pitanje`,
-      d: (question) => question,
-    },
-    partner_replied: {
-      t: (partnerName) => `${partnerName} je odgovorio`,
-      d: (reply) => reply,
-    },
-    remind_answer: {
-      t: (partnerName) => `${partnerName} te podseća da odgovoriš na pitanje`,
-      d: (question) => question,
-    },
-  },
-  si: {
-    partner_joined: {
-      t: (partnerName) => `${partnerName} Nemlys එකට එකතු වුණා`,
-      d: (_) => 'සමූහ ප්‍රශ්න ගැන කතා කිරීමට ආරම්භ කරන්න',
-    },
-    partner_answered: {
-      t: (partnerName) => `${partnerName} ප්‍රශ්නයකට පිළිතුරු දුන්නා`,
-      d: (question) => question,
-    },
-    partner_replied: {
-      t: (partnerName) => `${partnerName} පිළිතුරු දුන්නා`,
-      d: (reply) => reply,
-    },
-    remind_answer: {
-      t: (partnerName) => `${partnerName} ඔබට ප්‍රශ්නයකට පිළිතුරු දිය යුතු බව මතක දෙනවා`,
-      d: (question) => question,
-    },
-  },
-  sk: {
-    partner_joined: {
-      t: (partnerName) => `${partnerName} sa pridal do Nemlys`,
-      d: (_) => 'Začnite spolu diskutovať o otázkach',
-    },
-    partner_answered: {
-      t: (partnerName) => `${partnerName} odpovedal na otázku`,
-      d: (question) => question,
-    },
-    partner_replied: {
-      t: (partnerName) => `${partnerName} odpovedal`,
-      d: (reply) => reply,
-    },
-    remind_answer: {
-      t: (partnerName) => `${partnerName} ti pripomína, aby si odpovedal na otázku`,
-      d: (question) => question,
-    },
-  },
-  sl: {
-    partner_joined: {
-      t: (partnerName) => `${partnerName} se je pridružil/a Nemlys`,
-      d: (_) => 'Začnita skupaj razpravljati o vprašanjih',
-    },
-    partner_answered: {
-      t: (partnerName) => `${partnerName} je odgovoril/a na vprašanje`,
-      d: (question) => question,
-    },
-    partner_replied: {
-      t: (partnerName) => `${partnerName} je odgovoril/a`,
-      d: (reply) => reply,
-    },
-    remind_answer: {
-      t: (partnerName) => `${partnerName} te spominja, da odgovoriš na vprašanje`,
-      d: (question) => question,
-    },
-  },
-  sw: {
-    partner_joined: {
-      t: (partnerName) => `${partnerName} amejiunga na Nemlys`,
-      d: (_) => 'Anza kujadili maswali pamoja',
-    },
-    partner_answered: {
-      t: (partnerName) => `${partnerName} ameijibu swali`,
-      d: (question) => question,
-    },
-    partner_replied: {
-      t: (partnerName) => `${partnerName} amejibu`,
-      d: (reply) => reply,
-    },
-    remind_answer: {
-      t: (partnerName) => `${partnerName} anakukumbusha kujibu swali`,
-      d: (question) => question,
-    },
-  },
-  sv: {
-    partner_joined: {
-      t: (partnerName) => `${partnerName} har gått med i Nemlys`,
-      d: (_) => 'Börja diskutera frågor tillsammans',
-    },
-    partner_answered: {
-      t: (partnerName) => `${partnerName} har svarat på en fråga`,
-      d: (question) => question,
-    },
-    partner_replied: {
-      t: (partnerName) => `${partnerName} har svarat`,
-      d: (reply) => reply,
-    },
-    remind_answer: {
-      t: (partnerName) => `${partnerName} påminner dig om att svara på en fråga`,
-      d: (question) => question,
-    },
-  },
-  ta: {
-    partner_joined: {
-      t: (partnerName) => `${partnerName} நெம்லீஸில் சேர்ந்தார்`,
-      d: (_) => 'கேள்விகளை ஒன்றாக விவாதிக்க தொடங்குங்கள்',
-    },
-    partner_answered: {
-      t: (partnerName) => `${partnerName} ஒரு கேள்விக்கு பதிலளித்தார்`,
-      d: (question) => question,
-    },
-    partner_replied: {
-      t: (partnerName) => `${partnerName} பதிலளித்தார்`,
-      d: (reply) => reply,
-    },
-    remind_answer: {
-      t: (partnerName) => `${partnerName} உங்களுக்கு ஒரு கேள்விக்கு பதிலளிக்க நினைவூட்டுகிறார்`,
-      d: (question) => question,
-    },
-  },
-  te: {
-    partner_joined: {
-      t: (partnerName) => `${partnerName} Nemlys లో చేరారు`,
-      d: (_) => 'కలిసి ప్రశ్నలపై చర్చ చేయడం ప్రారంభించండి',
-    },
-    partner_answered: {
-      t: (partnerName) => `${partnerName} ఒక ప్రశ్నకు సమాధానం ఇచ్చారు`,
-      d: (question) => question,
-    },
-    partner_replied: {
-      t: (partnerName) => `${partnerName} సమాధానం ఇచ్చారు`,
-      d: (reply) => reply,
-    },
-    remind_answer: {
-      t: (partnerName) => `${partnerName} ఒక ప్రశ్నకు సమాధానం ఇవ్వాలని మీకు గుర్తు చేస్తున్నారు`,
-      d: (question) => question,
-    },
-  },
-  th: {
-    partner_joined: {
-      t: (partnerName) => `${partnerName} เข้าร่วม Nemlys แล้ว`,
-      d: (_) => 'เริ่มพูดคุยเกี่ยวกับคำถามด้วยกัน',
-    },
-    partner_answered: {
-      t: (partnerName) => `${partnerName} ตอบคำถามแล้ว`,
-      d: (question) => question,
-    },
-    partner_replied: {
-      t: (partnerName) => `${partnerName} ตอบกลับแล้ว`,
-      d: (reply) => reply,
-    },
-    remind_answer: {
-      t: (partnerName) => `${partnerName} กำลังเตือนคุณให้ตอบคำถาม`,
-      d: (question) => question,
-    },
-  },
-  ur: {
-    partner_joined: {
-      t: (partnerName) => `${partnerName} نے نیملس میں شمولیت اختیار کی`,
-      d: (_) => 'مل کر سوالات پر بات چیت شروع کریں',
-    },
-    partner_answered: {
-      t: (partnerName) => `${partnerName} نے ایک سوال کا جواب دیا`,
-      d: (question) => question,
-    },
-    partner_replied: {
-      t: (partnerName) => `${partnerName} نے جواب دیا`,
-      d: (reply) => reply,
-    },
-    remind_answer: {
-      t: (partnerName) => `${partnerName} آپ کو ایک سوال کا جواب دینے کی یاد دہانی کروا رہا ہے`,
-      d: (question) => question,
-    },
-  },
-  zu: {
-    partner_joined: {
-      t: (partnerName) => `${partnerName} ujoyine i-Nemlys`,
-      d: (_) => 'Qala ukuxoxa ngezinkinga ndawonye',
-    },
-    partner_answered: {
-      t: (partnerName) => `${partnerName} uphendule umbuzo`,
-      d: (question) => question,
-    },
-    partner_replied: {
-      t: (partnerName) => `${partnerName} uphendule`,
-      d: (reply) => reply,
-    },
-    remind_answer: {
-      t: (partnerName) => `${partnerName} uyakukhumbuza ukuthi uphendule umbuzo`,
-      d: (question) => question,
-    },
-  },
-};
+'en': {
+'partner_joined': {
+    't': (partnerName) => `${partnerName} joined Nemlys`,
+    'd': (_) => `Start discussing questions together`,
+    },
+'partner_answered': {
+    't': (partnerName) => `${partnerName} answered a question`,
+    'd': (question) => question,
+    },
+'partner_replied': {
+    't': (partnerName) => `${partnerName} replied`,
+    'd': (reply) => reply,
+    },
+'remind_answer': {
+    't': (partnerName) => `${partnerName} is reminding you to answer a question`,
+    'd': (question) => question,
+    },
+'remind_test': {
+    't': (partnerName) => `${partnerName} has finished a test`,
+    'd': (title) => `Finish test '${title}' to see each other results`,
+    },
+'remind_checkup': {
+    't': (partnerName) => `${partnerName} has finished a checkup`,
+    'd': (title) => `Finish checkup '${title}' to see each other responses`,
+    },
+'remind_game': {
+    't': (partnerName) => `${partnerName} has finished a game`,
+    'd': (title) => `Finish game '${title}' to see each other responses`,
+    },
+'remind_exercise': {
+    't': (partnerName) => `${partnerName} has finished an exercise`,
+    'd': (title) => `Practice exercise '${title}' too`,
+    },
+'remind_article': {
+    't': (partnerName) => `${partnerName} has finished an article`,
+    'd': (title) => `Read article '${title}' too`,
+    },
+'remind_question': {
+    't': (partnerName) => `${partnerName} has answered a question`,
+    'd': (reply) => reply,
+    },
+'love_note': {
+    't': (partnerName, action) => `${partnerName} says '${action}'`,
+    'd': (_) => `Open Nemlys to answer`,
+    },
+    'love_note_sorry': "I'm sorry",
+    'love_note_sex': "I'm in the Mood",
+    'love_note_miss': "I miss you",
+    'love_note_date': "Let's have a date",
+    'love_note_talk': "I want to talk",
+    'love_note_attention': "I need your attention",
+    'love_note_love': "I Love You",
+    'love_note_hug': "Send a Hug"
+    },
+'es': {
+'partner_joined': {
+    't': (partnerName) => `${partnerName} se unió a Nemlys`,
+    'd': (_) => `Empiecen a discutir preguntas juntos`,
+    },
+'partner_answered': {
+    't': (partnerName) => `${partnerName} respondió a una pregunta`,
+    'd': (question) => question,
+    },
+'partner_replied': {
+    't': (partnerName) => `${partnerName} respondió`,
+    'd': (reply) => reply,
+    },
+'remind_answer': {
+    't': (partnerName) => `${partnerName} te recuerda que respondas una pregunta`,
+    'd': (question) => question,
+    },
+'remind_test': {
+    't': (partnerName) => `${partnerName} ha terminado un test`,
+    'd': (title) => `Termina el test '${title}' para ver los resultados de ambos`,
+    },
+'remind_checkup': {
+    't': (partnerName) => `${partnerName} ha terminado un chequeo`,
+    'd': (title) => `Termina el chequeo '${title}' para ver las respuestas de ambos`,
+    },
+'remind_game': {
+    't': (partnerName) => `${partnerName} ha terminado un juego`,
+    'd': (title) => `Termina el juego '${title}' para ver las respuestas de ambos`,
+    },
+'remind_exercise': {
+    't': (partnerName) => `${partnerName} ha terminado un ejercicio`,
+    'd': (title) => `Practica también el ejercicio '${title}'`,
+    },
+'remind_article': {
+    't': (partnerName) => `${partnerName} ha terminado un artículo`,
+    'd': (title) => `Lee también el artículo '${title}'`,
+    },
+'remind_question': {
+    't': (partnerName) => `${partnerName} ha respondido una pregunta`,
+    'd': (reply) => reply,
+    },
+'love_note': {
+    't': (partnerName, action) => `${partnerName} dice '${action}'`,
+    'd': (_) => `Abre Nemlys para responder`,
+    },
+    'love_note_sorry': "Lo siento",
+    'love_note_sex': "Tengo ganas",
+    'love_note_miss': "Te extraño",
+    'love_note_date': "Tengamos una cita",
+    'love_note_talk': "Quiero hablar",
+    'love_note_attention': "Necesito tu atención",
+    'love_note_love': "Te amo",
+    'love_note_hug': "Envía un abrazo"
+    },
+'nl': {
+'partner_joined': {
+    't': (partnerName) => `${partnerName} is bij Nemlys gekomen`,
+    'd': (_) => `Begin samen vragen te bespreken`,
+    },
+'partner_answered': {
+    't': (partnerName) => `${partnerName} heeft een vraag beantwoord`,
+    'd': (question) => question,
+    },
+'partner_replied': {
+    't': (partnerName) => `${partnerName} heeft gereageerd`,
+    'd': (reply) => reply,
+    },
+'remind_answer': {
+    't': (partnerName) => `${partnerName} herinnert je eraan om een vraag te beantwoorden`,
+    'd': (question) => question,
+    },
+'remind_test': {
+    't': (partnerName) => `${partnerName} heeft een test afgerond`,
+    'd': (title) => `Rond de test '${title}' af om elkaars resultaten te zien`,
+    },
+'remind_checkup': {
+    't': (partnerName) => `${partnerName} heeft een check-up afgerond`,
+    'd': (title) => `Rond de check-up '${title}' af om elkaars antwoorden te zien`,
+    },
+'remind_game': {
+    't': (partnerName) => `${partnerName} heeft een spel afgerond`,
+    'd': (title) => `Rond het spel '${title}' af om elkaars antwoorden te zien`,
+    },
+'remind_exercise': {
+    't': (partnerName) => `${partnerName} heeft een oefening afgerond`,
+    'd': (title) => `Doe ook de oefening '${title}'`,
+    },
+'remind_article': {
+    't': (partnerName) => `${partnerName} heeft een artikel afgerond`,
+    'd': (title) => `Lees ook het artikel '${title}'`,
+    },
+'remind_question': {
+    't': (partnerName) => `${partnerName} heeft een vraag beantwoord`,
+    'd': (reply) => reply,
+    },
+'love_note': {
+    't': (partnerName, action) => `${partnerName} zegt '${action}'`,
+    'd': (_) => `Open Nemlys om te antwoorden`,
+    },
+    'love_note_sorry': "Het spijt me",
+    'love_note_sex': "Ik heb zin",
+    'love_note_miss': "Ik mis je",
+    'love_note_date': "Laten we op date gaan",
+    'love_note_talk': "Ik wil met je praten",
+    'love_note_attention': "Ik heb je aandacht nodig",
+    'love_note_love': "Ik hou van jou",
+    'love_note_hug': "Stuur een knuffel"
+    },
+'de': {
+'partner_joined': {
+    't': (partnerName) => `${partnerName} ist Nemlys beigetreten`,
+    'd': (_) => `Fangt an, gemeinsam Fragen zu diskutieren`,
+    },
+'partner_answered': {
+    't': (partnerName) => `${partnerName} hat eine Frage beantwortet`,
+    'd': (question) => question,
+    },
+'partner_replied': {
+    't': (partnerName) => `${partnerName} hat geantwortet`,
+    'd': (reply) => reply,
+    },
+'remind_answer': {
+    't': (partnerName) => `${partnerName} erinnert dich daran, eine Frage zu beantworten`,
+    'd': (question) => question,
+    },
+'remind_test': {
+    't': (partnerName) => `${partnerName} hat einen Test abgeschlossen`,
+    'd': (title) => `Beende den Test '${title}', um eure Ergebnisse zu sehen`,
+    },
+'remind_checkup': {
+    't': (partnerName) => `${partnerName} hat einen Check-up abgeschlossen`,
+    'd': (title) => `Beende den Check-up '${title}', um eure Antworten zu sehen`,
+    },
+'remind_game': {
+    't': (partnerName) => `${partnerName} hat ein Spiel beendet`,
+    'd': (title) => `Beende das Spiel '${title}', um eure Antworten zu sehen`,
+    },
+'remind_exercise': {
+    't': (partnerName) => `${partnerName} hat eine Übung abgeschlossen`,
+    'd': (title) => `Mache auch die Übung '${title}'`,
+    },
+'remind_article': {
+    't': (partnerName) => `${partnerName} hat einen Artikel beendet`,
+    'd': (title) => `Lies auch den Artikel '${title}'`,
+    },
+'remind_question': {
+    't': (partnerName) => `${partnerName} hat eine Frage beantwortet`,
+    'd': (reply) => reply,
+    },
+'love_note': {
+    't': (partnerName, action) => `${partnerName} sagt: '${action}'`,
+    'd': (_) => `Öffne Nemlys, um zu antworten`,
+    },
+    'love_note_sorry': "Es tut mir leid",
+    'love_note_sex': "Ich habe Lust",
+    'love_note_miss': "Ich vermisse dich",
+    'love_note_date': "Lass uns ein Date haben",
+    'love_note_talk': "Ich will reden",
+    'love_note_attention': "Ich brauche deine Aufmerksamkeit",
+    'love_note_love': "Ich liebe dich",
+    'love_note_hug': "Schick eine Umarmung"
+    },
+'it': {
+'partner_joined': {
+    't': (partnerName) => `${partnerName} si è unito a Nemlys`,
+    'd': (_) => `Inizia a discutere le domande insieme`,
+    },
+'partner_answered': {
+    't': (partnerName) => `${partnerName} ha risposto a una domanda`,
+    'd': (question) => question,
+    },
+'partner_replied': {
+    't': (partnerName) => `${partnerName} ha risposto`,
+    'd': (reply) => reply,
+    },
+'remind_answer': {
+    't': (partnerName) => `${partnerName} ti ricorda di rispondere a una domanda`,
+    'd': (question) => question,
+    },
+'remind_test': {
+    't': (partnerName) => `${partnerName} ha finito un test`,
+    'd': (title) => `Completa il test '${title}' per vedere i risultati di entrambi`,
+    },
+'remind_checkup': {
+    't': (partnerName) => `${partnerName} ha finito un checkup`,
+    'd': (title) => `Completa il checkup '${title}' per vedere le risposte di entrambi`,
+    },
+'remind_game': {
+    't': (partnerName) => `${partnerName} ha finito un gioco`,
+    'd': (title) => `Completa il gioco '${title}' per vedere le risposte di entrambi`,
+    },
+'remind_exercise': {
+    't': (partnerName) => `${partnerName} ha completato un esercizio`,
+    'd': (title) => `Fai anche l'esercizio '${title}'`,
+    },
+'remind_article': {
+    't': (partnerName) => `${partnerName} ha finito un articolo`,
+    'd': (title) => `Leggi anche l'articolo '${title}'`,
+    },
+'remind_question': {
+    't': (partnerName) => `${partnerName} ha risposto a una domanda`,
+    'd': (reply) => reply,
+    },
+'love_note': {
+    't': (partnerName, action) => `${partnerName} dice '${action}'`,
+    'd': (_) => `Apri Nemlys per rispondere`,
+    },
+    'love_note_sorry': "Mi dispiace",
+    'love_note_sex': "Ho voglia",
+    'love_note_miss': "Mi manchi",
+    'love_note_date': "Facciamo un appuntamento",
+    'love_note_talk': "Voglio parlare",
+    'love_note_attention': "Ho bisogno della tua attenzione",
+    'love_note_love': "Ti amo",
+    'love_note_hug': "Invia un abbraccio"
+    },
+'fr': {
+'partner_joined': {
+    't': (partnerName) => `${partnerName} a rejoint Nemlys`,
+    'd': (_) => `Commencez à discuter des questions ensemble`,
+    },
+'partner_answered': {
+    't': (partnerName) => `${partnerName} a répondu à une question`,
+    'd': (question) => question,
+    },
+'partner_replied': {
+    't': (partnerName) => `${partnerName} a répondu`,
+    'd': (reply) => reply,
+    },
+'remind_answer': {
+    't': (partnerName) => `${partnerName} te rappelle de répondre à une question`,
+    'd': (question) => question,
+    },
+'remind_test': {
+    't': (partnerName) => `${partnerName} a terminé un test`,
+    'd': (title) => `Termine le test '${title}' pour voir les résultats de chacun`,
+    },
+'remind_checkup': {
+    't': (partnerName) => `${partnerName} a terminé son bilan`,
+    'd': (title) => `Termine le bilan '${title}' pour découvrir vos réponses respectives`,
+    },
+'remind_game': {
+    't': (partnerName) => `${partnerName} a terminé un jeu`,
+    'd': (title) => `Termine le jeu '${title}' pour découvrir vos réponses respectives`,
+    },
+'remind_exercise': {
+    't': (partnerName) => `${partnerName} a terminé un exercice`,
+    'd': (title) => `Fais aussi l'exercice '${title}'`,
+    },
+'remind_article': {
+    't': (partnerName) => `${partnerName} a terminé un article`,
+    'd': (title) => `Lis aussi l'article '${title}'`,
+    },
+'remind_question': {
+    't': (partnerName) => `${partnerName} a répondu à une question`,
+    'd': (reply) => reply,
+    },
+'love_note': {
+    't': (partnerName, action) => `${partnerName} dit '${action}'`,
+    'd': (_) => `Ouvre Nemlys pour répondre`,
+    },
+    'love_note_sorry': "Je suis désolé",
+    'love_note_sex': "J'ai envie",
+    'love_note_miss': "Tu me manques",
+    'love_note_date': "On se fait un rendez-vous ?",
+    'love_note_talk': "J’ai envie de discuter",
+    'love_note_attention': "J’ai besoin de ton attention",
+    'love_note_love': "Je t’aime",
+    'love_note_hug': "Envoie un câlin"
+    },
+'ar': {
+'partner_joined': {
+    't': (partnerName) => `${partnerName} انضم إلى نيمليس`,
+    'd': (_) => `ابدأوا مناقشة الأسئلة معًا`,
+    },
+'partner_answered': {
+    't': (partnerName) => `${partnerName} أجاب على سؤال`,
+    'd': (question) => question,
+    },
+'partner_replied': {
+    't': (partnerName) => `${partnerName} رد`,
+    'd': (reply) => reply,
+    },
+'remind_answer': {
+    't': (partnerName) => `${partnerName} يذكرك بالإجابة على سؤال`,
+    'd': (question) => question,
+    },
+'remind_test': {
+    't': (partnerName) => `${partnerName} أنهى الاختبار`,
+    'd': (title) => `أنهِ الاختبار '${title}' لرؤية نتائجكما`,
+    },
+'remind_checkup': {
+    't': (partnerName) => `${partnerName} أنهى الفحص`,
+    'd': (title) => `أنهِ الفحص '${title}' لرؤية إجاباتكما`,
+    },
+'remind_game': {
+    't': (partnerName) => `${partnerName} أنهى اللعبة`,
+    'd': (title) => `أنهِ اللعبة '${title}' لرؤية ردودكما`,
+    },
+'remind_exercise': {
+    't': (partnerName) => `${partnerName} أنهى التمرين`,
+    'd': (title) => `مارس التمرين '${title}' أيضاً`,
+    },
+'remind_article': {
+    't': (partnerName) => `${partnerName} أنهى المقال`,
+    'd': (title) => `اقرأ المقال '${title}' أيضاً`,
+    },
+'remind_question': {
+    't': (partnerName) => `${partnerName} أجاب على سؤال`,
+    'd': (reply) => reply,
+    },
+'love_note': {
+    't': (partnerName, action) => `${partnerName} يقول: '${action}'`,
+    'd': (_) => `افتح Nemlys للإجابة`,
+    },
+    'love_note_sorry': "آسف",
+    'love_note_sex': "أنا في المزاج",
+    'love_note_miss': "أشتاق لك",
+    'love_note_date': "يلا نطلع مع بعض",
+    'love_note_talk': "أبي أتكلم",
+    'love_note_attention': "أحتاج انتباهك",
+    'love_note_love': "أحبك",
+    'love_note_hug': "أرسل حضن"
+    },
+'bn': {
+'partner_joined': {
+    't': (partnerName) => `${partnerName} নেমলিসে যোগ দিয়েছে`,
+    'd': (_) => `একসাথে প্রশ্ন নিয়ে আলোচনা শুরু করুন`,
+    },
+'partner_answered': {
+    't': (partnerName) => `${partnerName} একটি প্রশ্নের উত্তর দিয়েছে`,
+    'd': (question) => question,
+    },
+'partner_replied': {
+    't': (partnerName) => `${partnerName} উত্তর দিয়েছে`,
+    'd': (reply) => reply,
+    },
+'remind_answer': {
+    't': (partnerName) => `${partnerName} আপনাকে একটি প্রশ্নের উত্তর দিতে মনে করিয়ে দিচ্ছে`,
+    'd': (question) => question,
+    },
+'remind_test': {
+    't': (partnerName) => `${partnerName} একটি টেস্ট শেষ করেছেন`,
+    'd': (title) => `'${title}' টেস্ট শেষ করে একে অপরের ফলাফল দেখুন`,
+    },
+'remind_checkup': {
+    't': (partnerName) => `${partnerName} একটি চেকআপ শেষ করেছেন`,
+    'd': (title) => `'${title}' চেকআপ শেষ করে একে অপরের প্রতিক্রিয়া দেখুন`,
+    },
+'remind_game': {
+    't': (partnerName) => `${partnerName} একটি গেম শেষ করেছেন`,
+    'd': (title) => `'${title}' গেম শেষ করে একে অপরের প্রতিক্রিয়া দেখুন`,
+    },
+'remind_exercise': {
+    't': (partnerName) => `${partnerName} একটি ব্যায়াম শেষ করেছেন`,
+    'd': (title) => `'${title}' ব্যায়ামও অনুশীলন করুন`,
+    },
+'remind_article': {
+    't': (partnerName) => `${partnerName} একটি আর্টিকেল শেষ করেছেন`,
+    'd': (title) => `'${title}' আর্টিকেলও পড়ুন`,
+    },
+'remind_question': {
+    't': (partnerName) => `${partnerName} একটি প্রশ্নের উত্তর দিয়েছেন`,
+    'd': (reply) => reply,
+    },
+'love_note': {
+    't': (partnerName, action) => `${partnerName} বলেছেন '${action}'`,
+    'd': (_) => `উত্তর দিতে নেমলাইস খুলুন`,
+    },
+    'love_note_sorry': "আমি দুঃখিত",
+    'love_note_sex': "আমি কামনার মুডে আছি",
+    'love_note_miss': "আমি তোমাকে মিস করি",
+    'love_note_date': "চলো একটা ডেটে যাই",
+    'love_note_talk': "আমি কথা বলতে চাই",
+    'love_note_attention': "আমি তোমার মনোযোগ চাই",
+    'love_note_love': "আমি তোমায় ভালবাসি",
+    'love_note_hug': "একটা আলিঙ্গন পাঠাও"
+    },
+'zh_cn': {
+'partner_joined': {
+    't': (partnerName) => `${partnerName} 加入了 Nemlys`,
+    'd': (_) => `开始一起讨论问题`,
+    },
+'partner_answered': {
+    't': (partnerName) => `${partnerName} 回答了一个问题`,
+    'd': (question) => question,
+    },
+'partner_replied': {
+    't': (partnerName) => `${partnerName} 回复了`,
+    'd': (reply) => reply,
+    },
+'remind_answer': {
+    't': (partnerName) => `${partnerName} 在提醒你回答一个问题`,
+    'd': (question) => question,
+    },
+'remind_test': {
+    't': (partnerName) => `${partnerName} 完成了测试`,
+    'd': (title) => `完成测试 '${title}' 即可查看彼此的结果`,
+    },
+'remind_checkup': {
+    't': (partnerName) => `${partnerName} 完成了检查`,
+    'd': (title) => `完成检查 '${title}' 即可查看彼此的回答`,
+    },
+'remind_game': {
+    't': (partnerName) => `${partnerName} 完成了游戏`,
+    'd': (title) => `完成游戏 '${title}' 即可查看彼此的回答`,
+    },
+'remind_exercise': {
+    't': (partnerName) => `${partnerName} 完成了练习`,
+    'd': (title) => `也来练习 '${title}'`,
+    },
+'remind_article': {
+    't': (partnerName) => `${partnerName} 已看完文章`,
+    'd': (title) => `也读读文章 '${title}'`,
+    },
+'remind_question': {
+    't': (partnerName) => `${partnerName} 回答了一个问题`,
+    'd': (reply) => reply,
+    },
+'love_note': {
+    't': (partnerName, action) => `${partnerName} 说：'${action}'`,
+    'd': (_) => `打开 Nemlys 回答`,
+    },
+    'love_note_sorry': "对不起",
+    'love_note_sex': "我想亲热一下",
+    'love_note_miss': "我想你了",
+    'love_note_date': "我们去约会吧",
+    'love_note_talk': "我想聊聊",
+    'love_note_attention': "我需要你的关注",
+    'love_note_love': "我爱你",
+    'love_note_hug': "送上一个拥抱"
+    },
+'zh_tw': {
+'partner_joined': {
+    't': (partnerName) => `${partnerName} 加入了 Nemlys`,
+    'd': (_) => `開始一起討論問題`,
+    },
+'partner_answered': {
+    't': (partnerName) => `${partnerName} 回答了一個問題`,
+    'd': (question) => question,
+    },
+'partner_replied': {
+    't': (partnerName) => `${partnerName} 回覆了`,
+    'd': (reply) => reply,
+    },
+'remind_answer': {
+    't': (partnerName) => `${partnerName} 正在提醒你回答一個問題`,
+    'd': (question) => question,
+    },
+'remind_test': {
+    't': (partnerName) => `${partnerName} 已完成測驗`,
+    'd': (title) => `完成測驗 '${title}' 以查看彼此的結果`,
+    },
+'remind_checkup': {
+    't': (partnerName) => `${partnerName} 已完成檢查`,
+    'd': (title) => `完成檢查 '${title}' 以查看彼此的回應`,
+    },
+'remind_game': {
+    't': (partnerName) => `${partnerName} 已完成遊戲`,
+    'd': (title) => `完成遊戲 '${title}' 以查看彼此的回應`,
+    },
+'remind_exercise': {
+    't': (partnerName) => `${partnerName} 已完成練習`,
+    'd': (title) => `也請完成練習 '${title}'`,
+    },
+'remind_article': {
+    't': (partnerName) => `${partnerName} 已完成文章`,
+    'd': (title) => `也請閱讀文章 '${title}'`,
+    },
+'remind_question': {
+    't': (partnerName) => `${partnerName} 已回答了一個問題`,
+    'd': (reply) => reply,
+    },
+'love_note': {
+    't': (partnerName, action) => `${partnerName} 說：'${action}'`,
+    'd': (_) => `打開 Nemlys 回答`,
+    },
+    'love_note_sorry': "對不起",
+    'love_note_sex': "我正想要點親密",
+    'love_note_miss': "我好想你",
+    'love_note_date': "一起約會吧",
+    'love_note_talk': "我想聊聊",
+    'love_note_attention': "我需要你的關注",
+    'love_note_love': "我愛你",
+    'love_note_hug': "送上一個擁抱"
+    },
+'zh_hk': {
+'partner_joined': {
+    't': (partnerName) => `${partnerName} 加入了 Nemlys`,
+    'd': (_) => `開始一起討論問題`,
+    },
+'partner_answered': {
+    't': (partnerName) => `${partnerName} 回答了一個問題`,
+    'd': (question) => question,
+    },
+'partner_replied': {
+    't': (partnerName) => `${partnerName} 回覆了`,
+    'd': (reply) => reply,
+    },
+'remind_answer': {
+    't': (partnerName) => `${partnerName} 正在提醒你回答一個問題`,
+    'd': (question) => question,
+    },
+'remind_test': {
+    't': (partnerName) => `${partnerName}已完成測驗`,
+    'd': (title) => `完成測驗 '${title}' 後可見彼此結果`,
+    },
+'remind_checkup': {
+    't': (partnerName) => `${partnerName}已完成檢查`,
+    'd': (title) => `完成檢查 '${title}' 後可見彼此回應`,
+    },
+'remind_game': {
+    't': (partnerName) => `${partnerName}已完成遊戲`,
+    'd': (title) => `完成遊戲 '${title}' 後可見彼此回應`,
+    },
+'remind_exercise': {
+    't': (partnerName) => `${partnerName}已完成練習`,
+    'd': (title) => `順便做一下練習 '${title}'`,
+    },
+'remind_article': {
+    't': (partnerName) => `${partnerName}已讀完文章`,
+    'd': (title) => `順便閱讀文章 '${title}'`,
+    },
+'remind_question': {
+    't': (partnerName) => `${partnerName}已回答問題`,
+    'd': (reply) => reply,
+    },
+'love_note': {
+    't': (partnerName, action) => `${partnerName} 說：'${action}'`,
+    'd': (_) => `打開 Nemlys 回覆`,
+    },
+    'love_note_sorry': "對唔住",
+    'love_note_sex': "我想親密",
+    'love_note_miss': "我掛住你",
+    'love_note_date': "一齊約會啦",
+    'love_note_talk': "我想傾計",
+    'love_note_attention': "我需要你嘅關注",
+    'love_note_love': "我愛你",
+    'love_note_hug': "送個擁抱"
+    },
+'hi': {
+'partner_joined': {
+    't': (partnerName) => `${partnerName} ने Nemlys में शामिल हो गए`,
+    'd': (_) => `साथ में सवालों पर चर्चा करना शुरू करें`,
+    },
+'partner_answered': {
+    't': (partnerName) => `${partnerName} ने एक सवाल का जवाब दिया`,
+    'd': (question) => question,
+    },
+'partner_replied': {
+    't': (partnerName) => `${partnerName} ने जवाब दिया`,
+    'd': (reply) => reply,
+    },
+'remind_answer': {
+    't': (partnerName) => `${partnerName} आपको एक सवाल का जवाब देने के लिए याद दिला रहे हैं`,
+    'd': (question) => question,
+    },
+'remind_test': {
+    't': (partnerName) => `${partnerName} ने टेस्ट पूरा कर लिया है`,
+    'd': (title) => `एक-दूसरे के नतीजे जानने के लिए '${title}' टेस्ट पूरा करो`,
+    },
+'remind_checkup': {
+    't': (partnerName) => `${partnerName} ने चेकअप पूरा कर लिया है`,
+    'd': (title) => `एक-दूसरे के जवाब जानने के लिए '${title}' चेकअप पूरा करो`,
+    },
+'remind_game': {
+    't': (partnerName) => `${partnerName} ने गेम पूरा कर लिया है`,
+    'd': (title) => `एक-दूसरे के जवाब जानने के लिए '${title}' गेम पूरा करो`,
+    },
+'remind_exercise': {
+    't': (partnerName) => `${partnerName} ने एक्सरसाइज पूरा कर ली है`,
+    'd': (title) => `चलो '${title}' एक्सरसाइज भी करें`,
+    },
+'remind_article': {
+    't': (partnerName) => `${partnerName} ने आर्टिकल पूरा कर लिया है`,
+    'd': (title) => `चलो '${title}' आर्टिकल भी पढ़ें`,
+    },
+'remind_question': {
+    't': (partnerName) => `${partnerName} ने सवाल का जवाब दिया है`,
+    'd': (reply) => reply,
+    },
+'love_note': {
+    't': (partnerName, action) => `${partnerName} कहता है '${action}'`,
+    'd': (_) => `जवाब देने के लिए Nemlys खोलो`,
+    },
+    'love_note_sorry': "मुझे माफ़ कर",
+    'love_note_sex': "मैं मूड में हूँ",
+    'love_note_miss': "मुझे तुम्हारी याद आती है",
+    'love_note_date': "चलो डेट पर चलते हैं",
+    'love_note_talk': "मुझे बात करनी है",
+    'love_note_attention': "मुझे तुम्हारा ध्यान चाहिए",
+    'love_note_love': "मैं तुमसे प्यार करता हूँ",
+    'love_note_hug': "एक झप्पी भेजो"
+    },
+'ja': {
+'partner_joined': {
+    't': (partnerName) => `${partnerName}がNemlysに参加しました`,
+    'd': (_) => `一緒に質問を話し合い始めましょう`,
+    },
+'partner_answered': {
+    't': (partnerName) => `${partnerName}が質問に答えました`,
+    'd': (question) => question,
+    },
+'partner_replied': {
+    't': (partnerName) => `${partnerName}が返信しました`,
+    'd': (reply) => reply,
+    },
+'remind_answer': {
+    't': (partnerName) => `${partnerName}が質問に答えるようリマインドしています`,
+    'd': (question) => question,
+    },
+'remind_test': {
+    't': (partnerName) => `${partnerName}がテストを終えたよ`,
+    'd': (title) => `お互いの結果を見るには、テスト '${title}' を終わらせよう`,
+    },
+'remind_checkup': {
+    't': (partnerName) => `${partnerName}がチェックアップを終えたよ`,
+    'd': (title) => `お互いの回答を見るには、チェックアップ '${title}' を終わらせよう`,
+    },
+'remind_game': {
+    't': (partnerName) => `${partnerName}がゲームを終えたよ`,
+    'd': (title) => `お互いの回答を見るには、ゲーム '${title}' を終わらせよう`,
+    },
+'remind_exercise': {
+    't': (partnerName) => `${partnerName}がエクササイズを終えたよ`,
+    'd': (title) => `エクササイズ '${title}' もやってみよう`,
+    },
+'remind_article': {
+    't': (partnerName) => `${partnerName}が記事を終えたよ`,
+    'd': (title) => `記事 '${title}' も読んでみよう`,
+    },
+'remind_question': {
+    't': (partnerName) => `${partnerName}が質問に答えたよ`,
+    'd': (reply) => reply,
+    },
+'love_note': {
+    't': (partnerName, action) => `${partnerName}が「${action}」って言ってるよ`,
+    'd': (_) => `Nemlysを開いて返事してね`,
+    },
+    'love_note_sorry': "ごめんね",
+    'love_note_sex': "今、ムード満点だよ",
+    'love_note_miss': "会いたいよ",
+    'love_note_date': "デートしようよ",
+    'love_note_talk': "話したいな",
+    'love_note_attention': "あなたの注目が欲しいよ",
+    'love_note_love': "愛してる",
+    'love_note_hug': "ハグを送ろう"
+    },
+'pt': {
+'partner_joined': {
+    't': (partnerName) => `${partnerName} entrou no Nemlys`,
+    'd': (_) => `Comece a discutir perguntas juntos`,
+    },
+'partner_answered': {
+    't': (partnerName) => `${partnerName} respondeu a uma pergunta`,
+    'd': (question) => question,
+    },
+'partner_replied': {
+    't': (partnerName) => `${partnerName} respondeu`,
+    'd': (reply) => reply,
+    },
+'remind_answer': {
+    't': (partnerName) => `${partnerName} está te lembrando de responder a uma pergunta`,
+    'd': (question) => question,
+    },
+'remind_test': {
+    't': (partnerName) => `${partnerName} terminou um teste`,
+    'd': (title) => `Finalize o teste '${title}' para ver os resultados de vocês`,
+    },
+'remind_checkup': {
+    't': (partnerName) => `${partnerName} terminou uma avaliação`,
+    'd': (title) => `Finalize a avaliação '${title}' para ver as respostas de vocês`,
+    },
+'remind_game': {
+    't': (partnerName) => `${partnerName} terminou um jogo`,
+    'd': (title) => `Finalize o jogo '${title}' para ver as respostas de vocês`,
+    },
+'remind_exercise': {
+    't': (partnerName) => `${partnerName} terminou um exercício`,
+    'd': (title) => `Pratique também o exercício '${title}'`,
+    },
+'remind_article': {
+    't': (partnerName) => `${partnerName} terminou um artigo`,
+    'd': (title) => `Leia também o artigo '${title}'`,
+    },
+'remind_question': {
+    't': (partnerName) => `${partnerName} respondeu uma pergunta`,
+    'd': (reply) => reply,
+    },
+'love_note': {
+    't': (partnerName, action) => `${partnerName} diz '${action}'`,
+    'd': (_) => `Abra o Nemlys para responder`,
+    },
+    'love_note_sorry': "Desculpa",
+    'love_note_sex': "Tô a fim",
+    'love_note_miss': "Sinto sua falta",
+    'love_note_date': "Vamos sair para um encontro",
+    'love_note_talk': "Quero conversar",
+    'love_note_attention': "Preciso da sua atenção",
+    'love_note_love': "Eu te amo",
+    'love_note_hug': "Manda um abraço"
+    },
+'fil': {
+'partner_joined': {
+    't': (partnerName) => `Sumali si ${partnerName} sa Nemlys`,
+    'd': (_) => `Magsimula nang pag-usapan ang mga tanong nang magkasama`,
+    },
+'partner_answered': {
+    't': (partnerName) => `Sumagot si ${partnerName} sa isang tanong`,
+    'd': (question) => question,
+    },
+'partner_replied': {
+    't': (partnerName) => `Tumugon si ${partnerName}`,
+    'd': (reply) => reply,
+    },
+'remind_answer': {
+    't': (partnerName) => `Pinapaalala ni ${partnerName} sa'yo na sumagot sa isang tanong`,
+    'd': (question) => question,
+    },
+'remind_test': {
+    't': (partnerName) => `Natapos na ni ${partnerName} ang pagsubok`,
+    'd': (title) => `Tapusin ang pagsubok na '${title}' para makita ninyo ang mga resulta`,
+    },
+'remind_checkup': {
+    't': (partnerName) => `Natapos na ni ${partnerName} ang pagsusuri`,
+    'd': (title) => `Tapusin ang pagsusuri na '${title}' para makita ninyo ang mga sagot`,
+    },
+'remind_game': {
+    't': (partnerName) => `Natapos na ni ${partnerName} ang laro`,
+    'd': (title) => `Tapusin ang laro na '${title}' para makita ninyo ang mga sagot`,
+    },
+'remind_exercise': {
+    't': (partnerName) => `Natapos na ni ${partnerName} ang ehersisyo`,
+    'd': (title) => `Gawin din ang ehersisyo na '${title}'`,
+    },
+'remind_article': {
+    't': (partnerName) => `Natapos na ni ${partnerName} ang artikulo`,
+    'd': (title) => `Basahin din ang artikulo na '${title}'`,
+    },
+'remind_question': {
+    't': (partnerName) => `Nasagot na ni ${partnerName} ang tanong`,
+    'd': (reply) => reply,
+    },
+'love_note': {
+    't': (partnerName, action) => `Sabi ni ${partnerName}: '${action}'`,
+    'd': (_) => `Buksan ang Nemlys para sumagot`,
+    },
+    'love_note_sorry': "Pasensya na",
+    'love_note_sex': "Game ako",
+    'love_note_miss': "Miss na kita",
+    'love_note_date': "Mag-date tayo",
+    'love_note_talk': "Gusto kong mag-usap",
+    'love_note_attention': "Kailangan ko ang atensyon mo",
+    'love_note_love': "Mahal kita",
+    'love_note_hug': "Magpadala ng yakap"
+    },
+'id': {
+'partner_joined': {
+    't': (partnerName) => `${partnerName} bergabung dengan Nemlys`,
+    'd': (_) => `Mulai diskusikan pertanyaan bersama`,
+    },
+'partner_answered': {
+    't': (partnerName) => `${partnerName} menjawab sebuah pertanyaan`,
+    'd': (question) => question,
+    },
+'partner_replied': {
+    't': (partnerName) => `${partnerName} membalas`,
+    'd': (reply) => reply,
+    },
+'remind_answer': {
+    't': (partnerName) => `${partnerName} mengingatkanmu untuk menjawab sebuah pertanyaan`,
+    'd': (question) => question,
+    },
+'remind_test': {
+    't': (partnerName) => `${partnerName} telah menyelesaikan tes`,
+    'd': (title) => `Selesaikan tes '${title}' untuk melihat hasil satu sama lain`,
+    },
+'remind_checkup': {
+    't': (partnerName) => `${partnerName} telah menyelesaikan checkup`,
+    'd': (title) => `Selesaikan checkup '${title}' untuk melihat jawaban satu sama lain`,
+    },
+'remind_game': {
+    't': (partnerName) => `${partnerName} telah menyelesaikan permainan`,
+    'd': (title) => `Selesaikan permainan '${title}' untuk melihat respons satu sama lain`,
+    },
+'remind_exercise': {
+    't': (partnerName) => `${partnerName} telah menyelesaikan latihan`,
+    'd': (title) => `Coba latihan '${title}' juga`,
+    },
+'remind_article': {
+    't': (partnerName) => `${partnerName} telah menyelesaikan artikel`,
+    'd': (title) => `Baca artikel '${title}' juga`,
+    },
+'remind_question': {
+    't': (partnerName) => `${partnerName} telah menjawab sebuah pertanyaan`,
+    'd': (reply) => reply,
+    },
+'love_note': {
+    't': (partnerName, action) => `${partnerName} berkata '${action}'`,
+    'd': (_) => `Buka Nemlys untuk menjawab`,
+    },
+    'love_note_sorry': "Maaf",
+    'love_note_sex': "Aku lagi mood",
+    'love_note_miss': "Aku kangen kamu",
+    'love_note_date': "Ayo kita berkencan",
+    'love_note_talk': "Aku pengen ngobrol",
+    'love_note_attention': "Aku butuh perhatianmu",
+    'love_note_love': "Aku cinta kamu",
+    'love_note_hug': "Kirim pelukan"
+    },
+'pl': {
+'partner_joined': {
+    't': (partnerName) => `${partnerName} dołączył do Nemlys`,
+    'd': (_) => `Zacznijcie razem omawiać pytania`,
+    },
+'partner_answered': {
+    't': (partnerName) => `${partnerName} odpowiedział na pytanie`,
+    'd': (question) => question,
+    },
+'partner_replied': {
+    't': (partnerName) => `${partnerName} odpowiedział`,
+    'd': (reply) => reply,
+    },
+'remind_answer': {
+    't': (partnerName) => `${partnerName} przypomina ci, żebyś odpowiedział na pytanie`,
+    'd': (question) => question,
+    },
+'remind_test': {
+    't': (partnerName) => `${partnerName} ukończył test`,
+    'd': (title) => `Ukończ test '${title}', aby zobaczyć wyniki was obojga`,
+    },
+'remind_checkup': {
+    't': (partnerName) => `${partnerName} ukończył badanie`,
+    'd': (title) => `Ukończ badanie '${title}', aby zobaczyć wasze odpowiedzi`,
+    },
+'remind_game': {
+    't': (partnerName) => `${partnerName} ukończył grę`,
+    'd': (title) => `Ukończ grę '${title}', aby zobaczyć wasze odpowiedzi`,
+    },
+'remind_exercise': {
+    't': (partnerName) => `${partnerName} ukończył ćwiczenie`,
+    'd': (title) => `Wykonaj także ćwiczenie '${title}'`,
+    },
+'remind_article': {
+    't': (partnerName) => `${partnerName} ukończył artykuł`,
+    'd': (title) => `Przeczytaj też artykuł '${title}'`,
+    },
+'remind_question': {
+    't': (partnerName) => `${partnerName} odpowiedział na pytanie`,
+    'd': (reply) => reply,
+    },
+'love_note': {
+    't': (partnerName, action) => `${partnerName} mówi '${action}'`,
+    'd': (_) => `Otwórz Nemlys, aby odpowiedzieć`,
+    },
+    'love_note_sorry': "Przepraszam",
+    'love_note_sex': "Mam ochotę",
+    'love_note_miss': "Tęsknię za Tobą",
+    'love_note_date': "Umówmy się na randkę",
+    'love_note_talk': "Chcę pogadać",
+    'love_note_attention': "Potrzebuję Twojej uwagi",
+    'love_note_love': "Kocham Cię",
+    'love_note_hug': "Prześlij uścisk"
+    },
+'ro': {
+'partner_joined': {
+    't': (partnerName) => `${partnerName} s-a alăturat lui Nemlys`,
+    'd': (_) => `Începeți să discutați întrebări împreună`,
+    },
+'partner_answered': {
+    't': (partnerName) => `${partnerName} a răspuns la o întrebare`,
+    'd': (question) => question,
+    },
+'partner_replied': {
+    't': (partnerName) => `${partnerName} a răspuns`,
+    'd': (reply) => reply,
+    },
+'remind_answer': {
+    't': (partnerName) => `${partnerName} îți amintește să răspunzi la o întrebare`,
+    'd': (question) => question,
+    },
+'remind_test': {
+    't': (partnerName) => `${partnerName} a terminat un test`,
+    'd': (title) => `Termină testul '${title}' pentru a vedea rezultatele reciproce`,
+    },
+'remind_checkup': {
+    't': (partnerName) => `${partnerName} a terminat un control`,
+    'd': (title) => `Termină controlul '${title}' pentru a vedea răspunsurile reciproce`,
+    },
+'remind_game': {
+    't': (partnerName) => `${partnerName} a terminat un joc`,
+    'd': (title) => `Termină jocul '${title}' pentru a vedea răspunsurile reciproce`,
+    },
+'remind_exercise': {
+    't': (partnerName) => `${partnerName} a terminat un exercițiu`,
+    'd': (title) => `Exersează și exercițiul '${title}'`,
+    },
+'remind_article': {
+    't': (partnerName) => `${partnerName} a terminat un articol`,
+    'd': (title) => `Citește și articolul '${title}'`,
+    },
+'remind_question': {
+    't': (partnerName) => `${partnerName} a răspuns la o întrebare`,
+    'd': (reply) => reply,
+    },
+'love_note': {
+    't': (partnerName, action) => `${partnerName} spune '${action}'`,
+    'd': (_) => `Deschide Nemlys pentru a răspunde`,
+    },
+    'love_note_sorry': "Îmi pare rău",
+    'love_note_sex': "Am chef",
+    'love_note_miss': "Mi-e dor de tine",
+    'love_note_date': "Hai să avem o întâlnire",
+    'love_note_talk': "Vreau să vorbesc",
+    'love_note_attention': "Am nevoie de atenția ta",
+    'love_note_love': "Te iubesc",
+    'love_note_hug': "Trimite o îmbrățișare"
+    },
+'tr': {
+'partner_joined': {
+    't': (partnerName) => `${partnerName} Nemlys'e katıldı`,
+    'd': (_) => `Birlikte soruları tartışmaya başlayın`,
+    },
+'partner_answered': {
+    't': (partnerName) => `${partnerName} bir soruyu yanıtladı`,
+    'd': (question) => question,
+    },
+'partner_replied': {
+    't': (partnerName) => `${partnerName} yanıt verdi`,
+    'd': (reply) => reply,
+    },
+'remind_answer': {
+    't': (partnerName) => `${partnerName} sana bir soruyu yanıtlamanı hatırlatıyor`,
+    'd': (question) => question,
+    },
+'remind_test': {
+    't': (partnerName) => `${partnerName} bir testi tamamladı`,
+    'd': (title) => `Sonuçları görmek için '${title}' testini tamamla`,
+    },
+'remind_checkup': {
+    't': (partnerName) => `${partnerName} kontrolü tamamladı`,
+    'd': (title) => `Birlikte cevapları görmek için '${title}' kontrolünü tamamla`,
+    },
+'remind_game': {
+    't': (partnerName) => `${partnerName} bir oyunu tamamladı`,
+    'd': (title) => `'${title}' oyununu tamamla, birbirinizin cevaplarını gör`,
+    },
+'remind_exercise': {
+    't': (partnerName) => `${partnerName} bir egzersizi tamamladı`,
+    'd': (title) => `'${title}' egzersizini de yap`,
+    },
+'remind_article': {
+    't': (partnerName) => `${partnerName} bir makaleyi tamamladı`,
+    'd': (title) => `'${title}' makalesini de oku`,
+    },
+'remind_question': {
+    't': (partnerName) => `${partnerName} bir soruyu cevapladı`,
+    'd': (reply) => reply,
+    },
+'love_note': {
+    't': (partnerName, action) => `${partnerName} şöyle diyor: '${action}'`,
+    'd': (_) => `Cevaplamak için Nemlys'i aç`,
+    },
+    'love_note_sorry': "Üzgünüm",
+    'love_note_sex': "Havadayım",
+    'love_note_miss': "Seni özledim",
+    'love_note_date': "Hadi buluşalım",
+    'love_note_talk': "Konuşmak istiyorum",
+    'love_note_attention': "İlgine ihtiyacım var",
+    'love_note_love': "Seni seviyorum",
+    'love_note_hug': "Bir sarıl gönder"
+    },
+'uk': {
+'partner_joined': {
+    't': (partnerName) => `${partnerName} приєднався до Nemlys`,
+    'd': (_) => `Почніть обговорювати питання разом`,
+    },
+'partner_answered': {
+    't': (partnerName) => `${partnerName} відповів на питання`,
+    'd': (question) => question,
+    },
+'partner_replied': {
+    't': (partnerName) => `${partnerName} відповів`,
+    'd': (reply) => reply,
+    },
+'remind_answer': {
+    't': (partnerName) => `${partnerName} нагадує тобі відповісти на питання`,
+    'd': (question) => question,
+    },
+'remind_test': {
+    't': (partnerName) => `${partnerName} завершив тест`,
+    'd': (title) => `Пройди тест '${title}', щоб побачити результати один одного`,
+    },
+'remind_checkup': {
+    't': (partnerName) => `${partnerName} завершив чекап`,
+    'd': (title) => `Пройди чекап '${title}', щоб побачити відповіді один одного`,
+    },
+'remind_game': {
+    't': (partnerName) => `${partnerName} завершив гру`,
+    'd': (title) => `Пройди гру '${title}', щоб побачити відповіді один одного`,
+    },
+'remind_exercise': {
+    't': (partnerName) => `${partnerName} завершив вправу`,
+    'd': (title) => `Виконай вправу '${title}' теж`,
+    },
+'remind_article': {
+    't': (partnerName) => `${partnerName} завершив статтю`,
+    'd': (title) => `Прочитай статтю '${title}' теж`,
+    },
+'remind_question': {
+    't': (partnerName) => `${partnerName} відповів на питання`,
+    'd': (reply) => reply,
+    },
+'love_note': {
+    't': (partnerName, action) => `${partnerName} каже '${action}'`,
+    'd': (_) => `Відкрий Nemlys, щоб відповісти`,
+    },
+    'love_note_sorry': "Вибач",
+    'love_note_sex': "Я в настрої",
+    'love_note_miss': "Я сумую за тобою",
+    'love_note_date': "Давай підемо на побачення",
+    'love_note_talk': "Я хочу поспілкуватися",
+    'love_note_attention': "Мені потрібна твоя увага",
+    'love_note_love': "Я тебе кохаю",
+    'love_note_hug': "Надішли обійми"
+    },
+'ru': {
+'partner_joined': {
+    't': (partnerName) => `${partnerName} присоединился к Nemlys`,
+    'd': (_) => `Начните обсуждать вопросы вместе`,
+    },
+'partner_answered': {
+    't': (partnerName) => `${partnerName} ответил на вопрос`,
+    'd': (question) => question,
+    },
+'partner_replied': {
+    't': (partnerName) => `${partnerName} ответил`,
+    'd': (reply) => reply,
+    },
+'remind_answer': {
+    't': (partnerName) => `${partnerName} напоминает тебе ответить на вопрос`,
+    'd': (question) => question,
+    },
+'remind_test': {
+    't': (partnerName) => `${partnerName} закончил тест`,
+    'd': (title) => `Закончи тест «${title}», чтобы увидеть результаты друг друга`,
+    },
+'remind_checkup': {
+    't': (partnerName) => `${partnerName} закончил проверку`,
+    'd': (title) => `Закончи проверку «${title}», чтобы увидеть ответы друг друга`,
+    },
+'remind_game': {
+    't': (partnerName) => `${partnerName} закончил игру`,
+    'd': (title) => `Закончи игру «${title}», чтобы увидеть ответы друг друга`,
+    },
+'remind_exercise': {
+    't': (partnerName) => `${partnerName} закончил упражнение`,
+    'd': (title) => `Выполни упражнение «${title}» тоже`,
+    },
+'remind_article': {
+    't': (partnerName) => `${partnerName} прочитал статью`,
+    'd': (title) => `Прочти статью «${title}» тоже`,
+    },
+'remind_question': {
+    't': (partnerName) => `${partnerName} ответил на вопрос`,
+    'd': (reply) => reply,
+    },
+'love_note': {
+    't': (partnerName, action) => `${partnerName} говорит: «${action}»`,
+    'd': (_) => `Открой Nemlys, чтобы ответить`,
+    },
+    'love_note_sorry': "Прости",
+    'love_note_sex': "Я в настроении для секса",
+    'love_note_miss': "Я скучаю по тебе",
+    'love_note_date': "Давай устроим свидание",
+    'love_note_talk': "Хочу поговорить",
+    'love_note_attention': "Мне нужно твоё внимание",
+    'love_note_love': "Я тебя люблю",
+    'love_note_hug': "Отправь объятие"
+    },
+'vi': {
+'partner_joined': {
+    't': (partnerName) => `${partnerName} đã tham gia Nemlys`,
+    'd': (_) => `Bắt đầu thảo luận các câu hỏi cùng nhau`,
+    },
+'partner_answered': {
+    't': (partnerName) => `${partnerName} đã trả lời một câu hỏi`,
+    'd': (question) => question,
+    },
+'partner_replied': {
+    't': (partnerName) => `${partnerName} đã phản hồi`,
+    'd': (reply) => reply,
+    },
+'remind_answer': {
+    't': (partnerName) => `${partnerName} đang nhắc bạn trả lời một câu hỏi`,
+    'd': (question) => question,
+    },
+'remind_test': {
+    't': (partnerName) => `${partnerName} đã hoàn thành bài kiểm tra`,
+    'd': (title) => `Hoàn thành bài kiểm tra '${title}' để xem kết quả của cả hai`,
+    },
+'remind_checkup': {
+    't': (partnerName) => `${partnerName} đã hoàn thành bài đánh giá`,
+    'd': (title) => `Hoàn thành bài đánh giá '${title}' để xem câu trả lời của nhau`,
+    },
+'remind_game': {
+    't': (partnerName) => `${partnerName} đã hoàn thành trò chơi`,
+    'd': (title) => `Hoàn thành trò chơi '${title}' để xem phản hồi của nhau`,
+    },
+'remind_exercise': {
+    't': (partnerName) => `${partnerName} đã hoàn thành bài tập`,
+    'd': (title) => `Hãy luyện tập bài tập '${title}' luôn nhé`,
+    },
+'remind_article': {
+    't': (partnerName) => `${partnerName} đã hoàn thành bài viết`,
+    'd': (title) => `Cùng đọc bài viết '${title}'`,
+    },
+'remind_question': {
+    't': (partnerName) => `${partnerName} đã trả lời câu hỏi`,
+    'd': (reply) => reply,
+    },
+'love_note': {
+    't': (partnerName, action) => `${partnerName} bảo: '${action}'`,
+    'd': (_) => `Mở Nemlys để trả lời`,
+    },
+    'love_note_sorry': "Xin lỗi",
+    'love_note_sex': "Mình đang có hứng",
+    'love_note_miss': "Mình nhớ bạn",
+    'love_note_date': "Đi hẹn hò nhé!",
+    'love_note_talk': "Mình muốn nói chuyện",
+    'love_note_attention': "Mình cần sự chú ý của bạn",
+    'love_note_love': "Mình yêu bạn",
+    'love_note_hug': "Gửi một cái ôm"
+    },
+'no': {
+'partner_joined': {
+    't': (partnerName) => `${partnerName} ble med i Nemlys`,
+    'd': (_) => `Begynn å diskutere spørsmål sammen`,
+    },
+'partner_answered': {
+    't': (partnerName) => `${partnerName} svarte på et spørsmål`,
+    'd': (question) => question,
+    },
+'partner_replied': {
+    't': (partnerName) => `${partnerName} svarte`,
+    'd': (reply) => reply,
+    },
+'remind_answer': {
+    't': (partnerName) => `${partnerName} minner deg på å svare på et spørsmål`,
+    'd': (question) => question,
+    },
+'remind_test': {
+    't': (partnerName) => `${partnerName} har fullført en test`,
+    'd': (title) => `Fullfør testen '${title}' for å se hverandres resultater`,
+    },
+'remind_checkup': {
+    't': (partnerName) => `${partnerName} har fullført en sjekk`,
+    'd': (title) => `Fullfør sjekken '${title}' for å se hverandres svar`,
+    },
+'remind_game': {
+    't': (partnerName) => `${partnerName} har fullført et spill`,
+    'd': (title) => `Fullfør spillet '${title}' for å se hverandres svar`,
+    },
+'remind_exercise': {
+    't': (partnerName) => `${partnerName} har fullført en øvelse`,
+    'd': (title) => `Gjennomfør øvelsen '${title}' også`,
+    },
+'remind_article': {
+    't': (partnerName) => `${partnerName} har fullført en artikkel`,
+    'd': (title) => `Les artikkelen '${title}' også`,
+    },
+'remind_question': {
+    't': (partnerName) => `${partnerName} har besvart et spørsmål`,
+    'd': (reply) => reply,
+    },
+'love_note': {
+    't': (partnerName, action) => `${partnerName} sier '${action}'`,
+    'd': (_) => `Åpne Nemlys for å svare`,
+    },
+    'love_note_sorry': "Unnskyld",
+    'love_note_sex': "Jeg er i humør",
+    'love_note_miss': "Jeg savner deg",
+    'love_note_date': "La oss gå på en date",
+    'love_note_talk': "Jeg vil prate",
+    'love_note_attention': "Jeg trenger oppmerksomheten din",
+    'love_note_love': "Jeg elsker deg",
+    'love_note_hug': "Send en klem"
+    },
+'af': {
+'partner_joined': {
+    't': (partnerName) => `${partnerName} het by Nemlys aangesluit`,
+    'd': (_) => `Begin om vrae saam te bespreek`,
+    },
+'partner_answered': {
+    't': (partnerName) => `${partnerName} het 'n vraag beantwoord`,
+    'd': (question) => question,
+    },
+'partner_replied': {
+    't': (partnerName) => `${partnerName} het geantwoord`,
+    'd': (reply) => reply,
+    },
+'remind_answer': {
+    't': (partnerName) => `${partnerName} herinner jou om 'n vraag te beantwoord`,
+    'd': (question) => question,
+    },
+'remind_test': {
+    't': (partnerName) => `${partnerName} het 'n toets voltooi`,
+    'd': (title) => `Voltooi toets '${title}' om mekaar se resultate te sien`,
+    },
+'remind_checkup': {
+    't': (partnerName) => `${partnerName} het 'n check-up voltooi`,
+    'd': (title) => `Voltooi check-up '${title}' om mekaar se antwoorde te sien`,
+    },
+'remind_game': {
+    't': (partnerName) => `${partnerName} het 'n spel voltooi`,
+    'd': (title) => `Speel spel '${title}' af om mekaar se antwoorde te sien`,
+    },
+'remind_exercise': {
+    't': (partnerName) => `${partnerName} het 'n oefening voltooi`,
+    'd': (title) => `Oefen ook oefening '${title}'`,
+    },
+'remind_article': {
+    't': (partnerName) => `${partnerName} het 'n artikel voltooi`,
+    'd': (title) => `Lees ook artikel '${title}'`,
+    },
+'remind_question': {
+    't': (partnerName) => `${partnerName} het 'n vraag beantwoord`,
+    'd': (reply) => reply,
+    },
+'love_note': {
+    't': (partnerName, action) => `${partnerName} sê '${action}'`,
+    'd': (_) => `Maak Nemlys oop om te antwoord`,
+    },
+    'love_note_sorry': "Ek is jammer",
+    'love_note_sex': "Ek is lus",
+    'love_note_miss': "Ek mis jou",
+    'love_note_date': "Kom ons gaan op 'n afspraak",
+    'love_note_talk': "Ek wil praat",
+    'love_note_attention': "Ek het jou aandag nodig",
+    'love_note_love': "Ek het jou lief",
+    'love_note_hug': "Stuur ‘n drukkie"
+    },
+'sq': {
+'partner_joined': {
+    't': (partnerName) => `${partnerName} u bashkua në Nemlys`,
+    'd': (_) => `Filloni të diskutoni pyetje së bashku`,
+    },
+'partner_answered': {
+    't': (partnerName) => `${partnerName} përgjigji një pyetje`,
+    'd': (question) => question,
+    },
+'partner_replied': {
+    't': (partnerName) => `${partnerName} u përgjigj`,
+    'd': (reply) => reply,
+    },
+'remind_answer': {
+    't': (partnerName) => `${partnerName} po të kujton të përgjigjesh një pyetje`,
+    'd': (question) => question,
+    },
+'remind_test': {
+    't': (partnerName) => `${partnerName} ka përfunduar një test`,
+    'd': (title) => `Përfundo testin '${title}' për të parë rezultatet e njëri-tjetrit`,
+    },
+'remind_checkup': {
+    't': (partnerName) => `${partnerName} ka përfunduar një kontroll`,
+    'd': (title) => `Përfundo kontrollin '${title}' për të parë përgjigjet e njëri-tjetrit`,
+    },
+'remind_game': {
+    't': (partnerName) => `${partnerName} ka përfunduar një lojë`,
+    'd': (title) => `Përfundo lojën '${title}' për të parë përgjigjet e njëri-tjetrit`,
+    },
+'remind_exercise': {
+    't': (partnerName) => `${partnerName} ka përfunduar një ushtrim`,
+    'd': (title) => `Praktiko ushtrimin '${title}' gjithashtu`,
+    },
+'remind_article': {
+    't': (partnerName) => `${partnerName} ka përfunduar një artikull`,
+    'd': (title) => `Lexo artikullin '${title}' gjithashtu`,
+    },
+'remind_question': {
+    't': (partnerName) => `${partnerName} ka përgjigjur një pyetje`,
+    'd': (reply) => reply,
+    },
+'love_note': {
+    't': (partnerName, action) => `${partnerName} thotë '${action}'`,
+    'd': (_) => `Hap Nemlys për të përgjigjur`,
+    },
+    'love_note_sorry': "Më vjen keq",
+    'love_note_sex': "Jam në humor",
+    'love_note_miss': "Më mungon",
+    'love_note_date': "Le të shkojmë në takim",
+    'love_note_talk': "Dua të flas",
+    'love_note_attention': "Kam nevojë për vëmendjen tënde",
+    'love_note_love': "Të dua",
+    'love_note_hug': "Dërgo një përqafim"
+    },
+'am': {
+'partner_joined': {
+    't': (partnerName) => `${partnerName} ነምሊስ ተቀላቅሏል`,
+    'd': (_) => `ጥያቄዎችን በአንድነት ይወያዩ`,
+    },
+'partner_answered': {
+    't': (partnerName) => `${partnerName} ጥያቄ መልስ ሰጥቷል`,
+    'd': (question) => question,
+    },
+'partner_replied': {
+    't': (partnerName) => `${partnerName} መልስ ሰጥቷል`,
+    'd': (reply) => reply,
+    },
+'remind_answer': {
+    't': (partnerName) => `${partnerName} ጥያቄ ለመልስ እንደሚያስታውስ ነው`,
+    'd': (question) => question,
+    },
+'remind_test': {
+    't': (partnerName) => `${partnerName} ፈተናውን አጠናቀቀ`,
+    'd': (title) => `'${title}' ፈተናውን ጨርስ፣ እርስዎና ፓርተናርዎ ውጤቶችን ትመልከታላችሁ`,
+    },
+'remind_checkup': {
+    't': (partnerName) => `${partnerName} ምርመራውን አጠናቀቀ`,
+    'd': (title) => `'${title}' ምርመራውን ጨርስ፣ እርስዎና ፓርተናርዎ ምላሾችን ትመልከታላችሁ`,
+    },
+'remind_game': {
+    't': (partnerName) => `${partnerName} ጨዋቱን አጠናቀቀ`,
+    'd': (title) => `'${title}' ጨዋቱን ጨርስ፣ እርስዎና ፓርተናርዎ ምላሾችን ትመልከታላችሁ`,
+    },
+'remind_exercise': {
+    't': (partnerName) => `${partnerName} ልምድ አጠናቀቀ`,
+    'd': (title) => `እንዲሁም '${title}' ልምድን ለማድረግ ይሞክሩ`,
+    },
+'remind_article': {
+    't': (partnerName) => `${partnerName} ጽሑፉን አጠናቀቀ`,
+    'd': (title) => `እንዲሁም '${title}' ጽሑፉን ይንብቡ`,
+    },
+'remind_question': {
+    't': (partnerName) => `${partnerName} ጥያቄ መልስ ሰጠ`,
+    'd': (reply) => reply,
+    },
+'love_note': {
+    't': (partnerName, action) => `${partnerName} ይላል '${action}'`,
+    'd': (_) => `መልስ ለመስጠት Nemlys ክፈት`,
+    },
+    'love_note_sorry': "ይቅርታ",
+    'love_note_sex': "ዝግጁ ነኝ",
+    'love_note_miss': "አንተን እጣራለሁ",
+    'love_note_date': "እንደገና ቀን እንገናኝ",
+    'love_note_talk': "እንድናገር እፈልጋለሁ",
+    'love_note_attention': "አንተ ትኩረት እፈልጋለሁ",
+    'love_note_love': "እወድሃለሁ",
+    'love_note_hug': "ጭንቀት ላክ"
+    },
+'hy': {
+'partner_joined': {
+    't': (partnerName) => `${partnerName} միացավ Nemlys-ին`,
+    'd': (_) => `Սկսեք քննարկել հարցեր միասին`,
+    },
+'partner_answered': {
+    't': (partnerName) => `${partnerName} պատասխանեց հարցին`,
+    'd': (question) => question,
+    },
+'partner_replied': {
+    't': (partnerName) => `${partnerName} պատասխանեց`,
+    'd': (reply) => reply,
+    },
+'remind_answer': {
+    't': (partnerName) => `${partnerName} հիշեցնում է ձեզ պատասխանել հարցին`,
+    'd': (question) => question,
+    },
+'remind_test': {
+    't': (partnerName) => `${partnerName} ավարտել է թեստը`,
+    'd': (title) => `Ավարտիր '${title}' թեստը, որպեսզի տեսնեք միմյանց արդյունքները`,
+    },
+'remind_checkup': {
+    't': (partnerName) => `${partnerName} ավարտել է ստուգումը`,
+    'd': (title) => `Ավարտիր '${title}' ստուգումը, որպեսզի տեսնեք միմյանց պատասխանները`,
+    },
+'remind_game': {
+    't': (partnerName) => `${partnerName} ավարտել է խաղը`,
+    'd': (title) => `Ավարտիր '${title}' խաղը, որպեսզի տեսնեք միմյանց պատասխանները`,
+    },
+'remind_exercise': {
+    't': (partnerName) => `${partnerName} ավարտել է վարժյունը`,
+    'd': (title) => `Վարժիր նաև '${title}' վարժյունը`,
+    },
+'remind_article': {
+    't': (partnerName) => `${partnerName} ավարտել է հոդվածը`,
+    'd': (title) => `Կարդիր նաև '${title}' հոդվածը`,
+    },
+'remind_question': {
+    't': (partnerName) => `${partnerName} պատասխանել է հարցին`,
+    'd': (reply) => reply,
+    },
+'love_note': {
+    't': (partnerName, action) => `${partnerName} ասում է՝ '${action}'`,
+    'd': (_) => `Բացիր Nemlys-ը՝ պատասխանելու համար`,
+    },
+    'love_note_sorry': "Ներեցիր",
+    'love_note_sex': "Ես զգում եմ ցանկություն",
+    'love_note_miss': "Ես քեզ կարոտում եմ",
+    'love_note_date': "Եկեք ունենանք մի ռոմանտիկ հանդիպում",
+    'love_note_talk': "Ես ուզում եմ խոսել",
+    'love_note_attention': "Պետք է ինձ ուշադրություն դես",
+    'love_note_love': "Քեզ սիրում եմ",
+    'love_note_hug': "Ուղարկիր գրկում"
+    },
+'az': {
+'partner_joined': {
+    't': (partnerName) => `${partnerName} Nemlys-ə qoşuldu`,
+    'd': (_) => `Birlikdə suallar müzakirə etməyə başlayın`,
+    },
+'partner_answered': {
+    't': (partnerName) => `${partnerName} bir suala cavab verdi`,
+    'd': (question) => question,
+    },
+'partner_replied': {
+    't': (partnerName) => `${partnerName} cavab verdi`,
+    'd': (reply) => reply,
+    },
+'remind_answer': {
+    't': (partnerName) => `${partnerName} sənə bir suala cavab verməyi xatırladır`,
+    'd': (question) => question,
+    },
+'remind_test': {
+    't': (partnerName) => `${partnerName} testini bitirdi`,
+    'd': (title) => `'${title}' testini bitir ki, bir-birinizin nəticələrini görə biləsiniz`,
+    },
+'remind_checkup': {
+    't': (partnerName) => `${partnerName} yoxlamasını bitirdi`,
+    'd': (title) => `'${title}' yoxlamasını bitir ki, bir-birinizin cavablarını görə biləsiniz`,
+    },
+'remind_game': {
+    't': (partnerName) => `${partnerName} oyunu bitirdi`,
+    'd': (title) => `'${title}' oyununu bitir ki, bir-birinizin cavablarını görə biləsiniz`,
+    },
+'remind_exercise': {
+    't': (partnerName) => `${partnerName} məşqini bitirdi`,
+    'd': (title) => `'${title}' məşqini də bitir`,
+    },
+'remind_article': {
+    't': (partnerName) => `${partnerName} məqaləni bitirdi`,
+    'd': (title) => `'${title}' məqaləni də oxu`,
+    },
+'remind_question': {
+    't': (partnerName) => `${partnerName} bir suala cavab verdi`,
+    'd': (reply) => reply,
+    },
+'love_note': {
+    't': (partnerName, action) => `${partnerName} deyir: '${action}'`,
+    'd': (_) => `Cavab vermək üçün Nemlys-i aç`,
+    },
+    'love_note_sorry': "Bağışla",
+    'love_note_sex': "Hazıram",
+    'love_note_miss': "Səni darıxıram",
+    'love_note_date': "Gəlin, görüşək",
+    'love_note_talk': "Söhbət etmək istəyirəm",
+    'love_note_attention': "Sənin diqqətinə ehtiyacım var",
+    'love_note_love': "Səni sevirəm",
+    'love_note_hug': "Bir sarılma göndər"
+    },
+'eu': {
+'partner_joined': {
+    't': (partnerName) => `${partnerName} Nemlysen bat egin du`,
+    'd': (_) => `Hasi galderak elkarrekin eztabaidatzen`,
+    },
+'partner_answered': {
+    't': (partnerName) => `${partnerName} galdera bat erantzun du`,
+    'd': (question) => question,
+    },
+'partner_replied': {
+    't': (partnerName) => `${partnerName} erantzun du`,
+    'd': (reply) => reply,
+    },
+'remind_answer': {
+    't': (partnerName) => `${partnerName} galdera bat erantzuteko gogorarazten dizu`,
+    'd': (question) => question,
+    },
+'remind_test': {
+    't': (partnerName) => `${partnerName}k test bat bukatu du`,
+    'd': (title) => `Bukatu '${title}' test-a elkarren emaitzak ikusteko`,
+    },
+'remind_checkup': {
+    't': (partnerName) => `${partnerName}k checkup bat bukatu du`,
+    'd': (title) => `Bukatu '${title}' checkup-a elkarren erantzunak ikusteko`,
+    },
+'remind_game': {
+    't': (partnerName) => `${partnerName}k joko bat bukatu du`,
+    'd': (title) => `Bukatu '${title}' jokoa elkarren erantzunak ikusteko`,
+    },
+'remind_exercise': {
+    't': (partnerName) => `${partnerName}k ariketa bat bukatu du`,
+    'd': (title) => `Praktikatu ere '${title}' ariketa`,
+    },
+'remind_article': {
+    't': (partnerName) => `${partnerName}k artikulu bat bukatu du`,
+    'd': (title) => `Irakurri ere '${title}' artikulua`,
+    },
+'remind_question': {
+    't': (partnerName) => `${partnerName}k galdera bat erantzun du`,
+    'd': (reply) => reply,
+    },
+'love_note': {
+    't': (partnerName, action) => `${partnerName}k dio '${action}'`,
+    'd': (_) => `Ireki Nemlysea erantzuteko`,
+    },
+    'love_note_sorry': "Barkatu",
+    'love_note_sex': "Gogoz nago",
+    'love_note_miss': "Zaitut faltan",
+    'love_note_date': "Egin dezagun data bat",
+    'love_note_talk': "Hitz egin nahi dut",
+    'love_note_attention': "Zure arreta behar dut",
+    'love_note_love': "Maite zaitut",
+    'love_note_hug': "Bidali besarkada bat"
+    },
+'be': {
+'partner_joined': {
+    't': (partnerName) => `${partnerName} далучыўся да Nemlys`,
+    'd': (_) => `Пачніце абмяркоўваць пытанні разам`,
+    },
+'partner_answered': {
+    't': (partnerName) => `${partnerName} адказаў на пытанне`,
+    'd': (question) => question,
+    },
+'partner_replied': {
+    't': (partnerName) => `${partnerName} адказаў`,
+    'd': (reply) => reply,
+    },
+'remind_answer': {
+    't': (partnerName) => `${partnerName} нагадвае табе адказаць на пытанне`,
+    'd': (question) => question,
+    },
+'remind_test': {
+    't': (partnerName) => `${partnerName} скончыў тэст`,
+    'd': (title) => `Скончы тэст «${title}», каб убачыць вынікі адзін аднаго`,
+    },
+'remind_checkup': {
+    't': (partnerName) => `${partnerName} скончыў агляд`,
+    'd': (title) => `Скончы агляд «${title}», каб убачыць адказы адзін аднаго`,
+    },
+'remind_game': {
+    't': (partnerName) => `${partnerName} скончыў гульню`,
+    'd': (title) => `Скончы гульню «${title}», каб убачыць адказы адзін аднаго`,
+    },
+'remind_exercise': {
+    't': (partnerName) => `${partnerName} скончыў практыкаванне`,
+    'd': (title) => `Практыкуй таксама практыкаванне «${title}»`,
+    },
+'remind_article': {
+    't': (partnerName) => `${partnerName} прачытаў артыкул`,
+    'd': (title) => `Прачыытай таксама артыкул «${title}»`,
+    },
+'remind_question': {
+    't': (partnerName) => `${partnerName} адказаў на пытанне`,
+    'd': (reply) => reply,
+    },
+'love_note': {
+    't': (partnerName, action) => `${partnerName} кажа: «${action}»`,
+    'd': (_) => `Адкрый Nemlys, каб адказаць`,
+    },
+    'love_note_sorry': "Прабач",
+    'love_note_sex': "Я ў настроі",
+    'love_note_miss': "Сумую па табе",
+    'love_note_date': "Пойдзем на спатканне",
+    'love_note_talk': "Хачу пагаварыць",
+    'love_note_attention': "Мне патрэбна твая ўвага",
+    'love_note_love': "Я цябе кахаю",
+    'love_note_hug': "Адправь абдымкі"
+    },
+'bg': {
+'partner_joined': {
+    't': (partnerName) => `${partnerName} се присъедини към Nemlys`,
+    'd': (_) => `Започнете да обсъждате въпроси заедно`,
+    },
+'partner_answered': {
+    't': (partnerName) => `${partnerName} отговори на въпрос`,
+    'd': (question) => question,
+    },
+'partner_replied': {
+    't': (partnerName) => `${partnerName} отговори`,
+    'd': (reply) => reply,
+    },
+'remind_answer': {
+    't': (partnerName) => `${partnerName} ти напомня да отговориш на въпрос`,
+    'd': (question) => question,
+    },
+'remind_test': {
+    't': (partnerName) => `${partnerName} завърши тест`,
+    'd': (title) => `Завърши теста '${title}', за да видите резултатите един на друг`,
+    },
+'remind_checkup': {
+    't': (partnerName) => `${partnerName} завърши проверка`,
+    'd': (title) => `Завърши проверката '${title}', за да видите отговорите един на друг`,
+    },
+'remind_game': {
+    't': (partnerName) => `${partnerName} завърши игра`,
+    'd': (title) => `Завърши играта '${title}', за да видите отговорите един на друг`,
+    },
+'remind_exercise': {
+    't': (partnerName) => `${partnerName} завърши упражнение`,
+    'd': (title) => `Изпълни упражнението '${title}' също`,
+    },
+'remind_article': {
+    't': (partnerName) => `${partnerName} завърши статия`,
+    'd': (title) => `Прочети статията '${title}' също`,
+    },
+'remind_question': {
+    't': (partnerName) => `${partnerName} е отговорил на въпрос`,
+    'd': (reply) => reply,
+    },
+'love_note': {
+    't': (partnerName, action) => `${partnerName} казва '${action}'`,
+    'd': (_) => `Отвори Nemlys, за да отговориш`,
+    },
+    'love_note_sorry': "Съжалявам",
+    'love_note_sex': "Съм в настроение",
+    'love_note_miss': "Липсваш ми",
+    'love_note_date': "Хайде на среща",
+    'love_note_talk': "Искам да поговорим",
+    'love_note_attention': "Трябва ми вниманието ти",
+    'love_note_love': "Обичам те",
+    'love_note_hug': "Изпрати прегръдка"
+    },
+'my': {
+'partner_joined': {
+    't': (partnerName) => `${partnerName} က Nemlys မှာ ပါဝင်လိုက်ပါပြီ`,
+    'd': (_) => `အတူတူ မေးခွန်းတွေကို ဆွေးနွေးဖို့ စတင်လိုက်ပါ`,
+    },
+'partner_answered': {
+    't': (partnerName) => `${partnerName} က မေးခွန်းတစ်ခုကို ဖြေကြားလိုက်ပါပြီ`,
+    'd': (question) => question,
+    },
+'partner_replied': {
+    't': (partnerName) => `${partnerName} က ပြန်လည်ဖြေကြားလိုက်ပါပြီ`,
+    'd': (reply) => reply,
+    },
+'remind_answer': {
+    't': (partnerName) => `${partnerName} က မေးခွန်းတစ်ခုကို ဖြေဖို့ သတိပေးနေပါတယ်`,
+    'd': (question) => question,
+    },
+'remind_test': {
+    't': (partnerName) => `${partnerName} စမ်းသပ်မှုကို ပြီးဆုံးသွားပြီ`,
+    'd': (title) => `စမ်းသပ်မှု '${title}' ကို ပြီးစီးပြီး အဖြေတွေကို အတူကြည့်ပါ`,
+    },
+'remind_checkup': {
+    't': (partnerName) => `${partnerName} စစ်ဆေးခြင်းကို ပြီးဆုံးသွားပြီ`,
+    'd': (title) => `စစ်ဆေးခြင်း '${title}' ကို ပြီးစီးပြီး တုံ့ပြန်ချက်တွေကို အတူကြည့်ပါ`,
+    },
+'remind_game': {
+    't': (partnerName) => `${partnerName} ဂိမ်းကို ပြီးဆုံးသွားပြီ`,
+    'd': (title) => `ဂိမ်း '${title}' ကို ပြီးစီးပြီး တုံ့ပြန်ချက်တွေကို အတူကြည့်ပါ`,
+    },
+'remind_exercise': {
+    't': (partnerName) => `${partnerName} လေ့ကျင့်ခန်းကို ပြီးဆုံးသွားပြီ`,
+    'd': (title) => `လေ့ကျင့်ခန်း '${title}' ကိုလည်း လေ့ကျင့်လိုက်ပါ`,
+    },
+'remind_article': {
+    't': (partnerName) => `${partnerName} ဆောင်းပါးကို ဖတ်ပြီးပြီ`,
+    'd': (title) => `ဆောင်းပါး '${title}' ကိုလည်း ဖတ်လိုက်ပါ`,
+    },
+'remind_question': {
+    't': (partnerName) => `${partnerName} မေးခွန်းတစ်ခုကို ဖြေထားပြီ`,
+    'd': (reply) => reply,
+    },
+'love_note': {
+    't': (partnerName, action) => `${partnerName} က '${action}' ဆိုပါတယ်`,
+    'd': (_) => `Nemlys ကို ဖွင့်ပြီး ဖြေလိုက်ပါ`,
+    },
+    'love_note_sorry': "တောင်းပန်ပါတယ်",
+    'love_note_sex': "အခု အလွန်ဆွဲဆောင်မှုရှိနေတယ်",
+    'love_note_miss': "မင်းကို အရမ်း လွမ်းနေတယ်",
+    'love_note_date': "အတူရက်ချိန်းပွဲကြမယ်",
+    'love_note_talk': "မင်းနဲ့ စကားပြောချင်တယ်",
+    'love_note_attention': "မင်းရဲ့ အာရုံ လိုချင်နေတယ်",
+    'love_note_love': "မင်းကို ချစ်တယ်",
+    'love_note_hug': "ပိတ်ဆွဲပေးပါ"
+    },
+'ca': {
+'partner_joined': {
+    't': (partnerName) => `${partnerName} s'ha unit a Nemlys`,
+    'd': (_) => `Comenceu a discutir preguntes junts`,
+    },
+'partner_answered': {
+    't': (partnerName) => `${partnerName} ha contestat una pregunta`,
+    'd': (question) => question,
+    },
+'partner_replied': {
+    't': (partnerName) => `${partnerName} ha respost`,
+    'd': (reply) => reply,
+    },
+'remind_answer': {
+    't': (partnerName) => `${partnerName} et recorda que contestis una pregunta`,
+    'd': (question) => question,
+    },
+'remind_test': {
+    't': (partnerName) => `${partnerName} ha acabat una prova`,
+    'd': (title) => `Acaba la prova '${title}' per veure els resultats de cadascú`,
+    },
+'remind_checkup': {
+    't': (partnerName) => `${partnerName} ha acabat una revisió`,
+    'd': (title) => `Acaba la revisió '${title}' per veure les respostes de cadascú`,
+    },
+'remind_game': {
+    't': (partnerName) => `${partnerName} ha acabat un joc`,
+    'd': (title) => `Acaba el joc '${title}' per veure les respostes de cadascú`,
+    },
+'remind_exercise': {
+    't': (partnerName) => `${partnerName} ha acabat un exercici`,
+    'd': (title) => `Fes també l'exercici '${title}'`,
+    },
+'remind_article': {
+    't': (partnerName) => `${partnerName} ha acabat un article`,
+    'd': (title) => `Llegeix també l'article '${title}'`,
+    },
+'remind_question': {
+    't': (partnerName) => `${partnerName} ha contestat una pregunta`,
+    'd': (reply) => reply,
+    },
+'love_note': {
+    't': (partnerName, action) => `${partnerName} diu '${action}'`,
+    'd': (_) => `Obre Nemlys per respondre`,
+    },
+    'love_note_sorry': "Ho sento",
+    'love_note_sex': "Tinc ganes",
+    'love_note_miss': "Et trobo a faltar",
+    'love_note_date': "Fem una cita",
+    'love_note_talk': "Vull parlar",
+    'love_note_attention': "Necessito la teva atenció",
+    'love_note_love': "T'estimo",
+    'love_note_hug': "Envia una abraçada"
+    },
+'hr': {
+'partner_joined': {
+    't': (partnerName) => `${partnerName} se pridružio Nemlys-u`,
+    'd': (_) => `Započnite zajedničku raspravu o pitanjima`,
+    },
+'partner_answered': {
+    't': (partnerName) => `${partnerName} je odgovorio na pitanje`,
+    'd': (question) => question,
+    },
+'partner_replied': {
+    't': (partnerName) => `${partnerName} je odgovorio`,
+    'd': (reply) => reply,
+    },
+'remind_answer': {
+    't': (partnerName) => `${partnerName} te podsjeća da odgovoriš na pitanje`,
+    'd': (question) => question,
+    },
+'remind_test': {
+    't': (partnerName) => `${partnerName} je završio test`,
+    'd': (title) => `Završi test '${title}' da vidiš rezultate jedno drugoga`,
+    },
+'remind_checkup': {
+    't': (partnerName) => `${partnerName} je završio pregled`,
+    'd': (title) => `Završi pregled '${title}' da vidiš odgovore jedno drugoga`,
+    },
+'remind_game': {
+    't': (partnerName) => `${partnerName} je završio igru`,
+    'd': (title) => `Završi igru '${title}' da vidiš odgovore jedno drugoga`,
+    },
+'remind_exercise': {
+    't': (partnerName) => `${partnerName} je završio vježbu`,
+    'd': (title) => `Isprobaj vježbu '${title}' također`,
+    },
+'remind_article': {
+    't': (partnerName) => `${partnerName} je završio članak`,
+    'd': (title) => `Pročitaj članak '${title}' također`,
+    },
+'remind_question': {
+    't': (partnerName) => `${partnerName} je odgovorio na pitanje`,
+    'd': (reply) => reply,
+    },
+'love_note': {
+    't': (partnerName, action) => `${partnerName} kaže '${action}'`,
+    'd': (_) => `Otvori Nemlys da odgovoriš`,
+    },
+    'love_note_sorry': "Žao mi je",
+    'love_note_sex': "U raspoloženju sam",
+    'love_note_miss': "Nedostaješ mi",
+    'love_note_date': "Hajdemo na spoj",
+    'love_note_talk': "Želim razgovarati",
+    'love_note_attention': "Treba mi tvoja pažnja",
+    'love_note_love': "Volim te",
+    'love_note_hug': "Pošalji zagrljaj"
+    },
+'cs': {
+'partner_joined': {
+    't': (partnerName) => `${partnerName} se připojil(a) k Nemlys`,
+    'd': (_) => `Začněte spolu diskutovat o otázkách`,
+    },
+'partner_answered': {
+    't': (partnerName) => `${partnerName} odpověděl(a) na otázku`,
+    'd': (question) => question,
+    },
+'partner_replied': {
+    't': (partnerName) => `${partnerName} odpověděl(a)`,
+    'd': (reply) => reply,
+    },
+'remind_answer': {
+    't': (partnerName) => `${partnerName} ti připomíná, abys odpověděl(a) na otázku`,
+    'd': (question) => question,
+    },
+'remind_test': {
+    't': (partnerName) => `${partnerName} dokončil test`,
+    'd': (title) => `Dokonči test '${title}', abys viděl výsledky jeden druhého`,
+    },
+'remind_checkup': {
+    't': (partnerName) => `${partnerName} dokončil kontrolu`,
+    'd': (title) => `Dokonči kontrolu '${title}', abys viděl odpovědi jeden druhého`,
+    },
+'remind_game': {
+    't': (partnerName) => `${partnerName} dokončil hru`,
+    'd': (title) => `Dokonči hru '${title}', abys viděl odpovědi jeden druhého`,
+    },
+'remind_exercise': {
+    't': (partnerName) => `${partnerName} dokončil cvičení`,
+    'd': (title) => `Vyzkoušej také cvičení '${title}'`,
+    },
+'remind_article': {
+    't': (partnerName) => `${partnerName} dokončil článek`,
+    'd': (title) => `Přečti si také článek '${title}'`,
+    },
+'remind_question': {
+    't': (partnerName) => `${partnerName} odpověděl na otázku`,
+    'd': (reply) => reply,
+    },
+'love_note': {
+    't': (partnerName, action) => `${partnerName} říká: '${action}'`,
+    'd': (_) => `Otevři Nemlys a odpověz`,
+    },
+    'love_note_sorry': "Omlouvám se",
+    'love_note_sex': "Jsem na to",
+    'love_note_miss': "Chybíš mi",
+    'love_note_date': "Jdeme na rande",
+    'love_note_talk': "Chci si popovídat",
+    'love_note_attention': "Potřebuji tvou pozornost",
+    'love_note_love': "Miluji tě",
+    'love_note_hug': "Pošli objetí"
+    },
+'da': {
+'partner_joined': {
+    't': (partnerName) => `${partnerName} er blevet medlem af Nemlys`,
+    'd': (_) => `Begynd at diskutere spørgsmål sammen`,
+    },
+'partner_answered': {
+    't': (partnerName) => `${partnerName} har besvaret et spørgsmål`,
+    'd': (question) => question,
+    },
+'partner_replied': {
+    't': (partnerName) => `${partnerName} har svaret`,
+    'd': (reply) => reply,
+    },
+'remind_answer': {
+    't': (partnerName) => `${partnerName} minder dig om at besvare et spørgsmål`,
+    'd': (question) => question,
+    },
+'remind_test': {
+    't': (partnerName) => `${partnerName} har gennemført en test`,
+    'd': (title) => `Afslut testen '${title}' for at se hinandens resultater`,
+    },
+'remind_checkup': {
+    't': (partnerName) => `${partnerName} har gennemført et tjek`,
+    'd': (title) => `Afslut tjekket '${title}' for at se hinandens svar`,
+    },
+'remind_game': {
+    't': (partnerName) => `${partnerName} har gennemført et spil`,
+    'd': (title) => `Afslut spillet '${title}' for at se hinandens svar`,
+    },
+'remind_exercise': {
+    't': (partnerName) => `${partnerName} har gennemført en øvelse`,
+    'd': (title) => `Øv øvelsen '${title}' også`,
+    },
+'remind_article': {
+    't': (partnerName) => `${partnerName} har afsluttet en artikel`,
+    'd': (title) => `Læs artiklen '${title}' også`,
+    },
+'remind_question': {
+    't': (partnerName) => `${partnerName} har besvaret et spørgsmål`,
+    'd': (reply) => reply,
+    },
+'love_note': {
+    't': (partnerName, action) => `${partnerName} siger '${action}'`,
+    'd': (_) => `Åbn Nemlys for at svare`,
+    },
+    'love_note_sorry': "Undskyld",
+    'love_note_sex': "Jeg er i humør",
+    'love_note_miss': "Jeg savner dig",
+    'love_note_date': "Lad os gå på date",
+    'love_note_talk': "Jeg vil snakke",
+    'love_note_attention': "Jeg har brug for din opmærksomhed",
+    'love_note_love': "Jeg elsker dig",
+    'love_note_hug': "Send et kram"
+    },
+'et': {
+'partner_joined': {
+    't': (partnerName) => `${partnerName} liitus Nemlysiga`,
+    'd': (_) => `Alustage koos küsimuste arutamist`,
+    },
+'partner_answered': {
+    't': (partnerName) => `${partnerName} vastas küsimusele`,
+    'd': (question) => question,
+    },
+'partner_replied': {
+    't': (partnerName) => `${partnerName} vastas`,
+    'd': (reply) => reply,
+    },
+'remind_answer': {
+    't': (partnerName) => `${partnerName} tuletab meelde, et vastaksid küsimusele`,
+    'd': (question) => question,
+    },
+'remind_test': {
+    't': (partnerName) => `${partnerName} on lõpetanud testi`,
+    'd': (title) => `Lõpeta test '${title}', et näha teineteise tulemusi`,
+    },
+'remind_checkup': {
+    't': (partnerName) => `${partnerName} on lõpetanud kontrolli`,
+    'd': (title) => `Lõpeta kontroll '${title}', et näha teineteise vastuseid`,
+    },
+'remind_game': {
+    't': (partnerName) => `${partnerName} on lõpetanud mängu`,
+    'd': (title) => `Lõpeta mäng '${title}', et näha teineteise vastuseid`,
+    },
+'remind_exercise': {
+    't': (partnerName) => `${partnerName} on lõpetanud harjutuse`,
+    'd': (title) => `Tee ka harjutus '${title}'`,
+    },
+'remind_article': {
+    't': (partnerName) => `${partnerName} on lõpetanud artikli`,
+    'd': (title) => `Loe ka artikkel '${title}'`,
+    },
+'remind_question': {
+    't': (partnerName) => `${partnerName} on vastanud küsimusele`,
+    'd': (reply) => reply,
+    },
+'love_note': {
+    't': (partnerName, action) => `${partnerName} ütleb: '${action}'`,
+    'd': (_) => `Ava Nemlys, et vastata`,
+    },
+    'love_note_sorry': "Mul on kahju",
+    'love_note_sex': "Mul on tuju",
+    'love_note_miss': "Ma igatsen sind",
+    'love_note_date': "Lähme kohtingule",
+    'love_note_talk': "Ma tahan rääkida",
+    'love_note_attention': "Vajan su tähelepanu",
+    'love_note_love': "Ma armastan sind",
+    'love_note_hug': "Saada kallistus"
+    },
+'fi': {
+'partner_joined': {
+    't': (partnerName) => `${partnerName} liittyi Nemlysiin`,
+    'd': (_) => `Aloita kysymysten keskustelu yhdessä`,
+    },
+'partner_answered': {
+    't': (partnerName) => `${partnerName} vastasi kysymykseen`,
+    'd': (question) => question,
+    },
+'partner_replied': {
+    't': (partnerName) => `${partnerName} vastasi`,
+    'd': (reply) => reply,
+    },
+'remind_answer': {
+    't': (partnerName) => `${partnerName} muistuttaa sinua vastaamaan kysymykseen`,
+    'd': (question) => question,
+    },
+'remind_test': {
+    't': (partnerName) => `${partnerName} on suorittanut testin`,
+    'd': (title) => `Viimeistele testi '${title}', jotta näet toistenne tulokset`,
+    },
+'remind_checkup': {
+    't': (partnerName) => `${partnerName} on suorittanut tarkastuksen`,
+    'd': (title) => `Viimeistele tarkastus '${title}', jotta näet toistenne vastaukset`,
+    },
+'remind_game': {
+    't': (partnerName) => `${partnerName} on lopettanut pelin`,
+    'd': (title) => `Viimeistele peli '${title}', jotta näet toistenne vastaukset`,
+    },
+'remind_exercise': {
+    't': (partnerName) => `${partnerName} on suorittanut harjoituksen`,
+    'd': (title) => `Suorita myös harjoitus '${title}'`,
+    },
+'remind_article': {
+    't': (partnerName) => `${partnerName} on lukenut artikkelin`,
+    'd': (title) => `Lue myös artikkeli '${title}'`,
+    },
+'remind_question': {
+    't': (partnerName) => `${partnerName} on vastannut kysymykseen`,
+    'd': (reply) => reply,
+    },
+'love_note': {
+    't': (partnerName, action) => `${partnerName} sanoo: '${action}'`,
+    'd': (_) => `Avaa Nemlys vastataksesi`,
+    },
+    'love_note_sorry': "Olen pahoillani",
+    'love_note_sex': "Oon tunnelmissa",
+    'love_note_miss': "Kaipaan sua",
+    'love_note_date': "Lähdetään treffeille",
+    'love_note_talk': "Haluan jutella",
+    'love_note_attention': "Tarvitsen sun huomiota",
+    'love_note_love': "Rakastan sua",
+    'love_note_hug': "Lähetä halaus"
+    },
+'gl': {
+'partner_joined': {
+    't': (partnerName) => `${partnerName} uniuuse a Nemlys`,
+    'd': (_) => `Comeza a discutir preguntas xuntos`,
+    },
+'partner_answered': {
+    't': (partnerName) => `${partnerName} respondeu a unha pregunta`,
+    'd': (question) => question,
+    },
+'partner_replied': {
+    't': (partnerName) => `${partnerName} respondeu`,
+    'd': (reply) => reply,
+    },
+'remind_answer': {
+    't': (partnerName) => `${partnerName} está recordándoche que respondas a unha pregunta`,
+    'd': (question) => question,
+    },
+'remind_test': {
+    't': (partnerName) => `${partnerName} rematou unha proba`,
+    'd': (title) => `Termina a proba '${title}' para ver os resultados de ambos`,
+    },
+'remind_checkup': {
+    't': (partnerName) => `${partnerName} rematou unha revisión`,
+    'd': (title) => `Termina a revisión '${title}' para ver as respostas uns dos outros`,
+    },
+'remind_game': {
+    't': (partnerName) => `${partnerName} rematou un xogo`,
+    'd': (title) => `Termina o xogo '${title}' para ver as respostas uns dos outros`,
+    },
+'remind_exercise': {
+    't': (partnerName) => `${partnerName} rematou un exercicio`,
+    'd': (title) => `Practica tamén o exercicio '${title}'`,
+    },
+'remind_article': {
+    't': (partnerName) => `${partnerName} rematou un artigo`,
+    'd': (title) => `Le tamén o artigo '${title}'`,
+    },
+'remind_question': {
+    't': (partnerName) => `${partnerName} respondeu unha pregunta`,
+    'd': (reply) => reply,
+    },
+'love_note': {
+    't': (partnerName, action) => `${partnerName} di: '${action}'`,
+    'd': (_) => `Abre Nemlys para responder`,
+    },
+    'love_note_sorry': "Síntoo",
+    'love_note_sex': "Teño ganas",
+    'love_note_miss': "Sinto saudade de ti",
+    'love_note_date': "Imos ter unha cita",
+    'love_note_talk': "Quero falar",
+    'love_note_attention': "Necesito a túa atención",
+    'love_note_love': "Ámote",
+    'love_note_hug': "Envía un abrazo"
+    },
+'ka': {
+'partner_joined': {
+    't': (partnerName) => `${partnerName} შეუერთდა Nemlys-ს`,
+    'd': (_) => `დაიწყეთ კითხვებზე ერთად საუბარი`,
+    },
+'partner_answered': {
+    't': (partnerName) => `${partnerName} უპასუხა კითხვას`,
+    'd': (question) => question,
+    },
+'partner_replied': {
+    't': (partnerName) => `${partnerName} უპასუხა`,
+    'd': (reply) => reply,
+    },
+'remind_answer': {
+    't': (partnerName) => `${partnerName} გახსენებს, რომ უპასუხო კითხვას`,
+    'd': (question) => question,
+    },
+'remind_test': {
+    't': (partnerName) => `${partnerName} დასრულა ტესტი`,
+    'd': (title) => `დასრულე ტესტი '${title}', რომ ნახოთ ერთმანეთ შედეგები`,
+    },
+'remind_checkup': {
+    't': (partnerName) => `${partnerName} დასრულა შემოწმება`,
+    'd': (title) => `დასრულე შემოწმება '${title}', რომ ნახოთ ერთმანეთ პასუხები`,
+    },
+'remind_game': {
+    't': (partnerName) => `${partnerName} დასრულა თამაში`,
+    'd': (title) => `დასრულე თამაში '${title}', რომ ნახოთ ერთმანეთ პასუხები`,
+    },
+'remind_exercise': {
+    't': (partnerName) => `${partnerName} დასრულა ვარჯიში`,
+    'd': (title) => `გააკეთე ვარჯიში '${title}' ასევე`,
+    },
+'remind_article': {
+    't': (partnerName) => `${partnerName} დასრულა სტატია`,
+    'd': (title) => `წაიკითხე სტატია '${title}' ასევე`,
+    },
+'remind_question': {
+    't': (partnerName) => `${partnerName} უპასუხა კითხვას`,
+    'd': (reply) => reply,
+    },
+'love_note': {
+    't': (partnerName, action) => `${partnerName} ამბობს '${action}'`,
+    'd': (_) => `ხსე Nemlys, რათა უპასუხო`,
+    },
+    'love_note_sorry': "ბოდიში",
+    'love_note_sex': "მე მზად ვარ",
+    'love_note_miss': "მინდა, რომ ახლოს იყავი",
+    'love_note_date': "მოდი გავქონოთ დეიტი",
+    'love_note_talk': "მინდა ვისაუბრო",
+    'love_note_attention': "მჭირდება შენი ყურადღება",
+    'love_note_love': "გიყვარხარ",
+    'love_note_hug': "გაგზავნე ტკბილი კოცნება"
+    },
+'el': {
+'partner_joined': {
+    't': (partnerName) => `${partnerName} μπήκε στο Nemlys`,
+    'd': (_) => `Αρχίστε να συζητάτε ερωτήσεις μαζί`,
+    },
+'partner_answered': {
+    't': (partnerName) => `${partnerName} απάντησε σε μια ερώτηση`,
+    'd': (question) => question,
+    },
+'partner_replied': {
+    't': (partnerName) => `${partnerName} απάντησε`,
+    'd': (reply) => reply,
+    },
+'remind_answer': {
+    't': (partnerName) => `${partnerName} σου θυμίζει να απαντήσεις σε μια ερώτηση`,
+    'd': (question) => question,
+    },
+'remind_test': {
+    't': (partnerName) => `Ο ${partnerName} έχει ολοκληρώσει ένα τεστ`,
+    'd': (title) => `Ολοκλήρωσε το τεστ '${title}' για να δείτε τα αποτελέσματα ο ένας του άλλου`,
+    },
+'remind_checkup': {
+    't': (partnerName) => `Ο ${partnerName} έχει ολοκληρώσει έναν έλεγχο`,
+    'd': (title) => `Ολοκλήρωσε τον έλεγχο '${title}' για να δείτε τις απαντήσεις ο ένας του άλλου`,
+    },
+'remind_game': {
+    't': (partnerName) => `Ο ${partnerName} έχει ολοκληρώσει ένα παιχνίδι`,
+    'd': (title) => `Ολοκλήρωσε το παιχνίδι '${title}' για να δείτε τις απαντήσεις ο ένας του άλλου`,
+    },
+'remind_exercise': {
+    't': (partnerName) => `Ο ${partnerName} έχει ολοκληρώσει μια άσκηση`,
+    'd': (title) => `Εξασκήσου και στην άσκηση '${title}'`,
+    },
+'remind_article': {
+    't': (partnerName) => `Ο ${partnerName} έχει ολοκληρώσει ένα άρθρο`,
+    'd': (title) => `Διάβασε και το άρθρο '${title}'`,
+    },
+'remind_question': {
+    't': (partnerName) => `Ο ${partnerName} έχει απαντήσει σε μία ερώτηση`,
+    'd': (reply) => reply,
+    },
+'love_note': {
+    't': (partnerName, action) => `Ο ${partnerName} λέει '${action}'`,
+    'd': (_) => `Άνοιξε το Nemlys για να απαντήσεις`,
+    },
+    'love_note_sorry': "Συγγνώμη",
+    'love_note_sex': "Έχω διάθεση",
+    'love_note_miss': "Μου λείπεις",
+    'love_note_date': "Ας βγούμε για ραντεβού",
+    'love_note_talk': "Θέλω να μιλήσω",
+    'love_note_attention': "Χρειάζομαι την προσοχή σου",
+    'love_note_love': "Σ' αγαπώ",
+    'love_note_hug': "Στείλε μια αγκαλιά"
+    },
+'gu': {
+'partner_joined': {
+    't': (partnerName) => `${partnerName} ને નેમલિસમાં જોડાયા`,
+    'd': (_) => `સાથે પ્રશ્નો પર ચર્ચા શરૂ કરો`,
+    },
+'partner_answered': {
+    't': (partnerName) => `${partnerName} એ એક પ્રશ્નનો જવાબ આપ્યો`,
+    'd': (question) => question,
+    },
+'partner_replied': {
+    't': (partnerName) => `${partnerName} એ જવાબ આપ્યો`,
+    'd': (reply) => reply,
+    },
+'remind_answer': {
+    't': (partnerName) => `${partnerName} તમને પ્રશ્નનો જવાબ આપવા યાદ અપાવી રહ્યો છે`,
+    'd': (question) => question,
+    },
+'remind_test': {
+    't': (partnerName) => `${partnerName}એ ટેસ્ટ પૂર્ણ કર્યો છે`,
+    'd': (title) => `'${title}' ટેસ્ટ પૂર્ણ કરો અને એકબીજાના પરિણામો જુઓ`,
+    },
+'remind_checkup': {
+    't': (partnerName) => `${partnerName}એ ચેકઅપ પૂર્ણ કર્યો છે`,
+    'd': (title) => `'${title}' ચેકઅપ પૂર્ણ કરો અને એકબીજાના પ્રતિસાદો જુઓ`,
+    },
+'remind_game': {
+    't': (partnerName) => `${partnerName}એ રમત પૂર્ણ કરી છે`,
+    'd': (title) => `'${title}' રમત પૂર્ણ કરો અને એકબીજાના પ્રતિસાદો જુઓ`,
+    },
+'remind_exercise': {
+    't': (partnerName) => `${partnerName}એ કસરત પૂર્ણ કરી છે`,
+    'd': (title) => `'${title}' કસરતનો અભ્યાસ પણ કરો`,
+    },
+'remind_article': {
+    't': (partnerName) => `${partnerName}એ લેખ પૂર્ણ કર્યો છે`,
+    'd': (title) => `'${title}' લેખ પણ વાંચો`,
+    },
+'remind_question': {
+    't': (partnerName) => `${partnerName}એ પ્રશ્નનો જવાબ આપ્યો છે`,
+    'd': (reply) => reply,
+    },
+'love_note': {
+    't': (partnerName, action) => `${partnerName} કહે છે '${action}'`,
+    'd': (_) => `જવાબ આપવા માટે Nemlys ખોલો`,
+    },
+    'love_note_sorry': "મને માફ કર",
+    'love_note_sex': "હું રોમેન્ટિક મૂડમાં છું",
+    'love_note_miss': "મને તારી ખૂબ યાદ આવે છે",
+    'love_note_date': "ચાલ, એક ડેટ કરીએ",
+    'love_note_talk': "મારે વાત કરવી છે",
+    'love_note_attention': "મારે તારો ધ્યાન જોઈએ છે",
+    'love_note_love': "હું તને પ્રેમ કરું છું",
+    'love_note_hug': "એક આલિંગન મોકલો"
+    },
+'he': {
+'partner_joined': {
+    't': (partnerName) => `${partnerName} הצטרף לנמליס`,
+    'd': (_) => `תתחילו לדון בשאלות יחד`,
+    },
+'partner_answered': {
+    't': (partnerName) => `${partnerName} ענה על שאלה`,
+    'd': (question) => question,
+    },
+'partner_replied': {
+    't': (partnerName) => `${partnerName} ענה`,
+    'd': (reply) => reply,
+    },
+'remind_answer': {
+    't': (partnerName) => `${partnerName} מזכיר לך לענות על שאלה`,
+    'd': (question) => question,
+    },
+'remind_test': {
+    't': (partnerName) => `${partnerName} סיים מבחן`,
+    'd': (title) => `סיים את המבחן '${title}' כדי לראות את התוצאות של שניכם`,
+    },
+'remind_checkup': {
+    't': (partnerName) => `${partnerName} סיים בדיקה`,
+    'd': (title) => `סיים את הבדיקה '${title}' כדי לראות את התגובות של שניכם`,
+    },
+'remind_game': {
+    't': (partnerName) => `${partnerName} סיים משחק`,
+    'd': (title) => `סיים את המשחק '${title}' כדי לראות את התגובות של שניכם`,
+    },
+'remind_exercise': {
+    't': (partnerName) => `${partnerName} סיים תרגיל`,
+    'd': (title) => `תעשה גם את התרגיל '${title}'`,
+    },
+'remind_article': {
+    't': (partnerName) => `${partnerName} סיים מאמר`,
+    'd': (title) => `קרא גם את המאמר '${title}'`,
+    },
+'remind_question': {
+    't': (partnerName) => `${partnerName} ענה על שאלה`,
+    'd': (reply) => reply,
+    },
+'love_note': {
+    't': (partnerName, action) => `${partnerName} אומר '${action}'`,
+    'd': (_) => `פתח את Nemlys כדי לענות`,
+    },
+    'love_note_sorry': "סליחה",
+    'love_note_sex': "אני במצב",
+    'love_note_miss': "אני מתגעגע אלייך",
+    'love_note_date': "בוא נעשה דייט",
+    'love_note_talk': "אני רוצה לדבר",
+    'love_note_attention': "אני צריך את תשומת הלב שלך",
+    'love_note_love': "אני אוהב אותך",
+    'love_note_hug': "שלח חיבוק"
+    },
+'hu': {
+'partner_joined': {
+    't': (partnerName) => `${partnerName} csatlakozott a Nemlys-hez`,
+    'd': (_) => `Kezdjétek el együtt megvitatni a kérdéseket`,
+    },
+'partner_answered': {
+    't': (partnerName) => `${partnerName} válaszolt egy kérdésre`,
+    'd': (question) => question,
+    },
+'partner_replied': {
+    't': (partnerName) => `${partnerName} válaszolt`,
+    'd': (reply) => reply,
+    },
+'remind_answer': {
+    't': (partnerName) => `${partnerName} emlékeztet, hogy válaszolj egy kérdésre`,
+    'd': (question) => question,
+    },
+'remind_test': {
+    't': (partnerName) => `${partnerName} befejezte a tesztet`,
+    'd': (title) => `Fejezd be a '${title}' tesztet, hogy láthassátok egymás eredményeit`,
+    },
+'remind_checkup': {
+    't': (partnerName) => `${partnerName} befejezte a vizsgálatot`,
+    'd': (title) => `Fejezd be a '${title}' vizsgálatot, hogy láthassátok egymás válaszait`,
+    },
+'remind_game': {
+    't': (partnerName) => `${partnerName} befejezte a játékot`,
+    'd': (title) => `Fejezd be a '${title}' játékot, hogy láthassátok egymás válaszait`,
+    },
+'remind_exercise': {
+    't': (partnerName) => `${partnerName} befejezte a gyakorlatot`,
+    'd': (title) => `Végezd el a '${title}' gyakorlatot is`,
+    },
+'remind_article': {
+    't': (partnerName) => `${partnerName} befejezte a cikket`,
+    'd': (title) => `Olvasd el a '${title}' cikket is`,
+    },
+'remind_question': {
+    't': (partnerName) => `${partnerName} válaszolt egy kérdésre`,
+    'd': (reply) => reply,
+    },
+'love_note': {
+    't': (partnerName, action) => `${partnerName} azt mondja: '${action}'`,
+    'd': (_) => `Nyisd meg a Nemlyst, hogy válaszolj`,
+    },
+    'love_note_sorry': "Sajnálom",
+    'love_note_sex': "Most van kedvem",
+    'love_note_miss': "Hiányzol",
+    'love_note_date': "Randevizzunk?",
+    'love_note_talk': "Beszélgetni szeretnék",
+    'love_note_attention': "Figyelmedre van szükségem",
+    'love_note_love': "Szeretlek",
+    'love_note_hug': "Küldj egy ölelést"
+    },
+'is': {
+'partner_joined': {
+    't': (partnerName) => `${partnerName} gekk í Nemlys`,
+    'd': (_) => `Byrjaðu að ræða spurningarnar saman`,
+    },
+'partner_answered': {
+    't': (partnerName) => `${partnerName} svaraði spurningu`,
+    'd': (question) => question,
+    },
+'partner_replied': {
+    't': (partnerName) => `${partnerName} svaraði`,
+    'd': (reply) => reply,
+    },
+'remind_answer': {
+    't': (partnerName) => `${partnerName} minnir þig á að svara spurningu`,
+    'd': (question) => question,
+    },
+'remind_test': {
+    't': (partnerName) => `${partnerName} hefur lokið prófi`,
+    'd': (title) => `Ljúktu prófi '${title}' til að sjá niðurstöður hvor annars`,
+    },
+'remind_checkup': {
+    't': (partnerName) => `${partnerName} hefur lokið skoðun`,
+    'd': (title) => `Ljúktu skoðun '${title}' til að sjá svör hvor annars`,
+    },
+'remind_game': {
+    't': (partnerName) => `${partnerName} hefur lokið leik`,
+    'd': (title) => `Ljúktu leik '${title}' til að sjá svör hvor annars`,
+    },
+'remind_exercise': {
+    't': (partnerName) => `${partnerName} hefur lokið æfingu`,
+    'd': (title) => `Æfðu æfingu '${title}' líka`,
+    },
+'remind_article': {
+    't': (partnerName) => `${partnerName} hefur lokið grein`,
+    'd': (title) => `Lestu greinina '${title}' líka`,
+    },
+'remind_question': {
+    't': (partnerName) => `${partnerName} hefur svarað spurningu`,
+    'd': (reply) => reply,
+    },
+'love_note': {
+    't': (partnerName, action) => `${partnerName} segir '${action}'`,
+    'd': (_) => `Opna Nemlys til að svara`,
+    },
+    'love_note_sorry': "Fyrirgefðu",
+    'love_note_sex': "Ég er til í ást og kós",
+    'love_note_miss': "Ég sakna þín",
+    'love_note_date': "Förum á stefnumót",
+    'love_note_talk': "Mig langar að tala",
+    'love_note_attention': "Ég þarf athygli þína",
+    'love_note_love': "Ég elska þig",
+    'love_note_hug': "Sendu knús"
+    },
+'kn': {
+'partner_joined': {
+    't': (partnerName) => `${partnerName} ನೆಮ್‌ಲಿಸ್‌ನಲ್ಲಿ ಸೇರಿದ್ದಾರೆ`,
+    'd': (_) => `ಒಟ್ಟಾಗಿ ಪ್ರಶ್ನೆಗಳ ಬಗ್ಗೆ ಚರ್ಚೆ ಮಾಡಲು ಪ್ರಾರಂಭಿಸಿ`,
+    },
+'partner_answered': {
+    't': (partnerName) => `${partnerName} ಒಂದು ಪ್ರಶ್ನೆಗೆ ಉತ್ತರಿಸಿದ್ದಾರೆ`,
+    'd': (question) => question,
+    },
+'partner_replied': {
+    't': (partnerName) => `${partnerName} ಉತ್ತರಿಸಿದ್ದಾರೆ`,
+    'd': (reply) => reply,
+    },
+'remind_answer': {
+    't': (partnerName) => `${partnerName} ನಿಮಗೆ ಒಂದು ಪ್ರಶ್ನೆಗೆ ಉತ್ತರಿಸಲು ನೆನಪಿಸುತ್ತಿದ್ದಾರೆ`,
+    'd': (question) => question,
+    },
+'remind_test': {
+    't': (partnerName) => `${partnerName} ಪರೀಕ್ಷೆಯನ್ನು ಮುಗಿಸಿದ್ದಾರೆ`,
+    'd': (title) => `'${title}' ಪರೀಕ್ಷೆಯನ್ನು ಮುಗಿಸಿ, ಪರಸ್ಪರ ಫಲಿತಾಂಶಗಳನ್ನು ನೋಡಿ`,
+    },
+'remind_checkup': {
+    't': (partnerName) => `${partnerName} ತಪಾಸಣೆಯನ್ನು ಮುಗಿಸಿದ್ದಾರೆ`,
+    'd': (title) => `'${title}' ತಪಾಸಣೆಯನ್ನು ಮುಗಿಸಿ, ಪರಸ್ಪರ ಪ್ರತಿಕ್ರಿಯೆಗಳನ್ನು ನೋಡಿ`,
+    },
+'remind_game': {
+    't': (partnerName) => `${partnerName} ಆಟವನ್ನು ಮುಗಿಸಿದ್ದಾರೆ`,
+    'd': (title) => `'${title}' ಆಟವನ್ನು ಮುಗಿಸಿ, ಪರಸ್ಪರ ಪ್ರತಿಕ್ರಿಯೆಗಳನ್ನು ನೋಡಿ`,
+    },
+'remind_exercise': {
+    't': (partnerName) => `${partnerName} ವ್ಯಾಯಾಮವನ್ನು ಮುಗಿಸಿದ್ದಾರೆ`,
+    'd': (title) => `'${title}' ವ್ಯಾಯಾಮವನ್ನು ಕೂಡ ಅಭ್ಯಾಸ ಮಾಡು`,
+    },
+'remind_article': {
+    't': (partnerName) => `${partnerName} ಲೇಖನವನ್ನು ಮುಗಿಸಿದ್ದಾರೆ`,
+    'd': (title) => `'${title}' ಲೇಖನವನ್ನು ಕೂಡ ಓದು`,
+    },
+'remind_question': {
+    't': (partnerName) => `${partnerName} ಪ್ರಶ್ನೆಗೆ ಉತ್ತರಿಸಿದ್ದಾರೆ`,
+    'd': (reply) => reply,
+    },
+'love_note': {
+    't': (partnerName, action) => `${partnerName} ಹೇಳುತ್ತಾರೆ '${action}'`,
+    'd': (_) => `ಉತ್ತರಿಸಲು Nemlys ಅನ್ನು ತೆರೆಯಿರಿ`,
+    },
+    'love_note_sorry': "ಕ್ಷಮಿಸು",
+    'love_note_sex': "ನನಗೆ ಲವ್ ಮೂಡ್ ಇದೆ",
+    'love_note_miss': "ನಾನು ನಿನ್ನನ್ನು ಮಿಸ್ ಮಾಡುತ್ತಿದ್ದೇನೆ",
+    'love_note_date': "ನಾವು ಒಂದು ಡೇಟ್ ಮಾಡೋಣ",
+    'love_note_talk': "ನನಗೆ ಮಾತಾಡಲು ಇಚ್ಛೆ ಇದೆ",
+    'love_note_attention': "ನನಗೆ ನಿನ್ನ ಗಮನ ಬೇಕು",
+    'love_note_love': "ನಾನು ನಿನ್ನನ್ನು ಪ್ರೀತಿಸುತ್ತೇನೆ",
+    'love_note_hug': "ಒಂದು ಅಲಿಂಗನ ಕಳುಹಿಸು"
+    },
+'kk': {
+'partner_joined': {
+    't': (partnerName) => `${partnerName} Nemlys-ке қосылды`,
+    'd': (_) => `Сұрақтарды бірге талқылай бастаңдар`,
+    },
+'partner_answered': {
+    't': (partnerName) => `${partnerName} сұраққа жауап берді`,
+    'd': (question) => question,
+    },
+'partner_replied': {
+    't': (partnerName) => `${partnerName} жауап берді`,
+    'd': (reply) => reply,
+    },
+'remind_answer': {
+    't': (partnerName) => `${partnerName} саған сұраққа жауап беруді ескертуде`,
+    'd': (question) => question,
+    },
+'remind_test': {
+    't': (partnerName) => `${partnerName} тестті аяқтады`,
+    'd': (title) => `'${title}' тестті аяқта, бір-біріңіздің нәтижелеріңізді көру үшін`,
+    },
+'remind_checkup': {
+    't': (partnerName) => `${partnerName} тексеруден өтті`,
+    'd': (title) => `'${title}' тексеруді аяқта, бір-біріңіздің жауаптарыңызды білу үшін`,
+    },
+'remind_game': {
+    't': (partnerName) => `${partnerName} ойынды аяқтады`,
+    'd': (title) => `'${title}' ойынды аяқта, бір-біріңіздің жауаптарыңызды көру үшін`,
+    },
+'remind_exercise': {
+    't': (partnerName) => `${partnerName} жаттығуды аяқтады`,
+    'd': (title) => `'${title}' жаттығуын да орында`,
+    },
+'remind_article': {
+    't': (partnerName) => `${partnerName} мақаланы оқып бітірді`,
+    'd': (title) => `'${title}' мақаланы да оқы`,
+    },
+'remind_question': {
+    't': (partnerName) => `${partnerName} сұраққа жауап берді`,
+    'd': (reply) => reply,
+    },
+'love_note': {
+    't': (partnerName, action) => `${partnerName} былай дейді: '${action}'`,
+    'd': (_) => `Жауап беру үшін Nemlys-ті аш`,
+    },
+    'love_note_sorry': "Кешір",
+    'love_note_sex': "Мен күйге қалдым",
+    'love_note_miss': "Сені сағындым",
+    'love_note_date': "Кел, бірге кездесейік",
+    'love_note_talk': "Мен сөйлескім келеді",
+    'love_note_attention': "Маған сенің назарың керек",
+    'love_note_love': "Сені жақсы көремін",
+    'love_note_hug': "Құшақ жібер"
+    },
+'km': {
+'partner_joined': {
+    't': (partnerName) => `${partnerName} បានចូលរួមជាមួយ Nemlys`,
+    'd': (_) => `ចាប់ផ្តើមពិភាក្សាអំពីសំណួរទាំងអស់ជាមួយគ្នា`,
+    },
+'partner_answered': {
+    't': (partnerName) => `${partnerName} បានឆ្លើយសំណួរ`,
+    'd': (question) => question,
+    },
+'partner_replied': {
+    't': (partnerName) => `${partnerName} បានឆ្លើយតប`,
+    'd': (reply) => reply,
+    },
+'remind_answer': {
+    't': (partnerName) => `${partnerName} កំពុងរំលឹកអ្នកឱ្យឆ្លើយសំណួរ`,
+    'd': (question) => question,
+    },
+'remind_test': {
+    't': (partnerName) => `${partnerName} បានបញ្ចប់តេស្តមួយ`,
+    'd': (title) => `បញ្ចប់តេស្ត '${title}' ដើម្បីមើលលទ្ធផលរបស់គ្នា`,
+    },
+'remind_checkup': {
+    't': (partnerName) => `${partnerName} បានបញ្ចប់ការត្រួតពិនិត្យមួយ`,
+    'd': (title) => `បញ្ចប់ការត្រួតពិនិត្យ '${title}' ដើម្បីមើលចម្លើយរបស់គ្នា`,
+    },
+'remind_game': {
+    't': (partnerName) => `${partnerName} បានបញ្ចប់ហ្គេមមួយ`,
+    'd': (title) => `បញ្ចប់ហ្គេម '${title}' ដើម្បីមើលចម្លើយរបស់គ្នា`,
+    },
+'remind_exercise': {
+    't': (partnerName) => `${partnerName} បានបញ្ចប់លំហាត់មួយ`,
+    'd': (title) => `ធ្វើលំហាត់ '${title}' ផងដែរ`,
+    },
+'remind_article': {
+    't': (partnerName) => `${partnerName} បានបញ្ចប់អត្ថបទមួយ`,
+    'd': (title) => `អានអត្ថបទ '${title}' ផងដែរ`,
+    },
+'remind_question': {
+    't': (partnerName) => `${partnerName} បានឆ្លើយសំណួរ`,
+    'd': (reply) => reply,
+    },
+'love_note': {
+    't': (partnerName, action) => `${partnerName} បាននិយាយ '${action}'`,
+    'd': (_) => `បើក Nemlys ដើម្បីឆ្លើយ`,
+    },
+    'love_note_sorry': "សុំទោស",
+    'love_note_sex': "ខ្ញុំរំភើប",
+    'love_note_miss': "ខ្ញុំគិតពីអ្នក",
+    'love_note_date': "ចូរយើងទៅដេតគ្នា",
+    'love_note_talk': "ខ្ញុំចង់និយាយ",
+    'love_note_attention': "ខ្ញុំត្រូវការអារម្មណ៍ពីអ្នក",
+    'love_note_love': "ខ្ញុំស្រឡាញ់អ្នក",
+    'love_note_hug': "ផ្ញើបង្រួម"
+    },
+'ko': {
+'partner_joined': {
+    't': (partnerName) => `${partnerName}가 Nemlys에 가입했어요`,
+    'd': (_) => `함께 질문을 논의해보세요`,
+    },
+'partner_answered': {
+    't': (partnerName) => `${partnerName}가 질문에 답했어요`,
+    'd': (question) => question,
+    },
+'partner_replied': {
+    't': (partnerName) => `${partnerName}가 답장했어요`,
+    'd': (reply) => reply,
+    },
+'remind_answer': {
+    't': (partnerName) => `${partnerName}가 질문에 답하라고 상기시켜요`,
+    'd': (question) => question,
+    },
+'remind_test': {
+    't': (partnerName) => `${partnerName}가 테스트를 완료했어`,
+    'd': (title) => `테스트 '${title}'를 완료해서 서로의 결과를 확인해봐`,
+    },
+'remind_checkup': {
+    't': (partnerName) => `${partnerName}가 체크업을 완료했어`,
+    'd': (title) => `체크업 '${title}'을 완료해서 서로의 응답을 확인해봐`,
+    },
+'remind_game': {
+    't': (partnerName) => `${partnerName}가 게임을 완료했어`,
+    'd': (title) => `게임 '${title}'을 완료해서 서로의 응답을 확인해봐`,
+    },
+'remind_exercise': {
+    't': (partnerName) => `${partnerName}가 연습을 완료했어`,
+    'd': (title) => `연습 '${title}'도 같이 해봐`,
+    },
+'remind_article': {
+    't': (partnerName) => `${partnerName}가 글을 다 읽었어`,
+    'd': (title) => `글 '${title}'도 읽어봐`,
+    },
+'remind_question': {
+    't': (partnerName) => `${partnerName}가 질문에 답했어`,
+    'd': (reply) => reply,
+    },
+'love_note': {
+    't': (partnerName, action) => `${partnerName}가 '${action}'라고 했어`,
+    'd': (_) => `Nemlys를 열어서 대답해봐`,
+    },
+    'love_note_sorry': "미안해",
+    'love_note_sex': "나 지금 분위기야",
+    'love_note_miss': "보고 싶어",
+    'love_note_date': "데이트 하자",
+    'love_note_talk': "이야기하고 싶어",
+    'love_note_attention': "너의 관심이 필요해",
+    'love_note_love': "사랑해",
+    'love_note_hug': "포옹 보내봐"
+    },
+'ky': {
+'partner_joined': {
+    't': (partnerName) => `${partnerName} Немлыска кошулду`,
+    'd': (_) => `Суроолорду бирге талкуулоону башта`,
+    },
+'partner_answered': {
+    't': (partnerName) => `${partnerName} суроого жооп берди`,
+    'd': (question) => question,
+    },
+'partner_replied': {
+    't': (partnerName) => `${partnerName} жооп берди`,
+    'd': (reply) => reply,
+    },
+'remind_answer': {
+    't': (partnerName) => `${partnerName} сага суроого жооп берүүнү эскертүүдө`,
+    'd': (question) => question,
+    },
+'remind_test': {
+    't': (partnerName) => `${partnerName} тестти бүтүрдү`,
+    'd': (title) => `Бир-бириңиздин жыйынтыктарын көрүү үчүн '${title}' тестти бүтүр`,
+    },
+'remind_checkup': {
+    't': (partnerName) => `${partnerName} текшерүүнү бүтүрдү`,
+    'd': (title) => `Бир-бириңиздин жоопторун көрүү үчүн '${title}' текшерүүнү бүтүр`,
+    },
+'remind_game': {
+    't': (partnerName) => `${partnerName} оюнду бүтүрдү`,
+    'd': (title) => `Бир-бириңиздин жоопторун көрүү үчүн '${title}' оюнду бүтүр`,
+    },
+'remind_exercise': {
+    't': (partnerName) => `${partnerName} көнүгүүнү бүтүрдү`,
+    'd': (title) => ` '${title}' көнүгүүнү да жасап көр`,
+    },
+'remind_article': {
+    't': (partnerName) => `${partnerName} макаланы бүтүрдү`,
+    'd': (title) => ` '${title}' макаланы да оку`,
+    },
+'remind_question': {
+    't': (partnerName) => `${partnerName} суроого жооп берди`,
+    'd': (reply) => reply,
+    },
+'love_note': {
+    't': (partnerName, action) => `${partnerName} айтты: '${action}'`,
+    'd': (_) => `Жооп берүү үчүн Nemlys аппын ач`,
+    },
+    'love_note_sorry': "Кечир",
+    'love_note_sex': "Мен даярмын",
+    'love_note_miss': "Сени сагынам",
+    'love_note_date': "Кел, бирге жолугушуп көрөлү",
+    'love_note_talk': "Мен сүйлөшкүм келет",
+    'love_note_attention': "Маған сенин назарың керек",
+    'love_note_love': "Сени жакшы көрөм",
+    'love_note_hug': "Кучак жөнөт"
+    },
+'lv': {
+'partner_joined': {
+    't': (partnerName) => `${partnerName} pievienojās Nemlys`,
+    'd': (_) => `Sāciet kopā apspriest jautājumus`,
+    },
+'partner_answered': {
+    't': (partnerName) => `${partnerName} atbildēja uz jautājumu`,
+    'd': (question) => question,
+    },
+'partner_replied': {
+    't': (partnerName) => `${partnerName} atbildēja`,
+    'd': (reply) => reply,
+    },
+'remind_answer': {
+    't': (partnerName) => `${partnerName} atgādina, ka jāatbild uz jautājumu`,
+    'd': (question) => question,
+    },
+'remind_test': {
+    't': (partnerName) => `${partnerName} ir pabeidzis testu`,
+    'd': (title) => `Pabeidz testu '${title}', lai redzētu viens otra rezultātus`,
+    },
+'remind_checkup': {
+    't': (partnerName) => `${partnerName} ir pabeidzis pārbaudi`,
+    'd': (title) => `Pabeidz pārbaudi '${title}', lai redzētu viens otra atbildes`,
+    },
+'remind_game': {
+    't': (partnerName) => `${partnerName} ir pabeidzis spēli`,
+    'd': (title) => `Pabeidz spēli '${title}', lai redzētu viens otra atbildes`,
+    },
+'remind_exercise': {
+    't': (partnerName) => `${partnerName} ir pabeidzis vingrinājumu`,
+    'd': (title) => `Izpildi arī vingrinājumu '${title}'`,
+    },
+'remind_article': {
+    't': (partnerName) => `${partnerName} ir pabeidzis rakstu`,
+    'd': (title) => `Izlasi arī rakstu '${title}'`,
+    },
+'remind_question': {
+    't': (partnerName) => `${partnerName} ir atbildējis uz jautājumu`,
+    'd': (reply) => reply,
+    },
+'love_note': {
+    't': (partnerName, action) => `${partnerName} saka '${action}'`,
+    'd': (_) => `Atver Nemlys, lai atbildētu`,
+    },
+    'love_note_sorry': "Piedod",
+    'love_note_sex': "Esmu noskaņojumā",
+    'love_note_miss': "Ilgojos pēc tevis",
+    'love_note_date': "Iesim uz randiņu",
+    'love_note_talk': "Gribu parunāt",
+    'love_note_attention': "Man vajag tavu uzmanību",
+    'love_note_love': "Es tevi mīlu",
+    'love_note_hug': "Nosūti apskāvienu"
+    },
+'lt': {
+'partner_joined': {
+    't': (partnerName) => `${partnerName} prisijungė prie Nemlys`,
+    'd': (_) => `Pradėkite kartu diskutuoti apie klausimus`,
+    },
+'partner_answered': {
+    't': (partnerName) => `${partnerName} atsakė į klausimą`,
+    'd': (question) => question,
+    },
+'partner_replied': {
+    't': (partnerName) => `${partnerName} atsakė`,
+    'd': (reply) => reply,
+    },
+'remind_answer': {
+    't': (partnerName) => `${partnerName} primena, kad turėtum atsakyti į klausimą`,
+    'd': (question) => question,
+    },
+'remind_test': {
+    't': (partnerName) => `${partnerName} baigė testą`,
+    'd': (title) => `Užbaik testą '${title}', kad pamatytumėte vienas kito rezultatus`,
+    },
+'remind_checkup': {
+    't': (partnerName) => `${partnerName} baigė patikrą`,
+    'd': (title) => `Užbaik patikrą '${title}', kad pamatytumėte vienas kito atsakymus`,
+    },
+'remind_game': {
+    't': (partnerName) => `${partnerName} baigė žaidimą`,
+    'd': (title) => `Užbaik žaidimą '${title}', kad pamatytumėte vienas kito atsakymus`,
+    },
+'remind_exercise': {
+    't': (partnerName) => `${partnerName} baigė pratimą`,
+    'd': (title) => `Išbandyk pratimą '${title}'`,
+    },
+'remind_article': {
+    't': (partnerName) => `${partnerName} baigė straipsnį`,
+    'd': (title) => `Taip pat perskaityk straipsnį '${title}'`,
+    },
+'remind_question': {
+    't': (partnerName) => `${partnerName} atsakė į klausimą`,
+    'd': (reply) => reply,
+    },
+'love_note': {
+    't': (partnerName, action) => `${partnerName} sako: '${action}'`,
+    'd': (_) => `Atidaryk Nemlys atsakyti`,
+    },
+    'love_note_sorry': "Atsiprašau",
+    'love_note_sex': "Esu pasiruošęs",
+    'love_note_miss': "Pasiilgau tavęs",
+    'love_note_date': "Pasimatykime",
+    'love_note_talk': "Noriu pakalbėti",
+    'love_note_attention': "Man reikia tavo dėmesio",
+    'love_note_love': "Myliu tave",
+    'love_note_hug': "Siųsk apkabinimą"
+    },
+'mk': {
+'partner_joined': {
+    't': (partnerName) => `${partnerName} се приклучи на Немлис`,
+    'd': (_) => `Започнете да дискутирате прашања заедно`,
+    },
+'partner_answered': {
+    't': (partnerName) => `${partnerName} одговори на прашање`,
+    'd': (question) => question,
+    },
+'partner_replied': {
+    't': (partnerName) => `${partnerName} одговори`,
+    'd': (reply) => reply,
+    },
+'remind_answer': {
+    't': (partnerName) => `${partnerName} те потсетува да одговориш на прашање`,
+    'd': (question) => question,
+    },
+'remind_test': {
+    't': (partnerName) => `${partnerName} го заврши тестот`,
+    'd': (title) => `Заврши тестот '${title}' за да ги видите резултатите еден на друг`,
+    },
+'remind_checkup': {
+    't': (partnerName) => `${partnerName} ја заврши проверката`,
+    'd': (title) => `Заврши ја проверката '${title}' за да ги видите одговорите еден на друг`,
+    },
+'remind_game': {
+    't': (partnerName) => `${partnerName} ја заврши играта`,
+    'd': (title) => `Заврши ја играта '${title}' за да ги видите одговорите еден на друг`,
+    },
+'remind_exercise': {
+    't': (partnerName) => `${partnerName} ја заврши вежбата`,
+    'd': (title) => `Изврши ја и вежбата '${title}'`,
+    },
+'remind_article': {
+    't': (partnerName) => `${partnerName} ја заврши статијата`,
+    'd': (title) => `Прочитај ја и статијата '${title}'`,
+    },
+'remind_question': {
+    't': (partnerName) => `${partnerName} одговори на прашање`,
+    'd': (reply) => reply,
+    },
+'love_note': {
+    't': (partnerName, action) => `${partnerName} вели '${action}'`,
+    'd': (_) => `Отвори Nemlys за да одговориш`,
+    },
+    'love_note_sorry': "Извини",
+    'love_note_sex': "Во расположение сум",
+    'love_note_miss': "Ти ми недостасува",
+    'love_note_date': "Да се сретнеме",
+    'love_note_talk': "Сакам да разговарам",
+    'love_note_attention': "Ми треба твоето внимание",
+    'love_note_love': "Те сакам",
+    'love_note_hug': "Испрати прегратка"
+    },
+'ms': {
+'partner_joined': {
+    't': (partnerName) => `${partnerName} telah menyertai Nemlys`,
+    'd': (_) => `Mulakan perbincangan soalan bersama`,
+    },
+'partner_answered': {
+    't': (partnerName) => `${partnerName} telah menjawab satu soalan`,
+    'd': (question) => question,
+    },
+'partner_replied': {
+    't': (partnerName) => `${partnerName} telah membalas`,
+    'd': (reply) => reply,
+    },
+'remind_answer': {
+    't': (partnerName) => `${partnerName} mengingatkan kamu untuk menjawab satu soalan`,
+    'd': (question) => question,
+    },
+'remind_test': {
+    't': (partnerName) => `${partnerName} telah menyelesaikan ujian`,
+    'd': (title) => `Selesaikan ujian '${title}' untuk melihat keputusan masing-masing`,
+    },
+'remind_checkup': {
+    't': (partnerName) => `${partnerName} telah menyelesaikan pemeriksaan`,
+    'd': (title) => `Selesaikan pemeriksaan '${title}' untuk melihat jawapan masing-masing`,
+    },
+'remind_game': {
+    't': (partnerName) => `${partnerName} telah menyelesaikan permainan`,
+    'd': (title) => `Selesaikan permainan '${title}' untuk melihat jawapan masing-masing`,
+    },
+'remind_exercise': {
+    't': (partnerName) => `${partnerName} telah menyelesaikan latihan`,
+    'd': (title) => `Lakukan juga latihan '${title}'`,
+    },
+'remind_article': {
+    't': (partnerName) => `${partnerName} telah menyelesaikan artikel`,
+    'd': (title) => `Baca juga artikel '${title}'`,
+    },
+'remind_question': {
+    't': (partnerName) => `${partnerName} telah menjawab soalan`,
+    'd': (reply) => reply,
+    },
+'love_note': {
+    't': (partnerName, action) => `${partnerName} kata '${action}'`,
+    'd': (_) => `Buka Nemlys untuk menjawab`,
+    },
+    'love_note_sorry': "Maaf",
+    'love_note_sex': "Aku dalam mood",
+    'love_note_miss': "Aku rindu awak",
+    'love_note_date': "Jom temu janji",
+    'love_note_talk': "Aku nak berbual",
+    'love_note_attention': "Aku perlukan perhatian awak",
+    'love_note_love': "Aku sayang awak",
+    'love_note_hug': "Hantar pelukan"
+    },
+'ml': {
+'partner_joined': {
+    't': (partnerName) => `${partnerName} Nemlys-ലേക്ക് ചേർന്നു`,
+    'd': (_) => `കൂടെയായി ചോദ്യങ്ങൾ ചർച്ച ചെയ്യാൻ തുടങ്ങൂ`,
+    },
+'partner_answered': {
+    't': (partnerName) => `${partnerName} ഒരു ചോദ്യത്തിന് മറുപടി നൽകി`,
+    'd': (question) => question,
+    },
+'partner_replied': {
+    't': (partnerName) => `${partnerName} മറുപടി നൽകി`,
+    'd': (reply) => reply,
+    },
+'remind_answer': {
+    't': (partnerName) => `${partnerName} ഒരു ചോദ്യത്തിന് മറുപടി നൽകാൻ നിങ്ങളെ ഓർമ്മിപ്പിക്കുന്നു`,
+    'd': (question) => question,
+    },
+'remind_test': {
+    't': (partnerName) => `${partnerName} ഒരു ടെസ്റ്റ് പൂർത്തിയാക്കി`,
+    'd': (title) => `'${title}' ടെസ്റ്റ് പൂർത്തിയാക്കൂ, ഫലങ്ങൾ തമ്മിൽ കാണാൻ`,
+    },
+'remind_checkup': {
+    't': (partnerName) => `${partnerName} ഒരു ചെക്കപ്പ് പൂർത്തിയാക്കി`,
+    'd': (title) => `'${title}' ചെക്കപ്പ് പൂർത്തിയാക്കൂ, മറുപടികൾ തമ്മിൽ കാണാൻ`,
+    },
+'remind_game': {
+    't': (partnerName) => `${partnerName} ഒരു ഗെയിം പൂർത്തിയാക്കി`,
+    'd': (title) => `'${title}' ഗെയിം പൂർത്തിയാക്കൂ, മറുപടികൾ തമ്മിൽ കാണാൻ`,
+    },
+'remind_exercise': {
+    't': (partnerName) => `${partnerName} ഒരു വ്യായാമം പൂർത്തിയാക്കി`,
+    'd': (title) => `'${title}' വ്യായാമവും കൂടി അഭ്യസിക്കൂ`,
+    },
+'remind_article': {
+    't': (partnerName) => `${partnerName} ഒരു ലേഖനം പൂർത്തിയാക്കി`,
+    'd': (title) => `'${title}' ലേഖനവും കൂടി വായിക്കൂ`,
+    },
+'remind_question': {
+    't': (partnerName) => `${partnerName} ഒരു ചോദ്യത്തിന് ഉത്തരം നൽകി`,
+    'd': (reply) => reply,
+    },
+'love_note': {
+    't': (partnerName, action) => `${partnerName} പറയുന്നു '${action}'`,
+    'd': (_) => `ഉത്തരം നല്‍കാൻ Nemlys തുറക്കൂ`,
+    },
+    'love_note_sorry': "എനിക്ക് മാപ്പ് ചെയ്യൂ",
+    'love_note_sex': "ഞാൻ ഇപ്പൊഴൊരു ലൈംഗിക മോഡിലാണ്",
+    'love_note_miss': "ഞാൻ നിന്നെ മോഹിക്കുന്നു",
+    'love_note_date': "ഒരു ഡേറ്റിൽ പോകാം",
+    'love_note_talk': "സംസാരിക്കാൻ ആഗ്രഹിക്കുന്നു",
+    'love_note_attention': "നിന്റെ ശ്രദ്ധ എനിക്ക് വേണം",
+    'love_note_love': "ഞാൻ നിന്നെ സ്നേഹിക്കുന്നു",
+    'love_note_hug': "ഒരു അലിംഗനം അയയ്ക്കൂ"
+    },
+'mr': {
+'partner_joined': {
+    't': (partnerName) => `${partnerName} ने नेम्लिसमध्ये सामील झाले`,
+    'd': (_) => `एकत्रितपणे प्रश्नांवर चर्चा सुरू करा`,
+    },
+'partner_answered': {
+    't': (partnerName) => `${partnerName} ने एक प्रश्न उत्तरला`,
+    'd': (question) => question,
+    },
+'partner_replied': {
+    't': (partnerName) => `${partnerName} ने उत्तर दिले`,
+    'd': (reply) => reply,
+    },
+'remind_answer': {
+    't': (partnerName) => `${partnerName} तुम्हाला प्रश्नाचे उत्तर देण्याची आठवण करून देत आहे`,
+    'd': (question) => question,
+    },
+'remind_test': {
+    't': (partnerName) => `${partnerName} ने चाचणी पूर्ण केली`,
+    'd': (title) => `एकमेकांचे निकाल पाहण्यासाठी '${title}' चाचणी पूर्ण करा`,
+    },
+'remind_checkup': {
+    't': (partnerName) => `${partnerName} ने तपासणी पूर्ण केली`,
+    'd': (title) => `एकमेकांच्या प्रतिसाद पाहण्यासाठी '${title}' तपासणी पूर्ण करा`,
+    },
+'remind_game': {
+    't': (partnerName) => `${partnerName} ने खेळ पूर्ण केला`,
+    'd': (title) => `एकमेकांचे प्रतिसाद पाहण्यासाठी '${title}' खेळ पूर्ण करा`,
+    },
+'remind_exercise': {
+    't': (partnerName) => `${partnerName} ने व्यायाम पूर्ण केला`,
+    'd': (title) => `सुद्धा '${title}' व्यायामाचा सराव करा`,
+    },
+'remind_article': {
+    't': (partnerName) => `${partnerName} ने लेख पूर्ण केला`,
+    'd': (title) => `सुद्धा '${title}' लेख वाचा`,
+    },
+'remind_question': {
+    't': (partnerName) => `${partnerName} ने प्रश्नाचे उत्तर दिले`,
+    'd': (reply) => reply,
+    },
+'love_note': {
+    't': (partnerName, action) => `${partnerName} म्हणते '${action}'`,
+    'd': (_) => `उत्तर देण्यासाठी Nemlys उघडा`,
+    },
+    'love_note_sorry': "मला माफ कर",
+    'love_note_sex': "आजला मूड खूपच आहे",
+    'love_note_miss': "मला तुझी आठवण येते",
+    'love_note_date': "चला, एक डेट करूया",
+    'love_note_talk': "मला बोलायचंय",
+    'love_note_attention': "मला तुझं लक्ष हवं आहे",
+    'love_note_love': "मी तुझ्यावर प्रेम करतो",
+    'love_note_hug': "एक मिठी पाठवा"
+    },
+'mn': {
+'partner_joined': {
+    't': (partnerName) => `${partnerName} Nemlys-д нэгдлээ`,
+    'd': (_) => `Хамтдаа асуултуудыг хэлэлцэж эхлээрэй`,
+    },
+'partner_answered': {
+    't': (partnerName) => `${partnerName} асуултанд хариуллаа`,
+    'd': (question) => question,
+    },
+'partner_replied': {
+    't': (partnerName) => `${partnerName} хариуллаа`,
+    'd': (reply) => reply,
+    },
+'remind_answer': {
+    't': (partnerName) => `${partnerName} чамд асуултанд хариулахыг сануулж байна`,
+    'd': (question) => question,
+    },
+'remind_test': {
+    't': (partnerName) => `${partnerName} тестээ дуусгасан байна`,
+    'd': (title) => `Хамтын үр дүнг харуулахын тулд '${title}' тестээ дуусга`,
+    },
+'remind_checkup': {
+    't': (partnerName) => `${partnerName} шалгалтаа дуусгасан байна`,
+    'd': (title) => `Хамтын хариуг харахын тулд '${title}' шалгалтаа дуусга`,
+    },
+'remind_game': {
+    't': (partnerName) => `${partnerName} тоглоомоо дуусгасан байна`,
+    'd': (title) => `Хамтын хариуг харахын тулд '${title}' тоглоомоо дуусга`,
+    },
+'remind_exercise': {
+    't': (partnerName) => `${partnerName} дасгалгаа дуусгасан байна`,
+    'd': (title) => `'${title}' дасгалыг ч бас хий`,
+    },
+'remind_article': {
+    't': (partnerName) => `${partnerName} нийтлэлээ дуусгасан байна`,
+    'd': (title) => `'${title}' нийтлэлийг ч бас унш`,
+    },
+'remind_question': {
+    't': (partnerName) => `${partnerName} асуултад хариулсан байна`,
+    'd': (reply) => reply,
+    },
+'love_note': {
+    't': (partnerName, action) => `${partnerName} '${action}' гэж хэллээ`,
+    'd': (_) => `Хариулахын тулд Nemlys-ыг нээг`,
+    },
+    'love_note_sorry': "Уучлаарай",
+    'love_note_sex': "Би хүсэлдэлтэй байна",
+    'love_note_miss': "Чамайг санаж байна",
+    'love_note_date': "Хамтдаа уулзэцгээе",
+    'love_note_talk': "Би чамтай ярилцахыг хүсэж байна",
+    'love_note_attention': "Надад чиний анхаарал хэрэгтэй",
+    'love_note_love': "Би чамд хайртай",
+    'love_note_hug': "Нэг тэврэл илгэ"
+    },
+'ne': {
+'partner_joined': {
+    't': (partnerName) => `${partnerName} ले Nemlys मा सामेल भए`,
+    'd': (_) => `साथै प्रश्नहरूमा छलफल गर्न सुरु गर`,
+    },
+'partner_answered': {
+    't': (partnerName) => `${partnerName} ले एक प्रश्नको उत्तर दिए`,
+    'd': (question) => question,
+    },
+'partner_replied': {
+    't': (partnerName) => `${partnerName} ले जवाफ दिए`,
+    'd': (reply) => reply,
+    },
+'remind_answer': {
+    't': (partnerName) => `${partnerName} ले तिमीलाई एक प्रश्नको उत्तर दिन सम्झाइरहेका छन्`,
+    'd': (question) => question,
+    },
+'remind_test': {
+    't': (partnerName) => `${partnerName} ले परीक्षण पूरा गरे।`,
+    'd': (title) => `एकअर्काको परिणाम हेर्न '${title}' परीक्षण पूरा गर्नुहोस्।`,
+    },
+'remind_checkup': {
+    't': (partnerName) => `${partnerName} ले जाँच पूरा गरे।`,
+    'd': (title) => `एकअर्काको प्रतिक्रिया हेर्न '${title}' जाँच पूरा गर्नुहोस्।`,
+    },
+'remind_game': {
+    't': (partnerName) => `${partnerName} ले खेल पूरा गरे।`,
+    'd': (title) => `एकअर्काको प्रतिक्रिया हेर्न '${title}' खेल पूरा गर्नुहोस्।`,
+    },
+'remind_exercise': {
+    't': (partnerName) => `${partnerName} ले व्यायाम पूरा गरे।`,
+    'd': (title) => `अभ्यास '${title}' पनि गर्नुहोस्।`,
+    },
+'remind_article': {
+    't': (partnerName) => `${partnerName} ले लेख पूरा गरे।`,
+    'd': (title) => `लेख '${title}' पनि पढ्नुहोस्।`,
+    },
+'remind_question': {
+    't': (partnerName) => `${partnerName} ले प्रश्नको उत्तर दिए।`,
+    'd': (reply) => reply,
+    },
+'love_note': {
+    't': (partnerName, action) => `${partnerName} ले भन्यो '${action}'`,
+    'd': (_) => `जवाफ दिन Nemlys खोल्नुहोस्।`,
+    },
+    'love_note_sorry': "माफ गर",
+    'love_note_sex': "म इच्छुक छु",
+    'love_note_miss': "म तिमीलाई याद गर्छु",
+    'love_note_date': "हामी डेट गरौँ",
+    'love_note_talk': "म कुरा गर्न चाहन्छु",
+    'love_note_attention': "मलाई तिम्रो ध्यान चाहिन्छ",
+    'love_note_love': "म तिमीलाई माया गर्छु",
+    'love_note_hug': "अँगालो पठाऊ"
+    },
+'fa': {
+'partner_joined': {
+    't': (partnerName) => `${partnerName} به نملیس پیوست`,
+    'd': (_) => `شروع به بحث در مورد سوالات با هم کنید`,
+    },
+'partner_answered': {
+    't': (partnerName) => `${partnerName} به یک سوال پاسخ داد`,
+    'd': (question) => question,
+    },
+'partner_replied': {
+    't': (partnerName) => `${partnerName} پاسخ داد`,
+    'd': (reply) => reply,
+    },
+'remind_answer': {
+    't': (partnerName) => `${partnerName} به شما یادآوری می‌کند که به یک سوال پاسخ دهید`,
+    'd': (question) => question,
+    },
+'remind_test': {
+    't': (partnerName) => `${partnerName} آزمون رو تموم کرده`,
+    'd': (title) => `آزمون '${title}' رو تموم کن تا نتایج یکدیگر رو ببینی`,
+    },
+'remind_checkup': {
+    't': (partnerName) => `${partnerName} چک‌آپ رو تموم کرده`,
+    'd': (title) => `چک‌آپ '${title}' رو تموم کن تا پاسخ‌های یکدیگر رو ببینی`,
+    },
+'remind_game': {
+    't': (partnerName) => `${partnerName} بازی رو تموم کرده`,
+    'd': (title) => `بازی '${title}' رو تموم کن تا پاسخ‌های همدیگه رو ببینی`,
+    },
+'remind_exercise': {
+    't': (partnerName) => `${partnerName} تمرین رو تموم کرده`,
+    'd': (title) => `همچنین تمرین '${title}' رو انجام بده`,
+    },
+'remind_article': {
+    't': (partnerName) => `${partnerName} مقاله رو تموم کرده`,
+    'd': (title) => `همچنین مقاله '${title}' رو بخوان`,
+    },
+'remind_question': {
+    't': (partnerName) => `${partnerName} به یک سوال پاسخ داده`,
+    'd': (reply) => reply,
+    },
+'love_note': {
+    't': (partnerName, action) => `${partnerName} میگه: '${action}'`,
+    'd': (_) => `برای پاسخ دادن، نملیز رو باز کن`,
+    },
+    'love_note_sorry': "معذرت می‌خوام",
+    'love_note_sex': "حالم برا عشق بازیه",
+    'love_note_miss': "دلم برات تنگ شده",
+    'love_note_date': "بیا یه قرار بذاریم",
+    'love_note_talk': "دلم می‌خواد صحبت کنیم",
+    'love_note_attention': "به توجهت نیاز دارم",
+    'love_note_love': "دوستت دارم",
+    'love_note_hug': "یه آغوش بفرست"
+    },
+'pa': {
+'partner_joined': {
+    't': (partnerName) => `${partnerName} ਨੇ Nemlys ਵਿੱਚ ਸ਼ਾਮਲ ਹੋਇਆ`,
+    'd': (_) => `ਸਾਥੀ ਨਾਲ ਸਵਾਲਾਂ 'ਤੇ ਗੱਲ ਕਰਨਾ ਸ਼ੁਰੂ ਕਰੋ`,
+    },
+'partner_answered': {
+    't': (partnerName) => `${partnerName} ਨੇ ਇੱਕ ਸਵਾਲ ਦਾ ਜਵਾਬ ਦਿੱਤਾ`,
+    'd': (question) => question,
+    },
+'partner_replied': {
+    't': (partnerName) => `${partnerName} ਨੇ ਜਵਾਬ ਦਿੱਤਾ`,
+    'd': (reply) => reply,
+    },
+'remind_answer': {
+    't': (partnerName) => `${partnerName} ਤੁਹਾਨੂੰ ਇੱਕ ਸਵਾਲ ਦਾ ਜਵਾਬ ਦੇਣ ਦੀ ਯਾਦ ਦਿਵਾ ਰਿਹਾ ਹੈ`,
+    'd': (question) => question,
+    },
+'remind_test': {
+    't': (partnerName) => `${partnerName} ਨੇ ਟੈਸਟ ਮੁੱਕਾ ਲਿਆ ਹੈ`,
+    'd': (title) => `ਇੱਕ ਦੂਜੇ ਦੇ ਨਤੀਜੇ ਦੇਖਣ ਲਈ ਟੈਸਟ '${title}' ਪੂਰਾ ਕਰੋ`,
+    },
+'remind_checkup': {
+    't': (partnerName) => `${partnerName} ਨੇ ਚੈੱਕਅੱਪ ਮੁੱਕਾ ਲਿਆ ਹੈ`,
+    'd': (title) => `ਇੱਕ ਦੂਜੇ ਦੇ ਜਵਾਬ ਦੇਖਣ ਲਈ ਚੈੱਕਅੱਪ '${title}' ਪੂਰਾ ਕਰੋ`,
+    },
+'remind_game': {
+    't': (partnerName) => `${partnerName} ਨੇ ਖੇਡ ਮੁੱਕਾ ਲਈ ਹੈ`,
+    'd': (title) => `ਇੱਕ ਦੂਜੇ ਦੇ ਜਵਾਬ ਦੇਖਣ ਲਈ ਖੇਡ '${title}' ਪੂਰੀ ਕਰੋ`,
+    },
+'remind_exercise': {
+    't': (partnerName) => `${partnerName} ਨੇ ਅਭਿਆਸ ਮੁੱਕਾ ਲਿਆ ਹੈ`,
+    'd': (title) => `ਅਭਿਆਸ '${title}' ਵੀ ਕਰੋ`,
+    },
+'remind_article': {
+    't': (partnerName) => `${partnerName} ਨੇ ਲੇਖ ਮੁੱਕਾ ਲਿਆ ਹੈ`,
+    'd': (title) => `ਲੇਖ '${title}' ਵੀ ਪੜ੍ਹੋ`,
+    },
+'remind_question': {
+    't': (partnerName) => `${partnerName} ਨੇ ਸਵਾਲ ਦਾ ਜਵਾਬ ਦਿੱਤਾ ਹੈ`,
+    'd': (reply) => reply,
+    },
+'love_note': {
+    't': (partnerName, action) => `${partnerName} ਕਹਿੰਦਾ ਹੈ '${action}'`,
+    'd': (_) => `ਜਵਾਬ ਦੇਣ ਲਈ Nemlys ਖੋਲ੍ਹੋ`,
+    },
+    'love_note_sorry': "ਮੈਨੂੰ ਮਾਫ ਕਰ",
+    'love_note_sex': "ਮੈਂ ਮੂਡ ਵਿੱਚ ਹਾਂ",
+    'love_note_miss': "ਮੈਂ ਤੈਨੂੰ ਯਾਦ ਕਰਦਾ ਹਾਂ",
+    'love_note_date': "ਚੱਲ, ਇੱਕ ਡੇਟ ਕਰੀਏ",
+    'love_note_talk': "ਮੈਨੂੰ ਗੱਲ ਕਰਨੀ ਹੈ",
+    'love_note_attention': "ਮੈਨੂੰ ਤੇਰੀ ਧਿਆਨ ਦੀ ਲੋੜ ਹੈ",
+    'love_note_love': "ਮੈਂ ਤੈਨੂੰ ਪਿਆਰ ਕਰਦਾ ਹਾਂ",
+    'love_note_hug': "ਇੱਕ ਜੱਲ਼ੀ ਭੇਜੋ"
+    },
+'rm': {
+'partner_joined': {
+    't': (partnerName) => `${partnerName} è s'unì a Nemlys`,
+    'd': (_) => `Cumenzai a discutir dumondas ensemen`,
+    },
+'partner_answered': {
+    't': (partnerName) => `${partnerName} ha respondì a ina dumonda`,
+    'd': (question) => question,
+    },
+'partner_replied': {
+    't': (partnerName) => `${partnerName} ha respundì`,
+    'd': (reply) => reply,
+    },
+'remind_answer': {
+    't': (partnerName) => `${partnerName} t'emmembra da responder a ina dumonda`,
+    'd': (question) => question,
+    },
+'remind_test': {
+    't': (partnerName) => `${partnerName} ha finit in test`,
+    'd': (title) => `Finit il test '${title}' per vesair ils resultats da mintga persuna`,
+    },
+'remind_checkup': {
+    't': (partnerName) => `${partnerName} ha finit in controll`,
+    'd': (title) => `Finit il controll '${title}' per vesair las rispostas da mintga persuna`,
+    },
+'remind_game': {
+    't': (partnerName) => `${partnerName} ha finit in giugh`,
+    'd': (title) => `Finit il giugh '${title}' per vesair las rispostas da mintga persuna`,
+    },
+'remind_exercise': {
+    't': (partnerName) => `${partnerName} ha finit in exercizi`,
+    'd': (title) => `Pratica era l'exercizi '${title}'`,
+    },
+'remind_article': {
+    't': (partnerName) => `${partnerName} ha finit in artitgel`,
+    'd': (title) => `Legi era l'artitgel '${title}'`,
+    },
+'remind_question': {
+    't': (partnerName) => `${partnerName} ha respundì a in dumonda`,
+    'd': (reply) => reply,
+    },
+'love_note': {
+    't': (partnerName, action) => `${partnerName} dis '${action}'`,
+    'd': (_) => `Avri Nemlys per respunder`,
+    },
+    'love_note_sorry': "Scusa",
+    'love_note_sex': "Jau sun en stadi per intimitad",
+    'love_note_miss': "Jau ta manc",
+    'love_note_date': "Fagam in appuntament",
+    'love_note_talk': "Jau vul discutar",
+    'love_note_attention': "Jau hai basegn da tia attenziun",
+    'love_note_love': "Jau ta ami",
+    'love_note_hug': "Manda in abratsch"
+    },
+'sr': {
+'partner_joined': {
+    't': (partnerName) => `${partnerName} se pridružio Nemlys-u`,
+    'd': (_) => `Počnite da razgovarate o pitanjima zajedno`,
+    },
+'partner_answered': {
+    't': (partnerName) => `${partnerName} je odgovorio na pitanje`,
+    'd': (question) => question,
+    },
+'partner_replied': {
+    't': (partnerName) => `${partnerName} je odgovorio`,
+    'd': (reply) => reply,
+    },
+'remind_answer': {
+    't': (partnerName) => `${partnerName} te podseća da odgovoriš na pitanje`,
+    'd': (question) => question,
+    },
+'remind_test': {
+    't': (partnerName) => `${partnerName} je završio test`,
+    'd': (title) => `Završi test '${title}' da vidite rezultate jedno drugog`,
+    },
+'remind_checkup': {
+    't': (partnerName) => `${partnerName} je završio checkup`,
+    'd': (title) => `Završi checkup '${title}' da vidite odgovore jedno drugog`,
+    },
+'remind_game': {
+    't': (partnerName) => `${partnerName} je završio igru`,
+    'd': (title) => `Završi igru '${title}' da vidite odgovore jedno drugog`,
+    },
+'remind_exercise': {
+    't': (partnerName) => `${partnerName} je završio vežbu`,
+    'd': (title) => `Odrađi vežbu '${title}'`,
+    },
+'remind_article': {
+    't': (partnerName) => `${partnerName} je završio članak`,
+    'd': (title) => `Pročitaj članak '${title}' takođe`,
+    },
+'remind_question': {
+    't': (partnerName) => `${partnerName} je odgovorio na pitanje`,
+    'd': (reply) => reply,
+    },
+'love_note': {
+    't': (partnerName, action) => `${partnerName} kaže '${action}'`,
+    'd': (_) => `Otvori Nemlys da odgovoriš`,
+    },
+    'love_note_sorry': "Izvini",
+    'love_note_sex': "Imam raspoloženje",
+    'love_note_miss': "Nedostaješ mi",
+    'love_note_date': "Hajde na spoj",
+    'love_note_talk': "Hoću da razgovaram",
+    'love_note_attention': "Trebam tvoju pažnju",
+    'love_note_love': "Volim te",
+    'love_note_hug': "Pošalji zagrljaj"
+    },
+'si': {
+'partner_joined': {
+    't': (partnerName) => `${partnerName} Nemlys එකට එකතු වුණා`,
+    'd': (_) => `සමූහ ප්‍රශ්න ගැන කතා කිරීමට ආරම්භ කරන්න`,
+    },
+'partner_answered': {
+    't': (partnerName) => `${partnerName} ප්‍රශ්නයකට පිළිතුරු දුන්නා`,
+    'd': (question) => question,
+    },
+'partner_replied': {
+    't': (partnerName) => `${partnerName} පිළිතුරු දුන්නා`,
+    'd': (reply) => reply,
+    },
+'remind_answer': {
+    't': (partnerName) => `${partnerName} ඔබට ප්‍රශ්නයකට පිළිතුරු දිය යුතු බව මතක දෙනවා`,
+    'd': (question) => question,
+    },
+'remind_test': {
+    't': (partnerName) => `${partnerName} ටෙස්ට් එක අවසන් කළා`,
+    'd': (title) => `'${title}' ටෙස්ට් එක අවසන් කරලා, එකිනෙකාගේ ප්‍රතිඵල බලමු`,
+    },
+'remind_checkup': {
+    't': (partnerName) => `${partnerName} පරීක්ෂාව අවසන් කළා`,
+    'd': (title) => `'${title}' පරීක්ෂාව අවසන් කරලා, එකිනෙකාගේ පිළිතුරු බලමු`,
+    },
+'remind_game': {
+    't': (partnerName) => `${partnerName} ක්‍රීඩාව අවසන් කළා`,
+    'd': (title) => `'${title}' ක්‍රීඩාව අවසන් කරලා, එකිනෙකාගේ පිළිතුරු බලමු`,
+    },
+'remind_exercise': {
+    't': (partnerName) => `${partnerName} ව්‍යායාමය අවසන් කළා`,
+    'd': (title) => `ව්‍යායාම '${title}' ද කරන්න`,
+    },
+'remind_article': {
+    't': (partnerName) => `${partnerName} ලිපිය අවසන් කළා`,
+    'd': (title) => `ලිපිය '${title}' ද කියවන්න`,
+    },
+'remind_question': {
+    't': (partnerName) => `${partnerName} ප්‍රශ්නයකට උත්තර දීලා`,
+    'd': (reply) => reply,
+    },
+'love_note': {
+    't': (partnerName, action) => `${partnerName} කියනවා '${action}'`,
+    'd': (_) => `උත්තර දීමට Nemlys විවෘත කරන්න`,
+    },
+    'love_note_sorry': "මට සමාවෙන්න",
+    'love_note_sex': "මම කැමති වෙලා ඉන්නවා",
+    'love_note_miss': "මම ඔයා මතක් වෙනවා",
+    'love_note_date': "අපි දිනයකට යමු",
+    'love_note_talk': "මට කතා කරන්න ඕනේ",
+    'love_note_attention': "මට ඔයාගේ අවධානය ඕනෙනවා",
+    'love_note_love': "මම ඔයාට ආදරෙයි",
+    'love_note_hug': "ආලින්දුවක් යවන්න"
+    },
+'sk': {
+'partner_joined': {
+    't': (partnerName) => `${partnerName} sa pridal do Nemlys`,
+    'd': (_) => `Začnite spolu diskutovať o otázkach`,
+    },
+'partner_answered': {
+    't': (partnerName) => `${partnerName} odpovedal na otázku`,
+    'd': (question) => question,
+    },
+'partner_replied': {
+    't': (partnerName) => `${partnerName} odpovedal`,
+    'd': (reply) => reply,
+    },
+'remind_answer': {
+    't': (partnerName) => `${partnerName} ti pripomína, aby si odpovedal na otázku`,
+    'd': (question) => question,
+    },
+'remind_test': {
+    't': (partnerName) => `${partnerName} dokončil test`,
+    'd': (title) => `Dokonči test '${title}' a uvidíte výsledky jeden druhého`,
+    },
+'remind_checkup': {
+    't': (partnerName) => `${partnerName} dokončil kontrolu`,
+    'd': (title) => `Dokonči kontrolu '${title}' a uvidíte odpovede jeden druhého`,
+    },
+'remind_game': {
+    't': (partnerName) => `${partnerName} dokončil hru`,
+    'd': (title) => `Dokonči hru '${title}' a uvidíte odpovede jeden druhého`,
+    },
+'remind_exercise': {
+    't': (partnerName) => `${partnerName} dokončil cvičenie`,
+    'd': (title) => `Precvič si aj cvičenie '${title}'`,
+    },
+'remind_article': {
+    't': (partnerName) => `${partnerName} dokončil článok`,
+    'd': (title) => `Prečítaj si aj článok '${title}'`,
+    },
+'remind_question': {
+    't': (partnerName) => `${partnerName} odpovedal na otázku`,
+    'd': (reply) => reply,
+    },
+'love_note': {
+    't': (partnerName, action) => `${partnerName} hovorí '${action}'`,
+    'd': (_) => `Otvori Nemlys a odpovedz`,
+    },
+    'love_note_sorry': "Prepáč",
+    'love_note_sex': "Mám chuť",
+    'love_note_miss': "Chýbaš mi",
+    'love_note_date': "Poďme na rande",
+    'love_note_talk': "Chcem si porozprávať",
+    'love_note_attention': "Potrebujem tvoju pozornosť",
+    'love_note_love': "Ľúbim ťa",
+    'love_note_hug': "Pošli objatie"
+    },
+'sl': {
+'partner_joined': {
+    't': (partnerName) => `${partnerName} se je pridružil/a Nemlys`,
+    'd': (_) => `Začnita skupaj razpravljati o vprašanjih`,
+    },
+'partner_answered': {
+    't': (partnerName) => `${partnerName} je odgovoril/a na vprašanje`,
+    'd': (question) => question,
+    },
+'partner_replied': {
+    't': (partnerName) => `${partnerName} je odgovoril/a`,
+    'd': (reply) => reply,
+    },
+'remind_answer': {
+    't': (partnerName) => `${partnerName} te spominja, da odgovoriš na vprašanje`,
+    'd': (question) => question,
+    },
+'remind_test': {
+    't': (partnerName) => `${partnerName} je zaključil test`,
+    'd': (title) => `Zaključi test '${title}', da vidita rezultate drug drugega`,
+    },
+'remind_checkup': {
+    't': (partnerName) => `${partnerName} je zaključil pregled`,
+    'd': (title) => `Zaključi pregled '${title}', da vidita odgovore drug drugega`,
+    },
+'remind_game': {
+    't': (partnerName) => `${partnerName} je zaključil igro`,
+    'd': (title) => `Zaključi igro '${title}', da vidita odgovore drug drugega`,
+    },
+'remind_exercise': {
+    't': (partnerName) => `${partnerName} je zaključil vajo`,
+    'd': (title) => `Vadi tudi vajo '${title}'`,
+    },
+'remind_article': {
+    't': (partnerName) => `${partnerName} je zaključil članek`,
+    'd': (title) => `Preberi tudi članek '${title}'`,
+    },
+'remind_question': {
+    't': (partnerName) => `${partnerName} je odgovoril na vprašanje`,
+    'd': (reply) => reply,
+    },
+'love_note': {
+    't': (partnerName, action) => `${partnerName} pravi: '${action}'`,
+    'd': (_) => `Odpri Nemlys, da odgovoriš`,
+    },
+    'love_note_sorry': "Oprosti",
+    'love_note_sex': "Sem v razpoloženju",
+    'love_note_miss': "Pogrešam te",
+    'love_note_date': "Pojdiva na zmenek",
+    'love_note_talk': "Hočem se pogovoriti",
+    'love_note_attention': "Potrebujem tvojo pozornost",
+    'love_note_love': "Ljubim te",
+    'love_note_hug': "Pošlji objem"
+    },
+'sw': {
+'partner_joined': {
+    't': (partnerName) => `${partnerName} amejiunga na Nemlys`,
+    'd': (_) => `Anza kujadili maswali pamoja`,
+    },
+'partner_answered': {
+    't': (partnerName) => `${partnerName} ameijibu swali`,
+    'd': (question) => question,
+    },
+'partner_replied': {
+    't': (partnerName) => `${partnerName} amejibu`,
+    'd': (reply) => reply,
+    },
+'remind_answer': {
+    't': (partnerName) => `${partnerName} anakukumbusha kujibu swali`,
+    'd': (question) => question,
+    },
+'remind_test': {
+    't': (partnerName) => `${partnerName} amemaliza mtihani`,
+    'd': (title) => `Maliza mtihani '${title}' ili kuona matokeo ya kila mmoja`,
+    },
+'remind_checkup': {
+    't': (partnerName) => `${partnerName} amemaliza ukaguzi`,
+    'd': (title) => `Maliza ukaguzi '${title}' ili kuona majibu ya kila mmoja`,
+    },
+'remind_game': {
+    't': (partnerName) => `${partnerName} amemaliza mchezo`,
+    'd': (title) => `Maliza mchezo '${title}' ili kuona majibu ya kila mmoja`,
+    },
+'remind_exercise': {
+    't': (partnerName) => `${partnerName} amemaliza mazoezi`,
+    'd': (title) => `Fanya mazoezi '${title}' pia`,
+    },
+'remind_article': {
+    't': (partnerName) => `${partnerName} amemaliza makala`,
+    'd': (title) => `Soma makala '${title}' pia`,
+    },
+'remind_question': {
+    't': (partnerName) => `${partnerName} amejibu swali`,
+    'd': (reply) => reply,
+    },
+'love_note': {
+    't': (partnerName, action) => `${partnerName} anasema '${action}'`,
+    'd': (_) => `Fungua Nemlys ili kujibu`,
+    },
+    'love_note_sorry': "Samahani",
+    'love_note_sex': "Niko katika hali ya mapenzi",
+    'love_note_miss': "Ninakukosa",
+    'love_note_date': "Hebu tufanye miadi",
+    'love_note_talk': "Nataka kuzungumza",
+    'love_note_attention': "Nahitaji umakini wako",
+    'love_note_love': "Ninakupenda",
+    'love_note_hug': "Tuma kumbatio"
+    },
+'sv': {
+'partner_joined': {
+    't': (partnerName) => `${partnerName} har gått med i Nemlys`,
+    'd': (_) => `Börja diskutera frågor tillsammans`,
+    },
+'partner_answered': {
+    't': (partnerName) => `${partnerName} har svarat på en fråga`,
+    'd': (question) => question,
+    },
+'partner_replied': {
+    't': (partnerName) => `${partnerName} har svarat`,
+    'd': (reply) => reply,
+    },
+'remind_answer': {
+    't': (partnerName) => `${partnerName} påminner dig om att svara på en fråga`,
+    'd': (question) => question,
+    },
+'remind_test': {
+    't': (partnerName) => `${partnerName} har avslutat ett test`,
+    'd': (title) => `Avsluta testet '${title}' för att se varandras resultat`,
+    },
+'remind_checkup': {
+    't': (partnerName) => `${partnerName} har avslutat en hälsokoll`,
+    'd': (title) => `Avsluta hälsokollen '${title}' för att se varandras svar`,
+    },
+'remind_game': {
+    't': (partnerName) => `${partnerName} har avslutat ett spel`,
+    'd': (title) => `Avsluta spelet '${title}' för att se varandras svar`,
+    },
+'remind_exercise': {
+    't': (partnerName) => `${partnerName} har avslutat en övning`,
+    'd': (title) => `Gör övningen '${title}' också`,
+    },
+'remind_article': {
+    't': (partnerName) => `${partnerName} har avslutat en artikel`,
+    'd': (title) => `Läs artikeln '${title}' också`,
+    },
+'remind_question': {
+    't': (partnerName) => `${partnerName} har svarat på en fråga`,
+    'd': (reply) => reply,
+    },
+'love_note': {
+    't': (partnerName, action) => `${partnerName} säger '${action}'`,
+    'd': (_) => `Öppna Nemlys för att svara`,
+    },
+    'love_note_sorry': "Förlåt",
+    'love_note_sex': "Jag är sugen",
+    'love_note_miss': "Jag saknar dig",
+    'love_note_date': "Låt oss gå på dejt",
+    'love_note_talk': "Jag vill prata",
+    'love_note_attention': "Jag behöver din uppmärksamhet",
+    'love_note_love': "Jag älskar dig",
+    'love_note_hug': "Skicka en kram"
+    },
+'ta': {
+'partner_joined': {
+    't': (partnerName) => `${partnerName} நெம்லீஸில் சேர்ந்தார்`,
+    'd': (_) => `கேள்விகளை ஒன்றாக விவாதிக்க தொடங்குங்கள்`,
+    },
+'partner_answered': {
+    't': (partnerName) => `${partnerName} ஒரு கேள்விக்கு பதிலளித்தார்`,
+    'd': (question) => question,
+    },
+'partner_replied': {
+    't': (partnerName) => `${partnerName} பதிலளித்தார்`,
+    'd': (reply) => reply,
+    },
+'remind_answer': {
+    't': (partnerName) => `${partnerName} உங்களுக்கு ஒரு கேள்விக்கு பதிலளிக்க நினைவூட்டுகிறார்`,
+    'd': (question) => question,
+    },
+'remind_test': {
+    't': (partnerName) => `${partnerName} தேர்வை முடித்துவிட்டார்`,
+    'd': (title) => `'${title}' தேர்வை முடித்தால், நீங்கள் இருவரின் முடிவுகளை பார்க்க முடியும்`,
+    },
+'remind_checkup': {
+    't': (partnerName) => `${partnerName} செக்-அப் முடித்துவிட்டார்`,
+    'd': (title) => `'${title}' செக்-அப் முடித்தால், நீங்கள் இருவரின் பதில்களை காணலாம்`,
+    },
+'remind_game': {
+    't': (partnerName) => `${partnerName} விளையாட்டை முடித்துவிட்டார்`,
+    'd': (title) => `'${title}' விளையாட்டை முடித்தால், நீங்கள் இருவரின் பதில்களை காணலாம்`,
+    },
+'remind_exercise': {
+    't': (partnerName) => `${partnerName} பயிற்சியை முடித்துவிட்டார்`,
+    'd': (title) => `'${title}' பயிற்சியையும் செய்யுங்கள்`,
+    },
+'remind_article': {
+    't': (partnerName) => `${partnerName} கட்டுரையை முடித்துவிட்டார்`,
+    'd': (title) => `'${title}' கட்டுரையையும் படியுங்கள்`,
+    },
+'remind_question': {
+    't': (partnerName) => `${partnerName} ஒரு கேள்விக்கு பதில் அளித்துள்ளார்`,
+    'd': (reply) => reply,
+    },
+'love_note': {
+    't': (partnerName, action) => `${partnerName} கூறுகிறார் '${action}'`,
+    'd': (_) => `பதில் கொடுக்க நெம்லைஸ்-ஐ திற`,
+    },
+    'love_note_sorry': "சாரி",
+    'love_note_sex': "நான் காதலுக்குத் தயாராக இருக்குறேன்",
+    'love_note_miss': "நான் உன்னை ரொம்ப மிஸ் பண்ணுறேன்",
+    'love_note_date': "நாமொரு டேட் போகலாமா?",
+    'love_note_talk': "நான் உன்னோடு பேசணும்",
+    'love_note_attention': "நான் உன் கவனத்தை வேணும்",
+    'love_note_love': "நான் உன்னை காதலிக்கிறேன்",
+    'love_note_hug': "ஒரு தழுவலை அனுப்பு"
+    },
+'te': {
+'partner_joined': {
+    't': (partnerName) => `${partnerName} Nemlys లో చేరారు`,
+    'd': (_) => `కలిసి ప్రశ్నలపై చర్చ చేయడం ప్రారంభించండి`,
+    },
+'partner_answered': {
+    't': (partnerName) => `${partnerName} ఒక ప్రశ్నకు సమాధానం ఇచ్చారు`,
+    'd': (question) => question,
+    },
+'partner_replied': {
+    't': (partnerName) => `${partnerName} సమాధానం ఇచ్చారు`,
+    'd': (reply) => reply,
+    },
+'remind_answer': {
+    't': (partnerName) => `${partnerName} ఒక ప్రశ్నకు సమాధానం ఇవ్వాలని మీకు గుర్తు చేస్తున్నారు`,
+    'd': (question) => question,
+    },
+'remind_test': {
+    't': (partnerName) => `${partnerName} టెస్ట్ పూర్తి చేశారు`,
+    'd': (title) => `రెండరూ ఫలితాలను చూడటానికి '${title}' టెస్ట్ ముగించండి`,
+    },
+'remind_checkup': {
+    't': (partnerName) => `${partnerName} చెకప్ పూర్తి చేశారు`,
+    'd': (title) => `రెండరూ సమాధానాలను చూడటానికి '${title}' చెకప్ ముగించండి`,
+    },
+'remind_game': {
+    't': (partnerName) => `${partnerName} ఆట పూర్తి చేశారు`,
+    'd': (title) => `రెండరూ సమాధానాలను చూడటానికి '${title}' ఆట ముగించండి`,
+    },
+'remind_exercise': {
+    't': (partnerName) => `${partnerName} వ్యాయామం పూర్తి చేశారు`,
+    'd': (title) => `'${title}' వ్యాయామం కూడా చేయండి`,
+    },
+'remind_article': {
+    't': (partnerName) => `${partnerName} వ్యాసం పూర్తి చేశారు`,
+    'd': (title) => `'${title}' వ్యాసం కూడా చదవండి`,
+    },
+'remind_question': {
+    't': (partnerName) => `${partnerName} ప్రశ్నకు సమాధానం ఇచ్చారు`,
+    'd': (reply) => reply,
+    },
+'love_note': {
+    't': (partnerName, action) => `${partnerName} అంటున్నారు '${action}'`,
+    'd': (_) => `సమాధానం ఇవ్వటానికి Nemlys ఓపెన్ చేయండి`,
+    },
+    'love_note_sorry': "సారీ",
+    'love_note_sex': "ప్రేమ కోసం సిద్ధంగా ఉన్నా",
+    'love_note_miss': "నిన్ను చాలా కొల్పుతున్నా",
+    'love_note_date': "డేట్ చేద్దాం",
+    'love_note_talk': "నాకు మాట్లాడాలనుంది",
+    'love_note_attention': "నాకు నీ దృష్టి కావాలి",
+    'love_note_love': "నిన్ను ప్రేమిస్తున్నా",
+    'love_note_hug': "ఒక ఆలింగనం పంపు"
+    },
+'th': {
+'partner_joined': {
+    't': (partnerName) => `${partnerName} เข้าร่วม Nemlys แล้ว`,
+    'd': (_) => `เริ่มพูดคุยเกี่ยวกับคำถามด้วยกัน`,
+    },
+'partner_answered': {
+    't': (partnerName) => `${partnerName} ตอบคำถามแล้ว`,
+    'd': (question) => question,
+    },
+'partner_replied': {
+    't': (partnerName) => `${partnerName} ตอบกลับแล้ว`,
+    'd': (reply) => reply,
+    },
+'remind_answer': {
+    't': (partnerName) => `${partnerName} กำลังเตือนคุณให้ตอบคำถาม`,
+    'd': (question) => question,
+    },
+'remind_test': {
+    't': (partnerName) => `${partnerName} ทำแบบทดสอบเสร็จแล้ว`,
+    'd': (title) => `ทำแบบทดสอบ '${title}' ให้เสร็จ เพื่อดูผลลัพธ์ของกันและกัน`,
+    },
+'remind_checkup': {
+    't': (partnerName) => `${partnerName} ตรวจสุขภาพเสร็จแล้ว`,
+    'd': (title) => `ทำการตรวจสุขภาพ '${title}' ให้เสร็จ เพื่อดูคำตอบของกันและกัน`,
+    },
+'remind_game': {
+    't': (partnerName) => `${partnerName} เล่นเกมเสร็จแล้ว`,
+    'd': (title) => `ทำเกม '${title}' ให้เสร็จ เพื่อดูคำตอบของกันและกัน`,
+    },
+'remind_exercise': {
+    't': (partnerName) => `${partnerName} ทำแบบฝึกหัดเสร็จแล้ว`,
+    'd': (title) => `ทำแบบฝึกหัด '${title}' ด้วยนะ`,
+    },
+'remind_article': {
+    't': (partnerName) => `${partnerName} อ่านบทความเสร็จแล้ว`,
+    'd': (title) => `อ่านบทความ '${title}' ด้วยนะ`,
+    },
+'remind_question': {
+    't': (partnerName) => `${partnerName} ตอบคำถามแล้ว`,
+    'd': (reply) => reply,
+    },
+'love_note': {
+    't': (partnerName, action) => `${partnerName} บอกว่า '${action}'`,
+    'd': (_) => `เปิด Nemlys เพื่อตอบกลับ`,
+    },
+    'love_note_sorry': "ขอโทษนะ",
+    'love_note_sex': "กำลังมีอารมณ์",
+    'love_note_miss': "คิดถึงเธอนะ",
+    'love_note_date': "ไปนัดเดทกันเถอะ",
+    'love_note_talk': "อยากคุยกันนะ",
+    'love_note_attention': "ขอความสนใจจากเธอนะ",
+    'love_note_love': "รักเธอนะ",
+    'love_note_hug': "ส่งกอดให้เธอ"
+    },
+'ur': {
+'partner_joined': {
+    't': (partnerName) => `${partnerName} نے نیملس میں شمولیت اختیار کی`,
+    'd': (_) => `مل کر سوالات پر بات چیت شروع کریں`,
+    },
+'partner_answered': {
+    't': (partnerName) => `${partnerName} نے ایک سوال کا جواب دیا`,
+    'd': (question) => question,
+    },
+'partner_replied': {
+    't': (partnerName) => `${partnerName} نے جواب دیا`,
+    'd': (reply) => reply,
+    },
+'remind_answer': {
+    't': (partnerName) => `${partnerName} آپ کو ایک سوال کا جواب دینے کی یاد دہانی کروا رہا ہے`,
+    'd': (question) => question,
+    },
+'remind_test': {
+    't': (partnerName) => `${partnerName} نے ٹیسٹ مکمل کر لیا ہے`,
+    'd': (title) => `ایک دوسرے کے نتائج دیکھنے کے لیے ٹیسٹ '${title}' مکمل کریں`,
+    },
+'remind_checkup': {
+    't': (partnerName) => `${partnerName} نے چیک اپ مکمل کر لیا ہے`,
+    'd': (title) => `ایک دوسرے کے جوابات دیکھنے کے لیے چیک اپ '${title}' مکمل کریں`,
+    },
+'remind_game': {
+    't': (partnerName) => `${partnerName} نے گیم مکمل کر لیا ہے`,
+    'd': (title) => `ایک دوسرے کے جوابات دیکھنے کے لیے گیم '${title}' مکمل کریں`,
+    },
+'remind_exercise': {
+    't': (partnerName) => `${partnerName} نے مشق مکمل کر لی ہے`,
+    'd': (title) => `مشق '${title}' بھی کریں`,
+    },
+'remind_article': {
+    't': (partnerName) => `${partnerName} نے مضمون مکمل کر لیا ہے`,
+    'd': (title) => `مضمون '${title}' بھی پڑھیں`,
+    },
+'remind_question': {
+    't': (partnerName) => `${partnerName} نے سوال کا جواب دیا ہے`,
+    'd': (reply) => reply,
+    },
+'love_note': {
+    't': (partnerName, action) => `${partnerName} کہتا ہے '${action}'`,
+    'd': (_) => `جواب دینے کے لیے Nemlys کھولیں`,
+    },
+    'love_note_sorry': "مجھے معاف کر",
+    'love_note_sex': "آج مزاج کچھ خاص ہے",
+    'love_note_miss': "مجھے تمہاری یاد آتی ہے",
+    'love_note_date': "چلو ڈیٹ پر چلتے ہیں",
+    'love_note_talk': "مجھے بات کرنی ہے",
+    'love_note_attention': "مجھے تمہاری توجہ چاہیے",
+    'love_note_love': "میں تم سے محبت کرتا ہوں",
+    'love_note_hug': "گلے لگاؤ"
+    },
+'zu': {
+'partner_joined': {
+    't': (partnerName) => `${partnerName} ujoyine i-Nemlys`,
+    'd': (_) => `Qala ukuxoxa ngezinkinga ndawonye`,
+    },
+'partner_answered': {
+    't': (partnerName) => `${partnerName} uphendule umbuzo`,
+    'd': (question) => question,
+    },
+'partner_replied': {
+    't': (partnerName) => `${partnerName} uphendule`,
+    'd': (reply) => reply,
+    },
+'remind_answer': {
+    't': (partnerName) => `${partnerName} uyakukhumbuza ukuthi uphendule umbuzo`,
+    'd': (question) => question,
+    },
+'remind_test': {
+    't': (partnerName) => `${partnerName} usuqede ivivinyo`,
+    'd': (title) => `Qeda ivivinyo '${title}' ukuze nibone imiphumela yomunye nomunye`,
+    },
+'remind_checkup': {
+    't': (partnerName) => `${partnerName} usuqede ukuhlolwa`,
+    'd': (title) => `Qeda ukuhlolwa '${title}' ukuze nibone izimpendulo zomunye nomunye`,
+    },
+'remind_game': {
+    't': (partnerName) => `${partnerName} usuqede umdlalo`,
+    'd': (title) => `Qeda umdlalo '${title}' ukuze nibone izimpendulo zomunye nomunye`,
+    },
+'remind_exercise': {
+    't': (partnerName) => `${partnerName} usuqede umsebenzi`,
+    'd': (title) => `Phinda wenze umsebenzi '${title}' futhi`,
+    },
+'remind_article': {
+    't': (partnerName) => `${partnerName} usuqede indatshana`,
+    'd': (title) => `Funda indatshana '${title}' futhi`,
+    },
+'remind_question': {
+    't': (partnerName) => `${partnerName} uphendule umbuzo`,
+    'd': (reply) => reply,
+    },
+'love_note': {
+    't': (partnerName, action) => `${partnerName} uthi '${action}'`,
+    'd': (_) => `Vula iNemlys ukuphendula`,
+    },
+    'love_note_sorry': "Ngiyaxolisa",
+    'love_note_sex': "Ngikulangazelela",
+    'love_note_miss': "Ngikukhumbula",
+    'love_note_date': "Ake senze idethi",
+    'love_note_talk': "Ngifuna ukukhuluma",
+    'love_note_attention': "Ngidinga ukunaka kwakho",
+    'love_note_love': "Ngiyakuthanda",
+    'love_note_hug': "Thumela igumbathelo"
+    },
+}

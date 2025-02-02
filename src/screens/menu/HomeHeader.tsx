@@ -8,13 +8,14 @@ import { supabase } from '@app/api/initSupabase';
 import { AuthContext } from '@app/provider/AuthProvider';
 import { logSupaErrors } from '@app/utils/errors';
 import { useFocusEffect } from '@react-navigation/native';
+import { showName } from '@app/utils/strings';
 
 const HomeHeader: React.FC = () => {
   const { theme } = useTheme();
   const padding = 20;
   const authContext = useContext(AuthContext);
 
-  const [firstName, setFirstName] = useState('');
+  const [name, setName] = useState('');
   const [partnerName, setPartnerName] = useState('');
   const [dateCount, setDateCount] = useState(0);
   const [loading, setLoading] = useState(true);
@@ -31,8 +32,8 @@ const HomeHeader: React.FC = () => {
       return;
     }
 
-    setFirstName(profileData.first_name || '');
-    setPartnerName(profileData.partner_first_name || '');
+    setName(showName(profileData.first_name));
+    setPartnerName(showName(profileData.partner_first_name) || i18n.t('home_partner'));
 
     // Fetch date count
     const { count, error: dateError } = await supabase
@@ -95,7 +96,7 @@ const HomeHeader: React.FC = () => {
             }}
           >
             <FontText h3>
-              {firstName || i18n.t('home_you')}
+              {name || i18n.t('home_you')}
               {' & '}
               {partnerName || i18n.t('home_partner')}
             </FontText>

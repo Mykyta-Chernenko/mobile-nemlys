@@ -1,0 +1,4892 @@
+[
+  {
+    "job": [
+      "preparing_for_cohabitation"
+    ],
+    "title": "Подготовка за Съвместно Живеене",
+    "description": "Тази пътека е проектирана да подготви вас и вашия партньор за съвместно живеене, като се занимава с различни аспекти на съвместния живот. Ще научите как да комуникирате ефективно, да управлявате отговорностите и да създадете хармонична домашна среда. Всеки ден ще изследвате важни теми, които ще помогнат за укрепване на вашите отношения и улесняване на прехода към съвместно живеене.",
+    "subtopics": [
+      {
+        "title": "Мечтаем за Нашето Споделено Пространство",
+        "description": "Започнете, като споделите вашите визии за това как ще изглежда вашият дом. Обсъдете идеи за пространство, декор и атмосфера. Това поставя основата за взаимно разбиране и споделени мечти.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "lifestyle-harmony-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-can-we-create-a-home-environment-that-respects-both-of-our-preferences"
+          },
+          {
+            "type": "article",
+            "slug": "sharing-spaces-harmoniously"
+          },
+          {
+            "type": "exercise",
+            "slug": "living-space-design"
+          },
+          {
+            "type": "game",
+            "slug": "decor-dilemma"
+          },
+          {
+            "type": "question",
+            "slug": "whats-one-piece-of-furniture-you-absolutely-need-in-our-new-home"
+          }
+        ]
+      },
+      {
+        "title": "Основи на Комуникацията",
+        "description": "Научете ефективни стратегии за комуникация, които ще ви помогнат да се справите с ежедневните предизвикателства. Изследвайте начини за изразяване на нужди, задаване на очаквания и активно слушане един на друг.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "discover-your-communication-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-prefer-to-communicate-your-needs-and-desires"
+          },
+          {
+            "type": "article",
+            "slug": "mastering-communication-techniques"
+          },
+          {
+            "type": "game",
+            "slug": "communication-clues"
+          },
+          {
+            "type": "checkup",
+            "slug": "mastering-our-communication-styles"
+          },
+          {
+            "type": "exercise",
+            "slug": "active-listening-practice"
+          }
+        ]
+      },
+      {
+        "title": "Домашни Отговорности",
+        "description": "Обсъдете и установете как ще разделите домашните задължения и отговорности. Създайте система, която работи и за двама ви, за да поддържате чиста и организирана жизнена среда.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "domestic-labor-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-feel-about-handling-household-responsibilities-and-chores"
+          },
+          {
+            "type": "article",
+            "slug": "establishing-household-routines"
+          },
+          {
+            "type": "exercise",
+            "slug": "shared-responsibilities-mapping"
+          },
+          {
+            "type": "game",
+            "slug": "chore-chart-challenge"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-feel-about-having-a-cleaning-schedule-versus-cleaning-as-we-go"
+          }
+        ]
+      },
+      {
+        "title": "Финансови Основи",
+        "description": "Съгласувайте се относно управлението на финансите и бюджета като двойка. Обсъдете стратегии за споделяне на разходите, вземане на съвместни финансови решения и поддържане на прозрачност относно финансите.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "budgeting-style-for-couples"
+          },
+          {
+            "type": "game",
+            "slug": "dream-budget-builders"
+          },
+          {
+            "type": "article",
+            "slug": "mastering-money-talks-together"
+          },
+          {
+            "type": "exercise",
+            "slug": "budget-planning-session"
+          },
+          {
+            "type": "checkup",
+            "slug": "aligning-financial-values-and-goals"
+          },
+          {
+            "type": "question",
+            "slug": "whats-one-thing-you-want-to-achieve-together-in-our-new-home"
+          }
+        ]
+      },
+      {
+        "title": "Справяне с Конфликти с Грация",
+        "description": "Подгответе се за неизбежни разногласия, като научите стратегии за разрешаване на конфликти. Изследвайте как да управлявате различията в мненията и да намерите обща основа по здравословен начин.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "your-conflict-style"
+          },
+          {
+            "type": "game",
+            "slug": "conflict-resolution-quest"
+          },
+          {
+            "type": "article",
+            "slug": "mastering-conflict-resolution-together"
+          },
+          {
+            "type": "exercise",
+            "slug": "conflict-resolution-strategies-practice"
+          },
+          {
+            "type": "checkup",
+            "slug": "tackling-tough-talks"
+          },
+          {
+            "type": "question",
+            "slug": "how-should-we-handle-maintenance-and-repairs-around-the-house"
+          }
+        ]
+      },
+      {
+        "title": "Създаване на Безопасно Пространство",
+        "description": "Завършете подготовката си, като се фокусирате върху емоционалната и физическата безопасност в споделеното ви пространство. Обсъдете граници, личен живот и как да създадете среда, в която и двамата се чувствате сигурни и уважавани.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "emotional-safety-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-should-we-handle-setting-up-our-home-office-or-study-space"
+          },
+          {
+            "type": "article",
+            "slug": "navigating-boundaries-for-intimacy"
+          },
+          {
+            "type": "exercise",
+            "slug": "personal-space-respect-practices"
+          },
+          {
+            "type": "game",
+            "slug": "space-personalities"
+          },
+          {
+            "type": "question",
+            "slug": "how-should-we-handle-guests-and-visitors-in-our-home"
+          }
+        ]
+      }
+    ],
+    "slug": "preparing-for-cohabitation"
+  },
+  {
+    "job": [
+      "introducing_healthy_habits"
+    ],
+    "title": "Въвеждане на Здравословни Навици Заедно",
+    "description": "Тази програма е създадена, за да помогне на двойките да развият и поддържат здравословни навици, които допринасят за тяхното общо благосъстояние и укрепват връзката им. Като правите по една стъпка всеки ден, ще изследвате храненето, практиките за благополучие и как да се подкрепяте взаимно в това пътуване към по-здравословен начин на живот.",
+    "subtopics": [
+      {
+        "title": "Разбиране на Основите на Храненето",
+        "description": "Научете основите на доброто хранене, обсъждайки аспекти като витамини и хранителни вещества, приготвяне на храна и включване на здравословни храни в диетата си. Това поставя основите на здравословен начин на живот.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "healthy-eating-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-ensure-youre-getting-enough-vitamins-and-nutrients"
+          },
+          {
+            "type": "article",
+            "slug": "kickstart-healthy-routines-together"
+          },
+          {
+            "type": "game",
+            "slug": "nutri-quiz"
+          },
+          {
+            "type": "exercise",
+            "slug": "healthy-eating-plans"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-prefer-cooking-together-or-trying-out-new-healthy-recipes-separately"
+          }
+        ]
+      },
+      {
+        "title": "Създаване на Здравословни Рутини",
+        "description": "Изследвайте начини за установяване на ежедневни рутини, които насърчават здравословното хранене и упражнения, включително сутрешни и вечерни ритуали. Обсъдете важността на последователността и как тя влияе на вашето здраве.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "healthy-habits-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-incorporate-healthy-eating-into-your-busy-schedule"
+          },
+          {
+            "type": "article",
+            "slug": "healthy-habits-for-stronger-bonds"
+          },
+          {
+            "type": "game",
+            "slug": "healthy-habits-hub"
+          },
+          {
+            "type": "exercise",
+            "slug": "positive-habit-tracking"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-enjoy-morning-workouts-or-evening-wind-downs-more"
+          }
+        ]
+      },
+      {
+        "title": "Управление на Стреса Заедно",
+        "description": "Идентифицирайте здравословни стратегии за управление на стреса, включително практики за осъзнатост и как да се подкрепяте взаимно в натоварени моменти. Тази подтема разглежда психичното благополучие като част от здравословния начин на живот.",
+        "content": [
+          {
+            "type": "checkup",
+            "slug": "mood-mapping"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-handle-stress-in-a-healthy-way"
+          },
+          {
+            "type": "article",
+            "slug": "navigating-emotional-waters-together"
+          },
+          {
+            "type": "game",
+            "slug": "mindfulness-match"
+          },
+          {
+            "type": "exercise",
+            "slug": "mindfulness-meditation-sessions"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-handle-stress-or-unexpected-challenges"
+          }
+        ]
+      },
+      {
+        "title": "Включване на Физическа Активност",
+        "description": "Обсъдете различни форми на физическа активност, които и двамата обичате, важността на екипната работа за поддържане на активност и създайте план за редовни упражнения заедно, който да ви държи отговорни.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "accountability-style-quiz"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-prefer-solo-workouts-or-exercising-together"
+          },
+          {
+            "type": "checkup",
+            "slug": "fitness-partners-unite"
+          },
+          {
+            "type": "exercise",
+            "slug": "fitness-routine-together"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-new-form-of-exercise-youd-like-to-do-together-regularly"
+          }
+        ]
+      },
+      {
+        "title": "Проследяване на Напредъка и Целите",
+        "description": "Научете как да задавате и проследявате своите здравословни и благосъстояние цели и как да празнувате постиженията на другия. Това ще създаде мотивация и чувство за партньорство в пътуването ви към здравословен начин на живот.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "goal-alignment-style"
+          },
+          {
+            "type": "question",
+            "slug": "what-are-your-long-term-health-and-wellness-goals-and-how-can-we-support-each-other"
+          },
+          {
+            "type": "article",
+            "slug": "setting-shared-future-goals"
+          },
+          {
+            "type": "game",
+            "slug": "future-visionaries"
+          },
+          {
+            "type": "exercise",
+            "slug": "smart-goals-planning"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-stay-motivated-to-maintain-your-healthy-habits"
+          }
+        ]
+      },
+      {
+        "title": "Изграждане на Здравословни Навици за Бъдещето",
+        "description": "Обсъдете дългосрочни здравословни цели, как да включите здравословни навици в живота си като двойка и установете традиции, които насърчават благосъстоянието, осигурявайки, че приемането на здравословни практики става начин на живот.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "growth-balance-style"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-new-habit-youd-like-to-develop-together-for-personal-growth"
+          },
+          {
+            "type": "exercise",
+            "slug": "positive-reinforcement-practices"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-new-healthy-habit-youd-like-to-try-this-month"
+          }
+        ]
+      }
+    ],
+    "slug": "introducing-healthy-habits-together"
+  },
+  {
+    "job": [
+      "having_new_experiences"
+    ],
+    "title": "Приключенски заедно: Изследване на нови преживявания",
+    "description": "Тази пътека насърчава теб и твоя партньор да приемете новостите и приключенията във вашата връзка, като опитвате нови дейности, изследвате непознати места и идентифицирате общи интереси. Всеки ден ще откривате креативни идеи и ангажиращо съдържание, които ще ви вдъхновят да се забавлявате заедно и да укрепите връзката си чрез споделени преживявания.",
+    "subtopics": [
+      {
+        "title": "Започваме с малко: Опитване на нови дейности",
+        "description": "Започнете вашето пътуване, като идентифицирате прости дейности, които са удобни, но нови. Участвайте в дискусии относно хобита, които искате да изследвате заедно, от курсове по готвене до вечери с настолни игри.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "breaking-routine-style-quiz"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-hobby-youd-like-us-to-try-together"
+          },
+          {
+            "type": "article",
+            "slug": "rediscover-adventure-together"
+          },
+          {
+            "type": "game",
+            "slug": "adventure-awaits"
+          },
+          {
+            "type": "exercise",
+            "slug": "try-something-new-day"
+          }
+        ]
+      },
+      {
+        "title": "Създаване на списък с желания",
+        "description": "Създайте заедно списък с желания за двойки! Обсъдете вълнуващи места за посещение, уникални преживявания, които искате да споделите, и значими приключения, които искате да имате в бъдеще.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "adventure-style-assessment"
+          },
+          {
+            "type": "question",
+            "slug": "if-we-were-to-create-a-couples-bucket-list-whats-the-first-adventure-youd-add"
+          },
+          {
+            "type": "article",
+            "slug": "adventure-sparks-deeper-bonds"
+          },
+          {
+            "type": "game",
+            "slug": "future-adventure-quest"
+          },
+          {
+            "type": "exercise",
+            "slug": "future-goals-compatibility"
+          }
+        ]
+      },
+      {
+        "title": "Спонтанност и приключение",
+        "description": "Приемете спонтанността, като планирате изненадващи излети или опитвате дейности на импулс. Открийте тръпката от неочакваните приключения заедно и укрепете връзката си чрез спонтанност.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "spontaneity-style"
+          },
+          {
+            "type": "question",
+            "slug": "whats-the-most-fun-youve-ever-had-while-doing-something-completely-spontaneous"
+          },
+          {
+            "type": "question",
+            "slug": "if-we-could-go-on-a-crazy-themed-road-trip-what-would-our-theme-be"
+          },
+          {
+            "type": "game",
+            "slug": "adventure-awaits"
+          },
+          {
+            "type": "exercise",
+            "slug": "outdoor-exploration-adventures"
+          }
+        ]
+      },
+      {
+        "title": "Изследване на нови места",
+        "description": "Погледнете по-дълбоко на местата, които и двамата искате да изследвате, независимо дали са местни или международни. Обсъдете вашите пътуващи мечти и как тези преживявания могат да обогатят вашата връзка.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "exploration-partnership-style"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-like-to-travel-whats-the-most-exciting-place-youve-been"
+          },
+          {
+            "type": "question",
+            "slug": "which-country-is-at-the-top-of-your-travel-bucket-list-as-a-couple"
+          },
+          {
+            "type": "article",
+            "slug": "adventure-sparks-deeper-bonds"
+          },
+          {
+            "type": "game",
+            "slug": "cultural-quest"
+          },
+          {
+            "type": "exercise",
+            "slug": "cultural-exchange-day"
+          }
+        ]
+      },
+      {
+        "title": "Учене заедно",
+        "description": "Идентифицирайте умения или теми, които и двамата искате да научите заедно. Може да е изучаване на нов език, усвояване на техники за готвене или посещение на курсове по изкуства - каквото и да е, което ще ви сближи!",
+        "content": [
+          {
+            "type": "test",
+            "slug": "shared-learning-style"
+          },
+          {
+            "type": "question",
+            "slug": "if-you-could-learn-a-new-language-together-which-one-would-it-be"
+          },
+          {
+            "type": "question",
+            "slug": "whats-something-youd-like-to-learn-together-to-bring-us-closer"
+          },
+          {
+            "type": "article",
+            "slug": "mastering-communication-techniques"
+          },
+          {
+            "type": "game",
+            "slug": "laugh-learn-quiz"
+          },
+          {
+            "type": "exercise",
+            "slug": "smart-goals-planning"
+          }
+        ]
+      },
+      {
+        "title": "Креативност в приключението",
+        "description": "Изследвайте креативни начини да превърнете обикновените дейности в запомнящи се преживявания. Помислете за тематични вечери, креативни предизвикателства или приключенски задачи, които ви позволяват да се свържете чрез въображение и игра.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "creative-sparks-style"
+          },
+          {
+            "type": "question",
+            "slug": "if-you-could-embark-on-a-creative-retreat-together-what-would-you-focus-on"
+          },
+          {
+            "type": "question",
+            "slug": "if-we-could-perform-in-a-talent-show-together-what-act-would-we-do"
+          },
+          {
+            "type": "article",
+            "slug": "fun-rituals-to-strengthen-bonds"
+          },
+          {
+            "type": "game",
+            "slug": "decor-dilemma"
+          },
+          {
+            "type": "exercise",
+            "slug": "artistic-expression-days"
+          }
+        ]
+      }
+    ],
+    "slug": "adventurous-together-exploring-new-experiences"
+  },
+  {
+    "job": [
+      "having_fun_and_entertainment"
+    ],
+    "title": "Създаване на Забавление и Развлечение Заедно",
+    "description": "Тази пътека ще ви води през дейности и дискусии, предназначени да увеличат радостта и игривостта във вашата връзка. Чрез изследване на различни аспекти на забавлението и развлечението, ще култивирате по-дълбока връзка, докато научавате как да внасяте смях и креативност в ежедневието си. Всеки ден ще се ангажирате с нови преживявания и размисли, които насърчават съвместността и изследването.",
+    "subtopics": [
+      {
+        "title": "Започване с Усмивка",
+        "description": "Изследвайте ролята на хумора във вашата връзка. Ангажирайте се с забавни въпроси като любимите ви неподходящи шеги и флирт текстове. Тази основополагаща тема ще ви помогне да откриете начини да внасяте смях в ежедневието си.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "humor-harmony-style"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-have-a-favorite-inappropriate-joke"
+          },
+          {
+            "type": "article",
+            "slug": "laughing-together-keeps-love-strong"
+          },
+          {
+            "type": "game",
+            "slug": "love-laughter"
+          },
+          {
+            "type": "checkup",
+            "slug": "fun-flirtation"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-have-any-favorite-flirty-texts-or-messages-that-make-you-smile"
+          }
+        ]
+      },
+      {
+        "title": "Честване на Постижения и Важни Моменти",
+        "description": "Научете как да празнувате успехите на другия, големи или малки. Обсъдете любимите си начини за празнуване на специални поводи като годишнини и празници, създавайки атмосфера на признателност и радост.",
+        "content": [
+          {
+            "type": "checkup",
+            "slug": "marriage-milestones"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-like-to-celebrate-anniversaries"
+          },
+          {
+            "type": "game",
+            "slug": "date-night-planner"
+          },
+          {
+            "type": "test",
+            "slug": "milestone-celebration-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-like-to-celebrate-achievements-big-or-small"
+          }
+        ]
+      },
+      {
+        "title": "Откриване на Споделени Интереси",
+        "description": "Потопете се в дискусии за дейности и хобита, които и двамата обичате. Идентифицирайте общи интереси и предложете забавни дейности, които да опитате заедно, което ще помогне за укрепване на вашата споделена връзка и създаване на трайни спомени.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "hobby-harmony-style"
+          },
+          {
+            "type": "question",
+            "slug": "what-hobbies-or-activities-would-you-like-us-to-pursue-together-in-the-future"
+          },
+          {
+            "type": "article",
+            "slug": "exploring-shared-hobbies-together"
+          },
+          {
+            "type": "game",
+            "slug": "hobby-harmony"
+          },
+          {
+            "type": "checkup",
+            "slug": "uncovering-daily-habits-and-quirks"
+          },
+          {
+            "type": "exercise",
+            "slug": "hobbies-and-interests-exercise"
+          }
+        ]
+      },
+      {
+        "title": "Спонтанни Приключения",
+        "description": "Излезте от зоната си на комфорт, като планирате спонтанни излети или забавни изненади един за друг. Използвайте подсказки, за да решите нови преживявания, като дейности на открито или тематични вечери, увеличавайки вълнението във вашата връзка.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "spontaneity-style"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-new-sport-or-physical-activity-youd-like-to-try-as-a-team"
+          },
+          {
+            "type": "article",
+            "slug": "adventure-sparks-deeper-bonds"
+          },
+          {
+            "type": "game",
+            "slug": "adventure-awaits"
+          },
+          {
+            "type": "checkup",
+            "slug": "adventure-together"
+          },
+          {
+            "type": "exercise",
+            "slug": "adventure-challenge"
+          }
+        ]
+      },
+      {
+        "title": "Креативна Игривост",
+        "description": "Използвайте креативността си заедно, като изследвате артистични начинания или игриви игри. Участвайте в упражнения, които предизвикват и двамата да мислите извън рамките, като проекти „направи си сам“ или тематични вечери за готвене.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "creative-sparks-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-express-your-creativity"
+          },
+          {
+            "type": "article",
+            "slug": "crafting-memorable-date-nights"
+          },
+          {
+            "type": "game",
+            "slug": "decor-dilemma"
+          },
+          {
+            "type": "exercise",
+            "slug": "creative-drawing-contest"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-creative-project-youd-love-to-tackle-as-a-duo"
+          }
+        ]
+      },
+      {
+        "title": "Създаване на Традиции и Ритуали",
+        "description": "Завършете пътуването си, като размислите как да установите редовни традиции, които да поддържат забавлението живо във вашата връзка. Обсъдете стойността на забавните ритуали и как те могат да укрепят вашата връзка и да създадат любими спомени заедно.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "ritual-building-style"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-tradition-youd-like-to-start-together"
+          },
+          {
+            "type": "article",
+            "slug": "fun-rituals-to-strengthen-bonds"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-tradition-youd-like-us-to-start-as-a-couple"
+          }
+        ]
+      }
+    ],
+    "slug": "creating-fun-and-entertainment-together"
+  },
+  {
+    "job": [
+      "discussing_religions"
+    ],
+    "title": "Навигиране в Нашите Религиозни Вярвания Заедно",
+    "description": "Тази пътека е проектирана да помогне на вас и вашия партньор да обсъждате и разбирате религиозните вярвания на другия, като същевременно насърчавате уважение и открита комуникация. Чрез изследване на различни аспекти на религията, ще научите как да приемате различията и да създадете споделена духовна връзка.",
+    "subtopics": [
+      {
+        "title": "Разбиране на Религиозните Основи",
+        "description": "Започнете вашето пътуване, като изследвате основните вярвания и практики на религиите на другия. Обсъдете как тези основи формират вашите идентичности и светогледи. Тази подтема ще включва въпроси относно личните вярвания и практики.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "religious-identity-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-practice-your-faith-and-how-would-you-like-to-incorporate-it-into-our-relationship"
+          },
+          {
+            "type": "article",
+            "slug": "navigating-religious-conversations-smoothly"
+          },
+          {
+            "type": "exercise",
+            "slug": "spiritual-practices-exchange"
+          },
+          {
+            "type": "question",
+            "slug": "what-role-does-religion-or-spirituality-play-in-your-life-and-how-does-it-affect-our-relationship"
+          }
+        ]
+      },
+      {
+        "title": "Честване на Религиозни Постижения",
+        "description": "Научете как да празнувате религиозни постижения и важни моменти заедно. Изследвайте как да почитате традициите на другия по време на значими житейски събития, като раждания, сватби и празници, безпроблемно интегрирайки ги в споделените си животи.",
+        "content": [
+          {
+            "type": "checkup",
+            "slug": "celebrating-religious-holidays-together"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-celebrate-religious-achievements-or-milestones"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-celebrate-your-faith-during-personal-milestones-like-birthdays-or-anniversaries"
+          }
+        ]
+      },
+      {
+        "title": "Уважение към Различията и Несъгласията",
+        "description": "Задълбочете се в начина, по който да навигирате различията в религиозните вярвания и практики без конфликт. Тази подтема ще ви осигури инструменти за уважителни разговори, когато възникнат несъгласия, фокусирайки се върху разбирането, а не убеждаването.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "your-conflict-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-handle-religious-disagreements-in-relationships"
+          },
+          {
+            "type": "article",
+            "slug": "bridging-religious-differences-together"
+          },
+          {
+            "type": "game",
+            "slug": "conflict-resolution-quest"
+          },
+          {
+            "type": "checkup",
+            "slug": "handling-religious-conflicts"
+          }
+        ]
+      },
+      {
+        "title": "Интегриране на Вярата в Всекидневния Живот",
+        "description": "Обсъдете как да интегрирате религиозните ценности в ежедневните си рутини и вземане на решения. Изследвайте споделени практики, духовни дейности и как религията може да подобри вашето партньорство и личностно развитие.",
+        "content": [
+          {
+            "type": "checkup",
+            "slug": "supportive-communication"
+          },
+          {
+            "type": "question",
+            "slug": "how-can-we-support-each-others-spiritual-growth"
+          },
+          {
+            "type": "game",
+            "slug": "spiritual-journey"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-integrate-your-faith-with-your-personal-hobbies-or-interests"
+          }
+        ]
+      },
+      {
+        "title": "Планиране на Бъдещи Благословии",
+        "description": "Участвайте в значими разговори за това как вашите религиозни вярвания влияят на решенията относно семейството и децата. Обсъдете дали си представяте да отглеждате деца в определена религиозна традиция и изследвайте последствията за живота ви заедно.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "parenting-style-alignment"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-envision-having-children-in-a-particular-religious-tradition"
+          },
+          {
+            "type": "question",
+            "slug": "what-religious-values-are-most-important-to-you-in-a-relationship"
+          },
+          {
+            "type": "article",
+            "slug": "enhancing-communication-before-parenthood"
+          },
+          {
+            "type": "checkup",
+            "slug": "parenting-playbook-compatibility"
+          },
+          {
+            "type": "exercise",
+            "slug": "parenting-styles-discussion"
+          }
+        ]
+      },
+      {
+        "title": "Създаване на Споделена Духовност",
+        "description": "В тази последна стъпка се фокусирайте върху това как да създадете хармонично съчетание на вашите религиозни вярвания. Изследвайте практики, които почитат както вашите традиции, така и обсъдете как да подкрепяте духовния растеж на другия, осигурявайки удовлетворяващи отношения, основани на взаимно уважение и разбиране.",
+        "content": [
+          {
+            "type": "checkup",
+            "slug": "sharing-spiritual-beliefs"
+          },
+          {
+            "type": "question",
+            "slug": "are-there-any-religious-practices-youd-like-to-explore-together"
+          },
+          {
+            "type": "exercise",
+            "slug": "interfaith-understanding-sessions"
+          }
+        ]
+      }
+    ],
+    "slug": "navigating-our-religious-beliefs-together"
+  },
+  {
+    "job": [
+      "preparing_for_children"
+    ],
+    "title": "Подготовка за Деца: Пътешествие към Родителството",
+    "description": "Тази подорож е насочена към подготовката на вас и вашия партньор за вълнуващото и предизвикателно приключение на родителството. Всеки ден ще ви води през различни дискусии, размисли и дейности, за да насърчи значими разговори за родителството. Докато напредвате, ще изследвате основни концепции, емоционална готовност и практически стратегии, за да осигурите успешно пътешествие в родителството.",
+    "subtopics": [
+      {
+        "title": "Разбиране на Желанието за Родителство",
+        "description": "Изследвайте вашите индивидуални мисли и чувства относно това да имате деца. Участвайте в размисли, за да разберете желанията и очакванията на другия, полагайки основите за бъдещи дискусии.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "parenthood-readiness-styles"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-see-yourself-wanting-children-someday"
+          },
+          {
+            "type": "game",
+            "slug": "future-visionaries"
+          },
+          {
+            "type": "checkup",
+            "slug": "parenting-pathways"
+          },
+          {
+            "type": "exercise",
+            "slug": "family-planning-exercise"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-want-to-have-children-if-so-when-do-you-think-is-the-right-time"
+          }
+        ]
+      },
+      {
+        "title": "Съгласуване на Родителските Ценности",
+        "description": "Обсъдете основните си ценности и вярвания относно родителството. Тази подтема ще ви помогне да се съгласите по важни въпроси, като образование, дисциплина и ценностите, които искате да предадете на бъдещите си деца.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "parenting-style-alignment"
+          },
+          {
+            "type": "question",
+            "slug": "what-values-are-most-important-for-us-to-instill-in-our-children"
+          },
+          {
+            "type": "game",
+            "slug": "values-vibes"
+          },
+          {
+            "type": "checkup",
+            "slug": "parenting-playbook-compatibility"
+          },
+          {
+            "type": "exercise",
+            "slug": "values-alignment-exercise"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-believe-in-religious-education-for-children-why-or-why-not"
+          }
+        ]
+      },
+      {
+        "title": "Управление на Емоционалната Готовност",
+        "description": "Оценете емоционалната си готовност за възходите и паденията на родителството. Чрез различни упражнения и размисли ще се справите с потенциални страхове, притеснения и надежди относно родителството.",
+        "content": [
+          {
+            "type": "checkup",
+            "slug": "emotional-rollercoaster-ride"
+          },
+          {
+            "type": "question",
+            "slug": "are-you-ready-to-handle-the-emotional-rollercoaster-that-comes-with-parenting"
+          },
+          {
+            "type": "article",
+            "slug": "navigating-emotional-waters-together"
+          },
+          {
+            "type": "game",
+            "slug": "emotional-seasons"
+          },
+          {
+            "type": "exercise",
+            "slug": "emotional-support-exercises"
+          },
+          {
+            "type": "question",
+            "slug": "what-fears-or-concerns-do-you-have-about-becoming-parents"
+          }
+        ]
+      },
+      {
+        "title": "Практически Родителски Отговорности",
+        "description": "Задълбочете се в логистиката на родителските отговорности. Обсъдете как бихте искали да разделите задълженията, да планирате опции за грижа за деца и да управлявате домашните задължения, подготвяйки се за практическите реалности на отглеждането на деца.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "responsibility-sharing-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-should-we-divide-parenting-responsibilities"
+          },
+          {
+            "type": "game",
+            "slug": "household-harmony"
+          },
+          {
+            "type": "exercise",
+            "slug": "shared-responsibilities-mapping"
+          },
+          {
+            "type": "question",
+            "slug": "what-are-your-thoughts-on-childcare-options"
+          }
+        ]
+      },
+      {
+        "title": "Финансово Планиране за Родителство",
+        "description": "Съсредоточете се върху финансовите аспекти на отглеждането на деца. Участвайте в дискусии относно бюджета, спестяванията за бъдещето на детето и правенето на корекции в финансовите си планове, докато навлизате в тази нова глава.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "financial-planning-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-should-we-save-for-our-childs-future"
+          },
+          {
+            "type": "article",
+            "slug": "financial-planning-together"
+          },
+          {
+            "type": "game",
+            "slug": "dream-budget-builders"
+          },
+          {
+            "type": "exercise",
+            "slug": "budget-planning-session"
+          }
+        ]
+      },
+      {
+        "title": "Изграждане на Подкрепяща Мрежа",
+        "description": "Изследвайте важността на подкрепящата мрежа, докато се подготвяте за деца. Обсъдете ролите на семейството, приятелите и ресурсите за родителство, които могат да ви помогнат да се справите с предизвикателствата напред.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "support-network-style"
+          },
+          {
+            "type": "question",
+            "slug": "are-you-comfortable-with-pet-allergies-or-preferences-if-we-have-kids"
+          },
+          {
+            "type": "exercise",
+            "slug": "parenting-support-networks"
+          },
+          {
+            "type": "question",
+            "slug": "are-you-willing-to-retire-just-to-take-care-of-our-kids"
+          }
+        ]
+      }
+    ],
+    "slug": "preparing-for-children-a-journey-to-parenthood"
+  },
+  {
+    "job": [
+      "preparing_for_intimacy"
+    ],
+    "title": "Подготовка за Интимност",
+    "description": "Тази пътуване е проектирана да помогне на двойките да изследват и подобрят своите интимни връзки по подкрепящ и конструктивен начин. Чрез серия от внимателно подготвено съдържание, двойките ще се ангажират с различни аспекти на интимността, от изграждане на доверие до изследване на желания. Всеки ден ще откривате нови прозрения и практики, които да насърчават по-дълбока емоционална и физическа връзка.",
+    "subtopics": [
+      {
+        "title": "Разбиране на Интимността",
+        "description": "Започнете своето пътуване, като изследвате концепцията за интимност. Разберете различните измерения на интимността, включително емоционалните и физическите аспекти, и обсъдете какво означава интимност за вас и вашия партньор.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "emotional-intimacy-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-envision-our-intimate-life-evolving-over-the-next-year"
+          },
+          {
+            "type": "article",
+            "slug": "building-emotional-intimacy-together"
+          },
+          {
+            "type": "game",
+            "slug": "intimacy-insights"
+          },
+          {
+            "type": "checkup",
+            "slug": "emotional-intimacy-check-in"
+          },
+          {
+            "type": "exercise",
+            "slug": "intimate-story-sharing"
+          }
+        ]
+      },
+      {
+        "title": "Изграждане на Доверие и Уязвимост",
+        "description": "Потопете се в упражнения за изграждане на доверие и обсъдете важността на уязвимостта в една връзка. Научете как споделянето на лични чувства и опит може да създаде безопасно пространство за интимност.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "trust-building-style-quiz"
+          },
+          {
+            "type": "question",
+            "slug": "what-role-does-vulnerability-play-in-our-intimate-life"
+          },
+          {
+            "type": "article",
+            "slug": "vulnerability-trusts-gateway"
+          },
+          {
+            "type": "game",
+            "slug": "trust-builders"
+          },
+          {
+            "type": "checkup",
+            "slug": "trusting-truths"
+          },
+          {
+            "type": "exercise",
+            "slug": "vulnerability-exploration-session"
+          }
+        ]
+      },
+      {
+        "title": "Комуникиране на Желания",
+        "description": "Съсредоточете се върху изкуството на комуникацията относно вашите желания и предпочитания. Участвайте в дейности, които помагат да формулирате вашите интимни амбиции и практикувайте споделянето на фантазии по подкрепящ начин.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "sexual-communication-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-prefer-to-communicate-your-needs-and-desires"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-feel-about-sharing-your-deepest-desires-with-each-other"
+          },
+          {
+            "type": "article",
+            "slug": "enhancing-sexual-communication"
+          },
+          {
+            "type": "game",
+            "slug": "fantasy-fulfillment"
+          },
+          {
+            "type": "checkup",
+            "slug": "emotional-needs-compatibility"
+          },
+          {
+            "type": "exercise",
+            "slug": "fantasy-sharing-session"
+          }
+        ]
+      },
+      {
+        "title": "Създаване на Интимни Ритуали",
+        "description": "Работете заедно, за да разработите персонализирани ритуали, които подобряват интимността. Това може да включва рутинни дейности, специални вечери или други практики, които ви сближават редовно.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "ritual-building-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-can-we-create-more-intimate-moments-in-our-daily-routine"
+          },
+          {
+            "type": "question",
+            "slug": "whats-one-intimate-goal-youd-like-us-to-achieve-together"
+          },
+          {
+            "type": "article",
+            "slug": "fun-rituals-to-strengthen-bonds"
+          },
+          {
+            "type": "game",
+            "slug": "date-night-planner"
+          },
+          {
+            "type": "checkup",
+            "slug": "everyday-chats-that-count"
+          },
+          {
+            "type": "exercise",
+            "slug": "shared-calendar-setup"
+          }
+        ]
+      },
+      {
+        "title": "Изследване на Физическите Връзки",
+        "description": "След укрепване на емоционалните аспекти, насочете вниманието си към физическата интимност. Изследвайте различни форми на физически връзки, от допир до игриво изследване, за да подобрите разбирането си за нуждите на другия.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "physical-touch-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-feel-about-introducing-new-elements-into-our-intimate-life"
+          },
+          {
+            "type": "question",
+            "slug": "whats-your-favorite-type-of-foreplay"
+          },
+          {
+            "type": "article",
+            "slug": "enhancing-physical-intimacy-mindfully"
+          },
+          {
+            "type": "game",
+            "slug": "intimacy-adventure"
+          },
+          {
+            "type": "checkup",
+            "slug": "balancing-fun-and-intimacy-in-sex"
+          },
+          {
+            "type": "exercise",
+            "slug": "erotic-massage-exchange"
+          }
+        ]
+      },
+      {
+        "title": "Навигиране на Граници и Желания",
+        "description": "Завършете своето пътуване, като открито обсъдите границите и желанията. Обсъдете конкретни предпочитания или фантазии в уважителна среда, като се уверите, че вашата връзка остава съгласна и удовлетворяваща.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "intimate-boundary-style"
+          },
+          {
+            "type": "question",
+            "slug": "is-there-a-particular-kink-or-fetish-you-want-to-explore-but-havent-shared-yet"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-prefer-spontaneity-or-planning-when-it-comes-to-intimacy"
+          },
+          {
+            "type": "article",
+            "slug": "navigating-boundaries-for-intimacy"
+          },
+          {
+            "type": "exercise",
+            "slug": "boundaries-practice"
+          }
+        ]
+      }
+    ],
+    "slug": "preparing-for-intimacy"
+  },
+  {
+    "job": [
+      "planning_for_future"
+    ],
+    "title": "Навигиране на Нашето Бъдеще Заедно",
+    "description": "Тази пътека е проектирана, за да помогне на вас и вашия партньор да планирате внимателно бъдещето и да навигирате важни житейски решения. Ще изследвате различни аспекти на вашата връзка, ще обсъждате дългосрочни цели и ще укрепвате партньорството си чрез ангажиращи дейности, насърчаващи откритата комуникация и взаимното разбиране.",
+    "subtopics": [
+      {
+        "title": "Представяне на Нашия Живот Напред",
+        "description": "Започнете, като си представите идеалното бъдеще заедно, обсъждайки мечти и амбиции за следващите пет години. Ще създадете ясна визия за това, което и двамата искате от живота.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "future-planning-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-envision-our-relationship-evolving-over-the-next-five-years"
+          },
+          {
+            "type": "article",
+            "slug": "creating-a-vision-for-us"
+          },
+          {
+            "type": "game",
+            "slug": "future-visionaries"
+          },
+          {
+            "type": "checkup",
+            "slug": "future-talk-together"
+          },
+          {
+            "type": "exercise",
+            "slug": "long-term-goal-planning"
+          }
+        ]
+      },
+      {
+        "title": "Финансови Бъдеща",
+        "description": "Изследвайте финансовите си цели като двойка. Обсъдете бюджетиране, спестяване и потенциални инвестиции, за да осигурите сигурен и комфортен начин на живот, докато синхронизирате финансовите си амбиции с бъдещите планове.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "financial-planning-style"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-think-financial-discussions-should-happen-regularly-how-often"
+          },
+          {
+            "type": "article",
+            "slug": "mastering-money-talks-together"
+          },
+          {
+            "type": "game",
+            "slug": "dream-budget-builders"
+          },
+          {
+            "type": "checkup",
+            "slug": "budgeting-together-without-breaking-up"
+          },
+          {
+            "type": "exercise",
+            "slug": "budget-planning-session"
+          }
+        ]
+      },
+      {
+        "title": "Създаване на Семейна Стратегия",
+        "description": "Задълбочете се в обсъжданията относно планирането на семейството и целите за родителство. Решете дали искате деца, колко и обмислете какъв вид възпитание си представяте.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "parenting-style-alignment"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-want-to-have-children-if-so-when-do-you-think-is-the-right-time"
+          },
+          {
+            "type": "game",
+            "slug": "parenting-philosophy-play"
+          },
+          {
+            "type": "checkup",
+            "slug": "parenting-pathways"
+          },
+          {
+            "type": "exercise",
+            "slug": "parenting-styles-discussion"
+          },
+          {
+            "type": "question",
+            "slug": "should-we-adopt-if-we-are-unable-to-have-children"
+          }
+        ]
+      },
+      {
+        "title": "Навигиране на Основни Житейски Решения",
+        "description": "Обсъдете как ще подходите към значителни решения в живота си заедно. Това включва съвместно живеене, промени в кариерата и неочаквани житейски предизвикателства, които могат да възникнат.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "decision-making-styles"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-feel-about-making-major-life-decisions-together"
+          },
+          {
+            "type": "game",
+            "slug": "problem-solving-pals"
+          },
+          {
+            "type": "checkup",
+            "slug": "resolving-decision-making-conflicts"
+          },
+          {
+            "type": "exercise",
+            "slug": "negotiation-skills-exercises"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-feel-about-relocating-for-career-opportunities-in-the-future"
+          }
+        ]
+      },
+      {
+        "title": "Създаване на Общ Списък с Желания",
+        "description": "Разработете списък с желания за двойки, който отразява вашите споделени мечти и приключения, които искате да изживеете заедно. Фокусирайте се върху пътувания, преживявания и традиции, които искате да изградите.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "goal-alignment-style"
+          },
+          {
+            "type": "question",
+            "slug": "if-we-were-to-create-a-couples-bucket-list-whats-the-first-adventure-youd-add"
+          },
+          {
+            "type": "article",
+            "slug": "adventure-sparks-deeper-bonds"
+          },
+          {
+            "type": "game",
+            "slug": "dream-adventure-quest"
+          },
+          {
+            "type": "exercise",
+            "slug": "fantasy-sharing-session"
+          },
+          {
+            "type": "question",
+            "slug": "if-we-could-teleport-to-any-romantic-destination-right-now-where-would-we-go"
+          }
+        ]
+      },
+      {
+        "title": "Синхронизиране на Ценности и Традиции",
+        "description": "Обсъдете важните ценности и традиции, които искате да култивирате като двойка и като семейство. Задълбочете се в религиозните вярвания, изборите на начин на живот и наследството, което искате да създадете заедно.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "values-alignment-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-see-our-religious-beliefs-influencing-our-future-goals"
+          },
+          {
+            "type": "game",
+            "slug": "beliefs-values"
+          },
+          {
+            "type": "checkup",
+            "slug": "core-values-connection"
+          },
+          {
+            "type": "exercise",
+            "slug": "family-values-alignment"
+          },
+          {
+            "type": "question",
+            "slug": "what-values-are-most-important-for-us-to-instill-in-our-children"
+          }
+        ]
+      }
+    ],
+    "slug": "navigating-our-future-together"
+  },
+  {
+    "job": [
+      "improving_communication"
+    ],
+    "title": "Подобряване на Комуникацията: Изграждане на Мостове в Нашите Взаимоотношения",
+    "description": "Тази подорожка се фокусира върху подобряване на комуникационните умения между партньорите. Чрез участие в различни дейности, дискусии и рефлексивни практики, ще научите как да се изразявате по-открито и да се разбирате по-добре, насърчавайки по-близка връзка и по-пълноценни отношения.",
+    "subtopics": [
+      {
+        "title": "Разбиране на Комуникационните Стилове на Другия",
+        "description": "Изследвайте различни комуникационни стилове и открийте как те влияят на вашите взаимодействия. Това включва идентифициране на собствения ви стил и научаване за предпочитанията на партньора ви, за да създадете открит диалог.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "discover-your-communication-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-prefer-to-communicate-your-needs-and-desires"
+          },
+          {
+            "type": "article",
+            "slug": "enhancing-communication-for-stronger-bonds"
+          },
+          {
+            "type": "game",
+            "slug": "communication-clues"
+          },
+          {
+            "type": "exercise",
+            "slug": "active-listening-practice"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-feel-about-writing-down-our-issues-before-discussing-them"
+          },
+          {
+            "type": "checkup",
+            "slug": "mastering-our-communication-styles"
+          }
+        ]
+      },
+      {
+        "title": "Навигиране в Трудни Разговори",
+        "description": "Научете техники за подход към трудни дискусии с емпатия и уважение. Ще придобиете умения да изразявате мислите и чувствата си, като същевременно сте внимателни към перспективата на партньора си.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "problem-solving-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-can-we-make-our-disagreements-more-constructive"
+          },
+          {
+            "type": "article",
+            "slug": "navigating-sensitive-conversations"
+          },
+          {
+            "type": "game",
+            "slug": "problem-solving-pals"
+          },
+          {
+            "type": "exercise",
+            "slug": "conflict-resolution-strategies-practice"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-prefer-discussing-issues-immediately-or-taking-some-time-to-cool-off"
+          },
+          {
+            "type": "checkup",
+            "slug": "navigating-tough-conversations"
+          }
+        ]
+      },
+      {
+        "title": "Изразяване на Нужди и Граници",
+        "description": "Тази тема разглежда как да комуникирате нуждите си и да зададете здравословни граници. Ще практикувате изразяване на това, от което се нуждаете един от друг, по начин, който укрепва вашите отношения.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "boundary-setting-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-comfortable-are-you-discussing-your-boundaries-and-desires"
+          },
+          {
+            "type": "article",
+            "slug": "navigating-boundaries-for-intimacy"
+          },
+          {
+            "type": "exercise",
+            "slug": "boundaries-practice"
+          },
+          {
+            "type": "question",
+            "slug": "whats-one-boundary-youd-like-to-set-to-keep-our-relationship-healthy"
+          }
+        ]
+      },
+      {
+        "title": "Активно Слушане и Емоционална Валидация",
+        "description": "Овладейте изкуството на активно слушане и научете как да валидирате чувствата на партньора си. Ще откриете инструменти за подобряване на уменията си за слушане и осигуряване на това, че и двамата партньори се чувстват чути и разбрани.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "listening-style-quiz"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-like-to-receive-feedback-in-our-relationship"
+          },
+          {
+            "type": "article",
+            "slug": "mastering-active-listening"
+          },
+          {
+            "type": "checkup",
+            "slug": "emotional-explorers"
+          },
+          {
+            "type": "exercise",
+            "slug": "active-listening-practice"
+          },
+          {
+            "type": "question",
+            "slug": "whats-your-favorite-non-verbal-way-i-show-you-im-listening"
+          }
+        ]
+      },
+      {
+        "title": "Конструктивно Решаване на Конфликти",
+        "description": "Научете ефективни стратегии за разрешаване на конфликти по конструктивен начин. Това включва техники за справяне с несъгласия без да се нанасят щети на връзката, насърчавайки духа на екипност.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "your-conflict-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-handle-disagreements-or-conflicts"
+          },
+          {
+            "type": "article",
+            "slug": "effective-conflict-resolution-strategies"
+          },
+          {
+            "type": "game",
+            "slug": "conflict-resolution-quest"
+          },
+          {
+            "type": "exercise",
+            "slug": "conflict-resolution-strategies-practice"
+          },
+          {
+            "type": "question",
+            "slug": "whats-one-thing-youd-like-to-change-about-how-we-handle-our-differences"
+          },
+          {
+            "type": "checkup",
+            "slug": "conflict-resolution-styles"
+          }
+        ]
+      },
+      {
+        "title": "Насърчаване на Честни и Открити Диалози",
+        "description": "Развийте навик за открита и честна комуникация в отношенията си. Тази подтема ще ви насочи през практики, които насърчават прозрачността и доверието, прокарвайки пътя за по-дълбока свързаност и интимност.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "honesty-and-openness-style"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-feel-comfortable-expressing-your-true-feelings-with-me-why-or-why-not"
+          },
+          {
+            "type": "article",
+            "slug": "building-trust-through-transparency"
+          },
+          {
+            "type": "game",
+            "slug": "honesty-huddle"
+          },
+          {
+            "type": "checkup",
+            "slug": "the-honesty-hangout"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-think-honesty-is-always-the-best-policy-why-or-why-not"
+          },
+          {
+            "type": "exercise",
+            "slug": "complete-honesty-sessions"
+          }
+        ]
+      }
+    ],
+    "slug": "improving-communication-building-bridges-in-our-relationship"
+  },
+  {
+    "job": [
+      "understanding_mutual_compatibility"
+    ],
+    "title": "Разбиране на Взаимната Съвместимост",
+    "description": "Тази пътека е проектирана да ви помогне да изследвате и разберете слоевете на съвместимост в отношенията ви. Като се справяте с темите постепенно, ще научите как да идентифицирате, оценявате и навигирате както вашите прилики, така и различия. Всеки ден ще се ангажирате с различни видове съдържание, които улесняват задълбочени разговори и насърчават по-дълбоки връзки.",
+    "subtopics": [
+      {
+        "title": "Изследване на Основните Ценности",
+        "description": "Започнете с обсъждане на трите най-важни ценности и как те влияят на вашите решения. Тази основополагаща тема ще ръководи разбирането ви за това, което е важно за всеки от вас в една връзка.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "values-alignment-style"
+          },
+          {
+            "type": "question",
+            "slug": "what-are-three-values-you-believe-are-most-important-in-a-person"
+          },
+          {
+            "type": "article",
+            "slug": "aligning-future-goals"
+          },
+          {
+            "type": "game",
+            "slug": "values-vibes"
+          },
+          {
+            "type": "checkup",
+            "slug": "core-values-connection"
+          },
+          {
+            "type": "exercise",
+            "slug": "values-alignment-exercise"
+          }
+        ]
+      },
+      {
+        "title": "Стилове на Общуване",
+        "description": "Научете за индивидуалните си стилове на общуване и обсъдете как те влияят на взаимодействията ви. Тази подтема ще ви помогне да разработите стратегии за по-ясно и ефективно общуване.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "discover-your-communication-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-prefer-to-communicate-your-needs-and-desires"
+          },
+          {
+            "type": "article",
+            "slug": "mastering-communication-techniques"
+          },
+          {
+            "type": "game",
+            "slug": "communication-clues"
+          },
+          {
+            "type": "checkup",
+            "slug": "mastering-our-communication-styles"
+          },
+          {
+            "type": "exercise",
+            "slug": "active-listening-practice"
+          }
+        ]
+      },
+      {
+        "title": "Културни и Фонови Различия",
+        "description": "Изследвайте как различните ви културни среди и житейски опити оформят вашите перспективи. Разбирането на тези елементи насърчава емпатията и оценяването един на друг.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "cultural-connection-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-our-different-cultural-backgrounds-shape-our-relationship-and-how-can-we-honor-both"
+          },
+          {
+            "type": "article",
+            "slug": "bridging-religious-differences-together"
+          },
+          {
+            "type": "game",
+            "slug": "cultural-quest"
+          },
+          {
+            "type": "checkup",
+            "slug": "navigating-cultural-and-religious-differences"
+          },
+          {
+            "type": "exercise",
+            "slug": "difference-identification-and-acceptance"
+          }
+        ]
+      },
+      {
+        "title": "Баланс между Лични и Споделени Интереси",
+        "description": "Обсъдете вашите интереси, хобита и как те могат да се допълват или конфликтуват помежду си. Намирането на баланс ще подобри вашата връзка и ще осигури, че и двамата партньори се чувстват удовлетворени.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "hobby-harmony-style"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-new-hobby-we-can-try-together-that-honors-both-our-interests"
+          },
+          {
+            "type": "article",
+            "slug": "exploring-shared-hobbies-together"
+          },
+          {
+            "type": "game",
+            "slug": "hobby-harmony"
+          },
+          {
+            "type": "exercise",
+            "slug": "hobbies-and-interests-exercise"
+          }
+        ]
+      },
+      {
+        "title": "Справяне с Конфликти и Различия",
+        "description": "Задълбочете се в разбирането как всеки от вас се справя с конфликти и различни мнения. Чрез изследване на ефективни техники за разрешаване на конфликти, ще научите как да превръщате несъгласията в възможности за растеж.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "your-conflict-style"
+          },
+          {
+            "type": "game",
+            "slug": "conflict-resolution-quest"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-handle-feelings-of-jealousy-or-insecurity"
+          },
+          {
+            "type": "article",
+            "slug": "mastering-conflict-resolution-together"
+          },
+          {
+            "type": "checkup",
+            "slug": "conflict-connoisseurs"
+          },
+          {
+            "type": "exercise",
+            "slug": "conflict-resolution-styles"
+          },
+          {
+            "type": "question",
+            "slug": "how-can-we-turn-our-differences-into-opportunities-for-growth-as-a-couple"
+          }
+        ]
+      },
+      {
+        "title": "Еволюция на Връзката",
+        "description": "Размислете как вашата връзка се е променила с времето и обсъдете как виждате бъдещето й. Тази тема ще ви позволи да синхронизирате дългосрочните си цели и амбиции като двойка.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "future-vision-type"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-see-our-relationship-evolving-over-time"
+          },
+          {
+            "type": "article",
+            "slug": "creating-a-vision-for-us"
+          },
+          {
+            "type": "game",
+            "slug": "future-visionaries"
+          },
+          {
+            "type": "checkup",
+            "slug": "future-talk-together"
+          },
+          {
+            "type": "exercise",
+            "slug": "future-goals-compatibility"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-see-our-relationship-evolving-over-the-next-decade"
+          }
+        ]
+      }
+    ],
+    "slug": "understanding-mutual-compatibility"
+  },
+  {
+    "job": [
+      "improving_relationship_satisfaction"
+    ],
+    "title": "Подобряване на Удовлетвореността от Връзката",
+    "description": "Тази програма е проектирана да предостави на двойките практически прозрения и дейности, които постепенно увеличават удовлетвореността от връзката. През следващите няколко дни ще разгледате редица теми, от разбирането на нуждите до задълбочаване на емоционалната интимност, завършвайки с практически стратегии за продължаващо подобрение на вашето партньорство.",
+    "subtopics": [
+      {
+        "title": "Разбиране на Личните Нужди",
+        "description": "Започнете с обсъждане на индивидуалните си нужди и желания във връзката. Тази основа помага на двамата партньори да разберат какво уникално изисква всеки, за да се чувства удовлетворен.",
+        "content": [
+          {
+            "type": "checkup",
+            "slug": "emotional-needs-compatibility"
+          },
+          {
+            "type": "question",
+            "slug": "how-can-we-ensure-both-of-our-needs-are-being-met"
+          },
+          {
+            "type": "article",
+            "slug": "building-trust-through-intimacy"
+          },
+          {
+            "type": "game",
+            "slug": "future-visionaries"
+          },
+          {
+            "type": "exercise",
+            "slug": "values-alignment-exercise"
+          },
+          {
+            "type": "question",
+            "slug": "how-can-we-better-support-each-other-during-stressful-situations"
+          }
+        ]
+      },
+      {
+        "title": "Практики за Отворена Коммуникация",
+        "description": "Научете ефективни техники за комуникация, които насърчават откритостта и прозрачността между партньорите. Участвайте в упражнения, които насърчават активно слушане и изразяване на чувства.",
+        "content": [
+          {
+            "type": "checkup",
+            "slug": "mastering-our-communication-styles"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-prefer-to-communicate-your-needs-and-desires"
+          },
+          {
+            "type": "article",
+            "slug": "enhancing-communication-for-stronger-bonds"
+          },
+          {
+            "type": "game",
+            "slug": "communication-clues"
+          },
+          {
+            "type": "exercise",
+            "slug": "active-listening-practice"
+          },
+          {
+            "type": "question",
+            "slug": "whats-your-favorite-memory-of-us-having-a-great-conversation"
+          }
+        ]
+      },
+      {
+        "title": "Честване на Различията и Общите Интереси",
+        "description": "Изследвайте какво прави всеки от вас уникален, докато чествате споделените интереси. Това ще запълни пропуските в свързаността и ще уважава индивидуалните предпочитания.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "growth-through-differences-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-can-we-celebrate-our-unique-strengths-and-compensate-for-our-differences"
+          },
+          {
+            "type": "article",
+            "slug": "embrace-and-celebrate-differences"
+          },
+          {
+            "type": "game",
+            "slug": "cultural-quest"
+          },
+          {
+            "type": "exercise",
+            "slug": "difference-identification-and-acceptance"
+          },
+          {
+            "type": "question",
+            "slug": "whats-one-thing-you-appreciate-about-how-i-handle-our-differences"
+          }
+        ]
+      },
+      {
+        "title": "Баланс между Заедност и Независимост",
+        "description": "Съсредоточете се върху намирането на хармоничен баланс между качествено време заедно и уважаване на нуждата на всеки от вас за лично пространство и индивидуални интереси.",
+        "content": [
+          {
+            "type": "checkup",
+            "slug": "balancing-our-unique-interests"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-feel-about-the-balance-between-our-personal-time-and-together-time"
+          },
+          {
+            "type": "article",
+            "slug": "fun-rituals-to-strengthen-bonds"
+          },
+          {
+            "type": "game",
+            "slug": "routine-rendezvous"
+          },
+          {
+            "type": "exercise",
+            "slug": "shared-calendar-setup"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-prefer-solo-workouts-or-exercising-together"
+          }
+        ]
+      },
+      {
+        "title": "Създаване на Интимност чрез Уязвимост",
+        "description": "Задълбочете се в практики, които изграждат емоционална интимност чрез уязвимост. Това може да включва споделяне на минали опити и страхове, за да задълбочите връзката.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "vulnerability-style-assessment"
+          },
+          {
+            "type": "question",
+            "slug": "is-there-something-from-your-past-that-still-affects-our-relationship"
+          },
+          {
+            "type": "article",
+            "slug": "vulnerability-trusts-gateway"
+          },
+          {
+            "type": "game",
+            "slug": "secret-share"
+          },
+          {
+            "type": "exercise",
+            "slug": "truth-telling-exercises"
+          },
+          {
+            "type": "question",
+            "slug": "whats-something-youd-like-to-feel-more-of-in-our-relationship"
+          }
+        ]
+      },
+      {
+        "title": "Поставяне на Цели за Връзката",
+        "description": "Завършете с практически стратегии за поставяне на взаимни цели за вашата връзка, включително амбиции за растеж, интимност и дългосрочна удовлетвореност.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "goal-alignment-style"
+          },
+          {
+            "type": "question",
+            "slug": "what-are-your-aspirations-for-our-relationship-five-ten-or-twenty-years-down-the-line"
+          },
+          {
+            "type": "article",
+            "slug": "aligning-life-ambitions-together"
+          },
+          {
+            "type": "game",
+            "slug": "future-talks-fiesta"
+          },
+          {
+            "type": "exercise",
+            "slug": "smart-goals-planning"
+          },
+          {
+            "type": "question",
+            "slug": "what-are-your-thoughts-on-continuing-personal-growth-and-self-improvement-in-our-relationship"
+          }
+        ]
+      }
+    ],
+    "slug": "enhancing-relationship-satisfaction"
+  },
+  {
+    "job": [
+      "improving_honesty_and_openness"
+    ],
+    "title": "Подобряване на Честността и Откритостта",
+    "description": "Тази пътека е проектирана да помогне на вас и вашия партньор да развиете по-дълбоко чувство за честност и откритост във вашата връзка. През следващите няколко дни ще се включите в дейности, дискусии и упражнения, които изграждат доверие и прозрачност, позволявайки ви да навигирате в чувствителни теми и да укрепите връзката си.",
+    "subtopics": [
+      {
+        "title": "Разбиране на Честността",
+        "description": "Изследвайте концепцията за честност във връзките, включително нейната важност и различните измерения на това да бъдете честни с партньора си. Участвайте в въпроси, които задълбочават вашите текущи перспективи за честността.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "honesty-and-openness-style"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-believe-in-complete-transparency-in-a-relationship-why-or-why-not"
+          },
+          {
+            "type": "article",
+            "slug": "cultivating-honest-conversations"
+          },
+          {
+            "type": "game",
+            "slug": "honesty-hunt"
+          },
+          {
+            "type": "checkup",
+            "slug": "the-honesty-hangout"
+          },
+          {
+            "type": "exercise",
+            "slug": "honesty-commitment-ritual"
+          }
+        ]
+      },
+      {
+        "title": "Разглеждане на Страховете около Честността",
+        "description": "Идентифицирайте общи страхове или притеснения относно откритостта във вашата връзка. Заедно, размислете за ситуации, в които сте се чувствали неспособни да бъдете честни и обсъдете как можете да създадете по-безопасна среда за открита комуникация.",
+        "content": [
+          {
+            "type": "checkup",
+            "slug": "openness-odyssey"
+          },
+          {
+            "type": "question",
+            "slug": "have-you-ever-felt-you-couldnt-be-completely-honest-with-me-why"
+          },
+          {
+            "type": "article",
+            "slug": "vulnerability-trusts-gateway"
+          },
+          {
+            "type": "exercise",
+            "slug": "truth-telling-exercises"
+          },
+          {
+            "type": "game",
+            "slug": "trust-talk-challenge"
+          },
+          {
+            "type": "question",
+            "slug": "have-you-ever-hidden-something-to-protect-my-feelings-how-did-it-turn-out"
+          }
+        ]
+      },
+      {
+        "title": "Култивиране на Прозрачност",
+        "description": "Научете за ползите от прозрачността във връзката и как тя може да подобри интимността. Участвайте в дейности и дискусии, които насърчават споделянето на детайли и мисли, които обикновено бихте запазили за себе си.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "transparency-style-assessment"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-think-its-ever-ok-to-tell-white-lies-in-a-relationship-why-or-why-not"
+          },
+          {
+            "type": "article",
+            "slug": "transparency-builds-strong-bonds"
+          },
+          {
+            "type": "exercise",
+            "slug": "transparency-talks"
+          },
+          {
+            "type": "game",
+            "slug": "transparency-trivia"
+          },
+          {
+            "type": "checkup",
+            "slug": "transparency-tools"
+          }
+        ]
+      },
+      {
+        "title": "Изграждане на Доверие чрез Откритост",
+        "description": "Открийте стратегии за култивиране на доверие, като бъдете открити за вашите чувства, несигурности и желания. Участвайте в упражнения, които насърчават споделянето и уязвимостта.",
+        "content": [
+          {
+            "type": "exercise",
+            "slug": "openness-commitment-ritual"
+          },
+          {
+            "type": "question",
+            "slug": "how-can-we-support-each-other-to-be-more-open-and-honest-daily"
+          },
+          {
+            "type": "article",
+            "slug": "building-emotional-intimacy-together"
+          },
+          {
+            "type": "game",
+            "slug": "trust-builders"
+          },
+          {
+            "type": "checkup",
+            "slug": "trusting-truths"
+          },
+          {
+            "type": "question",
+            "slug": "can-you-share-a-time-when-honesty-led-to-a-positive-outcome-in-our-relationship"
+          }
+        ]
+      },
+      {
+        "title": "Навигиране в Трудни Разговори",
+        "description": "Изследвайте техники за справяне с трудни теми с честност и откритост. Практикувайте използването на ефективни комуникационни стратегии, за да изразите вашите мисли и чувства, с цел конструктивно разрешаване на конфликти.",
+        "content": [
+          {
+            "type": "checkup",
+            "slug": "conflict-to-connection"
+          },
+          {
+            "type": "test",
+            "slug": "your-conflict-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-handle-situations-where-being-honest-might-hurt-someone"
+          },
+          {
+            "type": "article",
+            "slug": "navigating-difficult-conversations"
+          },
+          {
+            "type": "game",
+            "slug": "dialogue-duel"
+          },
+          {
+            "type": "exercise",
+            "slug": "conflict-resolution-strategies-practice"
+          }
+        ]
+      },
+      {
+        "title": "Създаване на Култура на Честност във Връзката",
+        "description": "Разработете споразумение за практиките на честност във вашата връзка. Обсъдете граници и намерения за поддържане на култура на откритост, осигурявайки, че и двамата партньори се чувстват сигурни в изразяването на себе си.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "trust-building-style-quiz"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-boundary-you-need-to-feel-safe-being-honest-with-me"
+          },
+          {
+            "type": "article",
+            "slug": "building-trust-through-transparency"
+          },
+          {
+            "type": "game",
+            "slug": "trust-sparks"
+          },
+          {
+            "type": "exercise",
+            "slug": "boundaries-practice"
+          },
+          {
+            "type": "checkup",
+            "slug": "trust-builders"
+          }
+        ]
+      }
+    ],
+    "slug": "improving-honesty-and-openness"
+  },
+  {
+    "job": [
+      "building_trust"
+    ],
+    "title": "Изграждане на Доверие Заедно",
+    "description": "Тази пътека е проектирана, за да помогне на вас и вашия партньор да изследвате основните компоненти на доверието във вашата връзка. През следващите няколко дни ще участвате в значими дискусии, дейности и размисли, насочени към укрепване на вашето доверие и емоционална интимност.",
+    "subtopics": [
+      {
+        "title": "Дефиниране на Доверието",
+        "description": "Започнете, като изследвате какво означава доверието за вас двамата. Обсъдете вашите определения за доверие и как те оформят вашата връзка.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "trust-building-style-quiz"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-define-trust-in-a-relationship"
+          },
+          {
+            "type": "article",
+            "slug": "trust-through-open-communication"
+          },
+          {
+            "type": "game",
+            "slug": "trust-fund-trivia"
+          },
+          {
+            "type": "checkup",
+            "slug": "trust-builders"
+          },
+          {
+            "type": "question",
+            "slug": "can-you-share-a-time-when-honesty-led-to-a-positive-outcome-in-our-relationship"
+          },
+          {
+            "type": "exercise",
+            "slug": "trust-fall"
+          }
+        ]
+      },
+      {
+        "title": "Отворена Комуникация",
+        "description": "Научете важността на прозрачния и открит диалог. Участвайте в упражнения и въпроси, които насърчават честната комуникация.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "discover-your-communication-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-prefer-to-communicate-your-needs-and-desires"
+          },
+          {
+            "type": "article",
+            "slug": "enhancing-communication-for-stronger-bonds"
+          },
+          {
+            "type": "game",
+            "slug": "communication-clues"
+          },
+          {
+            "type": "checkup",
+            "slug": "mastering-our-communication-styles"
+          },
+          {
+            "type": "question",
+            "slug": "how-important-is-it-for-you-to-always-be-transparent-with-me-even-about-small-things"
+          },
+          {
+            "type": "exercise",
+            "slug": "active-listening-practice"
+          }
+        ]
+      },
+      {
+        "title": "Справяне с Ревност и Несигурност",
+        "description": "Идентифицирайте и адресирайте чувствата на ревност и несигурност. Споделете лични опити и стратегии за справяне в подкрепяща среда.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "emotional-regulation-styles"
+          },
+          {
+            "type": "question",
+            "slug": "have-you-ever-felt-jealous-in-our-relationship-how-did-you-handle-it"
+          },
+          {
+            "type": "article",
+            "slug": "navigating-emotional-waters-together"
+          },
+          {
+            "type": "game",
+            "slug": "emotion-explorer"
+          },
+          {
+            "type": "checkup",
+            "slug": "emotional-needs-compatibility"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-handle-feelings-of-jealousy-or-insecurity"
+          },
+          {
+            "type": "exercise",
+            "slug": "jealously-navigation-technique"
+          }
+        ]
+      },
+      {
+        "title": "Определяне на Граници",
+        "description": "Обсъдете личните граници и разберете нивата на комфорт на другия. Изграждането на взаимно уважение и разбиране е ключово за установяване на доверие.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "boundary-setting-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-comfortable-are-you-discussing-your-boundaries-and-desires"
+          },
+          {
+            "type": "article",
+            "slug": "navigating-boundaries-for-intimacy"
+          },
+          {
+            "type": "checkup",
+            "slug": "personal-space-balancing-togetherness-and-alone-time"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-boundary-you-need-to-feel-more-secure-and-trusting-in-our-relationship"
+          },
+          {
+            "type": "exercise",
+            "slug": "boundaries-practice"
+          }
+        ]
+      },
+      {
+        "title": "Възстановяване на Доверието",
+        "description": "Изследвайте как да възстановите доверието след като е било поставено на изпитание. Обсъдете техниките и ангажиментите, необходими за възстановяване на вярата един в друг.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "trust-repair-style-type"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-prefer-to-rebuild-trust-if-its-ever-broken"
+          },
+          {
+            "type": "article",
+            "slug": "rebuilding-trust-after-betrayal"
+          },
+          {
+            "type": "game",
+            "slug": "trust-talk-challenge"
+          },
+          {
+            "type": "checkup",
+            "slug": "trust-in-communication"
+          },
+          {
+            "type": "question",
+            "slug": "have-you-done-something-in-the-past-that-you-think-can-significantly-change-my-image-of-you-and-what-are-the-things-that-can-hypothetically-change-your-image-of-me-maybe-i-did-something-amoral-or-cheated"
+          },
+          {
+            "type": "exercise",
+            "slug": "rebuild-trust-session"
+          }
+        ]
+      },
+      {
+        "title": "Дейности за Изграждане на Доверие",
+        "description": "Участвайте в забавни и интерактивни дейности, които подобряват доверието. Участвайте в упражнения, проектирани да ви сближат и укрепят връзката ви.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "transparency-style-assessment"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-fun-activity-we-can-do-together-to-strengthen-our-trust"
+          },
+          {
+            "type": "article",
+            "slug": "fun-rituals-to-strengthen-bonds"
+          },
+          {
+            "type": "game",
+            "slug": "trust-trek"
+          },
+          {
+            "type": "checkup",
+            "slug": "trust-in-conflict-resolution"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-trust-building-challenge-youd-like-us-to-try"
+          },
+          {
+            "type": "exercise",
+            "slug": "adventure-challenge"
+          }
+        ]
+      }
+    ],
+    "slug": "building-trust-together"
+  },
+  {
+    "job": [
+      "discussing_difficult_topics"
+    ],
+    "title": "Навигиране в Трудни Разговори Заедно",
+    "description": "Тази пътека е проектирана да ви води вас и вашия партньор през предизвикателствата на обсъждането на чувствителни теми във вашата връзка. Всеки ден ще изследвате различни аспекти на комуникацията, от установяване на солидна основа до справяне с дълбоко лични теми. В края на това пътуване ще имате инструментите и увереността да участвате в значими дискусии, укрепвайки емоционалната си връзка и взаимното разбиране.",
+    "subtopics": [
+      {
+        "title": "Установяване на Отворена Комуникация",
+        "description": "Научете важността на откритата комуникация и как да създадете безопасно пространство за обсъждане на трудни теми. Тази подтема ще представи основни стратегии за комуникация.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "discover-your-communication-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-prefer-to-communicate-your-needs-and-desires"
+          },
+          {
+            "type": "article",
+            "slug": "mastering-communication-techniques"
+          },
+          {
+            "type": "game",
+            "slug": "communication-clues"
+          },
+          {
+            "type": "checkup",
+            "slug": "mastering-our-communication-styles"
+          },
+          {
+            "type": "question",
+            "slug": "whats-your-favorite-memory-of-us-having-a-great-conversation"
+          },
+          {
+            "type": "exercise",
+            "slug": "active-listening-practice"
+          }
+        ]
+      },
+      {
+        "title": "Разбиране на Различни Перспективи",
+        "description": "Изследвайте значението на емпатията, като разберете перспективата на партньора си по трудни теми. Обсъдете методи за конструктивно подход към несъгласията.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "empathy-resonance-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-can-we-ensure-both-of-us-feel-heard-during-a-disagreement"
+          },
+          {
+            "type": "article",
+            "slug": "building-emotional-intimacy-together"
+          },
+          {
+            "type": "game",
+            "slug": "deep-dive-dialogues"
+          },
+          {
+            "type": "checkup",
+            "slug": "empathy-adventure"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-prefer-to-approach-conversations-when-emotions-run-high"
+          },
+          {
+            "type": "exercise",
+            "slug": "difference-identification-and-acceptance"
+          }
+        ]
+      },
+      {
+        "title": "Навигиране в Ревността и Доверието",
+        "description": "Задълбочете се в чувствата на ревност и доверие във вашата връзка. Тази подтема се фокусира върху това как да обсъждате тези трудни чувства без конфликт.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "trust-building-style-quiz"
+          },
+          {
+            "type": "question",
+            "slug": "have-you-ever-felt-jealous-in-our-relationship-how-did-you-handle-it"
+          },
+          {
+            "type": "article",
+            "slug": "building-trust-through-intimacy"
+          },
+          {
+            "type": "game",
+            "slug": "trust-talk"
+          },
+          {
+            "type": "checkup",
+            "slug": "trusting-truths"
+          },
+          {
+            "type": "question",
+            "slug": "does-cheating-only-relate-to-physical-things-or-is-there-emotional-cheating-as-well"
+          },
+          {
+            "type": "exercise",
+            "slug": "rebuild-trust-session"
+          }
+        ]
+      },
+      {
+        "title": "Установяване на Граници в Дискусиите",
+        "description": "Научете как да установите граници при обсъждане на чувствителни теми, за да осигурите комфорт и уважение на двамата партньори по време на разговорите.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "boundary-communication-style"
+          },
+          {
+            "type": "question",
+            "slug": "are-there-any-boundaries-around-work-that-youd-like-to-set"
+          },
+          {
+            "type": "game",
+            "slug": "communication-carousel"
+          },
+          {
+            "type": "question",
+            "slug": "whats-one-boundary-youd-like-to-set-to-keep-our-relationship-healthy"
+          },
+          {
+            "type": "exercise",
+            "slug": "boundaries-practice"
+          }
+        ]
+      },
+      {
+        "title": "Обсъждане на Минали Травми",
+        "description": "Справете се с разговорите около минали травми и как те могат да повлияят на вашата връзка. Тази подтема предоставя стратегии за деликатно обсъждане на тези предизвикателни теми.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "life-story-style"
+          },
+          {
+            "type": "question",
+            "slug": "have-you-had-any-childhood-experiences-that-you-can-call-traumatic-how-has-it-affected-you"
+          },
+          {
+            "type": "article",
+            "slug": "navigating-emotional-waters-together"
+          },
+          {
+            "type": "checkup",
+            "slug": "exploring-childhood-memories"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-have-any-unresolved-issues-with-your-parents"
+          },
+          {
+            "type": "exercise",
+            "slug": "sensitive-subjects-dialogue-practice"
+          }
+        ]
+      },
+      {
+        "title": "Стратегии за Решаване на Конфликти",
+        "description": "Развийте уменията си за разрешаване на конфликти, които възникват по време на дискусии. Изследвайте техники за превръщане на споровете в възможности за растеж и взаимно разбиране.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "your-conflict-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-can-we-turn-our-arguments-into-opportunities-for-growth"
+          },
+          {
+            "type": "article",
+            "slug": "effective-conflict-resolution-strategies"
+          },
+          {
+            "type": "game",
+            "slug": "problem-solving-pals"
+          },
+          {
+            "type": "checkup",
+            "slug": "conflict-resolution-styles"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-prefer-to-resolve-disagreements-calm-discussion-or-taking-a-short-break"
+          },
+          {
+            "type": "exercise",
+            "slug": "conflict-resolution-strategies-practice"
+          }
+        ]
+      }
+    ],
+    "slug": "navigating-difficult-conversations-together"
+  },
+  {
+    "job": [
+      "learning_relationship_skills"
+    ],
+    "title": "Учене на Умения за Връзки",
+    "description": "Тази пътека е проектирана да ви помогне да развиете основни умения за връзки, които ще укрепят вашата връзка, ще подобрят комуникацията и ще увеличат способността ви да разрешавате конфликти ефективно. Съдържанието на всеки ден изгражда върху предишния, водейки ви през прогресия от умения, необходими за здравословно и удовлетворяващо партньорство.",
+    "subtopics": [
+      {
+        "title": "Разбиране на Емоциите",
+        "description": "Научете как да идентифицирате и формулирате вашите емоции, както и да разберете емоционалните реакции на партньора си. Това основно умение е от съществено значение за ефективната комуникация.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "emotion-management-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-handle-your-strong-emotions"
+          },
+          {
+            "type": "article",
+            "slug": "building-emotional-intimacy-together"
+          },
+          {
+            "type": "game",
+            "slug": "emotional-seasons"
+          },
+          {
+            "type": "checkup",
+            "slug": "mood-mapping"
+          },
+          {
+            "type": "exercise",
+            "slug": "emotional-regulation-techniques"
+          }
+        ]
+      },
+      {
+        "title": "Ефективни Техники за Комуникация",
+        "description": "Изследвайте различни стилове и техники на комуникация, включително активно слушане и практики за обратна връзка, които насърчават откритостта и честността във вашата връзка.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "discover-your-communication-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-prefer-to-communicate-your-needs-and-desires"
+          },
+          {
+            "type": "article",
+            "slug": "mastering-communication-techniques"
+          },
+          {
+            "type": "game",
+            "slug": "communication-clues"
+          },
+          {
+            "type": "checkup",
+            "slug": "mastering-our-communication-styles"
+          },
+          {
+            "type": "exercise",
+            "slug": "active-listening-practice"
+          }
+        ]
+      },
+      {
+        "title": "Стратегии за Разрешаване на Конфликти",
+        "description": "Задълбочете се в различни стратегии за разрешаване на конфликти по здравословен начин. Ще научите как да се справяте с несъгласията конструктивно и да намерите решения, от които и двете страни печелят.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "your-conflict-style"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-metaphor-that-describes-how-we-handle-problems-together"
+          },
+          {
+            "type": "article",
+            "slug": "effective-conflict-resolution-strategies"
+          },
+          {
+            "type": "game",
+            "slug": "conflict-resolution-quest"
+          },
+          {
+            "type": "checkup",
+            "slug": "conflict-resolution-styles"
+          },
+          {
+            "type": "exercise",
+            "slug": "conflict-resolution-strategies-practice"
+          }
+        ]
+      },
+      {
+        "title": "Развиване на Уязвимост и Доверие",
+        "description": "Съсредоточете се върху изграждането на доверие чрез уязвимост. Тази подтема включва разбирането на важността на откритостта и как да споделяте лични чувства и преживявания.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "vulnerability-style-assessment"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-relationship-skill-you-admire-in-others-and-want-to-develop"
+          },
+          {
+            "type": "article",
+            "slug": "vulnerability-trusts-gateway"
+          },
+          {
+            "type": "game",
+            "slug": "trust-talk"
+          },
+          {
+            "type": "checkup",
+            "slug": "building-a-fortress-of-trust"
+          },
+          {
+            "type": "exercise",
+            "slug": "rebuild-trust-session"
+          }
+        ]
+      },
+      {
+        "title": "Навигиране в Трудни Разговори",
+        "description": "Научете как да инициирате и навигирате трудни разговори, без да ескалирате конфликта. Ще практикувате техники за обсъждане на чувствителни теми спокойно и с уважение.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "communication-timing-style"
+          },
+          {
+            "type": "question",
+            "slug": "whats-the-best-advice-youve-ever-received-about-communicating-in-a-relationship"
+          },
+          {
+            "type": "article",
+            "slug": "navigating-difficult-conversations"
+          },
+          {
+            "type": "game",
+            "slug": "communication-carousel"
+          },
+          {
+            "type": "checkup",
+            "slug": "emotions-expressed-freely"
+          },
+          {
+            "type": "exercise",
+            "slug": "nonviolent-communication-practice"
+          }
+        ]
+      },
+      {
+        "title": "Увеличаване на Емоционалната Интимност",
+        "description": "Завършете вашето пътуване, като изследвате начини за задълбочаване на емоционалната си връзка. Това включва практики за подобряване на физическата и емоционалната интимност във вашата връзка, осигурявайки ви да се сближите.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "emotional-intimacy-style"
+          },
+          {
+            "type": "question",
+            "slug": "whats-something-youd-like-to-learn-together-to-enhance-our-relationship"
+          },
+          {
+            "type": "article",
+            "slug": "building-emotional-intimacy-together"
+          },
+          {
+            "type": "game",
+            "slug": "intimacy-adventure"
+          },
+          {
+            "type": "checkup",
+            "slug": "emotional-intimacy-check-in"
+          },
+          {
+            "type": "exercise",
+            "slug": "emotional-closeness-exercises"
+          }
+        ]
+      }
+    ],
+    "slug": "learning-relationship-skills"
+  },
+  {
+    "job": [
+      "having_meaningful_conversations"
+    ],
+    "title": "Развиване на Значими Разговори",
+    "description": "Тази пътека е проектирана да подобри способността ви да водите значими разговори с партньора си. През следващите няколко дни ще изследвате различни аспекти на комуникацията, от разбирането на ценностите на другия до обсъждането на по-дълбоки емоционални въпроси. Всеки ден изгражда върху предишния, насърчавайки растеж и свързаност.",
+    "subtopics": [
+      {
+        "title": "Основите на Комуникацията",
+        "description": "Започнете с изследване на основите на ефективната комуникация с партньора си. Научете за активно слушане, ясно изразяване на мисли и важността на невербалните сигнали.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "discover-your-communication-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-prefer-to-communicate-your-needs-and-desires"
+          },
+          {
+            "type": "article",
+            "slug": "mastering-communication-techniques"
+          },
+          {
+            "type": "game",
+            "slug": "communication-clues"
+          },
+          {
+            "type": "checkup",
+            "slug": "mastering-our-communication-styles"
+          },
+          {
+            "type": "exercise",
+            "slug": "active-listening-practice"
+          },
+          {
+            "type": "question",
+            "slug": "whats-your-favorite-memory-of-us-having-a-great-conversation"
+          }
+        ]
+      },
+      {
+        "title": "Разбиране на Ценностите на Другия",
+        "description": "Задълбочете се в основните ценности, които формират вашите вярвания и действия. Обсъдете как тези ценности влияят на вашите решения и как могат да повлияят на вашата връзка.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "values-alignment-style"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-think-we-share-the-same-values"
+          },
+          {
+            "type": "article",
+            "slug": "aligning-life-ambitions-together"
+          },
+          {
+            "type": "game",
+            "slug": "values-vibes"
+          },
+          {
+            "type": "checkup",
+            "slug": "core-values-connection"
+          },
+          {
+            "type": "exercise",
+            "slug": "values-alignment-exercise"
+          },
+          {
+            "type": "question",
+            "slug": "what-are-your-top-three-values-and-how-do-they-influence-your-decisions"
+          }
+        ]
+      },
+      {
+        "title": "Навигиране в Трудни Теми",
+        "description": "Научете техники за подход към трудни разговори с чувствителност и уважение. Практикувайте обсъждане на предизвикателни теми като финанси, семейна динамика или бъдещи амбиции.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "problem-solving-style"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-think-that-money-play-a-big-role-in-feeling-fulfilled"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-balance-personal-time-with-time-spent-together"
+          },
+          {
+            "type": "article",
+            "slug": "navigating-difficult-conversations"
+          },
+          {
+            "type": "game",
+            "slug": "conflict-resolution-quest"
+          },
+          {
+            "type": "checkup",
+            "slug": "tackling-tough-talks"
+          },
+          {
+            "type": "exercise",
+            "slug": "tough-talks-toolkit"
+          }
+        ]
+      },
+      {
+        "title": "Споделяне на Лични Преживявания",
+        "description": "Включете се в разказване на истории, за да споделите значими спомени от миналото си. Открийте как вашите преживявания са повлияли на текущите ви перспективи и емоционални състояния.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "life-story-style"
+          },
+          {
+            "type": "question",
+            "slug": "can-you-share-a-memory-from-your-childhood-that-you-think-has-shaped-who-you-are-today"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-memorable-lesson-youve-learned-from-past-relationships"
+          },
+          {
+            "type": "article",
+            "slug": "love-maps-knowing-each-other-deeply"
+          },
+          {
+            "type": "game",
+            "slug": "memory-lane"
+          },
+          {
+            "type": "checkup",
+            "slug": "exploring-childhood-memories"
+          },
+          {
+            "type": "exercise",
+            "slug": "intimate-story-sharing"
+          }
+        ]
+      },
+      {
+        "title": "Задълбочаване на Емоционалната Свързаност",
+        "description": "Изследвайте разговори, които подобряват емоционалната интимност. Обсъдете теми като страхове, мечти и амбиции, за да насърчите по-дълбока връзка с партньора си.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "emotional-intimacy-style"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-believe-in-soulmates-why-or-why-not"
+          },
+          {
+            "type": "question",
+            "slug": "what-are-your-dreams-and-aspirations-outside-of-work"
+          },
+          {
+            "type": "article",
+            "slug": "building-emotional-intimacy-together"
+          },
+          {
+            "type": "game",
+            "slug": "emotional-expeditions"
+          },
+          {
+            "type": "checkup",
+            "slug": "emotional-intimacy-check-in"
+          },
+          {
+            "type": "exercise",
+            "slug": "emotional-closeness-exercises"
+          }
+        ]
+      },
+      {
+        "title": "Създаване на Култура на Отвореност",
+        "description": "Създайте среда, в която и двамата партньори се чувстват в безопасност да изразяват своите мисли и чувства. Научете стратегии за поддържане на открита комуникация и насърчаване на уязвимостта.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "openness-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-feel-about-surprise-conversations-versus-planned-discussions"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-express-your-creativity"
+          },
+          {
+            "type": "article",
+            "slug": "cultivating-honest-conversations"
+          },
+          {
+            "type": "game",
+            "slug": "open-hearts-challenge"
+          },
+          {
+            "type": "checkup",
+            "slug": "vulnerability-and-openness"
+          },
+          {
+            "type": "exercise",
+            "slug": "transparent-communication-practices"
+          }
+        ]
+      }
+    ],
+    "slug": "cultivating-meaningful-conversations"
+  },
+  {
+    "job": [
+      "getting_to_know_partner"
+    ],
+    "title": "Опознаване: Пътуване на Открития",
+    "description": "Започнете трансформационно пътуване, за да разберете и свържете дълбоко с партньора си. Това пътуване се състои от внимателно проектирани ежедневни активности, включително въпроси, упражнения, статии и игри, които ще насърчат интимността, подобрят комуникацията и разкрият лични прозрения. През няколко дни ще изследвате вашите прилики, различия и уникалните качества, които правят всеки от вас такъв, какъвто е.",
+    "subtopics": [
+      {
+        "title": "Разкриване на Произходи и Черти",
+        "description": "Започнете с разбирането на произходите, личностите и ценностите на другия. Занимавайте се с въпроси за спомени от детството, скрити таланти и лични предпочитания, за да изградите основа на доверие и откритост.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "life-story-style"
+          },
+          {
+            "type": "question",
+            "slug": "can-you-share-a-memory-from-your-childhood-that-you-think-has-shaped-who-you-are-today"
+          },
+          {
+            "type": "article",
+            "slug": "love-maps-knowing-each-other-deeply"
+          },
+          {
+            "type": "game",
+            "slug": "memory-lane"
+          },
+          {
+            "type": "checkup",
+            "slug": "exploring-childhood-memories"
+          },
+          {
+            "type": "exercise",
+            "slug": "difference-identification-and-acceptance"
+          },
+          {
+            "type": "question",
+            "slug": "whats-your-favorite-childhood-memory"
+          }
+        ]
+      },
+      {
+        "title": "Изследване на Интереси и Хобита",
+        "description": "Открийте споделени страсти и индивидуални хобита. Участвайте в дискусии и активности, които ще ви помогнат да научите за интересите на другия, любими занимания и уникалните качества, които всеки от вас внася в отношенията.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "hobby-harmony-style"
+          },
+          {
+            "type": "game",
+            "slug": "hobby-harmony"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-hobby-that-makes-you-feel-alive"
+          },
+          {
+            "type": "article",
+            "slug": "exploring-shared-hobbies-together"
+          },
+          {
+            "type": "exercise",
+            "slug": "hobbies-and-interests-exercise"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-new-hobby-we-could-start-together-to-spice-things-up"
+          }
+        ]
+      },
+      {
+        "title": "Разбиране на Стилове на Комуникация",
+        "description": "Научете как да комуникирате своите нужди и желания ефективно. Участвайте в упражнения и игри, които насърчават активно слушане и подобряват способността ви да изразявате емоции и очаквания.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "discover-your-communication-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-prefer-to-communicate-your-needs-and-desires"
+          },
+          {
+            "type": "article",
+            "slug": "mastering-communication-techniques"
+          },
+          {
+            "type": "game",
+            "slug": "communication-clues"
+          },
+          {
+            "type": "checkup",
+            "slug": "mastering-our-communication-styles"
+          },
+          {
+            "type": "exercise",
+            "slug": "active-listening-practice"
+          },
+          {
+            "type": "question",
+            "slug": "whats-your-favorite-memory-of-us-having-a-great-conversation"
+          }
+        ]
+      },
+      {
+        "title": "Идентифициране на Езиците на Любовта",
+        "description": "Потопете се в уникалните начини, по които всеки от вас дава и получава любов. Изследвайте вашите езици на любовта чрез въпроси и рефлексивни упражнения, получавайки прозрения как по-добре да изразявате привързаност по начин, който резонира с партньора ви.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "love-language-type"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-believe-in-love-languages-if-so-which-one-are-you"
+          },
+          {
+            "type": "article",
+            "slug": "decoding-love-languages"
+          },
+          {
+            "type": "game",
+            "slug": "love-languages-exploration"
+          },
+          {
+            "type": "checkup",
+            "slug": "emotional-needs-compatibility"
+          },
+          {
+            "type": "exercise",
+            "slug": "find-out-your-love-language"
+          },
+          {
+            "type": "question",
+            "slug": "what-is-your-love-language"
+          }
+        ]
+      },
+      {
+        "title": "Саморефлексия и Поставяне на Цели",
+        "description": "Насърчете личното споделяне на амбиции и мечти. Използвайте ръководени активности, за да размишлявате върху личните си цели и как те съответстват на вашите отношения, насърчавайки чувство за взаимна подкрепа в пътуванията на другия.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "goal-alignment-style"
+          },
+          {
+            "type": "question",
+            "slug": "what-are-your-dreams-and-aspirations-outside-of-work"
+          },
+          {
+            "type": "article",
+            "slug": "setting-shared-future-goals"
+          },
+          {
+            "type": "game",
+            "slug": "future-visionaries"
+          },
+          {
+            "type": "checkup",
+            "slug": "future-plans-alignment"
+          },
+          {
+            "type": "exercise",
+            "slug": "long-term-goal-planning"
+          },
+          {
+            "type": "question",
+            "slug": "what-personal-goals-do-you-have-that-i-might-not-be-aware-of"
+          }
+        ]
+      },
+      {
+        "title": "Култивиране на Емоционална Интимност",
+        "description": "Задълбочете емоционалната си връзка чрез упражнения за уязвимост и честни разговори. Участвайте в активности и дискусии, които насърчават споделянето на чувства, желания и страхове в безопасна среда, подобрявайки вашата интимност и доверие.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "emotional-intimacy-style"
+          },
+          {
+            "type": "question",
+            "slug": "whats-something-that-always-makes-you-feel-loved"
+          },
+          {
+            "type": "article",
+            "slug": "building-emotional-intimacy-together"
+          },
+          {
+            "type": "game",
+            "slug": "intimacy-insights"
+          },
+          {
+            "type": "checkup",
+            "slug": "emotional-intimacy-check-in"
+          },
+          {
+            "type": "exercise",
+            "slug": "emotional-closeness-exercises"
+          },
+          {
+            "type": "question",
+            "slug": "what-little-gestures-make-you-feel-most-loved-and-appreciated"
+          }
+        ]
+      }
+    ],
+    "slug": "getting-to-know-each-other-a-journey-of-discovery"
+  },
+  {
+    "job": [
+      "rekindling_passion"
+    ],
+    "title": "Възобновяване на Страстта",
+    "description": "Тази пътека е проектирана да ви помогне да възродите страстта във вашата връзка чрез серия от проницателни дейности, дискусии и забавни упражнения. Всеки ден ще изследвате различни аспекти на интимността, комуникацията и споделените преживявания, за да укрепите връзката си и да подобрите романтичната си връзка.",
+    "subtopics": [
+      {
+        "title": "Изследване на Нашите Желания",
+        "description": "Започнете с обсъждане на това, което и двамата намирате за секси и привлекателно един в друг, включително фантазии и нови идеи. Използвайте ангажиращи въпроси и тестове, за да откриете по-дълбоки желания.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "desire-reignition-style"
+          },
+          {
+            "type": "question",
+            "slug": "what-do-you-find-especially-sexy-about-me"
+          },
+          {
+            "type": "article",
+            "slug": "enhancing-sexual-communication"
+          },
+          {
+            "type": "game",
+            "slug": "fantasy-feelings"
+          },
+          {
+            "type": "checkup",
+            "slug": "emotional-intimacy-check-in"
+          },
+          {
+            "type": "question",
+            "slug": "whats-something-we-could-do-to-spice-things-up"
+          },
+          {
+            "type": "exercise",
+            "slug": "sexual-bucket-list-creation"
+          }
+        ]
+      },
+      {
+        "title": "Създаване на Романтични Моменти",
+        "description": "Научете как да направите ежедневните моменти специални. Тази подтема ви насърчава да развивате романтични жестове и да изненадвате един друг, внасяйки вълнение в ежедневието си.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "romantic-gesture-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-can-we-make-everyday-moments-feel-more-special-and-romantic"
+          },
+          {
+            "type": "article",
+            "slug": "crafting-memorable-date-nights"
+          },
+          {
+            "type": "game",
+            "slug": "date-night-planner"
+          },
+          {
+            "type": "checkup",
+            "slug": "quality-time-quality-love"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-new-hobby-we-could-start-together-to-spice-things-up"
+          },
+          {
+            "type": "exercise",
+            "slug": "creating-passion-renewal-date"
+          }
+        ]
+      },
+      {
+        "title": "Подправяне на Вещите заедно",
+        "description": "Изследвайте нови хобита или преживявания, които можете да споделите като двойка. Открийте дейности, които могат да възродят забавлението и страстта във вашата връзка, като същевременно позволяват личностно развитие.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "hobby-harmony-style"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-new-hobby-we-can-start-together-to-strengthen-our-bond"
+          },
+          {
+            "type": "article",
+            "slug": "exploring-shared-hobbies-together"
+          },
+          {
+            "type": "game",
+            "slug": "hobby-harmony"
+          },
+          {
+            "type": "checkup",
+            "slug": "growth-through-novelty"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-way-we-can-challenge-each-other-to-grow-while-keeping-the-romance-alive"
+          },
+          {
+            "type": "exercise",
+            "slug": "hobbies-and-interests-exercise"
+          }
+        ]
+      },
+      {
+        "title": "Интимност и Уязвимост",
+        "description": "Задълбочете се в емоционалната интимност и уязвимост. Ще практикувате открита комуникация относно вашите емоционални нужди, подобрявайки връзката, която движи страстта.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "emotional-intimacy-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-prefer-to-communicate-your-needs-and-desires"
+          },
+          {
+            "type": "article",
+            "slug": "building-emotional-intimacy-together"
+          },
+          {
+            "type": "game",
+            "slug": "trust-builders"
+          },
+          {
+            "type": "checkup",
+            "slug": "emotional-needs-compatibility"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-fun-way-we-can-explore-each-others-fantasies-together"
+          },
+          {
+            "type": "exercise",
+            "slug": "active-listening-practice"
+          }
+        ]
+      },
+      {
+        "title": "Поддържане на Искрата",
+        "description": "Обсъдете стратегии за поддържане на искрата жива, дори в обикновените моменти. Изследвайте начини да предизвиквате и растете заедно, като същевременно запазвате романтиката в центъра на вниманието.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "growth-balance-style"
+          },
+          {
+            "type": "question",
+            "slug": "what-do-you-think-we-can-do-to-keep-the-spark-alive-in-our-relationship"
+          },
+          {
+            "type": "article",
+            "slug": "boosting-relationship-happiness"
+          },
+          {
+            "type": "game",
+            "slug": "passion-rekindle-quest"
+          },
+          {
+            "type": "checkup",
+            "slug": "fun-and-affection"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-new-hobby-we-can-try-together-that-honors-both-our-interests"
+          },
+          {
+            "type": "exercise",
+            "slug": "flexible-role-playing"
+          }
+        ]
+      },
+      {
+        "title": "Дългосрочни Планове за Страстта",
+        "description": "Създайте план за поддържане на страстта във вашата връзка с времето. Разработете споделени цели и визия за бъдещето, която запазва както интимността, така и вълнението живи.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "future-planning-style"
+          },
+          {
+            "type": "question",
+            "slug": "if-you-won-the-lottery-tomorrow-whats-the-first-thing-youd-do"
+          },
+          {
+            "type": "article",
+            "slug": "creating-a-vision-for-us"
+          },
+          {
+            "type": "game",
+            "slug": "future-visionaries"
+          },
+          {
+            "type": "checkup",
+            "slug": "future-talk-together"
+          },
+          {
+            "type": "question",
+            "slug": "whats-your-favorite-memory-of-us-having-a-great-conversation"
+          },
+          {
+            "type": "exercise",
+            "slug": "long-term-goal-planning"
+          }
+        ]
+      }
+    ],
+    "slug": "rekindling-the-passion"
+  },
+  {
+    "job": [
+      "overcoming_differences"
+    ],
+    "title": "Приемане на Нашите Различия: Пътуване към По-дълбоко Разбиране",
+    "description": "Тази пътуване е проектирано да помогне на двойките да навигират и празнуват своите различия, превръщайки предизвикателствата в възможности за растеж. Всеки ден ще се ангажирате с провокативни въпроси, проницателни статии и практически упражнения, които насърчават емпатията, уважението и сътрудничеството във вашата връзка.",
+    "subtopics": [
+      {
+        "title": "Разбиране на Нашите Произходи",
+        "description": "Изследвайте как нашите културни, религиозни и лични произходи оформят нашите перспективи и поведения във връзката. Размислете върху въпроси за културните различия и вярвания, полагайки основите за бъдещи разговори.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "cultural-harmony-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-our-different-cultural-backgrounds-shape-our-relationship-and-how-can-we-honor-both"
+          },
+          {
+            "type": "article",
+            "slug": "navigating-religious-conversations-smoothly"
+          },
+          {
+            "type": "game",
+            "slug": "cultural-quest"
+          },
+          {
+            "type": "checkup",
+            "slug": "navigating-cultural-and-religious-differences"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-respect-each-others-religious-beliefs-when-they-differ"
+          },
+          {
+            "type": "exercise",
+            "slug": "cultural-exchange-day"
+          }
+        ]
+      },
+      {
+        "title": "Ефективни Умения за Споделено Общуване",
+        "description": "Научете важността на прозрачността и активното слушане при преодоляване на недоразумения. Ангажирайте се с упражнения и статии, които подобряват вашите стилове на комуникация и насърчават открития диалог относно чувствителни теми.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "discover-your-communication-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-prefer-to-communicate-your-needs-and-desires"
+          },
+          {
+            "type": "article",
+            "slug": "mastering-communication-techniques"
+          },
+          {
+            "type": "game",
+            "slug": "communication-clues"
+          },
+          {
+            "type": "checkup",
+            "slug": "mastering-our-communication-styles"
+          },
+          {
+            "type": "question",
+            "slug": "whats-your-favorite-memory-of-us-having-a-great-conversation"
+          },
+          {
+            "type": "exercise",
+            "slug": "active-listening-practice"
+          }
+        ]
+      },
+      {
+        "title": "Празнуване на Различията",
+        "description": "Открийте начини да празнувате и уважавате уникалните силни страни и перспективи на другия. Чрез интерактивно съдържание, изследвайте как различията могат да насърчават креативността и радостта във вашето партньорство.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "growth-through-differences-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-can-we-celebrate-our-unique-strengths-and-compensate-for-our-differences"
+          },
+          {
+            "type": "article",
+            "slug": "embrace-and-celebrate-differences"
+          },
+          {
+            "type": "game",
+            "slug": "hobby-harmony"
+          },
+          {
+            "type": "checkup",
+            "slug": "embracing-our-personality-traits"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-fun-way-to-explore-and-embrace-our-differences-together"
+          },
+          {
+            "type": "exercise",
+            "slug": "difference-identification-and-acceptance"
+          }
+        ]
+      },
+      {
+        "title": "Навигиране на Конфликти с Уважение",
+        "description": "Развийте умения за позитивно и конструктивно управление на конфликтите. Тази подтема включва практически техники за разрешаване на несъгласия, като се уважава гледната точка на другия и се поддържа доверие.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "your-conflict-style"
+          },
+          {
+            "type": "question",
+            "slug": "whats-one-thing-youd-like-to-change-about-how-we-handle-our-differences"
+          },
+          {
+            "type": "article",
+            "slug": "mastering-conflict-resolution-together"
+          },
+          {
+            "type": "game",
+            "slug": "conflict-resolution-quest"
+          },
+          {
+            "type": "checkup",
+            "slug": "conflict-resolution-styles"
+          },
+          {
+            "type": "question",
+            "slug": "whats-one-thing-you-admire-about-my-perspective-thats-different-from-yours"
+          },
+          {
+            "type": "exercise",
+            "slug": "conflict-resolution-strategies-practice"
+          }
+        ]
+      },
+      {
+        "title": "Превръщане на Предизвикателствата в Възможности за Растеж",
+        "description": "Променете начина си на мислене от виждане на различията като пречки до възприемането им като пътища за личен и връзков растеж. Ангажирайте се с дейности, които насърчават сътрудничеството и споделеното решаване на проблеми.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "flexibility-style-assessment"
+          },
+          {
+            "type": "question",
+            "slug": "how-can-we-turn-our-differences-into-opportunities-for-growth-as-a-couple"
+          },
+          {
+            "type": "article",
+            "slug": "embracing-differences-positively"
+          },
+          {
+            "type": "game",
+            "slug": "problem-solving-escapades"
+          },
+          {
+            "type": "checkup",
+            "slug": "team-problem-solving"
+          },
+          {
+            "type": "question",
+            "slug": "can-boredom-be-helpful"
+          },
+          {
+            "type": "exercise",
+            "slug": "cognitive-restructuring-together"
+          }
+        ]
+      },
+      {
+        "title": "Създаване на Обединена Визия",
+        "description": "Консолидирайте това, което сте научили, за да създадете споделена визия за вашето бъдеще. Размислете върху вашите ценности, цели и амбиции като двойка, осигурявайки, че и двамата партньори се чувстват видени и чути в предстоящото пътуване.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "future-vision-type"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-challenge-weve-overcome-together-that-made-our-relationship-stronger"
+          },
+          {
+            "type": "article",
+            "slug": "aligning-future-goals"
+          },
+          {
+            "type": "game",
+            "slug": "future-visionaries"
+          },
+          {
+            "type": "checkup",
+            "slug": "future-talk-together"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-memorable-moment-where-our-differences-made-our-relationship-stronger"
+          },
+          {
+            "type": "exercise",
+            "slug": "long-term-goal-planning"
+          }
+        ]
+      }
+    ],
+    "slug": "embracing-our-differences-a-journey-to-deeper-understanding"
+  },
+  {
+    "job": [
+      "solving_relationship_problems"
+    ],
+    "title": "Навигиране и Решаване на Проблеми в Отношенията",
+    "description": "Тази пътека е проектирана да помогне на вас и вашия партньор да навигирате и разрешавате конфликти ефективно. Всеки ден ще се занимавате с упражнения, въпроси и дейности, които ще изградят вашите комуникационни умения и способности за решаване на проблеми. В края на това пътуване ще се чувствате по-подготвени да се справяте с предизвикателствата заедно и да намерите решения като екип.",
+    "subtopics": [
+      {
+        "title": "Разбиране на Стиловете на Конфликт",
+        "description": "Открийте индивидуалните си стилове на конфликт и как те влияят на вашите отношения. Използвайте въпроси и размисли, за да разберете как обикновено реагирате по време на несъгласия.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "your-conflict-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-handle-disagreements-or-conflicts"
+          },
+          {
+            "type": "article",
+            "slug": "effective-conflict-resolution-strategies"
+          },
+          {
+            "type": "game",
+            "slug": "conflict-resolution-quest"
+          },
+          {
+            "type": "checkup",
+            "slug": "conflict-resolution-styles"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-handle-disagreements-and-whats-your-favorite-way-for-us-to-make-up-after-a-fight"
+          },
+          {
+            "type": "exercise",
+            "slug": "conflict-resolution-styles"
+          }
+        ]
+      },
+      {
+        "title": "Основи на Комуникацията",
+        "description": "Съсредоточете се върху подобряване на комуникационните си умения по време на конфликти. Изследвайте ефективни техники за слушане и важността на ясното изразяване чрез упражнения и игри.",
+        "content": [
+          {
+            "type": "checkup",
+            "slug": "mastering-our-communication-styles"
+          },
+          {
+            "type": "test",
+            "slug": "discover-your-communication-style"
+          },
+          {
+            "type": "article",
+            "slug": "mastering-communication-techniques"
+          },
+          {
+            "type": "game",
+            "slug": "communication-clues"
+          },
+          {
+            "type": "exercise",
+            "slug": "active-listening-practice"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-prefer-to-communicate-your-needs-and-desires"
+          },
+          {
+            "type": "question",
+            "slug": "whats-your-favorite-memory-of-us-having-a-great-conversation"
+          }
+        ]
+      },
+      {
+        "title": "Конструктивно Решаване на Конфликти",
+        "description": "Научете как да превърнете несъгласията в конструктивни разговори. Участвайте в упражнения и статии, които предоставят стратегии за разрешаване на конфликти без ескалация.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "solution-focused-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-can-we-make-our-disagreements-more-constructive"
+          },
+          {
+            "type": "article",
+            "slug": "mastering-conflict-resolution-together"
+          },
+          {
+            "type": "game",
+            "slug": "problem-solving-escapades"
+          },
+          {
+            "type": "checkup",
+            "slug": "conflict-resolution-wizards"
+          },
+          {
+            "type": "question",
+            "slug": "can-you-recall-a-time-when-you-felt-misunderstood-how-did-you-handle-it"
+          },
+          {
+            "type": "exercise",
+            "slug": "conflict-resolution-strategies-practice"
+          }
+        ]
+      },
+      {
+        "title": "Парични Въпроси и Конфликти",
+        "description": "Изследвайте как финансовите дискусии могат да доведат до конфликти и как да навигирате тези разговори. Работете върху стиловете на бюджетиране и финансовата комуникация чрез тестове и дискусии.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "financial-communication-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-feel-about-our-different-spending-habits-and-how-can-we-find-a-middle-ground"
+          },
+          {
+            "type": "article",
+            "slug": "mastering-money-talks-together"
+          },
+          {
+            "type": "game",
+            "slug": "dream-budget-builders"
+          },
+          {
+            "type": "checkup",
+            "slug": "trust-in-financial-transparency"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-have-any-issues-with-budgeting-like-are-you-in-debt-to-somebody-do-you-make-any-useless-spending"
+          },
+          {
+            "type": "exercise",
+            "slug": "budget-planning-session"
+          }
+        ]
+      },
+      {
+        "title": "Създаване на Безопасно Пространство за Дискусии",
+        "description": "Създайте среда, в която и двамата партньори се чувстват безопасно да изразяват чувствата си. Използвайте проверки и упражнения, за да улесните откритите диалози и да се справите с основните проблеми.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "emotional-safety-style"
+          },
+          {
+            "type": "checkup",
+            "slug": "vulnerability-and-openness"
+          },
+          {
+            "type": "article",
+            "slug": "trust-through-open-communication"
+          },
+          {
+            "type": "game",
+            "slug": "communication-connection"
+          },
+          {
+            "type": "exercise",
+            "slug": "transparent-communication-practices"
+          },
+          {
+            "type": "question",
+            "slug": "are-there-any-habits-or-behaviors-of-mine-that-bother-you"
+          },
+          {
+            "type": "question",
+            "slug": "describe-a-time-when-a-simple-text-message-led-to-a-big-misunderstanding-how-did-you-resolve-it"
+          }
+        ]
+      },
+      {
+        "title": "Превръщане на Конфликта в Растеж",
+        "description": "Променете перспективата си за конфликта, като научите как да го използвате като инструмент за растеж. Размислете за минали конфликти, приложете хумор и създайте планове за личен растеж като двойка.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "growth-opportunity-style-assessment"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-past-problem-weve-solved-that-makes-you-proud-of-us"
+          },
+          {
+            "type": "article",
+            "slug": "embracing-differences-positively"
+          },
+          {
+            "type": "game",
+            "slug": "compatibility-conundrum"
+          },
+          {
+            "type": "checkup",
+            "slug": "team-problem-solving"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-relationship-problem-you-think-we-can-solve-with-humor"
+          },
+          {
+            "type": "exercise",
+            "slug": "relationship-journal"
+          }
+        ]
+      }
+    ],
+    "slug": "navigating-and-resolving-relationship-problems"
+  },
+  {
+    "job": [
+      "exploring_feelings"
+    ],
+    "title": "Навигиране в Нашите Емоционални Пейзажи",
+    "description": "Тази пътека е проектирана, за да помогне на вас и вашия партньор да изследвате и разберете вашите чувства на по-дълбоко ниво. Чрез взаимодействие с различни видове съдържание, ще откриете вашите емоционални модели, ще комуникирате ефективно за вашите емоции и ще изградите по-силна емоционална връзка. Всеки ден ще носи нови прозрения и предизвикателства, които ще насърчат емоционалната интимност във вашата връзка.",
+    "subtopics": [
+      {
+        "title": "Разбиране на Нашите Емоции",
+        "description": "Започнете вашето пътуване, като изследвате основните емоции и как те се проявяват в живота ви. Чрез въпроси и статии, получете яснота относно вашите чувства и методите си за справяне с тях.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "emotional-awareness-type"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-think-that-you-feel-emotions-stronger-or-weaker-than-other-people"
+          },
+          {
+            "type": "article",
+            "slug": "building-emotional-intimacy-together"
+          },
+          {
+            "type": "game",
+            "slug": "emotional-seasons"
+          },
+          {
+            "type": "checkup",
+            "slug": "emotional-rollercoaster-ride"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-handle-your-strong-emotions"
+          },
+          {
+            "type": "exercise",
+            "slug": "emotional-regulation-techniques"
+          }
+        ]
+      },
+      {
+        "title": "Ефективно Изразяване на Чувства",
+        "description": "Научете как да комуникирате вашите емоции помежду си в безопасна и подкрепяща среда. Участвайте в упражнения, които улесняват открития диалог за вашите чувства без страх от осъждане.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "communication-style-type"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-prefer-to-receive-support-when-youre-feeling-low"
+          },
+          {
+            "type": "article",
+            "slug": "mastering-communication-techniques"
+          },
+          {
+            "type": "game",
+            "slug": "communication-clues"
+          },
+          {
+            "type": "checkup",
+            "slug": "mastering-our-communication-styles"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-feel-comfortable-expressing-your-true-feelings-with-me-why-or-why-not"
+          },
+          {
+            "type": "exercise",
+            "slug": "transparent-communication-practices"
+          }
+        ]
+      },
+      {
+        "title": "Дълбочинно Изследване на Уязвимостта",
+        "description": "Открийте силата на уязвимостта във връзките. Изследвайте въпроси и дейности, които насърчават споделянето на вашите най-дълбоки страхове и желания, и обсъдете как уязвимостта може да подобри интимността.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "vulnerability-comfort-type"
+          },
+          {
+            "type": "question",
+            "slug": "can-you-describe-a-moment-where-you-felt-most-connected-during-our-sex-and-what-made-it-special-for-you"
+          },
+          {
+            "type": "article",
+            "slug": "vulnerability-trusts-gateway"
+          },
+          {
+            "type": "game",
+            "slug": "feelings-explorer"
+          },
+          {
+            "type": "checkup",
+            "slug": "vulnerability-and-openness"
+          },
+          {
+            "type": "question",
+            "slug": "how-comfortable-are-you-sharing-your-true-feelings-with-me-on-a-scale-of-1-10"
+          },
+          {
+            "type": "exercise",
+            "slug": "vulnerability-exploration-session"
+          }
+        ]
+      },
+      {
+        "title": "Навигиране на Трудни Емоции Заедно",
+        "description": "Идентифицирайте и адресирайте трудни емоции като ревност, несигурност или тъга. Участвайте в тестове и проверки, проектирани да помогнат на вас двамата да разберете как да се подкрепяте взаимно в трудни емоционални моменти.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "emotion-management-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-handle-feelings-of-jealousy-or-insecurity"
+          },
+          {
+            "type": "article",
+            "slug": "navigating-emotional-waters-together"
+          },
+          {
+            "type": "game",
+            "slug": "emotional-ride"
+          },
+          {
+            "type": "checkup",
+            "slug": "emotional-rollercoaster-ride"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-handle-feelings-of-stress-or-anxiety"
+          },
+          {
+            "type": "exercise",
+            "slug": "confidentiality-agreements"
+          }
+        ]
+      },
+      {
+        "title": "Изграждане на Емоционална Безопасност",
+        "description": "Създайте среда, в която и двамата партньори се чувстват безопасно да изразяват и изследват своите чувства. Разберете значението на емоционалната безопасност за задълбочаване на вашата връзка и научете практически стратегии за нейното създаване.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "emotional-safety-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-feel-about-our-current-level-of-intimacy-and-affection"
+          },
+          {
+            "type": "article",
+            "slug": "trust-through-open-communication"
+          },
+          {
+            "type": "game",
+            "slug": "trust-builders"
+          },
+          {
+            "type": "checkup",
+            "slug": "emotional-intimacy-check-in"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-feel-we-handle-each-others-vulnerabilities"
+          },
+          {
+            "type": "exercise",
+            "slug": "feelings-validation-practices"
+          }
+        ]
+      },
+      {
+        "title": "Култивиране на Емоционална Интимност",
+        "description": "Завършете вашето пътуване, като приложите стратегии, които подобряват емоционалната интимност във вашата връзка. Участвайте в игри и упражнения, които укрепват вашите емоционални връзки, правейки вашата свързаност по-дълбока и устойчива.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "emotional-intimacy-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-feel-about-sharing-your-deepest-desires-with-each-other"
+          },
+          {
+            "type": "article",
+            "slug": "building-emotional-intelligence-together"
+          },
+          {
+            "type": "game",
+            "slug": "emotion-explorer"
+          },
+          {
+            "type": "checkup",
+            "slug": "emotional-needs-compatibility"
+          },
+          {
+            "type": "question",
+            "slug": "how-can-we-better-express-our-needs-without-feeling-vulnerable"
+          },
+          {
+            "type": "exercise",
+            "slug": "emotional-expression-sessions"
+          }
+        ]
+      }
+    ],
+    "slug": "navigating-our-emotional-landscapes"
+  },
+  {
+    "job": [
+      "enhancing_love_and_affection"
+    ],
+    "title": "Увеличаване на Любовта и Привързаността",
+    "description": "Тази пътека е проектирана да помогне на двойките да развият по-дълбока любов и привързаност в отношенията си чрез значими дискусии, игриви дейности и внимателни практики. Всеки ден ще изследвате различни аспекти на любовта и привързаността, започвайки от разбирането на вашите изрази на любов, до създаването на интимни моменти, които укрепват вашата връзка.",
+    "subtopics": [
+      {
+        "title": "Разбиране на Язиците на Любовта",
+        "description": "Научете за концепцията на язиците на любовта и открийте как вие и вашият партньор изразявате и получавате любов. Това знание поставя основите за увеличаване на емоционалната ви връзка.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "love-language-type"
+          },
+          {
+            "type": "question",
+            "slug": "what-is-your-love-language"
+          },
+          {
+            "type": "article",
+            "slug": "decoding-love-languages"
+          },
+          {
+            "type": "game",
+            "slug": "love-languages-quiz"
+          },
+          {
+            "type": "checkup",
+            "slug": "emotional-needs-compatibility"
+          },
+          {
+            "type": "question",
+            "slug": "whats-your-favorite-way-to-express-love-and-how-does-it-differ-from-mine"
+          },
+          {
+            "type": "exercise",
+            "slug": "find-out-your-love-language"
+          }
+        ]
+      },
+      {
+        "title": "Ежедневни Изрази на Привързаност",
+        "description": "Изследвайте прости, но мощни начини за изразяване на привързаност всеки ден. Тази подтема включва обсъждане на малки жестове, любовни бележки и комплименти, които могат да осветят деня на другия.",
+        "content": [
+          {
+            "type": "exercise",
+            "slug": "compliment-exchange"
+          },
+          {
+            "type": "question",
+            "slug": "how-can-we-better-express-our-appreciation-for-each-other-daily"
+          },
+          {
+            "type": "article",
+            "slug": "enhance-affection-daily"
+          },
+          {
+            "type": "game",
+            "slug": "affectionate-habits"
+          },
+          {
+            "type": "checkup",
+            "slug": "acts-of-kindness-and-appreciation"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-small-gesture-that-always-makes-you-smile"
+          }
+        ]
+      },
+      {
+        "title": "Създаване на Интимни Моменти",
+        "description": "Открийте как да създавате и включвате интимни моменти в ежедневието си. Това включва планиране на изненадващи вечери, спонтанни прегръдки и моменти за дълбока свързаност.",
+        "content": [
+          {
+            "type": "checkup",
+            "slug": "emotional-intimacy-check-in"
+          },
+          {
+            "type": "test",
+            "slug": "sensory-intimacy-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-feel-about-trying-new-activities-together-to-build-intimacy"
+          },
+          {
+            "type": "article",
+            "slug": "building-emotional-intimacy-together"
+          },
+          {
+            "type": "game",
+            "slug": "intimacy-insights"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-feel-about-surprise-date-nights-whats-your-ideal-surprise"
+          },
+          {
+            "type": "exercise",
+            "slug": "creating-passion-renewal-date"
+          }
+        ]
+      },
+      {
+        "title": "Култивиране на Благодарност и Оценка",
+        "description": "Потопете се в важността на изразяването на благодарност в отношенията ви. Обсъдете как оценката може да увеличи любовта и привързаността и научете конкретни практики за признаване на другия.",
+        "content": [
+          {
+            "type": "exercise",
+            "slug": "expressing-gratitude-session"
+          },
+          {
+            "type": "question",
+            "slug": "how-can-we-better-express-our-appreciation-for-each-other"
+          },
+          {
+            "type": "article",
+            "slug": "mastering-communication-techniques"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-like-to-express-appreciation-in-our-conversations"
+          }
+        ]
+      },
+      {
+        "title": "Игровитост и Хумор в Привързаността",
+        "description": "Научете как хуморът и игривостта могат да увеличат интимността. Тази подтема насърчава намирането на начини да се смеете заедно и да се включите в игриви дейности, които укрепват вашата връзка.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "playfulness-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-feel-about-incorporating-humor-into-our-intimate-moments"
+          },
+          {
+            "type": "article",
+            "slug": "fun-rituals-to-strengthen-bonds"
+          },
+          {
+            "type": "game",
+            "slug": "laugh-learn-quiz"
+          },
+          {
+            "type": "checkup",
+            "slug": "fun-flirtation"
+          },
+          {
+            "type": "question",
+            "slug": "how-can-we-incorporate-more-playfulness-into-our-relationship"
+          },
+          {
+            "type": "exercise",
+            "slug": "karaoke-session"
+          }
+        ]
+      },
+      {
+        "title": "Физическа Привързаност и Допир",
+        "description": "Изследвайте ролята на физическия допир в насърчаването на по-дълбока привързаност. Обсъдете предпочитанията си за целувки, прегръдки, гушкане и други форми на физическа привързаност, които укрепват вашата връзка.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "physical-touch-style"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-prefer-cuddling-on-the-couch-or-a-romantic-dinner-to-feel-loved"
+          },
+          {
+            "type": "article",
+            "slug": "enhancing-physical-intimacy-mindfully"
+          },
+          {
+            "type": "game",
+            "slug": "bedroom-preferences"
+          },
+          {
+            "type": "checkup",
+            "slug": "physical-comfort-and-boundaries"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-prefer-morning-hugs-or-goodnight-kisses"
+          },
+          {
+            "type": "exercise",
+            "slug": "affectionate-gestures-practice"
+          }
+        ]
+      }
+    ],
+    "slug": "enhancing-love-and-affection"
+  },
+  {
+    "job": [
+      "preparing_for_marriage"
+    ],
+    "title": "Подготовка за Брак: Изграждане на Силна Основа",
+    "description": "Тази пътека е проектирана да осигури на вас и вашия партньор инструментите и прозорците, необходими за успешен брак. Всеки ден ще изследвате основни концепции, от комуникация до финансово единство, прокарвайки пътя за по-дълбоко разбиране един на друг и за устойчиви отношения.",
+    "subtopics": [
+      {
+        "title": "Разбиране на Езиците на Любовта",
+        "description": "Идентифицирайте и изследвайте езиците на любовта на другия, за да подобрите емоционалната връзка. Разбирането на начина, по който и двамата давате и получавате любов, може значително да подобри динамиката на вашите отношения.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "love-language-type"
+          },
+          {
+            "type": "article",
+            "slug": "decoding-love-languages"
+          },
+          {
+            "type": "game",
+            "slug": "love-languages-exploration"
+          },
+          {
+            "type": "exercise",
+            "slug": "find-out-your-love-language"
+          }
+        ]
+      },
+      {
+        "title": "Управление на Финансовите Разговори",
+        "description": "Научете важността на откритите дискусии относно финансите. Потопете се в стиловете на бюджетиране, навиците на разходите и финансовите цели, за да изградите доверие и прозрачност във вашето финансово партньорство.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "financial-communication-style"
+          },
+          {
+            "type": "article",
+            "slug": "mastering-money-talks-together"
+          },
+          {
+            "type": "game",
+            "slug": "dream-budget-builders"
+          },
+          {
+            "type": "checkup",
+            "slug": "aligning-financial-values-and-goals"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-prefer-to-communicate-your-needs-and-desires"
+          },
+          {
+            "type": "exercise",
+            "slug": "financial-planning-for-marriage"
+          }
+        ]
+      },
+      {
+        "title": "Навигиране на Емоционалната Интимност",
+        "description": "Развийте умения за насърчаване на емоционалната интимност чрез уязвимост, активно слушане и честна комуникация. Разберете как да изразявате емоции свободно и да подкрепяте емоционалните нужди на другия.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "emotional-intimacy-style"
+          },
+          {
+            "type": "article",
+            "slug": "building-emotional-intimacy-together"
+          },
+          {
+            "type": "game",
+            "slug": "feelings-explorer"
+          },
+          {
+            "type": "checkup",
+            "slug": "emotional-intimacy-check-in"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-feel-about-writing-love-notes-to-each-other-want-to-give-it-a-try"
+          },
+          {
+            "type": "exercise",
+            "slug": "vulnerability-exploration-session"
+          }
+        ]
+      },
+      {
+        "title": "Съгласуване на Бъдещите Цели",
+        "description": "Изследвайте как да обсъждате и съгласувате мечтите и амбициите си. Поставете общи цели за бъдещето си заедно, осигурявайки, че и двамата партньори се чувстват ценени и разбрани в процеса на планиране.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "goal-alignment-style"
+          },
+          {
+            "type": "article",
+            "slug": "setting-shared-future-goals"
+          },
+          {
+            "type": "game",
+            "slug": "future-visionaries"
+          },
+          {
+            "type": "checkup",
+            "slug": "charting-our-shared-future"
+          },
+          {
+            "type": "exercise",
+            "slug": "long-term-goal-planning"
+          }
+        ]
+      },
+      {
+        "title": "Справяне с Предизвикателствата заедно",
+        "description": "Подгответе се за предизвикателствата на брачния живот, като развиете умения за разрешаване на конфликти и стратегии за подкрепа на другия в трудни моменти. Научете как да навигирате несъгласията с емпатия и уважение.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "your-conflict-style"
+          },
+          {
+            "type": "article",
+            "slug": "mastering-conflict-resolution-together"
+          },
+          {
+            "type": "game",
+            "slug": "conflict-resolution-quest"
+          },
+          {
+            "type": "checkup",
+            "slug": "conflict-resolution-style-match"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-game-we-could-play-to-improve-our-conflict-resolution-skills"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-feel-about-using-humor-to-ease-tense-conversations"
+          },
+          {
+            "type": "exercise",
+            "slug": "conflict-resolution-strategies-practice"
+          }
+        ]
+      },
+      {
+        "title": "Създаване на Споделени Ритуали и Традиции",
+        "description": "Установете значими ритуали и традиции, които укрепват вашата връзка. Открийте начини да празнувате вашите отношения и да създавате трайни спомени като двойка, насърчавайки усещането за единство и принадлежност.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "ritual-building-style"
+          },
+          {
+            "type": "article",
+            "slug": "fun-rituals-to-strengthen-bonds"
+          },
+          {
+            "type": "game",
+            "slug": "date-night-planner"
+          },
+          {
+            "type": "checkup",
+            "slug": "creative-date-designers"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-new-hobby-we-can-start-together-to-strengthen-our-bond"
+          },
+          {
+            "type": "exercise",
+            "slug": "creating-passion-renewal-date"
+          }
+        ]
+      }
+    ],
+    "slug": "preparing-for-marriage-building-a-strong-foundation"
+  },
+  {
+    "job": [
+      "discussing_finances"
+    ],
+    "title": "Обсъждане на Нашите Финанси: Изграждане на По-Силно Бъдеще Заедно",
+    "description": "Тази подорож е проектирана да помогне на вас и вашия партньор да се ангажирате в значими разговори за финансите, да изградите взаимно разбиране и да развиете кооперативен подход към финансовите цели. Чрез напредване през различни подтеми, ще научите как да комуникирате ефективно, да задавате финансови цели и да синхронизирате разходните си навици за по-светло общо бъдеще.",
+    "subtopics": [
+      {
+        "title": "Разбиране на Нашите Финансови Ценности",
+        "description": "Изследвайте финансовите вярвания и ценности на другия, за да създадете силна основа за вашите финансови дискусии. Тази подтема включва въпроси за вашите финансови ролеви модели и какво приоритизирате финансово.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "financial-communication-style"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-have-a-financial-role-model-who-and-why"
+          },
+          {
+            "type": "article",
+            "slug": "mastering-money-talks-together"
+          },
+          {
+            "type": "game",
+            "slug": "dream-budget-builders"
+          },
+          {
+            "type": "checkup",
+            "slug": "aligning-financial-values-and-goals"
+          },
+          {
+            "type": "exercise",
+            "slug": "financial-planning-session"
+          },
+          {
+            "type": "question",
+            "slug": "whats-one-financial-habit-you-admire-in-others"
+          }
+        ]
+      },
+      {
+        "title": "Задаване на Финансови Цели Заедно",
+        "description": "Обсъдете важността на финансовите цели като двойка. Тази подтема ви води през създаването на краткосрочни и дългосрочни финансови цели и разбирането как да ги постигнете заедно.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "budgeting-style-for-couples"
+          },
+          {
+            "type": "question",
+            "slug": "what-are-your-financial-goals-and-how-can-we-achieve-them-together"
+          },
+          {
+            "type": "article",
+            "slug": "aligning-financial-goals-harmoniously"
+          },
+          {
+            "type": "game",
+            "slug": "future-visionaries"
+          },
+          {
+            "type": "checkup",
+            "slug": "future-financial-adventures"
+          },
+          {
+            "type": "exercise",
+            "slug": "budget-planning-session"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-new-financial-goal-youd-like-to-set-together"
+          }
+        ]
+      },
+      {
+        "title": "Комуникация за Финансови Въпроси",
+        "description": "Научете ефективни стратегии за комуникация при обсъждане на финансите. Тази подтема представя инструменти като приложения за бюджетиране и задаване на редовни проверки, за да помогне за улесняване на тези разговори.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "discover-your-communication-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-feel-about-budgeting-apps-yay-or-nay"
+          },
+          {
+            "type": "article",
+            "slug": "mastering-communication-techniques"
+          },
+          {
+            "type": "game",
+            "slug": "communication-champions"
+          },
+          {
+            "type": "checkup",
+            "slug": "mastering-our-communication-styles"
+          },
+          {
+            "type": "exercise",
+            "slug": "transparency-talks"
+          },
+          {
+            "type": "question",
+            "slug": "what-smartphone-app-do-you-mostly-use"
+          }
+        ]
+      },
+      {
+        "title": "Баланс между Разходите и Спестяванията",
+        "description": "Задълбочете се в разговори за вашите различни навици на разходи и как да намерите обща основа. Тази подтема ви насърчава да приоритизирате финансовите си цели с вашите жизнени избори.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "your-spending-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-feel-about-our-different-spending-habits-and-how-can-we-find-a-middle-ground"
+          },
+          {
+            "type": "article",
+            "slug": "building-trust-through-financial-transparency"
+          },
+          {
+            "type": "game",
+            "slug": "budget-battle-royale"
+          },
+          {
+            "type": "checkup",
+            "slug": "budgeting-together-without-breaking-up"
+          },
+          {
+            "type": "exercise",
+            "slug": "spending-habits-review"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-prefer-saving-money-in-a-bank-or-investing-it-elsewhere"
+          }
+        ]
+      },
+      {
+        "title": "Справяне с Финансови Предизвикателства Заедно",
+        "description": "Обсъдете стратегиите си за управление на финансовия стрес и неочаквани разходи. Тази подтема ви помага да разработите план за подкрепа един на друг в моменти на финансови трудности.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "debt-management-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-handle-financial-stress-together"
+          },
+          {
+            "type": "game",
+            "slug": "debt-decision-duel"
+          },
+          {
+            "type": "checkup",
+            "slug": "tackling-debt-together"
+          },
+          {
+            "type": "exercise",
+            "slug": "debt-management-planning"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-handle-unexpected-expenses"
+          }
+        ]
+      },
+      {
+        "title": "Планиране на Нашето Финансово Бъдеще",
+        "description": "Изследвайте по-дълбоки аспекти на финансовото планиране, включително стратегии за пенсиониране, собственост на дом и бъдещето на финансите на вашето семейство. Тази подтема ви помага да синхронизирате визиите си за бъдещето и да установите солидно финансово партньорство.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "future-planning-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-prioritize-financial-goals-with-other-life-goals"
+          },
+          {
+            "type": "game",
+            "slug": "future-forecast"
+          },
+          {
+            "type": "checkup",
+            "slug": "future-talk-flow"
+          },
+          {
+            "type": "exercise",
+            "slug": "retirement-dreams-mapping"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-see-the-budget-in-our-partnership-now-what-method-will-be-more-comfortable-for-you"
+          }
+        ]
+      }
+    ],
+    "slug": "discussing-our-finances-building-a-stronger-future-together"
+  },
+  {
+    "job": [
+      "having_and_discussing_sex"
+    ],
+    "title": "Навигиране в Нашия Интимен Свят",
+    "description": "Тази пътека се фокусира върху подобряване на разбирането и обсъжданията за секса във вашата връзка. Ще изследвате граници, желания и стилове на комуникация, за да изградите удовлетворяваща и открита сексуална връзка с партньора си. Всеки ден ще се ангажирате с различни дейности, предназначени да насърчат интимността и разбирането.",
+    "subtopics": [
+      {
+        "title": "Разбиране на Желанията и Границите",
+        "description": "Започнете с обсъждане на личните си желания и граници. Тази основополагаща стъпка изгражда доверие и поставя основите за открити разговори за интимност. Открийте инструменти, за да формулирате какво ви е нужно и с какво се чувствате комфортно.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "discover-your-communication-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-comfortable-are-you-discussing-your-boundaries-and-desires"
+          },
+          {
+            "type": "article",
+            "slug": "trust-through-open-communication"
+          },
+          {
+            "type": "game",
+            "slug": "communication-clues"
+          },
+          {
+            "type": "checkup",
+            "slug": "mastering-our-communication-styles"
+          },
+          {
+            "type": "question",
+            "slug": "are-there-any-boundaries-youd-like-to-discuss-regarding-our-physical-relationship"
+          },
+          {
+            "type": "exercise",
+            "slug": "boundaries-practice"
+          }
+        ]
+      },
+      {
+        "title": "Изследване на Сексуални Фантазии и Експерименти",
+        "description": "Сега, след като сте установили безопасно пространство, се потопете в споделянето на фантазии и обсъждането на новите преживявания, които искате да опитате заедно. Изследвайте начини да въведете тези елементи в интимния си живот.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "fantasy-sharing-style"
+          },
+          {
+            "type": "question",
+            "slug": "are-there-any-fantasies-or-desires-youd-like-to-share"
+          },
+          {
+            "type": "article",
+            "slug": "building-emotional-intimacy-together"
+          },
+          {
+            "type": "game",
+            "slug": "intimacy-insights"
+          },
+          {
+            "type": "checkup",
+            "slug": "maintaining-sexual-satisfaction-over-time"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-fun-way-we-can-explore-each-others-fantasies-together"
+          },
+          {
+            "type": "exercise",
+            "slug": "fantasy-sharing-session"
+          }
+        ]
+      },
+      {
+        "title": "Открито Общуване за Интимността",
+        "description": "Развийте комуникационните си умения около секса, като се уверите, че и двамата изразявате нужди, предпочитания и всякакви притеснения. Тази подтема включва упражнения, които помагат за подобряване на прозрачността и свързаността.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "sexual-communication-style"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-find-it-easy-to-say-everything-you-want-during-sex"
+          },
+          {
+            "type": "article",
+            "slug": "enhancing-sexual-communication"
+          },
+          {
+            "type": "game",
+            "slug": "communication-carousel"
+          },
+          {
+            "type": "checkup",
+            "slug": "mastering-communication"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-feel-about-discussing-intimacy-outside-of-the-bedroom"
+          },
+          {
+            "type": "exercise",
+            "slug": "talking-about-sex-practice"
+          }
+        ]
+      },
+      {
+        "title": "Подобряване на Физическата Интимност",
+        "description": "Изследвайте различни форми на физическа привързаност и интимност. Обсъдете какво ви кара да се чувствате свързани и удовлетворени, и опитайте нови дейности, които могат да укрепят връзката ви и да увеличат интимността.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "sensory-intimacy-style"
+          },
+          {
+            "type": "question",
+            "slug": "whats-your-favorite-way-to-be-touched"
+          },
+          {
+            "type": "article",
+            "slug": "building-emotional-intimacy-together"
+          },
+          {
+            "type": "game",
+            "slug": "satisfaction-safari"
+          },
+          {
+            "type": "checkup",
+            "slug": "maintaining-sexual-satisfaction-over-time"
+          },
+          {
+            "type": "question",
+            "slug": "what-parts-of-your-body-you-want-your-partner-to-focus-more-how-does-it-make-you-feel"
+          },
+          {
+            "type": "exercise",
+            "slug": "sensual-exploration-night"
+          }
+        ]
+      },
+      {
+        "title": "Навигиране в Предизвикателствата и Промените в Секс Живота",
+        "description": "Обсъдете потенциални пречки в сексуалния си живот, като различни либидота или емоционални бариери. Научете стратегии за справяне с тези предизвикателства, като поддържате подкрепящ диалог, за да укрепите връзката си.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "sexual-harmony-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-high-is-your-sex-drive"
+          },
+          {
+            "type": "article",
+            "slug": "mastering-conflict-resolution-together"
+          },
+          {
+            "type": "game",
+            "slug": "problem-solving-partners"
+          },
+          {
+            "type": "checkup",
+            "slug": "aligning-sexual-values-and-expectations"
+          },
+          {
+            "type": "question",
+            "slug": "how-has-your-sexual-expectations-changed-since-weve-started-dating"
+          },
+          {
+            "type": "exercise",
+            "slug": "conflict-resolution-strategies-practice"
+          }
+        ]
+      },
+      {
+        "title": "Честване на Вашата Сексуална Връзка",
+        "description": "Размислете за вашето пътуване заедно и отпразнувайте важни моменти в сексуалната си връзка. Обсъдете начини да почетете интимността си и да поддържате вълнението живо, като се уверите, че и двамата партньори се чувстват ценени и оценени.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "love-language-type"
+          },
+          {
+            "type": "question",
+            "slug": "whats-the-best-thing-about-our-sex-life"
+          },
+          {
+            "type": "article",
+            "slug": "fun-rituals-to-strengthen-bonds"
+          },
+          {
+            "type": "game",
+            "slug": "date-night-planner"
+          },
+          {
+            "type": "exercise",
+            "slug": "shared-mood-boards"
+          },
+          {
+            "type": "question",
+            "slug": "whats-one-thing-you-love-about-our-physical-connection"
+          }
+        ]
+      }
+    ],
+    "slug": "navigating-our-intimate-world"
+  }
+]

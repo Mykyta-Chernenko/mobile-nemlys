@@ -11,6 +11,10 @@ export function logSupaErrors(e: PostgrestError) {
   logErrorsWithMessage(e, `${e.code}:${e.message}:${e.details}:${e.hint}`);
 }
 
+export function logSupaErrorsWithoutAlert(e: PostgrestError) {
+  logErrorsWithMessageWithoutAlert(e, `${e.code}:${e.message}:${e.details}:${e.hint}`);
+}
+
 export function logErrorsWithMessage(e: any, message: string | undefined = undefined) {
   if (message) {
     if (e.message && typeof e.message === 'string') {
@@ -41,12 +45,11 @@ export const isNetworkError = (error: any): boolean => {
   // This example assumes that network errors might have a specific message or code
   if (error.message) {
     // Example: Check for common network error messages
-    return (
-      error.message?.toLowerCase()?.includes('network') ||
-      error.message?.toLowerCase()?.includes('fetch') ||
-      error.message?.toLowerCase()?.includes('timeout') ||
-      error.message?.toLowerCase()?.includes('request')
-    );
+    return error.message?.toLowerCase()?.includes('network');
+    // TODO disable for now, let's enable one by one when we see specific errors
+    // error.message?.toLowerCase()?.includes('timeout') ||
+    // error.message?.toLowerCase()?.includes('request') ||
+    // error.message?.toLowerCase()?.includes('fetch') ||
   }
 
   // If error code is available

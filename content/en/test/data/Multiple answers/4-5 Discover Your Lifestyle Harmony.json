@@ -1,0 +1,145 @@
+{
+  "topic": [
+    "understanding_mutual_compatibility",
+    "planning_for_future",
+    "building_trust",
+    "introducing_healthy_habits",
+    "improving_communication"
+  ],
+  "test_headline": "Discover Your Lifestyle Harmony",
+  "scientific_basis": "Based on compatibility research that explores how aligned couples are in their daily habits, routines, and lifestyle preferences.",
+  "description": "This quiz assesses how well your lifestyles align by exploring your daily routines, social preferences, and future ambitions. Find out how compatible you are and discover ways to enhance your harmony!",
+  "questions": [
+    {
+      "question": "When it comes to your daily morning routine, you:",
+      "options": [
+        "Wake up early and start the day with a structured plan.",
+        "Take it slow and enjoy a relaxed start.",
+        "Rely on my partner to set the pace.",
+        "Prefer to wake up spontaneously without a set routine.",
+        "Alternate between structured and relaxed mornings depending on the day."
+      ]
+    },
+    {
+      "question": "How do you prefer to spend your weekends as a couple?",
+      "options": [
+        "Engaging in outdoor activities and adventures.",
+        "Relaxing at home with movies or books.",
+        "Balancing between social events and quiet time.",
+        "Attending social gatherings and parties frequently.",
+        "Following whatever feels right in the moment without a specific plan."
+      ]
+    },
+    {
+      "question": "When planning a vacation, you typically:",
+      "options": [
+        "Plan every detail in advance to ensure everything runs smoothly.",
+        "Have a general idea but leave room for spontaneity.",
+        "Let your partner take the lead in planning.",
+        "Prefer last-minute plans to keep things exciting.",
+        "Discuss and agree on a flexible plan that suits both."
+      ]
+    },
+    {
+      "question": "How do you handle household chores and responsibilities?",
+      "options": [
+        "Create a detailed schedule to manage chores efficiently.",
+        "Divide tasks based on personal preferences and strengths.",
+        "One partner usually takes the lead in managing chores.",
+        "Assign chores on a day-to-day basis without a set schedule.",
+        "Share chores equally and adjust as needed."
+      ]
+    },
+    {
+      "question": "What's your approach to financial planning in the relationship?",
+      "options": [
+        "We set a strict budget and financial goals together.",
+        "I prefer to handle my finances independently.",
+        "We discuss and agree on financial decisions as a team.",
+        "I leave financial planning to my partner.",
+        "We have flexible financial arrangements that adapt over time."
+      ]
+    },
+    {
+      "question": "How do you approach your future ambitions and goals as a couple?",
+      "options": [
+        "We set joint goals and work towards them together.",
+        "We support each other's individual goals while maintaining our own paths.",
+        "One partner takes the lead in planning the future.",
+        "We keep our ambitions separate to maintain independence.",
+        "We discuss our ambitions openly and adapt our plans as needed."
+      ]
+    },
+    {
+      "question": "How do you manage your social life as a couple?",
+      "options": [
+        "We prioritize spending most of our time together over socializing separately.",
+        "We maintain separate social circles and see each other frequently.",
+        "We balance our time between shared social activities and individual friendships.",
+        "We often attend social events together to stay connected.",
+        "We prefer a mix of shared and separate social engagements depending on the situation."
+      ]
+    },
+    {
+      "question": "When it comes to health and fitness, you:",
+      "options": [
+        "Follow a structured fitness routine together.",
+        "Encourage each other to stay active but follow individual routines.",
+        "One partner takes charge of managing health and fitness activities.",
+        "Prefer informal and flexible approaches to staying active.",
+        "Support each other in finding enjoyable ways to stay healthy."
+      ]
+    },
+    {
+      "question": "How do you handle meal planning and cooking in your relationship?",
+      "options": [
+        "We plan and prepare all meals together to maintain consistency.",
+        "We take turns cooking based on our schedules.",
+        "One partner typically handles meal planning and cooking.",
+        "We prefer eating out or ordering in to avoid cooking.",
+        "We collaborate on meal planning, trying new recipes together."
+      ]
+    },
+    {
+      "question": "When making significant life decisions, you:",
+      "options": [
+        "Discuss and decide together after thorough consideration.",
+        "Typically follow the lead of one partner who takes the initiative.",
+        "Each make decisions independently and inform each other afterward.",
+        "Seek advice from friends or family before deciding.",
+        "Use a flexible approach, considering each situation individually."
+      ]
+    }
+  ],
+  "evaluation_method": {
+    "explanation": "Each answer corresponds to different aspects of lifestyle alignment, such as routine preferences, social habits, and planning styles. By tallying your responses, we can determine how harmoniously your lifestyles align based on compatibility research.",
+    "example": "For example, selecting mostly 'A' answers indicates a highly structured and aligned lifestyle, while a mix of 'B' and 'D' suggests a more flexible compatibility."
+  },
+  "outcome_interpretation": {
+    "mostly_A": {
+      "label": "Highly Harmonious",
+      "description": "Your lifestyles are highly aligned, with similar routines, social preferences, and planning styles. This strong harmony fosters a supportive and understanding relationship.",
+      "advice": "Continue nurturing your aligned habits and consider exploring new activities together to deepen your connection."
+    },
+    "mostly_B": {
+      "label": "Moderately Harmonious",
+      "description": "You share several lifestyle preferences, but there are areas where your routines and preferences differ. This balance can add variety to your relationship.",
+      "advice": "Identify key areas where your lifestyles differ and discuss ways to compromise or integrate your preferences for greater harmony."
+    },
+    "mostly_C": {
+      "label": "Balanced Harmony",
+      "description": "Your relationship has a healthy balance of aligned and distinct lifestyle preferences. This balance allows for both togetherness and personal space.",
+      "advice": "Maintain open communication about your differing preferences and continue to find activities that you both enjoy."
+    },
+    "mostly_D": {
+      "label": "Flexible Harmony",
+      "description": "Your lifestyles are quite flexible, allowing you to adapt to each other's needs and preferences. This adaptability can strengthen your bond.",
+      "advice": "Leverage your flexibility to support each other in pursuing individual and joint goals, enhancing your relationship's resilience."
+    },
+    "mostly_E": {
+      "label": "Adaptable Harmony",
+      "description": "Your relationship thrives on adaptability, with both partners willing to adjust their lifestyles to accommodate each other. This approach fosters mutual respect and growth.",
+      "advice": "Continue embracing flexibility and explore new ways to adapt together as your relationship evolves."
+    }
+  }
+}

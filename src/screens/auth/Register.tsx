@@ -7,14 +7,14 @@ import { OAuth } from '@app/components/auth/OAuth';
 import { i18n } from '@app/localization/i18n';
 import { supabase } from '@app/api/initSupabase';
 import { SupabaseUser } from '@app/types/api';
+import Constants from 'expo-constants';
 
 import { ANON_USER, AuthContext } from '@app/provider/AuthProvider';
-import { KEYBOARD_BEHAVIOR } from '@app/utils/constants';
+import { COUNTRY, KEYBOARD_BEHAVIOR, LOCALE, TIMEZONE } from '@app/utils/constants';
 import { FontText } from '@app/components/utils/FontText';
 import { logErrorsWithMessage, logErrorsWithMessageWithoutAlert } from '@app/utils/errors';
 import { localAnalytics } from '@app/utils/analytics';
 import StyledInput from '@app/components/utils/StyledInput';
-import * as Localization from 'expo-localization';
 import { getNow, sleep } from '@app/utils/date';
 import { Mutex } from 'async-mutex';
 export function handleUserAfterSignUp(provider: string): (user: SupabaseUser) => Promise<void> {
@@ -31,21 +31,18 @@ export function handleUserAfterSignUp(provider: string): (user: SupabaseUser) =>
 
       // eslint-disable-next-line no-constant-condition
       while (true) {
-        const { error, count } = await supabase
-          .from('user_profile')
-          .select('*', { count: 'exact' })
-          .eq('user_id', user.id);
-        if (error) {
-          throw error;
-        }
-        const { error: error2, count: count2 } = await supabase
-          .from('user_technical_details')
-          .select('*', { count: 'exact' })
-          .eq('user_id', user.id);
-        if (error2) {
-          throw error2;
-        }
-        if (count && count2) {
+        const [userProfileRes, userTechDetailsRes] = await Promise.all([
+          supabase.from('user_profile').select('*').eq('user_id', user.id).maybeSingle(),
+          supabase
+            .from('user_technical_details')
+            .select('*', { count: 'exact' })
+            .eq('user_id', user.id),
+        ]);
+
+        if (userProfileRes.error) throw userProfileRes.error;
+        if (userTechDetailsRes.error) throw userTechDetailsRes.error;
+
+        if (userProfileRes.data && userTechDetailsRes.count) {
           console.log(`User ${user.email || 'with this email'} already exists, just signing in`);
           void localAnalytics().logEvent('LoginAlreadyExists', {
             screen: 'Login',
@@ -53,13 +50,24 @@ export function handleUserAfterSignUp(provider: string): (user: SupabaseUser) =>
             userId: user.id,
             provider,
           });
-          const { error: localeError } = await supabase
-            .from('user_technical_details')
-            .update({ user_locale: Localization.locale, updated_at: getNow().toISOString() })
-            .eq('user_id', user.id);
-          if (localeError) {
-            throw localeError;
-          }
+
+          const [techDetailsUpdateRes, coupleUpdateRes] = await Promise.all([
+            supabase
+              .from('user_technical_details')
+              .update({
+                user_locale: LOCALE,
+                updated_at: getNow().toISOString(),
+                user_timezone: TIMEZONE,
+                user_country: COUNTRY,
+                app_version: Constants.expoConfig?.version || null,
+              })
+              .eq('user_id', user.id),
+            supabase.rpc('update_couple_timezone', { p_timezone: TIMEZONE }),
+          ]);
+
+          if (techDetailsUpdateRes.error) throw techDetailsUpdateRes.error;
+          if (coupleUpdateRes.error) throw coupleUpdateRes.error;
+
           return;
         } else {
           void localAnalytics().logEvent('LoginProfileDoesNotExistYet', {

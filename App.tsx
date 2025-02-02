@@ -1,7 +1,8 @@
 import React from 'react';
+import { View, Image, TouchableOpacity } from 'react-native';
 import 'react-native-url-polyfill/auto';
 import Navigation from './src/navigation';
-import { AuthProvider } from './src/provider/AuthProvider';
+import { AuthProvider } from '@app/provider/AuthProvider';
 import LanguageWrapper from './src/theme/LanguageWrapper';
 import { ThemeProvider } from '@rneui/themed';
 import { theme } from '@app/theme';
@@ -9,14 +10,52 @@ import FontWrapper from '@app/theme/FontWrapper';
 import * as Sentry from '@sentry/react-native';
 import SplashScreen from '@app/theme/SplashScreen';
 import ThemeStatusBar from '@app/theme/ThemeStatusBar';
-import Toast, { BaseToast, ErrorToast } from 'react-native-toast-message';
+import Toast, { ErrorToast } from 'react-native-toast-message';
 import { isNetworkError } from '@app/utils/errors';
+import { FontText } from '@app/components/utils/FontText';
 
 const toastConfig = {
-  success: (props) => (
-    <BaseToast {...props} style={{ borderLeftColor: 'rgba(182, 128, 241, 1)' }} />
-  ),
   error: (props) => <ErrorToast {...props} style={{ borderLeftColor: 'rgba(250, 65, 165, 1))' }} />,
+  success: (props) => {
+    return (
+      <View
+        style={{
+          flexDirection: 'row',
+          alignItems: 'center',
+          marginHorizontal: 20,
+          gap: 4,
+          paddingHorizontal: 16,
+          paddingVertical: 12,
+          backgroundColor: 'rgba(26, 5, 47, 1)',
+          borderRadius: 16,
+        }}
+      >
+        {props?.props?.icon ? (
+          <props.props.icon style={{ width: 24, height: 24 }} />
+        ) : (
+          <View style={{ height: 24, width: 24 }}></View>
+        )}
+
+        <FontText
+          small
+          style={{
+            flex: 1,
+            color: '#fff',
+            textAlign: 'center',
+          }}
+        >
+          {props.text1}
+        </FontText>
+
+        <TouchableOpacity onPress={() => Toast.hide()}>
+          <Image
+            source={require('./assets/images/close_black.png')}
+            style={{ width: 24, height: 24 }}
+          />
+        </TouchableOpacity>
+      </View>
+    );
+  },
 };
 function App() {
   return (

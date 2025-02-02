@@ -1,11 +1,11 @@
 import { useContext, useEffect } from 'react';
 import AsyncStorage from '@react-native-async-storage/async-storage';
-import * as Localization from 'expo-localization';
 
 import { AuthContext } from '@app/provider/AuthProvider';
-import { i18n } from '@app/localization/i18n';
+import { getLanguageFromLocale, i18n } from '@app/localization/i18n';
 import { supabase } from '@app/api/initSupabase';
 import React from 'react';
+import { LANGUAGE_CODE } from '@app/utils/constants';
 
 export const setAppLanguage = async (language: string) => {
   try {
@@ -26,13 +26,14 @@ export default function (props: Props) {
   useEffect(() => {
     const fetchAndSetLanguage = async () => {
       try {
+        await AsyncStorage.removeItem('language');
         const storedLanguage = await AsyncStorage.getItem('language');
 
         if (storedLanguage) {
-          i18n.locale = storedLanguage;
+          i18n.locale = getLanguageFromLocale(storedLanguage);
         } else if (!authContext.isSignedIn) {
           // If user not logged in, set device locale
-          i18n.locale = Localization.locale;
+          i18n.locale = LANGUAGE_CODE;
         } else {
           // User logged in, fetch language setting from backend
           const { data, error } = await supabase
@@ -47,7 +48,9 @@ export default function (props: Props) {
           }
 
           if (data && data.language) {
-            await setAppLanguage(data.language);
+            await setAppLanguage(getLanguageFromLocale(data.language));
+          } else {
+            i18n.locale = LANGUAGE_CODE;
           }
         }
       } catch (error) {

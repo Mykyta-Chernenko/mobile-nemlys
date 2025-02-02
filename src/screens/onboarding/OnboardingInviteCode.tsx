@@ -6,17 +6,17 @@ import {
   ScrollView,
   View,
   TouchableOpacity,
-  Clipboard,
   Share,
   RefreshControl,
 } from 'react-native';
 import { useTheme, useThemeMode } from '@rneui/themed';
+import Clipboard from '@react-native-clipboard/clipboard';
 import { i18n } from '@app/localization/i18n';
 import { PrimaryButton } from '@app/components/buttons/PrimaryButtons';
 import { FontText, getFontSizeForScreen } from '@app/components/utils/FontText';
 import { Progress } from '@app/components/utils/Progress';
 import { GoBackButton } from '@app/components/buttons/GoBackButton';
-import { KEYBOARD_BEHAVIOR } from '@app/utils/constants';
+import { KEYBOARD_BEHAVIOR, ONBOARDING_STEPS } from '@app/utils/constants';
 import { supabase } from '@app/api/initSupabase';
 import { AuthContext } from '@app/provider/AuthProvider';
 import { MainStackParamList } from '@app/types/navigation';
@@ -28,18 +28,20 @@ import CopyIcon from '@app/icons/copy';
 import Toast from 'react-native-toast-message';
 import { Loading } from '@app/components/utils/Loading';
 import { logErrorsWithMessage, logSupaErrors } from '@app/utils/errors';
+import { showName } from '@app/utils/strings';
 
 type OnboardingInviteCodeProps = NativeStackScreenProps<MainStackParamList, 'OnboardingInviteCode'>;
 
 export default function OnboardingInviteCode({ route, navigation }: OnboardingInviteCodeProps) {
   const { theme } = useTheme();
   const [inviteCode, setInviteCode] = useState<string>('');
+  const [name, setName] = useState<string>('');
   const [partnerName, setPartnerName] = useState<string>('');
   const [loading, setLoading] = useState(true);
   const [refreshing, setRefreshing] = useState(false);
   const [codeShared, setCodeShared] = useState(false);
   const authContext = useContext(AuthContext);
-  const fromSettings = route.params.fromSettings;
+  const { nextScreen, screenParams } = route.params || {};
 
   const { setMode } = useThemeMode();
 
@@ -56,7 +58,7 @@ export default function OnboardingInviteCode({ route, navigation }: OnboardingIn
     try {
       const { data: userProfile, error: userError } = await supabase
         .from('user_profile')
-        .select('couple_id, partner_first_name')
+        .select('couple_id, first_name, partner_first_name')
         .eq('user_id', authContext.userId!)
         .single();
 
@@ -77,7 +79,8 @@ export default function OnboardingInviteCode({ route, navigation }: OnboardingIn
       }
 
       setInviteCode(couple.invite_code);
-      setPartnerName(userProfile.partner_first_name || 'Partner');
+      setPartnerName(showName(userProfile.partner_first_name || i18n.t('home_partner')));
+      setName(showName(userProfile.first_name));
     } finally {
       setLoading(false);
     }
@@ -108,6 +111,7 @@ export default function OnboardingInviteCode({ route, navigation }: OnboardingIn
       type: 'success',
       text1: i18n.t('onboarding_invite_copy_success_message'),
       visibilityTime: 1000,
+      onPress: () => Toast.hide(),
     });
     setCodeShared(true);
     void localAnalytics().logEvent('InviteCodeCopied', {
@@ -142,7 +146,7 @@ export default function OnboardingInviteCode({ route, navigation }: OnboardingIn
       action: 'EnterPairingClicked',
       userId: authContext.userId,
     });
-    navigation.replace('OnboardingInviteCodeInput', { fromSettings });
+    navigation.navigate('OnboardingInviteCodeInput', { nextScreen, screenParams });
   };
 
   const handleContinue = () => {
@@ -150,11 +154,17 @@ export default function OnboardingInviteCode({ route, navigation }: OnboardingIn
       screen: 'OnboardingInviteCode',
       action: 'Continue',
       userId: authContext.userId,
+      nextScreen,
+      screenParams,
     });
-    if (fromSettings) {
-      navigation.goBack();
+    if (nextScreen) {
+      navigation.navigate(
+        // @ts-expect-error cannot type screen name here
+        nextScreen,
+        screenParams || { refreshTimeStamp: new Date().toISOString() },
+      );
     } else {
-      navigation.replace('OnDateNotification', { withPartner: true, isOnboarding: true });
+      navigation.navigate('OnboardingQuizIntro', { name, partnerName });
     }
   };
 
@@ -191,16 +201,22 @@ export default function OnboardingInviteCode({ route, navigation }: OnboardingIn
                     screen: 'OnboardingInviteCode',
                     action: 'BackClicked',
                     userId: authContext.userId,
+                    nextScreen,
+                    screenParams,
                   });
-                  if (fromSettings) {
-                    navigation.goBack();
+                  if (nextScreen) {
+                    navigation.navigate(
+                      // @ts-expect-error cannot type screen name here
+                      nextScreen,
+                      screenParams || { refreshTimeStamp: new Date().toISOString() },
+                    );
                   } else {
-                    navigation.replace('JobInput');
+                    navigation.goBack();
                   }
                 }}
               />
 
-              {!fromSettings ? <Progress current={6} all={7} /> : <View></View>}
+              {!nextScreen ? <Progress current={5} all={ONBOARDING_STEPS} /> : <View></View>}
               <View
                 style={{
                   position: 'absolute',
@@ -210,7 +226,7 @@ export default function OnboardingInviteCode({ route, navigation }: OnboardingIn
                 }}
               >
                 <TouchableOpacity style={{ padding: 10 }} onPress={() => void handleContinue()}>
-                  <FontText>{i18n.t('next')}</FontText>
+                  <FontText>{i18n.t('skip')}</FontText>
                 </TouchableOpacity>
               </View>
             </View>
@@ -265,7 +281,7 @@ export default function OnboardingInviteCode({ route, navigation }: OnboardingIn
                   }}
                 >
                   <View style={{ flexDirection: 'row', gap: 8, alignItems: 'center' }}>
-                    <FontText h1 style={{ color: '#1A052F', fontWeight: '600' }}>
+                    <FontText h1 style={{ fontWeight: '600' }}>
                       {inviteCode}
                     </FontText>
                     <TouchableOpacity

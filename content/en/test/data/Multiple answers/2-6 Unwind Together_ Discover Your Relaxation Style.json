@@ -1,0 +1,145 @@
+{
+  "topic": [
+    "having_fun_and_entertainment",
+    "understanding_mutual_compatibility",
+    "improving_relationship_satisfaction",
+    "enhancing_love_and_affection",
+    "exploring_feelings"
+  ],
+  "test_headline": "Unwind Together: Discover Your Relaxation Style",
+  "scientific_basis": "This quiz is grounded in stress reduction research and explores the benefits of co-relaxation activities, helping couples understand how they can best unwind and recharge together.",
+  "description": "Ready to relax and bond with your partner? Take this fun quiz to discover your unique relaxation styles and learn how to enhance your downtime together!",
+  "questions": [
+    {
+      "question": "After a long day, how do you and your partner prefer to spend your evening together?",
+      "options": [
+        "Watching your favorite TV shows or movies.",
+        "Going for a calming walk or hike.",
+        "Engaging in a creative hobby together, like painting or cooking.",
+        "Having deep conversations over a cozy meal.",
+        "Trying out new fun activities or games."
+      ]
+    },
+    {
+      "question": "When you feel stressed, what is your go-to method to relax with your partner?",
+      "options": [
+        "Snuggling up on the couch with a good book or movie.",
+        "Practicing yoga or meditation together.",
+        "Playing video games or board games to distract yourselves.",
+        "Talking through your feelings and supporting each other.",
+        "Going out for a fun activity like dancing or attending a show."
+      ]
+    },
+    {
+      "question": "What kind of environment do you prefer for relaxation as a couple?",
+      "options": [
+        "A quiet and cozy home setting.",
+        "Nature settings like parks or beaches.",
+        "A creative space where you can work on projects together.",
+        "A comfortable place for heartfelt conversations.",
+        "An energetic place filled with activities and entertainment."
+      ]
+    },
+    {
+      "question": "How do you and your partner like to unwind on weekends?",
+      "options": [
+        "Binge-watching your favorite series.",
+        "Exploring the outdoors through hiking or biking.",
+        "Collaborating on DIY projects or cooking new recipes.",
+        "Having long, meaningful conversations over brunch.",
+        "Attending events or trying out new restaurants."
+      ]
+    },
+    {
+      "question": "When planning a relaxing date, what do you usually choose?",
+      "options": [
+        "A movie night at home.",
+        "A peaceful day at the spa or a quiet retreat.",
+        "A creative workshop or class.",
+        "A heartfelt dinner where you can talk.",
+        "An adventure-filled outing like amusement parks."
+      ]
+    },
+    {
+      "question": "How do you and your partner handle downtime after a busy week?",
+      "options": [
+        "Relaxing together with some screen time.",
+        "Engaging in relaxing physical activities like yoga.",
+        "Working on a shared creative project.",
+        "Connecting through in-depth conversations.",
+        "Jumping into fun and entertaining activities."
+      ]
+    },
+    {
+      "question": "What activity best describes your ideal way to relax with your partner?",
+      "options": [
+        "Cuddling on the sofa with a good movie.",
+        "Meditating or doing yoga together.",
+        "Creating something together, like art or crafts.",
+        "Having a meaningful discussion over coffee.",
+        "Going out for a lively event or trying something new."
+      ]
+    },
+    {
+      "question": "When you need to recharge, what do you and your partner do?",
+      "options": [
+        "Spend quiet time together at home.",
+        "Go for a serene walk in nature.",
+        "Collaborate on a fun project or hobby.",
+        "Share your thoughts and feelings openly.",
+        "Engage in exciting and entertaining activities."
+      ]
+    },
+    {
+      "question": "What is your favorite way to celebrate relaxing moments together?",
+      "options": [
+        "Enjoying a movie marathon or binge-watching a series.",
+        "Having a peaceful picnic or nature outing.",
+        "Working together on a creative endeavor.",
+        "Exchanging heartfelt conversations and stories.",
+        "Participating in fun events or games."
+      ]
+    },
+    {
+      "question": "How do you and your partner prefer to start your day on a relaxed note?",
+      "options": [
+        "Having a slow morning with coffee and TV.",
+        "Doing morning stretches or yoga together.",
+        "Starting a creative project or planning the day creatively.",
+        "Sharing thoughts and setting intentions for the day.",
+        "Jumping into fun activities or adventures right away."
+      ]
+    }
+  ],
+  "evaluation_method": {
+    "explanation": "Each answer corresponds to a specific relaxation style: Cozy Couch, Nature Enthusiast, Creative Collaborators, Heartfelt Communicators, or Adventure Seekers. Tally your answers to see which style you and your partner align with the most.",
+    "example": "If most of your answers are 'A' options, you and your partner are 'Cozy Couch' relaxers who enjoy quiet, comfortable downtime together. If you selected mostly 'B' options, you're 'Nature Enthusiasts' who find peace in the outdoors."
+  },
+  "outcome_interpretation": {
+    "mostly_A": {
+      "label": "Cozy Couch Relaxers",
+      "description": "You both enjoy the comfort of home and love unwinding together with movies, books, or simply relaxing on the couch. This shared preference for a cozy environment strengthens your bond and provides a safe space for both of you.",
+      "advice": "Keep nurturing your cozy nights in by exploring new shows or creating a comfortable relaxation space. Consider occasional surprises like themed movie nights to keep things fresh and exciting."
+    },
+    "mostly_B": {
+      "label": "Nature Enthusiasts",
+      "description": "You thrive on the tranquility and beauty of the outdoors. Whether it's hiking, biking, or simply walking in the park, being in nature helps you both relax and recharge.",
+      "advice": "Plan regular outdoor adventures to maintain your connection with nature. Explore new trails or try different outdoor activities together to keep your relaxation routine vibrant."
+    },
+    "mostly_C": {
+      "label": "Creative Collaborators",
+      "description": "Your relaxation comes from creating something together. Whether it's cooking, crafting, or working on DIY projects, your shared creativity strengthens your relationship.",
+      "advice": "Continue to explore new creative projects and support each other's ideas. Attend workshops or classes together to enhance your skills and discover new ways to collaborate."
+    },
+    "mostly_D": {
+      "label": "Heartfelt Communicators",
+      "description": "Open and meaningful conversations are your way to unwind. Sharing thoughts and feelings helps you both feel connected and supported, fostering a deep emotional bond.",
+      "advice": "Maintain your habit of open communication by setting aside dedicated time for heartfelt conversations. Consider journaling together or engaging in activities that encourage deeper dialogue."
+    },
+    "mostly_E": {
+      "label": "Adventure Seekers",
+      "description": "You both find relaxation in exciting and entertaining activities. Whether it's trying new restaurants, attending events, or playing games, your dynamic energy keeps your relationship lively.",
+      "advice": "Keep the excitement alive by regularly seeking out new experiences together. Create a bucket list of activities you'd like to try and make it a fun project to check them off together."
+    }
+  }
+}

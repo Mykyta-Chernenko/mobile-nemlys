@@ -1,0 +1,145 @@
+{
+  "topic": [
+    "having_fun_and_entertainment",
+    "having_new_experiences",
+    "improving_relationship_satisfaction",
+    "understanding_mutual_compatibility",
+    "building_trust"
+  ],
+  "test_headline": "Discover Your Relationship's Thrill-Seeking Style!",
+  "scientific_basis": "This quiz is inspired by self-expansion theory, which suggests that couples grow closer by sharing new and exciting experiences together.",
+  "description": "Ready to spice up your relationship? Take this quiz to find out how adventurous you and your partner are, and uncover new ways to have fun and grow together!",
+  "questions": [
+    {
+      "question": "When planning a weekend together, what do you prefer to do?",
+      "options": [
+        "Stick to our usual routine and relax at home.",
+        "Try a new restaurant or visit a new place in town.",
+        "Plan a spontaneous road trip without a set destination.",
+        "Participate in a planned activity like a workshop or class.",
+        "Take turns deciding each activity to keep things unpredictable."
+      ]
+    },
+    {
+      "question": "How do you feel about trying a new hobby as a couple?",
+      "options": [
+        "I'd rather stick to hobbies we already enjoy.",
+        "I'm open to trying something new if it interests me.",
+        "Excited! Let's dive into something completely different.",
+        "I prefer one of us tries something new while the other stays the same.",
+        "Let's explore a few options and see what excites us both."
+      ]
+    },
+    {
+      "question": "Your partner suggests an adventurous date, like hiking or kayaking. How do you respond?",
+      "options": [
+        "I'd prefer a more relaxed date instead.",
+        "I'm open to it if I've never tried it before.",
+        "Absolutely! I love outdoor adventures.",
+        "I'd join but might feel a bit out of my comfort zone.",
+        "I'd be excited to try something new together."
+      ]
+    },
+    {
+      "question": "How often do you seek out new experiences together?",
+      "options": [
+        "Rarely, we enjoy our regular activities.",
+        "Occasionally, when something interesting comes up.",
+        "Frequently, we love exploring new things.",
+        "Only when one of us suggests it.",
+        "We actively look for new experiences all the time."
+      ]
+    },
+    {
+      "question": "When faced with a new opportunity, how do you decide to participate as a couple?",
+      "options": [
+        "We discuss it thoroughly before deciding.",
+        "One of us usually takes the lead in deciding.",
+        "We jump in and see how it goes.",
+        "We consider how it fits into our schedules first.",
+        "We evaluate how it can benefit our relationship."
+      ]
+    },
+    {
+      "question": "How do you handle uncertainty when trying something new together?",
+      "options": [
+        "We might feel anxious but try to support each other.",
+        "We prefer to avoid uncertain situations.",
+        "We embrace the uncertainty as part of the adventure.",
+        "One of us might hesitate while the other encourages.",
+        "We communicate openly to navigate the uncertainty together."
+      ]
+    },
+    {
+      "question": "What role does spontaneity play in your relationship?",
+      "options": [
+        "We prefer planned activities over spontaneous ones.",
+        "Sometimes it's fun, but not a priority.",
+        "It's a key part of how we connect and have fun.",
+        "It happens occasionally when the mood strikes.",
+        "We thrive on spontaneous adventures and surprises."
+      ]
+    },
+    {
+      "question": "How do you celebrate milestones or special occasions?",
+      "options": [
+        "We stick to traditional celebrations we're comfortable with.",
+        "We try something slightly different each time.",
+        "We plan unique and adventurous activities.",
+        "We let the moment guide how we celebrate.",
+        "We combine both familiar and new elements to celebrate."
+      ]
+    },
+    {
+      "question": "When traveling, what is your preferred style as a couple?",
+      "options": [
+        "Relaxing and visiting familiar places.",
+        "Exploring new cities and cultures.",
+        "Engaging in adventurous activities like trekking or diving.",
+        "A mix of sightseeing and spontaneous activities.",
+        "Trying unconventional modes of travel and unique experiences."
+      ]
+    },
+    {
+      "question": "How important is it for you and your partner to grow through new experiences?",
+      "options": [
+        "It's not very important; we're happy as we are.",
+        "Somewhat important, but not a priority.",
+        "Very important, it helps us stay connected.",
+        "Important, as long as it's comfortable for both.",
+        "Crucial, as it strengthens our bond and personal growth."
+      ]
+    }
+  ],
+  "evaluation_method": {
+    "explanation": "Each answer corresponds to a different adventure-seeking style based on self-expansion theory. Your responses are categorized into five styles: Cautious Explorers, Open Adventurers, Thrill Seekers, Balanced Explorers, and Dynamic Duo. Tally your answers to see which style best describes your relationship.",
+    "example": "For example, choosing more 'A' options might indicate a Cautious Explorer style, while more 'C' options suggest you and your partner are Thrill Seekers."
+  },
+  "outcome_interpretation": {
+    "mostly_A": {
+      "label": "Cautious Explorers",
+      "description": "You and your partner enjoy stability and prefer familiar activities. While you may not seek out new adventures often, your consistent approach provides a strong foundation for your relationship.",
+      "advice": "Consider gradually introducing new activities to add a spark of excitement. Small changes can enhance your connection without overwhelming either of you."
+    },
+    "mostly_B": {
+      "label": "Open Adventurers",
+      "description": "You're open to new experiences and willing to try different things as a couple. This flexibility helps keep your relationship dynamic and engaging.",
+      "advice": "Keep exploring new hobbies and interests together. Your openness will continue to strengthen your bond and bring fresh energy into your relationship."
+    },
+    "mostly_C": {
+      "label": "Thrill Seekers",
+      "description": "Adventure and excitement are central to your relationship. You love diving into new and exhilarating experiences together, keeping the relationship vibrant and lively.",
+      "advice": "Ensure you balance thrill-seeking with moments of relaxation. While adventures are exciting, taking time to unwind together can provide a well-rounded relationship."
+    },
+    "mostly_D": {
+      "label": "Balanced Explorers",
+      "description": "You strike a healthy balance between trying new things and maintaining your regular routines. This equilibrium helps in sustaining both excitement and comfort in your relationship.",
+      "advice": "Continue to balance your activities, mixing new adventures with familiar comforts. This approach will help you grow together while maintaining stability."
+    },
+    "mostly_E": {
+      "label": "Dynamic Duo",
+      "description": "You and your partner are highly proactive in seeking out new and unique experiences. Your relationship thrives on continuous growth and shared adventures.",
+      "advice": "Keep embracing new challenges and opportunities together. Your proactive approach ensures that your relationship remains strong and ever-evolving."
+    }
+  }
+}

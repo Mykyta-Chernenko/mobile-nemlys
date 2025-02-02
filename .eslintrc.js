@@ -12,15 +12,14 @@ module.exports = {
     'plugin:@typescript-eslint/eslint-recommended',
     'plugin:@typescript-eslint/recommended',
     'plugin:@typescript-eslint/recommended-requiring-type-checking',
-    'prettier'
+    'prettier',
+    'plugin:prettier/recommended',
   ],
   parserOptions: {
     project: './tsconfig.json',
   },
-  plugins: ['react', 'react-hooks', '@typescript-eslint', 'prettier', 'unused-imports'],
+  plugins: ['react', 'react-hooks', '@typescript-eslint', 'unused-imports'],
   rules: {
-    indent: ['error', 2, { SwitchCase: 1 }],
-    quotes: ['error', 'single', { avoidEscape: true }],
     'prettier/prettier': 'error',
     'unused-imports/no-unused-imports': 'error',
     'no-empty-function': 'off',

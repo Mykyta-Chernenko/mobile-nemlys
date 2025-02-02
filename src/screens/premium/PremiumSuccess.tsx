@@ -1,17 +1,15 @@
-import React, { useContext, useEffect } from 'react';
+import React, { useCallback, useContext } from 'react';
 import { View, Image } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { FontText } from '@app/components/utils/FontText';
 import { i18n } from '@app/localization/i18n';
 import { useTheme, useThemeMode } from '@rneui/themed';
 import { MainStackParamList } from '@app/types/navigation';
-import { SecondaryButton } from '../../components/buttons/SecondaryButton';
+import { SecondaryButton } from '@app/components/buttons/SecondaryButton';
 import { NativeStackScreenProps } from '@react-navigation/native-stack';
 import { localAnalytics } from '@app/utils/analytics';
 import { AuthContext } from '@app/provider/AuthProvider';
-import * as Notifications from 'expo-notifications';
-import { sleep } from '@app/utils/date';
-import { retrieveNotificationAccess } from '@app/utils/notification';
+import { useFocusEffect } from '@react-navigation/native';
 
 export default function ({
   route,
@@ -23,21 +21,14 @@ export default function ({
   const state = route.params.state;
   const isPremium = state === 'premium_started';
 
-  // to set the color of status bar
   const { setMode } = useThemeMode();
-  useEffect(() => {
-    const unsubscribeFocus = navigation.addListener('focus', () => setMode('dark'));
-    return unsubscribeFocus;
-  }, [navigation]);
 
-  useEffect(() => {
-    const getCurrentToken = async () => {
-      const { status } = await Notifications.getPermissionsAsync();
-      await sleep(2000);
-      await retrieveNotificationAccess(authContext.userId, status, 'PremiumSuccess', () => {});
-    };
-    void getCurrentToken();
-  }, []);
+  useFocusEffect(
+    useCallback(() => {
+      setMode('dark');
+      return () => setMode('light');
+    }, []),
+  );
 
   return (
     <View
@@ -79,9 +70,15 @@ export default function ({
                 action: 'ButtonPressed',
                 userId: authContext.userId,
               });
-              navigation.navigate('Home', {
-                refreshTimeStamp: new Date().toISOString(),
-              });
+              if (route.params.isOnboarding) {
+                navigation.replace('OnboardingNotification', {
+                  isOnboarding: true,
+                });
+              } else {
+                navigation.replace('Home', {
+                  refreshTimeStamp: new Date().toISOString(),
+                });
+              }
             }}
             title={
               isPremium

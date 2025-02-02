@@ -3,7 +3,6 @@ import {
   ActivityIndicator,
   FlatList,
   KeyboardAvoidingView,
-  Platform,
   RefreshControl,
   TouchableOpacity,
   View,
@@ -33,17 +32,15 @@ import RemindIcon from '@app/icons/remind';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import { getJobs } from '@app/screens/menu/Home';
 import AnswerNoPartnerWarning from '@app/components/answers/AnswerNoPartnerWarning';
-import { getFontSize } from '@app/utils/strings';
+import { getFontSize, hideText, showName } from '@app/utils/strings';
 import { handleRemindPartner } from '@app/utils/sendNotification';
 import { AppState } from 'react-native';
 import { SecondaryButton } from '@app/components/buttons/SecondaryButton';
 import { getNow } from '@app/utils/date';
+import { KEYBOARD_BEHAVIOR } from '@app/utils/constants';
 
 const STORAGE_KEY = '@question_answer:';
 
-export const truncateText = (text: string) => {
-  return text.replace(/\S/gu, '*');
-};
 export default function QuestionAnswer({
   route,
   navigation,
@@ -106,8 +103,8 @@ export default function QuestionAnswer({
 
     setQuestion(questionData.data.question);
     setReplies(repliesData.data);
-    setPartnerName(profileData.data.partner_first_name!);
-    setName(profileData.data.first_name!);
+    setPartnerName(showName(profileData.data.partner_first_name) || i18n.t('home_partner'));
+    setName(showName(profileData.data.first_name));
     setHasPartner(hasPartnerData.data);
     setDateId(questionData.data.date_id);
     setDateJob(questionData.data.date!.job);
@@ -280,7 +277,7 @@ export default function QuestionAnswer({
             body: { type: type, question_id: questionId },
           });
           if (res.error) {
-            logErrorsWithMessageWithoutAlert(res.error, 'notify partner function returned error');
+            logErrorsWithMessageWithoutAlert(res.error, i18n.t('reminding_partner_error'));
             throw res.error;
           }
         }
@@ -329,8 +326,11 @@ export default function QuestionAnswer({
       fromDate,
       userId: authContext.userId,
     });
-
-    navigation.goBack();
+    if (navigation.canGoBack()) {
+      navigation.goBack();
+    } else {
+      navigation.navigate('AnswerHome', { refreshTimeStamp: new Date().toISOString() });
+    }
   };
 
   const renderReply = ({ item }) => (
@@ -389,7 +389,7 @@ export default function QuestionAnswer({
             >
               {replies.some((reply) => reply.user_id === authContext.userId)
                 ? item.text
-                : truncateText(item.text as string)}
+                : hideText(item.text as string)}
             </FontText>
             <FontText style={{ marginTop: 5, color: theme.colors.grey3 }}>{partnerName}</FontText>
           </View>
@@ -442,10 +442,22 @@ export default function QuestionAnswer({
           onPress={() =>
             hasPartner &&
             void handleRemindPartner(
-              questionId,
+              'QuestionAnswer',
               partnerName,
               authContext.userId!,
               setReminderLoading,
+              {
+                question_id: questionId,
+                type: 'remind_answer',
+              },
+              navigation,
+              'QuestionAnswer',
+              {
+                questionId,
+                fromDate,
+              },
+              true,
+              true,
             )
           }
         >
@@ -473,10 +485,7 @@ export default function QuestionAnswer({
   };
   return (
     <SafeAreaView style={{ flex: 1, backgroundColor: '#F5E9EB' }}>
-      <KeyboardAvoidingView
-        behavior={Platform.OS === 'ios' ? 'padding' : 'height'}
-        style={{ flex: 1, paddingHorizontal: 15 }}
-      >
+      <KeyboardAvoidingView behavior={KEYBOARD_BEHAVIOR} style={{ flex: 1, paddingHorizontal: 15 }}>
         <View
           style={{
             flexDirection: 'row',
@@ -566,7 +575,11 @@ export default function QuestionAnswer({
             />
             {renderRemindPartnerButton()}
             {!hasPartner && replies.length > 0 && (
-              <AnswerNoPartnerWarning prefix={'QuestionAnswer'} partnerName={partnerName} />
+              <AnswerNoPartnerWarning
+                prefix={'QuestionAnswer'}
+                partnerName={partnerName}
+                isV3={false}
+              />
             )}
             <View style={{ flexDirection: 'row', marginBottom: 10, maxHeight: '40%' }}>
               <StyledTextInput
@@ -584,6 +597,7 @@ export default function QuestionAnswer({
                   onPress={() => void handleSendReply()}
                   style={{ justifyContent: 'center' }}
                 >
+                  {/*// @ts-expect-error used correctly*/}
                   <Icon name="send" size={getFontSizeForScreen('h3')} />
                 </TouchableOpacity>
               )}

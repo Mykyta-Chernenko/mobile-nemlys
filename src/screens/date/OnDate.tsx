@@ -211,8 +211,8 @@ export default function ({
         premiumDetails.todayDateCount + (dateRes.data?.created_by == authContext.userId ? 1 : 0),
       );
       setPremiumState(premiumDetails.premiumState);
-    } catch (error) {
-      logErrorsWithMessage(error, 'Error in getData on Date');
+    } catch (e) {
+      logErrorsWithMessage(e, (e?.message as string) || '');
     }
   };
 

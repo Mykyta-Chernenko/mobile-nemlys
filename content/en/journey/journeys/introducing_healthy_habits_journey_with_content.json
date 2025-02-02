@@ -1,0 +1,207 @@
+{
+  "title": "Introducing Healthy Habits Together",
+  "description": "This journey is designed to help couples develop and sustain healthy habits that contribute to their overall well-being and strengthen their relationship. By taking one step each day, you'll explore nutrition, wellness practices, and how to support each other on this journey to a healthier lifestyle.",
+  "subtopics": [
+    {
+      "title": "Understanding Nutrition Basics",
+      "description": "Learn the fundamentals of good nutrition, discussing aspects like vitamins and nutrients, meal prep, and incorporating healthy foods into your diet. This sets the foundation for a healthy lifestyle.",
+      "content": [
+        {
+          "type": "quiz",
+          "title": "Healthy Eating Style",
+          "id": 2019
+        },
+        {
+          "type": "question",
+          "title": "How do you ensure you're getting enough vitamins and nutrients?",
+          "id": 1004
+        },
+        {
+          "type": "article",
+          "title": "Kickstart Healthy Routines Together",
+          "id": 5060
+        },
+        {
+          "type": "game",
+          "title": "Nutri-Quiz",
+          "id": 3122
+        },
+        {
+          "type": "exercise",
+          "title": "Healthy Eating Plans",
+          "id": 4109
+        },
+        {
+          "type": "question",
+          "title": "Do you prefer cooking together or trying out new healthy recipes separately?",
+          "id": 1111
+        }
+      ]
+    },
+    {
+      "title": "Creating Healthy Routines",
+      "description": "Explore ways to establish daily routines that encourage healthy eating and exercise, including morning rituals and evening rituals. Discuss the importance of consistency and how it affects your health.",
+      "content": [
+        {
+          "type": "quiz",
+          "title": "Healthy Habits Style",
+          "id": 2016
+        },
+        {
+          "type": "question",
+          "title": "How do you incorporate healthy eating into your busy schedule?",
+          "id": 1141
+        },
+        {
+          "type": "article",
+          "title": "Healthy Habits for Stronger Bonds",
+          "id": 5061
+        },
+        {
+          "type": "game",
+          "title": "Healthy Habits Hub",
+          "id": 3011
+        },
+        {
+          "type": "exercise",
+          "title": "Positive Habit Tracking",
+          "id": 4144
+        },
+        {
+          "type": "question",
+          "title": "Do you enjoy morning workouts or evening wind-downs more?",
+          "id": 1366
+        }
+      ]
+    },
+    {
+      "title": "Stress Management Together",
+      "description": "Identify healthy strategies for managing stress, including mindfulness practices and how to support each other during hectic times. This subtopic addresses mental well-being as part of a healthy lifestyle.",
+      "content": [
+        {
+          "type": "checkup",
+          "title": "Mood Mapping",
+          "id": 6002
+        },
+        {
+          "type": "question",
+          "title": "How do you handle stress in a healthy way?",
+          "id": 1192
+        },
+        {
+          "type": "article",
+          "title": "Navigating Emotional Waters Together",
+          "id": 5012
+        },
+        {
+          "type": "game",
+          "title": "Mindfulness Match",
+          "id": 3124
+        },
+        {
+          "type": "exercise",
+          "title": "Mindfulness Meditation Sessions",
+          "id": 4123
+        },
+        {
+          "type": "question",
+          "title": "How do you handle stress or unexpected challenges?",
+          "id": 1193
+        }
+      ]
+    },
+    {
+      "title": "Incorporating Physical Activity",
+      "description": "Discuss different forms of physical activity you both enjoy, the importance of teamwork in staying active, and set a plan for regular exercise routines together that can keep you accountable.",
+      "content": [
+        {
+          "type": "quiz",
+          "title": "Accountability Style Quiz",
+          "id": 2017
+        },
+        {
+          "type": "question",
+          "title": "Do you prefer solo workouts or exercising together?",
+          "id": 1012
+        },
+        {
+          "type": "game",
+          "title": "Fitness Partners Unite!",
+          "id": 3121
+        },
+        {
+          "type": "exercise",
+          "title": "Fitness Routine Together",
+          "id": 4084
+        },
+        {
+          "type": "question",
+          "title": "What's a new form of exercise you'd like to do together regularly?",
+          "id": 1654
+        }
+      ]
+    },
+    {
+      "title": "Tracking Progress and Goals",
+      "description": "Learn how to set and track your health and wellness goals and how to celebrate each other's achievements. This will create motivation and a sense of partnership in your healthy lifestyle journey.",
+      "content": [
+        {
+          "type": "quiz",
+          "title": "Goal Alignment Style",
+          "id": 2055
+        },
+        {
+          "type": "question",
+          "title": "What are your long-term health and wellness goals, and how can we support each other?",
+          "id": 1523
+        },
+        {
+          "type": "article",
+          "title": "Setting Shared Future Goals",
+          "id": 5051
+        },
+        {
+          "type": "game",
+          "title": "Future Visionaries",
+          "id": 3000
+        },
+        {
+          "type": "exercise",
+          "title": "SMART Goals Planning",
+          "id": 4001
+        },
+        {
+          "type": "question",
+          "title": "How do you stay motivated to maintain your healthy habits?",
+          "id": 1402
+        }
+      ]
+    },
+    {
+      "title": "Building Healthy Habits For the Future",
+      "description": "Discuss long-term health goals, how to incorporate healthy habits into your lives as a couple, and establish traditions that promote well-being, ensuring that adopting healthy practices becomes a lifestyle.",
+      "content": [
+        {
+          "type": "quiz",
+          "title": "Growth Balance Style",
+          "id": 2044
+        },
+        {
+          "type": "question",
+          "title": "What's a new habit you'd like to develop together for personal growth?",
+          "id": 1655
+        },
+        {
+          "type": "exercise",
+          "title": "Positive Reinforcement Practices",
+          "id": 4008
+        },
+        {
+          "type": "question",
+          "title": "What's a new healthy habit you'd like to try this month?",
+          "id": 1656
+        }
+      ]
+    }
+  ]
+}

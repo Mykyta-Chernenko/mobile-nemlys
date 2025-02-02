@@ -1,125 +1,130 @@
-import React, { useContext, useEffect, useState } from 'react';
-import { View, Image } from 'react-native';
+import React, { useCallback, useContext, useEffect, useRef, useState } from 'react';
+import { View, Animated } from 'react-native';
 import { useTheme, useThemeMode } from '@rneui/themed';
 import { i18n } from '@app/localization/i18n';
 import { FontText } from '@app/components/utils/FontText';
-import { AuthContext } from '@app/provider/AuthProvider';
 import { MainStackParamList } from '@app/types/navigation';
 import { NativeStackScreenProps } from '@react-navigation/native-stack';
-import { SecondaryButton } from '@app/components/buttons/SecondaryButton';
-import { localAnalytics } from '@app/utils/analytics';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { getNow, sleep } from '@app/utils/date';
+import { useFocusEffect } from '@react-navigation/native';
+import { BACKGROUND_LIGHT_BEIGE_COLOR } from '@app/utils/colors';
 import { supabase } from '@app/api/initSupabase';
 import { logSupaErrors } from '@app/utils/errors';
+import { AuthContext } from '@app/provider/AuthProvider';
 
 export default function ({
   route,
   navigation,
 }: NativeStackScreenProps<MainStackParamList, 'Analyzing'>) {
   const { theme } = useTheme();
-
-  // to set the color of status bar
   const { setMode } = useThemeMode();
   useEffect(() => {
-    const unsubscribeFocus = navigation.addListener('focus', () => setMode('dark'));
+    const unsubscribeFocus = navigation.addListener('focus', () => setMode('light'));
     return unsubscribeFocus;
   }, [navigation]);
-  const [showButton, setShowButton] = useState(false);
 
+  const [text, setText] = useState(1);
   const authContext = useContext(AuthContext);
 
-  const [text, setText] = useState(2);
-  useEffect(() => {
-    const analyze = async () => {
-      // skip 1 step, no more reflection
-      // await sleep(1000);
-      // setText(2);
-      void finishOnboarding();
-      await sleep(1000);
-      setText(3);
-      await sleep(1000);
-      setText(4);
-      setShowButton(true);
-    };
-    const unsubscribeFocus = navigation.addListener('focus', () => void analyze());
-    return unsubscribeFocus;
-  }, []);
-  let textElement = <></>;
-  switch (text) {
-    case 1:
-      textElement = <>{i18n.t('onboarding_analyzing_2_text_1')}</>;
-      break;
-    case 2:
-      textElement = <>{i18n.t('onboarding_analyzing_2_text_2')}</>;
-      break;
-    case 3:
-      textElement = <>{i18n.t('onboarding_analyzing_2_text_3')}</>;
-      break;
-    case 4:
-      textElement = (
-        <>
-          <FontText h1 style={{ color: theme.colors.primary }}>
-            {i18n.t('onboarding_analyzing_2_text_4_first')}
-          </FontText>
-          {i18n.t('onboarding_analyzing_2_text_4_second')}
-        </>
-      );
-      break;
-  }
-  const finishOnboarding = async () => {
-    const profileResponse = await supabase
-      .from('user_profile')
-      .update({
-        onboarding_finished: true,
-        updated_at: getNow().toISOString(),
-      })
-      .eq('user_id', authContext.userId!);
-    if (profileResponse.error) {
-      logSupaErrors(profileResponse.error);
-      return;
-    }
-  };
+  const rotateValue = useRef(new Animated.Value(0)).current;
+  const imageTransform = [
+    {
+      rotate: rotateValue.interpolate({
+        inputRange: [0, 50, 100],
+        outputRange: ['-720deg', '0deg', '-720deg'],
+      }) as unknown as string,
+    },
+  ];
+
+  useFocusEffect(
+    useCallback(() => {
+      const setSteps = async () => {
+        await sleep(1500);
+        setText(2);
+        await sleep(1500);
+        setText(3);
+        await sleep(1500);
+      };
+      const finishOnboarding = async () => {
+        const profileResponse = await supabase
+          .from('user_profile')
+          .update({
+            onboarding_finished: true,
+            updated_at: getNow().toISOString(),
+          })
+          .eq('user_id', authContext.userId!);
+        if (profileResponse.error) {
+          logSupaErrors(profileResponse.error);
+          return;
+        }
+      };
+
+      const setOwnJobs = async () => {
+        const response = await supabase.rpc('set_own_jobs', {
+          jobs: route.params.jobs || ['getting_to_know_partner'],
+        });
+        if (response.error) {
+          logSupaErrors(response.error);
+          return;
+        }
+      };
+      const loopLoader = () => {
+        Animated.loop(
+          Animated.sequence([
+            Animated.timing(rotateValue, {
+              toValue: 50,
+              duration: 10 * 1000,
+              useNativeDriver: true,
+            }),
+            Animated.timing(rotateValue, {
+              toValue: 100,
+              duration: 10 * 1000,
+              useNativeDriver: true,
+            }),
+          ]),
+        ).start();
+      };
+
+      const analyze = async () => {
+        void loopLoader();
+        await Promise.all([finishOnboarding(), setOwnJobs(), setSteps()]).then(() =>
+          navigation.navigate('OnboardingPlan', {
+            isOnboarding: true,
+            refreshTimeStamp: new Date().toISOString(),
+          }),
+        );
+      };
+      void analyze();
+    }, []),
+  );
+  const textElement = i18n.t(`onboarding_analyzing_3_text_${text}`);
+
   return (
     <View
       style={{
         flexGrow: 1,
-        backgroundColor: theme.colors.black,
+        backgroundColor: BACKGROUND_LIGHT_BEIGE_COLOR,
       }}
     >
       <SafeAreaView style={{ flexGrow: 1 }}>
         <View style={{ padding: 20, flex: 1, justifyContent: 'space-around' }}>
-          <View style={{ alignItems: 'center' }}>
-            <Image
+          <View style={{ width: '100%' }}>
+            <Animated.Image
               style={{
-                height: 250,
-                width: '90%',
+                width: '100%',
+                height: 300,
+                resizeMode: 'contain',
+                transform: imageTransform,
               }}
-              resizeMode="contain"
-              source={require('../../../assets/images/buddies_analyzing.png')}
-            ></Image>
+              source={require('../../../assets/images/generating_questions.png')}
+            ></Animated.Image>
           </View>
           <View style={{ minHeight: '20%' }}>
-            <FontText h1 style={{ textAlign: 'center', color: theme.colors.white }}>
+            <FontText h1 style={{ textAlign: 'center' }}>
               {textElement}
             </FontText>
           </View>
-
-          <SecondaryButton
-            buttonStyle={{ backgroundColor: showButton ? theme.colors.white : theme.colors.black }}
-            onPress={() => {
-              void localAnalytics().logEvent('OnboardingAnalyzingContinueClicked', {
-                screen: 'OnboardingAnalyzing',
-                action: 'continue pressed',
-                userId: authContext.userId,
-              });
-              navigation.navigate('PremiumOffer', {
-                refreshTimeStamp: new Date().toISOString(),
-                isOnboarding: true,
-              });
-            }}
-            title={i18n.t('continue')}
-          ></SecondaryButton>
         </View>
       </SafeAreaView>
     </View>

@@ -1,0 +1,145 @@
+{
+  "topic": [
+    "getting_to_know_partner",
+    "having_fun_and_entertainment",
+    "understanding_mutual_compatibility",
+    "improving_relationship_satisfaction",
+    "having_new_experiences"
+  ],
+  "test_headline": "Discover Your Shared and Unique Hobbies!",
+  "scientific_basis": "This quiz is grounded in research on how shared and individual interests contribute to maintaining and enhancing relationship quality.",
+  "description": "Dive into this fun quiz to uncover how your hobbies and passions align with your partner's! Understanding each other's interests can help you find new ways to connect and support one another, strengthening your bond along the way.",
+  "questions": [
+    {
+      "question": "How do you prefer to spend your free time?",
+      "options": [
+        "Exploring new outdoor activities together.",
+        "Engaging in individual hobbies while occasionally sharing.",
+        "Balancing between shared activities and personal interests.",
+        "Focusing mainly on personal hobbies to maintain independence.",
+        "Spontaneously choosing activities based on the mood."
+      ]
+    },
+    {
+      "question": "When your partner shares a new hobby they're interested in, you:",
+      "options": [
+        "Jump at the chance to join and participate together.",
+        "Encourage them but prefer to pursue it independently.",
+        "Show interest and support without necessarily joining.",
+        "Respect their interest but keep your own hobbies separate.",
+        "Ask questions to understand it better without getting involved."
+      ]
+    },
+    {
+      "question": "How important is it for you and your partner to have shared hobbies?",
+      "options": [
+        "Very important – it's a key part of our relationship.",
+        "Somewhat important – it enhances our connection.",
+        "Neutral – we're okay with having different interests.",
+        "Not very important – we value our individual hobbies more.",
+        "Not important at all – our hobbies don't affect our relationship."
+      ]
+    },
+    {
+      "question": "When choosing activities for a date, you typically:",
+      "options": [
+        "Choose something both of you are passionate about.",
+        "Alternate between each other's favorite activities.",
+        "Mix shared interests with personal favorites.",
+        "Prefer activities you enjoy individually.",
+        "Let your partner decide the activity."
+      ]
+    },
+    {
+      "question": "If you discover a new hobby, how likely are you to share it with your partner?",
+      "options": [
+        "Very likely – I love introducing my interests to them.",
+        "Somewhat likely – if I think they'll enjoy it too.",
+        "Neutral – I share it occasionally.",
+        "Unlikely – I prefer to keep some hobbies personal.",
+        "Not likely – I enjoy my hobbies independently."
+      ]
+    },
+    {
+      "question": "How do you feel when your partner participates in their hobbies without you?",
+      "options": [
+        "Happy – it's great they have interests they love.",
+        "Indifferent – I support their independence.",
+        "Slightly left out but understand it's healthy.",
+        "A bit disconnected but give them space.",
+        "Uncomfortable – I prefer spending all free time together."
+      ]
+    },
+    {
+      "question": "How do you handle differences in hobby preferences between you and your partner?",
+      "options": [
+        "Embrace the diversity and explore each other's interests.",
+        "Respect each other's choices and find a middle ground.",
+        "Support each other while maintaining separate hobbies.",
+        "Encourage individual hobbies to preserve personal space.",
+        "Struggle to find common interests and stick to personal hobbies."
+      ]
+    },
+    {
+      "question": "How often do you and your partner try new activities together?",
+      "options": [
+        "Regularly – we love discovering new things together.",
+        "Often – whenever we have the chance.",
+        "Sometimes – it depends on our schedules.",
+        "Rarely – we stick to what we know and enjoy.",
+        "Almost never – we prefer familiar activities."
+      ]
+    },
+    {
+      "question": "When planning a weekend, you prefer to:",
+      "options": [
+        "Engage in shared hobbies and activities.",
+        "Balance between joint activities and personal interests.",
+        "Mix a few shared activities with time for individual hobbies.",
+        "Focus mainly on your own hobbies with occasional joint activities.",
+        "Spend the weekend pursuing personal hobbies independently."
+      ]
+    },
+    {
+      "question": "What best describes your approach to supporting your partner's hobbies?",
+      "options": [
+        "Actively participate and show enthusiasm.",
+        "Encourage them and occasionally join in.",
+        "Support them by showing interest and providing resources.",
+        "Respect their interests without getting involved.",
+        "Prefer to keep your support minimal and focus on your own hobbies."
+      ]
+    }
+  ],
+  "evaluation_method": {
+    "explanation": "Each answer corresponds to a specific style of engaging with hobbies and passions in a relationship. Your responses will be tallied to reveal your primary approach, whether it's highly shared, balanced, or more individual-focused. This helps understand how your hobbies contribute to your relationship quality based on research.",
+    "example": "For example, if most of your answers are towards options 1 and 2, it indicates a strong preference for shared activities, enhancing mutual bonding. If your answers lean towards option 4 or 5, it suggests a preference for individual hobbies, highlighting the importance of personal space in your relationship."
+  },
+  "outcome_interpretation": {
+    "mostly_A": {
+      "label": "Highly Shared Enthusiasts",
+      "description": "You and your partner thrive on shared activities and frequently engage in hobbies together. This strong alignment fosters a deep connection and mutual support.",
+      "advice": "Continue exploring new hobbies together to keep the excitement alive. Consider setting joint goals related to your shared interests to further strengthen your bond."
+    },
+    "mostly_B": {
+      "label": "Balanced Collaborators",
+      "description": "You maintain a healthy balance between shared activities and personal hobbies. This equilibrium allows both partners to grow individually while enjoying time together.",
+      "advice": "Keep nurturing both shared and individual interests. Schedule regular times for joint activities and also respect each other's personal time to maintain harmony."
+    },
+    "mostly_C": {
+      "label": "Supportive Independents",
+      "description": "You support each other's individual hobbies and understand the importance of personal space. This respect for individuality contributes to a strong and resilient relationship.",
+      "advice": "Encourage each other to pursue personal interests while finding occasional activities you both enjoy. This balance will continue to foster mutual respect and understanding."
+    },
+    "mostly_D": {
+      "label": "Personal Space Advocates",
+      "description": "You prioritize individual hobbies and value personal space within the relationship. This approach ensures that both partners maintain their sense of self.",
+      "advice": "While personal space is important, try incorporating some shared activities to enhance your connection. Finding common interests can add a new dimension to your relationship."
+    },
+    "mostly_E": {
+      "label": "Independent Enthusiasts",
+      "description": "You and your partner largely pursue your own hobbies independently. This independence can lead to personal fulfillment and a respectful relationship dynamic.",
+      "advice": "Explore opportunities to share at least one hobby that interests both of you. This can provide new experiences and strengthen your partnership while maintaining your individual passions."
+    }
+  }
+}

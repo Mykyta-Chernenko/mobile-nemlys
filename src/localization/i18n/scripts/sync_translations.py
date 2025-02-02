@@ -4,6 +4,7 @@ import openai
 import time
 from typing import List, Dict
 from concurrent.futures import ThreadPoolExecutor, as_completed
+
 # Configuration
 LANG_DIR = '../lang'
 REFERENCE_FILE = 'english.json'
@@ -13,6 +14,10 @@ RETRY_DELAY = 0  # seconds
 
 # OpenAI API configuration
 openai.api_key = os.getenv("OPENAI_API_KEY")  # Ensure your API key is set in the environment
+# PARAMS = {
+#     "model": "o3-mini",
+#     "max_tokens": 4000,
+# }
 PARAMS = {
     "model": "gpt-4o-mini",
     "temperature": 0,
@@ -42,10 +47,10 @@ def save_json(filepath: str, data: Dict):
     except Exception as e:
         print(f"Error saving '{filepath}': {e}")
 
-def get_missing_keys(reference: Dict, target: Dict) -> Dict:
+def get_missing_keys(language: str, reference: Dict, target: Dict) -> Dict:
     """Identify keys present in reference but missing in target."""
     missing = {k: v for k, v in reference.items() if k not in target}
-    print(f"Found {len(missing)} missing keys.")
+    print(f"Found {len(missing)} missing keys for {language}")
     return missing
 
 def chunk_dict(data: Dict, size: int) -> List[Dict]:
@@ -53,8 +58,6 @@ def chunk_dict(data: Dict, size: int) -> List[Dict]:
     items = list(data.items())
     for i in range(0, len(items), size):
         yield dict(items[i:i + size])
-
-import json
 
 def build_prompt(batch: Dict[str, str], target_language: str) -> str:
     system_prompt = f"""
@@ -85,7 +88,11 @@ def build_prompt(batch: Dict[str, str], target_language: str) -> str:
 
     7. Length Considerations:
        - Be mindful of text length, especially for UI elements. If possible, keep translations concise without losing meaning.
-
+    8. You must always copy over variables in mustache brackets "{'{{...}}'}" as it is, for example "Say hello to {'{{'}partnerName{'}}'}" you need to keep the {'{{'}partnerName{'}}'} as it is
+    9. if you were to translate slang, translate it to the equivalents in the target language if possible
+    10. We will have concepts in the app: 'test', 'exercise', 'question', 'checkup', 'article', 'game', 'journey'. Each is a different type of content couple can engage with.
+    Choose a translation for a concept one (the most popular and appropriate word in the target language), and then always stick to that one chosen translation for the concept
+    11. If we refer to partner as 'they' or in that form, you need to convert it to the appropriate form in the target language, for example: 'when they do something...' to Ukrainian -> 'коли він/вона щось робить'
     Examples of high-quality translations:
 
     English to Spanish:
@@ -125,7 +132,7 @@ def build_prompt(batch: Dict[str, str], target_language: str) -> str:
       "analyzing": {{
         "text_1": "Analyzing\nyour answers",
         "text_2": "Analyzing\nyour preferences",
-        "text_3": "Adapting app\nto your couple",
+        "text_3": "Adapting app\nto {'{{'}partnerName{'}}'}",
         "text_4_first": "All done,\n",
         "text_4_second": "start exploring\nthe app"
       }}
@@ -134,7 +141,7 @@ def build_prompt(batch: Dict[str, str], target_language: str) -> str:
       "analyzing": {{
         "text_1": "Анализируем\nтвои ответы",
         "text_2": "Анализируем\nтвои предпочтения",
-        "text_3": "Адаптируем приложение\nк вашей паре",
+        "text_3": "Адаптируем приложение\nк {'{{'}partnerName{'}}'}",
         "text_4_first": "Все готово,\n",
         "text_4_second": "начинай пользоваться приложением"
       }}
@@ -161,6 +168,16 @@ Now, translate these key-value pairs:
 def call_gpt(prompt: str, system_prompt: str) -> str:
     for attempt in range(1, MAX_RETRIES + 1):
         try:
+#             response = openai.chat.completions.create(
+#                         model=PARAMS["model"],
+#                         messages=[
+#                             {"role": "system", "content": system_prompt},
+#                             {"role": "user", "content": prompt}
+#                         ],
+#                          response_format={
+#                                             "type": "json_object"
+#                                         }
+#                     )
             response = openai.chat.completions.create(
                 model=PARAMS["model"],
                 temperature=PARAMS["temperature"],
@@ -171,7 +188,10 @@ def call_gpt(prompt: str, system_prompt: str) -> str:
                 messages=[
                     {"role": "system", "content": system_prompt},
                     {"role": "user", "content": prompt}
-                ]
+                ],
+                response_format={
+                    "type": "json_object"
+                }
             )
             content = response.choices[0].message.content.strip()
             return content
@@ -190,7 +210,6 @@ def validate_json(response: str) -> Dict:
         print(f"JSON decode error: {e}")
         return {}
 
-
 def translate_language(filename: str, reference_data: Dict):
     if filename == REFERENCE_FILE or not filename.endswith('.json') or 'english' in filename:
         return  # Skip the reference file and non-JSON files
@@ -199,10 +218,18 @@ def translate_language(filename: str, reference_data: Dict):
     target_path = os.path.join(LANG_DIR, filename)
     target_data = load_json(target_path)
 
+    extra_keys = set(target_data.keys()) - set(reference_data.keys())
+    if extra_keys:
+        print(f"Removing {len(extra_keys)} extra keys from '{filename}': {list(extra_keys)}")
+        for key in extra_keys:
+            target_data.pop(key)
+
     # Identify missing keys
-    missing_keys = get_missing_keys(reference_data, target_data)
+    missing_keys = get_missing_keys(target_language, reference_data, target_data)
+    print(missing_keys.keys())
     if not missing_keys:
         print(f"No missing keys for '{filename}'. Skipping translation.")
+        save_json(target_path, target_data)
         return
 
     # Process in batches
@@ -228,9 +255,30 @@ def translate_language(filename: str, reference_data: Dict):
                 print(f"Failed to parse JSON after retrying for batch {idx} of '{filename}'. Skipping.")
                 continue
 
+        # **Validation Step: Ensure all keys in the batch are present in the translated output**
+        missing_in_translation = set(batch.keys()) - set(translated.keys())
+        if missing_in_translation:
+            print(f"Validation Error: The following keys are missing in the translation for batch {idx} of '{filename}': {missing_in_translation}")
+            # Optionally, you can implement a retry mechanism for these specific keys
+            # For simplicity, we'll skip updating these keys
+            for key in missing_in_translation:
+                print(f"Skipping key '{key}' due to missing translation.")
+            # Remove missing keys from the translated data
+            for key in missing_in_translation:
+                translated.pop(key, None)
+        else:
+            print(f"All keys validated for batch {idx} of '{filename}'.")
+
         # Update target data with translations
         target_data.update(translated)
         print(f"Batch {idx} translated successfully for '{filename}'.")
+
+    # **Final Validation: Ensure no keys are missing after all translations**
+    final_missing_keys = get_missing_keys(target_language, reference_data, target_data)
+    if final_missing_keys:
+        print(f"Final Validation: {len(final_missing_keys)} keys are still missing in '{filename}': {list(final_missing_keys.keys())}")
+    else:
+        print(f"All keys have been successfully translated for '{filename}'.")
 
     # Save the updated target language file
     save_json(target_path, target_data)
@@ -245,6 +293,7 @@ def main():
         return
 
     # Get all language files
+#     TODo revert
     language_files = [f for f in os.listdir(LANG_DIR) if f.endswith('.json') and f != REFERENCE_FILE and 'english' not in f]
 
     # Use ThreadPoolExecutor to process languages in parallel

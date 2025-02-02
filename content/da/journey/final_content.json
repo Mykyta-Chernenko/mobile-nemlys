@@ -1,0 +1,4892 @@
+[
+  {
+    "job": [
+      "learning_relationship_skills"
+    ],
+    "title": "Lære Forholdskompetencer",
+    "description": "Denne rejse er designet til at hjælpe dig med at udvikle essentielle forholdskompetencer, der vil styrke din forbindelse, forbedre kommunikationen og øge din evne til effektivt at løse konflikter. Hver dags indhold bygger på den forrige og guider dig gennem en progression af færdigheder, der er nødvendige for et sundt og tilfredsstillende partnerskab.",
+    "subtopics": [
+      {
+        "title": "Forståelse af Følelser",
+        "description": "Lær at identificere og artikulere dine følelser samt forstå din partners følelsesmæssige reaktioner. Denne grundlæggende færdighed er afgørende for effektiv kommunikation.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "emotion-management-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-handle-your-strong-emotions"
+          },
+          {
+            "type": "article",
+            "slug": "building-emotional-intimacy-together"
+          },
+          {
+            "type": "game",
+            "slug": "emotional-seasons"
+          },
+          {
+            "type": "checkup",
+            "slug": "mood-mapping"
+          },
+          {
+            "type": "exercise",
+            "slug": "emotional-regulation-techniques"
+          }
+        ]
+      },
+      {
+        "title": "Effektive Kommunikationsmetoder",
+        "description": "Udforsk forskellige kommunikationsstile og teknikker, herunder aktiv lytning og feedback-praksis, der fremmer åbenhed og ærlighed i dit forhold.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "discover-your-communication-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-prefer-to-communicate-your-needs-and-desires"
+          },
+          {
+            "type": "article",
+            "slug": "mastering-communication-techniques"
+          },
+          {
+            "type": "game",
+            "slug": "communication-clues"
+          },
+          {
+            "type": "checkup",
+            "slug": "mastering-our-communication-styles"
+          },
+          {
+            "type": "exercise",
+            "slug": "active-listening-practice"
+          }
+        ]
+      },
+      {
+        "title": "Konfliktløsningsstrategier",
+        "description": "Dyk ned i forskellige strategier for at løse konflikter på en sund måde. Du vil lære, hvordan man konstruktivt adresserer uenigheder og finder win-win-løsninger.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "your-conflict-style"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-metaphor-that-describes-how-we-handle-problems-together"
+          },
+          {
+            "type": "article",
+            "slug": "effective-conflict-resolution-strategies"
+          },
+          {
+            "type": "game",
+            "slug": "conflict-resolution-quest"
+          },
+          {
+            "type": "checkup",
+            "slug": "conflict-resolution-styles"
+          },
+          {
+            "type": "exercise",
+            "slug": "conflict-resolution-strategies-practice"
+          }
+        ]
+      },
+      {
+        "title": "Udvikling af Sårbarhed og Tillid",
+        "description": "Fokuser på at opbygge tillid gennem sårbarhed. Dette underemne involverer at forstå vigtigheden af åbenhed og hvordan man deler personlige følelser og oplevelser.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "vulnerability-style-assessment"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-relationship-skill-you-admire-in-others-and-want-to-develop"
+          },
+          {
+            "type": "article",
+            "slug": "vulnerability-trusts-gateway"
+          },
+          {
+            "type": "game",
+            "slug": "trust-talk"
+          },
+          {
+            "type": "checkup",
+            "slug": "building-a-fortress-of-trust"
+          },
+          {
+            "type": "exercise",
+            "slug": "rebuild-trust-session"
+          }
+        ]
+      },
+      {
+        "title": "Navigere i Svære Samtaler",
+        "description": "Lær hvordan man indleder og navigerer svære samtaler uden at eskalere konflikten. Du vil øve teknikker til at diskutere følsomme emner roligt og respektfuldt.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "communication-timing-style"
+          },
+          {
+            "type": "question",
+            "slug": "whats-the-best-advice-youve-ever-received-about-communicating-in-a-relationship"
+          },
+          {
+            "type": "article",
+            "slug": "navigating-difficult-conversations"
+          },
+          {
+            "type": "game",
+            "slug": "communication-carousel"
+          },
+          {
+            "type": "checkup",
+            "slug": "emotions-expressed-freely"
+          },
+          {
+            "type": "exercise",
+            "slug": "nonviolent-communication-practice"
+          }
+        ]
+      },
+      {
+        "title": "Forbedring af Følelsesmæssig Intimitet",
+        "description": "Afslut din rejse ved at udforske måder at uddybe din følelsesmæssige forbindelse på. Dette inkluderer praksisser for at forbedre fysisk og følelsesmæssig intimitet i dit forhold, så I vokser tættere sammen.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "emotional-intimacy-style"
+          },
+          {
+            "type": "question",
+            "slug": "whats-something-youd-like-to-learn-together-to-enhance-our-relationship"
+          },
+          {
+            "type": "article",
+            "slug": "building-emotional-intimacy-together"
+          },
+          {
+            "type": "game",
+            "slug": "intimacy-adventure"
+          },
+          {
+            "type": "checkup",
+            "slug": "emotional-intimacy-check-in"
+          },
+          {
+            "type": "exercise",
+            "slug": "emotional-closeness-exercises"
+          }
+        ]
+      }
+    ],
+    "slug": "learning-relationship-skills"
+  },
+  {
+    "job": [
+      "preparing_for_marriage"
+    ],
+    "title": "Forberedelse til Ægteskab: Byg en Stærk Fundament",
+    "description": "Denne rejse er designet til at udstyre dig og din partner med de værktøjer og indsigter, der er nødvendige for et succesfuldt ægteskab. Hver dag vil I udforske essentielle begreber, fra kommunikation til økonomisk harmoni, og bane vejen for en dybere forståelse af hinanden og et robust forhold.",
+    "subtopics": [
+      {
+        "title": "Forståelse af Kærlighedssprog",
+        "description": "Identificer og udforsk hinandens kærlighedssprog for at forbedre den følelsesmæssige forbindelse. At forstå, hvordan I begge giver og modtager kærlighed, kan betydeligt forbedre dynamikken i jeres forhold.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "love-language-type"
+          },
+          {
+            "type": "article",
+            "slug": "decoding-love-languages"
+          },
+          {
+            "type": "game",
+            "slug": "love-languages-exploration"
+          },
+          {
+            "type": "exercise",
+            "slug": "find-out-your-love-language"
+          }
+        ]
+      },
+      {
+        "title": "Mestring af Økonomiske Samtaler",
+        "description": "Lær vigtigheden af åbne diskussioner om økonomi. Dyk ned i budgetteringsstile, forbrugsvaner og økonomiske mål for at opbygge tillid og gennemsigtighed i jeres økonomiske partnerskab.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "financial-communication-style"
+          },
+          {
+            "type": "article",
+            "slug": "mastering-money-talks-together"
+          },
+          {
+            "type": "game",
+            "slug": "dream-budget-builders"
+          },
+          {
+            "type": "checkup",
+            "slug": "aligning-financial-values-and-goals"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-prefer-to-communicate-your-needs-and-desires"
+          },
+          {
+            "type": "exercise",
+            "slug": "financial-planning-for-marriage"
+          }
+        ]
+      },
+      {
+        "title": "Navigering i Følelsesmæssig Intimitet",
+        "description": "Udvikl færdigheder til at fremme følelsesmæssig intimitet gennem sårbarhed, aktiv lytning og ærlig kommunikation. Forstå, hvordan man frit kan udtrykke følelser og støtte hinandens følelsesmæssige behov.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "emotional-intimacy-style"
+          },
+          {
+            "type": "article",
+            "slug": "building-emotional-intimacy-together"
+          },
+          {
+            "type": "game",
+            "slug": "feelings-explorer"
+          },
+          {
+            "type": "checkup",
+            "slug": "emotional-intimacy-check-in"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-feel-about-writing-love-notes-to-each-other-want-to-give-it-a-try"
+          },
+          {
+            "type": "exercise",
+            "slug": "vulnerability-exploration-session"
+          }
+        ]
+      },
+      {
+        "title": "Justering af Fremtidige Mål",
+        "description": "Udforsk, hvordan I kan diskutere og justere jeres drømme og aspirationer. Sæt fælles mål for jeres fremtid sammen, så begge partnere føler sig værdsatte og forstået i planlægningsprocessen.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "goal-alignment-style"
+          },
+          {
+            "type": "article",
+            "slug": "setting-shared-future-goals"
+          },
+          {
+            "type": "game",
+            "slug": "future-visionaries"
+          },
+          {
+            "type": "checkup",
+            "slug": "charting-our-shared-future"
+          },
+          {
+            "type": "exercise",
+            "slug": "long-term-goal-planning"
+          }
+        ]
+      },
+      {
+        "title": "Håndtering af Udfordringer Sammen",
+        "description": "Forbered dig på udfordringerne ved ægteskabelivet ved at udvikle færdigheder til konfliktløsning og strategier til at støtte hinanden i svære tider. Lær at navigere i uenigheder med empati og respekt.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "your-conflict-style"
+          },
+          {
+            "type": "article",
+            "slug": "mastering-conflict-resolution-together"
+          },
+          {
+            "type": "game",
+            "slug": "conflict-resolution-quest"
+          },
+          {
+            "type": "checkup",
+            "slug": "conflict-resolution-style-match"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-game-we-could-play-to-improve-our-conflict-resolution-skills"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-feel-about-using-humor-to-ease-tense-conversations"
+          },
+          {
+            "type": "exercise",
+            "slug": "conflict-resolution-strategies-practice"
+          }
+        ]
+      },
+      {
+        "title": "Skabelse af Fælles Ritualer og Traditioner",
+        "description": "Etabler meningsfulde ritualer og traditioner, der styrker jeres bånd. Opdag måder at fejre jeres forhold på og skabe varige minder som par, hvilket fremmer en følelse af enhed og tilhørsforhold.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "ritual-building-style"
+          },
+          {
+            "type": "article",
+            "slug": "fun-rituals-to-strengthen-bonds"
+          },
+          {
+            "type": "game",
+            "slug": "date-night-planner"
+          },
+          {
+            "type": "checkup",
+            "slug": "creative-date-designers"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-new-hobby-we-can-start-together-to-strengthen-our-bond"
+          },
+          {
+            "type": "exercise",
+            "slug": "creating-passion-renewal-date"
+          }
+        ]
+      }
+    ],
+    "slug": "preparing-for-marriage-building-a-strong-foundation"
+  },
+  {
+    "job": [
+      "having_new_experiences"
+    ],
+    "title": "Eventyrligt Sammen: Udforskning af Nye Oplevelser",
+    "description": "Denne rejse opfordrer dig og din partner til at omfavne nyhed og eventyr i jeres forhold ved at prøve nye aktiviteter, udforske ukendte omgivelser og identificere fælles interesser. Hver dag vil I opdage kreative ideer og engagerende indhold, der vil inspirere jer til at have det sjovt sammen og styrke jeres bånd gennem delte oplevelser.",
+    "subtopics": [
+      {
+        "title": "Start Smått: Prøv Nye Aktiviteter",
+        "description": "Begynd jeres rejse med at identificere enkle aktiviteter, der føles komfortable, men stadig nye. Deltag i diskussioner om hobbyer, I gerne vil udforske sammen, fra madlavningskurser til brætspilsaftener.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "breaking-routine-style-quiz"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-hobby-youd-like-us-to-try-together"
+          },
+          {
+            "type": "article",
+            "slug": "rediscover-adventure-together"
+          },
+          {
+            "type": "game",
+            "slug": "adventure-awaits"
+          },
+          {
+            "type": "exercise",
+            "slug": "try-something-new-day"
+          }
+        ]
+      },
+      {
+        "title": "Bucket List Skabelser",
+        "description": "Lav en bucket list for par sammen! Diskuter spændende steder at besøge, unikke oplevelser at dele, og meningsfulde eventyr, I ønsker at have i fremtiden.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "adventure-style-assessment"
+          },
+          {
+            "type": "question",
+            "slug": "if-we-were-to-create-a-couples-bucket-list-whats-the-first-adventure-youd-add"
+          },
+          {
+            "type": "article",
+            "slug": "adventure-sparks-deeper-bonds"
+          },
+          {
+            "type": "game",
+            "slug": "future-adventure-quest"
+          },
+          {
+            "type": "exercise",
+            "slug": "future-goals-compatibility"
+          }
+        ]
+      },
+      {
+        "title": "Spontanitet og Eventyr",
+        "description": "Omfavn spontanitet ved at planlægge overraskelsesudflugter eller prøve aktiviteter på et whim. Oplev spændingen ved uventede eventyr sammen og styrk jeres bånd gennem spontanitet.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "spontaneity-style"
+          },
+          {
+            "type": "question",
+            "slug": "whats-the-most-fun-youve-ever-had-while-doing-something-completely-spontaneous"
+          },
+          {
+            "type": "question",
+            "slug": "if-we-could-go-on-a-crazy-themed-road-trip-what-would-our-theme-be"
+          },
+          {
+            "type": "game",
+            "slug": "adventure-awaits"
+          },
+          {
+            "type": "exercise",
+            "slug": "outdoor-exploration-adventures"
+          }
+        ]
+      },
+      {
+        "title": "Udforskning af Nye Steder",
+        "description": "Tag et dybere kig på de steder, I begge ønsker at udforske, hvad enten de er lokale eller internationale. Diskuter jeres rejse-drømme, og hvordan disse oplevelser kan berige jeres forhold.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "exploration-partnership-style"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-like-to-travel-whats-the-most-exciting-place-youve-been"
+          },
+          {
+            "type": "question",
+            "slug": "which-country-is-at-the-top-of-your-travel-bucket-list-as-a-couple"
+          },
+          {
+            "type": "article",
+            "slug": "adventure-sparks-deeper-bonds"
+          },
+          {
+            "type": "game",
+            "slug": "cultural-quest"
+          },
+          {
+            "type": "exercise",
+            "slug": "cultural-exchange-day"
+          }
+        ]
+      },
+      {
+        "title": "Læring Sammen",
+        "description": "Identificer færdigheder eller emner, som I begge er interesserede i at lære sammen. Det kan være at lære et nyt sprog, mestre madlavningsteknikker eller tage kunstkurser—hvad som helst der bringer jer tættere!",
+        "content": [
+          {
+            "type": "test",
+            "slug": "shared-learning-style"
+          },
+          {
+            "type": "question",
+            "slug": "if-you-could-learn-a-new-language-together-which-one-would-it-be"
+          },
+          {
+            "type": "question",
+            "slug": "whats-something-youd-like-to-learn-together-to-bring-us-closer"
+          },
+          {
+            "type": "article",
+            "slug": "mastering-communication-techniques"
+          },
+          {
+            "type": "game",
+            "slug": "laugh-learn-quiz"
+          },
+          {
+            "type": "exercise",
+            "slug": "smart-goals-planning"
+          }
+        ]
+      },
+      {
+        "title": "Kreativitet i Eventyr",
+        "description": "Udforsk kreative måder at forvandle almindelige aktiviteter til mindeværdige oplevelser. Tænk på temadatoaftener, kreative udfordringer eller eventyrlige opgaver, der giver jer mulighed for at binde gennem fantasi og leg.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "creative-sparks-style"
+          },
+          {
+            "type": "question",
+            "slug": "if-you-could-embark-on-a-creative-retreat-together-what-would-you-focus-on"
+          },
+          {
+            "type": "question",
+            "slug": "if-we-could-perform-in-a-talent-show-together-what-act-would-we-do"
+          },
+          {
+            "type": "article",
+            "slug": "fun-rituals-to-strengthen-bonds"
+          },
+          {
+            "type": "game",
+            "slug": "decor-dilemma"
+          },
+          {
+            "type": "exercise",
+            "slug": "artistic-expression-days"
+          }
+        ]
+      }
+    ],
+    "slug": "adventurous-together-exploring-new-experiences"
+  },
+  {
+    "job": [
+      "introducing_healthy_habits"
+    ],
+    "title": "Introduktion af Sundere Vaner Sammen",
+    "description": "Denne rejse er designet til at hjælpe par med at udvikle og opretholde sunde vaner, der bidrager til deres generelle velvære og styrker deres forhold. Ved at tage et skridt hver dag vil I udforske ernæring, wellness-praksis og hvordan I kan støtte hinanden på denne rejse mod en sundere livsstil.",
+    "subtopics": [
+      {
+        "title": "Forståelse af Ernæringsgrundlag",
+        "description": "Lær det grundlæggende om god ernæring, herunder aspekter som vitaminer og næringsstoffer, madlavning og hvordan man inkorporerer sunde fødevarer i din kost. Dette danner grundlaget for en sund livsstil.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "healthy-eating-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-ensure-youre-getting-enough-vitamins-and-nutrients"
+          },
+          {
+            "type": "article",
+            "slug": "kickstart-healthy-routines-together"
+          },
+          {
+            "type": "game",
+            "slug": "nutri-quiz"
+          },
+          {
+            "type": "exercise",
+            "slug": "healthy-eating-plans"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-prefer-cooking-together-or-trying-out-new-healthy-recipes-separately"
+          }
+        ]
+      },
+      {
+        "title": "Skabelse af Sunde Rutiner",
+        "description": "Udforsk måder at etablere daglige rutiner, der fremmer sund kost og motion, herunder morgenritualer og aftenritualer. Diskuter vigtigheden af konsistens og hvordan det påvirker dit helbred.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "healthy-habits-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-incorporate-healthy-eating-into-your-busy-schedule"
+          },
+          {
+            "type": "article",
+            "slug": "healthy-habits-for-stronger-bonds"
+          },
+          {
+            "type": "game",
+            "slug": "healthy-habits-hub"
+          },
+          {
+            "type": "exercise",
+            "slug": "positive-habit-tracking"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-enjoy-morning-workouts-or-evening-wind-downs-more"
+          }
+        ]
+      },
+      {
+        "title": "Stresshåndtering Sammen",
+        "description": "Identificer sunde strategier til at håndtere stress, herunder mindfulness-praksis og hvordan man støtter hinanden i hektiske tider. Dette underemne adresserer mental velvære som en del af en sund livsstil.",
+        "content": [
+          {
+            "type": "checkup",
+            "slug": "mood-mapping"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-handle-stress-in-a-healthy-way"
+          },
+          {
+            "type": "article",
+            "slug": "navigating-emotional-waters-together"
+          },
+          {
+            "type": "game",
+            "slug": "mindfulness-match"
+          },
+          {
+            "type": "exercise",
+            "slug": "mindfulness-meditation-sessions"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-handle-stress-or-unexpected-challenges"
+          }
+        ]
+      },
+      {
+        "title": "Inkorporering af Fysisk Aktivitet",
+        "description": "Diskuter forskellige former for fysisk aktivitet, som I begge nyder, vigtigheden af teamwork for at forblive aktive, og lav en plan for regelmæssige træningsrutiner sammen, der kan holde jer ansvarlige.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "accountability-style-quiz"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-prefer-solo-workouts-or-exercising-together"
+          },
+          {
+            "type": "checkup",
+            "slug": "fitness-partners-unite"
+          },
+          {
+            "type": "exercise",
+            "slug": "fitness-routine-together"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-new-form-of-exercise-youd-like-to-do-together-regularly"
+          }
+        ]
+      },
+      {
+        "title": "Sporing af Fremskridt og Mål",
+        "description": "Lær hvordan man sætter og sporer sine sundheds- og wellnessmål og hvordan man fejrer hinandens præstationer. Dette vil skabe motivation og en følelse af partnerskab i jeres rejse mod en sund livsstil.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "goal-alignment-style"
+          },
+          {
+            "type": "question",
+            "slug": "what-are-your-long-term-health-and-wellness-goals-and-how-can-we-support-each-other"
+          },
+          {
+            "type": "article",
+            "slug": "setting-shared-future-goals"
+          },
+          {
+            "type": "game",
+            "slug": "future-visionaries"
+          },
+          {
+            "type": "exercise",
+            "slug": "smart-goals-planning"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-stay-motivated-to-maintain-your-healthy-habits"
+          }
+        ]
+      },
+      {
+        "title": "Opbygning af Sunde Vaner for Fremtiden",
+        "description": "Diskuter langsigtede sundhedsmål, hvordan man inkorporerer sunde vaner i jeres liv som par, og etabler traditioner, der fremmer velvære, så sunde praksisser bliver en livsstil.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "growth-balance-style"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-new-habit-youd-like-to-develop-together-for-personal-growth"
+          },
+          {
+            "type": "exercise",
+            "slug": "positive-reinforcement-practices"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-new-healthy-habit-youd-like-to-try-this-month"
+          }
+        ]
+      }
+    ],
+    "slug": "introducing-healthy-habits-together"
+  },
+  {
+    "job": [
+      "planning_for_future"
+    ],
+    "title": "Navigere Vores Fremtid Sammen",
+    "description": "Denne rejse er designet til at hjælpe dig og din partner med at planlægge fremtiden omhyggeligt og navigere i vigtige livsbeslutninger. I vil udforske forskellige aspekter af jeres forhold, diskutere langsigtede mål og styrke jeres partnerskab gennem engagerende aktiviteter, fremme åben kommunikation og gensidig forståelse.",
+    "subtopics": [
+      {
+        "title": "At Forestille Sig Vores Liv Fremad",
+        "description": "Begynd med at forestille jer jeres ideelle fremtid sammen, og diskuter drømme og aspirationer for de næste fem år. I vil skabe en klar vision for, hvad I begge ønsker fra livet.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "future-planning-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-envision-our-relationship-evolving-over-the-next-five-years"
+          },
+          {
+            "type": "article",
+            "slug": "creating-a-vision-for-us"
+          },
+          {
+            "type": "game",
+            "slug": "future-visionaries"
+          },
+          {
+            "type": "checkup",
+            "slug": "future-talk-together"
+          },
+          {
+            "type": "exercise",
+            "slug": "long-term-goal-planning"
+          }
+        ]
+      },
+      {
+        "title": "Finansielle Fremtider",
+        "description": "Udforsk jeres finansielle mål som par. Diskuter budgettering, opsparing og potentielle investeringer for at sikre en sikker og komfortabel livsstil, mens I tilpasser jeres finansielle aspirationer med fremtidsplaner.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "financial-planning-style"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-think-financial-discussions-should-happen-regularly-how-often"
+          },
+          {
+            "type": "article",
+            "slug": "mastering-money-talks-together"
+          },
+          {
+            "type": "game",
+            "slug": "dream-budget-builders"
+          },
+          {
+            "type": "checkup",
+            "slug": "budgeting-together-without-breaking-up"
+          },
+          {
+            "type": "exercise",
+            "slug": "budget-planning-session"
+          }
+        ]
+      },
+      {
+        "title": "Bygning af en Familieplan",
+        "description": "Dyk ned i diskussioner om familieplanlægning og forældre mål. Beslut, om I ønsker børn, hvor mange, og overvej, hvilken slags opdragelse I forestiller jer.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "parenting-style-alignment"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-want-to-have-children-if-so-when-do-you-think-is-the-right-time"
+          },
+          {
+            "type": "game",
+            "slug": "parenting-philosophy-play"
+          },
+          {
+            "type": "checkup",
+            "slug": "parenting-pathways"
+          },
+          {
+            "type": "exercise",
+            "slug": "parenting-styles-discussion"
+          },
+          {
+            "type": "question",
+            "slug": "should-we-adopt-if-we-are-unable-to-have-children"
+          }
+        ]
+      },
+      {
+        "title": "Navigere Store Livsbeslutninger",
+        "description": "Diskuter, hvordan I vil nærme jer betydningsfulde beslutninger i jeres liv sammen. Dette inkluderer at flytte sammen, karriereskift og uventede livsudfordringer, der måtte opstå.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "decision-making-styles"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-feel-about-making-major-life-decisions-together"
+          },
+          {
+            "type": "game",
+            "slug": "problem-solving-pals"
+          },
+          {
+            "type": "checkup",
+            "slug": "resolving-decision-making-conflicts"
+          },
+          {
+            "type": "exercise",
+            "slug": "negotiation-skills-exercises"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-feel-about-relocating-for-career-opportunities-in-the-future"
+          }
+        ]
+      },
+      {
+        "title": "Oprettelse af en Fælles Bucket List",
+        "description": "Udvikl en par-bucket list, der afspejler jeres fælles drømme og de eventyr, I ønsker at opleve sammen. Fokuser på rejser, oplevelser og traditioner, I ønsker at opbygge.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "goal-alignment-style"
+          },
+          {
+            "type": "question",
+            "slug": "if-we-were-to-create-a-couples-bucket-list-whats-the-first-adventure-youd-add"
+          },
+          {
+            "type": "article",
+            "slug": "adventure-sparks-deeper-bonds"
+          },
+          {
+            "type": "game",
+            "slug": "dream-adventure-quest"
+          },
+          {
+            "type": "exercise",
+            "slug": "fantasy-sharing-session"
+          },
+          {
+            "type": "question",
+            "slug": "if-we-could-teleport-to-any-romantic-destination-right-now-where-would-we-go"
+          }
+        ]
+      },
+      {
+        "title": "Tilpasning af Værdier og Traditioner",
+        "description": "Diskuter vigtige værdier og traditioner, I ønsker at dyrke som par og som familie. Dyk ned i religiøse overbevisninger, livsstilsvalg og den arv, I ønsker at skabe sammen.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "values-alignment-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-see-our-religious-beliefs-influencing-our-future-goals"
+          },
+          {
+            "type": "game",
+            "slug": "beliefs-values"
+          },
+          {
+            "type": "checkup",
+            "slug": "core-values-connection"
+          },
+          {
+            "type": "exercise",
+            "slug": "family-values-alignment"
+          },
+          {
+            "type": "question",
+            "slug": "what-values-are-most-important-for-us-to-instill-in-our-children"
+          }
+        ]
+      }
+    ],
+    "slug": "navigating-our-future-together"
+  },
+  {
+    "job": [
+      "preparing_for_children"
+    ],
+    "title": "Forberedelse til Børn: En Rejse til Forældreskab",
+    "description": "Denne rejse har til formål at ruste dig og din partner til det spændende og udfordrende eventyr ved forældreskab. Hver dag vil guide jer gennem forskellige diskussioner, refleksioner og aktiviteter for at fremme meningsfulde samtaler om forældreskab. Efterhånden som I skrider frem, vil I udforske grundlæggende begreber, følelsesmæssig parathed og praktiske strategier for at sikre en succesfuld rejse ind i forældreskabet.",
+    "subtopics": [
+      {
+        "title": "Forståelse af Ønsket om Forældreskab",
+        "description": "Udforsk dine individuelle tanker og følelser om at få børn. Deltag i refleksive spørgsmål for at forstå hinandens ønsker og forventninger, og læg grunden for fremtidige diskussioner.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "parenthood-readiness-styles"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-see-yourself-wanting-children-someday"
+          },
+          {
+            "type": "game",
+            "slug": "future-visionaries"
+          },
+          {
+            "type": "checkup",
+            "slug": "parenting-pathways"
+          },
+          {
+            "type": "exercise",
+            "slug": "family-planning-exercise"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-want-to-have-children-if-so-when-do-you-think-is-the-right-time"
+          }
+        ]
+      },
+      {
+        "title": "Justering af Forældre Værdier",
+        "description": "Diskuter jeres kerneværdier og overbevisninger vedrørende forældreskab. Dette underemne vil hjælpe jer med at justere vigtige emner, såsom uddannelse, disciplin og de værdier, I ønsker at indgyde i jeres fremtidige børn.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "parenting-style-alignment"
+          },
+          {
+            "type": "question",
+            "slug": "what-values-are-most-important-for-us-to-instill-in-our-children"
+          },
+          {
+            "type": "game",
+            "slug": "values-vibes"
+          },
+          {
+            "type": "checkup",
+            "slug": "parenting-playbook-compatibility"
+          },
+          {
+            "type": "exercise",
+            "slug": "values-alignment-exercise"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-believe-in-religious-education-for-children-why-or-why-not"
+          }
+        ]
+      },
+      {
+        "title": "Håndtering af Følelsesmæssig Parathed",
+        "description": "Vurder din følelsesmæssige parathed til op- og nedture ved forældreskab. Gennem forskellige øvelser og refleksioner vil I tage fat på potentielle frygt, bekymringer og håb om forældreskab.",
+        "content": [
+          {
+            "type": "checkup",
+            "slug": "emotional-rollercoaster-ride"
+          },
+          {
+            "type": "question",
+            "slug": "are-you-ready-to-handle-the-emotional-rollercoaster-that-comes-with-parenting"
+          },
+          {
+            "type": "article",
+            "slug": "navigating-emotional-waters-together"
+          },
+          {
+            "type": "game",
+            "slug": "emotional-seasons"
+          },
+          {
+            "type": "exercise",
+            "slug": "emotional-support-exercises"
+          },
+          {
+            "type": "question",
+            "slug": "what-fears-or-concerns-do-you-have-about-becoming-parents"
+          }
+        ]
+      },
+      {
+        "title": "Praktiske Forældreansvar",
+        "description": "Dyk ned i logistikken omkring forældreansvar. Diskuter, hvordan I gerne vil fordele pligter, planlægge for børnepasningsmuligheder og håndtere huslige opgaver, så I er forberedte på de praktiske realiteter ved at opdrage børn.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "responsibility-sharing-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-should-we-divide-parenting-responsibilities"
+          },
+          {
+            "type": "game",
+            "slug": "household-harmony"
+          },
+          {
+            "type": "exercise",
+            "slug": "shared-responsibilities-mapping"
+          },
+          {
+            "type": "question",
+            "slug": "what-are-your-thoughts-on-childcare-options"
+          }
+        ]
+      },
+      {
+        "title": "Finansiel Planlægning for Forældreskab",
+        "description": "Fokuser på de finansielle aspekter ved at opdrage børn. Deltag i diskussioner om budgettering, opsparing til dit barns fremtid og justering af dine finansielle planer, når I træder ind i dette nye kapitel.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "financial-planning-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-should-we-save-for-our-childs-future"
+          },
+          {
+            "type": "article",
+            "slug": "financial-planning-together"
+          },
+          {
+            "type": "game",
+            "slug": "dream-budget-builders"
+          },
+          {
+            "type": "exercise",
+            "slug": "budget-planning-session"
+          }
+        ]
+      },
+      {
+        "title": "Opbygning af et Støttenetværk",
+        "description": "Udforsk vigtigheden af et støttenetværk, mens I forbereder jer på børn. Diskuter rollerne for familie, venner og forældre ressourcer, der kan hjælpe jer med at navigere i de udfordringer, der ligger foran.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "support-network-style"
+          },
+          {
+            "type": "question",
+            "slug": "are-you-comfortable-with-pet-allergies-or-preferences-if-we-have-kids"
+          },
+          {
+            "type": "exercise",
+            "slug": "parenting-support-networks"
+          },
+          {
+            "type": "question",
+            "slug": "are-you-willing-to-retire-just-to-take-care-of-our-kids"
+          }
+        ]
+      }
+    ],
+    "slug": "preparing-for-children-a-journey-to-parenthood"
+  },
+  {
+    "job": [
+      "having_fun_and_entertainment"
+    ],
+    "title": "Skabe Sjov og Underholdning Sammen",
+    "description": "Denne rejse vil guide dig og din partner gennem aktiviteter og diskussioner designet til at øge glæde og legesyge i jeres forhold. Ved at udforske forskellige aspekter af sjov og underholdning vil I dyrke en dybere forbindelse, mens I lærer at inkorporere latter og kreativitet i jeres daglige liv. Hver dag vil I deltage i nye oplevelser og refleksioner, der opmuntrer til samhørighed og udforskning.",
+    "subtopics": [
+      {
+        "title": "Start med Latter",
+        "description": "Udforsk humors rolle i jeres forhold. Deltag i sjove spørgsmål som dine yndlingsupassende vittigheder og flirty beskeder. Dette grundlæggende emne vil hjælpe dig med at finde måder at inkorporere latter i jeres daglige liv.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "humor-harmony-style"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-have-a-favorite-inappropriate-joke"
+          },
+          {
+            "type": "article",
+            "slug": "laughing-together-keeps-love-strong"
+          },
+          {
+            "type": "game",
+            "slug": "love-laughter"
+          },
+          {
+            "type": "checkup",
+            "slug": "fun-flirtation"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-have-any-favorite-flirty-texts-or-messages-that-make-you-smile"
+          }
+        ]
+      },
+      {
+        "title": "Fejring af Præstationer og Milepæle",
+        "description": "Lær hvordan man fejrer hinandens succeser, store som små. Diskuter dine yndlingsmåder at fejre særlige lejligheder som jubilæer og helligdage, og fremme en atmosfære af påskønnelse og glæde.",
+        "content": [
+          {
+            "type": "checkup",
+            "slug": "marriage-milestones"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-like-to-celebrate-anniversaries"
+          },
+          {
+            "type": "game",
+            "slug": "date-night-planner"
+          },
+          {
+            "type": "test",
+            "slug": "milestone-celebration-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-like-to-celebrate-achievements-big-or-small"
+          }
+        ]
+      },
+      {
+        "title": "Opdagelse af Fælles Interesser",
+        "description": "Dyk ned i diskussioner om aktiviteter og hobbyer, som I begge nyder. Identificer fælles interesser og foreslå sjove aktiviteter at prøve sammen, hvilket vil hjælpe med at styrke jeres fælles bånd og skabe varige minder.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "hobby-harmony-style"
+          },
+          {
+            "type": "question",
+            "slug": "what-hobbies-or-activities-would-you-like-us-to-pursue-together-in-the-future"
+          },
+          {
+            "type": "article",
+            "slug": "exploring-shared-hobbies-together"
+          },
+          {
+            "type": "game",
+            "slug": "hobby-harmony"
+          },
+          {
+            "type": "checkup",
+            "slug": "uncovering-daily-habits-and-quirks"
+          },
+          {
+            "type": "exercise",
+            "slug": "hobbies-and-interests-exercise"
+          }
+        ]
+      },
+      {
+        "title": "Spontane Eventyr",
+        "description": "Træd ud af din komfortzone ved at planlægge spontane udflugter eller sjove overraskelser for hinanden. Brug prompts til at beslutte om nye oplevelser, såsom udendørs aktiviteter eller temadate-nætter, og øg spændingen i jeres forhold.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "spontaneity-style"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-new-sport-or-physical-activity-youd-like-to-try-as-a-team"
+          },
+          {
+            "type": "article",
+            "slug": "adventure-sparks-deeper-bonds"
+          },
+          {
+            "type": "game",
+            "slug": "adventure-awaits"
+          },
+          {
+            "type": "checkup",
+            "slug": "adventure-together"
+          },
+          {
+            "type": "exercise",
+            "slug": "adventure-challenge"
+          }
+        ]
+      },
+      {
+        "title": "Kreativ Legesyghed",
+        "description": "Udnyt jeres kreativitet sammen ved at udforske kunstneriske bestræbelser eller legesyge spil. Deltag i øvelser, der udfordrer jer begge til at tænke uden for boksen, såsom DIY-projekter eller temabaserede madlavningsaftener.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "creative-sparks-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-express-your-creativity"
+          },
+          {
+            "type": "article",
+            "slug": "crafting-memorable-date-nights"
+          },
+          {
+            "type": "game",
+            "slug": "decor-dilemma"
+          },
+          {
+            "type": "exercise",
+            "slug": "creative-drawing-contest"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-creative-project-youd-love-to-tackle-as-a-duo"
+          }
+        ]
+      },
+      {
+        "title": "Opbygning af Traditioner og Ritualer",
+        "description": "Afslut din rejse ved at reflektere over, hvordan man etablerer regelmæssige traditioner, der holder sjovet i live i jeres forhold. Diskuter værdien af sjove ritualer, og hvordan de kan styrke jeres forbindelse og skabe elskede minder sammen.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "ritual-building-style"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-tradition-youd-like-to-start-together"
+          },
+          {
+            "type": "article",
+            "slug": "fun-rituals-to-strengthen-bonds"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-tradition-youd-like-us-to-start-as-a-couple"
+          }
+        ]
+      }
+    ],
+    "slug": "creating-fun-and-entertainment-together"
+  },
+  {
+    "job": [
+      "improving_relationship_satisfaction"
+    ],
+    "title": "Forbedring af Forholdstilfredshed",
+    "description": "Denne rejse er designet til at give par handlingsorienterede indsigter og aktiviteter, der gradvist opbygger deres forholdstilfredshed. I løbet af flere dage vil du udforske en række emner fra at forstå behov til at fordybe følelsesmæssig intimitet, hvilket kulminerer i praktiske strategier for løbende forbedring af dit partnerskab.",
+    "subtopics": [
+      {
+        "title": "Forståelse af Personlige Behov",
+        "description": "Start med at diskutere dine individuelle behov og ønsker i forholdet. Dette fundament hjælper begge partnere med at forstå, hvad hver især unikt har brug for for at føle sig tilfredse.",
+        "content": [
+          {
+            "type": "checkup",
+            "slug": "emotional-needs-compatibility"
+          },
+          {
+            "type": "question",
+            "slug": "how-can-we-ensure-both-of-our-needs-are-being-met"
+          },
+          {
+            "type": "article",
+            "slug": "building-trust-through-intimacy"
+          },
+          {
+            "type": "game",
+            "slug": "future-visionaries"
+          },
+          {
+            "type": "exercise",
+            "slug": "values-alignment-exercise"
+          },
+          {
+            "type": "question",
+            "slug": "how-can-we-better-support-each-other-during-stressful-situations"
+          }
+        ]
+      },
+      {
+        "title": "Åbne Kommunikationspraksisser",
+        "description": "Lær effektive kommunikationsteknikker, der fremmer åbenhed og gennemsigtighed mellem partnere. Deltag i øvelser, der fremmer aktiv lytning og udtryk for følelser.",
+        "content": [
+          {
+            "type": "checkup",
+            "slug": "mastering-our-communication-styles"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-prefer-to-communicate-your-needs-and-desires"
+          },
+          {
+            "type": "article",
+            "slug": "enhancing-communication-for-stronger-bonds"
+          },
+          {
+            "type": "game",
+            "slug": "communication-clues"
+          },
+          {
+            "type": "exercise",
+            "slug": "active-listening-practice"
+          },
+          {
+            "type": "question",
+            "slug": "whats-your-favorite-memory-of-us-having-a-great-conversation"
+          }
+        ]
+      },
+      {
+        "title": "Fejring af Forskelle og Fællesskaber",
+        "description": "Udforsk hvad der gør hver af jer unik, mens I fejrer fælles interesser. Dette vil bygge bro over forbindelseskløfter og respektere individuelle præferencer.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "growth-through-differences-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-can-we-celebrate-our-unique-strengths-and-compensate-for-our-differences"
+          },
+          {
+            "type": "article",
+            "slug": "embrace-and-celebrate-differences"
+          },
+          {
+            "type": "game",
+            "slug": "cultural-quest"
+          },
+          {
+            "type": "exercise",
+            "slug": "difference-identification-and-acceptance"
+          },
+          {
+            "type": "question",
+            "slug": "whats-one-thing-you-appreciate-about-how-i-handle-our-differences"
+          }
+        ]
+      },
+      {
+        "title": "Balancering af Samvær og Uafhængighed",
+        "description": "Fokuser på at finde en harmonisk balance mellem kvalitetstid sammen og respektere hinandens behov for personlig plads og individuelle interesser.",
+        "content": [
+          {
+            "type": "checkup",
+            "slug": "balancing-our-unique-interests"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-feel-about-the-balance-between-our-personal-time-and-together-time"
+          },
+          {
+            "type": "article",
+            "slug": "fun-rituals-to-strengthen-bonds"
+          },
+          {
+            "type": "game",
+            "slug": "routine-rendezvous"
+          },
+          {
+            "type": "exercise",
+            "slug": "shared-calendar-setup"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-prefer-solo-workouts-or-exercising-together"
+          }
+        ]
+      },
+      {
+        "title": "Skabelse af Intimitet gennem Sårbarhed",
+        "description": "Dyk ned i praksisser, der bygger følelsesmæssig intimitet gennem sårbarhed. Dette kan inkludere at dele tidligere oplevelser og frygt for at fordybe forbindelsen.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "vulnerability-style-assessment"
+          },
+          {
+            "type": "question",
+            "slug": "is-there-something-from-your-past-that-still-affects-our-relationship"
+          },
+          {
+            "type": "article",
+            "slug": "vulnerability-trusts-gateway"
+          },
+          {
+            "type": "game",
+            "slug": "secret-share"
+          },
+          {
+            "type": "exercise",
+            "slug": "truth-telling-exercises"
+          },
+          {
+            "type": "question",
+            "slug": "whats-something-youd-like-to-feel-more-of-in-our-relationship"
+          }
+        ]
+      },
+      {
+        "title": "Sætte Forholds Mål",
+        "description": "Afslut med praktiske strategier for at sætte fælles mål for jeres forhold, herunder aspirationer for vækst, intimitet og langsigtet tilfredshed.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "goal-alignment-style"
+          },
+          {
+            "type": "question",
+            "slug": "what-are-your-aspirations-for-our-relationship-five-ten-or-twenty-years-down-the-line"
+          },
+          {
+            "type": "article",
+            "slug": "aligning-life-ambitions-together"
+          },
+          {
+            "type": "game",
+            "slug": "future-talks-fiesta"
+          },
+          {
+            "type": "exercise",
+            "slug": "smart-goals-planning"
+          },
+          {
+            "type": "question",
+            "slug": "what-are-your-thoughts-on-continuing-personal-growth-and-self-improvement-in-our-relationship"
+          }
+        ]
+      }
+    ],
+    "slug": "enhancing-relationship-satisfaction"
+  },
+  {
+    "job": [
+      "improving_honesty_and_openness"
+    ],
+    "title": "Forbedring af Ærlighed og Åbenhed",
+    "description": "Denne rejse er designet til at hjælpe dig og din partner med at dyrke en dybere følelse af ærlighed og åbenhed i jeres forhold. I løbet af flere dage vil I deltage i aktiviteter, diskussioner og øvelser, der bygger tillid og gennemsigtighed, så I kan navigere i følsomme emner og styrke jeres bånd.",
+    "subtopics": [
+      {
+        "title": "Forståelse af Ærlighed",
+        "description": "Udforsk konceptet ærlighed i forhold, herunder dets betydning og de forskellige dimensioner af at være ærlig over for din partner. Deltag i spørgsmål, der dykker ned i dine nuværende perspektiver på ærlighed.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "honesty-and-openness-style"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-believe-in-complete-transparency-in-a-relationship-why-or-why-not"
+          },
+          {
+            "type": "article",
+            "slug": "cultivating-honest-conversations"
+          },
+          {
+            "type": "game",
+            "slug": "honesty-hunt"
+          },
+          {
+            "type": "checkup",
+            "slug": "the-honesty-hangout"
+          },
+          {
+            "type": "exercise",
+            "slug": "honesty-commitment-ritual"
+          }
+        ]
+      },
+      {
+        "title": "Håndtering af Frygt omkring Ærlighed",
+        "description": "Identificer almindelige frygt eller bekymringer vedrørende åbenhed i dit forhold. Reflekter sammen over situationer, hvor du følte, at du ikke kunne være ærlig, og diskuter, hvordan I kan skabe et sikrere miljø for åben kommunikation.",
+        "content": [
+          {
+            "type": "checkup",
+            "slug": "openness-odyssey"
+          },
+          {
+            "type": "question",
+            "slug": "have-you-ever-felt-you-couldnt-be-completely-honest-with-me-why"
+          },
+          {
+            "type": "article",
+            "slug": "vulnerability-trusts-gateway"
+          },
+          {
+            "type": "exercise",
+            "slug": "truth-telling-exercises"
+          },
+          {
+            "type": "game",
+            "slug": "trust-talk-challenge"
+          },
+          {
+            "type": "question",
+            "slug": "have-you-ever-hidden-something-to-protect-my-feelings-how-did-it-turn-out"
+          }
+        ]
+      },
+      {
+        "title": "Dyrkning af Gennemsigtighed",
+        "description": "Lær om fordelene ved gennemsigtighed i et forhold, og hvordan det kan forbedre intimiteten. Deltag i aktiviteter og diskussioner, der opfordrer til at dele detaljer og tanker, som du normalt ville holde private.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "transparency-style-assessment"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-think-its-ever-ok-to-tell-white-lies-in-a-relationship-why-or-why-not"
+          },
+          {
+            "type": "article",
+            "slug": "transparency-builds-strong-bonds"
+          },
+          {
+            "type": "exercise",
+            "slug": "transparency-talks"
+          },
+          {
+            "type": "game",
+            "slug": "transparency-trivia"
+          },
+          {
+            "type": "checkup",
+            "slug": "transparency-tools"
+          }
+        ]
+      },
+      {
+        "title": "Opbygning af Tillid Gennem Åbenhed",
+        "description": "Opdag strategier til at dyrke tillid ved at være åben om dine følelser, usikkerheder og ønsker. Deltag i øvelser, der fremmer deling og sårbarhed.",
+        "content": [
+          {
+            "type": "exercise",
+            "slug": "openness-commitment-ritual"
+          },
+          {
+            "type": "question",
+            "slug": "how-can-we-support-each-other-to-be-more-open-and-honest-daily"
+          },
+          {
+            "type": "article",
+            "slug": "building-emotional-intimacy-together"
+          },
+          {
+            "type": "game",
+            "slug": "trust-builders"
+          },
+          {
+            "type": "checkup",
+            "slug": "trusting-truths"
+          },
+          {
+            "type": "question",
+            "slug": "can-you-share-a-time-when-honesty-led-to-a-positive-outcome-in-our-relationship"
+          }
+        ]
+      },
+      {
+        "title": "Navigering i Svære Samtaler",
+        "description": "Udforsk teknikker til at tackle svære emner med ærlighed og åbenhed. Øv dig i at bruge effektive kommunikationsstrategier til at udtrykke dine tanker og følelser med det formål at løse konflikter konstruktivt.",
+        "content": [
+          {
+            "type": "checkup",
+            "slug": "conflict-to-connection"
+          },
+          {
+            "type": "test",
+            "slug": "your-conflict-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-handle-situations-where-being-honest-might-hurt-someone"
+          },
+          {
+            "type": "article",
+            "slug": "navigating-difficult-conversations"
+          },
+          {
+            "type": "game",
+            "slug": "dialogue-duel"
+          },
+          {
+            "type": "exercise",
+            "slug": "conflict-resolution-strategies-practice"
+          }
+        ]
+      },
+      {
+        "title": "Skabelse af en Ærlig Forholdskultur",
+        "description": "Udvikl en fælles aftale om ærlighedspraksis i dit forhold. Diskuter grænser og intentioner for at opretholde en kultur af åbenhed, så begge parter føler sig sikre i at udtrykke sig.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "trust-building-style-quiz"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-boundary-you-need-to-feel-safe-being-honest-with-me"
+          },
+          {
+            "type": "article",
+            "slug": "building-trust-through-transparency"
+          },
+          {
+            "type": "game",
+            "slug": "trust-sparks"
+          },
+          {
+            "type": "exercise",
+            "slug": "boundaries-practice"
+          },
+          {
+            "type": "checkup",
+            "slug": "trust-builders"
+          }
+        ]
+      }
+    ],
+    "slug": "improving-honesty-and-openness"
+  },
+  {
+    "job": [
+      "discussing_difficult_topics"
+    ],
+    "title": "Navigere Gennem Svære Samtaler Sammen",
+    "description": "Denne rejse er designet til at guide dig og din partner gennem udfordringerne ved at diskutere følsomme emner i jeres forhold. Hver dag vil I udforske forskellige aspekter af kommunikation, fra at etablere et solidt fundament til at tackle dybt personlige emner. Ved slutningen af denne rejse vil I have værktøjerne og selvtilliden til at deltage i meningsfulde diskussioner, hvilket styrker jeres følelsesmæssige forbindelse og gensidige forståelse.",
+    "subtopics": [
+      {
+        "title": "Etablering af Åben Kommunikation",
+        "description": "Lær vigtigheden af åben kommunikation og hvordan man skaber et sikkert rum til at diskutere svære emner. Dette underemne vil introducere grundlæggende kommunikationsstrategier.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "discover-your-communication-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-prefer-to-communicate-your-needs-and-desires"
+          },
+          {
+            "type": "article",
+            "slug": "mastering-communication-techniques"
+          },
+          {
+            "type": "game",
+            "slug": "communication-clues"
+          },
+          {
+            "type": "checkup",
+            "slug": "mastering-our-communication-styles"
+          },
+          {
+            "type": "question",
+            "slug": "whats-your-favorite-memory-of-us-having-a-great-conversation"
+          },
+          {
+            "type": "exercise",
+            "slug": "active-listening-practice"
+          }
+        ]
+      },
+      {
+        "title": "Forståelse af Forskellige Perspektiver",
+        "description": "Udforsk betydningen af empati ved at forstå din partners perspektiv på svære emner. Diskuter metoder til konstruktivt at nærme sig uenigheder.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "empathy-resonance-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-can-we-ensure-both-of-us-feel-heard-during-a-disagreement"
+          },
+          {
+            "type": "article",
+            "slug": "building-emotional-intimacy-together"
+          },
+          {
+            "type": "game",
+            "slug": "deep-dive-dialogues"
+          },
+          {
+            "type": "checkup",
+            "slug": "empathy-adventure"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-prefer-to-approach-conversations-when-emotions-run-high"
+          },
+          {
+            "type": "exercise",
+            "slug": "difference-identification-and-acceptance"
+          }
+        ]
+      },
+      {
+        "title": "Navigere Gennem Jalousi og Tillid",
+        "description": "Dyk ned i følelser af jalousi og tillid i dit forhold. Dette underemne fokuserer på, hvordan man diskuterer disse svære følelser uden konflikt.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "trust-building-style-quiz"
+          },
+          {
+            "type": "question",
+            "slug": "have-you-ever-felt-jealous-in-our-relationship-how-did-you-handle-it"
+          },
+          {
+            "type": "article",
+            "slug": "building-trust-through-intimacy"
+          },
+          {
+            "type": "game",
+            "slug": "trust-talk"
+          },
+          {
+            "type": "checkup",
+            "slug": "trusting-truths"
+          },
+          {
+            "type": "question",
+            "slug": "does-cheating-only-relate-to-physical-things-or-is-there-emotional-cheating-as-well"
+          },
+          {
+            "type": "exercise",
+            "slug": "rebuild-trust-session"
+          }
+        ]
+      },
+      {
+        "title": "Sætte Grænser i Diskussioner",
+        "description": "Lær hvordan man etablerer grænser, når man diskuterer følsomme emner for at sikre, at begge parter føler sig komfortable og respekterede under samtaler.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "boundary-communication-style"
+          },
+          {
+            "type": "question",
+            "slug": "are-there-any-boundaries-around-work-that-youd-like-to-set"
+          },
+          {
+            "type": "game",
+            "slug": "communication-carousel"
+          },
+          {
+            "type": "question",
+            "slug": "whats-one-boundary-youd-like-to-set-to-keep-our-relationship-healthy"
+          },
+          {
+            "type": "exercise",
+            "slug": "boundaries-practice"
+          }
+        ]
+      },
+      {
+        "title": "Håndtering af Tidligere Traumer",
+        "description": "Tag fat på samtaler om tidligere traumer og hvordan de kan påvirke dit forhold. Dette underemne giver strategier til at diskutere disse udfordrende emner på en delikat måde.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "life-story-style"
+          },
+          {
+            "type": "question",
+            "slug": "have-you-had-any-childhood-experiences-that-you-can-call-traumatic-how-has-it-affected-you"
+          },
+          {
+            "type": "article",
+            "slug": "navigating-emotional-waters-together"
+          },
+          {
+            "type": "checkup",
+            "slug": "exploring-childhood-memories"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-have-any-unresolved-issues-with-your-parents"
+          },
+          {
+            "type": "exercise",
+            "slug": "sensitive-subjects-dialogue-practice"
+          }
+        ]
+      },
+      {
+        "title": "Strategier til Konfliktløsning",
+        "description": "Udvikl dine færdigheder i at løse konflikter, der opstår under diskussioner. Udforsk teknikker til at omdanne argumenter til muligheder for vækst og gensidig forståelse.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "your-conflict-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-can-we-turn-our-arguments-into-opportunities-for-growth"
+          },
+          {
+            "type": "article",
+            "slug": "effective-conflict-resolution-strategies"
+          },
+          {
+            "type": "game",
+            "slug": "problem-solving-pals"
+          },
+          {
+            "type": "checkup",
+            "slug": "conflict-resolution-styles"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-prefer-to-resolve-disagreements-calm-discussion-or-taking-a-short-break"
+          },
+          {
+            "type": "exercise",
+            "slug": "conflict-resolution-strategies-practice"
+          }
+        ]
+      }
+    ],
+    "slug": "navigating-difficult-conversations-together"
+  },
+  {
+    "job": [
+      "building_trust"
+    ],
+    "title": "Bygger Tillid Sammen",
+    "description": "Denne rejse er designet til at hjælpe dig og din partner med at udforske de essentielle komponenter af tillid i jeres forhold. I løbet af flere dage vil I deltage i meningsfulde diskussioner, aktiviteter og refleksioner, der har til formål at styrke jeres tillid og følelsesmæssige intimitet.",
+    "subtopics": [
+      {
+        "title": "Definere Tillid",
+        "description": "Begynd med at udforske, hvad tillid betyder for jer begge. Diskuter jeres definitioner af tillid, og hvordan de former jeres forhold.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "trust-building-style-quiz"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-define-trust-in-a-relationship"
+          },
+          {
+            "type": "article",
+            "slug": "trust-through-open-communication"
+          },
+          {
+            "type": "game",
+            "slug": "trust-fund-trivia"
+          },
+          {
+            "type": "checkup",
+            "slug": "trust-builders"
+          },
+          {
+            "type": "question",
+            "slug": "can-you-share-a-time-when-honesty-led-to-a-positive-outcome-in-our-relationship"
+          },
+          {
+            "type": "exercise",
+            "slug": "trust-fall"
+          }
+        ]
+      },
+      {
+        "title": "Åben Kommunikation",
+        "description": "Lær vigtigheden af gennemsigtig og åben dialog. Deltag i øvelser og spørgsmål, der fremmer ærlig kommunikation.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "discover-your-communication-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-prefer-to-communicate-your-needs-and-desires"
+          },
+          {
+            "type": "article",
+            "slug": "enhancing-communication-for-stronger-bonds"
+          },
+          {
+            "type": "game",
+            "slug": "communication-clues"
+          },
+          {
+            "type": "checkup",
+            "slug": "mastering-our-communication-styles"
+          },
+          {
+            "type": "question",
+            "slug": "how-important-is-it-for-you-to-always-be-transparent-with-me-even-about-small-things"
+          },
+          {
+            "type": "exercise",
+            "slug": "active-listening-practice"
+          }
+        ]
+      },
+      {
+        "title": "Håndtering af Jalousi og Usikkerhed",
+        "description": "Identificer og adresser følelser af jalousi og usikkerhed. Del personlige erfaringer og mestringsstrategier i et støttende miljø.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "emotional-regulation-styles"
+          },
+          {
+            "type": "question",
+            "slug": "have-you-ever-felt-jealous-in-our-relationship-how-did-you-handle-it"
+          },
+          {
+            "type": "article",
+            "slug": "navigating-emotional-waters-together"
+          },
+          {
+            "type": "game",
+            "slug": "emotion-explorer"
+          },
+          {
+            "type": "checkup",
+            "slug": "emotional-needs-compatibility"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-handle-feelings-of-jealousy-or-insecurity"
+          },
+          {
+            "type": "exercise",
+            "slug": "jealously-navigation-technique"
+          }
+        ]
+      },
+      {
+        "title": "Sætte Grænser",
+        "description": "Diskuter personlige grænser og forstå hinandens komfortniveauer. At opbygge gensidig respekt og forståelse er nøglen til at etablere tillid.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "boundary-setting-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-comfortable-are-you-discussing-your-boundaries-and-desires"
+          },
+          {
+            "type": "article",
+            "slug": "navigating-boundaries-for-intimacy"
+          },
+          {
+            "type": "checkup",
+            "slug": "personal-space-balancing-togetherness-and-alone-time"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-boundary-you-need-to-feel-more-secure-and-trusting-in-our-relationship"
+          },
+          {
+            "type": "exercise",
+            "slug": "boundaries-practice"
+          }
+        ]
+      },
+      {
+        "title": "Reparere Tillid",
+        "description": "Udforsk hvordan man genopbygger tillid, efter den er blevet testet. Diskuter teknikker og forpligtelser, der er nødvendige for at genoprette troen på hinanden.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "trust-repair-style-type"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-prefer-to-rebuild-trust-if-its-ever-broken"
+          },
+          {
+            "type": "article",
+            "slug": "rebuilding-trust-after-betrayal"
+          },
+          {
+            "type": "game",
+            "slug": "trust-talk-challenge"
+          },
+          {
+            "type": "checkup",
+            "slug": "trust-in-communication"
+          },
+          {
+            "type": "question",
+            "slug": "have-you-done-something-in-the-past-that-you-think-can-significantly-change-my-image-of-you-and-what-are-the-things-that-can-hypothetically-change-your-image-of-me-maybe-i-did-something-amoral-or-cheated"
+          },
+          {
+            "type": "exercise",
+            "slug": "rebuild-trust-session"
+          }
+        ]
+      },
+      {
+        "title": "Tillidsopbyggende Aktiviteter",
+        "description": "Deltag i sjove og interaktive aktiviteter, der forbedrer tilliden. Deltag i øvelser designet til at bringe jer tættere sammen og styrke jeres bånd.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "transparency-style-assessment"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-fun-activity-we-can-do-together-to-strengthen-our-trust"
+          },
+          {
+            "type": "article",
+            "slug": "fun-rituals-to-strengthen-bonds"
+          },
+          {
+            "type": "game",
+            "slug": "trust-trek"
+          },
+          {
+            "type": "checkup",
+            "slug": "trust-in-conflict-resolution"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-trust-building-challenge-youd-like-us-to-try"
+          },
+          {
+            "type": "exercise",
+            "slug": "adventure-challenge"
+          }
+        ]
+      }
+    ],
+    "slug": "building-trust-together"
+  },
+  {
+    "job": [
+      "enhancing_love_and_affection"
+    ],
+    "title": "Forbedring af Kærlighed og Hengivenhed",
+    "description": "Denne rejse er designet til at hjælpe par med at dyrke dybere kærlighed og hengivenhed i deres forhold gennem meningsfulde diskussioner, legende aktiviteter og eftertænksomme praksisser. Hver dag vil du udforske forskellige aspekter af kærlighed og hengivenhed, fra at forstå dine udtryk for kærlighed til at skabe intime øjeblikke, der styrker jeres bånd.",
+    "subtopics": [
+      {
+        "title": "Forståelse af Kærlighedssprog",
+        "description": "Lær om konceptet kærlighedssprog og opdag, hvordan du og din partner udtrykker og modtager kærlighed. Denne viden lægger grundlaget for at forbedre jeres følelsesmæssige forbindelse.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "love-language-type"
+          },
+          {
+            "type": "question",
+            "slug": "what-is-your-love-language"
+          },
+          {
+            "type": "article",
+            "slug": "decoding-love-languages"
+          },
+          {
+            "type": "game",
+            "slug": "love-languages-quiz"
+          },
+          {
+            "type": "checkup",
+            "slug": "emotional-needs-compatibility"
+          },
+          {
+            "type": "question",
+            "slug": "whats-your-favorite-way-to-express-love-and-how-does-it-differ-from-mine"
+          },
+          {
+            "type": "exercise",
+            "slug": "find-out-your-love-language"
+          }
+        ]
+      },
+      {
+        "title": "Daglige Udtryk for Hengivenhed",
+        "description": "Udforsk enkle, men kraftfulde måder at udtrykke hengivenhed på dagligt. Dette underemne inkluderer diskussioner om små gestusser, kærlighedsnoter og komplimenter, der kan lyse hinandens dag op.",
+        "content": [
+          {
+            "type": "exercise",
+            "slug": "compliment-exchange"
+          },
+          {
+            "type": "question",
+            "slug": "how-can-we-better-express-our-appreciation-for-each-other-daily"
+          },
+          {
+            "type": "article",
+            "slug": "enhance-affection-daily"
+          },
+          {
+            "type": "game",
+            "slug": "affectionate-habits"
+          },
+          {
+            "type": "checkup",
+            "slug": "acts-of-kindness-and-appreciation"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-small-gesture-that-always-makes-you-smile"
+          }
+        ]
+      },
+      {
+        "title": "Skabe Intime Øjeblikke",
+        "description": "Opdag, hvordan du kan skabe og inkorporere intime øjeblikke i din daglige rutine. Dette inkluderer at planlægge overraskelsesdateaftener, spontane kram og øjeblikke til at forbinde dybt.",
+        "content": [
+          {
+            "type": "checkup",
+            "slug": "emotional-intimacy-check-in"
+          },
+          {
+            "type": "test",
+            "slug": "sensory-intimacy-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-feel-about-trying-new-activities-together-to-build-intimacy"
+          },
+          {
+            "type": "article",
+            "slug": "building-emotional-intimacy-together"
+          },
+          {
+            "type": "game",
+            "slug": "intimacy-insights"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-feel-about-surprise-date-nights-whats-your-ideal-surprise"
+          },
+          {
+            "type": "exercise",
+            "slug": "creating-passion-renewal-date"
+          }
+        ]
+      },
+      {
+        "title": "Dyrkning af Taknemmelighed og Værdsættelse",
+        "description": "Dyk ned i vigtigheden af at udtrykke taknemmelighed i dit forhold. Diskuter, hvordan værdsættelse kan forbedre kærlighed og hengivenhed, og lær specifikke praksisser for at anerkende hinanden.",
+        "content": [
+          {
+            "type": "exercise",
+            "slug": "expressing-gratitude-session"
+          },
+          {
+            "type": "question",
+            "slug": "how-can-we-better-express-our-appreciation-for-each-other"
+          },
+          {
+            "type": "article",
+            "slug": "mastering-communication-techniques"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-like-to-express-appreciation-in-our-conversations"
+          }
+        ]
+      },
+      {
+        "title": "Legesygdom og Humor i Hengivenhed",
+        "description": "Lær, hvordan humor og legesygdom kan forbedre intimiteten. Dette underemne opfordrer til at finde måder at grine sammen og deltage i legende aktiviteter, der styrker jeres bånd.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "playfulness-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-feel-about-incorporating-humor-into-our-intimate-moments"
+          },
+          {
+            "type": "article",
+            "slug": "fun-rituals-to-strengthen-bonds"
+          },
+          {
+            "type": "game",
+            "slug": "laugh-learn-quiz"
+          },
+          {
+            "type": "checkup",
+            "slug": "fun-flirtation"
+          },
+          {
+            "type": "question",
+            "slug": "how-can-we-incorporate-more-playfulness-into-our-relationship"
+          },
+          {
+            "type": "exercise",
+            "slug": "karaoke-session"
+          }
+        ]
+      },
+      {
+        "title": "Fysisk Hengivenhed og Berøring",
+        "description": "Udforsk rollen af fysisk berøring i at fremme dybere hengivenhed. Diskuter præferencer for kys, kram, kram og andre former for fysisk hengivenhed, der forstærker jeres forbindelse.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "physical-touch-style"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-prefer-cuddling-on-the-couch-or-a-romantic-dinner-to-feel-loved"
+          },
+          {
+            "type": "article",
+            "slug": "enhancing-physical-intimacy-mindfully"
+          },
+          {
+            "type": "game",
+            "slug": "bedroom-preferences"
+          },
+          {
+            "type": "checkup",
+            "slug": "physical-comfort-and-boundaries"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-prefer-morning-hugs-or-goodnight-kisses"
+          },
+          {
+            "type": "exercise",
+            "slug": "affectionate-gestures-practice"
+          }
+        ]
+      }
+    ],
+    "slug": "enhancing-love-and-affection"
+  },
+  {
+    "job": [
+      "improving_communication"
+    ],
+    "title": "Forbedring af Kommunikation: Byg Broer i Vores Forhold",
+    "description": "Denne rejse fokuserer på at forbedre kommunikationsevnerne mellem partnere. Gennem forskellige aktiviteter, diskussioner og refleksive praksisser vil du lære at udtrykke dig mere åbent og forstå hinanden bedre, hvilket fremmer en tættere forbindelse og et mere tilfredsstillende forhold.",
+    "subtopics": [
+      {
+        "title": "Forståelse af Hinandens Kommunikationsstile",
+        "description": "Udforsk forskellige kommunikationsstile og opdag, hvordan de påvirker jeres interaktioner. Dette inkluderer at identificere din egen stil og lære om din partners præferencer for at skabe en åben dialog.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "discover-your-communication-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-prefer-to-communicate-your-needs-and-desires"
+          },
+          {
+            "type": "article",
+            "slug": "enhancing-communication-for-stronger-bonds"
+          },
+          {
+            "type": "game",
+            "slug": "communication-clues"
+          },
+          {
+            "type": "exercise",
+            "slug": "active-listening-practice"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-feel-about-writing-down-our-issues-before-discussing-them"
+          },
+          {
+            "type": "checkup",
+            "slug": "mastering-our-communication-styles"
+          }
+        ]
+      },
+      {
+        "title": "Navigere i Svære Samtaler",
+        "description": "Lær teknikker til at nærme dig svære diskussioner med empati og respekt. Du vil opnå færdigheder til at udtrykke dine tanker og følelser, mens du er opmærksom på din partners perspektiv.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "problem-solving-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-can-we-make-our-disagreements-more-constructive"
+          },
+          {
+            "type": "article",
+            "slug": "navigating-sensitive-conversations"
+          },
+          {
+            "type": "game",
+            "slug": "problem-solving-pals"
+          },
+          {
+            "type": "exercise",
+            "slug": "conflict-resolution-strategies-practice"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-prefer-discussing-issues-immediately-or-taking-some-time-to-cool-off"
+          },
+          {
+            "type": "checkup",
+            "slug": "navigating-tough-conversations"
+          }
+        ]
+      },
+      {
+        "title": "Udtrykke Behov og Grænser",
+        "description": "Dette emne dykker ned i, hvordan man kommunikerer sine behov og sætter sunde grænser. Du vil øve dig i at udtrykke, hvad du har brug for fra hinanden på en måde, der styrker jeres forhold.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "boundary-setting-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-comfortable-are-you-discussing-your-boundaries-and-desires"
+          },
+          {
+            "type": "article",
+            "slug": "navigating-boundaries-for-intimacy"
+          },
+          {
+            "type": "exercise",
+            "slug": "boundaries-practice"
+          },
+          {
+            "type": "question",
+            "slug": "whats-one-boundary-youd-like-to-set-to-keep-our-relationship-healthy"
+          }
+        ]
+      },
+      {
+        "title": "Aktiv Lytning og Emotionel Validering",
+        "description": "Mestring af kunsten at lytte aktivt og lær, hvordan du validerer din partners følelser. Du vil opdage værktøjer til at forbedre dine lyttefærdigheder og sikre, at begge parter føler sig hørt og forstået.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "listening-style-quiz"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-like-to-receive-feedback-in-our-relationship"
+          },
+          {
+            "type": "article",
+            "slug": "mastering-active-listening"
+          },
+          {
+            "type": "checkup",
+            "slug": "emotional-explorers"
+          },
+          {
+            "type": "exercise",
+            "slug": "active-listening-practice"
+          },
+          {
+            "type": "question",
+            "slug": "whats-your-favorite-non-verbal-way-i-show-you-im-listening"
+          }
+        ]
+      },
+      {
+        "title": "Konstruktiv Konfliktløsning",
+        "description": "Lær effektive strategier til at løse konflikter på en konstruktiv måde. Dette inkluderer teknikker til at håndtere uenigheder uden at skade forholdet, hvilket fremmer en ånd af teamwork.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "your-conflict-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-handle-disagreements-or-conflicts"
+          },
+          {
+            "type": "article",
+            "slug": "effective-conflict-resolution-strategies"
+          },
+          {
+            "type": "game",
+            "slug": "conflict-resolution-quest"
+          },
+          {
+            "type": "exercise",
+            "slug": "conflict-resolution-strategies-practice"
+          },
+          {
+            "type": "question",
+            "slug": "whats-one-thing-youd-like-to-change-about-how-we-handle-our-differences"
+          },
+          {
+            "type": "checkup",
+            "slug": "conflict-resolution-styles"
+          }
+        ]
+      },
+      {
+        "title": "Fremme af Ærlige og Åbne Dialoger",
+        "description": "Dyrk en vane med åben og ærlig kommunikation i dit forhold. Dette underemne vil guide dig gennem praksisser, der opmuntrer til gennemsigtighed og tillid, hvilket baner vejen for dybere forbindelse og intimitet.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "honesty-and-openness-style"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-feel-comfortable-expressing-your-true-feelings-with-me-why-or-why-not"
+          },
+          {
+            "type": "article",
+            "slug": "building-trust-through-transparency"
+          },
+          {
+            "type": "game",
+            "slug": "honesty-huddle"
+          },
+          {
+            "type": "checkup",
+            "slug": "the-honesty-hangout"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-think-honesty-is-always-the-best-policy-why-or-why-not"
+          },
+          {
+            "type": "exercise",
+            "slug": "complete-honesty-sessions"
+          }
+        ]
+      }
+    ],
+    "slug": "improving-communication-building-bridges-in-our-relationship"
+  },
+  {
+    "job": [
+      "having_meaningful_conversations"
+    ],
+    "title": "At dyrke meningsfulde samtaler",
+    "description": "Denne rejse er designet til at forbedre din evne til at engagere dig i meningsfulde samtaler med din partner. I løbet af flere dage vil du udforske forskellige aspekter af kommunikation, fra at forstå hinandens værdier til at diskutere dybere følelsesmæssige emner. Hver dag bygger videre på den forrige, hvilket opmuntrer til vækst og forbindelse.",
+    "subtopics": [
+      {
+        "title": "Grundlæggende kommunikation",
+        "description": "Start med at udforske grundlæggende elementer af effektiv kommunikation med din partner. Lær om aktiv lytning, at udtrykke tanker klart, og vigtigheden af nonverbale signaler.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "discover-your-communication-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-prefer-to-communicate-your-needs-and-desires"
+          },
+          {
+            "type": "article",
+            "slug": "mastering-communication-techniques"
+          },
+          {
+            "type": "game",
+            "slug": "communication-clues"
+          },
+          {
+            "type": "checkup",
+            "slug": "mastering-our-communication-styles"
+          },
+          {
+            "type": "exercise",
+            "slug": "active-listening-practice"
+          },
+          {
+            "type": "question",
+            "slug": "whats-your-favorite-memory-of-us-having-a-great-conversation"
+          }
+        ]
+      },
+      {
+        "title": "Forstå hinandens værdier",
+        "description": "Dyk ned i de kerneværdier, der former dine overbevisninger og handlinger. Diskuter, hvordan disse værdier påvirker dine beslutninger, og hvordan de kan påvirke dit forhold.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "values-alignment-style"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-think-we-share-the-same-values"
+          },
+          {
+            "type": "article",
+            "slug": "aligning-life-ambitions-together"
+          },
+          {
+            "type": "game",
+            "slug": "values-vibes"
+          },
+          {
+            "type": "checkup",
+            "slug": "core-values-connection"
+          },
+          {
+            "type": "exercise",
+            "slug": "values-alignment-exercise"
+          },
+          {
+            "type": "question",
+            "slug": "what-are-your-top-three-values-and-how-do-they-influence-your-decisions"
+          }
+        ]
+      },
+      {
+        "title": "Navigere i svære emner",
+        "description": "Lær teknikker til at nærme dig svære samtaler med følsomhed og respekt. Øv dig i at diskutere udfordrende emner som økonomi, familiedynamik eller fremtidsdrømme.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "problem-solving-style"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-think-that-money-play-a-big-role-in-feeling-fulfilled"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-balance-personal-time-with-time-spent-together"
+          },
+          {
+            "type": "article",
+            "slug": "navigating-difficult-conversations"
+          },
+          {
+            "type": "game",
+            "slug": "conflict-resolution-quest"
+          },
+          {
+            "type": "checkup",
+            "slug": "tackling-tough-talks"
+          },
+          {
+            "type": "exercise",
+            "slug": "tough-talks-toolkit"
+          }
+        ]
+      },
+      {
+        "title": "Dele personlige oplevelser",
+        "description": "Engager dig i historiefortælling for at dele betydningsfulde minder fra din fortid. Opdag, hvordan dine oplevelser har påvirket dine nuværende perspektiver og følelsesmæssige tilstande.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "life-story-style"
+          },
+          {
+            "type": "question",
+            "slug": "can-you-share-a-memory-from-your-childhood-that-you-think-has-shaped-who-you-are-today"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-memorable-lesson-youve-learned-from-past-relationships"
+          },
+          {
+            "type": "article",
+            "slug": "love-maps-knowing-each-other-deeply"
+          },
+          {
+            "type": "game",
+            "slug": "memory-lane"
+          },
+          {
+            "type": "checkup",
+            "slug": "exploring-childhood-memories"
+          },
+          {
+            "type": "exercise",
+            "slug": "intimate-story-sharing"
+          }
+        ]
+      },
+      {
+        "title": "Dybde følelsesmæssig forbindelse",
+        "description": "Udforsk samtaler, der forbedrer følelsesmæssig intimitet. Diskuter emner som frygt, drømme og aspirationer for at fremme et dybere bånd med din partner.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "emotional-intimacy-style"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-believe-in-soulmates-why-or-why-not"
+          },
+          {
+            "type": "question",
+            "slug": "what-are-your-dreams-and-aspirations-outside-of-work"
+          },
+          {
+            "type": "article",
+            "slug": "building-emotional-intimacy-together"
+          },
+          {
+            "type": "game",
+            "slug": "emotional-expeditions"
+          },
+          {
+            "type": "checkup",
+            "slug": "emotional-intimacy-check-in"
+          },
+          {
+            "type": "exercise",
+            "slug": "emotional-closeness-exercises"
+          }
+        ]
+      },
+      {
+        "title": "Bygge en kultur af åbenhed",
+        "description": "Skab et miljø, hvor begge partnere føler sig trygge ved at udtrykke deres tanker og følelser. Lær strategier til at opretholde åben kommunikation og til at opmuntre sårbarhed.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "openness-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-feel-about-surprise-conversations-versus-planned-discussions"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-express-your-creativity"
+          },
+          {
+            "type": "article",
+            "slug": "cultivating-honest-conversations"
+          },
+          {
+            "type": "game",
+            "slug": "open-hearts-challenge"
+          },
+          {
+            "type": "checkup",
+            "slug": "vulnerability-and-openness"
+          },
+          {
+            "type": "exercise",
+            "slug": "transparent-communication-practices"
+          }
+        ]
+      }
+    ],
+    "slug": "cultivating-meaningful-conversations"
+  },
+  {
+    "job": [
+      "discussing_finances"
+    ],
+    "title": "At Tale Om Vore Økonomi: Bygge en Stærkere Fremtid Sammen",
+    "description": "Denne rejse er designet til at hjælpe dig og din partner med at deltage i meningsfulde samtaler om økonomi, opbygge gensidig forståelse og udvikle en samarbejdende tilgang til økonomiske mål. Ved at arbejde gennem forskellige underemner vil du lære, hvordan du kommunikerer effektivt, sætter økonomiske mål og tilpasser dine forbrugsvaner for en lysere fælles fremtid.",
+    "subtopics": [
+      {
+        "title": "Forståelse af Vore Økonomiske Værdier",
+        "description": "Udforsk hinandens økonomiske overbevisninger og værdier for at skabe et solidt fundament for jeres økonomiske diskussioner. Dette underemne inkluderer spørgsmål om jeres økonomiske rollemodeller og hvad I prioriterer økonomisk.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "financial-communication-style"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-have-a-financial-role-model-who-and-why"
+          },
+          {
+            "type": "article",
+            "slug": "mastering-money-talks-together"
+          },
+          {
+            "type": "game",
+            "slug": "dream-budget-builders"
+          },
+          {
+            "type": "checkup",
+            "slug": "aligning-financial-values-and-goals"
+          },
+          {
+            "type": "exercise",
+            "slug": "financial-planning-session"
+          },
+          {
+            "type": "question",
+            "slug": "whats-one-financial-habit-you-admire-in-others"
+          }
+        ]
+      },
+      {
+        "title": "Sætte Økonomiske Mål Sammen",
+        "description": "Diskuter vigtigheden af økonomiske mål som par. Dette underemne guider jer gennem oprettelsen af kortsigtede og langsigtede økonomiske mål og forståelsen af, hvordan I kan opnå dem sammen.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "budgeting-style-for-couples"
+          },
+          {
+            "type": "question",
+            "slug": "what-are-your-financial-goals-and-how-can-we-achieve-them-together"
+          },
+          {
+            "type": "article",
+            "slug": "aligning-financial-goals-harmoniously"
+          },
+          {
+            "type": "game",
+            "slug": "future-visionaries"
+          },
+          {
+            "type": "checkup",
+            "slug": "future-financial-adventures"
+          },
+          {
+            "type": "exercise",
+            "slug": "budget-planning-session"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-new-financial-goal-youd-like-to-set-together"
+          }
+        ]
+      },
+      {
+        "title": "Kommunikere Om Økonomiske Anliggender",
+        "description": "Lær effektive kommunikationsstrategier til at diskutere økonomi. Dette underemne introducerer værktøjer som budgetteringsapps og regelmæssige tjek-ins for at hjælpe med at lette disse samtaler.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "discover-your-communication-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-feel-about-budgeting-apps-yay-or-nay"
+          },
+          {
+            "type": "article",
+            "slug": "mastering-communication-techniques"
+          },
+          {
+            "type": "game",
+            "slug": "communication-champions"
+          },
+          {
+            "type": "checkup",
+            "slug": "mastering-our-communication-styles"
+          },
+          {
+            "type": "exercise",
+            "slug": "transparency-talks"
+          },
+          {
+            "type": "question",
+            "slug": "what-smartphone-app-do-you-mostly-use"
+          }
+        ]
+      },
+      {
+        "title": "Balancere Forbrug og Opsparing",
+        "description": "Dyk ned i samtaler om jeres forskellige forbrugsvaner og hvordan I kan finde fælles fodslag. Dette underemne opfordrer jer til at prioritere jeres økonomiske mål med jeres livsstilsvalg.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "your-spending-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-feel-about-our-different-spending-habits-and-how-can-we-find-a-middle-ground"
+          },
+          {
+            "type": "article",
+            "slug": "building-trust-through-financial-transparency"
+          },
+          {
+            "type": "game",
+            "slug": "budget-battle-royale"
+          },
+          {
+            "type": "checkup",
+            "slug": "budgeting-together-without-breaking-up"
+          },
+          {
+            "type": "exercise",
+            "slug": "spending-habits-review"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-prefer-saving-money-in-a-bank-or-investing-it-elsewhere"
+          }
+        ]
+      },
+      {
+        "title": "Håndtere Økonomiske Udfordringer Sammen",
+        "description": "Diskuter jeres strategier til at håndtere økonomisk stress og uventede udgifter. Dette underemne hjælper jer med at udvikle en plan for at støtte hinanden i tider med økonomiske vanskeligheder.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "debt-management-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-handle-financial-stress-together"
+          },
+          {
+            "type": "game",
+            "slug": "debt-decision-duel"
+          },
+          {
+            "type": "checkup",
+            "slug": "tackling-debt-together"
+          },
+          {
+            "type": "exercise",
+            "slug": "debt-management-planning"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-handle-unexpected-expenses"
+          }
+        ]
+      },
+      {
+        "title": "Planlægning for Vore Økonomiske Fremtid",
+        "description": "Udforsk dybere aspekter af økonomisk planlægning, herunder pensionsstrategier, boligejerskab og fremtiden for jeres families økonomi. Dette underemne hjælper jer med at tilpasse jeres visioner for fremtiden og etablere et solidt økonomisk partnerskab.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "future-planning-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-prioritize-financial-goals-with-other-life-goals"
+          },
+          {
+            "type": "game",
+            "slug": "future-forecast"
+          },
+          {
+            "type": "checkup",
+            "slug": "future-talk-flow"
+          },
+          {
+            "type": "exercise",
+            "slug": "retirement-dreams-mapping"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-see-the-budget-in-our-partnership-now-what-method-will-be-more-comfortable-for-you"
+          }
+        ]
+      }
+    ],
+    "slug": "discussing-our-finances-building-a-stronger-future-together"
+  },
+  {
+    "job": [
+      "rekindling_passion"
+    ],
+    "title": "Genoplive Passionen",
+    "description": "Denne rejse er designet til at hjælpe dig med at genantænde passionen i dit forhold gennem en række indsigtsfulde aktiviteter, diskussioner og sjove øvelser. Hver dag vil du udforske forskellige aspekter af intimitet, kommunikation og fælles oplevelser for at styrke dit bånd og forbedre din romantiske forbindelse.",
+    "subtopics": [
+      {
+        "title": "Udforskning af Vore Begær",
+        "description": "Start med at diskutere, hvad I begge finder sexet og tiltalende ved hinanden, herunder fantasier og nye idéer. Brug engagerende spørgsmål og tests til at afdække dybere begær.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "desire-reignition-style"
+          },
+          {
+            "type": "question",
+            "slug": "what-do-you-find-especially-sexy-about-me"
+          },
+          {
+            "type": "article",
+            "slug": "enhancing-sexual-communication"
+          },
+          {
+            "type": "game",
+            "slug": "fantasy-feelings"
+          },
+          {
+            "type": "checkup",
+            "slug": "emotional-intimacy-check-in"
+          },
+          {
+            "type": "question",
+            "slug": "whats-something-we-could-do-to-spice-things-up"
+          },
+          {
+            "type": "exercise",
+            "slug": "sexual-bucket-list-creation"
+          }
+        ]
+      },
+      {
+        "title": "Skabelse af Romantiske Øjeblikke",
+        "description": "Lær hvordan man gør hverdagens øjeblikke specielle. Dette underemne opfordrer dig til at udvikle romantiske gestus og overraske hinanden, hvilket bringer spænding ind i jeres dagligliv.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "romantic-gesture-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-can-we-make-everyday-moments-feel-more-special-and-romantic"
+          },
+          {
+            "type": "article",
+            "slug": "crafting-memorable-date-nights"
+          },
+          {
+            "type": "game",
+            "slug": "date-night-planner"
+          },
+          {
+            "type": "checkup",
+            "slug": "quality-time-quality-love"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-new-hobby-we-could-start-together-to-spice-things-up"
+          },
+          {
+            "type": "exercise",
+            "slug": "creating-passion-renewal-date"
+          }
+        ]
+      },
+      {
+        "title": "Krydring af Ting Sammen",
+        "description": "Udforsk nye hobbyer eller oplevelser, I kan dele som par. Opdag aktiviteter, der kan genantænde sjov og passion i jeres forhold, samtidig med at der er plads til personlig vækst.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "hobby-harmony-style"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-new-hobby-we-can-start-together-to-strengthen-our-bond"
+          },
+          {
+            "type": "article",
+            "slug": "exploring-shared-hobbies-together"
+          },
+          {
+            "type": "game",
+            "slug": "hobby-harmony"
+          },
+          {
+            "type": "checkup",
+            "slug": "growth-through-novelty"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-way-we-can-challenge-each-other-to-grow-while-keeping-the-romance-alive"
+          },
+          {
+            "type": "exercise",
+            "slug": "hobbies-and-interests-exercise"
+          }
+        ]
+      },
+      {
+        "title": "Intimitet og Sårbarhed",
+        "description": "Dyk dybere ind i følelsesmæssig intimitet og sårbarhed. Du vil øve åben kommunikation om dine følelsesmæssige behov, hvilket forbedrer forbindelsen, der driver passion.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "emotional-intimacy-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-prefer-to-communicate-your-needs-and-desires"
+          },
+          {
+            "type": "article",
+            "slug": "building-emotional-intimacy-together"
+          },
+          {
+            "type": "game",
+            "slug": "trust-builders"
+          },
+          {
+            "type": "checkup",
+            "slug": "emotional-needs-compatibility"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-fun-way-we-can-explore-each-others-fantasies-together"
+          },
+          {
+            "type": "exercise",
+            "slug": "active-listening-practice"
+          }
+        ]
+      },
+      {
+        "title": "Opretholdelse af Gnisten",
+        "description": "Diskuter strategier for at holde gnisten i live, selv i hverdagens øjeblikke. Udforsk måder at udfordre og vokse sammen, mens romantikken forbliver i fokus.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "growth-balance-style"
+          },
+          {
+            "type": "question",
+            "slug": "what-do-you-think-we-can-do-to-keep-the-spark-alive-in-our-relationship"
+          },
+          {
+            "type": "article",
+            "slug": "boosting-relationship-happiness"
+          },
+          {
+            "type": "game",
+            "slug": "passion-rekindle-quest"
+          },
+          {
+            "type": "checkup",
+            "slug": "fun-and-affection"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-new-hobby-we-can-try-together-that-honors-both-our-interests"
+          },
+          {
+            "type": "exercise",
+            "slug": "flexible-role-playing"
+          }
+        ]
+      },
+      {
+        "title": "Langsigtede Passion Planer",
+        "description": "Skab en køreplan for at opretholde passionen i dit forhold over tid. Udvikl fælles mål og en vision for jeres fremtid, der holder både intimitet og spænding i live.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "future-planning-style"
+          },
+          {
+            "type": "question",
+            "slug": "if-you-won-the-lottery-tomorrow-whats-the-first-thing-youd-do"
+          },
+          {
+            "type": "article",
+            "slug": "creating-a-vision-for-us"
+          },
+          {
+            "type": "game",
+            "slug": "future-visionaries"
+          },
+          {
+            "type": "checkup",
+            "slug": "future-talk-together"
+          },
+          {
+            "type": "question",
+            "slug": "whats-your-favorite-memory-of-us-having-a-great-conversation"
+          },
+          {
+            "type": "exercise",
+            "slug": "long-term-goal-planning"
+          }
+        ]
+      }
+    ],
+    "slug": "rekindling-the-passion"
+  },
+  {
+    "job": [
+      "preparing_for_cohabitation"
+    ],
+    "title": "Forberedelse til Samliv",
+    "description": "Denne rejse er designet til at forberede dig og din partner til samliv ved at tage fat på forskellige aspekter af at bo sammen. I vil lære, hvordan man kommunikerer effektivt, navigerer i ansvar og skaber et harmonisk hjemmemiljø. Hver dag vil I udforske vigtige emner, der vil hjælpe med at styrke jeres forhold og lette overgangen til fælles liv.",
+    "subtopics": [
+      {
+        "title": "Drømme om Vores Fælles Rum",
+        "description": "Start med at dele jeres visioner for, hvordan jeres hjem vil se ud. Diskuter ideer om plads, indretning og atmosfære. Dette sætter grundlaget for gensidig forståelse og fælles drømme.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "lifestyle-harmony-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-can-we-create-a-home-environment-that-respects-both-of-our-preferences"
+          },
+          {
+            "type": "article",
+            "slug": "sharing-spaces-harmoniously"
+          },
+          {
+            "type": "exercise",
+            "slug": "living-space-design"
+          },
+          {
+            "type": "game",
+            "slug": "decor-dilemma"
+          },
+          {
+            "type": "question",
+            "slug": "whats-one-piece-of-furniture-you-absolutely-need-in-our-new-home"
+          }
+        ]
+      },
+      {
+        "title": "Kommunikationsgrundlag",
+        "description": "Lær effektive kommunikationsstrategier, der vil hjælpe jer med at navigere i daglige udfordringer. Udforsk måder at udtrykke behov, sætte forventninger og aktivt lytte til hinanden.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "discover-your-communication-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-prefer-to-communicate-your-needs-and-desires"
+          },
+          {
+            "type": "article",
+            "slug": "mastering-communication-techniques"
+          },
+          {
+            "type": "game",
+            "slug": "communication-clues"
+          },
+          {
+            "type": "checkup",
+            "slug": "mastering-our-communication-styles"
+          },
+          {
+            "type": "exercise",
+            "slug": "active-listening-practice"
+          }
+        ]
+      },
+      {
+        "title": "Huslige Ansvarsområder",
+        "description": "Diskuter og fastlæg, hvordan I vil fordele huslige pligter og ansvar. Skab et system, der fungerer for jer begge for at opretholde et rent og organiseret hjemmemiljø.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "domestic-labor-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-feel-about-handling-household-responsibilities-and-chores"
+          },
+          {
+            "type": "article",
+            "slug": "establishing-household-routines"
+          },
+          {
+            "type": "exercise",
+            "slug": "shared-responsibilities-mapping"
+          },
+          {
+            "type": "game",
+            "slug": "chore-chart-challenge"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-feel-about-having-a-cleaning-schedule-versus-cleaning-as-we-go"
+          }
+        ]
+      },
+      {
+        "title": "Finansielle Grundlag",
+        "description": "Bliv enige om økonomisk forvaltning og budgettering som par. Diskuter strategier for at dele udgifter, træffe fælles økonomiske beslutninger og opretholde gennemsigtighed omkring økonomi.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "budgeting-style-for-couples"
+          },
+          {
+            "type": "game",
+            "slug": "dream-budget-builders"
+          },
+          {
+            "type": "article",
+            "slug": "mastering-money-talks-together"
+          },
+          {
+            "type": "exercise",
+            "slug": "budget-planning-session"
+          },
+          {
+            "type": "checkup",
+            "slug": "aligning-financial-values-and-goals"
+          },
+          {
+            "type": "question",
+            "slug": "whats-one-thing-you-want-to-achieve-together-in-our-new-home"
+          }
+        ]
+      },
+      {
+        "title": "Håndtering af Konflikter med Ynde",
+        "description": "Forbered dig på uundgåelige uenigheder ved at lære strategier til konfliktløsning. Udforsk, hvordan man håndterer forskellige meninger og finder fælles grund på en sund måde.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "your-conflict-style"
+          },
+          {
+            "type": "game",
+            "slug": "conflict-resolution-quest"
+          },
+          {
+            "type": "article",
+            "slug": "mastering-conflict-resolution-together"
+          },
+          {
+            "type": "exercise",
+            "slug": "conflict-resolution-strategies-practice"
+          },
+          {
+            "type": "checkup",
+            "slug": "tackling-tough-talks"
+          },
+          {
+            "type": "question",
+            "slug": "how-should-we-handle-maintenance-and-repairs-around-the-house"
+          }
+        ]
+      },
+      {
+        "title": "Skabelse af et Sikkert Rum",
+        "description": "Afslut jeres forberedelser ved at fokusere på følelsesmæssig og fysisk sikkerhed i jeres fælles rum. Diskuter grænser, privatliv og hvordan man skaber et miljø, hvor begge føler sig sikre og respekterede.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "emotional-safety-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-should-we-handle-setting-up-our-home-office-or-study-space"
+          },
+          {
+            "type": "article",
+            "slug": "navigating-boundaries-for-intimacy"
+          },
+          {
+            "type": "exercise",
+            "slug": "personal-space-respect-practices"
+          },
+          {
+            "type": "game",
+            "slug": "space-personalities"
+          },
+          {
+            "type": "question",
+            "slug": "how-should-we-handle-guests-and-visitors-in-our-home"
+          }
+        ]
+      }
+    ],
+    "slug": "preparing-for-cohabitation"
+  },
+  {
+    "job": [
+      "having_and_discussing_sex"
+    ],
+    "title": "Navigere i Vores Intime Verden",
+    "description": "Denne rejse fokuserer på at forbedre din forståelse og diskussioner om sex i dit forhold. Du vil udforske grænser, ønsker og kommunikationsstile for at dyrke en tilfredsstillende og åben seksuel forbindelse med din partner. Hver dag vil du deltage i forskellige aktiviteter designet til at fremme intimitet og forståelse.",
+    "subtopics": [
+      {
+        "title": "Forståelse af Ønsker og Grænser",
+        "description": "Begynd med at diskutere dine personlige ønsker og grænser. Dette grundlæggende skridt opbygger tillid og sætter scenen for åbne samtaler om intimitet. Opdag værktøjer til at artikulere, hvad du har brug for, og hvad du er komfortabel med.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "discover-your-communication-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-comfortable-are-you-discussing-your-boundaries-and-desires"
+          },
+          {
+            "type": "article",
+            "slug": "trust-through-open-communication"
+          },
+          {
+            "type": "game",
+            "slug": "communication-clues"
+          },
+          {
+            "type": "checkup",
+            "slug": "mastering-our-communication-styles"
+          },
+          {
+            "type": "question",
+            "slug": "are-there-any-boundaries-youd-like-to-discuss-regarding-our-physical-relationship"
+          },
+          {
+            "type": "exercise",
+            "slug": "boundaries-practice"
+          }
+        ]
+      },
+      {
+        "title": "Udforskning af Seksuelle Fantasier og Eksperimenter",
+        "description": "Nu hvor du har etableret et sikkert rum, dyk ind i at dele fantasier og diskutere de nye oplevelser, du gerne vil prøve sammen. Udforsk måder at introducere disse elementer i dit intime liv.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "fantasy-sharing-style"
+          },
+          {
+            "type": "question",
+            "slug": "are-there-any-fantasies-or-desires-youd-like-to-share"
+          },
+          {
+            "type": "article",
+            "slug": "building-emotional-intimacy-together"
+          },
+          {
+            "type": "game",
+            "slug": "intimacy-insights"
+          },
+          {
+            "type": "checkup",
+            "slug": "maintaining-sexual-satisfaction-over-time"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-fun-way-we-can-explore-each-others-fantasies-together"
+          },
+          {
+            "type": "exercise",
+            "slug": "fantasy-sharing-session"
+          }
+        ]
+      },
+      {
+        "title": "Åben Kommunikation om Intimitet",
+        "description": "Udvikl dine kommunikationsevner omkring sex, så I begge kan udtrykke behov, præferencer og eventuelle bekymringer. Dette underemne inkluderer øvelser, der hjælper med at forbedre gennemsigtighed og forbindelse.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "sexual-communication-style"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-find-it-easy-to-say-everything-you-want-during-sex"
+          },
+          {
+            "type": "article",
+            "slug": "enhancing-sexual-communication"
+          },
+          {
+            "type": "game",
+            "slug": "communication-carousel"
+          },
+          {
+            "type": "checkup",
+            "slug": "mastering-communication"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-feel-about-discussing-intimacy-outside-of-the-bedroom"
+          },
+          {
+            "type": "exercise",
+            "slug": "talking-about-sex-practice"
+          }
+        ]
+      },
+      {
+        "title": "Forbedring af Fysisk Intimitet",
+        "description": "Udforsk forskellige former for fysisk hengivenhed og intimitet. Diskuter, hvad der får dig til at føle dig forbundet og tilfredsstillet, og prøv nye aktiviteter, der kan styrke dit bånd og øge intimiteten.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "sensory-intimacy-style"
+          },
+          {
+            "type": "question",
+            "slug": "whats-your-favorite-way-to-be-touched"
+          },
+          {
+            "type": "article",
+            "slug": "building-emotional-intimacy-together"
+          },
+          {
+            "type": "game",
+            "slug": "satisfaction-safari"
+          },
+          {
+            "type": "checkup",
+            "slug": "maintaining-sexual-satisfaction-over-time"
+          },
+          {
+            "type": "question",
+            "slug": "what-parts-of-your-body-you-want-your-partner-to-focus-more-how-does-it-make-you-feel"
+          },
+          {
+            "type": "exercise",
+            "slug": "sensual-exploration-night"
+          }
+        ]
+      },
+      {
+        "title": "Navigere i Udfordringer og Forandringer i Sexlivet",
+        "description": "Tag fat på potentielle forhindringer i dit sexliv, såsom forskellige libidoer eller følelsesmæssige barrierer. Lær strategier til at navigere disse udfordringer, mens du opretholder en støttende dialog for at styrke dit forhold.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "sexual-harmony-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-high-is-your-sex-drive"
+          },
+          {
+            "type": "article",
+            "slug": "mastering-conflict-resolution-together"
+          },
+          {
+            "type": "game",
+            "slug": "problem-solving-partners"
+          },
+          {
+            "type": "checkup",
+            "slug": "aligning-sexual-values-and-expectations"
+          },
+          {
+            "type": "question",
+            "slug": "how-has-your-sexual-expectations-changed-since-weve-started-dating"
+          },
+          {
+            "type": "exercise",
+            "slug": "conflict-resolution-strategies-practice"
+          }
+        ]
+      },
+      {
+        "title": "Fejring af Jeres Seksuelle Forbindelse",
+        "description": "Reflekter over jeres rejse sammen og fejre milepæle i jeres seksuelle forhold. Diskuter måder at ære jeres intimitet og holde spændingen i live, så begge partnere føler sig værdsatte og anerkendte.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "love-language-type"
+          },
+          {
+            "type": "question",
+            "slug": "whats-the-best-thing-about-our-sex-life"
+          },
+          {
+            "type": "article",
+            "slug": "fun-rituals-to-strengthen-bonds"
+          },
+          {
+            "type": "game",
+            "slug": "date-night-planner"
+          },
+          {
+            "type": "exercise",
+            "slug": "shared-mood-boards"
+          },
+          {
+            "type": "question",
+            "slug": "whats-one-thing-you-love-about-our-physical-connection"
+          }
+        ]
+      }
+    ],
+    "slug": "navigating-our-intimate-world"
+  },
+  {
+    "job": [
+      "understanding_mutual_compatibility"
+    ],
+    "title": "Forståelse af Gensidig Kompatibilitet",
+    "description": "Denne rejse er designet til at hjælpe dig med at udforske og forstå lagene af kompatibilitet i dit forhold. Ved gradvist at tackle emner vil du lære at identificere, værdsætte og navigere både dine ligheder og forskelle. Hver dag vil du engagere dig med forskellige typer indhold, der faciliterer eftertænksomme samtaler og fremmer dybere forbindelser.",
+    "subtopics": [
+      {
+        "title": "Udforskning af Kerneværdier",
+        "description": "Begynd med at diskutere dine tre vigtigste værdier, og hvordan de påvirker dine beslutninger. Dette grundlæggende emne vil guide din forståelse af, hvad der er vigtigt for hver af jer i et forhold.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "values-alignment-style"
+          },
+          {
+            "type": "question",
+            "slug": "what-are-three-values-you-believe-are-most-important-in-a-person"
+          },
+          {
+            "type": "article",
+            "slug": "aligning-future-goals"
+          },
+          {
+            "type": "game",
+            "slug": "values-vibes"
+          },
+          {
+            "type": "checkup",
+            "slug": "core-values-connection"
+          },
+          {
+            "type": "exercise",
+            "slug": "values-alignment-exercise"
+          }
+        ]
+      },
+      {
+        "title": "Kommunikationsstile",
+        "description": "Lær om jeres individuelle kommunikationsstile, og diskuter hvordan de påvirker jeres interaktioner. Dette underemne vil hjælpe jer med at udvikle strategier for klarere og mere effektiv kommunikation.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "discover-your-communication-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-prefer-to-communicate-your-needs-and-desires"
+          },
+          {
+            "type": "article",
+            "slug": "mastering-communication-techniques"
+          },
+          {
+            "type": "game",
+            "slug": "communication-clues"
+          },
+          {
+            "type": "checkup",
+            "slug": "mastering-our-communication-styles"
+          },
+          {
+            "type": "exercise",
+            "slug": "active-listening-practice"
+          }
+        ]
+      },
+      {
+        "title": "Kulturelle og Baggrundsmæssige Forskelle",
+        "description": "Udforsk hvordan jeres forskellige kulturelle baggrunde og livserfaringer former jeres perspektiver. At forstå disse elementer fremmer empati og værdsættelse for hinanden.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "cultural-connection-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-our-different-cultural-backgrounds-shape-our-relationship-and-how-can-we-honor-both"
+          },
+          {
+            "type": "article",
+            "slug": "bridging-religious-differences-together"
+          },
+          {
+            "type": "game",
+            "slug": "cultural-quest"
+          },
+          {
+            "type": "checkup",
+            "slug": "navigating-cultural-and-religious-differences"
+          },
+          {
+            "type": "exercise",
+            "slug": "difference-identification-and-acceptance"
+          }
+        ]
+      },
+      {
+        "title": "Balancering af Personlige og Fælles Interesser",
+        "description": "Diskuter jeres interesser, hobbyer, og hvordan de kan komplementere eller konflikte med hinanden. At finde en balance vil forbedre jeres forhold og sikre, at begge parter føler sig opfyldt.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "hobby-harmony-style"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-new-hobby-we-can-try-together-that-honors-both-our-interests"
+          },
+          {
+            "type": "article",
+            "slug": "exploring-shared-hobbies-together"
+          },
+          {
+            "type": "game",
+            "slug": "hobby-harmony"
+          },
+          {
+            "type": "exercise",
+            "slug": "hobbies-and-interests-exercise"
+          }
+        ]
+      },
+      {
+        "title": "Håndtering af Konflikter og Forskelle",
+        "description": "Dyk ned i at forstå, hvordan I hver især håndterer konflikter og forskellige meninger. Ved at udforske effektive teknikker til konfliktløsning vil I lære at omdanne uenigheder til muligheder for vækst.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "your-conflict-style"
+          },
+          {
+            "type": "game",
+            "slug": "conflict-resolution-quest"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-handle-feelings-of-jealousy-or-insecurity"
+          },
+          {
+            "type": "article",
+            "slug": "mastering-conflict-resolution-together"
+          },
+          {
+            "type": "checkup",
+            "slug": "conflict-connoisseurs"
+          },
+          {
+            "type": "exercise",
+            "slug": "conflict-resolution-styles"
+          },
+          {
+            "type": "question",
+            "slug": "how-can-we-turn-our-differences-into-opportunities-for-growth-as-a-couple"
+          }
+        ]
+      },
+      {
+        "title": "Forholdets Udvikling",
+        "description": "Reflekter over, hvordan jeres forhold har ændret sig over tid, og diskuter hvordan I forestiller jer dets fremtid. Dette emne vil give jer mulighed for at justere jeres langsigtede mål og aspirationer som par.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "future-vision-type"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-see-our-relationship-evolving-over-time"
+          },
+          {
+            "type": "article",
+            "slug": "creating-a-vision-for-us"
+          },
+          {
+            "type": "game",
+            "slug": "future-visionaries"
+          },
+          {
+            "type": "checkup",
+            "slug": "future-talk-together"
+          },
+          {
+            "type": "exercise",
+            "slug": "future-goals-compatibility"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-see-our-relationship-evolving-over-the-next-decade"
+          }
+        ]
+      }
+    ],
+    "slug": "understanding-mutual-compatibility"
+  },
+  {
+    "job": [
+      "getting_to_know_partner"
+    ],
+    "title": "Lære hinanden at kende: En opdagelsesrejse",
+    "description": "Tag på en transformerende rejse for at forstå og forbinde dig dybt med din partner. Denne rejse består af omhyggeligt designede daglige aktiviteter, herunder spørgsmål, øvelser, artikler og spil, der vil fremme intimitet, forbedre kommunikationen og afdække personlige indsigter. I løbet af flere dage vil I udforske jeres ligheder, forskelle og de unikke kvaliteter, der gør hver af jer til den, I er.",
+    "subtopics": [
+      {
+        "title": "Afsløring af baggrunde og træk",
+        "description": "Start med at forstå hinandens baggrunde, personligheder og værdier. Engager dig i spørgsmål om barndomsminder, skjulte talenter og personlige præferencer for at opbygge et fundament af tillid og åbenhed.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "life-story-style"
+          },
+          {
+            "type": "question",
+            "slug": "can-you-share-a-memory-from-your-childhood-that-you-think-has-shaped-who-you-are-today"
+          },
+          {
+            "type": "article",
+            "slug": "love-maps-knowing-each-other-deeply"
+          },
+          {
+            "type": "game",
+            "slug": "memory-lane"
+          },
+          {
+            "type": "checkup",
+            "slug": "exploring-childhood-memories"
+          },
+          {
+            "type": "exercise",
+            "slug": "difference-identification-and-acceptance"
+          },
+          {
+            "type": "question",
+            "slug": "whats-your-favorite-childhood-memory"
+          }
+        ]
+      },
+      {
+        "title": "Udforskning af interesser og hobbyer",
+        "description": "Opdag fælles passioner og individuelle hobbyer. Deltag i diskussioner og aktiviteter, der hjælper dig med at lære om hinandens interesser, yndlingsbeskæftigelser og de unikke kvaliteter, som hver af jer bringer til forholdet.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "hobby-harmony-style"
+          },
+          {
+            "type": "game",
+            "slug": "hobby-harmony"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-hobby-that-makes-you-feel-alive"
+          },
+          {
+            "type": "article",
+            "slug": "exploring-shared-hobbies-together"
+          },
+          {
+            "type": "exercise",
+            "slug": "hobbies-and-interests-exercise"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-new-hobby-we-could-start-together-to-spice-things-up"
+          }
+        ]
+      },
+      {
+        "title": "Forståelse af kommunikationsstile",
+        "description": "Lær hvordan du effektivt kan kommunikere dine behov og ønsker. Deltag i øvelser og spil, der fremmer aktiv lytning og forbedrer din evne til at udtrykke følelser og forventninger.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "discover-your-communication-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-prefer-to-communicate-your-needs-and-desires"
+          },
+          {
+            "type": "article",
+            "slug": "mastering-communication-techniques"
+          },
+          {
+            "type": "game",
+            "slug": "communication-clues"
+          },
+          {
+            "type": "checkup",
+            "slug": "mastering-our-communication-styles"
+          },
+          {
+            "type": "exercise",
+            "slug": "active-listening-practice"
+          },
+          {
+            "type": "question",
+            "slug": "whats-your-favorite-memory-of-us-having-a-great-conversation"
+          }
+        ]
+      },
+      {
+        "title": "Identificering af kærlighedssprog",
+        "description": "Dyk ned i de unikke måder, I hver især giver og modtager kærlighed. Udforsk jeres kærlighedssprog gennem spørgsmål og refleksive øvelser, og få indsigt i, hvordan I bedre kan udtrykke hengivenhed på en måde, der resonerer med jeres partner.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "love-language-type"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-believe-in-love-languages-if-so-which-one-are-you"
+          },
+          {
+            "type": "article",
+            "slug": "decoding-love-languages"
+          },
+          {
+            "type": "game",
+            "slug": "love-languages-exploration"
+          },
+          {
+            "type": "checkup",
+            "slug": "emotional-needs-compatibility"
+          },
+          {
+            "type": "exercise",
+            "slug": "find-out-your-love-language"
+          },
+          {
+            "type": "question",
+            "slug": "what-is-your-love-language"
+          }
+        ]
+      },
+      {
+        "title": "Selvrefleksion og målsætning",
+        "description": "Opmuntr personlig deling af aspirationer og drømme. Brug guidede aktiviteter til at reflektere over personlige mål og hvordan disse stemmer overens med jeres forhold, hvilket fremmer en følelse af gensidig støtte i hinandens rejser.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "goal-alignment-style"
+          },
+          {
+            "type": "question",
+            "slug": "what-are-your-dreams-and-aspirations-outside-of-work"
+          },
+          {
+            "type": "article",
+            "slug": "setting-shared-future-goals"
+          },
+          {
+            "type": "game",
+            "slug": "future-visionaries"
+          },
+          {
+            "type": "checkup",
+            "slug": "future-plans-alignment"
+          },
+          {
+            "type": "exercise",
+            "slug": "long-term-goal-planning"
+          },
+          {
+            "type": "question",
+            "slug": "what-personal-goals-do-you-have-that-i-might-not-be-aware-of"
+          }
+        ]
+      },
+      {
+        "title": "Dyrkning af følelsesmæssig intimitet",
+        "description": "Dyb din følelsesmæssige forbindelse gennem sårbarhedsøvelser og ærlige samtaler. Deltag i aktiviteter og diskussioner, der fremmer deling af følelser, ønsker og frygt i et sikkert miljø, hvilket forbedrer jeres intimitet og tillid.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "emotional-intimacy-style"
+          },
+          {
+            "type": "question",
+            "slug": "whats-something-that-always-makes-you-feel-loved"
+          },
+          {
+            "type": "article",
+            "slug": "building-emotional-intimacy-together"
+          },
+          {
+            "type": "game",
+            "slug": "intimacy-insights"
+          },
+          {
+            "type": "checkup",
+            "slug": "emotional-intimacy-check-in"
+          },
+          {
+            "type": "exercise",
+            "slug": "emotional-closeness-exercises"
+          },
+          {
+            "type": "question",
+            "slug": "what-little-gestures-make-you-feel-most-loved-and-appreciated"
+          }
+        ]
+      }
+    ],
+    "slug": "getting-to-know-each-other-a-journey-of-discovery"
+  },
+  {
+    "job": [
+      "overcoming_differences"
+    ],
+    "title": "At Omfavne Vore Forskelle: En Rejse til Dybere Forståelse",
+    "description": "Denne rejse er designet til at hjælpe par med at navigere og fejre deres forskelle, og forvandle udfordringer til muligheder for vækst. Hver dag vil du engagere dig med tankevækkende spørgsmål, indsigtsfulde artikler og handlingsorienterede øvelser, der fremmer empati, respekt og samarbejde i dit forhold.",
+    "subtopics": [
+      {
+        "title": "Forståelse af Vore Baggrunde",
+        "description": "Udforsk hvordan vores kulturelle, religiøse og personlige baggrunde former vores perspektiver og adfærd i forholdet. Reflekter over spørgsmål om kulturelle forskelle og overbevisninger, og læg grunden for fremtidige samtaler.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "cultural-harmony-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-our-different-cultural-backgrounds-shape-our-relationship-and-how-can-we-honor-both"
+          },
+          {
+            "type": "article",
+            "slug": "navigating-religious-conversations-smoothly"
+          },
+          {
+            "type": "game",
+            "slug": "cultural-quest"
+          },
+          {
+            "type": "checkup",
+            "slug": "navigating-cultural-and-religious-differences"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-respect-each-others-religious-beliefs-when-they-differ"
+          },
+          {
+            "type": "exercise",
+            "slug": "cultural-exchange-day"
+          }
+        ]
+      },
+      {
+        "title": "Effektive Kommunikationsfærdigheder",
+        "description": "Lær vigtigheden af gennemsigtighed og aktiv lytning i at overvinde misforståelser. Engager dig med øvelser og artikler, der forbedrer dine kommunikationsstile og fremmer åben dialog om følsomme emner.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "discover-your-communication-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-prefer-to-communicate-your-needs-and-desires"
+          },
+          {
+            "type": "article",
+            "slug": "mastering-communication-techniques"
+          },
+          {
+            "type": "game",
+            "slug": "communication-clues"
+          },
+          {
+            "type": "checkup",
+            "slug": "mastering-our-communication-styles"
+          },
+          {
+            "type": "question",
+            "slug": "whats-your-favorite-memory-of-us-having-a-great-conversation"
+          },
+          {
+            "type": "exercise",
+            "slug": "active-listening-practice"
+          }
+        ]
+      },
+      {
+        "title": "Fejring af Forskelle",
+        "description": "Opdag måder at fejre og ære hinandens unikke styrker og perspektiver. Gennem interaktivt indhold, udforsk hvordan forskelle kan fremme kreativitet og glæde i dit partnerskab.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "growth-through-differences-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-can-we-celebrate-our-unique-strengths-and-compensate-for-our-differences"
+          },
+          {
+            "type": "article",
+            "slug": "embrace-and-celebrate-differences"
+          },
+          {
+            "type": "game",
+            "slug": "hobby-harmony"
+          },
+          {
+            "type": "checkup",
+            "slug": "embracing-our-personality-traits"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-fun-way-to-explore-and-embrace-our-differences-together"
+          },
+          {
+            "type": "exercise",
+            "slug": "difference-identification-and-acceptance"
+          }
+        ]
+      },
+      {
+        "title": "Navigere Konflikter med Respekt",
+        "description": "Udvikl færdigheder til at håndtere konflikter positivt og konstruktivt. Dette underemne inkluderer praktiske teknikker til at løse uenigheder, mens man respekterer hinandens synspunkter og opretholder tillid.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "your-conflict-style"
+          },
+          {
+            "type": "question",
+            "slug": "whats-one-thing-youd-like-to-change-about-how-we-handle-our-differences"
+          },
+          {
+            "type": "article",
+            "slug": "mastering-conflict-resolution-together"
+          },
+          {
+            "type": "game",
+            "slug": "conflict-resolution-quest"
+          },
+          {
+            "type": "checkup",
+            "slug": "conflict-resolution-styles"
+          },
+          {
+            "type": "question",
+            "slug": "whats-one-thing-you-admire-about-my-perspective-thats-different-from-yours"
+          },
+          {
+            "type": "exercise",
+            "slug": "conflict-resolution-strategies-practice"
+          }
+        ]
+      },
+      {
+        "title": "Forvandle Udfordringer til Vækstmuligheder",
+        "description": "Skift dit tankesæt fra at se forskelle som forhindringer til at se dem som veje til personlig og relationel vækst. Engager dig med aktiviteter, der opmuntrer til samarbejde og fælles problemløsning.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "flexibility-style-assessment"
+          },
+          {
+            "type": "question",
+            "slug": "how-can-we-turn-our-differences-into-opportunities-for-growth-as-a-couple"
+          },
+          {
+            "type": "article",
+            "slug": "embracing-differences-positively"
+          },
+          {
+            "type": "game",
+            "slug": "problem-solving-escapades"
+          },
+          {
+            "type": "checkup",
+            "slug": "team-problem-solving"
+          },
+          {
+            "type": "question",
+            "slug": "can-boredom-be-helpful"
+          },
+          {
+            "type": "exercise",
+            "slug": "cognitive-restructuring-together"
+          }
+        ]
+      },
+      {
+        "title": "Bygge en Enhedlig Vision",
+        "description": "Konsolider det, du har lært, for at skabe en fælles vision for jeres fremtid. Reflekter over jeres værdier, mål og aspirationer som par, og sørg for, at begge partnere føler sig set og hørt i den kommende rejse.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "future-vision-type"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-challenge-weve-overcome-together-that-made-our-relationship-stronger"
+          },
+          {
+            "type": "article",
+            "slug": "aligning-future-goals"
+          },
+          {
+            "type": "game",
+            "slug": "future-visionaries"
+          },
+          {
+            "type": "checkup",
+            "slug": "future-talk-together"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-memorable-moment-where-our-differences-made-our-relationship-stronger"
+          },
+          {
+            "type": "exercise",
+            "slug": "long-term-goal-planning"
+          }
+        ]
+      }
+    ],
+    "slug": "embracing-our-differences-a-journey-to-deeper-understanding"
+  },
+  {
+    "job": [
+      "exploring_feelings"
+    ],
+    "title": "Navigere i Vore Følelsesmæssige Landskaber",
+    "description": "Denne rejse er designet til at hjælpe dig og din partner med at udforske og forstå jeres følelser på et dybere niveau. Ved at engagere jer med forskellige typer indhold, vil I afdække jeres følelsesmæssige mønstre, kommunikere effektivt om jeres følelser og opbygge en stærkere følelsesmæssig forbindelse. Hver dag vil bringe nye indsigter og udfordringer, der vil fremme følelsesmæssig intimitet i jeres forhold.",
+    "subtopics": [
+      {
+        "title": "Forståelse af Vore Følelser",
+        "description": "Start din rejse med at udforske grundlæggende følelser og hvordan de manifesterer sig i jeres liv. Gennem spørgsmål og artikler, få klarhed over dine følelser og dine metoder til at håndtere dem.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "emotional-awareness-type"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-think-that-you-feel-emotions-stronger-or-weaker-than-other-people"
+          },
+          {
+            "type": "article",
+            "slug": "building-emotional-intimacy-together"
+          },
+          {
+            "type": "game",
+            "slug": "emotional-seasons"
+          },
+          {
+            "type": "checkup",
+            "slug": "emotional-rollercoaster-ride"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-handle-your-strong-emotions"
+          },
+          {
+            "type": "exercise",
+            "slug": "emotional-regulation-techniques"
+          }
+        ]
+      },
+      {
+        "title": "Udtryk Følelser Effektivt",
+        "description": "Lær hvordan du kommunikerer dine følelser til hinanden i et sikkert og nærende miljø. Deltag i øvelser, der letter åben dialog om jeres følelser uden frygt for dom.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "communication-style-type"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-prefer-to-receive-support-when-youre-feeling-low"
+          },
+          {
+            "type": "article",
+            "slug": "mastering-communication-techniques"
+          },
+          {
+            "type": "game",
+            "slug": "communication-clues"
+          },
+          {
+            "type": "checkup",
+            "slug": "mastering-our-communication-styles"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-feel-comfortable-expressing-your-true-feelings-with-me-why-or-why-not"
+          },
+          {
+            "type": "exercise",
+            "slug": "transparent-communication-practices"
+          }
+        ]
+      },
+      {
+        "title": "Dybdegående i Sårbarhed",
+        "description": "Opdag kraften i sårbarhed i forhold. Udforsk spørgsmål og aktiviteter, der opfordrer til at dele dine inderste frygt og ønsker, og diskuter hvordan sårbarhed kan forbedre intimiteten.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "vulnerability-comfort-type"
+          },
+          {
+            "type": "question",
+            "slug": "can-you-describe-a-moment-where-you-felt-most-connected-during-our-sex-and-what-made-it-special-for-you"
+          },
+          {
+            "type": "article",
+            "slug": "vulnerability-trusts-gateway"
+          },
+          {
+            "type": "game",
+            "slug": "feelings-explorer"
+          },
+          {
+            "type": "checkup",
+            "slug": "vulnerability-and-openness"
+          },
+          {
+            "type": "question",
+            "slug": "how-comfortable-are-you-sharing-your-true-feelings-with-me-on-a-scale-of-1-10"
+          },
+          {
+            "type": "exercise",
+            "slug": "vulnerability-exploration-session"
+          }
+        ]
+      },
+      {
+        "title": "Navigere i Svære Følelser Sammen",
+        "description": "Identificer og adresser svære følelser som jalousi, usikkerhed eller tristhed. Deltag i tests og tjek, der er designet til at hjælpe jer begge med at forstå, hvordan I kan støtte hinanden i udfordrende følelsesmæssige tider.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "emotion-management-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-handle-feelings-of-jealousy-or-insecurity"
+          },
+          {
+            "type": "article",
+            "slug": "navigating-emotional-waters-together"
+          },
+          {
+            "type": "game",
+            "slug": "emotional-ride"
+          },
+          {
+            "type": "checkup",
+            "slug": "emotional-rollercoaster-ride"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-handle-feelings-of-stress-or-anxiety"
+          },
+          {
+            "type": "exercise",
+            "slug": "confidentiality-agreements"
+          }
+        ]
+      },
+      {
+        "title": "Opbygning af Følelsesmæssig Sikkerhed",
+        "description": "Fremme et miljø, hvor begge partnere føler sig sikre til at udtrykke og udforske deres følelser. Forstå betydningen af følelsesmæssig sikkerhed i at uddybe jeres forbindelse og lær praktiske strategier til at skabe det.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "emotional-safety-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-feel-about-our-current-level-of-intimacy-and-affection"
+          },
+          {
+            "type": "article",
+            "slug": "trust-through-open-communication"
+          },
+          {
+            "type": "game",
+            "slug": "trust-builders"
+          },
+          {
+            "type": "checkup",
+            "slug": "emotional-intimacy-check-in"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-feel-we-handle-each-others-vulnerabilities"
+          },
+          {
+            "type": "exercise",
+            "slug": "feelings-validation-practices"
+          }
+        ]
+      },
+      {
+        "title": "Dyrkning af Følelsesmæssig Intimitet",
+        "description": "Afslut din rejse ved at implementere strategier, der forbedrer den følelsesmæssige intimitet i dit forhold. Deltag i spil og øvelser, der styrker jeres følelsesmæssige bånd, hvilket gør jeres forbindelse dybere og mere modstandsdygtig.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "emotional-intimacy-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-feel-about-sharing-your-deepest-desires-with-each-other"
+          },
+          {
+            "type": "article",
+            "slug": "building-emotional-intelligence-together"
+          },
+          {
+            "type": "game",
+            "slug": "emotion-explorer"
+          },
+          {
+            "type": "checkup",
+            "slug": "emotional-needs-compatibility"
+          },
+          {
+            "type": "question",
+            "slug": "how-can-we-better-express-our-needs-without-feeling-vulnerable"
+          },
+          {
+            "type": "exercise",
+            "slug": "emotional-expression-sessions"
+          }
+        ]
+      }
+    ],
+    "slug": "navigating-our-emotional-landscapes"
+  },
+  {
+    "job": [
+      "discussing_religions"
+    ],
+    "title": "Navigere Vore Religiøse Overbevisninger Sammen",
+    "description": "Denne rejse er designet til at hjælpe dig og din partner med at diskutere og forstå hinandens religiøse overbevisninger, samtidig med at der fremmes respekt og åben kommunikation. Ved at udforske forskellige aspekter af religion vil I lære at omfavne forskelle og skabe en fælles åndelig forbindelse.",
+    "subtopics": [
+      {
+        "title": "Forståelse af Religiøse Fundamenter",
+        "description": "Begynd din rejse med at udforske de grundlæggende tro og praksisser i hinandens religioner. Diskuter, hvordan disse fundamenter former jeres identiteter og verdenssyn. Dette underemne vil inkludere spørgsmål om personlige overbevisninger og praksisser.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "religious-identity-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-practice-your-faith-and-how-would-you-like-to-incorporate-it-into-our-relationship"
+          },
+          {
+            "type": "article",
+            "slug": "navigating-religious-conversations-smoothly"
+          },
+          {
+            "type": "exercise",
+            "slug": "spiritual-practices-exchange"
+          },
+          {
+            "type": "question",
+            "slug": "what-role-does-religion-or-spirituality-play-in-your-life-and-how-does-it-affect-our-relationship"
+          }
+        ]
+      },
+      {
+        "title": "Fejring af Religiøse Milepæle",
+        "description": "Lær hvordan man fejrer religiøse milepæle og præstationer sammen. Udforsk, hvordan man ærer hinandens traditioner under betydningsfulde livsbegivenheder, såsom fødsler, bryllupper og helligdage, og integrerer dem sømløst i jeres fælles liv.",
+        "content": [
+          {
+            "type": "checkup",
+            "slug": "celebrating-religious-holidays-together"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-celebrate-religious-achievements-or-milestones"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-celebrate-your-faith-during-personal-milestones-like-birthdays-or-anniversaries"
+          }
+        ]
+      },
+      {
+        "title": "Respektere Forskelle og Uenigheder",
+        "description": "Dyk ned i, hvordan man navigerer i forskelle i religiøse overbevisninger og praksisser uden konflikt. Dette underemne vil udstyre dig med værktøjer til respektfulde samtaler, når uenigheder opstår, med fokus på forståelse frem for overbevisning.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "your-conflict-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-handle-religious-disagreements-in-relationships"
+          },
+          {
+            "type": "article",
+            "slug": "bridging-religious-differences-together"
+          },
+          {
+            "type": "game",
+            "slug": "conflict-resolution-quest"
+          },
+          {
+            "type": "checkup",
+            "slug": "handling-religious-conflicts"
+          }
+        ]
+      },
+      {
+        "title": "Integrere Tro i Dagliglivet",
+        "description": "Diskuter, hvordan man integrerer religiøse værdier i jeres daglige rutiner og beslutningstagning. Udforsk fælles praksisser, åndelige aktiviteter, og hvordan religion kan forbedre jeres partnerskab og personlige vækst.",
+        "content": [
+          {
+            "type": "checkup",
+            "slug": "supportive-communication"
+          },
+          {
+            "type": "question",
+            "slug": "how-can-we-support-each-others-spiritual-growth"
+          },
+          {
+            "type": "game",
+            "slug": "spiritual-journey"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-integrate-your-faith-with-your-personal-hobbies-or-interests"
+          }
+        ]
+      },
+      {
+        "title": "Planlægning for Fremtidige Velsignelser",
+        "description": "Deltag i meningsfulde samtaler om, hvordan jeres religiøse overbevisninger påvirker beslutninger om familie og børn. Diskuter, om I forestiller jer at opdrage børn inden for en bestemt religiøs tradition, og udforsk konsekvenserne for jeres liv sammen.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "parenting-style-alignment"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-envision-having-children-in-a-particular-religious-tradition"
+          },
+          {
+            "type": "question",
+            "slug": "what-religious-values-are-most-important-to-you-in-a-relationship"
+          },
+          {
+            "type": "article",
+            "slug": "enhancing-communication-before-parenthood"
+          },
+          {
+            "type": "checkup",
+            "slug": "parenting-playbook-compatibility"
+          },
+          {
+            "type": "exercise",
+            "slug": "parenting-styles-discussion"
+          }
+        ]
+      },
+      {
+        "title": "Bygge en Fælles Åndelighed",
+        "description": "I dette sidste skridt fokuserer I på, hvordan man skaber en harmonisk blanding af jeres religiøse overbevisninger. Udforsk praksisser, der ærer begge jeres traditioner, og diskuter, hvordan man kan støtte hinandens åndelige vækst, så I sikrer et tilfredsstillende forhold baseret på gensidig respekt og forståelse.",
+        "content": [
+          {
+            "type": "checkup",
+            "slug": "sharing-spiritual-beliefs"
+          },
+          {
+            "type": "question",
+            "slug": "are-there-any-religious-practices-youd-like-to-explore-together"
+          },
+          {
+            "type": "exercise",
+            "slug": "interfaith-understanding-sessions"
+          }
+        ]
+      }
+    ],
+    "slug": "navigating-our-religious-beliefs-together"
+  },
+  {
+    "job": [
+      "preparing_for_intimacy"
+    ],
+    "title": "Forberedelse til Intimitet",
+    "description": "Denne rejse er designet til at hjælpe par med at udforske og forbedre deres intime forbindelser på en støttende og konstruktiv måde. Gennem en række omhyggeligt udformede indhold vil par engagere sig i forskellige aspekter af intimitet, fra at opbygge tillid til at udforske ønsker. Hver dag vil du opdage nye indsigter og praksisser for at fremme en dybere følelsesmæssig og fysisk forbindelse.",
+    "subtopics": [
+      {
+        "title": "Forståelse af Intimitet",
+        "description": "Begynd din rejse med at udforske begrebet intimitet. Forstå de forskellige dimensioner af intimitet, herunder følelsesmæssige og fysiske aspekter, og diskuter hvad intimitet betyder for både dig og din partner.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "emotional-intimacy-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-envision-our-intimate-life-evolving-over-the-next-year"
+          },
+          {
+            "type": "article",
+            "slug": "building-emotional-intimacy-together"
+          },
+          {
+            "type": "game",
+            "slug": "intimacy-insights"
+          },
+          {
+            "type": "checkup",
+            "slug": "emotional-intimacy-check-in"
+          },
+          {
+            "type": "exercise",
+            "slug": "intimate-story-sharing"
+          }
+        ]
+      },
+      {
+        "title": "Opbygning af Tillid og Sårbarhed",
+        "description": "Dyk ned i tillidsopbyggende øvelser og diskuter vigtigheden af sårbarhed i et forhold. Lær hvordan deling af personlige følelser og oplevelser kan skabe et sikkert rum for intimitet.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "trust-building-style-quiz"
+          },
+          {
+            "type": "question",
+            "slug": "what-role-does-vulnerability-play-in-our-intimate-life"
+          },
+          {
+            "type": "article",
+            "slug": "vulnerability-trusts-gateway"
+          },
+          {
+            "type": "game",
+            "slug": "trust-builders"
+          },
+          {
+            "type": "checkup",
+            "slug": "trusting-truths"
+          },
+          {
+            "type": "exercise",
+            "slug": "vulnerability-exploration-session"
+          }
+        ]
+      },
+      {
+        "title": "Kommunikere Ønsker",
+        "description": "Fokuser på kunsten at kommunikere om dine ønsker og præferencer. Deltag i aktiviteter, der hjælper med at artikulere dine intime aspirationer, og øv dig i at dele fantasier på en støttende måde.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "sexual-communication-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-prefer-to-communicate-your-needs-and-desires"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-feel-about-sharing-your-deepest-desires-with-each-other"
+          },
+          {
+            "type": "article",
+            "slug": "enhancing-sexual-communication"
+          },
+          {
+            "type": "game",
+            "slug": "fantasy-fulfillment"
+          },
+          {
+            "type": "checkup",
+            "slug": "emotional-needs-compatibility"
+          },
+          {
+            "type": "exercise",
+            "slug": "fantasy-sharing-session"
+          }
+        ]
+      },
+      {
+        "title": "Skabe Intime Ritualer",
+        "description": "Arbejd sammen om at udvikle personlige ritualer, der forbedrer intimiteten. Dette kan involvere rutiner, specielle date-nætter eller andre praksisser, der regelmæssigt bringer jer tættere sammen.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "ritual-building-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-can-we-create-more-intimate-moments-in-our-daily-routine"
+          },
+          {
+            "type": "question",
+            "slug": "whats-one-intimate-goal-youd-like-us-to-achieve-together"
+          },
+          {
+            "type": "article",
+            "slug": "fun-rituals-to-strengthen-bonds"
+          },
+          {
+            "type": "game",
+            "slug": "date-night-planner"
+          },
+          {
+            "type": "checkup",
+            "slug": "everyday-chats-that-count"
+          },
+          {
+            "type": "exercise",
+            "slug": "shared-calendar-setup"
+          }
+        ]
+      },
+      {
+        "title": "Udforske Fysiske Forbindelser",
+        "description": "Efter at have styrket de følelsesmæssige aspekter, skift fokus til fysisk intimitet. Udforsk forskellige former for fysiske forbindelser, fra berøring til legende udforskning, for at forbedre din forståelse af hinandens behov.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "physical-touch-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-feel-about-introducing-new-elements-into-our-intimate-life"
+          },
+          {
+            "type": "question",
+            "slug": "whats-your-favorite-type-of-foreplay"
+          },
+          {
+            "type": "article",
+            "slug": "enhancing-physical-intimacy-mindfully"
+          },
+          {
+            "type": "game",
+            "slug": "intimacy-adventure"
+          },
+          {
+            "type": "checkup",
+            "slug": "balancing-fun-and-intimacy-in-sex"
+          },
+          {
+            "type": "exercise",
+            "slug": "erotic-massage-exchange"
+          }
+        ]
+      },
+      {
+        "title": "Navigere Grænser og Ønsker",
+        "description": "Afslut din rejse ved åbent at adressere grænser og ønsker. Diskuter eventuelle specifikke kink eller fantasier i et respektfuldt miljø, og sørg for, at dit forhold forbliver samtykkende og tilfredsstillende.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "intimate-boundary-style"
+          },
+          {
+            "type": "question",
+            "slug": "is-there-a-particular-kink-or-fetish-you-want-to-explore-but-havent-shared-yet"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-prefer-spontaneity-or-planning-when-it-comes-to-intimacy"
+          },
+          {
+            "type": "article",
+            "slug": "navigating-boundaries-for-intimacy"
+          },
+          {
+            "type": "exercise",
+            "slug": "boundaries-practice"
+          }
+        ]
+      }
+    ],
+    "slug": "preparing-for-intimacy"
+  },
+  {
+    "job": [
+      "solving_relationship_problems"
+    ],
+    "title": "Navigere og Løse Forholdsproblemer",
+    "description": "Denne rejse er designet til at hjælpe dig og din partner med effektivt at navigere og løse konflikter. Hver dag vil du deltage i øvelser, spørgsmål og aktiviteter, der opbygger dine kommunikationsevner og problemløsningsevner. Ved slutningen af denne rejse vil du føle dig bedre rustet til at tackle udfordringer sammen og finde løsninger som et team.",
+    "subtopics": [
+      {
+        "title": "Forståelse af Konfliktstile",
+        "description": "Opdag dine individuelle konfliktstile, og hvordan de påvirker dit forhold. Brug spørgsmål og refleksion til at forstå, hvordan du typisk reagerer under uenigheder.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "your-conflict-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-handle-disagreements-or-conflicts"
+          },
+          {
+            "type": "article",
+            "slug": "effective-conflict-resolution-strategies"
+          },
+          {
+            "type": "game",
+            "slug": "conflict-resolution-quest"
+          },
+          {
+            "type": "checkup",
+            "slug": "conflict-resolution-styles"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-handle-disagreements-and-whats-your-favorite-way-for-us-to-make-up-after-a-fight"
+          },
+          {
+            "type": "exercise",
+            "slug": "conflict-resolution-styles"
+          }
+        ]
+      },
+      {
+        "title": "Kommunikationsgrundlag",
+        "description": "Fokuser på at forbedre dine kommunikationsevner under konflikter. Udforsk effektive lytte teknikker og vigtigheden af klar udtryk gennem øvelser og spil.",
+        "content": [
+          {
+            "type": "checkup",
+            "slug": "mastering-our-communication-styles"
+          },
+          {
+            "type": "test",
+            "slug": "discover-your-communication-style"
+          },
+          {
+            "type": "article",
+            "slug": "mastering-communication-techniques"
+          },
+          {
+            "type": "game",
+            "slug": "communication-clues"
+          },
+          {
+            "type": "exercise",
+            "slug": "active-listening-practice"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-prefer-to-communicate-your-needs-and-desires"
+          },
+          {
+            "type": "question",
+            "slug": "whats-your-favorite-memory-of-us-having-a-great-conversation"
+          }
+        ]
+      },
+      {
+        "title": "Konstruktiv Konfliktløsning",
+        "description": "Lær hvordan du kan omdanne uenigheder til konstruktive samtaler. Deltag i øvelser og artikler, der giver strategier til at løse konflikter uden at eskalere dem.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "solution-focused-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-can-we-make-our-disagreements-more-constructive"
+          },
+          {
+            "type": "article",
+            "slug": "mastering-conflict-resolution-together"
+          },
+          {
+            "type": "game",
+            "slug": "problem-solving-escapades"
+          },
+          {
+            "type": "checkup",
+            "slug": "conflict-resolution-wizards"
+          },
+          {
+            "type": "question",
+            "slug": "can-you-recall-a-time-when-you-felt-misunderstood-how-did-you-handle-it"
+          },
+          {
+            "type": "exercise",
+            "slug": "conflict-resolution-strategies-practice"
+          }
+        ]
+      },
+      {
+        "title": "Pengeanliggender og Konflikt",
+        "description": "Udforsk hvordan økonomiske diskussioner kan føre til konflikt, og hvordan man navigerer i disse samtaler. Arbejd med budgetteringsstile og økonomisk kommunikation gennem tests og diskussioner.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "financial-communication-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-feel-about-our-different-spending-habits-and-how-can-we-find-a-middle-ground"
+          },
+          {
+            "type": "article",
+            "slug": "mastering-money-talks-together"
+          },
+          {
+            "type": "game",
+            "slug": "dream-budget-builders"
+          },
+          {
+            "type": "checkup",
+            "slug": "trust-in-financial-transparency"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-have-any-issues-with-budgeting-like-are-you-in-debt-to-somebody-do-you-make-any-useless-spending"
+          },
+          {
+            "type": "exercise",
+            "slug": "budget-planning-session"
+          }
+        ]
+      },
+      {
+        "title": "Skabe et Sikkert Rum til Diskussioner",
+        "description": "Skab et miljø, hvor begge partnere føler sig sikre på at udtrykke deres følelser. Brug checkups og øvelser til at facilitere åbne dialoger og adressere underliggende problemer.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "emotional-safety-style"
+          },
+          {
+            "type": "checkup",
+            "slug": "vulnerability-and-openness"
+          },
+          {
+            "type": "article",
+            "slug": "trust-through-open-communication"
+          },
+          {
+            "type": "game",
+            "slug": "communication-connection"
+          },
+          {
+            "type": "exercise",
+            "slug": "transparent-communication-practices"
+          },
+          {
+            "type": "question",
+            "slug": "are-there-any-habits-or-behaviors-of-mine-that-bother-you"
+          },
+          {
+            "type": "question",
+            "slug": "describe-a-time-when-a-simple-text-message-led-to-a-big-misunderstanding-how-did-you-resolve-it"
+          }
+        ]
+      },
+      {
+        "title": "Forvandle Konflikt til Vækst",
+        "description": "Skift dit perspektiv på konflikt ved at lære, hvordan du kan bruge det som et værktøj til vækst. Reflekter over tidligere konflikter, anvend humor og skab personlige vækstplaner som par.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "growth-opportunity-style-assessment"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-past-problem-weve-solved-that-makes-you-proud-of-us"
+          },
+          {
+            "type": "article",
+            "slug": "embracing-differences-positively"
+          },
+          {
+            "type": "game",
+            "slug": "compatibility-conundrum"
+          },
+          {
+            "type": "checkup",
+            "slug": "team-problem-solving"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-relationship-problem-you-think-we-can-solve-with-humor"
+          },
+          {
+            "type": "exercise",
+            "slug": "relationship-journal"
+          }
+        ]
+      }
+    ],
+    "slug": "navigating-and-resolving-relationship-problems"
+  }
+]

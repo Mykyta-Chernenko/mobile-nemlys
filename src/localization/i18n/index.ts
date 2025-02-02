@@ -729,7 +729,7 @@ export function getFullLanguageByLocale(locale: string) {
   if (locale.startsWith('uk')) return 'Українська';
   if (locale.startsWith('ru')) return 'Русский';
   if (locale.startsWith('vi')) return 'Tiếng Việt';
-  if (norwegianSpeakingLocales.includes(locale) || locale === 'no') return 'Norsk';
+  if (locale.startsWith('nb') || locale.startsWith('no')) return 'Norsk';
   if (locale.startsWith('af')) return 'Afrikaans';
   if (locale.startsWith('sq')) return 'Shqip';
   if (locale.startsWith('am')) return 'አማርኛ';
@@ -781,4 +781,14 @@ export function getFullLanguageByLocale(locale: string) {
   if (locale.startsWith('ur')) return 'اردو';
   if (locale.startsWith('zu')) return 'isiZulu';
   return 'English';
+}
+
+export function getLanguageFromLocale(locale: string): string {
+  const norm = locale.toLowerCase().replace(/-/g, '_');
+  if (norm === 'zh_mo') return 'zh_tw';
+  if (norm === 'ms_my') return 'ms';
+  if (norm === 'nb_no' || norm === 'nn_no') return 'no';
+  if (LANGUAGES.includes(norm)) return norm;
+  const lang = norm.split('_')[0];
+  return LANGUAGES.includes(lang) ? lang : 'en';
 }

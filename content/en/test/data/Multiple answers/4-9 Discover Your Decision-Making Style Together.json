@@ -1,0 +1,140 @@
+{
+  "topic": [
+    "understanding_mutual_compatibility",
+    "improving_communication",
+    "planning_for_future",
+    "overcoming_differences",
+    "building_trust"
+  ],
+  "test_headline": "Discover Your Decision-Making Style Together",
+  "scientific_basis": "This quiz is inspired by research on decision-making and its impact on relationship compatibility, helping you understand how different approaches can enhance your partnership.",
+  "description": "Ever wondered how your decision-making style meshes with your partner's? Take this fun quiz to uncover whether you're a structured planner, a spontaneous spirit, or a master of compromise! Let's dive into how you both make choices and find harmony together.",
+  "questions": [
+    {
+      "question": "When planning a vacation, I prefer to have a detailed itinerary.",
+      "options": [
+        "Not at all, I love surprises!",
+        "Rarely, I like some flexibility.",
+        "Sometimes, depending on the destination.",
+        "Often, having a plan helps me relax.",
+        "Absolutely, every detail matters to me."
+      ]
+    },
+    {
+      "question": "I enjoy making last-minute decisions without much prior thought.",
+      "options": [
+        "Never, I need to think things through.",
+        "Rarely, I prefer some preparation.",
+        "Sometimes, if the mood strikes.",
+        "Often, spontaneity keeps things exciting.",
+        "Always, I thrive on impromptu choices!"
+      ]
+    },
+    {
+      "question": "When faced with a disagreement, I seek a middle ground to resolve it.",
+      "options": [
+        "Never, I stick firmly to my viewpoint.",
+        "Rarely, I prefer to have things my way.",
+        "Sometimes, if it makes sense.",
+        "Often, finding compromise is key.",
+        "Always, I believe in mutual agreements."
+      ]
+    },
+    {
+      "question": "I like to discuss and decide on important matters together with my partner.",
+      "options": [
+        "Not at all, I prefer deciding alone.",
+        "Rarely, I usually take the lead.",
+        "Sometimes, depending on the topic.",
+        "Often, collaboration works best.",
+        "Absolutely, teamwork is essential."
+      ]
+    },
+    {
+      "question": "I feel comfortable going with the flow when making plans.",
+      "options": [
+        "Not at all, I need a clear structure.",
+        "Rarely, I prefer some guidelines.",
+        "Sometimes, if it suits the situation.",
+        "Often, flexibility is important.",
+        "Always, I embrace the unexpected!"
+      ]
+    },
+    {
+      "question": "I prioritize efficiency and clear objectives when making decisions.",
+      "options": [
+        "Never, I focus on the bigger picture.",
+        "Rarely, I value creativity over structure.",
+        "Sometimes, when it's necessary.",
+        "Often, having goals helps me decide.",
+        "Absolutely, efficiency is my top priority."
+      ]
+    },
+    {
+      "question": "I enjoy brainstorming multiple options before settling on a decision.",
+      "options": [
+        "Not at all, I prefer straightforward choices.",
+        "Rarely, I usually know what I want.",
+        "Sometimes, if there are many possibilities.",
+        "Often, exploring options is fun.",
+        "Always, the more ideas, the better!"
+      ]
+    },
+    {
+      "question": "I adapt my decision-making style based on the situation.",
+      "options": [
+        "Never, I stick to one way.",
+        "Rarely, I find it hard to change.",
+        "Sometimes, when needed.",
+        "Often, flexibility is important.",
+        "Always, I adjust as circumstances change."
+      ]
+    },
+    {
+      "question": "I like to involve my partner in both big and small decisions.",
+      "options": [
+        "Not at all, I handle decisions on my own.",
+        "Rarely, I usually decide independently.",
+        "Sometimes, depending on the decision.",
+        "Often, involving my partner is beneficial.",
+        "Absolutely, teamwork makes decisions better."
+      ]
+    },
+    {
+      "question": "I find satisfaction in making thoughtful and deliberate choices.",
+      "options": [
+        "Not at all, I prefer quick decisions.",
+        "Rarely, I often decide on impulse.",
+        "Sometimes, when time allows.",
+        "Often, careful choices feel right.",
+        "Absolutely, deliberation is key to me."
+      ]
+    }
+  ],
+  "evaluation_method": {
+    "explanation": "Each answer corresponds to a specific decision-making style: Structured Planning, Spontaneity, or Compromise. Points are allocated based on your responses to determine your dominant style. The more you align with Structured Planning options, the more you lean towards a planned approach. Higher alignment with Spontaneity indicates a spontaneous style, while selecting Compromise options highlights a balanced and cooperative approach.",
+    "example": "For instance, choosing 'Absolutely, every detail matters to me.' adds points to Structured Planning, whereas 'Always, I embrace the unexpected!' adds points to Spontaneity. Your total points across each style will reveal your primary decision-making preference."
+  },
+  "outcome_interpretation": {
+    "structured_planner": {
+      "label": "Structured Planner",
+      "description": "You thrive on organization and detailed planning, ensuring that decisions are well-thought-out and efficient. This approach brings stability and clarity to your relationship.",
+      "advice": "Continue leveraging your planning skills, and try to embrace a bit of spontaneity to keep things exciting for both of you."
+    },
+    "spontaneous_spirit": {
+      "label": "Spontaneous Spirit",
+      "description": "You excel at embracing the unexpected and keeping the relationship lively with your impromptu decisions. Your flexibility fosters a fun and dynamic partnership.",
+      "advice": "Balance your spontaneity with some structured planning to ensure important decisions are thoughtfully considered."
+    },
+    "master_of_compromise": {
+      "label": "Master of Compromise",
+      "description": "You prioritize harmony and collaboration, always seeking a middle ground in decision-making. This fosters mutual respect and understanding in your relationship.",
+      "advice": "Maintain your cooperative approach, and ensure that both partners' needs are equally addressed to strengthen your bond."
+    },
+    "balanced_decider": {
+      "label": "Balanced Decider",
+      "description": "You blend structured planning, spontaneity, and compromise, adapting your decision-making style to suit different situations. This versatility enhances your relationship's resilience.",
+      "advice": "Continue to adapt and communicate openly with your partner to maintain a harmonious and flexible decision-making dynamic."
+    }
+  }
+}

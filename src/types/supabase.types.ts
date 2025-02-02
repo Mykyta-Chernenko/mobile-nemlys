@@ -1,6 +1,14 @@
-import { JobSlug } from './domain';
+import { ContentType, JobSlug, LoveNoteAction } from './domain';
 
-export type Json = string | number | boolean | null | { [key: string]: Json | undefined } | Json[];
+export type Json =
+  | string
+  | number
+  | boolean
+  | null
+  | {
+      [key: string]: Json | undefined;
+    }
+  | Json[];
 
 export type Database = {
   public: {
@@ -139,6 +147,9 @@ export type Database = {
           invite_code: string;
           updated_at: string;
           language: string;
+          timezone?: string;
+          v2_user: boolean;
+          switched_to_v3: boolean;
         };
         Insert: {
           created_at?: string;
@@ -146,6 +157,9 @@ export type Database = {
           invite_code: string;
           updated_at?: string;
           language: string;
+          timezone?: string;
+          v2_user?: boolean;
+          switched_to_v3?: boolean;
         };
         Update: {
           created_at?: string;
@@ -153,6 +167,9 @@ export type Database = {
           invite_code?: string;
           updated_at?: string;
           language?: string;
+          timezone?: string;
+          v2_user?: boolean;
+          switched_to_v3?: boolean;
         };
         Relationships: [];
       };
@@ -1666,12 +1683,1683 @@ export type Database = {
           },
         ];
       };
+      streak_hits: {
+        Row: {
+          id: number;
+          couple_id: number;
+          hit_date: string;
+        };
+        Insert: {
+          id?: number;
+          couple_id: number;
+          hit_date: string;
+        };
+        Update: {
+          id?: number;
+          couple_id?: number;
+          hit_date?: string;
+        };
+        Relationships: [
+          {
+            foreignKeyName: 'streak_hits_couple_id_fkey';
+            columns: ['couple_id'];
+            isOneToOne: false;
+            referencedRelation: 'couple';
+            referencedColumns: ['id'];
+          },
+        ];
+      };
+      content_question_couple_instance_reply: {
+        Row: {
+          id: number;
+          text: string;
+          instance_question_id: number;
+          user_id: string;
+          created_at: string;
+          updated_at: string;
+        };
+        Insert: {
+          id?: number;
+          text: string;
+          instance_question_id: number;
+          user_id: string;
+          created_at?: string;
+          updated_at?: string;
+        };
+        Update: {
+          id?: number;
+          text?: string;
+          instance_question_id?: number;
+          user_id?: string;
+          created_at?: string;
+          updated_at?: string;
+        };
+        Relationships: [
+          {
+            foreignKeyName: 'content_question_couple_instance_reply_instance_question_id_fkey';
+            columns: ['instance_question_id'];
+            isOneToOne: false;
+            referencedRelation: 'content_question_couple_instance';
+            referencedColumns: ['id'];
+          },
+          {
+            foreignKeyName: 'content_question_couple_instance_reply_user_id_fkey';
+            columns: ['user_id'];
+            isOneToOne: false;
+            referencedRelation: 'users';
+            referencedColumns: ['id'];
+          },
+        ];
+      };
+      content_checkup_couple_instance_question_answer: {
+        Row: {
+          id: number;
+          instance_checkup_id: number;
+          question_id: number;
+          answer: number;
+          user_id: string;
+          created_at: string;
+          updated_at: string;
+        };
+        Insert: {
+          id?: number;
+          instance_checkup_id: number;
+          question_id: number;
+          answer: number;
+          user_id: string;
+          created_at?: string;
+          updated_at?: string;
+        };
+        Update: {
+          id?: number;
+          instance_checkup_id?: number;
+          question_id?: number;
+          answer?: number;
+          user_id?: string;
+          created_at?: string;
+          updated_at?: string;
+        };
+        Relationships: [
+          {
+            foreignKeyName: 'content_checkup_couple_instance_question_answer_instance_checkup_id_fkey';
+            columns: ['instance_checkup_id'];
+            isOneToOne: false;
+            referencedRelation: 'content_checkup_couple_instance';
+            referencedColumns: ['id'];
+          },
+          {
+            foreignKeyName: 'content_checkup_couple_instance_question_answer_question_id_fkey';
+            columns: ['question_id'];
+            isOneToOne: false;
+            referencedRelation: 'content_checkup_question';
+            referencedColumns: ['id'];
+          },
+        ];
+      };
+      content_game_couple_instance_answer: {
+        Row: {
+          id: number;
+          text: string;
+          instance_game_id: number;
+          question_id: number;
+          option_id: number;
+          user_id: string;
+          about_partner: boolean;
+          created_at: string;
+          updated_at: string;
+        };
+        Insert: {
+          id?: number;
+          text: string;
+          instance_game_id: number;
+          question_id: number;
+          option_id: number;
+          user_id: string;
+          about_partner: boolean;
+          created_at?: string;
+          updated_at?: string;
+        };
+        Update: {
+          id?: number;
+          text?: string;
+          instance_game_id?: number;
+          question_id?: number;
+          option_id?: number;
+          user_id?: string;
+          about_partner?: boolean;
+          created_at?: string;
+          updated_at?: string;
+        };
+        Relationships: [
+          {
+            foreignKeyName: 'content_game_couple_instance_answer_instance_game_id_fkey';
+            columns: ['instance_game_id'];
+            isOneToOne: false;
+            referencedRelation: 'content_game_couple_instance';
+            referencedColumns: ['id'];
+          },
+          {
+            foreignKeyName: 'content_game_couple_instance_answer_question_id_fkey';
+            columns: ['question_id'];
+            isOneToOne: false;
+            referencedRelation: 'content_game_question';
+            referencedColumns: ['id'];
+          },
+          {
+            foreignKeyName: 'content_game_couple_instance_answer_option_id_fkey';
+            columns: ['option_id'];
+            isOneToOne: false;
+            referencedRelation: 'content_game_question_option';
+            referencedColumns: ['id'];
+          },
+        ];
+      };
+      content_test_couple_instance_answer: {
+        Row: {
+          id: number;
+          text: string;
+          instance_test_id: number;
+          question_id: number;
+          option_id: number;
+          user_id: string;
+          created_at: string;
+          updated_at: string;
+        };
+        Insert: {
+          id?: number;
+          text: string;
+          instance_test_id: number;
+          question_id: number;
+          option_id: number;
+          user_id: string;
+          created_at?: string;
+          updated_at?: string;
+        };
+        Update: {
+          id?: number;
+          text?: string;
+          instance_test_id?: number;
+          question_id?: number;
+          option_id?: number;
+          user_id?: string;
+          created_at?: string;
+          updated_at?: string;
+        };
+        Relationships: [
+          {
+            foreignKeyName: 'content_test_couple_instance_answer_instance_test_id_fkey';
+            columns: ['instance_test_id'];
+            isOneToOne: false;
+            referencedRelation: 'content_test_couple_instance';
+            referencedColumns: ['id'];
+          },
+          {
+            foreignKeyName: 'content_test_couple_instance_answer_question_id_fkey';
+            columns: ['question_id'];
+            isOneToOne: false;
+            referencedRelation: 'content_test_question';
+            referencedColumns: ['id'];
+          },
+          {
+            foreignKeyName: 'content_test_couple_instance_answer_option_id_fkey';
+            columns: ['option_id'];
+            isOneToOne: false;
+            referencedRelation: 'content_test_question_option';
+            referencedColumns: ['id'];
+          },
+        ];
+      };
+      content_test_couple_instance_result: {
+        Row: {
+          id: number;
+          text: string;
+          instance_test_id: number;
+          result_id: number;
+          user_id: string;
+          created_at: string;
+          updated_at: string;
+        };
+        Insert: {
+          id?: number;
+          text: string;
+          instance_test_id: number;
+          result_id: number;
+          user_id: string;
+          created_at?: string;
+          updated_at?: string;
+        };
+        Update: {
+          id?: number;
+          text?: string;
+          instance_test_id?: number;
+          result_id?: number;
+          user_id?: string;
+          created_at?: string;
+          updated_at?: string;
+        };
+        Relationships: [
+          {
+            foreignKeyName: 'content_test_couple_instance_result_instance_test_id_fkey';
+            columns: ['instance_test_id'];
+            isOneToOne: false;
+            referencedRelation: 'content_test_couple_instance';
+            referencedColumns: ['id'];
+          },
+          {
+            foreignKeyName: 'content_test_couple_instance_result_result_id_fkey';
+            columns: ['result_id'];
+            isOneToOne: false;
+            referencedRelation: 'content_test_result';
+            referencedColumns: ['id'];
+          },
+        ];
+      };
+      job: {
+        Row: {
+          slug: string;
+        };
+        Insert: {
+          slug: string;
+        };
+        Update: {
+          slug?: string;
+        };
+        Relationships: [];
+      };
+      job_couple: {
+        Row: {
+          job_slug: string;
+          couple_id: number;
+        };
+        Insert: {
+          job_slug: string;
+          couple_id: number;
+        };
+        Update: {
+          job_slug?: string;
+          couple_id?: number;
+        };
+        Relationships: [
+          {
+            foreignKeyName: 'job_couple_job_slug_fkey';
+            columns: ['job_slug'];
+            isOneToOne: false;
+            referencedRelation: 'job';
+            referencedColumns: ['slug'];
+          },
+          {
+            foreignKeyName: 'job_couple_couple_id_fkey';
+            columns: ['couple_id'];
+            isOneToOne: false;
+            referencedRelation: 'couple';
+            referencedColumns: ['id'];
+          },
+        ];
+      };
+      content_question: {
+        Row: {
+          id: number;
+          slug: string;
+          language: string;
+          created_at: string;
+          updated_at: string;
+          content: string;
+          couples_finished: number;
+        };
+        Insert: {
+          id?: number;
+          slug: string;
+          language: string;
+          created_at?: string;
+          updated_at?: string;
+          content: string;
+        };
+        Update: {
+          id?: number;
+          slug: string;
+          language?: string;
+          created_at?: string;
+          updated_at?: string;
+          content?: string;
+        };
+        Relationships: [];
+      };
+      content_article: {
+        Row: {
+          id: number;
+          slug: string;
+          language: string;
+          created_at: string;
+          updated_at: string;
+          title: string;
+          test_question: string;
+          preview: string;
+          couples_finished: number;
+        };
+        Insert: {
+          id?: number;
+          slug: string;
+          language: string;
+          created_at?: string;
+          updated_at?: string;
+          title: string;
+          test_question: string;
+          preview: string;
+        };
+        Update: {
+          id?: number;
+          slug?: string;
+          language?: string;
+          created_at?: string;
+          updated_at?: string;
+          title?: string;
+          test_question?: string;
+          preview?: string;
+        };
+        Relationships: [];
+      };
+      content_article_details: {
+        Row: {
+          id: number;
+          article_id: number;
+          language: string;
+          content: string;
+          created_at: string;
+          updated_at: string;
+        };
+        Insert: {
+          id?: number;
+          article_id: number;
+          language: string;
+          content: string;
+          created_at?: string;
+          updated_at?: string;
+        };
+        Update: {
+          id?: number;
+          article_id?: number;
+          language?: string;
+          content?: string;
+          created_at?: string;
+          updated_at?: string;
+        };
+        Relationships: [
+          {
+            foreignKeyName: 'content_article_details_article_id_fkey';
+            columns: ['article_id'];
+            isOneToOne: false;
+            referencedRelation: 'content_article';
+            referencedColumns: ['id'];
+          },
+        ];
+      };
+      daily_plan: {
+        Row: {
+          id: number;
+          question_id: number;
+          test_id: number | null;
+          game_id: number | null;
+          exercise_id: number | null;
+          checkup_id: number | null;
+          article_id: number | null;
+          date: string;
+          couple_id: number;
+          free_content_type: string;
+        };
+        Insert: {
+          id?: number;
+          question_id: number;
+          test_id?: number | null;
+          game_id?: number | null;
+          exercise_id?: number | null;
+          checkup_id?: number | null;
+          article_id?: number | null;
+          date: string;
+          couple_id: number;
+          free_content_type?: string | null;
+        };
+        Update: {
+          id?: number;
+          question_id?: number;
+          test_id?: number | null;
+          game_id?: number | null;
+          exercise_id?: number | null;
+          checkup_id?: number | null;
+          article_id?: number | null;
+          date?: string;
+          couple_id?: number;
+          free_content_type?: string | null;
+        };
+        Relationships: [
+          {
+            foreignKeyName: 'daily_plan_question_id_fkey';
+            columns: ['question_id'];
+            isOneToOne: false;
+            referencedRelation: 'content_question';
+            referencedColumns: ['id'];
+          },
+          {
+            foreignKeyName: 'daily_plan_test_id_fkey';
+            columns: ['test_id'];
+            isOneToOne: false;
+            referencedRelation: 'content_test';
+            referencedColumns: ['id'];
+          },
+          {
+            foreignKeyName: 'daily_plan_game_id_fkey';
+            columns: ['game_id'];
+            isOneToOne: false;
+            referencedRelation: 'content_game';
+            referencedColumns: ['id'];
+          },
+          {
+            foreignKeyName: 'daily_plan_exercise_id_fkey';
+            columns: ['exercise_id'];
+            isOneToOne: false;
+            referencedRelation: 'content_exercise';
+            referencedColumns: ['id'];
+          },
+          {
+            foreignKeyName: 'daily_plan_checkup_id_fkey';
+            columns: ['checkup_id'];
+            isOneToOne: false;
+            referencedRelation: 'content_checkup';
+            referencedColumns: ['id'];
+          },
+          {
+            foreignKeyName: 'daily_plan_article_id_fkey';
+            columns: ['article_id'];
+            isOneToOne: false;
+            referencedRelation: 'content_article';
+            referencedColumns: ['id'];
+          },
+          {
+            foreignKeyName: 'daily_plan_couple_id_fkey';
+            columns: ['couple_id'];
+            isOneToOne: false;
+            referencedRelation: 'couple';
+            referencedColumns: ['id'];
+          },
+        ];
+      };
+      job_content_question: {
+        Row: {
+          job_slug: string;
+          content_question_id: number;
+        };
+        Insert: {
+          job_slug: string;
+          content_question_id: number;
+        };
+        Update: {
+          job_slug?: string;
+          content_question_id?: number;
+        };
+        Relationships: [
+          {
+            foreignKeyName: 'job_content_question_job_slug_fkey';
+            columns: ['job_slug'];
+            isOneToOne: false;
+            referencedRelation: 'job';
+            referencedColumns: ['slug'];
+          },
+          {
+            foreignKeyName: 'job_content_question_content_question_id_fkey';
+            columns: ['content_question_id'];
+            isOneToOne: false;
+            referencedRelation: 'content_question';
+            referencedColumns: ['id'];
+          },
+        ];
+      };
+      job_content_article: {
+        Row: {
+          job_slug: string;
+          content_article_id: number;
+        };
+        Insert: {
+          job_slug: string;
+          content_article_id: number;
+        };
+        Update: {
+          job_slug?: string;
+          content_article_id?: number;
+        };
+        Relationships: [
+          {
+            foreignKeyName: 'job_content_article_job_slug_fkey';
+            columns: ['job_slug'];
+            isOneToOne: false;
+            referencedRelation: 'job';
+            referencedColumns: ['slug'];
+          },
+          {
+            foreignKeyName: 'job_content_article_content_article_id_fkey';
+            columns: ['content_article_id'];
+            isOneToOne: false;
+            referencedRelation: 'content_article';
+            referencedColumns: ['id'];
+          },
+        ];
+      };
+      job_content_journey: {
+        Row: {
+          job_slug: string;
+          content_journey_id: number;
+        };
+        Insert: {
+          job_slug: string;
+          content_journey_id: number;
+        };
+        Update: {
+          job_slug?: string;
+          content_journey_id?: number;
+        };
+        Relationships: [
+          {
+            foreignKeyName: 'job_content_journey_job_slug_fkey';
+            columns: ['job_slug'];
+            isOneToOne: false;
+            referencedRelation: 'job';
+            referencedColumns: ['slug'];
+          },
+          {
+            foreignKeyName: 'job_content_journey_content_journey_id_fkey';
+            columns: ['content_journey_id'];
+            isOneToOne: false;
+            referencedRelation: 'content_journey';
+            referencedColumns: ['id'];
+          },
+        ];
+      };
+      content_question_couple_instance: {
+        Row: {
+          id: number;
+          couple_id: number;
+          question_id: number;
+          reply_count: number;
+          created_at: string;
+          updated_at: string;
+          finished_by: string[];
+        };
+        Insert: {
+          id?: number;
+          couple_id: number;
+          question_id: number;
+          reply_count?: number;
+          created_at?: string;
+          updated_at?: string;
+        };
+        Update: {
+          id?: number;
+          couple_id?: number;
+          question_id?: number;
+          reply_count?: number;
+          created_at?: string;
+          updated_at?: string;
+        };
+        Relationships: [
+          {
+            foreignKeyName: 'content_question_couple_instance_couple_id_fkey';
+            columns: ['couple_id'];
+            isOneToOne: false;
+            referencedRelation: 'couple';
+            referencedColumns: ['id'];
+          },
+          {
+            foreignKeyName: 'content_question_couple_instance_question_id_fkey';
+            columns: ['question_id'];
+            isOneToOne: false;
+            referencedRelation: 'content_question';
+            referencedColumns: ['id'];
+          },
+        ];
+      };
+      content_test_couple_instance: {
+        Row: {
+          id: number;
+          couple_id: number;
+          test_id: number;
+          created_at: string;
+          updated_at: string;
+          finished_by: string[];
+        };
+        Insert: {
+          id?: number;
+          couple_id: number;
+          test_id: number;
+          created_at?: string;
+          updated_at?: string;
+        };
+        Update: {
+          id?: number;
+          couple_id?: number;
+          test_id?: number;
+          created_at?: string;
+          updated_at?: string;
+        };
+        Relationships: [
+          {
+            foreignKeyName: 'content_test_couple_instance_couple_id_fkey';
+            columns: ['couple_id'];
+            isOneToOne: false;
+            referencedRelation: 'couple';
+            referencedColumns: ['id'];
+          },
+          {
+            foreignKeyName: 'content_test_couple_instance_test_id_fkey';
+            columns: ['test_id'];
+            isOneToOne: false;
+            referencedRelation: 'content_test';
+            referencedColumns: ['id'];
+          },
+        ];
+      };
+      content_exercise_couple_instance: {
+        Row: {
+          id: number;
+          couple_id: number;
+          exercise_id: number;
+          created_at: string;
+          updated_at: string;
+          finished_by: string[];
+        };
+        Insert: {
+          id?: number;
+          couple_id: number;
+          exercise_id: number;
+          created_at?: string;
+          updated_at?: string;
+        };
+        Update: {
+          id?: number;
+          couple_id?: number;
+          exercise_id?: number;
+          created_at?: string;
+          updated_at?: string;
+        };
+        Relationships: [
+          {
+            foreignKeyName: 'content_exercise_couple_instance_couple_id_fkey';
+            columns: ['couple_id'];
+            isOneToOne: false;
+            referencedRelation: 'couple';
+            referencedColumns: ['id'];
+          },
+          {
+            foreignKeyName: 'content_exercise_couple_instance_exercise_id_fkey';
+            columns: ['exercise_id'];
+            isOneToOne: false;
+            referencedRelation: 'content_exercise';
+            referencedColumns: ['id'];
+          },
+        ];
+      };
+      content_game_couple_instance: {
+        Row: {
+          id: number;
+          couple_id: number;
+          game_id: number;
+          created_at: string;
+          updated_at: string;
+          finished_by: string[];
+        };
+        Insert: {
+          id?: number;
+          couple_id: number;
+          game_id: number;
+          created_at?: string;
+          updated_at?: string;
+        };
+        Update: {
+          id?: number;
+          couple_id?: number;
+          game_id?: number;
+          created_at?: string;
+          updated_at?: string;
+        };
+        Relationships: [
+          {
+            foreignKeyName: 'content_game_couple_instance_couple_id_fkey';
+            columns: ['couple_id'];
+            isOneToOne: false;
+            referencedRelation: 'couple';
+            referencedColumns: ['id'];
+          },
+          {
+            foreignKeyName: 'content_game_couple_instance_game_id_fkey';
+            columns: ['game_id'];
+            isOneToOne: false;
+            referencedRelation: 'content_game';
+            referencedColumns: ['id'];
+          },
+        ];
+      };
+      content_checkup_couple_instance: {
+        Row: {
+          id: number;
+          couple_id: number;
+          checkup_id: number;
+          created_at: string;
+          updated_at: string;
+          finished_by: string[];
+        };
+        Insert: {
+          id?: number;
+          couple_id: number;
+          checkup_id: number;
+          created_at?: string;
+          updated_at?: string;
+        };
+        Update: {
+          id?: number;
+          couple_id?: number;
+          checkup_id?: number;
+          created_at?: string;
+          updated_at?: string;
+        };
+        Relationships: [
+          {
+            foreignKeyName: 'content_checkup_couple_instance_couple_id_fkey';
+            columns: ['couple_id'];
+            isOneToOne: false;
+            referencedRelation: 'couple';
+            referencedColumns: ['id'];
+          },
+          {
+            foreignKeyName: 'content_checkup_couple_instance_checkup_id_fkey';
+            columns: ['checkup_id'];
+            isOneToOne: false;
+            referencedRelation: 'content_checkup';
+            referencedColumns: ['id'];
+          },
+        ];
+      };
+      content_article_couple_instance: {
+        Row: {
+          id: number;
+          couple_id: number;
+          article_id: number;
+          created_at: string;
+          updated_at: string;
+          finished_by: string[];
+        };
+        Insert: {
+          id?: number;
+          couple_id: number;
+          article_id: number;
+          created_at?: string;
+          updated_at?: string;
+        };
+        Update: {
+          id?: number;
+          couple_id?: number;
+          article_id?: number;
+          created_at?: string;
+          updated_at?: string;
+        };
+        Relationships: [
+          {
+            foreignKeyName: 'content_article_couple_instance_couple_id_fkey';
+            columns: ['couple_id'];
+            isOneToOne: false;
+            referencedRelation: 'couple';
+            referencedColumns: ['id'];
+          },
+          {
+            foreignKeyName: 'content_article_couple_instance_article_id_fkey';
+            columns: ['article_id'];
+            isOneToOne: false;
+            referencedRelation: 'content_article';
+            referencedColumns: ['id'];
+          },
+        ];
+      };
+      content_article_couple_instance_finish: {
+        Row: {
+          id: number;
+          instance_article_id: number;
+          user_id: string;
+          created_at: string;
+          updated_at: string;
+        };
+        Insert: {
+          id?: number;
+          instance_article_id: number;
+          user_id: string;
+          created_at?: string;
+          updated_at?: string;
+        };
+        Update: {
+          id?: number;
+          instance_article_id?: number;
+          user_id?: string;
+          created_at?: string;
+          updated_at?: string;
+        };
+        Relationships: [
+          {
+            foreignKeyName: 'content_article_couple_instance_finish_instance_article_id_fkey';
+            columns: ['instance_article_id'];
+            isOneToOne: false;
+            referencedRelation: 'content_article_couple_instance';
+            referencedColumns: ['id'];
+          },
+          {
+            foreignKeyName: 'content_article_couple_instance_finish_user_id_fkey';
+            columns: ['user_id'];
+            isOneToOne: false;
+            referencedRelation: 'users';
+            referencedColumns: ['id'];
+          },
+        ];
+      };
+      content_exercise_couple_instance_finish: {
+        Row: {
+          id: number;
+          instance_exercise_id: number;
+          user_id: string;
+          created_at: string;
+          updated_at: string;
+        };
+        Insert: {
+          id?: number;
+          instance_exercise_id: number;
+          user_id: string;
+          created_at?: string;
+          updated_at?: string;
+        };
+        Update: {
+          id?: number;
+          instance_exercise_id?: number;
+          user_id?: string;
+          created_at?: string;
+          updated_at?: string;
+        };
+        Relationships: [
+          {
+            foreignKeyName: 'content_exercise_couple_instance_finish_instance_exercise_id_fkey';
+            columns: ['instance_exercise_id'];
+            isOneToOne: false;
+            referencedRelation: 'content_exercise_couple_instance';
+            referencedColumns: ['id'];
+          },
+          {
+            foreignKeyName: 'content_exercise_couple_instance_finish_user_id_fkey';
+            columns: ['user_id'];
+            isOneToOne: false;
+            referencedRelation: 'users';
+            referencedColumns: ['id'];
+          },
+        ];
+      };
+      content_journey_couple_instance: {
+        Row: {
+          id: number;
+          couple_id: number;
+          journey_id: number;
+          state: string;
+          current_day: number;
+          created_at: string;
+          updated_at: string;
+        };
+        Insert: {
+          id?: number;
+          couple_id: number;
+          journey_id: number;
+          state?: string;
+          current_day?: number;
+          created_at?: string;
+          updated_at?: string;
+        };
+        Update: {
+          id?: number;
+          couple_id?: number;
+          journey_id?: number;
+          state?: string;
+          current_day?: number;
+          created_at?: string;
+          updated_at?: string;
+        };
+        Relationships: [
+          {
+            foreignKeyName: 'content_journey_couple_instance_couple_id_fkey';
+            columns: ['couple_id'];
+            isOneToOne: false;
+            referencedRelation: 'couple';
+            referencedColumns: ['id'];
+          },
+          {
+            foreignKeyName: 'content_journey_couple_instance_journey_id_fkey';
+            columns: ['journey_id'];
+            isOneToOne: false;
+            referencedRelation: 'content_journey';
+            referencedColumns: ['id'];
+          },
+        ];
+      };
+      job_content_checkup: {
+        Row: {
+          job_slug: string;
+          content_checkup_id: number;
+        };
+        Insert: {
+          job_slug: string;
+          content_checkup_id: number;
+        };
+        Update: {
+          job_slug?: string;
+          content_checkup_id?: number;
+        };
+        Relationships: [
+          {
+            foreignKeyName: 'job_content_checkup_job_slug_fkey';
+            columns: ['job_slug'];
+            isOneToOne: false;
+            referencedRelation: 'job';
+            referencedColumns: ['slug'];
+          },
+          {
+            foreignKeyName: 'job_content_checkup_content_checkup_id_fkey';
+            columns: ['content_checkup_id'];
+            isOneToOne: false;
+            referencedRelation: 'content_checkup';
+            referencedColumns: ['id'];
+          },
+        ];
+      };
+      job_content_exercise: {
+        Row: {
+          job_slug: string;
+          content_exercise_id: number;
+        };
+        Insert: {
+          job_slug: string;
+          content_exercise_id: number;
+        };
+        Update: {
+          job_slug?: string;
+          content_exercise_id?: number;
+        };
+        Relationships: [
+          {
+            foreignKeyName: 'job_content_exercise_job_slug_fkey';
+            columns: ['job_slug'];
+            isOneToOne: false;
+            referencedRelation: 'job';
+            referencedColumns: ['slug'];
+          },
+          {
+            foreignKeyName: 'job_content_exercise_content_exercise_id_fkey';
+            columns: ['content_exercise_id'];
+            isOneToOne: false;
+            referencedRelation: 'content_exercise';
+            referencedColumns: ['id'];
+          },
+        ];
+      };
+      job_content_game: {
+        Row: {
+          job_slug: string;
+          content_game_id: number;
+        };
+        Insert: {
+          job_slug: string;
+          content_game_id: number;
+        };
+        Update: {
+          job_slug?: string;
+          content_game_id?: number;
+        };
+        Relationships: [
+          {
+            foreignKeyName: 'job_content_game_job_slug_fkey';
+            columns: ['job_slug'];
+            isOneToOne: false;
+            referencedRelation: 'job';
+            referencedColumns: ['slug'];
+          },
+          {
+            foreignKeyName: 'job_content_game_content_game_id_fkey';
+            columns: ['content_game_id'];
+            isOneToOne: false;
+            referencedRelation: 'content_game';
+            referencedColumns: ['id'];
+          },
+        ];
+      };
+      content_article_answer: {
+        Row: {
+          id: number;
+          article_id: number;
+          language: string;
+          title: string;
+          content: string;
+          correct: boolean;
+          created_at: string;
+          updated_at: string;
+        };
+        Insert: {
+          id?: number;
+          article_id: number;
+          language: string;
+          title: string;
+          content: string;
+          correct?: boolean;
+          created_at?: string;
+          updated_at?: string;
+        };
+        Update: {
+          id?: number;
+          article_id?: number;
+          language?: string;
+          title?: string;
+          content?: string;
+          correct?: boolean;
+          created_at?: string;
+          updated_at?: string;
+        };
+        Relationships: [
+          {
+            foreignKeyName: 'content_article_answer_article_id_fkey';
+            columns: ['article_id'];
+            isOneToOne: false;
+            referencedRelation: 'content_article';
+            referencedColumns: ['id'];
+          },
+        ];
+      };
+      content_checkup: {
+        Row: {
+          id: number;
+          slug: string;
+          language: string;
+          created_at: string;
+          updated_at: string;
+          title: string;
+          research: string;
+          description: string;
+          couples_finished: number;
+        };
+        Insert: {
+          id?: number;
+          slug: string;
+          language: string;
+          created_at?: string;
+          updated_at?: string;
+          title: string;
+          research: string;
+          description: string;
+        };
+        Update: {
+          id?: number;
+          slug?: string;
+          language?: string;
+          created_at?: string;
+          updated_at?: string;
+          title?: string;
+          research?: string;
+          description?: string;
+        };
+        Relationships: [];
+      };
+      content_checkup_question: {
+        Row: {
+          id: number;
+          language: string;
+          created_at: string;
+          updated_at: string;
+          checkup_id: number;
+          content: string;
+        };
+        Insert: {
+          id?: number;
+          language: string;
+          created_at?: string;
+          updated_at?: string;
+          checkup_id: number;
+          content: string;
+        };
+        Update: {
+          id?: number;
+          language?: string;
+          created_at?: string;
+          updated_at?: string;
+          checkup_id?: number;
+          content?: string;
+        };
+        Relationships: [
+          {
+            foreignKeyName: 'content_checkup_question_checkup_id_fkey';
+            columns: ['checkup_id'];
+            isOneToOne: false;
+            referencedRelation: 'content_checkup';
+            referencedColumns: ['id'];
+          },
+        ];
+      };
+      content_exercise: {
+        Row: {
+          id: number;
+          slug: string;
+          language: string;
+          created_at: string;
+          updated_at: string;
+          title: string;
+          description: string;
+          couples_finished: number;
+        };
+        Insert: {
+          id?: number;
+          slug?: string;
+          language: string;
+          created_at?: string;
+          updated_at?: string;
+          title: string;
+          description: string;
+        };
+        Update: {
+          id?: number;
+          slug?: string;
+          language?: string;
+          created_at?: string;
+          updated_at?: string;
+          title?: string;
+          description?: string;
+        };
+        Relationships: [];
+      };
+      content_exercise_step: {
+        Row: {
+          id: number;
+          language: string;
+          created_at: string;
+          updated_at: string;
+          exercise_id: number;
+          title: string;
+          content: string;
+        };
+        Insert: {
+          id?: number;
+          language: string;
+          created_at?: string;
+          updated_at?: string;
+          exercise_id: number;
+          title: string;
+          content: string;
+        };
+        Update: {
+          id?: number;
+          language?: string;
+          created_at?: string;
+          updated_at?: string;
+          exercise_id?: number;
+          title?: string;
+          content?: string;
+        };
+        Relationships: [
+          {
+            foreignKeyName: 'content_exercise_step_exercise_id_fkey';
+            columns: ['exercise_id'];
+            isOneToOne: false;
+            referencedRelation: 'content_exercise';
+            referencedColumns: ['id'];
+          },
+        ];
+      };
+      content_game: {
+        Row: {
+          id: number;
+          slug: string;
+          description: string;
+          language: string;
+          created_at: string;
+          updated_at: string;
+          title: string;
+          couples_finished: number;
+        };
+        Insert: {
+          id?: number;
+          slug: string;
+          description: string;
+          language: string;
+          created_at?: string;
+          updated_at?: string;
+          title: string;
+        };
+        Update: {
+          id?: number;
+          slug?: string;
+          description?: string;
+          language?: string;
+          created_at?: string;
+          updated_at?: string;
+          title?: string;
+        };
+        Relationships: [];
+      };
+      content_game_question: {
+        Row: {
+          id: number;
+          language: string;
+          created_at: string;
+          updated_at: string;
+          game_id: number;
+          title: string;
+        };
+        Insert: {
+          id?: number;
+          language: string;
+          created_at?: string;
+          updated_at?: string;
+          game_id: number;
+          title: string;
+        };
+        Update: {
+          id?: number;
+          language?: string;
+          created_at?: string;
+          updated_at?: string;
+          game_id?: number;
+          title?: string;
+        };
+        Relationships: [
+          {
+            foreignKeyName: 'content_game_question_game_id_fkey';
+            columns: ['game_id'];
+            isOneToOne: false;
+            referencedRelation: 'content_game';
+            referencedColumns: ['id'];
+          },
+        ];
+      };
+      content_game_question_option: {
+        Row: {
+          id: number;
+          language: string;
+          created_at: string;
+          updated_at: string;
+          game_question_id: number;
+          title: string;
+        };
+        Insert: {
+          id?: number;
+          language: string;
+          created_at?: string;
+          updated_at?: string;
+          game_question_id: number;
+          title: string;
+        };
+        Update: {
+          id?: number;
+          language?: string;
+          created_at?: string;
+          updated_at?: string;
+          game_question_id?: number;
+          title?: string;
+        };
+        Relationships: [
+          {
+            foreignKeyName: 'content_game_question_option_game_question_id_fkey';
+            columns: ['game_question_id'];
+            isOneToOne: false;
+            referencedRelation: 'content_game_question';
+            referencedColumns: ['id'];
+          },
+        ];
+      };
+      content_test: {
+        Row: {
+          id: number;
+          slug: string;
+          language: string;
+          created_at: string;
+          updated_at: string;
+          title: string;
+          research: string;
+          description: string;
+          couples_finished: number;
+        };
+        Insert: {
+          id?: number;
+          language: string;
+          created_at?: string;
+          updated_at?: string;
+          title: string;
+          research: string;
+          description: string;
+        };
+        Update: {
+          id?: number;
+          language?: string;
+          created_at?: string;
+          updated_at?: string;
+          title?: string;
+          research?: string;
+          description?: string;
+        };
+        Relationships: [];
+      };
+      content_test_question: {
+        Row: {
+          id: number;
+          test_id: number;
+          language: string;
+          created_at: string;
+          updated_at: string;
+          title: string;
+        };
+        Insert: {
+          id?: number;
+          test_id: number;
+          language: string;
+          created_at?: string;
+          updated_at?: string;
+          title: string;
+        };
+        Update: {
+          id?: number;
+          test_id?: number;
+          language?: string;
+          created_at?: string;
+          updated_at?: string;
+          title?: string;
+        };
+        Relationships: [
+          {
+            foreignKeyName: 'content_test_question_test_id_fkey';
+            columns: ['test_id'];
+            isOneToOne: false;
+            referencedRelation: 'content_test';
+            referencedColumns: ['id'];
+          },
+        ];
+      };
+      content_test_result: {
+        Row: {
+          id: number;
+          test_id: number;
+          language: string;
+          created_at: string;
+          updated_at: string;
+          title: string;
+          description: string;
+          advice: string;
+        };
+        Insert: {
+          id?: number;
+          test_id: number;
+          language: string;
+          created_at?: string;
+          updated_at?: string;
+          title: string;
+          description: string;
+          advice: string;
+        };
+        Update: {
+          id?: number;
+          test_id?: number;
+          language?: string;
+          created_at?: string;
+          updated_at?: string;
+          title?: string;
+          description?: string;
+          advice?: string;
+        };
+        Relationships: [
+          {
+            foreignKeyName: 'content_test_result_test_id_fkey';
+            columns: ['test_id'];
+            isOneToOne: false;
+            referencedRelation: 'content_test';
+            referencedColumns: ['id'];
+          },
+        ];
+      };
+      content_test_combination: {
+        Row: {
+          id: number;
+          language: string;
+          created_at: string;
+          updated_at: string;
+          result_1_id: number;
+          result_2_id: number;
+          description: string;
+          advice: string;
+        };
+        Insert: {
+          id?: number;
+          language: string;
+          created_at?: string;
+          updated_at?: string;
+          result_1_id: number;
+          result_2_id: number;
+          description: string;
+          advice: string;
+        };
+        Update: {
+          id?: number;
+          language?: string;
+          created_at?: string;
+          updated_at?: string;
+          result_1_id?: number;
+          result_2_id?: number;
+          description?: string;
+          advice?: string;
+        };
+        Relationships: [
+          {
+            foreignKeyName: 'content_test_combination_result_1_id_fkey';
+            columns: ['result_1_id'];
+            isOneToOne: false;
+            referencedRelation: 'content_test_result';
+            referencedColumns: ['id'];
+          },
+          {
+            foreignKeyName: 'content_test_combination_result_2_id_fkey';
+            columns: ['result_2_id'];
+            isOneToOne: false;
+            referencedRelation: 'content_test_result';
+            referencedColumns: ['id'];
+          },
+        ];
+      };
+      content_test_question_option: {
+        Row: {
+          id: number;
+          language: string;
+          created_at: string;
+          updated_at: string;
+          title: string;
+          result_id: number;
+          question_id: number;
+        };
+        Insert: {
+          id?: number;
+          language: string;
+          created_at?: string;
+          updated_at?: string;
+          title: string;
+          result_id: number;
+          question_id: number;
+        };
+        Update: {
+          id?: number;
+          language?: string;
+          created_at?: string;
+          updated_at?: string;
+          title?: string;
+          result_id?: number;
+          question_id?: number;
+        };
+        Relationships: [
+          {
+            foreignKeyName: 'content_test_question_option_result_id_fkey';
+            columns: ['result_id'];
+            isOneToOne: false;
+            referencedRelation: 'content_test_result';
+            referencedColumns: ['id'];
+          },
+          {
+            foreignKeyName: 'content_test_question_option_question_id_fkey';
+            columns: ['question_id'];
+            isOneToOne: false;
+            referencedRelation: 'content_test_question';
+            referencedColumns: ['id'];
+          },
+        ];
+      };
+      content_journey: {
+        Row: {
+          id: number;
+          language: string;
+          created_at: string;
+          updated_at: string;
+          title: string;
+          description: string;
+          couples_finished: number;
+        };
+        Insert: {
+          id?: number;
+          language: string;
+          created_at?: string;
+          updated_at?: string;
+          title: string;
+          description?: string;
+        };
+        Update: {
+          id?: number;
+          language?: string;
+          created_at?: string;
+          updated_at?: string;
+          title?: string;
+          description?: string;
+        };
+        Relationships: [];
+      };
+      content_journey_step: {
+        Row: {
+          id: number;
+          language: string;
+          created_at: string;
+          updated_at: string;
+          title: string;
+          description: string | null;
+          journey_id: number;
+        };
+        Insert: {
+          id?: number;
+          language: string;
+          created_at?: string;
+          updated_at?: string;
+          title: string;
+          description?: string | null;
+          journey_id: number;
+        };
+        Update: {
+          id?: number;
+          language?: string;
+          created_at?: string;
+          updated_at?: string;
+          title?: string;
+          description?: string | null;
+          journey_id?: number;
+        };
+        Relationships: [
+          {
+            foreignKeyName: 'content_journey_step_journey_id_fkey';
+            columns: ['journey_id'];
+            isOneToOne: false;
+            referencedRelation: 'content_journey';
+            referencedColumns: ['id'];
+          },
+        ];
+      };
+      content_journey_step_content: {
+        Row: {
+          id: number;
+          language: string;
+          created_at: string;
+          updated_at: string;
+          journey_id: number;
+          journey_step_id: number;
+          day: number;
+        };
+        Insert: {
+          id?: number;
+          language: string;
+          created_at?: string;
+          updated_at?: string;
+          journey_id: number;
+          journey_step_id: number;
+          day: number;
+        };
+        Update: {
+          id?: number;
+          language?: string;
+          created_at?: string;
+          updated_at?: string;
+          journey_id?: number;
+          journey_step_id?: number;
+          day?: number;
+        };
+        Relationships: [
+          {
+            foreignKeyName: 'content_journey_step_content_journey_id_fkey';
+            columns: ['journey_id'];
+            isOneToOne: false;
+            referencedRelation: 'content_journey';
+            referencedColumns: ['id'];
+          },
+          {
+            foreignKeyName: 'content_journey_step_content_journey_step_id_fkey';
+            columns: ['journey_step_id'];
+            isOneToOne: false;
+            referencedRelation: 'content_journey_step';
+            referencedColumns: ['id'];
+          },
+        ];
+      };
+      job_content_test: {
+        Row: {
+          job_slug: string;
+          content_test_id: number;
+        };
+        Insert: {
+          job_slug: string;
+          content_test_id: number;
+        };
+        Update: {
+          job_slug?: string;
+          content_test_id?: number;
+        };
+        Relationships: [
+          {
+            foreignKeyName: 'job_content_test_job_slug_fkey';
+            columns: ['job_slug'];
+            isOneToOne: false;
+            referencedRelation: 'job';
+            referencedColumns: ['slug'];
+          },
+          {
+            foreignKeyName: 'job_content_test_content_test_id_fkey';
+            columns: ['content_test_id'];
+            isOneToOne: false;
+            referencedRelation: 'content_test';
+            referencedColumns: ['id'];
+          },
+        ];
+      };
     };
     Views: {
       [_ in never]: never;
     };
     Functions: {
       delete_user: {
+        Args: Record<PropertyKey, never>;
+        Returns: undefined;
+      };
+      leave_couple: {
         Args: Record<PropertyKey, never>;
         Returns: undefined;
       };
@@ -1683,6 +3371,436 @@ export type Database = {
       };
       has_partner: {
         Args: Record<PropertyKey, never>;
+        Returns: boolean;
+      };
+      create_instance_feedback: {
+        Args: {
+          content_type: ContentType;
+          instance_id: number;
+          feedback: number;
+        };
+        Returns: undefined;
+      };
+      instance_feedback_exists: {
+        Args: {
+          content_type: ContentType;
+          instance_id: number;
+        };
+        Returns: boolean;
+      };
+      discard_instance_feedback: {
+        Args: {
+          content_type: ContentType;
+          instance_id: number;
+        };
+        Returns: boolean;
+      };
+      send_love_note: {
+        Args: {
+          type: LoveNoteAction;
+        };
+        Returns: number;
+      };
+      get_total_streak: {
+        Args: Record<PropertyKey, never>;
+        Returns: number;
+      };
+      get_last_week_streak: {
+        Args: Record<PropertyKey, never>;
+        Returns: {
+          hit_date: string;
+          state: 'hit' | 'freeze' | 'miss' | null;
+        }[];
+      };
+      is_user_premium: {
+        Args: Record<PropertyKey, never>;
+        Returns: boolean;
+      };
+      record_streak_hit: {
+        Args: Record<PropertyKey, never>;
+        Returns: boolean;
+      };
+      create_plan_for_date: {
+        Args: {
+          p_couple_id: number;
+          p_date: string;
+        };
+        Returns: {
+          id: number;
+          free_content_type: string;
+          question_id: number;
+          question_title: string;
+          question_is_finished: boolean;
+          test_id: number | null;
+          test_title: string | null;
+          test_is_finished: boolean;
+          game_id: number | null;
+          game_title: string | null;
+          game_is_finished: boolean;
+          exercise_id: number | null;
+          exercise_title: string | null;
+          exercise_is_finished: boolean;
+          checkup_id: number | null;
+          checkup_title: string | null;
+          checkup_is_finished: boolean;
+          article_id: number | null;
+          article_title: string | null;
+          article_is_finished: boolean;
+        }[];
+      };
+
+      create_today_plan: {
+        Args: Record<PropertyKey, never>;
+        Returns: {
+          id: number;
+          free_content_type: string;
+          question_id: number;
+          question_title: string;
+          question_is_finished: boolean;
+          test_id: number | null;
+          test_title: string | null;
+          test_is_finished: boolean;
+          game_id: number | null;
+          game_title: string | null;
+          game_is_finished: boolean;
+          exercise_id: number | null;
+          exercise_title: string | null;
+          exercise_is_finished: boolean;
+          checkup_id: number | null;
+          checkup_title: string | null;
+          checkup_is_finished: boolean;
+          article_id: number | null;
+          article_title: string | null;
+          article_is_finished: boolean;
+        }[];
+      };
+
+      create_tomorrow_plan: {
+        Args: Record<PropertyKey, never>;
+        Returns: {
+          id: number;
+          free_content_type: string;
+          question_id: number;
+          question_title: string;
+          question_is_finished: boolean;
+          test_id: number | null;
+          test_title: string | null;
+          test_is_finished: boolean;
+          game_id: number | null;
+          game_title: string | null;
+          game_is_finished: boolean;
+          exercise_id: number | null;
+          exercise_title: string | null;
+          exercise_is_finished: boolean;
+          checkup_id: number | null;
+          checkup_title: string | null;
+          checkup_is_finished: boolean;
+          article_id: number | null;
+          article_title: string | null;
+          article_is_finished: boolean;
+        }[];
+      };
+      get_my_jobs: {
+        Args: Record<PropertyKey, never>;
+        Returns: string[];
+      };
+      get_partner_jobs: {
+        Args: Record<PropertyKey, never>;
+        Returns: string[];
+      };
+      get_journey_count: {
+        Args: Record<PropertyKey, never>;
+        Returns: number;
+      };
+      get_content_count: {
+        Args: { jobs?: string[] };
+        Returns: {
+          journey_count: number;
+          game_count: number;
+          test_count: number;
+          exercise_count: number;
+          checkup_count: number;
+          article_count: number;
+          question_count: number;
+        };
+      };
+      get_question_job_count: {
+        Args: Record<PropertyKey, never>;
+        Returns: [{ job: string; count: number }];
+      };
+      get_recommended_journey: {
+        Args: {
+          p_limit?: number;
+        };
+        Returns: {
+          id: number;
+          language: string;
+          created_at: string;
+          updated_at: string;
+          title: string;
+          description: string | null;
+        }[];
+      };
+      get_recommended_question: {
+        Args: {
+          p_limit?: number;
+        };
+        Returns: {
+          id: number;
+          language: string;
+          created_at: string;
+          updated_at: string;
+          content: string;
+        }[];
+      };
+      get_recommended_game: {
+        Args: {
+          p_limit?: number;
+        };
+        Returns: {
+          id: number;
+          language: string;
+          created_at: string;
+          updated_at: string;
+          title: string;
+        }[];
+      };
+      get_recommended_exercise: {
+        Args: {
+          p_limit?: number;
+        };
+        Returns: {
+          id: number;
+          language: string;
+          created_at: string;
+          updated_at: string;
+          title: string;
+          description: string;
+        }[];
+      };
+      get_recommended_article: {
+        Args: {
+          p_limit?: number;
+        };
+        Returns: {
+          id: number;
+          language: string;
+          created_at: string;
+          updated_at: string;
+          title: string;
+          test_question: string;
+        }[];
+      };
+      get_recommended_checkup: {
+        Args: {
+          p_limit?: number;
+        };
+        Returns: {
+          id: number;
+          language: string;
+          created_at: string;
+          updated_at: string;
+          title: string;
+          research: string;
+        }[];
+      };
+      update_couple_timezone: {
+        Args: {
+          p_timezone: string;
+        };
+        Returns: undefined;
+      };
+      get_all_test: {
+        Args: {
+          recommended?: boolean;
+          p_limit?: number;
+          p_page?: number;
+        };
+        Returns: {
+          id: number;
+          title: string;
+          state: 'partner_answered' | 'me_answered' | 'me_partner_answered' | null;
+          jobs: string[];
+          page: number;
+          has_next: boolean;
+          couples_finished: number;
+        }[];
+      };
+      get_all_exercise: {
+        Args: {
+          recommended?: boolean;
+          p_limit?: number;
+          p_page?: number;
+        };
+        Returns: {
+          id: number;
+          title: string;
+          state: 'partner_answered' | 'me_answered' | 'me_partner_answered' | null;
+          jobs: string[];
+          page: number;
+          has_next: boolean;
+          couples_finished: number;
+        }[];
+      };
+      get_all_checkup: {
+        Args: {
+          recommended?: boolean;
+          p_limit?: number;
+          p_page?: number;
+        };
+        Returns: {
+          id: number;
+          title: string;
+          state: 'partner_answered' | 'me_answered' | 'me_partner_answered' | null;
+          jobs: string[];
+          page: number;
+          has_next: boolean;
+          couples_finished: number;
+        }[];
+      };
+      get_all_game: {
+        Args: {
+          recommended?: boolean;
+          p_limit?: number;
+          p_page?: number;
+        };
+        Returns: {
+          id: number;
+          title: string;
+          state: 'partner_answered' | 'me_answered' | 'me_partner_answered' | null;
+          jobs: string[];
+          page: number;
+          has_next: boolean;
+          couples_finished: number;
+        }[];
+      };
+      get_all_article: {
+        Args: {
+          recommended?: boolean;
+          p_limit?: number;
+          p_page?: number;
+        };
+        Returns: {
+          id: number;
+          title: string;
+          state: 'partner_answered' | 'me_answered' | 'me_partner_answered' | null;
+          jobs: string[];
+          page: number;
+          has_next: boolean;
+          couples_finished: number;
+        }[];
+      };
+      get_job_question: {
+        Args: {
+          job: string;
+          recommended?: boolean;
+          p_limit?: number;
+          p_page?: number;
+        };
+        Returns: {
+          id: number;
+          title: string;
+          state: 'partner_answered' | 'me_answered' | 'me_partner_answered' | null;
+          page: number;
+          has_next: boolean;
+          couples_finished: number;
+        }[];
+      };
+      get_finished_test_count: {
+        Args: {
+          slug: string;
+        };
+        Returns: number;
+      };
+      get_finished_checkup_count: {
+        Args: {
+          slug: string;
+        };
+        Returns: number;
+      };
+      get_finished_game_count: {
+        Args: {
+          slug: string;
+        };
+        Returns: number;
+      };
+      get_test_result: {
+        Args: {
+          test_id: number;
+          answers: { question_id: number; option_id: number }[];
+        };
+        Returns: number;
+      };
+      get_game_result: {
+        Args: {
+          game_id: number;
+          answers: { question_id: number; option_id: number; about_partner: boolean }[];
+        };
+        Returns: number;
+      };
+      get_checkup_result: {
+        Args: {
+          checkup_id: number;
+          answers: { question_id: number; answer: number }[];
+        };
+        Returns: number;
+      };
+      get_finished_article_count: {
+        Args: {
+          slug: string;
+        };
+        Returns: number;
+      };
+      get_finished_exercise_count: {
+        Args: {
+          slug: string;
+        };
+        Returns: number;
+      };
+      finish_article: {
+        Args: {
+          article_id: number;
+        };
+        Returns: undefined;
+      };
+      finish_exercise: {
+        Args: {
+          exercise_id: number;
+        };
+        Returns: undefined;
+      };
+      get_history: {
+        Args: {
+          p_limit?: number;
+          p_page?: number;
+        };
+        Returns: {
+          content_id: number;
+          content_title: string;
+          content_type:
+            | 'question'
+            | 'test'
+            | 'game'
+            | 'article'
+            | 'checkup'
+            | 'exercise'
+            | 'journey';
+          finished_by: string[];
+          updated_at: string;
+          jobs: string[];
+          reply_count: number | null;
+          reply_last_1_user_id: string | null;
+          reply_last_1_text: string | null;
+          reply_last_2_user_id: string | null;
+          reply_last_2_text: string | null;
+          page: number;
+          has_next: boolean;
+        }[];
+      };
+      set_own_jobs: {
+        Args: {
+          jobs: string[];
+        };
         Returns: boolean;
       };
     };
@@ -1698,12 +3816,18 @@ export type Database = {
 export type Tables<
   PublicTableNameOrOptions extends
     | keyof (Database['public']['Tables'] & Database['public']['Views'])
-    | { schema: keyof Database },
-  TableName extends PublicTableNameOrOptions extends { schema: keyof Database }
+    | {
+        schema: keyof Database;
+      },
+  TableName extends PublicTableNameOrOptions extends {
+    schema: keyof Database;
+  }
     ? keyof (Database[PublicTableNameOrOptions['schema']]['Tables'] &
         Database[PublicTableNameOrOptions['schema']]['Views'])
     : never = never,
-> = PublicTableNameOrOptions extends { schema: keyof Database }
+> = PublicTableNameOrOptions extends {
+  schema: keyof Database;
+}
   ? (Database[PublicTableNameOrOptions['schema']]['Tables'] &
       Database[PublicTableNameOrOptions['schema']]['Views'])[TableName] extends {
       Row: infer R;
@@ -1720,11 +3844,19 @@ export type Tables<
   : never;
 
 export type TablesInsert<
-  PublicTableNameOrOptions extends keyof Database['public']['Tables'] | { schema: keyof Database },
-  TableName extends PublicTableNameOrOptions extends { schema: keyof Database }
+  PublicTableNameOrOptions extends
+    | keyof Database['public']['Tables']
+    | {
+        schema: keyof Database;
+      },
+  TableName extends PublicTableNameOrOptions extends {
+    schema: keyof Database;
+  }
     ? keyof Database[PublicTableNameOrOptions['schema']]['Tables']
     : never = never,
-> = PublicTableNameOrOptions extends { schema: keyof Database }
+> = PublicTableNameOrOptions extends {
+  schema: keyof Database;
+}
   ? Database[PublicTableNameOrOptions['schema']]['Tables'][TableName] extends {
       Insert: infer I;
     }
@@ -1739,11 +3871,19 @@ export type TablesInsert<
   : never;
 
 export type TablesUpdate<
-  PublicTableNameOrOptions extends keyof Database['public']['Tables'] | { schema: keyof Database },
-  TableName extends PublicTableNameOrOptions extends { schema: keyof Database }
+  PublicTableNameOrOptions extends
+    | keyof Database['public']['Tables']
+    | {
+        schema: keyof Database;
+      },
+  TableName extends PublicTableNameOrOptions extends {
+    schema: keyof Database;
+  }
     ? keyof Database[PublicTableNameOrOptions['schema']]['Tables']
     : never = never,
-> = PublicTableNameOrOptions extends { schema: keyof Database }
+> = PublicTableNameOrOptions extends {
+  schema: keyof Database;
+}
   ? Database[PublicTableNameOrOptions['schema']]['Tables'][TableName] extends {
       Update: infer U;
     }
@@ -1758,11 +3898,19 @@ export type TablesUpdate<
   : never;
 
 export type Enums<
-  PublicEnumNameOrOptions extends keyof Database['public']['Enums'] | { schema: keyof Database },
-  EnumName extends PublicEnumNameOrOptions extends { schema: keyof Database }
+  PublicEnumNameOrOptions extends
+    | keyof Database['public']['Enums']
+    | {
+        schema: keyof Database;
+      },
+  EnumName extends PublicEnumNameOrOptions extends {
+    schema: keyof Database;
+  }
     ? keyof Database[PublicEnumNameOrOptions['schema']]['Enums']
     : never = never,
-> = PublicEnumNameOrOptions extends { schema: keyof Database }
+> = PublicEnumNameOrOptions extends {
+  schema: keyof Database;
+}
   ? Database[PublicEnumNameOrOptions['schema']]['Enums'][EnumName]
   : PublicEnumNameOrOptions extends keyof Database['public']['Enums']
   ? Database['public']['Enums'][PublicEnumNameOrOptions]

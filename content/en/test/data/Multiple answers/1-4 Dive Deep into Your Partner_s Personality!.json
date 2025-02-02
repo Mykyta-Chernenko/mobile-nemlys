@@ -1,0 +1,145 @@
+{
+  "topic": [
+    "getting_to_know_partner",
+    "understanding_mutual_compatibility",
+    "exploring_feelings",
+    "improving_relationship_satisfaction",
+    "building_trust"
+  ],
+  "title": "Main Personality Type",
+  "research": "This quiz is based on personality psychology, including the Big Five traits framework, to help you understand and celebrate each other's unique personalities.",
+  "description": "Explore your partner's personality traits, quirks, and habits with this fun and insightful quiz! Discover what makes each other unique and strengthen your bond through deeper understanding.",
+  "questions": [
+    {
+      "question": "When making plans for the weekend, how do you prefer to decide what to do?",
+      "options": [
+        "I love trying new and adventurous activities.",
+        "I like having a detailed schedule to follow.",
+        "I enjoy social gatherings and being around friends.",
+        "I prioritize harmony and choose activities everyone can enjoy.",
+        "I often worry about whether the plans are perfect."
+      ]
+    },
+    {
+      "question": "How do you usually handle your tasks and responsibilities?",
+      "options": [
+        "I'm always open to new methods and ideas.",
+        "I stay organized and stick to my plans.",
+        "I thrive in busy and interactive environments.",
+        "I cooperate well with others to get things done.",
+        "I get stressed if things don't go as planned."
+      ]
+    },
+    {
+      "question": "In a conversation, what is your typical behavior?",
+      "options": [
+        "I enjoy discussing a wide range of topics and ideas.",
+        "I focus on practical and specific subjects.",
+        "I love engaging and lively discussions.",
+        "I listen carefully and try to maintain a positive tone.",
+        "I might feel anxious if the conversation becomes intense."
+      ]
+    },
+    {
+      "question": "When facing a conflict, how do you respond?",
+      "options": [
+        "I'm open to creative solutions to resolve it.",
+        "I prefer to address it directly and systematically.",
+        "I seek support and advice from friends.",
+        "I aim to keep the peace and avoid arguments.",
+        "I often feel overwhelmed and unsure how to proceed."
+      ]
+    },
+    {
+      "question": "How do you express your feelings in a relationship?",
+      "options": [
+        "I enjoy sharing new and unique ways to show affection.",
+        "I express my feelings through reliable and consistent actions.",
+        "I'm expressive and often share my emotions openly.",
+        "I focus on being supportive and considerate.",
+        "I might hold back my feelings due to fear of judgment."
+      ]
+    },
+    {
+      "question": "What motivates you most in your personal goals?",
+      "options": [
+        "Exploring new possibilities and experiences.",
+        "Achieving my goals through careful planning and effort.",
+        "Connecting with others and gaining recognition.",
+        "Ensuring that my efforts benefit those around me.",
+        "Avoiding failure and managing my fears."
+      ]
+    },
+    {
+      "question": "How do you prefer to spend your free time?",
+      "options": [
+        "Trying out new hobbies or learning something different.",
+        "Organizing or completing personal projects.",
+        "Socializing and being around friends and family.",
+        "Engaging in activities that promote harmony and relaxation.",
+        "Spending time alone to reflect and recharge."
+      ]
+    },
+    {
+      "question": "When your partner shares their ideas, how do you react?",
+      "options": [
+        "I love brainstorming and expanding on their ideas.",
+        "I appreciate structured and well-thought-out plans.",
+        "I get excited and add my own energetic input.",
+        "I listen attentively and support their perspective.",
+        "I might feel hesitant if the ideas are too unconventional."
+      ]
+    },
+    {
+      "question": "How do you approach making important decisions together?",
+      "options": [
+        "We explore various creative options before deciding.",
+        "We create a step-by-step plan to reach a decision.",
+        "We discuss and decide based on what feels right at the moment.",
+        "We focus on what's best for both of us and compromise.",
+        "I often worry about making the wrong choice."
+      ]
+    },
+    {
+      "question": "What role do you usually take in your relationship?",
+      "options": [
+        "I bring new ideas and perspectives to the relationship.",
+        "I ensure things run smoothly and stay organized.",
+        "I keep the relationship lively and full of energy.",
+        "I maintain peace and support my partner's needs.",
+        "I often contemplate how to improve and manage my feelings."
+      ]
+    }
+  ],
+  "evaluation_method": {
+    "explanation": "Each answer corresponds to one of the Big Five personality traits: Openness (A), Conscientiousness (B), Extraversion (C), Agreeableness (D), and Neuroticism (E). Tally up how many times you selected each option to determine your dominant personality traits and understand how they influence your relationship dynamics.",
+    "example": "For example, if you selected option 'A' most frequently, you likely have high Openness, meaning you enjoy new experiences and creativity in your relationship."
+  },
+  "outcome_interpretation": {
+    "mostly_A": {
+      "label": "Openness to Experience",
+      "description": "You are open-minded and enjoy exploring new ideas and activities. This trait brings creativity and adaptability to your relationship, making it vibrant and dynamic.",
+      "advice": "Continue embracing new experiences together and encourage each other's creative pursuits to keep the relationship exciting."
+    },
+    "mostly_B": {
+      "label": "Conscientiousness",
+      "description": "You are organized, reliable, and value structure in your relationship. This trait helps in maintaining stability and ensuring that both partners' needs are met consistently.",
+      "advice": "Maintain your organized approach, but also allow flexibility to adapt to unexpected changes or spontaneous moments together."
+    },
+    "mostly_C": {
+      "label": "Extraversion",
+      "description": "You are energetic and thrive on social interactions. Your enthusiasm and sociability add joy and liveliness to your relationship.",
+      "advice": "Balance your social activities with quality time alone to ensure both partners feel connected and appreciated."
+    },
+    "mostly_D": {
+      "label": "Agreeableness",
+      "description": "You are cooperative, compassionate, and value harmony in your relationship. This trait fosters a supportive and loving environment for both partners.",
+      "advice": "Continue nurturing your supportive nature, and ensure that your own needs are also communicated and met."
+    },
+    "mostly_E": {
+      "label": "Neuroticism",
+      "description": "You may experience emotions intensely and be sensitive to stress in your relationship. Understanding this trait can help in managing emotional responses and fostering resilience.",
+      "advice": "Practice stress-reduction techniques together and communicate openly about your feelings to strengthen emotional bonds."
+    }
+  }
+}

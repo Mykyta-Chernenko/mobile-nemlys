@@ -55,7 +55,7 @@ export default function ({
       setLoading,
     );
     if (isOnboarding) {
-      navigation.navigate('Analyzing');
+      navigation.navigate('Analyzing', { jobs: [] });
     } else {
       navigation.navigate('Home', {
         refreshTimeStamp: new Date().toISOString(),
@@ -69,7 +69,7 @@ export default function ({
       userId: authContext.userId,
     });
     if (isOnboarding) {
-      navigation.navigate('Analyzing');
+      navigation.navigate('Analyzing', { jobs: [] });
     } else {
       navigation.navigate('Home', {
         refreshTimeStamp: new Date().toISOString(),
@@ -83,7 +83,10 @@ export default function ({
       userId: authContext.userId,
     });
     if (isOnboarding) {
-      navigation.navigate('OnboardingInviteCode', { fromSettings: false });
+      navigation.navigate('OnboardingInviteCode', {
+        nextScreen: undefined,
+        screenParams: undefined,
+      });
     } else {
       navigation.navigate('Home', {
         refreshTimeStamp: new Date().toISOString(),

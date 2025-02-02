@@ -100,6 +100,7 @@ const NotificationHandler: React.FC<Props> = ({ children }) => {
     // const receivedSubscription = Notifications.addNotificationReceivedListener(
     //   handleNotificationReceived,
     // );
+
     const responseSubscription = Notifications.addNotificationResponseReceivedListener(
       handleNotificationResponse,
     );

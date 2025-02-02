@@ -3,7 +3,7 @@
     "name": "Nemlys",
     "slug": "nemlys",
     "scheme": "nemlys",
-    "version": "4.1.4",
+    "version": "5.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "splash": {
@@ -18,7 +18,7 @@
       "appStoreUrl": "itms-apps://apps.apple.com/id/app/nemlys/id1662262055",
       "supportsTablet": true,
       "bundleIdentifier": "com.marakaci.nemlys",
-      "buildNumber": "4.1.4",
+      "buildNumber": "5.0.0",
       "config": {
         "usesNonExemptEncryption": false
       },
@@ -26,19 +26,24 @@
         "NSMicrophoneUsageDescription": "This app needs microphone access to record your conversations with your partner during dates. These recordings are used solely to personalize future questions and in-app content by extracting summary of your discussion. Recordings are not shared with third parties and are handled with the utmost care for your privacy.",
         "CFBundleURLTypes": [
           {
-            "CFBundleURLSchemes": ["com.googleusercontent.apps.318892102836-9ud8fcu170fqr5i56bcskeci051gc6ra"]
+            "CFBundleURLSchemes": [
+              "com.googleusercontent.apps.318892102836-9ud8fcu170fqr5i56bcskeci051gc6ra"
+            ]
           },
           {
-            "CFBundleURLSchemes": ["com.googleusercontent.apps.146690585551-kmmq76bsbhb4d9hljoups22889rvkklu"]
+            "CFBundleURLSchemes": [
+              "com.googleusercontent.apps.146690585551-kmmq76bsbhb4d9hljoups22889rvkklu"
+            ]
           }
         ]
-      }
+      },
+      "appleTeamId": "ZKX3P2M839"
     },
     "android": {
       "playStoreUrl": "https://play.google.com/store/apps/details?id=com.nemlys.app",
       "package": "com.nemlys.app",
       "googleServicesFile": "./google-services.json",
-      "versionCode": 414
+      "versionCode": 500
     },
     "web": {
       "favicon": "./assets/favicon.png"
@@ -86,14 +91,6 @@
           }
         }
       ]
-    },
-    "runtimeVersion": {
-      "policy": "sdkVersion"
-    },
-    "updates": {
-      "checkAutomatically": "ON_LOAD",
-      "fallbackToCacheTimeout": 2000,
-      "url": "https://u.expo.dev/d6eafe0b-1185-4733-8f06-e86dddfbb49e"
     }
   }
 }

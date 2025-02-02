@@ -21,8 +21,7 @@ import { SafeAreaView } from 'react-native-safe-area-context';
 import { setAppLanguage } from '@app/theme/LanguageWrapper';
 import { logSupaErrors } from '@app/utils/errors';
 import StyledInput from '@app/components/utils/StyledInput';
-import * as Localization from 'expo-localization';
-import { KEYBOARD_BEHAVIOR } from '@app/utils/constants';
+import { KEYBOARD_BEHAVIOR, LOCALE, ONBOARDING_STEPS } from '@app/utils/constants';
 
 export default function ({
   route,
@@ -46,37 +45,50 @@ export default function ({
   }, [navigation]);
 
   const handlePress = async () => {
-    const languageData = await supabase
+    const userTechDetailsUpdate = supabase
       .from('user_technical_details')
-      .update({ language, requested_language: requestedLanguage, user_locale: Localization.locale })
+      .update({
+        language,
+        requested_language: requestedLanguage,
+        user_locale: LOCALE,
+      })
       .eq('user_id', authContext.userId!)
       .single();
-    if (languageData.error) {
-      logSupaErrors(languageData.error);
+
+    const userProfileReq = fromSettings
+      ? Promise.resolve({ data: null, error: null })
+      : await supabase
+          .from('user_profile')
+          .select('couple_id')
+          .eq('user_id', authContext.userId!)
+          .single();
+
+    const [userTechDetailsRes, userProfileRes] = await Promise.all([
+      userTechDetailsUpdate,
+      userProfileReq,
+    ]);
+
+    if (userTechDetailsRes.error) {
+      logSupaErrors(userTechDetailsRes.error);
       return;
     }
-    if (!fromSettings) {
-      const data = await supabase
-        .from('user_profile')
-        .select('couple_id')
-        .eq('user_id', authContext.userId!)
-        .single();
-      if (data.error) {
-        logSupaErrors(data.error);
-        return;
-      }
-      const languageData = await supabase
+
+    if (!fromSettings && userProfileRes.error) {
+      logSupaErrors(userProfileRes.error);
+      return;
+    }
+
+    if (!fromSettings && userProfileRes.data) {
+      const coupleUpdate = await supabase
         .from('couple')
-        .update({
-          language,
-        })
-        .eq('id', data.data.couple_id)
-        .single();
-      if (languageData.error) {
-        logSupaErrors(languageData.error);
+        .update({ language })
+        .eq('id', userProfileRes.data.couple_id);
+      if (coupleUpdate.error) {
+        logSupaErrors(coupleUpdate.error);
         return;
       }
     }
+
     await setAppLanguage(language);
     void localAnalytics().logEvent('LanguageContinueClicked', {
       screen: 'Language',
@@ -122,11 +134,11 @@ export default function ({
                   if (fromSettings) {
                     navigation.navigate('Profile', { refreshTimeStamp: new Date().toISOString() });
                   } else {
-                    navigation.navigate('PartnerName', { fromSettings: false });
+                    navigation.goBack();
                   }
                 }}
               ></GoBackButton>
-              {!fromSettings && <Progress current={3} all={7}></Progress>}
+              {!fromSettings && <Progress current={3} all={ONBOARDING_STEPS}></Progress>}
             </View>
             <View
               style={{

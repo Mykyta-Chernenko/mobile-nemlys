@@ -1,4 +1,4 @@
-import React, { useContext, useState, useEffect } from 'react';
+import React, { useCallback, useContext, useState } from 'react';
 import { ImageBackground, ScrollView, TouchableOpacity, View } from 'react-native';
 import { useTheme } from '@rneui/themed';
 import { i18n } from '@app/localization/i18n';
@@ -8,17 +8,21 @@ import { Progress } from '@app/components/utils/Progress';
 import { GoBackButton } from '@app/components/buttons/GoBackButton';
 import { supabase } from '@app/api/initSupabase';
 import { AuthContext } from '@app/provider/AuthProvider';
-import { logErrorsWithMessage } from '@app/utils/errors';
+import { logSupaErrors } from '@app/utils/errors';
 import { MainStackParamList } from '@app/types/navigation';
 import { NativeStackScreenProps } from '@react-navigation/native-stack';
 import { localAnalytics } from '@app/utils/analytics';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import AsyncStorage from '@react-native-async-storage/async-storage';
+import { ONBOARDING_STEPS } from '@app/utils/constants';
+import { showName } from '@app/utils/strings';
+import { useFocusEffect } from '@react-navigation/native';
 
 export default function ({
   route,
   navigation,
 }: NativeStackScreenProps<MainStackParamList, 'DatingLength'>) {
+  const [loading, setLoading] = useState(false);
   const { theme } = useTheme();
   const choices = [
     { slug: 'just-started', title: i18n.t('onboarding_dating_length_choice_1') },
@@ -30,24 +34,22 @@ export default function ({
   const [chosen, setChosen] = useState<string>('');
   const authContext = useContext(AuthContext);
 
-  useEffect(() => {
-    const loadCachedChoice = async () => {
-      try {
-        const cachedChoice = await AsyncStorage.getItem('dating_length_choice');
-        if (cachedChoice !== null) {
-          setChosen(cachedChoice);
-        }
-      } catch (error) {
-        console.error('Error loading cached dating length choice:', error);
+  const loadCachedChoice = async () => {
+    try {
+      const cachedChoice = await AsyncStorage.getItem('dating_length_choice');
+      if (cachedChoice !== null) {
+        setChosen(cachedChoice);
       }
-    };
+    } catch (error) {
+      console.error('Error loading cached dating length choice:', error);
+    }
+  };
 
-    const unsubscribeFocus = navigation.addListener('focus', () => {
+  useFocusEffect(
+    useCallback(() => {
       void loadCachedChoice();
-    });
-
-    return unsubscribeFocus;
-  }, [navigation]);
+    }, []),
+  );
 
   const handleChoiceSelection = async (slug: string) => {
     setChosen(slug);
@@ -59,26 +61,53 @@ export default function ({
   };
 
   const handlePress = async () => {
-    await supabase
-      .from('onboarding_poll')
-      .delete()
-      .match({ user_id: authContext.userId, question_slug: 'dating-length' });
-    const dateReponse = await supabase.from('onboarding_poll').insert({
-      user_id: authContext.userId!,
-      question_slug: 'dating-length',
-      answer_slug: chosen,
-    });
-    if (dateReponse.error) {
-      logErrorsWithMessage(dateReponse.error, dateReponse.error.message);
-      return;
-    }
+    setLoading(true);
     void localAnalytics().logEvent('DatingLengthContinueClicked', {
       screen: 'DatingLength',
       action: 'ContinueClicked',
       length: chosen,
       userId: authContext.userId,
     });
-    navigation.navigate('JobInput');
+    try {
+      const [dateResponse, hasPartnerRes, profileRes] = await Promise.all([
+        supabase.from('onboarding_poll').insert({
+          user_id: authContext.userId!,
+          question_slug: 'dating-length',
+          answer_slug: chosen,
+        }),
+        supabase.rpc('has_partner'),
+        supabase
+          .from('user_profile')
+          .select('first_name, partner_first_name')
+          .eq('user_id', authContext.userId!)
+          .single(),
+      ]);
+      if (dateResponse.error) {
+        logSupaErrors(dateResponse.error);
+        return;
+      }
+      if (hasPartnerRes.error) {
+        logSupaErrors(hasPartnerRes.error);
+        return;
+      }
+      if (profileRes.error) {
+        logSupaErrors(profileRes.error);
+        return;
+      }
+      if (hasPartnerRes.data) {
+        navigation.navigate('OnboardingQuizIntro', {
+          partnerName: showName(profileRes.data.partner_first_name) || i18n.t('home_partner'),
+          name: showName(profileRes.data.first_name),
+        });
+      } else {
+        navigation.navigate('OnboardingInviteCode', {
+          nextScreen: undefined,
+          screenParams: undefined,
+        });
+      }
+    } finally {
+      setLoading(false);
+    }
   };
   return (
     <ImageBackground
@@ -110,7 +139,7 @@ export default function ({
                 navigation.navigate('Language', { fromSettings: false });
               }}
             ></GoBackButton>
-            <Progress current={4} all={7}></Progress>
+            <Progress current={4} all={ONBOARDING_STEPS}></Progress>
           </View>
           <View
             style={{
@@ -156,7 +185,7 @@ export default function ({
         </View>
         <View style={{ padding: 20 }}>
           <PrimaryButton
-            disabled={!chosen}
+            disabled={loading || !chosen}
             title={i18n.t('continue')}
             onPress={() => void handlePress()}
           />

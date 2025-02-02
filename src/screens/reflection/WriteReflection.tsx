@@ -19,7 +19,7 @@ export default function ({
       action: 'Back',
       userId: authContext.userId,
     });
-    navigation.navigate('ReflectionHome', { refreshTimeStamp: undefined });
+    navigation.navigate('ReflectionHome', { refreshTimeStamp: new Date().toISOString() });
   };
   const onSave = () => {
     navigation.navigate('FinishedWriting');
@@ -29,13 +29,5 @@ export default function ({
     );
   };
 
-  return (
-    <Reflection
-      reflectionId={reflectionId}
-      question={question}
-      answer={answer}
-      onBack={goBack}
-      onSave={onSave}
-    />
-  );
+  return <Reflection question={question} answer={answer} onBack={goBack} onSave={onSave} />;
 }

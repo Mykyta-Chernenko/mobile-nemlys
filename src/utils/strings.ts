@@ -1,11 +1,7 @@
-export function randomReadnableString(length: number) {
-  let result = '';
-  const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';
-  const charactersLength = characters.length;
-  for (let i = 0; i < length; i++) {
-    result += characters.charAt(Math.floor(Math.random() * charactersLength));
-  }
-  return result;
+export function showName(name?: string | null) {
+  if (!name) return '';
+  if (name.length < 15) return name;
+  return name.slice(0, 15).trim();
 }
 export function capitalize(str: string) {
   if (str.length < 1) return str;
@@ -19,4 +15,15 @@ export const getFontSize = (text: string) => {
     return { h3: true };
   }
   return { h2: true };
+};
+
+export const getContentTitleSize = (text: string) => {
+  if (text?.length > 100) {
+    return { small: true };
+  }
+  return { normal: true };
+};
+
+export const hideText = (text: string) => {
+  return text.replace(/\S/gu, '*');
 };

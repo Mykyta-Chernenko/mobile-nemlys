@@ -1,0 +1,247 @@
+{
+  "title": "Getting to Know Each Other: A Journey of Discovery",
+  "description": "Embark on a transformative journey to deeply understand and connect with your partner. This journey consists of thoughtfully designed daily activities, including questions, exercises, articles, and games that will foster intimacy, enhance communication, and uncover personal insights. Over several days, you'll explore your similarities, differences, and the unique qualities that make each of you who you are.",
+  "subtopics": [
+    {
+      "title": "Uncovering Backgrounds and Traits",
+      "description": "Start with understanding each other's backgrounds, personalities, and values. Engage with questions about childhood memories, hidden talents, and personal preferences to build a foundation of trust and openness.",
+      "content": [
+        {
+          "type": "test",
+          "title": "Life Story Style",
+          "id": 2203
+        },
+        {
+          "type": "question",
+          "title": "Can you share a memory from your childhood that you think has shaped who you are today?",
+          "id": 1283
+        },
+        {
+          "type": "article",
+          "title": "Love Maps: Knowing Each Other Deeply",
+          "id": 5073
+        },
+        {
+          "type": "game",
+          "title": "Memory Lane",
+          "id": 3126
+        },
+        {
+          "type": "checkup",
+          "title": "Exploring Childhood Memories",
+          "id": 6008
+        },
+        {
+          "type": "exercise",
+          "title": "Difference Identification and Acceptance",
+          "id": 4052
+        },
+        {
+          "type": "question",
+          "title": "What's your favorite childhood memory?",
+          "id": 1574
+        }
+      ]
+    },
+    {
+      "title": "Exploring Interests and Hobbies",
+      "description": "Discover shared passions and individual hobbies. Participate in discussions and activities that help you learn about each other's interests, favorite pastimes, and the unique qualities that each of you brings to the relationship.",
+      "content": [
+        {
+          "type": "test",
+          "title": "Discover Your Shared and Unique Hobbies!",
+          "id": 2001
+        },
+        {
+          "type": "game",
+          "title": "Hobby Harmony",
+          "id": 3043
+        },
+        {
+          "type": "question",
+          "title": "What's a hobby that makes you feel alive?",
+          "id": 1782
+        },
+        {
+          "type": "article",
+          "title": "Exploring Shared Hobbies Together",
+          "id": 5028
+        },
+        {
+          "type": "exercise",
+          "title": "Hobbies and Interests Exercise",
+          "id": 4050
+        },
+        {
+          "type": "question",
+          "title": "What's a new hobby we could start together?",
+          "id": 1031
+        }
+      ]
+    },
+    {
+      "title": "Understanding Communication Styles",
+      "description": "Learn how to communicate your needs and desires effectively. Engage in exercises and games that foster active listening and enhance your ability to express emotions and expectations.",
+      "content": [
+        {
+          "type": "test",
+          "title": "Discover Your Communication Style",
+          "id": 2008
+        },
+        {
+          "type": "question",
+          "title": "How do you prefer to communicate your needs and desires?",
+          "id": 1224
+        },
+        {
+          "type": "article",
+          "title": "Mastering Communication Techniques",
+          "id": 5035
+        },
+        {
+          "type": "game",
+          "title": "Communication Clues",
+          "id": 3041
+        },
+        {
+          "type": "checkup",
+          "title": "Mastering Our Communication Styles",
+          "id": 6004
+        },
+        {
+          "type": "exercise",
+          "title": "Active Listening Practice",
+          "id": 4081
+        },
+        {
+          "type": "question",
+          "title": "What's your favorite memory of us having a great conversation?",
+          "id": 1938
+        }
+      ]
+    },
+    {
+      "title": "Identifying Love Languages",
+      "description": "Dive into the unique ways you each give and receive love. Explore your love languages through questions and reflective exercises, gaining insights into how to better express affection in a way that resonates with your partner.",
+      "content": [
+        {
+          "type": "test",
+          "title": "Love Language Type",
+          "id": 2109
+        },
+        {
+          "type": "question",
+          "title": "Do you believe in love languages? If so, which one are you?",
+          "id": 1295
+        },
+        {
+          "type": "article",
+          "title": "Decoding Love Languages",
+          "id": 5048
+        },
+        {
+          "type": "game",
+          "title": "Love Languages Exploration",
+          "id": 3128
+        },
+        {
+          "type": "checkup",
+          "title": "Emotion Needs Compatibility",
+          "id": 6049
+        },
+        {
+          "type": "exercise",
+          "title": "Find Out Your Love Language",
+          "id": 4014
+        },
+        {
+          "type": "question",
+          "title": "What is your love language?",
+          "id": 2051
+        }
+      ]
+    },
+    {
+      "title": "Self-Reflection and Goal Setting",
+      "description": "Encourage personal sharing of aspirations and dreams. Use guided activities to reflect on personal goals and how these align with your relationship, fostering a sense of mutual support in each other's journeys.",
+      "content": [
+        {
+          "type": "test",
+          "title": "Goal Alignment Style",
+          "id": 2055
+        },
+        {
+          "type": "question",
+          "title": "What are your dreams and aspirations outside of work?",
+          "id": 1517
+        },
+        {
+          "type": "article",
+          "title": "Setting Shared Future Goals",
+          "id": 5051
+        },
+        {
+          "type": "game",
+          "title": "Future Visionaries",
+          "id": 3000
+        },
+        {
+          "type": "checkup",
+          "title": "Growth Opportunity Style Assessment",
+          "id": 2193
+        },
+        {
+          "type": "exercise",
+          "title": "Long-Term Goal Planning",
+          "id": 4074
+        },
+        {
+          "type": "question",
+          "title": "What personal goals do you have that I might not be aware of?",
+          "id": 1736
+        }
+      ]
+    },
+    {
+      "title": "Cultivating Emotional Intimacy",
+      "description": "Deepen your emotional connection through vulnerability exercises and honest conversations. Engage with activities and discussions that promote sharing feelings, desires, and fears in a safe environment, enhancing your intimacy and trust.",
+      "content": [
+        {
+          "type": "test",
+          "title": "Emotional Intimacy Style",
+          "id": 2032
+        },
+        {
+          "type": "question",
+          "title": "What's something that always makes you feel loved?",
+          "id": 1877
+        },
+        {
+          "type": "article",
+          "title": "Building Emotional Intimacy Together",
+          "id": 5006
+        },
+        {
+          "type": "game",
+          "title": "Intimacy Insights",
+          "id": 3105
+        },
+        {
+          "type": "checkup",
+          "title": "Emotional Intimacy Check-in",
+          "id": 6097
+        },
+        {
+          "type": "exercise",
+          "title": "Emotional Closeness Exercises",
+          "id": 4058
+        },
+        {
+          "type": "question",
+          "title": "What little gestures make you feel most loved and appreciated?",
+          "id": 1589
+        }
+      ]
+    }
+  ]
+}

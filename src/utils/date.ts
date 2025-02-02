@@ -8,7 +8,11 @@ export function getNow(): moment.Moment {
   return moment().utcOffset(TIMEZONE);
 }
 export function calculateEveningTimeAfterDays(daysOffset: number) {
-  const targetTime = getNow().add(daysOffset, 'days').set({ hour: 19, minute: 0, second: 0 });
+  return calculateHourTimeAfterDays(daysOffset, 19);
+}
+
+export function calculateHourTimeAfterDays(daysOffset: number, hour: number) {
+  const targetTime = getNow().add(daysOffset, 'days').set({ hour: hour, minute: 0, second: 0 });
   return targetTime.diff(getNow(), 'seconds');
 }
 

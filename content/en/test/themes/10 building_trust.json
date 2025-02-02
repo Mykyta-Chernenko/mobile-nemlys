@@ -1,0 +1,64 @@
+{
+  "themes": [
+    {
+      "initial_topic": "building_trust",
+      "test_theme": "Emotional Safety Index",
+      "scientific_basis": "Based on attachment theory (Bowlby & Ainsworth) and research on emotional security in relationships",
+      "description": "Evaluates the degree to which partners feel emotionally safe with each other, measuring vulnerability tolerance and emotional responsiveness"
+    },
+    {
+      "initial_topic": "building_trust",
+      "test_theme": "Reliability Patterns",
+      "scientific_basis": "Grounded in behavioral consistency research and trust formation studies in close relationships",
+      "description": "Assesses how consistently partners follow through on commitments and promises, examining patterns of dependability in both small and significant matters"
+    },
+    {
+      "initial_topic": "building_trust",
+      "test_theme": "Transparency Quotient",
+      "scientific_basis": "Based on self-disclosure research and studies on openness in relationship development",
+      "description": "Measures the level of openness and honesty between partners, including comfort with sharing sensitive information and maintaining appropriate boundaries"
+    },
+    {
+      "initial_topic": "building_trust",
+      "test_theme": "Repair Response Dynamic",
+      "scientific_basis": "Derived from Gottman's research on relationship repair attempts and trust rebuilding after conflicts",
+      "description": "Examines how couples handle trust breaches and their effectiveness in rebuilding trust through repair attempts and reconciliation"
+    },
+    {
+      "initial_topic": "building_trust",
+      "test_theme": "Boundaries Respect Scale",
+      "scientific_basis": "Based on psychological boundary theory and research on trust development in intimate relationships",
+      "description": "Evaluates how well partners understand, communicate, and respect each other's personal boundaries and limits"
+    },
+    {
+      "initial_topic": "building_trust",
+      "test_theme": "Digital Trust Alignment",
+      "scientific_basis": "Grounded in modern relationship research on technology use and trust in the digital age",
+      "description": "Assesses trust dynamics in digital communication and social media use, including privacy expectations and online behavior agreements"
+    },
+    {
+      "initial_topic": "building_trust",
+      "test_theme": "Support Verification Index",
+      "scientific_basis": "Based on perceived partner support research and its role in trust development",
+      "description": "Measures how partners demonstrate and perceive mutual support, examining the connection between reliable support and trust building"
+    },
+    {
+      "initial_topic": "building_trust",
+      "test_theme": "Past Experience Integration",
+      "scientific_basis": "Derived from trauma-informed relationship research and studies on trust recovery",
+      "description": "Explores how past relationship experiences influence current trust dynamics, including strategies for overcoming trust-related challenges"
+    },
+    {
+      "initial_topic": "building_trust",
+      "test_theme": "Financial Trust Blueprint",
+      "scientific_basis": "Based on research on financial transparency and trust in romantic relationships",
+      "description": "Evaluates trust in financial matters, including transparency about money, shared financial decision-making, and financial fidelity"
+    },
+    {
+      "initial_topic": "building_trust",
+      "test_theme": "Growth Mindset Trust",
+      "scientific_basis": "Grounded in Dweck's growth mindset theory applied to relationship trust development",
+      "description": "Assesses partners' beliefs about trust as a developing quality, including their commitment to actively building and strengthening trust over time"
+    }
+  ]
+}

@@ -1,0 +1,4892 @@
+[
+  {
+    "job": [
+      "learning_relationship_skills"
+    ],
+    "title": "Kapcsolati Készségek Tanulása",
+    "description": "Ez az út segít neked és partnerednek a szükséges kapcsolati készségek fejlesztésében, amelyek megerősítik a kapcsolatotokat, javítják a kommunikációt, és fokozzák a konfliktusok hatékony kezelésének képességét. Minden nap tartalma az előzőre épül, irányítva titeket a szükséges készségek fejlődésén keresztül egy egészséges és kielégítő partnerséghez.",
+    "subtopics": [
+      {
+        "title": "Érzelmek Megértése",
+        "description": "Tanuld meg, hogyan azonosítsd és fogalmazd meg az érzelmeidet, valamint értsd meg partnered érzelmi reakcióit. Ez az alapvető készség kulcsfontosságú a hatékony kommunikációhoz.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "emotion-management-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-handle-your-strong-emotions"
+          },
+          {
+            "type": "article",
+            "slug": "building-emotional-intimacy-together"
+          },
+          {
+            "type": "game",
+            "slug": "emotional-seasons"
+          },
+          {
+            "type": "checkup",
+            "slug": "mood-mapping"
+          },
+          {
+            "type": "exercise",
+            "slug": "emotional-regulation-techniques"
+          }
+        ]
+      },
+      {
+        "title": "Hatékony Kommunikációs Technikák",
+        "description": "Fedezd fel a különböző kommunikációs stílusokat és technikákat, beleértve az aktív hallgatást és a visszajelzési gyakorlatokat, amelyek elősegítik a nyitottságot és az őszinteséget a kapcsolatotokban.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "discover-your-communication-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-prefer-to-communicate-your-needs-and-desires"
+          },
+          {
+            "type": "article",
+            "slug": "mastering-communication-techniques"
+          },
+          {
+            "type": "game",
+            "slug": "communication-clues"
+          },
+          {
+            "type": "checkup",
+            "slug": "mastering-our-communication-styles"
+          },
+          {
+            "type": "exercise",
+            "slug": "active-listening-practice"
+          }
+        ]
+      },
+      {
+        "title": "Konfliktuskezelési Stratégiák",
+        "description": "Merülj el a konfliktusok egészséges módon történő megoldásának különböző stratégiáiban. Megtanulod, hogyan kezeld a nézeteltéréseket konstruktívan, és hogyan találj win-win megoldásokat.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "your-conflict-style"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-metaphor-that-describes-how-we-handle-problems-together"
+          },
+          {
+            "type": "article",
+            "slug": "effective-conflict-resolution-strategies"
+          },
+          {
+            "type": "game",
+            "slug": "conflict-resolution-quest"
+          },
+          {
+            "type": "checkup",
+            "slug": "conflict-resolution-styles"
+          },
+          {
+            "type": "exercise",
+            "slug": "conflict-resolution-strategies-practice"
+          }
+        ]
+      },
+      {
+        "title": "Sebezhetőség és Bizalom Fejlesztése",
+        "description": "Fókuszálj a bizalom építésére a sebezhetőségen keresztül. Ez a téma magában foglalja a nyitottság fontosságának megértését és azt, hogyan oszd meg a személyes érzéseidet és tapasztalataidat.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "vulnerability-style-assessment"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-relationship-skill-you-admire-in-others-and-want-to-develop"
+          },
+          {
+            "type": "article",
+            "slug": "vulnerability-trusts-gateway"
+          },
+          {
+            "type": "game",
+            "slug": "trust-talk"
+          },
+          {
+            "type": "checkup",
+            "slug": "building-a-fortress-of-trust"
+          },
+          {
+            "type": "exercise",
+            "slug": "rebuild-trust-session"
+          }
+        ]
+      },
+      {
+        "title": "Nehezen Kezelhető Beszélgetések Navigálása",
+        "description": "Tanuld meg, hogyan kezdeményezz és navigálj nehéz beszélgetéseken anélkül, hogy fokoznád a konfliktust. Gyakorold a technikákat érzékeny témák nyugodt és tiszteletteljes megbeszélésére.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "communication-timing-style"
+          },
+          {
+            "type": "question",
+            "slug": "whats-the-best-advice-youve-ever-received-about-communicating-in-a-relationship"
+          },
+          {
+            "type": "article",
+            "slug": "navigating-difficult-conversations"
+          },
+          {
+            "type": "game",
+            "slug": "communication-carousel"
+          },
+          {
+            "type": "checkup",
+            "slug": "emotions-expressed-freely"
+          },
+          {
+            "type": "exercise",
+            "slug": "nonviolent-communication-practice"
+          }
+        ]
+      },
+      {
+        "title": "Érzelmi Intimitás Fokozása",
+        "description": "Zárd le az utadat az érzelmi kapcsolatod elmélyítésének felfedezésével. Ez magában foglalja a fizikai és érzelmi intimitás fokozására irányuló gyakorlatokat a kapcsolatotokban, biztosítva, hogy közelebb kerüljetek egymáshoz.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "emotional-intimacy-style"
+          },
+          {
+            "type": "question",
+            "slug": "whats-something-youd-like-to-learn-together-to-enhance-our-relationship"
+          },
+          {
+            "type": "article",
+            "slug": "building-emotional-intimacy-together"
+          },
+          {
+            "type": "game",
+            "slug": "intimacy-adventure"
+          },
+          {
+            "type": "checkup",
+            "slug": "emotional-intimacy-check-in"
+          },
+          {
+            "type": "exercise",
+            "slug": "emotional-closeness-exercises"
+          }
+        ]
+      }
+    ],
+    "slug": "learning-relationship-skills"
+  },
+  {
+    "job": [
+      "preparing_for_marriage"
+    ],
+    "title": "Fel készülés a házasságra: Erős alapok építése",
+    "description": "Ez az út segít neked és partnerednek a sikeres házassághoz szükséges eszközök és betekintések megszerzésében. Minden nap alapvető fogalmakat fogtok felfedezni, a kommunikációtól a pénzügyi harmóniáig, megteremtve a mélyebb megértést egymás iránt és egy ellenálló kapcsolatot.",
+    "subtopics": [
+      {
+        "title": "A Szeretet Nyelveinek Megértése",
+        "description": "Azonosítsátok és fedezzétek fel egymás szeretetnyelveit az érzelmi kapcsolat fokozása érdekében. Azt, hogy hogyan adjátok és kapjátok a szeretetet, jelentősen javíthatja a kapcsolat dinamikáját.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "love-language-type"
+          },
+          {
+            "type": "article",
+            "slug": "decoding-love-languages"
+          },
+          {
+            "type": "game",
+            "slug": "love-languages-exploration"
+          },
+          {
+            "type": "exercise",
+            "slug": "find-out-your-love-language"
+          }
+        ]
+      },
+      {
+        "title": "Pénzügyi Beszélgetések Mesterfokon",
+        "description": "Tanuljátok meg a nyílt pénzügyi beszélgetések fontosságát. Merüljetek el a költségvetési stílusokban, a költési szokásokban és a pénzügyi célokban, hogy bizalmat és átláthatóságot építsetek a pénzügyi partnerségetekben.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "financial-communication-style"
+          },
+          {
+            "type": "article",
+            "slug": "mastering-money-talks-together"
+          },
+          {
+            "type": "game",
+            "slug": "dream-budget-builders"
+          },
+          {
+            "type": "checkup",
+            "slug": "aligning-financial-values-and-goals"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-prefer-to-communicate-your-needs-and-desires"
+          },
+          {
+            "type": "exercise",
+            "slug": "financial-planning-for-marriage"
+          }
+        ]
+      },
+      {
+        "title": "Érzelmi Intimitás Navigálása",
+        "description": "Fejlesszétek az érzelmi intimitást támogató készségeket a sebezhetőség, az aktív hallgatás és az őszinte kommunikáció révén. Értsétek meg, hogyan fejezhetitek ki szabadon az érzelmeiteket és támogathatjátok egymás érzelmi szükségleteit.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "emotional-intimacy-style"
+          },
+          {
+            "type": "article",
+            "slug": "building-emotional-intimacy-together"
+          },
+          {
+            "type": "game",
+            "slug": "feelings-explorer"
+          },
+          {
+            "type": "checkup",
+            "slug": "emotional-intimacy-check-in"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-feel-about-writing-love-notes-to-each-other-want-to-give-it-a-try"
+          },
+          {
+            "type": "exercise",
+            "slug": "vulnerability-exploration-session"
+          }
+        ]
+      },
+      {
+        "title": "Jövőbeli Célok Összehangolása",
+        "description": "Fedezzétek fel, hogyan beszélhettek és hangolhatjátok össze álmaitokat és törekvéseiteket. Állítsatok közös célokat a jövőtökre, biztosítva, hogy mindkét partner értékeltnek és megértettnek érezze magát a tervezési folyamat során.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "goal-alignment-style"
+          },
+          {
+            "type": "article",
+            "slug": "setting-shared-future-goals"
+          },
+          {
+            "type": "game",
+            "slug": "future-visionaries"
+          },
+          {
+            "type": "checkup",
+            "slug": "charting-our-shared-future"
+          },
+          {
+            "type": "exercise",
+            "slug": "long-term-goal-planning"
+          }
+        ]
+      },
+      {
+        "title": "Kihívások Közös Kezelése",
+        "description": "Készülj fel a házasélet kihívásaira a konfliktuskezelési készségek és stratégiák fejlesztésével, hogy támogathassátok egymást nehéz időkben. Tanuljátok meg, hogyan navigáljatok a nézeteltérésekben empátiával és tisztelettel.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "your-conflict-style"
+          },
+          {
+            "type": "article",
+            "slug": "mastering-conflict-resolution-together"
+          },
+          {
+            "type": "game",
+            "slug": "conflict-resolution-quest"
+          },
+          {
+            "type": "checkup",
+            "slug": "conflict-resolution-style-match"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-game-we-could-play-to-improve-our-conflict-resolution-skills"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-feel-about-using-humor-to-ease-tense-conversations"
+          },
+          {
+            "type": "exercise",
+            "slug": "conflict-resolution-strategies-practice"
+          }
+        ]
+      },
+      {
+        "title": "Közös Rituálék és Hagyományok Létrehozása",
+        "description": "Hozzatok létre jelentős rituálékat és hagyományokat, amelyek erősítik a köteléketeket. Fedezzetek fel módokat a kapcsolatotok ünneplésére és tartós emlékek létrehozására párként, elősegítve az egység és a hovatartozás érzését.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "ritual-building-style"
+          },
+          {
+            "type": "article",
+            "slug": "fun-rituals-to-strengthen-bonds"
+          },
+          {
+            "type": "game",
+            "slug": "date-night-planner"
+          },
+          {
+            "type": "checkup",
+            "slug": "creative-date-designers"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-new-hobby-we-can-start-together-to-strengthen-our-bond"
+          },
+          {
+            "type": "exercise",
+            "slug": "creating-passion-renewal-date"
+          }
+        ]
+      }
+    ],
+    "slug": "preparing-for-marriage-building-a-strong-foundation"
+  },
+  {
+    "job": [
+      "discussing_religions"
+    ],
+    "title": "Közös Vallási Hiedelmeink Navigálása",
+    "description": "Ez az út segít neked és a párodnak megbeszélni és megérteni egymás vallási hiedelmeit, miközben tiszteletet és nyitott kommunikációt ápoltok. A vallás különböző aspektusainak felfedezésével megtanuljátok, hogyan öleljétek magatokhoz a különbségeket és hogyan hozzatok létre egy közös spirituális kapcsolatot.",
+    "subtopics": [
+      {
+        "title": "A Vallási Alapok Megértése",
+        "description": "Kezdjétek az utat azzal, hogy felfedezitek egymás vallásának alapvető hiedelmeit és gyakorlatait. Beszéljétek meg, hogyan formálják ezek az alapok a személyiségeteket és világnézeteteket. Ez a téma kérdéseket tartalmaz a személyes hiedelmekről és gyakorlatokról.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "religious-identity-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-practice-your-faith-and-how-would-you-like-to-incorporate-it-into-our-relationship"
+          },
+          {
+            "type": "article",
+            "slug": "navigating-religious-conversations-smoothly"
+          },
+          {
+            "type": "exercise",
+            "slug": "spiritual-practices-exchange"
+          },
+          {
+            "type": "question",
+            "slug": "what-role-does-religion-or-spirituality-play-in-your-life-and-how-does-it-affect-our-relationship"
+          }
+        ]
+      },
+      {
+        "title": "Vallási Mérföldkövek Ünneplése",
+        "description": "Tanuljátok meg, hogyan ünnepeljétek meg együtt a vallási mérföldköveket és eredményeket. Fedezzétek fel, hogyan tiszteljétek meg egymás hagyományait jelentős élet események során, mint például születések, esküvők és ünnepek, zökkenőmentesen integrálva őket közös életetekbe.",
+        "content": [
+          {
+            "type": "checkup",
+            "slug": "celebrating-religious-holidays-together"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-celebrate-religious-achievements-or-milestones"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-celebrate-your-faith-during-personal-milestones-like-birthdays-or-anniversaries"
+          }
+        ]
+      },
+      {
+        "title": "A Különbségek és Nézeteltérések Tisztelete",
+        "description": "Merülj el abban, hogyan navigáljátok a vallási hiedelmek és gyakorlatok közötti különbségeket konfliktus nélkül. Ez a téma eszközöket ad a tiszteletteljes beszélgetésekhez, amikor nézeteltérések merülnek fel, a megértésre összpontosítva, nem pedig a meggyőzésre.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "your-conflict-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-handle-religious-disagreements-in-relationships"
+          },
+          {
+            "type": "article",
+            "slug": "bridging-religious-differences-together"
+          },
+          {
+            "type": "game",
+            "slug": "conflict-resolution-quest"
+          },
+          {
+            "type": "checkup",
+            "slug": "handling-religious-conflicts"
+          }
+        ]
+      },
+      {
+        "title": "A Hitvallás Beépítése a Mindennapi Életbe",
+        "description": "Beszéljétek meg, hogyan integráljátok a vallási értékeket a mindennapi rutinotokba és döntéshozatalotokba. Fedezzétek fel a közös gyakorlatokat, spirituális tevékenységeket, és hogy a vallás hogyan erősítheti a partnerségeteket és a személyes fejlődést.",
+        "content": [
+          {
+            "type": "checkup",
+            "slug": "supportive-communication"
+          },
+          {
+            "type": "question",
+            "slug": "how-can-we-support-each-others-spiritual-growth"
+          },
+          {
+            "type": "game",
+            "slug": "spiritual-journey"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-integrate-your-faith-with-your-personal-hobbies-or-interests"
+          }
+        ]
+      },
+      {
+        "title": "Jövőbeli Áldások Tervezése",
+        "description": "Vegyetek részt jelentős beszélgetésekben arról, hogyan befolyásolják vallási hiedelmeitek a családról és a gyermekekről hozott döntéseket. Beszéljétek meg, hogy elképzelitek-e, hogy gyermekeket neveltek egy adott vallási hagyomány keretein belül, és fedezzétek fel ennek következményeit közös életetekre.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "parenting-style-alignment"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-envision-having-children-in-a-particular-religious-tradition"
+          },
+          {
+            "type": "question",
+            "slug": "what-religious-values-are-most-important-to-you-in-a-relationship"
+          },
+          {
+            "type": "article",
+            "slug": "enhancing-communication-before-parenthood"
+          },
+          {
+            "type": "checkup",
+            "slug": "parenting-playbook-compatibility"
+          },
+          {
+            "type": "exercise",
+            "slug": "parenting-styles-discussion"
+          }
+        ]
+      },
+      {
+        "title": "Közös Spiritualitás Építése",
+        "description": "Ebben a végső lépésben összpontosítsatok arra, hogyan hozzatok létre egy harmonikus keveréket a vallási hiedelmeitekből. Fedezzétek fel azokat a gyakorlatokat, amelyek tiszteletben tartják mindkét hagyományotokat, és beszéljétek meg, hogyan támogathatjátok egymás spirituális fejlődését, biztosítva a kölcsönös tiszteleten és megértésen alapuló teljesítő kapcsolatot.",
+        "content": [
+          {
+            "type": "checkup",
+            "slug": "sharing-spiritual-beliefs"
+          },
+          {
+            "type": "question",
+            "slug": "are-there-any-religious-practices-youd-like-to-explore-together"
+          },
+          {
+            "type": "exercise",
+            "slug": "interfaith-understanding-sessions"
+          }
+        ]
+      }
+    ],
+    "slug": "navigating-our-religious-beliefs-together"
+  },
+  {
+    "job": [
+      "introducing_healthy_habits"
+    ],
+    "title": "Egészséges Szokások Bevezetése Közösen",
+    "description": "Ez az út segít a pároknak egészséges szokásokat kialakítani és fenntartani, amelyek hozzájárulnak általános jólétükhöz és erősítik a kapcsolatukat. Naponta egy lépést téve felfedezheted a táplálkozást, a wellness gyakorlatokat, és hogy hogyan támogathatjátok egymást az egészséges életmódra való átállás során.",
+    "subtopics": [
+      {
+        "title": "A Táplálkozás Alapjainak Megértése",
+        "description": "Tanuld meg a jó táplálkozás alapjait, beszélj a vitaminok és tápanyagok, az étkezés előkészítése és az egészséges ételek beépítése a diétádba. Ez alapozza meg az egészséges életmódot.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "healthy-eating-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-ensure-youre-getting-enough-vitamins-and-nutrients"
+          },
+          {
+            "type": "article",
+            "slug": "kickstart-healthy-routines-together"
+          },
+          {
+            "type": "game",
+            "slug": "nutri-quiz"
+          },
+          {
+            "type": "exercise",
+            "slug": "healthy-eating-plans"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-prefer-cooking-together-or-trying-out-new-healthy-recipes-separately"
+          }
+        ]
+      },
+      {
+        "title": "Egészséges Rutinok Létrehozása",
+        "description": "Fedezd fel, hogyan alakíthatsz ki napi rutinokat, amelyek ösztönzik az egészséges étkezést és a testmozgást, beleértve a reggeli és esti rituálékat. Beszélj a következetesség fontosságáról és arról, hogyan befolyásolja az egészségedet.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "healthy-habits-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-incorporate-healthy-eating-into-your-busy-schedule"
+          },
+          {
+            "type": "article",
+            "slug": "healthy-habits-for-stronger-bonds"
+          },
+          {
+            "type": "game",
+            "slug": "healthy-habits-hub"
+          },
+          {
+            "type": "exercise",
+            "slug": "positive-habit-tracking"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-enjoy-morning-workouts-or-evening-wind-downs-more"
+          }
+        ]
+      },
+      {
+        "title": "Stresszkezelés Közösen",
+        "description": "Azonosítsd az egészséges stresszkezelési stratégiákat, beleértve a tudatossági gyakorlatokat és azt, hogyan támogathatjátok egymást a hektikus időszakokban. Ez a téma a mentális jólétet célozza meg, mint az egészséges életmód részét.",
+        "content": [
+          {
+            "type": "checkup",
+            "slug": "mood-mapping"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-handle-stress-in-a-healthy-way"
+          },
+          {
+            "type": "article",
+            "slug": "navigating-emotional-waters-together"
+          },
+          {
+            "type": "game",
+            "slug": "mindfulness-match"
+          },
+          {
+            "type": "exercise",
+            "slug": "mindfulness-meditation-sessions"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-handle-stress-or-unexpected-challenges"
+          }
+        ]
+      },
+      {
+        "title": "Fizikai Tevékenység Beépítése",
+        "description": "Beszéljétek meg azokat a fizikai aktivitásokat, amelyeket mindketten élveztek, a csapatmunka fontosságát az aktív életmódban, és állítsatok össze egy tervet a rendszeres testmozgásra, amely segít felelősséget vállalni egymásért.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "accountability-style-quiz"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-prefer-solo-workouts-or-exercising-together"
+          },
+          {
+            "type": "checkup",
+            "slug": "fitness-partners-unite"
+          },
+          {
+            "type": "exercise",
+            "slug": "fitness-routine-together"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-new-form-of-exercise-youd-like-to-do-together-regularly"
+          }
+        ]
+      },
+      {
+        "title": "Haladás és Célok Követése",
+        "description": "Tanuld meg, hogyan állíthatsz be és követhetsz nyomon egészségügyi és wellness célokat, valamint hogyan ünnepelhetitek meg egymás eredményeit. Ez motivációt és partnerség érzését teremt az egészséges életmódotok során.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "goal-alignment-style"
+          },
+          {
+            "type": "question",
+            "slug": "what-are-your-long-term-health-and-wellness-goals-and-how-can-we-support-each-other"
+          },
+          {
+            "type": "article",
+            "slug": "setting-shared-future-goals"
+          },
+          {
+            "type": "game",
+            "slug": "future-visionaries"
+          },
+          {
+            "type": "exercise",
+            "slug": "smart-goals-planning"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-stay-motivated-to-maintain-your-healthy-habits"
+          }
+        ]
+      },
+      {
+        "title": "Egészséges Szokások Kiépítése a Jövőre",
+        "description": "Beszéljétek meg a hosszú távú egészségügyi célokat, hogyan építhetitek be az egészséges szokásokat az életetekbe párként, és alakítsatok ki olyan hagyományokat, amelyek elősegítik a jólétet, biztosítva, hogy az egészséges gyakorlatok elfogadása életmóddá váljon.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "growth-balance-style"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-new-habit-youd-like-to-develop-together-for-personal-growth"
+          },
+          {
+            "type": "exercise",
+            "slug": "positive-reinforcement-practices"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-new-healthy-habit-youd-like-to-try-this-month"
+          }
+        ]
+      }
+    ],
+    "slug": "introducing-healthy-habits-together"
+  },
+  {
+    "job": [
+      "planning_for_future"
+    ],
+    "title": "Közös Jövőnk Navigálása",
+    "description": "Ez az út segít neked és a párodnak átgondoltan tervezni a jövőt és navigálni a fontos életdöntéseket. Felfedezitek a kapcsolatotok különböző aspektusait, megbeszélitek a hosszú távú célokat, és erősítitek a partnerségetek az érdekes tevékenységeken, a nyílt kommunikáción és a kölcsönös megértésen keresztül.",
+    "subtopics": [
+      {
+        "title": "Képzeljük El Az Előttünk Álló Életet",
+        "description": "Kezdjétek azzal, hogy elképzelitek az ideális közös jövőtöket, megbeszélve az álmokat és törekvéseket az elkövetkező öt évben. Világos víziót alkottok arról, hogy mit szeretnétek az élettől.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "future-planning-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-envision-our-relationship-evolving-over-the-next-five-years"
+          },
+          {
+            "type": "article",
+            "slug": "creating-a-vision-for-us"
+          },
+          {
+            "type": "game",
+            "slug": "future-visionaries"
+          },
+          {
+            "type": "checkup",
+            "slug": "future-talk-together"
+          },
+          {
+            "type": "exercise",
+            "slug": "long-term-goal-planning"
+          }
+        ]
+      },
+      {
+        "title": "Pénzügyi Jövők",
+        "description": "Fedezzétek fel a pénzügyi céljaitokat párként. Beszéljétek meg a költségvetést, a megtakarítást és a lehetséges befektetéseket, hogy biztos és kényelmes életmódot biztosítsatok, miközben összehangoljátok a pénzügyi törekvéseiteket a jövőbeli tervekkel.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "financial-planning-style"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-think-financial-discussions-should-happen-regularly-how-often"
+          },
+          {
+            "type": "article",
+            "slug": "mastering-money-talks-together"
+          },
+          {
+            "type": "game",
+            "slug": "dream-budget-builders"
+          },
+          {
+            "type": "checkup",
+            "slug": "budgeting-together-without-breaking-up"
+          },
+          {
+            "type": "exercise",
+            "slug": "budget-planning-session"
+          }
+        ]
+      },
+      {
+        "title": "Családi Tervrajz Készítése",
+        "description": "Merüljetek el a családtervezés és a szülői célok megbeszélésében. Döntsétek el, hogy szeretnétek-e gyerekeket, hányat, és gondoljátok át, milyen nevelést képzeltek el.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "parenting-style-alignment"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-want-to-have-children-if-so-when-do-you-think-is-the-right-time"
+          },
+          {
+            "type": "game",
+            "slug": "parenting-philosophy-play"
+          },
+          {
+            "type": "checkup",
+            "slug": "parenting-pathways"
+          },
+          {
+            "type": "exercise",
+            "slug": "parenting-styles-discussion"
+          },
+          {
+            "type": "question",
+            "slug": "should-we-adopt-if-we-are-unable-to-have-children"
+          }
+        ]
+      },
+      {
+        "title": "Fontos Életdöntések Navigálása",
+        "description": "Beszéljétek meg, hogyan közelítitek meg a jelentős döntéseket az életetekben együtt. Ez magában foglalja a közös lakásba költözést, a karrierváltásokat és a váratlan életkihívásokat, amelyek felmerülhetnek.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "decision-making-styles"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-feel-about-making-major-life-decisions-together"
+          },
+          {
+            "type": "game",
+            "slug": "problem-solving-pals"
+          },
+          {
+            "type": "checkup",
+            "slug": "resolving-decision-making-conflicts"
+          },
+          {
+            "type": "exercise",
+            "slug": "negotiation-skills-exercises"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-feel-about-relocating-for-career-opportunities-in-the-future"
+          }
+        ]
+      },
+      {
+        "title": "Közös Bakancslista Készítése",
+        "description": "Fejlesszétek ki a párok bakancslistáját, amely tükrözi a közös álmaitokat és azokat a kalandokat, amelyeket együtt szeretnétek átélni. Koncentráljatok az utazásra, élményekre és hagyományokra, amelyeket szeretnétek kialakítani.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "goal-alignment-style"
+          },
+          {
+            "type": "question",
+            "slug": "if-we-were-to-create-a-couples-bucket-list-whats-the-first-adventure-youd-add"
+          },
+          {
+            "type": "article",
+            "slug": "adventure-sparks-deeper-bonds"
+          },
+          {
+            "type": "game",
+            "slug": "dream-adventure-quest"
+          },
+          {
+            "type": "exercise",
+            "slug": "fantasy-sharing-session"
+          },
+          {
+            "type": "question",
+            "slug": "if-we-could-teleport-to-any-romantic-destination-right-now-where-would-we-go"
+          }
+        ]
+      },
+      {
+        "title": "Értékek és Hagyományok Összehangolása",
+        "description": "Beszéljétek meg azokat az fontos értékeket és hagyományokat, amelyeket párként és családként szeretnétek ápolni. Merüljetek el a vallási hiedelmekben, életmódbeli választásokban és az örökségben, amelyet együtt szeretnétek létrehozni.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "values-alignment-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-see-our-religious-beliefs-influencing-our-future-goals"
+          },
+          {
+            "type": "game",
+            "slug": "beliefs-values"
+          },
+          {
+            "type": "checkup",
+            "slug": "core-values-connection"
+          },
+          {
+            "type": "exercise",
+            "slug": "family-values-alignment"
+          },
+          {
+            "type": "question",
+            "slug": "what-values-are-most-important-for-us-to-instill-in-our-children"
+          }
+        ]
+      }
+    ],
+    "slug": "navigating-our-future-together"
+  },
+  {
+    "job": [
+      "having_new_experiences"
+    ],
+    "title": "Kalandos Együtt: Új Élmények Felfedezése",
+    "description": "Ez az út segít neked és a párodnak, hogy öleljétek át az újdonságot és a kalandot a kapcsolatotokban új tevékenységek kipróbálásával, ismeretlen helyszínek felfedezésével és közös érdeklődések azonosításával. Minden nap kreatív ötleteket és vonzó tartalmakat fedeztek fel, amelyek inspirálnak, hogy együtt szórakozzatok és erősítsétek a köteléketeket közös élmények által.",
+    "subtopics": [
+      {
+        "title": "Kicsiben Kezdeni: Új Tevékenységek Kipróbálása",
+        "description": "Kezdd az utadat azzal, hogy azonosítasz egyszerű tevékenységeket, amelyek kényelmesek, de mégis új élményeket nyújtanak. Beszélgessetek azokról a hobbikról, amelyeket együtt szeretnétek felfedezni, a főzőtanfolyamoktól kezdve a társasjáték estékig.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "breaking-routine-style-quiz"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-hobby-youd-like-us-to-try-together"
+          },
+          {
+            "type": "article",
+            "slug": "rediscover-adventure-together"
+          },
+          {
+            "type": "game",
+            "slug": "adventure-awaits"
+          },
+          {
+            "type": "exercise",
+            "slug": "try-something-new-day"
+          }
+        ]
+      },
+      {
+        "title": "Kívánságlista Készítése",
+        "description": "Készítsetek együtt egy páros kívánságlistát! Beszéljétek meg az izgalmas helyeket, amelyeket meglátogatnátok, egyedi élményeket, amelyeket megosztanátok, és jelentős kalandokat, amelyeket a jövőben szeretnétek átélni.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "adventure-style-assessment"
+          },
+          {
+            "type": "question",
+            "slug": "if-we-were-to-create-a-couples-bucket-list-whats-the-first-adventure-youd-add"
+          },
+          {
+            "type": "article",
+            "slug": "adventure-sparks-deeper-bonds"
+          },
+          {
+            "type": "game",
+            "slug": "future-adventure-quest"
+          },
+          {
+            "type": "exercise",
+            "slug": "future-goals-compatibility"
+          }
+        ]
+      },
+      {
+        "title": "Spontaneitás és Kaland",
+        "description": "Öleljétek át a spontaneitást meglepetés programok tervezésével vagy hirtelen tevékenységek kipróbálásával. Fedezzétek fel az váratlan kalandok izgalmát együtt, és erősítsétek a köteléketeket a spontaneitás által.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "spontaneity-style"
+          },
+          {
+            "type": "question",
+            "slug": "whats-the-most-fun-youve-ever-had-while-doing-something-completely-spontaneous"
+          },
+          {
+            "type": "question",
+            "slug": "if-we-could-go-on-a-crazy-themed-road-trip-what-would-our-theme-be"
+          },
+          {
+            "type": "game",
+            "slug": "adventure-awaits"
+          },
+          {
+            "type": "exercise",
+            "slug": "outdoor-exploration-adventures"
+          }
+        ]
+      },
+      {
+        "title": "Új Helyek Felfedezése",
+        "description": "Nézzetek mélyebben azokra a helyekre, amelyeket mindketten szeretnétek felfedezni, legyenek azok helyi vagy nemzetközi. Beszéljétek meg utazási álmaitokat, és hogy ezek az élmények hogyan gazdagíthatják a kapcsolatotokat.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "exploration-partnership-style"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-like-to-travel-whats-the-most-exciting-place-youve-been"
+          },
+          {
+            "type": "question",
+            "slug": "which-country-is-at-the-top-of-your-travel-bucket-list-as-a-couple"
+          },
+          {
+            "type": "article",
+            "slug": "adventure-sparks-deeper-bonds"
+          },
+          {
+            "type": "game",
+            "slug": "cultural-quest"
+          },
+          {
+            "type": "exercise",
+            "slug": "cultural-exchange-day"
+          }
+        ]
+      },
+      {
+        "title": "Tanulás Együtt",
+        "description": "Határozzátok meg azokat a készségeket vagy tantárgyakat, amelyekben mindketten érdekeltek vagytok, hogy együtt tanuljatok. Lehet ez egy új nyelv tanulása, főzési technikák elsajátítása vagy művészeti órák látogatása—bármi, ami közelebb hoz titeket!",
+        "content": [
+          {
+            "type": "test",
+            "slug": "shared-learning-style"
+          },
+          {
+            "type": "question",
+            "slug": "if-you-could-learn-a-new-language-together-which-one-would-it-be"
+          },
+          {
+            "type": "question",
+            "slug": "whats-something-youd-like-to-learn-together-to-bring-us-closer"
+          },
+          {
+            "type": "article",
+            "slug": "mastering-communication-techniques"
+          },
+          {
+            "type": "game",
+            "slug": "laugh-learn-quiz"
+          },
+          {
+            "type": "exercise",
+            "slug": "smart-goals-planning"
+          }
+        ]
+      },
+      {
+        "title": "Kreativitás a Kalandban",
+        "description": "Fedezzetek fel kreatív módokat, hogy a hétköznapi tevékenységeket emlékezetes élményekké alakítsátok. Gondoljatok tematikus randevú estekre, kreatív kihívásokra vagy kalandos feladatokra, amelyek lehetővé teszik, hogy a képzelet és a játék által közelebb kerüljetek egymáshoz.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "creative-sparks-style"
+          },
+          {
+            "type": "question",
+            "slug": "if-you-could-embark-on-a-creative-retreat-together-what-would-you-focus-on"
+          },
+          {
+            "type": "question",
+            "slug": "if-we-could-perform-in-a-talent-show-together-what-act-would-we-do"
+          },
+          {
+            "type": "article",
+            "slug": "fun-rituals-to-strengthen-bonds"
+          },
+          {
+            "type": "game",
+            "slug": "decor-dilemma"
+          },
+          {
+            "type": "exercise",
+            "slug": "artistic-expression-days"
+          }
+        ]
+      }
+    ],
+    "slug": "adventurous-together-exploring-new-experiences"
+  },
+  {
+    "job": [
+      "preparing_for_children"
+    ],
+    "title": "Gyermekvállalásra Felkészülés: Az Út a Szülővé Válásig",
+    "description": "Ez az út célja, hogy felkészítse téged és partneredet a szülői élet izgalmas és kihívásokkal teli kalandjára. Minden nap különböző megbeszélések, reflexiók és tevékenységek útmutatását követve segít értékes beszélgetéseket folytatni a szülőségről. Ahogy haladtok, felfedezitek az alapvető fogalmakat, az érzelmi felkészültséget és a gyakorlati stratégiákat, hogy sikeresen lépjetek be a szülői életbe.",
+    "subtopics": [
+      {
+        "title": "A Szülővé Válás Vágyának Megértése",
+        "description": "Fedezd fel az egyéni gondolataidat és érzéseidet a gyermekvállalásról. Vegyél részt reflexiós kérdésekben, hogy megértsétek egymás vágyait és elvárásait, megalapozva a jövőbeli beszélgetéseket.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "parenthood-readiness-styles"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-see-yourself-wanting-children-someday"
+          },
+          {
+            "type": "game",
+            "slug": "future-visionaries"
+          },
+          {
+            "type": "checkup",
+            "slug": "parenting-pathways"
+          },
+          {
+            "type": "exercise",
+            "slug": "family-planning-exercise"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-want-to-have-children-if-so-when-do-you-think-is-the-right-time"
+          }
+        ]
+      },
+      {
+        "title": "A Szülői Értékek Összhangba Hoztatása",
+        "description": "Beszéljétek meg a szülőséggel kapcsolatos alapvető értékeiteket és hiedelmeiteket. Ez a téma segít összhangba hozni a fontos kérdéseket, mint például az oktatás, a fegyelem és az értékek, amelyeket szeretnétek átadni a jövőbeli gyermekeiteknek.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "parenting-style-alignment"
+          },
+          {
+            "type": "question",
+            "slug": "what-values-are-most-important-for-us-to-instill-in-our-children"
+          },
+          {
+            "type": "game",
+            "slug": "values-vibes"
+          },
+          {
+            "type": "checkup",
+            "slug": "parenting-playbook-compatibility"
+          },
+          {
+            "type": "exercise",
+            "slug": "values-alignment-exercise"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-believe-in-religious-education-for-children-why-or-why-not"
+          }
+        ]
+      },
+      {
+        "title": "Érzelmi Felkészültség Kezelése",
+        "description": "Értékeld érzelmi felkészültségedet a szülői élet hullámvölgyeire. Különböző gyakorlatok és reflexiók révén foglalkozni fogsz a szülőséggel kapcsolatos lehetséges félelmekkel, aggodalmakkal és reményekkel.",
+        "content": [
+          {
+            "type": "checkup",
+            "slug": "emotional-rollercoaster-ride"
+          },
+          {
+            "type": "question",
+            "slug": "are-you-ready-to-handle-the-emotional-rollercoaster-that-comes-with-parenting"
+          },
+          {
+            "type": "article",
+            "slug": "navigating-emotional-waters-together"
+          },
+          {
+            "type": "game",
+            "slug": "emotional-seasons"
+          },
+          {
+            "type": "exercise",
+            "slug": "emotional-support-exercises"
+          },
+          {
+            "type": "question",
+            "slug": "what-fears-or-concerns-do-you-have-about-becoming-parents"
+          }
+        ]
+      },
+      {
+        "title": "Gyakorlati Szülői Felelősségek",
+        "description": "Merülj el a szülői felelősségek logisztikájában. Beszéljétek meg, hogyan szeretnétek megosztani a feladatokat, tervezni a gyermekgondozási lehetőségeket és kezelni a háztartási munkákat, felkészülve a gyermeknevelés gyakorlati valóságaira.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "responsibility-sharing-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-should-we-divide-parenting-responsibilities"
+          },
+          {
+            "type": "game",
+            "slug": "household-harmony"
+          },
+          {
+            "type": "exercise",
+            "slug": "shared-responsibilities-mapping"
+          },
+          {
+            "type": "question",
+            "slug": "what-are-your-thoughts-on-childcare-options"
+          }
+        ]
+      },
+      {
+        "title": "Pénzügyi Tervezés a Szülővé Válásra",
+        "description": "Fókuszálj a gyermeknevelés pénzügyi aspektusaira. Vegyél részt a költségvetés, a gyermeked jövőjére való megtakarítás és a pénzügyi tervek módosításának megbeszélésében, ahogy belépsz ebbe az új fejezetbe.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "financial-planning-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-should-we-save-for-our-childs-future"
+          },
+          {
+            "type": "article",
+            "slug": "financial-planning-together"
+          },
+          {
+            "type": "game",
+            "slug": "dream-budget-builders"
+          },
+          {
+            "type": "exercise",
+            "slug": "budget-planning-session"
+          }
+        ]
+      },
+      {
+        "title": "Támogató Hálózat Kiépítése",
+        "description": "Fedezd fel a támogató hálózat fontosságát, miközben felkészülsz a gyermekvállalásra. Beszéljétek meg a család, barátok és szülői források szerepét, amelyek segíthetnek navigálni a jövőbeli kihívásokban.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "support-network-style"
+          },
+          {
+            "type": "question",
+            "slug": "are-you-comfortable-with-pet-allergies-or-preferences-if-we-have-kids"
+          },
+          {
+            "type": "exercise",
+            "slug": "parenting-support-networks"
+          },
+          {
+            "type": "question",
+            "slug": "are-you-willing-to-retire-just-to-take-care-of-our-kids"
+          }
+        ]
+      }
+    ],
+    "slug": "preparing-for-children-a-journey-to-parenthood"
+  },
+  {
+    "job": [
+      "preparing_for_cohabitation"
+    ],
+    "title": "Készülés a Közös Életre",
+    "description": "Ez az út segít neked és a párodnak felkészülni a közös életre, különböző aspektusokat érintve a közös lakásban élésről. Megtanuljátok, hogyan kommunikáljatok hatékonyan, hogyan kezeljétek a felelősségeket, és hogyan hozzatok létre egy harmonikus otthoni környezetet. Minden nap fontos témákat fogtok felfedezni, amelyek segítenek megerősíteni a kapcsolatotokat és megkönnyítik a közös életre való átmenetet.",
+    "subtopics": [
+      {
+        "title": "Álmodozás a Közös Térünkről",
+        "description": "Kezdjétek azzal, hogy megosztjátok vízióitokat arról, hogyan fog kinézni az otthonotok. Beszéljétek meg az ötleteket a térrel, dekorációval és atmoszférával kapcsolatban. Ez megalapozza a kölcsönös megértést és a közös álmokat.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "lifestyle-harmony-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-can-we-create-a-home-environment-that-respects-both-of-our-preferences"
+          },
+          {
+            "type": "article",
+            "slug": "sharing-spaces-harmoniously"
+          },
+          {
+            "type": "exercise",
+            "slug": "living-space-design"
+          },
+          {
+            "type": "game",
+            "slug": "decor-dilemma"
+          },
+          {
+            "type": "question",
+            "slug": "whats-one-piece-of-furniture-you-absolutely-need-in-our-new-home"
+          }
+        ]
+      },
+      {
+        "title": "A Kommunikáció Alapjai",
+        "description": "Tanuljatok meg hatékony kommunikációs stratégiákat, amelyek segítenek a napi kihívások kezelésében. Fedezzétek fel, hogyan fejezhetitek ki a szükségleteiteket, állíthattok fel elvárásokat, és hallgathattok aktívan egymásra.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "discover-your-communication-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-prefer-to-communicate-your-needs-and-desires"
+          },
+          {
+            "type": "article",
+            "slug": "mastering-communication-techniques"
+          },
+          {
+            "type": "game",
+            "slug": "communication-clues"
+          },
+          {
+            "type": "checkup",
+            "slug": "mastering-our-communication-styles"
+          },
+          {
+            "type": "exercise",
+            "slug": "active-listening-practice"
+          }
+        ]
+      },
+      {
+        "title": "Háztartási Felelősségek",
+        "description": "Beszéljétek meg és állapítsátok meg, hogyan osztjátok el a háztartási munkákat és felelősségeket. Hozzatok létre egy rendszert, amely mindkettőtök számára működik, hogy fenntartsátok a tiszta és rendezett lakókörnyezetet.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "domestic-labor-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-feel-about-handling-household-responsibilities-and-chores"
+          },
+          {
+            "type": "article",
+            "slug": "establishing-household-routines"
+          },
+          {
+            "type": "exercise",
+            "slug": "shared-responsibilities-mapping"
+          },
+          {
+            "type": "game",
+            "slug": "chore-chart-challenge"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-feel-about-having-a-cleaning-schedule-versus-cleaning-as-we-go"
+          }
+        ]
+      },
+      {
+        "title": "Pénzügyi Alapok",
+        "description": "Hangoljátok össze a pénzügyi menedzsmentet és a költségvetést párként. Beszéljétek meg a közös kiadások megosztásának stratégiáit, a közös pénzügyi döntések meghozatalát és a pénzügyek átláthatóságának fenntartását.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "budgeting-style-for-couples"
+          },
+          {
+            "type": "game",
+            "slug": "dream-budget-builders"
+          },
+          {
+            "type": "article",
+            "slug": "mastering-money-talks-together"
+          },
+          {
+            "type": "exercise",
+            "slug": "budget-planning-session"
+          },
+          {
+            "type": "checkup",
+            "slug": "aligning-financial-values-and-goals"
+          },
+          {
+            "type": "question",
+            "slug": "whats-one-thing-you-want-to-achieve-together-in-our-new-home"
+          }
+        ]
+      },
+      {
+        "title": "Konfliktusok Kezelése Eleganciával",
+        "description": "Készülj fel a elkerülhetetlen nézeteltérésekre a konfliktuskezelési stratégiák megtanulásával. Fedezd fel, hogyan kezelheted a különböző véleményeket, és hogyan találhatsz közös nevezőt egészséges módon.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "your-conflict-style"
+          },
+          {
+            "type": "game",
+            "slug": "conflict-resolution-quest"
+          },
+          {
+            "type": "article",
+            "slug": "mastering-conflict-resolution-together"
+          },
+          {
+            "type": "exercise",
+            "slug": "conflict-resolution-strategies-practice"
+          },
+          {
+            "type": "checkup",
+            "slug": "tackling-tough-talks"
+          },
+          {
+            "type": "question",
+            "slug": "how-should-we-handle-maintenance-and-repairs-around-the-house"
+          }
+        ]
+      },
+      {
+        "title": "Biztonságos Tér Létrehozása",
+        "description": "Fejezzétek be a felkészülést az érzelmi és fizikai biztonságra a közös térben. Beszéljétek meg a határokat, a magánéletet, és hogyan alakíthattok ki egy olyan környezetet, ahol mindketten biztonságban és tiszteletben érzitek magatokat.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "emotional-safety-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-should-we-handle-setting-up-our-home-office-or-study-space"
+          },
+          {
+            "type": "article",
+            "slug": "navigating-boundaries-for-intimacy"
+          },
+          {
+            "type": "exercise",
+            "slug": "personal-space-respect-practices"
+          },
+          {
+            "type": "game",
+            "slug": "space-personalities"
+          },
+          {
+            "type": "question",
+            "slug": "how-should-we-handle-guests-and-visitors-in-our-home"
+          }
+        ]
+      }
+    ],
+    "slug": "preparing-for-cohabitation"
+  },
+  {
+    "job": [
+      "enhancing_love_and_affection"
+    ],
+    "title": "A Szerelem és Affektus Fokozása",
+    "description": "Ez az út segít a pároknak mélyebb szeretetet és affektust kialakítani a kapcsolatukban értelmes beszélgetések, játékos tevékenységek és átgondolt gyakorlatok révén. Minden nap felfedezitek a szerelem és affektus különböző aspektusait, kezdve a szeretet kifejezésének megértésével, egészen az intim pillanatok létrehozásáig, amelyek erősítik a köteléketeket.",
+    "subtopics": [
+      {
+        "title": "A Szerelem Nyelveinek Megértése",
+        "description": "Ismerd meg a szerelem nyelveinek fogalmát, és fedezd fel, hogyan fejezed ki és kapod a szeretetet a pároddal. Ez a tudás megalapozza az érzelmi kapcsolatotok fokozását.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "love-language-type"
+          },
+          {
+            "type": "question",
+            "slug": "what-is-your-love-language"
+          },
+          {
+            "type": "article",
+            "slug": "decoding-love-languages"
+          },
+          {
+            "type": "game",
+            "slug": "love-languages-quiz"
+          },
+          {
+            "type": "checkup",
+            "slug": "emotional-needs-compatibility"
+          },
+          {
+            "type": "question",
+            "slug": "whats-your-favorite-way-to-express-love-and-how-does-it-differ-from-mine"
+          },
+          {
+            "type": "exercise",
+            "slug": "find-out-your-love-language"
+          }
+        ]
+      },
+      {
+        "title": "Napi Affektus Kifejezések",
+        "description": "Fedezd fel az egyszerű, mégis hatékony módokat az affektus napi kifejezésére. Ez a téma magában foglalja a kis gesztusok, szeretetjegyzetek és bókok megbeszélését, amelyek feldobhatják egymás napját.",
+        "content": [
+          {
+            "type": "exercise",
+            "slug": "compliment-exchange"
+          },
+          {
+            "type": "question",
+            "slug": "how-can-we-better-express-our-appreciation-for-each-other-daily"
+          },
+          {
+            "type": "article",
+            "slug": "enhance-affection-daily"
+          },
+          {
+            "type": "game",
+            "slug": "affectionate-habits"
+          },
+          {
+            "type": "checkup",
+            "slug": "acts-of-kindness-and-appreciation"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-small-gesture-that-always-makes-you-smile"
+          }
+        ]
+      },
+      {
+        "title": "Intim Pillanatok Létrehozása",
+        "description": "Fedezd fel, hogyan hozhatsz létre és építhetsz be intim pillanatokat a napi rutinodba. Ez magában foglalja a meglepetés randik, spontán ölelések és mély kapcsolódási pillanatok tervezését.",
+        "content": [
+          {
+            "type": "checkup",
+            "slug": "emotional-intimacy-check-in"
+          },
+          {
+            "type": "test",
+            "slug": "sensory-intimacy-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-feel-about-trying-new-activities-together-to-build-intimacy"
+          },
+          {
+            "type": "article",
+            "slug": "building-emotional-intimacy-together"
+          },
+          {
+            "type": "game",
+            "slug": "intimacy-insights"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-feel-about-surprise-date-nights-whats-your-ideal-surprise"
+          },
+          {
+            "type": "exercise",
+            "slug": "creating-passion-renewal-date"
+          }
+        ]
+      },
+      {
+        "title": "Hála és Elismerés Fejlesztése",
+        "description": "Merülj el a hála kifejezésének fontosságában a kapcsolatodban. Beszéljétek meg, hogyan fokozhatja az elismerés a szeretetet és affektust, és tanuljatok meg konkrét gyakorlatokat egymás elismerésére.",
+        "content": [
+          {
+            "type": "exercise",
+            "slug": "expressing-gratitude-session"
+          },
+          {
+            "type": "question",
+            "slug": "how-can-we-better-express-our-appreciation-for-each-other"
+          },
+          {
+            "type": "article",
+            "slug": "mastering-communication-techniques"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-like-to-express-appreciation-in-our-conversations"
+          }
+        ]
+      },
+      {
+        "title": "Játékosság és Humor az Affektusban",
+        "description": "Tudd meg, hogyan fokozhatja a humor és játékosság az intimitást. Ez a téma arra ösztönöz, hogy találjatok módokat a közös nevetésre és játékos tevékenységekre, amelyek erősítik a köteléketeket.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "playfulness-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-feel-about-incorporating-humor-into-our-intimate-moments"
+          },
+          {
+            "type": "article",
+            "slug": "fun-rituals-to-strengthen-bonds"
+          },
+          {
+            "type": "game",
+            "slug": "laugh-learn-quiz"
+          },
+          {
+            "type": "checkup",
+            "slug": "fun-flirtation"
+          },
+          {
+            "type": "question",
+            "slug": "how-can-we-incorporate-more-playfulness-into-our-relationship"
+          },
+          {
+            "type": "exercise",
+            "slug": "karaoke-session"
+          }
+        ]
+      },
+      {
+        "title": "Fizikai Affektus és Érintés",
+        "description": "Fedezd fel a fizikai érintés szerepét a mélyebb affektus kialakításában. Beszéljétek meg az ölelések, csókok, bújások és más fizikai affektus formák preferenciáit, amelyek megerősítik a kapcsolatotokat.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "physical-touch-style"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-prefer-cuddling-on-the-couch-or-a-romantic-dinner-to-feel-loved"
+          },
+          {
+            "type": "article",
+            "slug": "enhancing-physical-intimacy-mindfully"
+          },
+          {
+            "type": "game",
+            "slug": "bedroom-preferences"
+          },
+          {
+            "type": "checkup",
+            "slug": "physical-comfort-and-boundaries"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-prefer-morning-hugs-or-goodnight-kisses"
+          },
+          {
+            "type": "exercise",
+            "slug": "affectionate-gestures-practice"
+          }
+        ]
+      }
+    ],
+    "slug": "enhancing-love-and-affection"
+  },
+  {
+    "job": [
+      "understanding_mutual_compatibility"
+    ],
+    "title": "A Kölcsönös Kompatibilitás Megértése",
+    "description": "Ez az út segít felfedezni és megérteni a kompatibilitás rétegeit a kapcsolatotokban. A témák fokozatos feldolgozásával megtanuljátok azonosítani, értékelni és kezelni a hasonlóságaitokat és különbségeiteket. Minden nap különböző típusú tartalmakkal foglalkoztok, amelyek elősegítik a gondolatébresztő beszélgetéseket és mélyebb kapcsolatok kialakítását.",
+    "subtopics": [
+      {
+        "title": "Alapvető Értékek Felfedezése",
+        "description": "Kezdjétek azzal, hogy megbeszélitek a három legfontosabb értéketeket, és hogy ezek hogyan befolyásolják a döntéseiteket. Ez az alapvető téma irányt mutat abban, hogy mi fontos mindkettőtök számára egy kapcsolatban.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "values-alignment-style"
+          },
+          {
+            "type": "question",
+            "slug": "what-are-three-values-you-believe-are-most-important-in-a-person"
+          },
+          {
+            "type": "article",
+            "slug": "aligning-future-goals"
+          },
+          {
+            "type": "game",
+            "slug": "values-vibes"
+          },
+          {
+            "type": "checkup",
+            "slug": "core-values-connection"
+          },
+          {
+            "type": "exercise",
+            "slug": "values-alignment-exercise"
+          }
+        ]
+      },
+      {
+        "title": "Kommunikációs Stílusok",
+        "description": "Ismerjétek meg az egyéni kommunikációs stílusaitokat, és beszéljétek meg, hogyan befolyásolják az interakcióitokat. Ez a téma segít stratégiákat kidolgozni a világosabb és hatékonyabb kommunikációhoz.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "discover-your-communication-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-prefer-to-communicate-your-needs-and-desires"
+          },
+          {
+            "type": "article",
+            "slug": "mastering-communication-techniques"
+          },
+          {
+            "type": "game",
+            "slug": "communication-clues"
+          },
+          {
+            "type": "checkup",
+            "slug": "mastering-our-communication-styles"
+          },
+          {
+            "type": "exercise",
+            "slug": "active-listening-practice"
+          }
+        ]
+      },
+      {
+        "title": "Kulturális és Háttérbeli Különbségek",
+        "description": "Fedezzétek fel, hogyan formálják a különböző kulturális háttérek és életélmények a nézőpontjaitokat. Ezen elemek megértése elősegíti az empátiát és a kölcsönös megbecsülést.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "cultural-connection-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-our-different-cultural-backgrounds-shape-our-relationship-and-how-can-we-honor-both"
+          },
+          {
+            "type": "article",
+            "slug": "bridging-religious-differences-together"
+          },
+          {
+            "type": "game",
+            "slug": "cultural-quest"
+          },
+          {
+            "type": "checkup",
+            "slug": "navigating-cultural-and-religious-differences"
+          },
+          {
+            "type": "exercise",
+            "slug": "difference-identification-and-acceptance"
+          }
+        ]
+      },
+      {
+        "title": "Személyes és Közös Érdeklődések Kiegyensúlyozása",
+        "description": "Beszéljétek meg az érdeklődési köreiteket, hobbikat, és hogy ezek hogyan egészíthetik ki vagy ütközhetnek egymással. A kiegyensúlyozás javítja a kapcsolatotokat, és biztosítja, hogy mindkét fél elégedett legyen.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "hobby-harmony-style"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-new-hobby-we-can-try-together-that-honors-both-our-interests"
+          },
+          {
+            "type": "article",
+            "slug": "exploring-shared-hobbies-together"
+          },
+          {
+            "type": "game",
+            "slug": "hobby-harmony"
+          },
+          {
+            "type": "exercise",
+            "slug": "hobbies-and-interests-exercise"
+          }
+        ]
+      },
+      {
+        "title": "Konfliktusok és Különbségek Kezelése",
+        "description": "Merüljetek el abban, hogyan kezelitek a konfliktusokat és a különböző véleményeket. Hatékony konfliktuskezelési technikák felfedezésével megtanuljátok, hogyan lehet a nézeteltéréseket a fejlődés lehetőségeivé alakítani.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "your-conflict-style"
+          },
+          {
+            "type": "game",
+            "slug": "conflict-resolution-quest"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-handle-feelings-of-jealousy-or-insecurity"
+          },
+          {
+            "type": "article",
+            "slug": "mastering-conflict-resolution-together"
+          },
+          {
+            "type": "checkup",
+            "slug": "conflict-connoisseurs"
+          },
+          {
+            "type": "exercise",
+            "slug": "conflict-resolution-styles"
+          },
+          {
+            "type": "question",
+            "slug": "how-can-we-turn-our-differences-into-opportunities-for-growth-as-a-couple"
+          }
+        ]
+      },
+      {
+        "title": "A Kapcsolat Fejlődése",
+        "description": "Gondolkodjatok el azon, hogyan változott a kapcsolatotok az idő múlásával, és beszéljétek meg, hogyan képzelitek el a jövőjét. Ez a téma lehetővé teszi, hogy összehangoljátok a hosszú távú céljaitokat és vágyaitokat párként.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "future-vision-type"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-see-our-relationship-evolving-over-time"
+          },
+          {
+            "type": "article",
+            "slug": "creating-a-vision-for-us"
+          },
+          {
+            "type": "game",
+            "slug": "future-visionaries"
+          },
+          {
+            "type": "checkup",
+            "slug": "future-talk-together"
+          },
+          {
+            "type": "exercise",
+            "slug": "future-goals-compatibility"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-see-our-relationship-evolving-over-the-next-decade"
+          }
+        ]
+      }
+    ],
+    "slug": "understanding-mutual-compatibility"
+  },
+  {
+    "job": [
+      "discussing_difficult_topics"
+    ],
+    "title": "Nehezen Kezelhető Beszélgetések Közösen",
+    "description": "Ez az útmutató arra szolgál, hogy segítsen neked és a párodnak a nehéz, érzékeny témák megbeszélésében. Minden nap különböző kommunikációs aspektusokat fedeztek fel, a szilárd alapok megteremtésétől kezdve a mélyen személyes témák kezeléséig. Az út végére meglesznek az eszközeid és a magabiztosságod, hogy értelmes beszélgetéseket folytathass, erősítve érzelmi kapcsolatotokat és kölcsönös megértéseteket.",
+    "subtopics": [
+      {
+        "title": "Nyitott Kommunikáció Megteremtése",
+        "description": "Tanuld meg a nyitott kommunikáció fontosságát és hogyan lehet biztonságos teret teremteni a nehéz témák megbeszélésére. Ez a rész a kommunikáció alapvető stratégiáit mutatja be.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "discover-your-communication-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-prefer-to-communicate-your-needs-and-desires"
+          },
+          {
+            "type": "article",
+            "slug": "mastering-communication-techniques"
+          },
+          {
+            "type": "game",
+            "slug": "communication-clues"
+          },
+          {
+            "type": "checkup",
+            "slug": "mastering-our-communication-styles"
+          },
+          {
+            "type": "question",
+            "slug": "whats-your-favorite-memory-of-us-having-a-great-conversation"
+          },
+          {
+            "type": "exercise",
+            "slug": "active-listening-practice"
+          }
+        ]
+      },
+      {
+        "title": "Különböző Nézőpontok Megértése",
+        "description": "Fedezd fel az empátia jelentőségét a párod nehéz témákra vonatkozó nézőpontjának megértésével. Beszéljétek meg, hogyan lehet konstruktívan közelíteni a nézeteltérésekhez.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "empathy-resonance-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-can-we-ensure-both-of-us-feel-heard-during-a-disagreement"
+          },
+          {
+            "type": "article",
+            "slug": "building-emotional-intimacy-together"
+          },
+          {
+            "type": "game",
+            "slug": "deep-dive-dialogues"
+          },
+          {
+            "type": "checkup",
+            "slug": "empathy-adventure"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-prefer-to-approach-conversations-when-emotions-run-high"
+          },
+          {
+            "type": "exercise",
+            "slug": "difference-identification-and-acceptance"
+          }
+        ]
+      },
+      {
+        "title": "Féltékenység és Bizalom Kezelése",
+        "description": "Merülj el a féltékenység és bizalom érzéseiben a kapcsolatotokban. Ez a rész arra összpontosít, hogyan lehet ezeket a nehéz érzéseket konfliktus nélkül megbeszélni.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "trust-building-style-quiz"
+          },
+          {
+            "type": "question",
+            "slug": "have-you-ever-felt-jealous-in-our-relationship-how-did-you-handle-it"
+          },
+          {
+            "type": "article",
+            "slug": "building-trust-through-intimacy"
+          },
+          {
+            "type": "game",
+            "slug": "trust-talk"
+          },
+          {
+            "type": "checkup",
+            "slug": "trusting-truths"
+          },
+          {
+            "type": "question",
+            "slug": "does-cheating-only-relate-to-physical-things-or-is-there-emotional-cheating-as-well"
+          },
+          {
+            "type": "exercise",
+            "slug": "rebuild-trust-session"
+          }
+        ]
+      },
+      {
+        "title": "Határok Megállapítása a Beszélgetésekben",
+        "description": "Tanuld meg, hogyan lehet határokat felállítani érzékeny témák megbeszélésekor, hogy mindkét fél kényelmesen és tiszteletben érezze magát a beszélgetések során.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "boundary-communication-style"
+          },
+          {
+            "type": "question",
+            "slug": "are-there-any-boundaries-around-work-that-youd-like-to-set"
+          },
+          {
+            "type": "game",
+            "slug": "communication-carousel"
+          },
+          {
+            "type": "question",
+            "slug": "whats-one-boundary-youd-like-to-set-to-keep-our-relationship-healthy"
+          },
+          {
+            "type": "exercise",
+            "slug": "boundaries-practice"
+          }
+        ]
+      },
+      {
+        "title": "Múltbeli Traumák Kezelése",
+        "description": "Foglalkozz a múltbeli traumák körüli beszélgetésekkel és azok hatásaival a kapcsolatotokra. Ez a rész stratégiákat kínál a nehéz témák érzékeny megbeszélésére.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "life-story-style"
+          },
+          {
+            "type": "question",
+            "slug": "have-you-had-any-childhood-experiences-that-you-can-call-traumatic-how-has-it-affected-you"
+          },
+          {
+            "type": "article",
+            "slug": "navigating-emotional-waters-together"
+          },
+          {
+            "type": "checkup",
+            "slug": "exploring-childhood-memories"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-have-any-unresolved-issues-with-your-parents"
+          },
+          {
+            "type": "exercise",
+            "slug": "sensitive-subjects-dialogue-practice"
+          }
+        ]
+      },
+      {
+        "title": "Konfliktuskezelési Stratégiák",
+        "description": "Fejleszd a konfliktusok megoldásához szükséges készségeidet, amelyek a beszélgetések során merülnek fel. Fedezd fel azokat a technikákat, amelyekkel a vitákat növekedési lehetőségekké és kölcsönös megértéssé alakíthatod.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "your-conflict-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-can-we-turn-our-arguments-into-opportunities-for-growth"
+          },
+          {
+            "type": "article",
+            "slug": "effective-conflict-resolution-strategies"
+          },
+          {
+            "type": "game",
+            "slug": "problem-solving-pals"
+          },
+          {
+            "type": "checkup",
+            "slug": "conflict-resolution-styles"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-prefer-to-resolve-disagreements-calm-discussion-or-taking-a-short-break"
+          },
+          {
+            "type": "exercise",
+            "slug": "conflict-resolution-strategies-practice"
+          }
+        ]
+      }
+    ],
+    "slug": "navigating-difficult-conversations-together"
+  },
+  {
+    "job": [
+      "preparing_for_intimacy"
+    ],
+    "title": "Készülés az Intimitásra",
+    "description": "Ez az út segít a pároknak felfedezni és fokozni az intimitásukat támogató és építő módon. Egy sor gondosan kidolgozott tartalom révén a párok különböző aspektusokkal foglalkoznak, a bizalomépítéstől kezdve a vágyak felfedezéséig. Minden nap új meglátásokat és gyakorlatokat fedeztek fel, amelyek mélyebb érzelmi és fizikai kapcsolatot segítenek elő.",
+    "subtopics": [
+      {
+        "title": "Az Intimitás Megértése",
+        "description": "Kezdd az utadat az intimitás fogalmának felfedezésével. Értsd meg az intimitás különböző dimenzióit, beleértve az érzelmi és fizikai aspektusokat, és beszéljétek meg, mit jelent az intimitás számodra és a párod számára.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "emotional-intimacy-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-envision-our-intimate-life-evolving-over-the-next-year"
+          },
+          {
+            "type": "article",
+            "slug": "building-emotional-intimacy-together"
+          },
+          {
+            "type": "game",
+            "slug": "intimacy-insights"
+          },
+          {
+            "type": "checkup",
+            "slug": "emotional-intimacy-check-in"
+          },
+          {
+            "type": "exercise",
+            "slug": "intimate-story-sharing"
+          }
+        ]
+      },
+      {
+        "title": "Bizalom és Sebezhetőség Építése",
+        "description": "Mélyedj el a bizalomépítő gyakorlatokban, és beszéljétek meg a sebezhetőség fontosságát a kapcsolatban. Tanulj meg, hogyan teremthetsz biztonságos teret az intimitás számára a személyes érzések és tapasztalatok megosztásával.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "trust-building-style-quiz"
+          },
+          {
+            "type": "question",
+            "slug": "what-role-does-vulnerability-play-in-our-intimate-life"
+          },
+          {
+            "type": "article",
+            "slug": "vulnerability-trusts-gateway"
+          },
+          {
+            "type": "game",
+            "slug": "trust-builders"
+          },
+          {
+            "type": "checkup",
+            "slug": "trusting-truths"
+          },
+          {
+            "type": "exercise",
+            "slug": "vulnerability-exploration-session"
+          }
+        ]
+      },
+      {
+        "title": "Vágyak Kommunikálása",
+        "description": "Fókuszálj a vágyak és preferenciák kommunikációjának művészetére. Vegyél részt olyan tevékenységekben, amelyek segítenek megfogalmazni intimitási törekvéseiteket, és gyakoroljátok a fantáziák megosztását támogató módon.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "sexual-communication-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-prefer-to-communicate-your-needs-and-desires"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-feel-about-sharing-your-deepest-desires-with-each-other"
+          },
+          {
+            "type": "article",
+            "slug": "enhancing-sexual-communication"
+          },
+          {
+            "type": "game",
+            "slug": "fantasy-fulfillment"
+          },
+          {
+            "type": "checkup",
+            "slug": "emotional-needs-compatibility"
+          },
+          {
+            "type": "exercise",
+            "slug": "fantasy-sharing-session"
+          }
+        ]
+      },
+      {
+        "title": "Intim Teremtő Rituálék",
+        "description": "Dolgozzatok együtt személyre szabott rituálék kidolgozásán, amelyek fokozzák az intimitást. Ez magában foglalhat rutinokat, különleges randikat vagy más gyakorlatokat, amelyek rendszeresen közelebb hoznak benneteket egymáshoz.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "ritual-building-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-can-we-create-more-intimate-moments-in-our-daily-routine"
+          },
+          {
+            "type": "question",
+            "slug": "whats-one-intimate-goal-youd-like-us-to-achieve-together"
+          },
+          {
+            "type": "article",
+            "slug": "fun-rituals-to-strengthen-bonds"
+          },
+          {
+            "type": "game",
+            "slug": "date-night-planner"
+          },
+          {
+            "type": "checkup",
+            "slug": "everyday-chats-that-count"
+          },
+          {
+            "type": "exercise",
+            "slug": "shared-calendar-setup"
+          }
+        ]
+      },
+      {
+        "title": "Fizikai Kapcsolatok Felfedezése",
+        "description": "Miután megerősítettétek az érzelmi aspektusokat, fókuszáljatok a fizikai intimitásra. Fedezzétek fel a fizikai kapcsolatok különböző formáit, a tapintástól a játékos felfedezésig, hogy jobban megértsétek egymás igényeit.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "physical-touch-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-feel-about-introducing-new-elements-into-our-intimate-life"
+          },
+          {
+            "type": "question",
+            "slug": "whats-your-favorite-type-of-foreplay"
+          },
+          {
+            "type": "article",
+            "slug": "enhancing-physical-intimacy-mindfully"
+          },
+          {
+            "type": "game",
+            "slug": "intimacy-adventure"
+          },
+          {
+            "type": "checkup",
+            "slug": "balancing-fun-and-intimacy-in-sex"
+          },
+          {
+            "type": "exercise",
+            "slug": "erotic-massage-exchange"
+          }
+        ]
+      },
+      {
+        "title": "Határok és Vágyak Navigálása",
+        "description": "Zárd le az utadat a határok és vágyak nyílt kezelésével. Beszéljétek meg a konkrét kinkeket vagy fantáziákat tiszteletteljes környezetben, biztosítva, hogy a kapcsolatotok beleegyezésen alapuljon és kielégítő legyen.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "intimate-boundary-style"
+          },
+          {
+            "type": "question",
+            "slug": "is-there-a-particular-kink-or-fetish-you-want-to-explore-but-havent-shared-yet"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-prefer-spontaneity-or-planning-when-it-comes-to-intimacy"
+          },
+          {
+            "type": "article",
+            "slug": "navigating-boundaries-for-intimacy"
+          },
+          {
+            "type": "exercise",
+            "slug": "boundaries-practice"
+          }
+        ]
+      }
+    ],
+    "slug": "preparing-for-intimacy"
+  },
+  {
+    "job": [
+      "building_trust"
+    ],
+    "title": "Bizalom Építése Közösen",
+    "description": "Ez az út segít neked és a partnerednek felfedezni a bizalom alapvető összetevőit a kapcsolatotokban. Az elkövetkező napok során értékes beszélgetésekben, tevékenységekben és reflexiókban fogtok részt venni, amelyek célja a bizalom és az érzelmi intimitás megerősítése.",
+    "subtopics": [
+      {
+        "title": "A Bizalom Meghatározása",
+        "description": "Kezdjétek azzal, hogy felfedezitek, mit jelent a bizalom mindkettőtök számára. Beszéljétek meg a bizalom definícióit és azt, hogyan formálják a kapcsolatotokat.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "trust-building-style-quiz"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-define-trust-in-a-relationship"
+          },
+          {
+            "type": "article",
+            "slug": "trust-through-open-communication"
+          },
+          {
+            "type": "game",
+            "slug": "trust-fund-trivia"
+          },
+          {
+            "type": "checkup",
+            "slug": "trust-builders"
+          },
+          {
+            "type": "question",
+            "slug": "can-you-share-a-time-when-honesty-led-to-a-positive-outcome-in-our-relationship"
+          },
+          {
+            "type": "exercise",
+            "slug": "trust-fall"
+          }
+        ]
+      },
+      {
+        "title": "Nyílt Kommunikáció",
+        "description": "Tanuljátok meg a transzparens és nyílt párbeszéd fontosságát. Vegyetek részt olyan gyakorlatokban és kérdésekben, amelyek elősegítik az őszinte kommunikációt.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "discover-your-communication-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-prefer-to-communicate-your-needs-and-desires"
+          },
+          {
+            "type": "article",
+            "slug": "enhancing-communication-for-stronger-bonds"
+          },
+          {
+            "type": "game",
+            "slug": "communication-clues"
+          },
+          {
+            "type": "checkup",
+            "slug": "mastering-our-communication-styles"
+          },
+          {
+            "type": "question",
+            "slug": "how-important-is-it-for-you-to-always-be-transparent-with-me-even-about-small-things"
+          },
+          {
+            "type": "exercise",
+            "slug": "active-listening-practice"
+          }
+        ]
+      },
+      {
+        "title": "Féltékenység és Bizonytalanság Kezelése",
+        "description": "Azonosítsátok és kezeljétek a féltékenység és a bizonytalanság érzéseit. Osszátok meg személyes tapasztalataitokat és megküzdési stratégiáitokat egy támogató környezetben.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "emotional-regulation-styles"
+          },
+          {
+            "type": "question",
+            "slug": "have-you-ever-felt-jealous-in-our-relationship-how-did-you-handle-it"
+          },
+          {
+            "type": "article",
+            "slug": "navigating-emotional-waters-together"
+          },
+          {
+            "type": "game",
+            "slug": "emotion-explorer"
+          },
+          {
+            "type": "checkup",
+            "slug": "emotional-needs-compatibility"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-handle-feelings-of-jealousy-or-insecurity"
+          },
+          {
+            "type": "exercise",
+            "slug": "jealously-navigation-technique"
+          }
+        ]
+      },
+      {
+        "title": "Határok Meghatározása",
+        "description": "Beszéljétek meg a személyes határokat és értsétek meg egymás komfortszintjeit. A kölcsönös tisztelet és megértés kulcsfontosságú a bizalom kialakításához.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "boundary-setting-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-comfortable-are-you-discussing-your-boundaries-and-desires"
+          },
+          {
+            "type": "article",
+            "slug": "navigating-boundaries-for-intimacy"
+          },
+          {
+            "type": "checkup",
+            "slug": "personal-space-balancing-togetherness-and-alone-time"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-boundary-you-need-to-feel-more-secure-and-trusting-in-our-relationship"
+          },
+          {
+            "type": "exercise",
+            "slug": "boundaries-practice"
+          }
+        ]
+      },
+      {
+        "title": "A Bizalom Helyreállítása",
+        "description": "Fedezzétek fel, hogyan lehet újjáépíteni a bizalmat, miután azt próbára tették. Beszéljétek meg a szükséges technikákat és elköteleződéseket, hogy helyreállítsátok a hitet egymásban.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "trust-repair-style-type"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-prefer-to-rebuild-trust-if-its-ever-broken"
+          },
+          {
+            "type": "article",
+            "slug": "rebuilding-trust-after-betrayal"
+          },
+          {
+            "type": "game",
+            "slug": "trust-talk-challenge"
+          },
+          {
+            "type": "checkup",
+            "slug": "trust-in-communication"
+          },
+          {
+            "type": "question",
+            "slug": "have-you-done-something-in-the-past-that-you-think-can-significantly-change-my-image-of-you-and-what-are-the-things-that-can-hypothetically-change-your-image-of-me-maybe-i-did-something-amoral-or-cheated"
+          },
+          {
+            "type": "exercise",
+            "slug": "rebuild-trust-session"
+          }
+        ]
+      },
+      {
+        "title": "Bizalomépítő Tevékenységek",
+        "description": "Vegyetek részt szórakoztató és interaktív tevékenységekben, amelyek fokozzák a bizalmat. Vegyetek részt olyan gyakorlatokban, amelyek közelebb hoznak titeket és megerősítik a köteléketeket.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "transparency-style-assessment"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-fun-activity-we-can-do-together-to-strengthen-our-trust"
+          },
+          {
+            "type": "article",
+            "slug": "fun-rituals-to-strengthen-bonds"
+          },
+          {
+            "type": "game",
+            "slug": "trust-trek"
+          },
+          {
+            "type": "checkup",
+            "slug": "trust-in-conflict-resolution"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-trust-building-challenge-youd-like-us-to-try"
+          },
+          {
+            "type": "exercise",
+            "slug": "adventure-challenge"
+          }
+        ]
+      }
+    ],
+    "slug": "building-trust-together"
+  },
+  {
+    "job": [
+      "improving_relationship_satisfaction"
+    ],
+    "title": "A Kapcsolati Elégedettség Fokozása",
+    "description": "Ez az út segít a pároknak olyan gyakorlati ötleteket és tevékenységeket nyújtani, amelyek fokozatosan növelik a kapcsolati elégedettséget. Az elkövetkező napok során különböző témákat fogtok felfedezni, a szükségletek megértésétől kezdve az érzelmi intimitás elmélyítéséig, végül gyakorlati stratégiákkal a folyamatos fejlődés érdekében a kapcsolatotokban.",
+    "subtopics": [
+      {
+        "title": "A Személyes Szükségletek Megértése",
+        "description": "Kezdjétek azzal, hogy megbeszélitek az egyéni szükségleteiteket és vágyaitokat a kapcsolatban. Ez az alap segít mindkét partnernek megérteni, hogy mire van szüksége ahhoz, hogy elégedett legyen.",
+        "content": [
+          {
+            "type": "checkup",
+            "slug": "emotional-needs-compatibility"
+          },
+          {
+            "type": "question",
+            "slug": "how-can-we-ensure-both-of-our-needs-are-being-met"
+          },
+          {
+            "type": "article",
+            "slug": "building-trust-through-intimacy"
+          },
+          {
+            "type": "game",
+            "slug": "future-visionaries"
+          },
+          {
+            "type": "exercise",
+            "slug": "values-alignment-exercise"
+          },
+          {
+            "type": "question",
+            "slug": "how-can-we-better-support-each-other-during-stressful-situations"
+          }
+        ]
+      },
+      {
+        "title": "Nyitott Kommunikációs Gyakorlatok",
+        "description": "Tanuljatok meg hatékony kommunikációs technikákat, amelyek elősegítik a nyitottságot és az átláthatóságot a partnerek között. Vegyetek részt olyan gyakorlatokban, amelyek elősegítik az aktív hallgatást és az érzések kifejezését.",
+        "content": [
+          {
+            "type": "checkup",
+            "slug": "mastering-our-communication-styles"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-prefer-to-communicate-your-needs-and-desires"
+          },
+          {
+            "type": "article",
+            "slug": "enhancing-communication-for-stronger-bonds"
+          },
+          {
+            "type": "game",
+            "slug": "communication-clues"
+          },
+          {
+            "type": "exercise",
+            "slug": "active-listening-practice"
+          },
+          {
+            "type": "question",
+            "slug": "whats-your-favorite-memory-of-us-having-a-great-conversation"
+          }
+        ]
+      },
+      {
+        "title": "A Különbségek és Közös Érdeklődések Ünneplése",
+        "description": "Fedezzétek fel, mi teszi mindkettőtöket egyedivé, miközben ünneplitek a közös érdeklődéseket. Ez áthidalja a kapcsolatbeli szakadékokat és tiszteletben tartja az egyéni preferenciákat.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "growth-through-differences-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-can-we-celebrate-our-unique-strengths-and-compensate-for-our-differences"
+          },
+          {
+            "type": "article",
+            "slug": "embrace-and-celebrate-differences"
+          },
+          {
+            "type": "game",
+            "slug": "cultural-quest"
+          },
+          {
+            "type": "exercise",
+            "slug": "difference-identification-and-acceptance"
+          },
+          {
+            "type": "question",
+            "slug": "whats-one-thing-you-appreciate-about-how-i-handle-our-differences"
+          }
+        ]
+      },
+      {
+        "title": "Az Együttlét és Függetlenség Kiegyensúlyozása",
+        "description": "Fókuszáljatok arra, hogy megtaláljátok a harmonikus egyensúlyt a közös időtöltés és a személyes tér, valamint az egyéni érdeklődések tiszteletben tartása között.",
+        "content": [
+          {
+            "type": "checkup",
+            "slug": "balancing-our-unique-interests"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-feel-about-the-balance-between-our-personal-time-and-together-time"
+          },
+          {
+            "type": "article",
+            "slug": "fun-rituals-to-strengthen-bonds"
+          },
+          {
+            "type": "game",
+            "slug": "routine-rendezvous"
+          },
+          {
+            "type": "exercise",
+            "slug": "shared-calendar-setup"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-prefer-solo-workouts-or-exercising-together"
+          }
+        ]
+      },
+      {
+        "title": "Intimitás Teremtése Sebezhetőségen Keresztül",
+        "description": "Merüljetek el azokban a gyakorlatokban, amelyek érzelmi intimitást építenek a sebezhetőségen keresztül. Ez magában foglalhatja a múltbeli tapasztalatok és félelmek megosztását a kapcsolat elmélyítése érdekében.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "vulnerability-style-assessment"
+          },
+          {
+            "type": "question",
+            "slug": "is-there-something-from-your-past-that-still-affects-our-relationship"
+          },
+          {
+            "type": "article",
+            "slug": "vulnerability-trusts-gateway"
+          },
+          {
+            "type": "game",
+            "slug": "secret-share"
+          },
+          {
+            "type": "exercise",
+            "slug": "truth-telling-exercises"
+          },
+          {
+            "type": "question",
+            "slug": "whats-something-youd-like-to-feel-more-of-in-our-relationship"
+          }
+        ]
+      },
+      {
+        "title": "Kapcsolati Célok Kitűzése",
+        "description": "Zárjátok le gyakorlati stratégiákkal a közös célok kitűzését a kapcsolatotokban, beleértve a növekedés, intimitás és hosszú távú elégedettség iránti törekvéseket.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "goal-alignment-style"
+          },
+          {
+            "type": "question",
+            "slug": "what-are-your-aspirations-for-our-relationship-five-ten-or-twenty-years-down-the-line"
+          },
+          {
+            "type": "article",
+            "slug": "aligning-life-ambitions-together"
+          },
+          {
+            "type": "game",
+            "slug": "future-talks-fiesta"
+          },
+          {
+            "type": "exercise",
+            "slug": "smart-goals-planning"
+          },
+          {
+            "type": "question",
+            "slug": "what-are-your-thoughts-on-continuing-personal-growth-and-self-improvement-in-our-relationship"
+          }
+        ]
+      }
+    ],
+    "slug": "enhancing-relationship-satisfaction"
+  },
+  {
+    "job": [
+      "improving_honesty_and_openness"
+    ],
+    "title": "A Őszinteség és Nyitottság Fejlesztése",
+    "description": "Ez az út segít neked és a párodnak, hogy mélyebb érzést alakítsatok ki az őszinteségről és nyitottságról a kapcsolatotokban. Az elkövetkező napok során olyan tevékenységekben, beszélgetésekben és gyakorlatokban vesztek részt, amelyek építik a bizalmat és a transzparenciát, lehetővé téve, hogy érzékeny témákat vitassatok meg és megerősítsétek a köteléketeket.",
+    "subtopics": [
+      {
+        "title": "Az Őszinteség Megértése",
+        "description": "Fedezd fel az őszinteség fogalmát a kapcsolatokban, beleértve annak fontosságát és az őszinteség különböző dimenzióit a pároddal. Vegyél részt olyan kérdésekben, amelyek mélyebben feltárják a jelenlegi nézőpontjaidat az őszinteségről.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "honesty-and-openness-style"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-believe-in-complete-transparency-in-a-relationship-why-or-why-not"
+          },
+          {
+            "type": "article",
+            "slug": "cultivating-honest-conversations"
+          },
+          {
+            "type": "game",
+            "slug": "honesty-hunt"
+          },
+          {
+            "type": "checkup",
+            "slug": "the-honesty-hangout"
+          },
+          {
+            "type": "exercise",
+            "slug": "honesty-commitment-ritual"
+          }
+        ]
+      },
+      {
+        "title": "A Őszinteséggel Kapcsolatos Félelmek Kezelése",
+        "description": "Azonosítsd a nyitottsággal kapcsolatos gyakori félelmeket vagy aggodalmakat a kapcsolatodban. Együtt gondolkodjatok el azokon a helyzeteken, amikor úgy érezted, hogy nem tudtál őszinte lenni, és beszéljétek meg, hogyan tudtok biztonságosabb környezetet teremteni a nyílt kommunikációhoz.",
+        "content": [
+          {
+            "type": "checkup",
+            "slug": "openness-odyssey"
+          },
+          {
+            "type": "question",
+            "slug": "have-you-ever-felt-you-couldnt-be-completely-honest-with-me-why"
+          },
+          {
+            "type": "article",
+            "slug": "vulnerability-trusts-gateway"
+          },
+          {
+            "type": "exercise",
+            "slug": "truth-telling-exercises"
+          },
+          {
+            "type": "game",
+            "slug": "trust-talk-challenge"
+          },
+          {
+            "type": "question",
+            "slug": "have-you-ever-hidden-something-to-protect-my-feelings-how-did-it-turn-out"
+          }
+        ]
+      },
+      {
+        "title": "A Transzparencia Fejlesztése",
+        "description": "Ismerd meg a transzparencia előnyeit egy kapcsolatban, és hogy ez hogyan fokozhatja az intimitást. Vegyél részt olyan tevékenységekben és beszélgetésekben, amelyek bátorítják a részletek és gondolatok megosztását, amelyeket általában titokban tartanál.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "transparency-style-assessment"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-think-its-ever-ok-to-tell-white-lies-in-a-relationship-why-or-why-not"
+          },
+          {
+            "type": "article",
+            "slug": "transparency-builds-strong-bonds"
+          },
+          {
+            "type": "exercise",
+            "slug": "transparency-talks"
+          },
+          {
+            "type": "game",
+            "slug": "transparency-trivia"
+          },
+          {
+            "type": "checkup",
+            "slug": "transparency-tools"
+          }
+        ]
+      },
+      {
+        "title": "Bizalom Építése Nyitottsággal",
+        "description": "Fedezd fel a bizalom kialakításának stratégiáit az érzéseid, bizonytalanságaid és vágyait nyíltan megosztva. Vegyél részt olyan gyakorlatokban, amelyek elősegítik a megosztást és a sebezhetőséget.",
+        "content": [
+          {
+            "type": "exercise",
+            "slug": "openness-commitment-ritual"
+          },
+          {
+            "type": "question",
+            "slug": "how-can-we-support-each-other-to-be-more-open-and-honest-daily"
+          },
+          {
+            "type": "article",
+            "slug": "building-emotional-intimacy-together"
+          },
+          {
+            "type": "game",
+            "slug": "trust-builders"
+          },
+          {
+            "type": "checkup",
+            "slug": "trusting-truths"
+          },
+          {
+            "type": "question",
+            "slug": "can-you-share-a-time-when-honesty-led-to-a-positive-outcome-in-our-relationship"
+          }
+        ]
+      },
+      {
+        "title": "Nehezen Kezelhető Beszélgetések Navigálása",
+        "description": "Fedezd fel a technikákat a nehéz témák őszinte és nyitott kezelésére. Gyakorold az effektív kommunikációs stratégiák használatát, hogy kifejezd a gondolataidat és érzéseidet, célul tűzve ki a konfliktusok konstruktív megoldását.",
+        "content": [
+          {
+            "type": "checkup",
+            "slug": "conflict-to-connection"
+          },
+          {
+            "type": "test",
+            "slug": "your-conflict-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-handle-situations-where-being-honest-might-hurt-someone"
+          },
+          {
+            "type": "article",
+            "slug": "navigating-difficult-conversations"
+          },
+          {
+            "type": "game",
+            "slug": "dialogue-duel"
+          },
+          {
+            "type": "exercise",
+            "slug": "conflict-resolution-strategies-practice"
+          }
+        ]
+      },
+      {
+        "title": "Őszinte Kapcsolati Kultúra Teremtése",
+        "description": "Fejlesszétek ki a közös megállapodást az őszinteségi gyakorlatokról a kapcsolatotokban. Beszéljétek meg a határokat és a szándékokat a nyitottság kultúrájának fenntartására, biztosítva, hogy mindkét fél biztonságban érezze magát az önkifejezés során.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "trust-building-style-quiz"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-boundary-you-need-to-feel-safe-being-honest-with-me"
+          },
+          {
+            "type": "article",
+            "slug": "building-trust-through-transparency"
+          },
+          {
+            "type": "game",
+            "slug": "trust-sparks"
+          },
+          {
+            "type": "exercise",
+            "slug": "boundaries-practice"
+          },
+          {
+            "type": "checkup",
+            "slug": "trust-builders"
+          }
+        ]
+      }
+    ],
+    "slug": "improving-honesty-and-openness"
+  },
+  {
+    "job": [
+      "having_fun_and_entertainment"
+    ],
+    "title": "Szórakozás és Élvezet Közösen",
+    "description": "Ez az útmutató olyan tevékenységeken és beszélgetéseken keresztül vezet végig, amelyek célja, hogy fokozzák az örömöt és a játékosságot a kapcsolatotokban. Különböző szórakozási és élvezeti aspektusokat felfedezve mélyebb kapcsolatot alakítotok ki, miközben megtanuljátok, hogyan építsétek be a nevetést és a kreativitást a mindennapi életetekbe. Minden nap új élményekkel és reflexiókkal foglalkoztok, amelyek ösztönzik a közös élményeket és felfedezéseket.",
+    "subtopics": [
+      {
+        "title": "Kezdés a Nevetéssel",
+        "description": "Fedezzétek fel a humor szerepét a kapcsolatotokban. Foglalkozzatok szórakoztató kérdésekkel, mint például a kedvenc ízléstelen vicceitek és flörtölős üzeneteitek. Ez az alapvető téma segít felfedezni, hogyan építhetitek be a nevetést a mindennapi életetekbe.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "humor-harmony-style"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-have-a-favorite-inappropriate-joke"
+          },
+          {
+            "type": "article",
+            "slug": "laughing-together-keeps-love-strong"
+          },
+          {
+            "type": "game",
+            "slug": "love-laughter"
+          },
+          {
+            "type": "checkup",
+            "slug": "fun-flirtation"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-have-any-favorite-flirty-texts-or-messages-that-make-you-smile"
+          }
+        ]
+      },
+      {
+        "title": "Siker és Mérföldkövek Ünneplése",
+        "description": "Tanuljátok meg, hogyan ünnepeljétek meg egymás sikereit, legyenek azok nagyok vagy kicsik. Beszéljétek meg a kedvenc módjaitokat, hogy ünnepeljétek a különleges alkalmakat, mint például évfordulók és ünnepek, elősegítve a megbecsülés és az öröm légkörét.",
+        "content": [
+          {
+            "type": "checkup",
+            "slug": "marriage-milestones"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-like-to-celebrate-anniversaries"
+          },
+          {
+            "type": "game",
+            "slug": "date-night-planner"
+          },
+          {
+            "type": "test",
+            "slug": "milestone-celebration-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-like-to-celebrate-achievements-big-or-small"
+          }
+        ]
+      },
+      {
+        "title": "Közös Érdeklődések Felfedezése",
+        "description": "Merüljetek el a közösen élvezett tevékenységekről és hobbikról szóló beszélgetésekben. Azonosítsátok a közös érdeklődéseket, és javasoljatok szórakoztató tevékenységeket, amelyeket együtt próbálhattok ki, ez segít megerősíteni a közös köteléketeket és tartós emlékeket létrehozni.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "hobby-harmony-style"
+          },
+          {
+            "type": "question",
+            "slug": "what-hobbies-or-activities-would-you-like-us-to-pursue-together-in-the-future"
+          },
+          {
+            "type": "article",
+            "slug": "exploring-shared-hobbies-together"
+          },
+          {
+            "type": "game",
+            "slug": "hobby-harmony"
+          },
+          {
+            "type": "checkup",
+            "slug": "uncovering-daily-habits-and-quirks"
+          },
+          {
+            "type": "exercise",
+            "slug": "hobbies-and-interests-exercise"
+          }
+        ]
+      },
+      {
+        "title": "Spontán Kalandok",
+        "description": "Lépjetek ki a komfortzónátokból, és tervezzetek spontán kirándulásokat vagy szórakoztató meglepetéseket egymásnak. Használjatok ötleteket új élmények kiválasztásához, mint például szabadtéri tevékenységek vagy tematikus randevúk, fokozva a kapcsolatotok izgalmát.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "spontaneity-style"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-new-sport-or-physical-activity-youd-like-to-try-as-a-team"
+          },
+          {
+            "type": "article",
+            "slug": "adventure-sparks-deeper-bonds"
+          },
+          {
+            "type": "game",
+            "slug": "adventure-awaits"
+          },
+          {
+            "type": "checkup",
+            "slug": "adventure-together"
+          },
+          {
+            "type": "exercise",
+            "slug": "adventure-challenge"
+          }
+        ]
+      },
+      {
+        "title": "Kreatív Játékosság",
+        "description": "Használjátok ki a kreativitásotokat közösen, felfedezve művészi törekvéseket vagy játékos játékokat. Vegyetek részt olyan gyakorlatokban, amelyek kihívást jelentenek számotokra, hogy gondolkodjatok a dobozon kívül, mint például DIY projektek vagy tematikus főzőesték.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "creative-sparks-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-express-your-creativity"
+          },
+          {
+            "type": "article",
+            "slug": "crafting-memorable-date-nights"
+          },
+          {
+            "type": "game",
+            "slug": "decor-dilemma"
+          },
+          {
+            "type": "exercise",
+            "slug": "creative-drawing-contest"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-creative-project-youd-love-to-tackle-as-a-duo"
+          }
+        ]
+      },
+      {
+        "title": "Hagyományok és Rituálék Építése",
+        "description": "Zárjátok le az utatokat azzal, hogy átgondoljátok, hogyan alakíthattok ki rendszeres hagyományokat, amelyek életben tartják a szórakozást a kapcsolatotokban. Beszéljétek meg a szórakoztató rituálék értékét, és hogy ezek hogyan erősíthetik a kapcsolatotokat és teremthetnek szeretett emlékeket együtt.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "ritual-building-style"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-tradition-youd-like-to-start-together"
+          },
+          {
+            "type": "article",
+            "slug": "fun-rituals-to-strengthen-bonds"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-tradition-youd-like-us-to-start-as-a-couple"
+          }
+        ]
+      }
+    ],
+    "slug": "creating-fun-and-entertainment-together"
+  },
+  {
+    "job": [
+      "having_meaningful_conversations"
+    ],
+    "title": "Jelentős Beszélgetések Fejlesztése",
+    "description": "Ez az út segít abban, hogy jobban részt vegyél a jelentős beszélgetésekben a pároddal. Az elkövetkező napok során különböző kommunikációs aspektusokat fedeztek fel, az egymás értékeinek megértésétől kezdve a mélyebb érzelmi kérdések megbeszéléséig. Minden nap épít az előzőre, ösztönözve a növekedést és a kapcsolatot.",
+    "subtopics": [
+      {
+        "title": "A Kommunikáció Alapjai",
+        "description": "Kezdjétek azzal, hogy felfedezitek a hatékony kommunikáció alapjait a pároddal. Tanuljatok az aktív hallgatásról, a gondolatok világos kifejezéséről és a nonverbális jelek fontosságáról.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "discover-your-communication-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-prefer-to-communicate-your-needs-and-desires"
+          },
+          {
+            "type": "article",
+            "slug": "mastering-communication-techniques"
+          },
+          {
+            "type": "game",
+            "slug": "communication-clues"
+          },
+          {
+            "type": "checkup",
+            "slug": "mastering-our-communication-styles"
+          },
+          {
+            "type": "exercise",
+            "slug": "active-listening-practice"
+          },
+          {
+            "type": "question",
+            "slug": "whats-your-favorite-memory-of-us-having-a-great-conversation"
+          }
+        ]
+      },
+      {
+        "title": "Egymás Értékeinek Megértése",
+        "description": "Merülj el azokban a core értékekben, amelyek formálják a hiedelmeidet és cselekedeteidet. Beszéljétek meg, hogyan befolyásolják ezek az értékek a döntéseiteket, és hogyan hatnak a kapcsolatotokra.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "values-alignment-style"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-think-we-share-the-same-values"
+          },
+          {
+            "type": "article",
+            "slug": "aligning-life-ambitions-together"
+          },
+          {
+            "type": "game",
+            "slug": "values-vibes"
+          },
+          {
+            "type": "checkup",
+            "slug": "core-values-connection"
+          },
+          {
+            "type": "exercise",
+            "slug": "values-alignment-exercise"
+          },
+          {
+            "type": "question",
+            "slug": "what-are-your-top-three-values-and-how-do-they-influence-your-decisions"
+          }
+        ]
+      },
+      {
+        "title": "Nehezen Kezelhető Témák Navigálása",
+        "description": "Tanulj meg technikákat a nehéz beszélgetések érzékeny és tiszteletteljes megközelítésére. Gyakoroljátok a kihívást jelentő témák, például a pénzügyek, a családi dinamikák vagy a jövőbeli vágyak megbeszélését.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "problem-solving-style"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-think-that-money-play-a-big-role-in-feeling-fulfilled"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-balance-personal-time-with-time-spent-together"
+          },
+          {
+            "type": "article",
+            "slug": "navigating-difficult-conversations"
+          },
+          {
+            "type": "game",
+            "slug": "conflict-resolution-quest"
+          },
+          {
+            "type": "checkup",
+            "slug": "tackling-tough-talks"
+          },
+          {
+            "type": "exercise",
+            "slug": "tough-talks-toolkit"
+          }
+        ]
+      },
+      {
+        "title": "Személyes Tapasztalatok Megosztása",
+        "description": "Vegyetek részt történetmesélésben, hogy megosszátok a múltból származó jelentős emlékeket. Fedezzétek fel, hogyan befolyásolták tapasztalataitok a jelenlegi nézőpontjaitokat és érzelmi állapotaitokat.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "life-story-style"
+          },
+          {
+            "type": "question",
+            "slug": "can-you-share-a-memory-from-your-childhood-that-you-think-has-shaped-who-you-are-today"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-memorable-lesson-youve-learned-from-past-relationships"
+          },
+          {
+            "type": "article",
+            "slug": "love-maps-knowing-each-other-deeply"
+          },
+          {
+            "type": "game",
+            "slug": "memory-lane"
+          },
+          {
+            "type": "checkup",
+            "slug": "exploring-childhood-memories"
+          },
+          {
+            "type": "exercise",
+            "slug": "intimate-story-sharing"
+          }
+        ]
+      },
+      {
+        "title": "Érzelmi Kapcsolat Mélyítése",
+        "description": "Fedezzétek fel azokat a beszélgetéseket, amelyek fokozzák az érzelmi intimitást. Beszéljétek meg az olyan témákat, mint a félelmek, álmok és vágyak, hogy mélyebb köteléket alakítsatok ki a pároddal.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "emotional-intimacy-style"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-believe-in-soulmates-why-or-why-not"
+          },
+          {
+            "type": "question",
+            "slug": "what-are-your-dreams-and-aspirations-outside-of-work"
+          },
+          {
+            "type": "article",
+            "slug": "building-emotional-intimacy-together"
+          },
+          {
+            "type": "game",
+            "slug": "emotional-expeditions"
+          },
+          {
+            "type": "checkup",
+            "slug": "emotional-intimacy-check-in"
+          },
+          {
+            "type": "exercise",
+            "slug": "emotional-closeness-exercises"
+          }
+        ]
+      },
+      {
+        "title": "Nyitottság Kultúrájának Kiépítése",
+        "description": "Hozzatok létre egy olyan környezetet, ahol mindkét partner biztonságban érzi magát a gondolataik és érzéseik kifejezésében. Tanuljatok meg stratégiákat a nyílt kommunikáció fenntartására és a sebezhetőség ösztönzésére.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "openness-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-feel-about-surprise-conversations-versus-planned-discussions"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-express-your-creativity"
+          },
+          {
+            "type": "article",
+            "slug": "cultivating-honest-conversations"
+          },
+          {
+            "type": "game",
+            "slug": "open-hearts-challenge"
+          },
+          {
+            "type": "checkup",
+            "slug": "vulnerability-and-openness"
+          },
+          {
+            "type": "exercise",
+            "slug": "transparent-communication-practices"
+          }
+        ]
+      }
+    ],
+    "slug": "cultivating-meaningful-conversations"
+  },
+  {
+    "job": [
+      "solving_relationship_problems"
+    ],
+    "title": "Kapcsolati Problémák Navigálása és Megoldása",
+    "description": "Ez az út segít neked és a partnerednek hatékonyan navigálni és megoldani a konfliktusokat. Minden nap olyan gyakorlatokkal, kérdésekkel és tevékenységekkel foglalkozol, amelyek fejlesztik a kommunikációs készségeidet és a problémamegoldó képességedet. Az út végére jobban felkészültnek fogod érezni magad a közös kihívások kezelésére és a csapatként való megoldások keresésére.",
+    "subtopics": [
+      {
+        "title": "A Konfliktus Stílusok Megértése",
+        "description": "Fedezd fel az egyéni konfliktus stílusaidat és hogy ezek hogyan hatnak a kapcsolatodra. Használj kérdéseket és reflexiót, hogy megértsd, hogyan reagálsz általában a nézeteltérések során.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "your-conflict-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-handle-disagreements-or-conflicts"
+          },
+          {
+            "type": "article",
+            "slug": "effective-conflict-resolution-strategies"
+          },
+          {
+            "type": "game",
+            "slug": "conflict-resolution-quest"
+          },
+          {
+            "type": "checkup",
+            "slug": "conflict-resolution-styles"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-handle-disagreements-and-whats-your-favorite-way-for-us-to-make-up-after-a-fight"
+          },
+          {
+            "type": "exercise",
+            "slug": "conflict-resolution-styles"
+          }
+        ]
+      },
+      {
+        "title": "A Kommunikáció Alapjai",
+        "description": "Fókuszálj a kommunikációs készségeid fejlesztésére konfliktusok során. Fedezd fel a hatékony hallgatási technikákat és a világos kifejezés fontosságát gyakorlatok és játékok révén.",
+        "content": [
+          {
+            "type": "checkup",
+            "slug": "mastering-our-communication-styles"
+          },
+          {
+            "type": "test",
+            "slug": "discover-your-communication-style"
+          },
+          {
+            "type": "article",
+            "slug": "mastering-communication-techniques"
+          },
+          {
+            "type": "game",
+            "slug": "communication-clues"
+          },
+          {
+            "type": "exercise",
+            "slug": "active-listening-practice"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-prefer-to-communicate-your-needs-and-desires"
+          },
+          {
+            "type": "question",
+            "slug": "whats-your-favorite-memory-of-us-having-a-great-conversation"
+          }
+        ]
+      },
+      {
+        "title": "Konstruktív Konfliktus Megoldás",
+        "description": "Tanuld meg, hogyan lehet a nézeteltéréseket konstruktív beszélgetésekké alakítani. Vegyél részt gyakorlatokban és cikkekben, amelyek stratégiákat nyújtanak a konfliktusok megoldására anélkül, hogy felnagyítanák őket.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "solution-focused-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-can-we-make-our-disagreements-more-constructive"
+          },
+          {
+            "type": "article",
+            "slug": "mastering-conflict-resolution-together"
+          },
+          {
+            "type": "game",
+            "slug": "problem-solving-escapades"
+          },
+          {
+            "type": "checkup",
+            "slug": "conflict-resolution-wizards"
+          },
+          {
+            "type": "question",
+            "slug": "can-you-recall-a-time-when-you-felt-misunderstood-how-did-you-handle-it"
+          },
+          {
+            "type": "exercise",
+            "slug": "conflict-resolution-strategies-practice"
+          }
+        ]
+      },
+      {
+        "title": "Pénzügyi Kérdések és Konfliktus",
+        "description": "Fedezd fel, hogyan vezethetnek a pénzügyi beszélgetések konfliktushoz, és hogyan navigálhatod ezeket a beszélgetéseket. Dolgozz a költségvetési stílusokon és a pénzügyi kommunikáción tesztek és beszélgetések révén.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "financial-communication-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-feel-about-our-different-spending-habits-and-how-can-we-find-a-middle-ground"
+          },
+          {
+            "type": "article",
+            "slug": "mastering-money-talks-together"
+          },
+          {
+            "type": "game",
+            "slug": "dream-budget-builders"
+          },
+          {
+            "type": "checkup",
+            "slug": "trust-in-financial-transparency"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-have-any-issues-with-budgeting-like-are-you-in-debt-to-somebody-do-you-make-any-useless-spending"
+          },
+          {
+            "type": "exercise",
+            "slug": "budget-planning-session"
+          }
+        ]
+      },
+      {
+        "title": "Biztonságos Tér Létrehozása a Beszélgetésekhez",
+        "description": "Építs egy olyan környezetet, ahol mindkét partner biztonságban érzi magát az érzéseik kifejezésében. Használj ellenőrzéseket és gyakorlatokat az nyílt párbeszédek elősegítésére és a mélyebb problémák kezelésére.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "emotional-safety-style"
+          },
+          {
+            "type": "checkup",
+            "slug": "vulnerability-and-openness"
+          },
+          {
+            "type": "article",
+            "slug": "trust-through-open-communication"
+          },
+          {
+            "type": "game",
+            "slug": "communication-connection"
+          },
+          {
+            "type": "exercise",
+            "slug": "transparent-communication-practices"
+          },
+          {
+            "type": "question",
+            "slug": "are-there-any-habits-or-behaviors-of-mine-that-bother-you"
+          },
+          {
+            "type": "question",
+            "slug": "describe-a-time-when-a-simple-text-message-led-to-a-big-misunderstanding-how-did-you-resolve-it"
+          }
+        ]
+      },
+      {
+        "title": "A Konfliktus Átalakítása Növekedéssé",
+        "description": "Változtasd meg a konfliktusra vonatkozó nézőpontodat azáltal, hogy megtanulod, hogyan használhatod azt a növekedés eszközeként. Gondolkodj el a múltbeli konfliktusokon, alkalmazz humort, és készíts személyes fejlődési terveket párként.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "growth-opportunity-style-assessment"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-past-problem-weve-solved-that-makes-you-proud-of-us"
+          },
+          {
+            "type": "article",
+            "slug": "embracing-differences-positively"
+          },
+          {
+            "type": "game",
+            "slug": "compatibility-conundrum"
+          },
+          {
+            "type": "checkup",
+            "slug": "team-problem-solving"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-relationship-problem-you-think-we-can-solve-with-humor"
+          },
+          {
+            "type": "exercise",
+            "slug": "relationship-journal"
+          }
+        ]
+      }
+    ],
+    "slug": "navigating-and-resolving-relationship-problems"
+  },
+  {
+    "job": [
+      "rekindling_passion"
+    ],
+    "title": "A Szenvedély Újraélesztése",
+    "description": "Ez az út segít újraéleszteni a szenvedélyt a kapcsolatotokban egy sor figyelemfelkeltő tevékenységen, beszélgetésen és szórakoztató gyakorlaton keresztül. Minden nap különböző aspektusait fogjátok felfedezni az intimitásnak, a kommunikációnak és a közös élményeknek, hogy megerősítsétek a köteléketeket és fokozzátok a romantikus kapcsolatotokat.",
+    "subtopics": [
+      {
+        "title": "Vágyaik Felfedezése",
+        "description": "Kezdjétek azzal, hogy megbeszélitek, mi az, ami mindkettőtöket vonzónak és szexinek talál, beleértve a fantáziákat és új ötleteket. Használjatok figyelemfelkeltő kérdéseket és teszteket, hogy felfedezzétek a mélyebb vágyakat.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "desire-reignition-style"
+          },
+          {
+            "type": "question",
+            "slug": "what-do-you-find-especially-sexy-about-me"
+          },
+          {
+            "type": "article",
+            "slug": "enhancing-sexual-communication"
+          },
+          {
+            "type": "game",
+            "slug": "fantasy-feelings"
+          },
+          {
+            "type": "checkup",
+            "slug": "emotional-intimacy-check-in"
+          },
+          {
+            "type": "question",
+            "slug": "whats-something-we-could-do-to-spice-things-up"
+          },
+          {
+            "type": "exercise",
+            "slug": "sexual-bucket-list-creation"
+          }
+        ]
+      },
+      {
+        "title": "Romantikus Pillanatok Teremtése",
+        "description": "Tanuljátok meg, hogyan tehetitek a mindennapi pillanatokat különlegessé. Ez a téma arra ösztönöz, hogy romantikus gesztusokat fejlesszetek ki és meglepjétek egymást, izgalmat hozva a mindennapjaitokba.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "romantic-gesture-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-can-we-make-everyday-moments-feel-more-special-and-romantic"
+          },
+          {
+            "type": "article",
+            "slug": "crafting-memorable-date-nights"
+          },
+          {
+            "type": "game",
+            "slug": "date-night-planner"
+          },
+          {
+            "type": "checkup",
+            "slug": "quality-time-quality-love"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-new-hobby-we-could-start-together-to-spice-things-up"
+          },
+          {
+            "type": "exercise",
+            "slug": "creating-passion-renewal-date"
+          }
+        ]
+      },
+      {
+        "title": "Izgalmak Közösen",
+        "description": "Fedezzetek fel új hobbikat vagy élményeket, amelyeket párként megoszthattok. Fedezzetek fel olyan tevékenységeket, amelyek újraéleszthetik a szórakozást és a szenvedélyt a kapcsolatotokban, miközben lehetőséget adnak a személyes fejlődésre.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "hobby-harmony-style"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-new-hobby-we-can-start-together-to-strengthen-our-bond"
+          },
+          {
+            "type": "article",
+            "slug": "exploring-shared-hobbies-together"
+          },
+          {
+            "type": "game",
+            "slug": "hobby-harmony"
+          },
+          {
+            "type": "checkup",
+            "slug": "growth-through-novelty"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-way-we-can-challenge-each-other-to-grow-while-keeping-the-romance-alive"
+          },
+          {
+            "type": "exercise",
+            "slug": "hobbies-and-interests-exercise"
+          }
+        ]
+      },
+      {
+        "title": "Intimitás és Sebezhetőség",
+        "description": "Merüljetek el mélyebben az érzelmi intimitásban és sebezhetőségben. Gyakoroljátok az őszinte kommunikációt az érzelmi szükségleteitekről, erősítve a szenvedélyt tápláló kapcsolatot.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "emotional-intimacy-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-prefer-to-communicate-your-needs-and-desires"
+          },
+          {
+            "type": "article",
+            "slug": "building-emotional-intimacy-together"
+          },
+          {
+            "type": "game",
+            "slug": "trust-builders"
+          },
+          {
+            "type": "checkup",
+            "slug": "emotional-needs-compatibility"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-fun-way-we-can-explore-each-others-fantasies-together"
+          },
+          {
+            "type": "exercise",
+            "slug": "active-listening-practice"
+          }
+        ]
+      },
+      {
+        "title": "A Láng Megőrzése",
+        "description": "Beszéljétek meg a stratégiákat, hogy hogyan tartsátok életben a lángot, még a hétköznapi pillanatokban is. Fedezzetek fel módokat, hogy folyamatosan kihívások elé állítsátok egymást és együtt fejlődjetek, miközben a romantikát a középpontban tartjátok.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "growth-balance-style"
+          },
+          {
+            "type": "question",
+            "slug": "what-do-you-think-we-can-do-to-keep-the-spark-alive-in-our-relationship"
+          },
+          {
+            "type": "article",
+            "slug": "boosting-relationship-happiness"
+          },
+          {
+            "type": "game",
+            "slug": "passion-rekindle-quest"
+          },
+          {
+            "type": "checkup",
+            "slug": "fun-and-affection"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-new-hobby-we-can-try-together-that-honors-both-our-interests"
+          },
+          {
+            "type": "exercise",
+            "slug": "flexible-role-playing"
+          }
+        ]
+      },
+      {
+        "title": "Hosszú Távú Szenvedélytervek",
+        "description": "Készítsetek egy ütemtervet a szenvedély fenntartására a kapcsolatotokban az idő múlásával. Fejlesszetek közös célokat és víziót a jövőtökről, amely életben tartja az intimitást és az izgalmat.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "future-planning-style"
+          },
+          {
+            "type": "question",
+            "slug": "if-you-won-the-lottery-tomorrow-whats-the-first-thing-youd-do"
+          },
+          {
+            "type": "article",
+            "slug": "creating-a-vision-for-us"
+          },
+          {
+            "type": "game",
+            "slug": "future-visionaries"
+          },
+          {
+            "type": "checkup",
+            "slug": "future-talk-together"
+          },
+          {
+            "type": "question",
+            "slug": "whats-your-favorite-memory-of-us-having-a-great-conversation"
+          },
+          {
+            "type": "exercise",
+            "slug": "long-term-goal-planning"
+          }
+        ]
+      }
+    ],
+    "slug": "rekindling-the-passion"
+  },
+  {
+    "job": [
+      "having_and_discussing_sex"
+    ],
+    "title": "Navigálás Intim Világunkban",
+    "description": "Ez az út segít abban, hogy jobban megértsd és megbeszéld a szexet a kapcsolatodban. Felfedezed a határokat, vágyakat és kommunikációs stílusokat, hogy kielégítő és nyitott szexuális kapcsolatot alakíts ki a pároddal. Minden nap különböző tevékenységekkel foglalkozol, amelyek célja az intimitás és a megértés elősegítése.",
+    "subtopics": [
+      {
+        "title": "Vágyak és Határok Megértése",
+        "description": "Kezdjétek azzal, hogy megbeszélitek a személyes vágyaitokat és határaitokat. Ez az alapvető lépés bizalmat épít és megalapozza a nyitott beszélgetéseket az intimitásról. Fedezzétek fel azokat az eszközöket, amelyek segítenek kifejezni, amire szükségetek van és amihez kényelmesen viszonyultok.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "discover-your-communication-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-comfortable-are-you-discussing-your-boundaries-and-desires"
+          },
+          {
+            "type": "article",
+            "slug": "trust-through-open-communication"
+          },
+          {
+            "type": "game",
+            "slug": "communication-clues"
+          },
+          {
+            "type": "checkup",
+            "slug": "mastering-our-communication-styles"
+          },
+          {
+            "type": "question",
+            "slug": "are-there-any-boundaries-youd-like-to-discuss-regarding-our-physical-relationship"
+          },
+          {
+            "type": "exercise",
+            "slug": "boundaries-practice"
+          }
+        ]
+      },
+      {
+        "title": "Szexuális Fantáziák és Kísérletek Felfedezése",
+        "description": "Most, hogy létrehoztatok egy biztonságos teret, merüljetek el a fantáziák megosztásában és az új élmények megbeszélésében, amelyeket együtt szeretnétek kipróbálni. Fedezzétek fel, hogyan lehet ezeket az elemeket bevezetni az intim életetekbe.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "fantasy-sharing-style"
+          },
+          {
+            "type": "question",
+            "slug": "are-there-any-fantasies-or-desires-youd-like-to-share"
+          },
+          {
+            "type": "article",
+            "slug": "building-emotional-intimacy-together"
+          },
+          {
+            "type": "game",
+            "slug": "intimacy-insights"
+          },
+          {
+            "type": "checkup",
+            "slug": "maintaining-sexual-satisfaction-over-time"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-fun-way-we-can-explore-each-others-fantasies-together"
+          },
+          {
+            "type": "exercise",
+            "slug": "fantasy-sharing-session"
+          }
+        ]
+      },
+      {
+        "title": "Nyílt Kommunikáció az Intimitásról",
+        "description": "Fejleszd a szexuális kommunikációs készségeidet, biztosítva, hogy mindketten kifejezzétek a szükségleteiteket, preferenciáitokat és bármilyen aggodalmat. Ez a téma olyan gyakorlatokat tartalmaz, amelyek segítenek javítani a transzparenciát és a kapcsolatot.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "sexual-communication-style"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-find-it-easy-to-say-everything-you-want-during-sex"
+          },
+          {
+            "type": "article",
+            "slug": "enhancing-sexual-communication"
+          },
+          {
+            "type": "game",
+            "slug": "communication-carousel"
+          },
+          {
+            "type": "checkup",
+            "slug": "mastering-communication"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-feel-about-discussing-intimacy-outside-of-the-bedroom"
+          },
+          {
+            "type": "exercise",
+            "slug": "talking-about-sex-practice"
+          }
+        ]
+      },
+      {
+        "title": "Fizikai Intimitás Fokozása",
+        "description": "Fedezd fel a fizikai érintés és intimitás különböző formáit. Beszéljétek meg, mi az, ami összekapcsol és beteljesít, és próbáljatok ki új tevékenységeket, amelyek fokozhatják a köteléketeket és növelhetik az intimitást.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "sensory-intimacy-style"
+          },
+          {
+            "type": "question",
+            "slug": "whats-your-favorite-way-to-be-touched"
+          },
+          {
+            "type": "article",
+            "slug": "building-emotional-intimacy-together"
+          },
+          {
+            "type": "game",
+            "slug": "satisfaction-safari"
+          },
+          {
+            "type": "checkup",
+            "slug": "maintaining-sexual-satisfaction-over-time"
+          },
+          {
+            "type": "question",
+            "slug": "what-parts-of-your-body-you-want-your-partner-to-focus-more-how-does-it-make-you-feel"
+          },
+          {
+            "type": "exercise",
+            "slug": "sensual-exploration-night"
+          }
+        ]
+      },
+      {
+        "title": "Kihívások és Változások Navigálása a Szexuális Életben",
+        "description": "Foglalkozz a szexuális életedben felmerülő potenciális akadályokkal, mint például a különböző libidók vagy érzelmi gátak. Tanulj meg stratégiákat ezeknek a kihívásoknak a kezelésére, miközben támogató párbeszédet folytatsz a kapcsolatod megerősítése érdekében.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "sexual-harmony-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-high-is-your-sex-drive"
+          },
+          {
+            "type": "article",
+            "slug": "mastering-conflict-resolution-together"
+          },
+          {
+            "type": "game",
+            "slug": "problem-solving-partners"
+          },
+          {
+            "type": "checkup",
+            "slug": "aligning-sexual-values-and-expectations"
+          },
+          {
+            "type": "question",
+            "slug": "how-has-your-sexual-expectations-changed-since-weve-started-dating"
+          },
+          {
+            "type": "exercise",
+            "slug": "conflict-resolution-strategies-practice"
+          }
+        ]
+      },
+      {
+        "title": "Szexuális Kapcsolatotok Ünneplése",
+        "description": "Gondolkodj el közös utatokon, és ünnepeld a szexuális kapcsolatotok mérföldköveit. Beszéljétek meg, hogyan lehet tiszteletben tartani az intimitásotokat és fenntartani az izgalmat, biztosítva, hogy mindkét partner értékeltnek és megbecsültnek érezze magát.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "love-language-type"
+          },
+          {
+            "type": "question",
+            "slug": "whats-the-best-thing-about-our-sex-life"
+          },
+          {
+            "type": "article",
+            "slug": "fun-rituals-to-strengthen-bonds"
+          },
+          {
+            "type": "game",
+            "slug": "date-night-planner"
+          },
+          {
+            "type": "exercise",
+            "slug": "shared-mood-boards"
+          },
+          {
+            "type": "question",
+            "slug": "whats-one-thing-you-love-about-our-physical-connection"
+          }
+        ]
+      }
+    ],
+    "slug": "navigating-our-intimate-world"
+  },
+  {
+    "job": [
+      "exploring_feelings"
+    ],
+    "title": "Érzelmi Tájaink Felfedezése",
+    "description": "Ez az út segít neked és a párodnak, hogy mélyebb szinten felfedezzétek és megértsétek az érzéseiteket. Különböző típusú tartalmak révén felfedezhetitek érzelmi mintáitokat, hatékonyan kommunikálhattok az érzelmeitekről, és erősebb érzelmi kapcsolatot építhettek. Minden nap új betekintéseket és kihívásokat hoz, amelyek elősegítik az érzelmi intimitást a kapcsolatotokban.",
+    "subtopics": [
+      {
+        "title": "Érzelmeink Megértése",
+        "description": "Kezdd az utadat az alapvető érzelmek felfedezésével és azzal, hogy ezek hogyan nyilvánulnak meg az életetekben. Kérdések és cikkek segítségével tisztázd az érzéseidet és a velük való megküzdési módszereidet.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "emotional-awareness-type"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-think-that-you-feel-emotions-stronger-or-weaker-than-other-people"
+          },
+          {
+            "type": "article",
+            "slug": "building-emotional-intimacy-together"
+          },
+          {
+            "type": "game",
+            "slug": "emotional-seasons"
+          },
+          {
+            "type": "checkup",
+            "slug": "emotional-rollercoaster-ride"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-handle-your-strong-emotions"
+          },
+          {
+            "type": "exercise",
+            "slug": "emotional-regulation-techniques"
+          }
+        ]
+      },
+      {
+        "title": "Érzelmek Hatékony Kifejezése",
+        "description": "Tanulj meg biztonságos és támogató környezetben kommunikálni az érzelmeitekről. Vegyél részt olyan gyakorlatokban, amelyek elősegítik az érzésekről való nyílt párbeszédet, anélkül, hogy félnél a megítéléstől.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "communication-style-type"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-prefer-to-receive-support-when-youre-feeling-low"
+          },
+          {
+            "type": "article",
+            "slug": "mastering-communication-techniques"
+          },
+          {
+            "type": "game",
+            "slug": "communication-clues"
+          },
+          {
+            "type": "checkup",
+            "slug": "mastering-our-communication-styles"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-feel-comfortable-expressing-your-true-feelings-with-me-why-or-why-not"
+          },
+          {
+            "type": "exercise",
+            "slug": "transparent-communication-practices"
+          }
+        ]
+      },
+      {
+        "title": "Mély Merülés a Sebezhetőségbe",
+        "description": "Fedezd fel a sebezhetőség erejét a kapcsolatokban. Fedezd fel azokat a kérdéseket és tevékenységeket, amelyek bátorítanak a legbelsőbb félelmeid és vágyaid megosztására, és beszéljétek meg, hogyan fokozhatja a sebezhetőség az intimitást.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "vulnerability-comfort-type"
+          },
+          {
+            "type": "question",
+            "slug": "can-you-describe-a-moment-where-you-felt-most-connected-during-our-sex-and-what-made-it-special-for-you"
+          },
+          {
+            "type": "article",
+            "slug": "vulnerability-trusts-gateway"
+          },
+          {
+            "type": "game",
+            "slug": "feelings-explorer"
+          },
+          {
+            "type": "checkup",
+            "slug": "vulnerability-and-openness"
+          },
+          {
+            "type": "question",
+            "slug": "how-comfortable-are-you-sharing-your-true-feelings-with-me-on-a-scale-of-1-10"
+          },
+          {
+            "type": "exercise",
+            "slug": "vulnerability-exploration-session"
+          }
+        ]
+      },
+      {
+        "title": "Nehezen Kezelhető Érzelmek Közös Navigálása",
+        "description": "Azonosítsd és kezeld a nehéz érzelmeket, mint a féltékenység, bizonytalanság vagy szomorúság. Vegyél részt olyan tesztekben és ellenőrzésekben, amelyek segítenek megérteni, hogyan támogathatjátok egymást a nehéz érzelmi időszakokban.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "emotion-management-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-handle-feelings-of-jealousy-or-insecurity"
+          },
+          {
+            "type": "article",
+            "slug": "navigating-emotional-waters-together"
+          },
+          {
+            "type": "game",
+            "slug": "emotional-ride"
+          },
+          {
+            "type": "checkup",
+            "slug": "emotional-rollercoaster-ride"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-handle-feelings-of-stress-or-anxiety"
+          },
+          {
+            "type": "exercise",
+            "slug": "confidentiality-agreements"
+          }
+        ]
+      },
+      {
+        "title": "Érzelmi Biztonság Kiépítése",
+        "description": "Teremts olyan környezetet, ahol mindkét partner biztonságban érzi magát az érzéseik kifejezésében és felfedezésében. Értsd meg az érzelmi biztonság jelentőségét a kapcsolatotok elmélyítésében, és tanulj meg gyakorlati stratégiákat ennek megteremtésére.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "emotional-safety-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-feel-about-our-current-level-of-intimacy-and-affection"
+          },
+          {
+            "type": "article",
+            "slug": "trust-through-open-communication"
+          },
+          {
+            "type": "game",
+            "slug": "trust-builders"
+          },
+          {
+            "type": "checkup",
+            "slug": "emotional-intimacy-check-in"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-feel-we-handle-each-others-vulnerabilities"
+          },
+          {
+            "type": "exercise",
+            "slug": "feelings-validation-practices"
+          }
+        ]
+      },
+      {
+        "title": "Érzelmi Intimitás Fejlesztése",
+        "description": "Zárd le az utadat olyan stratégiák megvalósításával, amelyek fokozzák az érzelmi intimitást a kapcsolatotokban. Vegyél részt olyan játékokban és gyakorlatokban, amelyek erősítik az érzelmi kötelékeiteket, mélyebbé és ellenállóbbá téve a kapcsolatotokat.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "emotional-intimacy-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-feel-about-sharing-your-deepest-desires-with-each-other"
+          },
+          {
+            "type": "article",
+            "slug": "building-emotional-intelligence-together"
+          },
+          {
+            "type": "game",
+            "slug": "emotion-explorer"
+          },
+          {
+            "type": "checkup",
+            "slug": "emotional-needs-compatibility"
+          },
+          {
+            "type": "question",
+            "slug": "how-can-we-better-express-our-needs-without-feeling-vulnerable"
+          },
+          {
+            "type": "exercise",
+            "slug": "emotional-expression-sessions"
+          }
+        ]
+      }
+    ],
+    "slug": "navigating-our-emotional-landscapes"
+  },
+  {
+    "job": [
+      "improving_communication"
+    ],
+    "title": "A Kommunikáció Fejlesztése: Hidakat Építünk a Kapcsolatunkban",
+    "description": "Ez az út a kommunikációs készségek fejlesztésére összpontosít a partnerek között. Különböző tevékenységek, megbeszélések és reflektív gyakorlatok révén megtanulod, hogyan fejezd ki magad nyíltabban, és jobban megértsétek egymást, elősegítve ezzel a szorosabb kapcsolatot és a kielégítőbb viszonyt.",
+    "subtopics": [
+      {
+        "title": "Egymás Kommunikációs Stílusának Megértése",
+        "description": "Fedezd fel a különböző kommunikációs stílusokat, és tudd meg, hogyan befolyásolják az interakcióitokat. Ez magában foglalja a saját stílusod azonosítását és a partnered preferenciáinak megismerését, hogy nyílt párbeszédet tudjatok folytatni.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "discover-your-communication-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-prefer-to-communicate-your-needs-and-desires"
+          },
+          {
+            "type": "article",
+            "slug": "enhancing-communication-for-stronger-bonds"
+          },
+          {
+            "type": "game",
+            "slug": "communication-clues"
+          },
+          {
+            "type": "exercise",
+            "slug": "active-listening-practice"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-feel-about-writing-down-our-issues-before-discussing-them"
+          },
+          {
+            "type": "checkup",
+            "slug": "mastering-our-communication-styles"
+          }
+        ]
+      },
+      {
+        "title": "Nehezen Kezelhető Beszélgetések Navigálása",
+        "description": "Tanulj meg technikákat a nehéz beszélgetések empátiával és tisztelettel való megközelítésére. Készségeket szerzel, hogy kifejezd a gondolataidat és érzéseidet, miközben figyelembe veszed a partnered nézőpontját.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "problem-solving-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-can-we-make-our-disagreements-more-constructive"
+          },
+          {
+            "type": "article",
+            "slug": "navigating-sensitive-conversations"
+          },
+          {
+            "type": "game",
+            "slug": "problem-solving-pals"
+          },
+          {
+            "type": "exercise",
+            "slug": "conflict-resolution-strategies-practice"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-prefer-discussing-issues-immediately-or-taking-some-time-to-cool-off"
+          },
+          {
+            "type": "checkup",
+            "slug": "navigating-tough-conversations"
+          }
+        ]
+      },
+      {
+        "title": "Igények és Határok Kifejezése",
+        "description": "Ez a téma arra összpontosít, hogyan kommunikáld az igényeidet és állíts fel egészséges határokat. Gyakorolni fogod, hogy mit szeretnél a másiktól, olyan módon, ami erősíti a kapcsolatotokat.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "boundary-setting-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-comfortable-are-you-discussing-your-boundaries-and-desires"
+          },
+          {
+            "type": "article",
+            "slug": "navigating-boundaries-for-intimacy"
+          },
+          {
+            "type": "exercise",
+            "slug": "boundaries-practice"
+          },
+          {
+            "type": "question",
+            "slug": "whats-one-boundary-youd-like-to-set-to-keep-our-relationship-healthy"
+          }
+        ]
+      },
+      {
+        "title": "Aktív Hallgatás és Érzelmi Érvényesítés",
+        "description": "Mesterkedj az aktív hallgatás művészetében, és tanuld meg, hogyan érvényesítsd a partnered érzéseit. Felfedezed azokat az eszközöket, amelyek javítják a hallgatási készségeidet, és biztosítják, hogy mindkét partner meghallgatva és megértve érezze magát.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "listening-style-quiz"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-like-to-receive-feedback-in-our-relationship"
+          },
+          {
+            "type": "article",
+            "slug": "mastering-active-listening"
+          },
+          {
+            "type": "checkup",
+            "slug": "emotional-explorers"
+          },
+          {
+            "type": "exercise",
+            "slug": "active-listening-practice"
+          },
+          {
+            "type": "question",
+            "slug": "whats-your-favorite-non-verbal-way-i-show-you-im-listening"
+          }
+        ]
+      },
+      {
+        "title": "Konstruktív Konfliktuskezelés",
+        "description": "Tanulj meg hatékony stratégiákat a konfliktusok konstruktív módon való megoldására. Ez magában foglalja a technikákat, amelyek segítenek a nézeteltérések kezelésében anélkül, hogy kárt okoznának a kapcsolatban, elősegítve a csapatmunkát.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "your-conflict-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-handle-disagreements-or-conflicts"
+          },
+          {
+            "type": "article",
+            "slug": "effective-conflict-resolution-strategies"
+          },
+          {
+            "type": "game",
+            "slug": "conflict-resolution-quest"
+          },
+          {
+            "type": "exercise",
+            "slug": "conflict-resolution-strategies-practice"
+          },
+          {
+            "type": "question",
+            "slug": "whats-one-thing-youd-like-to-change-about-how-we-handle-our-differences"
+          },
+          {
+            "type": "checkup",
+            "slug": "conflict-resolution-styles"
+          }
+        ]
+      },
+      {
+        "title": "Őszinte és Nyílt Párbeszédek Elősegítése",
+        "description": "Fejleszd az őszinte és nyílt kommunikáció szokását a kapcsolatodban. Ez a rész útmutatást ad a transzparencia és a bizalom elősegítésére, megnyitva az utat a mélyebb kapcsolatra és intimitásra.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "honesty-and-openness-style"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-feel-comfortable-expressing-your-true-feelings-with-me-why-or-why-not"
+          },
+          {
+            "type": "article",
+            "slug": "building-trust-through-transparency"
+          },
+          {
+            "type": "game",
+            "slug": "honesty-huddle"
+          },
+          {
+            "type": "checkup",
+            "slug": "the-honesty-hangout"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-think-honesty-is-always-the-best-policy-why-or-why-not"
+          },
+          {
+            "type": "exercise",
+            "slug": "complete-honesty-sessions"
+          }
+        ]
+      }
+    ],
+    "slug": "improving-communication-building-bridges-in-our-relationship"
+  },
+  {
+    "job": [
+      "overcoming_differences"
+    ],
+    "title": "Különbségeink Elfogadása: Egy Utazás a Mélyebb Megértés Felé",
+    "description": "Ez az utazás arra készült, hogy segítsen a pároknak navigálni és ünnepelni a különbségeiket, átalakítva a kihívásokat a növekedés lehetőségeivé. Minden nap gondolatébresztő kérdésekkel, betekintést nyújtó cikkekkel és gyakorlati feladatokkal foglalkozol, amelyek elősegítik az empátiát, a tiszteletet és az együttműködést a kapcsolatodban.",
+    "subtopics": [
+      {
+        "title": "Háttér Megértése",
+        "description": "Fedezd fel, hogyan formálják kulturális, vallási és személyes háttereink a nézőpontjainkat és viselkedésünket a kapcsolatban. Gondolkodj el a kulturális különbségekről és hiedelmekről, lerakva ezzel a jövőbeli beszélgetések alapjait.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "cultural-harmony-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-our-different-cultural-backgrounds-shape-our-relationship-and-how-can-we-honor-both"
+          },
+          {
+            "type": "article",
+            "slug": "navigating-religious-conversations-smoothly"
+          },
+          {
+            "type": "game",
+            "slug": "cultural-quest"
+          },
+          {
+            "type": "checkup",
+            "slug": "navigating-cultural-and-religious-differences"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-respect-each-others-religious-beliefs-when-they-differ"
+          },
+          {
+            "type": "exercise",
+            "slug": "cultural-exchange-day"
+          }
+        ]
+      },
+      {
+        "title": "Hatékony Kommunikációs Készségek",
+        "description": "Tanuld meg a transzparencia és az aktív hallgatás fontosságát a félreértések leküzdésében. Vegyél részt olyan gyakorlatokban és cikkekben, amelyek javítják a kommunikációs stílusodat és elősegítik az érzékeny témákról folytatott nyílt párbeszédet.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "discover-your-communication-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-prefer-to-communicate-your-needs-and-desires"
+          },
+          {
+            "type": "article",
+            "slug": "mastering-communication-techniques"
+          },
+          {
+            "type": "game",
+            "slug": "communication-clues"
+          },
+          {
+            "type": "checkup",
+            "slug": "mastering-our-communication-styles"
+          },
+          {
+            "type": "question",
+            "slug": "whats-your-favorite-memory-of-us-having-a-great-conversation"
+          },
+          {
+            "type": "exercise",
+            "slug": "active-listening-practice"
+          }
+        ]
+      },
+      {
+        "title": "Különbségek Ünneplése",
+        "description": "Fedezd fel, hogyan ünnepelheted és tisztelheted meg egymás egyedi erősségeit és nézőpontjait. Interaktív tartalmakon keresztül nézd meg, hogyan serkenthetik a különbségek a kreativitást és az örömöt a partneredben.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "growth-through-differences-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-can-we-celebrate-our-unique-strengths-and-compensate-for-our-differences"
+          },
+          {
+            "type": "article",
+            "slug": "embrace-and-celebrate-differences"
+          },
+          {
+            "type": "game",
+            "slug": "hobby-harmony"
+          },
+          {
+            "type": "checkup",
+            "slug": "embracing-our-personality-traits"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-fun-way-to-explore-and-embrace-our-differences-together"
+          },
+          {
+            "type": "exercise",
+            "slug": "difference-identification-and-acceptance"
+          }
+        ]
+      },
+      {
+        "title": "Konfliktusok Kezelése Tisztelettel",
+        "description": "Fejleszd a készségeidet a konfliktusok pozitív és konstruktív kezelésére. Ez a rész gyakorlati technikákat tartalmaz a nézeteltérések megoldására, miközben tiszteletben tartjátok egymás nézőpontjait és fenntartjátok a bizalmat.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "your-conflict-style"
+          },
+          {
+            "type": "question",
+            "slug": "whats-one-thing-youd-like-to-change-about-how-we-handle-our-differences"
+          },
+          {
+            "type": "article",
+            "slug": "mastering-conflict-resolution-together"
+          },
+          {
+            "type": "game",
+            "slug": "conflict-resolution-quest"
+          },
+          {
+            "type": "checkup",
+            "slug": "conflict-resolution-styles"
+          },
+          {
+            "type": "question",
+            "slug": "whats-one-thing-you-admire-about-my-perspective-thats-different-from-yours"
+          },
+          {
+            "type": "exercise",
+            "slug": "conflict-resolution-strategies-practice"
+          }
+        ]
+      },
+      {
+        "title": "Kihívások Átalakítása Növekedési Lehetőségekké",
+        "description": "Változtasd meg a gondolkodásmódodat, és a különbségeket ne akadályokként, hanem a személyes és a kapcsolatbeli növekedés lehetőségeiként lásd. Vegyél részt olyan tevékenységekben, amelyek elősegítik az együttműködést és a közös problémamegoldást.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "flexibility-style-assessment"
+          },
+          {
+            "type": "question",
+            "slug": "how-can-we-turn-our-differences-into-opportunities-for-growth-as-a-couple"
+          },
+          {
+            "type": "article",
+            "slug": "embracing-differences-positively"
+          },
+          {
+            "type": "game",
+            "slug": "problem-solving-escapades"
+          },
+          {
+            "type": "checkup",
+            "slug": "team-problem-solving"
+          },
+          {
+            "type": "question",
+            "slug": "can-boredom-be-helpful"
+          },
+          {
+            "type": "exercise",
+            "slug": "cognitive-restructuring-together"
+          }
+        ]
+      },
+      {
+        "title": "Egyesített Jövőkép Kiépítése",
+        "description": "Rögzítsd, amit tanultál, hogy közös jövőképet alkothassatok. Gondolkodj el az értékeiteken, céljaitokon és vágyaitokon párként, biztosítva, hogy mindkét partner láthatónak és hallhatóan érezze magát az előttük álló úton.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "future-vision-type"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-challenge-weve-overcome-together-that-made-our-relationship-stronger"
+          },
+          {
+            "type": "article",
+            "slug": "aligning-future-goals"
+          },
+          {
+            "type": "game",
+            "slug": "future-visionaries"
+          },
+          {
+            "type": "checkup",
+            "slug": "future-talk-together"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-memorable-moment-where-our-differences-made-our-relationship-stronger"
+          },
+          {
+            "type": "exercise",
+            "slug": "long-term-goal-planning"
+          }
+        ]
+      }
+    ],
+    "slug": "embracing-our-differences-a-journey-to-deeper-understanding"
+  },
+  {
+    "job": [
+      "discussing_finances"
+    ],
+    "title": "Pénzügyeink Megbeszélése: Erősebb Jövő Építése Együtt",
+    "description": "Ez az út segít neked és a párodnak értelmes beszélgetéseket folytatni a pénzügyekről, kölcsönös megértést kialakítani és együttműködő megközelítést fejleszteni a pénzügyi célokhoz. A különböző alfejezeteken keresztül haladva megtanuljátok, hogyan kommunikáljatok hatékonyan, állítsatok fel pénzügyi célokat, és igazítsátok a költési szokásaitokat egy fényesebb közös jövő érdekében.",
+    "subtopics": [
+      {
+        "title": "Pénzügyi Értékeink Megértése",
+        "description": "Fedezzétek fel egymás pénzügyi hiedelmeit és értékeit, hogy erős alapot teremthessetek a pénzügyi beszélgetéseitekhez. Ez az alfejezet kérdéseket tartalmaz a pénzügyi példaképeitekről és arról, hogy mi a prioritás számotokra pénzügyileg.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "financial-communication-style"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-have-a-financial-role-model-who-and-why"
+          },
+          {
+            "type": "article",
+            "slug": "mastering-money-talks-together"
+          },
+          {
+            "type": "game",
+            "slug": "dream-budget-builders"
+          },
+          {
+            "type": "checkup",
+            "slug": "aligning-financial-values-and-goals"
+          },
+          {
+            "type": "exercise",
+            "slug": "financial-planning-session"
+          },
+          {
+            "type": "question",
+            "slug": "whats-one-financial-habit-you-admire-in-others"
+          }
+        ]
+      },
+      {
+        "title": "Pénzügyi Célok Kialakítása Együtt",
+        "description": "Beszéljétek meg a pénzügyi célok fontosságát párként. Ez az alfejezet végigvezet titeket a rövid- és hosszú távú pénzügyi célok létrehozásán, és megértitek, hogyan érhetitek el ezeket együtt.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "budgeting-style-for-couples"
+          },
+          {
+            "type": "question",
+            "slug": "what-are-your-financial-goals-and-how-can-we-achieve-them-together"
+          },
+          {
+            "type": "article",
+            "slug": "aligning-financial-goals-harmoniously"
+          },
+          {
+            "type": "game",
+            "slug": "future-visionaries"
+          },
+          {
+            "type": "checkup",
+            "slug": "future-financial-adventures"
+          },
+          {
+            "type": "exercise",
+            "slug": "budget-planning-session"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-new-financial-goal-youd-like-to-set-together"
+          }
+        ]
+      },
+      {
+        "title": "Beszélgetés a Pénzügyi Kérdésekről",
+        "description": "Tanuljatok meg hatékony kommunikációs stratégiákat a pénzügyek megbeszélésére. Ez az alfejezet olyan eszközöket mutat be, mint a költségvetési alkalmazások és a rendszeres ellenőrzések beállítása, hogy megkönnyítsétek ezeket a beszélgetéseket.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "discover-your-communication-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-feel-about-budgeting-apps-yay-or-nay"
+          },
+          {
+            "type": "article",
+            "slug": "mastering-communication-techniques"
+          },
+          {
+            "type": "game",
+            "slug": "communication-champions"
+          },
+          {
+            "type": "checkup",
+            "slug": "mastering-our-communication-styles"
+          },
+          {
+            "type": "exercise",
+            "slug": "transparency-talks"
+          },
+          {
+            "type": "question",
+            "slug": "what-smartphone-app-do-you-mostly-use"
+          }
+        ]
+      },
+      {
+        "title": "Költés és Megtakarítás Kiegyensúlyozása",
+        "description": "Merüljetek el a különböző költési szokásaitok megbeszélésében, és keressetek közös nevezőt. Ez az alfejezet arra ösztönöz, hogy a pénzügyi céljaitokat a életmódbeli választásaitokkal priorizáljátok.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "your-spending-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-feel-about-our-different-spending-habits-and-how-can-we-find-a-middle-ground"
+          },
+          {
+            "type": "article",
+            "slug": "building-trust-through-financial-transparency"
+          },
+          {
+            "type": "game",
+            "slug": "budget-battle-royale"
+          },
+          {
+            "type": "checkup",
+            "slug": "budgeting-together-without-breaking-up"
+          },
+          {
+            "type": "exercise",
+            "slug": "spending-habits-review"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-prefer-saving-money-in-a-bank-or-investing-it-elsewhere"
+          }
+        ]
+      },
+      {
+        "title": "Pénzügyi Kihívások Közös Kezelése",
+        "description": "Beszéljétek meg a pénzügyi stressz és váratlan kiadások kezelésére vonatkozó stratégiáitokat. Ez az alfejezet segít nektek kidolgozni egy tervet, hogy támogassátok egymást a pénzügyi nehézségek idején.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "debt-management-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-handle-financial-stress-together"
+          },
+          {
+            "type": "game",
+            "slug": "debt-decision-duel"
+          },
+          {
+            "type": "checkup",
+            "slug": "tackling-debt-together"
+          },
+          {
+            "type": "exercise",
+            "slug": "debt-management-planning"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-handle-unexpected-expenses"
+          }
+        ]
+      },
+      {
+        "title": "Pénzügyi Jövőnk Tervezése",
+        "description": "Fedezzétek fel a mélyebb pénzügyi tervezési aspektusokat, beleértve a nyugdíjstratégiákat, a lakástulajdont és a családotok pénzügyeinek jövőjét. Ez az alfejezet segít nektek összehangolni a jövőre vonatkozó vízióitokat és megalapozni egy szilárd pénzügyi partnerséget.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "future-planning-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-prioritize-financial-goals-with-other-life-goals"
+          },
+          {
+            "type": "game",
+            "slug": "future-forecast"
+          },
+          {
+            "type": "checkup",
+            "slug": "future-talk-flow"
+          },
+          {
+            "type": "exercise",
+            "slug": "retirement-dreams-mapping"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-see-the-budget-in-our-partnership-now-what-method-will-be-more-comfortable-for-you"
+          }
+        ]
+      }
+    ],
+    "slug": "discussing-our-finances-building-a-stronger-future-together"
+  },
+  {
+    "job": [
+      "getting_to_know_partner"
+    ],
+    "title": "Egymás Megismerése: Felfedező Út",
+    "description": "Indulj el egy átalakító úton, hogy mélyebben megértsd és kapcsolódj a partneredhez. Ez az út gondosan megtervezett napi tevékenységekből áll, beleértve kérdéseket, gyakorlatokat, cikkeket és játékokat, amelyek elősegítik az intimitást, javítják a kommunikációt és felfedik a személyes meglátásokat. Több napon keresztül felfedezitek hasonlóságaitokat, különbségeiteket és azokat az egyedi tulajdonságokat, amelyek mindkettőtöket alkotnak.",
+    "subtopics": [
+      {
+        "title": "Háttér és Jellemzők Felfedezése",
+        "description": "Kezdjétek azzal, hogy megértitek egymás hátterét, személyiségét és értékeit. Foglalkozzatok kérdésekkel a gyermekkori emlékekről, rejtett tehetségekről és személyes preferenciákról, hogy megalapozzátok a bizalom és nyitottság alapját.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "life-story-style"
+          },
+          {
+            "type": "question",
+            "slug": "can-you-share-a-memory-from-your-childhood-that-you-think-has-shaped-who-you-are-today"
+          },
+          {
+            "type": "article",
+            "slug": "love-maps-knowing-each-other-deeply"
+          },
+          {
+            "type": "game",
+            "slug": "memory-lane"
+          },
+          {
+            "type": "checkup",
+            "slug": "exploring-childhood-memories"
+          },
+          {
+            "type": "exercise",
+            "slug": "difference-identification-and-acceptance"
+          },
+          {
+            "type": "question",
+            "slug": "whats-your-favorite-childhood-memory"
+          }
+        ]
+      },
+      {
+        "title": "Érdeklődések és Hobbi Felfedezése",
+        "description": "Fedezzétek fel a közös szenvedélyeket és egyéni hobbikat. Vegyetek részt beszélgetésekben és tevékenységekben, amelyek segítenek megismerni egymás érdeklődési köreit, kedvenc időtöltéseit és azokat az egyedi tulajdonságokat, amelyeket mindketten a kapcsolatba hoztok.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "hobby-harmony-style"
+          },
+          {
+            "type": "game",
+            "slug": "hobby-harmony"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-hobby-that-makes-you-feel-alive"
+          },
+          {
+            "type": "article",
+            "slug": "exploring-shared-hobbies-together"
+          },
+          {
+            "type": "exercise",
+            "slug": "hobbies-and-interests-exercise"
+          },
+          {
+            "type": "question",
+            "slug": "whats-a-new-hobby-we-could-start-together-to-spice-things-up"
+          }
+        ]
+      },
+      {
+        "title": "Kommunikációs Stílusok Megértése",
+        "description": "Tanulj meg hatékonyan kommunikálni a szükségleteidről és vágyaidról. Vegyél részt gyakorlatokban és játékokban, amelyek elősegítik az aktív hallgatást és javítják az érzelmek és elvárások kifejezésének képességét.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "discover-your-communication-style"
+          },
+          {
+            "type": "question",
+            "slug": "how-do-you-prefer-to-communicate-your-needs-and-desires"
+          },
+          {
+            "type": "article",
+            "slug": "mastering-communication-techniques"
+          },
+          {
+            "type": "game",
+            "slug": "communication-clues"
+          },
+          {
+            "type": "checkup",
+            "slug": "mastering-our-communication-styles"
+          },
+          {
+            "type": "exercise",
+            "slug": "active-listening-practice"
+          },
+          {
+            "type": "question",
+            "slug": "whats-your-favorite-memory-of-us-having-a-great-conversation"
+          }
+        ]
+      },
+      {
+        "title": "Szeretetnyelvek Azonosítása",
+        "description": "Merülj el abban, ahogyan mindketten kifejezitek és fogadjátok a szeretetet. Fedezzétek fel a szeretetnyelveiteket kérdéseken és reflektáló gyakorlatokon keresztül, hogy jobban megértsétek, hogyan fejezhetitek ki az érzelmeiteket a partneretek felé.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "love-language-type"
+          },
+          {
+            "type": "question",
+            "slug": "do-you-believe-in-love-languages-if-so-which-one-are-you"
+          },
+          {
+            "type": "article",
+            "slug": "decoding-love-languages"
+          },
+          {
+            "type": "game",
+            "slug": "love-languages-exploration"
+          },
+          {
+            "type": "checkup",
+            "slug": "emotional-needs-compatibility"
+          },
+          {
+            "type": "exercise",
+            "slug": "find-out-your-love-language"
+          },
+          {
+            "type": "question",
+            "slug": "what-is-your-love-language"
+          }
+        ]
+      },
+      {
+        "title": "Önreflexió és Célkitűzés",
+        "description": "Bátorítsd a személyes megosztást az álmokról és vágyakról. Használj irányított tevékenységeket, hogy reflektálj a személyes céljaidra és arra, hogyan illeszkednek ezek a kapcsolatotokhoz, elősegítve a kölcsönös támogatás érzését egymás útján.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "goal-alignment-style"
+          },
+          {
+            "type": "question",
+            "slug": "what-are-your-dreams-and-aspirations-outside-of-work"
+          },
+          {
+            "type": "article",
+            "slug": "setting-shared-future-goals"
+          },
+          {
+            "type": "game",
+            "slug": "future-visionaries"
+          },
+          {
+            "type": "checkup",
+            "slug": "future-plans-alignment"
+          },
+          {
+            "type": "exercise",
+            "slug": "long-term-goal-planning"
+          },
+          {
+            "type": "question",
+            "slug": "what-personal-goals-do-you-have-that-i-might-not-be-aware-of"
+          }
+        ]
+      },
+      {
+        "title": "Érzelmi Intimitás Fejlesztése",
+        "description": "Mélyítsd el az érzelmi kapcsolatot sebezhetőségi gyakorlatokkal és őszinte beszélgetésekkel. Vegyél részt olyan tevékenységekben és beszélgetésekben, amelyek elősegítik az érzések, vágyak és félelmek megosztását egy biztonságos környezetben, fokozva az intimitást és a bizalmat.",
+        "content": [
+          {
+            "type": "test",
+            "slug": "emotional-intimacy-style"
+          },
+          {
+            "type": "question",
+            "slug": "whats-something-that-always-makes-you-feel-loved"
+          },
+          {
+            "type": "article",
+            "slug": "building-emotional-intimacy-together"
+          },
+          {
+            "type": "game",
+            "slug": "intimacy-insights"
+          },
+          {
+            "type": "checkup",
+            "slug": "emotional-intimacy-check-in"
+          },
+          {
+            "type": "exercise",
+            "slug": "emotional-closeness-exercises"
+          },
+          {
+            "type": "question",
+            "slug": "what-little-gestures-make-you-feel-most-loved-and-appreciated"
+          }
+        ]
+      }
+    ],
+    "slug": "getting-to-know-each-other-a-journey-of-discovery"
+  }
+]

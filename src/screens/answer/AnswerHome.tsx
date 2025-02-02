@@ -17,12 +17,12 @@ import EmptyAnswers from '@app/icons/empy_answers';
 import { useFocusEffect } from '@react-navigation/native';
 import RemindIcon from '@app/icons/remind';
 import LockIcon from '@app/icons/lock_grey';
-import { truncateText } from '@app/screens/answer/QuestionAnswer';
 import { getJobs } from '@app/screens/menu/Home';
 import AnswerNoPartnerWarning from '@app/components/answers/AnswerNoPartnerWarning';
 import { getNow } from '@app/utils/date';
 import { handleRemindPartner } from '@app/utils/sendNotification';
 import { SecondaryButton } from '@app/components/buttons/SecondaryButton';
+import { hideText, showName } from '@app/utils/strings';
 
 interface QuestionReply {
   id: number;
@@ -107,8 +107,8 @@ export default function AnswerHome({
         return;
       }
 
-      setPartnerName(profileResult.data.partner_first_name!);
-      setName(profileResult.data.first_name!);
+      setPartnerName(showName(profileResult.data.partner_first_name) || i18n.t('home_partner'));
+      setName(showName(profileResult.data.first_name));
       setHasPartner(hasPartnerResult.data);
 
       if (localPage) {
@@ -216,7 +216,7 @@ export default function AnswerHome({
                     color: isAuthor ? theme.colors.white : theme.colors.black,
                   }}
                 >
-                  {truncateText(reply.text)}
+                  {hideText(reply.text)}
                 </FontText>
                 <FontText small style={{ color: theme.colors.grey3, marginTop: 5 }}>
                   {isAuthor ? name : partnerName}
@@ -323,10 +323,21 @@ export default function AnswerHome({
             onPress={() =>
               hasPartner &&
               void handleRemindPartner(
-                question.id,
+                'AnswerHome',
                 partnerName,
                 authContext.userId!,
                 setReminderLoading,
+                {
+                  question_id: question.id,
+                  type: 'remind_answer',
+                },
+                navigation,
+                'AnswerHome',
+                {
+                  refreshTimeStamp: new Date().toISOString(),
+                },
+                true,
+                true,
               )
             }
           >
@@ -403,7 +414,9 @@ export default function AnswerHome({
           <RefreshControl refreshing={refreshing} onRefresh={() => void handleRefresh()} />
         }
       >
-        {!hasPartner && <AnswerNoPartnerWarning prefix={'AnswerHome'} partnerName={partnerName} />}
+        {!hasPartner && (
+          <AnswerNoPartnerWarning prefix={'AnswerHome'} partnerName={partnerName} isV3={false} />
+        )}
         {questions.map(renderQuestionItem)}
         {hasMore && (
           <TouchableOpacity
@@ -446,10 +459,10 @@ export default function AnswerHome({
               style={{
                 backgroundColor: theme.colors.grey1,
                 marginHorizontal: -20,
-                height: getFontSizeForScreen('h1') * 2,
+                height: getFontSizeForScreen('h1') * 4,
               }}
             >
-              <Menu />
+              <Menu></Menu>
             </View>
           </View>
         </View>

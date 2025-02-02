@@ -1,0 +1,146 @@
+{
+  "topic": [
+    "having_fun_and_entertainment",
+    "improving_relationship_satisfaction",
+    "enhancing_love_and_affection",
+    "understanding_mutual_compatibility",
+    "having_meaningful_conversations"
+  ],
+  "test_headline": "Discover Your Perfect Date Night Dynamics",
+  "scientific_basis": "This quiz is based on research highlighting the importance of regular, intentional couple time for enhancing relationship quality and maintaining a strong connection.",
+  "description": "Ready to spice up your evenings? Take this fun quiz to uncover how you and your partner plan and enjoy your date nights! Discover new ways to keep the romance alive and strengthen your bond.",
+  "questions": [
+    {
+      "question": "How often do you and your partner go out for a date night?",
+      "options": [
+        "Once a week",
+        "Twice a month",
+        "Once a month",
+        "A few times a year",
+        "Rarely or never"
+      ]
+    },
+    {
+      "question": "What type of activities do you prefer for your date nights?",
+      "options": [
+        "Trying out new restaurants or cuisines",
+        "Watching movies or attending a theater show",
+        "Engaging in outdoor adventures or sports",
+        "Staying in for a cozy night with games or cooking together",
+        "Attending social events or parties"
+      ]
+    },
+    {
+      "question": "Who usually plans the date night activities?",
+      "options": [
+        "I take the lead in planning",
+        "My partner takes the lead",
+        "We alternate who plans each time",
+        "We plan together as a team",
+        "We leave it to chance or spontaneous decisions"
+      ]
+    },
+    {
+      "question": "How do you feel about trying new things on date night?",
+      "options": [
+        "Excited and always up for it",
+        "Generally positive but with some hesitation",
+        "Indifferent; I'm okay with both new and familiar activities",
+        "Prefer familiar activities to ensure enjoyment",
+        "Uncomfortable with trying new things"
+      ]
+    },
+    {
+      "question": "What's most important to you during a date night?",
+      "options": [
+        "Quality time and deep conversations",
+        "Having fun and sharing laughs",
+        "Experiencing something new together",
+        "Relaxing and unwinding from the week",
+        "Creating memorable and special moments"
+      ]
+    },
+    {
+      "question": "How do you handle disagreements about date night plans?",
+      "options": [
+        "We discuss and find a compromise",
+        "I usually go along with my partner's preference",
+        "My partner usually decides the plan",
+        "We alternate plans to ensure fairness",
+        "We sometimes skip date night to avoid conflict"
+      ]
+    },
+    {
+      "question": "How do you feel after spending quality time on a date night?",
+      "options": [
+        "More connected and happy",
+        "Satisfied and content",
+        "Indifferent but relaxed",
+        "A bit stressed from planning",
+        "No different than before"
+      ]
+    },
+    {
+      "question": "What role does spontaneity play in your date nights?",
+      "options": [
+        "A big role; we love spontaneous plans",
+        "Somewhat important; we mix planned and spontaneous",
+        "Neutral; we don't emphasize either",
+        "Little role; we prefer planned activities",
+        "No role; we always plan in advance"
+      ]
+    },
+    {
+      "question": "How do you incorporate your interests into date night?",
+      "options": [
+        "We always choose activities that we both love",
+        "We find a balance between both our interests",
+        "Sometimes it leans more towards one person's interests",
+        "We rarely consider individual interests",
+        "We let one person's interests dominate the plans"
+      ]
+    },
+    {
+      "question": "How important is it for you to have regular date nights?",
+      "options": [
+        "Very important; it's a top priority",
+        "Somewhat important; we try to make it happen",
+        "Moderately important; it depends on our schedules",
+        "Slightly important; we see it as a bonus",
+        "Not important; we prefer other ways to connect"
+      ]
+    }
+  ],
+  "evaluation_method": {
+    "explanation": "Each answer corresponds to a specific aspect of date night dynamics, such as frequency, planning style, activity preference, and the importance placed on date nights. Your responses will be tallied to identify your primary date night style, helping you understand how you and your partner approach quality time together.",
+    "example": "For instance, selecting mostly 'A' answers might indicate a highly organized and proactive approach to date nights, while choosing more 'D' options could suggest a preference for relaxed and spontaneous evenings."
+  },
+  "outcome_interpretation": {
+    "mostly_A": {
+      "label": "The Planner",
+      "description": "You thrive on structure and enjoy thoughtfully planned date nights. Your proactive approach ensures that both you and your partner have meaningful and enjoyable experiences together.",
+      "advice": "Continue organizing special evenings and consider adding new elements to keep things exciting. Your planning skills are a great asset to your relationship!"
+    },
+    "mostly_B": {
+      "label": "The Adventurer",
+      "description": "You love excitement and variety in your date nights. Trying new activities keeps the relationship dynamic and fun, fostering a sense of adventure together.",
+      "advice": "Keep exploring new experiences and encourage your partner to share in the excitement. Balance adventure with moments of relaxation for a well-rounded connection."
+    },
+    "mostly_C": {
+      "label": "The Balancer",
+      "description": "You strike a healthy balance between planned and spontaneous activities. This flexibility allows you to enjoy both stability and excitement in your relationship.",
+      "advice": "Maintain this balance by continuing to mix planned outings with spontaneous adventures. It's a great way to keep your relationship both secure and lively."
+    },
+    "mostly_D": {
+      "label": "The Relaxer",
+      "description": "You prefer low-key and relaxing date nights, valuing comfort and downtime together. This approach helps in reducing stress and strengthening your emotional bond.",
+      "advice": "Ensure that you also incorporate occasional fun activities to add variety. Your focus on relaxation is wonderful for maintaining a peaceful and supportive relationship."
+    },
+    "mostly_E": {
+      "label": "The Spontaneous Soul",
+      "description": "You enjoy going with the flow and keeping date nights spontaneous. This spontaneity can bring unexpected joy and excitement to your relationship.",
+      "advice": "Embrace your spontaneous nature while occasionally planning special surprises. This blend can enhance the unpredictability and fun in your relationship."
+    }
+  }
+}
+

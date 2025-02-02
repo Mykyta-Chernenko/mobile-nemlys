@@ -1,0 +1,227 @@
+{
+  "title": "Navigating Our Future Together",
+  "description": "This journey is designed to help you and your partner thoughtfully plan for the future and navigate important life decisions. You'll explore various aspects of your relationship, discuss long-term goals, and strengthen your partnership through engaging activities, fostering open communication, and mutual understanding.",
+  "subtopics": [
+    {
+      "title": "Envisioning Our Life Ahead",
+      "description": "Begin by imagining your ideal future together, discussing dreams and aspirations over the next five years. You'll create a clear vision for what you both want from life.",
+      "content": [
+        {
+          "type": "quiz",
+          "title": "Future Planning Style",
+          "id": 2105
+        },
+        {
+          "type": "question",
+          "title": "How do you envision our relationship evolving over the next five years?",
+          "id": 1235
+        },
+        {
+          "type": "article",
+          "title": "Creating a Vision for Us",
+          "id": 5053
+        },
+        {
+          "type": "game",
+          "title": "Future Visionaries",
+          "id": 3000
+        },
+        {
+          "type": "checkup",
+          "title": "Future Talk Together",
+          "id": 6036
+        },
+        {
+          "type": "exercise",
+          "title": "Long-Term Goal Planning",
+          "id": 4074
+        }
+      ]
+    },
+    {
+      "title": "Financial Futures",
+      "description": "Explore your financial goals as a couple. Discuss budgeting, saving, and potential investments to ensure a secure and comfortable lifestyle while aligning your financial aspirations with future plans.",
+      "content": [
+        {
+          "type": "quiz",
+          "title": "Financial Planning Style",
+          "id": 2083
+        },
+        {
+          "type": "question",
+          "title": "Do you think financial discussions should happen regularly? How often?",
+          "id": 1040
+        },
+        {
+          "type": "article",
+          "title": "Mastering Money Talks Together",
+          "id": 5021
+        },
+        {
+          "type": "game",
+          "title": "Dream Budget Builders",
+          "id": 3001
+        },
+        {
+          "type": "checkup",
+          "title": "Budgeting Together Without Breaking Up",
+          "id": 6039
+        },
+        {
+          "type": "exercise",
+          "title": "Budget Planning Session",
+          "id": 4033
+        }
+      ]
+    },
+    {
+      "title": "Building a Family Blueprint",
+      "description": "Delve into discussions about family planning and parenting goals. Decide whether you want children, how many, and consider what kind of upbringing you envision.",
+      "content": [
+        {
+          "type": "quiz",
+          "title": "Parenting Style Alignment",
+          "id": 2082
+        },
+        {
+          "type": "question",
+          "title": "Do you want to have children? If so, when do you think is the right time?",
+          "id": 1056
+        },
+        {
+          "type": "game",
+          "title": "Parenting Philosophy Play",
+          "id": 3140
+        },
+        {
+          "type": "checkup",
+          "title": "Parenting Pathways",
+          "id": 6025
+        },
+        {
+          "type": "exercise",
+          "title": "Parenthood Readiness Assessment",
+          "id": 4107
+        },
+        {
+          "type": "question",
+          "title": "Should we adopt if we are unable to have children?",
+          "id": 1557
+        }
+      ]
+    },
+    {
+      "title": "Navigating Major Life Decisions",
+      "description": "Discuss how you will approach significant decisions in your lives together. This includes moving in together, career changes, and unexpected life challenges that may arise.",
+      "content": [
+        {
+          "type": "quiz",
+          "title": "Decision-Making Styles",
+          "id": 2108
+        },
+        {
+          "type": "question",
+          "title": "How do you feel about making major life decisions together?",
+          "id": 1087
+        },
+        {
+          "type": "game",
+          "title": "Problem-Solving Pals",
+          "id": 3010
+        },
+        {
+          "type": "checkup",
+          "title": "Resolving Decision-Making Conflicts",
+          "id": 6022
+        },
+        {
+          "type": "exercise",
+          "title": "Negotiation Skills Exercises",
+          "id": 4023
+        },
+        {
+          "type": "question",
+          "title": "How do you feel about relocating for career opportunities in the future?",
+          "id": 1341
+        }
+      ]
+    },
+    {
+      "title": "Creating a Joint Bucket List",
+      "description": "Develop a couples' bucket list that reflects your shared dreams and the adventures you wish to experience together. Focus on travel, experiences, and traditions you want to build.",
+      "content": [
+        {
+          "type": "quiz",
+          "title": "Goal Alignment Style",
+          "id": 2055
+        },
+        {
+          "type": "question",
+          "title": "If we could create a couples' bucket list, what's the first adventure you'd add?",
+          "id": 1441
+        },
+        {
+          "type": "article",
+          "title": "Shared Meaning Style",
+          "id": 2194
+        },
+        {
+          "type": "game",
+          "title": "Dream Adventure Quest",
+          "id": 3037
+        },
+        {
+          "type": "exercise",
+          "title": "Fantasy Sharing Session",
+          "id": 4090
+        },
+        {
+          "type": "question",
+          "title": "If we could teleport to any romantic destination right now, where would we go?",
+          "id": 1496
+        }
+      ]
+    },
+    {
+      "title": "Aligning Values and Traditions",
+      "description": "Discuss important values and traditions you want to cultivate as a couple and as a family. Delve into religious beliefs, lifestyle choices, and the legacy you wish to create together.",
+      "content": [
+        {
+          "type": "quiz",
+          "title": "Values Alignment Style",
+          "id": 2064
+        },
+        {
+          "type": "question",
+          "title": "How do you see our religious beliefs influencing our future goals?",
+          "id": 1237
+        },
+        {
+          "type": "article",
+          "title": "Values in Action Type",
+          "id": 2202
+        },
+        {
+          "type": "game",
+          "title": "Cultural Connection Style",
+          "id": 2068
+        },
+        {
+          "type": "checkup",
+          "title": "Core Values Connection",
+          "id": 6042
+        },
+        {
+          "type": "exercise",
+          "title": "Family Values Alignment",
+          "id": 4157
+        },
+        {
+          "type": "question",
+          "title": "What values are most important for us to instill in our children?",
+          "id": 1613
+        }
+      ]
+    }
+  ]
+}

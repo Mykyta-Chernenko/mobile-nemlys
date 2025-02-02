@@ -1,0 +1,145 @@
+{
+  "topic": [
+    "having_and_discussing_sex",
+    "exploring_feelings",
+    "improving_relationship_satisfaction",
+    "building_trust",
+    "understanding_mutual_compatibility"
+  ],
+  "test_headline": "Evolving Together: How Your Sexual Relationship Grows",
+  "scientific_basis": "Inspired by studies on relationship dynamics and sexual evolution over time, this quiz explores how couples adapt and grow together sexually.",
+  "description": "Ready to discover how your sexual relationship has evolved over time? Take this fun quiz to explore how your changing needs and preferences shape your connection and growth together!",
+  "questions": [
+    {
+      "question": "When you've noticed a change in your sexual preferences, how do you usually handle it?",
+      "options": [
+        "I talk about it openly with my partner right away.",
+        "I wait to see if it changes on its own.",
+        "I feel unsure about how to bring it up.",
+        "I adapt my preferences without discussing it.",
+        "I explore new preferences together with my partner."
+      ]
+    },
+    {
+      "question": "How often do you and your partner discuss your sexual relationship?",
+      "options": [
+        "We have regular, open conversations about it.",
+        "Only when there's a noticeable issue.",
+        "Rarely, I prefer to keep it private.",
+        "I tend to bring it up, but my partner doesn't.",
+        "We frequently explore and discuss new ideas together."
+      ]
+    },
+    {
+      "question": "When trying something new sexually, what is your usual approach?",
+      "options": [
+        "I suggest new ideas and discuss them thoroughly.",
+        "I stick to what we already know works.",
+        "I feel nervous about introducing new ideas.",
+        "I go along with my partner's suggestions without much input.",
+        "I love experimenting and encourage my partner to join me."
+      ]
+    },
+    {
+      "question": "If one of you has evolving sexual needs, how does the other typically respond?",
+      "options": [
+        "They are supportive and willing to adapt.",
+        "They ignore the changes and hope it resolves.",
+        "They become defensive or uncomfortable.",
+        "They adjust without discussing their own needs.",
+        "They engage in open dialogue to understand and accommodate."
+      ]
+    },
+    {
+      "question": "How do you handle sexual conflicts or disagreements that arise?",
+      "options": [
+        "We discuss them openly to find a solution.",
+        "We avoid the topic to prevent tension.",
+        "I prefer to keep my feelings to myself.",
+        "I concede to my partner's preferences.",
+        "We work together to understand each other's perspectives and find compromises."
+      ]
+    },
+    {
+      "question": "When your sexual desires change over time, how does your relationship typically adapt?",
+      "options": [
+        "We openly communicate and adjust together.",
+        "The changes are ignored, leading to tension.",
+        "I struggle to express the changes to my partner.",
+        "I adapt on my own without involving my partner.",
+        "We explore new dynamics and grow together."
+      ]
+    },
+    {
+      "question": "How comfortable are you with initiating conversations about your sexual relationship?",
+      "options": [
+        "Very comfortable; I bring it up regularly.",
+        "Uncomfortable; I wait for my partner to initiate.",
+        "Somewhat uncomfortable; I find it hard to start.",
+        "Comfortable, but my partner doesn't reciprocate.",
+        "Extremely comfortable; I enjoy these discussions."
+      ]
+    },
+    {
+      "question": "In times of change within your sexual relationship, what role do you usually take?",
+      "options": [
+        "Leader; I initiate and guide the changes.",
+        "Follower; I let my partner take the lead.",
+        "Observer; I watch and wait before acting.",
+        "Adaptor; I adjust my behavior without discussing it.",
+        "Collaborator; I work together with my partner to navigate changes."
+      ]
+    },
+    {
+      "question": "How do you feel about exploring new sexual activities with your partner?",
+      "options": [
+        "Excited and eager to try new things.",
+        "Indifferent; I prefer our usual activities.",
+        "Anxious; I worry about how it will go.",
+        "Willing but not proactive in suggesting them.",
+        "Enthusiastic; I love discovering new activities together."
+      ]
+    },
+    {
+      "question": "How do you ensure that both partners' sexual needs are met as they evolve?",
+      "options": [
+        "We have ongoing conversations to address each other's needs.",
+        "We don't actively discuss; hope it works out.",
+        "I focus on my needs and assume my partner does the same.",
+        "I adapt to my partner's needs without sharing mine.",
+        "We regularly check in with each other and adjust accordingly."
+      ]
+    }
+  ],
+  "evaluation_method": {
+    "explanation": "Each answer corresponds to a different approach to evolving sexual needs: Open Communicator, Passive Partner, Hesitant Communicator, Adaptive Partner, and Explorative Communicator. Your responses will be tallied to indicate which approach is most prominent in your relationship dynamics.",
+    "example": "For instance, selecting mostly 'A' answers suggests you are an Open Communicator, actively engaging in discussions about your sexual needs."
+  },
+  "outcome_interpretation": {
+    "mostly_A": {
+      "label": "Open Communicator",
+      "description": "You actively engage in discussions about your sexual needs and preferences, fostering a dynamic and evolving sexual relationship.",
+      "advice": "Continue your open communication and encourage your partner to share their evolving needs as well."
+    },
+    "mostly_B": {
+      "label": "Passive Partner",
+      "description": "You tend to wait for your partner to initiate discussions about sexual changes, which can lead to unmet needs on both sides.",
+      "advice": "Try taking the initiative to communicate your needs to ensure both partners are satisfied."
+    },
+    "mostly_C": {
+      "label": "Hesitant Communicator",
+      "description": "You find it challenging to bring up changes in your sexual preferences, which might cause friction or unaddressed issues.",
+      "advice": "Work on building confidence in discussing your needs and consider setting aside regular times to talk openly."
+    },
+    "mostly_D": {
+      "label": "Adaptive Partner",
+      "description": "You adapt your sexual preferences to suit the relationship, showing flexibility but may sometimes neglect your own desires.",
+      "advice": "Ensure you're also expressing your needs and finding a balance between adaptation and personal satisfaction."
+    },
+    "mostly_E": {
+      "label": "Explorative Communicator",
+      "description": "You love exploring new sexual preferences together, keeping the relationship exciting and evolving.",
+      "advice": "Maintain this enthusiasm and encourage your partner to join in the exploration to strengthen your bond."
+    }
+  }
+}

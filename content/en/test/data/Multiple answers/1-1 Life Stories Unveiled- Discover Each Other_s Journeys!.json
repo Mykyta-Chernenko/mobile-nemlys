@@ -1,0 +1,145 @@
+{
+  "topic": [
+    "getting_to_know_partner",
+    "having_meaningful_conversations",
+    "exploring_feelings",
+    "building_trust",
+    "understanding_mutual_compatibility"
+  ],
+  "test_headline": "Life Stories Unveiled: Discover Each Other's Journeys!",
+  "scientific_basis": "This quiz is based on narrative psychology and the role of personal storytelling in deepening connections.",
+  "description": "Embark on a journey through each other's life stories! Share childhood memories, pivotal moments, and cherished experiences to build a deeper understanding and stronger bond with your partner.",
+  "questions": [
+    {
+      "question": "How often do you share childhood memories with your partner?",
+      "options": [
+        "All the time! I love reminiscing about the good old days.",
+        "Frequently, especially the happy moments.",
+        "Sometimes, when the mood strikes.",
+        "Rarely, I prefer to keep those memories private.",
+        "Hardly ever. I don't see the need to discuss my childhood."
+      ]
+    },
+    {
+      "question": "When discussing past experiences, do you prefer to focus on positive or negative events?",
+      "options": [
+        "Mostly positive – I like to keep things uplifting.",
+        "A balance of both positive and negative events.",
+        "I focus on positive events but acknowledge the negatives when necessary.",
+        "I tend to highlight the challenges and negative experiences.",
+        "I rarely discuss past experiences, whether positive or negative."
+      ]
+    },
+    {
+      "question": "How comfortable are you sharing personal turning points with your partner?",
+      "options": [
+        "Very comfortable – I share openly about significant life changes.",
+        "Comfortable, as long as the conversation feels right.",
+        "Somewhat comfortable, but I hold back on the most personal details.",
+        "Uncomfortable – I find it hard to talk about major life changes.",
+        "Not comfortable at all – I keep my turning points to myself."
+      ]
+    },
+    {
+      "question": "When your partner shares a story, how do you usually respond?",
+      "options": [
+        "I actively listen and share similar experiences.",
+        "I ask questions to learn more about their story.",
+        "I listen attentively but don't add much.",
+        "I sometimes get distracted or change the topic.",
+        "I find it hard to engage with their stories."
+      ]
+    },
+    {
+      "question": "Do you enjoy reminiscing about your shared experiences together?",
+      "options": [
+        "Absolutely! It's one of my favorite activities.",
+        "Yes, especially when we have fun memories.",
+        "Sometimes, depending on the moment.",
+        "Not really, I prefer focusing on the present.",
+        "I don't enjoy it and prefer not to reminisce."
+      ]
+    },
+    {
+      "question": "How do you feel when your partner shares a story from their past?",
+      "options": [
+        "Inspired and eager to learn more.",
+        "Interested and engaged in the conversation.",
+        "Neutral – I listen without strong feelings.",
+        "A bit indifferent or unsure how to respond.",
+        "Uncomfortable and prefer not to hear about it."
+      ]
+    },
+    {
+      "question": "When introducing your partner to friends, how much of your life story do you share?",
+      "options": [
+        "A lot! I love sharing our stories together.",
+        "A fair amount, highlighting key moments.",
+        "Just the basics – enough to give a good overview.",
+        "Very little, keeping our personal lives private.",
+        "Almost nothing – I prefer not to share our stories."
+      ]
+    },
+    {
+      "question": "How important is it for you to understand your partner's formative experiences?",
+      "options": [
+        "Extremely important – it helps me connect deeply.",
+        "Very important – it enriches our relationship.",
+        "Moderately important – I appreciate knowing more.",
+        "Slightly important – it's nice but not essential.",
+        "Not important – I focus more on the present and future."
+      ]
+    },
+    {
+      "question": "Do you like creating new stories together, such as shared plans and dreams?",
+      "options": [
+        "Yes! I love dreaming and planning our future together.",
+        "Often – it's exciting to envision our journey.",
+        "Sometimes – when the opportunity arises.",
+        "Rarely – I prefer going with the flow.",
+        "No, I don't see the need to create shared stories."
+      ]
+    },
+    {
+      "question": "How do you handle differences in your life stories or experiences with your partner?",
+      "options": [
+        "Embrace them and find ways to connect our narratives.",
+        "Respectfully discuss and learn from each other's perspectives.",
+        "Acknowledge the differences but don't dwell on them.",
+        "Feel conflicted but try to avoid the topic.",
+        "Find it challenging and often let differences create distance."
+      ]
+    }
+  ],
+  "evaluation_method": {
+    "explanation": "Each answer corresponds to a specific storytelling style: A for Enthusiast, B for Reflective, C for Casual, D for Reserved, and E for Narrative Builder. Tally the number of each option chosen to determine your primary storytelling style.",
+    "example": "If you selected mostly 'A' answers, you are a Storytelling Enthusiast who loves sharing and exploring life stories together. If you chose mostly 'D', you might be a Reserved Narrator who prefers to keep personal stories private."
+  },
+  "outcome_interpretation": {
+    "mostly_A": {
+      "label": "Storytelling Enthusiast",
+      "description": "You thrive on sharing and hearing stories, making storytelling a central part of your relationship. Your enthusiasm helps create a rich tapestry of shared memories and deepens your connection.",
+      "advice": "Continue embracing your love for storytelling. Encourage your partner to share more and perhaps explore creative ways to document your shared experiences together."
+    },
+    "mostly_B": {
+      "label": "Reflective Storyteller",
+      "description": "You prefer meaningful and deep conversations about significant life events. This reflective approach fosters a profound understanding between you and your partner.",
+      "advice": "Maintain your thoughtful storytelling style. Encourage your partner to share their reflections and consider setting aside dedicated time for deep conversations."
+    },
+    "mostly_C": {
+      "label": "Casual Conversationalist",
+      "description": "You enjoy sharing stories in a light and relaxed manner, making conversations enjoyable without delving too deeply. This balance keeps the relationship fun and easygoing.",
+      "advice": "Keep up your casual approach to storytelling. Occasionally dive deeper into certain stories to add more layers to your connection."
+    },
+    "mostly_D": {
+      "label": "Reserved Narrator",
+      "description": "You tend to keep your stories private, sharing only what feels comfortable. This reserved nature respects personal boundaries while still allowing for meaningful connections.",
+      "advice": "Consider opening up a bit more to enhance intimacy. Sharing even small personal stories can significantly strengthen your bond."
+    },
+    "mostly_E": {
+      "label": "Narrative Builder",
+      "description": "You and your partner collaboratively build a shared narrative, integrating both of your stories into a cohesive journey. This approach fosters unity and a strong sense of partnership.",
+      "advice": "Continue building your shared stories together. Engage in activities that create new memories and strengthen your collective narrative."
+    }
+  }
+}

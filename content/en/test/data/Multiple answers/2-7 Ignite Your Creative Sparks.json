@@ -1,0 +1,145 @@
+{
+  "topic": [
+    "having_fun_and_entertainment",
+    "exploring_feelings",
+    "enhancing_love_and_affection",
+    "improving_relationship_satisfaction",
+    "understanding_mutual_compatibility"
+  ],
+  "test_headline": "Ignite Your Creative Sparks",
+  "scientific_basis": "This quiz is grounded in research exploring how shared creative activities strengthen emotional bonds and enhance mutual appreciation between partners.",
+  "description": "Ready to discover how your creative side can light up your relationship? Dive into this fun quiz to see how engaging in creative endeavors together can boost your emotional intimacy and bring you closer than ever!",
+  "questions": [
+    {
+      "question": "When planning a date night, which creative activity excites you the most?",
+      "options": [
+        "Painting or drawing together",
+        "Trying out a new dance class",
+        "Cooking a gourmet meal from scratch",
+        "Building something with DIY kits",
+        "Writing a short story or poem together"
+      ]
+    },
+    {
+      "question": "How do you feel after completing a creative project with your partner?",
+      "options": [
+        "Proud and accomplished",
+        "Energized and inspired",
+        "Relaxed and content",
+        "Excited to start something new",
+        "Connected and closer to your partner"
+      ]
+    },
+    {
+      "question": "How often do you and your partner engage in creative activities?",
+      "options": [
+        "Multiple times a week",
+        "Once a week",
+        "A few times a month",
+        "Once a month",
+        "Rarely, but we enjoy it when we do"
+      ]
+    },
+    {
+      "question": "When facing a creative block together, how do you handle it?",
+      "options": [
+        "Take a break and return later",
+        "Brainstorm new ideas together",
+        "Seek inspiration from outside sources",
+        "Encourage each other to keep trying",
+        "Switch to a different activity temporarily"
+      ]
+    },
+    {
+      "question": "Which creative activity best represents your relationship dynamic?",
+      "options": [
+        "Collaborative painting – blending ideas seamlessly",
+        "Improv dancing – moving freely and supporting each other",
+        "Gourmet cooking – combining flavors and techniques",
+        "Building models – constructing together step by step",
+        "Writing stories – creating narratives side by side"
+      ]
+    },
+    {
+      "question": "How do you celebrate completing a creative project as a couple?",
+      "options": [
+        "Display it proudly in your home",
+        "Share it with friends and family",
+        "Reflect on the experience together",
+        "Plan the next creative endeavor",
+        "Take photos and create a memory album"
+      ]
+    },
+    {
+      "question": "What motivates you to engage in creative activities with your partner?",
+      "options": [
+        "Strengthening our bond",
+        "Expressing ourselves",
+        "Having fun and enjoying each other's company",
+        "Achieving something together",
+        "Exploring new interests and hobbies"
+      ]
+    },
+    {
+      "question": "How do creative activities influence your communication as a couple?",
+      "options": [
+        "They open up new ways to express feelings",
+        "They improve our teamwork skills",
+        "They make conversations more playful",
+        "They help resolve conflicts creatively",
+        "They enhance our mutual understanding"
+      ]
+    },
+    {
+      "question": "Which statement best describes your approach to creativity in your relationship?",
+      "options": [
+        "We thrive on brainstorming and idea-sharing",
+        "We enjoy taking turns leading creative projects",
+        "We prefer structured activities with clear goals",
+        "We like spontaneous and unplanned creative sessions",
+        "We incorporate creativity into our daily routines"
+      ]
+    },
+    {
+      "question": "What do you find most rewarding about being creative together?",
+      "options": [
+        "Seeing our combined ideas come to life",
+        "The joy and laughter we share",
+        "Building something lasting",
+        "Learning new skills together",
+        "Feeling more connected and understood"
+      ]
+    }
+  ],
+  "evaluation_method": {
+    "explanation": "Each answer corresponds to a specific creative engagement style: Collaborative Creator, Dynamic Dancer, Culinary Artist, Handy Builder, and Storyteller. Your selections will be tallied to determine which creative style best represents how you and your partner connect through creativity.",
+    "example": "For example, choosing more 'A' options indicates a Collaborative Creator style, emphasizing teamwork and idea-sharing, while more 'B' answers suggest a Dynamic Dancer approach, focusing on movement and spontaneity."
+  },
+  "outcome_interpretation": {
+    "mostly_A": {
+      "label": "Collaborative Creators",
+      "description": "You and your partner excel at working together to bring ideas to life. Your teamwork fosters a strong emotional bond and mutual respect.",
+      "advice": "Continue to explore collaborative projects and celebrate your combined achievements to keep the creative spark alive."
+    },
+    "mostly_B": {
+      "label": "Dynamic Dancers",
+      "description": "Your relationship thrives on movement and spontaneity. You enjoy dynamic activities that keep the energy high and the fun flowing.",
+      "advice": "Incorporate a variety of spontaneous creative activities to maintain excitement and keep your connection vibrant."
+    },
+    "mostly_C": {
+      "label": "Culinary Artists",
+      "description": "You and your partner find joy in creating delicious experiences together. Cooking and culinary adventures strengthen your bond.",
+      "advice": "Experiment with new recipes and culinary techniques to continue savoring shared successes and tasty memories."
+    },
+    "mostly_D": {
+      "label": "Handy Builders",
+      "description": "Your relationship is built on creating and constructing together. Building projects enhance your teamwork and sense of accomplishment.",
+      "advice": "Take on new building challenges and celebrate the tangible results of your collaborative efforts to deepen your connection."
+    },
+    "mostly_E": {
+      "label": "Storytellers",
+      "description": "You and your partner love weaving narratives and expressing yourselves through stories. This creative avenue deepens your understanding and appreciation of each other.",
+      "advice": "Continue to share and create stories together, exploring new genres and storytelling methods to enrich your emotional intimacy."
+    }
+  }
+}

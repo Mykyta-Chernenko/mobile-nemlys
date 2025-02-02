@@ -1,0 +1,252 @@
+{
+  "title": "Cultivating Meaningful Conversations",
+  "description": "This journey is designed to enhance your ability to engage in meaningful conversations with your partner. Over the course of several days, you'll explore various aspects of communication, from understanding each other's values to discussing deeper emotional matters. Each day builds on the last, encouraging growth and connection.",
+  "subtopics": [
+    {
+      "title": "The Basics of Communication",
+      "description": "Start by exploring the fundamentals of effective communication with your partner. Learn about active listening, expressing thoughts clearly, and the importance of non-verbal cues.",
+      "content": [
+        {
+          "type": "quiz",
+          "title": "Discover Your Communication Style",
+          "id": 2071
+        },
+        {
+          "type": "question",
+          "title": "How do you prefer to communicate your needs and desires?",
+          "id": 1004
+        },
+        {
+          "type": "article",
+          "title": "Mastering Communication Techniques",
+          "id": 5054
+        },
+        {
+          "type": "game",
+          "title": "Communication Clues",
+          "id": 3041
+        },
+        {
+          "type": "checkup",
+          "title": "Mastering Our Communication Styles",
+          "id": 6004
+        },
+        {
+          "type": "exercise",
+          "title": "Active Listening Practice",
+          "id": 4010
+        },
+        {
+          "type": "question",
+          "title": "What's your favorite memory of us having a great conversation?",
+          "id": 1938
+        }
+      ]
+    },
+    {
+      "title": "Understanding Each Other's Values",
+      "description": "Delve into the core values that shape your beliefs and actions. Discuss how these values influence your decisions and how they can impact your relationship.",
+      "content": [
+        {
+          "type": "quiz",
+          "title": "Values Alignment Style",
+          "id": 2064
+        },
+        {
+          "type": "question",
+          "title": "Do you think we share the same values?",
+          "id": 1053
+        },
+        {
+          "type": "article",
+          "title": "Core Values Connection",
+          "id": 5022
+        },
+        {
+          "type": "game",
+          "title": "Values & Vibes",
+          "id": 3042
+        },
+        {
+          "type": "checkup",
+          "title": "Core Values Connection",
+          "id": 6042
+        },
+        {
+          "type": "exercise",
+          "title": "Values Alignment Exercise",
+          "id": 4009
+        },
+        {
+          "type": "question",
+          "title": "What are your top three values, and how do they influence your decisions?",
+          "id": 1720
+        }
+      ]
+    },
+    {
+      "title": "Navigating Difficult Topics",
+      "description": "Learn techniques for approaching tough conversations with sensitivity and respect. Practice discussing challenging subjects such as finances, family dynamics, or future aspirations.",
+      "content": [
+        {
+          "type": "quiz",
+          "title": "Problem-Solving Style",
+          "id": 2139
+        },
+        {
+          "type": "question",
+          "title": "Do you think that money play a big role in feeling fulfilled?",
+          "id": 1049
+        },
+        {
+          "type": "question",
+          "title": "How do you balance personal time with time spent together?",
+          "id": 1072
+        },
+        {
+          "type": "article",
+          "title": "Navigating Difficult Conversations",
+          "id": 5037
+        },
+        {
+          "type": "game",
+          "title": "Conflict Resolution Quest",
+          "id": 3073
+        },
+        {
+          "type": "checkup",
+          "title": "Tackling Tough Talks",
+          "id": 6011
+        },
+        {
+          "type": "exercise",
+          "title": "Tough Talks Toolkit",
+          "id": 4003
+        }
+      ]
+    },
+    {
+      "title": "Sharing Personal Experiences",
+      "description": "Engage in storytelling to share significant memories from your past. Discover how your experiences have influenced your current perspectives and emotional states.",
+      "content": [
+        {
+          "type": "quiz",
+          "title": "Life Story Style",
+          "id": 2063
+        },
+        {
+          "type": "question",
+          "title": "Can you share a memory from your childhood that you think has shaped who you are today?",
+          "id": 1283
+        },
+        {
+          "type": "question",
+          "title": "What's a memorable lesson you've learned from past relationships?",
+          "id": 1788
+        },
+        {
+          "type": "article",
+          "title": "Love Maps: Knowing Each Other Deeply",
+          "id": 5073
+        },
+        {
+          "type": "game",
+          "title": "Memory Lane",
+          "id": 3126
+        },
+        {
+          "type": "checkup",
+          "title": "Exploring Childhood Memories",
+          "id": 6030
+        },
+        {
+          "type": "exercise",
+          "title": "Intimate Story Sharing",
+          "id": 4124
+        }
+      ]
+    },
+    {
+      "title": "Deepening Emotional Connection",
+      "description": "Explore conversations that enhance emotional intimacy. Discuss topics such as fears, dreams, and aspirations to foster a deeper bond with your partner.",
+      "content": [
+        {
+          "type": "quiz",
+          "title": "Emotional Intimacy Style",
+          "id": 2032
+        },
+        {
+          "type": "question",
+          "title": "Do you believe in soulmates? Why or why not?",
+          "id": 1358
+        },
+        {
+          "type": "question",
+          "title": "What are your dreams and aspirations outside of work?",
+          "id": 1517
+        },
+        {
+          "type": "article",
+          "title": "Building Emotional Intimacy Together",
+          "id": 5020
+        },
+        {
+          "type": "game",
+          "title": "Emotional Connection",
+          "id": 3025
+        },
+        {
+          "type": "checkup",
+          "title": "Emotional Intimacy Check-in",
+          "id": 6073
+        },
+        {
+          "type": "exercise",
+          "title": "Emotional Closeness Exercises",
+          "id": 4058
+        }
+      ]
+    },
+    {
+      "title": "Building a Culture of Openness",
+      "description": "Create an environment where both partners feel safe to express their thoughts and feelings. Learn strategies to maintain open communication and to encourage vulnerability.",
+      "content": [
+        {
+          "type": "quiz",
+          "title": "Openness Style",
+          "id": 2026
+        },
+        {
+          "type": "question",
+          "title": "How do you feel about surprise conversations versus planned discussions?",
+          "id": 1003
+        },
+        {
+          "type": "question",
+          "title": "How do you express your creativity?",
+          "id": 1017
+        },
+        {
+          "type": "article",
+          "title": "Cultivating Honest Conversations",
+          "id": 5033
+        },
+        {
+          "type": "game",
+          "title": "Open Hearts Challenge",
+          "id": 3055
+        },
+        {
+          "type": "checkup",
+          "title": "Vulnerability and Openness",
+          "id": 6046
+        },
+        {
+          "type": "exercise",
+          "title": "Transparent Communication Practices",
+          "id": 4024
+        }
+      ]
+    }
+  ]
+}

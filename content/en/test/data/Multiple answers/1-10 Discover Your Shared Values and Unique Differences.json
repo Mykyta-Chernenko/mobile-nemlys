@@ -1,0 +1,145 @@
+{
+  "topic": [
+    "getting_to_know_partner",
+    "understanding_mutual_compatibility",
+    "overcoming_differences",
+    "building_trust",
+    "improving_relationship_satisfaction"
+  ],
+  "test_headline": "Discover Your Shared Values and Unique Differences",
+  "scientific_basis": "This quiz is inspired by social psychology research on similarity and complementarity in relationships, exploring how shared values and differences contribute to relationship harmony and growth.",
+  "description": "Dive into this fun and insightful quiz to uncover the values you and your partner share and the unique differences that make your relationship special! Understanding these aspects can help you appreciate each other more and navigate any differences with ease.",
+  "questions": [
+    {
+      "question": "How do you and your partner approach decision-making together?",
+      "options": [
+        "We make decisions together, discussing all options thoroughly.",
+        "I usually take the lead, and they support my choices.",
+        "They prefer to decide, and I follow their lead.",
+        "We split decisions based on each other's strengths.",
+        "We often have different approaches and sometimes struggle to agree."
+      ]
+    },
+    {
+      "question": "When planning a vacation, what's your typical dynamic?",
+      "options": [
+        "We collaborate to choose a destination that excites both of us.",
+        "I love planning every detail to ensure everything is perfect.",
+        "They enjoy taking the lead in organizing our trips.",
+        "We compromise by alternating who plans each trip.",
+        "We have different ideas and sometimes have to make separate plans."
+      ]
+    },
+    {
+      "question": "How do you handle financial decisions as a couple?",
+      "options": [
+        "We discuss our finances openly and make joint decisions.",
+        "I manage the finances and keep my partner informed.",
+        "They take charge of the financial aspects of our relationship.",
+        "We divide financial responsibilities based on our individual strengths.",
+        "We often disagree on financial priorities and spending habits."
+      ]
+    },
+    {
+      "question": "What role does family play in your relationship?",
+      "options": [
+        "Both our families are equally important and we balance our time.",
+        "I prioritize my family more, while they understand and support.",
+        "They prioritize their family more, and I respect their closeness.",
+        "We integrate both families into our lives harmoniously.",
+        "Balancing both families can be challenging for us."
+      ]
+    },
+    {
+      "question": "How do you and your partner spend your free time?",
+      "options": [
+        "We enjoy a mix of activities that we both love.",
+        "I prefer activities that we both can participate in together.",
+        "They enjoy planning activities that we both can enjoy.",
+        "We each have our own hobbies and also share some together.",
+        "Our different interests sometimes lead to spending time apart."
+      ]
+    },
+    {
+      "question": "When it comes to career goals, how aligned are you and your partner?",
+      "options": [
+        "Our career goals are well-aligned and support each other.",
+        "I have specific career aspirations that my partner fully supports.",
+        "They have career goals that they pursue, and I support them.",
+        "We have different career paths but find ways to support each other.",
+        "Our career goals are quite different, and it sometimes causes tension."
+      ]
+    },
+    {
+      "question": "How do you and your partner view work-life balance?",
+      "options": [
+        "We both prioritize a healthy work-life balance and support each other.",
+        "I prioritize work-life balance more, encouraging my partner to do the same.",
+        "They emphasize work-life balance, and I follow their lead.",
+        "We have different views but strive to find a middle ground.",
+        "Balancing work and personal life is a challenge for us."
+      ]
+    },
+    {
+      "question": "What's your approach to personal growth and self-improvement?",
+      "options": [
+        "We encourage and support each other's personal growth journeys.",
+        "I focus on my personal growth and appreciate their support.",
+        "They are dedicated to self-improvement and inspire me to grow.",
+        "We have different approaches but respect each other's efforts.",
+        "Our differing views on personal growth sometimes create friction."
+      ]
+    },
+    {
+      "question": "How do you and your partner handle disagreements or conflicts?",
+      "options": [
+        "We communicate openly and work together to find solutions.",
+        "I tend to address conflicts directly to resolve them quickly.",
+        "They prefer to discuss and resolve conflicts calmly.",
+        "We each handle conflicts in our own way but aim for mutual understanding.",
+        "Conflicts often escalate because we have different ways of handling them."
+      ]
+    },
+    {
+      "question": "What importance do you place on shared hobbies and interests?",
+      "options": [
+        "We have many shared hobbies that strengthen our bond.",
+        "I enjoy sharing my hobbies with my partner.",
+        "They love introducing me to their interests.",
+        "We have some shared interests but also enjoy our own.",
+        "We have few shared hobbies, preferring to pursue our own interests."
+      ]
+    }
+  ],
+  "evaluation_method": {
+    "explanation": "Each answer corresponds to a specific dimension of similarity or complementarity in your relationship. Responses that indicate shared preferences contribute to a higher similarity score, while diverse responses contribute to complementarity. The total similarity and complementarity scores are calculated based on your answers, reflecting how much you and your partner align or complement each other in various aspects.",
+    "example": "For instance, selecting more options that show shared decision-making increases your similarity score, indicating strong alignment in values. Conversely, choosing options that highlight different approaches contributes to your complementarity score, showing how your differences can balance each other."
+  },
+  "outcome_interpretation": {
+    "high_similarity": {
+      "label": "High Similarity",
+      "description": "You and your partner share many values and preferences, which fosters a strong sense of understanding and harmony in your relationship.",
+      "advice": "Continue nurturing your shared interests and values to maintain your strong bond. Celebrate the common ground that brings you closer together."
+    },
+    "balanced_similarity_complementarity": {
+      "label": "Balanced Similarity and Complementarity",
+      "description": "Your relationship benefits from both shared values and complementary differences, creating a dynamic and well-rounded partnership.",
+      "advice": "Embrace your differences as strengths that enhance your relationship. Use your shared values as a foundation to navigate any differences smoothly."
+    },
+    "high_complementarity": {
+      "label": "High Complementarity",
+      "description": "You and your partner have unique differences that complement each other, bringing balance and diverse perspectives to your relationship.",
+      "advice": "Leverage your complementary strengths to support each other. Appreciate how your differences contribute to a richer and more versatile partnership."
+    },
+    "low_similarity_complementarity": {
+      "label": "Low Similarity and Complementarity",
+      "description": "You and your partner have significant differences and limited shared values, which may require extra effort to find common ground.",
+      "advice": "Focus on identifying and building shared values that matter most to both of you. Open communication can help bridge gaps and foster mutual appreciation."
+    },
+    "diverse_dynamics": {
+      "label": "Diverse Dynamics",
+      "description": "Your relationship features a mix of similarities and differences, creating a unique dynamic that can lead to growth and deeper understanding.",
+      "advice": "Celebrate the diversity in your relationship and use it as an opportunity for continuous learning and adaptation. Embrace both your shared values and unique perspectives."
+    }
+  }
+}

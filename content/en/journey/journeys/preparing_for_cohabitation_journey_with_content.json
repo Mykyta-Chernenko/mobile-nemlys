@@ -1,0 +1,222 @@
+{
+  "title": "Preparing for Cohabitation",
+  "description": "This journey is designed to prepare you and your partner for cohabitation by addressing various aspects of living together. You'll learn how to communicate effectively, navigate responsibilities, and create a harmonious home environment. Each day, you will explore vital topics that will help fortify your relationship and ease the transition to shared living.",
+  "subtopics": [
+    {
+      "title": "Dreaming of Our Shared Space",
+      "description": "Start by sharing your visions of what your home will look like. Discuss ideas about space, decor, and atmosphere. This sets the foundation for mutual understanding and shared dreams.",
+      "content": [
+        {
+          "type": "quiz",
+          "title": "Lifestyle Harmony Style",
+          "id": 2104
+        },
+        {
+          "type": "question",
+          "title": "How can we create a home environment that respects both of our preferences?",
+          "id": 1132
+        },
+        {
+          "type": "article",
+          "title": "Sharing Spaces Harmoniously",
+          "id": 5024
+        },
+        {
+          "type": "exercise",
+          "title": "Living Space Design",
+          "id": 4051
+        },
+        {
+          "type": "game",
+          "title": "Decor Dilemma",
+          "id": 3010
+        },
+        {
+          "type": "question",
+          "title": "What's one piece of furniture you absolutely need in our new home?",
+          "id": 1826
+        }
+      ]
+    },
+    {
+      "title": "Communication Essentials",
+      "description": "Learn effective communication strategies that will help you navigate daily challenges. Explore ways to express needs, set expectations, and actively listen to one another.",
+      "content": [
+        {
+          "type": "quiz",
+          "title": "Discover Your Communication Style",
+          "id": 2071
+        },
+        {
+          "type": "question",
+          "title": "How do you prefer to communicate your needs and desires?",
+          "id": 1004
+        },
+        {
+          "type": "article",
+          "title": "Mastering Communication Techniques",
+          "id": 5005
+        },
+        {
+          "type": "game",
+          "title": "Communication Clues",
+          "id": 3005
+        },
+        {
+          "type": "checkup",
+          "title": "Mastering Communication Skills",
+          "id": 6002
+        },
+        {
+          "type": "exercise",
+          "title": "Active Listening Practice",
+          "id": 4010
+        }
+      ]
+    },
+    {
+      "title": "Household Responsibilities",
+      "description": "Discuss and establish how you will divide household chores and responsibilities. Create a system that works for both of you to maintain a clean and organized living environment.",
+      "content": [
+        {
+          "type": "quiz",
+          "title": "Domestic Labor Style",
+          "id": 2094
+        },
+        {
+          "type": "question",
+          "title": "How do you feel about handling household responsibilities and chores?",
+          "id": 1331
+        },
+        {
+          "type": "article",
+          "title": "Establishing Household Routines",
+          "id": 5026
+        },
+        {
+          "type": "exercise",
+          "title": "Shared Responsibilities Mapping",
+          "id": 4028
+        },
+        {
+          "type": "game",
+          "title": "Chore Chart Challenge",
+          "id": 3084
+        },
+        {
+          "type": "question",
+          "title": "How do you feel about having a cleaning schedule versus cleaning as we go?",
+          "id": 1332
+        }
+      ]
+    },
+    {
+      "title": "Financial Foundations",
+      "description": "Get aligned on financial management and budgeting as a couple. Discuss strategies for sharing expenses, making joint financial decisions, and maintaining transparency about finances.",
+      "content": [
+        {
+          "type": "quiz",
+          "title": "Budgeting Style for Couples",
+          "id": 2009
+        },
+        {
+          "type": "game",
+          "title": "Dream Budget Builders",
+          "id": 3001
+        },
+        {
+          "type": "article",
+          "title": "Mastering Money Talks Together",
+          "id": 5021
+        },
+        {
+          "type": "exercise",
+          "title": "Budget Planning Session",
+          "id": 4033
+        },
+        {
+          "type": "checkup",
+          "title": "Aligning Financial Values and Goals",
+          "id": 6055
+        },
+        {
+          "type": "question",
+          "title": "What's one thing you want to achieve together in our new home?",
+          "id": 2026
+        }
+      ]
+    },
+    {
+      "title": "Handling Conflict with Grace",
+      "description": "Prepare for inevitable disagreements by learning conflict resolution strategies. Explore how to manage differing opinions and find common ground in a healthy manner.",
+      "content": [
+        {
+          "type": "quiz",
+          "title": "Conflict Resolution Style",
+          "id": 2144
+        },
+        {
+          "type": "game",
+          "title": "Conflict Resolution Quest",
+          "id": 3073
+        },
+        {
+          "type": "article",
+          "title": "Mastering Conflict Resolution Together",
+          "id": 5033
+        },
+        {
+          "type": "exercise",
+          "title": "Conflict Resolution Strategies Practice",
+          "id": 4076
+        },
+        {
+          "type": "checkup",
+          "title": "Tackling Tough Talks",
+          "id": 6011
+        },
+        {
+          "type": "question",
+          "title": "How should we handle maintenance and repairs around the house?",
+          "id": 1434
+        }
+      ]
+    },
+    {
+      "title": "Creating a Safe Space",
+      "description": "Finalize your preparations by focusing on emotional and physical safety in your shared space. Discuss boundaries, privacy, and how to cultivate an environment where both feel secure and respected.",
+      "content": [
+        {
+          "type": "checkup",
+          "title": "Emotional Safety Style",
+          "id": 2181
+        },
+        {
+          "type": "question",
+          "title": "How should we handle setting up our home office or study space?",
+          "id": 1436
+        },
+        {
+          "type": "article",
+          "title": "Navigating Boundaries for Intimacy",
+          "id": 5020
+        },
+        {
+          "type": "exercise",
+          "title": "Personal Space Respect Practices",
+          "id": 4091
+        },
+        {
+          "type": "game",
+          "title": "Space Personalities",
+          "id": 3085
+        },
+        {
+          "type": "question",
+          "title": "How should we handle guests and visitors in our home?",
+          "id": 1433
+        }
+      ]
+    }
+  ]
+}

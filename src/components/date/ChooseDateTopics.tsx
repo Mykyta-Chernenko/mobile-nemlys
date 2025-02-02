@@ -251,7 +251,7 @@ export default function (props: {
   return (
     <View style={{ flex: 1, marginTop: '5%' }}>
       <ScrollView
-        style={{
+        contentContainerStyle={{
           flexGrow: 1,
         }}
       >
