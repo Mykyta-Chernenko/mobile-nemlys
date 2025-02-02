@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useState } from 'react';
+import React, { useCallback, useContext, useState } from 'react';
 import {
   ImageBackground,
   KeyboardAvoidingView,
@@ -22,6 +22,7 @@ import { setAppLanguage } from '@app/theme/LanguageWrapper';
 import { logSupaErrors } from '@app/utils/errors';
 import StyledInput from '@app/components/utils/StyledInput';
 import { KEYBOARD_BEHAVIOR, LOCALE, ONBOARDING_STEPS } from '@app/utils/constants';
+import { useFocusEffect } from '@react-navigation/native';
 
 export default function ({
   route,
@@ -39,10 +40,16 @@ export default function ({
   const authContext = useContext(AuthContext);
 
   const { setMode } = useThemeMode();
-  useEffect(() => {
-    const unsubscribeFocus = navigation.addListener('focus', () => setMode('light'));
-    return unsubscribeFocus;
-  }, [navigation]);
+  useFocusEffect(
+    useCallback(() => {
+      localAnalytics().logEvent('LanguageLoaded', {
+        screen: 'Language',
+        action: 'Loaded',
+        userId: authContext.userId,
+      });
+      setMode('light');
+    }, []),
+  );
 
   const handlePress = async () => {
     const userTechDetailsUpdate = supabase

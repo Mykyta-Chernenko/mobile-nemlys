@@ -162,14 +162,15 @@ export default function OnboardingNotification({
   };
 
   const handleConfirm = async () => {
-    void localAnalytics().logEvent(`${screenName}Confirm`, {
-      screen: screenName,
-      action: 'Confirm',
-      userId: authContext.userId,
-      isOnboarding,
-    });
     try {
       const { status } = await Notifications.getPermissionsAsync();
+      void localAnalytics().logEvent(`${screenName}Confirm`, {
+        screen: screenName,
+        action: 'Confirm',
+        userId: authContext.userId,
+        isOnboarding,
+        status,
+      });
       if (status === 'denied') {
         Alert.alert(i18n.t('notification_denied_title'), i18n.t('notification_denied_message'), [
           {

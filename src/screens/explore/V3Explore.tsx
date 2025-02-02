@@ -105,7 +105,7 @@ export default function V3Explore({ route, navigation }: Props) {
       setTotalArticle(data.article_count);
       setTotalCheckup(data.checkup_count);
 
-      void localAnalytics().logEvent('ExploreLoaded', {
+      void localAnalytics().logEvent('V3ExploreLoaded', {
         userId: authContext.userId,
         isPremium: premiumResult.data,
         hasContent: true,

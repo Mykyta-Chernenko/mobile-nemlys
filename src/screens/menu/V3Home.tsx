@@ -354,8 +354,8 @@ export default function ({
       );
       setHasPartner(!!hasPartnerResult.data);
 
-      void localAnalytics().logEvent('HomeLoaded', {
-        screen: 'Home',
+      void localAnalytics().logEvent('V3HomeLoaded', {
+        screen: 'V3Home',
         action: 'Loaded',
         userId: authContext.userId,
         isPremium: premiumResult.data,

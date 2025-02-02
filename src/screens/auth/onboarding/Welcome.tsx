@@ -63,6 +63,7 @@ export default function WelcomeScreen({
       screen: 'Welcome',
       action: 'Clicked on next on Welcome',
       userId: 'ANON_USER',
+      currentSlide,
     });
     if (currentSlide < slides.length - 1) {
       const nextSlide = currentSlide + 1;

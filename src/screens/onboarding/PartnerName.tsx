@@ -42,6 +42,11 @@ export default function ({
         return;
       }
       setName(showName(data.partner_first_name) || '');
+      localAnalytics().logEvent('PartnerNameLoaded', {
+        screen: 'ParnterName',
+        action: 'Loaded',
+        userId: authContext.userId,
+      });
     };
     void getData();
     return unsubscribeFocus;

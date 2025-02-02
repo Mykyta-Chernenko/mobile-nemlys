@@ -135,12 +135,6 @@ export default function ChangePlan({ route, navigation }: Props) {
   };
 
   const handleSaveChanges = async (topics: string[]) => {
-    localAnalytics().logEvent('ChangePlanSaveClicked', {
-      screen: 'ChangePlan',
-      action: 'SaveChanges',
-      userId: authContext.userId,
-      topics,
-    });
     setLoading(true);
     try {
       const response = await supabase.rpc('set_own_jobs', {

@@ -35,6 +35,11 @@ export default function ({
   const authContext = useContext(AuthContext);
 
   const loadCachedChoice = async () => {
+    localAnalytics().logEvent('DatingLengthLoaded', {
+      screen: 'DatingLength',
+      action: 'Loaded',
+      userId: authContext.userId,
+    });
     try {
       const cachedChoice = await AsyncStorage.getItem('dating_length_choice');
       if (cachedChoice !== null) {

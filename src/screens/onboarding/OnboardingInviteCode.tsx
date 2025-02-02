@@ -114,7 +114,7 @@ export default function OnboardingInviteCode({ route, navigation }: OnboardingIn
       onPress: () => Toast.hide(),
     });
     setCodeShared(true);
-    void localAnalytics().logEvent('InviteCodeCopied', {
+    void localAnalytics().logEvent('OnboardingInviteInviteCodeCopied', {
       screen: 'OnboardingInviteCode',
       action: 'CopyCode',
       userId: authContext.userId,
@@ -129,7 +129,7 @@ export default function OnboardingInviteCode({ route, navigation }: OnboardingIn
       });
       if (result.action === Share.sharedAction) {
         setCodeShared(true);
-        void localAnalytics().logEvent('InviteCodeShared', {
+        void localAnalytics().logEvent('OnboardingInviteInviteCodeShared', {
           screen: 'OnboardingInviteCode',
           action: 'ShareCode',
           userId: authContext.userId,

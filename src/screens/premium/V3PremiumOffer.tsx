@@ -92,7 +92,7 @@ export default function ({
       return;
     }
 
-    void localAnalytics().logEvent('PremiumOfferLoaded', {
+    void localAnalytics().logEvent('V3PremiumOfferLoaded', {
       screen: 'PremiumOffer',
       action: 'Loaded',
       userId: authContext.userId,
@@ -117,7 +117,7 @@ export default function ({
     setButtonDisabled(true);
 
     try {
-      void localAnalytics().logEvent('PremiumContinuePressed', {
+      void localAnalytics().logEvent('V3PremiumContinuePressed', {
         screen: 'Premium',
         action: 'ContinuePressed',
         userId: authContext.userId,
@@ -125,7 +125,7 @@ export default function ({
 
       try {
         setSubscriptionLoading(true);
-        void localAnalytics().logEvent('PremiumPremiumStartInitiated', {
+        void localAnalytics().logEvent('V3PremiumPremiumStartInitiated', {
           screen: 'Premium',
           action: 'PremiumStartInitiated',
           userId: authContext.userId,
@@ -191,7 +191,7 @@ export default function ({
         const handelPurchase = async (purchase: RNIap.Purchase) => {
           try {
             const receipt = purchase.transactionReceipt;
-            localAnalytics().logEvent('PremiumOfferSuccessfulPurchaseReceived', {
+            localAnalytics().logEvent('V3PremiumOfferSuccessfulPurchaseReceived', {
               receipt,
               screen: 'PremiumOffer',
               action: 'SuccessfulPurchaseReceived',
@@ -236,14 +236,14 @@ export default function ({
 
         purchaseErrorSubscription = RNIap.purchaseErrorListener((error: RNIap.PurchaseError) => {
           if (error.code === 'E_USER_CANCELLED') {
-            void localAnalytics().logEvent('PremiumOfferSubscriptionAttemptCancelled', {
+            void localAnalytics().logEvent('V3PremiumOfferSubscriptionAttemptCancelled', {
               screen: 'PremiumOffer',
               action: 'CancelledSubscriptionAttempt',
               userId: authContext.userId,
               error,
             });
           } else if (error.code === 'E_SERVICE_ERROR') {
-            void localAnalytics().logEvent('PremiumOfferSubscriptionErrorPlayMarketNotLoggedIn', {
+            void localAnalytics().logEvent('V3PremiumOfferSubscriptionErrorPlayMarketNotLoggedIn', {
               screen: 'PremiumOffer',
               action: 'SubscriptionErrorPlayMarketNotLoggedIn',
               userId: authContext.userId,
@@ -251,7 +251,7 @@ export default function ({
             });
             alert(i18n.t('errors_play_market'));
           } else if (error.code === ('PROMISE_BUY_ITEM' as RNIap.ErrorCode)) {
-            void localAnalytics().logEvent('PremiumOfferSubscriptionErrorProductNotLoaded', {
+            void localAnalytics().logEvent('V3PremiumOfferSubscriptionErrorProductNotLoaded', {
               screen: 'PremiumOffer',
               action: 'SubscriptionErrorProductNotLoaded',
               userId: authContext.userId,
@@ -259,7 +259,7 @@ export default function ({
             });
             alert(i18n.t('errors_play_market'));
           } else if (error.code === 'E_UNKNOWN') {
-            void localAnalytics().logEvent('PremiumOfferSubscriptionErrorUnknownError', {
+            void localAnalytics().logEvent('V3PremiumOfferSubscriptionErrorUnknownError', {
               screen: 'PremiumOffer',
               action: 'SubscriptionErrorUnknownError',
               userId: authContext.userId,
@@ -269,7 +269,7 @@ export default function ({
           } else if (error.code === 'E_ALREADY_OWNED') {
             console.log('skip');
           } else {
-            void localAnalytics().logEvent('PremiumOfferSubscriptionAttemptError', {
+            void localAnalytics().logEvent('V3PremiumOfferSubscriptionAttemptError', {
               screen: 'PremiumOffer',
               action: 'SubscriptionAttemptError',
               userId: authContext.userId,
@@ -446,7 +446,7 @@ export default function ({
               setYearlyPerMonthPrice('$4.08');
             }
           }
-          void localAnalytics().logEvent('PremiumOfferStoreProductsLoaded', {
+          void localAnalytics().logEvent('V3PremiumOfferStoreProductsLoaded', {
             screen: 'PremiumOffer',
             action: 'StoreProductsLoaded',
             userId: authContext.userId,
@@ -456,7 +456,7 @@ export default function ({
         };
         await retryRequestAsync('PremiumOfferGetProducts', func, authContext.userId!);
       } catch (err) {
-        void localAnalytics().logEvent('PremiumOfferStoreProductsError', {
+        void localAnalytics().logEvent('V3PremiumOfferStoreProductsError', {
           screen: 'PremiumOffer',
           action: 'StoreProductsError',
           userId: authContext.userId,

@@ -110,7 +110,7 @@ export default function ({
             <SecondaryButton
               buttonStyle={{ backgroundColor: theme.colors.white }}
               onPress={() => {
-                void localAnalytics().logEvent('OnboardingQuizIntroButtonPressed', {
+                void localAnalytics().logEvent('OnboardingQuizIntroContinuePressed', {
                   screen: 'OnboardingQuizIntro',
                   action: 'ButtonPressed',
                   userId: authContext.userId,

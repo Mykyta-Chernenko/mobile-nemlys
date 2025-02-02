@@ -183,8 +183,14 @@ export default function V3Checkup({ route, navigation }: Props) {
   };
 
   const handleNext = async () => {
-    if (!currentQuestion) return;
     const userId = authContext.userId;
+    localAnalytics().logEvent('V3CheckupNextClicked', {
+      screen: 'V3Checkup',
+      action: 'Completed',
+      userId,
+      checkupId,
+    });
+    if (!currentQuestion) return;
     if (!userId) return;
     if (currentQuestionIndex === questions.length - 1) {
       setLoading(true);

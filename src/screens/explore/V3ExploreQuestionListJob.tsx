@@ -295,10 +295,6 @@ export default function ({
           <PrimaryButton
             title={i18n.t('reload')}
             onPress={() => {
-              void localAnalytics().logEvent('QuestionReload', {
-                screen: 'QuestionList',
-                userId: authContext.userId,
-              });
               void fetchInitialData();
             }}
           />

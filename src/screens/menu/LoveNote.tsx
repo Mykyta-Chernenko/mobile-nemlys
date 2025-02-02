@@ -234,6 +234,11 @@ export default function LoveNote({
           onPress: () => Toast.hide(),
         });
       } else {
+        void localAnalytics().logEvent(`${screenName}ActionSuccess`, {
+          screen: screenName,
+          actionClicked: action,
+          userId: authContext.userId,
+        });
         Toast.show({
           type: 'success',
           text1: i18n.t('love_note_sent', {

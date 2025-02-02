@@ -44,6 +44,11 @@ export default function ({
           logSupaErrors(error);
           return;
         }
+        localAnalytics().logEvent('YourNameLoaded', {
+          screen: 'YourName',
+          action: 'Loaded',
+          userId: authContext.userId,
+        });
         setName(showName(data.first_name));
       }
     })();

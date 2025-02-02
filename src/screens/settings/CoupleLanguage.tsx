@@ -100,8 +100,8 @@ export default function ({
                 theme="light"
                 containerStyle={{ position: 'absolute', left: 0 }}
                 onPress={() => {
-                  void localAnalytics().logEvent('LanguageBackClicked', {
-                    screen: 'Language',
+                  void localAnalytics().logEvent('CoupleLanguageBackClicked', {
+                    screen: 'CoupleLanguage',
                     action: 'BackClicked',
                     userId: authContext.userId,
                   });

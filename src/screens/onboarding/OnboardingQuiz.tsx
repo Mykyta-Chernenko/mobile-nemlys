@@ -106,6 +106,7 @@ export default function OnboardingQuiz({ route, navigation }: Props) {
       screen: 'OnboardingQuiz',
       action: 'NextClicked',
       userId: authContext.userId,
+      currentQuestionIndex,
       question: quizQuestions[currentQuestionIndex].question,
       selectedOptions,
     });

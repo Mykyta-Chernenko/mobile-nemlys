@@ -328,6 +328,10 @@ export default function ({
 
   const handleLoadMore = async () => {
     if (hasNext) {
+      void localAnalytics().logEvent(`ExploreList${capitalize(contentType)}LoadMore`, {
+        userId: authContext.userId,
+        contentType,
+      });
       await loadItems(selectedTab === 'selected', page + 1);
     }
   };
@@ -370,7 +374,7 @@ export default function ({
 
   const handleTabChange = (tab: 'selected' | 'all') => {
     setSelectedTab(tab);
-    void localAnalytics().logEvent('TabChanged', {
+    void localAnalytics().logEvent(`ExploreList${capitalize(contentType)}TabChanged`, {
       userId: authContext.userId,
       tab: tab,
       contentType,
