@@ -35,25 +35,23 @@ JOBS = [
 ]
 
 FINISHED_LANGUAGES = [
- "uk",
-    "es", "nl", "it", "fr", "ar",
-        "bn", "zh_cn", "zh_tw",
-        "zh_hk", "hi",
-        "ja", "pt", "fil", "id",
-        "pl", "ro",  "ru",
-        "vi", "no", "af", "sq", "de",
-        "tr", "am", "hy", "az",
+ "en",  "uk",
+                 "es", "nl", "it", "fr", "ar",
+                     "bn", "zh_cn", "zh_tw",
+                                  "zh_hk", "hi",
+                                   "ja", "pt", "fil", "id",
+                                   "pl", "ro",  "ru",
+                                   "vi", "no", "af", "sq", "de",
+                                   "tr", "am", "hy", "az",
 
-        "eu", "be", "bg", "my", "ca",
-        "hr", "cs", "da", "et", "fi", "gl", "ka", "el", "gu",
-        "he", "hu", "is", "kn", "kk", "km", "ko", "ky", "lv", "lt", "mk", "ms", "ml", "mr", "mn",
-        "ne", "fa", "pa", "rm", "sr", "si", "sk", "sl", "sw", "sv", "ta", "te",
-        "th", "ur", "zu"
-
+                                   "eu", "be", "bg", "my", "ca",
+                                   "hr", "cs", "da", "et", "fi", "gl", "ka", "el", "gu",
+                                   "he", "hu", "is", "kn", "kk", "km", "ko", "ky", "lv", "lt", "mk", "ms", "ml", "mr", "mn",
+                                   "ne", "fa", "pa", "rm", "sr", "si", "sk", "sl", "sw", "sv", "ta", "te",
+                                   "th", "ur", "zu"
 ]
 
 LANGUAGES = [
-"en",
 ]
 
 

@@ -111,7 +111,7 @@ def translate_notes(notes: str, target_language: str) -> str:
     output:
     нові чудові питання
     
-    produce only the translation. 
+    produce only the translation.  never produce more than 300 symbols
     """
     user_prompt = f"Translate the following release notes to {target_language}:\n\n{notes}"
     translated_notes = call_gpt(user_prompt, system_prompt)
