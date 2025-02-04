@@ -101,7 +101,7 @@ export default function OnboardingQuiz({ route, navigation }: Props) {
       ]);
     }
   };
-  const handleNextQuestion = () => {
+  const handleNextQuestion = (skipped = false) => {
     localAnalytics().logEvent('OnboardingQuizNextClicked', {
       screen: 'OnboardingQuiz',
       action: 'NextClicked',
@@ -109,6 +109,7 @@ export default function OnboardingQuiz({ route, navigation }: Props) {
       currentQuestionIndex,
       question: quizQuestions[currentQuestionIndex].question,
       selectedOptions,
+      skipped,
     });
 
     if (currentQuestionIndex === quizQuestions.length - 1) {
@@ -210,7 +211,7 @@ export default function OnboardingQuiz({ route, navigation }: Props) {
             backgroundColor: theme.colors.white,
           }}
         >
-          <TouchableOpacity style={{ padding: 10 }} onPress={handleNextQuestion}>
+          <TouchableOpacity style={{ padding: 10 }} onPress={() => handleNextQuestion(true)}>
             <FontText>{i18n.t('skip')}</FontText>
           </TouchableOpacity>
         </View>
@@ -274,7 +275,7 @@ export default function OnboardingQuiz({ route, navigation }: Props) {
         disabled={!selectedOptions.length}
         buttonStyle={{ marginTop: '5%', marginBottom: '2%' }}
         title={i18n.t('next')}
-        onPress={handleNextQuestion}
+        onPress={() => handleNextQuestion(false)}
       />
     </SafeAreaView>
   );

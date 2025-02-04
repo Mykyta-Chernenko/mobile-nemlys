@@ -548,11 +548,11 @@ export default function ({
 
   let yearlyTrialLength;
   if (trialLength === 3) {
-    yearlyTrialLength = i18n.t('v3_premium_3_days_trial');
+    yearlyTrialLength = i18n.t('premium_3_days_trial');
   } else if (trialLength === 14) {
-    yearlyTrialLength = i18n.t('v3_premium_14_days_trial');
+    yearlyTrialLength = i18n.t('premium_14_days_trial');
   } else {
-    yearlyTrialLength = i18n.t('v3_premium_7_days_trial');
+    yearlyTrialLength = i18n.t('premium_7_days_trial');
   }
 
   const [refreshing, setRefreshing] = useState(false);
@@ -947,11 +947,11 @@ export default function ({
           )}
         </ScrollView>
         {currentPremiumState !== 'premium' && (
-          <View style={{ marginTop: 10 }}>
+          <View style={{ marginTop: 10, paddingHorizontal: 5 }}>
             {selectedPlan === 'Annual' && (
               <View style={{ marginBottom: 10, alignItems: 'center' }}>
-                <FontText small style={{ color: theme.colors.grey3 }}>
-                  {i18n.t('v3_premium_charged', { price: yearlyPrice })}
+                <FontText small style={{ color: theme.colors.white }}>
+                  {i18n.t('premium_charged', { price: yearlyPrice })}
                 </FontText>
               </View>
             )}
@@ -960,9 +960,8 @@ export default function ({
               buttonStyle={{ width: '100%' }}
               disabled={buttonDisabled}
               onPress={() => void handleButtonPress()}
-            >
-              {selectedPlan === 'Annual' ? yearlyTrialLength : i18n.t('continue')}
-            </SecondaryButton>
+              title={selectedPlan === 'Annual' ? yearlyTrialLength : i18n.t('continue')}
+            ></SecondaryButton>
 
             <View
               style={{

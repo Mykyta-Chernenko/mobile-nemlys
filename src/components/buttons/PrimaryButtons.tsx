@@ -1,6 +1,6 @@
 import React from 'react';
 import { Button, ButtonProps, useTheme } from '@rneui/themed';
-import { getFontSizeForScreen } from '@app/components/utils/FontText';
+import { getFontSizeForScreen, SEMIBOLD_FONT_FAMILY } from '@app/components/utils/FontText';
 export const PrimaryButton = ({ buttonStyle, ...props }: ButtonProps) => {
   const { theme } = useTheme();
   return (
@@ -16,7 +16,7 @@ export const PrimaryButton = ({ buttonStyle, ...props }: ButtonProps) => {
       ]}
       titleStyle={[
         {
-          fontWeight: '600',
+          fontFamily: SEMIBOLD_FONT_FAMILY,
           fontSize: getFontSizeForScreen('normal'),
           color: theme.colors.white,
         },

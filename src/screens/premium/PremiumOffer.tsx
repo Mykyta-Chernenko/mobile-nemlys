@@ -754,7 +754,7 @@ export default function ({
                     <FontText
                       style={{
                         fontSize: getFontSizeForScreen('small'),
-                        color: theme.colors.grey5,
+                        color: theme.colors.white,
                       }}
                     >
                       {i18n.t('premium_charged', {

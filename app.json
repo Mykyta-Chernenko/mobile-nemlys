@@ -3,7 +3,8 @@
     "name": "Nemlys",
     "slug": "nemlys",
     "scheme": "nemlys",
-    "version": "5.0.0",
+    "version": "5.0.2",
+    "runtimeVersion": "5.0.2",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "splash": {
@@ -18,7 +19,7 @@
       "appStoreUrl": "itms-apps://apps.apple.com/id/app/nemlys/id1662262055",
       "supportsTablet": true,
       "bundleIdentifier": "com.marakaci.nemlys",
-      "buildNumber": "5.0.0",
+      "buildNumber": "5.0.2",
       "config": {
         "usesNonExemptEncryption": false
       },
@@ -43,7 +44,7 @@
       "playStoreUrl": "https://play.google.com/store/apps/details?id=com.nemlys.app",
       "package": "com.nemlys.app",
       "googleServicesFile": "./google-services.json",
-      "versionCode": 500
+      "versionCode": 502
     },
     "web": {
       "favicon": "./assets/favicon.png"
@@ -91,6 +92,9 @@
           }
         }
       ]
+    },
+    "updates": {
+      "url": "https://u.expo.dev/d6eafe0b-1185-4733-8f06-e86dddfbb49e"
     }
   }
 }
