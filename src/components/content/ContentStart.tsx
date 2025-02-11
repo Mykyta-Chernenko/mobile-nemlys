@@ -64,7 +64,7 @@ export function ContentStart({
                 h2
                 style={{ color: theme.colors.white, textAlign: 'center', marginBottom: 40 }}
               >
-                {title}
+                {title}{' '}
                 {highlight ? (
                   <FontText h2 style={{ color: highlightColor || theme.colors.primary }}>
                     {highlight}

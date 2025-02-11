@@ -13,7 +13,7 @@ export const Progress = ({ current, all }: { current: number; all: number }) => 
     <View
       style={{
         height: 8,
-        width: 150,
+        width: 100,
         backgroundColor: unfilledColor,
         borderRadius: 5,
         overflow: 'hidden',

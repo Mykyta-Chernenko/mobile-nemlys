@@ -1,13 +1,5 @@
 import React, { useCallback, useContext, useState } from 'react';
-import {
-  RefreshControl,
-  Alert,
-  ScrollView,
-  TouchableOpacity,
-  View,
-  ImageBackground,
-  Image,
-} from 'react-native';
+import { RefreshControl, Alert, ScrollView, View, ImageBackground, Image } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { NativeStackScreenProps } from '@react-navigation/native-stack';
 import { useTheme, useThemeMode } from '@rneui/themed';
@@ -33,6 +25,7 @@ import {
   SchedulableNotificationTriggerInput,
   SchedulableTriggerInputTypes,
 } from 'expo-notifications';
+import { SkipButton } from '@app/components/buttons/SkipButton';
 
 const ONBOARDING_BACKGROUND = require('../../../assets/images/onboarding_background.png');
 const NOTIFICATION_EXAMPLE = require('../../../assets/images/notification_example.png');
@@ -215,29 +208,15 @@ export default function OnboardingNotification({
                 flexDirection: 'row',
                 paddingHorizontal: 15,
                 alignItems: 'center',
-                justifyContent: 'center',
-                height: 40,
+                justifyContent: 'space-between',
               }}
             >
               {isOnboarding ? (
-                <GoBackButton
-                  theme="light"
-                  containerStyle={{ position: 'absolute', left: 0 }}
-                  onPress={() => void handleBack()}
-                />
-              ) : null}
-              <View
-                style={{
-                  position: 'absolute',
-                  right: 0,
-                  borderRadius: 40,
-                  backgroundColor: theme.colors.white,
-                }}
-              >
-                <TouchableOpacity style={{ padding: 10 }} onPress={() => void handleSkip()}>
-                  <FontText>{i18n.t('skip')}</FontText>
-                </TouchableOpacity>
-              </View>
+                <GoBackButton theme="light" onPress={() => void handleBack()} />
+              ) : (
+                <View></View>
+              )}
+              <SkipButton onPress={() => void handleSkip()} />
             </View>
             <View style={{ marginTop: 20 }}>
               <FontText h1 style={{ textAlign: 'center' }}>

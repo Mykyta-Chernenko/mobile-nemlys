@@ -504,6 +504,11 @@ export default function ({
                   <FontText h3>{i18n.t('profile_settings')}</FontText>
                   <SettingsButton
                     data={null}
+                    title={i18n.t('profile_subscription')}
+                    action={() => void manageSubscription()}
+                  ></SettingsButton>
+                  <SettingsButton
+                    data={null}
                     title={i18n.t('profile_notification')}
                     action={() => void handleNotification()}
                   ></SettingsButton>
@@ -516,11 +521,6 @@ export default function ({
                     data={getFullLanguageByLocale(coupleLanguage)}
                     title={i18n.t('settings_couple_language')}
                     action={() => void handleCoupleLanguage()}
-                  ></SettingsButton>
-                  <SettingsButton
-                    data={null}
-                    title={i18n.t('profile_subscription')}
-                    action={() => void manageSubscription()}
                   ></SettingsButton>
                 </View>
                 <View style={{ marginTop: 40 }}>

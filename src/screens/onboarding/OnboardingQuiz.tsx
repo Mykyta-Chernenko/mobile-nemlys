@@ -19,6 +19,7 @@ import { Progress } from '@app/components/utils/Progress';
 import { PrimaryButton } from '@app/components/buttons/PrimaryButtons';
 import { ONBOARDING_STEPS } from '@app/utils/constants';
 import { getQuizQuestions } from '@app/utils/quiz';
+import { SkipButton } from '@app/components/buttons/SkipButton';
 
 type Props = NativeStackScreenProps<MainStackParamList, 'OnboardingQuiz'>;
 
@@ -200,25 +201,21 @@ export default function OnboardingQuiz({ route, navigation }: Props) {
           flexDirection: 'row',
           alignItems: 'center',
           paddingVertical: 20,
-          justifyContent: 'space-between',
+          justifyContent: 'center',
         }}
       >
-        <GoBackButton onPress={handleGoBack} />
+        <View style={{ position: 'absolute', left: 0 }}>
+          <GoBackButton onPress={handleGoBack} />
+        </View>
         <Progress current={currentIndex} all={ONBOARDING_STEPS}></Progress>
-        <View
-          style={{
-            borderRadius: 40,
-            backgroundColor: theme.colors.white,
-          }}
-        >
-          <TouchableOpacity style={{ padding: 10 }} onPress={() => handleNextQuestion(true)}>
-            <FontText>{i18n.t('skip')}</FontText>
-          </TouchableOpacity>
+        <View style={{ position: 'absolute', right: 0 }}>
+          <SkipButton onPress={() => handleNextQuestion(true)} />
         </View>
       </View>
 
       <View
         style={{
+          paddingTop: 24,
           display: 'flex',
           justifyContent: 'space-between',
           flex: 1,

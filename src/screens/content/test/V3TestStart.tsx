@@ -79,6 +79,7 @@ export default function V3TestStart({ route, navigation }: Props) {
     navigation.navigate('V3ExploreTestDetail', {
       id: testId,
       refreshTimeStamp: new Date().toISOString(),
+      fromHome: route.params.fromHome,
     });
   };
 
@@ -90,6 +91,7 @@ export default function V3TestStart({ route, navigation }: Props) {
     navigation.navigate('V3Test', {
       id: testId,
       refreshTimeStamp: new Date().toISOString(),
+      fromHome: route.params.fromHome,
     });
   };
 

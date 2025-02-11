@@ -37,7 +37,7 @@ export default function ({
     const userId = authContext.userId!;
     const profileResponse = await supabase
       .from('user_profile')
-      .select('id, couple(switched_to_v3, v2_user)')
+      .select('id, onboarding_finished, couple(switched_to_v3, v2_user)')
       .eq('user_id', authContext.userId!)
       .single();
 
@@ -49,14 +49,19 @@ export default function ({
 
     const switchedToV3 = profileResponse.data?.couple?.switched_to_v3;
     const v2User = profileResponse.data?.couple?.v2_user;
+    const onboardingFinished = profileResponse.data?.onboarding_finished;
     void localAnalytics().logEvent('HomeLoaded', {
       screen: 'Home',
       action: 'Loaded',
       userId,
       switchedToV3,
       v2User,
+      onboardingFinished,
     });
-    if (switchedToV3) {
+    // TODO when remove this component, add onboardingFinished to the dedicated components
+    if (!onboardingFinished) {
+      navigation.navigate('YourName', { fromSettings: false });
+    } else if (switchedToV3) {
       navigation.navigate('V3Home', { refreshTimeStamp: new Date().toISOString() });
     } else {
       navigation.navigate('V2Home', { refreshTimeStamp: new Date().toISOString() });

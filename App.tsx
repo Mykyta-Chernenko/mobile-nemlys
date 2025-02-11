@@ -13,6 +13,7 @@ import ThemeStatusBar from '@app/theme/ThemeStatusBar';
 import Toast, { ErrorToast } from 'react-native-toast-message';
 import { isNetworkError } from '@app/utils/errors';
 import { FontText } from '@app/components/utils/FontText';
+import Constants, { ExecutionEnvironment } from 'expo-constants';
 
 const toastConfig = {
   error: (props) => <ErrorToast {...props} style={{ borderLeftColor: 'rgba(250, 65, 165, 1))' }} />,
@@ -81,10 +82,13 @@ if (!__DEV__) {
   Sentry.init({
     dsn: 'https://e3fb818e5bc14ba896e7b2f7bbd410b1@o4504363776344064.ingest.sentry.io/4504363782438912',
     integrations: [
-      new Sentry.ReactNativeTracing({
-        tracingOrigins: [/supabase/],
+      Sentry.reactNativeTracingIntegration({
+        shouldCreateSpanForRequest: (url) => {
+          return !!url.match(/\/supabase\/?$/);
+        },
       }),
     ],
+    enableNativeFramesTracking: Constants.executionEnvironment === ExecutionEnvironment.StoreClient,
     tracesSampleRate: 0.1,
     attachScreenshot: true,
     attachStacktrace: true,

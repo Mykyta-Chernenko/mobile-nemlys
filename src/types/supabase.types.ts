@@ -2104,7 +2104,7 @@ export type Database = {
           article_id: number | null;
           date: string;
           couple_id: number;
-          free_content_type: string;
+          free_content_type: string[];
         };
         Insert: {
           id?: number;
@@ -2116,7 +2116,7 @@ export type Database = {
           article_id?: number | null;
           date: string;
           couple_id: number;
-          free_content_type?: string | null;
+          free_content_type?: string[] | null;
         };
         Update: {
           id?: number;
@@ -2128,7 +2128,7 @@ export type Database = {
           article_id?: number | null;
           date?: string;
           couple_id?: number;
-          free_content_type?: string | null;
+          free_content_type?: string[] | null;
         };
         Relationships: [
           {
@@ -3427,7 +3427,7 @@ export type Database = {
         };
         Returns: {
           id: number;
-          free_content_type: string;
+          free_content_type: string[];
           question_id: number;
           question_title: string;
           question_is_finished: boolean;
@@ -3453,7 +3453,7 @@ export type Database = {
         Args: Record<PropertyKey, never>;
         Returns: {
           id: number;
-          free_content_type: string;
+          free_content_type: string[];
           question_id: number;
           question_title: string;
           question_is_finished: boolean;
@@ -3479,7 +3479,7 @@ export type Database = {
         Args: Record<PropertyKey, never>;
         Returns: {
           id: number;
-          free_content_type: string;
+          free_content_type: string[];
           question_id: number;
           question_title: string;
           question_is_finished: boolean;

@@ -1878,7 +1878,7 @@ PODS:
     - React-utils (= 0.76.3)
   - RNCAsyncStorage (1.23.1):
     - React-Core
-  - RNCClipboard (1.5.1):
+  - RNCClipboard (1.16.1):
     - React-Core
   - RNGestureHandler (2.20.2):
     - DoubleConversion
@@ -2015,7 +2015,7 @@ PODS:
     - ReactCommon/turbomodule/bridging
     - ReactCommon/turbomodule/core
     - Yoga
-  - RNSentry (5.32.0):
+  - RNSentry (6.7.0):
     - DoubleConversion
     - glog
     - hermes-engine
@@ -2036,13 +2036,13 @@ PODS:
     - ReactCodegen
     - ReactCommon/turbomodule/bridging
     - ReactCommon/turbomodule/core
-    - Sentry/HybridSDK (= 8.36.0)
+    - Sentry/HybridSDK (= 8.44.0)
     - Yoga
   - RNSVG (15.8.0):
     - React-Core
   - RNVectorIcons (9.2.0):
     - React-Core
-  - Sentry/HybridSDK (8.36.0)
+  - Sentry/HybridSDK (8.44.0)
   - SocketRocket (0.7.1)
   - Yoga (0.0.0)
 
@@ -2152,7 +2152,7 @@ DEPENDENCIES:
   - ReactCodegen (from `build/generated/ios`)
   - ReactCommon/turbomodule/core (from `../node_modules/react-native/ReactCommon`)
   - "RNCAsyncStorage (from `../node_modules/@react-native-async-storage/async-storage`)"
-  - "RNCClipboard (from `../node_modules/@react-native-community/clipboard`)"
+  - "RNCClipboard (from `../node_modules/@react-native-clipboard/clipboard`)"
   - RNGestureHandler (from `../node_modules/react-native-gesture-handler`)
   - "RNGoogleSignin (from `../node_modules/@react-native-google-signin/google-signin`)"
   - RNIap (from `../node_modules/react-native-iap`)
@@ -2383,7 +2383,7 @@ EXTERNAL SOURCES:
   RNCAsyncStorage:
     :path: "../node_modules/@react-native-async-storage/async-storage"
   RNCClipboard:
-    :path: "../node_modules/@react-native-community/clipboard"
+    :path: "../node_modules/@react-native-clipboard/clipboard"
   RNGestureHandler:
     :path: "../node_modules/react-native-gesture-handler"
   RNGoogleSignin:
@@ -2513,16 +2513,16 @@ SPEC CHECKSUMS:
   ReactCodegen: 11ba5753ff8fd0eade9f701a238b6bfbcfcc241d
   ReactCommon: cef332bed205215d2a0270e12e1feb337974ccfe
   RNCAsyncStorage: 826b603ae9c0f88b5ac4e956801f755109fa4d5c
-  RNCClipboard: 41d8d918092ae8e676f18adada19104fa3e68495
+  RNCClipboard: d7a8903d32692b0a1e71738c3825465a9acae10e
   RNGestureHandler: 4b397b156d173028ff97960b5ebacfbb21232081
   RNGoogleSignin: 08dc4ba7eac2096c7fecfe109f0950fa4683c803
   RNIap: f3ca6e7597afccb2c1631de97d88f2e33b10dafd
   RNReanimated: e7052373315e7d675e82b3256a81e0710e82e8d4
   RNScreens: 906192367b418a8d644090d7375d4657d5a5aab0
-  RNSentry: 3a4fcdac8fb3b9e0015ae0596f9ce9ac40fa03ca
+  RNSentry: 74c88adf4e29aa0a30841e93645956aea11c36ad
   RNSVG: 8b1a777d54096b8c2a0fd38fc9d5a454332bbb4d
   RNVectorIcons: fcc2f6cb32f5735b586e66d14103a74ce6ad61f8
-  Sentry: f8374b5415bc38dfb5645941b3ae31230fbeae57
+  Sentry: 0f9bc9adfc0b960e7f3bb5ec67e9a3d8193f3bdb
   SocketRocket: d4aabe649be1e368d1318fdf28a022d714d65748
   Yoga: 748f06daed00132bf0a051dbb2f4347660ac1a98
 

@@ -189,14 +189,14 @@ export default function LoveNote({
       }
       const body = { type: 'love_note', id: loveNoteId };
       const res = await retryAsync(screenName, async () => {
-        return await supabase.functions.invoke('send-partner-notification', {
+        const res = await supabase.functions.invoke('send-partner-notification', {
           body,
         });
+        if (res.error) {
+          throw res.error;
+        }
+        return res;
       });
-      if (res.error) {
-        logSupaErrors(res.error as PostgrestError);
-        return;
-      }
       if (res.data?.error === 'UNKNOWN_TYPE') {
         void localAnalytics().logEvent(`${screenName}RemindPartnerUnknownType`, {
           screen: screenName,
@@ -251,7 +251,7 @@ export default function LoveNote({
         });
       }
     } catch (e) {
-      logErrorsWithMessage(e, (e as Error)?.message || '');
+      logSupaErrors(e as PostgrestError);
       return;
     }
     if (navigation.canGoBack()) {

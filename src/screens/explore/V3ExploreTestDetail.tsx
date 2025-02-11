@@ -288,7 +288,8 @@ export default function V3ExploreTestDetail({ route, navigation }: Props) {
       if (myResult && partnerResult) {
         const low = Math.min(myResult.id, partnerResult.id);
         const high = Math.max(myResult.id, partnerResult.id);
-
+        console.log(myResult.combo);
+        console.log(myResult.combo);
         combo =
           _.merge(myResult.combo, partnerResult.combo).find(
             (comb) => comb.result_1_id === low && comb.result_2_id === high,
@@ -314,7 +315,7 @@ export default function V3ExploreTestDetail({ route, navigation }: Props) {
         }
       }
 
-      setIsPremium(premiumStatus || stateType !== 'not_started');
+      setIsPremium(premiumStatus || stateType !== 'not_started' || !!route.params.canActivate);
       setStateType(stateType);
 
       localAnalytics().logEvent('V3TestDetailLoaded', {
@@ -362,6 +363,7 @@ export default function V3ExploreTestDetail({ route, navigation }: Props) {
       navigation.navigate('V3TestStart', {
         id: testId,
         refreshTimeStamp: new Date().toISOString(),
+        fromHome: route.params.fromHome,
       });
     } else {
       localAnalytics().logEvent('V3ExploreTestDetailRedirectPremium', {

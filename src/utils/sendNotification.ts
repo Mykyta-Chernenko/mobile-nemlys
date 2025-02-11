@@ -29,18 +29,14 @@ export const handleRemindPartner = async (
   });
   try {
     const res = await retryAsync(prefix, async () => {
-      return await supabase.functions.invoke('send-partner-notification', {
+      const res = await supabase.functions.invoke('send-partner-notification', {
         body,
       });
-    });
-    if (res.error) {
-      if (showResultAndError) {
-        logErrorsWithMessage(res.error, i18n.t('reminding_partner_error'));
-      } else {
-        logSupaErrorsWithoutAlert(res.error as PostgrestError);
+      if (res.error) {
+        throw res.error;
       }
-      return;
-    }
+      return res;
+    });
     if (res.data?.error === 'UNKNOWN_TYPE') {
       void localAnalytics().logEvent(`${prefix}RemindPartnerUnknownType`, {
         screen: prefix,
@@ -91,6 +87,13 @@ export const handleRemindPartner = async (
         userId: userId,
       });
     }
+  } catch (error) {
+    if (showResultAndError) {
+      logErrorsWithMessage(error, i18n.t('reminding_partner_error'));
+    } else {
+      logSupaErrorsWithoutAlert(error as PostgrestError);
+    }
+    return;
   } finally {
     setLoading(false);
   }

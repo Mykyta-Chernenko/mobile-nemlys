@@ -172,7 +172,9 @@ export default function V3ExploreArticleDetail({ route, navigation }: Props) {
 
       setHasFinished(userHasFinished);
       setPartnerHasFinished(partnerFinished);
-      setIsPremium(premiumResult.data || partnerFinished || userHasFinished);
+      setIsPremium(
+        premiumResult.data || partnerFinished || userHasFinished || !!route.params.canActivate,
+      );
 
       localAnalytics().logEvent('V3ArticleDetailLoaded', {
         userId,

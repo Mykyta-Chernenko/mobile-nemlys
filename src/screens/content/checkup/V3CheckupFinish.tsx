@@ -134,12 +134,14 @@ export default function V3CheckupFinish({ route, navigation }: Props) {
         screenParams: {
           id: checkupId!,
           refreshTimeStamp: new Date().toISOString(),
+          fromHome: route.params.fromHome,
         },
       });
     } else {
       navigation.navigate('V3ExploreCheckupDetail', {
         id: checkupId!,
         refreshTimeStamp: new Date().toISOString(),
+        fromHome: route.params.fromHome,
       });
     }
   };

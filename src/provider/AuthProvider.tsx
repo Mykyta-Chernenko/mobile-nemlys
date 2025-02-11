@@ -54,6 +54,7 @@ const AuthProvider = (props: Props) => {
       const {
         data: { subscription: authListener },
       } = supabase.auth.onAuthStateChange((event, session) => {
+        // TODO something so that if nothing changes, we do not reload here
         setIsSignedIn(!!session);
         setUserId(session?.user.id || ANON_USER);
         localAnalytics().logEvent('SupabaseAuthEvent', {

@@ -3,8 +3,8 @@
     "name": "Nemlys",
     "slug": "nemlys",
     "scheme": "nemlys",
-    "version": "5.0.2",
-    "runtimeVersion": "5.0.2",
+    "version": "5.0.3",
+    "runtimeVersion": "5.0.3",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "splash": {
@@ -19,7 +19,7 @@
       "appStoreUrl": "itms-apps://apps.apple.com/id/app/nemlys/id1662262055",
       "supportsTablet": true,
       "bundleIdentifier": "com.marakaci.nemlys",
-      "buildNumber": "5.0.2",
+      "buildNumber": "5.0.3",
       "config": {
         "usesNonExemptEncryption": false
       },
@@ -44,7 +44,7 @@
       "playStoreUrl": "https://play.google.com/store/apps/details?id=com.nemlys.app",
       "package": "com.nemlys.app",
       "googleServicesFile": "./google-services.json",
-      "versionCode": 502
+      "versionCode": 503
     },
     "web": {
       "favicon": "./assets/favicon.png"
@@ -59,7 +59,7 @@
         "@sentry/react-native/expo",
         {
           "url": "https://sentry.io/",
-          "note": "0c404c02c48f4218865904370b10c0d5c07e5e66010b4de5a0dcf7c4bdb8f3ae",
+          "note": "set SENTRY_AUTH_TOKEN in env",
           "project": "nemlys",
           "organization": "nemlys"
         }
@@ -81,18 +81,6 @@
       "expo-asset",
       "expo-font"
     ],
-    "hooks": {
-      "postPublish": [
-        {
-          "file": "sentry-expo/upload-sourcemaps",
-          "config": {
-            "organization": "nemlys",
-            "project": "nemlys",
-            "authToken": "0c404c02c48f4218865904370b10c0d5c07e5e66010b4de5a0dcf7c4bdb8f3ae"
-          }
-        }
-      ]
-    },
     "updates": {
       "url": "https://u.expo.dev/d6eafe0b-1185-4733-8f06-e86dddfbb49e"
     }

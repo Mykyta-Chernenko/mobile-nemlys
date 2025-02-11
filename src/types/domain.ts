@@ -1,7 +1,6 @@
 import {
   ARTICLE_COLOR,
   CHECKUP_COLOR,
-  JOURNEY_COLOR,
   EXERCISE_COLOR,
   GAME_COLOR,
   QUESTION_COLOR,
@@ -75,14 +74,7 @@ export enum V3_NOTIFICATION_SUBTYPE {
 
 export type JobSlug = 'issues' | 'sex' | 'know' | 'hard' | 'meaningful' | 'fun';
 
-export type ContentType =
-  | 'journey'
-  | 'test'
-  | 'game'
-  | 'checkup'
-  | 'question'
-  | 'exercise'
-  | 'article';
+export type ContentType = 'test' | 'game' | 'checkup' | 'question' | 'exercise' | 'article';
 
 export type LoveNoteAction =
   | 'sorry'
@@ -96,7 +88,6 @@ export type LoveNoteAction =
 
 export const contentListScreen: Record<
   ContentType,
-  | 'V3ExploreJourneyList'
   | 'V3ExploreTestList'
   | 'V3ExploreGameList'
   | 'V3ExploreCheckupList'
@@ -104,7 +95,6 @@ export const contentListScreen: Record<
   | 'V3ExploreExerciseList'
   | 'V3ExploreArticleList'
 > = {
-  journey: 'V3ExploreJourneyList',
   test: 'V3ExploreTestList',
   game: 'V3ExploreGameList',
   checkup: 'V3ExploreCheckupList',
@@ -115,7 +105,6 @@ export const contentListScreen: Record<
 
 export const contentDetailScreen: Record<
   ContentType,
-  | 'V3ExploreJourneyDetail'
   | 'V3ExploreTestDetail'
   | 'V3ExploreGameDetail'
   | 'V3ExploreCheckupDetail'
@@ -123,7 +112,6 @@ export const contentDetailScreen: Record<
   | 'V3ExploreExerciseDetail'
   | 'V3ExploreArticleDetail'
 > = {
-  journey: 'V3ExploreJourneyDetail',
   test: 'V3ExploreTestDetail',
   game: 'V3ExploreGameDetail',
   checkup: 'V3ExploreCheckupDetail',
@@ -132,8 +120,8 @@ export const contentDetailScreen: Record<
   article: 'V3ExploreArticleDetail',
 };
 
+// journey: JOURNEY_COLOR,
 export const contentTypeBackground: Record<ContentType, string> = {
-  journey: JOURNEY_COLOR,
   test: TEST_COLOR,
   game: GAME_COLOR,
   checkup: CHECKUP_COLOR,

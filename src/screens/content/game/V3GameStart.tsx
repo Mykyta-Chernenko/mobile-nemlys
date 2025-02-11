@@ -45,7 +45,7 @@ export default function V3GameStart({ route, navigation }: Props) {
 
       if (questionCountRes.error) throw questionCountRes.error;
 
-      setQuestionCount(questionCountRes.count || 10);
+      setQuestionCount(questionCountRes.count || 5);
 
       localAnalytics().logEvent('GameStartLoaded', {
         screen: 'GameStart',
@@ -79,6 +79,7 @@ export default function V3GameStart({ route, navigation }: Props) {
     navigation.navigate('V3ExploreGameDetail', {
       id: gameId,
       refreshTimeStamp: new Date().toISOString(),
+      fromHome: route.params.fromHome,
     });
   };
 
@@ -90,6 +91,7 @@ export default function V3GameStart({ route, navigation }: Props) {
     navigation.navigate('V3Game', {
       id: gameId,
       refreshTimeStamp: new Date().toISOString(),
+      fromHome: route.params.fromHome,
     });
   };
 

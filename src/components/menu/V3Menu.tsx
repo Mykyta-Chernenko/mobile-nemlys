@@ -55,7 +55,7 @@ export default function () {
     <View
       style={{
         backgroundColor: theme.colors.white,
-        height: getFontSizeForScreen('h1') * 2.5,
+        height: getFontSizeForScreen('h1') * 2,
       }}
     >
       <View
@@ -66,7 +66,6 @@ export default function () {
           borderTopRightRadius: 24,
           flexDirection: 'row',
           justifyContent: 'space-around',
-          paddingTop: '5%',
         }}
       >
         {loading ? (
@@ -96,7 +95,7 @@ export default function () {
                 <V3HomeIcon height={32} width={32} />
               )}
               <FontText
-                small
+                tiny
                 ellipsizeMode="tail"
                 numberOfLines={1}
                 style={{
@@ -132,7 +131,7 @@ export default function () {
                 <V3ExploreIcon height={32} width={32} />
               )}
               <FontText
-                small
+                tiny
                 ellipsizeMode="tail"
                 numberOfLines={1}
                 style={{
@@ -167,7 +166,7 @@ export default function () {
                 <Story height={32} width={32} />
               )}
               <FontText
-                small
+                tiny
                 ellipsizeMode="tail"
                 numberOfLines={1}
                 style={{
@@ -203,7 +202,7 @@ export default function () {
                 <Profile height={32} width={32} />
               )}
               <FontText
-                small
+                tiny
                 ellipsizeMode="tail"
                 numberOfLines={1}
                 style={{
@@ -237,7 +236,7 @@ export default function () {
               >
                 <Premium height={32} width={32} />
                 <FontText
-                  small
+                  tiny
                   ellipsizeMode="tail"
                   numberOfLines={1}
                   style={{

@@ -79,6 +79,7 @@ export default function V3CheckupStart({ route, navigation }: Props) {
     navigation.navigate('V3ExploreCheckupDetail', {
       id: checkupId,
       refreshTimeStamp: new Date().toISOString(),
+      fromHome: route.params.fromHome,
     });
   };
 
@@ -90,6 +91,7 @@ export default function V3CheckupStart({ route, navigation }: Props) {
     navigation.navigate('V3Checkup', {
       id: checkupId,
       refreshTimeStamp: new Date().toISOString(),
+      fromHome: route.params.fromHome,
     });
   };
 

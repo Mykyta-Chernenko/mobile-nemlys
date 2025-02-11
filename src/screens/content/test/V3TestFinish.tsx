@@ -135,12 +135,14 @@ export default function V3TestFinish({ route, navigation }: Props) {
         screenParams: {
           id: testId!,
           refreshTimeStamp: new Date().toISOString(),
+          fromHome: route.params.fromHome,
         },
       });
     } else {
       navigation.navigate('V3ExploreTestDetail', {
         id: testId!,
         refreshTimeStamp: new Date().toISOString(),
+        fromHome: route.params.fromHome,
       });
     }
   };

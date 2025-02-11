@@ -214,7 +214,6 @@ export default function V3AnswerHome({ route, navigation }: V3AnswerHomeProps) {
       contentId: item.content_id,
       contentType: item.content_type,
     });
-    // @ts-expect-error journey detail does not exist yet
     navigation.navigate(contentDetailScreen[item.content_type as ContentType], {
       id: item.content_id,
       refreshTimeStamp: new Date().toISOString(),

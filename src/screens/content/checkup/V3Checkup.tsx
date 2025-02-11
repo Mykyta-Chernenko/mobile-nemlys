@@ -163,6 +163,7 @@ export default function V3Checkup({ route, navigation }: Props) {
       navigation.navigate('V3CheckupStart', {
         id: checkupId,
         refreshTimeStamp: new Date().toISOString(),
+        fromHome: route.params.fromHome,
       });
     } else {
       localAnalytics().logEvent('V3CheckupBackClicked', {
@@ -241,6 +242,7 @@ export default function V3Checkup({ route, navigation }: Props) {
             instanceId,
             showStreak,
             refreshTimeStamp: new Date().toISOString(),
+            fromHome: route.params.fromHome,
           });
         }
       } catch (e) {
@@ -317,10 +319,13 @@ export default function V3Checkup({ route, navigation }: Props) {
               flexDirection: 'column',
               justifyContent: 'center',
               alignItems: 'center',
+              paddingHorizontal: 2,
             }}
           >
             <Icon width={40} height={40} />
-            <FontText style={{ marginTop: 10 }}>{labelText(sliderValue)}</FontText>
+            <FontText style={{ marginTop: 10, textAlign: 'center' }}>
+              {labelText(sliderValue)}
+            </FontText>
           </View>
           <View
             style={{

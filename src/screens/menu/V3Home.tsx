@@ -46,6 +46,9 @@ import {
   createDailyContentNotifications,
   createInactivityNotifications,
 } from '@app/utils/notification';
+import { PrimaryButton } from '@app/components/buttons/PrimaryButtons';
+import { CloseButton } from '@app/components/buttons/CloseButton';
+import AsyncStorage from '@react-native-async-storage/async-storage';
 
 const HOME_QUESTION_CORNER_IMAGE = require('../../../assets/images/buddies_corner_transparent.png');
 
@@ -56,7 +59,8 @@ interface ContentBase {
 }
 
 interface DailyPlanContent {
-  free_content_type: string;
+  id: number;
+  free_content_type: string[];
   question: {
     id: number;
     title: string;
@@ -215,6 +219,7 @@ export const ContentCard: React.FC<ContentCardProps> = ({
   );
 };
 
+const HOME_DAILY_BANNER = 'HOME_DAILY_BANNER';
 export default function ({
   route,
   navigation,
@@ -233,7 +238,7 @@ export default function ({
   const [hasPartner, setHasPartner] = useState(true);
   const [showNotificationBanner, setShowNotificationBanner] = useState<boolean>(false);
   const insets = useSafeAreaInsets();
-
+  const [hasHiddenBanner, setHasHiddenBanner] = useState(false);
   const fetchDailyPlan = async (): Promise<void> => {
     try {
       const createResult = await supabase.rpc('create_today_plan');
@@ -241,6 +246,7 @@ export default function ({
 
       const planData = createResult.data[0];
       const dailyPlanContent: DailyPlanContent = {
+        id: planData.id,
         free_content_type: planData.free_content_type,
         question: {
           id: planData.question_id,
@@ -290,6 +296,10 @@ export default function ({
       };
 
       setDailyPlan(dailyPlanContent);
+      const hidBanner = !!(await AsyncStorage.getItem(
+        HOME_DAILY_BANNER + dailyPlanContent?.id?.toString() ?? '',
+      ));
+      setHasHiddenBanner(hidBanner);
     } catch (e) {
       logSupaErrors(e as PostgrestError);
     }
@@ -303,6 +313,17 @@ export default function ({
         userId: authContext.userId,
       });
       setLoading(true);
+      // const userResult = await supabase
+      //   .from('user_profile')
+      //   .select('first_name, partner_first_name, couple_id, onboarding_finished')
+      //   .eq('user_id', authContext.userId!)
+      //   .single();
+      // if (userResult.error) throw userResult.error;
+      //
+      // if (!userResult.data.onboarding_finished) {
+      //   navigation.navigate('YourName', { fromSettings: false });
+      //   return;
+      // }
 
       const [
         userResult,
@@ -316,7 +337,7 @@ export default function ({
       ] = await Promise.all([
         supabase
           .from('user_profile')
-          .select('first_name, partner_first_name, couple_id, onboarding_finished')
+          .select('first_name, partner_first_name, couple_id')
           .eq('user_id', authContext.userId!)
           .single(),
         supabase.rpc('get_total_streak'),
@@ -334,11 +355,6 @@ export default function ({
       if (journeysCountResult.error) throw journeysCountResult.error;
       if (recommendedJourneysResult.error) throw recommendedJourneysResult.error;
       if (hasPartnerResult.error) throw hasPartnerResult.error;
-
-      if (!userResult.data.onboarding_finished) {
-        navigation.navigate('YourName', { fromSettings: false });
-        return;
-      }
 
       setShowNotificationBanner(notificationStatus.status !== GRANTED_NOTIFICATION_STATUS);
       setStreak(streakResult.data);
@@ -395,17 +411,17 @@ export default function ({
     isFirstMount.current = false;
   }, []);
 
-  const handleContentPress = (type: ContentType, id: number) => {
+  const handleContentPress = (type: ContentType, id: number, canActivate: boolean) => {
     void localAnalytics().logEvent(`V3HomeContentPressed`, {
       userId: authContext.userId,
       id,
       type,
     });
-    // @ts-expect-error journey detail does not exist yet
     navigation.navigate(contentDetailScreen[type], {
       id,
       refreshTimeStamp: new Date().toISOString(),
       fromHome: true,
+      canActivate: canActivate,
     });
   };
 
@@ -443,38 +459,96 @@ export default function ({
 
   const handleOpenNotifications = () => {
     void localAnalytics().logEvent(`V3HomeNotificationTurnOnClicked`, {
+      screen: 'V3Home',
       userId: authContext.userId,
     });
     navigation.navigate('OnboardingNotification', {
       isOnboarding: false,
     });
   };
+  const handleTrialBannerPress = () => {
+    void localAnalytics().logEvent(`V3HomeStartPremiumClicked`, {
+      screen: 'V3Home',
+      userId: authContext.userId,
+    });
+    navigation.navigate('V3PremiumOffer', {
+      refreshTimeStamp: new Date().toISOString(),
+      isOnboarding: false,
+    });
+  };
+  const handleGoToExplore = () => {
+    void localAnalytics().logEvent(`V3HomeBannerGoToExplore`, {
+      screen: 'V3Home',
+      userId: authContext.userId,
+    });
+    navigation.navigate('V3Explore', {
+      refreshTimeStamp: new Date().toISOString(),
+    });
+  };
+
+  const getIsPlanCompletelyFree = (dailyPlan: DailyPlanContent | null) => {
+    if (!dailyPlan) return false;
+    return contentTypes.every(
+      (type) => !dailyPlan[type] || dailyPlan.free_content_type?.includes(type),
+    );
+  };
+
+  const getHasFinishedDailyFreePlan = (dailyPlan: DailyPlanContent | null) => {
+    if (!dailyPlan) return false;
+    return dailyPlan.free_content_type?.every((type) => dailyPlan[type]?.isFinished);
+  };
+  const handleCloseDailyBanner = (dailyPlan: DailyPlanContent | null) => {
+    if (!dailyPlan) return;
+    void localAnalytics().logEvent('V3HomeCloseDailyBanner', {
+      screen: 'V3Home',
+      userId: authContext.userId,
+      dailyPlanId: dailyPlan.id,
+    });
+    setHasHiddenBanner(true);
+    void AsyncStorage.setItem(HOME_DAILY_BANNER + dailyPlan.id.toString() ?? '', 'true');
+  };
   const getTopBanner = () => {
-    if (!isPremium && dailyPlan?.question?.isFinished) {
+    if (!hasHiddenBanner && !isPremium && getHasFinishedDailyFreePlan(dailyPlan)) {
       return (
         <View style={{ marginBottom: 15 }}>
           <View
             style={{
-              flexDirection: 'row',
-              alignItems: 'center',
+              flexDirection: 'column',
+              alignItems: 'flex-start',
               justifyContent: 'space-between',
-              backgroundColor: theme.colors.black,
+              backgroundColor: theme.colors.white,
               padding: 20,
               borderRadius: 16,
               marginBottom: 10,
               width: '100%',
             }}
           >
-            <CheckSuccessIcon />
-            <View style={{ flex: 1, marginHorizontal: 10 }}>
-              <FontText small style={{ color: theme.colors.white, textAlign: 'center' }}>
-                {i18n.t('v3_home_finished_free')}
-              </FontText>
+            <View style={{ flexDirection: 'row', width: '100%', justifyContent: 'space-between' }}>
+              <CheckSuccessIcon />
+              <CloseButton onPress={() => void handleCloseDailyBanner(dailyPlan)}></CloseButton>
             </View>
+            <FontText h3 style={{ marginTop: 14 }}>
+              {i18n.t('v3_home_finished_free_2_title')}
+            </FontText>
+            <FontText style={{ color: theme.colors.grey5, marginVertical: 12 }}>
+              {i18n.t('v3_home_finished_free_2_description')}
+            </FontText>
+            <PrimaryButton
+              buttonStyle={{
+                marginTop: 30,
+                height: 'auto',
+                width: 'auto',
+              }}
+              onPress={() => void handleTrialBannerPress()}
+            >
+              {i18n.t('home_unlock_all_content')}
+            </PrimaryButton>
           </View>
         </View>
       );
     } else if (
+      !hasHiddenBanner &&
+      isPremium &&
       dailyPlan &&
       [
         dailyPlan.question,
@@ -489,22 +563,36 @@ export default function ({
         <View style={{ marginBottom: 15 }}>
           <View
             style={{
-              flexDirection: 'row',
-              alignItems: 'center',
+              flexDirection: 'column',
+              alignItems: 'flex-start',
               justifyContent: 'space-between',
-              backgroundColor: theme.colors.black,
+              backgroundColor: theme.colors.white,
               padding: 20,
               borderRadius: 16,
               marginBottom: 10,
               width: '100%',
             }}
           >
-            <CheckSuccessIcon />
-            <View style={{ flex: 1, marginHorizontal: 10 }}>
-              <FontText small style={{ color: theme.colors.white, textAlign: 'center' }}>
-                {i18n.t('v3_home_finished_premium')}
-              </FontText>
+            <View style={{ flexDirection: 'row', width: '100%', justifyContent: 'space-between' }}>
+              <CheckSuccessIcon />
+              <CloseButton onPress={() => void handleCloseDailyBanner(dailyPlan)}></CloseButton>
             </View>
+            <FontText h3 style={{ marginTop: 14 }}>
+              {i18n.t('v3_home_finished_premium_2_title')}
+            </FontText>
+            <FontText style={{ color: theme.colors.grey5, marginVertical: 12 }}>
+              {i18n.t('v3_home_finished_premium_2_description')}
+            </FontText>
+            <PrimaryButton
+              buttonStyle={{
+                marginTop: 30,
+                height: 'auto',
+                width: 'auto',
+              }}
+              onPress={() => void handleGoToExplore()}
+            >
+              {i18n.t('home_go_to_explore')}
+            </PrimaryButton>
           </View>
         </View>
       );
@@ -575,6 +663,7 @@ export default function ({
               borderTopLeftRadius: 24,
               borderTopRightRadius: 24,
               justifyContent: 'space-between',
+              paddingBottom: 10,
             }}
           >
             <FontText h4 style={{ color: theme.colors.black }}>
@@ -598,8 +687,10 @@ export default function ({
           >
             <View style={{ marginBottom: 70 }}>
               {getTopBanner()}
-              <FontText h4 style={{ color: theme.colors.black, marginBottom: 20 }}>
-                {i18n.t('home_daily_plan_title')}
+              <FontText h3 style={{ color: theme.colors.black, marginBottom: 20 }}>
+                {isPremium || !getIsPlanCompletelyFree(dailyPlan)
+                  ? i18n.t('home_daily_plan_title')
+                  : i18n.t('home_daily_free_plan_title')}
               </FontText>
               <View style={{ gap: 12 }}>
                 {dailyPlan?.question && (
@@ -630,7 +721,7 @@ export default function ({
                     </View>
 
                     <TouchableOpacity
-                      onPress={() => handleContentPress('question', dailyPlan.question.id)}
+                      onPress={() => handleContentPress('question', dailyPlan.question.id, true)}
                       style={{
                         backgroundColor: theme.colors.black,
                         borderRadius: 16,
@@ -681,7 +772,7 @@ export default function ({
                   const content = dailyPlan?.[type];
                   if (!content) return null;
                   const contentId = content?.id;
-                  const locked = !isPremium;
+                  const locked = !isPremium && !dailyPlan?.free_content_type?.includes(type);
                   const isFinished = content.isFinished;
                   return (
                     <ContentCard
@@ -690,8 +781,8 @@ export default function ({
                       color={contentTypeBackground[type]}
                       label={labelNameMap[type]}
                       title={content.title || ''}
-                      onPress={() => handleContentPress(type, contentId as number)}
-                      image={getContentImageFromId(contentId as number)}
+                      onPress={() => handleContentPress(type, contentId, !locked)}
+                      image={getContentImageFromId(contentId)}
                       isLocked={locked}
                       isFinished={isFinished}
                       icon={iconMap[type]}

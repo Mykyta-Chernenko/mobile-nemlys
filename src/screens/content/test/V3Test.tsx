@@ -138,6 +138,7 @@ export default function V3Test({ route, navigation }: Props) {
       navigation.navigate('V3TestStart', {
         id: testId,
         refreshTimeStamp: new Date().toISOString(),
+        fromHome: route.params.fromHome,
       });
     } else {
       localAnalytics().logEvent('V3TestBackClicked', {
@@ -209,6 +210,7 @@ export default function V3Test({ route, navigation }: Props) {
               instanceId,
               showStreak,
               refreshTimeStamp: new Date().toISOString(),
+              fromHome: route.params.fromHome,
             },
           });
         } else {
@@ -216,6 +218,7 @@ export default function V3Test({ route, navigation }: Props) {
             instanceId,
             showStreak,
             refreshTimeStamp: new Date().toISOString(),
+            fromHome: route.params.fromHome,
           });
         }
       } catch (e) {

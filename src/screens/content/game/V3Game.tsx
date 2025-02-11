@@ -182,6 +182,7 @@ export default function V3Game({ route, navigation }: Props) {
       navigation.navigate('V3GameStart', {
         id: gameId,
         refreshTimeStamp: new Date().toISOString(),
+        fromHome: route.params.fromHome,
       });
       return;
     }
@@ -327,6 +328,7 @@ export default function V3Game({ route, navigation }: Props) {
             instanceId,
             showStreak,
             refreshTimeStamp: new Date().toISOString(),
+            fromHome: route.params.fromHome,
           },
         });
       } else {
@@ -334,6 +336,7 @@ export default function V3Game({ route, navigation }: Props) {
           instanceId,
           showStreak,
           refreshTimeStamp: new Date().toISOString(),
+          fromHome: route.params.fromHome,
         });
       }
     } catch (e) {

@@ -153,6 +153,9 @@ exception_list = {
 'love_note_sex',
 'love_note_sorry',
 'love_note_talk',
+'onboarding_quiz_question_1_option_2_understanding_mutual_compatibility_2',
+'onboarding_quiz_question_3_option_2_understanding_mutual_compatibility_2',
+'onboarding_quiz_question_4_option_4_understanding_mutual_compatibility_2',
 }
 
 def load_json(file_path: str) -> Dict:

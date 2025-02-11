@@ -29,6 +29,7 @@ import Toast from 'react-native-toast-message';
 import { Loading } from '@app/components/utils/Loading';
 import { logErrorsWithMessage, logSupaErrors } from '@app/utils/errors';
 import { showName } from '@app/utils/strings';
+import { SkipButton } from '@app/components/buttons/SkipButton';
 
 type OnboardingInviteCodeProps = NativeStackScreenProps<MainStackParamList, 'OnboardingInviteCode'>;
 
@@ -167,6 +168,24 @@ export default function OnboardingInviteCode({ route, navigation }: OnboardingIn
       navigation.navigate('OnboardingQuizIntro', { name, partnerName });
     }
   };
+  const handleGoBack = () => {
+    void localAnalytics().logEvent('OnboardingInviteCodeBackClicked', {
+      screen: 'OnboardingInviteCode',
+      action: 'BackClicked',
+      userId: authContext.userId,
+      nextScreen,
+      screenParams,
+    });
+    if (nextScreen) {
+      navigation.navigate(
+        // @ts-expect-error cannot type screen name here
+        nextScreen,
+        screenParams || { refreshTimeStamp: new Date().toISOString() },
+      );
+    } else {
+      navigation.goBack();
+    }
+  };
 
   if (loading) {
     return <Loading light />;
@@ -190,44 +209,14 @@ export default function OnboardingInviteCode({ route, navigation }: OnboardingIn
                 flexDirection: 'row',
                 alignItems: 'center',
                 justifyContent: 'center',
-                height: 32,
               }}
             >
-              <GoBackButton
-                theme="light"
-                containerStyle={{ position: 'absolute', left: 0 }}
-                onPress={() => {
-                  void localAnalytics().logEvent('OnboardingInviteCodeBackClicked', {
-                    screen: 'OnboardingInviteCode',
-                    action: 'BackClicked',
-                    userId: authContext.userId,
-                    nextScreen,
-                    screenParams,
-                  });
-                  if (nextScreen) {
-                    navigation.navigate(
-                      // @ts-expect-error cannot type screen name here
-                      nextScreen,
-                      screenParams || { refreshTimeStamp: new Date().toISOString() },
-                    );
-                  } else {
-                    navigation.goBack();
-                  }
-                }}
-              />
-
+              <View style={{ position: 'absolute', left: 0 }}>
+                <GoBackButton theme="light" onPress={() => handleGoBack()} />
+              </View>
               {!nextScreen ? <Progress current={5} all={ONBOARDING_STEPS} /> : <View></View>}
-              <View
-                style={{
-                  position: 'absolute',
-                  right: 0,
-                  borderRadius: 40,
-                  backgroundColor: theme.colors.white,
-                }}
-              >
-                <TouchableOpacity style={{ padding: 10 }} onPress={() => void handleContinue()}>
-                  <FontText>{i18n.t('skip')}</FontText>
-                </TouchableOpacity>
+              <View style={{ position: 'absolute', right: 0 }}>
+                <SkipButton onPress={() => handleContinue()} />
               </View>
             </View>
             <Image

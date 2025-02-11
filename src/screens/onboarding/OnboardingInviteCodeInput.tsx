@@ -120,9 +120,13 @@ export default function OnboardingInviteCodeInput({
       }
       const handleSuccess = async () => {
         const res = await retryAsync('OnboardingInviteCodeInput', async () => {
-          return await supabase.functions.invoke('send-partner-notification', {
+          const res = await supabase.functions.invoke('send-partner-notification', {
             body: { type: 'partner_joined' },
           });
+          if (res.error) {
+            throw res.error;
+          }
+          return res;
         });
         if (res.error) {
           logErrorsWithMessageWithoutAlert(res.error, i18n.t('reminding_partner_error'));
@@ -148,6 +152,7 @@ export default function OnboardingInviteCodeInput({
           setError(i18n.t('onboarding_invite_input_invite_code_error'));
       }
     } catch (err) {
+      logErrorsWithMessageWithoutAlert(err, i18n.t('reminding_partner_error'));
       void localAnalytics().logEvent('OnboardingInviteCodeInputJoinCoupleError', {
         screen: 'OnboardingInviteCodeInput',
         action: 'JoinCoupleError',

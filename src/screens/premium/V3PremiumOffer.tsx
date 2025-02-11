@@ -30,7 +30,6 @@ import { MainStackParamList } from '@app/types/navigation';
 import { SecondaryButton } from '@app/components/buttons/SecondaryButton';
 import { FontText } from '@app/components/utils/FontText';
 import { Loading } from '@app/components/utils/Loading';
-import { CloseButton } from '@app/components/buttons/CloseButton';
 
 // New icons and images requested
 import QuestionIcon from '@app/icons/home_question';
@@ -46,6 +45,7 @@ import CheckSimple from '@app/icons/check_simple';
 import LongDash from '@app/icons/long_dash';
 import { GoBackButton } from '@app/components/buttons/GoBackButton';
 import { useFocusEffect } from '@react-navigation/native';
+import moment from 'moment';
 
 export default function ({
   route,
@@ -57,7 +57,15 @@ export default function ({
   const [subscriptionLoading, setSubscriptionLoading] = useState(false);
   const [productLoading, setProductLoading] = useState(false);
   const [buttonDisabled, setButtonDisabled] = useState(false);
-  const [trialLength, setTrialLength] = useState(7);
+  const defaultTrialDays = 7;
+  const dateFormat = 'D MMM';
+  const [trialLength, setTrialLength] = useState(defaultTrialDays);
+  const [yearlyDateCharge, setYearlyDateCharge] = useState(
+    moment().add(defaultTrialDays, 'days').format(dateFormat),
+  );
+  useEffect(() => {
+    setYearlyDateCharge(moment().add(trialLength, 'days').format(dateFormat));
+  }, [trialLength]);
   type CurrentPremiumState =
     | 'premium'
     | 'trial'
@@ -552,7 +560,7 @@ export default function ({
   } else if (trialLength === 14) {
     yearlyTrialLength = i18n.t('premium_14_days_trial');
   } else {
-    yearlyTrialLength = i18n.t('premium_7_days_trial');
+    yearlyTrialLength = i18n.t('premium_start_free_trial');
   }
 
   const [refreshing, setRefreshing] = useState(false);
@@ -585,9 +593,7 @@ export default function ({
             h2
             style={{ color: theme.colors.white, textAlign: 'center', marginVertical: 20 }}
           >
-            {selectedPlan === 'Annual'
-              ? i18n.t('v3_premium_offer_premium_yearly_title')
-              : i18n.t('v3_premium_offer_premium_monthly_title')}
+            {i18n.t('v3_premium_offer_premium_monthly_title')}
           </FontText>
         </>
       );
@@ -641,7 +647,6 @@ export default function ({
             }}
           >
             <GoBackButton onPress={onBackPressed} theme="black" />
-            <CloseButton onPress={onClosePressed} theme="black" />
           </View>
 
           {currentPremiumState === 'premium' ? (
@@ -655,167 +660,6 @@ export default function ({
             <>
               {PremiumReviewBlock()}
               {TitleComponent}
-              <View style={{ marginBottom: 32 }}>
-                <FontText
-                  style={{
-                    textAlign: 'center',
-                    color: theme.colors.grey3,
-                    marginBottom: 16,
-                  }}
-                >
-                  {i18n.t('premium_offer_choose_plan')}
-                </FontText>
-
-                <TouchableOpacity
-                  onPress={() => handleToggle('Annual')}
-                  style={{
-                    backgroundColor:
-                      selectedPlan === 'Annual' ? theme.colors.white : 'rgba(255,255,255,0.1)',
-                    borderRadius: 16,
-                    marginBottom: 8,
-                  }}
-                >
-                  <View
-                    style={{
-                      width: '100%',
-                      backgroundColor: theme.colors.warning,
-                      paddingVertical: 6,
-                      borderTopLeftRadius: 14,
-                      borderTopRightRadius: 14,
-                      position: 'absolute',
-                      top: 0,
-                      left: 0,
-                      right: 0,
-                      paddingHorizontal: 12,
-                    }}
-                  >
-                    <FontText style={{ textAlign: 'center', color: theme.colors.black }}>
-                      {i18n.t('premium_7_days_trial_desc', { days: trialLength })}
-                    </FontText>
-                  </View>
-
-                  <View style={{ padding: 16, paddingTop: 44 }}>
-                    <View
-                      style={{
-                        flexDirection: 'row',
-                        justifyContent: 'space-between',
-                        alignItems: 'center',
-                      }}
-                    >
-                      <View
-                        style={{
-                          flexDirection: 'column',
-                          justifyContent: 'space-between',
-                          gap: 7,
-                        }}
-                      >
-                        <FontText
-                          style={{
-                            color:
-                              selectedPlan === 'Annual' ? theme.colors.black : theme.colors.white,
-                          }}
-                        >
-                          {i18n.t('premium_offer_yearly_label')}
-                        </FontText>
-                        <FontText
-                          style={{
-                            color:
-                              selectedPlan === 'Annual' ? theme.colors.grey3 : theme.colors.grey3,
-                          }}
-                        >
-                          {yearlyPrice} / {i18n.t('year')}
-                        </FontText>
-                      </View>
-                      <View
-                        style={{
-                          flexDirection: 'row',
-                          gap: 8,
-                          alignItems: 'center',
-                        }}
-                      >
-                        <FontText
-                          style={{
-                            color:
-                              selectedPlan === 'Annual' ? theme.colors.black : theme.colors.white,
-                          }}
-                        >
-                          {`${yearlyPerMonthPrice} / ${i18n.t('month')}`}
-                        </FontText>
-                        <View
-                          style={{
-                            width: 24,
-                            height: 24,
-                            borderRadius: 12,
-                            backgroundColor:
-                              selectedPlan === 'Annual' ? theme.colors.warning : 'transparent',
-                            borderWidth: selectedPlan === 'Annual' ? 0 : 2,
-                            borderColor: theme.colors.grey3,
-                            justifyContent: 'center',
-                            alignItems: 'center',
-                          }}
-                        >
-                          {selectedPlan === 'Annual' && <CheckSimple color={theme.colors.black} />}
-                        </View>
-                      </View>
-                    </View>
-                  </View>
-                </TouchableOpacity>
-
-                <TouchableOpacity
-                  onPress={() => handleToggle('Monthly')}
-                  style={{
-                    backgroundColor:
-                      selectedPlan === 'Monthly' ? theme.colors.white : 'rgba(255,255,255,0.1)',
-                    borderRadius: 16,
-                  }}
-                >
-                  <View style={{ padding: 16 }}>
-                    <View
-                      style={{
-                        flexDirection: 'row',
-                        justifyContent: 'space-between',
-                        alignItems: 'center',
-                        marginBottom: 4,
-                      }}
-                    >
-                      <FontText
-                        style={{
-                          color:
-                            selectedPlan === 'Monthly' ? theme.colors.black : theme.colors.white,
-                        }}
-                      >
-                        {i18n.t('premium_offer_monthly_label')}
-                      </FontText>
-                      <View style={{ flexDirection: 'row', gap: 6, alignItems: 'center' }}>
-                        <FontText
-                          style={{
-                            color:
-                              selectedPlan === 'Monthly' ? theme.colors.black : theme.colors.white,
-                          }}
-                        >
-                          {monthlyPrice} / {i18n.t('month')}
-                        </FontText>
-                        <View
-                          style={{
-                            width: 24,
-                            height: 24,
-                            borderRadius: 12,
-                            backgroundColor:
-                              selectedPlan === 'Monthly' ? theme.colors.warning : 'transparent',
-                            borderWidth: selectedPlan === 'Monthly' ? 0 : 2,
-                            borderColor: theme.colors.grey3,
-                            justifyContent: 'center',
-                            alignItems: 'center',
-                          }}
-                        >
-                          {selectedPlan === 'Monthly' && <CheckSimple color={theme.colors.black} />}
-                        </View>
-                      </View>
-                    </View>
-                  </View>
-                </TouchableOpacity>
-              </View>
-
               <View>
                 <View
                   style={{
@@ -943,58 +787,300 @@ export default function ({
                   stars={5}
                 />
               </View>
+
+              <View style={{ marginBottom: 32 }}>
+                <FontText
+                  style={{
+                    textAlign: 'center',
+                    color: theme.colors.grey3,
+                    marginVertical: 16,
+                  }}
+                >
+                  {i18n.t('premium_offer_choose_plan')}
+                </FontText>
+
+                <TouchableOpacity
+                  onPress={() => handleToggle('Annual')}
+                  style={{
+                    backgroundColor:
+                      selectedPlan === 'Annual' ? theme.colors.white : 'rgba(255,255,255,0.1)',
+                    borderRadius: 16,
+                    marginBottom: 8,
+                  }}
+                >
+                  <View
+                    style={{
+                      width: '100%',
+                      backgroundColor: theme.colors.warning,
+                      paddingVertical: 6,
+                      borderTopLeftRadius: 14,
+                      borderTopRightRadius: 14,
+                      position: 'absolute',
+                      top: 0,
+                      left: 0,
+                      right: 0,
+                      paddingHorizontal: 12,
+                    }}
+                  >
+                    <FontText style={{ textAlign: 'center', color: theme.colors.black }}>
+                      {i18n.t('premium_7_days_trial_desc', { days: trialLength })}
+                    </FontText>
+                  </View>
+
+                  <View style={{ padding: 16, paddingTop: 44 }}>
+                    <View
+                      style={{
+                        flexDirection: 'row',
+                        justifyContent: 'space-between',
+                        alignItems: 'center',
+                      }}
+                    >
+                      <View
+                        style={{
+                          flexDirection: 'column',
+                          justifyContent: 'space-between',
+                          gap: 7,
+                        }}
+                      >
+                        <FontText
+                          style={{
+                            color:
+                              selectedPlan === 'Annual' ? theme.colors.black : theme.colors.white,
+                          }}
+                        >
+                          {i18n.t('premium_offer_yearly_label')}
+                        </FontText>
+                      </View>
+                      <View
+                        style={{
+                          flexDirection: 'row',
+                          gap: 8,
+                          alignItems: 'center',
+                        }}
+                      >
+                        <FontText
+                          style={{
+                            color:
+                              selectedPlan === 'Annual' ? theme.colors.black : theme.colors.white,
+                          }}
+                        >
+                          {`${yearlyPerMonthPrice} / ${i18n.t('month')}`}
+                        </FontText>
+                        <View
+                          style={{
+                            width: 24,
+                            height: 24,
+                            borderRadius: 12,
+                            backgroundColor:
+                              selectedPlan === 'Annual' ? theme.colors.warning : 'transparent',
+                            borderWidth: selectedPlan === 'Annual' ? 0 : 2,
+                            borderColor: theme.colors.grey3,
+                            justifyContent: 'center',
+                            alignItems: 'center',
+                          }}
+                        >
+                          {selectedPlan === 'Annual' && <CheckSimple color={theme.colors.black} />}
+                        </View>
+                      </View>
+                    </View>
+                    <View>
+                      <FontText
+                        small
+                        style={{
+                          color: theme.colors.grey3,
+                        }}
+                      >
+                        {i18n.t('price_after_yearly_trial', { price: yearlyPrice })}
+                      </FontText>
+                    </View>
+                  </View>
+                </TouchableOpacity>
+
+                <TouchableOpacity
+                  onPress={() => handleToggle('Monthly')}
+                  style={{
+                    backgroundColor:
+                      selectedPlan === 'Monthly' ? theme.colors.white : 'rgba(255,255,255,0.1)',
+                    borderRadius: 16,
+                  }}
+                >
+                  <View style={{ padding: 16 }}>
+                    <View
+                      style={{
+                        flexDirection: 'row',
+                        justifyContent: 'space-between',
+                        alignItems: 'center',
+                        marginBottom: 4,
+                      }}
+                    >
+                      <FontText
+                        style={{
+                          color:
+                            selectedPlan === 'Monthly' ? theme.colors.black : theme.colors.white,
+                        }}
+                      >
+                        {i18n.t('premium_offer_monthly_label')}
+                      </FontText>
+                      <View style={{ flexDirection: 'row', gap: 6, alignItems: 'center' }}>
+                        <FontText
+                          style={{
+                            color:
+                              selectedPlan === 'Monthly' ? theme.colors.black : theme.colors.white,
+                          }}
+                        >
+                          {monthlyPrice} / {i18n.t('month')}
+                        </FontText>
+                        <View
+                          style={{
+                            width: 24,
+                            height: 24,
+                            borderRadius: 12,
+                            backgroundColor:
+                              selectedPlan === 'Monthly' ? theme.colors.warning : 'transparent',
+                            borderWidth: selectedPlan === 'Monthly' ? 0 : 2,
+                            borderColor: theme.colors.grey3,
+                            justifyContent: 'center',
+                            alignItems: 'center',
+                          }}
+                        >
+                          {selectedPlan === 'Monthly' && <CheckSimple color={theme.colors.black} />}
+                        </View>
+                      </View>
+                    </View>
+                  </View>
+                </TouchableOpacity>
+              </View>
+
+              <View style={{ marginTop: 10, paddingHorizontal: 5 }}>
+                <SecondaryButton
+                  buttonStyle={{ width: '100%' }}
+                  disabled={buttonDisabled}
+                  onPress={() => void handleButtonPress()}
+                  title={selectedPlan === 'Annual' ? yearlyTrialLength : i18n.t('continue')}
+                ></SecondaryButton>
+
+                {selectedPlan === 'Annual' && (
+                  <View style={{ marginTop: 15, alignItems: 'center' }}>
+                    <FontText small style={{ color: theme.colors.grey1, textAlign: 'center' }}>
+                      {i18n.t('premium_charge_conditions', {
+                        price: yearlyPrice,
+                        date: yearlyDateCharge,
+                      })}
+                    </FontText>
+                  </View>
+                )}
+
+                <FontText
+                  small
+                  style={{
+                    marginTop: 15,
+                    color: theme.colors.grey1,
+                    textAlign: 'center',
+                  }}
+                >
+                  {i18n.t('or')}
+                </FontText>
+
+                <SecondaryButton
+                  buttonStyle={{
+                    marginVertical: 15,
+                    backgroundColor: 'rgba(255, 255, 255, 0.1)',
+                  }}
+                  onPress={onClosePressed}
+                >
+                  <FontText
+                    style={{
+                      textAlign: 'center',
+                      color: theme.colors.white,
+                    }}
+                  >
+                    {i18n.t('skip_premium_for_now')}
+                  </FontText>
+                </SecondaryButton>
+
+                <View
+                  style={{
+                    marginTop: 20,
+                    marginHorizontal: 5,
+                    alignItems: 'center',
+                    flexDirection: 'row',
+                    gap: 5,
+                    justifyContent: 'center',
+                  }}
+                >
+                  <TouchableOpacity
+                    style={{ flex: 1 }}
+                    onPress={() => void Linking.openURL('https://nemlys.com/terms')}
+                  >
+                    <FontText small style={{ color: theme.colors.grey1, textAlign: 'right' }}>
+                      {i18n.t('premium_offer_terms')}
+                    </FontText>
+                  </TouchableOpacity>
+                  <FontText small style={{ color: theme.colors.grey1 }}>
+                    {'•'}
+                  </FontText>
+                  <TouchableOpacity
+                    style={{ flex: 1 }}
+                    onPress={() => void Linking.openURL('https://nemlys.com/policy')}
+                  >
+                    <FontText small style={{ color: theme.colors.grey1, textAlign: 'left' }}>
+                      {i18n.t('premium_offer_privacy')}
+                    </FontText>
+                  </TouchableOpacity>
+                </View>
+              </View>
             </>
           )}
         </ScrollView>
-        {currentPremiumState !== 'premium' && (
-          <View style={{ marginTop: 10, paddingHorizontal: 5 }}>
-            {selectedPlan === 'Annual' && (
-              <View style={{ marginBottom: 10, alignItems: 'center' }}>
-                <FontText small style={{ color: theme.colors.white }}>
-                  {i18n.t('premium_charged', { price: yearlyPrice })}
-                </FontText>
-              </View>
-            )}
+        {/*{currentPremiumState !== 'premium' && (*/}
+        {/*  <View style={{ marginTop: 10, paddingHorizontal: 5 }}>*/}
+        {/*    {selectedPlan === 'Annual' && (*/}
+        {/*      <View style={{ marginBottom: 10, alignItems: 'center' }}>*/}
+        {/*        <FontText small style={{ color: theme.colors.white }}>*/}
+        {/*          {i18n.t('premium_charged', { price: yearlyPrice })}*/}
+        {/*        </FontText>*/}
+        {/*      </View>*/}
+        {/*    )}*/}
 
-            <SecondaryButton
-              buttonStyle={{ width: '100%' }}
-              disabled={buttonDisabled}
-              onPress={() => void handleButtonPress()}
-              title={selectedPlan === 'Annual' ? yearlyTrialLength : i18n.t('continue')}
-            ></SecondaryButton>
+        {/*    <SecondaryButton*/}
+        {/*      buttonStyle={{ width: '100%' }}*/}
+        {/*      disabled={buttonDisabled}*/}
+        {/*      onPress={() => void handleButtonPress()}*/}
+        {/*      title={selectedPlan === 'Annual' ? yearlyTrialLength : i18n.t('continue')}*/}
+        {/*    ></SecondaryButton>*/}
 
-            <View
-              style={{
-                marginTop: 10,
-                marginHorizontal: 20,
-                alignItems: 'center',
-                flexDirection: 'row',
-                gap: 5,
-                justifyContent: 'center',
-              }}
-            >
-              <TouchableOpacity
-                style={{ flex: 1 }}
-                onPress={() => void Linking.openURL('https://nemlys.com/terms')}
-              >
-                <FontText small style={{ color: theme.colors.grey3, textAlign: 'right' }}>
-                  {i18n.t('premium_offer_terms')}
-                </FontText>
-              </TouchableOpacity>
-              <FontText small style={{ color: theme.colors.grey3 }}>
-                {'•'}
-              </FontText>
-              <TouchableOpacity
-                style={{ flex: 1 }}
-                onPress={() => void Linking.openURL('https://nemlys.com/policy')}
-              >
-                <FontText small style={{ color: theme.colors.grey3, textAlign: 'left' }}>
-                  {i18n.t('premium_offer_privacy')}
-                </FontText>
-              </TouchableOpacity>
-            </View>
-          </View>
-        )}
+        {/*    <View*/}
+        {/*      style={{*/}
+        {/*        marginTop: 10,*/}
+        {/*        marginHorizontal: 20,*/}
+        {/*        alignItems: 'center',*/}
+        {/*        flexDirection: 'row',*/}
+        {/*        gap: 5,*/}
+        {/*        justifyContent: 'center',*/}
+        {/*      }}*/}
+        {/*    >*/}
+        {/*      <TouchableOpacity*/}
+        {/*        style={{ flex: 1 }}*/}
+        {/*        onPress={() => void Linking.openURL('https://nemlys.com/terms')}*/}
+        {/*      >*/}
+        {/*        <FontText small style={{ color: theme.colors.grey3, textAlign: 'right' }}>*/}
+        {/*          {i18n.t('premium_offer_terms')}*/}
+        {/*        </FontText>*/}
+        {/*      </TouchableOpacity>*/}
+        {/*      <FontText small style={{ color: theme.colors.grey3 }}>*/}
+        {/*        {'•'}*/}
+        {/*      </FontText>*/}
+        {/*      <TouchableOpacity*/}
+        {/*        style={{ flex: 1 }}*/}
+        {/*        onPress={() => void Linking.openURL('https://nemlys.com/policy')}*/}
+        {/*      >*/}
+        {/*        <FontText small style={{ color: theme.colors.grey3, textAlign: 'left' }}>*/}
+        {/*          {i18n.t('premium_offer_privacy')}*/}
+        {/*        </FontText>*/}
+        {/*      </TouchableOpacity>*/}
+        {/*    </View>*/}
+        {/*  </View>*/}
+        {/*)}*/}
       </SafeAreaView>
     </View>
   );
@@ -1099,11 +1185,13 @@ function PremiumReviewBlock() {
         <FontText
           style={{
             color: theme.colors.white,
-            textTransform: 'capitalize',
+            textTransform: 'uppercase',
             textAlign: 'center',
           }}
         >
-          {i18n.t('premium_offer_review_couple_count', { coupleCount: '150 000' })}
+          {i18n.t('join_over_count_other_couples_in_nemlys', {
+            coupleCount: '200 000',
+          })}
         </FontText>
         <Image
           source={REVIEW_STARS}

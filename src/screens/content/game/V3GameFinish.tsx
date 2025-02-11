@@ -134,12 +134,14 @@ export default function V3GameFinish({ route, navigation }: Props) {
         screenParams: {
           id: gameId!,
           refreshTimeStamp: new Date().toISOString(),
+          fromHome: route.params.fromHome,
         },
       });
     } else {
       navigation.navigate('V3ExploreGameDetail', {
         id: gameId!,
         refreshTimeStamp: new Date().toISOString(),
+        fromHome: route.params.fromHome,
       });
     }
   };

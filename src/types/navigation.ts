@@ -2,9 +2,15 @@ import { NativeStackScreenProps } from '@react-navigation/native-stack';
 import { JobSlug } from './domain';
 
 export type MainStackParamList = {
-  YourName: { fromSettings: boolean };
-  PartnerName: { fromSettings: boolean };
-  Language: { fromSettings: boolean };
+  YourName: {
+    fromSettings: boolean;
+  };
+  PartnerName: {
+    fromSettings: boolean;
+  };
+  Language: {
+    fromSettings: boolean;
+  };
   DatingLength: undefined;
   OnboardingInviteCode: {
     nextScreen: string | undefined;
@@ -36,19 +42,44 @@ export type MainStackParamList = {
   OnboardingStatistics: {
     job: string;
   };
-  OnboardingNotification: { isOnboarding: boolean };
+  OnboardingNotification: {
+    isOnboarding: boolean;
+  };
   V3Upgrade: undefined;
-  Home: { refreshTimeStamp: string | undefined };
-  V2Home: { refreshTimeStamp: string | undefined };
-  ReflectionHome: { refreshTimeStamp: string | undefined };
-  WriteReflection: { reflectionId: number; question: string; answer: string | undefined };
+  Home: {
+    refreshTimeStamp: string | undefined;
+  };
+  V2Home: {
+    refreshTimeStamp: string | undefined;
+  };
+  ReflectionHome: {
+    refreshTimeStamp: string | undefined;
+  };
+  WriteReflection: {
+    reflectionId: number;
+    question: string;
+    answer: string | undefined;
+  };
   FinishedWriting: undefined;
-  Profile: { refreshTimeStamp: string | undefined };
-  V2Profile: { refreshTimeStamp: string | undefined };
-  V3Profile: { refreshTimeStamp: string | undefined };
-  LoveNote: { refreshTimeStamp: string | undefined };
-  CoupleLanguage: { fromSettings: boolean; language: string };
-  DateIsWithPartner: { job: JobSlug };
+  Profile: {
+    refreshTimeStamp: string | undefined;
+  };
+  V2Profile: {
+    refreshTimeStamp: string | undefined;
+  };
+  V3Profile: {
+    refreshTimeStamp: string | undefined;
+  };
+  LoveNote: {
+    refreshTimeStamp: string | undefined;
+  };
+  CoupleLanguage: {
+    fromSettings: boolean;
+    language: string;
+  };
+  DateIsWithPartner: {
+    job: JobSlug;
+  };
   ConfigureDate: {
     job: JobSlug;
     withPartner: boolean;
@@ -58,8 +89,14 @@ export type MainStackParamList = {
     id: number;
     refreshTimeStamp: string | undefined;
   };
-  OnDateNewLevel: { withPartner: boolean; refreshTimeStamp: string | undefined };
-  OnDateNotification: { withPartner: boolean; isOnboarding: boolean };
+  OnDateNewLevel: {
+    withPartner: boolean;
+    refreshTimeStamp: string | undefined;
+  };
+  OnDateNotification: {
+    withPartner: boolean;
+    isOnboarding: boolean;
+  };
   GeneratingQuestion: {
     withPartner: boolean;
     topic: string;
@@ -77,8 +114,14 @@ export type MainStackParamList = {
     refreshTimeStamp: string | undefined;
     isOnboarding: boolean;
   };
-  PremiumSuccess: { state: 'premium_started' | 'trial_started'; isOnboarding: boolean };
-  QuestionAnswer: { questionId: number; fromDate: boolean };
+  PremiumSuccess: {
+    state: 'premium_started' | 'trial_started';
+    isOnboarding: boolean;
+  };
+  QuestionAnswer: {
+    questionId: number;
+    fromDate: boolean;
+  };
   AnswerHome: {
     refreshTimeStamp: string | undefined;
   };
@@ -89,78 +132,136 @@ export type MainStackParamList = {
   InterviewText: {
     refreshTimeStamp: string | undefined;
   };
-  Diary: { refreshTimeStamp: string | undefined };
-  DiaryEntry: { id: number };
+  Diary: {
+    refreshTimeStamp: string | undefined;
+  };
+  DiaryEntry: {
+    id: number;
+  };
   DiaryNewEntry: undefined;
   Settings: undefined;
   Job: undefined;
 
-  V3Home: { refreshTimeStamp: string | undefined };
-  V3Explore: { refreshTimeStamp: string | undefined };
-  V3ExploreJourneyList: { refreshTimeStamp: string | undefined };
-  V3ExploreTestList: { refreshTimeStamp: string | undefined };
-  V3ExploreGameList: { refreshTimeStamp: string | undefined };
-  V3ExploreCheckupList: { refreshTimeStamp: string | undefined };
-  V3ExploreQuestionList: { refreshTimeStamp: string | undefined };
-  V3ExploreQuestionListJob: { refreshTimeStamp: string | undefined; job: string };
-  V3ExploreExerciseList: { refreshTimeStamp: string | undefined };
-  V3ExploreArticleList: { refreshTimeStamp: string | undefined };
+  V3Home: {
+    refreshTimeStamp: string | undefined;
+  };
+  V3Explore: {
+    refreshTimeStamp: string | undefined;
+  };
+  V3ExploreJourneyList: {
+    refreshTimeStamp: string | undefined;
+  };
+  V3ExploreTestList: {
+    refreshTimeStamp: string | undefined;
+  };
+  V3ExploreGameList: {
+    refreshTimeStamp: string | undefined;
+  };
+  V3ExploreCheckupList: {
+    refreshTimeStamp: string | undefined;
+  };
+  V3ExploreQuestionList: {
+    refreshTimeStamp: string | undefined;
+  };
+  V3ExploreQuestionListJob: {
+    refreshTimeStamp: string | undefined;
+    job: string;
+  };
+  V3ExploreExerciseList: {
+    refreshTimeStamp: string | undefined;
+  };
+  V3ExploreArticleList: {
+    refreshTimeStamp: string | undefined;
+  };
   V3ExploreQuestionDetail: {
     refreshTimeStamp: string | undefined;
     id: number;
     shouldGoBack?: boolean;
     fromHome?: boolean;
+    canActivate?: boolean;
   };
   V3ExploreTestDetail: {
     refreshTimeStamp: string | undefined;
     id: number;
     shouldGoBack?: boolean;
     fromHome?: boolean;
+    canActivate?: boolean;
   };
   V3ExploreCheckupDetail: {
     refreshTimeStamp: string | undefined;
     id: number;
     shouldGoBack?: boolean;
     fromHome?: boolean;
+    canActivate?: boolean;
   };
   V3ExploreGameDetail: {
     refreshTimeStamp: string | undefined;
     id: number;
     shouldGoBack?: boolean;
     fromHome?: boolean;
+    canActivate?: boolean;
   };
   V3ExploreArticleDetail: {
     refreshTimeStamp: string | undefined;
     id: number;
     shouldGoBack?: boolean;
     fromHome?: boolean;
+    canActivate?: boolean;
   };
   V3ExploreExerciseDetail: {
     refreshTimeStamp: string | undefined;
     id: number;
     shouldGoBack?: boolean;
     fromHome?: boolean;
+    canActivate?: boolean;
   };
-  V3Test: { refreshTimeStamp: string | undefined; id: number };
-  V3TestStart: { refreshTimeStamp: string | undefined; id: number };
+  V3Test: {
+    refreshTimeStamp: string | undefined;
+    id: number;
+    fromHome?: boolean;
+  };
+  V3TestStart: {
+    refreshTimeStamp: string | undefined;
+    id: number;
+    fromHome?: boolean;
+  };
   V3TestFinish: {
     refreshTimeStamp: string | undefined;
     instanceId: number;
     showStreak: boolean;
+    fromHome?: boolean;
   };
-  V3Checkup: { refreshTimeStamp: string | undefined; id: number };
-  V3CheckupStart: { refreshTimeStamp: string | undefined; id: number };
+  V3Checkup: {
+    refreshTimeStamp: string | undefined;
+    id: number;
+    fromHome?: boolean;
+  };
+  V3CheckupStart: {
+    refreshTimeStamp: string | undefined;
+    id: number;
+    fromHome?: boolean;
+  };
   V3CheckupFinish: {
     refreshTimeStamp: string | undefined;
     instanceId: number;
     showStreak: boolean;
+    fromHome?: boolean;
   };
-  V3Game: { refreshTimeStamp: string | undefined; id: number };
-  V3GameStart: { refreshTimeStamp: string | undefined; id: number };
+  V3Game: {
+    refreshTimeStamp: string | undefined;
+    id: number;
+    fromHome?: boolean;
+  };
+  V3GameStart: {
+    refreshTimeStamp: string | undefined;
+    id: number;
+    fromHome?: boolean;
+  };
   V3GameFinish: {
     refreshTimeStamp: string | undefined;
     instanceId: number;
     showStreak: boolean;
+    fromHome?: boolean;
   };
 
   V3ShowStreak: {

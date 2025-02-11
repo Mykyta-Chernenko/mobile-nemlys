@@ -140,7 +140,7 @@ export default function ({
                 }}
               >
                 <TouchableOpacity style={{ padding: 10 }} onPress={() => void handleSkip()}>
-                  <FontText>{i18n.t('skip')}</FontText>
+                  <FontText small>{i18n.t('skip')}</FontText>
                 </TouchableOpacity>
               </View>
             </View>

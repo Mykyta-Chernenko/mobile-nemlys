@@ -28,7 +28,6 @@ import ContentGameIcon from '@app/icons/content_game';
 import ContentArticleIcon from '@app/icons/content_article';
 import ContentExerciseIcon from '@app/icons/content_exercise';
 import ContentCheckupIcon from '@app/icons/content_checkup';
-import ContentJourneyIcon from '@app/icons/content_journey';
 import { capitalize, showName } from '@app/utils/strings';
 import { getContentImageFromId } from '@app/utils/content';
 import { PrimaryButton } from '@app/components/buttons/PrimaryButtons';
@@ -72,7 +71,7 @@ const iconMap: Record<ContentType, React.ReactNode> = {
   article: <ContentArticleIcon width={24} height={24} />,
   exercise: <ContentExerciseIcon width={24} height={24} />,
   checkup: <ContentCheckupIcon width={24} height={24} />,
-  journey: <ContentJourneyIcon width={24} height={24} />,
+  // journey: <ContentJourneyIcon width={24} height={24} />,
 };
 
 export default function ({
@@ -363,7 +362,6 @@ export default function ({
       id,
     });
     if (navigation) {
-      // @ts-expect-error journey detail does not exist yet
       navigation.navigate(contentDetailScreen[contentType], {
         id,
         refreshTimeStamp: new Date().toISOString(),

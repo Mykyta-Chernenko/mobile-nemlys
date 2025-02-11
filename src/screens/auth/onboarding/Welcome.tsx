@@ -110,8 +110,8 @@ export default function WelcomeScreen({
       <ScrollView contentContainerStyle={{ flexGrow: 1 }}>
         <Image
           style={{
-            marginTop: isSmallDevice() ? -120 : 0,
-            marginBottom: isSmallDevice() ? -120 : 0,
+            marginTop: isSmallDevice() ? -180 : 0,
+            marginBottom: isSmallDevice() ? -180 : 0,
             resizeMode: 'contain',
             width: '100%',
           }}

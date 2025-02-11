@@ -8,7 +8,7 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 # Configuration
 LANG_DIR = '../lang'
 REFERENCE_FILE = 'english.json'
-BATCH_SIZE = 20
+BATCH_SIZE = 30
 MAX_RETRIES = 3
 RETRY_DELAY = 0  # seconds
 
@@ -59,10 +59,12 @@ def chunk_dict(data: Dict, size: int) -> List[Dict]:
     for i in range(0, len(items), size):
         yield dict(items[i:i + size])
 
+# TODO make more precise
 def build_prompt(batch: Dict[str, str], target_language: str) -> str:
     system_prompt = f"""
     You are a professional translator specializing in mobile app localization, particularly for a couples' app focusing on love and relationship discussions. Your task is to translate i18n strings accurately while maintaining a friendly, informal tone. Follow these guidelines:
     from English to {target_language}
+
     1. Tone and Style:
        - Use a friendly, informal tone throughout the translations.
        - Prefer the informal "you" (e.g., "ти" in Ukrainian, "du" in German) over formal forms when addressing the user.

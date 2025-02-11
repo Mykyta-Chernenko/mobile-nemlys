@@ -68,8 +68,8 @@ export default function V3ShowStreak({ route, navigation }: Props) {
     const notifications = [
       {
         screen: 'V3Home',
-        title: i18n.t(`notification_streak_1_title`, { streakDay }),
-        body: i18n.t(`notification_streak_1_body`),
+        title: i18n.t('notification_streak_1_title_2'),
+        body: i18n.t('notification_streak_1_body_2', { streakDay }),
         trigger: {
           type: SchedulableTriggerInputTypes.TIME_INTERVAL,
           seconds: calculateHourTimeAfterDays(1, 22),
@@ -79,8 +79,8 @@ export default function V3ShowStreak({ route, navigation }: Props) {
       },
       {
         screen: 'V3Home',
-        title: i18n.t(`notification_streak_2_title`),
-        body: i18n.t(`notification_streak_2_body`),
+        title: i18n.t('notification_streak_2_title_2'),
+        body: i18n.t('notification_streak_2_body_2'),
         trigger: {
           type: SchedulableTriggerInputTypes.TIME_INTERVAL,
           seconds: calculateHourTimeAfterDays(2, 22),
@@ -90,8 +90,8 @@ export default function V3ShowStreak({ route, navigation }: Props) {
       },
       {
         screen: 'V3Home',
-        title: i18n.t(`notification_streak_3_title`),
-        body: i18n.t(`notification_streak_3_body`),
+        title: i18n.t('notification_streak_3_title_2'),
+        body: i18n.t('notification_streak_3_body_2'),
         trigger: {
           type: SchedulableTriggerInputTypes.TIME_INTERVAL,
           seconds: calculateHourTimeAfterDays(3, 22),

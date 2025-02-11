@@ -139,7 +139,7 @@ export default function V3ExploreExerciseDetail({ route, navigation }: Props) {
       setShowSelected(isSelected);
       const hasFinished = !!instanceQuery.data?.finished_by?.length;
       setHasFinished(hasFinished);
-      setIsPremium(premiumResult.data || hasFinished);
+      setIsPremium(premiumResult.data || hasFinished || !!route.params.canActivate);
 
       setFinishedCount(exerciseRes.data.couples_finished);
       setExerciseSteps(stepsQuery.data || []);

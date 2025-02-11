@@ -276,7 +276,7 @@ export default function V3ExploreCheckupDetail({ route, navigation }: Props) {
       }
       setStateType(stateType);
 
-      setIsPremium(premiumStatus || stateType !== 'not_started');
+      setIsPremium(premiumStatus || stateType !== 'not_started' || !!route.params.canActivate);
 
       localAnalytics().logEvent('V3CheckupDetailLoaded', {
         userId,
@@ -319,6 +319,7 @@ export default function V3ExploreCheckupDetail({ route, navigation }: Props) {
       navigation.navigate('V3CheckupStart', {
         id: checkupId,
         refreshTimeStamp: new Date().toISOString(),
+        fromHome: route.params.fromHome,
       });
     } else {
       localAnalytics().logEvent('V3ExploreCheckupDetailRedirectPremium', {

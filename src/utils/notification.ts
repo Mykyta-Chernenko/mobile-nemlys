@@ -47,6 +47,7 @@ export async function createFinishDateNotifications(userId: string) {
     } as SchedulableNotificationTriggerInput,
     subtype,
   }));
+  console.log(notifications);
   await recreateNotificationList(
     userId,
     finishDateIdentifier,
