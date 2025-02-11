@@ -148,14 +148,13 @@ export default function V3ExploreQuestionDetail({ route, navigation }: Props) {
 
     if (partnerCheckErr) throw partnerCheckErr;
     if (profileError) throw profileError;
+    if (!profileData) throw new Error('profile data is empty');
     if (questionError) throw questionError;
 
     setHasPartner(!!coupleCheck);
-    if (profileData) {
-      setName(showName(profileData.first_name));
-      setPartnerName(showName(profileData.partner_first_name || i18n.t('home_partner')));
-      setCoupleId(profileData.couple_id);
-    }
+    setName(showName(profileData.first_name));
+    setPartnerName(showName(profileData.partner_first_name || i18n.t('home_partner')));
+    setCoupleId(profileData.couple_id);
     if (questionData) {
       const instance = questionData.content_question_couple_instance[0];
       instance?.content_question_couple_instance_reply?.sort((x) =>
@@ -340,118 +339,120 @@ export default function V3ExploreQuestionDetail({ route, navigation }: Props) {
   );
 
   const handleSendReply = useCallback(async () => {
-    void localAnalytics().logEvent('V3ExploreQuestionDetailReplyStart', {
-      screen: 'V3ExploreQuestionDetail',
-      action: 'ReplyStart',
-      userId: authContext.userId,
-    });
-
-    let currentInstanceId = instanceId;
-
-    if (!currentInstanceId) {
-      const created = await supabase
-        .from('content_question_couple_instance')
-        .insert({
-          couple_id: coupleId!,
-          question_id: id,
-        })
-        .select('id')
-        .single();
-      if (created.error) {
-        logSupaErrors(created.error);
-        return;
-      }
-      currentInstanceId = created.data.id;
-      setInstanceId(currentInstanceId);
-    }
-
-    const replyText = newReply.trim();
-    if (replyText === '') return;
-    const oldReplies = [...replies];
     setMessageButtonLoading(true);
-    const tempId = Math.random();
-    const newRepliesTemp: Reply[] = [
-      ...oldReplies,
-      {
-        id: tempId,
-        text: replyText,
-        instance_question_id: currentInstanceId,
-        user_id: authContext.userId!,
-        created_at: getNow().toISOString(),
-        updated_at: getNow().toISOString(),
-      },
-    ];
-    setReplies(newRepliesTemp);
-    setNewReply('');
     try {
-      const userHasAnswered = finishedBy.includes(authContext.userId!);
-      const streakRegisterQuery = userHasAnswered
-        ? new Promise((resolve) => resolve({ errors: null, data: false }))
-        : supabase.rpc('record_streak_hit');
-      const [insertResult, streakResult] = await Promise.all([
-        supabase
-          .from('content_question_couple_instance_reply')
-          .insert({
-            text: replyText,
-            instance_question_id: currentInstanceId,
-            user_id: authContext.userId!,
-          })
-          .select()
-          .single(),
-        streakRegisterQuery,
-      ]);
-      if (insertResult.error) {
-        logSupaErrors(insertResult.error);
-        throw insertResult.error;
-      }
-      await AsyncStorage.removeItem(STORAGE_KEY + id.toString());
-
-      const streakResultTyped = streakResult as { error?: PostgrestError; data: boolean };
-      if (streakResultTyped.error) {
-        logSupaErrors(streakResultTyped.error);
-        throw streakResultTyped.error;
-      }
-      if (!insertResult.data) throw new Error('insert_error');
-      const updatedReplies = [...oldReplies, insertResult.data];
-      setReplies(updatedReplies);
-      setLastMessage(insertResult.data.created_at);
-      localAnalytics().logEvent('V3ExploreQuestionDetailReplySent', {
+      void localAnalytics().logEvent('V3ExploreQuestionDetailReplyStart', {
         screen: 'V3ExploreQuestionDetail',
-        action: 'ReplySent',
-        questionId: id,
+        action: 'ReplyStart',
         userId: authContext.userId,
       });
 
-      if (hasPartner) {
-        void handleRemindPartner(
-          'V3ExploreQuestionDetail',
-          partnerName,
-          authContext.userId!,
-          setReminderLoading,
-          {
+      let currentInstanceId = instanceId;
+
+      if (!currentInstanceId) {
+        const created = await supabase
+          .from('content_question_couple_instance')
+          .insert({
+            couple_id: coupleId!,
             question_id: id,
-            type: 'remind_question',
-          },
-          navigation,
-          undefined,
-          undefined,
-          false,
-          false,
-        );
+          })
+          .select('id')
+          .single();
+        if (created.error) {
+          logSupaErrors(created.error);
+          return;
+        }
+        currentInstanceId = created.data.id;
+        setInstanceId(currentInstanceId);
       }
-      if (streakResultTyped.data) {
-        navigation.navigate('V3ShowStreak', {
-          refreshTimeStamp: new Date().toISOString(),
-          nextScreen: 'V3ExploreQuestionDetail',
-          screenParams: {
-            id,
-            refreshTimeStamp: new Date().toISOString(),
-          },
+
+      const replyText = newReply.trim();
+      if (replyText === '') return;
+      const oldReplies = [...replies];
+      const tempId = Math.random();
+      const newRepliesTemp: Reply[] = [
+        ...oldReplies,
+        {
+          id: tempId,
+          text: replyText,
+          instance_question_id: currentInstanceId,
+          user_id: authContext.userId!,
+          created_at: getNow().toISOString(),
+          updated_at: getNow().toISOString(),
+        },
+      ];
+      setReplies(newRepliesTemp);
+      setNewReply('');
+      try {
+        const userHasAnswered = finishedBy.includes(authContext.userId!);
+        const streakRegisterQuery = userHasAnswered
+          ? new Promise((resolve) => resolve({ errors: null, data: false }))
+          : supabase.rpc('record_streak_hit');
+        const [insertResult, streakResult] = await Promise.all([
+          supabase
+            .from('content_question_couple_instance_reply')
+            .insert({
+              text: replyText,
+              instance_question_id: currentInstanceId,
+              user_id: authContext.userId!,
+            })
+            .select()
+            .single(),
+          streakRegisterQuery,
+        ]);
+        if (insertResult.error) {
+          logSupaErrors(insertResult.error);
+          throw insertResult.error;
+        }
+        await AsyncStorage.removeItem(STORAGE_KEY + id.toString());
+
+        const streakResultTyped = streakResult as { error?: PostgrestError; data: boolean };
+        if (streakResultTyped.error) {
+          logSupaErrors(streakResultTyped.error);
+          throw streakResultTyped.error;
+        }
+        if (!insertResult.data) throw new Error('insert_error');
+        const updatedReplies = [...oldReplies, insertResult.data];
+        setReplies(updatedReplies);
+        setLastMessage(insertResult.data.created_at);
+        localAnalytics().logEvent('V3ExploreQuestionDetailReplySent', {
+          screen: 'V3ExploreQuestionDetail',
+          action: 'ReplySent',
+          questionId: id,
+          userId: authContext.userId,
         });
-        setFinishedBy([...finishedBy, authContext.userId!]);
+
+        if (hasPartner) {
+          void handleRemindPartner(
+            'V3ExploreQuestionDetail',
+            partnerName,
+            authContext.userId!,
+            setReminderLoading,
+            {
+              question_id: id,
+              type: 'remind_question',
+            },
+            navigation,
+            undefined,
+            undefined,
+            false,
+            false,
+          );
+        }
+        if (streakResultTyped.data) {
+          navigation.navigate('V3ShowStreak', {
+            refreshTimeStamp: new Date().toISOString(),
+            nextScreen: 'V3ExploreQuestionDetail',
+            screenParams: {
+              id,
+              refreshTimeStamp: new Date().toISOString(),
+            },
+          });
+          setFinishedBy([...finishedBy, authContext.userId!]);
+        }
+      } catch (_) {
+        setReplies(oldReplies);
       }
-    } catch (_) {
-      setReplies(oldReplies);
     } finally {
       setMessageButtonLoading(false);
     }

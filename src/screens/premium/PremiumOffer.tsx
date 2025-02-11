@@ -492,7 +492,7 @@ export default function ({
         <>
           {i18n.t('premium_offer_premium_title')}
           <FontText h1 style={{ color: theme.colors.primary }}>
-            {i18n.t('premium_offer_try_unlimited_2')}
+            {i18n.t('premium_offer_premium_title_2')}
           </FontText>
         </>
       );

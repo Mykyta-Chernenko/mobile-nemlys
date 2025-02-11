@@ -175,8 +175,8 @@ export async function createDailyContentNotifications(
     _.zip(notificationOrder, triggerSeconds) as [V3_NOTIFICATION_SUBTYPE, number][]
   ).map(([subtype, seconds]) => ({
     screen: 'Home',
-    title: i18n.t(`notification_daily_content_${subtype}_title`, { firstName, partnerName }),
-    body: i18n.t(`notification_daily_content_${subtype}_body`, { firstName, partnerName }),
+    title: i18n.t(`notification_${subtype}_title`, { firstName, partnerName }),
+    body: i18n.t(`notification_${subtype}_body`, { firstName, partnerName }),
     trigger: {
       type: SchedulableTriggerInputTypes.TIME_INTERVAL,
       seconds,

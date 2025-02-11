@@ -3,8 +3,8 @@
     "name": "Nemlys",
     "slug": "nemlys",
     "scheme": "nemlys",
-    "version": "5.0.3",
-    "runtimeVersion": "5.0.3",
+    "version": "5.0.4",
+    "runtimeVersion": "5.0.4",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "splash": {
@@ -44,7 +44,7 @@
       "playStoreUrl": "https://play.google.com/store/apps/details?id=com.nemlys.app",
       "package": "com.nemlys.app",
       "googleServicesFile": "./google-services.json",
-      "versionCode": 503
+      "versionCode": 504
     },
     "web": {
       "favicon": "./assets/favicon.png"

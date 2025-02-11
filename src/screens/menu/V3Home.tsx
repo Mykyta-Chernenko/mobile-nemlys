@@ -450,7 +450,16 @@ export default function ({
     exercise: i18n.t('home_content_types_exercise'),
     checkup: i18n.t('home_content_types_checkup'),
   };
-  const contentTypes: ContentType[] = ['test', 'game', 'checkup', 'article', 'exercise'];
+  const baseContentTypes: ContentType[] = ['test', 'game', 'checkup', 'article', 'exercise'];
+  // this makes sorting that free is first, then paid, but the general priority is kept
+  const contentTypes: ContentType[] = dailyPlan?.free_content_type?.length
+    ? [
+        ...(dailyPlan.free_content_type.filter((type: string) =>
+          baseContentTypes.includes(type as ContentType),
+        ) as ContentType[]),
+        ...baseContentTypes.filter((type) => !dailyPlan.free_content_type.includes(type)),
+      ]
+    : baseContentTypes;
   let lastContentType: ContentType = 'question';
   contentTypes.map((type) => {
     const content = dailyPlan?.[type];

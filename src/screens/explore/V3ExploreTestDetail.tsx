@@ -24,7 +24,6 @@ import { contentListScreen, contentTypeBackground } from '@app/types/domain';
 import { showName } from '@app/utils/strings';
 import V3LayeredGreyImage from '@app/components/explore/V3LayeredGreyImage';
 import { getContentImageFromId } from '@app/utils/content';
-import _ from 'lodash';
 import { PostgrestError } from '@supabase/supabase-js';
 import { ContentFeedback } from '@app/components/content/ContentFeedback';
 
@@ -288,12 +287,10 @@ export default function V3ExploreTestDetail({ route, navigation }: Props) {
       if (myResult && partnerResult) {
         const low = Math.min(myResult.id, partnerResult.id);
         const high = Math.max(myResult.id, partnerResult.id);
-        console.log(myResult.combo);
-        console.log(myResult.combo);
         combo =
-          _.merge(myResult.combo, partnerResult.combo).find(
-            (comb) => comb.result_1_id === low && comb.result_2_id === high,
-          ) || null;
+          myResult.combo
+            .concat(partnerResult.combo)
+            .find((comb) => comb.result_1_id === low && comb.result_2_id === high) || null;
       }
 
       setMyResult(myResult);

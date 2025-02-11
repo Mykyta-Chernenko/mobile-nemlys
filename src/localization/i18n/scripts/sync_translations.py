@@ -8,24 +8,24 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 # Configuration
 LANG_DIR = '../lang'
 REFERENCE_FILE = 'english.json'
-BATCH_SIZE = 30
+BATCH_SIZE = 50
 MAX_RETRIES = 3
 RETRY_DELAY = 0  # seconds
 
 # OpenAI API configuration
 openai.api_key = os.getenv("OPENAI_API_KEY")  # Ensure your API key is set in the environment
-# PARAMS = {
-#     "model": "o3-mini",
-#     "max_tokens": 4000,
-# }
 PARAMS = {
-    "model": "gpt-4o-mini",
-    "temperature": 0,
+    "model": "o3-mini",
     "max_tokens": 4000,
-    "top_p": 1,
-    "n": 1,
-    "stop": None,
 }
+# PARAMS = {
+#     "model": "gpt-4o-mini",
+#     "temperature": 0,
+#     "max_tokens": 4000,
+#     "top_p": 1,
+#     "n": 1,
+#     "stop": None,
+# }
 
 def load_json(filepath: str) -> Dict:
     """Load JSON data from a file."""
@@ -65,6 +65,7 @@ def build_prompt(batch: Dict[str, str], target_language: str) -> str:
     You are a professional translator specializing in mobile app localization, particularly for a couples' app focusing on love and relationship discussions. Your task is to translate i18n strings accurately while maintaining a friendly, informal tone. Follow these guidelines:
     from English to {target_language}
 
+    !!!Your most important task is to translate the translation strings, in the context of each other, so that they make sense together, sound naturally in the target language, and that the word choice is natural in the target language. Do not translate word to word, rather convery the same meaning.
     1. Tone and Style:
        - Use a friendly, informal tone throughout the translations.
        - Prefer the informal "you" (e.g., "ти" in Ukrainian, "du" in German) over formal forms when addressing the user.
@@ -92,10 +93,12 @@ def build_prompt(batch: Dict[str, str], target_language: str) -> str:
        - Be mindful of text length, especially for UI elements. If possible, keep translations concise without losing meaning.
     8. You must always copy over variables in mustache brackets "{'{{...}}'}" as it is, for example "Say hello to {'{{'}partnerName{'}}'}" you need to keep the {'{{'}partnerName{'}}'} as it is
     9. if you were to translate slang, translate it to the equivalents in the target language if possible
+
     10. We will have concepts in the app: 'test', 'exercise', 'question', 'checkup', 'article', 'game', 'journey'. Each is a different type of content couple can engage with.
     Choose a translation for a concept one (the most popular and appropriate word in the target language), and then always stick to that one chosen translation for the concept
     11. If we refer to partner as 'they' or in that form, you need to convert it to the appropriate form in the target language, for example: 'when they do something...' to Ukrainian -> 'коли він/вона щось робить'
     Examples of high-quality translations:
+    12. Translate absolutely all words to the target language, the must be no english words in the final translation or anglicism if there is a good synonym. E.g. 'проверка' instead of 'чек-ап' or 'checkup' when translating to russian
 
     English to Spanish:
     {{
@@ -170,31 +173,31 @@ Now, translate these key-value pairs:
 def call_gpt(prompt: str, system_prompt: str) -> str:
     for attempt in range(1, MAX_RETRIES + 1):
         try:
-#             response = openai.chat.completions.create(
-#                         model=PARAMS["model"],
-#                         messages=[
-#                             {"role": "system", "content": system_prompt},
-#                             {"role": "user", "content": prompt}
-#                         ],
-#                          response_format={
-#                                             "type": "json_object"
-#                                         }
-#                     )
             response = openai.chat.completions.create(
-                model=PARAMS["model"],
-                temperature=PARAMS["temperature"],
-                max_tokens=PARAMS["max_tokens"],
-                top_p=PARAMS["top_p"],
-                n=PARAMS["n"],
-                stop=PARAMS["stop"],
-                messages=[
-                    {"role": "system", "content": system_prompt},
-                    {"role": "user", "content": prompt}
-                ],
-                response_format={
-                    "type": "json_object"
-                }
-            )
+                        model=PARAMS["model"],
+                        messages=[
+                            {"role": "system", "content": system_prompt},
+                            {"role": "user", "content": prompt}
+                        ],
+                         response_format={
+                                            "type": "json_object"
+                                        }
+                    )
+#             response = openai.chat.completions.create(
+#                 model=PARAMS["model"],
+#                 temperature=PARAMS["temperature"],
+#                 max_tokens=PARAMS["max_tokens"],
+#                 top_p=PARAMS["top_p"],
+#                 n=PARAMS["n"],
+#                 stop=PARAMS["stop"],
+#                 messages=[
+#                     {"role": "system", "content": system_prompt},
+#                     {"role": "user", "content": prompt}
+#                 ],
+#                 response_format={
+#                     "type": "json_object"
+#                 }
+#             )
             content = response.choices[0].message.content.strip()
             return content
         except Exception as e:
