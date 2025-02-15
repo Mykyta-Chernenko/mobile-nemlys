@@ -1,0 +1,147 @@
+require 'json'
+require 'fileutils'
+
+def read_app_json
+  file = File.read("../../app.json")
+  data = JSON.parse(file)
+  {
+    version: data.dig("expo", "version") || "",
+    a_version: data.dig("expo", "android", "versionCode") || "",
+    ios_bundle_id: data.dig("expo", "ios", "bundleIdentifier") || "",
+    android_package: data.dig("expo", "android", "package") || ""
+  }
+end
+
+def read_languages_json
+  file = File.read("../languages.json")
+  JSON.parse(file)
+end
+
+def gather_screens
+  screenshots = {}
+  # updated regex to capture size "13" as well
+  Dir.glob("../screens/*.png").each do |path|
+    filename = File.basename(path)
+    if m = filename.match(/^([a-zA-Z0-9\-]+)_(6\.5|12\.9|13)_\d+\.png$/)
+      loc, size = m[1], m[2]
+      screenshots[loc] ||= {}
+      screenshots[loc][size] ||= []
+      screenshots[loc][size] << File.expand_path(path)
+    end
+  end
+  screenshots
+end
+
+app_data = read_app_json
+languages_data = read_languages_json
+
+ios_languages = languages_data["app_store"].keys
+android_languages = languages_data["play_market"].keys
+
+ios_size_mapping = {
+  "6.5" => "iPhone6.5",
+  "12.9" => "iPad13",
+}
+
+android_size_mapping = {
+  "6.5" => ["phoneScreenshots"],
+  "12.9" => ["sevenInchScreenshots", "tenInchScreenshots"]
+}
+
+default_platform(:ios)
+
+require 'mini_magick'
+
+def resize_for_13(original, output)
+  image = MiniMagick::Image.open(original)
+  image.resize "2064x2752!"
+  image.write output
+end
+
+platform :ios do
+  lane :upload_screenshots_ios do
+    screenshots = gather_screens
+    ios_languages.each do |lang|
+      ios_size_mapping.each do |size_key, folder_name|
+        tmp_dir = "./screenshots/#{lang}"
+        FileUtils.mkdir_p(tmp_dir)
+        images = nil
+        needs_resize = false
+
+        if size_key == "13"
+          if screenshots[lang] && screenshots[lang]["13"] && !screenshots[lang]["13"].empty?
+            images = screenshots[lang]["13"]
+          elsif screenshots[lang] && screenshots[lang]["12.9"] && !screenshots[lang]["12.9"].empty?
+            images = screenshots[lang]["12.9"]
+#             needs_resize = false
+          else
+            next
+          end
+        else
+          images = screenshots[lang][size_key] if screenshots[lang] && screenshots[lang][size_key]
+          next unless images && !images.empty?
+        end
+
+        images.each_with_index do |img, index|
+          dest_path = "#{tmp_dir}/#{folder_name}_screenshot#{index+1}.png"
+          if needs_resize
+            resize_for_13(img, dest_path)
+          else
+            FileUtils.cp(img, dest_path)
+          end
+        end
+      end
+    end
+
+    deliver(
+      username: "mykyta.chernenko@gmail.com",
+      skip_metadata: true,
+      skip_app_version_update: true,
+      force: true,
+      app_version: app_data[:version],
+      app_identifier: app_data[:ios_bundle_id],
+      sync_screenshots: true,
+      overwrite_screenshots: true,
+      precheck_include_in_app_purchases: false
+    )
+  end
+end
+
+platform :android do
+  lane :upload_screenshots_android do
+    screenshots = gather_screens
+    android_languages.each do |lang|
+      android_size_mapping.each do |size, folder_names|
+        next unless screenshots[lang] && screenshots[lang][size]
+        folder_names.each do |folder_name|
+          tmp_dir = "./metadata/android/#{lang}/images/#{folder_name}"
+          FileUtils.mkdir_p(tmp_dir)
+          screenshots[lang][size].each_with_index do |img, index|
+            FileUtils.cp(img, "#{tmp_dir}/#{index+1}.png")
+          end
+        end
+      end
+    end
+
+    json_key_path = ENV["GOOGLE_PLAY_JSON_KEY_PATH"] || "../google_play_key.json"
+    unless File.exist?(json_key_path)
+      UI.user_error!("Google Play JSON key file not found at: #{json_key_path}")
+    end
+
+    json_key_data = File.read(json_key_path)
+
+    supply(
+      skip_upload_apk: true,
+      track: "production",
+      package_name: app_data[:android_package],
+      json_key_data: json_key_data,
+      skip_upload_changelogs: true,
+      sync_image_upload: true
+    )
+  end
+end
+
+lane :upload_all do
+  invoke_lane("ios", "upload_screenshots_ios")
+  invoke_lane("android", "upload_screenshots_android")
+end

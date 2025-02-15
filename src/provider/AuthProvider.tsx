@@ -1,7 +1,8 @@
 import React, { createContext, useEffect, useState } from 'react';
 import { supabase } from '@app/api/initSupabase';
 import { SupabaseUser } from '@app/types/api';
-import { analyticsIdentifyUser, localAnalytics } from '@app/utils/analytics';
+import { analyticsForgetUser, analyticsIdentifyUser, localAnalytics } from '@app/utils/analytics';
+import * as Sentry from '@sentry/react-native';
 
 export type HandleUser = (user: SupabaseUser) => Promise<void>;
 export const ANON_USER = 'anon';
@@ -34,7 +35,13 @@ const AuthProvider = (props: Props) => {
   const [isSignedIn, setIsSignedIn] = useState<boolean | null>(null);
   const [userId, setUserIdOriginal] = useState<string | undefined>(undefined);
   const setUserId = (userId: string | undefined) => {
-    void analyticsIdentifyUser(userId === ANON_USER ? undefined : userId);
+    if (userId !== ANON_USER) {
+      Sentry.setUser({ id: userId });
+      void analyticsIdentifyUser(userId);
+    } else {
+      Sentry.setUser(null);
+      void analyticsForgetUser();
+    }
     setUserIdOriginal(userId);
   };
 

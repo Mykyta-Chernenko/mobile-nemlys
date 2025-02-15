@@ -65,7 +65,7 @@ def create_engaging_notes(notes: str) -> str:
     logging.info("Creating engaging notes")
     system_prompt = """
     You are an expert in creating engaging app release notes. Your task is to transform basic release notes into compelling and user-friendly descriptions. Focus on the benefits to the user and create excitement about the new features or improvements. Use a friendly, conversational tone. Return the result in 20 words or less per line, nothing else.
-    You are created notes for a couple app that helps to improve relationships through generating different questions to discuss on sex, issues, getting to know eahc other, deep questions, fun and meaningful conversations, that couple discuss in person or over a chat
+    You are created notes for a couple app that helps to improve relationships through generating different questions to discuss on sex, issues, getting to know eahc other, deep questions, fun and meaningful conversations, that couple discuss in person or over a chat. Sound very relaxed, natural language, not promotional or marketing like
     Example input:
     Fixed bugs, improved performance, added dark mode
 
@@ -78,8 +78,8 @@ def create_engaging_notes(notes: str) -> str:
     Added 40 new languages, create onboarding dating length screen
 
     Example output:
-    😊 Wanted to get the questions in your language? Now is your time! We added 40 more languages so yours is definitely on the list, darling
-    ❤️ Dating for a while? Tailor your app experience by answering how long you have been together.
+    😊 Wanted to get the questions in your language? Here it is, love-bud! We added 40 more languages so yours is definitely on the list
+    ❤️ Dating for a while? Personalize your app experience by answering how long you have been together.
     
     Never produce more than 300 symbols
     """

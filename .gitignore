@@ -61,3 +61,5 @@ yarn-error.*
 
 # @end expo-cli
 myenv
+deploy/fastlane/metadata
+deploy/fastlane/screenshots

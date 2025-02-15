@@ -160,7 +160,7 @@ export default function ({
     setButtonDisabled(true);
 
     try {
-      void localAnalytics().logEvent('PremiumContinuePressed', {
+      void localAnalytics().logEvent('V3PremiumContinuePressed', {
         screen: 'Premium',
         action: 'ContinuePressed',
         userId: authContext.userId,
@@ -168,7 +168,7 @@ export default function ({
 
       try {
         setSubscriptionLoading(true);
-        void localAnalytics().logEvent('PremiumPremiumStartInitiated', {
+        void localAnalytics().logEvent('V3PremiumPremiumStartInitiated', {
           screen: 'Premium',
           action: 'PremiumStartInitiated',
           userId: authContext.userId,
