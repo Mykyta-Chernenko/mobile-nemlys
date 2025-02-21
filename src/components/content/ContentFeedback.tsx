@@ -11,11 +11,12 @@ import StarReviewIcon from '@app/icons/star_review';
 import { i18n } from '@app/localization/i18n';
 import { MEDIUM_BEIGE_COLOR } from '@app/utils/colors';
 import { PrimaryButton } from '@app/components/buttons/PrimaryButtons';
+import { ContentType } from '@app/types/domain';
 
 const whiteSource = require('../../../assets/images/close_black.png');
 type ContentFeedbackProps = {
   title: string;
-  contentType: 'article' | 'question' | 'game' | 'journey' | 'checkup' | 'exercise' | 'test';
+  contentType: ContentType;
   instanceId: number | null;
   marginTop?: number;
 };

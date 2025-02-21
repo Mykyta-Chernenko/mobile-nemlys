@@ -1,10 +1,8 @@
 import React, { createContext, useEffect, useState } from 'react';
 import { supabase } from '@app/api/initSupabase';
-import { SupabaseUser } from '@app/types/api';
 import { analyticsForgetUser, analyticsIdentifyUser, localAnalytics } from '@app/utils/analytics';
 import * as Sentry from '@sentry/react-native';
 
-export type HandleUser = (user: SupabaseUser) => Promise<void>;
 export const ANON_USER = 'anon';
 type ContextProps = {
   isSignedIn: null | boolean;
@@ -13,18 +11,7 @@ type ContextProps = {
   setUserId: (value: string) => void;
 };
 
-export const globalHandleUser: { value: HandleUser | null } = {
-  value: null,
-};
-
 const AuthContext = createContext<Partial<ContextProps>>({});
-
-export async function setSession(accessToken: string, refreshToken: string) {
-  // bug-fix, Buffer is used in the underlying lib, but is not imported
-  global.Buffer = require('buffer').Buffer;
-
-  await supabase.auth.setSession({ access_token: accessToken, refresh_token: refreshToken });
-}
 
 interface Props {
   children: React.ReactNode;

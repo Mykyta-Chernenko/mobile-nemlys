@@ -49,6 +49,7 @@ import {
 import { PrimaryButton } from '@app/components/buttons/PrimaryButtons';
 import { CloseButton } from '@app/components/buttons/CloseButton';
 import AsyncStorage from '@react-native-async-storage/async-storage';
+import { ContentState, renderStateDefault } from '@app/components/explore/V3ContentList';
 
 const HOME_QUESTION_CORNER_IMAGE = require('../../../assets/images/buddies_corner_transparent.png');
 
@@ -65,31 +66,43 @@ interface DailyPlanContent {
     id: number;
     title: string;
     isFinished: boolean;
+    couplesFinished: number;
+    state: ContentState;
   };
   test?: {
     id: number;
     title: string;
     isFinished: boolean;
+    couplesFinished: number;
+    state: ContentState;
   };
   game?: {
     id: number;
     title: string;
     isFinished: boolean;
+    couplesFinished: number;
+    state: ContentState;
   };
   exercise?: {
     id: number;
     title: string;
     isFinished: boolean;
+    couplesFinished: number;
+    state: ContentState;
   };
   checkup?: {
     id: number;
     title: string;
     isFinished: boolean;
+    couplesFinished: number;
+    state: ContentState;
   };
   article?: {
     id: number;
     title: string;
     isFinished: boolean;
+    couplesFinished: number;
+    state: ContentState;
   };
 }
 
@@ -100,9 +113,35 @@ export const LabelIcon: React.FC<{
 }> = ({ label, color, icon }) => (
   <View style={{ flexDirection: 'row', alignItems: 'center', gap: 4 }}>
     <View>{icon}</View>
-    <FontText style={{ color }}>{label}</FontText>
+    <FontText small style={{ color }}>
+      {label}
+    </FontText>
   </View>
 );
+
+export const iconMap: {
+  [key: string]: React.ReactNode;
+} = {
+  question: <HomeQuestionIcon width={16} height={16} />,
+  test: <HomeTestIcon width={16} height={16} />,
+  game: <HomeGameIcon width={16} height={16} />,
+  article: <HomeArticleIcon width={16} height={16} />,
+  exercise: <HomeExerciseIcon width={16} height={16} />,
+  checkup: <HomeCheckupIcon width={16} height={16} />,
+};
+
+export const labelNameMap = (i18n: {
+  t: (_: string) => string;
+}): {
+  [key: string]: string;
+} => ({
+  question: i18n.t('home_content_types_question'),
+  test: i18n.t('home_content_types_test'),
+  game: i18n.t('home_content_types_game'),
+  article: i18n.t('home_content_types_article'),
+  exercise: i18n.t('home_content_types_exercise'),
+  checkup: i18n.t('home_content_types_checkup'),
+});
 
 interface ContentCardProps {
   type: ContentType;
@@ -115,6 +154,10 @@ interface ContentCardProps {
   isFinished: boolean;
   icon: React.ReactNode;
   isLast: boolean;
+  state: ContentState;
+  couplesFinished: number;
+  name: string;
+  partnerName: string;
 }
 
 export const ContentCard: React.FC<ContentCardProps> = ({
@@ -128,6 +171,10 @@ export const ContentCard: React.FC<ContentCardProps> = ({
   isFinished,
   icon,
   isLast,
+  state,
+  couplesFinished,
+  name,
+  partnerName,
 }) => {
   const { theme } = useTheme();
 
@@ -176,9 +223,8 @@ export const ContentCard: React.FC<ContentCardProps> = ({
       >
         <View style={{ flex: 1, flexDirection: 'column', gap: 8 }}>
           <LabelIcon label={label} color={color} icon={icon} />
-          <FontText style={{ color: theme.colors.black }} {...getContentTitleSize(title)}>
-            {title}
-          </FontText>
+          <FontText {...getContentTitleSize(title)}>{title}</FontText>
+          {renderStateDefault(theme)(state, name, partnerName, couplesFinished)}
         </View>
 
         <View
@@ -252,6 +298,8 @@ export default function ({
           id: planData.question_id,
           title: planData.question_title,
           isFinished: planData.question_is_finished,
+          couplesFinished: planData.question_couples_finished ?? 0,
+          state: planData.question_state as ContentState,
         },
         test:
           planData.test_id && planData.test_title
@@ -259,6 +307,8 @@ export default function ({
                 id: planData.test_id,
                 title: planData.test_title,
                 isFinished: planData.test_is_finished,
+                couplesFinished: planData.test_couples_finished ?? 0,
+                state: planData.test_state as ContentState,
               }
             : undefined,
         game:
@@ -267,6 +317,8 @@ export default function ({
                 id: planData.game_id,
                 title: planData.game_title,
                 isFinished: planData.game_is_finished,
+                couplesFinished: planData.game_couples_finished ?? 0,
+                state: planData.game_state as ContentState,
               }
             : undefined,
         exercise:
@@ -275,6 +327,8 @@ export default function ({
                 id: planData.exercise_id,
                 title: planData.exercise_title,
                 isFinished: planData.exercise_is_finished,
+                couplesFinished: planData.exercise_couples_finished ?? 0,
+                state: planData.exercise_state as ContentState,
               }
             : undefined,
         checkup:
@@ -283,6 +337,8 @@ export default function ({
                 id: planData.checkup_id,
                 title: planData.checkup_title,
                 isFinished: planData.checkup_is_finished,
+                couplesFinished: planData.checkup_couples_finished ?? 0,
+                state: planData.checkup_state as ContentState,
               }
             : undefined,
         article:
@@ -291,13 +347,15 @@ export default function ({
                 id: planData.article_id,
                 title: planData.article_title,
                 isFinished: planData.article_is_finished,
+                couplesFinished: planData.article_couples_finished ?? 0,
+                state: planData.article_state as ContentState,
               }
             : undefined,
       };
 
       setDailyPlan(dailyPlanContent);
       const hidBanner = !!(await AsyncStorage.getItem(
-        HOME_DAILY_BANNER + dailyPlanContent?.id?.toString() ?? '',
+        HOME_DAILY_BANNER + dailyPlanContent?.id?.toString() || '',
       ));
       setHasHiddenBanner(hidBanner);
     } catch (e) {
@@ -429,27 +487,6 @@ export default function ({
     return <Loading />;
   }
 
-  const iconMap: {
-    [key: string]: React.ReactNode;
-  } = {
-    question: <HomeQuestionIcon width={16} height={16} />,
-    test: <HomeTestIcon width={16} height={16} />,
-    game: <HomeGameIcon width={16} height={16} />,
-    article: <HomeArticleIcon width={16} height={16} />,
-    exercise: <HomeExerciseIcon width={16} height={16} />,
-    checkup: <HomeCheckupIcon width={16} height={16} />,
-  };
-
-  const labelNameMap: {
-    [key: string]: string;
-  } = {
-    question: i18n.t('home_content_types_question'),
-    test: i18n.t('home_content_types_test'),
-    game: i18n.t('home_content_types_game'),
-    article: i18n.t('home_content_types_article'),
-    exercise: i18n.t('home_content_types_exercise'),
-    checkup: i18n.t('home_content_types_checkup'),
-  };
   const baseContentTypes: ContentType[] = ['test', 'game', 'checkup', 'article', 'exercise'];
   // this makes sorting that free is first, then paid, but the general priority is kept
   const contentTypes: ContentType[] = dailyPlan?.free_content_type?.length
@@ -514,7 +551,7 @@ export default function ({
       dailyPlanId: dailyPlan.id,
     });
     setHasHiddenBanner(true);
-    void AsyncStorage.setItem(HOME_DAILY_BANNER + dailyPlan.id.toString() ?? '', 'true');
+    void AsyncStorage.setItem(HOME_DAILY_BANNER + dailyPlan.id.toString() || '', 'true');
   };
   const getTopBanner = () => {
     if (!hasHiddenBanner && !isPremium && getHasFinishedDailyFreePlan(dailyPlan)) {
@@ -669,10 +706,10 @@ export default function ({
               flexDirection: 'row',
               alignItems: 'center',
               paddingHorizontal: 20,
+              paddingVertical: 12,
               borderTopLeftRadius: 24,
               borderTopRightRadius: 24,
               justifyContent: 'space-between',
-              paddingBottom: 10,
             }}
           >
             <FontText h4 style={{ color: theme.colors.black }}>
@@ -745,7 +782,7 @@ export default function ({
                       <View style={{ padding: 20 }}>
                         <View style={{ gap: 15 }}>
                           <LabelIcon
-                            label={labelNameMap['question']}
+                            label={labelNameMap(i18n)['question']}
                             color={contentTypeBackground['question']}
                             icon={iconMap['question']}
                           />
@@ -755,18 +792,24 @@ export default function ({
                           >
                             {dailyPlan.question.title}
                           </FontText>
-
-                          {/* Remove the top-right checkmark block; we now show it on the left */}
                         </View>
                       </View>
                       <View
                         style={{
                           flex: 1,
                           flexDirection: 'row',
-                          justifyContent: 'flex-end',
+                          justifyContent: 'space-between',
                           alignItems: 'flex-end',
                         }}
                       >
+                        <View style={{ flex: 1, paddingLeft: 20, paddingBottom: 20 }}>
+                          {renderStateDefault(theme)(
+                            dailyPlan.question.state,
+                            name,
+                            partnerName,
+                            dailyPlan.question.couplesFinished,
+                          )}
+                        </View>
                         <Image
                           source={HOME_QUESTION_CORNER_IMAGE}
                           style={{ width: 101, height: 92 }}
@@ -788,7 +831,7 @@ export default function ({
                       key={type}
                       type={type}
                       color={contentTypeBackground[type]}
-                      label={labelNameMap[type]}
+                      label={labelNameMap(i18n)[type]}
                       title={content.title || ''}
                       onPress={() => handleContentPress(type, contentId, !locked)}
                       image={getContentImageFromId(contentId)}
@@ -796,6 +839,10 @@ export default function ({
                       isFinished={isFinished}
                       icon={iconMap[type]}
                       isLast={lastContentType === type}
+                      state={content.state}
+                      couplesFinished={content.couplesFinished}
+                      name={name}
+                      partnerName={partnerName}
                     />
                   );
                 })}

@@ -616,9 +616,6 @@
   "v3_explore_question_detail_header": "السؤال",
   "v3_explore_question_detail_write": "اكتب إجابتك...",
   "v3_explore_question_detail_hint": "{{partnerName}} سوف يرى إجابتك",
-  "grow_your_relationship_daily": "نمّي علاقتك يومياً",
-  "get_personalised_science_based_plan": "احصل على خطة مُخصصة مبنية على العلم",
-  "explore_1000_ways_to_connect_with_partner": "اكتشف أكثر من ١٠٠٠ طريقة للتواصل مع شريكك",
   "onboarding_quiz_tip": "اختر كل ما ينطبق",
   "getting_to_know_partner_title": "تعرف على بعضكما البعض",
   "getting_to_know_partner_description": "اكتشف خلفيات بعضكما، اهتماماتكما وأحلامكما. تساعدكما هذه الرحلة في بناء أساس قوي من خلال فهم ما يميز شريكك.",
@@ -744,29 +741,6 @@
   "onboarding_statistics_today": "اليوم",
   "onboarding_statistics_after_30_days": "بعد 30 يومًا",
   "onboarding_statistics_i_am_ready": "أنا جاهز",
-  "premium_personalised_plan": "خطة مُخصصة",
-  "premium_love_notes": "رسائل حب",
-  "premium_access_for_two": "ولوج لشخصين",
-  "premium_tests": "اختبارات",
-  "premium_games": "ألعاب",
-  "premium_questions": "أسئلة",
-  "premium_practices": "تمارين",
-  "premium_articles": "مقالات",
-  "premium_checkups": "فحوصات",
-  "premium_per_day": "واحد في اليوم",
-  "premium_offer_yearly_label": "سنوي",
-  "premium_offer_monthly_label": "شهري",
-  "month": "شهر",
-  "free": "مجاني",
-  "premium": "مميز",
-  "reviews_from_couples": "آراء الأزواج",
-  "v3_premium_offer_premium_monthly_title": "جرّب الوصول الكامل مع المميز",
-  "v3_premium_review_1_name": "لويس",
-  "v3_premium_review_1_description": "أستخدم Nemlys مع صديقتي عندما ننفد من مواضيع الحديث. يحتوي التطبيق على الكثير من المحتوى المفيد، ويساعدنا على الشعور بالقرب من بعضنا البعض. نتعلم الكثير عن بعضنا.",
-  "v3_premium_review_2_name": "آنا",
-  "v3_premium_review_2_description": "يعد Nemlys رائعًا بالنسبة لنا عندما نكون بعيدين عن بعضنا. فهو يقدم لنا مواضيع لا نناقشها عادةً، مما يجعلنا نشعر بأننا نتواصل على مستوى أعمق :)",
-  "v3_premium_review_3_name": "جيمس",
-  "v3_premium_review_3_description": "أنا وصديقي نحب عمق المحتوى. يمكننا اختيار ما نريد القيام به اليوم، ودائمًا ما يثير نقاشًا هادفًا. التطبيق بسيط وسهل الاستخدام، وهو ما أقدّره.",
   "change_plan_edit_your_focus": "عدل تركيزك",
   "change_plan_min_max": "الحد الأدنى 1، والحد الأقصى 5",
   "change_plan_not_sure": "غير متأكد ما هو الأفضل أن تختاره؟",
@@ -888,11 +862,6 @@
   "onboarding_quiz_question_6_option_3_discussing_difficult_topics_2": "أجروا لقاءات صريحة بانتظام",
   "onboarding_quiz_question_6_option_4_planning_for_future_2": "خططوا لإنجازات حياتية كبيرة شهرياً",
   "onboarding_quiz_question_6_option_5_building_trust_2": "أنشئوا طقوس صغيرة لبناء الثقة",
-  "premium_start_free_trial": "ابدأ التجربة المجانية",
-  "premium_charge_conditions": "سيتم خصم الرسوم السنوية البالغة {{price}} بعد انتهاء التجربة في {{date}}. لا يوجد التزام، يمكنك الإلغاء في أي وقت",
-  "price_after_yearly_trial": "{{price}} / سنة",
-  "skip_premium_for_now": "تخطي مميزات البريميوم حالياً",
-  "join_over_count_other_couples_in_nemlys": "انضم إلى أكثر من\n{{coupleCount}} ثنائي",
   "notification_streak_1_title_2": "🔥 حافظ على استمراريتك!",
   "notification_streak_1_body_2": "أنت في سلسلة مستمرة لمدة {{streakDay}} يوم! تبقى ساعتان فقط لإبقاء النار مشتعلة!",
   "notification_streak_2_title_2": "⏸️ سلسلتك في وضع الاسترخاء",
@@ -931,5 +900,22 @@
   "premium_banner_trial": "وصول غير محدود",
   "premium_banner_days_left": "متبقي {{days}} يومًا",
   "premium_banner_new": "مواضيع للتجربة",
-  "premium_banner_topics_left": "تبقى {{left}}/{{total}}"
+  "premium_banner_topics_left": "تبقى {{left}}/{{total}}",
+  "welcome_grow_your_relationship_daily": "طوّر علاقتك يوميًا",
+  "welcome_onboarding_slide1_question": "ممارسة الحب مقابل ممارسة الجنس، ما الفرق بالنسبة لك؟",
+  "welcome_explore_1000_ways_to_connect": "استكشف أكثر من ١,٠٠٠ طريقة للتقارب",
+  "welcome_personalized_content": "خطة مخصصة\nلثنائيك",
+  "welcome_based_on_50_plus_researches": "مستند إلى أكثر من ٥٠ دراسة",
+  "welcome_couples_using_our_app": "٢٠٠,٠٠٠ من الأزواج\nيثقون بتطبيقنا",
+  "welcome_nemlys_is_based_on_research": "يعتمد Nemlys\nعلى أبحاث العلاقات",
+  "welcome_get_started": "هيا نبدأ",
+  "welcome_test_title": "نمط التعلق",
+  "welcome_test_you_answered": "أنت أجبت",
+  "welcome_game_title": "رؤى الحميمية",
+  "welcome_game_you_and_partner_answered": "أنت وشريكك أجبتما",
+  "you": "أنت",
+  "settings_rating_stars_title": "هل تود تقييم تطبيق Nemlys الآن؟",
+  "setting_rating_back_feedback_title": "ما الذي تحبه وما لا يعجبك في Nemlys؟",
+  "setting_rating_back_feedback_placeholder": "شارك رأيك، وسنسعى لأن نكون أفضل",
+  "settings_feedback_thanks": "شكراً لتعليقاتك، نقدر ملاحظاتك وسنسعى لأن نكون أفضل كل يوم!"
 }

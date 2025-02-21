@@ -38,6 +38,7 @@ import AnswerNoPartnerWarning from '@app/components/answers/AnswerNoPartnerWarni
 import { getDateFromString, getNow } from '@app/utils/date';
 import { PostgrestError } from '@supabase/supabase-js';
 import { loveNoteActions } from '@app/screens/menu/LoveNote';
+import { ContentState, renderStateDefault } from '@app/components/explore/V3ContentList';
 
 type V3AnswerHomeProps = NativeStackScreenProps<MainStackParamList, 'V3AnswerHome'>;
 
@@ -432,70 +433,16 @@ export default function V3AnswerHome({ route, navigation }: V3AnswerHomeProps) {
     checkup: i18n.t('home_content_types_checkup'),
   };
 
-  function renderState(item: HistoryItem, name: string, partnerName: string) {
-    if (bothHasAnswered(item)) {
-      return (
-        <View
-          style={{
-            flexDirection: 'row',
-            alignItems: 'center',
-          }}
-        >
-          <FontText h1 style={{ color: theme.colors.primary }}>
-            •
-          </FontText>
-          <FontText h1 style={{ color: theme.colors.error, marginLeft: -2 }}>
-            •
-          </FontText>
-          <FontText small style={{ color: theme.colors.grey3 }}>
-            {i18n.t('explore_content_list_me_partner_finished', {
-              firstName: showName(name),
-              partnerName: showName(partnerName),
-            })}
-          </FontText>
-        </View>
-      );
-    } else if (partnerHasAnswered(item)) {
-      return (
-        <View
-          style={{
-            flexDirection: 'row',
-            alignItems: 'center',
-          }}
-        >
-          <FontText h1 style={{ color: theme.colors.error }}>
-            •
-          </FontText>
-          <FontText small style={{ color: theme.colors.grey3 }}>
-            {i18n.t('explore_content_list_partner_finished', {
-              partnerName: showName(partnerName),
-            })}
-          </FontText>
-        </View>
-      );
-    } else if (userHasAnswered(item)) {
-      return (
-        <View
-          style={{
-            flexDirection: 'row',
-            alignItems: 'center',
-          }}
-        >
-          <FontText h1 style={{ color: theme.colors.primary }}>
-            •
-          </FontText>
-          <FontText small style={{ color: theme.colors.grey3, marginTop: 5 }}>
-            {i18n.t('explore_content_list_me_finished', { firstName: name })}
-          </FontText>
-        </View>
-      );
-    } else {
-      return <View></View>;
-    }
-  }
   const renderNonQuestionItem = (item: HistoryItem, index: number) => {
     const recommended = isRecommended(item.jobs);
-    const answeredStatus = renderState(item, name, partnerName);
+    let state: ContentState = null;
+    if (bothHasAnswered(item)) {
+      state = 'me_partner_answered';
+    } else if (userHasAnswered(item)) {
+      state = 'me_answered';
+    } else if (partnerHasAnswered(item)) {
+      state = 'partner_answered';
+    }
     return (
       <TouchableOpacity
         key={index}
@@ -504,53 +451,25 @@ export default function V3AnswerHome({ route, navigation }: V3AnswerHomeProps) {
           backgroundColor: theme.colors.white,
           borderRadius: 16,
           paddingVertical: 8,
-          paddingLeft: 8,
+          paddingLeft: 20,
           paddingRight: 8,
           flexDirection: 'row',
           alignItems: 'center',
           gap: 12,
+          flex: 1,
+          marginLeft: 8,
         }}
         activeOpacity={0.9}
       >
-        <View
-          style={{
-            flex: 1,
-            paddingLeft: 12,
-            marginRight: 5,
-            display: 'flex',
-            justifyContent: 'center',
-            flexDirection: 'column',
-          }}
-        >
-          <View
-            style={{
-              flex: 1,
-              flexDirection: 'column',
-              gap: 8,
-              marginTop: 15,
-              justifyContent: 'space-between',
-            }}
-          >
-            <LabelIcon
-              color={contentTypeBackground[item.content_type]}
-              label={labelNameMap[item.content_type]}
-              icon={iconMap[item.content_type]}
-            />
-            <View
-              style={{
-                flex: 1,
-                marginTop: 8,
-              }}
-            >
-              <FontText
-                style={{ color: theme.colors.black }}
-                {...getContentTitleSize(item.content_title)}
-              >
-                {item.content_title}
-              </FontText>
-            </View>
-            {answeredStatus}
-          </View>
+        <View style={{ flex: 1, flexDirection: 'column', gap: 8 }}>
+          <LabelIcon
+            color={contentTypeBackground[item.content_type]}
+            label={labelNameMap[item.content_type]}
+            icon={iconMap[item.content_type]}
+          />
+
+          <FontText {...getContentTitleSize(item.content_title)}>{item.content_title}</FontText>
+          {renderStateDefault(theme)(state, name, partnerName)}
         </View>
         <View
           style={{
@@ -749,7 +668,7 @@ export default function V3AnswerHome({ route, navigation }: V3AnswerHomeProps) {
         <View
           style={{
             paddingHorizontal: 20,
-            paddingBottom: 10,
+            paddingVertical: 12,
             backgroundColor: BACKGROUND_LIGHT_BEIGE_COLOR,
             flexDirection: 'row',
             justifyContent: 'space-between',

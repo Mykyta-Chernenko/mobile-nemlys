@@ -11,24 +11,21 @@ import { SafeAreaView } from 'react-native-safe-area-context';
 import { useTheme } from '@rneui/themed';
 import { FontText } from '@app/components/utils/FontText';
 import ProfileBuddyCorner from '@app/icons/profile_buddy_corner';
-import StarRating from '@app/icons/star_rating';
-import TopRightArrow from '@app/icons/top_right_arrow';
 import { getFullLanguageByLocale, i18n } from '@app/localization/i18n';
 import { localAnalytics } from '@app/utils/analytics';
 import HeartPurpleIcon from '@app/icons/heart_purple';
 import SmallArrowRight from '@app/icons/small_arrow_right';
 
-import * as StoreReview from 'expo-store-review';
 import Feedback from '../settings/Feedback';
 import { SettingsButton } from './SettingsButton';
 import { PrimaryButton } from '@app/components/buttons/PrimaryButtons';
-import { getNow } from '@app/utils/date';
 import AnswerNoPartnerWarning from '@app/components/answers/AnswerNoPartnerWarning';
 import { logout } from '@app/utils/auth';
 import { showName } from '@app/utils/strings';
 import V3Menu from '@app/components/menu/V3Menu';
 import { UNEXPECTED_ERROR } from '@app/utils/constants';
 import Toast from 'react-native-toast-message';
+import GiveRating from '@app/screens/settings/GiveRating';
 
 export default function ({
   route,
@@ -41,6 +38,8 @@ export default function ({
   const [coupleLanguage, setCoupleLanguage] = useState('');
   const [hasPartner, setHasPartner] = useState(true);
   const [v2User, setV2User] = useState(false);
+  const [ratingStarsVisible, setRatingStarsVisible] = useState(false);
+  const [ratingFeedbackVisible, setRatingFeedbackVisible] = useState(false);
   const languageTitle = getFullLanguageByLocale(i18n.locale);
   const padding = 20;
   const authContext = useContext(AuthContext);
@@ -319,23 +318,7 @@ export default function ({
       isOnboarding: false,
     });
   };
-  const manageReview = async () => {
-    void localAnalytics().logEvent('V3ProfileRatingClicked', {
-      screen: 'V3Profile',
-      action: 'RatingClicked',
-    });
-    if (await StoreReview.hasAction()) {
-      await StoreReview.requestReview();
-      const updateProfile = await supabase
-        .from('user_profile')
-        .update({ showed_rating: true, updated_at: getNow().toISOString() })
-        .eq('user_id', authContext.userId!);
-      if (updateProfile.error) {
-        logSupaErrors(updateProfile.error);
-        return;
-      }
-    }
-  };
+
   const manageShare = async () => {
     void localAnalytics().logEvent('V3ProfileShareClicked', {
       screen: 'V3Profile',
@@ -529,36 +512,7 @@ export default function ({
                     title={i18n.t('profile_contact')}
                     placeholder={i18n.t('profile_contact_placeholder')}
                   ></Feedback>
-                  <TouchableOpacity
-                    onPress={() => void manageReview()}
-                    style={{
-                      marginTop: 15,
-                      width: '100%',
-                      height: 72,
-                      paddingHorizontal: 20,
-                      paddingVertical: 24,
-                      backgroundColor: theme.colors.warning,
-                      borderRadius: 20,
-                      justifyContent: 'space-between',
-                      alignItems: 'center',
-                      display: 'flex',
-                      flexDirection: 'row',
-                    }}
-                  >
-                    <View style={{ flexDirection: 'row', alignItems: 'center' }}>
-                      <StarRating></StarRating>
-                      <FontText
-                        style={{
-                          marginLeft: 10,
-                          flexShrink: 1,
-                        }}
-                      >
-                        {i18n.t('profile_rate')}
-                      </FontText>
-                    </View>
-                    <TopRightArrow></TopRightArrow>
-                  </TouchableOpacity>
-
+                  <GiveRating></GiveRating>
                   <SettingsButton
                     data={null}
                     title={i18n.t('profile_share')}

@@ -471,12 +471,15 @@ export default function V3Game({ route, navigation }: Props) {
               </FontText>
             )}
             {aboutPartner ? (
-              <FontText style={{ color: theme.colors.error, marginBottom: 20 }}>
-                {i18n.t('v3_game_subtitle_partner', { partnerName })}
+              <FontText style={{ color: theme.colors.primary, marginBottom: 20 }}>
+                {i18n.t('you')}{' '}
+                <FontText style={{ color: theme.colors.error, marginBottom: 20 }}>
+                  {i18n.t('v3_game_subtitle_partner', { partnerName })}
+                </FontText>
               </FontText>
             ) : (
               <FontText style={{ color: theme.colors.primary, marginBottom: 20 }}>
-                {i18n.t('v3_game_subtitle_myself')}
+                {i18n.t('you')} {i18n.t('v3_game_subtitle_myself')}
               </FontText>
             )}
           </View>

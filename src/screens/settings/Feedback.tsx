@@ -12,12 +12,21 @@ import { logErrorsWithMessageWithoutAlert } from '@app/utils/errors';
 import { localAnalytics } from '@app/utils/analytics';
 import { SettingsButton } from '../menu/SettingsButton';
 import { useTheme } from '@rneui/themed';
-import { ScrollView } from 'react-native';
 import { GoBackButton } from '@app/components/buttons/GoBackButton';
 
-export default function ({ title, placeholder }: { title: string; placeholder: string }) {
+export default function ({
+  title,
+  placeholder,
+  initialVisible,
+  onSubmit,
+}: {
+  title: string;
+  placeholder: string;
+  initialVisible?: boolean;
+  onSubmit?: () => void;
+}) {
   const authContext = useContext(AuthContext);
-  const [visible, setVisible] = useState<boolean>(false);
+  const [visible, setVisible] = useState<boolean>(initialVisible ?? false);
   const [feedback, setFeedback] = useState<string>('');
   const { theme } = useTheme();
 
@@ -57,6 +66,7 @@ export default function ({ title, placeholder }: { title: string; placeholder: s
       logErrorsWithMessageWithoutAlert(res.error);
     }
     setFeedback('');
+    onSubmit?.();
   };
 
   return (
@@ -71,33 +81,32 @@ export default function ({ title, placeholder }: { title: string; placeholder: s
           display: 'flex',
         }}
       >
-        <SafeAreaView style={{ flexGrow: 1 }}>
-          <ScrollView
-            contentContainerStyle={{
-              flexGrow: 1,
-              flexDirection: 'column',
-              justifyContent: 'space-between',
-            }}
-          >
-            <GoBackButton theme="light" onPress={cancelDialog} />
-            <View style={{ width: '100%' }}>
-              <FontText h1>{title}</FontText>
-              <StyledTextInput
-                style={{ marginVertical: 20, maxHeight: '50%', minHeight: '30%' }}
-                onChangeText={setFeedback}
-                placeholder={placeholder}
-              ></StyledTextInput>
-            </View>
-            <View style={{ flexDirection: 'row', justifyContent: 'space-around', width: '100%' }}>
-              <PrimaryButton
-                disabled={!feedback}
-                onPress={() => void sendFeedback()}
-                buttonStyle={{ width: '100%' }}
-              >
-                {i18n.t('submit')}
-              </PrimaryButton>
-            </View>
-          </ScrollView>
+        <SafeAreaView
+          style={{
+            flex: 1,
+            flexDirection: 'column',
+            justifyContent: 'space-between',
+            marginVertical: 40,
+          }}
+        >
+          <GoBackButton theme="light" onPress={cancelDialog} />
+          <View style={{ width: '100%', flex: 1, paddingVertical: 20 }}>
+            <FontText h1>{title}</FontText>
+            <StyledTextInput
+              style={{ marginVertical: 20, maxHeight: '40%', minHeight: '10%' }}
+              onChangeText={setFeedback}
+              placeholder={placeholder}
+            ></StyledTextInput>
+          </View>
+          <View style={{ flexDirection: 'row', justifyContent: 'space-around', width: '100%' }}>
+            <PrimaryButton
+              disabled={!feedback}
+              onPress={() => void sendFeedback()}
+              containerStyle={{ width: '100%' }}
+            >
+              {i18n.t('submit')}
+            </PrimaryButton>
+          </View>
         </SafeAreaView>
       </Modal>
     </>

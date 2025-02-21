@@ -287,7 +287,7 @@ export default function LoveNote({
         </View>
 
         <ScrollView
-          contentContainerStyle={{ paddingHorizontal: 20, paddingTop: 20 }}
+          contentContainerStyle={{ paddingHorizontal: 20, paddingTop: 20, flex: 1 }}
           refreshControl={
             <RefreshControl refreshing={refreshing} onRefresh={() => void onRefresh()} />
           }
@@ -307,7 +307,7 @@ export default function LoveNote({
               />
             </View>
           ) : (
-            <View>
+            <View style={{ flex: 1, justifyContent: 'flex-end' }}>
               {loveNoteActions.map((item) => (
                 <TouchableOpacity
                   key={item.type}

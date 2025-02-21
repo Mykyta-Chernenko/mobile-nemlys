@@ -2,7 +2,7 @@ import React, { useCallback, useContext, useEffect, useRef, useState } from 'rea
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { View, ScrollView, RefreshControl, TouchableOpacity, Image } from 'react-native';
 import { useTheme } from '@rneui/themed';
-import { FontText } from '@app/components/utils/FontText';
+import { FontText, getFontSizeForScreen } from '@app/components/utils/FontText';
 import { supabase } from '@app/api/initSupabase';
 import { AuthContext } from '@app/provider/AuthProvider';
 import { localAnalytics } from '@app/utils/analytics';
@@ -31,6 +31,110 @@ import ContentCheckupIcon from '@app/icons/content_checkup';
 import { capitalize, showName } from '@app/utils/strings';
 import { getContentImageFromId } from '@app/utils/content';
 import { PrimaryButton } from '@app/components/buttons/PrimaryButtons';
+
+export type ContentState = 'me_answered' | 'partner_answered' | 'me_partner_answered' | null;
+export const renderStateDefault =
+  (theme: ReturnType<typeof useTheme>['theme']) =>
+  (state: ContentState, name: string, partnerName: string, couplesFinished?: number) => {
+    // me_partner_answered, partner_answered, me_answered or null
+    if (state === 'partner_answered') {
+      return (
+        <View
+          style={{
+            flexDirection: 'row',
+            alignItems: 'center',
+            gap: 3,
+          }}
+        >
+          <View
+            style={{
+              backgroundColor: theme.colors.error,
+              height: getFontSizeForScreen('small') * 0.5,
+              width: getFontSizeForScreen('small') * 0.5,
+              borderRadius: 100,
+            }}
+          ></View>
+
+          <FontText small style={{ color: theme.colors.grey3 }}>
+            {i18n.t('explore_content_list_partner_finished', {
+              partnerName: showName(partnerName),
+            })}
+          </FontText>
+        </View>
+      );
+    } else if (state === 'me_answered') {
+      return (
+        <View
+          style={{
+            flexDirection: 'row',
+            alignItems: 'center',
+            gap: 3,
+          }}
+        >
+          <View
+            style={{
+              backgroundColor: theme.colors.primary,
+              height: getFontSizeForScreen('small') * 0.5,
+              width: getFontSizeForScreen('small') * 0.5,
+              borderRadius: 100,
+            }}
+          ></View>
+          <FontText small style={{ color: theme.colors.grey3 }}>
+            {i18n.t('explore_content_list_me_finished', { firstName: name })}
+          </FontText>
+        </View>
+      );
+    } else if (state === 'me_partner_answered') {
+      return (
+        <View
+          style={{
+            flexDirection: 'row',
+            alignItems: 'center',
+            gap: 3,
+          }}
+        >
+          <View
+            style={{
+              backgroundColor: theme.colors.primary,
+              height: getFontSizeForScreen('small') * 0.5,
+              width: getFontSizeForScreen('small') * 0.5,
+              borderRadius: 100,
+            }}
+          ></View>
+          <View
+            style={{
+              backgroundColor: theme.colors.error,
+              height: getFontSizeForScreen('small') * 0.5,
+              width: getFontSizeForScreen('small') * 0.5,
+              borderRadius: 100,
+              marginLeft: -1,
+            }}
+          ></View>
+          <FontText small style={{ color: theme.colors.grey3 }}>
+            {i18n.t('explore_content_list_me_partner_finished', {
+              firstName: showName(name),
+              partnerName: showName(partnerName),
+            })}
+          </FontText>
+        </View>
+      );
+    } else if (couplesFinished !== undefined) {
+      return (
+        <View
+          style={{
+            flexDirection: 'row',
+            alignItems: 'center',
+          }}
+        >
+          <FontText small style={{ color: theme.colors.grey3 }}>
+            {i18n.t('explore_content_list_couples_finished', {
+              couplesCount: couplesFinished,
+            })}
+          </FontText>
+        </View>
+      );
+    }
+  };
 
 interface Props {
   contentType: Exclude<ContentType, 'journey' | 'question'>;
@@ -81,89 +185,8 @@ export default function ({
   refreshTimeStamp,
 }: Props) {
   const { theme } = useTheme();
-  function renderStateDefault(
-    state: string | null,
-    name: string,
-    partnerName: string,
-    couplesFinished: number,
-  ) {
-    // me_partner_answered, partner_answered, me_answered or null
-    if (state === 'partner_answered') {
-      return (
-        <View
-          style={{
-            flexDirection: 'row',
-            alignItems: 'center',
-            marginTop: 5,
-          }}
-        >
-          <FontText h1 style={{ color: theme.colors.error }}>
-            •
-          </FontText>
-          <FontText small style={{ color: theme.colors.grey3 }}>
-            {i18n.t('explore_content_list_partner_finished', {
-              partnerName: showName(partnerName),
-            })}
-          </FontText>
-        </View>
-      );
-    } else if (state === 'me_answered') {
-      return (
-        <View
-          style={{
-            flexDirection: 'row',
-            alignItems: 'center',
-          }}
-        >
-          <FontText h1 style={{ color: theme.colors.primary }}>
-            •
-          </FontText>
-          <FontText small style={{ color: theme.colors.grey3, marginTop: 5 }}>
-            {i18n.t('explore_content_list_me_finished', { firstName: name })}
-          </FontText>
-        </View>
-      );
-    } else if (state === 'me_partner_answered') {
-      return (
-        <View
-          style={{
-            flexDirection: 'row',
-            alignItems: 'center',
-            marginTop: 5,
-          }}
-        >
-          <FontText h1 style={{ color: theme.colors.primary }}>
-            •
-          </FontText>
-          <FontText h1 style={{ color: theme.colors.error, marginLeft: -2 }}>
-            •
-          </FontText>
-          <FontText small style={{ color: theme.colors.grey3 }}>
-            {i18n.t('explore_content_list_me_partner_finished', {
-              firstName: showName(name),
-              partnerName: showName(partnerName),
-            })}
-          </FontText>
-        </View>
-      );
-    } else
-      return (
-        <View
-          style={{
-            flexDirection: 'row',
-            alignItems: 'center',
-            marginTop: 5,
-          }}
-        >
-          <FontText small style={{ color: theme.colors.grey3 }}>
-            {i18n.t('explore_content_list_couples_finished', {
-              couplesCount: couplesFinished,
-            })}
-          </FontText>
-        </View>
-      );
-  }
-  const renderState = initialRenderState || renderStateDefault;
+
+  const renderState = initialRenderState || renderStateDefault(theme);
   function getFinishedDefault(state: string | null) {
     // me_partner_answered, partner_answered, me_answered or null
     return state === 'me_partner_answered';
@@ -523,7 +546,7 @@ export default function ({
               {items.map((item, index) => {
                 const recommended = isRecommended(item.jobs);
                 const answeredStatus = renderState(
-                  item.state,
+                  item.state as ContentState,
                   name,
                   partnerName,
                   item.couples_finished,
@@ -545,6 +568,7 @@ export default function ({
                       <View
                         style={{
                           flex: 1,
+                          gap: 5,
                           paddingLeft: 12,
                           marginRight: 5,
                           display: 'flex',

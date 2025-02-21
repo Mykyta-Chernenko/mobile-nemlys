@@ -237,7 +237,7 @@ export default function V3Explore({ route, navigation }: Props) {
           <View
             style={{
               paddingHorizontal: 20,
-              paddingBottom: 10,
+              paddingVertical: 12,
               backgroundColor: BACKGROUND_LIGHT_BEIGE_COLOR,
               flexDirection: 'row',
               justifyContent: 'space-between',
@@ -298,7 +298,6 @@ export default function V3Explore({ route, navigation }: Props) {
               style={{
                 flexDirection: 'row',
                 columnGap: 8,
-                marginBottom: 8,
                 justifyContent: 'space-between',
               }}
             >
@@ -334,7 +333,7 @@ export default function V3Explore({ route, navigation }: Props) {
               />
             </View>
 
-            <View style={{ flexDirection: 'row', columnGap: 8, marginBottom: 8, flex: 1 }}>
+            <View style={{ flexDirection: 'row', columnGap: 8, flex: 1 }}>
               <Card
                 type={'question'}
                 color={QUESTION_COLOR}

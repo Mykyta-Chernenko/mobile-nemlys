@@ -19,14 +19,14 @@ end
 
 def gather_screens
   screenshots = {}
-  # updated regex to capture size "13" as well
+  # updated regex to capture size "13" as well and extract the original index
   Dir.glob("../screens/*.png").each do |path|
     filename = File.basename(path)
-    if m = filename.match(/^([a-zA-Z0-9\-]+)_(6\.5|12\.9|13)_\d+\.png$/)
-      loc, size = m[1], m[2]
+    if m = filename.match(/^([a-zA-Z0-9\-]+)_(6\.5|12\.9|13)_(\d+)\.png$/)
+      loc, size, idx = m[1], m[2], m[3].to_i
       screenshots[loc] ||= {}
       screenshots[loc][size] ||= []
-      screenshots[loc][size] << File.expand_path(path)
+      screenshots[loc][size] << { idx: idx, path: File.expand_path(path) }
     end
   end
   screenshots
@@ -50,14 +50,6 @@ android_size_mapping = {
 
 default_platform(:ios)
 
-require 'mini_magick'
-
-def resize_for_13(original, output)
-  image = MiniMagick::Image.open(original)
-  image.resize "2064x2752!"
-  image.write output
-end
-
 platform :ios do
   lane :upload_screenshots_ios do
     screenshots = gather_screens
@@ -66,14 +58,12 @@ platform :ios do
         tmp_dir = "./screenshots/#{lang}"
         FileUtils.mkdir_p(tmp_dir)
         images = nil
-        needs_resize = false
 
         if size_key == "13"
           if screenshots[lang] && screenshots[lang]["13"] && !screenshots[lang]["13"].empty?
             images = screenshots[lang]["13"]
           elsif screenshots[lang] && screenshots[lang]["12.9"] && !screenshots[lang]["12.9"].empty?
             images = screenshots[lang]["12.9"]
-#             needs_resize = false
           else
             next
           end
@@ -82,13 +72,9 @@ platform :ios do
           next unless images && !images.empty?
         end
 
-        images.each_with_index do |img, index|
-          dest_path = "#{tmp_dir}/#{folder_name}_screenshot#{index+1}.png"
-          if needs_resize
-            resize_for_13(img, dest_path)
-          else
-            FileUtils.cp(img, dest_path)
-          end
+        images.sort_by { |s| s[:idx] }.each do |img|
+          dest_path = "#{tmp_dir}/#{folder_name}_screenshot#{img[:idx]}.png"
+          FileUtils.cp(img[:path], dest_path)
         end
       end
     end
@@ -116,8 +102,8 @@ platform :android do
         folder_names.each do |folder_name|
           tmp_dir = "./metadata/android/#{lang}/images/#{folder_name}"
           FileUtils.mkdir_p(tmp_dir)
-          screenshots[lang][size].each_with_index do |img, index|
-            FileUtils.cp(img, "#{tmp_dir}/#{index+1}.png")
+          screenshots[lang][size].sort_by { |s| s[:idx] }.each do |img|
+            FileUtils.cp(img[:path], "#{tmp_dir}/#{img[:idx]}.png")
           end
         end
       end

@@ -313,7 +313,6 @@ export default function V3ExploreArticleDetail({ route, navigation }: Props) {
     return (
       <View
         style={{
-          marginTop: 20,
           marginBottom: 20,
           borderRadius: 12,
         }}
