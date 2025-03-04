@@ -5,3 +5,4 @@ openai==1.51.2
 cryptography==41.0.1
 PyJWT
 requests
+anthropic==0.47.1

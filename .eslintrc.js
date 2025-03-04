@@ -30,7 +30,25 @@ module.exports = {
     '@typescript-eslint/no-unsafe-assignment': 'off',
     '@typescript-eslint/no-unsafe-member-access': 'off',
     'react/display-name': 'off',
-    'react/prop-types': 'off'
+    'react/prop-types': 'off',
+    'no-restricted-imports': [
+      'error',
+      {
+        paths: [
+          {
+            name: 'react-native',
+            importNames: ['SafeAreaView'],
+            message: 'Import SafeAreaView from react-native-safe-area-context instead',
+          },
+          {
+            name: 'react-native-safe-area-view',
+            importNames: ['SafeAreaView'],
+            message: 'Import SafeAreaView from react-native-safe-area-context instead',
+          }
+        ],
+      },
+    ],
+
   },
   settings: {
     react: {
