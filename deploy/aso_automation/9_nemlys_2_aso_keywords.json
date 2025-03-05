@@ -1,0 +1,6367 @@
+{
+  "app_store": {
+    "ar-SA": {
+      "selected_keywords": [
+        {
+          "term": "بيبي",
+          "final_score": 32.4,
+          "category": "title"
+        },
+        {
+          "term": "love game",
+          "final_score": 19.95,
+          "category": "subtitle"
+        },
+        {
+          "term": "موعدة",
+          "final_score": 10.0,
+          "category": "keywords"
+        },
+        {
+          "term": "علاقات",
+          "final_score": 5.75,
+          "category": "keywords"
+        },
+        {
+          "term": "زوجين",
+          "original": "couple",
+          "category": "keywords"
+        },
+        {
+          "term": "حب",
+          "original": "love",
+          "category": "keywords"
+        },
+        {
+          "term": "اختبار الزوجين",
+          "original": "couple quiz",
+          "category": "keywords"
+        },
+        {
+          "term": "أسئلة الحب",
+          "original": "love questions",
+          "category": "keywords"
+        },
+        {
+          "term": "لعبة الزوجين",
+          "original": "couple game",
+          "category": "keywords"
+        },
+        {
+          "term": "نصائح العلاقة",
+          "original": "relationship advice",
+          "category": "keywords"
+        },
+        {
+          "term": "شريك",
+          "original": "partner",
+          "category": "keywords"
+        },
+        {
+          "term": "علاقة عن بعد",
+          "original": "long distance relationship",
+          "category": "keywords"
+        }
+      ]
+    },
+    "zh-Hant": {
+      "selected_keywords": [
+        {
+          "term": "love",
+          "final_score": 27.0,
+          "category": "title"
+        },
+        {
+          "term": "couple",
+          "final_score": 12.2,
+          "category": "subtitle"
+        },
+        {
+          "term": "dating games",
+          "final_score": 9.35,
+          "category": "keywords"
+        },
+        {
+          "term": "情侶測驗",
+          "original": "couple quiz",
+          "category": "keywords"
+        },
+        {
+          "term": "情侶遊戲",
+          "original": "couple game",
+          "category": "keywords"
+        },
+        {
+          "term": "關係",
+          "original": "relationship",
+          "category": "keywords"
+        },
+        {
+          "term": "伴侶",
+          "original": "partner",
+          "category": "keywords"
+        },
+        {
+          "term": "愛情測試",
+          "original": "love test",
+          "category": "keywords"
+        },
+        {
+          "term": "感情建議",
+          "original": "relationship advice",
+          "category": "keywords"
+        },
+        {
+          "term": "火辣問題",
+          "original": "spicy questions",
+          "category": "keywords"
+        },
+        {
+          "term": "情侶問題",
+          "original": "couple questions",
+          "category": "keywords"
+        },
+        {
+          "term": "遠距離戀愛",
+          "original": "long distance relationship",
+          "category": "keywords"
+        }
+      ]
+    },
+    "fi": {
+      "selected_keywords": [
+        {
+          "term": "sex game",
+          "final_score": 6.6,
+          "category": "title"
+        },
+        {
+          "term": "ihmissuhde",
+          "original": "relationship",
+          "category": "subtitle"
+        },
+        {
+          "term": "my love",
+          "final_score": 17.95,
+          "category": "keywords"
+        },
+        {
+          "term": "pariskunta",
+          "original": "couple",
+          "category": "keywords"
+        },
+        {
+          "term": "paritesti",
+          "original": "couple quiz",
+          "category": "keywords"
+        },
+        {
+          "term": "paripeli",
+          "original": "couple game",
+          "category": "keywords"
+        },
+        {
+          "term": "rakkauskysymykset",
+          "original": "love questions",
+          "category": "keywords"
+        },
+        {
+          "term": "suhdeneuvonta",
+          "original": "relationship advice",
+          "category": "keywords"
+        },
+        {
+          "term": "mausteiset kysymykset",
+          "original": "spicy questions",
+          "category": "keywords"
+        },
+        {
+          "term": "pariterapia",
+          "original": "couple therapy",
+          "category": "keywords"
+        },
+        {
+          "term": "kumppani",
+          "original": "partner",
+          "category": "keywords"
+        },
+        {
+          "term": "etäsuhde",
+          "original": "long distance relationship",
+          "category": "keywords"
+        }
+      ]
+    },
+    "en-AU": {
+      "selected_keywords": [
+        {
+          "term": "love spouse",
+          "category": "title",
+          "final_score": 30.45
+        },
+        {
+          "term": "couple games",
+          "category": "subtitle",
+          "final_score": 27.8
+        },
+        {
+          "term": "lovewick relationship",
+          "category": "keywords",
+          "final_score": 33.8
+        },
+        {
+          "term": "marriage card game",
+          "category": "keywords",
+          "final_score": 16.1
+        },
+        {
+          "term": "intimately us for couples",
+          "category": "keywords",
+          "final_score": 14.5
+        },
+        {
+          "term": "gottman card decks",
+          "category": "keywords",
+          "final_score": 14.25
+        },
+        {
+          "term": "ultimate intimacy",
+          "category": "keywords",
+          "final_score": 10.75
+        },
+        {
+          "term": "love games",
+          "category": "keywords",
+          "final_score": 10.6
+        },
+        {
+          "term": "couple",
+          "original": "couple",
+          "category": "keywords"
+        },
+        {
+          "term": "relationship",
+          "original": "relationship",
+          "category": "keywords"
+        },
+        {
+          "term": "couple quiz",
+          "original": "couple quiz",
+          "category": "keywords"
+        },
+        {
+          "term": "love test",
+          "original": "love test",
+          "category": "keywords"
+        }
+      ]
+    },
+    "he": {
+      "selected_keywords": [
+        {
+          "term": "partner",
+          "final_score": 32.5,
+          "category": "title"
+        },
+        {
+          "term": "couple game",
+          "final_score": 9.6,
+          "category": "subtitle"
+        },
+        {
+          "term": "the couple",
+          "final_score": 6.5,
+          "category": "keywords"
+        },
+        {
+          "term": "sexy game",
+          "final_score": 4.95,
+          "category": "keywords"
+        },
+        {
+          "term": "nudge",
+          "final_score": 1.1,
+          "category": "keywords"
+        },
+        {
+          "term": "זוג",
+          "original": "couple",
+          "category": "keywords"
+        },
+        {
+          "term": "אהבה",
+          "original": "love",
+          "category": "keywords"
+        },
+        {
+          "term": "מערכת יחסים",
+          "original": "relationship",
+          "category": "keywords"
+        },
+        {
+          "term": "חידון לזוגות",
+          "original": "couple quiz",
+          "category": "keywords"
+        },
+        {
+          "term": "שאלות אהבה",
+          "original": "love questions",
+          "category": "keywords"
+        },
+        {
+          "term": "מערכת יחסים מרחוק",
+          "original": "long distance relationship",
+          "category": "keywords"
+        },
+        {
+          "term": "שאלות מגרות",
+          "original": "spicy questions",
+          "category": "keywords"
+        }
+      ]
+    },
+    "fr-FR": {
+      "selected_keywords": [
+        {
+          "term": "action ou vérité",
+          "final_score": 43.3,
+          "category": "title"
+        },
+        {
+          "term": "amour sucré",
+          "final_score": 36.6,
+          "category": "subtitle"
+        },
+        {
+          "term": "jeux amour",
+          "final_score": 32.1,
+          "category": "keywords"
+        },
+        {
+          "term": "anniversaire",
+          "final_score": 30.3,
+          "category": "keywords"
+        },
+        {
+          "term": "partenaire",
+          "final_score": 28.8,
+          "category": "keywords"
+        },
+        {
+          "term": "journal intime",
+          "final_score": 26.0,
+          "category": "keywords"
+        },
+        {
+          "term": "tu preferes",
+          "final_score": 26.0,
+          "category": "keywords"
+        },
+        {
+          "term": "question couple",
+          "final_score": 25.5,
+          "category": "keywords"
+        },
+        {
+          "term": "couple",
+          "original": "couple",
+          "category": "keywords"
+        },
+        {
+          "term": "amour",
+          "original": "love",
+          "category": "keywords"
+        },
+        {
+          "term": "quiz de couple",
+          "original": "couple quiz",
+          "category": "keywords"
+        },
+        {
+          "term": "relation",
+          "original": "relationship",
+          "category": "keywords"
+        }
+      ]
+    },
+    "fr-CA": {
+      "selected_keywords": [
+        {
+          "term": "love spouse",
+          "final_score": 23.6,
+          "category": "title"
+        },
+        {
+          "term": "couples games",
+          "final_score": 18.4,
+          "category": "subtitle"
+        },
+        {
+          "term": "couple widget",
+          "final_score": 15.1,
+          "category": "keywords"
+        },
+        {
+          "term": "wedding",
+          "final_score": 11.6,
+          "category": "keywords"
+        },
+        {
+          "term": "couple game",
+          "final_score": 11.3,
+          "category": "keywords"
+        },
+        {
+          "term": "saint valentin",
+          "final_score": 11.05,
+          "category": "keywords"
+        },
+        {
+          "term": "anniversary tracker lovedays",
+          "final_score": 10.5,
+          "category": "keywords"
+        },
+        {
+          "term": "21 questions",
+          "final_score": 10.3,
+          "category": "keywords"
+        },
+        {
+          "term": "sex-tracker",
+          "final_score": 7.85,
+          "category": "keywords"
+        },
+        {
+          "term": "long distance",
+          "final_score": 6.9,
+          "category": "keywords"
+        },
+        {
+          "term": "relation",
+          "original": "relationship",
+          "category": "keywords"
+        },
+        {
+          "term": "partenaire",
+          "original": "partner",
+          "category": "keywords"
+        }
+      ]
+    },
+    "en-GB": {
+      "selected_keywords": [
+        {
+          "term": "love spouse",
+          "final_score": 42.3,
+          "category": "title"
+        },
+        {
+          "term": "couple games",
+          "final_score": 38.8,
+          "category": "subtitle"
+        },
+        {
+          "term": "paired relationship couples",
+          "final_score": 43.05,
+          "category": "keywords"
+        },
+        {
+          "term": "sex games \t๏",
+          "final_score": 41.6,
+          "category": "keywords"
+        },
+        {
+          "term": "scratch adventure couple game",
+          "final_score": 40.7,
+          "category": "keywords"
+        },
+        {
+          "term": "widgetable",
+          "final_score": 38.5,
+          "category": "keywords"
+        },
+        {
+          "term": "relationship tracker",
+          "final_score": 25.8,
+          "category": "keywords"
+        },
+        {
+          "term": "quiz games",
+          "final_score": 25.7,
+          "category": "keywords"
+        },
+        {
+          "term": "love tester",
+          "final_score": 20.4,
+          "category": "keywords"
+        },
+        {
+          "term": "couple widget",
+          "final_score": 20.2,
+          "category": "keywords"
+        },
+        {
+          "term": "couple quiz",
+          "original": "couple quiz",
+          "category": "keywords"
+        },
+        {
+          "term": "relationship",
+          "original": "relationship",
+          "category": "keywords"
+        }
+      ]
+    },
+    "it": {
+      "selected_keywords": [
+        {
+          "term": "giochi di sesso",
+          "final_score": 32.7,
+          "category": "title"
+        },
+        {
+          "term": "storie interattive",
+          "final_score": 30.05,
+          "category": "subtitle"
+        },
+        {
+          "term": "preferiresti",
+          "final_score": 29.9,
+          "category": "keywords"
+        },
+        {
+          "term": "agapé couples relationship",
+          "final_score": 24.5,
+          "category": "keywords"
+        },
+        {
+          "term": "love test",
+          "final_score": 23.9,
+          "category": "keywords"
+        },
+        {
+          "term": "agapé app for couples",
+          "final_score": 20.0,
+          "category": "keywords"
+        },
+        {
+          "term": "giochi amore",
+          "final_score": 18.35,
+          "category": "keywords"
+        },
+        {
+          "term": "agape",
+          "final_score": 14.5,
+          "category": "keywords"
+        },
+        {
+          "term": "giochi sessuali",
+          "final_score": 14.4,
+          "category": "keywords"
+        },
+        {
+          "term": "couple widget",
+          "final_score": 10.7,
+          "category": "keywords"
+        },
+        {
+          "term": "coppia",
+          "original": "couple",
+          "category": "keywords"
+        },
+        {
+          "term": "relazione",
+          "original": "relationship",
+          "category": "keywords"
+        }
+      ]
+    },
+    "hi": {
+      "selected_keywords": [
+        {
+          "term": "couples therapy",
+          "final_score": 27.1,
+          "category": "title"
+        },
+        {
+          "term": "betterhalf",
+          "final_score": 18.9,
+          "category": "subtitle"
+        },
+        {
+          "term": "beziehungsapp",
+          "final_score": 36.5,
+          "category": "keywords"
+        },
+        {
+          "term": "paired relationship couples",
+          "final_score": 33.9,
+          "category": "keywords"
+        },
+        {
+          "term": "sex games",
+          "final_score": 18.7,
+          "category": "keywords"
+        },
+        {
+          "term": "relationship advice",
+          "final_score": 12.3,
+          "category": "keywords"
+        },
+        {
+          "term": "जोड़े",
+          "original": "couple",
+          "category": "keywords"
+        },
+        {
+          "term": "प्यार",
+          "original": "love",
+          "category": "keywords"
+        },
+        {
+          "term": "जोड़े क्विज़",
+          "original": "couple quiz",
+          "category": "keywords"
+        },
+        {
+          "term": "लंबी दूरी का रिश्ता",
+          "original": "long distance relationship",
+          "category": "keywords"
+        }
+      ]
+    },
+    "id": {
+      "selected_keywords": [
+        {
+          "term": "partner app",
+          "final_score": 17.1,
+          "category": "title"
+        },
+        {
+          "term": "wedding",
+          "final_score": 14.300000000000004,
+          "category": "subtitle"
+        },
+        {
+          "term": "sexy",
+          "final_score": 13.800000000000004,
+          "category": "subtitle"
+        },
+        {
+          "term": "obimy",
+          "final_score": 22.5,
+          "category": "keywords"
+        },
+        {
+          "term": "couple",
+          "final_score": 6.100000000000001,
+          "category": "keywords"
+        },
+        {
+          "term": "cinta",
+          "original": "love",
+          "category": "keywords"
+        },
+        {
+          "term": "kuis pasangan",
+          "original": "couple quiz",
+          "category": "keywords"
+        },
+        {
+          "term": "pertanyaan cinta",
+          "original": "love questions",
+          "category": "keywords"
+        },
+        {
+          "term": "hubungan",
+          "original": "relationship",
+          "category": "keywords"
+        },
+        {
+          "term": "hubungan jarak jauh",
+          "original": "long distance relationship",
+          "category": "keywords"
+        },
+        {
+          "term": "pertanyaan pedas",
+          "original": "spicy questions",
+          "category": "keywords"
+        },
+        {
+          "term": "nasihat hubungan",
+          "original": "relationship advice",
+          "category": "keywords"
+        }
+      ]
+    },
+    "ms": {
+      "selected_keywords": [
+        {
+          "term": "couple",
+          "final_score": 20.2,
+          "category": "title"
+        },
+        {
+          "term": "cinta",
+          "original": "love",
+          "category": "subtitle"
+        },
+        {
+          "term": "paired relationship couples",
+          "final_score": 51.8,
+          "category": "keywords"
+        },
+        {
+          "term": "my love",
+          "final_score": 50.1,
+          "category": "keywords"
+        },
+        {
+          "term": "kuiz pasangan",
+          "original": "couple quiz",
+          "category": "keywords"
+        },
+        {
+          "term": "soalan cinta",
+          "original": "love questions",
+          "category": "keywords"
+        },
+        {
+          "term": "permainan pasangan",
+          "original": "couple game",
+          "category": "keywords"
+        },
+        {
+          "term": "hubungan",
+          "original": "relationship",
+          "category": "keywords"
+        },
+        {
+          "term": "teman hidup",
+          "original": "partner",
+          "category": "keywords"
+        },
+        {
+          "term": "hubungan jarak jauh",
+          "original": "long distance relationship",
+          "category": "keywords"
+        },
+        {
+          "term": "ujian cinta",
+          "original": "love test",
+          "category": "keywords"
+        },
+        {
+          "term": "permainan temu janji malam",
+          "original": "date night game",
+          "category": "keywords"
+        }
+      ]
+    },
+    "da": {
+      "selected_keywords": [
+        {
+          "term": "samtalekort",
+          "final_score": 25.3,
+          "category": "title"
+        },
+        {
+          "term": "couple game",
+          "final_score": 14.0,
+          "category": "subtitle"
+        },
+        {
+          "term": "the relationship app",
+          "final_score": 13.7,
+          "category": "keywords"
+        },
+        {
+          "term": "couples questions",
+          "final_score": 9.9,
+          "category": "keywords"
+        },
+        {
+          "term": "love quiz",
+          "final_score": 8.7,
+          "category": "keywords"
+        },
+        {
+          "term": "par",
+          "original": "couple",
+          "category": "keywords"
+        },
+        {
+          "term": "kærlighed",
+          "original": "love",
+          "category": "keywords"
+        },
+        {
+          "term": "parquiz",
+          "original": "couple quiz",
+          "category": "keywords"
+        },
+        {
+          "term": "forhold",
+          "original": "relationship",
+          "category": "keywords"
+        },
+        {
+          "term": "partner",
+          "original": "partner",
+          "category": "keywords"
+        },
+        {
+          "term": "langdistanceforhold",
+          "original": "long distance relationship",
+          "category": "keywords"
+        },
+        {
+          "term": "kærlighedstest",
+          "original": "love test",
+          "category": "keywords"
+        }
+      ]
+    },
+    "es-ES": {
+      "selected_keywords": [
+        {
+          "term": "historias de amor",
+          "final_score": 25.3,
+          "category": "title"
+        },
+        {
+          "term": "juegos de pareja",
+          "final_score": 22.9,
+          "category": "subtitle"
+        },
+        {
+          "term": "couple app",
+          "final_score": 22.7,
+          "category": "keywords"
+        },
+        {
+          "term": "juegos para parejas",
+          "final_score": 19.8,
+          "category": "keywords"
+        },
+        {
+          "term": "couple apps",
+          "final_score": 17.8,
+          "category": "keywords"
+        },
+        {
+          "term": "wefeel",
+          "final_score": 17.6,
+          "category": "keywords"
+        },
+        {
+          "term": "couple game",
+          "final_score": 16.2,
+          "category": "keywords"
+        },
+        {
+          "term": "preguntas",
+          "final_score": 12.4,
+          "category": "keywords"
+        },
+        {
+          "term": "kindu",
+          "final_score": 11.05,
+          "category": "keywords"
+        },
+        {
+          "term": "happy couple",
+          "final_score": 9.4,
+          "category": "keywords"
+        },
+        {
+          "term": "couple",
+          "final_score": 7.6,
+          "category": "keywords"
+        },
+        {
+          "term": "couple widget",
+          "final_score": 6.65,
+          "category": "keywords"
+        }
+      ]
+    },
+    "pt-BR": {
+      "selected_keywords": [
+        {
+          "term": "widget casal",
+          "final_score": 58.5,
+          "category": "title"
+        },
+        {
+          "term": "quiz de casal",
+          "final_score": 57.15,
+          "category": "title"
+        },
+        {
+          "term": "quiz casal",
+          "final_score": 54.15,
+          "category": "subtitle"
+        },
+        {
+          "term": "jogo de casal",
+          "final_score": 47.4,
+          "category": "subtitle"
+        },
+        {
+          "term": "paired relationship couples",
+          "final_score": 60.2,
+          "category": "keywords"
+        },
+        {
+          "term": "relationship games for couples",
+          "final_score": 49.4,
+          "category": "keywords"
+        },
+        {
+          "term": "amor",
+          "final_score": 43.0,
+          "category": "keywords"
+        },
+        {
+          "term": "jogo casal",
+          "final_score": 42.7,
+          "category": "keywords"
+        },
+        {
+          "term": "casal",
+          "final_score": 42.1,
+          "category": "keywords"
+        },
+        {
+          "term": "jogo para casal",
+          "final_score": 41.0,
+          "category": "keywords"
+        },
+        {
+          "term": "gottman card decks",
+          "final_score": 37.9,
+          "category": "keywords"
+        },
+        {
+          "term": "jogos para casal",
+          "final_score": 37.2,
+          "category": "keywords"
+        }
+      ]
+    },
+    "en-US": {
+      "selected_keywords": [
+        {
+          "term": "couple tracker",
+          "final_score": 42.1,
+          "category": "title"
+        },
+        {
+          "term": "love spouse",
+          "final_score": 41.2,
+          "category": "subtitle"
+        },
+        {
+          "term": "paired app for couples",
+          "final_score": 51.2,
+          "category": "keywords"
+        },
+        {
+          "term": "relationship tracker",
+          "final_score": 40.85,
+          "category": "keywords"
+        },
+        {
+          "term": "couple games for adults",
+          "final_score": 38.5,
+          "category": "keywords"
+        },
+        {
+          "term": "couples games",
+          "final_score": 34.1,
+          "category": "keywords"
+        },
+        {
+          "term": "love messages",
+          "final_score": 31.75,
+          "category": "keywords"
+        },
+        {
+          "term": "how long have we been together",
+          "final_score": 28.4,
+          "category": "keywords"
+        },
+        {
+          "term": "relationship games for couples",
+          "final_score": 28.4,
+          "category": "keywords"
+        },
+        {
+          "term": "dirty games for couple",
+          "final_score": 27.55,
+          "category": "keywords"
+        },
+        {
+          "term": "couple",
+          "original": "couple",
+          "category": "keywords"
+        },
+        {
+          "term": "relationship",
+          "original": "relationship",
+          "category": "keywords"
+        }
+      ]
+    },
+    "en-CA": {
+      "selected_keywords": [
+        {
+          "term": "love spouse",
+          "final_score": 28.1,
+          "category": "title"
+        },
+        {
+          "term": "couple widget",
+          "final_score": 20.35,
+          "category": "subtitle"
+        },
+        {
+          "term": "paired couples relationship",
+          "final_score": 28.7,
+          "category": "keywords"
+        },
+        {
+          "term": "gottman card decks",
+          "final_score": 28.35,
+          "category": "keywords"
+        },
+        {
+          "term": "couples games",
+          "final_score": 19.9,
+          "category": "keywords"
+        },
+        {
+          "term": "couple game",
+          "final_score": 16.55,
+          "category": "keywords"
+        },
+        {
+          "term": "paired",
+          "final_score": 16.2,
+          "category": "keywords"
+        },
+        {
+          "term": "pair",
+          "final_score": 14.8,
+          "category": "keywords"
+        },
+        {
+          "term": "agape",
+          "final_score": 14.1,
+          "category": "keywords"
+        },
+        {
+          "term": "saint valentin",
+          "final_score": 13.3,
+          "category": "keywords"
+        },
+        {
+          "term": "day one",
+          "final_score": 12.7,
+          "category": "keywords"
+        },
+        {
+          "term": "wedding",
+          "final_score": 12.35,
+          "category": "keywords"
+        }
+      ]
+    },
+    "pt-PT": {
+      "selected_keywords": [
+        {
+          "term": "widget casal",
+          "category": "title",
+          "final_score": 41.95
+        },
+        {
+          "term": "amor, perguntas & sex game",
+          "category": "subtitle",
+          "final_score": 32.25
+        },
+        {
+          "term": "my love",
+          "category": "keywords",
+          "final_score": 32.8
+        },
+        {
+          "term": "how long have we been together",
+          "category": "keywords",
+          "final_score": 19.1
+        },
+        {
+          "term": "love8",
+          "category": "keywords",
+          "final_score": 15.35
+        },
+        {
+          "term": "day one",
+          "category": "keywords",
+          "final_score": 9.85
+        },
+        {
+          "term": "casal",
+          "original": "couple",
+          "category": "keywords"
+        },
+        {
+          "term": "relacionamento",
+          "original": "relationship",
+          "category": "keywords"
+        },
+        {
+          "term": "parceiro",
+          "original": "partner",
+          "category": "keywords"
+        },
+        {
+          "term": "quiz de casais",
+          "original": "couple quiz",
+          "category": "keywords"
+        },
+        {
+          "term": "perguntas de amor",
+          "original": "love questions",
+          "category": "keywords"
+        },
+        {
+          "term": "jogo para casais",
+          "original": "couple game",
+          "category": "keywords"
+        }
+      ]
+    },
+    "es-MX": {
+      "selected_keywords": [
+        {
+          "term": "preguntas para parejas",
+          "final_score": 62.6,
+          "category": "title"
+        },
+        {
+          "term": "lasting marriage couples",
+          "final_score": 44.15,
+          "category": "title"
+        },
+        {
+          "term": "date night game",
+          "final_score": 43.7,
+          "category": "subtitle"
+        },
+        {
+          "term": "preguntas picantes",
+          "final_score": 36.7,
+          "category": "subtitle"
+        },
+        {
+          "term": "historias de amor",
+          "final_score": 32.6,
+          "category": "keywords"
+        },
+        {
+          "term": "relationship advice",
+          "final_score": 31.3,
+          "category": "keywords"
+        },
+        {
+          "term": "juntos",
+          "final_score": 30.6,
+          "category": "keywords"
+        },
+        {
+          "term": "marriage counseling",
+          "final_score": 30.4,
+          "category": "keywords"
+        },
+        {
+          "term": "relationship help",
+          "final_score": 27.95,
+          "category": "keywords"
+        },
+        {
+          "term": "app parejas",
+          "final_score": 23.5,
+          "category": "keywords"
+        },
+        {
+          "term": "pareja",
+          "original": "couple",
+          "category": "keywords"
+        },
+        {
+          "term": "relación",
+          "original": "relationship",
+          "category": "keywords"
+        }
+      ]
+    },
+    "sv": {
+      "selected_keywords": [
+        {
+          "term": "quizkampen",
+          "final_score": 33.5,
+          "category": "title"
+        },
+        {
+          "term": "real love",
+          "final_score": 17.1,
+          "category": "title"
+        },
+        {
+          "term": "kärlek spel",
+          "final_score": 15.6,
+          "category": "subtitle"
+        },
+        {
+          "term": "couple game",
+          "final_score": 10.7,
+          "category": "subtitle"
+        },
+        {
+          "term": "cupla",
+          "final_score": 8.6,
+          "category": "keywords"
+        },
+        {
+          "term": "sex positions",
+          "final_score": 8.35,
+          "category": "keywords"
+        },
+        {
+          "term": "couple",
+          "final_score": 8.1,
+          "category": "keywords"
+        },
+        {
+          "term": "love tester",
+          "final_score": 22.0,
+          "category": "keywords"
+        },
+        {
+          "term": "paired",
+          "final_score": 10.4,
+          "category": "keywords"
+        }
+      ]
+    },
+    "nl-NL": {
+      "selected_keywords": [
+        {
+          "term": "spicer",
+          "final_score": 27.8,
+          "category": "title"
+        },
+        {
+          "term": "vragen spel",
+          "final_score": 25.2,
+          "category": "subtitle"
+        },
+        {
+          "term": "liefde test",
+          "final_score": 27.3,
+          "category": "keywords"
+        },
+        {
+          "term": "couple game",
+          "final_score": 12.9,
+          "category": "keywords"
+        },
+        {
+          "term": "loquiz",
+          "final_score": 12.8,
+          "category": "keywords"
+        },
+        {
+          "term": "intimacy",
+          "final_score": 6.7,
+          "category": "keywords"
+        },
+        {
+          "term": "sex tracker",
+          "final_score": 4.1,
+          "category": "keywords"
+        },
+        {
+          "term": "vragen",
+          "final_score": 3.55,
+          "category": "keywords"
+        },
+        {
+          "term": "love counter",
+          "final_score": 2.4,
+          "category": "keywords"
+        },
+        {
+          "term": "love tester!",
+          "final_score": 43.2,
+          "category": "keywords"
+        },
+        {
+          "term": "koppelquiz",
+          "original": "couple quiz",
+          "category": "keywords"
+        },
+        {
+          "term": "relatie",
+          "original": "relationship",
+          "category": "keywords"
+        }
+      ]
+    },
+    "de-DE": {
+      "selected_keywords": [
+        {
+          "term": "fragen für paare",
+          "final_score": 62.8,
+          "category": "title"
+        },
+        {
+          "term": "beziehungsrechner",
+          "final_score": 33.25,
+          "category": "subtitle"
+        },
+        {
+          "term": "liebes spiele",
+          "final_score": 28.9,
+          "category": "keywords"
+        },
+        {
+          "term": "recoupling",
+          "final_score": 28.45,
+          "category": "keywords"
+        },
+        {
+          "term": "liebestest",
+          "final_score": 24.3,
+          "category": "keywords"
+        },
+        {
+          "term": "spiele für paare",
+          "final_score": 23.1,
+          "category": "keywords"
+        },
+        {
+          "term": "würdest du eher",
+          "final_score": 22.45,
+          "category": "keywords"
+        },
+        {
+          "term": "100 fragen",
+          "final_score": 21.8,
+          "category": "keywords"
+        },
+        {
+          "term": "liebe",
+          "final_score": 21.7,
+          "category": "keywords"
+        },
+        {
+          "term": "beziehungsapp",
+          "final_score": 21.0,
+          "category": "keywords"
+        },
+        {
+          "term": "app für paare",
+          "final_score": 18.4,
+          "category": "keywords"
+        },
+        {
+          "term": "love tester",
+          "final_score": 18.3,
+          "category": "keywords"
+        }
+      ]
+    },
+    "ko": {
+      "selected_keywords": [
+        {
+          "term": "\t키우기",
+          "final_score": 50.9,
+          "category": "title"
+        },
+        {
+          "term": "커플",
+          "final_score": 43.8,
+          "category": "title"
+        },
+        {
+          "term": "질문",
+          "final_score": 28.0,
+          "category": "subtitle"
+        },
+        {
+          "term": "사랑",
+          "final_score": 16.95,
+          "category": "subtitle"
+        },
+        {
+          "term": "결합",
+          "final_score": 16.65,
+          "category": "keywords"
+        },
+        {
+          "term": "long distance",
+          "final_score": 3.0,
+          "category": "keywords"
+        },
+        {
+          "term": "커플 퀴즈",
+          "original": "couple quiz",
+          "category": "keywords"
+        },
+        {
+          "term": "커플 게임",
+          "original": "couple game",
+          "category": "keywords"
+        },
+        {
+          "term": "관계",
+          "original": "relationship",
+          "category": "keywords"
+        },
+        {
+          "term": "파트너",
+          "original": "partner",
+          "category": "keywords"
+        },
+        {
+          "term": "연애 질문",
+          "original": "love questions",
+          "category": "keywords"
+        },
+        {
+          "term": "사랑 테스트",
+          "original": "love test",
+          "category": "keywords"
+        }
+      ]
+    },
+    "zh-TW": {
+      "selected_keywords": [
+        {
+          "term": "one聚",
+          "category": "title",
+          "final_score": 31.2
+        },
+        {
+          "term": "love",
+          "category": "title",
+          "final_score": 30.0
+        },
+        {
+          "term": "couple",
+          "category": "subtitle",
+          "final_score": 13.7
+        },
+        {
+          "term": "dating games",
+          "category": "subtitle",
+          "final_score": 10.1
+        },
+        {
+          "term": "戀愛關係",
+          "original": "relationship",
+          "category": "keywords"
+        },
+        {
+          "term": "情侶測驗",
+          "original": "couple quiz",
+          "category": "keywords"
+        },
+        {
+          "term": "愛情問題",
+          "original": "love questions",
+          "category": "keywords"
+        },
+        {
+          "term": "情侶遊戲",
+          "original": "couple game",
+          "category": "keywords"
+        },
+        {
+          "term": "刺激問題",
+          "original": "spicy questions",
+          "category": "keywords"
+        },
+        {
+          "term": "戀愛建議",
+          "original": "relationship advice",
+          "category": "keywords"
+        },
+        {
+          "term": "伴侶",
+          "original": "partner",
+          "category": "keywords"
+        },
+        {
+          "term": "遠距離戀情",
+          "original": "long distance relationship",
+          "category": "keywords"
+        }
+      ]
+    },
+    "tr": {
+      "selected_keywords": [
+        {
+          "term": "çift",
+          "final_score": 15.6,
+          "category": "title"
+        },
+        {
+          "term": "lovi",
+          "final_score": 15.2,
+          "category": "title"
+        },
+        {
+          "term": "cinsel oyunlar",
+          "final_score": 7.55,
+          "category": "subtitle"
+        },
+        {
+          "term": "aşk",
+          "original": "love",
+          "category": "keywords"
+        },
+        {
+          "term": "çift testi",
+          "original": "couple quiz",
+          "category": "keywords"
+        },
+        {
+          "term": "aşk soruları",
+          "original": "love questions",
+          "category": "keywords"
+        },
+        {
+          "term": "çift oyunu",
+          "original": "couple game",
+          "category": "keywords"
+        },
+        {
+          "term": "ilişki",
+          "original": "relationship",
+          "category": "keywords"
+        },
+        {
+          "term": "eş",
+          "original": "partner",
+          "category": "keywords"
+        },
+        {
+          "term": "baharatlı sorular",
+          "original": "spicy questions",
+          "category": "keywords"
+        },
+        {
+          "term": "ilişki tavsiyesi",
+          "original": "relationship advice",
+          "category": "keywords"
+        },
+        {
+          "term": "aşk terapisi",
+          "original": "love therapy",
+          "category": "keywords"
+        }
+      ]
+    },
+    "th": {
+      "selected_keywords": [
+        {
+          "term": "\tรЏ…",
+          "final_score": 35.25,
+          "category": "title"
+        },
+        {
+          "term": "\tร„…",
+          "final_score": 23.45,
+          "category": "subtitle"
+        },
+        {
+          "term": "\tร€… \tร„…",
+          "final_score": 23.3,
+          "category": "keywords"
+        },
+        {
+          "term": "\tร …",
+          "final_score": 20.5,
+          "category": "keywords"
+        },
+        {
+          "term": "couple",
+          "final_score": 12.8,
+          "category": "keywords"
+        },
+        {
+          "term": "\tร–…",
+          "final_score": 11.95,
+          "category": "keywords"
+        },
+        {
+          "term": "sexy",
+          "final_score": 11.65,
+          "category": "keywords"
+        },
+        {
+          "term": "couple apps",
+          "final_score": 10.85,
+          "category": "keywords"
+        },
+        {
+          "term": "love test",
+          "final_score": 8.3,
+          "category": "keywords"
+        },
+        {
+          "term": "\tร„…",
+          "final_score": 8.15,
+          "category": "keywords"
+        },
+        {
+          "term": "lovesick",
+          "final_score": 6.95,
+          "category": "keywords"
+        },
+        {
+          "term": "couple widget",
+          "final_score": 6.7,
+          "category": "keywords"
+        }
+      ]
+    },
+    "ja": {
+      "selected_keywords": [
+        {
+          "term": "カップル記念日",
+          "final_score": 36.4,
+          "category": "title"
+        },
+        {
+          "term": "恋しての記念日",
+          "final_score": 33.8,
+          "category": "subtitle"
+        },
+        {
+          "term": "記念日",
+          "final_score": 45.9,
+          "category": "keywords"
+        },
+        {
+          "term": "between",
+          "final_score": 36.6,
+          "category": "keywords"
+        },
+        {
+          "term": "チャットアプリ",
+          "final_score": 29.3,
+          "category": "keywords"
+        },
+        {
+          "term": "夫妻",
+          "final_score": 28.5,
+          "category": "keywords"
+        },
+        {
+          "term": "日数カウント",
+          "final_score": 25.4,
+          "category": "keywords"
+        },
+        {
+          "term": "カップルゲーム",
+          "final_score": 24.2,
+          "category": "keywords"
+        },
+        {
+          "term": "カップル質問",
+          "final_score": 21.25,
+          "category": "keywords"
+        },
+        {
+          "term": "widgetable",
+          "final_score": 15.3,
+          "category": "keywords"
+        },
+        {
+          "term": "カップル",
+          "original": "couple",
+          "category": "keywords"
+        },
+        {
+          "term": "関係",
+          "original": "relationship",
+          "category": "keywords"
+        }
+      ]
+    },
+    "pl": {
+      "selected_keywords": [
+        {
+          "term": "gra dla par",
+          "final_score": 57.0,
+          "category": "title"
+        },
+        {
+          "term": "Pytania dla par",
+          "final_score": 41.4,
+          "category": "subtitle"
+        },
+        {
+          "term": "my love",
+          "final_score": 31.0,
+          "category": "keywords"
+        },
+        {
+          "term": "love",
+          "final_score": 22.8,
+          "category": "keywords"
+        },
+        {
+          "term": "quizowanie",
+          "final_score": 20.35,
+          "category": "keywords"
+        },
+        {
+          "term": "couples",
+          "final_score": 13.2,
+          "category": "keywords"
+        },
+        {
+          "term": "pytania 18",
+          "final_score": 12.875,
+          "category": "keywords"
+        },
+        {
+          "term": "sex-position",
+          "final_score": 9.0,
+          "category": "keywords"
+        },
+        {
+          "term": "związek",
+          "original": "relationship",
+          "category": "keywords"
+        },
+        {
+          "term": "partner",
+          "original": "partner",
+          "category": "keywords"
+        },
+        {
+          "term": "test miłości",
+          "original": "love test",
+          "category": "keywords"
+        },
+        {
+          "term": "pytania dla dorosłych",
+          "original": "adult questions",
+          "category": "keywords"
+        }
+      ]
+    },
+    "zh-HK": {
+      "selected_keywords": [
+        {
+          "term": "情侶",
+          "original": "couple",
+          "category": "title"
+        },
+        {
+          "term": "感情",
+          "original": "relationship",
+          "category": "subtitle"
+        },
+        {
+          "term": "愛情",
+          "original": "love",
+          "category": "keywords"
+        },
+        {
+          "term": "情侶測驗",
+          "original": "couple quiz",
+          "category": "keywords"
+        },
+        {
+          "term": "情侶遊戲",
+          "original": "couple game",
+          "category": "keywords"
+        },
+        {
+          "term": "愛情問題",
+          "original": "love questions",
+          "category": "keywords"
+        },
+        {
+          "term": "火辣問題",
+          "original": "spicy questions",
+          "category": "keywords"
+        },
+        {
+          "term": "遠距離戀愛",
+          "original": "long distance relationship",
+          "category": "keywords"
+        },
+        {
+          "term": "戀愛建議",
+          "original": "relationship advice",
+          "category": "keywords"
+        },
+        {
+          "term": "情侶輔導",
+          "original": "couple therapy",
+          "category": "keywords"
+        },
+        {
+          "term": "伴侶",
+          "original": "partner",
+          "category": "keywords"
+        },
+        {
+          "term": "婚姻",
+          "original": "marriage",
+          "category": "keywords"
+        }
+      ]
+    },
+    "no": {
+      "selected_keywords": [
+        {
+          "term": "sexy game for couples dirty",
+          "final_score": 20.1,
+          "category": "title"
+        },
+        {
+          "term": "sex-positions",
+          "final_score": 19.2,
+          "category": "subtitle"
+        },
+        {
+          "term": "love tester!!!",
+          "final_score": 33.8,
+          "category": "keywords"
+        },
+        {
+          "term": "par",
+          "original": "couple",
+          "category": "keywords"
+        },
+        {
+          "term": "kjærlighet",
+          "original": "love",
+          "category": "keywords"
+        },
+        {
+          "term": "parquiz",
+          "original": "couple quiz",
+          "category": "keywords"
+        },
+        {
+          "term": "kjærlighetsspørsmål",
+          "original": "love questions",
+          "category": "keywords"
+        },
+        {
+          "term": "parspill",
+          "original": "couple game",
+          "category": "keywords"
+        },
+        {
+          "term": "forhold",
+          "original": "relationship",
+          "category": "keywords"
+        },
+        {
+          "term": "partner",
+          "original": "partner",
+          "category": "keywords"
+        },
+        {
+          "term": "langdistanseforhold",
+          "original": "long distance relationship",
+          "category": "keywords"
+        }
+      ]
+    },
+    "en-NZ": {
+      "selected_keywords": [
+        {
+          "term": "couple",
+          "original": "couple",
+          "category": "title"
+        },
+        {
+          "term": "relationship advice",
+          "original": "relationship advice",
+          "category": "subtitle"
+        },
+        {
+          "term": "love",
+          "original": "love",
+          "category": "keywords"
+        },
+        {
+          "term": "couple quiz",
+          "original": "couple quiz",
+          "category": "keywords"
+        },
+        {
+          "term": "couple game",
+          "original": "couple game",
+          "category": "keywords"
+        },
+        {
+          "term": "partner",
+          "original": "partner",
+          "category": "keywords"
+        },
+        {
+          "term": "long distance relationship",
+          "original": "long distance relationship",
+          "category": "keywords"
+        },
+        {
+          "term": "date night game",
+          "original": "date night game",
+          "category": "keywords"
+        },
+        {
+          "term": "love test",
+          "original": "love test",
+          "category": "keywords"
+        },
+        {
+          "term": "adult questions",
+          "original": "adult questions",
+          "category": "keywords"
+        },
+        {
+          "term": "couple questions",
+          "original": "couple questions",
+          "category": "keywords"
+        },
+        {
+          "term": "relationships",
+          "original": "relationships",
+          "category": "keywords"
+        }
+      ]
+    },
+    "en-IN": {
+      "selected_keywords": [
+        {
+          "term": "couples therapy",
+          "final_score": 25.6,
+          "category": "title"
+        },
+        {
+          "term": "relationship advice",
+          "final_score": 13.05,
+          "category": "subtitle"
+        },
+        {
+          "term": "betterhalf",
+          "final_score": 21.9,
+          "category": "keywords"
+        },
+        {
+          "term": "sex games",
+          "final_score": 17.95,
+          "category": "keywords"
+        },
+        {
+          "term": "sex game",
+          "final_score": 16.05,
+          "category": "keywords"
+        },
+        {
+          "term": "long distance",
+          "final_score": 11.3,
+          "category": "keywords"
+        },
+        {
+          "term": "couple",
+          "original": "couple",
+          "category": "keywords"
+        },
+        {
+          "term": "love",
+          "original": "love",
+          "category": "keywords"
+        },
+        {
+          "term": "relationship",
+          "original": "relationship",
+          "category": "keywords"
+        },
+        {
+          "term": "partner",
+          "original": "partner",
+          "category": "keywords"
+        },
+        {
+          "term": "couple quiz",
+          "original": "couple quiz",
+          "category": "keywords"
+        },
+        {
+          "term": "long distance relationship",
+          "original": "long distance relationship",
+          "category": "keywords"
+        }
+      ]
+    },
+    "en": {
+      "selected_keywords": [
+        {
+          "term": "long distance relationship",
+          "final_score": 49.7,
+          "category": "title"
+        },
+        {
+          "term": "official relationship tracker",
+          "final_score": 44.5,
+          "category": "subtitle"
+        },
+        {
+          "term": "love spouse",
+          "final_score": 43.8,
+          "category": "keywords"
+        },
+        {
+          "term": "sex games \n0e4f",
+          "final_score": 40.85,
+          "category": "keywords"
+        },
+        {
+          "term": "couple tracker",
+          "final_score": 39.85,
+          "category": "keywords"
+        },
+        {
+          "term": "couple games",
+          "final_score": 38.8,
+          "category": "keywords"
+        },
+        {
+          "term": "widgetable",
+          "final_score": 38.5,
+          "category": "keywords"
+        },
+        {
+          "term": "couple games for adults",
+          "final_score": 38.5,
+          "category": "keywords"
+        },
+        {
+          "term": "couples app",
+          "final_score": 38.05,
+          "category": "keywords"
+        },
+        {
+          "term": "love tracker",
+          "final_score": 36.45,
+          "category": "keywords"
+        },
+        {
+          "term": "paired app for couples",
+          "final_score": 49.7,
+          "category": "keywords"
+        },
+        {
+          "term": "my love",
+          "final_score": 48.4,
+          "category": "keywords"
+        }
+      ]
+    },
+    "fr": {
+      "selected_keywords": [
+        {
+          "term": "action ou vérité",
+          "final_score": 41.8,
+          "category": "title"
+        },
+        {
+          "term": "sex",
+          "final_score": 38.55,
+          "category": "subtitle"
+        },
+        {
+          "term": "amour sucré",
+          "final_score": 33.6,
+          "category": "keywords"
+        },
+        {
+          "term": "jeux amour",
+          "final_score": 29.1,
+          "category": "keywords"
+        },
+        {
+          "term": "amour",
+          "final_score": 27.9,
+          "category": "keywords"
+        },
+        {
+          "term": "tu preferes",
+          "final_score": 27.5,
+          "category": "keywords"
+        },
+        {
+          "term": "question couple",
+          "final_score": 24.0,
+          "category": "keywords"
+        },
+        {
+          "term": "couple",
+          "original": "couple",
+          "category": "keywords"
+        },
+        {
+          "term": "relation",
+          "original": "relationship",
+          "category": "keywords"
+        },
+        {
+          "term": "jeu de couple",
+          "original": "couple game",
+          "category": "keywords"
+        },
+        {
+          "term": "questions d'amour",
+          "original": "love questions",
+          "category": "keywords"
+        },
+        {
+          "term": "quiz de couple",
+          "original": "couple quiz",
+          "category": "keywords"
+        }
+      ]
+    },
+    "ar": {
+      "selected_keywords": [
+        {
+          "term": "بيبي",
+          "final_score": 30.9,
+          "category": "title"
+        },
+        {
+          "term": "love games",
+          "final_score": 27.35,
+          "category": "subtitle"
+        },
+        {
+          "term": "been together",
+          "final_score": 25.55,
+          "category": "keywords"
+        },
+        {
+          "term": "appy couple",
+          "final_score": 24.1,
+          "category": "keywords"
+        },
+        {
+          "term": "love game",
+          "final_score": 21.45,
+          "category": "keywords"
+        },
+        {
+          "term": "dating games",
+          "final_score": 21.25,
+          "category": "keywords"
+        },
+        {
+          "term": "kinky dating",
+          "final_score": 19.075,
+          "category": "keywords"
+        },
+        {
+          "term": "couples quiz relationship game",
+          "final_score": 17.1,
+          "category": "keywords"
+        },
+        {
+          "term": "romantic games",
+          "final_score": 13.4,
+          "category": "keywords"
+        },
+        {
+          "term": "love life",
+          "final_score": 11.1,
+          "category": "keywords"
+        },
+        {
+          "term": "مواعِدة",
+          "final_score": 9.25,
+          "category": "keywords"
+        },
+        {
+          "term": "lover",
+          "final_score": 9.1,
+          "category": "keywords"
+        }
+      ]
+    },
+    "es-419": {
+      "selected_keywords": [
+        {
+          "term": "preguntas para parejas",
+          "final_score": 65.6,
+          "category": "title"
+        },
+        {
+          "term": "date night game",
+          "final_score": 48.2,
+          "category": "subtitle"
+        },
+        {
+          "term": "my love",
+          "final_score": 58.2,
+          "category": "keywords"
+        },
+        {
+          "term": "paired couples relationship",
+          "final_score": 56.7,
+          "category": "keywords"
+        },
+        {
+          "term": "paired relationship couples",
+          "final_score": 47.2,
+          "category": "keywords"
+        },
+        {
+          "term": "lasting marriage couples",
+          "final_score": 44.9,
+          "category": "keywords"
+        },
+        {
+          "term": "widgetable",
+          "final_score": 44.7,
+          "category": "keywords"
+        },
+        {
+          "term": "preguntas picantes",
+          "final_score": 41.2,
+          "category": "keywords"
+        },
+        {
+          "term": "locket",
+          "final_score": 36.75,
+          "category": "keywords"
+        },
+        {
+          "term": "marriage counseling",
+          "final_score": 35.65,
+          "category": "keywords"
+        },
+        {
+          "term": "relationship advice",
+          "final_score": 35.05,
+          "category": "keywords"
+        },
+        {
+          "term": "historias de amor",
+          "final_score": 34.85,
+          "category": "keywords"
+        }
+      ]
+    },
+    "pt": {
+      "selected_keywords": [
+        {
+          "term": "widget casal",
+          "category": "title",
+          "final_score": 57.75
+        },
+        {
+          "term": "quiz de casal",
+          "category": "title",
+          "final_score": 52.65
+        },
+        {
+          "term": "jogo de casal",
+          "category": "subtitle",
+          "final_score": 47.4
+        },
+        {
+          "term": "casal",
+          "category": "subtitle",
+          "final_score": 46.6
+        },
+        {
+          "term": "paired relationship couples",
+          "category": "keywords",
+          "final_score": 60.2
+        },
+        {
+          "term": "quiz casal",
+          "category": "keywords",
+          "final_score": 49.65
+        },
+        {
+          "term": "relationship games for couples",
+          "category": "keywords",
+          "final_score": 49.4
+        },
+        {
+          "term": "amor",
+          "category": "keywords",
+          "final_score": 43.75
+        },
+        {
+          "term": "love",
+          "category": "keywords",
+          "final_score": 39.2
+        },
+        {
+          "term": "gottman card decks",
+          "category": "keywords",
+          "final_score": 39.4
+        },
+        {
+          "term": "jogos de casal",
+          "category": "keywords",
+          "final_score": 36.8
+        },
+        {
+          "term": "sex\\",
+          "category": "keywords",
+          "final_score": 35.15
+        }
+      ]
+    },
+    "de": {
+      "selected_keywords": [
+        {
+          "term": "fragen für paare",
+          "final_score": 59.8,
+          "category": "title"
+        },
+        {
+          "term": "sex",
+          "final_score": 38.55,
+          "category": "subtitle"
+        },
+        {
+          "term": "paired relationship couples",
+          "final_score": 50.0,
+          "category": "keywords"
+        },
+        {
+          "term": "my love",
+          "final_score": 40.45,
+          "category": "keywords"
+        },
+        {
+          "term": "beziehungsrechner",
+          "final_score": 35.5,
+          "category": "keywords"
+        },
+        {
+          "term": "paar app",
+          "final_score": 34.5,
+          "category": "keywords"
+        },
+        {
+          "term": "liebes spiele",
+          "final_score": 28.15,
+          "category": "keywords"
+        },
+        {
+          "term": "Paar",
+          "original": "couple",
+          "category": "keywords"
+        },
+        {
+          "term": "Liebe",
+          "original": "love",
+          "category": "keywords"
+        },
+        {
+          "term": "Paar-Quiz",
+          "original": "couple quiz",
+          "category": "keywords"
+        },
+        {
+          "term": "Beziehung",
+          "original": "relationship",
+          "category": "keywords"
+        },
+        {
+          "term": "Partner",
+          "original": "partner",
+          "category": "keywords"
+        }
+      ]
+    },
+    "es": {
+      "selected_keywords": [
+        {
+          "term": "preguntas para parejas",
+          "final_score": 59.6,
+          "category": "title"
+        },
+        {
+          "term": "date night game",
+          "final_score": 43.7,
+          "category": "subtitle"
+        },
+        {
+          "term": "widgetable",
+          "final_score": 47.7,
+          "category": "keywords"
+        },
+        {
+          "term": "lasting marriage couples",
+          "final_score": 41.9,
+          "category": "keywords"
+        },
+        {
+          "term": "preguntas picantes",
+          "final_score": 39.7,
+          "category": "keywords"
+        },
+        {
+          "term": "marriage counseling",
+          "final_score": 34.9,
+          "category": "keywords"
+        },
+        {
+          "term": "juntos",
+          "final_score": 32.85,
+          "category": "keywords"
+        },
+        {
+          "term": "historias de amor",
+          "final_score": 31.85,
+          "category": "keywords"
+        },
+        {
+          "term": "relationship advice",
+          "final_score": 29.8,
+          "category": "keywords"
+        },
+        {
+          "term": "relationship help",
+          "final_score": 27.2,
+          "category": "keywords"
+        },
+        {
+          "term": "amor",
+          "final_score": 26.6,
+          "category": "keywords"
+        },
+        {
+          "term": "kindu",
+          "final_score": 24.7,
+          "category": "keywords"
+        }
+      ]
+    },
+    "nb": {
+      "selected_keywords": [
+        {
+          "term": "sexy game for couples dirty",
+          "final_score": 18.6,
+          "category": "title"
+        },
+        {
+          "term": "sex-positions",
+          "final_score": 17.7,
+          "category": "subtitle"
+        },
+        {
+          "term": "sex-position",
+          "final_score": 15.7,
+          "category": "keywords"
+        },
+        {
+          "term": "kamasutra",
+          "final_score": 7.7,
+          "category": "keywords"
+        },
+        {
+          "term": "par",
+          "original": "couple",
+          "category": "keywords"
+        },
+        {
+          "term": "kjærlighet",
+          "original": "love",
+          "category": "keywords"
+        },
+        {
+          "term": "parquiz",
+          "original": "couple quiz",
+          "category": "keywords"
+        },
+        {
+          "term": "kjærlighetsspørsmål",
+          "original": "love questions",
+          "category": "keywords"
+        },
+        {
+          "term": "parspill",
+          "original": "couple game",
+          "category": "keywords"
+        },
+        {
+          "term": "forhold",
+          "original": "relationship",
+          "category": "keywords"
+        },
+        {
+          "term": "partner",
+          "original": "partner",
+          "category": "keywords"
+        },
+        {
+          "term": "langdistanseforhold",
+          "original": "long distance relationship",
+          "category": "keywords"
+        }
+      ]
+    },
+    "en-ZA": {
+      "selected_keywords": [
+        {
+          "term": "relationship app",
+          "final_score": 27.5,
+          "category": "title"
+        },
+        {
+          "term": "couples app",
+          "final_score": 38.8,
+          "category": "subtitle"
+        },
+        {
+          "term": "long distance relationship",
+          "final_score": 49.7,
+          "category": "keywords"
+        },
+        {
+          "term": "long distance",
+          "final_score": 21.2,
+          "category": "keywords"
+        },
+        {
+          "term": "couple",
+          "original": "couple",
+          "category": "keywords"
+        },
+        {
+          "term": "love",
+          "original": "love",
+          "category": "keywords"
+        },
+        {
+          "term": "couple quiz",
+          "original": "couple quiz",
+          "category": "keywords"
+        },
+        {
+          "term": "couple game",
+          "original": "couple game",
+          "category": "keywords"
+        },
+        {
+          "term": "relationship",
+          "original": "relationship",
+          "category": "keywords"
+        },
+        {
+          "term": "love questions",
+          "original": "love questions",
+          "category": "keywords"
+        },
+        {
+          "term": "spicy questions",
+          "original": "spicy questions",
+          "category": "keywords"
+        },
+        {
+          "term": "partner",
+          "original": "partner",
+          "category": "keywords"
+        }
+      ]
+    },
+    "nl": {
+      "selected_keywords": [
+        {
+          "term": "spicer",
+          "final_score": 30.800000000000004,
+          "category": "title"
+        },
+        {
+          "term": "liefde test",
+          "final_score": 27.3,
+          "category": "subtitle"
+        },
+        {
+          "term": "love tester!",
+          "final_score": 42.45,
+          "category": "keywords"
+        },
+        {
+          "term": "vragen spel",
+          "final_score": 26.700000000000003,
+          "category": "keywords"
+        },
+        {
+          "term": "gottman card decks",
+          "final_score": 12.75,
+          "category": "keywords"
+        },
+        {
+          "term": "couple game",
+          "final_score": 12.900000000000006,
+          "category": "keywords"
+        },
+        {
+          "term": "loquiz",
+          "final_score": 12.050000000000004,
+          "category": "keywords"
+        },
+        {
+          "term": "widgetable",
+          "final_score": 7.600000000000001,
+          "category": "keywords"
+        },
+        {
+          "term": "love counter",
+          "final_score": 3.9000000000000057,
+          "category": "keywords"
+        },
+        {
+          "term": "intimacy",
+          "final_score": 3.7,
+          "category": "keywords"
+        },
+        {
+          "term": "paar",
+          "original": "couple",
+          "category": "keywords"
+        },
+        {
+          "term": "relatie",
+          "original": "relationship",
+          "category": "keywords"
+        }
+      ]
+    },
+    "uk": {
+      "selected_keywords": [
+        {
+          "term": "розмова",
+          "final_score": 32.6,
+          "category": "title"
+        },
+        {
+          "term": "гра для пар",
+          "final_score": 28.75,
+          "category": "subtitle"
+        },
+        {
+          "term": "любов",
+          "final_score": 6.0,
+          "category": "keywords"
+        },
+        {
+          "term": "пара",
+          "original": "couple",
+          "category": "keywords"
+        },
+        {
+          "term": "тест для пар",
+          "original": "couple quiz",
+          "category": "keywords"
+        },
+        {
+          "term": "відносини",
+          "original": "relationship",
+          "category": "keywords"
+        },
+        {
+          "term": "партнер",
+          "original": "partner",
+          "category": "keywords"
+        },
+        {
+          "term": "питання для пар",
+          "original": "couple questions",
+          "category": "keywords"
+        },
+        {
+          "term": "поради щодо відносин",
+          "original": "relationship advice",
+          "category": "keywords"
+        },
+        {
+          "term": "відносини на відстані",
+          "original": "long distance relationship",
+          "category": "keywords"
+        },
+        {
+          "term": "шлюб",
+          "original": "marriage",
+          "category": "keywords"
+        },
+        {
+          "term": "тренер з відносин",
+          "original": "relationship coach",
+          "category": "keywords"
+        }
+      ]
+    }
+  },
+  "play_market": {
+    "de-DE": {
+      "selected_keywords": [
+        {
+          "term": "beziehungsrechner",
+          "final_score": 42.3,
+          "category": "title"
+        },
+        {
+          "term": "love",
+          "final_score": 37.0,
+          "category": "short_description"
+        },
+        {
+          "term": "paar widget",
+          "final_score": 30.65,
+          "category": "description"
+        },
+        {
+          "term": "wer würde eher",
+          "final_score": 29.9,
+          "category": "description"
+        },
+        {
+          "term": "dirty talk",
+          "final_score": 28.3,
+          "category": "description"
+        },
+        {
+          "term": "recoupling",
+          "final_score": 26.3,
+          "category": "description"
+        },
+        {
+          "term": "app für paare",
+          "final_score": 25.56,
+          "category": "description"
+        },
+        {
+          "term": "tageszähler",
+          "final_score": 25.0,
+          "category": "description"
+        },
+        {
+          "term": "paar kalender",
+          "final_score": 23.4,
+          "category": "description"
+        },
+        {
+          "term": "datum zähler",
+          "final_score": 22.9,
+          "category": "description"
+        },
+        {
+          "term": "days since",
+          "final_score": 21.1,
+          "category": "description"
+        },
+        {
+          "term": "liebes spiele",
+          "final_score": 20.35,
+          "category": "description"
+        },
+        {
+          "term": "fragen für paare",
+          "final_score": 20.2,
+          "category": "description"
+        },
+        {
+          "term": "100 questions",
+          "final_score": 19.9,
+          "category": "description"
+        },
+        {
+          "term": "Paar",
+          "original": "couple",
+          "category": "description"
+        },
+        {
+          "term": "Beziehung",
+          "original": "relationship",
+          "category": "description"
+        },
+        {
+          "term": "Partner",
+          "original": "partner",
+          "category": "description"
+        },
+        {
+          "term": "Paarquiz",
+          "original": "couple quiz",
+          "category": "description"
+        },
+        {
+          "term": "Liebesfragen",
+          "original": "love questions",
+          "category": "description"
+        },
+        {
+          "term": "Paarspiel",
+          "original": "couple game",
+          "category": "description"
+        }
+      ]
+    },
+    "en-GB": {
+      "selected_keywords": [
+        {
+          "term": "couple apps",
+          "final_score": 30.7,
+          "category": "title"
+        },
+        {
+          "term": "how long have we been together",
+          "final_score": 23.5,
+          "category": "short_description"
+        },
+        {
+          "term": "long distance",
+          "final_score": 17.8,
+          "category": "short_description"
+        },
+        {
+          "term": "beziehungsrechner",
+          "final_score": 17.25,
+          "category": "description"
+        },
+        {
+          "term": "scratch adventure couple game",
+          "final_score": 16.8,
+          "category": "description"
+        },
+        {
+          "term": "anniversary",
+          "final_score": 16.7,
+          "category": "short_description"
+        },
+        {
+          "term": "naughty",
+          "final_score": 13.3,
+          "category": "description"
+        },
+        {
+          "term": "vibes",
+          "final_score": 11.4,
+          "category": "description"
+        },
+        {
+          "term": "dirty love games for couple",
+          "final_score": 11.15,
+          "category": "description"
+        },
+        {
+          "term": "couple widget",
+          "final_score": 10.5,
+          "category": "description"
+        },
+        {
+          "term": "couple",
+          "original": "couple",
+          "category": "description"
+        },
+        {
+          "term": "love",
+          "original": "love",
+          "category": "description"
+        },
+        {
+          "term": "couple quiz",
+          "original": "couple quiz",
+          "category": "description"
+        },
+        {
+          "term": "relationship",
+          "original": "relationship",
+          "category": "description"
+        },
+        {
+          "term": "partner",
+          "original": "partner",
+          "category": "description"
+        },
+        {
+          "term": "love questions",
+          "original": "love questions",
+          "category": "description"
+        },
+        {
+          "term": "couple game",
+          "original": "couple game",
+          "category": "description"
+        },
+        {
+          "term": "date night game",
+          "original": "date night game",
+          "category": "description"
+        },
+        {
+          "term": "relationship advice",
+          "original": "relationship advice",
+          "category": "description"
+        },
+        {
+          "term": "love test",
+          "original": "love test",
+          "category": "description"
+        }
+      ]
+    },
+    "en-CA": {
+      "selected_keywords": [
+        {
+          "term": "love tracker",
+          "category": "title",
+          "final_score": 46.6
+        },
+        {
+          "term": "pair",
+          "category": "short_description",
+          "final_score": 42.6
+        },
+        {
+          "term": "bond touch",
+          "category": "description",
+          "final_score": 39.85
+        },
+        {
+          "term": "mindsex",
+          "category": "description",
+          "final_score": 35.75
+        },
+        {
+          "term": "couple widget",
+          "category": "description",
+          "final_score": 31.3
+        },
+        {
+          "term": "love messages",
+          "category": "description",
+          "final_score": 29.8
+        },
+        {
+          "term": "love counter",
+          "category": "description",
+          "final_score": 24.3
+        },
+        {
+          "term": "anniversary tracker lovedays",
+          "category": "description",
+          "final_score": 21.05
+        },
+        {
+          "term": "couple",
+          "original": "couple",
+          "category": "description"
+        },
+        {
+          "term": "love",
+          "original": "love",
+          "category": "description"
+        },
+        {
+          "term": "relationship",
+          "original": "relationship",
+          "category": "description"
+        },
+        {
+          "term": "partner",
+          "original": "partner",
+          "category": "description"
+        },
+        {
+          "term": "couple quiz",
+          "original": "couple quiz",
+          "category": "description"
+        },
+        {
+          "term": "couple game",
+          "original": "couple game",
+          "category": "description"
+        },
+        {
+          "term": "love questions",
+          "original": "love questions",
+          "category": "description"
+        },
+        {
+          "term": "spicy questions",
+          "original": "spicy questions",
+          "category": "description"
+        },
+        {
+          "term": "relationship advice",
+          "original": "relationship advice",
+          "category": "description"
+        },
+        {
+          "term": "long distance relationship",
+          "original": "long distance relationship",
+          "category": "description"
+        },
+        {
+          "term": "date night game",
+          "original": "date night game",
+          "category": "description"
+        },
+        {
+          "term": "adult questions",
+          "original": "adult questions",
+          "category": "description"
+        }
+      ]
+    },
+    "pt-BR": {
+      "selected_keywords": [
+        {
+          "term": "relationship games for couples",
+          "final_score": 52.8,
+          "category": "title"
+        },
+        {
+          "term": "casal",
+          "final_score": 52.32,
+          "category": "title"
+        },
+        {
+          "term": "widget casal",
+          "final_score": 51.7,
+          "category": "short_description"
+        },
+        {
+          "term": "verdade ou desafio",
+          "final_score": 44.25,
+          "category": "short_description"
+        },
+        {
+          "term": "jogos casal",
+          "final_score": 43.2,
+          "category": "short_description"
+        },
+        {
+          "term": "desafios picantes",
+          "final_score": 39.9,
+          "category": "short_description"
+        },
+        {
+          "term": "gottman card decks",
+          "final_score": 43.5,
+          "category": "description"
+        },
+        {
+          "term": "aniversario",
+          "final_score": 42.05,
+          "category": "description"
+        },
+        {
+          "term": "taboo",
+          "final_score": 39.3,
+          "category": "description"
+        },
+        {
+          "term": "widgetable",
+          "final_score": 37.9,
+          "category": "description"
+        },
+        {
+          "term": "jogo de casal",
+          "final_score": 36.6,
+          "category": "description"
+        },
+        {
+          "term": "jogos eróticos",
+          "final_score": 36.0,
+          "category": "description"
+        },
+        {
+          "term": "relacionamento",
+          "final_score": 35.2,
+          "category": "description"
+        },
+        {
+          "term": "posições",
+          "final_score": 35.2,
+          "category": "description"
+        },
+        {
+          "term": "coração",
+          "final_score": 33.9,
+          "category": "description"
+        },
+        {
+          "term": "casais",
+          "final_score": 30.9,
+          "category": "description"
+        },
+        {
+          "term": "amor",
+          "original": "love",
+          "category": "description"
+        },
+        {
+          "term": "parceiro",
+          "original": "partner",
+          "category": "description"
+        },
+        {
+          "term": "quiz para casais",
+          "original": "couple quiz",
+          "category": "description"
+        },
+        {
+          "term": "teste de amor",
+          "original": "love test",
+          "category": "description"
+        }
+      ]
+    },
+    "pt-PT": {
+      "selected_keywords": [
+        {
+          "term": "widget casal",
+          "final_score": 35.8,
+          "category": "title"
+        },
+        {
+          "term": "how long have we been together",
+          "final_score": 32.5,
+          "category": "title"
+        },
+        {
+          "term": "amor",
+          "final_score": 25.5,
+          "category": "title"
+        },
+        {
+          "term": "anniversary tracker",
+          "final_score": 21.4,
+          "category": "short_description"
+        },
+        {
+          "term": "quiz",
+          "final_score": 18.2,
+          "category": "short_description"
+        },
+        {
+          "term": "love app",
+          "final_score": 8.3,
+          "category": "short_description"
+        },
+        {
+          "term": "casal",
+          "original": "couple",
+          "category": "description"
+        },
+        {
+          "term": "relacionamento",
+          "original": "relationship",
+          "category": "description"
+        },
+        {
+          "term": "parceiro",
+          "original": "partner",
+          "category": "description"
+        },
+        {
+          "term": "quiz de casal",
+          "original": "couple quiz",
+          "category": "description"
+        },
+        {
+          "term": "perguntas de amor",
+          "original": "love questions",
+          "category": "description"
+        },
+        {
+          "term": "jogo de casal",
+          "original": "couple game",
+          "category": "description"
+        },
+        {
+          "term": "relacionamento à distância",
+          "original": "long distance relationship",
+          "category": "description"
+        },
+        {
+          "term": "teste de amor",
+          "original": "love test",
+          "category": "description"
+        },
+        {
+          "term": "perguntas picantes",
+          "original": "spicy questions",
+          "category": "description"
+        },
+        {
+          "term": "conselhos de relacionamento",
+          "original": "relationship advice",
+          "category": "description"
+        },
+        {
+          "term": "perguntas para adultos",
+          "original": "adult questions",
+          "category": "description"
+        },
+        {
+          "term": "perguntas",
+          "original": "questions",
+          "category": "description"
+        },
+        {
+          "term": "coach de relacionamento",
+          "original": "relationship coach",
+          "category": "description"
+        },
+        {
+          "term": "jogo para casais à distância",
+          "original": "long distance game",
+          "category": "description"
+        }
+      ]
+    },
+    "uk": {
+      "selected_keywords": [
+        {
+          "term": "любов",
+          "final_score": 30.85,
+          "category": "title"
+        },
+        {
+          "term": "ігри для пар",
+          "final_score": 27.3,
+          "category": "short_description"
+        },
+        {
+          "term": "гра для пар",
+          "final_score": 21.0,
+          "category": "short_description"
+        },
+        {
+          "term": "пара",
+          "original": "couple",
+          "category": "description"
+        },
+        {
+          "term": "вікторина для пар",
+          "original": "couple quiz",
+          "category": "description"
+        },
+        {
+          "term": "питання про любов",
+          "original": "love questions",
+          "category": "description"
+        },
+        {
+          "term": "стосунки",
+          "original": "relationship",
+          "category": "description"
+        },
+        {
+          "term": "партнер",
+          "original": "partner",
+          "category": "description"
+        },
+        {
+          "term": "відносини на відстані",
+          "original": "long distance relationship",
+          "category": "description"
+        },
+        {
+          "term": "тест на любов",
+          "original": "love test",
+          "category": "description"
+        },
+        {
+          "term": "питання для дорослих",
+          "original": "adult questions",
+          "category": "description"
+        },
+        {
+          "term": "поради щодо стосунків",
+          "original": "relationship advice",
+          "category": "description"
+        },
+        {
+          "term": "спайсі питання",
+          "original": "spicy questions",
+          "category": "description"
+        },
+        {
+          "term": "тренер зі стосунків",
+          "original": "relationship coach",
+          "category": "description"
+        },
+        {
+          "term": "гра на відстані",
+          "original": "long distance game",
+          "category": "description"
+        },
+        {
+          "term": "трекер стосунків",
+          "original": "relationship tracker",
+          "category": "description"
+        },
+        {
+          "term": "курс любові",
+          "original": "love course",
+          "category": "description"
+        },
+        {
+          "term": "любовна терапія",
+          "original": "love therapy",
+          "category": "description"
+        },
+        {
+          "term": "шлюб",
+          "original": "marriage",
+          "category": "description"
+        },
+        {
+          "term": "терапія для пар",
+          "original": "couple therapy",
+          "category": "description"
+        }
+      ]
+    },
+    "no-NO": {
+      "selected_keywords": [
+        {
+          "term": "sex-positions",
+          "final_score": 36.3,
+          "category": "title"
+        },
+        {
+          "term": "test love",
+          "final_score": 24.4,
+          "category": "short_description"
+        },
+        {
+          "term": "my love app",
+          "final_score": 31.85,
+          "category": "description"
+        },
+        {
+          "term": "sexy game for couples: dirty",
+          "final_score": 12.0,
+          "category": "description"
+        },
+        {
+          "term": "therapie",
+          "final_score": 11.15,
+          "category": "description"
+        },
+        {
+          "term": "mylove",
+          "final_score": 11.1,
+          "category": "description"
+        },
+        {
+          "term": "love emoji",
+          "final_score": 6.3,
+          "category": "description"
+        },
+        {
+          "term": "is it love",
+          "final_score": 4.9,
+          "category": "description"
+        },
+        {
+          "term": "weconnect",
+          "final_score": 2.1,
+          "category": "description"
+        },
+        {
+          "term": "flirten",
+          "final_score": 1.3,
+          "category": "description"
+        },
+        {
+          "term": "par",
+          "original": "couple",
+          "category": "description"
+        },
+        {
+          "term": "kjærlighet",
+          "original": "love",
+          "category": "description"
+        },
+        {
+          "term": "parquiz",
+          "original": "couple quiz",
+          "category": "description"
+        },
+        {
+          "term": "kjærlighetsspørsmål",
+          "original": "love questions",
+          "category": "description"
+        },
+        {
+          "term": "parspill",
+          "original": "couple game",
+          "category": "description"
+        },
+        {
+          "term": "forhold",
+          "original": "relationship",
+          "category": "description"
+        },
+        {
+          "term": "partner",
+          "original": "partner",
+          "category": "description"
+        },
+        {
+          "term": "kjærlighetsteller",
+          "original": "love counter",
+          "category": "description"
+        },
+        {
+          "term": "langdistanseforhold",
+          "original": "long distance relationship",
+          "category": "description"
+        },
+        {
+          "term": "kjærlighetstest",
+          "original": "love test",
+          "category": "description"
+        }
+      ]
+    },
+    "en-ZA": {
+      "selected_keywords": [
+        {
+          "term": "relationship app",
+          "final_score": 33.8,
+          "category": "title"
+        },
+        {
+          "term": "partner apps",
+          "final_score": 26.9,
+          "category": "short_description"
+        },
+        {
+          "term": "couples app",
+          "final_score": 23.4,
+          "category": "short_description"
+        },
+        {
+          "term": "long distance",
+          "final_score": 7.4,
+          "category": "description"
+        },
+        {
+          "term": "couple",
+          "original": "couple",
+          "category": "description"
+        },
+        {
+          "term": "love",
+          "original": "love",
+          "category": "description"
+        },
+        {
+          "term": "couple quiz",
+          "original": "couple quiz",
+          "category": "description"
+        },
+        {
+          "term": "love questions",
+          "original": "love questions",
+          "category": "description"
+        },
+        {
+          "term": "couple game",
+          "original": "couple game",
+          "category": "description"
+        },
+        {
+          "term": "relationship",
+          "original": "relationship",
+          "category": "description"
+        },
+        {
+          "term": "partner",
+          "original": "partner",
+          "category": "description"
+        },
+        {
+          "term": "long distance relationship",
+          "original": "long distance relationship",
+          "category": "description"
+        },
+        {
+          "term": "date night game",
+          "original": "date night game",
+          "category": "description"
+        },
+        {
+          "term": "love test",
+          "original": "love test",
+          "category": "description"
+        },
+        {
+          "term": "adult questions",
+          "original": "adult questions",
+          "category": "description"
+        },
+        {
+          "term": "questions",
+          "original": "questions",
+          "category": "description"
+        },
+        {
+          "term": "relationship advice",
+          "original": "relationship advice",
+          "category": "description"
+        },
+        {
+          "term": "spicy questions",
+          "original": "spicy questions",
+          "category": "description"
+        },
+        {
+          "term": "relationship coach",
+          "original": "relationship coach",
+          "category": "description"
+        },
+        {
+          "term": "couple questions",
+          "original": "couple questions",
+          "category": "description"
+        }
+      ]
+    },
+    "en-AU": {
+      "selected_keywords": [
+        {
+          "term": "couple games",
+          "final_score": 32.88,
+          "category": "title"
+        },
+        {
+          "term": "love app",
+          "final_score": 29.3,
+          "category": "short_description"
+        },
+        {
+          "term": "kissing",
+          "final_score": 27.6,
+          "category": "short_description"
+        },
+        {
+          "term": "lovewick relationship",
+          "final_score": 48.0,
+          "category": "description"
+        },
+        {
+          "term": "paired",
+          "final_score": 37.9,
+          "category": "description"
+        },
+        {
+          "term": "appy couple wedding app",
+          "final_score": 34.1,
+          "category": "description"
+        },
+        {
+          "term": "karma sutra",
+          "final_score": 26.75,
+          "category": "description"
+        },
+        {
+          "term": "dirty games",
+          "final_score": 25.9,
+          "category": "description"
+        },
+        {
+          "term": "anniversary tracker",
+          "final_score": 25.85,
+          "category": "description"
+        },
+        {
+          "term": "yes or no questions game",
+          "final_score": 22.9,
+          "category": "description"
+        },
+        {
+          "term": "cute couple apps",
+          "final_score": 21.8,
+          "category": "description"
+        },
+        {
+          "term": "couple",
+          "original": "couple",
+          "category": "description"
+        },
+        {
+          "term": "love",
+          "original": "love",
+          "category": "description"
+        },
+        {
+          "term": "relationship",
+          "original": "relationship",
+          "category": "description"
+        },
+        {
+          "term": "partner",
+          "original": "partner",
+          "category": "description"
+        },
+        {
+          "term": "couple quiz",
+          "original": "couple quiz",
+          "category": "description"
+        },
+        {
+          "term": "couple game",
+          "original": "couple game",
+          "category": "description"
+        },
+        {
+          "term": "love questions",
+          "original": "love questions",
+          "category": "description"
+        },
+        {
+          "term": "love counter",
+          "original": "love counter",
+          "category": "description"
+        },
+        {
+          "term": "long distance relationship",
+          "original": "long distance relationship",
+          "category": "description"
+        }
+      ]
+    },
+    "en-IN": {
+      "selected_keywords": [
+        {
+          "term": "matrimony",
+          "final_score": 31.7,
+          "category": "title"
+        },
+        {
+          "term": "long distance game for couples",
+          "final_score": 14.04,
+          "category": "short_description"
+        },
+        {
+          "term": "beziehungsapp",
+          "final_score": 50.4,
+          "category": "description"
+        },
+        {
+          "term": "official the relationship app",
+          "final_score": 12.4,
+          "category": "description"
+        },
+        {
+          "term": "relationship advice",
+          "final_score": 9.6,
+          "category": "description"
+        },
+        {
+          "term": "the relationship app",
+          "final_score": 1.85,
+          "category": "description"
+        },
+        {
+          "term": "couple",
+          "original": "couple",
+          "category": "description"
+        },
+        {
+          "term": "love",
+          "original": "love",
+          "category": "description"
+        },
+        {
+          "term": "couple quiz",
+          "original": "couple quiz",
+          "category": "description"
+        },
+        {
+          "term": "love questions",
+          "original": "love questions",
+          "category": "description"
+        },
+        {
+          "term": "couple game",
+          "original": "couple game",
+          "category": "description"
+        },
+        {
+          "term": "relationship",
+          "original": "relationship",
+          "category": "description"
+        },
+        {
+          "term": "partner",
+          "original": "partner",
+          "category": "description"
+        },
+        {
+          "term": "long distance relationship",
+          "original": "long distance relationship",
+          "category": "description"
+        },
+        {
+          "term": "date night game",
+          "original": "date night game",
+          "category": "description"
+        },
+        {
+          "term": "love test",
+          "original": "love test",
+          "category": "description"
+        },
+        {
+          "term": "adult questions",
+          "original": "adult questions",
+          "category": "description"
+        },
+        {
+          "term": "spicy questions",
+          "original": "spicy questions",
+          "category": "description"
+        },
+        {
+          "term": "relationship coach",
+          "original": "relationship coach",
+          "category": "description"
+        },
+        {
+          "term": "couple questions",
+          "original": "couple questions",
+          "category": "description"
+        }
+      ]
+    },
+    "es-US": {
+      "selected_keywords": [
+        {
+          "term": "love tracker",
+          "final_score": 61.05,
+          "category": "title"
+        },
+        {
+          "term": "crush test",
+          "final_score": 38.5,
+          "category": "title"
+        },
+        {
+          "term": "couple apps",
+          "final_score": 38.0,
+          "category": "title"
+        },
+        {
+          "term": "juegos para parejas",
+          "final_score": 44.16,
+          "category": "short_description"
+        },
+        {
+          "term": "couple games",
+          "final_score": 35.4,
+          "category": "short_description"
+        },
+        {
+          "term": "how long have we been together",
+          "final_score": 34.6,
+          "category": "description"
+        },
+        {
+          "term": "love spouse",
+          "final_score": 34.4,
+          "category": "description"
+        },
+        {
+          "term": "wedding games",
+          "final_score": 32.5,
+          "category": "description"
+        },
+        {
+          "term": "conversation starters:",
+          "final_score": 30.0,
+          "category": "description"
+        },
+        {
+          "term": "dating tracker",
+          "final_score": 29.25,
+          "category": "description"
+        },
+        {
+          "term": "pareja",
+          "original": "couple",
+          "category": "description"
+        },
+        {
+          "term": "amor",
+          "original": "love",
+          "category": "description"
+        },
+        {
+          "term": "cuestionario para parejas",
+          "original": "couple quiz",
+          "category": "description"
+        },
+        {
+          "term": "preguntas de amor",
+          "original": "love questions",
+          "category": "description"
+        },
+        {
+          "term": "relación",
+          "original": "relationship",
+          "category": "description"
+        },
+        {
+          "term": "relación a distancia",
+          "original": "long distance relationship",
+          "category": "description"
+        },
+        {
+          "term": "juego para noches de cita",
+          "original": "date night game",
+          "category": "description"
+        },
+        {
+          "term": "test de amor",
+          "original": "love test",
+          "category": "description"
+        },
+        {
+          "term": "preguntas para adultos",
+          "original": "adult questions",
+          "category": "description"
+        },
+        {
+          "term": "contador de amor",
+          "original": "love counter",
+          "category": "description"
+        }
+      ]
+    },
+    "es-ES": {
+      "selected_keywords": [
+        {
+          "term": "therapychat",
+          "final_score": 45.45,
+          "category": "title"
+        },
+        {
+          "term": "couple app",
+          "final_score": 7.8,
+          "category": "short_description"
+        },
+        {
+          "term": "play memories",
+          "final_score": 6.6,
+          "category": "description"
+        },
+        {
+          "term": "couple widget",
+          "final_score": 1.95,
+          "category": "description"
+        },
+        {
+          "term": "pareja",
+          "original": "couple",
+          "category": "description"
+        },
+        {
+          "term": "amor",
+          "original": "love",
+          "category": "description"
+        },
+        {
+          "term": "cuestionario para parejas",
+          "original": "couple quiz",
+          "category": "description"
+        },
+        {
+          "term": "preguntas de amor",
+          "original": "love questions",
+          "category": "description"
+        },
+        {
+          "term": "juego en pareja",
+          "original": "couple game",
+          "category": "description"
+        },
+        {
+          "term": "relación",
+          "original": "relationship",
+          "category": "description"
+        },
+        {
+          "term": "relación a distancia",
+          "original": "long distance relationship",
+          "category": "description"
+        },
+        {
+          "term": "juego para citas",
+          "original": "date night game",
+          "category": "description"
+        },
+        {
+          "term": "test de amor",
+          "original": "love test",
+          "category": "description"
+        },
+        {
+          "term": "preguntas para adultos",
+          "original": "adult questions",
+          "category": "description"
+        },
+        {
+          "term": "preguntas",
+          "original": "questions",
+          "category": "description"
+        },
+        {
+          "term": "consejos de relación",
+          "original": "relationship advice",
+          "category": "description"
+        },
+        {
+          "term": "preguntas picantes",
+          "original": "spicy questions",
+          "category": "description"
+        },
+        {
+          "term": "coach de relaciones",
+          "original": "relationship coach",
+          "category": "description"
+        }
+      ]
+    },
+    "id": {
+      "selected_keywords": [
+        {
+          "term": "curhat",
+          "final_score": 32.9,
+          "category": "title"
+        },
+        {
+          "term": "kuis",
+          "final_score": 17.95,
+          "category": "title"
+        },
+        {
+          "term": "partner app",
+          "final_score": 25.7,
+          "category": "short_description"
+        },
+        {
+          "term": "counseling",
+          "final_score": 14.3,
+          "category": "short_description"
+        },
+        {
+          "term": "love",
+          "final_score": 16.5,
+          "category": "description"
+        },
+        {
+          "term": "love nudge",
+          "final_score": 13.5,
+          "category": "description"
+        },
+        {
+          "term": "couple game",
+          "final_score": 11.15,
+          "category": "description"
+        },
+        {
+          "term": "pocket love",
+          "final_score": 10.0,
+          "category": "description"
+        },
+        {
+          "term": "soulmates",
+          "final_score": 8.9,
+          "category": "description"
+        },
+        {
+          "term": "distance tracker",
+          "final_score": 8.1,
+          "category": "description"
+        },
+        {
+          "term": "pasangan",
+          "original": "couple",
+          "category": "description"
+        },
+        {
+          "term": "hubungan",
+          "original": "relationship",
+          "category": "description"
+        },
+        {
+          "term": "kuis pasangan",
+          "original": "couple quiz",
+          "category": "description"
+        },
+        {
+          "term": "pertanyaan cinta",
+          "original": "love questions",
+          "category": "description"
+        },
+        {
+          "term": "hubungan jarak jauh",
+          "original": "long distance relationship",
+          "category": "description"
+        },
+        {
+          "term": "permainan malam kencan",
+          "original": "date night game",
+          "category": "description"
+        },
+        {
+          "term": "pertanyaan dewasa",
+          "original": "adult questions",
+          "category": "description"
+        },
+        {
+          "term": "permainan untuk pasangan",
+          "original": "partner games",
+          "category": "description"
+        },
+        {
+          "term": "penghitung cinta",
+          "original": "love counter",
+          "category": "description"
+        }
+      ]
+    },
+    "pl-PL": {
+      "selected_keywords": [
+        {
+          "term": "gra dla par",
+          "final_score": 35.925000000000004,
+          "category": "title"
+        },
+        {
+          "term": "para",
+          "original": "couple",
+          "category": "description"
+        },
+        {
+          "term": "miłość",
+          "original": "love",
+          "category": "description"
+        },
+        {
+          "term": "quiz dla par",
+          "original": "couple quiz",
+          "category": "description"
+        },
+        {
+          "term": "pytania miłosne",
+          "original": "love questions",
+          "category": "description"
+        },
+        {
+          "term": "związek",
+          "original": "relationship",
+          "category": "description"
+        },
+        {
+          "term": "partner",
+          "original": "partner",
+          "category": "description"
+        },
+        {
+          "term": "związek na odległość",
+          "original": "long distance relationship",
+          "category": "description"
+        },
+        {
+          "term": "test miłości",
+          "original": "love test",
+          "category": "description"
+        },
+        {
+          "term": "pytania dla dorosłych",
+          "original": "adult questions",
+          "category": "description"
+        },
+        {
+          "term": "pytania",
+          "original": "questions",
+          "category": "description"
+        },
+        {
+          "term": "porady związkowe",
+          "original": "relationship advice",
+          "category": "description"
+        },
+        {
+          "term": "pikantne pytania",
+          "original": "spicy questions",
+          "category": "description"
+        },
+        {
+          "term": "pytania dla par",
+          "original": "couple questions",
+          "category": "description"
+        },
+        {
+          "term": "śledzenie związku",
+          "original": "relationship tracker",
+          "category": "description"
+        },
+        {
+          "term": "relacje",
+          "original": "relationships",
+          "category": "description"
+        },
+        {
+          "term": "gra na randkę",
+          "original": "date night game",
+          "category": "description"
+        }
+      ]
+    },
+    "es-419": {
+      "selected_keywords": [
+        {
+          "term": "amor",
+          "final_score": 46.9,
+          "category": "title"
+        },
+        {
+          "term": "lasting marriage couples",
+          "final_score": 43.5,
+          "category": "title"
+        },
+        {
+          "term": "corazon",
+          "final_score": 39.9,
+          "category": "short_description"
+        },
+        {
+          "term": "locket",
+          "final_score": 29.4,
+          "category": "short_description"
+        },
+        {
+          "term": "online therapy",
+          "final_score": 25.85,
+          "category": "short_description"
+        },
+        {
+          "term": "deseos",
+          "final_score": 25.15,
+          "category": "short_description"
+        },
+        {
+          "term": "partner app",
+          "final_score": 21.55,
+          "category": "short_description"
+        },
+        {
+          "term": "preguntas picantes",
+          "final_score": 19.4,
+          "category": "short_description"
+        },
+        {
+          "term": "date night game",
+          "final_score": 19.2,
+          "category": "short_description"
+        },
+        {
+          "term": "boyfriend games",
+          "final_score": 17.2,
+          "category": "short_description"
+        },
+        {
+          "term": "paired couples relationship",
+          "final_score": 42.6,
+          "category": "description"
+        },
+        {
+          "term": "beziehungsapp",
+          "final_score": 38.8,
+          "category": "description"
+        },
+        {
+          "term": "paired relationship couples",
+          "final_score": 35.35,
+          "category": "description"
+        },
+        {
+          "term": "beziehungsrechner",
+          "final_score": 19.7,
+          "category": "description"
+        },
+        {
+          "term": "pareja",
+          "original": "couple",
+          "category": "description"
+        },
+        {
+          "term": "relación",
+          "original": "relationship",
+          "category": "description"
+        },
+        {
+          "term": "quiz de pareja",
+          "original": "couple quiz",
+          "category": "description"
+        },
+        {
+          "term": "preguntas para adultos",
+          "original": "adult questions",
+          "category": "description"
+        },
+        {
+          "term": "consejos de relación",
+          "original": "relationship advice",
+          "category": "description"
+        },
+        {
+          "term": "prueba de amor",
+          "original": "love test",
+          "category": "description"
+        }
+      ]
+    },
+    "it-IT": {
+      "selected_keywords": [
+        {
+          "term": "test love",
+          "final_score": 34.0,
+          "category": "title"
+        },
+        {
+          "term": "love calculator test amore",
+          "final_score": 28.9,
+          "category": "title"
+        },
+        {
+          "term": "therapy chat",
+          "final_score": 24.05,
+          "category": "short_description"
+        },
+        {
+          "term": "psicologia",
+          "final_score": 23.1,
+          "category": "short_description"
+        },
+        {
+          "term": "amore",
+          "final_score": 22.7,
+          "category": "description"
+        },
+        {
+          "term": "giochi erotici",
+          "final_score": 19.4,
+          "category": "description"
+        },
+        {
+          "term": "indovina chi",
+          "final_score": 18.95,
+          "category": "description"
+        },
+        {
+          "term": "quiz app",
+          "final_score": 14.6,
+          "category": "description"
+        },
+        {
+          "term": "paired",
+          "final_score": 27.9,
+          "category": "description"
+        },
+        {
+          "term": "agapé couples relationship",
+          "final_score": 19.9,
+          "category": "description"
+        },
+        {
+          "term": "agapé app for couples",
+          "final_score": 16.6,
+          "category": "description"
+        },
+        {
+          "term": "coppia",
+          "original": "couple",
+          "category": "description"
+        },
+        {
+          "term": "quiz per coppie",
+          "original": "couple quiz",
+          "category": "description"
+        },
+        {
+          "term": "relazione",
+          "original": "relationship",
+          "category": "description"
+        },
+        {
+          "term": "relazione a distanza",
+          "original": "long distance relationship",
+          "category": "description"
+        },
+        {
+          "term": "domande d'amore",
+          "original": "love questions",
+          "category": "description"
+        }
+      ]
+    },
+    "fr-FR": {
+      "selected_keywords": [
+        {
+          "term": "action ou vérité",
+          "final_score": 40.0,
+          "category": "title"
+        },
+        {
+          "term": "compatibilité amoureuse",
+          "final_score": 29.9,
+          "category": "title"
+        },
+        {
+          "term": "anniversaire",
+          "final_score": 26.5,
+          "category": "short_description"
+        },
+        {
+          "term": "love calculator",
+          "final_score": 10.7,
+          "category": "short_description"
+        },
+        {
+          "term": "widgetshare",
+          "final_score": 46.45,
+          "category": "description"
+        },
+        {
+          "term": "widgetable",
+          "final_score": 30.45,
+          "category": "description"
+        },
+        {
+          "term": "bliss stories",
+          "final_score": 27.8,
+          "category": "description"
+        },
+        {
+          "term": "wiget",
+          "final_score": 21.45,
+          "category": "description"
+        },
+        {
+          "term": "amor",
+          "final_score": 19.9,
+          "category": "description"
+        },
+        {
+          "term": "loveit",
+          "final_score": 16.7,
+          "category": "description"
+        },
+        {
+          "term": "couple widget been together",
+          "final_score": 9.5,
+          "category": "description"
+        },
+        {
+          "term": "couple",
+          "original": "couple",
+          "category": "description"
+        },
+        {
+          "term": "quiz couple",
+          "original": "couple quiz",
+          "category": "description"
+        },
+        {
+          "term": "questions d'amour",
+          "original": "love questions",
+          "category": "description"
+        },
+        {
+          "term": "relation",
+          "original": "relationship",
+          "category": "description"
+        },
+        {
+          "term": "partenaire",
+          "original": "partner",
+          "category": "description"
+        },
+        {
+          "term": "relation à distance",
+          "original": "long distance relationship",
+          "category": "description"
+        },
+        {
+          "term": "test d'amour",
+          "original": "love test",
+          "category": "description"
+        },
+        {
+          "term": "questions pour adultes",
+          "original": "adult questions",
+          "category": "description"
+        },
+        {
+          "term": "jeux pour partenaire",
+          "original": "partner games",
+          "category": "description"
+        }
+      ]
+    },
+    "fr-CA": {
+      "selected_keywords": [
+        {
+          "term": "love tracker",
+          "final_score": 51.85,
+          "category": "title"
+        },
+        {
+          "term": "calendrier partagé",
+          "final_score": 41.4,
+          "category": "short_description"
+        },
+        {
+          "term": "bond touch",
+          "final_score": 40.6,
+          "category": "description"
+        },
+        {
+          "term": "pair",
+          "final_score": 38.1,
+          "category": "description"
+        },
+        {
+          "term": "mindsex",
+          "final_score": 36.5,
+          "category": "description"
+        },
+        {
+          "term": "love messages",
+          "final_score": 35.8,
+          "category": "description"
+        },
+        {
+          "term": "couple widget",
+          "final_score": 31.3,
+          "category": "description"
+        },
+        {
+          "term": "truth or drink",
+          "final_score": 29.8,
+          "category": "description"
+        },
+        {
+          "term": "totwoo",
+          "final_score": 29.7,
+          "category": "description"
+        },
+        {
+          "term": "couple",
+          "original": "couple",
+          "category": "description"
+        },
+        {
+          "term": "amour",
+          "original": "love",
+          "category": "description"
+        },
+        {
+          "term": "quiz pour couples",
+          "original": "couple quiz",
+          "category": "description"
+        },
+        {
+          "term": "questions d'amour",
+          "original": "love questions",
+          "category": "description"
+        },
+        {
+          "term": "jeu pour couples",
+          "original": "couple game",
+          "category": "description"
+        },
+        {
+          "term": "relation",
+          "original": "relationship",
+          "category": "description"
+        },
+        {
+          "term": "partenaire",
+          "original": "partner",
+          "category": "description"
+        },
+        {
+          "term": "relation à distance",
+          "original": "long distance relationship",
+          "category": "description"
+        },
+        {
+          "term": "test d'amour",
+          "original": "love test",
+          "category": "description"
+        },
+        {
+          "term": "questions pour adultes",
+          "original": "adult questions",
+          "category": "description"
+        },
+        {
+          "term": "conseils de relation",
+          "original": "relationship advice",
+          "category": "description"
+        }
+      ]
+    },
+    "en-US": {
+      "selected_keywords": [
+        {
+          "term": "love tracker",
+          "final_score": 58.8,
+          "category": "title"
+        },
+        {
+          "term": "couple apps",
+          "final_score": 36.5,
+          "category": "short_description"
+        },
+        {
+          "term": "couple games",
+          "final_score": 35.4,
+          "category": "short_description"
+        },
+        {
+          "term": "couple joy",
+          "final_score": 44.2,
+          "category": "description"
+        },
+        {
+          "term": "agapé couples relationship",
+          "final_score": 39.75,
+          "category": "description"
+        },
+        {
+          "term": "how long have we been together",
+          "final_score": 36.1,
+          "category": "description"
+        },
+        {
+          "term": "love spouse",
+          "final_score": 33.65,
+          "category": "description"
+        },
+        {
+          "term": "wedding games",
+          "final_score": 31.0,
+          "category": "description"
+        },
+        {
+          "term": "conversation starters:",
+          "final_score": 30.0,
+          "category": "description"
+        },
+        {
+          "term": "love counter",
+          "final_score": 28.7,
+          "category": "description"
+        },
+        {
+          "term": "\t‌تَقَوِيم",
+          "final_score": 27.7,
+          "category": "description"
+        },
+        {
+          "term": "gottman card decks",
+          "final_score": 27.1,
+          "category": "description"
+        },
+        {
+          "term": "the and relationship card game",
+          "final_score": 26.45,
+          "category": "description"
+        },
+        {
+          "term": "couple",
+          "original": "couple",
+          "category": "description"
+        },
+        {
+          "term": "relationship",
+          "original": "relationship",
+          "category": "description"
+        },
+        {
+          "term": "partner",
+          "original": "partner",
+          "category": "description"
+        },
+        {
+          "term": "couple quiz",
+          "original": "couple quiz",
+          "category": "description"
+        },
+        {
+          "term": "love questions",
+          "original": "love questions",
+          "category": "description"
+        },
+        {
+          "term": "long distance relationship",
+          "original": "long distance relationship",
+          "category": "description"
+        },
+        {
+          "term": "partner games",
+          "original": "partner games",
+          "category": "description"
+        }
+      ]
+    },
+    "nl-NL": {
+      "selected_keywords": [
+        {
+          "term": "spicer",
+          "final_score": 53.3,
+          "category": "title"
+        },
+        {
+          "term": "love counter",
+          "final_score": 38.3,
+          "category": "title"
+        },
+        {
+          "term": "vragen spel",
+          "final_score": 38.6,
+          "category": "short_description"
+        },
+        {
+          "term": "intimacy",
+          "final_score": 12.2,
+          "category": "short_description"
+        },
+        {
+          "term": "erotic",
+          "final_score": 9.2,
+          "category": "short_description"
+        },
+        {
+          "term": "love tester!",
+          "final_score": 57.2,
+          "category": "description"
+        },
+        {
+          "term": "koppel",
+          "original": "couple",
+          "category": "description"
+        },
+        {
+          "term": "liefde",
+          "original": "love",
+          "category": "description"
+        },
+        {
+          "term": "koppelquiz",
+          "original": "couple quiz",
+          "category": "description"
+        },
+        {
+          "term": "liefdesvragen",
+          "original": "love questions",
+          "category": "description"
+        },
+        {
+          "term": "koppelspel",
+          "original": "couple game",
+          "category": "description"
+        },
+        {
+          "term": "relatie",
+          "original": "relationship",
+          "category": "description"
+        },
+        {
+          "term": "partner",
+          "original": "partner",
+          "category": "description"
+        },
+        {
+          "term": "langeafstandsrelatie",
+          "original": "long distance relationship",
+          "category": "description"
+        },
+        {
+          "term": "date night spel",
+          "original": "date night game",
+          "category": "description"
+        },
+        {
+          "term": "volwassen vragen",
+          "original": "adult questions",
+          "category": "description"
+        },
+        {
+          "term": "partner spellen",
+          "original": "partner games",
+          "category": "description"
+        },
+        {
+          "term": "deckman kaarten",
+          "original": "deckman cards",
+          "category": "description"
+        }
+      ]
+    },
+    "zh-TW": {
+      "selected_keywords": [
+        {
+          "term": "雙人遊戲",
+          "final_score": 73.6,
+          "category": "title"
+        },
+        {
+          "term": "真心話大冒險",
+          "final_score": 52.3,
+          "category": "short_description"
+        },
+        {
+          "term": "情侶",
+          "original": "couple",
+          "category": "description"
+        },
+        {
+          "term": "愛情",
+          "original": "love",
+          "category": "description"
+        },
+        {
+          "term": "情侶測驗",
+          "original": "couple quiz",
+          "category": "description"
+        },
+        {
+          "term": "愛情問題",
+          "original": "love questions",
+          "category": "description"
+        },
+        {
+          "term": "情侶遊戲",
+          "original": "couple game",
+          "category": "description"
+        },
+        {
+          "term": "關係",
+          "original": "relationship",
+          "category": "description"
+        },
+        {
+          "term": "伴侶",
+          "original": "partner",
+          "category": "description"
+        },
+        {
+          "term": "遠距離戀愛",
+          "original": "long distance relationship",
+          "category": "description"
+        },
+        {
+          "term": "約會夜遊戲",
+          "original": "date night game",
+          "category": "description"
+        },
+        {
+          "term": "愛情測試",
+          "original": "love test",
+          "category": "description"
+        },
+        {
+          "term": "成人問題",
+          "original": "adult questions",
+          "category": "description"
+        },
+        {
+          "term": "伴侶遊戲",
+          "original": "partner games",
+          "category": "description"
+        },
+        {
+          "term": "問題",
+          "original": "questions",
+          "category": "description"
+        },
+        {
+          "term": "情感建議",
+          "original": "relationship advice",
+          "category": "description"
+        },
+        {
+          "term": "刺激問題",
+          "original": "spicy questions",
+          "category": "description"
+        },
+        {
+          "term": "情感指導",
+          "original": "relationship coach",
+          "category": "description"
+        },
+        {
+          "term": "婚姻卡牌遊戲",
+          "original": "marriage card game",
+          "category": "description"
+        },
+        {
+          "term": "情侶問題",
+          "original": "couple questions",
+          "category": "description"
+        }
+      ]
+    },
+    "fil": {
+      "selected_keywords": [
+        {
+          "term": "date game",
+          "final_score": 27.15,
+          "category": "title"
+        },
+        {
+          "term": "guess the person",
+          "final_score": 16.3,
+          "category": "short_description"
+        },
+        {
+          "term": "mood tracker",
+          "final_score": 11.5,
+          "category": "short_description"
+        },
+        {
+          "term": "magkasintahan",
+          "original": "couple",
+          "category": "description"
+        },
+        {
+          "term": "quiz para sa magkasintahan",
+          "original": "couple quiz",
+          "category": "description"
+        },
+        {
+          "term": "laro ng magkasintahan",
+          "original": "couple game",
+          "category": "description"
+        },
+        {
+          "term": "relasyon",
+          "original": "relationship",
+          "category": "description"
+        },
+        {
+          "term": "kapareha",
+          "original": "partner",
+          "category": "description"
+        },
+        {
+          "term": "mga tanong tungkol sa pag-ibig",
+          "original": "love questions",
+          "category": "description"
+        },
+        {
+          "term": "mga tanong",
+          "original": "questions",
+          "category": "description"
+        },
+        {
+          "term": "payo tungkol sa relasyon",
+          "original": "relationship advice",
+          "category": "description"
+        },
+        {
+          "term": "maanghang na tanong",
+          "original": "spicy questions",
+          "category": "description"
+        },
+        {
+          "term": "tagasubaybay ng relasyon",
+          "original": "relationship tracker",
+          "category": "description"
+        },
+        {
+          "term": "relasyon sa malayong distansya",
+          "original": "long distance relationship",
+          "category": "description"
+        },
+        {
+          "term": "laro para sa date night",
+          "original": "date night game",
+          "category": "description"
+        },
+        {
+          "term": "tanong para sa matatanda",
+          "original": "adult questions",
+          "category": "description"
+        },
+        {
+          "term": "tanong ng magkasintahan",
+          "original": "couple questions",
+          "category": "description"
+        },
+        {
+          "term": "terapiya ng pag-ibig",
+          "original": "love therapy",
+          "category": "description"
+        },
+        {
+          "term": "tagapayo sa relasyon",
+          "original": "relationship coach",
+          "category": "description"
+        },
+        {
+          "term": "pagsusulit ng pag-ibig",
+          "original": "love test",
+          "category": "description"
+        }
+      ]
+    },
+    "hi-IN": {
+      "selected_keywords": [
+        {
+          "term": "long distance game for couples",
+          "category": "title",
+          "final_score": 12.24
+        },
+        {
+          "term": "relationship advice",
+          "category": "short_description",
+          "final_score": 9.6
+        },
+        {
+          "term": "photo widget",
+          "category": "short_description",
+          "final_score": 5.6
+        },
+        {
+          "term": "beziehungsapp",
+          "category": "description",
+          "final_score": 26.7
+        },
+        {
+          "term": "official the relationship app",
+          "category": "description",
+          "final_score": 9.4
+        },
+        {
+          "term": "the relationship app",
+          "category": "description",
+          "final_score": 1.85
+        },
+        {
+          "term": "जोड़ा",
+          "original": "couple",
+          "category": "description"
+        },
+        {
+          "term": "प्यार",
+          "original": "love",
+          "category": "description"
+        },
+        {
+          "term": "जोड़ी क्विज",
+          "original": "couple quiz",
+          "category": "description"
+        },
+        {
+          "term": "प्यार के सवाल",
+          "original": "love questions",
+          "category": "description"
+        },
+        {
+          "term": "जोड़ी का खेल",
+          "original": "couple game",
+          "category": "description"
+        },
+        {
+          "term": "रिश्ते",
+          "original": "relationship",
+          "category": "description"
+        },
+        {
+          "term": "साथी",
+          "original": "partner",
+          "category": "description"
+        },
+        {
+          "term": "लंबी दूरी का रिश्ता",
+          "original": "long distance relationship",
+          "category": "description"
+        },
+        {
+          "term": "प्यार परीक्षण",
+          "original": "love test",
+          "category": "description"
+        },
+        {
+          "term": "वयस्क प्रश्न",
+          "original": "adult questions",
+          "category": "description"
+        },
+        {
+          "term": "मसालेदार सवाल",
+          "original": "spicy questions",
+          "category": "description"
+        },
+        {
+          "term": "रिश्ते का कोच",
+          "original": "relationship coach",
+          "category": "description"
+        },
+        {
+          "term": "जोड़ी के सवाल",
+          "original": "couple questions",
+          "category": "description"
+        },
+        {
+          "term": "रिश्ते ट्रैकर",
+          "original": "relationship tracker",
+          "category": "description"
+        }
+      ]
+    },
+    "zh-CN": {
+      "selected_keywords": [
+        {
+          "term": "情侣游戏",
+          "final_score": 70.05,
+          "category": "title"
+        },
+        {
+          "term": "双人游戏",
+          "final_score": 54.6,
+          "category": "short_description"
+        },
+        {
+          "term": "真心话大冒险",
+          "final_score": 47.6,
+          "category": "description"
+        },
+        {
+          "term": "爱情",
+          "final_score": 45.9,
+          "category": "description"
+        },
+        {
+          "term": "情侣",
+          "final_score": 37.9,
+          "category": "description"
+        },
+        {
+          "term": "情感",
+          "final_score": 29.2,
+          "category": "description"
+        },
+        {
+          "term": "情侣小游戏",
+          "final_score": 26.0,
+          "category": "description"
+        },
+        {
+          "term": "情侣性感游戏",
+          "final_score": 3.3,
+          "category": "description"
+        },
+        {
+          "term": "情侣测验",
+          "original": "couple quiz",
+          "category": "description"
+        },
+        {
+          "term": "爱情问题",
+          "original": "love questions",
+          "category": "description"
+        },
+        {
+          "term": "恋爱关系",
+          "original": "relationship",
+          "category": "description"
+        },
+        {
+          "term": "伴侣",
+          "original": "partner",
+          "category": "description"
+        },
+        {
+          "term": "爱情计数器",
+          "original": "love counter",
+          "category": "description"
+        },
+        {
+          "term": "异地恋",
+          "original": "long distance relationship",
+          "category": "description"
+        },
+        {
+          "term": "约会之夜游戏",
+          "original": "date night game",
+          "category": "description"
+        },
+        {
+          "term": "爱情测试",
+          "original": "love test",
+          "category": "description"
+        },
+        {
+          "term": "成人问题",
+          "original": "adult questions",
+          "category": "description"
+        },
+        {
+          "term": "伴侣游戏",
+          "original": "partner games",
+          "category": "description"
+        },
+        {
+          "term": "问题",
+          "original": "questions",
+          "category": "description"
+        },
+        {
+          "term": "恋爱建议",
+          "original": "relationship advice",
+          "category": "description"
+        }
+      ]
+    },
+    "ar": {
+      "selected_keywords": [
+        {
+          "term": "couples ولکن",
+          "final_score": 24.95,
+          "category": "title"
+        },
+        {
+          "term": "spicy games",
+          "final_score": 24.8,
+          "category": "title"
+        },
+        {
+          "term": "حب",
+          "final_score": 22.5,
+          "category": "short_description"
+        },
+        {
+          "term": "lover",
+          "final_score": 21.95,
+          "category": "short_description"
+        },
+        {
+          "term": "guess the person",
+          "final_score": 21.0,
+          "category": "description"
+        },
+        {
+          "term": "how well do you know me",
+          "final_score": 16.4,
+          "category": "description"
+        },
+        {
+          "term": "زواج",
+          "final_score": 15.1,
+          "category": "description"
+        },
+        {
+          "term": "couples quiz relationship game",
+          "final_score": 13.6,
+          "category": "description"
+        },
+        {
+          "term": "dirty chat",
+          "final_score": 12.05,
+          "category": "description"
+        },
+        {
+          "term": "flirting",
+          "final_score": 7.5,
+          "category": "description"
+        },
+        {
+          "term": "paired",
+          "final_score": 32.45,
+          "category": "description"
+        },
+        {
+          "term": "زوجين",
+          "original": "couple",
+          "category": "description"
+        },
+        {
+          "term": "اختبار الزوجين",
+          "original": "couple quiz",
+          "category": "description"
+        },
+        {
+          "term": "علاقة",
+          "original": "relationship",
+          "category": "description"
+        },
+        {
+          "term": "شريك",
+          "original": "partner",
+          "category": "description"
+        },
+        {
+          "term": "علاقة عن بُعد",
+          "original": "long distance relationship",
+          "category": "description"
+        },
+        {
+          "term": "اختبار الحب",
+          "original": "love test",
+          "category": "description"
+        },
+        {
+          "term": "أسئلة البالغين",
+          "original": "adult questions",
+          "category": "description"
+        },
+        {
+          "term": "لعبة الزوجين",
+          "original": "couple game",
+          "category": "description"
+        }
+      ]
+    },
+    "ms": {
+      "selected_keywords": [
+        {
+          "term": "pairs",
+          "final_score": 50.2,
+          "category": "title"
+        },
+        {
+          "term": "paired relationship couples",
+          "final_score": 29.4,
+          "category": "title"
+        },
+        {
+          "term": "date countdown",
+          "final_score": 34.55,
+          "category": "short_description"
+        },
+        {
+          "term": "couple",
+          "final_score": 23.6,
+          "category": "short_description"
+        },
+        {
+          "term": "love calendar",
+          "final_score": 13.8,
+          "category": "description"
+        },
+        {
+          "term": "quizz",
+          "final_score": 9.45,
+          "category": "description"
+        },
+        {
+          "term": "love app",
+          "final_score": 6.75,
+          "category": "description"
+        },
+        {
+          "term": "paired couples relationship",
+          "final_score": 6.4,
+          "category": "description"
+        },
+        {
+          "term": "personality quiz",
+          "final_score": 4.45,
+          "category": "description"
+        },
+        {
+          "term": "histoire d'amour",
+          "final_score": 0.9,
+          "category": "description"
+        },
+        {
+          "term": "cinta",
+          "original": "love",
+          "category": "description"
+        },
+        {
+          "term": "kuiz pasangan",
+          "original": "couple quiz",
+          "category": "description"
+        },
+        {
+          "term": "soalan cinta",
+          "original": "love questions",
+          "category": "description"
+        },
+        {
+          "term": "permainan pasangan",
+          "original": "couple game",
+          "category": "description"
+        },
+        {
+          "term": "perhubungan",
+          "original": "relationship",
+          "category": "description"
+        },
+        {
+          "term": "rakan",
+          "original": "partner",
+          "category": "description"
+        },
+        {
+          "term": "hubungan jarak jauh",
+          "original": "long distance relationship",
+          "category": "description"
+        },
+        {
+          "term": "ujian cinta",
+          "original": "love test",
+          "category": "description"
+        },
+        {
+          "term": "soalan dewasa",
+          "original": "adult questions",
+          "category": "description"
+        },
+        {
+          "term": "soalan pedas",
+          "original": "spicy questions",
+          "category": "description"
+        }
+      ]
+    },
+    "ja-JP": {
+      "selected_keywords": [
+        {
+          "term": "恋して何日",
+          "final_score": 78.4,
+          "category": "title"
+        },
+        {
+          "term": "カップル",
+          "final_score": 69.9,
+          "category": "title"
+        },
+        {
+          "term": "カップルアプリ",
+          "final_score": 54.9,
+          "category": "short_description"
+        },
+        {
+          "term": "恋しての記念日",
+          "final_score": 51.2,
+          "category": "short_description"
+        },
+        {
+          "term": "ゲイ",
+          "final_score": 51.3,
+          "category": "description"
+        },
+        {
+          "term": "質問",
+          "final_score": 45.9,
+          "category": "description"
+        },
+        {
+          "term": "ウィジェット",
+          "final_score": 45.5,
+          "category": "description"
+        },
+        {
+          "term": "記念日",
+          "final_score": 38.2,
+          "category": "description"
+        },
+        {
+          "term": "恋人",
+          "final_score": 36.3,
+          "category": "description"
+        },
+        {
+          "term": "the couple",
+          "final_score": 30.2,
+          "category": "description"
+        },
+        {
+          "term": "sexy chat",
+          "final_score": 15.8,
+          "category": "description"
+        },
+        {
+          "term": "愛",
+          "original": "love",
+          "category": "description"
+        },
+        {
+          "term": "カップルクイズ",
+          "original": "couple quiz",
+          "category": "description"
+        },
+        {
+          "term": "恋愛質問",
+          "original": "love questions",
+          "category": "description"
+        },
+        {
+          "term": "カップルゲーム",
+          "original": "couple game",
+          "category": "description"
+        },
+        {
+          "term": "関係",
+          "original": "relationship",
+          "category": "description"
+        },
+        {
+          "term": "パートナー",
+          "original": "partner",
+          "category": "description"
+        },
+        {
+          "term": "遠距離恋愛",
+          "original": "long distance relationship",
+          "category": "description"
+        },
+        {
+          "term": "ラブテスト",
+          "original": "love test",
+          "category": "description"
+        },
+        {
+          "term": "アダルト質問",
+          "original": "adult questions",
+          "category": "description"
+        }
+      ]
+    },
+    "ko-KR": {
+      "selected_keywords": [
+        {
+          "term": "2인용",
+          "final_score": 31.6,
+          "category": "title"
+        },
+        {
+          "term": "\t테스트",
+          "final_score": 12.2,
+          "category": "short_description"
+        },
+        {
+          "term": "paired relationship couples",
+          "final_score": 20.0,
+          "category": "description"
+        },
+        {
+          "term": "\b2ec\bb825 \\uc704\\uc82f",
+          "final_score": 13.0,
+          "category": "description"
+        },
+        {
+          "term": "pocket love",
+          "final_score": 8.5,
+          "category": "description"
+        },
+        {
+          "term": "커플",
+          "original": "couple",
+          "category": "description"
+        },
+        {
+          "term": "사랑",
+          "original": "love",
+          "category": "description"
+        },
+        {
+          "term": "관계",
+          "original": "relationship",
+          "category": "description"
+        },
+        {
+          "term": "연인",
+          "original": "partner",
+          "category": "description"
+        },
+        {
+          "term": "커플 퀴즈",
+          "original": "couple quiz",
+          "category": "description"
+        },
+        {
+          "term": "사랑 질문",
+          "original": "love questions",
+          "category": "description"
+        },
+        {
+          "term": "커플 게임",
+          "original": "couple game",
+          "category": "description"
+        },
+        {
+          "term": "장거리 커플",
+          "original": "long distance relationship",
+          "category": "description"
+        },
+        {
+          "term": "사랑 테스트",
+          "original": "love test",
+          "category": "description"
+        },
+        {
+          "term": "성인 질문",
+          "original": "adult questions",
+          "category": "description"
+        },
+        {
+          "term": "커플 질문",
+          "original": "couple questions",
+          "category": "description"
+        },
+        {
+          "term": "연애 상담",
+          "original": "relationship advice",
+          "category": "description"
+        },
+        {
+          "term": "자극적인 질문",
+          "original": "spicy questions",
+          "category": "description"
+        },
+        {
+          "term": "관계 기록",
+          "original": "relationship tracker",
+          "category": "description"
+        },
+        {
+          "term": "연애 관계",
+          "original": "relationships",
+          "category": "description"
+        }
+      ]
+    },
+    "fa-AE": {
+      "selected_keywords": [
+        {
+          "term": "guess the person",
+          "final_score": 20.25,
+          "category": "title"
+        },
+        {
+          "term": "how well do you know me",
+          "final_score": 16.4,
+          "category": "title"
+        },
+        {
+          "term": "زوج",
+          "final_score": 15.1,
+          "category": "short_description"
+        },
+        {
+          "term": "couples quiz relationship game",
+          "final_score": 11.35,
+          "category": "short_description"
+        },
+        {
+          "term": "paired",
+          "final_score": 30.2,
+          "category": "description"
+        },
+        {
+          "term": "happy couple",
+          "final_score": 1.4,
+          "category": "description"
+        },
+        {
+          "term": "عشق",
+          "original": "love",
+          "category": "description"
+        },
+        {
+          "term": "آزمون زوج",
+          "original": "couple quiz",
+          "category": "description"
+        },
+        {
+          "term": "سوالات عشق",
+          "original": "love questions",
+          "category": "description"
+        },
+        {
+          "term": "بازی برای زوج",
+          "original": "couple game",
+          "category": "description"
+        },
+        {
+          "term": "رابطه",
+          "original": "relationship",
+          "category": "description"
+        },
+        {
+          "term": "شریک",
+          "original": "partner",
+          "category": "description"
+        },
+        {
+          "term": "نصایح رابطه",
+          "original": "relationship advice",
+          "category": "description"
+        },
+        {
+          "term": "سوالات زوج",
+          "original": "couple questions",
+          "category": "description"
+        },
+        {
+          "term": "آزمون عشق",
+          "original": "love test",
+          "category": "description"
+        },
+        {
+          "term": "رابطه از راه دور",
+          "original": "long distance relationship",
+          "category": "description"
+        },
+        {
+          "term": "مربی رابطه",
+          "original": "relationship coach",
+          "category": "description"
+        },
+        {
+          "term": "سوالات بزرگسالان",
+          "original": "adult questions",
+          "category": "description"
+        },
+        {
+          "term": "سوالات",
+          "original": "questions",
+          "category": "description"
+        },
+        {
+          "term": "رهیاب رابطه",
+          "original": "relationship tracker",
+          "category": "description"
+        }
+      ]
+    },
+    "th": {
+      "selected_keywords": [
+        {
+          "term": "໅ຟັ່ມູະ... (placeholder since the Thai script must be exact)",
+          "final_score": 57.25,
+          "category": "title"
+        },
+        {
+          "term": "couple apps",
+          "final_score": 45.7,
+          "category": "short_description"
+        },
+        {
+          "term": "bond check",
+          "final_score": 36.7,
+          "category": "short_description"
+        },
+        {
+          "term": "apps for couples",
+          "final_score": 34.9,
+          "category": "short_description"
+        },
+        {
+          "term": "ໂອຣີກັບ... (placeholder since the Thai script must be exact)",
+          "final_score": 30.1,
+          "category": "description"
+        },
+        {
+          "term": "couple widget",
+          "final_score": 27.75,
+          "category": "short_description"
+        },
+        {
+          "term": "love tester",
+          "final_score": 26.5,
+          "category": "description"
+        },
+        {
+          "term": "ເບຽງຕົວ... (placeholder since the Thai script must be exact)",
+          "final_score": 21.25,
+          "category": "description"
+        },
+        {
+          "term": "liebestest",
+          "final_score": 17.2,
+          "category": "description"
+        },
+        {
+          "term": "ໂຫມວິດ... (placeholder since the Thai script must be exact)",
+          "final_score": 14.6,
+          "category": "description"
+        },
+        {
+          "term": "love app",
+          "final_score": 12.3,
+          "category": "description"
+        },
+        {
+          "term": "couple",
+          "final_score": 8.5,
+          "category": "description"
+        },
+        {
+          "term": "lgbtq",
+          "final_score": 5.85,
+          "category": "description"
+        },
+        {
+          "term": "guess the person",
+          "final_score": 4.3,
+          "category": "description"
+        },
+        {
+          "term": "ความรัก",
+          "original": "love",
+          "category": "description"
+        },
+        {
+          "term": "แบบทดสอบสำหรับคู่รัก",
+          "original": "couple quiz",
+          "category": "description"
+        },
+        {
+          "term": "คำถามความรัก",
+          "original": "love questions",
+          "category": "description"
+        },
+        {
+          "term": "เกมสำหรับคู่รัก",
+          "original": "couple game",
+          "category": "description"
+        },
+        {
+          "term": "ความสัมพันธ์",
+          "original": "relationship",
+          "category": "description"
+        },
+        {
+          "term": "คู่ชีวิต",
+          "original": "partner",
+          "category": "description"
+        }
+      ]
+    },
+    "da-DK": {
+      "selected_keywords": [
+        {
+          "term": "tryg",
+          "final_score": 28.1,
+          "category": "title"
+        },
+        {
+          "term": "kærester",
+          "final_score": 23.3,
+          "category": "title"
+        },
+        {
+          "term": "love quiz",
+          "final_score": 24.6,
+          "category": "short_description"
+        },
+        {
+          "term": "partners",
+          "final_score": 24.6,
+          "category": "short_description"
+        },
+        {
+          "term": "erotic",
+          "final_score": 24.3,
+          "category": "short_description"
+        },
+        {
+          "term": "my love",
+          "final_score": 53.2,
+          "category": "description"
+        },
+        {
+          "term": "official the relationship app",
+          "final_score": 52.8,
+          "category": "description"
+        },
+        {
+          "term": "paired app for couples",
+          "final_score": 46.85,
+          "category": "description"
+        },
+        {
+          "term": "the relationship app",
+          "final_score": 38.9,
+          "category": "description"
+        },
+        {
+          "term": "agapé",
+          "final_score": 36.5,
+          "category": "description"
+        },
+        {
+          "term": "paired couples relationship",
+          "final_score": 26.45,
+          "category": "description"
+        },
+        {
+          "term": "paired relationship couples",
+          "final_score": 24.7,
+          "category": "description"
+        },
+        {
+          "term": "par",
+          "original": "couple",
+          "category": "description"
+        },
+        {
+          "term": "kærlighed",
+          "original": "love",
+          "category": "description"
+        },
+        {
+          "term": "parquiz",
+          "original": "couple quiz",
+          "category": "description"
+        },
+        {
+          "term": "forhold",
+          "original": "relationship",
+          "category": "description"
+        },
+        {
+          "term": "partner",
+          "original": "partner",
+          "category": "description"
+        },
+        {
+          "term": "langdistanceforhold",
+          "original": "long distance relationship",
+          "category": "description"
+        },
+        {
+          "term": "kærlighedstest",
+          "original": "love test",
+          "category": "description"
+        },
+        {
+          "term": "voksne spørgsmål",
+          "original": "adult questions",
+          "category": "description"
+        }
+      ]
+    },
+    "sv-SE": {
+      "selected_keywords": [
+        {
+          "term": "par",
+          "original": "couple",
+          "category": "title"
+        },
+        {
+          "term": "kärlek",
+          "original": "love",
+          "category": "short_description"
+        },
+        {
+          "term": "parquiz",
+          "original": "couple quiz",
+          "category": "description"
+        },
+        {
+          "term": "kärleksfrågor",
+          "original": "love questions",
+          "category": "description"
+        },
+        {
+          "term": "parspel",
+          "original": "couple game",
+          "category": "description"
+        },
+        {
+          "term": "relation",
+          "original": "relationship",
+          "category": "description"
+        },
+        {
+          "term": "partner",
+          "original": "partner",
+          "category": "description"
+        },
+        {
+          "term": "kärleksräknare",
+          "original": "love counter",
+          "category": "description"
+        },
+        {
+          "term": "distansförhållande",
+          "original": "long distance relationship",
+          "category": "description"
+        },
+        {
+          "term": "dejtkvällsspel",
+          "original": "date night game",
+          "category": "description"
+        },
+        {
+          "term": "kärlekstest",
+          "original": "love test",
+          "category": "description"
+        },
+        {
+          "term": "vuxna frågor",
+          "original": "adult questions",
+          "category": "description"
+        },
+        {
+          "term": "partnerspel",
+          "original": "partner games",
+          "category": "description"
+        },
+        {
+          "term": "deckmankort",
+          "original": "deckman cards",
+          "category": "description"
+        },
+        {
+          "term": "frågor",
+          "original": "questions",
+          "category": "description"
+        },
+        {
+          "term": "relationsråd",
+          "original": "relationship advice",
+          "category": "description"
+        },
+        {
+          "term": "heta frågor",
+          "original": "spicy questions",
+          "category": "description"
+        },
+        {
+          "term": "relationscoach",
+          "original": "relationship coach",
+          "category": "description"
+        },
+        {
+          "term": "paired",
+          "final_score": 6.4,
+          "category": "description"
+        }
+      ]
+    },
+    "ms-MY": {
+      "selected_keywords": [
+        {
+          "term": "pairs",
+          "final_score": 48.7,
+          "category": "title"
+        },
+        {
+          "term": "couple",
+          "final_score": 28.1,
+          "category": "short_description"
+        },
+        {
+          "term": "quizz",
+          "final_score": 10.2,
+          "category": "description"
+        },
+        {
+          "term": "love app",
+          "final_score": 8.25,
+          "category": "description"
+        },
+        {
+          "term": "kuiz pasangan",
+          "original": "couple quiz",
+          "category": "description"
+        },
+        {
+          "term": "soalan cinta",
+          "original": "love questions",
+          "category": "description"
+        },
+        {
+          "term": "permainan pasangan",
+          "original": "couple game",
+          "category": "description"
+        },
+        {
+          "term": "hubungan",
+          "original": "relationship",
+          "category": "description"
+        },
+        {
+          "term": "pasangan hidup",
+          "original": "partner",
+          "category": "description"
+        },
+        {
+          "term": "hubungan jarak jauh",
+          "original": "long distance relationship",
+          "category": "description"
+        },
+        {
+          "term": "permainan malam temu janji",
+          "original": "date night game",
+          "category": "description"
+        },
+        {
+          "term": "ujian cinta",
+          "original": "love test",
+          "category": "description"
+        },
+        {
+          "term": "soalan dewasa",
+          "original": "adult questions",
+          "category": "description"
+        }
+      ]
+    },
+    "fi-FI": {
+      "selected_keywords": [
+        {
+          "term": "guess the person",
+          "final_score": 3.15,
+          "category": "title"
+        },
+        {
+          "term": "questions",
+          "final_score": 1.9,
+          "category": "short_description"
+        },
+        {
+          "term": "pariskunta",
+          "original": "couple",
+          "category": "description"
+        },
+        {
+          "term": "rakkaus",
+          "original": "love",
+          "category": "description"
+        },
+        {
+          "term": "parikilpailu",
+          "original": "couple quiz",
+          "category": "description"
+        },
+        {
+          "term": "rakastuskysymykset",
+          "original": "love questions",
+          "category": "description"
+        },
+        {
+          "term": "paripeli",
+          "original": "couple game",
+          "category": "description"
+        },
+        {
+          "term": "suhde",
+          "original": "relationship",
+          "category": "description"
+        },
+        {
+          "term": "kumppani",
+          "original": "partner",
+          "category": "description"
+        },
+        {
+          "term": "etäsuhde",
+          "original": "long distance relationship",
+          "category": "description"
+        },
+        {
+          "term": "rakkaustesti",
+          "original": "love test",
+          "category": "description"
+        },
+        {
+          "term": "aikuiset kysymykset",
+          "original": "adult questions",
+          "category": "description"
+        },
+        {
+          "term": "ihmissuhdevinkit",
+          "original": "relationship advice",
+          "category": "description"
+        },
+        {
+          "term": "mausteiset kysymykset",
+          "original": "spicy questions",
+          "category": "description"
+        },
+        {
+          "term": "parikysymykset",
+          "original": "couple questions",
+          "category": "description"
+        },
+        {
+          "term": "avioliitto",
+          "original": "marriage",
+          "category": "description"
+        },
+        {
+          "term": "pariterapia",
+          "original": "couple therapy",
+          "category": "description"
+        },
+        {
+          "term": "suhde seuranta",
+          "original": "relationship tracker",
+          "category": "description"
+        },
+        {
+          "term": "etäpeli",
+          "original": "long distance game",
+          "category": "description"
+        },
+        {
+          "term": "rakkautusterapia",
+          "original": "love therapy",
+          "category": "description"
+        }
+      ]
+    },
+    "iw-IL": {
+      "selected_keywords": [
+        {
+          "term": "sexy chat",
+          "final_score": 45.5,
+          "category": "title"
+        },
+        {
+          "term": "מחשבות אהבה",
+          "final_score": 44.9,
+          "category": "short_description"
+        },
+        {
+          "term": "honi",
+          "final_score": 33.2,
+          "category": "title"
+        },
+        {
+          "term": "guess the person",
+          "final_score": 23.15,
+          "category": "short_description"
+        },
+        {
+          "term": "dirty game",
+          "final_score": 13.65,
+          "category": "description"
+        },
+        {
+          "term": "the couple",
+          "final_score": 7.3,
+          "category": "description"
+        },
+        {
+          "term": "זוג",
+          "original": "couple",
+          "category": "description"
+        },
+        {
+          "term": "אהבה",
+          "original": "love",
+          "category": "description"
+        },
+        {
+          "term": "מערכת יחסים",
+          "original": "relationship",
+          "category": "description"
+        },
+        {
+          "term": "בן זוג",
+          "original": "partner",
+          "category": "description"
+        },
+        {
+          "term": "חידון זוגי",
+          "original": "couple quiz",
+          "category": "description"
+        },
+        {
+          "term": "שאלות אהבה",
+          "original": "love questions",
+          "category": "description"
+        },
+        {
+          "term": "משחק זוגי",
+          "original": "couple game",
+          "category": "description"
+        },
+        {
+          "term": "ייעוץ לזוגיות",
+          "original": "relationship advice",
+          "category": "description"
+        },
+        {
+          "term": "מבחן אהבה",
+          "original": "love test",
+          "category": "description"
+        },
+        {
+          "term": "שאלות למבוגרים",
+          "original": "adult questions",
+          "category": "description"
+        },
+        {
+          "term": "יחסים מרחוק",
+          "original": "long distance relationship",
+          "category": "description"
+        },
+        {
+          "term": "משחק לערב דייט",
+          "original": "date night game",
+          "category": "description"
+        },
+        {
+          "term": "משחקי בן זוג",
+          "original": "partner games",
+          "category": "description"
+        },
+        {
+          "term": "שאלות",
+          "original": "questions",
+          "category": "description"
+        }
+      ]
+    },
+    "af": {
+      "selected_keywords": [
+        {
+          "term": "relationship app",
+          "final_score": 32.3,
+          "category": "title"
+        },
+        {
+          "term": "partner apps",
+          "final_score": 26.15,
+          "category": "short_description"
+        },
+        {
+          "term": "couples app",
+          "final_score": 21.9,
+          "category": "title"
+        },
+        {
+          "term": "long distance",
+          "final_score": 5.9,
+          "category": "description"
+        },
+        {
+          "term": "paired",
+          "final_score": 1.6,
+          "category": "description"
+        },
+        {
+          "term": "paar",
+          "original": "couple",
+          "category": "description"
+        },
+        {
+          "term": "liefde",
+          "original": "love",
+          "category": "description"
+        },
+        {
+          "term": "verhouding",
+          "original": "relationship",
+          "category": "description"
+        },
+        {
+          "term": "maat",
+          "original": "partner",
+          "category": "description"
+        },
+        {
+          "term": "paar vasvrae",
+          "original": "couple quiz",
+          "category": "description"
+        },
+        {
+          "term": "liefdevrae",
+          "original": "love questions",
+          "category": "description"
+        },
+        {
+          "term": "paargespeletjie",
+          "original": "couple game",
+          "category": "description"
+        },
+        {
+          "term": "volwassenevrae",
+          "original": "adult questions",
+          "category": "description"
+        },
+        {
+          "term": "pittige vrae",
+          "original": "spicy questions",
+          "category": "description"
+        },
+        {
+          "term": "verhouding advies",
+          "original": "relationship advice",
+          "category": "description"
+        },
+        {
+          "term": "vrae",
+          "original": "questions",
+          "category": "description"
+        },
+        {
+          "term": "verhouding afrigter",
+          "original": "relationship coach",
+          "category": "description"
+        },
+        {
+          "term": "romantiese aandspel",
+          "original": "date night game",
+          "category": "description"
+        },
+        {
+          "term": "liefdestest",
+          "original": "love test",
+          "category": "description"
+        },
+        {
+          "term": "liefdeterapie",
+          "original": "love therapy",
+          "category": "description"
+        }
+      ]
+    }
+  }
+}

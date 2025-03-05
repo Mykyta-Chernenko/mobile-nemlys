@@ -1,0 +1,472 @@
+{
+  "play_market": {
+    "no-NO": [
+      "NO"
+    ],
+    "uk": [
+      "UA"
+    ],
+    "en-US": [
+      "US"
+    ],
+    "en-GB": [
+      "GB"
+    ],
+    "en-CA": [
+      "CA"
+    ],
+    "en-AU": [
+      "AU"
+    ],
+    "en-IN": [
+      "IN"
+    ],
+    "en-ZA": [
+      "ZA"
+    ],
+    "es-ES": [
+      "ES"
+    ],
+    "es-US": [
+      "US"
+    ],
+    "es-419": [
+      "MX",
+      "AR",
+      "CO",
+      "CL",
+      "PE",
+      "VE",
+      "EC",
+      "GT",
+      "CR",
+      "DO"
+    ],
+    "fr-FR": [
+      "FR"
+    ],
+    "fr-CA": [
+      "CA"
+    ],
+    "pt-BR": [
+      "BR"
+    ],
+    "pt-PT": [
+      "PT"
+    ],
+    "it-IT": [
+      "IT"
+    ],
+    "de-DE": [
+      "DE"
+    ],
+    "nl-NL": [
+      "NL"
+    ],
+    "pl-PL": [
+      "PL"
+    ],
+    "tr-TR": [
+      "TR"
+    ],
+    "ro": [
+      "RO",
+      "MD"
+    ],
+    "id": [
+      "ID"
+    ],
+    "fil": [
+      "PH"
+    ],
+    "vi": [
+      "VN"
+    ],
+    "zh-CN": [
+      "CN"
+    ],
+    "zh-TW": [
+      "TW"
+    ],
+    "ar": [
+      "AE",
+      "SA",
+      "QA",
+      "KW",
+      "BH",
+      "OM",
+      "EG",
+      "JO",
+      "LB",
+      "DZ",
+      "MA",
+      "TN",
+      "IQ"
+    ],
+    "hi-IN": [
+      "IN"
+    ],
+    "ja-JP": [
+      "JP"
+    ],
+    "hr": [
+      "HR"
+    ],
+    "cs-CZ": [
+      "CZ"
+    ],
+    "da-DK": [
+      "DK"
+    ],
+    "fi-FI": [
+      "FI"
+    ],
+    "el-GR": [
+      "GR"
+    ],
+    "iw-IL": [
+      "IL"
+    ],
+    "sv-SE": [
+      "SE"
+    ],
+    "sk": [
+      "SK"
+    ],
+    "hu-HU": [
+      "HU"
+    ],
+    "ca": [
+      "ES"
+    ],
+    "ko-KR": [
+      "KR"
+    ],
+    "ms": [
+      "MY"
+    ],
+    "ms-MY": [
+      "MY"
+    ],
+    "th": [
+      "TH"
+    ],
+    "fa-AE": [
+      "AE"
+    ],
+    "ne-NP": [
+      "NP"
+    ],
+    "mn-MN": [
+      "MN"
+    ],
+    "mr-IN": [
+      "IN"
+    ],
+    "ml-IN": [
+      "IN"
+    ],
+    "mk-MK": [
+      "MK"
+    ],
+    "lt": [
+      "LT"
+    ],
+    "lv": [
+      "LV"
+    ],
+    "lo-LA": [
+      "LA"
+    ],
+    "ky-KG": [
+      "KG"
+    ],
+    "km-KH": [
+      "KH"
+    ],
+    "kk": [
+      "KZ"
+    ],
+    "kn-IN": [
+      "IN"
+    ],
+    "is-IS": [
+      "IS"
+    ],
+    "gu": [
+      "IN"
+    ],
+    "ka-GE": [
+      "GE"
+    ],
+    "gl-ES": [
+      "ES"
+    ],
+    "et": [
+      "EE"
+    ],
+    "zh-HK": [
+      "HK"
+    ],
+    "my-MM": [
+      "MM"
+    ],
+    "bg": [
+      "BG"
+    ],
+    "be": [
+      "BY"
+    ],
+    "eu-ES": [
+      "ES"
+    ],
+    "bn-BD": [],
+    "az-AZ": [
+      "AZ"
+    ],
+    "hy-AM": [
+      "AM"
+    ],
+    "am": [],
+    "sq": [
+      "AL",
+      "XK"
+    ],
+    "af": [
+      "ZA",
+      "NA"
+    ],
+    "sr": [
+      "RS",
+      "BA",
+      "ME"
+    ],
+    "sl": [
+      "SI"
+    ],
+    "cs": [
+      "CZ"
+    ]
+  },
+  "app_store": {
+    "uk": [
+      "UA"
+    ],
+    "ar-SA": [
+      "SA"
+    ],
+    "ca": [
+      "ES"
+    ],
+    "zh-Hans": [
+      "CN"
+    ],
+    "zh-Hant": [
+      "TW"
+    ],
+    "hr": [
+      "HR"
+    ],
+    "cs": [
+      "CZ"
+    ],
+    "da": [
+      "DK"
+    ],
+    "nl-NL": [
+      "NL"
+    ],
+    "en-AU": [
+      "AU"
+    ],
+    "en-CA": [
+      "CA"
+    ],
+    "en-GB": [
+      "GB"
+    ],
+    "en-US": [
+      "US"
+    ],
+    "fi": [
+      "FI"
+    ],
+    "fr-FR": [
+      "FR"
+    ],
+    "fr-CA": [
+      "CA"
+    ],
+    "de-DE": [
+      "DE"
+    ],
+    "el": [
+      "GR",
+      "CY"
+    ],
+    "he": [
+      "IL"
+    ],
+    "hi": [
+      "IN"
+    ],
+    "hu": [
+      "HU"
+    ],
+    "id": [
+      "ID"
+    ],
+    "it": [
+      "IT",
+      "CH"
+    ],
+    "ja": [
+      "JP"
+    ],
+    "ko": [
+      "KR"
+    ],
+    "ms": [
+      "MY"
+    ],
+    "no": [
+      "NO"
+    ],
+    "pl": [
+      "PL"
+    ],
+    "pt-BR": [
+      "BR"
+    ],
+    "pt-PT": [
+      "PT"
+    ],
+    "ro": [
+      "RO",
+      "MD"
+    ],
+    "sk": [
+      "SK"
+    ],
+    "es-ES": [
+      "ES"
+    ],
+    "es-MX": [
+      "MX"
+    ],
+    "sv": [
+      "SE",
+      "FI",
+      "NO"
+    ],
+    "th": [
+      "TH"
+    ],
+    "tr": [
+      "TR",
+      "CY"
+    ],
+    "vi": [
+      "VN"
+    ],
+    "ar": [
+      "AE",
+      "SA",
+      "QA",
+      "KW",
+      "BH",
+      "OM",
+      "EG",
+      "JO",
+      "LB",
+      "DZ",
+      "MA",
+      "TN",
+      "IQ"
+    ],
+    "zh-CN": [
+      "CN"
+    ],
+    "zh-TW": [
+      "TW"
+    ],
+    "zh-HK": [
+      "HK"
+    ],
+    "nl": [
+      "NL",
+      "BE"
+    ],
+    "en": [
+      "US",
+      "GB",
+      "CA",
+      "AU",
+      "IN",
+      "ZA"
+    ],
+    "en-IN": [
+      "IN"
+    ],
+    "en-IE": [
+      "IE"
+    ],
+    "en-NZ": [
+      "NZ"
+    ],
+    "en-SG": [
+      "SG"
+    ],
+    "en-ZA": [
+      "ZA"
+    ],
+    "fr": [
+      "FR",
+      "CH",
+      "BE",
+      "CA",
+      "LU"
+    ],
+    "de": [
+      "DE",
+      "AT",
+      "CH",
+      "LU"
+    ],
+    "nb": [
+      "NO"
+    ],
+    "pt": [
+      "BR",
+      "PT",
+      "CV",
+      "GW",
+      "AO",
+      "MZ",
+      "ST"
+    ],
+    "es": [
+      "ES",
+      "MX",
+      "AR",
+      "CO",
+      "CL",
+      "PE",
+      "VE",
+      "EC",
+      "GT"
+    ],
+    "es-419": [
+      "MX",
+      "AR",
+      "CO",
+      "CL",
+      "PE",
+      "VE",
+      "EC",
+      "GT",
+      "CR",
+      "DO"
+    ]
+  }
+}

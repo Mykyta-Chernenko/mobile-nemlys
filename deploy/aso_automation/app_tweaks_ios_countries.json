@@ -1,0 +1,982 @@
+[
+  {
+    "country_code": "ae",
+    "language_code": "ar",
+    "default": true
+  },
+  {
+    "country_code": "ae",
+    "language_code": "en",
+    "default": false
+  },
+  {
+    "country_code": "af",
+    "language_code": "en",
+    "default": true
+  },
+  {
+    "country_code": "al",
+    "language_code": "en",
+    "default": true
+  },
+  {
+    "country_code": "am",
+    "language_code": "en",
+    "default": true
+  },
+  {
+    "country_code": "ao",
+    "language_code": "en",
+    "default": true
+  },
+  {
+    "country_code": "ar",
+    "language_code": "sp",
+    "default": true
+  },
+  {
+    "country_code": "ar",
+    "language_code": "en",
+    "default": false
+  },
+  {
+    "country_code": "at",
+    "language_code": "de",
+    "default": true
+  },
+  {
+    "country_code": "at",
+    "language_code": "en",
+    "default": false
+  },
+  {
+    "country_code": "au",
+    "language_code": "au",
+    "default": true
+  },
+  {
+    "country_code": "ba",
+    "language_code": "hr",
+    "default": true
+  },
+  {
+    "country_code": "ba",
+    "language_code": "en",
+    "default": false
+  },
+  {
+    "country_code": "be",
+    "language_code": "fr",
+    "default": true
+  },
+  {
+    "country_code": "be",
+    "language_code": "en",
+    "default": false
+  },
+  {
+    "country_code": "be",
+    "language_code": "nl",
+    "default": false
+  },
+  {
+    "country_code": "bg",
+    "language_code": "en",
+    "default": true
+  },
+  {
+    "country_code": "br",
+    "language_code": "br",
+    "default": true
+  },
+  {
+    "country_code": "br",
+    "language_code": "en",
+    "default": false
+  },
+  {
+    "country_code": "bw",
+    "language_code": "en",
+    "default": true
+  },
+  {
+    "country_code": "by",
+    "language_code": "en",
+    "default": true
+  },
+  {
+    "country_code": "ca",
+    "language_code": "ca",
+    "default": true
+  },
+  {
+    "country_code": "ca",
+    "language_code": "qu",
+    "default": false
+  },
+  {
+    "country_code": "cd",
+    "language_code": "fr",
+    "default": true
+  },
+  {
+    "country_code": "cd",
+    "language_code": "en",
+    "default": false
+  },
+  {
+    "country_code": "ch",
+    "language_code": "de",
+    "default": true
+  },
+  {
+    "country_code": "ch",
+    "language_code": "fr",
+    "default": false
+  },
+  {
+    "country_code": "ch",
+    "language_code": "it",
+    "default": false
+  },
+  {
+    "country_code": "ch",
+    "language_code": "en",
+    "default": false
+  },
+  {
+    "country_code": "ci",
+    "language_code": "fr",
+    "default": true
+  },
+  {
+    "country_code": "ci",
+    "language_code": "en",
+    "default": false
+  },
+  {
+    "country_code": "cl",
+    "language_code": "sp",
+    "default": true
+  },
+  {
+    "country_code": "cl",
+    "language_code": "en",
+    "default": false
+  },
+  {
+    "country_code": "cm",
+    "language_code": "fr",
+    "default": true
+  },
+  {
+    "country_code": "cm",
+    "language_code": "en",
+    "default": false
+  },
+  {
+    "country_code": "cn",
+    "language_code": "cn",
+    "default": true
+  },
+  {
+    "country_code": "cn",
+    "language_code": "en",
+    "default": false
+  },
+  {
+    "country_code": "co",
+    "language_code": "sp",
+    "default": true
+  },
+  {
+    "country_code": "co",
+    "language_code": "en",
+    "default": false
+  },
+  {
+    "country_code": "cy",
+    "language_code": "en",
+    "default": true
+  },
+  {
+    "country_code": "cz",
+    "language_code": "cs",
+    "default": true
+  },
+  {
+    "country_code": "cz",
+    "language_code": "en",
+    "default": false
+  },
+  {
+    "country_code": "de",
+    "language_code": "de",
+    "default": true
+  },
+  {
+    "country_code": "de",
+    "language_code": "en",
+    "default": false
+  },
+  {
+    "country_code": "dk",
+    "language_code": "da",
+    "default": true
+  },
+  {
+    "country_code": "dk",
+    "language_code": "en",
+    "default": false
+  },
+  {
+    "country_code": "do",
+    "language_code": "sp",
+    "default": true
+  },
+  {
+    "country_code": "do",
+    "language_code": "en",
+    "default": false
+  },
+  {
+    "country_code": "dz",
+    "language_code": "ar",
+    "default": true
+  },
+  {
+    "country_code": "dz",
+    "language_code": "en",
+    "default": false
+  },
+  {
+    "country_code": "ec",
+    "language_code": "sp",
+    "default": true
+  },
+  {
+    "country_code": "ec",
+    "language_code": "en",
+    "default": false
+  },
+  {
+    "country_code": "ee",
+    "language_code": "en",
+    "default": true
+  },
+  {
+    "country_code": "eg",
+    "language_code": "ar",
+    "default": true
+  },
+  {
+    "country_code": "eg",
+    "language_code": "en",
+    "default": false
+  },
+  {
+    "country_code": "es",
+    "language_code": "es",
+    "default": true
+  },
+  {
+    "country_code": "es",
+    "language_code": "ct",
+    "default": false
+  },
+  {
+    "country_code": "es",
+    "language_code": "en",
+    "default": false
+  },
+  {
+    "country_code": "fi",
+    "language_code": "fi",
+    "default": true
+  },
+  {
+    "country_code": "fi",
+    "language_code": "en",
+    "default": false
+  },
+  {
+    "country_code": "fr",
+    "language_code": "fr",
+    "default": true
+  },
+  {
+    "country_code": "fr",
+    "language_code": "en",
+    "default": false
+  },
+  {
+    "country_code": "ga",
+    "language_code": "fr",
+    "default": true
+  },
+  {
+    "country_code": "ga",
+    "language_code": "en",
+    "default": false
+  },
+  {
+    "country_code": "gb",
+    "language_code": "en",
+    "default": true
+  },
+  {
+    "country_code": "gd",
+    "language_code": "en",
+    "default": true
+  },
+  {
+    "country_code": "ge",
+    "language_code": "en",
+    "default": true
+  },
+  {
+    "country_code": "gh",
+    "language_code": "en",
+    "default": true
+  },
+  {
+    "country_code": "gr",
+    "language_code": "el",
+    "default": true
+  },
+  {
+    "country_code": "gr",
+    "language_code": "en",
+    "default": false
+  },
+  {
+    "country_code": "hk",
+    "language_code": "zh",
+    "default": true
+  },
+  {
+    "country_code": "hk",
+    "language_code": "en",
+    "default": false
+  },
+  {
+    "country_code": "hr",
+    "language_code": "hr",
+    "default": true
+  },
+  {
+    "country_code": "hr",
+    "language_code": "en",
+    "default": false
+  },
+  {
+    "country_code": "hu",
+    "language_code": "hu",
+    "default": true
+  },
+  {
+    "country_code": "hu",
+    "language_code": "en",
+    "default": false
+  },
+  {
+    "country_code": "id",
+    "language_code": "id",
+    "default": true
+  },
+  {
+    "country_code": "id",
+    "language_code": "en",
+    "default": false
+  },
+  {
+    "country_code": "ie",
+    "language_code": "en",
+    "default": true
+  },
+  {
+    "country_code": "il",
+    "language_code": "he",
+    "default": true
+  },
+  {
+    "country_code": "il",
+    "language_code": "en",
+    "default": false
+  },
+  {
+    "country_code": "in",
+    "language_code": "en",
+    "default": true
+  },
+  {
+    "country_code": "in",
+    "language_code": "hi",
+    "default": false
+  },
+  {
+    "country_code": "iq",
+    "language_code": "en",
+    "default": true
+  },
+  {
+    "country_code": "is",
+    "language_code": "en",
+    "default": true
+  },
+  {
+    "country_code": "it",
+    "language_code": "it",
+    "default": true
+  },
+  {
+    "country_code": "it",
+    "language_code": "en",
+    "default": false
+  },
+  {
+    "country_code": "jo",
+    "language_code": "ar",
+    "default": true
+  },
+  {
+    "country_code": "jo",
+    "language_code": "en",
+    "default": false
+  },
+  {
+    "country_code": "jp",
+    "language_code": "ja",
+    "default": true
+  },
+  {
+    "country_code": "jp",
+    "language_code": "us",
+    "default": false
+  },
+  {
+    "country_code": "ke",
+    "language_code": "en",
+    "default": true
+  },
+  {
+    "country_code": "kh",
+    "language_code": "en",
+    "default": true
+  },
+  {
+    "country_code": "kr",
+    "language_code": "ko",
+    "default": true
+  },
+  {
+    "country_code": "kr",
+    "language_code": "en",
+    "default": false
+  },
+  {
+    "country_code": "kw",
+    "language_code": "ar",
+    "default": true
+  },
+  {
+    "country_code": "kw",
+    "language_code": "en",
+    "default": false
+  },
+  {
+    "country_code": "kz",
+    "language_code": "en",
+    "default": true
+  },
+  {
+    "country_code": "la",
+    "language_code": "en",
+    "default": true
+  },
+  {
+    "country_code": "la",
+    "language_code": "fr",
+    "default": false
+  },
+  {
+    "country_code": "lb",
+    "language_code": "ar",
+    "default": true
+  },
+  {
+    "country_code": "lb",
+    "language_code": "en",
+    "default": false
+  },
+  {
+    "country_code": "lt",
+    "language_code": "en",
+    "default": true
+  },
+  {
+    "country_code": "lu",
+    "language_code": "en",
+    "default": true
+  },
+  {
+    "country_code": "lu",
+    "language_code": "fr",
+    "default": false
+  },
+  {
+    "country_code": "lu",
+    "language_code": "de",
+    "default": false
+  },
+  {
+    "country_code": "lv",
+    "language_code": "en",
+    "default": true
+  },
+  {
+    "country_code": "ly",
+    "language_code": "en",
+    "default": true
+  },
+  {
+    "country_code": "ma",
+    "language_code": "fr",
+    "default": true
+  },
+  {
+    "country_code": "ma",
+    "language_code": "en",
+    "default": false
+  },
+  {
+    "country_code": "me",
+    "language_code": "hr",
+    "default": true
+  },
+  {
+    "country_code": "me",
+    "language_code": "en",
+    "default": false
+  },
+  {
+    "country_code": "mk",
+    "language_code": "en",
+    "default": true
+  },
+  {
+    "country_code": "ml",
+    "language_code": "en",
+    "default": true
+  },
+  {
+    "country_code": "mm",
+    "language_code": "en",
+    "default": true
+  },
+  {
+    "country_code": "mo",
+    "language_code": "zh",
+    "default": true
+  },
+  {
+    "country_code": "mo",
+    "language_code": "en",
+    "default": false
+  },
+  {
+    "country_code": "ms",
+    "language_code": "en",
+    "default": true
+  },
+  {
+    "country_code": "mt",
+    "language_code": "en",
+    "default": true
+  },
+  {
+    "country_code": "mv",
+    "language_code": "en",
+    "default": true
+  },
+  {
+    "country_code": "mw",
+    "language_code": "en",
+    "default": true
+  },
+  {
+    "country_code": "mx",
+    "language_code": "sp",
+    "default": true
+  },
+  {
+    "country_code": "mx",
+    "language_code": "en",
+    "default": false
+  },
+  {
+    "country_code": "my",
+    "language_code": "ms",
+    "default": true
+  },
+  {
+    "country_code": "my",
+    "language_code": "en",
+    "default": false
+  },
+  {
+    "country_code": "mz",
+    "language_code": "en",
+    "default": true
+  },
+  {
+    "country_code": "ng",
+    "language_code": "en",
+    "default": true
+  },
+  {
+    "country_code": "nl",
+    "language_code": "nl",
+    "default": true
+  },
+  {
+    "country_code": "nl",
+    "language_code": "en",
+    "default": false
+  },
+  {
+    "country_code": "no",
+    "language_code": "no",
+    "default": true
+  },
+  {
+    "country_code": "no",
+    "language_code": "en",
+    "default": false
+  },
+  {
+    "country_code": "np",
+    "language_code": "en",
+    "default": true
+  },
+  {
+    "country_code": "nr",
+    "language_code": "en",
+    "default": true
+  },
+  {
+    "country_code": "nz",
+    "language_code": "au",
+    "default": true
+  },
+  {
+    "country_code": "om",
+    "language_code": "ar",
+    "default": true
+  },
+  {
+    "country_code": "om",
+    "language_code": "en",
+    "default": false
+  },
+  {
+    "country_code": "pe",
+    "language_code": "sp",
+    "default": true
+  },
+  {
+    "country_code": "pe",
+    "language_code": "en",
+    "default": false
+  },
+  {
+    "country_code": "ph",
+    "language_code": "en",
+    "default": true
+  },
+  {
+    "country_code": "pk",
+    "language_code": "en",
+    "default": true
+  },
+  {
+    "country_code": "pl",
+    "language_code": "pl",
+    "default": true
+  },
+  {
+    "country_code": "pl",
+    "language_code": "en",
+    "default": false
+  },
+  {
+    "country_code": "pt",
+    "language_code": "pt",
+    "default": true
+  },
+  {
+    "country_code": "pt",
+    "language_code": "en",
+    "default": false
+  },
+  {
+    "country_code": "pw",
+    "language_code": "en",
+    "default": true
+  },
+  {
+    "country_code": "qa",
+    "language_code": "ar",
+    "default": true
+  },
+  {
+    "country_code": "qa",
+    "language_code": "en",
+    "default": false
+  },
+  {
+    "country_code": "ro",
+    "language_code": "ro",
+    "default": true
+  },
+  {
+    "country_code": "ro",
+    "language_code": "en",
+    "default": false
+  },
+  {
+    "country_code": "rs",
+    "language_code": "hr",
+    "default": true
+  },
+  {
+    "country_code": "rs",
+    "language_code": "en",
+    "default": false
+  },
+  {
+    "country_code": "ru",
+    "language_code": "ru",
+    "default": true
+  },
+  {
+    "country_code": "ru",
+    "language_code": "en",
+    "default": false
+  },
+  {
+    "country_code": "rw",
+    "language_code": "fr",
+    "default": true
+  },
+  {
+    "country_code": "rw",
+    "language_code": "en",
+    "default": false
+  },
+  {
+    "country_code": "sa",
+    "language_code": "ar",
+    "default": true
+  },
+  {
+    "country_code": "sa",
+    "language_code": "en",
+    "default": false
+  },
+  {
+    "country_code": "sb",
+    "language_code": "en",
+    "default": true
+  },
+  {
+    "country_code": "se",
+    "language_code": "sv",
+    "default": true
+  },
+  {
+    "country_code": "se",
+    "language_code": "en",
+    "default": false
+  },
+  {
+    "country_code": "sg",
+    "language_code": "en",
+    "default": true
+  },
+  {
+    "country_code": "sg",
+    "language_code": "cn",
+    "default": false
+  },
+  {
+    "country_code": "si",
+    "language_code": "en",
+    "default": true
+  },
+  {
+    "country_code": "sk",
+    "language_code": "sk",
+    "default": true
+  },
+  {
+    "country_code": "sk",
+    "language_code": "en",
+    "default": false
+  },
+  {
+    "country_code": "sn",
+    "language_code": "en",
+    "default": true
+  },
+  {
+    "country_code": "td",
+    "language_code": "en",
+    "default": true
+  },
+  {
+    "country_code": "th",
+    "language_code": "th",
+    "default": true
+  },
+  {
+    "country_code": "th",
+    "language_code": "en",
+    "default": false
+  },
+  {
+    "country_code": "tn",
+    "language_code": "ar",
+    "default": true
+  },
+  {
+    "country_code": "tn",
+    "language_code": "en",
+    "default": false
+  },
+  {
+    "country_code": "to",
+    "language_code": "en",
+    "default": true
+  },
+  {
+    "country_code": "tr",
+    "language_code": "tr",
+    "default": true
+  },
+  {
+    "country_code": "tr",
+    "language_code": "en",
+    "default": false
+  },
+  {
+    "country_code": "tw",
+    "language_code": "zh",
+    "default": true
+  },
+  {
+    "country_code": "tw",
+    "language_code": "en",
+    "default": false
+  },
+  {
+    "country_code": "tz",
+    "language_code": "en",
+    "default": true
+  },
+  {
+    "country_code": "ua",
+    "language_code": "uk",
+    "default": true
+  },
+  {
+    "country_code": "ua",
+    "language_code": "en",
+    "default": false
+  },
+  {
+    "country_code": "ug",
+    "language_code": "en",
+    "default": true
+  },
+  {
+    "country_code": "us",
+    "language_code": "us",
+    "default": true
+  },
+  {
+    "country_code": "us",
+    "language_code": "sp",
+    "default": false
+  },
+  {
+    "country_code": "uy",
+    "language_code": "sp",
+    "default": true
+  },
+  {
+    "country_code": "uy",
+    "language_code": "en",
+    "default": false
+  },
+  {
+    "country_code": "ve",
+    "language_code": "sp",
+    "default": true
+  },
+  {
+    "country_code": "ve",
+    "language_code": "en",
+    "default": false
+  },
+  {
+    "country_code": "vn",
+    "language_code": "vi",
+    "default": true
+  },
+  {
+    "country_code": "vn",
+    "language_code": "en",
+    "default": false
+  },
+  {
+    "country_code": "vu",
+    "language_code": "fr",
+    "default": true
+  },
+  {
+    "country_code": "vu",
+    "language_code": "en",
+    "default": false
+  },
+  {
+    "country_code": "xk",
+    "language_code": "en",
+    "default": true
+  },
+  {
+    "country_code": "ye",
+    "language_code": "ar",
+    "default": true
+  },
+  {
+    "country_code": "ye",
+    "language_code": "en",
+    "default": false
+  },
+  {
+    "country_code": "za",
+    "language_code": "en",
+    "default": true
+  },
+  {
+    "country_code": "zm",
+    "language_code": "en",
+    "default": true
+  },
+  {
+    "country_code": "zw",
+    "language_code": "en",
+    "default": true
+  }
+]

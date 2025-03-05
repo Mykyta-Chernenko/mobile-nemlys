@@ -1,0 +1,656 @@
+out of the ones you produces, here are the ones that have popularity over 5
+
+[
+	{
+		"keyword": "kennenlernen",
+		"position": null,
+		"delta": null,
+		"popularity": 35,
+		"competitiveness": 90,
+		"total": 250,
+		"starting_position": null
+	},
+	{
+		"keyword": "liebe",
+		"position": 149,
+		"delta": 1,
+		"popularity": 35,
+		"competitiveness": 85,
+		"total": 213,
+		"starting_position": 182
+	},
+	{
+		"keyword": "zweisam",
+		"position": null,
+		"delta": null,
+		"popularity": 34,
+		"competitiveness": 97,
+		"total": 250,
+		"starting_position": null
+	},
+	{
+		"keyword": "liebestest",
+		"position": 79,
+		"delta": -1,
+		"popularity": 31,
+		"competitiveness": 75,
+		"total": 249,
+		"starting_position": 94
+	},
+	{
+		"keyword": "beziehung",
+		"position": 17,
+		"delta": 3,
+		"popularity": 24,
+		"competitiveness": 83,
+		"total": 250,
+		"starting_position": 22
+	},
+	{
+		"keyword": "kommunikation",
+		"position": null,
+		"delta": null,
+		"popularity": 18,
+		"competitiveness": 100,
+		"total": 249,
+		"starting_position": null
+	},
+	{
+		"keyword": "paargespräche",
+		"position": 14,
+		"delta": null,
+		"popularity": 5,
+		"competitiveness": 66,
+		"total": 250,
+		"starting_position": 14
+	}
+]
+
+based, on these keywords, create a new list of 100 relevant keywords that will likely be popular
+
+also, here are the popular current keywords that the app is ranking by
+
+[
+	{
+		"keyword": "exposed",
+		"search_position": 130,
+		"delta": 0,
+		"popularity": 60,
+		"competitiveness": 89,
+		"total": 247
+	},
+	{
+		"keyword": "widgetable",
+		"search_position": 245,
+		"delta": 0,
+		"popularity": 59,
+		"competitiveness": 85,
+		"total": 250
+	},
+	{
+		"keyword": "love8",
+		"search_position": 117,
+		"delta": 0,
+		"popularity": 58,
+		"competitiveness": 68,
+		"total": 250
+	},
+	{
+		"keyword": "trinkspiel",
+		"search_position": 143,
+		"delta": -17,
+		"popularity": 53,
+		"competitiveness": 64,
+		"total": 246
+	},
+	{
+		"keyword": "spicy",
+		"search_position": 220,
+		"delta": -23,
+		"popularity": 40,
+		"competitiveness": 79,
+		"total": 250
+	},
+	{
+		"keyword": "beziehungsrechner",
+		"search_position": 79,
+		"delta": 1,
+		"popularity": 38,
+		"competitiveness": 74,
+		"total": 250
+	},
+	{
+		"keyword": "lovense remote",
+		"search_position": 202,
+		"delta": 2,
+		"popularity": 37,
+		"competitiveness": 51,
+		"total": 249
+	},
+	{
+		"keyword": "couple",
+		"search_position": 17,
+		"delta": 1,
+		"popularity": 36,
+		"competitiveness": 84,
+		"total": 249
+	},
+	{
+		"keyword": "lovense",
+		"search_position": 197,
+		"delta": 11,
+		"popularity": 36,
+		"competitiveness": 79,
+		"total": 249
+	},
+	{
+		"keyword": "fragen spiel",
+		"search_position": 153,
+		"delta": 2,
+		"popularity": 35,
+		"competitiveness": 88,
+		"total": 250
+	},
+	{
+		"keyword": "gruppenspiele",
+		"search_position": 103,
+		"delta": 96,
+		"popularity": 35,
+		"competitiveness": 86,
+		"total": 250
+	},
+	{
+		"keyword": "couple game",
+		"search_position": 4,
+		"delta": 1,
+		"popularity": 34,
+		"competitiveness": 84,
+		"total": 250
+	},
+	{
+		"keyword": "partner spiele",
+		"search_position": 99,
+		"delta": -70,
+		"popularity": 34,
+		"competitiveness": 65,
+		"total": 250
+	},
+	{
+		"keyword": "sumone",
+		"search_position": 158,
+		"delta": 1,
+		"popularity": 33,
+		"competitiveness": 69,
+		"total": 250
+	},
+	{
+		"keyword": "noteit",
+		"search_position": 178,
+		"delta": 10,
+		"popularity": 32,
+		"competitiveness": 83,
+		"total": 249
+	},
+	{
+		"keyword": "liebestest",
+		"search_position": 79,
+		"delta": -1,
+		"popularity": 31,
+		"competitiveness": 75,
+		"total": 250
+	},
+	{
+		"keyword": "beziehungsapp",
+		"search_position": 29,
+		"delta": 1,
+		"popularity": 31,
+		"competitiveness": 72,
+		"total": 249
+	},
+	{
+		"keyword": "flaschendrehen",
+		"search_position": 92,
+		"delta": 0,
+		"popularity": 30,
+		"competitiveness": 82,
+		"total": 249
+	},
+	{
+		"keyword": "paar app",
+		"search_position": 18,
+		"delta": 1,
+		"popularity": 30,
+		"competitiveness": 67,
+		"total": 250
+	},
+	{
+		"keyword": "paar spiele",
+		"search_position": 7,
+		"delta": -1,
+		"popularity": 29,
+		"competitiveness": 81,
+		"total": 250
+	},
+	{
+		"keyword": "pärchen spiele",
+		"search_position": 6,
+		"delta": -1,
+		"popularity": 27,
+		"competitiveness": 82,
+		"total": 250
+	},
+	{
+		"keyword": "askbae",
+		"search_position": 40,
+		"delta": 0,
+		"popularity": 27,
+		"competitiveness": 70,
+		"total": 249
+	},
+	{
+		"keyword": "spiele für paare",
+		"search_position": 7,
+		"delta": -1,
+		"popularity": 26,
+		"competitiveness": 67,
+		"total": 250
+	},
+	{
+		"keyword": "couple life",
+		"search_position": 229,
+		"delta": 0,
+		"popularity": 26,
+		"competitiveness": 80,
+		"total": 249
+	},
+	{
+		"keyword": "couple app",
+		"search_position": 23,
+		"delta": 1,
+		"popularity": 25,
+		"competitiveness": 81,
+		"total": 249
+	},
+	{
+		"keyword": "think dirty",
+		"search_position": 213,
+		"delta": 0,
+		"popularity": 25,
+		"competitiveness": 84,
+		"total": 250
+	},
+	{
+		"keyword": "sexstellungen",
+		"search_position": 80,
+		"delta": 0,
+		"popularity": 25,
+		"competitiveness": 69,
+		"total": 250
+	},
+	{
+		"keyword": "fragen",
+		"search_position": 28,
+		"delta": -2,
+		"popularity": 25,
+		"competitiveness": 87,
+		"total": 250
+	},
+	{
+		"keyword": "beziehung",
+		"search_position": 17,
+		"delta": 3,
+		"popularity": 24,
+		"competitiveness": 83,
+		"total": 249
+	},
+	{
+		"keyword": "myndpaar",
+		"search_position": 72,
+		"delta": 0,
+		"popularity": 24,
+		"competitiveness": 50,
+		"total": 250
+	},
+	{
+		"keyword": "couples games",
+		"search_position": 4,
+		"delta": 1,
+		"popularity": 23,
+		"competitiveness": 79,
+		"total": 250
+	},
+	{
+		"keyword": "couple calendar",
+		"search_position": 204,
+		"delta": 1,
+		"popularity": 22,
+		"competitiveness": 89,
+		"total": 249
+	},
+	{
+		"keyword": "most likely to",
+		"search_position": 43,
+		"delta": -1,
+		"popularity": 19,
+		"competitiveness": 77,
+		"total": 250
+	},
+	{
+		"keyword": "relationship tracker",
+		"search_position": 49,
+		"delta": 1,
+		"popularity": 19,
+		"competitiveness": 84,
+		"total": 249
+	},
+	{
+		"keyword": "selbstliebe",
+		"search_position": 186,
+		"delta": -2,
+		"popularity": 19,
+		"competitiveness": 77,
+		"total": 250
+	},
+	{
+		"keyword": "noteit widget",
+		"search_position": 226,
+		"delta": -11,
+		"popularity": 19,
+		"competitiveness": 81,
+		"total": 250
+	},
+	{
+		"keyword": "obimy",
+		"search_position": 9,
+		"delta": -1,
+		"popularity": 19,
+		"competitiveness": 89,
+		"total": 250
+	},
+	{
+		"keyword": "couple games",
+		"search_position": 5,
+		"delta": 1,
+		"popularity": 18,
+		"competitiveness": 83,
+		"total": 250
+	},
+	{
+		"keyword": "stellungen",
+		"search_position": 99,
+		"delta": 0,
+		"popularity": 18,
+		"competitiveness": 76,
+		"total": 250
+	},
+	{
+		"keyword": "agape",
+		"search_position": 97,
+		"delta": 17,
+		"popularity": 17,
+		"competitiveness": 80,
+		"total": 250
+	},
+	{
+		"keyword": "scratch adventure couple game",
+		"search_position": 22,
+		"delta": 1,
+		"popularity": 17,
+		"competitiveness": 80,
+		"total": 250
+	},
+	{
+		"keyword": "obedience",
+		"search_position": 208,
+		"delta": 2,
+		"popularity": 16,
+		"competitiveness": 87,
+		"total": 249
+	},
+	{
+		"keyword": "entscheidungen",
+		"search_position": 176,
+		"delta": -1,
+		"popularity": 15,
+		"competitiveness": 87,
+		"total": 250
+	},
+	{
+		"keyword": "long distance",
+		"search_position": 20,
+		"delta": -2,
+		"popularity": 15,
+		"competitiveness": 64,
+		"total": 250
+	},
+	{
+		"keyword": "how long have we been together",
+		"search_position": 206,
+		"delta": 2,
+		"popularity": 13,
+		"competitiveness": 70,
+		"total": 250
+	},
+	{
+		"keyword": "3somer",
+		"search_position": 138,
+		"delta": -2,
+		"popularity": 12,
+		"competitiveness": 71,
+		"total": 250
+	},
+	{
+		"keyword": "couple up",
+		"search_position": 97,
+		"delta": 19,
+		"popularity": 11,
+		"competitiveness": 82,
+		"total": 249
+	},
+	{
+		"keyword": "appy couple wedding app",
+		"search_position": 86,
+		"delta": 1,
+		"popularity": 9,
+		"competitiveness": 67,
+		"total": 248
+	},
+	{
+		"keyword": "intimacy",
+		"search_position": 85,
+		"delta": 1,
+		"popularity": 8,
+		"competitiveness": 85,
+		"total": 250
+	},
+	{
+		"keyword": "long distance game for couples",
+		"search_position": 8,
+		"delta": 4,
+		"popularity": 7,
+		"competitiveness": 79,
+		"total": 250
+	},
+	{
+		"keyword": "evergreen",
+		"search_position": 84,
+		"delta": 39,
+		"popularity": 6,
+		"competitiveness": 76,
+		"total": 250
+	},
+	{
+		"keyword": "psych outwit your friends",
+		"search_position": 182,
+		"delta": 3,
+		"popularity": 6,
+		"competitiveness": 65,
+		"total": 235
+	},
+	{
+		"keyword": "kinks",
+		"search_position": 144,
+		"delta": 0,
+		"popularity": 6,
+		"competitiveness": 87,
+		"total": 250
+	},
+	{
+		"keyword": "couples quiz relationship game",
+		"search_position": 12,
+		"delta": 1,
+		"popularity": 6,
+		"competitiveness": 79,
+		"total": 250
+	}
+]
+
+in play market
+
+and in app store
+
+[
+	{
+		"keyword": "couple",
+		"search_position": 91,
+		"delta": -12,
+		"popularity": 36,
+		"competitiveness": 87,
+		"total": 3974
+	},
+	{
+		"keyword": "fragen spiel",
+		"search_position": 94,
+		"delta": -1,
+		"popularity": 35,
+		"competitiveness": 81,
+		"total": 1506
+	},
+	{
+		"keyword": "couple game",
+		"search_position": 151,
+		"delta": -1,
+		"popularity": 34,
+		"competitiveness": 69,
+		"total": 1449
+	},
+	{
+		"keyword": "beziehungsapp",
+		"search_position": 171,
+		"delta": -7,
+		"popularity": 31,
+		"competitiveness": 69,
+		"total": 510
+	},
+	{
+		"keyword": "paar app",
+		"search_position": 41,
+		"delta": -1,
+		"popularity": 30,
+		"competitiveness": 82,
+		"total": 1078
+	},
+	{
+		"keyword": "paar spiele",
+		"search_position": 39,
+		"delta": 1,
+		"popularity": 29,
+		"competitiveness": 88,
+		"total": 1337
+	},
+	{
+		"keyword": "fragen für paare",
+		"search_position": 1,
+		"delta": 2,
+		"popularity": 27,
+		"competitiveness": 58,
+		"total": 55
+	},
+	{
+		"keyword": "app für paare",
+		"search_position": 46,
+		"delta": -5,
+		"popularity": 27,
+		"competitiveness": 61,
+		"total": 364
+	},
+	{
+		"keyword": "spiele für paare",
+		"search_position": 55,
+		"delta": -1,
+		"popularity": 26,
+		"competitiveness": 60,
+		"total": 253
+	},
+	{
+		"keyword": "couple app",
+		"search_position": 59,
+		"delta": -1,
+		"popularity": 25,
+		"competitiveness": 78,
+		"total": 3968
+	},
+	{
+		"keyword": "beziehung",
+		"search_position": 53,
+		"delta": 1,
+		"popularity": 24,
+		"competitiveness": 70,
+		"total": 455
+	},
+	{
+		"keyword": "long distance",
+		"search_position": 32,
+		"delta": -1,
+		"popularity": 15,
+		"competitiveness": 68,
+		"total": 391
+	},
+	{
+		"keyword": "frage spiel",
+		"search_position": 75,
+		"delta": 1,
+		"popularity": 15,
+		"competitiveness": 78,
+		"total": 1504
+	},
+	{
+		"keyword": "kinky",
+		"search_position": 52,
+		"delta": 22,
+		"popularity": 9,
+		"competitiveness": 84,
+		"total": 129
+	},
+	{
+		"keyword": "long distance game for couples",
+		"search_position": 30,
+		"delta": -11,
+		"popularity": 7,
+		"competitiveness": 58,
+		"total": 49
+	},
+	{
+		"keyword": "kinks",
+		"search_position": 79,
+		"delta": -19,
+		"popularity": 6,
+		"competitiveness": 75,
+		"total": 181
+	},
+	{
+		"keyword": "couples quiz relationship game",
+		"search_position": 43,
+		"delta": -10,
+		"popularity": 6,
+		"competitiveness": 52,
+		"total": 110
+	}
+]
+
+
+discard all the words not related to the app, or keywords which are brands or app names.
+
+now create a list of 100 new terms based on these words, new and old to maximizr the popularity and minimize the competition
+
+now you don't need to be that creative, just choose the words that are already working good, and results thtat were good, and when you have some more for both stores, you can include variations of the keywords

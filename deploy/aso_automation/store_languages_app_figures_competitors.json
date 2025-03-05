@@ -1,0 +1,353 @@
+{
+  "play_market": {
+    "no-NO": [
+      "no"
+    ],
+    "uk": [],
+    "en-US": [
+      "us"
+    ],
+    "en-GB": [
+      "gb"
+    ],
+    "en-CA": [
+      "ca"
+    ],
+    "en-AU": [
+      "au"
+    ],
+    "en-IN": [
+      "in"
+    ],
+    "en-ZA": [
+      "za"
+    ],
+    "es-ES": [
+      "es"
+    ],
+    "es-US": [
+      "us"
+    ],
+    "es-419": [
+      "ar",
+      "cl",
+      "co",
+      "mx",
+      "pe"
+    ],
+    "fr-FR": [
+      "fr"
+    ],
+    "fr-CA": [
+      "ca"
+    ],
+    "pt-BR": [
+      "br"
+    ],
+    "pt-PT": [
+      "pt"
+    ],
+    "it-IT": [
+      "it"
+    ],
+    "de-DE": [
+      "de"
+    ],
+    "nl-NL": [
+      "nl"
+    ],
+    "pl-PL": [
+      "pl"
+    ],
+    "tr-TR": [
+      "tr"
+    ],
+    "ro": [],
+    "id": [
+      "id"
+    ],
+    "fil": [
+      "ph"
+    ],
+    "vi": [
+      "vn"
+    ],
+    "zh-CN": [
+      "cn"
+    ],
+    "zh-TW": [
+      "tw"
+    ],
+    "ar": [
+      "eg",
+      "iq",
+      "qa",
+      "sa",
+      "ae"
+    ],
+    "hi-IN": [
+      "in"
+    ],
+    "ja-JP": [
+      "jp"
+    ],
+    "hr": [],
+    "cs-CZ": [],
+    "da-DK": [
+      "dk"
+    ],
+    "fi-FI": [
+      "fi"
+    ],
+    "el-GR": [],
+    "iw-IL": [
+      "il"
+    ],
+    "sv-SE": [
+      "se"
+    ],
+    "sk": [],
+    "hu-HU": [],
+    "ca": [],
+    "ko-KR": [
+      "kr"
+    ],
+    "ms": [
+      "my",
+      "sg"
+    ],
+    "ms-MY": [
+      "my"
+    ],
+    "th": [
+      "th"
+    ],
+    "fa-AE": [
+      "ae"
+    ],
+    "ne-NP": [],
+    "mn-MN": [],
+    "mr-IN": [
+      "in"
+    ],
+    "ml-IN": [
+      "in"
+    ],
+    "mk-MK": [],
+    "lt": [],
+    "lv": [],
+    "lo-LA": [],
+    "ky-KG": [],
+    "km-KH": [],
+    "kk": [],
+    "kn-IN": [
+      "in"
+    ],
+    "is-IS": [],
+    "gu": [
+      "in"
+    ],
+    "ka-GE": [],
+    "gl-ES": [],
+    "et": [],
+    "zh-HK": [
+      "hk"
+    ],
+    "my-MM": [],
+    "bg": [],
+    "be": [],
+    "eu-ES": [],
+    "bn-BD": [],
+    "az-AZ": [],
+    "hy-AM": [],
+    "am": [],
+    "sq": [],
+    "af": [
+      "za"
+    ],
+    "sr": [],
+    "sl": [],
+    "cs": [],
+    "sw": []
+  },
+  "app_store": {
+    "uk": [],
+    "ar-SA": [
+      "sa"
+    ],
+    "ca": [],
+    "zh-Hans": [
+      "cn"
+    ],
+    "zh-Hant": [
+      "hk",
+      "tw"
+    ],
+    "hr": [],
+    "cs": [],
+    "da": [
+      "dk"
+    ],
+    "nl-NL": [
+      "nl"
+    ],
+    "en-AU": [
+      "au"
+    ],
+    "en-CA": [
+      "ca"
+    ],
+    "en-GB": [
+      "gb"
+    ],
+    "en-US": [
+      "us"
+    ],
+    "fi": [
+      "fi"
+    ],
+    "fr-FR": [
+      "fr"
+    ],
+    "fr-CA": [
+      "ca"
+    ],
+    "de-DE": [
+      "de"
+    ],
+    "el": [],
+    "he": [
+      "il"
+    ],
+    "hi": [
+      "in"
+    ],
+    "hu": [],
+    "id": [
+      "id"
+    ],
+    "it": [
+      "it"
+    ],
+    "ja": [
+      "jp"
+    ],
+    "ko": [
+      "kr"
+    ],
+    "ms": [
+      "my",
+      "sg"
+    ],
+    "no": [
+      "no"
+    ],
+    "pl": [
+      "pl"
+    ],
+    "pt-BR": [
+      "br"
+    ],
+    "pt-PT": [
+      "pt"
+    ],
+    "ro": [],
+    "sk": [],
+    "es-ES": [
+      "es"
+    ],
+    "es-MX": [
+      "mx"
+    ],
+    "sv": [
+      "se"
+    ],
+    "th": [
+      "th"
+    ],
+    "tr": [
+      "tr"
+    ],
+    "vi": [
+      "vn"
+    ],
+    "ar": [
+      "eg",
+      "iq",
+      "qa",
+      "sa",
+      "ae"
+    ],
+    "zh-CN": [
+      "cn"
+    ],
+    "zh-TW": [
+      "tw"
+    ],
+    "zh-HK": [
+      "hk"
+    ],
+    "nl": [
+      "nl"
+    ],
+    "en": [
+      "au",
+      "ca",
+      "in",
+      "ie",
+      "nz",
+      "za",
+      "gb",
+      "us",
+      "sg"
+    ],
+    "en-IN": [
+      "in"
+    ],
+    "en-IE": [
+      "ie"
+    ],
+    "en-NZ": [
+      "nz"
+    ],
+    "en-SG": [
+      "sg"
+    ],
+    "en-ZA": [
+      "za"
+    ],
+    "fr": [
+      "fr",
+      "ca",
+      "be",
+      "ch"
+    ],
+    "de": [
+      "at",
+      "de",
+      "ch"
+    ],
+    "nb": [
+      "no"
+    ],
+    "pt": [
+      "br",
+      "pt"
+    ],
+    "es": [
+      "ar",
+      "cl",
+      "co",
+      "mx",
+      "pe",
+      "es"
+    ],
+    "es-419": [
+      "ar",
+      "cl",
+      "co",
+      "mx",
+      "pe"
+    ]
+  }
+}

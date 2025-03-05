@@ -1,0 +1,1 @@
+curl "https://api.appfigures.com/v2/aso?countries=us&products=333740863377&sort=-popularity&count=10000&page=1&device=handheld&group_by=keyword" -H"Authorization: Bearer pat_FCC2Kh63gcs7ndivHcAuVG7W52rBY9Jo"
