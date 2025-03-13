@@ -6,6 +6,7 @@ import time
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from typing import Dict, List
 from anthropic import Anthropic
+from general import SKIP_LANGUAGES, IOS_LANGUAGES, ANDROID_LANGUAGES
 
 logging.basicConfig(level=logging.INFO)
 
@@ -13,9 +14,6 @@ client = Anthropic(api_key=os.getenv("ANTHROPIC_API_KEY"))
 MODEL = "claude-3-7-sonnet-20250219"
 MAX_RETRIES = 8
 RETRY_DELAY = 2
-
-# Languages to skip
-SKIP_LANGUAGES = {"zu", "sw", "my", "mr", "mn", "ml", "ky", "kn", "km", "ka", "hy", "gu", "gl", "eu", "be", "am"}
 
 GENERAL_SYSTEM_PROMPT = """
 You are a senior ASO Product Manager, your task is to create great and relevant ASO based on the keywords, product and info I provide.

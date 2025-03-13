@@ -1,0 +1,19 @@
+SKIP_LANGUAGES = {"zu", "sw", "my", "mr", "mn", "ml", "ky", "kn", "km", "ka", "hy", "gu", "gl", "eu", "be", "am"}
+IOS_LANGUAGES = {
+    'uk', 'ar-SA', 'ca', 'zh-Hans', 'zh-Hant', 'hr', 'cs', 'da', 'nl-NL',
+    'en-AU', 'en-CA', 'en-GB', 'en-US', 'fi', 'fr-FR', 'fr-CA', 'de-DE',
+    'el', 'he', 'hi', 'hu', 'id', 'it', 'ja', 'ko', 'ms', 'no', 'pl',
+    'pt-BR', 'pt-PT', 'ro', 'sk', 'es-ES', 'es-MX', 'sv', 'th', 'tr', 'vi'
+}
+
+ANDROID_LANGUAGES = {
+    'no-NO', 'en-US', 'en-GB', 'en-CA', 'en-AU', 'en-IN', 'en-ZA', 'es-ES',
+    'es-US', 'es-419', 'fr-FR', 'fr-CA', 'pt-BR', 'pt-PT', 'it-IT', 'de-DE',
+    'nl-NL', 'uk', 'pl-PL', 'tr-TR', 'ro', 'id', 'fil', 'vi', 'zh-CN',
+    'zh-TW', 'ar', 'hi-IN', 'ja-JP', 'hr', 'cs-CZ', 'da-DK', 'fi-FI',
+    'el-GR', 'iw-IL', 'sv-SE', 'sk', 'hu-HU', 'ca', 'ko-KR', 'ms', 'ms-MY',
+    'th', 'fa-AE', 'ne-NP', 'mn-MN', 'mr-IN', 'ml-IN', 'mk-MK', 'lt',
+    'lv', 'lo-LA', 'ky-KG', 'km-KH', 'kk', 'kn-IN', 'is-IS', 'gu', 'ka-GE',
+    'gl-ES', 'et', 'zh-HK', 'my-MM', 'bg', 'be', 'eu-ES', 'bn-BD', 'az-AZ',
+    'hy-AM', 'am', 'sq', 'af', 'sr', 'sl'
+}

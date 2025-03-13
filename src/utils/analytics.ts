@@ -1,4 +1,4 @@
-import { IS_SUPABASE_DEV, MIXPANEL_TOKEN } from './constants';
+import { IS_SUPABASE_DEV, LANGUAGE_CODE, MIXPANEL_TOKEN } from './constants';
 import { Platform, Dimensions } from 'react-native';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import { v4 as uuidv4 } from 'uuid';
@@ -20,6 +20,7 @@ export class ExpoMixpanelAnalytics {
   appId?: string;
   appVersion?: string;
   screenSize?: string;
+  language?: string;
   screenHeight?: string;
   screenWidth?: string;
   deviceName?: string;
@@ -37,6 +38,7 @@ export class ExpoMixpanelAnalytics {
     this.token = token;
     this.clientId = Constants.deviceName;
     this.osVersion = Platform.Version;
+    this.language = LANGUAGE_CODE;
     this.appVersion = Constants.expoConfig?.version;
     this.superProps;
     void this.identify();
@@ -167,6 +169,7 @@ export class ExpoMixpanelAnalytics {
     data.properties.app_version = this.appVersion;
     data.properties.client_id = this.clientId;
     data.properties.device_name = this.deviceName;
+    data.properties.language = this.language;
     if (this.platform) {
       data.properties.platform = this.platform;
     }
@@ -203,12 +206,18 @@ const realAnalytics = () => {
     logEvent: (message: string, properties: object) => {
       mixpanel.track(message, properties);
     },
+    setLanguage: (language: string) => {
+      mixpanel.language = language;
+    },
   };
 };
 const devAnalytics = () => {
   return {
     logEvent: (message: string, properties: object) => {
       console.log(message, properties);
+    },
+    setLanguage: (language: string) => {
+      console.log(language);
     },
   };
 };

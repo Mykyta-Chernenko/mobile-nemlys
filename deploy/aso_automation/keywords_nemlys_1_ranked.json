@@ -2848,13 +2848,95 @@
       }
     ],
     "ka-GE": [],
-    "gl-ES": [],
+    "gl-ES": [
+      {
+        "keyword_term": "preguntas",
+        "competitiveness": 73,
+        "popularity": 35,
+        "competitor": false,
+        "rank": 85,
+        "country": "es"
+      },
+      {
+        "keyword_term": "juegos para parejas",
+        "competitiveness": 66,
+        "popularity": 27,
+        "competitor": false,
+        "rank": 43,
+        "country": "es"
+      },
+      {
+        "keyword_term": "couple game",
+        "competitiveness": 64,
+        "popularity": 22,
+        "competitor": false,
+        "rank": 80,
+        "country": "es"
+      },
+      {
+        "keyword_term": "couple",
+        "competitiveness": 77,
+        "popularity": 21,
+        "competitor": false,
+        "rank": 28,
+        "country": "es"
+      },
+      {
+        "keyword_term": "kinks",
+        "competitiveness": 76,
+        "popularity": 6,
+        "competitor": false,
+        "rank": 56,
+        "country": "es"
+      }
+    ],
     "et": [],
     "zh-HK": [],
     "my-MM": [],
     "bg": [],
     "be": [],
-    "eu-ES": [],
+    "eu-ES": [
+      {
+        "keyword_term": "preguntas",
+        "competitiveness": 73,
+        "popularity": 35,
+        "competitor": false,
+        "rank": 85,
+        "country": "es"
+      },
+      {
+        "keyword_term": "juegos para parejas",
+        "competitiveness": 66,
+        "popularity": 27,
+        "competitor": false,
+        "rank": 43,
+        "country": "es"
+      },
+      {
+        "keyword_term": "couple game",
+        "competitiveness": 64,
+        "popularity": 22,
+        "competitor": false,
+        "rank": 80,
+        "country": "es"
+      },
+      {
+        "keyword_term": "couple",
+        "competitiveness": 77,
+        "popularity": 21,
+        "competitor": false,
+        "rank": 28,
+        "country": "es"
+      },
+      {
+        "keyword_term": "kinks",
+        "competitiveness": 76,
+        "popularity": 6,
+        "competitor": false,
+        "rank": 56,
+        "country": "es"
+      }
+    ],
     "bn-BD": [],
     "az-AZ": [],
     "hy-AM": [],
@@ -2910,7 +2992,48 @@
         "country": "sa"
       }
     ],
-    "ca": [],
+    "ca": [
+      {
+        "keyword_term": "preguntas",
+        "competitiveness": 73,
+        "popularity": 35,
+        "competitor": false,
+        "rank": 85,
+        "country": "es"
+      },
+      {
+        "keyword_term": "juegos para parejas",
+        "competitiveness": 66,
+        "popularity": 27,
+        "competitor": false,
+        "rank": 43,
+        "country": "es"
+      },
+      {
+        "keyword_term": "couple game",
+        "competitiveness": 64,
+        "popularity": 22,
+        "competitor": false,
+        "rank": 80,
+        "country": "es"
+      },
+      {
+        "keyword_term": "couple",
+        "competitiveness": 77,
+        "popularity": 21,
+        "competitor": false,
+        "rank": 28,
+        "country": "es"
+      },
+      {
+        "keyword_term": "kinks",
+        "competitiveness": 76,
+        "popularity": 6,
+        "competitor": false,
+        "rank": 56,
+        "country": "es"
+      }
+    ],
     "zh-Hans": [],
     "zh-Hant": [],
     "hr": [],

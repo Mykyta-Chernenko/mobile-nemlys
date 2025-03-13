@@ -109,7 +109,6 @@ def main():
     product = sys.argv[1]
     logging.info(f"Starting processing for product: {product}")
 
-    # TODO incorrect languages
     store_lang = load_json("./store_languages_app_figures_competitors.json")
     product_desc = load_json("./product_description.json")
     iteration = product_desc[product]['iteration']

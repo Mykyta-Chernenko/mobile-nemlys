@@ -5,6 +5,7 @@ import sys
 import time
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from typing import Dict, List
+from general import SKIP_LANGUAGES, IOS_LANGUAGES, ANDROID_LANGUAGES
 
 import openai
 
@@ -15,8 +16,6 @@ MODEL = "o3-mini"
 MAX_RETRIES = 8
 RETRY_DELAY = 2
 
-# Languages to skip
-SKIP_LANGUAGES = {"zu", "sw", "my", "mr", "mn", "ml", "ky", "kn", "km", "ka", "hy", "gu", "gl", "eu", "be", "am"}
 
 GENERAL_SYSTEM_PROMPT = """
 You are a senior ASO Product Manager, your task is to create great and relevant ASO based on the keywords, product and info I provide.

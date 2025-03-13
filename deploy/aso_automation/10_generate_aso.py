@@ -8,16 +8,17 @@ from typing import Dict, List
 
 from anthropic import Anthropic
 
+from general import SKIP_LANGUAGES, IOS_LANGUAGES, ANDROID_LANGUAGES
+
 logging.basicConfig(level=logging.INFO)
 
 client = Anthropic(api_key=os.getenv("ANTHROPIC_API_KEY"))
 MODEL = "claude-3-7-sonnet-20250219"
 # MODEL = "o3-mini"
-MAX_RETRIES = 15
+MAX_RETRIES = 2
 RETRY_DELAY = 2
 
 # Languages to skip
-SKIP_LANGUAGES = {"zu", "sw", "my", "mr", "mn", "ml", "ky", "kn", "km", "ka", "hy", "gu", "gl", "eu", "be", "am"}
 
 GENERAL_SYSTEM_PROMPT = """
 You are a senior ASO Product Manager, your task is to create great and relevant ASO based on the keywords, product and info I provide.
@@ -65,6 +66,8 @@ Other:
 
 - iOS only factors one keyword once, so avoid duplication of the keywords on the App Store.
 - Keywords like “app” and “game” in general shouldn’t be used as keywords, as they are already indexed by App Store.
+
+do not output illegal characters for app store aso in the fields
 
 you have to produce correct json object with the following fields, every key must contain 1 line-value, correct json
 length,title,subtitle,keywords,short_description,description (description is 1 long line no line break, just\n inside "", be craeful not to break json quotes with other symbols)
@@ -188,7 +191,9 @@ def call_llm(messages: List[Dict], store_type: str) -> Dict:
                 max_tokens=2000,
                 messages=messages,
             )
+            print(response.content[0].text)
             content = json.loads(response.content[0].text)
+            print(content)
             validate_field_lengths(store_type, content)
             return content
         except Exception as e:
@@ -278,6 +283,7 @@ def generate_aso(store_type: str, name: str, product_desc: str, selected_keyword
 
     return call_llm(messages, store_type)
 
+
 def save_json(filepath: str, data: Dict) -> None:
     """Save JSON data to a file with pretty formatting."""
     try:
@@ -288,12 +294,13 @@ def save_json(filepath: str, data: Dict) -> None:
         logging.error(f"Error saving to {filepath}: {e}")
         raise
 
+
 def main():
     if len(sys.argv) < 2 or not sys.argv[1]:
         logging.error("No product provided in arguments")
         raise Exception('No product provided')
-
     product = sys.argv[1]
+    overwrite = False if len(sys.argv) < 3 else sys.argv[2].lower() == "true"
     product_data = load_json("product_description.json")[product]
     iteration = product_data['iteration']
 
@@ -320,15 +327,19 @@ def main():
             for locale, keywords in locales.items():
                 # Skip if locale is in the skip list
                 if locale[:2] in SKIP_LANGUAGES:
+                    existing_output_data[store][locale] = {}
                     logging.info(f"Skipping locale {locale}")
                     continue
-
-                # Skip if no keywords or already processed
-                if not keywords or (locale in existing_output_data[store] and existing_output_data[store][locale]):
-                    if not keywords:
-                        logging.info(f"No keywords for {store} - {locale}")
-                    else:
-                        logging.info(f"Locale already processed: {store} - {locale}")
+                if not keywords:
+                    raise Exception(locale)
+                allowed_languages = IOS_LANGUAGES if store == 'app_store' else ANDROID_LANGUAGES
+                if locale not in allowed_languages:
+                    logging.info(f"Skipping {store} - {locale}: locale is not in the languages")
+                    if locale in existing_output_data[store]:
+                        del existing_output_data[store][locale]
+                    continue
+                if not overwrite and (locale in existing_output_data[store] and existing_output_data[store][locale]):
+                    logging.info(f"Locale already processed and overwrite is false: {store} - {locale}")
                     continue
                 future = executor.submit(generate_aso, store, name, product_desc, keywords,
                                          known_competitors, irrelevant_competitors, locale)
@@ -345,6 +356,8 @@ def main():
                 logging.info(f"Successfully generated ASO for {store} - {locale}")
             except Exception as e:
                 logging.error(f"Failed to generate ASO for {store} - {locale}: {e}")
+                existing_output_data[store][locale] = {}
+                save_json(output_file, existing_output_data)
 
     logging.info(f"ASO generation completed. Results saved to {output_file}")
 

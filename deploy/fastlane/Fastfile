@@ -17,9 +17,13 @@ def read_languages_json
   JSON.parse(file)
 end
 
+def read_aso_json
+  file = File.read("./aso.json") # Adjust path as needed
+  JSON.parse(file)
+end
+
 def gather_screens
   screenshots = {}
-  # updated regex to capture size "13" as well and extract the original index
   Dir.glob("../screens/*.png").each do |path|
     filename = File.basename(path)
     if m = filename.match(/^([a-zA-Z0-9\-]+)_(6\.5|12\.9|13)_(\d+)\.png$/)
@@ -34,6 +38,7 @@ end
 
 app_data = read_app_json
 languages_data = read_languages_json
+aso_data = read_aso_json
 
 ios_languages = languages_data["app_store"].keys
 android_languages = languages_data["play_market"].keys
@@ -51,9 +56,24 @@ android_size_mapping = {
 default_platform(:ios)
 
 platform :ios do
-  lane :upload_screenshots_ios do
+  lane :upload_metadata_and_screenshots_ios do
     screenshots = gather_screens
+    metadata_path = "./metadata"
+
+    # Prepare metadata for each language
     ios_languages.each do |lang|
+      lang_data = aso_data["app_store"][lang]
+      # Create directory structure for App Store metadata
+      lang_dir = "#{metadata_path}/#{lang}"
+      FileUtils.mkdir_p(lang_dir)
+
+      # Write metadata files
+      File.write("#{lang_dir}/name.txt", lang_data["title"])
+      File.write("#{lang_dir}/subtitle.txt", lang_data["subtitle"])
+      File.write("#{lang_dir}/keywords.txt", lang_data["keywords"])
+      File.write("#{lang_dir}/description.txt", lang_data["description"])
+
+      # Handle screenshots
       ios_size_mapping.each do |size_key, folder_name|
         tmp_dir = "./screenshots/#{lang}"
         FileUtils.mkdir_p(tmp_dir)
@@ -81,11 +101,10 @@ platform :ios do
 
     deliver(
       username: "mykyta.chernenko@gmail.com",
-      skip_metadata: true,
+      app_identifier: app_data[:ios_bundle_id],
+      app_version: app_data[:version],
       skip_app_version_update: true,
       force: true,
-      app_version: app_data[:version],
-      app_identifier: app_data[:ios_bundle_id],
       sync_screenshots: true,
       overwrite_screenshots: true,
       precheck_include_in_app_purchases: false
@@ -94,13 +113,23 @@ platform :ios do
 end
 
 platform :android do
-  lane :upload_screenshots_android do
+  lane :upload_metadata_and_screenshots_android do
     screenshots = gather_screens
+
     android_languages.each do |lang|
+      lang_data = aso_data["play_market"][lang]
+
+      metadata_dir = "./metadata/android/#{lang}"
+      FileUtils.mkdir_p(metadata_dir)
+
+      File.write("#{metadata_dir}/title.txt", lang_data["title"])
+      File.write("#{metadata_dir}/short_description.txt", lang_data["short_description"])
+      File.write("#{metadata_dir}/full_description.txt", lang_data["description"])
+
       android_size_mapping.each do |size, folder_names|
         next unless screenshots[lang] && screenshots[lang][size]
         folder_names.each do |folder_name|
-          tmp_dir = "./metadata/android/#{lang}/images/#{folder_name}"
+          tmp_dir = "#{metadata_dir}/images/#{folder_name}"
           FileUtils.mkdir_p(tmp_dir)
           screenshots[lang][size].sort_by { |s| s[:idx] }.each do |img|
             FileUtils.cp(img[:path], "#{tmp_dir}/#{img[:idx]}.png")
@@ -122,12 +151,13 @@ platform :android do
       package_name: app_data[:android_package],
       json_key_data: json_key_data,
       skip_upload_changelogs: true,
-      sync_image_upload: true
+      sync_image_upload: true,
+      verbose: true
     )
   end
 end
 
 lane :upload_all do
-  invoke_lane("ios", "upload_screenshots_ios")
-  invoke_lane("android", "upload_screenshots_android")
+  invoke_lane("ios", "upload_metadata_and_screenshots_ios")
+  invoke_lane("android", "upload_metadata_and_screenshots_android")
 end

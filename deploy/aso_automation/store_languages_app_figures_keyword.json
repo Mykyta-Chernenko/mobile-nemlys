@@ -1,472 +1,351 @@
 {
   "play_market": {
     "no-NO": [
-      "NO"
-    ],
-    "uk": [
-      "UA"
+      "no"
     ],
     "en-US": [
-      "US"
+      "us"
     ],
     "en-GB": [
-      "GB"
+      "gb"
     ],
     "en-CA": [
-      "CA"
+      "ca"
     ],
     "en-AU": [
-      "AU"
+      "au"
     ],
     "en-IN": [
-      "IN"
+      "in"
     ],
     "en-ZA": [
-      "ZA"
+      "za"
     ],
     "es-ES": [
-      "ES"
+      "es"
     ],
     "es-US": [
-      "US"
+      "us"
     ],
     "es-419": [
-      "MX",
-      "AR",
-      "CO",
-      "CL",
-      "PE",
-      "VE",
-      "EC",
-      "GT",
-      "CR",
-      "DO"
+      "mx",
+      "ar",
+      "cl",
+      "co",
+      "pe"
     ],
     "fr-FR": [
-      "FR"
+      "fr"
     ],
     "fr-CA": [
-      "CA"
+      "ca"
     ],
     "pt-BR": [
-      "BR"
+      "br"
     ],
     "pt-PT": [
-      "PT"
+      "pt"
     ],
     "it-IT": [
-      "IT"
+      "it"
     ],
     "de-DE": [
-      "DE"
+      "de"
     ],
     "nl-NL": [
-      "NL"
+      "nl"
+    ],
+    "uk": [
+      "ua"
     ],
     "pl-PL": [
-      "PL"
+      "pl"
     ],
     "tr-TR": [
-      "TR"
+      "tr"
     ],
     "ro": [
-      "RO",
-      "MD"
+      "ro"
     ],
     "id": [
-      "ID"
+      "id"
     ],
     "fil": [
-      "PH"
+      "ph"
     ],
     "vi": [
-      "VN"
+      "vn"
     ],
     "zh-CN": [
-      "CN"
+      "cn"
     ],
     "zh-TW": [
-      "TW"
+      "tw"
     ],
     "ar": [
-      "AE",
-      "SA",
-      "QA",
-      "KW",
-      "BH",
-      "OM",
-      "EG",
-      "JO",
-      "LB",
-      "DZ",
-      "MA",
-      "TN",
-      "IQ"
+      "eg",
+      "iq",
+      "qa",
+      "sa",
+      "ae"
     ],
     "hi-IN": [
-      "IN"
+      "in"
     ],
     "ja-JP": [
-      "JP"
+      "jp"
     ],
     "hr": [
-      "HR"
+      "hr"
     ],
     "cs-CZ": [
-      "CZ"
+      "cz"
     ],
     "da-DK": [
-      "DK"
+      "dk"
     ],
     "fi-FI": [
-      "FI"
+      "fi"
     ],
     "el-GR": [
-      "GR"
+      "gr"
     ],
     "iw-IL": [
-      "IL"
+      "il"
     ],
     "sv-SE": [
-      "SE"
+      "se"
     ],
     "sk": [
-      "SK"
+      "sk"
     ],
     "hu-HU": [
-      "HU"
+      "hu"
     ],
     "ca": [
-      "ES"
+      "es"
     ],
     "ko-KR": [
-      "KR"
+      "kr"
     ],
     "ms": [
-      "MY"
+      "my"
     ],
     "ms-MY": [
-      "MY"
+      "my"
     ],
     "th": [
-      "TH"
+      "th"
     ],
     "fa-AE": [
-      "AE"
+      "ae"
     ],
     "ne-NP": [
-      "NP"
+      "np"
     ],
     "mn-MN": [
-      "MN"
+      "mn"
     ],
     "mr-IN": [
-      "IN"
+      "in"
     ],
     "ml-IN": [
-      "IN"
+      "in"
     ],
     "mk-MK": [
-      "MK"
+      "mk"
     ],
     "lt": [
-      "LT"
+      "lt"
     ],
     "lv": [
-      "LV"
+      "lv"
     ],
     "lo-LA": [
-      "LA"
+      "la"
     ],
     "ky-KG": [
-      "KG"
+      "kg"
     ],
     "km-KH": [
-      "KH"
+      "kh"
     ],
     "kk": [
-      "KZ"
+      "kz"
     ],
     "kn-IN": [
-      "IN"
+      "in"
     ],
     "is-IS": [
-      "IS"
+      "is"
     ],
     "gu": [
-      "IN"
+      "in"
     ],
     "ka-GE": [
-      "GE"
+      "ge"
     ],
     "gl-ES": [
-      "ES"
+      "es"
     ],
     "et": [
-      "EE"
+      "ee"
     ],
     "zh-HK": [
-      "HK"
+      "hk"
     ],
     "my-MM": [
-      "MM"
+      "mm"
     ],
     "bg": [
-      "BG"
+      "bg"
     ],
     "be": [
-      "BY"
+      "by"
     ],
     "eu-ES": [
-      "ES"
+      "es"
     ],
-    "bn-BD": [],
+    "bn-BD": [
+      "bd"
+    ],
     "az-AZ": [
-      "AZ"
+      "az"
     ],
     "hy-AM": [
-      "AM"
+      "am"
     ],
-    "am": [],
+    "am": [
+      "et"
+    ],
     "sq": [
-      "AL",
-      "XK"
+      "al"
     ],
     "af": [
-      "ZA",
-      "NA"
+      "za"
     ],
     "sr": [
-      "RS",
-      "BA",
-      "ME"
+      "rs"
     ],
     "sl": [
-      "SI"
-    ],
-    "cs": [
-      "CZ"
+      "si"
     ]
   },
   "app_store": {
     "uk": [
-      "UA"
+      "ua"
     ],
     "ar-SA": [
-      "SA"
+      "sa"
     ],
     "ca": [
-      "ES"
+      "es"
     ],
     "zh-Hans": [
-      "CN"
+      "cn"
     ],
     "zh-Hant": [
-      "TW"
+      "tw",
+      "hk"
     ],
     "hr": [
-      "HR"
+      "hr"
     ],
     "cs": [
-      "CZ"
+      "cz"
     ],
     "da": [
-      "DK"
+      "dk"
     ],
     "nl-NL": [
-      "NL"
+      "nl"
     ],
     "en-AU": [
-      "AU"
+      "au"
     ],
     "en-CA": [
-      "CA"
+      "ca"
     ],
     "en-GB": [
-      "GB"
+      "gb"
     ],
     "en-US": [
-      "US"
+      "us"
     ],
     "fi": [
-      "FI"
+      "fi"
     ],
     "fr-FR": [
-      "FR"
+      "fr"
     ],
     "fr-CA": [
-      "CA"
+      "ca"
     ],
     "de-DE": [
-      "DE"
+      "de"
     ],
     "el": [
-      "GR",
-      "CY"
+      "gr"
     ],
     "he": [
-      "IL"
+      "il"
     ],
     "hi": [
-      "IN"
+      "in"
     ],
     "hu": [
-      "HU"
+      "hu"
     ],
     "id": [
-      "ID"
+      "id"
     ],
     "it": [
-      "IT",
-      "CH"
+      "it"
     ],
     "ja": [
-      "JP"
+      "jp"
     ],
     "ko": [
-      "KR"
+      "kr"
     ],
     "ms": [
-      "MY"
+      "my"
     ],
     "no": [
-      "NO"
+      "no"
     ],
     "pl": [
-      "PL"
+      "pl"
     ],
     "pt-BR": [
-      "BR"
+      "br"
     ],
     "pt-PT": [
-      "PT"
+      "pt"
     ],
     "ro": [
-      "RO",
-      "MD"
+      "ro"
     ],
     "sk": [
-      "SK"
+      "sk"
     ],
     "es-ES": [
-      "ES"
+      "es"
     ],
     "es-MX": [
-      "MX"
+      "mx"
     ],
     "sv": [
-      "SE",
-      "FI",
-      "NO"
+      "se"
     ],
     "th": [
-      "TH"
+      "th"
     ],
     "tr": [
-      "TR",
-      "CY"
+      "tr"
     ],
     "vi": [
-      "VN"
-    ],
-    "ar": [
-      "AE",
-      "SA",
-      "QA",
-      "KW",
-      "BH",
-      "OM",
-      "EG",
-      "JO",
-      "LB",
-      "DZ",
-      "MA",
-      "TN",
-      "IQ"
-    ],
-    "zh-CN": [
-      "CN"
-    ],
-    "zh-TW": [
-      "TW"
-    ],
-    "zh-HK": [
-      "HK"
-    ],
-    "nl": [
-      "NL",
-      "BE"
-    ],
-    "en": [
-      "US",
-      "GB",
-      "CA",
-      "AU",
-      "IN",
-      "ZA"
-    ],
-    "en-IN": [
-      "IN"
-    ],
-    "en-IE": [
-      "IE"
-    ],
-    "en-NZ": [
-      "NZ"
-    ],
-    "en-SG": [
-      "SG"
-    ],
-    "en-ZA": [
-      "ZA"
-    ],
-    "fr": [
-      "FR",
-      "CH",
-      "BE",
-      "CA",
-      "LU"
-    ],
-    "de": [
-      "DE",
-      "AT",
-      "CH",
-      "LU"
-    ],
-    "nb": [
-      "NO"
-    ],
-    "pt": [
-      "BR",
-      "PT",
-      "CV",
-      "GW",
-      "AO",
-      "MZ",
-      "ST"
-    ],
-    "es": [
-      "ES",
-      "MX",
-      "AR",
-      "CO",
-      "CL",
-      "PE",
-      "VE",
-      "EC",
-      "GT"
-    ],
-    "es-419": [
-      "MX",
-      "AR",
-      "CO",
-      "CL",
-      "PE",
-      "VE",
-      "EC",
-      "GT",
-      "CR",
-      "DO"
+      "vn"
     ]
   }
 }

@@ -4,6 +4,7 @@ import os
 import sys
 import time
 from concurrent.futures import ThreadPoolExecutor, as_completed
+from general import SKIP_LANGUAGES, IOS_LANGUAGES, ANDROID_LANGUAGES
 
 import openai
 
@@ -16,7 +17,6 @@ MAX_RETRIES = 1
 RETRY_DELAY = 2
 TOTAL_KEYWORDS = 500
 
-SKIP_LANGUAGES = {"zu", "sw", "my", "mr", "mn", "ml", "ky", "kn", "km", "ka", "hy", "gu", "gl", "eu", "be", "am"}
 
 
 def load_production_description(filepath="./product_description.json"):

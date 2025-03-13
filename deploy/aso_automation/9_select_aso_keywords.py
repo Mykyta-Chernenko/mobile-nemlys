@@ -5,9 +5,9 @@ import sys
 import time
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from typing import Dict, List
+from general import SKIP_LANGUAGES, IOS_LANGUAGES, ANDROID_LANGUAGES
 
 import openai
-
 logging.basicConfig(level=logging.INFO)
 
 openai.api_key = os.getenv("OPENAI_API_KEY")
@@ -15,8 +15,6 @@ MODEL = "o3-mini"
 MAX_RETRIES = 8
 RETRY_DELAY = 2
 
-# Languages to skip
-SKIP_LANGUAGES = {"zu", "sw", "my", "mr", "mn", "ml", "ky", "kn", "km", "ka", "hy", "gu", "gl", "eu", "be", "am"}
 
 GENERAL_SYSTEM_PROMPT = """
 You are a senior ASO Product Manager, your task is to create great and relevant ASO based on the keywords, product and info I provide.
@@ -347,6 +345,7 @@ def main():
         logging.error("No product provided in arguments")
         raise Exception('No product provided')
     product = sys.argv[1]
+    overwrite = False if len(sys.argv) < 3 else sys.argv[2].lower() == "true"
 
     product_data = load_json("product_description.json")[product]
     iteration = product_data['iteration']
@@ -361,6 +360,10 @@ def main():
 
     output_data = {"app_store": {}, "play_market": {}}
     output_file = f"9_{product}_{iteration}_aso_keywords.json"
+    if os.path.exists(output_file):
+        with open(output_file, "r", encoding="utf-8") as f:
+            output_data = json.load(f)
+
 
     with ThreadPoolExecutor(max_workers=20) as executor:
         future_to_task = {}
@@ -368,10 +371,22 @@ def main():
             for locale, keywords in locales.items():
                 if locale[:2] in SKIP_LANGUAGES:
                     logging.info(f"Skipping locale {locale}")
+                    output_data[store][locale] = {}
                     continue
-                if not keywords or len(keywords) < 3:
-                    logging.info(f"Skipping locale {locale}, too few keywords")
+                allowed_languages = IOS_LANGUAGES if store == 'app_store' else ANDROID_LANGUAGES
+                if locale not in allowed_languages:
+                    logging.info(f"Skipping {store} - {locale}: locale is not in the languages")
+                    if locale in output_data[store]:
+                        del output_data[store][locale]
                     continue
+                if not overwrite and store in output_data and locale in output_data[store]:
+                    existing_data = output_data[store][locale]
+                    if existing_data.get("selected_keywords", []):
+                        logging.info(f"Skipping {store} - {locale}: non-empty data exists and overwrite is False")
+                        continue
+                # if not keywords or len(keywords) < 3:
+                #     logging.info(f"Skipping locale {locale}, too few keywords")
+                #     continue
 
                 future = executor.submit(generate_aso, store, name, product_desc, keywords[:20], default_keywords,
                                          known_competitors, irrelevant_competitors, locale)

@@ -26,10 +26,10 @@ For _fastlane_ installation instructions, see [Installing _fastlane_](https://do
 
 ## iOS
 
-### ios upload_screenshots_ios
+### ios upload_metadata_and_screenshots_ios
 
 ```sh
-[bundle exec] fastlane ios upload_screenshots_ios
+[bundle exec] fastlane ios upload_metadata_and_screenshots_ios
 ```
 
 
@@ -39,10 +39,10 @@ For _fastlane_ installation instructions, see [Installing _fastlane_](https://do
 
 ## Android
 
-### android upload_screenshots_android
+### android upload_metadata_and_screenshots_android
 
 ```sh
-[bundle exec] fastlane android upload_screenshots_android
+[bundle exec] fastlane android upload_metadata_and_screenshots_android
 ```
 
 
