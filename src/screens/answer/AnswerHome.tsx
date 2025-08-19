@@ -134,7 +134,6 @@ export default function AnswerHome({
     }
   };
 
-  useEffect(() => {}, []);
   const { setMode } = useThemeMode();
 
   useFocusEffect(

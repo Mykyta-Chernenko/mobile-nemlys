@@ -1,4 +1,4 @@
-import React, { useRef, useState, useCallback, ReactNode } from 'react';
+import React, { useRef, useState, useCallback, ReactNode, useEffect } from 'react';
 import { View, ScrollView, Animated, Dimensions, Image, NativeSyntheticEvent } from 'react-native';
 import { useFocusEffect } from '@react-navigation/native';
 import { NativeStackScreenProps } from '@react-navigation/native-stack';
@@ -78,6 +78,13 @@ export default function V3WelcomeSlider({ navigation }: Props) {
   function handleScroll(e: NativeSyntheticEvent<NativeScrollEvent>) {
     scrollX.setValue(e.nativeEvent.contentOffset.x);
   }
+
+
+  useEffect(() => {
+    void localAnalytics().logEvent('WelcomeVisited', {
+      screen: 'V3WelcomeSlider',
+    });
+  }, []);
 
   function goNext(index: number) {
     void localAnalytics().logEvent('V3WelcomeSliderNextClicked', {

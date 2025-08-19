@@ -106,7 +106,7 @@ export const OAuth = ({
             }`,
           );
         }
-        await handleUser('google')(user);
+        await handleUser('apple')(user);
         auth?.setIsSignedIn!(true);
         auth?.setUserId!(user.id);
       } else {

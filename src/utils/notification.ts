@@ -258,6 +258,7 @@ export async function createNewNotification(
       content: {
         title,
         body,
+        sound: 'default',
         data: { screen, type, band, subtype },
       },
       trigger,
