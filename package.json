@@ -8,7 +8,6 @@
     "eject": "expo eject",
     "lint": "eslint --ext .tsx --ext .ts src/",
     "format": "prettier --check ./src",
-    "prepare": "husky install",
     "i18n-unused": "i18n-unused display-unused",
     "i18n-missed": "i18n-unused display-missed",
     "update_production": "SUPABASE_URL=https://kenpblepcyvkwausergf.supabase.co SUPABASE_KEY=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InJwcXp3dmt5enVsbXZ2bGRrcXNlIiwicm9sZSI6ImFub24iLCJpYXQiOjE2NjcxNjc5ODMsImV4cCI6MTk4Mjc0Mzk4M30.5YGQBVaGcTfljLUaviU_oKzdt-7BBKDIRN4dTlSYdxE eas update --channel production"
@@ -100,7 +99,6 @@
     "eslint-plugin-react": "^7.31.10",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-unused-imports": "^2.0.0",
-    "husky": "^8.0.0",
     "i18n-unused": "^0.16.0",
     "lint-staged": "^13.0.3",
     "prettier": "^2.7.1",
