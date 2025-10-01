@@ -114,6 +114,10 @@ export type MainStackParamList = {
     refreshTimeStamp: string | undefined;
     isOnboarding: boolean;
   };
+  RevenueCatPremiumOffer: {
+    refreshTimeStamp: string | undefined;
+    isOnboarding: boolean;
+  };
   PremiumSuccess: {
     state: 'premium_started' | 'trial_started';
     isOnboarding: boolean;

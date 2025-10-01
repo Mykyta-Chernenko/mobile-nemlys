@@ -65,6 +65,7 @@ import V3PremiumOffer from '@app/screens/premium/V3PremiumOffer';
 import OnboardingStatistics from '@app/screens/onboarding/OnboardingStatistics';
 import OnboardingNotification from '@app/screens/onboarding/OnboardingNotification';
 import V3Upgrade from '@app/screens/menu/V3Upgrade';
+import RevenueCatPremiumOffer from '@app/screens/premium/RevenueCatPremiumOffer';
 
 const MainStack = createNativeStackNavigator();
 const Main = () => {
@@ -76,11 +77,13 @@ const Main = () => {
         gestureEnabled: false,
       }}
     >
+      {/*Entry point of the app if a user is logged in, redirect to the new or old version*/}
       <MainStack.Screen
         options={{ animation: 'slide_from_right' }}
         name={HomeName}
         component={Home}
       />
+      {/*old v2 home*/}
       <MainStack.Screen
         options={{ animation: 'slide_from_right' }}
         name={'V2Home'}
@@ -106,16 +109,13 @@ const Main = () => {
         name={'Profile'}
         component={Profile}
       />
+      {/*profile entry point, redirect to v2 or v3*/}
       <MainStack.Screen
         options={{ animation: 'slide_from_right' }}
         name={'V2Profile'}
         component={V2Profile}
       />
-      <MainStack.Screen
-        options={{ animation: 'slide_from_right' }}
-        name={'V3Profile'}
-        component={V3Profile}
-      />
+      {/*v2 pages down*/}
       <MainStack.Screen
         options={{ animation: 'slide_from_right' }}
         name={'DateIsWithPartner'}
@@ -148,11 +148,6 @@ const Main = () => {
       />
       <MainStack.Screen
         options={{ animation: 'slide_from_right' }}
-        name={'V3PremiumOffer'}
-        component={V3PremiumOffer}
-      />
-      <MainStack.Screen
-        options={{ animation: 'slide_from_right' }}
         name={'PremiumSuccess'}
         component={PremiumSuccess}
       />
@@ -165,6 +160,20 @@ const Main = () => {
         options={{ animation: 'slide_from_right' }}
         name={'InterviewText'}
         component={InterviewText}
+      />
+
+      {/*end of v2 screens*/}
+
+      {/*onboarding screens/config screens, used in both v2 and v3*/}
+      <MainStack.Screen
+        options={{ animation: 'slide_from_right' }}
+        name={'QuestionAnswer'}
+        component={QuestionAnswer}
+      />
+      <MainStack.Screen
+        options={{ animation: 'slide_from_right' }}
+        name={'AnswerHome'}
+        component={AnswerHome}
       />
 
       <MainStack.Screen
@@ -238,15 +247,16 @@ const Main = () => {
         component={Analyzing}
       />
 
+      {/*v3 screens*/}
       <MainStack.Screen
         options={{ animation: 'slide_from_right' }}
-        name={'QuestionAnswer'}
-        component={QuestionAnswer}
+        name={'V3PremiumOffer'}
+        component={V3PremiumOffer}
       />
-      <MainStack.Screen
+       <MainStack.Screen
         options={{ animation: 'slide_from_right' }}
-        name={'AnswerHome'}
-        component={AnswerHome}
+        name={'RevenueCatPremiumOffer'}
+        component={RevenueCatPremiumOffer}
       />
       <MainStack.Screen
         options={{ animation: 'slide_from_right' }}
@@ -257,6 +267,11 @@ const Main = () => {
         options={{ animation: 'slide_from_right' }}
         name={'V3Home'}
         component={V3Home}
+      />
+      <MainStack.Screen
+        options={{ animation: 'slide_from_right' }}
+        name={'V3Profile'}
+        component={V3Profile}
       />
       <MainStack.Screen
         options={{ animation: 'slide_from_right' }}

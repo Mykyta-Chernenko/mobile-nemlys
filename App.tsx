@@ -58,6 +58,7 @@ const toastConfig = {
     );
   },
 };
+
 function App() {
   return (
     <>

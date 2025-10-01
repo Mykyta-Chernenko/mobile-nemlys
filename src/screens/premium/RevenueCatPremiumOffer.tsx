@@ -9,8 +9,6 @@ import {
   logErrorsWithMessage,
   logErrorsWithMessageWithoutAlert,
   logSupaErrors,
-  retryAsync,
-  retryRequestAsync,
 } from '@app/utils/errors';
 import { supabase } from '@app/api/initSupabase';
 import { MainStackParamList } from '@app/types/navigation';
@@ -28,10 +26,15 @@ import PremiumHard from '@app/icons/premium_hard';
 import PremiumMeaningful from '@app/icons/premium_meaningful';
 import PremiumFun from '@app/icons/premium_fun';
 import { getNow, sleep } from '@app/utils/date';
-import * as RNIap from 'react-native-iap';
+import Purchases, { PurchasesPackage, LOG_LEVEL } from 'react-native-purchases';
 import { TouchableOpacity } from 'react-native';
 import PlanSelector from '@app/components/premium/PlanSelector';
 import { useFocusEffect } from '@react-navigation/native';
+const REVENUE_CAT_API_KEYS = {
+  ios: 'appl_iFyUuiSazikMPQAZvQgMVsCYCxL',
+  android: 'goog_EvHtmHZMwxfZZUPzNCjeaCcbAnc',
+};
+
 export default function ({
   route,
   navigation,
@@ -44,6 +47,7 @@ export default function ({
   const [buttonDisabled, setButtonDisabled] = useState(false);
   const [trialLength, setTrialLength] = useState(7);
   const [canClose, setCanClose] = useState(false);
+  const [availablePackages, setAvailablePackages] = useState<PurchasesPackage[]>([]);
   type CurrentPremiumState =
     | 'premium'
     | 'trial'
@@ -53,8 +57,6 @@ export default function ({
     | 'daily'
     | 'introduction';
   const [currentPremiumState, setCurrentPremiumState] = useState<CurrentPremiumState>('daily');
-
-  const [dailyTopics, setDailyTopics] = useState(0);
 
   const icons = [
     { rotation: '-5deg', icon: PremiumIssues },
@@ -72,6 +74,7 @@ export default function ({
     useCallback(() => {
       setMode('dark');
       return () => setMode('light');
+      // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []),
   );
   const getData = async () => {
@@ -82,30 +85,6 @@ export default function ({
     let currentPremiumState: CurrentPremiumState = 'daily';
 
     try {
-      const [featureFlagResponse, premiumDetailsResult] = await Promise.all([
-        supabase
-          .from('feature_flag')
-          .select('rollout_percentage')
-          .eq('feature', 'revenuecat_paywall')
-          .single(),
-        getPremiumDetails(authContext.userId!),
-      ]);
-      if (featureFlagResponse.error){
-        throw featureFlagResponse.error
-      }
-
-
-
-      if (featureFlagResponse.data) {
-        const rolloutPercentage = featureFlagResponse.data.rollout_percentage;
-        const randomValue = Math.random() * 100;
-        console.log(randomValue)
-        if (randomValue < rolloutPercentage) {
-          navigation.replace('RevenueCatPremiumOffer', route.params);
-          return;
-        }
-      }
-
       const {
         premiumState,
         totalDateCount,
@@ -115,12 +94,12 @@ export default function ({
         trialExpired,
         forcePremium,
         afterTrialPremiumOffered,
-      } = premiumDetailsResult;
+      } = await getPremiumDetails(authContext.userId!);
 
       setCanClose(!forcePremium);
       if (forcePremium) {
-        void localAnalytics().logEvent('V3PremiumOfferForcedLoaded', {
-          screen: 'V3PremiumOffer',
+        void localAnalytics().logEvent('V3PremiumOfferRevenueCatForcedLoaded', {
+          screen: 'V3PremiumOfferRevenueCat',
           action: 'ForcedLoaded',
           userId: authContext.userId,
           premiumState: currentPremiumState,
@@ -128,15 +107,13 @@ export default function ({
         });
       }
 
-      setDailyTopics(dailySetCounts);
-
       if (premiumState === 'premium') {
         currentPremiumState = 'premium';
       } else if (trialExpired && !afterTrialPremiumOffered) {
         const updateProfile = await supabase
           .from('user_technical_details')
           .update({ after_trial_premium_offered: true, updated_at: getNow().toISOString() })
-          .eq('user_id', authContext.userId!);
+          .eq('user_id', authContext.userId || '');
         if (updateProfile.error) {
           logSupaErrors(updateProfile.error);
           return;
@@ -159,8 +136,8 @@ export default function ({
       return;
     }
 
-    void localAnalytics().logEvent('V3PremiumOfferLoaded', {
-      screen: 'V3PremiumOffer',
+    void localAnalytics().logEvent('V3PremiumOfferRevenueCatLoaded', {
+      screen: 'V3PremiumOfferRevenueCat',
       action: 'Loaded',
       userId: authContext.userId,
       premiumState: currentPremiumState,
@@ -174,14 +151,55 @@ export default function ({
     if (!isFirstMount.current && route?.params?.refreshTimeStamp) {
       void getData();
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [route?.params?.refreshTimeStamp]);
   useEffect(() => {
     void getData();
     isFirstMount.current = false;
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
+
+  // Wait for is_user_premium to return true
+  const waitForPremiumUpdate = async (maxAttempts = 20): Promise<boolean> => {
+    for (let attempt = 1; attempt <= maxAttempts; attempt++) {
+      await sleep(500);
+
+      try {
+        const result = await supabase.rpc('is_user_premium');
+        if (result.data === true) {
+          void localAnalytics().logEvent('V3PremiumOfferRevenueCatPremiumUpdated', {
+            screen: 'V3PremiumOfferRevenueCat',
+            action: 'PremiumUpdated',
+            userId: authContext.userId,
+            attempt,
+          });
+          return true;
+        }
+      } catch (error) {
+        logErrorsWithMessageWithoutAlert(error);
+      }
+
+      void localAnalytics().logEvent('V3PremiumOfferRevenueCatPremiumUpdateRetry', {
+        screen: 'V3PremiumOfferRevenueCat',
+        action: 'PremiumUpdateRetry',
+        userId: authContext.userId,
+        attempt,
+        maxAttempts,
+      });
+    }
+
+    void localAnalytics().logEvent('V3PremiumOfferRevenueCatPremiumUpdateTimeout', {
+      screen: 'V3PremiumOfferRevenueCat',
+      action: 'PremiumUpdateTimeout',
+      userId: authContext.userId,
+      maxAttempts,
+    });
+    return false;
+  };
 
   const handleButtonPress = async () => {
     setButtonDisabled(true);
+    setSubscriptionLoading(true);
 
     try {
       void localAnalytics().logEvent('V3PremiumContinuePressed', {
@@ -190,47 +208,78 @@ export default function ({
         userId: authContext.userId,
       });
 
-      try {
-        setSubscriptionLoading(true);
-        void localAnalytics().logEvent('V3PremiumPremiumStartInitiated', {
-          screen: 'Premium',
-          action: 'PremiumStartInitiated',
-          userId: authContext.userId,
-          plan: selectedPlan,
-        });
-        const subscriptionPlan =
-          selectedPlan === 'Annual' ? yearlySubscriptionId : monthlySubscriptionId;
+      void localAnalytics().logEvent('V3PremiumPremiumStartInitiated', {
+        screen: 'Premium',
+        action: 'PremiumStartInitiated',
+        userId: authContext.userId,
+        plan: selectedPlan,
+      });
 
-        if (Platform.OS === 'ios') {
-          await RNIap.requestSubscription({
-            sku: subscriptionPlan,
-          });
-        } else if (Platform.OS === 'android') {
-          const subscriptions = await RNIap.getSubscriptions({
-            skus: [subscriptionPlan],
-          });
+      const subscriptionPlan =
+        selectedPlan === 'Annual' ? yearlySubscriptionId : monthlySubscriptionId;
 
-          const subscription = subscriptions?.[0] as RNIap.SubscriptionAndroid;
-          const offerToken = subscription?.subscriptionOfferDetails?.[0]?.offerToken ?? '';
+      // Find the package to purchase
+      const packageToPurchase = availablePackages.find(
+        (pkg) => pkg.product.identifier === subscriptionPlan,
+      );
 
-          await RNIap.requestSubscription({
-            subscriptionOffers: [
-              {
-                sku: subscriptionPlan,
-                offerToken: offerToken,
-              },
-            ],
-            // TODO handle update of the subscription
-            // purchaseTokenAndroid:
-            //   '',
-            // prorationModeAndroid: RNIap.ProrationModesAndroid.IMMEDIATE_WITHOUT_PRORATION,
-          });
-        }
-      } catch (error) {
-        setSubscriptionLoading(false);
+      if (!packageToPurchase) {
+        throw new Error('Package not found');
       }
-      await sleep(200);
+
+      void localAnalytics().logEvent('V3PremiumOfferRevenueCatPurchaseStarted', {
+        screen: 'V3PremiumOfferRevenueCat',
+        action: 'PurchaseStarted',
+        userId: authContext.userId,
+        offeringId: subscriptionPlan,
+        value: packageToPurchase.product.price,
+        currency: packageToPurchase.product.currencyCode,
+        productIdentifier: packageToPurchase.identifier,
+      });
+
+      // Purchase the package
+      await Purchases.purchasePackage(packageToPurchase);
+
+      void localAnalytics().logEvent('V3PremiumOfferRevenueCatPurchaseCompleted', {
+        screen: 'V3PremiumOfferRevenueCat',
+        action: 'PurchaseCompleted',
+        userId: authContext.userId,
+        offeringId: subscriptionPlan,
+        value: packageToPurchase.product.price,
+        currency: packageToPurchase.product.currencyCode,
+        productIdentifier: packageToPurchase.identifier,
+      });
+
+      await waitForPremiumUpdate();
+      navigation.navigate('PremiumSuccess', {
+        state: 'premium_started',
+        isOnboarding: route.params.isOnboarding,
+      });
+    } catch (error) {
+      if (
+        error?.userInfo?.readableErrorCode === 'PURCHASE_CANCELLED' ||
+        error?.userInfo?.readableErrorCode === 'PurchaseCancelledError'
+      ) {
+        void localAnalytics().logEvent('V3PremiumOfferRevenueCatSubscriptionAttemptCancelled', {
+          screen: 'V3PremiumOfferRevenueCat',
+          action: 'CancelledSubscriptionAttempt',
+          userId: authContext.userId,
+          error,
+        });
+      } else {
+        console.log(JSON.stringify(error));
+        void localAnalytics().logEvent('V3PremiumOfferRevenueCatSubscriptionAttemptError', {
+          screen: 'V3PremiumOfferRevenueCat',
+          action: 'SubscriptionAttemptError',
+          userId: authContext.userId,
+          error: JSON.stringify(error),
+        });
+        const errorMessage =
+          error && typeof error === 'object' && 'message' in error ? String(error.message) : '';
+        logErrorsWithMessage(error, errorMessage);
+      }
     } finally {
+      setSubscriptionLoading(false);
       setButtonDisabled(false);
     }
   };
@@ -239,268 +288,121 @@ export default function ({
   const yearlySubscriptionId = 'nemlys.subscription.yearly';
   const [monthlyPrice, setMonthlyPrice] = useState('');
   const [yearlyPrice, setYearlyPrice] = useState('');
-  const [partnerName, setPartnerName] = useState('');
+  const [partnerName] = useState('');
 
+  // Initialize Revenue Cat
   useEffect(() => {
-    let purchaseUpdateSubscription;
-    let purchaseErrorSubscription;
-
-    async function initIAP() {
+    async function initializeRevenueCat() {
       setProductLoading(true);
       try {
-        await RNIap.initConnection();
-
-        if (Platform.OS === 'android') {
-          await RNIap.flushFailedPurchasesCachedAsPendingAndroid();
+        if (!authContext.userId) {
+          return;
         }
-        const handelPurchase = async (purchase: RNIap.Purchase) => {
-          try {
-            const receipt = purchase.transactionReceipt;
-            localAnalytics().logEvent('V3PremiumOfferSuccessfulPurchaseReceived', {
-              receipt,
-              screen: 'V3PremiumOffer',
-              action: 'SuccessfulPurchaseReceived',
-              userId: authContext.userId,
-            });
-            if (receipt) {
-              try {
-                if (Platform.OS === 'android') {
-                  await RNIap.acknowledgePurchaseAndroid({ token: purchase.purchaseToken! });
-                } else {
-                  await RNIap.finishTransaction({ purchase: purchase, isConsumable: true });
-                }
-                const func = async () => {
-                  const res = await supabase.functions.invoke('manage-premium', {
-                    body: {
-                      action: 'activate_premium',
-                      transactionReceipt: receipt,
-                      platform: Platform.OS,
-                      productId: purchase.productId,
-                    },
-                  });
-                  if (res.error) {
-                    throw res.error;
-                  }
-                };
-                await retryAsync('PremiumOfferManagePremiumFunc', func);
-                navigation.navigate('PremiumSuccess', {
-                  state: 'premium_started',
-                  isOnboarding: route.params.isOnboarding,
-                });
-              } catch (e) {
-                logErrorsWithMessage(e, (e?.message as string) || '');
-              }
-            }
-          } finally {
-            setSubscriptionLoading(false);
-          }
-        };
-        purchaseUpdateSubscription = RNIap.purchaseUpdatedListener((purchase) => {
-          void handelPurchase(purchase);
+
+        const apiKey =
+          Platform.OS === 'ios' ? REVENUE_CAT_API_KEYS.ios : REVENUE_CAT_API_KEYS.android;
+
+        await Purchases.setLogLevel(LOG_LEVEL.DEBUG);
+        Purchases.configure({ apiKey, appUserID: authContext.userId });
+
+        void localAnalytics().logEvent('RevenueCatInitialized', {
+          platform: Platform.OS,
+          userId: authContext.userId,
         });
 
-        purchaseErrorSubscription = RNIap.purchaseErrorListener((error: RNIap.PurchaseError) => {
-          if (error.code === 'E_USER_CANCELLED') {
-            void localAnalytics().logEvent('V3PremiumOfferSubscriptionAttemptCancelled', {
-              screen: 'V3PremiumOffer',
-              action: 'CancelledSubscriptionAttempt',
-              userId: authContext.userId,
-              error,
-            });
-          } else if (error.code === 'E_SERVICE_ERROR') {
-            void localAnalytics().logEvent('V3PremiumOfferSubscriptionErrorPlayMarketNotLoggedIn', {
-              screen: 'V3PremiumOffer',
-              action: 'SubscriptionErrorPlayMarketNotLoggedIn',
-              userId: authContext.userId,
-              error,
-            });
-            alert(i18n.t('errors_play_market'));
-          } else if (error.code === ('PROMISE_BUY_ITEM' as RNIap.ErrorCode)) {
-            void localAnalytics().logEvent('V3PremiumOfferSubscriptionErrorProductNotLoaded', {
-              screen: 'V3PremiumOffer',
-              action: 'SubscriptionErrorProductNotLoaded',
-              userId: authContext.userId,
-              error,
-            });
-            alert(i18n.t('errors_play_market'));
-          } else if (error.code === 'E_UNKNOWN') {
-            void localAnalytics().logEvent('V3PremiumOfferSubscriptionErrorUnknownError', {
-              screen: 'V3PremiumOffer',
-              action: 'SubscriptionErrorUnknownError',
-              userId: authContext.userId,
-              error,
-            });
-            alert(i18n.t('errors_payment_error'));
-          } else if (error.code === 'E_ALREADY_OWNED') {
-            console.log('skip');
-          } else {
-            void localAnalytics().logEvent('V3PremiumOfferSubscriptionAttemptError', {
-              screen: 'V3PremiumOffer',
-              action: 'SubscriptionAttemptError',
-              userId: authContext.userId,
-              error,
-            });
-            logErrorsWithMessage(error, error?.message);
-          }
+        // Fetch offerings
+        await fetchOfferings();
 
-          switch (error.code) {
-            case 'PROMISE_BUY_ITEM' as RNIap.ErrorCode:
-              break;
-            case 'E_USER_CANCELLED':
-              break;
-            case 'E_ALREADY_OWNED':
-              console.log('You already own this item.');
-              // Handle logic if the user already owns the item.
-              break;
-
-            case 'E_ITEM_UNAVAILABLE':
-              console.log('This item is currently unavailable.');
-              // Handle logic if the item is currently unavailable.
-              break;
-
-            case 'E_NETWORK_ERROR':
-              console.log('Network error occurred. Please check your connection and try again.');
-              // Handle logic if a network error occurs.
-              break;
-            default:
-              console.log('Other purchase error:', error.code, error.message);
-              // Handle other types of errors if necessary.
-              break;
-          }
-          setSubscriptionLoading(false);
+        // Get customer info
+        await Purchases.getCustomerInfo();
+      } catch (error) {
+        void localAnalytics().logEvent('V3PremiumOfferRevenueCatRevenueCatInitError', {
+          screen: 'V3PremiumOfferRevenueCat',
+          action: 'RevenueCatInitError',
+          userId: authContext.userId,
+          error,
         });
-        const func = async () => {
-          const products = await RNIap.getProducts({
-            skus: [monthlySubscriptionId, yearlySubscriptionId],
-          });
-          const subscriptions = await RNIap.getSubscriptions({
-            skus: [monthlySubscriptionId, yearlySubscriptionId],
-          });
+        logErrorsWithMessage(error, (error?.message as string) || '');
+        setMonthlyPrice('10$');
+        setYearlyPrice('49$');
+      } finally {
+        setProductLoading(false);
+      }
+    }
+
+    if (authContext.userId) {
+      void initializeRevenueCat();
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [authContext.userId]);
+
+  // Fetch Revenue Cat offerings
+  const fetchOfferings = async () => {
+    try {
+      const offerings = await Purchases.getOfferings();
+      if (offerings.current !== null && offerings.current.availablePackages.length > 0) {
+        const packages = offerings.current.availablePackages;
+        setAvailablePackages(packages);
+
+        // Find monthly and yearly packages
+        const monthlyPackage = packages.find(
+          (pkg) => pkg.product.identifier === monthlySubscriptionId,
+        );
+        const yearlyPackage = packages.find(
+          (pkg) => pkg.product.identifier === yearlySubscriptionId,
+        );
+
+        // Set prices
+        if (monthlyPackage) {
+          setMonthlyPrice(monthlyPackage.product.priceString);
+        } else {
+          setMonthlyPrice('10$');
+        }
+
+        if (yearlyPackage) {
+          setYearlyPrice(yearlyPackage.product.priceString);
+
+          // Check for trial period
           if (Platform.OS === 'ios') {
-            const monthlyProduct: RNIap.ProductIOS | undefined = products.find(
-              (x) => x.productId === monthlySubscriptionId,
-            );
-            const yearlyProduct: RNIap.ProductIOS | undefined = products.find(
-              (x) => x.productId === yearlySubscriptionId,
-            );
-            setMonthlyPrice(monthlyProduct ? monthlyProduct.localizedPrice : '10$');
-            setYearlyPrice(yearlyProduct ? yearlyProduct.localizedPrice : '49$');
+            const introPrice = yearlyPackage.product.introPrice;
+            if (introPrice && introPrice['paymentMode'] === 'FREE_TRIAL') {
+              const periodUnit = introPrice.periodUnit;
+              const periodNumberOfUnits = introPrice.periodNumberOfUnits;
 
-            const yearlySubscription = subscriptions.find(
-              (sub) => sub.productId === yearlySubscriptionId,
-            ) as RNIap.SubscriptionIOS;
-            if (
-              yearlySubscription &&
-              yearlySubscription.introductoryPricePaymentModeIOS === 'FREETRIAL'
-            ) {
-              const trialPeriod = yearlySubscription.introductoryPriceSubscriptionPeriodIOS;
-
-              const trialPeriodNumber = parseInt(
-                yearlySubscription.introductoryPriceNumberOfPeriodsIOS || '0',
-                10,
-              );
-
-              if (trialPeriod === 'DAY') {
-                setTrialLength(trialPeriodNumber);
-              } else if (trialPeriod === 'WEEK') {
-                setTrialLength(trialPeriodNumber * 7);
+              if (periodUnit === 'DAY') {
+                setTrialLength(periodNumberOfUnits);
+              } else if (periodUnit === 'WEEK') {
+                setTrialLength(periodNumberOfUnits * 7);
               }
             }
           } else if (Platform.OS === 'android') {
-            const monthlySubscription = subscriptions.find(
-              (sub) => sub.productId === monthlySubscriptionId,
-            );
-            const yearlySubscription = subscriptions.find(
-              (sub) => sub.productId === yearlySubscriptionId,
-            );
-
-            if (monthlySubscription) {
-              const monthlyOfferDetails = monthlySubscription?.['subscriptionOfferDetails']?.[0];
-              const monthlyPricingPhases = monthlyOfferDetails?.['pricingPhases'];
-              const monthlyPricingPhaseList = monthlyPricingPhases?.['pricingPhaseList'];
-              const validMonthlyPricing = monthlyPricingPhaseList.find(
-                (phase) => phase?.['priceAmountMicros'] !== '0',
-              );
-
-              if (validMonthlyPricing) {
-                const monthlyFormattedPrice = validMonthlyPricing['formattedPrice'] as string;
-                setMonthlyPrice(monthlyFormattedPrice);
-              } else {
-                setMonthlyPrice('10$');
-              }
-            } else {
-              setMonthlyPrice('10$');
-            }
-
-            if (yearlySubscription) {
-              const yearlyOfferDetails = yearlySubscription?.['subscriptionOfferDetails']?.[0];
-              const yearlyPricingPhases = yearlyOfferDetails?.['pricingPhases'];
-              const yearlyPricingPhaseList = yearlyPricingPhases?.['pricingPhaseList'];
-              const validYearlyPricing = yearlyPricingPhaseList.find(
-                (phase) => phase['priceAmountMicros'] !== '0',
-              );
-
-              if (validYearlyPricing) {
-                const yearlyFormattedPrice = validYearlyPricing['formattedPrice'] as string;
-                setYearlyPrice(yearlyFormattedPrice);
-              } else {
-                setYearlyPrice('49$');
-              }
-              try {
-                const trialPhase = yearlyPricingPhaseList.find(
-                  (phase) => phase['priceAmountMicros'] === '0',
-                ) as { billingPeriod: string };
-                if (trialPhase && trialPhase['billingPeriod']) {
-                  setTrialLength(
-                    parseInt(trialPhase['billingPeriod'].replace('P', '').replace('D', ''), 10),
-                  );
+            // Android trial period detection
+            const freePhase = yearlyPackage.product['freePhase'];
+            if (freePhase) {
+              const billingPeriod = freePhase['billingPeriod'];
+              if (billingPeriod) {
+                const days = parseInt(String(billingPeriod).replace('P', '').replace('D', ''), 10);
+                if (!isNaN(days)) {
+                  setTrialLength(days);
                 }
-              } catch (e) {
-                logErrorsWithMessageWithoutAlert(e);
-                setTrialLength(7);
               }
-            } else {
-              setYearlyPrice('49$');
             }
           }
-          void localAnalytics().logEvent('V3PremiumOfferStoreProductsLoaded', {
-            screen: 'V3PremiumOffer',
-            action: 'StoreProductsLoaded',
-            userId: authContext.userId,
-            products,
-            subscriptions,
-          });
-        };
-        await retryRequestAsync('PremiumOfferGetProducts', func, authContext.userId!);
-      } catch (err) {
-        void localAnalytics().logEvent('V3PremiumOfferStoreProductsError', {
-          screen: 'V3PremiumOffer',
-          action: 'StoreProductsError',
+        } else {
+          setYearlyPrice('49$');
+        }
+
+        void localAnalytics().logEvent('V3PremiumOfferRevenueCatStoreProductsLoaded', {
+          screen: 'V3PremiumOfferRevenueCat',
+          action: 'StoreProductsLoaded',
           userId: authContext.userId,
-          err,
+          packages,
         });
-        logErrorsWithMessage(err, (err?.message as string) || '');
-        setMonthlyPrice('10$');
-        setYearlyPrice('49$');
       }
-
-      setProductLoading(false);
+    } catch (error) {
+      logErrorsWithMessageWithoutAlert(error);
     }
-
-    void initIAP();
-
-    return () => {
-      if (purchaseUpdateSubscription) {
-        purchaseUpdateSubscription.remove();
-        purchaseUpdateSubscription = null;
-      }
-      if (purchaseErrorSubscription) {
-        purchaseErrorSubscription.remove();
-        purchaseErrorSubscription = null;
-      }
-      void RNIap.endConnection();
-    };
-  }, []);
+  };
 
   let TitleComponent = <></>;
   switch (currentPremiumState) {
@@ -526,8 +428,8 @@ export default function ({
       break;
   }
   const onClosePressed = () => {
-    void localAnalytics().logEvent('V3PremiumOfferClosePressed', {
-      screen: 'V3PremiumOffer',
+    void localAnalytics().logEvent('V3PremiumOfferRevenueCatClosePressed', {
+      screen: 'V3PremiumOfferRevenueCat',
       action: 'ClosePressed',
       userId: authContext.userId,
     });

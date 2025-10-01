@@ -86,6 +86,7 @@ export default function ({
     setLoading(false);
   }
 
+  // The refresh mechanism, TODO
   const isFirstMount = useRef(true);
   useEffect(() => {
     if (!isFirstMount.current && route.params?.refreshTimeStamp) {
@@ -111,6 +112,7 @@ export default function ({
     await logout();
     await logout();
   };
+
   const deleteAccountAlert = () => {
     Alert.alert(
       i18n.t('profile_are_you_sure_you_want_to_delete_account'),

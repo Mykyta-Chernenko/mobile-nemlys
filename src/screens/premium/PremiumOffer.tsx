@@ -79,6 +79,29 @@ export default function ({
     let currentPremiumState: CurrentPremiumState = 'daily';
 
     try {
+      const [featureFlagResponse, premiumDetailsResult] = await Promise.all([
+        supabase
+          .from('feature_flag')
+          .select('rollout_percentage')
+          .eq('feature', 'revenuecat_paywall')
+          .single(),
+        getPremiumDetails(authContext.userId!),
+      ]);
+
+      if (featureFlagResponse.error){
+        throw featureFlagResponse.error
+      }
+
+      if (featureFlagResponse.data) {
+        const rolloutPercentage = featureFlagResponse.data.rollout_percentage;
+        const randomValue = Math.random() * 100;
+
+        if (randomValue < rolloutPercentage) {
+          navigation.replace('RevenueCatPremiumOffer', route.params);
+          return;
+        }
+      }
+
       const {
         premiumState,
         totalDateCount,
@@ -88,7 +111,7 @@ export default function ({
         trialExpired,
         forcePremium,
         afterTrialPremiumOffered,
-      } = await getPremiumDetails(authContext.userId!);
+      } = premiumDetailsResult;
 
       setCanClose(!forcePremium);
       if (forcePremium) {

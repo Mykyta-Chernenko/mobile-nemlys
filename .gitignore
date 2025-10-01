@@ -9,6 +9,7 @@ npm-debug.*
 *.orig.*
 web-build/
 *.env*
+!*.env.example
 *.envrc
 # backend
 backend
@@ -64,3 +65,5 @@ myenv
 deploy/fastlane/metadata
 deploy/fastlane/screenshots
 deploy/screens
+
+nemlys-prod-b280691fe04e.json

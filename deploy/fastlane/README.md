@@ -1,3 +1,18 @@
+
+---
+# Main
+this is the main script
+
+`fastlane ios upload_metadata_and_screenshots_ios`
+
+all the aso text info is in file aso.json
+all the screenshots are in the fastlane/screenshots
+
+so if you want to chage aso text or screenshots, chagne those folders and run the fastlane
+
+Other scripts are no longer needed
+
+----
 fastlane documentation
 ----
 
@@ -54,3 +69,5 @@ This README.md is auto-generated and will be re-generated every time [_fastlane_
 More information about _fastlane_ can be found on [fastlane.tools](https://fastlane.tools).
 
 The documentation of _fastlane_ can be found on [docs.fastlane.tools](https://docs.fastlane.tools).
+
+-----

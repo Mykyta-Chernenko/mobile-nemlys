@@ -1458,6 +1458,12 @@ export type Database = {
           },
         ];
       };
+      feature_flag: {
+        Row: {
+          feature: string;
+          rollout_percentage: number;
+        };
+      };
       user_profile: {
         Row: {
           agreed_on_interview: boolean | null;
